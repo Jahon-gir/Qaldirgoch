@@ -4,7 +4,10 @@ import { BottomNav } from './BottomNav'
 
 export function AppShell() {
   const { pathname } = useLocation()
-  useEffect(() => window.scrollTo(0, 0), [pathname]) // yangi ekran yuqoridan ochilsin
+  // Effekt hech narsa qaytarmasin: scrollTo yangi brauzerlarda Promise qaytaradi, React uni tozalash funksiyasi deb chaqirib qulaydi
+  useEffect(() => {
+    window.scrollTo(0, 0) // yangi ekran yuqoridan ochilsin
+  }, [pathname])
   return (
     <div className="flex min-h-full flex-col">
       <main className="mx-auto w-full max-w-md flex-1 px-4 pb-6 pt-[max(1rem,env(safe-area-inset-top))]">

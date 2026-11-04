@@ -6,7 +6,9 @@ import { Card } from './ui/Card'
 
 function Modal({ title, children }: { title: string; children: ReactNode }) {
   const ref = useRef<HTMLDivElement>(null)
-  useEffect(() => ref.current?.focus(), [])
+  useEffect(() => {
+    ref.current?.focus()
+  }, [])
   return (
     <div className="fixed inset-0 z-40 flex items-end justify-center bg-ink/50 p-4 sm:items-center">
       <div ref={ref} tabIndex={-1} role="dialog" aria-modal="true" aria-labelledby="sync-title" className="w-full max-w-md outline-none">
