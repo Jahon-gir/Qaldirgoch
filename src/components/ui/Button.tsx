@@ -12,7 +12,7 @@ const styles: Record<Variant, string> = {
 export function Button({ variant = 'primary', className = '', ...rest }: ButtonHTMLAttributes<HTMLButtonElement> & { variant?: Variant }) {
   return (
     <button
-      className={`min-h-[44px] w-full rounded-btn px-4 py-3 text-base font-semibold transition active:scale-[0.99] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${styles[variant]} ${className}`}
+      className={`min-h-[44px] w-full rounded-btn px-4 py-3 text-base font-semibold transition active:scale-[0.99] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:cursor-not-allowed disabled:opacity-50 ${styles[variant]} ${className}`}
       {...rest}
     />
   )

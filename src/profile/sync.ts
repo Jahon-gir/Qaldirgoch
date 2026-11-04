@@ -1,4 +1,5 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
+import { isDirection } from '../german/logic'
 import { isComplete, PROFILE_SCHEMA_VERSION, QUESTIONS, type Answers, type Profile } from './questions'
 
 /** Foydalanuvchi yozgan matn: boshqaruv belgilarisiz, qisqa. Ekranga React orqali (escape bilan) chiqadi. */
@@ -14,6 +15,7 @@ export function cleanText(s: string | undefined): string | undefined {
 export function normalizeProfile(raw: unknown): Profile | null {
   if (!raw || typeof raw !== 'object' || !isComplete(raw as Partial<Answers>)) return null
   const r = raw as Answers & { schemaVersion?: unknown; createdAt?: unknown }
+  const g = (raw as { germanDirection?: unknown }).germanDirection
   const version = typeof r.schemaVersion === 'number' ? r.schemaVersion : 1
   if (version > PROFILE_SCHEMA_VERSION) return null
   return {
@@ -25,7 +27,8 @@ export function normalizeProfile(raw: unknown): Profile | null {
     dailyTime: r.dailyTime,
     departure: r.departure,
     createdAt: typeof r.createdAt === 'string' ? r.createdAt : new Date().toISOString(),
-    schemaVersion: PROFILE_SCHEMA_VERSION
+    schemaVersion: PROFILE_SCHEMA_VERSION,
+    germanDirection: isDirection(g) ? (g as Profile['germanDirection']) : undefined
   }
 }
 

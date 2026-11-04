@@ -7,6 +7,7 @@ import { I18nProvider } from './i18n/I18nProvider'
 import { AuthProvider } from './auth/AuthProvider'
 import { ProfileProvider } from './profile/ProfileProvider'
 import { ProgressProvider } from './progress/ProgressProvider'
+import { LessonsProvider } from './german/LessonsProvider'
 import App from './App'
 
 createRoot(document.getElementById('root')!).render(
@@ -16,7 +17,9 @@ createRoot(document.getElementById('root')!).render(
         <AuthProvider>
           <ProfileProvider>
             <ProgressProvider>
-              <App />
+              <LessonsProvider>
+                <App />
+              </LessonsProvider>
             </ProgressProvider>
           </ProfileProvider>
         </AuthProvider>

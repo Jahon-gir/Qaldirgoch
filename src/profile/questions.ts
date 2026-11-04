@@ -1,3 +1,4 @@
+import type { Direction } from '../content/german/types'
 import type { Key } from '../i18n/uz'
 
 export const AGE = ['under18', '18-24', '25-30', '31-35', '36plus'] as const
@@ -18,7 +19,12 @@ export type Answers = {
 }
 /** Saqlangan profil sxemasi versiyasi (localStorage va serverdagi jsonb uchun). Maydon qoʻshilganda oshiriladi. */
 export const PROFILE_SCHEMA_VERSION = 1
-export type Profile = Answers & { createdAt: string; schemaVersion: number }
+export type Profile = Answers & {
+  createdAt: string
+  schemaVersion: number
+  /** Nemis tili yoʻnalishi qoʻlda tanlangan boʻlsa (aks holda kasbdan avtomatik). */
+  germanDirection?: Direction
+}
 export type QuestionId = Exclude<keyof Answers, 'professionOther'>
 
 /** Onboarding savollari tartibi. Matnlar lugʻatda: q.<lugʻat nomi>.<qiymat>. */

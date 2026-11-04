@@ -84,3 +84,16 @@ describe('server bilan ishlash (mock)', () => {
     await expect(pushRemoteProfile(fakeClient({ error: new Error('offline') }).client, 'u1', base)).rejects.toThrow()
   })
 })
+
+describe('nemis tili yoʻnalishi profilda', () => {
+  it('qoʻlda tanlangan yoʻnalish saqlanadi, notoʻgʻrisi tashlanadi', () => {
+    expect(normalizeProfile({ ...base, germanDirection: 'care' })?.germanDirection).toBe('care')
+    expect(normalizeProfile({ ...base, germanDirection: 'xyz' })?.germanDirection).toBeUndefined()
+    expect(normalizeProfile(base)?.germanDirection).toBeUndefined()
+  })
+  it('serverga yoʻnalish bilan yoziladi', async () => {
+    const upsert = vi.fn().mockResolvedValue({})
+    await pushRemoteProfile({ from: () => ({ upsert }) } as never, 'u1', { ...base, germanDirection: 'hospitality' })
+    expect(upsert.mock.calls[0][0].data.germanDirection).toBe('hospitality')
+  })
+})
