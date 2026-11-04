@@ -1,10 +1,5 @@
 import { Soon } from './Soon'
 
 export default function Language() {
-  return (
-    <Soon
-      title="Nemis tili"
-      items={['A1 darslari: so\'zlar, audio, mashqlar', 'Kasbiy lug\'at', 'Talaffuzni tekshirish', 'AI bilan suhbat mashqi', 'Imtihon rejimi']}
-    />
-  )
+  return <Soon title="language.title" items={['language.i1', 'language.i2', 'language.i3', 'language.i4', 'language.i5']} />
 }

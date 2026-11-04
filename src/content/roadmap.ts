@@ -1,16 +1,8 @@
 /**
- * Germaniya · Ausbildung yo'li bosqichlari (TZ, 3-bo'lim).
- * Bu yerda faqat nomlar. Xarajat, muddat va manbalar 3-PR'da tasdiqlangan kontent bilan qo'shiladi.
+ * Germaniya · Ausbildung yoʻli bosqichlari (TZ, 3-boʻlim).
+ * Nomlar lugʻatda: step.<id>. Xarajat, muddat va manbalar tasdiqlangan kontent bilan keyin qoʻshiladi.
  */
-export const AUSBILDUNG_STEPS = [
-  { id: 'profil', title: "Profil va yo'l tanlash" },
-  { id: 'til', title: 'Nemis tili: A1 dan B1 gacha' },
-  { id: 'sertifikat', title: 'Til sertifikati' },
-  { id: 'hujjatlar', title: 'Hujjatlar va tarjima' },
-  { id: 'joy', title: 'Ausbildung joyini topish' },
-  { id: 'shartnoma', title: 'Shartnoma' },
-  { id: 'viza', title: 'Viza' },
-  { id: 'jonash', title: "Jo'nashga tayyorgarlik" },
-  { id: 'germaniyada', title: 'Germaniyada birinchi kunlar' },
-  { id: 'ish', title: 'Ausbildung boshlanishi' }
-] as const
+export const AUSBILDUNG_STEPS = ['profil', 'til', 'sertifikat', 'hujjatlar', 'joy', 'shartnoma', 'viza', 'jonash', 'germaniyada', 'ish'] as const
+
+export type StepId = (typeof AUSBILDUNG_STEPS)[number]
+export const stepKey = (id: StepId) => `step.${id}` as const

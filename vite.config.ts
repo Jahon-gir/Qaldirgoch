@@ -12,9 +12,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icon.svg', 'apple-touch-icon.png'],
       manifest: {
-        name: "Qaldirg'och",
-        short_name: "Qaldirg'och",
-        description: "Chet elda qonuniy ishlash uchun yo'l ko'rsatuvchi",
+        name: 'Qaldirgʻoch',
+        short_name: 'Qaldirgʻoch',
+        description: 'Chet elda qonuniy ish sari ishonchli yoʻl',
         lang: 'uz',
         start_url: './',
         scope: './',
