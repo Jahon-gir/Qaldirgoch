@@ -16,7 +16,9 @@ export type Answers = {
   dailyTime: (typeof DAILY)[number]
   departure: (typeof DEPARTURE)[number]
 }
-export type Profile = Answers & { createdAt: string }
+/** Saqlangan profil sxemasi versiyasi (localStorage va serverdagi jsonb uchun). Maydon qoʻshilganda oshiriladi. */
+export const PROFILE_SCHEMA_VERSION = 1
+export type Profile = Answers & { createdAt: string; schemaVersion: number }
 export type QuestionId = Exclude<keyof Answers, 'professionOther'>
 
 /** Onboarding savollari tartibi. Matnlar lugʻatda: q.<lugʻat nomi>.<qiymat>. */

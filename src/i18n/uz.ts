@@ -97,9 +97,9 @@ export const uz = {
   'login.title': 'Xush kelibsiz',
   'login.text': 'Progressingiz saqlanishi va boshqa telefonda ham ochilishi uchun kiring.',
   'login.google': 'Google bilan kirish',
-  'login.googleSoon': 'Google bilan kirish keyingi yangilanishda qoʻshiladi',
-  'login.telegram': 'Telegram (tez orada)',
-  'login.skip': 'Hozircha kirmasdan davom etish',
+  'login.skip': 'Mehmon sifatida davom etish',
+  'login.unavailable': 'Kirish hozir mavjud emas: ilova server sozlamalarisiz ishga tushirilgan. Mehmon sifatida davom etishingiz mumkin.',
+  'login.error': 'Kirishni boshlab boʻlmadi. Internetni tekshirib, qayta urinib koʻring.',
   'login.privacy': 'Pasport yoki hujjat soʻramaymiz.',
 
   'q.progress': 'Savollar boʻyicha progress',
@@ -166,7 +166,30 @@ export const uz = {
   'profile.time': 'Kuniga vaqt',
   'profile.departure': 'Ketish vaqti',
   'profile.empty': 'Hali javob berilmagan.',
-  'profile.redo': 'Javoblarni qayta toʻldirish'
+  'profile.redo': 'Javoblarni qayta toʻldirish',
+
+  'account.guestTitle': 'Mehmon rejimi',
+  'account.guestText': 'Maʼlumot faqat shu telefonda',
+  'account.synced': 'Akkaunt bilan sinxronlangan',
+  'account.syncPending': 'Oʻzgarishlar internet paydo boʻlganda akkauntga yuboriladi',
+  'account.signOut': 'Chiqish',
+  'account.signOutNote': 'Chiqsangiz, shu telefondagi profil nusxasi oʻchiriladi.',
+
+  'sync.loading': 'Yuklanmoqda…',
+  'sync.ask.title': 'Profilingizni akkauntga koʻchiramizmi?',
+  'sync.ask.text': 'Shu telefonda mehmon sifatida toʻldirgan profilingiz bor. Akkauntga koʻchirsangiz, boshqa telefonda ham ochiladi.',
+  'sync.ask.yes': 'Ha, koʻchirish',
+  'sync.ask.no': 'Yoʻq, yangidan boshlash',
+  'sync.ask.noNote': 'Yangidan boshlasangiz, telefondagi profil oʻchiriladi va savollarga qaytadan javob berasiz.',
+  'sync.choose.title': 'Akkauntda boshqa profil bor',
+  'sync.choose.text': 'Akkauntingizdagi profil shu telefondagi profildan farq qiladi. Qaysi biri qolishini oʻzingiz tanlang — hech narsa oʻzi almashtirilmaydi.',
+  'sync.choose.serverNote': 'Akkauntdagini ishlatsangiz, telefondagi profil almashtiriladi.',
+  'sync.choose.localNote': 'Telefondagini ishlatsangiz, akkauntdagi profil yangilanadi.',
+  'sync.choose.server': 'Akkauntdagi profilni ishlatish',
+  'sync.choose.local': 'Shu telefondagini ishlatish',
+
+  'update.text': 'Yangi versiya bor',
+  'update.action': 'Yangilash'
 } as const
 
 export type Key = keyof typeof uz

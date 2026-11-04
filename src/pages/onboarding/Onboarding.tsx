@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Navigate, useNavigate, useSearchParams } from 'react-router-dom'
+import { useAuth } from '../../auth/AuthProvider'
 import { useProfile } from '../../profile/ProfileProvider'
 import { QUESTIONS, type Answers } from '../../profile/questions'
 import { LanguageStep } from './LanguageStep'
@@ -16,29 +17,23 @@ type Step = { kind: 'lang' } | { kind: 'login' } | { kind: 'q'; i: number } | { 
  */
 export default function Onboarding() {
   const { profile, onboarded, saveAnswers, completeOnboarding } = useProfile()
+  const { status } = useAuth()
   const [params] = useSearchParams()
   const redo = params.get('qayta') === '1'
+  // Chiqishdan keyin (?kirish=1) kirish ekrani; kirgan foydalanuvchi til va kirish qadamlarini oʻtkazib yuboradi
+  const toLogin = params.get('kirish') === '1'
   const nav = useNavigate()
   // Faqat ochilish paytida tekshiriladi: tugatish tugmasi bosilganda oʻzining yoʻnalishi ishlaydi
-  const [alreadyDone] = useState(onboarded && !redo)
+  const [alreadyDone] = useState(onboarded && !redo && !toLogin)
 
-  const [step, setStep] = useState<Step>(redo ? { kind: 'q', i: 0 } : { kind: 'lang' })
+  const [step, setStep] = useState<Step>(redo || status === 'signedIn' ? { kind: 'q', i: 0 } : toLogin ? { kind: 'login' } : { kind: 'lang' })
   const [draft, setDraft] = useState<Partial<Answers>>(() => (profile ? { ...profile } : {}))
-  const [toast, setToast] = useState<string | null>(null)
-  const toastTimer = useRef<number>(undefined)
 
-  useEffect(() => () => window.clearTimeout(toastTimer.current), [])
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [step])
 
   if (alreadyDone) return <Navigate to="/" replace />
-
-  const showToast = (msg: string) => {
-    setToast(msg)
-    window.clearTimeout(toastTimer.current)
-    toastTimer.current = window.setTimeout(() => setToast(null), 3000)
-  }
 
   const finish = (to: string) => {
     completeOnboarding()
@@ -52,12 +47,7 @@ export default function Onboarding() {
       break
     case 'login':
       body = (
-        <LoginStep
-          onNext={(msg) => {
-            if (msg) showToast(msg)
-            setStep({ kind: 'q', i: 0 })
-          }}
-        />
+        <LoginStep onNext={() => setStep({ kind: 'q', i: 0 })} />
       )
       break
     case 'q':
@@ -88,9 +78,6 @@ export default function Onboarding() {
   return (
     <div className="mx-auto flex min-h-full w-full max-w-md flex-col px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-[max(1rem,env(safe-area-inset-top))]">
       {body}
-      <div aria-live="polite" className="pointer-events-none fixed inset-x-0 top-[max(1rem,env(safe-area-inset-top))] z-20 flex justify-center px-4">
-        {toast && <p className="max-w-sm rounded-xl bg-ink px-4 py-3 text-center text-sm text-bg shadow-lg">{toast}</p>}
-      </div>
     </div>
   )
 }
