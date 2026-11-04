@@ -1,3 +1,4 @@
+import type { CountryId } from '../content/countries'
 import type { Direction } from '../content/german/types'
 import type { Key } from '../i18n/uz'
 
@@ -24,6 +25,8 @@ export type Profile = Answers & {
   schemaVersion: number
   /** Nemis tili yoʻnalishi qoʻlda tanlangan boʻlsa (aks holda kasbdan avtomatik). */
   germanDirection?: Direction
+  /** Tanlangan (ochiq) davlat; yoʻq boʻlsa Germaniya. */
+  selectedCountry?: CountryId
 }
 export type QuestionId = Exclude<keyof Answers, 'professionOther'>
 

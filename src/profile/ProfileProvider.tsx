@@ -2,6 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useRef, useState, ty
 import { useAuth } from '../auth/AuthProvider'
 import { supabase } from '../lib/supabase'
 import { clearProgressStorage } from '../progress/storage'
+import { countryById, effectiveCountry, type CountryId } from '../content/countries'
 import type { Direction } from '../content/german/types'
 import { PROFILE_SCHEMA_VERSION, type Answers, type Profile } from './questions'
 import { cleanText, decideSync, fetchRemoteProfile, normalizeProfile, pushRemoteProfile } from './sync'
@@ -47,6 +48,9 @@ type Ctx = {
   completeOnboarding: () => void
   /** Nemis tili yoʻnalishini qoʻlda tanlash: profilda saqlanadi va akkaunt bilan sinxronlanadi. */
   setGermanDirection: (d: Direction) => void
+  /** Tanlangan davlat (yopiq davlatda tanlov oʻzgarmaydi). Profilda saqlanadi va akkaunt bilan sinxronlanadi. */
+  selectedCountry: CountryId
+  selectCountry: (id: CountryId) => void
   sync: SyncPhase
   /** Serverga yuborilmagan oʻzgarish bor. */
   syncPending: boolean
@@ -187,7 +191,8 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
       createdAt: profile?.createdAt ?? new Date().toISOString(),
       schemaVersion: PROFILE_SCHEMA_VERSION,
       // Qoʻlda tanlangan yoʻnalish kasb oʻzgarmaguncha saqlanadi
-      germanDirection: profile && profile.profession === a.profession ? profile.germanDirection : undefined
+      germanDirection: profile && profile.profession === a.profession ? profile.germanDirection : undefined,
+      selectedCountry: profile?.selectedCountry
     }
     setProfile(p)
     write(PROFILE_KEY, JSON.stringify(p))
@@ -199,6 +204,15 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
     const cur = profileRef.current
     if (!cur) return
     const p: Profile = { ...cur, germanDirection: d }
+    setProfile(p)
+    write(PROFILE_KEY, JSON.stringify(p))
+    if (userId && phaseRef.current === 'ready') void push(userId, p)
+  }
+
+  const selectCountry = (id: CountryId) => {
+    const cur = profileRef.current
+    if (!cur || countryById(id)?.status !== 'open' || effectiveCountry(cur.selectedCountry) === id) return
+    const p: Profile = { ...cur, selectedCountry: id }
     setProfile(p)
     write(PROFILE_KEY, JSON.stringify(p))
     if (userId && phaseRef.current === 'ready') void push(userId, p)
@@ -242,7 +256,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
 
   return (
     <ProfileContext.Provider
-      value={{ profile, onboarded, saveAnswers, completeOnboarding, setGermanDirection, sync, syncPending, answerMigrate, answerChoose, signOutAndClear }}
+      value={{ profile, onboarded, saveAnswers, completeOnboarding, setGermanDirection, selectedCountry: effectiveCountry(profile?.selectedCountry), selectCountry, sync, syncPending, answerMigrate, answerChoose, signOutAndClear }}
     >
       {children}
     </ProfileContext.Provider>

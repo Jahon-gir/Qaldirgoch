@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import { IconAlertTriangle, IconArrowLeft, IconExternalLink, IconInfoCircle } from '@tabler/icons-react'
 import { Card } from '../components/ui/Card'
+import { AUSBILDUNG_PATH } from '../content/countries'
 import { stepById, type Source } from '../content/ausbildung'
 import { useT, type TFn } from '../i18n/I18nProvider'
 import { isAutoDone } from '../progress/logic'
@@ -58,7 +59,7 @@ export default function StepDetail() {
   if (!step) {
     return (
       <div className="space-y-3">
-        <Link to="/yol" className="flex min-h-[44px] items-center gap-2 text-base font-semibold text-trust-text">
+        <Link to={AUSBILDUNG_PATH} className="flex min-h-[44px] items-center gap-2 text-base font-semibold text-trust-text">
           <IconArrowLeft size={22} aria-hidden />
           {t('step.toRoadmap')}
         </Link>
@@ -76,7 +77,7 @@ export default function StepDetail() {
   return (
     <div className="space-y-3">
       <header>
-        <Link to="/yol" aria-label={t('common.back')} className="-ml-2 flex h-11 w-11 items-center justify-center rounded-full active:bg-surface-2">
+        <Link to={AUSBILDUNG_PATH} aria-label={t('common.back')} className="-ml-2 flex h-11 w-11 items-center justify-center rounded-full active:bg-surface-2">
           <IconArrowLeft size={24} aria-hidden />
         </Link>
         <h1 className="mt-1 text-2xl font-semibold">{t(step.title)}</h1>

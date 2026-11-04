@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
-import { IconCheck, IconChevronRight, IconShieldExclamation } from '@tabler/icons-react'
+import { IconArrowLeft, IconCheck, IconChevronRight, IconShieldExclamation } from '@tabler/icons-react'
 import { Card } from '../components/ui/Card'
 import { ProgressBar } from '../components/ui/ProgressBar'
+import { AUSBILDUNG_PATH } from '../content/countries'
 import { AUSBILDUNG_STEPS } from '../content/ausbildung'
 import { useT } from '../i18n/I18nProvider'
 import { useProgress } from '../progress/ProgressProvider'
@@ -12,6 +13,9 @@ export default function Roadmap() {
   const last = AUSBILDUNG_STEPS.length - 1
   return (
     <div className="space-y-3">
+      <Link to="/yol/de" aria-label={t('common.back')} className="-ml-2 flex h-11 w-11 items-center justify-center rounded-full active:bg-surface-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent">
+        <IconArrowLeft size={24} aria-hidden />
+      </Link>
       <div className="rounded-card bg-trust px-4 py-4 text-surface">
         <p className="text-base opacity-90">{t('roadmap.country')}</p>
         <h1 className="text-xl font-semibold">{t('roadmap.title')}</h1>
@@ -36,7 +40,7 @@ export default function Roadmap() {
             return (
               <li key={step.id}>
                 <Link
-                  to={`/yol/${step.id}`}
+                  to={`${AUSBILDUNG_PATH}/${step.id}`}
                   aria-current={now ? 'step' : undefined}
                   className="flex min-h-[52px] items-stretch gap-3 rounded-xl px-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >

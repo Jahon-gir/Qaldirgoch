@@ -66,7 +66,7 @@ export function ResultStep({ answers, onFinish }: { answers: Answers; onFinish: 
       </div>
 
       <div className="mt-auto pt-6">
-        <Button onClick={() => onFinish('/yol')}>
+        <Button onClick={() => onFinish('/yol/de/ausbildung')}>
           {t('result.cta')}
         </Button>
       </div>
