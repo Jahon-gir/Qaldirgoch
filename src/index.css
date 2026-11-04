@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ranglar RGB uchliklari sifatida: Tailwind shaffoflikni qo'llay olishi uchun */
+:root, [data-mode='light'] {
+  --c-bg: 241 239 232; --c-surface: 255 255 255; --c-surface-2: 227 224 215; --c-border: 211 209 199;
+  --c-text: 44 44 42; --c-text-2: 95 94 90; --c-text-3: 136 135 128;
+  --c-trust: 12 68 124; --c-trust-soft: 230 241 251; --c-trust-text: 12 68 124;
+  --c-success: 29 158 117; --c-success-soft: 225 245 238; --c-success-text: 8 80 65;
+  --c-danger: 163 45 45; --c-danger-soft: 252 235 235; --c-danger-text: 121 31 31;
+  --c-on-accent: 255 255 255;
+  color-scheme: light;
+}
+[data-mode='dark'] {
+  --c-bg: 30 30 28; --c-surface: 44 44 42; --c-surface-2: 68 68 65; --c-border: 68 68 65;
+  --c-text: 241 239 232; --c-text-2: 180 178 169; --c-text-3: 136 135 128;
+  --c-trust: 133 183 235; --c-trust-soft: 4 44 83; --c-trust-text: 181 212 244;
+  --c-success: 93 202 165; --c-success-soft: 4 52 44; --c-success-text: 159 225 203;
+  --c-danger: 240 149 149; --c-danger-soft: 80 19 19; --c-danger-text: 247 193 193;
+  --c-on-accent: 30 30 28;
+  color-scheme: dark;
+}
+
+/* Asosiy ranglar: yorug'da oq matn bilan, qorong'ida to'q matn bilan kamida 4.5:1 kontrast */
+[data-accent='marjon']   { --c-accent: 194 78 39;  --c-accent-strong: 113 43 19;  --c-accent-soft: 250 236 231; }
+[data-accent='kok']      { --c-accent: 24 95 165;  --c-accent-strong: 12 68 124;  --c-accent-soft: 230 241 251; }
+[data-accent='yashil']   { --c-accent: 15 110 86;  --c-accent-strong: 8 80 65;    --c-accent-soft: 225 245 238; }
+[data-accent='binafsha'] { --c-accent: 83 74 183;  --c-accent-strong: 60 52 137;  --c-accent-soft: 238 237 254; }
+[data-accent='gilos']    { --c-accent: 153 53 86;  --c-accent-strong: 114 36 62;  --c-accent-soft: 251 234 240; }
+[data-accent='asal']     { --c-accent: 133 79 11;  --c-accent-strong: 99 56 6;    --c-accent-soft: 250 238 218; }
+[data-accent='grafit']   { --c-accent: 68 68 65;   --c-accent-strong: 44 44 42;   --c-accent-soft: 232 230 223; }
+[data-accent='dengiz']   { --c-accent: 12 68 124;  --c-accent-strong: 4 44 83;    --c-accent-soft: 230 241 251; }
+[data-mode='dark'][data-accent='marjon']   { --c-accent: 240 153 123; --c-accent-strong: 245 196 179; --c-accent-soft: 74 27 12; }
+[data-mode='dark'][data-accent='kok']      { --c-accent: 133 183 235; --c-accent-strong: 181 212 244; --c-accent-soft: 4 44 83; }
+[data-mode='dark'][data-accent='yashil']   { --c-accent: 93 202 165;  --c-accent-strong: 159 225 203; --c-accent-soft: 4 52 44; }
+[data-mode='dark'][data-accent='binafsha'] { --c-accent: 175 169 236; --c-accent-strong: 206 203 246; --c-accent-soft: 38 33 92; }
+[data-mode='dark'][data-accent='gilos']    { --c-accent: 237 147 177; --c-accent-strong: 244 192 209; --c-accent-soft: 75 21 40; }
+[data-mode='dark'][data-accent='asal']     { --c-accent: 239 159 39;  --c-accent-strong: 250 199 117; --c-accent-soft: 65 36 2; }
+[data-mode='dark'][data-accent='grafit']   { --c-accent: 180 178 169; --c-accent-strong: 211 209 199; --c-accent-soft: 68 68 65; }
+[data-mode='dark'][data-accent='dengiz']   { --c-accent: 181 212 244; --c-accent-strong: 230 241 251; --c-accent-soft: 4 44 83; }
+
+/* Matn o'lchami: hamma o'lchamlar rem'da, shuning uchun butun ilova birga kattalashadi */
+html[data-size='s'] { font-size: 15px; }
+html[data-size='m'] { font-size: 16px; }
+html[data-size='l'] { font-size: 18px; }
+
+html, body, #root { height: 100%; }
+body {
+  @apply bg-bg text-ink font-sans antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
