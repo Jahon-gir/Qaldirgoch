@@ -2,6 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useRef, useState, ty
 import { useAuth } from '../auth/AuthProvider'
 import { supabase } from '../lib/supabase'
 import { clearProgressStorage } from '../progress/storage'
+import type { Direction } from '../content/german/types'
 import { PROFILE_SCHEMA_VERSION, type Answers, type Profile } from './questions'
 import { cleanText, decideSync, fetchRemoteProfile, normalizeProfile, pushRemoteProfile } from './sync'
 
@@ -44,6 +45,8 @@ type Ctx = {
   onboarded: boolean
   saveAnswers: (a: Answers) => void
   completeOnboarding: () => void
+  /** Nemis tili yoʻnalishini qoʻlda tanlash: profilda saqlanadi va akkaunt bilan sinxronlanadi. */
+  setGermanDirection: (d: Direction) => void
   sync: SyncPhase
   /** Serverga yuborilmagan oʻzgarish bor. */
   syncPending: boolean
@@ -182,11 +185,22 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
       ...a,
       professionOther: a.profession === 'other' ? cleanText(a.professionOther) : undefined,
       createdAt: profile?.createdAt ?? new Date().toISOString(),
-      schemaVersion: PROFILE_SCHEMA_VERSION
+      schemaVersion: PROFILE_SCHEMA_VERSION,
+      // Qoʻlda tanlangan yoʻnalish kasb oʻzgarmaguncha saqlanadi
+      germanDirection: profile && profile.profession === a.profession ? profile.germanDirection : undefined
     }
     setProfile(p)
     write(PROFILE_KEY, JSON.stringify(p))
     // Server bilan tanlov hal boʻlgandan keyingina yoziladi (hal boʻlmaguncha hech narsa ustiga yozilmaydi)
+    if (userId && phaseRef.current === 'ready') void push(userId, p)
+  }
+
+  const setGermanDirection = (d: Direction) => {
+    const cur = profileRef.current
+    if (!cur) return
+    const p: Profile = { ...cur, germanDirection: d }
+    setProfile(p)
+    write(PROFILE_KEY, JSON.stringify(p))
     if (userId && phaseRef.current === 'ready') void push(userId, p)
   }
 
@@ -228,7 +242,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
 
   return (
     <ProfileContext.Provider
-      value={{ profile, onboarded, saveAnswers, completeOnboarding, sync, syncPending, answerMigrate, answerChoose, signOutAndClear }}
+      value={{ profile, onboarded, saveAnswers, completeOnboarding, setGermanDirection, sync, syncPending, answerMigrate, answerChoose, signOutAndClear }}
     >
       {children}
     </ProfileContext.Provider>

@@ -6,7 +6,7 @@ kasbiy nemis tili va firibgarlikdan himoya.
 - Loyiha qoidalari: CLAUDE.md
 - Texnik topshiriq: docs/TZ.md
 
-Holat: 0.4.0 — Ausbildung yo'l xaritasi (10 bosqich), vazifa va hujjatlar progressi.
+Holat: 0.5.0 — Ausbildung yo'l xaritasi (10 bosqich) va nemis tili kursi (A1, 1-modul: 6 dars; kontent tekshiruvda).
 
 ## Lokal ishlab chiqish
 
@@ -22,7 +22,7 @@ npm test
 
 ## Supabase
 
-1. `supabase/migrations/0001_profiles.sql` va `0002_user_progress.sql` ni (shu tartibda) Supabase → SQL Editor'da qo'lda ishga tushiring.
+1. `supabase/migrations/0001_profiles.sql`, `0002_user_progress.sql` va `0003_user_lessons.sql` ni (shu tartibda) Supabase → SQL Editor'da qo'lda ishga tushiring.
 2. Authentication → Providers → Google ni yoqing (Google Cloud'dagi OAuth client ID va secret).
 3. Authentication → URL Configuration → Redirect URLs ga qo'shing:
    `https://jahon-gir.github.io/Qaldirgoch/` va `http://localhost:5173/`.

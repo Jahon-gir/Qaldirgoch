@@ -1,4 +1,4 @@
-import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { HashRouter, Navigate, Outlet, Route, Routes } from 'react-router-dom'
 import { AppShell } from './components/layout/AppShell'
 import { useAuth } from './auth/AuthProvider'
 import { SyncDialogs } from './components/SyncDialogs'
@@ -9,6 +9,8 @@ import Home from './pages/Home'
 import Roadmap from './pages/Roadmap'
 import StepDetail from './pages/StepDetail'
 import Language from './pages/Language'
+import ModulePage from './pages/german/ModulePage'
+import LessonPage from './pages/german/LessonPage'
 import Safety from './pages/Safety'
 import Assistant from './pages/Assistant'
 import Settings from './pages/Settings'
@@ -18,9 +20,10 @@ import ProfilePage from './pages/Profile'
 import Onboarding from './pages/onboarding/Onboarding'
 
 /** Onboarding tugamagan boʻlsa — avval u. */
-function RequireOnboarding() {
+function RequireOnboarding({ bare = false }: { bare?: boolean }) {
   const { onboarded } = useProfile()
-  return onboarded ? <AppShell /> : <Navigate to="/boshlash" replace />
+  if (!onboarded) return <Navigate to="/boshlash" replace />
+  return bare ? <Outlet /> : <AppShell />
 }
 
 /** Sessiya/akkaunt tekshirilayotganda (OAuth qaytishi) onboarding bir lahza ham yonib ketmasin. */
@@ -28,6 +31,32 @@ function useBooting() {
   const { status } = useAuth()
   const { sync, onboarded } = useProfile()
   return status === 'loading' || (status === 'signedIn' && sync === 'checking' && !onboarded)
+}
+
+/** Marshrutlar (testda MemoryRouter ichida ham ishlatiladi). */
+export function AppRoutes() {
+  return (
+    <Routes>
+      <Route path="boshlash" element={<Onboarding />} />
+      <Route element={<RequireOnboarding />}>
+        <Route index element={<Home />} />
+        <Route path="yol" element={<Roadmap />} />
+        <Route path="yol/:stepId" element={<StepDetail />} />
+        <Route path="til" element={<Language />} />
+        <Route path="til/modul/:moduleId" element={<ModulePage />} />
+        <Route path="xavfsizlik" element={<Safety />} />
+        <Route path="ai" element={<Assistant />} />
+        <Route path="sozlamalar" element={<Settings />} />
+        <Route path="sozlamalar/profil" element={<ProfilePage />} />
+        <Route path="sozlamalar/til" element={<InterfaceLanguage />} />
+        <Route path="sozlamalar/korinish" element={<Appearance />} />
+      </Route>
+      {/* Dars ekrani pastki menyusiz */}
+      <Route element={<RequireOnboarding bare />}>
+        <Route path="til/dars/:lessonId" element={<LessonPage />} />
+      </Route>
+    </Routes>
+  )
 }
 
 export default function App() {
@@ -45,21 +74,7 @@ export default function App() {
     <HashRouter>
       <UpdateBanner />
       <SyncDialogs />
-      <Routes>
-        <Route path="boshlash" element={<Onboarding />} />
-        <Route element={<RequireOnboarding />}>
-          <Route index element={<Home />} />
-          <Route path="yol" element={<Roadmap />} />
-          <Route path="yol/:stepId" element={<StepDetail />} />
-          <Route path="til" element={<Language />} />
-          <Route path="xavfsizlik" element={<Safety />} />
-          <Route path="ai" element={<Assistant />} />
-          <Route path="sozlamalar" element={<Settings />} />
-          <Route path="sozlamalar/profil" element={<ProfilePage />} />
-          <Route path="sozlamalar/til" element={<InterfaceLanguage />} />
-          <Route path="sozlamalar/korinish" element={<Appearance />} />
-        </Route>
-      </Routes>
+      <AppRoutes />
     </HashRouter>
   )
 }

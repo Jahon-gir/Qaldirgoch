@@ -4,15 +4,22 @@ import { Card } from '../components/ui/Card'
 import { Button } from '../components/ui/Button'
 import { ProgressBar } from '../components/ui/ProgressBar'
 import { AUSBILDUNG_STEPS } from '../content/ausbildung'
-import { useT } from '../i18n/I18nProvider'
 import { professionLabel } from '../profile/format'
 import { useProfile } from '../profile/ProfileProvider'
 import { useProgress } from '../progress/ProgressProvider'
+import { useI18n } from '../i18n/I18nProvider'
+import { useDirection } from '../german/useDirection'
+import { useLessons } from '../german/LessonsProvider'
+import { levelProgress, nextUnfinished } from '../german/logic'
 
 export default function Home() {
   const nav = useNavigate()
-  const t = useT()
+  const { lang, t } = useI18n()
   const { profile } = useProfile()
+  const { results } = useLessons()
+  const { direction } = useDirection()
+  const nextLesson = nextUnfinished(direction, results)
+  const a1 = levelProgress('A1', direction, results)
   const { summary } = useProgress()
   const currentStep = summary.currentIndex >= 0 ? AUSBILDUNG_STEPS[summary.currentIndex] : null
   // "Boshqa" tanlanib matn yozilmagan boʻlsa — kasb koʻrsatilmaydi
@@ -32,11 +39,11 @@ export default function Home() {
 
       <Card>
         <p className="text-sm text-ink-2">{t('home.german')}</p>
-        <p className="mt-0.5 text-lg font-semibold">{t('home.firstLesson')}</p>
+        <p className="mt-0.5 text-lg font-semibold">{!nextLesson ? t('german.allDone') : a1.done === 0 ? t('home.firstLesson') : nextLesson.title[lang]}</p>
         <div className="mt-3">
-          <ProgressBar value={0} label={t('home.progressLabel')} />
+          <ProgressBar value={a1.percent} tone="success" label={t('home.progressLabel')} />
         </div>
-        <p className="mt-1.5 text-sm text-ink-2">{t('home.lessonsSoon')}</p>
+        <p className="mt-1.5 text-sm text-ink-2">{t('german.homeCount', { n: a1.done, total: a1.total })}</p>
         <Button className="mt-3" onClick={() => nav('/til')}>
           {t('home.start')}
         </Button>

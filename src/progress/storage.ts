@@ -5,7 +5,8 @@
 export const PROGRESS_KEYS = {
   items: 'qaldirgoch.progress',
   pending: 'qaldirgoch.progress.pending', // { uid, ops }
-  synced: 'qaldirgoch.progress.synced' // mehmon progressi shu akkaunt bilan birlashtirilgan: foydalanuvchi id
+  synced: 'qaldirgoch.progress.synced', // mehmon progressi shu akkaunt bilan birlashtirilgan: foydalanuvchi id
+  lessons: 'qaldirgoch.lessons' // til darslari natijalari (user_lessons keshi)
 }
 
 export function read<T>(key: string, parse: (s: string) => T, fallback: T): T {
