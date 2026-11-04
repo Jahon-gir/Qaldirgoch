@@ -89,11 +89,6 @@ export default function CountryPage({ country }: { country: Country }) {
           </section>
         )}
 
-        {!open && (
-          <Link to="/yol/de" className="flex min-h-[48px] items-center justify-center rounded-btn bg-accent px-4 text-base font-semibold text-on-accent active:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
-            {t('countries.goDe')}
-          </Link>
-        )}
       </Overlap>
     </div>
   )

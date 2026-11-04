@@ -51,10 +51,10 @@ afterEach(() => {
 })
 
 describe('marshrut: davlatlar → yoʻllar', () => {
-  it('Bosh → belgi → Davlatlar → Germaniya → Ausbildung → bosqich → orqaga', () => {
+  it('Bosh → Yoʻl menyusi → Davlatlar → Germaniya → Ausbildung → bosqich → orqaga', () => {
     const errors = vi.spyOn(console, 'error').mockImplementation(() => undefined)
     renderApp('/')
-    link(/Tanlangan davlat: Germaniya/)
+    link('Yoʻl') // pastki menyu — doim davlatlar roʻyxatiga
     expect(where()).toBe('/yol')
     h1('Qaysi davlatni tanlaysiz?')
     expect(screen.getByText('Faqat qonuniy, tekshirilgan yoʻllar')).toBeTruthy()
@@ -75,7 +75,7 @@ describe('marshrut: davlatlar → yoʻllar', () => {
     errors.mockRestore()
   })
 
-  it('Davlatlar → Koreya → "Germaniyaga oʻtish"; yopiq davlat tanlovni oʻzgartirmaydi', () => {
+  it('Davlatlar → Koreya → orqaga; "oʻtish" tugmasi yoʻq; yopiq davlat tanlovni oʻzgartirmaydi', () => {
     renderApp('/yol')
     expect(savedProfile().selectedCountry).toBeUndefined()
     link(/^Janubiy Koreya/)
@@ -85,9 +85,10 @@ describe('marshrut: davlatlar → yoʻllar', () => {
     expect(screen.getByText('EPS davlatlararo dastur. «Tez joylashtiramiz» degan xususiy vositachilarga ishonmang.')).toBeTruthy()
     expect(screen.getByText('Yoʻl xaritasi, til kursi va talablar hali tekshirilmoqda')).toBeTruthy()
     expect(savedProfile().selectedCountry).toBeUndefined()
-    link('Germaniyaga oʻtish')
-    expect(where()).toBe('/yol/de')
-    h1('Germaniya')
+    expect(screen.queryByRole('link', { name: 'Germaniyaga oʻtish' })).toBeNull()
+    link('Davlatlar') // orqaga strelka
+    expect(where()).toBe('/yol')
+    h1('Qaysi davlatni tanlaysiz?')
   })
 
   it('yopiq davlat bosilganda profildagi tanlov oʻzgarmaydi (oldindan Germaniya)', () => {
@@ -102,7 +103,7 @@ describe('marshrut: davlatlar → yoʻllar', () => {
     expect(screen.queryByText('Yoʻl xaritasi, til kursi va talablar hali tekshirilmoqda')).toBeNull()
   })
 
-  it('Germaniya → Chancenkarte → "Ausbildung yoʻliga oʻtish"; rasmiy havola xavfsiz', () => {
+  it('Germaniya → Chancenkarte → orqaga; "oʻtish" tugmasi yoʻq; rasmiy havola xavfsiz', () => {
     renderApp('/yol/de')
     link(/^Chancenkarte/)
     expect(where()).toBe('/yol/de/chancenkarte')
@@ -112,9 +113,10 @@ describe('marshrut: davlatlar → yoʻllar', () => {
     expect(a.href).toBe('https://www.make-it-in-germany.com/en/for-qualified-professionals/visa/kinds-of-visa')
     expect(a.target).toBe('_blank')
     expect(a.rel).toContain('noopener')
-    link('Ausbildung yoʻliga oʻtish')
-    expect(where()).toBe('/yol/de/ausbildung')
-    h1('Sizning yoʻlingiz')
+    expect(screen.queryByRole('link', { name: 'Ausbildung yoʻliga oʻtish' })).toBeNull()
+    link('Orqaga')
+    expect(where()).toBe('/yol/de')
+    h1('Germaniya')
   })
 
   it('Koreya yoʻli tafsiloti: gov.uz manbasi va tekshiruvda belgisi', () => {
@@ -122,8 +124,10 @@ describe('marshrut: davlatlar → yoʻllar', () => {
     h1('EPS (E-9 viza)')
     expect(screen.getByTestId('source').textContent).toBe('Manba: gov.uz · tekshirilgan: 2026-11-04')
     expect(screen.getByText('Tekshiruvda')).toBeTruthy()
-    link('Germaniyaga oʻtish')
-    expect(where()).toBe('/yol/de')
+    expect(screen.queryByRole('link', { name: 'Germaniyaga oʻtish' })).toBeNull()
+    link('Orqaga')
+    expect(where()).toBe('/yol/kr')
+    h1('Janubiy Koreya')
   })
 
   it('eski havolalar yangi manzilga oʻtadi; notanish manzil boʻsh ekran bermaydi', () => {
@@ -145,10 +149,7 @@ describe('marshrut: davlatlar → yoʻllar', () => {
     }
   })
 
-  it('Bosh ekran belgisi tanlangan davlatni koʻrsatadi; kirill interfeysda ham', () => {
-    renderApp('/')
-    expect(screen.getByRole('link', { name: /Tanlangan davlat: Germaniya/ }).textContent).toContain('Germaniya')
-    cleanup()
+  it('kirill interfeysda davlatlar roʻyxati', () => {
     renderApp('/yol', { lang: 'uz-Cyrl' })
     expect(screen.getByRole('link', { name: /^Германия/ })).toBeTruthy()
     expect(screen.getByRole('link', { name: /^Жанубий Корея/ })).toBeTruthy()
