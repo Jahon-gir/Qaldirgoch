@@ -17,6 +17,7 @@ import Settings from './pages/Settings'
 import Appearance from './pages/Appearance'
 import InterfaceLanguage from './pages/InterfaceLanguage'
 import ProfilePage from './pages/Profile'
+import InstallGuide from './pages/InstallGuide'
 import Onboarding from './pages/onboarding/Onboarding'
 
 /** Onboarding tugamagan boʻlsa — avval u. */
@@ -51,6 +52,7 @@ export function AppRoutes() {
         <Route path="ai" element={<Assistant />} />
         <Route path="sozlamalar" element={<Settings />} />
         <Route path="sozlamalar/profil" element={<ProfilePage />} />
+        <Route path="sozlamalar/ornatish" element={<InstallGuide />} />
         <Route path="sozlamalar/til" element={<InterfaceLanguage />} />
         <Route path="sozlamalar/korinish" element={<Appearance />} />
       </Route>

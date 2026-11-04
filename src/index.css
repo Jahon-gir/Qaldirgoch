@@ -9,6 +9,7 @@
   --c-trust: 12 68 124; --c-trust-soft: 230 241 251; --c-trust-text: 12 68 124;
   --c-success: 29 158 117; --c-success-soft: 225 245 238; --c-success-text: 8 80 65;
   --c-danger: 163 45 45; --c-danger-soft: 252 235 235; --c-danger-text: 121 31 31;
+  --c-tint: 244 248 253;
   --c-on-accent: 255 255 255;
   color-scheme: light;
 }
@@ -18,6 +19,7 @@
   --c-trust: 133 183 235; --c-trust-soft: 4 44 83; --c-trust-text: 181 212 244;
   --c-success: 93 202 165; --c-success-soft: 4 52 44; --c-success-text: 159 225 203;
   --c-danger: 240 149 149; --c-danger-soft: 80 19 19; --c-danger-text: 247 193 193;
+  --c-tint: 33 41 52;
   --c-on-accent: 30 30 28;
   color-scheme: dark;
 }
