@@ -32,6 +32,7 @@ describe('toCyrillic', () => {
     ['Bir oz (A1)', 'Бир оз (A1)'],
     ['A1 dan B1 gacha', 'A1 дан B1 гача'],
     ['Ausbildungga', 'Ausbildungга'],
+    ['822 EUR, AufenthG 16a', '822 EUR, AufenthG 16а'],
     ['Kasb: {name}', 'Касб: {name}'],
     ['{n} / {total} bosqich', '{n} / {total} босқич'],
     ['18–24 yosh', '18–24 ёш'],

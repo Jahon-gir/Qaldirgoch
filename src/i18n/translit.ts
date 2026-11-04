@@ -6,7 +6,7 @@
  */
 
 /** Oʻgirilmaydigan lotin soʻzlar (aniq yozuvi bilan). Qoʻshimchali shakli ham saqlanadi: "Ausbildungda" → "Ausbildungда". */
-export const LATIN_EXCEPTIONS = ['Ausbildung', 'Google', 'Telegram', 'WhatsApp', 'AI', 'PWA', 'URL', 'Goethe', 'telc', 'ÖSD', 'TestDaF']
+export const LATIN_EXCEPTIONS = ['Ausbildung', 'Google', 'Telegram', 'WhatsApp', 'AI', 'PWA', 'URL', 'Goethe', 'telc', 'ÖSD', 'TestDaF', 'EUR', 'CV', 'AufenthG']
 
 const LEVEL = /^[ABC][12]/ // A1, A2, B1 … va "A1da" kabi shakllar
 

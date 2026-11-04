@@ -7,6 +7,7 @@ import { useT } from './i18n/I18nProvider'
 import { useProfile } from './profile/ProfileProvider'
 import Home from './pages/Home'
 import Roadmap from './pages/Roadmap'
+import StepDetail from './pages/StepDetail'
 import Language from './pages/Language'
 import Safety from './pages/Safety'
 import Assistant from './pages/Assistant'
@@ -49,6 +50,7 @@ export default function App() {
         <Route element={<RequireOnboarding />}>
           <Route index element={<Home />} />
           <Route path="yol" element={<Roadmap />} />
+          <Route path="yol/:stepId" element={<StepDetail />} />
           <Route path="til" element={<Language />} />
           <Route path="xavfsizlik" element={<Safety />} />
           <Route path="ai" element={<Assistant />} />

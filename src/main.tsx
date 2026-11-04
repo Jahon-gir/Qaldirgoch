@@ -6,6 +6,7 @@ import { ThemeProvider } from './theme/ThemeProvider'
 import { I18nProvider } from './i18n/I18nProvider'
 import { AuthProvider } from './auth/AuthProvider'
 import { ProfileProvider } from './profile/ProfileProvider'
+import { ProgressProvider } from './progress/ProgressProvider'
 import App from './App'
 
 createRoot(document.getElementById('root')!).render(
@@ -14,7 +15,9 @@ createRoot(document.getElementById('root')!).render(
       <I18nProvider>
         <AuthProvider>
           <ProfileProvider>
-            <App />
+            <ProgressProvider>
+              <App />
+            </ProgressProvider>
           </ProfileProvider>
         </AuthProvider>
       </I18nProvider>
