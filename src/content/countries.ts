@@ -39,21 +39,21 @@ export const COUNTRIES: Country[] = [
       {
         id: 'ausbildung', icon: 'tools', status: 'open', ...base,
         name: l3('Ausbildung', 'Ausbildung', 'Ausbildung'),
-        short: l3('Ishlab oʻqish: kasb va maosh bilan', 'Ишлаб ўқиш: касб ва маош билан', 'Обучение с работой: профессия и зарплата')
+        short: l3('Korxonada ishlab, kasb oʻrganish', 'Корхонада ишлаб, касб ўрганиш', 'Учёба профессии с работой на предприятии')
       },
       {
         id: 'chancenkarte', icon: 'ticket', status: 'locked', ...base,
         name: l3('Chancenkarte', 'Chancenkarte', 'Chancenkarte'),
-        short: l3('Imkoniyat kartasi bilan ish qidirish', 'Имконият картаси билан иш қидириш', 'Поиск работы по карте возможностей')
+        short: l3('Ish qidirish uchun karta', 'Иш қидириш учун карта', 'Карта для поиска работы')
       },
       {
         id: 'tan-oldirish', icon: 'certificate', status: 'locked', ...base,
-        name: l3('Tan oldirish', 'Тан олдириш', 'Признание диплома'),
+        name: l3('Malakani tan oldirish', 'Малакани тан олдириш', 'Признание квалификации'),
         short: l3('Diplomni tan oldirish, hamshiralik ham', 'Дипломни тан олдириш, ҳамширалик ҳам', 'Признание диплома, в том числе медсестёр')
       },
       {
         id: 'mutaxassis', icon: 'briefcase', status: 'locked', ...base,
-        name: l3('Mutaxassis', 'Мутахассис', 'Специалист'),
+        name: l3('Malakali mutaxassis', 'Малакали мутахассис', 'Квалифицированный специалист'),
         short: l3('Tan olingan kasb va ish taklifi bilan', 'Тан олинган касб ва иш таклифи билан', 'С признанной профессией и предложением работы')
       },
       {
