@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react'
 import { useAuth } from '../auth/AuthProvider'
 import { supabase } from '../lib/supabase'
+import { clearProgressStorage } from '../progress/storage'
 import { PROFILE_SCHEMA_VERSION, type Answers, type Profile } from './questions'
 import { cleanText, decideSync, fetchRemoteProfile, normalizeProfile, pushRemoteProfile } from './sync'
 
@@ -219,6 +220,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
   const signOutAndClear = async () => {
     await auth.signOut()
     for (const k of [PROFILE_KEY, DONE_KEY, DIRTY_KEY, SYNCED_KEY]) write(k, null)
+    clearProgressStorage()
     // To'liq qayta yuklash: xotiradagi holat ham tozalanadi (umumiy telefon)
     window.location.hash = '#/boshlash?kirish=1'
     window.location.reload()

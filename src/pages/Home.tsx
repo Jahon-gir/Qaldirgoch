@@ -3,16 +3,18 @@ import { IconChevronRight, IconRoute, IconSettings, IconShieldCheck } from '@tab
 import { Card } from '../components/ui/Card'
 import { Button } from '../components/ui/Button'
 import { ProgressBar } from '../components/ui/ProgressBar'
-import { AUSBILDUNG_STEPS, stepKey } from '../content/roadmap'
+import { AUSBILDUNG_STEPS } from '../content/ausbildung'
 import { useT } from '../i18n/I18nProvider'
 import { professionLabel } from '../profile/format'
 import { useProfile } from '../profile/ProfileProvider'
+import { useProgress } from '../progress/ProgressProvider'
 
 export default function Home() {
   const nav = useNavigate()
   const t = useT()
   const { profile } = useProfile()
-  const current = 0
+  const { summary } = useProgress()
+  const currentStep = summary.currentIndex >= 0 ? AUSBILDUNG_STEPS[summary.currentIndex] : null
   // "Boshqa" tanlanib matn yozilmagan boʻlsa — kasb koʻrsatilmaydi
   const showProfession = profile && (profile.profession !== 'other' || profile.professionOther)
   return (
@@ -46,8 +48,8 @@ export default function Home() {
             <IconRoute size={22} aria-hidden />
           </span>
           <span className="flex-1">
-            <span className="block font-semibold">{t('home.road', { n: current + 1, total: AUSBILDUNG_STEPS.length })}</span>
-            <span className="block text-sm text-ink-2">{t('home.now', { step: t(stepKey(AUSBILDUNG_STEPS[current])) })}</span>
+            <span className="block text-base font-semibold">{t('home.road', { n: summary.done, total: summary.total })}</span>
+            <span className="block text-base text-ink-2">{currentStep ? t('home.now', { step: t(currentStep.title) }) : t('roadmap.allDone')}</span>
           </span>
           <IconChevronRight size={20} className="text-ink-3" aria-hidden />
         </Card>
