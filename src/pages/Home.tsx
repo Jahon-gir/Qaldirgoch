@@ -1,5 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
-import { IconChevronRight, IconRoute, IconSettings, IconShieldCheck } from '@tabler/icons-react'
+import { IconChevronDown, IconChevronRight, IconRoute, IconSettings, IconShieldCheck } from '@tabler/icons-react'
+import { Flag } from '../components/countries/Flag'
+import { AUSBILDUNG_PATH, countryById } from '../content/countries'
 import { Card } from '../components/ui/Card'
 import { Button } from '../components/ui/Button'
 import { ProgressBar } from '../components/ui/ProgressBar'
@@ -15,7 +17,8 @@ import { levelProgress, nextUnfinished } from '../german/logic'
 export default function Home() {
   const nav = useNavigate()
   const { lang, t } = useI18n()
-  const { profile } = useProfile()
+  const { profile, selectedCountry } = useProfile()
+  const country = countryById(selectedCountry)!
   const { results } = useLessons()
   const { direction } = useDirection()
   const nextLesson = nextUnfinished(direction, results)
@@ -26,15 +29,26 @@ export default function Home() {
   const showProfession = profile && (profile.profession !== 'other' || profile.professionOther)
   return (
     <div className="space-y-3">
-      <header className="flex items-center justify-between py-1">
-        <div>
+      <header className="py-1">
+        <div className="flex items-center justify-between gap-2">
           <p className="text-sm text-ink-2">{t('home.welcome')}</p>
-          <h1 className="text-2xl font-semibold">{t('app.name')}</h1>
-          {showProfession && <p className="text-sm text-ink-2">{t('home.profession', { name: professionLabel(profile, t) })}</p>}
+          <div className="flex items-center gap-2">
+            <Link
+              to="/yol"
+              aria-label={t('countries.selected', { name: country.name[lang] })}
+              className="flex min-h-[44px] items-center gap-1.5 rounded-full border border-line bg-surface px-3 text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              <Flag id={country.id} size="sm" />
+              <span>{country.name[lang]}</span>
+              <IconChevronDown size={18} className="text-ink-3" aria-hidden />
+            </Link>
+            <Link to="/sozlamalar" aria-label={t('home.settings')} className="flex h-11 w-11 items-center justify-center rounded-full bg-surface text-ink-2">
+              <IconSettings size={22} aria-hidden />
+            </Link>
+          </div>
         </div>
-        <Link to="/sozlamalar" aria-label={t('home.settings')} className="flex h-11 w-11 items-center justify-center rounded-full bg-surface text-ink-2">
-          <IconSettings size={22} aria-hidden />
-        </Link>
+        <h1 className="text-2xl font-semibold">{t('app.name')}</h1>
+        {showProfession && <p className="text-sm text-ink-2">{t('home.profession', { name: professionLabel(profile, t) })}</p>}
       </header>
 
       <Card>
@@ -49,7 +63,7 @@ export default function Home() {
         </Button>
       </Card>
 
-      <Link to="/yol" className="block">
+      <Link to={AUSBILDUNG_PATH} className="block">
         <Card className="flex items-center gap-3">
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-trust-soft text-trust-text">
             <IconRoute size={22} aria-hidden />

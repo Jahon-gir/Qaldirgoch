@@ -97,3 +97,12 @@ describe('nemis tili yoʻnalishi profilda', () => {
     expect(upsert.mock.calls[0][0].data.germanDirection).toBe('hospitality')
   })
 })
+
+describe('tanlangan davlat profilda', () => {
+  it('ochiq davlat saqlanadi; yopiq yoki notoʻgʻri qiymat tashlanadi', () => {
+    expect(normalizeProfile({ ...base, selectedCountry: 'de' })?.selectedCountry).toBe('de')
+    expect(normalizeProfile({ ...base, selectedCountry: 'kr' })?.selectedCountry).toBeUndefined()
+    expect(normalizeProfile({ ...base, selectedCountry: 5 })?.selectedCountry).toBeUndefined()
+    expect(normalizeProfile(base)?.selectedCountry).toBeUndefined()
+  })
+})
