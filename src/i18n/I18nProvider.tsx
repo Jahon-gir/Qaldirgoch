@@ -2,6 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState, t
 import { uz, type Dict, type Key } from './uz'
 import { ru } from './ru'
 import { toCyrillic } from './translit'
+import { cyrlOverrides } from './cyrl'
 
 export type Lang = 'uz' | 'uz-Cyrl' | 'ru'
 export const LANGS: { id: Lang; name: string }[] = [
@@ -27,6 +28,7 @@ function dict(lang: Lang): Dict {
   if (lang === 'ru') return ru
   if (lang === 'uz') return uz
   if (!cyrl) cyrl = Object.fromEntries(Object.entries(uz).map(([k, v]) => [k, toCyrillic(v)])) as Dict
+    Object.assign(cyrl, cyrlOverrides)
   return cyrl
 }
 
