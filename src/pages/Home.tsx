@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
-import { IconChevronDown, IconChevronRight, IconRoute, IconSettings, IconShieldCheck } from '@tabler/icons-react'
-import { Flag } from '../components/countries/Flag'
-import { AUSBILDUNG_PATH, countryById } from '../content/countries'
+import { IconChevronRight, IconRoute, IconSettings, IconShieldCheck } from '@tabler/icons-react'
+import { Logo } from '../components/Logo'
+import { AUSBILDUNG_PATH } from '../content/countries'
 import { Card } from '../components/ui/Card'
 import { Button } from '../components/ui/Button'
 import { ProgressBar } from '../components/ui/ProgressBar'
@@ -17,8 +17,7 @@ import { levelProgress, nextUnfinished } from '../german/logic'
 export default function Home() {
   const nav = useNavigate()
   const { lang, t } = useI18n()
-  const { profile, selectedCountry } = useProfile()
-  const country = countryById(selectedCountry)!
+  const { profile } = useProfile()
   const { results } = useLessons()
   const { direction } = useDirection()
   const nextLesson = nextUnfinished(direction, results)
@@ -29,27 +28,17 @@ export default function Home() {
   const showProfession = profile && (profile.profession !== 'other' || profile.professionOther)
   return (
     <div className="space-y-3">
-      <header className="py-1">
-        <div className="flex items-center justify-between gap-2">
-          <p className="text-sm text-ink-2">{t('home.welcome')}</p>
-          <div className="flex items-center gap-2">
-            <Link
-              to="/yol"
-              aria-label={t('countries.selected', { name: country.name[lang] })}
-              className="flex min-h-[44px] items-center gap-1.5 rounded-full border border-line bg-surface px-3 text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-            >
-              <Flag id={country.id} size="sm" />
-              <span>{country.name[lang]}</span>
-              <IconChevronDown size={18} className="text-ink-3" aria-hidden />
-            </Link>
-            <Link to="/sozlamalar" aria-label={t('home.settings')} className="flex h-11 w-11 items-center justify-center rounded-full bg-surface text-ink-2">
-              <IconSettings size={22} aria-hidden />
-            </Link>
-          </div>
-        </div>
-        <h1 className="text-2xl font-semibold">{t('app.name')}</h1>
+      <h1 className="sr-only">{t('app.name')}</h1>
+      <div className="flex justify-end">
+        <Link to="/sozlamalar" aria-label={t('home.settings')} className="flex h-11 w-11 items-center justify-center rounded-full bg-surface text-ink-2">
+          <IconSettings size={22} aria-hidden />
+        </Link>
+      </div>
+      <div className="flex flex-col items-center pb-2 text-center">
+        <Logo />
+        <p className="mt-3 text-xl font-medium">{t('home.welcome')}</p>
         {showProfession && <p className="text-sm text-ink-2">{t('home.profession', { name: professionLabel(profile, t) })}</p>}
-      </header>
+      </div>
 
       <Card>
         <p className="text-sm text-ink-2">{t('home.german')}</p>
