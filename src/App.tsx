@@ -1,5 +1,9 @@
 import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { AppShell } from './components/layout/AppShell'
+import { useAuth } from './auth/AuthProvider'
+import { SyncDialogs } from './components/SyncDialogs'
+import { UpdateBanner } from './components/UpdateBanner'
+import { useT } from './i18n/I18nProvider'
 import { useProfile } from './profile/ProfileProvider'
 import Home from './pages/Home'
 import Roadmap from './pages/Roadmap'
@@ -18,9 +22,28 @@ function RequireOnboarding() {
   return onboarded ? <AppShell /> : <Navigate to="/boshlash" replace />
 }
 
+/** Sessiya/akkaunt tekshirilayotganda (OAuth qaytishi) onboarding bir lahza ham yonib ketmasin. */
+function useBooting() {
+  const { status } = useAuth()
+  const { sync, onboarded } = useProfile()
+  return status === 'loading' || (status === 'signedIn' && sync === 'checking' && !onboarded)
+}
+
 export default function App() {
+  const t = useT()
+  const booting = useBooting()
+  if (booting) {
+    return (
+      <div role="status" className="flex min-h-full flex-col items-center justify-center gap-3">
+        <img src="./icon.svg" alt="" width={72} height={72} className="h-[72px] w-[72px]" />
+        <p className="text-ink-2">{t('sync.loading')}</p>
+      </div>
+    )
+  }
   return (
     <HashRouter>
+      <UpdateBanner />
+      <SyncDialogs />
       <Routes>
         <Route path="boshlash" element={<Onboarding />} />
         <Route element={<RequireOnboarding />}>

@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import { AccountBlock } from '../components/AccountBlock'
 import { PageHeader } from '../components/layout/PageHeader'
 import { Button } from '../components/ui/Button'
 import { Card } from '../components/ui/Card'
@@ -27,6 +28,7 @@ export default function ProfilePage() {
   return (
     <div className="space-y-3">
       <PageHeader title={t('profile.title')} back />
+      <AccountBlock />
       <Card className="py-1">
         {profile ? (
           <dl>

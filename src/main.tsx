@@ -4,6 +4,7 @@ import './fonts.css'
 import './index.css'
 import { ThemeProvider } from './theme/ThemeProvider'
 import { I18nProvider } from './i18n/I18nProvider'
+import { AuthProvider } from './auth/AuthProvider'
 import { ProfileProvider } from './profile/ProfileProvider'
 import App from './App'
 
@@ -11,9 +12,11 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider>
       <I18nProvider>
-        <ProfileProvider>
-          <App />
-        </ProfileProvider>
+        <AuthProvider>
+          <ProfileProvider>
+            <App />
+          </ProfileProvider>
+        </AuthProvider>
       </I18nProvider>
     </ThemeProvider>
   </StrictMode>
