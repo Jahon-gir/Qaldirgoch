@@ -1,0 +1,43 @@
+import type { Key } from '../i18n/uz'
+
+export const AGE = ['under18', '18-24', '25-30', '31-35', '36plus'] as const
+export const EDUCATION = ['school', 'college', 'higher', 'studying'] as const
+export const PROFESSION = ['electrician', 'welder', 'mechanic', 'nurse', 'cook', 'construction', 'other'] as const
+export const GERMAN = ['none', 'a1', 'a2', 'b1'] as const
+export const DAILY = ['15', '30', '60'] as const
+export const DEPARTURE = ['unknown', '1y', '1-2y'] as const
+
+export type Answers = {
+  ageRange: (typeof AGE)[number]
+  education: (typeof EDUCATION)[number]
+  profession: (typeof PROFESSION)[number]
+  professionOther?: string
+  germanLevel: (typeof GERMAN)[number]
+  dailyTime: (typeof DAILY)[number]
+  departure: (typeof DEPARTURE)[number]
+}
+export type Profile = Answers & { createdAt: string }
+export type QuestionId = Exclude<keyof Answers, 'professionOther'>
+
+/** Onboarding savollari tartibi. Matnlar lugʻatda: q.<lugʻat nomi>.<qiymat>. */
+export const QUESTIONS: { id: QuestionId; dict: string; options: readonly string[]; hint?: boolean }[] = [
+  { id: 'ageRange', dict: 'age', options: AGE },
+  { id: 'education', dict: 'education', options: EDUCATION, hint: true },
+  { id: 'profession', dict: 'profession', options: PROFESSION },
+  { id: 'germanLevel', dict: 'germanLevel', options: GERMAN },
+  { id: 'dailyTime', dict: 'dailyTime', options: DAILY },
+  { id: 'departure', dict: 'departure', options: DEPARTURE }
+]
+
+export const qKey = (q: (typeof QUESTIONS)[number], part: string) => `q.${q.dict}.${part}` as Key
+
+/** Javob matni uchun lugʻat kaliti. */
+export function answerKey(id: QuestionId, value: string): Key {
+  const q = QUESTIONS.find((x) => x.id === id)!
+  return qKey(q, value)
+}
+
+/** Javoblar toʻliq va toʻgʻri qiymatlardan iboratmi (localStorage buzilgan boʻlishi mumkin). */
+export function isComplete(a: Partial<Answers>): a is Answers {
+  return QUESTIONS.every((q) => typeof a[q.id] === 'string' && q.options.includes(a[q.id] as string))
+}

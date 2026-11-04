@@ -6,30 +6,32 @@ import { ProgressBar } from '../components/ui/ProgressBar'
 import { Segmented } from '../components/ui/Segmented'
 import { ACCENTS } from '../theme/presets'
 import { useTheme } from '../theme/ThemeProvider'
+import { useT } from '../i18n/I18nProvider'
 
 export default function Appearance() {
   const t = useTheme()
+  const tr = useT()
   return (
     <div className="space-y-5">
-      <PageHeader title="Ko'rinish" back />
+      <PageHeader title={tr('settings.appearance')} back />
 
       <section>
-        <h2 className="mb-2 text-sm text-ink-2">Rejim</h2>
+        <h2 className="mb-2 text-sm text-ink-2">{tr('appearance.mode')}</h2>
         <Segmented
-          label="Rejim"
+          label={tr('appearance.mode')}
           value={t.mode}
           onChange={(mode) => t.set({ mode })}
           options={[
-            { value: 'light', label: "Yorug'" },
-            { value: 'dark', label: "Qorong'i" },
-            { value: 'auto', label: 'Avto' }
+            { value: 'light', label: tr('appearance.light') },
+            { value: 'dark', label: tr('appearance.dark') },
+            { value: 'auto', label: tr('appearance.auto') }
           ]}
         />
       </section>
 
       <section>
-        <h2 className="mb-2 text-sm text-ink-2">Asosiy rang</h2>
-        <div role="radiogroup" aria-label="Asosiy rang" className="grid grid-cols-4 gap-y-3">
+        <h2 className="mb-2 text-sm text-ink-2">{tr('appearance.accent')}</h2>
+        <div role="radiogroup" aria-label={tr('appearance.accent')} className="grid grid-cols-4 gap-y-3">
           {ACCENTS.map((a) => {
             const on = a.id === t.accent
             const color = a.swatch[t.isDark ? 1 : 0]
@@ -41,7 +43,7 @@ export default function Appearance() {
                 >
                   {on && <IconCheck size={20} className="text-on-accent" aria-hidden />}
                 </span>
-                <span className={`text-xs ${on ? 'font-semibold' : 'text-ink-2'}`}>{a.name}</span>
+                <span className={`text-sm ${on ? 'font-semibold' : 'text-ink-2'}`}>{tr(`accent.${a.id}`)}</span>
               </button>
             )
           })}
@@ -49,31 +51,31 @@ export default function Appearance() {
       </section>
 
       <section>
-        <h2 className="mb-2 text-sm text-ink-2">Matn o'lchami</h2>
+        <h2 className="mb-2 text-sm text-ink-2">{tr('appearance.size')}</h2>
         <Segmented
-          label="Matn o'lchami"
+          label={tr('appearance.size')}
           value={t.size}
           onChange={(size) => t.set({ size })}
           options={[
-            { value: 's', label: <span className="text-sm">A</span>, ariaLabel: 'Kichik' },
-            { value: 'm', label: <span className="text-base">A</span>, ariaLabel: "O'rtacha" },
-            { value: 'l', label: <span className="text-lg">A</span>, ariaLabel: 'Katta' }
+            { value: 's', label: <span className="text-sm">A</span>, ariaLabel: tr('appearance.sizeS') },
+            { value: 'm', label: <span className="text-base">A</span>, ariaLabel: tr('appearance.sizeM') },
+            { value: 'l', label: <span className="text-lg">A</span>, ariaLabel: tr('appearance.sizeL') }
           ]}
         />
       </section>
 
       <section>
-        <h2 className="mb-2 text-sm text-ink-2">Namuna</h2>
+        <h2 className="mb-2 text-sm text-ink-2">{tr('appearance.sample')}</h2>
         <Card>
-          <p className="font-semibold">Nemis tili A1</p>
+          <p className="font-semibold">{tr('appearance.sampleTitle')}</p>
           <div className="mt-2">
-            <ProgressBar value={35} label="Namuna progress" />
+            <ProgressBar value={35} label={tr('appearance.sampleProgress')} />
           </div>
           <Button className="mt-3" tabIndex={-1}>
-            Davom ettirish
+            {tr('appearance.sampleButton')}
           </Button>
         </Card>
-        <p className="mt-2 px-1 text-sm text-ink-3">Xavf ogohlantirishlari doim qizil, muvaffaqiyat belgilari doim yashil qoladi.</p>
+        <p className="mt-2 px-1 text-sm text-ink-3">{tr('appearance.note')}</p>
       </section>
     </div>
   )

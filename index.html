@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#F1EFE8" />
-    <meta name="description" content="Chet elda qonuniy ishlash uchun yo'l ko'rsatuvchi" />
+    <meta name="description" content="Chet elda qonuniy ish sari ishonchli yoʻl" />
     <link rel="icon" href="./icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-    <title>Qaldirg'och</title>
+    <title>Qaldirgʻoch</title>
     <script>
-      // Mavzuni sahifa chizilishidan oldin qo'llash (oq "miltillash" bo'lmasin)
+      // Mavzu va tilni sahifa chizilishidan oldin qo'llash (oq "miltillash" bo'lmasin)
       (function () {
         try {
           var s = JSON.parse(localStorage.getItem('qaldirgoch.theme') || '{}')
@@ -19,6 +19,8 @@
           r.dataset.mode = dark ? 'dark' : 'light'
           r.dataset.accent = s.accent || 'marjon'
           r.dataset.size = s.size || 'm'
+          var l = localStorage.getItem('qaldirgoch.lang')
+          if (l === 'uz' || l === 'uz-Cyrl' || l === 'ru') r.lang = l
         } catch (e) {}
       })()
     </script>
