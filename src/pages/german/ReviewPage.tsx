@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState, type ReactNode } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { IconCheck, IconFlameFilled, IconVolume, IconX } from '@tabler/icons-react'
 import { Button } from '../../components/ui/Button'
 import { ProgressBar } from '../../components/ui/ProgressBar'
@@ -8,6 +8,7 @@ import { useBack, useHistoryAnchor } from '../../lib/useHistoryAnchor'
 import { daysBetween, isFirstAttempt, pickOptions, sessionAnswer, sessionCurrent, sessionDone, sessionSummary, startSession, type Session } from '../../german/srs'
 import { useSpeech } from '../../german/useSpeech'
 import { useWords } from '../../german/WordsProvider'
+import { useFeedback } from '../../ui/useFeedback'
 
 /** Toʻgʻri javobdan keyin keyingi soʻzga oʻtish (xato javobda — "Davom etish" tugmasi). */
 export const RIGHT_ADVANCE_MS = 1500
@@ -20,6 +21,8 @@ function Question({ session, onAnswered }: { session: Session; onAnswered: (corr
   const { lang, t } = useI18n()
   const speech = useSpeech()
   const { words, today, answer } = useWords()
+  const fx = useFeedback()
+  const refs = useRef<Record<string, HTMLButtonElement | null>>({})
   const id = sessionCurrent(session)!
   const word = wordById(id)!
   // Variantlar shu savol uchun bir marta aralashtiriladi
@@ -39,6 +42,8 @@ function Question({ session, onAnswered }: { session: Session; onAnswered: (corr
   const pick = (optionId: string) => {
     if (answered) return
     setPicked(optionId)
+    if (optionId === word.id) fx.right(refs.current[optionId])
+    else fx.wrong()
     answer(id, optionId === word.id, isFirstAttempt(session, id))
   }
   const dueIn = Math.max(1, daysBetween(today, words[id]?.due ?? today))
@@ -70,13 +75,17 @@ function Question({ session, onAnswered }: { session: Session; onAnswered: (corr
             wrong: 'border-danger bg-danger-soft text-danger-text',
             dim: 'border-line bg-surface text-ink-3'
           }[state]
+          const fxCls = picked === o.id ? (o.correct ? 'fx-pop' : 'fx-shake') : ''
           return (
             <button
               key={o.id}
+              ref={(el) => {
+                refs.current[o.id] = el
+              }}
               type="button"
               disabled={answered}
               onClick={() => pick(o.id)}
-              className={`flex min-h-[52px] w-full items-center justify-between gap-3 rounded-btn border-2 px-4 py-2 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${cls}`}
+              className={`flex min-h-[52px] w-full items-center justify-between gap-3 rounded-btn border-2 px-4 py-2 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${cls} ${fxCls}`}
             >
               {o.text}
               {state === 'right' && <IconCheck size={24} aria-label={t('german.right')} />}

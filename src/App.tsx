@@ -12,6 +12,8 @@ import Language from './pages/Language'
 import ModulePage from './pages/german/ModulePage'
 import LessonPage from './pages/german/LessonPage'
 import ReviewPage from './pages/german/ReviewPage'
+import VocabPage from './pages/german/VocabPage'
+import VocabLessonPage from './pages/german/VocabLessonPage'
 import Safety from './pages/Safety'
 import Assistant from './pages/Assistant'
 import Settings from './pages/Settings'
@@ -57,10 +59,12 @@ export function AppRoutes() {
         <Route path="sozlamalar/til" element={<InterfaceLanguage />} />
         <Route path="sozlamalar/korinish" element={<Appearance />} />
       </Route>
-      {/* Dars va takrorlash ekranlari pastki menyusiz */}
+      {/* Dars, takrorlash va lugʻat ekranlari pastki menyusiz */}
       <Route element={<RequireOnboarding bare />}>
         <Route path="til/dars/:lessonId" element={<LessonPage />} />
         <Route path="til/takrorlash" element={<ReviewPage />} />
+        <Route path="til/lugat" element={<VocabPage />} />
+        <Route path="til/lugat/:lessonId" element={<VocabLessonPage />} />
       </Route>
     </Routes>
   )

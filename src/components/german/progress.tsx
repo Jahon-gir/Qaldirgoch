@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { IconCalendarCheck, IconCheck, IconFlameFilled } from '@tabler/icons-react'
+import { IconCalendarCheck, IconCheck, IconChevronRight, IconFlameFilled } from '@tabler/icons-react'
 import { Card } from '../ui/Card'
 import { useI18n } from '../../i18n/I18nProvider'
 import type { Key } from '../../i18n/uz'
@@ -109,7 +109,8 @@ export function ReviewCard({ due, nextDue, today, hasWords }: { due: number; nex
 
 /* ---------- Soʻzlar holati ---------- */
 
-export function WordsBreakdown({ words }: { words: Words }) {
+/** to — berilsa kartochka bosiladigan (Lugʻatga olib boradi). */
+export function WordsBreakdown({ words, to }: { words: Words; to?: string }) {
   const t = useI18n().t
   const c = statusCounts(words)
   const parts = [
@@ -117,9 +118,12 @@ export function WordsBreakdown({ words }: { words: Words }) {
     { key: 'learning', n: c.learning, bar: 'bg-trust', label: t('words.learning') },
     { key: 'strong', n: c.strong, bar: 'bg-success', label: t('words.strong') }
   ]
-  return (
+  const card = (
     <Card className="space-y-3">
-      <h2 className="text-lg font-semibold">{t('words.title', { n: c.total })}</h2>
+      <div className="flex min-h-[44px] items-center justify-between gap-2">
+        <h2 className="text-lg font-semibold">{t('words.title', { n: c.total })}</h2>
+        {to && <IconChevronRight size={22} className="shrink-0 text-ink-3" aria-hidden />}
+      </div>
       <div role="img" aria-label={`${t('words.bar')}: ${parts.map((p) => `${p.label} ${p.n}`).join(', ')}`} className="flex h-3 w-full gap-0.5 overflow-hidden rounded-full bg-surface-2">
         {c.total > 0 && parts.filter((p) => p.n > 0).map((p) => <span key={p.key} className={`h-full ${p.bar}`} style={{ width: `${(p.n / c.total) * 100}%` }} />)}
       </div>
@@ -132,5 +136,12 @@ export function WordsBreakdown({ words }: { words: Words }) {
         ))}
       </ul>
     </Card>
+  )
+  return to ? (
+    <Link to={to} className="block rounded-card focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
+      {card}
+    </Link>
+  ) : (
+    card
   )
 }

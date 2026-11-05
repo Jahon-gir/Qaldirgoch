@@ -3,6 +3,7 @@ import { IconCheck, IconX } from '@tabler/icons-react'
 import { Button } from '../ui/Button'
 import { Card } from '../ui/Card'
 import { useI18n } from '../../i18n/I18nProvider'
+import { useFeedback } from '../../ui/useFeedback'
 import type { ChoiceExercise, MatchExercise, WordExercise } from '../../content/german'
 import { choiceOutcome, isCorrectOption, isMatchingPair, matchColumns, matchOutcome, wordOutcome, type Outcome } from '../../german/logic'
 import { LESSON_ICONS } from './icons'
@@ -46,6 +47,8 @@ export function WordStep({ ex, speech, onDone }: { ex: WordExercise; speech: Spe
 
 export function ChoiceStep({ ex, onDone }: { ex: ChoiceExercise; onDone: (o: Outcome) => void }) {
   const { lang, t } = useI18n()
+  const fx = useFeedback()
+  const refs = useRef<Record<string, HTMLButtonElement | null>>({})
   const [picked, setPicked] = useState<string | null>(null)
   const answered = picked !== null
   const ok = answered && isCorrectOption(ex, picked)
@@ -74,14 +77,22 @@ export function ChoiceStep({ ex, onDone }: { ex: ChoiceExercise; onDone: (o: Out
             wrong: 'border-danger bg-danger-soft text-danger-text',
             dim: 'border-line bg-surface text-ink-3'
           }[state]
+          const fxCls = chosen ? (o.correct ? 'fx-pop' : 'fx-shake') : ''
           return (
             <button
               key={o.id}
+              ref={(el) => {
+                refs.current[o.id] = el
+              }}
               type="button"
               lang="de"
               disabled={answered}
-              onClick={() => setPicked(o.id)}
-              className={`flex min-h-[48px] w-full items-center justify-between gap-3 rounded-btn border-2 px-4 py-2 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${cls}`}
+              onClick={() => {
+                setPicked(o.id)
+                if (o.correct) fx.right(refs.current[o.id])
+                else fx.wrong()
+              }}
+              className={`flex min-h-[48px] w-full items-center justify-between gap-3 rounded-btn border-2 px-4 py-2 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${cls} ${fxCls}`}
             >
               {o.text}
               {state === 'right' && <IconCheck size={24} aria-label={t('german.right')} />}
@@ -117,6 +128,8 @@ const FLASH_WRONG_MS = 600
 
 export function MatchStep({ ex, onDone }: { ex: MatchExercise; onDone: (o: Outcome) => void }) {
   const { lang, t } = useI18n()
+  const fx = useFeedback()
+  const rightRefs = useRef<Record<string, HTMLButtonElement | null>>({})
   const cols = useMemo(() => matchColumns(ex), [ex])
   const [sel, setSel] = useState<string | null>(null)
   const [matched, setMatched] = useState<string[]>([])
@@ -151,18 +164,20 @@ export function MatchStep({ ex, onDone }: { ex: MatchExercise; onDone: (o: Outco
     if (isMatchingPair(ex, sel, id)) {
       setMatched([...matched, id])
       setLive(t('german.pairRight'))
+      fx.right(rightRefs.current[id])
     } else {
       wrongLefts.current.add(sel) // xato juft hisoblanadi
       setWrong({ left: sel, right: id })
       setLive(t('german.pairWrong'))
+      fx.wrong()
     }
     setSel(null)
   }
 
   const itemCls = (id: string, side: 'left' | 'right') => {
     if (gone.includes(id)) return 'invisible border-transparent'
-    if (matched.includes(id)) return 'border-success bg-success-soft text-success-text'
-    if (wrong && wrong[side] === id) return 'border-danger bg-danger-soft text-danger-text'
+    if (matched.includes(id)) return 'fx-pop border-success bg-success-soft text-success-text'
+    if (wrong && wrong[side] === id) return 'fx-shake border-danger bg-danger-soft text-danger-text'
     if (side === 'left' && sel === id) return 'border-accent bg-accent-soft font-semibold'
     return 'border-line bg-surface active:bg-surface-2'
   }
@@ -184,7 +199,7 @@ export function MatchStep({ ex, onDone }: { ex: MatchExercise; onDone: (o: Outco
         </div>
         <div className="space-y-2" role="group" aria-label={t('german.matchTranslation')}>
           {cols.right.map((p) => (
-            <button key={p.id} type="button" aria-hidden={gone.includes(p.id) || undefined} tabIndex={gone.includes(p.id) ? -1 : undefined} onClick={() => pickRight(p.id)} className={`${base} ${itemCls(p.id, 'right')}`}>
+            <button key={p.id} ref={(el) => { rightRefs.current[p.id] = el }} type="button" aria-hidden={gone.includes(p.id) || undefined} tabIndex={gone.includes(p.id) ? -1 : undefined} onClick={() => pickRight(p.id)} className={`${base} ${itemCls(p.id, 'right')}`}>
               {matched.includes(p.id) && <IconCheck size={18} aria-hidden />}
               {wrong?.right === p.id && <IconX size={18} aria-hidden />}
               {p.tr[lang]}

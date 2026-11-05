@@ -81,7 +81,7 @@ export default function Language() {
           <p className="text-lg font-semibold">{t('german.allDone')}</p>
         )}
       </div>
-      <WordsBreakdown words={words} />
+      <WordsBreakdown words={words} to="/til/lugat" />
 
       <div role="group" aria-label={t('german.levels')} className="grid grid-cols-3 gap-2">
         {LEVELS.map((lv) => {

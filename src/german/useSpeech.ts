@@ -19,6 +19,10 @@ const getSynth = (): SpeechSynthesis | null => (typeof window !== 'undefined' &&
 export function useSpeech() {
   const [hasVoice, setHasVoice] = useState<boolean | null>(() => (getSynth() ? (germanVoice(getSynth()) ? true : null) : false))
   const audioRef = useRef<HTMLAudioElement | null>(null)
+  /** Hozir oʻqilmoqdami (tugmani toʻq rangda koʻrsatish uchun). Hodisa kelmasa ham taymer bilan oʻchadi. */
+  const [speaking, setSpeaking] = useState(false)
+  const stopTimer = useRef<number | undefined>(undefined)
+  const seq = useRef(0)
 
   // Ovozlar brauzerda kechroq yuklanadi: voiceschanged'ni kutamiz, kelmasa "yoʻq" deymiz
   useEffect(() => {
@@ -37,6 +41,7 @@ export function useSpeech() {
     }
     return () => {
       window.clearTimeout(timer)
+      window.clearTimeout(stopTimer.current)
       try {
         synth.removeEventListener?.('voiceschanged', check)
         synth.cancel()
@@ -51,6 +56,17 @@ export function useSpeech() {
   const canSpeak = useCallback((audioUrl?: string) => !!audioUrl || hasVoice !== false, [hasVoice])
 
   const speak = useCallback((text: string, opts: { audioUrl?: string; slow?: boolean } = {}) => {
+    const mine = ++seq.current
+    const begin = () => {
+      setSpeaking(true)
+      window.clearTimeout(stopTimer.current)
+      stopTimer.current = window.setTimeout(() => setSpeaking(false), 6000) // end hodisasi kelmasa
+    }
+    const end = () => {
+      if (mine !== seq.current) return // yangi oʻqish boshlangan: eskisining tugashi uni oʻchirmasin
+      window.clearTimeout(stopTimer.current)
+      setSpeaking(false)
+    }
     try {
       audioRef.current?.pause()
       getSynth()?.cancel()
@@ -58,6 +74,8 @@ export function useSpeech() {
         const a = new Audio(opts.audioUrl)
         if (opts.slow) a.playbackRate = 0.7
         audioRef.current = a
+        a.onended = end
+        begin()
         // play() Promise qaytaradi: rad etilishi ekranni buzmasin
         void Promise.resolve(a.play()).catch(() => undefined)
         return
@@ -69,11 +87,14 @@ export function useSpeech() {
       u.rate = opts.slow ? 0.7 : 1
       const voice = germanVoice(synth)
       if (voice) u.voice = voice
+      u.onend = end
+      u.onerror = end
+      begin()
       synth.speak(u)
     } catch {
       /* ovoz ishlamasa ham mashq davom etadi */
     }
   }, [])
 
-  return { canSpeak, speak }
+  return { canSpeak, speak, speaking }
 }
