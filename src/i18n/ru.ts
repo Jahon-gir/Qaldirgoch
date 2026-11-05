@@ -336,9 +336,9 @@ export const ru: Dict = {
   'update.action': 'Обновить',
 
   'german.goal.title': 'Цель на сегодня',
-  'german.goal.left': 'Осталось упражнений: {n}',
+  'german.goal.left': 'Осталось: {n} (урок или повторение)',
   'german.goal.done': 'Цель на сегодня выполнена',
-  'german.goal.ring': 'Сегодня {n} из {goal} упражнений',
+  'german.goal.ring': 'Сегодня {n} из {goal} (уроки и повторения)',
   'german.week.label': 'Дни этой недели',
   'german.week.0': 'П',
   'german.week.1': 'В',
@@ -387,5 +387,5 @@ export const ru: Dict = {
   'home.goalLabel': 'Прогресс цели на сегодня',
   'home.reviewWaiting': 'Слов ждут повторения: {n}',
   'settings.dailyGoal': 'Ежедневная цель',
-  'settings.goalN': '{n} упражнений'
+  'settings.goalN': 'В день: {n} (урок или повторение)'
 }

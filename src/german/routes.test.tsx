@@ -112,11 +112,11 @@ describe('marshrut: Bosh → Til → modul → dars → natija → modulga qayti
     expect(screen.getByRole('heading', { name: 'Salomlashish va tanishuv' })).toBeTruthy()
     expect(screen.getByText('1 / 6 dars')).toBeTruthy()
     expect(JSON.parse(localStorage.getItem('qaldirgoch.lessons')!)['a1-m1-l1']).toMatchObject({ score: 6, total: 7 })
-    // Dars soʻzlari takrorlash qutisiga tushdi (ertaga keladi), har mashq kunlik maqsadga qoʻshildi
+    // Dars soʻzlari takrorlash qutisiga tushdi (ertaga keladi); dars oxirigacha tugagani uchun kunlik maqsadga +1 (8 mashq emas)
     const words = JSON.parse(localStorage.getItem('qaldirgoch.words')!)
     expect(Object.keys(words)).toEqual(['a1-m1-hallo', 'a1-m1-guten-morgen', 'a1-m1-guten-tag', 'a1-m1-guten-abend'])
     expect(words['a1-m1-hallo']).toMatchObject({ due: addDays(localDay(), 1), interval: 1, mistakes: 0 })
-    expect(JSON.parse(localStorage.getItem('qaldirgoch.activity')!)[localDay()].count).toBe(8)
+    expect(JSON.parse(localStorage.getItem('qaldirgoch.activity')!)[localDay()]).toMatchObject({ count: 1, goal: 1 })
     expect(errors).not.toHaveBeenCalled()
     errors.mockRestore()
   })

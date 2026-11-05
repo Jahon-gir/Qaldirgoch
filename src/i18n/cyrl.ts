@@ -11,9 +11,9 @@ export const cyrlOverrides: Partial<Dict> = {
   'install.add': 'Бош экранга қўшиш',
   'install.already': 'Илова аллақачон ўрнатилган.',
   'german.goal.title': 'Бугунги мақсад',
-  'german.goal.left': 'Яна {n} та машқ қолди',
+  'german.goal.left': 'Яна {n} та дарс ёки такрорлаш қолди',
   'german.goal.done': 'Бугунги мақсад бажарилди',
-  'german.goal.ring': 'Бугун {n} / {goal} машқ',
+  'german.goal.ring': 'Бугун {n} / {goal} дарс ёки такрорлаш',
   'german.week.label': 'Шу ҳафта кунлари',
   'german.week.0': 'Д',
   'german.week.1': 'С',
@@ -62,5 +62,5 @@ export const cyrlOverrides: Partial<Dict> = {
   'home.goalLabel': 'Бугунги мақсад бўйича прогресс',
   'home.reviewWaiting': '{n} та сўз такрорлашни кутяпти',
   'settings.dailyGoal': 'Кунлик мақсад',
-  'settings.goalN': '{n} та машқ'
+  'settings.goalN': 'кунига {n} дарс ёки такрорлаш'
 }

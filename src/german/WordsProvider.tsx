@@ -4,7 +4,7 @@ import { WORD_IDS, wordIdsOfLesson } from '../content/german/words'
 import { supabase } from '../lib/supabase'
 import { useProfile } from '../profile/ProfileProvider'
 import { PROGRESS_KEYS, read, write } from '../progress/storage'
-import { activityToPush, addExercises, applyForgiveness, mergeActivity, sanitizeActivity, setTodayGoal, streakInfo, todayProgress, type Activity } from './daily'
+import { activityToPush, addDone, applyForgiveness, mergeActivity, migrateTodayRow, sanitizeActivity, setTodayGoal, streakInfo, todayProgress, type Activity } from './daily'
 import { useLessons } from './LessonsProvider'
 import { addNewWords, answerWord, dueWordIds, localDay, mergeWords, sanitizeWords, wordsToPush, type Day, type Words } from './srs'
 import { fetchRemoteActivity, fetchRemoteWords, pushRemoteActivity, pushRemoteWords } from './wordsRemote'
@@ -20,9 +20,9 @@ type Ctx = {
   streak: ReturnType<typeof streakInfo>
   /** Soʻzlar takrorlash qutisiga (bor boʻlsa — tegilmaydi). */
   learn: (ids: string[]) => void
-  /** Mashq bajarildi (kunlik maqsad uchun). */
-  addExercise: (n?: number) => void
-  /** Takrorlash javobi: mashq +1; schedule — true boʻlsa jadval oʻzgaradi (sessiyadagi birinchi javob). */
+  /** Dars yoki takrorlash OXIRIGACHA tugatildi (natija ekrani ochilganda): kunlik maqsad +1. Tashlab chiqilgani hisoblanmaydi. */
+  addDone: () => void
+  /** Takrorlash javobi: schedule — true boʻlsa jadval oʻzgaradi (sessiyadagi birinchi javob). Kunlik maqsadga tegmaydi. */
   answer: (wordId: string, correct: boolean, schedule: boolean) => void
 }
 const WordsContext = createContext<Ctx | null>(null)
@@ -81,9 +81,9 @@ export function WordsProvider({ children }: { children: ReactNode }) {
     if (next !== wordsRef.current) commitWords(next)
   }, [results, today, commitWords])
 
-  // Maqsad oʻzgarsa — bugungi kunga yoziladi; oʻtkazilgan kun uchun kechirim (sof hisob: daily.ts)
+  // Eski birlikdagi (mashq) bugungi yozuv oʻtkaziladi; maqsad oʻzgarsa — bugungi kunga yoziladi; oʻtkazilgan kun uchun kechirim (sof hisob: daily.ts)
   useEffect(() => {
-    const next = applyForgiveness(setTodayGoal(actRef.current, today, dailyGoal), today, dailyGoal)
+    const next = applyForgiveness(setTodayGoal(migrateTodayRow(actRef.current, today, dailyGoal), today, dailyGoal), today, dailyGoal)
     if (next !== actRef.current) commitActivity(next)
   }, [today, dailyGoal, activity, commitActivity])
 
@@ -106,7 +106,8 @@ export function WordsProvider({ children }: { children: ReactNode }) {
         const [serverWords, serverAct] = await Promise.all([fetchRemoteWords(client, userId), fetchRemoteActivity(client, userId)])
         if (cancelled) return
         const mergedWords = mergeWords(snapshot, serverWords, firstSync ? 'migrate' : 'sync')
-        const mergedAct = mergeActivity(actRef.current, serverAct)
+        // Serverda eski birlikdagi bugungi yozuv boʻlishi mumkin: birlashtirgandan keyin oʻtkaziladi
+        const mergedAct = migrateTodayRow(mergeActivity(actRef.current, serverAct), localDay(), goalRef.current)
         await pushRemoteWords(client, userId, wordsToPush(mergedWords, serverWords))
         await pushRemoteActivity(client, userId, activityToPush(mergedAct, serverAct))
         if (cancelled) return
@@ -116,7 +117,7 @@ export function WordsProvider({ children }: { children: ReactNode }) {
         const next = { ...mergedWords }
         for (const [id, st] of Object.entries(latest)) if (st !== snapshot[id]) next[id] = st
         commitWords(next)
-        commitActivity(mergeActivity(actRef.current, mergedAct))
+        commitActivity(migrateTodayRow(mergeActivity(actRef.current, mergedAct), localDay(), goalRef.current))
       } catch {
         // Tarmoq xatosi: mahalliy nusxa bilan ishlayveradi, internet qaytganda qayta uriniladi
       } finally {
@@ -147,22 +148,16 @@ export function WordsProvider({ children }: { children: ReactNode }) {
     [commitWords, kick]
   )
 
-  const addExercise = useCallback(
-    (n = 1) => {
-      const next = addExercises(actRef.current, localDay(), n, goalRef.current)
-      if (next === actRef.current) return
-      commitActivity(next)
-      kick()
-    },
-    [commitActivity, kick]
-  )
+  const done = useCallback(() => {
+    commitActivity(addDone(actRef.current, localDay(), goalRef.current))
+    kick()
+  }, [commitActivity, kick])
 
   const answer = useCallback(
     (wordId: string, correct: boolean, schedule: boolean) => {
       const day = localDay()
       const cur = wordsRef.current[wordId]
       if (schedule && cur) commitWords({ ...wordsRef.current, [wordId]: answerWord(cur, correct, day, new Date().toISOString()) })
-      commitActivity(addExercises(actRef.current, day, 1, goalRef.current))
       kick()
     },
     [commitWords, commitActivity, kick]
@@ -178,10 +173,10 @@ export function WordsProvider({ children }: { children: ReactNode }) {
       progress: todayProgress(activity, today, dailyGoal),
       streak: streakInfo(activity, today, dailyGoal),
       learn,
-      addExercise,
+      addDone: done,
       answer
     }),
-    [words, activity, today, dailyGoal, learn, addExercise, answer]
+    [words, activity, today, dailyGoal, learn, done, answer]
   )
   return <WordsContext.Provider value={value}>{children}</WordsContext.Provider>
 }

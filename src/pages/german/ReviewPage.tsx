@@ -159,11 +159,19 @@ export default function ReviewPage() {
   const { t } = useI18n()
   useHistoryAnchor('/til')
   const back = useBack('/til')
-  const { due } = useWords()
+  const { due, addDone } = useWords()
   // Sessiya ochilgan paytdagi soʻzlar bilan boshlanadi (javob berilgani roʻyxatdan chiqib ketmasin)
   const [session, setSession] = useState<Session>(() => startSession(due.filter((id) => wordById(id))))
   const finished = sessionDone(session)
-  const onAnswered = useCallback((correct: boolean) => setSession((s) => sessionAnswer(s, correct)), [])
+  const onAnswered = useCallback(
+    (correct: boolean) => {
+      const next = sessionAnswer(session, correct)
+      setSession(next)
+      // Kunlik maqsad +1: sessiya OXIRIGACHA tugadi (natija ekrani ochiladi); X bilan tashlab chiqilgani sanalmaydi
+      if (sessionDone(next) && !sessionDone(session)) addDone()
+    },
+    [session, addDone]
+  )
 
   useEffect(() => {
     window.scrollTo(0, 0)

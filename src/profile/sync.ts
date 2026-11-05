@@ -1,6 +1,6 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
 import { countryById } from '../content/countries'
-import { isGoal } from '../german/daily'
+import { normalizeGoal } from '../german/daily'
 import { isDirection } from '../german/logic'
 import { isComplete, PROFILE_SCHEMA_VERSION, QUESTIONS, type Answers, type Profile } from './questions'
 
@@ -34,7 +34,7 @@ export function normalizeProfile(raw: unknown): Profile | null {
     schemaVersion: PROFILE_SCHEMA_VERSION,
     germanDirection: isDirection(g) ? (g as Profile['germanDirection']) : undefined,
     selectedCountry: typeof sc === 'string' && countryById(sc)?.status === 'open' ? (sc as Profile['selectedCountry']) : undefined,
-    dailyGoal: isGoal(goal) ? goal : undefined
+    dailyGoal: normalizeGoal(goal) // eski 10/15/20 → 1/2/3
   }
 }
 

@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { IconChevronRight, IconDeviceMobileDown, IconLanguage, IconPalette, IconTarget, IconUser, type Icon } from '@tabler/icons-react'
 import { PageHeader } from '../components/layout/PageHeader'
 import { Card } from '../components/ui/Card'
-import { Segmented } from '../components/ui/Segmented'
 import { GOALS, type DailyGoal } from '../german/daily'
 import { useProfile } from '../profile/ProfileProvider'
 import { LANGS, useI18n } from '../i18n/I18nProvider'
@@ -44,7 +43,7 @@ function InstallRow() {
   )
 }
 
-/** "Kunlik maqsad": 10 / 15 / 20 mashq (profilda dailyGoal). */
+/** "Kunlik maqsad": 1 / 2 / 3 (dars yoki takrorlash), har birining ostida qisqa izoh (profilda dailyGoal). */
 function GoalRow() {
   const t = useI18n().t
   const { profile, dailyGoal, setDailyGoal } = useProfile()
@@ -55,12 +54,29 @@ function GoalRow() {
         <IconTarget size={22} className="text-accent-strong" aria-hidden />
         {t('settings.dailyGoal')}
       </p>
-      <Segmented<string>
-        label={t('settings.dailyGoal')}
-        value={String(dailyGoal)}
-        onChange={(v) => setDailyGoal(Number(v) as DailyGoal)}
-        options={GOALS.map((g) => ({ value: String(g), label: <span className="text-base">{g}</span>, ariaLabel: t('settings.goalN', { n: g }) }))}
-      />
+      <div role="radiogroup" aria-label={t('settings.dailyGoal')} className="space-y-2">
+        {GOALS.map((g) => {
+          const on = g === dailyGoal
+          return (
+            <button
+              key={g}
+              type="button"
+              role="radio"
+              aria-checked={on}
+              aria-label={t('settings.goalN', { n: g })}
+              onClick={() => setDailyGoal(g as DailyGoal)}
+              className={`flex min-h-[56px] w-full flex-col justify-center rounded-btn border-2 px-4 py-2 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${on ? 'border-accent bg-accent-soft' : 'border-line bg-surface active:bg-surface-2'}`}
+            >
+              <span aria-hidden className="text-lg font-semibold">
+                {g}
+              </span>
+              <span aria-hidden className="text-base text-ink-2">
+                {t('settings.goalN', { n: g })}
+              </span>
+            </button>
+          )
+        })}
+      </div>
     </div>
   )
 }

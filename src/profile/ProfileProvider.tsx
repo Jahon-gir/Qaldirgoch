@@ -52,7 +52,7 @@ type Ctx = {
   /** Tanlangan davlat (yopiq davlatda tanlov oʻzgarmaydi). Profilda saqlanadi va akkaunt bilan sinxronlanadi. */
   selectedCountry: CountryId
   selectCountry: (id: CountryId) => void
-  /** Kunlik maqsad (mashqlar soni). Profilda saqlanadi va akkaunt bilan sinxronlanadi. */
+  /** Kunlik maqsad (tugatilgan dars yoki takrorlash soni: 1 / 2 / 3). Profilda saqlanadi va akkaunt bilan sinxronlanadi. */
   dailyGoal: DailyGoal
   setDailyGoal: (g: DailyGoal) => void
   sync: SyncPhase

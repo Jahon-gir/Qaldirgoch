@@ -2,20 +2,48 @@ import { addDays, daysBetween, isDay, type Day } from './srs'
 
 /* ---------- Kunlik maqsad ---------- */
 
-export const GOALS = [10, 15, 20] as const
+/** Birlik — tugatilgan dars yoki takrorlash sessiyasi (0.6.1 gacha — mashq: 10 / 15 / 20). */
+export const GOALS = [1, 2, 3] as const
 export type DailyGoal = (typeof GOALS)[number]
-export const DEFAULT_GOAL: DailyGoal = 10
+export const DEFAULT_GOAL: DailyGoal = 1
 export const isGoal = (v: unknown): v is DailyGoal => typeof v === 'number' && (GOALS as readonly number[]).includes(v)
 
-/** Bir kun: bajarilgan mashqlar soni, oʻsha kungi maqsad va shu kun "kechirim" bilan oʻtkazilganmi. */
+/** Eski birlik (mashq): maqsad shu qiymatlardan biri edi; yozuvda maqsad boʻlmasa 10 deb oʻqiladi. */
+export const LEGACY_GOAL = 10
+const LEGACY_GOALS: Record<number, DailyGoal> = { 10: 1, 15: 2, 20: 3 }
+const MAX_GOAL = GOALS[GOALS.length - 1]
+
+/**
+ * Profildagi dailyGoal (localStorage yoki server): 10 → 1, 15 → 2, 20 → 3, 1/2/3 oʻzgarmaydi,
+ * boshqa notoʻgʻri qiymat → 1; yoʻq boʻlsa undefined (standart). Takror chaqirilsa natija oʻzgarmaydi.
+ */
+export function normalizeGoal(v: unknown): DailyGoal | undefined {
+  if (v === undefined || v === null) return undefined
+  if (isGoal(v)) return v
+  return (typeof v === 'number' && LEGACY_GOALS[v]) || DEFAULT_GOAL
+}
+
+/** Bir kun: tugatilgan dars va takrorlash soni, oʻsha kungi maqsad va shu kun "kechirim" bilan oʻtkazilganmi. */
 export type DayActivity = { count: number; goal: number; forgiven: boolean }
 export type Activity = Record<Day, DayActivity>
 
-/** Mashq bajarildi (dars mashqi yoki takrorlash javobi). Kunga oʻsha paytdagi maqsad yoziladi. */
-export function addExercises(act: Activity, today: Day, n: number, goal: number): Activity {
+/**
+ * Eski birlikdagi (mashq) bugungi yozuv yangi birlikka oʻtkaziladi: eski maqsad bajarilgan boʻlsa soni = yangi maqsad,
+ * aks holda 0; maqsad = yangi maqsad. Oʻtgan kunlar tegilmaydi — ular oʻz maqsadi bilan baholanaveradi.
+ * Eski yozuv belgisi: maqsad 3 dan katta (yangi maqsad 1–3). Takror chaqirilsa oʻzgarmaydi.
+ */
+export function migrateTodayRow(act: Activity, today: Day, goal: number): Activity {
+  const cur = act[today]
+  if (!cur || cur.goal <= MAX_GOAL || !isGoal(goal)) return act // yangi maqsad 1–3 boʻlmasa tegilmaydi (cheksiz qayta yozishdan himoya)
+  return { ...act, [today]: { ...cur, count: cur.count >= cur.goal ? goal : 0, goal } }
+}
+
+/** Dars yoki takrorlash OXIRIGACHA tugatildi (+1). Kunga oʻsha paytdagi maqsad yoziladi. */
+export function addDone(act: Activity, today: Day, goal: number, n = 1): Activity {
   if (!Number.isInteger(n) || n <= 0) return act
-  const cur = act[today] ?? { count: 0, goal, forgiven: false }
-  return { ...act, [today]: { ...cur, count: cur.count + n, goal } }
+  const base = migrateTodayRow(act, today, goal) // eski birlikdagi bugungi yozuvga yangisi qoʻshilib ketmasin
+  const cur = base[today] ?? { count: 0, goal, forgiven: false }
+  return { ...base, [today]: { ...cur, count: cur.count + n, goal } }
 }
 
 /** Maqsad oʻzgardi: faqat bugungi kun yangilanadi (oʻtgan kunlar oʻz maqsadi bilan qoladi). */
@@ -110,13 +138,13 @@ export function sanitizeActivity(raw: unknown): Activity {
     const { count, goal, forgiven } = v as Record<string, unknown>
     if (!Number.isInteger(count) || (count as number) < 0 || (count as number) > 100000) continue
     // Maqsadi yoʻq eski yozuvlar (0.6.0 gacha) — standart 10
-    const g = Number.isInteger(goal) && (goal as number) >= 1 && (goal as number) <= 1000 ? (goal as number) : DEFAULT_GOAL
+    const g = Number.isInteger(goal) && (goal as number) >= 1 && (goal as number) <= 1000 ? (goal as number) : LEGACY_GOAL
     out[d] = { count: count as number, goal: g, forgiven: forgiven === true }
   }
   return out
 }
 
-/** Har kun boʻyicha: kattaroq mashqlar soni yutadi (maqsadi ham shu nusxadan, teng boʻlsa kattarogʻi); kechirim — biror nusxada boʻlsa. */
+/** Har kun boʻyicha: kattaroq son yutadi (maqsadi ham shu nusxadan, teng boʻlsa kattarogʻi); kechirim — biror nusxada boʻlsa. */
 export function mergeActivity(a: Activity, b: Activity): Activity {
   const out: Activity = { ...a }
   for (const [d, v] of Object.entries(b)) {
