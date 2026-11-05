@@ -5,7 +5,7 @@ import { clearProgressStorage } from '../progress/storage'
 import { countryById, effectiveCountry, type CountryId } from '../content/countries'
 import type { Direction } from '../content/german/types'
 import { DEFAULT_GOAL, isGoal, type DailyGoal } from '../german/daily'
-import { PROFILE_SCHEMA_VERSION, type Answers, type Profile } from './questions'
+import { PROFILE_SCHEMA_VERSION, VOCAB_FRONTS, VOCAB_MODES, type Answers, type Profile, type VocabFront, type VocabMode } from './questions'
 import { cleanText, decideSync, fetchRemoteProfile, normalizeProfile, pushRemoteProfile } from './sync'
 
 export { cleanText }
@@ -55,6 +55,13 @@ type Ctx = {
   /** Kunlik maqsad (tugatilgan dars yoki takrorlash soni: 1 / 2 / 3). Profilda saqlanadi va akkaunt bilan sinxronlanadi. */
   dailyGoal: DailyGoal
   setDailyGoal: (g: DailyGoal) => void
+  /** Lugʻat: mashq usuli va old tomoni (profilda saqlanadi; standart — roʻyxat, nemischa). */
+  vocabMode: VocabMode
+  vocabFront: VocabFront
+  setVocabPrefs: (p: { mode?: VocabMode; front?: VocabFront }) => void
+  /** Ovoz effektlari (standart yoqilgan). */
+  soundEffects: boolean
+  setSoundEffects: (on: boolean) => void
   sync: SyncPhase
   /** Mehmon akkauntga kirib "yangidan boshlash"ni tanladi: mahalliy soʻzlar va faollik akkauntga koʻchirilmaydi. */
   guestDiscarded: boolean
@@ -200,7 +207,10 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
       // Qoʻlda tanlangan yoʻnalish kasb oʻzgarmaguncha saqlanadi
       germanDirection: profile && profile.profession === a.profession ? profile.germanDirection : undefined,
       selectedCountry: profile?.selectedCountry,
-      dailyGoal: profile?.dailyGoal
+      dailyGoal: profile?.dailyGoal,
+      vocabMode: profile?.vocabMode,
+      vocabFront: profile?.vocabFront,
+      soundEffects: profile?.soundEffects
     }
     setProfile(p)
     write(PROFILE_KEY, JSON.stringify(p))
@@ -230,6 +240,27 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
     const cur = profileRef.current
     if (!cur || !isGoal(g) || (cur.dailyGoal ?? DEFAULT_GOAL) === g) return
     const p: Profile = { ...cur, dailyGoal: g }
+    setProfile(p)
+    write(PROFILE_KEY, JSON.stringify(p))
+    if (userId && phaseRef.current === 'ready') void push(userId, p)
+  }
+
+  const setVocabPrefs = (v: { mode?: VocabMode; front?: VocabFront }) => {
+    const cur = profileRef.current
+    if (!cur) return
+    const mode = v.mode && VOCAB_MODES.includes(v.mode) ? v.mode : cur.vocabMode
+    const front = v.front && VOCAB_FRONTS.includes(v.front) ? v.front : cur.vocabFront
+    if (mode === cur.vocabMode && front === cur.vocabFront) return
+    const p: Profile = { ...cur, vocabMode: mode, vocabFront: front }
+    setProfile(p)
+    write(PROFILE_KEY, JSON.stringify(p))
+    if (userId && phaseRef.current === 'ready') void push(userId, p)
+  }
+
+  const setSoundEffects = (on: boolean) => {
+    const cur = profileRef.current
+    if (!cur || (cur.soundEffects ?? true) === on) return
+    const p: Profile = { ...cur, soundEffects: on }
     setProfile(p)
     write(PROFILE_KEY, JSON.stringify(p))
     if (userId && phaseRef.current === 'ready') void push(userId, p)
@@ -274,7 +305,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
 
   return (
     <ProfileContext.Provider
-      value={{ profile, onboarded, saveAnswers, completeOnboarding, setGermanDirection, selectedCountry: effectiveCountry(profile?.selectedCountry), selectCountry, dailyGoal: profile?.dailyGoal ?? DEFAULT_GOAL, setDailyGoal, sync, guestDiscarded, syncPending, answerMigrate, answerChoose, signOutAndClear }}
+      value={{ profile, onboarded, saveAnswers, completeOnboarding, setGermanDirection, selectedCountry: effectiveCountry(profile?.selectedCountry), selectCountry, dailyGoal: profile?.dailyGoal ?? DEFAULT_GOAL, setDailyGoal, vocabMode: profile?.vocabMode ?? 'list', vocabFront: profile?.vocabFront ?? 'de', setVocabPrefs, soundEffects: profile?.soundEffects ?? true, setSoundEffects, sync, guestDiscarded, syncPending, answerMigrate, answerChoose, signOutAndClear }}
     >
       {children}
     </ProfileContext.Provider>

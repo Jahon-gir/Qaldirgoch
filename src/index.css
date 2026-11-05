@@ -10,6 +10,9 @@
   --c-success: 29 158 117; --c-success-soft: 225 245 238; --c-success-text: 8 80 65;
   --c-danger: 163 45 45; --c-danger-soft: 252 235 235; --c-danger-text: 121 31 31;
   --c-tint: 244 248 253;
+  --c-head: 12 68 124; --c-head-line: 12 68 124;
+  --c-vf: 230 241 251; --c-vb: 181 212 244; --c-vink: 12 68 124; --c-vedge: 230 241 251;
+  --c-vbtn: 24 95 165; --c-vbtn-on: 4 44 83; --c-vbtn-ink: 255 255 255;
   --c-on-accent: 255 255 255;
   color-scheme: light;
 }
@@ -20,6 +23,9 @@
   --c-success: 93 202 165; --c-success-soft: 4 52 44; --c-success-text: 159 225 203;
   --c-danger: 240 149 149; --c-danger-soft: 80 19 19; --c-danger-text: 247 193 193;
   --c-tint: 33 41 52;
+  --c-head: 24 95 165; --c-head-line: 133 183 235;
+  --c-vf: 12 68 124; --c-vb: 4 44 83; --c-vink: 230 241 251; --c-vedge: 133 183 235;
+  --c-vbtn: 133 183 235; --c-vbtn-on: 55 138 221; --c-vbtn-ink: 4 44 83;
   --c-on-accent: 30 30 28;
   color-scheme: dark;
 }
@@ -51,4 +57,26 @@ html, body, #root { height: 100%; }
 body {
   @apply bg-bg text-ink font-sans antialiased;
   -webkit-tap-highlight-color: transparent;
+}
+
+/* Toʻgʻri / xato javob effekti (src/ui/feedback.ts). Faqat transform/opacity */
+@keyframes fx-pop { 0% { transform: scale(1); } 50% { transform: scale(1.04); } 100% { transform: scale(1); } }
+@keyframes fx-shake { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-5px); } 40% { transform: translateX(5px); } 60% { transform: translateX(-5px); } 80% { transform: translateX(5px); } }
+.fx-pop { animation: fx-pop 0.35s ease-out; }
+.fx-shake { animation: fx-shake 0.3s ease-in-out; }
+
+/* Lugʻat kartochkasi: suzish (3,2 s) va 3D aylanish (0,6 s) */
+@keyframes card-float { 0%, 100% { transform: translateY(0) rotate(-0.4deg); } 50% { transform: translateY(-8px) rotate(0.4deg); } }
+@keyframes card-shadow { 0%, 100% { transform: scale(1); opacity: 0.35; } 50% { transform: scale(0.82); opacity: 0.2; } }
+.card-float { animation: card-float 3.2s ease-in-out infinite; }
+.card-shadow { animation: card-shadow 3.2s ease-in-out infinite; }
+.card-persp { perspective: 900px; }
+.card-flip { transform-style: preserve-3d; transition: transform 0.6s; }
+.card-flip[data-flipped='true'] { transform: rotateY(180deg); }
+.card-face { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.card-back { transform: rotateY(180deg); }
+
+@media (prefers-reduced-motion: reduce) {
+  .fx-pop, .fx-shake, .card-float, .card-shadow { animation: none; }
+  .card-flip { transition: none; }
 }

@@ -2,7 +2,7 @@ import type { SupabaseClient } from '@supabase/supabase-js'
 import { countryById } from '../content/countries'
 import { normalizeGoal } from '../german/daily'
 import { isDirection } from '../german/logic'
-import { isComplete, PROFILE_SCHEMA_VERSION, QUESTIONS, type Answers, type Profile } from './questions'
+import { isComplete, PROFILE_SCHEMA_VERSION, QUESTIONS, VOCAB_FRONTS, VOCAB_MODES, type Answers, type Profile } from './questions'
 
 /** Foydalanuvchi yozgan matn: boshqaruv belgilarisiz, qisqa. Ekranga React orqali (escape bilan) chiqadi. */
 export function cleanText(s: string | undefined): string | undefined {
@@ -20,6 +20,9 @@ export function normalizeProfile(raw: unknown): Profile | null {
   const g = (raw as { germanDirection?: unknown }).germanDirection
   const sc = (raw as { selectedCountry?: unknown }).selectedCountry
   const goal = (raw as { dailyGoal?: unknown }).dailyGoal
+  const vm = (raw as { vocabMode?: unknown }).vocabMode
+  const vf = (raw as { vocabFront?: unknown }).vocabFront
+  const se = (raw as { soundEffects?: unknown }).soundEffects
   const version = typeof r.schemaVersion === 'number' ? r.schemaVersion : 1
   if (version > PROFILE_SCHEMA_VERSION) return null
   return {
@@ -34,7 +37,10 @@ export function normalizeProfile(raw: unknown): Profile | null {
     schemaVersion: PROFILE_SCHEMA_VERSION,
     germanDirection: isDirection(g) ? (g as Profile['germanDirection']) : undefined,
     selectedCountry: typeof sc === 'string' && countryById(sc)?.status === 'open' ? (sc as Profile['selectedCountry']) : undefined,
-    dailyGoal: normalizeGoal(goal) // eski 10/15/20 → 1/2/3
+    dailyGoal: normalizeGoal(goal), // eski 10/15/20 → 1/2/3
+    vocabMode: (VOCAB_MODES as readonly unknown[]).includes(vm) ? (vm as Profile['vocabMode']) : undefined,
+    vocabFront: (VOCAB_FRONTS as readonly unknown[]).includes(vf) ? (vf as Profile['vocabFront']) : undefined,
+    soundEffects: typeof se === 'boolean' ? se : undefined
   }
 }
 

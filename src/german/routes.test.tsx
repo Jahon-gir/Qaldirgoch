@@ -147,7 +147,9 @@ describe('marshrut: Bosh → Til → modul → dars → natija → modulga qayti
     await playMatch(m, true)
     click('Davom etish')
     expect(screen.getByText('6/7')).toBeTruthy()
-    expect(screen.getByText(m.pairs[0].de)).toBeTruthy() // xato qilingan roʻyxatda
+    // xato qilingan roʻyxatda (natijada "oʻrgangan soʻzlar" bloki ham shu soʻzni koʻrsatishi mumkin — shuning uchun boʻlim ichida)
+    const mistakes = screen.getByRole('region', { name: 'Xato qilingan' })
+    expect(within(mistakes).getByText(m.pairs[0].de)).toBeTruthy()
   })
 
   it('kirill interfeysda dars ochiladi', () => {

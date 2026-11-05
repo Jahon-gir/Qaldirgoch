@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { IconChevronRight, IconDeviceMobileDown, IconLanguage, IconPalette, IconTarget, IconUser, type Icon } from '@tabler/icons-react'
+import { IconChevronRight, IconDeviceMobileDown, IconLanguage, IconPalette, IconTarget, IconUser, IconVolume, type Icon } from '@tabler/icons-react'
 import { PageHeader } from '../components/layout/PageHeader'
 import { Card } from '../components/ui/Card'
 import { GOALS, type DailyGoal } from '../german/daily'
@@ -81,6 +81,31 @@ function GoalRow() {
   )
 }
 
+/** "Ovoz effektlari": yoqish/oʻchirish (profilda soundEffects; standart yoqilgan). */
+function SoundRow() {
+  const t = useI18n().t
+  const { profile, soundEffects, setSoundEffects } = useProfile()
+  if (!profile) return null
+  return (
+    <button
+      type="button"
+      role="switch"
+      aria-checked={soundEffects}
+      onClick={() => setSoundEffects(!soundEffects)}
+      className="flex min-h-[56px] w-full items-center gap-3 border-b border-line px-4 py-2 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-accent"
+    >
+      <IconVolume size={22} className="shrink-0 text-accent-strong" aria-hidden />
+      <span className="flex-1">
+        <span className="block font-medium">{t('settings.sound')}</span>
+        <span className="block text-sm text-ink-2">{t('settings.soundHint')}</span>
+      </span>
+      <span aria-hidden className={`relative h-7 w-12 shrink-0 rounded-full border-2 transition-colors ${soundEffects ? 'border-success bg-success' : 'border-ink-3 bg-surface-2'}`}>
+        <span className={`absolute top-0.5 h-5 w-5 rounded-full bg-surface shadow transition-transform ${soundEffects ? 'translate-x-[22px]' : 'translate-x-0.5'} ${soundEffects ? '' : 'bg-ink-3'}`} />
+      </span>
+    </button>
+  )
+}
+
 export default function Settings() {
   const { t, lang } = useI18n()
   return (
@@ -91,6 +116,7 @@ export default function Settings() {
         <Row to="/sozlamalar/til" Icon={IconLanguage} label={t('settings.language')} value={LANGS.find((l) => l.id === lang)?.name} />
         <Row to="/sozlamalar/korinish" Icon={IconPalette} label={t('settings.appearance')} />
         <GoalRow />
+        <SoundRow />
         <InstallRow />
       </Card>
       <p className="px-1 text-center text-sm text-ink-3">

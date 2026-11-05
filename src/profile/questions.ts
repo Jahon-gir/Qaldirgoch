@@ -30,7 +30,16 @@ export type Profile = Answers & {
   selectedCountry?: CountryId
   /** Kunlik maqsad (tugatilgan dars yoki takrorlash soni): 1 / 2 / 3; yoʻq boʻlsa 1. */
   dailyGoal?: DailyGoal
+  /** Lugʻat mashq usuli va old tomoni (yoʻq boʻlsa: roʻyxat, nemischa). */
+  vocabMode?: VocabMode
+  vocabFront?: VocabFront
+  /** Ovoz effektlari (yoʻq boʻlsa yoqilgan). */
+  soundEffects?: boolean
 }
+export const VOCAB_MODES = ['list', 'cards', 'test'] as const
+export type VocabMode = (typeof VOCAB_MODES)[number]
+export const VOCAB_FRONTS = ['de', 'tr'] as const
+export type VocabFront = (typeof VOCAB_FRONTS)[number]
 export type QuestionId = Exclude<keyof Answers, 'professionOther'>
 
 /** Onboarding savollari tartibi. Matnlar lugʻatda: q.<lugʻat nomi>.<qiymat>. */

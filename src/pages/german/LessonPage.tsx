@@ -3,6 +3,7 @@ import { Navigate, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { IconCheck, IconX } from '@tabler/icons-react'
 import { ChoiceStep, MatchStep, WordStep } from '../../components/german/steps'
 import { ListenIcon, NoVoice } from '../../components/german/Listen'
+import { LearnedWords } from '../../components/vocab/LearnedWords'
 import { Button } from '../../components/ui/Button'
 import { Card } from '../../components/ui/Card'
 import { ProgressBar } from '../../components/ui/ProgressBar'
@@ -78,6 +79,7 @@ function ResultView({ lesson, summary }: { lesson: Lesson; summary: ReturnType<t
           <p className="text-2xl font-bold">{summary.newWords}</p>
         </Card>
       </div>
+      <LearnedWords lessonId={lesson.id} speech={speech} />
       {summary.mistakes.length > 0 && (
         <section aria-labelledby="mistakes-title" className="space-y-2">
           <h2 id="mistakes-title" className="text-lg font-semibold">
@@ -103,6 +105,11 @@ function ResultView({ lesson, summary }: { lesson: Lesson; summary: ReturnType<t
       )}
       <div className="sticky bottom-0 -mx-4 mt-auto space-y-2 bg-bg px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-3">
         {next && <Button onClick={() => nav(`/til/dars/${next.id}`, { replace: true, state: loc.state })}>{t('german.nextLesson')}</Button>}
+        {wordIdsOfLesson(lesson.id).length > 0 && (
+          <Button variant="secondary" onClick={() => nav(`/til/lugat/${lesson.id}`, { replace: true })}>
+            {t('vocab.practice')}
+          </Button>
+        )}
         <Button variant={next ? 'secondary' : 'primary'} onClick={toModule}>
           {t('german.backToModule')}
         </Button>
