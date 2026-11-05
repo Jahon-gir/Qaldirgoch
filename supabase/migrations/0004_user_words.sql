@@ -1,6 +1,6 @@
 -- Qaldirg'och 0004: so'zlarni takrorlash (spaced repetition) va kunlik faollik.
 -- Supabase SQL Editor'da QO'LDA ishga tushiriladi (avtomatik emas). Qayta ishga tushirsa ham xato bermaydi.
--- Faqat so'z id, takrorlash jadvali va kunlik mashqlar soni saqlanadi (shaxsiy ma'lumot yo'q).
+-- Faqat so'z id, takrorlash jadvali, kunlik mashqlar soni va o'sha kungi maqsad saqlanadi (shaxsiy ma'lumot yo'q).
 
 create table if not exists public.user_words (
   user_id uuid not null references auth.users (id) on delete cascade,
@@ -16,6 +16,8 @@ create table if not exists public.user_daily_activity (
   user_id uuid not null references auth.users (id) on delete cascade,
   sana date not null,
   mashqlar_soni int not null default 0 check (mashqlar_soni between 0 and 100000),
+  -- O'sha kungi kunlik maqsad: maqsad keyin o'zgarsa ham o'tgan kunlar va streak o'zgarmaydi
+  maqsad int not null default 10 check (maqsad between 1 and 1000),
   kechirim boolean not null default false,
   primary key (user_id, sana)
 );

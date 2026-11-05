@@ -5,7 +5,7 @@ import { ProgressBar } from '../../components/ui/ProgressBar'
 import { moduleById } from '../../content/german'
 import { useI18n } from '../../i18n/I18nProvider'
 import { useLessons } from '../../german/LessonsProvider'
-import { useBack } from '../../lib/useHistoryAnchor'
+import { FROM_MODULE, useBack } from '../../lib/useHistoryAnchor'
 import { currentInModule, lessonsOf, moduleProgress } from '../../german/logic'
 
 export default function ModulePage() {
@@ -56,6 +56,7 @@ export default function ModulePage() {
               <li key={l.id}>
                 <Link
                   to={`/til/dars/${l.id}`}
+                  state={FROM_MODULE}
                   aria-current={now ? 'step' : undefined}
                   className={`flex min-h-[64px] items-center gap-3 rounded-xl px-2 py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${now ? 'bg-accent-soft' : ''}`}
                 >

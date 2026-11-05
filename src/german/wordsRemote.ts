@@ -4,7 +4,7 @@ import { sanitizeActivity, type Activity, type DayActivity } from './daily'
 import { sanitizeWords, type WordState, type Words } from './srs'
 
 type WordRow = { word_id: string; keyingi_takror: string; interval: number; xatolar: number; updated_at: string }
-type DayRow = { sana: string; mashqlar_soni: number; kechirim: boolean }
+type DayRow = { sana: string; mashqlar_soni: number; maqsad: number; kechirim: boolean }
 
 /** Serverdagi (RLS bilan faqat oʻz) soʻzlar. Xatoda tashlaydi. */
 export async function fetchRemoteWords(client: SupabaseClient, userId: string): Promise<Words> {
@@ -23,16 +23,16 @@ export async function pushRemoteWords(client: SupabaseClient, userId: string, wo
 }
 
 export async function fetchRemoteActivity(client: SupabaseClient, userId: string): Promise<Activity> {
-  const { data, error } = await client.from('user_daily_activity').select('sana, mashqlar_soni, kechirim').eq('user_id', userId)
+  const { data, error } = await client.from('user_daily_activity').select('sana, mashqlar_soni, maqsad, kechirim').eq('user_id', userId)
   if (error) throw error
   const raw: Record<string, unknown> = {}
-  for (const r of (data ?? []) as DayRow[]) raw[r.sana] = { count: r.mashqlar_soni, forgiven: r.kechirim }
+  for (const r of (data ?? []) as DayRow[]) raw[r.sana] = { count: r.mashqlar_soni, goal: r.maqsad, forgiven: r.kechirim }
   return sanitizeActivity(raw)
 }
 
 export async function pushRemoteActivity(client: SupabaseClient, userId: string, days: [string, DayActivity][]): Promise<void> {
   if (!days.length) return
-  const rows = days.map(([d, v]) => ({ user_id: userId, sana: d, mashqlar_soni: v.count, kechirim: v.forgiven }))
+  const rows = days.map(([d, v]) => ({ user_id: userId, sana: d, mashqlar_soni: v.count, maqsad: v.goal, kechirim: v.forgiven }))
   const { error } = await client.from('user_daily_activity').upsert(rows, { onConflict: 'user_id,sana' })
   if (error) throw error
 }

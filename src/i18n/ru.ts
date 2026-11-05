@@ -145,6 +145,8 @@ export const ru: Dict = {
   'dir.technical': 'Технические профессии',
   'dir.care': 'Уход и медицина',
   'dir.hospitality': 'Гостиницы и кухня',
+  'german.continueTitle': 'Продолжайте',
+  'german.allDone': 'Все доступные уроки пройдены',
   'german.levels': 'Уровни',
   'german.levelLater': 'позже',
   'german.modules': 'Модули',

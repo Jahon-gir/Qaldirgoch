@@ -7,25 +7,35 @@ import {
   isoWeekStart,
   mergeActivity,
   sanitizeActivity,
+  setTodayGoal,
   streakInfo,
   todayProgress,
   weekDays,
   type Activity
 } from './daily'
 
-/** Kunlar roʻyxatidan faollik: har kunga n ta mashq. */
-const act = (days: Record<string, number>, forgiven: string[] = []): Activity =>
-  Object.fromEntries(Object.entries(days).map(([d, n]) => [d, { count: n, forgiven: forgiven.includes(d) }]))
+/** Kunlar roʻyxatidan faollik: har kunga n ta mashq, oʻsha kungi maqsad goal (standart 10). */
+const act = (days: Record<string, number>, forgiven: string[] = [], goal = 10): Activity =>
+  Object.fromEntries(Object.entries(days).map(([d, n]) => [d, { count: n, goal, forgiven: forgiven.includes(d) }]))
 
 // 2026-11-02 — dushanba, 2026-11-08 — yakshanba
 describe('kunlik hisob', () => {
-  it('mashqlar qoʻshiladi, notoʻgʻri son eʼtiborsiz', () => {
+  it('mashqlar qoʻshiladi, kunga oʻsha paytdagi maqsad yoziladi; notoʻgʻri son eʼtiborsiz', () => {
     let a: Activity = {}
-    a = addExercises(a, '2026-11-05')
-    a = addExercises(a, '2026-11-05', 7)
-    expect(a['2026-11-05']).toEqual({ count: 8, forgiven: false })
-    expect(addExercises(a, '2026-11-05', 0)).toBe(a)
-    expect(addExercises(a, '2026-11-05', -3)).toBe(a)
+    a = addExercises(a, '2026-11-05', 1, 10)
+    a = addExercises(a, '2026-11-05', 7, 15)
+    expect(a['2026-11-05']).toEqual({ count: 8, goal: 15, forgiven: false })
+    expect(addExercises(a, '2026-11-05', 0, 10)).toBe(a)
+    expect(addExercises(a, '2026-11-05', -3, 10)).toBe(a)
+  })
+
+  it('maqsad oʻzgarsa faqat bugungi kun yangilanadi', () => {
+    const a = act({ '2026-11-04': 12, '2026-11-05': 3 })
+    const b = setTodayGoal(a, '2026-11-05', 20)
+    expect(b['2026-11-05'].goal).toBe(20)
+    expect(b['2026-11-04']).toBe(a['2026-11-04'])
+    expect(setTodayGoal(b, '2026-11-05', 20)).toBe(b)
+    expect(setTodayGoal({}, '2026-11-05', 20)).toEqual({}) // bugun hali yozuv yoʻq
   })
 
   it('maqsad: qolgan mashqlar va bajarilgani', () => {
@@ -95,10 +105,33 @@ describe('streak, kechirim va rekord', () => {
     expect(streakInfo(a, '2026-11-11', G)).toEqual({ current: 8, record: 8, forgiven: ['2026-11-03', '2026-11-10'] })
   })
 
-  it('maqsaddan kam mashq — bajarilmagan kun', () => {
+  it('maqsaddan kam mashq — bajarilmagan kun (oʻsha kungi maqsad bilan)', () => {
     const a = act({ '2026-11-02': 10, '2026-11-03': 9, '2026-11-04': 3, '2026-11-05': 10 })
     expect(streakInfo(a, '2026-11-05', G)).toMatchObject({ current: 1, record: 1 })
-    expect(streakInfo(a, '2026-11-05', 3).current).toBe(4) // maqsad 3 boʻlsa hammasi bajarilgan
+    const low = act({ '2026-11-02': 10, '2026-11-03': 9, '2026-11-04': 3, '2026-11-05': 10 }, [], 3)
+    expect(streakInfo(low, '2026-11-05', 3).current).toBe(4) // oʻsha kunlarda maqsad 3 boʻlgan — hammasi bajarilgan
+  })
+
+  it('maqsad 10 dan 20 ga oshirilsa: oʻtgan kunlar, streak va rekord oʻzgarmaydi, kechirim sarflanmaydi', () => {
+    // Oʻtgan 3 kun maqsad 10 bilan bajarilgan (12, 10, 15 — 20 dan kam), rekord 5 avvalroq
+    // 31-oktyabr — oʻtgan haftada avval ishlatilgan (saqlangan) kechirim, 1-noyabr — uzilish
+    const a = act({ '2026-10-26': 10, '2026-10-27': 10, '2026-10-28': 10, '2026-10-29': 10, '2026-10-30': 10, '2026-10-31': 0, '2026-11-02': 12, '2026-11-03': 10, '2026-11-04': 15, '2026-11-05': 4 }, ['2026-10-31'])
+    const before = streakInfo(a, '2026-11-05', 10)
+    expect(before).toEqual({ current: 3, record: 5, forgiven: ['2026-10-31'] })
+    // Bugun maqsad 20 ga oshirildi: oʻtgan kunlar oʻz maqsadi (10) bilan qoladi
+    const after = setTodayGoal(a, '2026-11-05', 20)
+    expect(after['2026-11-04']).toEqual({ count: 15, goal: 10, forgiven: false })
+    expect(streakInfo(after, '2026-11-05', 20)).toEqual(before) // streak, rekord, kechirim — oʻzgarmadi
+    expect(applyForgiveness(after, '2026-11-05', 20)).toBe(after) // hech qaysi kun kechirilmaydi
+    expect(weekDays(after, '2026-11-05', 20).map((d) => d.done)).toEqual(weekDays(a, '2026-11-05', 10).map((d) => d.done))
+    // Bugungi kun endi 20 bilan oʻlchanadi: 15 ta mashq yetmaydi, 20 ta — yetadi
+    expect(streakInfo(setTodayGoal({ ...a, '2026-11-05': { count: 15, goal: 10, forgiven: false } }, '2026-11-05', 20), '2026-11-05', 20).current).toBe(3)
+    expect(streakInfo(setTodayGoal({ ...a, '2026-11-05': { count: 20, goal: 10, forgiven: false } }, '2026-11-05', 20), '2026-11-05', 20).current).toBe(4)
+  })
+
+  it('maqsad pasaytirilsa ham oʻtgan bajarilmagan kun bajarilgan boʻlib qolmaydi', () => {
+    const a = { ...act({ '2026-11-02': 10 }), ...act({ '2026-11-03': 12 }, [], 20), ...act({ '2026-11-04': 10 }) }
+    expect(streakInfo(a, '2026-11-05', 10)).toMatchObject({ current: 2, forgiven: ['2026-11-03'] })
   })
 
   it('rekord: avvalgi uzunroq streak saqlanadi', () => {
@@ -114,7 +147,7 @@ describe('streak, kechirim va rekord', () => {
   it('applyForgiveness kechirim kunini yozadi, qayta chaqirilsa oʻzgarmaydi', () => {
     const a = act({ '2026-11-02': 10, '2026-11-03': 10 })
     const b = applyForgiveness(a, '2026-11-05', G)
-    expect(b['2026-11-04']).toEqual({ count: 0, forgiven: true })
+    expect(b['2026-11-04']).toEqual({ count: 0, goal: 10, forgiven: true })
     expect(applyForgiveness(b, '2026-11-05', G)).toBe(b)
     expect(applyForgiveness({}, '2026-11-05', G)).toEqual({})
   })
@@ -125,22 +158,28 @@ describe('streak, kechirim va rekord', () => {
 })
 
 describe('faollikni saqlash va birlashtirish', () => {
-  it('buzilgan qiymatlar tashlanadi', () => {
-    expect(sanitizeActivity({ '2026-11-05': { count: 3, forgiven: true }, '2026-13-01': { count: 1 }, x: { count: 1 }, '2026-11-04': { count: -1 }, '2026-11-03': { count: 1.5 } })).toEqual({
-      '2026-11-05': { count: 3, forgiven: true }
+  it('buzilgan qiymatlar tashlanadi; maqsadi yoʻq eski yozuv 10 deb oʻqiladi', () => {
+    expect(
+      sanitizeActivity({ '2026-11-05': { count: 3, forgiven: true }, '2026-11-06': { count: 4, goal: 20 }, '2026-11-07': { count: 4, goal: 0 }, '2026-13-01': { count: 1 }, x: { count: 1 }, '2026-11-04': { count: -1 }, '2026-11-03': { count: 1.5 } })
+    ).toEqual({
+      '2026-11-05': { count: 3, goal: 10, forgiven: true },
+      '2026-11-06': { count: 4, goal: 20, forgiven: false },
+      '2026-11-07': { count: 4, goal: 10, forgiven: false }
     })
     expect(sanitizeActivity(null)).toEqual({})
     expect(sanitizeActivity([1])).toEqual({})
   })
 
-  it('kattaroq mashqlar soni yutadi, kechirim saqlanadi', () => {
+  it('kattaroq mashqlar soni yutadi (maqsadi ham oʻsha nusxadan), kechirim saqlanadi', () => {
     const m = mergeActivity(act({ '2026-11-04': 12, '2026-11-05': 3 }), act({ '2026-11-05': 8, '2026-11-03': 0 }, ['2026-11-03']))
     expect(m).toEqual(act({ '2026-11-03': 0, '2026-11-04': 12, '2026-11-05': 8 }, ['2026-11-03']))
+    const g = mergeActivity(act({ '2026-11-05': 8 }, [], 15), act({ '2026-11-05': 5 }, [], 20))
+    expect(g['2026-11-05']).toEqual({ count: 8, goal: 15, forgiven: false })
   })
 
-  it('serverga faqat farq qilganlari yuboriladi', () => {
-    const server = act({ '2026-11-04': 12, '2026-11-05': 3 })
-    const merged = act({ '2026-11-04': 12, '2026-11-05': 8, '2026-11-06': 1 })
-    expect(activityToPush(merged, server).map(([d]) => d)).toEqual(['2026-11-05', '2026-11-06'])
+  it('serverga faqat farq qilganlari yuboriladi (maqsad farqi ham)', () => {
+    const server = act({ '2026-11-04': 12, '2026-11-05': 3, '2026-11-07': 2 })
+    const merged = { ...act({ '2026-11-04': 12, '2026-11-05': 8, '2026-11-06': 1 }), ...act({ '2026-11-07': 2 }, [], 20) }
+    expect(activityToPush(merged, server).map(([d]) => d)).toEqual(['2026-11-05', '2026-11-06', '2026-11-07'])
   })
 })

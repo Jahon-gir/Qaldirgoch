@@ -147,6 +147,8 @@ export const uz = {
   'dir.technical': 'Texnik kasblar',
   'dir.care': 'Parvarish va tibbiyot',
   'dir.hospitality': 'Mehmonxona va oshxona',
+  'german.continueTitle': 'Davom eting',
+  'german.allDone': 'Mavjud darslar tugadi',
   'german.levels': 'Darajalar',
   'german.levelLater': 'keyin',
   'german.modules': 'Modullar',

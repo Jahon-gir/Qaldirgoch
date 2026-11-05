@@ -4,7 +4,7 @@ import { WORD_IDS, wordIdsOfLesson } from '../content/german/words'
 import { supabase } from '../lib/supabase'
 import { useProfile } from '../profile/ProfileProvider'
 import { PROGRESS_KEYS, read, write } from '../progress/storage'
-import { activityToPush, addExercises, applyForgiveness, mergeActivity, sanitizeActivity, streakInfo, todayProgress, type Activity } from './daily'
+import { activityToPush, addExercises, applyForgiveness, mergeActivity, sanitizeActivity, setTodayGoal, streakInfo, todayProgress, type Activity } from './daily'
 import { useLessons } from './LessonsProvider'
 import { addNewWords, answerWord, dueWordIds, localDay, mergeWords, sanitizeWords, wordsToPush, type Day, type Words } from './srs'
 import { fetchRemoteActivity, fetchRemoteWords, pushRemoteActivity, pushRemoteWords } from './wordsRemote'
@@ -47,6 +47,8 @@ export function WordsProvider({ children }: { children: ReactNode }) {
   wordsRef.current = words
   const actRef = useRef(activity)
   actRef.current = activity
+  const goalRef = useRef(dailyGoal)
+  goalRef.current = dailyGoal
   const [retry, setRetry] = useState(0)
   const busy = useRef(false)
 
@@ -79,9 +81,9 @@ export function WordsProvider({ children }: { children: ReactNode }) {
     if (next !== wordsRef.current) commitWords(next)
   }, [results, today, commitWords])
 
-  // Oʻtkazilgan kun uchun kechirim yoziladi (sof hisob: daily.ts)
+  // Maqsad oʻzgarsa — bugungi kunga yoziladi; oʻtkazilgan kun uchun kechirim (sof hisob: daily.ts)
   useEffect(() => {
-    const next = applyForgiveness(actRef.current, today, dailyGoal)
+    const next = applyForgiveness(setTodayGoal(actRef.current, today, dailyGoal), today, dailyGoal)
     if (next !== actRef.current) commitActivity(next)
   }, [today, dailyGoal, activity, commitActivity])
 
@@ -147,7 +149,7 @@ export function WordsProvider({ children }: { children: ReactNode }) {
 
   const addExercise = useCallback(
     (n = 1) => {
-      const next = addExercises(actRef.current, localDay(), n)
+      const next = addExercises(actRef.current, localDay(), n, goalRef.current)
       if (next === actRef.current) return
       commitActivity(next)
       kick()
@@ -160,7 +162,7 @@ export function WordsProvider({ children }: { children: ReactNode }) {
       const day = localDay()
       const cur = wordsRef.current[wordId]
       if (schedule && cur) commitWords({ ...wordsRef.current, [wordId]: answerWord(cur, correct, day, new Date().toISOString()) })
-      commitActivity(addExercises(actRef.current, day, 1))
+      commitActivity(addExercises(actRef.current, day, 1, goalRef.current))
       kick()
     },
     [commitWords, commitActivity, kick]

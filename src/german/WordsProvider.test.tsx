@@ -49,12 +49,12 @@ describe('WordsProvider: mehmon → akkaunt va oflayn navbat', () => {
       { word_id: 'a1-m1-hallo', keyingi_takror: '2026-11-10', interval: 7, xatolar: 0, updated_at: '2026-11-04T10:00:00.000Z' },
       { word_id: 'a1-m1-guten-tag', keyingi_takror: '2026-11-15', interval: 14, xatolar: 0, updated_at: T_OLD }
     ]
-    db.tables.user_daily_activity = [{ sana: TODAY, mashqlar_soni: 9, kechirim: false }]
+    db.tables.user_daily_activity = [{ sana: TODAY, mashqlar_soni: 9, maqsad: 10, kechirim: false }]
     render(<WordsProvider>{null}</WordsProvider>)
     await waitFor(() => expect(localStorage.getItem('qaldirgoch.words.synced')).toBe('u1'))
     expect(stored()['a1-m1-hallo']).toMatchObject({ due: '2026-12-20', interval: 30 })
     expect(stored()['a1-m1-guten-tag']).toMatchObject({ due: '2026-11-15', interval: 14 })
-    expect(JSON.parse(localStorage.getItem('qaldirgoch.activity')!)[TODAY].count).toBe(9)
+    expect(JSON.parse(localStorage.getItem('qaldirgoch.activity')!)[TODAY]).toEqual({ count: 9, goal: 10, forgiven: false }) // eski mahalliy yozuv (maqsadsiz) ham oʻqildi
     const pushedWords = db.upserts.filter((u) => u.table === 'user_words').flatMap((u) => u.rows)
     expect(pushedWords.map((r) => r.word_id)).toEqual(['a1-m1-hallo']) // faqat serverdan farq qilgani
     expect(db.upserts.some((u) => u.table === 'user_daily_activity')).toBe(false) // server soni katta — yuborish shart emas

@@ -79,11 +79,11 @@ describe('Supabase: user_words va user_daily_activity', () => {
   })
 
   it('faollik oʻqiladi va yoziladi', async () => {
-    const f = fakeClient({ data: [{ sana: '2026-11-05', mashqlar_soni: 6, kechirim: false }, { sana: 'xato', mashqlar_soni: 1, kechirim: false }] })
-    expect(await fetchRemoteActivity(f.client, 'u1')).toEqual({ '2026-11-05': { count: 6, forgiven: false } })
+    const f = fakeClient({ data: [{ sana: '2026-11-05', mashqlar_soni: 6, maqsad: 15, kechirim: false }, { sana: 'xato', mashqlar_soni: 1, maqsad: 10, kechirim: false }] })
+    expect(await fetchRemoteActivity(f.client, 'u1')).toEqual({ '2026-11-05': { count: 6, goal: 15, forgiven: false } })
     expect(f.from).toHaveBeenCalledWith('user_daily_activity')
     const g = fakeClient({})
-    await pushRemoteActivity(g.client, 'u1', [['2026-11-04', { count: 0, forgiven: true }]])
-    expect(g.upsert).toHaveBeenCalledWith([{ user_id: 'u1', sana: '2026-11-04', mashqlar_soni: 0, kechirim: true }], { onConflict: 'user_id,sana' })
+    await pushRemoteActivity(g.client, 'u1', [['2026-11-04', { count: 0, goal: 20, forgiven: true }]])
+    expect(g.upsert).toHaveBeenCalledWith([{ user_id: 'u1', sana: '2026-11-04', mashqlar_soni: 0, maqsad: 20, kechirim: true }], { onConflict: 'user_id,sana' })
   })
 })
