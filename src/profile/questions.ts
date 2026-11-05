@@ -36,7 +36,7 @@ export type Profile = Answers & {
   /** Ovoz effektlari (yoʻq boʻlsa yoqilgan). */
   soundEffects?: boolean
 }
-export const VOCAB_MODES = ['list', 'cards', 'test'] as const
+export const VOCAB_MODES = ['list', 'cards', 'test', 'build', 'listen', 'write', 'article', 'mixed'] as const
 export type VocabMode = (typeof VOCAB_MODES)[number]
 export const VOCAB_FRONTS = ['de', 'tr'] as const
 export type VocabFront = (typeof VOCAB_FRONTS)[number]

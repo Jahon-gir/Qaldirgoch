@@ -55,7 +55,7 @@ export function useSpeech() {
   /** Tugma koʻrsatiladimi: fayl bor yoki nemis ovozi bor (yoki hali aniqlanmoqda). */
   const canSpeak = useCallback((audioUrl?: string) => !!audioUrl || hasVoice !== false, [hasVoice])
 
-  const speak = useCallback((text: string, opts: { audioUrl?: string; slow?: boolean } = {}) => {
+  const speak = useCallback((text: string, opts: { audioUrl?: string; slow?: boolean; rate?: number } = {}) => {
     const mine = ++seq.current
     const begin = () => {
       setSpeaking(true)
@@ -72,7 +72,7 @@ export function useSpeech() {
       getSynth()?.cancel()
       if (opts.audioUrl) {
         const a = new Audio(opts.audioUrl)
-        if (opts.slow) a.playbackRate = 0.7
+        if (opts.rate || opts.slow) a.playbackRate = opts.rate ?? 0.7
         audioRef.current = a
         a.onended = end
         begin()
@@ -84,7 +84,7 @@ export function useSpeech() {
       if (!synth) return
       const u = new SpeechSynthesisUtterance(text)
       u.lang = 'de-DE'
-      u.rate = opts.slow ? 0.7 : 1
+      u.rate = opts.rate ?? (opts.slow ? 0.7 : 1)
       const voice = germanVoice(synth)
       if (voice) u.voice = voice
       u.onend = end

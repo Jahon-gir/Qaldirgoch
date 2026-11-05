@@ -1,42 +1,35 @@
 import { useMemo, useRef, useState } from 'react'
 import { IconCheck, IconX } from '@tabler/icons-react'
-import { wordById } from '../../content/german/words'
-import { useI18n } from '../../i18n/I18nProvider'
-import { sessionCurrent, type Session } from '../../german/srs'
-import { faceText, pickVocabOptions } from '../../german/vocab'
-import type { VocabFront } from '../../profile/questions'
-import { useFeedback } from '../../ui/useFeedback'
-import { Footer, navyBtn } from './parts'
+import { useI18n } from '../../../i18n/I18nProvider'
+import { faceText, pickVocabOptions } from '../../../german/vocab'
+import type { VocabFront } from '../../../profile/questions'
+import { useFeedback } from '../../../ui/useFeedback'
+import { ContinueFooter, Prompt, type ExProps } from './common'
 
-/** Test: savol moviy blokda, 4 variant. Javobdan keyin — "Davom etish". Xato soʻz oxirida yana bir marta soʻraladi. */
-export function VocabTest({ session, front, onAnswer }: { session: Session; front: VocabFront; onAnswer: (correct: boolean) => void }) {
+/** Test: savol moviy blokda, 4 variant; javobdan keyin "Davom etish". */
+export function TestStep({ word, front, onAnswer, onDone }: ExProps & { front: VocabFront }) {
   const { lang, t } = useI18n()
   const fx = useFeedback()
-  const id = sessionCurrent(session)
-  const word = id ? wordById(id) : undefined
   // Variantlar shu savol uchun bir marta aralashtiriladi
-  const options = useMemo(() => (word ? pickVocabOptions(word, front, lang) : []), [word, front, lang, session.pos])
+  const options = useMemo(() => pickVocabOptions(word, front, lang), [word, front, lang])
   const [picked, setPicked] = useState<string | null>(null)
   const refs = useRef<Record<string, HTMLButtonElement | null>>({})
-  if (!word) return null
   const answered = picked !== null
   const ok = picked === word.id
-  const optLang = front === 'de' ? undefined : 'de'
-  const pick = (optionId: string) => {
+  const q = front === 'de' ? t('vocab.qDe') : t('vocab.qTr')
+  const pick = (id: string) => {
     if (answered) return
-    setPicked(optionId)
-    if (optionId === word.id) fx.right(refs.current[optionId])
+    setPicked(id)
+    if (id === word.id) fx.right(refs.current[id])
     else fx.wrong()
+    onAnswer?.(id === word.id)
   }
   return (
-    <div className="flex flex-1 flex-col gap-4 pt-4" key={`${session.pos}-${word.id}`}>
-      <div className="rounded-2xl border border-head-line bg-head px-5 py-5 text-center text-white">
-        <p className="text-base text-white/90">{front === 'de' ? t('vocab.qDe') : t('vocab.qTr')}</p>
-        <p lang={front === 'de' ? 'de' : undefined} className="mt-2 break-words text-3xl font-bold">
-          {faceText(word, front, lang)}
-        </p>
-      </div>
-      <div className="space-y-2" role="group" aria-label={front === 'de' ? t('vocab.qDe') : t('vocab.qTr')}>
+    <div className="flex flex-1 flex-col gap-4 pt-4">
+      <Prompt label={q} lang={front === 'de' ? 'de' : undefined}>
+        {faceText(word, front, lang)}
+      </Prompt>
+      <div className="space-y-2" role="group" aria-label={q}>
         {options.map((o) => {
           const state = !answered ? 'idle' : o.correct ? 'right' : picked === o.id ? 'wrong' : 'dim'
           const cls = {
@@ -53,7 +46,7 @@ export function VocabTest({ session, front, onAnswer }: { session: Session; fron
                 refs.current[o.id] = el
               }}
               type="button"
-              lang={optLang}
+              lang={front === 'de' ? undefined : 'de'}
               disabled={answered}
               onClick={() => pick(o.id)}
               className={`flex min-h-[48px] w-full items-center justify-between gap-3 rounded-xl border-2 px-4 py-2 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${cls} ${fxCls}`}
@@ -68,11 +61,7 @@ export function VocabTest({ session, front, onAnswer }: { session: Session; fron
       <div aria-live="polite" className="sr-only">
         {answered && (ok ? t('german.right') : t('german.wrong'))}
       </div>
-      <Footer>
-        <button type="button" disabled={!answered} onClick={() => onAnswer(ok)} className={navyBtn}>
-          {t('common.continue')}
-        </button>
-      </Footer>
+      <ContinueFooter disabled={!answered} onClick={() => onDone(ok)} />
     </div>
   )
 }

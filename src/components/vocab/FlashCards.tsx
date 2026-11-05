@@ -8,6 +8,7 @@ import type { VocabFront } from '../../profile/questions'
 import { useFeedback } from '../../ui/useFeedback'
 import type { Speech } from '../german/Listen'
 import { Footer } from './parts'
+import { DeWord } from './ex/common'
 
 /** Nuqtalar: joriy nuqta uzun (marjon). Koʻp boʻlsa (20+) oddiy hisoblagich. */
 function Dots({ pos, total }: { pos: number; total: number }) {
@@ -36,7 +37,7 @@ function Card({ id, front, speech }: { id: string; front: VocabFront; speech: Sp
     <div aria-hidden={hidden || undefined} className={`card-face absolute inset-0 flex flex-col items-center justify-center gap-3 rounded-[20px] px-5 text-center text-vink ${cls}`}>
       <Label>{t(`vocab.front.${side}`)}</Label>
       <p lang={side === 'de' ? 'de' : undefined} className="break-words text-[30px] font-bold leading-tight">
-        {faceText(w, side, lang)}
+        {side === 'de' ? <DeWord de={w.de} /> : faceText(w, side, lang)}
       </p>
       {side === 'de' && speech.canSpeak() && (
         <button

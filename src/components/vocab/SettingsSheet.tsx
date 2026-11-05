@@ -9,7 +9,7 @@ const opt = (on: boolean) =>
   }`
 
 /** Pastdan oyna: mashq usuli va old tomoni. Tanlov darhol saqlanadi (profilda). */
-export function SettingsSheet({ mode, front, onChange, onClose }: { mode: VocabMode; front: VocabFront; onChange: (p: { mode?: VocabMode; front?: VocabFront }) => void; onClose: () => void }) {
+export function SettingsSheet({ mode, front, hasNouns = true, canListen = true, onChange, onClose }: { mode: VocabMode; front: VocabFront; hasNouns?: boolean; canListen?: boolean; onChange: (p: { mode?: VocabMode; front?: VocabFront }) => void; onClose: () => void }) {
   const t = useI18n().t
   const ref = useRef<HTMLDivElement>(null)
   useEffect(() => {
@@ -24,19 +24,37 @@ export function SettingsSheet({ mode, front, onChange, onClose }: { mode: VocabM
         aria-modal="true"
         aria-label={t('vocab.settings')}
         onClick={(e) => e.stopPropagation()}
-        className="w-full max-w-md space-y-4 rounded-t-[20px] bg-surface p-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] shadow-lg outline-none sm:rounded-[20px]"
+        className="max-h-[90vh] w-full max-w-md space-y-4 overflow-y-auto rounded-t-[20px] bg-surface p-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] shadow-lg outline-none sm:rounded-[20px]"
       >
         <div className="mx-auto h-1.5 w-10 rounded-full bg-line" aria-hidden />
         <section className="space-y-2">
           <h2 id="vs-method" className="text-base font-semibold">
             {t('vocab.method')}
           </h2>
-          <div role="radiogroup" aria-labelledby="vs-method" className="flex gap-2">
-            {VOCAB_MODES.map((m) => (
-              <button key={m} type="button" role="radio" aria-checked={mode === m} onClick={() => onChange({ mode: m })} className={opt(mode === m)}>
-                {t(`vocab.mode.${m}`)}
-              </button>
-            ))}
+          <div role="radiogroup" aria-labelledby="vs-method" className="grid grid-cols-2 gap-2">
+            {VOCAB_MODES.filter((m) => m !== 'article' || hasNouns).map((m) => {
+              // Ovoz yoʻq: tinglash kulrang, izoh bilan (tanlab boʻlmaydi)
+              const off = m === 'listen' && !canListen
+              return (
+                <button
+                  key={m}
+                  type="button"
+                  role="radio"
+                  aria-checked={mode === m}
+                  aria-disabled={off || undefined}
+                  aria-describedby={off ? 'vs-novoice' : undefined}
+                  onClick={() => !off && onChange({ mode: m })}
+                  className={off ? `${opt(false)} flex-col !border-line !bg-surface-2 !text-ink-3` : opt(mode === m)}
+                >
+                  {t(`vocab.mode.${m}`)}
+                  {off && (
+                    <span id="vs-novoice" className="text-[13px] font-medium">
+                      {t('vocab.noVoice')}
+                    </span>
+                  )}
+                </button>
+              )
+            })}
           </div>
         </section>
         <section className="space-y-2">
