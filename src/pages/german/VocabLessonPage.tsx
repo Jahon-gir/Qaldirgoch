@@ -5,7 +5,7 @@ import { FlashCards } from '../../components/vocab/FlashCards'
 import { SettingsSheet } from '../../components/vocab/SettingsSheet'
 import { VocabHeader } from '../../components/vocab/parts'
 import { VocabResult } from '../../components/vocab/VocabResult'
-import { VocabTest } from '../../components/vocab/VocabTest'
+import { Exercise } from '../../components/vocab/ex/Exercise'
 import { WordList } from '../../components/vocab/WordList'
 import { lessonById } from '../../content/german'
 import { wordById, type VocabWord } from '../../content/german/words'
@@ -13,53 +13,81 @@ import { useI18n } from '../../i18n/I18nProvider'
 import { useBack, useHistoryAnchor } from '../../lib/useHistoryAnchor'
 import { useLessons } from '../../german/LessonsProvider'
 import { useDirection } from '../../german/useDirection'
-import { sessionDone, type Session } from '../../german/srs'
+import { sessionCurrent, sessionDone, type Session } from '../../german/srs'
+import { isNoun, mixedKinds, nextMixedKind, type ExerciseKind } from '../../german/exercises'
 import { useSpeech } from '../../german/useSpeech'
 import { MIXED, isUnlocked, lessonWords, shuffled, startVocabSession, unlockedWords, vocabAnswer, vocabGroups, vocabLesson } from '../../german/vocab'
 import { useWords } from '../../german/WordsProvider'
 import { useProfile } from '../../profile/ProfileProvider'
 import type { VocabFront, VocabMode } from '../../profile/questions'
 
-type Run = { session: Session; counted: boolean }
+type Run = { session: Session; counted: boolean; kinds: ExerciseKind[] }
+const QUESTION_MODES: readonly VocabMode[] = ['test', 'build', 'listen', 'write', 'article', 'mixed']
 
 function Practice({ lessonId, title, ids }: { lessonId: string; title: string; ids: string[] }) {
   const { t } = useI18n()
   useHistoryAnchor('/til/lugat')
   const back = useBack('/til/lugat')
   const speech = useSpeech()
+  const canListen = speech.canSpeak()
   const { addDone } = useWords()
   const { vocabMode, vocabFront, setVocabPrefs } = useProfile()
-  // Aralash mashq Kartochka rejimida ochiladi; keyin tanlov odatdagidek profilda saqlanadi
+  const nounIds = useMemo(() => ids.filter((id) => { const w = wordById(id); return !!w && isNoun(w) }), [ids])
+  // Aralash mashq (barcha soʻzlar) Kartochka rejimida ochiladi; keyin tanlov odatdagidek profilda saqlanadi
   const [mode, setMode] = useState<VocabMode>(lessonId === MIXED ? 'cards' : vocabMode)
   const [front, setFront] = useState<VocabFront>(vocabFront)
   const [sheet, setSheet] = useState(false)
-  const start = useCallback((list: string[], counted: boolean): Run => ({ session: startVocabSession(list), counted }), [])
-  const [run, setRun] = useState<Run>(() => start(lessonId === MIXED ? shuffled(ids) : ids, true))
-  const sessionRef = useRef(run.session)
-  sessionRef.current = run.session
+  // Darsda ot boʻlmasa Artikl, ovoz boʻlmasa Tinglash — Test bilan almashtiriladi
+  const eff: VocabMode = mode === 'article' && nounIds.length === 0 ? 'test' : mode === 'listen' && !canListen ? 'test' : mode
+  const start = useCallback(
+    (list: string[], counted: boolean, m: VocabMode): Run => ({
+      session: startVocabSession(m === 'article' ? list.filter((id) => nounIds.includes(id)) : list),
+      counted,
+      kinds: m === 'mixed' ? mixedKinds(list.flatMap((id) => wordById(id) ?? []), canListen) : []
+    }),
+    [nounIds, canListen]
+  )
+  const [run, setRun] = useState<Run>(() => start(lessonId === MIXED ? shuffled(ids) : ids, true, eff))
+  const runRef = useRef(run)
+  runRef.current = run
 
   const finished = sessionDone(run.session)
   const change = (p: { mode?: VocabMode; front?: VocabFront }) => {
-    if (p.mode) setMode(p.mode)
     if (p.front) setFront(p.front)
     setVocabPrefs(p)
-    // Usul oʻzgarsa mashq yangidan boshlanadi (kunlik maqsadga tegmaydi: tugamagan). Old tomoni — faqat koʻrinish
-    if (p.mode && p.mode !== mode) setRun((r) => (sessionDone(r.session) ? r : start(r.session.queue.filter((x, i, a) => a.indexOf(x) === i), r.counted)))
+    if (!p.mode || p.mode === mode) return
+    setMode(p.mode)
+    // Usul oʻzgarsa mashq yangidan boshlanadi. Old tomoni — faqat koʻrinish
+    const base = run.counted ? (lessonId === MIXED ? shuffled(ids) : ids) : uniq(run.session.queue)
+    setRun(start(base, run.counted, p.mode))
   }
   const answer = (correct: boolean) => {
-    const next = vocabAnswer(sessionRef.current, correct)
-    sessionRef.current = next
-    setRun((r) => ({ ...r, session: next }))
+    const cur = runRef.current
+    const next = vocabAnswer(cur.session, correct)
+    // Qayta soʻraladigan soʻz uchun ham usul tanlanadi (oldingisi bilan bir xil emas)
+    let kinds = cur.kinds
+    if (eff === 'mixed' && next.queue.length > kinds.length) {
+      const w = wordById(next.queue[next.queue.length - 1])
+      kinds = w ? [...kinds, nextMixedKind(w, kinds[kinds.length - 1], canListen)] : kinds
+    }
+    const r = { ...cur, session: next, kinds }
+    runRef.current = r
+    setRun(r)
     // Kunlik maqsad +1: mashq OXIRIGACHA tugadi (natija ekrani); bilmaganlarni qayta mashq qilish sanalmaydi
-    if (sessionDone(next) && run.counted) addDone()
+    if (sessionDone(next) && cur.counted) addDone()
   }
   const retry = () => {
     const wrong = Object.keys(run.session.first).filter((id) => !run.session.first[id])
-    setRun(start(wrong, false))
+    setRun(start(wrong, false, eff))
   }
 
-  const modeName = t(`vocab.mode.${mode}`)
-  const sub = mode === 'test' && !finished ? t('vocab.testSub', { n: Math.min(run.session.pos + 1, run.session.queue.length), total: run.session.queue.length }) : `${modeName} · ${t('vocab.words', { n: ids.length })}`
+  const modeName = t(`vocab.mode.${eff}`)
+  const isQ = QUESTION_MODES.includes(eff)
+  const sub =
+    isQ && !finished ? t('vocab.qOf', { mode: modeName, n: Math.min(run.session.pos + 1, run.session.queue.length), total: run.session.queue.length }) : `${modeName} · ${t('vocab.words', { n: ids.length })}`
+  const id = sessionCurrent(run.session)
+  const word = id ? wordById(id) : undefined
+  const kind: ExerciseKind = eff === 'mixed' ? run.kinds[run.session.pos] ?? 'test' : (eff as ExerciseKind)
 
   return (
     <div className="mx-auto flex min-h-full w-full max-w-md flex-col">
@@ -80,21 +108,22 @@ function Practice({ lessonId, title, ids }: { lessonId: string; title: string; i
         }
       />
       <div className="flex flex-1 flex-col px-4 pb-4 pt-3">
-        {mode === 'list' ? (
+        {eff === 'list' ? (
           <WordList words={lessonWordsOf(ids)} front={front} speech={speech} />
         ) : finished ? (
           <VocabResult session={run.session} counted={run.counted} onDone={back} onRetry={retry} />
-        ) : mode === 'cards' ? (
+        ) : eff === 'cards' ? (
           <FlashCards session={run.session} front={front} speech={speech} onAnswer={answer} onOpenSettings={() => setSheet(true)} />
-        ) : (
-          <VocabTest key={run.session.pos} session={run.session} front={front} onAnswer={answer} />
-        )}
+        ) : word ? (
+          <Exercise key={`${run.session.pos}-${eff}`} kind={kind} word={word} front={front} speech={speech} onDone={answer} />
+        ) : null}
       </div>
-      {sheet && <SettingsSheet mode={mode} front={front} onChange={change} onClose={() => setSheet(false)} />}
+      {sheet && <SettingsSheet mode={eff} front={front} hasNouns={nounIds.length > 0} canListen={canListen} onChange={change} onClose={() => setSheet(false)} />}
     </div>
   )
 }
 
+const uniq = (a: string[]) => a.filter((x, i) => a.indexOf(x) === i)
 const lessonWordsOf = (ids: string[]): VocabWord[] => ids.flatMap((id) => wordById(id) ?? [])
 
 /** /til/lugat/:lessonId — dars soʻzlari; /til/lugat/aralash — ochilgan barcha darslar soʻzlari aralash. */

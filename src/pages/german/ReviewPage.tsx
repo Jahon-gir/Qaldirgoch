@@ -9,6 +9,8 @@ import { daysBetween, isFirstAttempt, pickOptions, sessionAnswer, sessionCurrent
 import { useSpeech } from '../../german/useSpeech'
 import { useWords } from '../../german/WordsProvider'
 import { useFeedback } from '../../ui/useFeedback'
+import { Exercise } from '../../components/vocab/ex/Exercise'
+import { reviewKinds, type ExerciseKind } from '../../german/exercises'
 
 /** Toʻgʻri javobdan keyin keyingi soʻzga oʻtish (xato javobda — "Davom etish" tugmasi). */
 export const RIGHT_ADVANCE_MS = 1500
@@ -168,9 +170,13 @@ export default function ReviewPage() {
   const { t } = useI18n()
   useHistoryAnchor('/til')
   const back = useBack('/til')
-  const { due, addDone } = useWords()
+  const { due, words, addDone, answer } = useWords()
+  const speech = useSpeech()
   // Sessiya ochilgan paytdagi soʻzlar bilan boshlanadi (javob berilgani roʻyxatdan chiqib ketmasin)
   const [session, setSession] = useState<Session>(() => startSession(due.filter((id) => wordById(id))))
+  // Usul soʻz holatiga qarab — sessiya boshidagi oraliq boʻyicha (javobdan keyin oraliq oʻzgaradi, savol oʻrtasida almashmasin).
+  // Sessiya oxirida qayta soʻraladigan xato soʻz — Test.
+  const [kinds] = useState<ExerciseKind[]>(() => reviewKinds(session.queue, (id) => words[id]?.interval ?? 1, wordById, speech.canSpeak()))
   const finished = sessionDone(session)
   const onAnswered = useCallback(
     (correct: boolean) => {
@@ -217,7 +223,21 @@ export default function ReviewPage() {
             </span>
           </header>
           <div className="flex flex-1 flex-col pt-3" key={session.pos}>
-            <Question session={session} onAnswered={onAnswered} />
+            {(kinds[session.pos] ?? 'test') === 'test' ? (
+              <Question session={session} onAnswered={onAnswered} />
+            ) : (
+              <Exercise
+                kind={kinds[session.pos]}
+                word={wordById(sessionCurrent(session)!)!}
+                front="de"
+                speech={speech}
+                onAnswer={(correct) => {
+                  const id = sessionCurrent(session)!
+                  answer(id, correct, isFirstAttempt(session, id)) // 'almost' ham toʻgʻri
+                }}
+                onDone={onAnswered}
+              />
+            )}
           </div>
         </>
       )}

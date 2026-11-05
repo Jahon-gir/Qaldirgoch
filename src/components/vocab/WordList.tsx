@@ -4,6 +4,7 @@ import type { VocabWord } from '../../content/german/words'
 import { useI18n } from '../../i18n/I18nProvider'
 import type { VocabFront } from '../../profile/questions'
 import type { Speech } from '../german/Listen'
+import { DeWord } from './ex/common'
 
 /** Ovoz tugmasi: koʻrinishi 40px doira, bosish maydoni 44px. Har doim nemischani oʻqiydi. */
 export function SpeakDot({ speech, de }: { speech: Speech; de: string }) {
@@ -53,8 +54,8 @@ export function WordList({ words, front, speech }: { words: VocabWord[]; front: 
       <ul className="overflow-hidden rounded-card bg-surface">
         {words.map((w) => {
           const shown = open.has(w.id)
-          const main = front === 'de' ? w.de : w.tr[lang]
-          const other = front === 'de' ? w.tr[lang] : w.de
+          const main = front === 'de' ? <DeWord de={w.de} /> : w.tr[lang]
+          const other = front === 'de' ? w.tr[lang] : <DeWord de={w.de} />
           return (
             <li key={w.id} className="flex items-center border-b border-line last:border-0">
               <button

@@ -61,7 +61,8 @@ function renderApp(path: string | string[], lang?: string) {
 
 const TODAY = localDay()
 const due = (interval = 3, mistakes = 0) => ({ due: TODAY, interval, mistakes, updatedAt: NOW })
-const WORDS3: Words = { 'a1-m1-hallo': due(3), 'a1-m1-guten-tag': due(7), 'a1-m1-der-koch': due(1, 1) }
+// Hammasi 1/3 kunlik oraliqda — Test usuli (0.6.3: 7+ kunlik soʻzlar boshqa usulda keladi, alohida testda)
+const WORDS3: Words = { 'a1-m1-hallo': due(3), 'a1-m1-guten-tag': due(3), 'a1-m1-der-koch': due(1, 1) }
 const stored = (): Words => JSON.parse(localStorage.getItem('qaldirgoch.words')!)
 const activityToday = () => JSON.parse(localStorage.getItem('qaldirgoch.activity')!)[TODAY]?.count ?? 0
 const where = () => screen.getByTestId('where').textContent
