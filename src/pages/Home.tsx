@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom'
-import { IconChevronRight, IconRoute, IconSettings, IconShieldCheck } from '@tabler/icons-react'
+import { IconChevronRight, IconRepeat, IconRoute, IconSettings, IconShieldCheck } from '@tabler/icons-react'
 import { Logo } from '../components/Logo'
 import { AUSBILDUNG_PATH } from '../content/countries'
 import { Card } from '../components/ui/Card'
@@ -10,18 +10,13 @@ import { professionLabel } from '../profile/format'
 import { useProfile } from '../profile/ProfileProvider'
 import { useProgress } from '../progress/ProgressProvider'
 import { useI18n } from '../i18n/I18nProvider'
-import { useDirection } from '../german/useDirection'
-import { useLessons } from '../german/LessonsProvider'
-import { levelProgress, nextUnfinished } from '../german/logic'
+import { useWords } from '../german/WordsProvider'
 
 export default function Home() {
   const nav = useNavigate()
-  const { lang, t } = useI18n()
+  const { t } = useI18n()
   const { profile } = useProfile()
-  const { results } = useLessons()
-  const { direction } = useDirection()
-  const nextLesson = nextUnfinished(direction, results)
-  const a1 = levelProgress('A1', direction, results)
+  const { progress, streak, due } = useWords()
   const { summary } = useProgress()
   const currentStep = summary.currentIndex >= 0 ? AUSBILDUNG_STEPS[summary.currentIndex] : null
   // "Boshqa" tanlanib matn yozilmagan boʻlsa — kasb koʻrsatilmaydi
@@ -42,15 +37,25 @@ export default function Home() {
 
       <Card>
         <p className="text-sm text-ink-2">{t('home.german')}</p>
-        <p className="mt-0.5 text-lg font-semibold">{!nextLesson ? t('german.allDone') : a1.done === 0 ? t('home.firstLesson') : nextLesson.title[lang]}</p>
-        <div className="mt-3">
-          <ProgressBar value={a1.percent} tone="success" label={t('home.progressLabel')} />
+        <p className="mt-0.5 text-lg font-semibold">{t('home.germanToday', { n: Math.min(progress.count, progress.goal), goal: progress.goal, s: streak.current })}</p>
+        <div className="mt-2">
+          <ProgressBar value={progress.percent} tone="success" thin label={t('home.goalLabel')} />
         </div>
-        <p className="mt-1.5 text-sm text-ink-2">{t('german.homeCount', { n: a1.done, total: a1.total })}</p>
         <Button className="mt-3" onClick={() => nav('/til')}>
           {t('home.start')}
         </Button>
       </Card>
+
+      {due.length > 0 && (
+        <Link
+          to="/til/takrorlash"
+          className="flex min-h-[56px] items-center gap-3 rounded-card bg-accent px-4 py-3 text-on-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          <IconRepeat size={22} className="shrink-0" aria-hidden />
+          <span className="flex-1 text-base font-semibold">{t('home.reviewWaiting', { n: due.length })}</span>
+          <IconChevronRight size={20} className="shrink-0" aria-hidden />
+        </Link>
+      )}
 
       <Link to={AUSBILDUNG_PATH} className="block">
         <Card className="flex items-center gap-3">

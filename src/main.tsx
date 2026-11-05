@@ -8,6 +8,7 @@ import { AuthProvider } from './auth/AuthProvider'
 import { ProfileProvider } from './profile/ProfileProvider'
 import { ProgressProvider } from './progress/ProgressProvider'
 import { LessonsProvider } from './german/LessonsProvider'
+import { WordsProvider } from './german/WordsProvider'
 import { InstallProvider } from './pwa/InstallProvider'
 import App from './App'
 
@@ -19,9 +20,11 @@ createRoot(document.getElementById('root')!).render(
           <ProfileProvider>
             <ProgressProvider>
               <LessonsProvider>
-                <InstallProvider>
-                  <App />
-                </InstallProvider>
+                <WordsProvider>
+                  <InstallProvider>
+                    <App />
+                  </InstallProvider>
+                </WordsProvider>
               </LessonsProvider>
             </ProgressProvider>
           </ProfileProvider>

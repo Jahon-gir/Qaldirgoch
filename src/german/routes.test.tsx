@@ -9,6 +9,8 @@ import { I18nProvider } from '../i18n/I18nProvider'
 import { ProfileProvider } from '../profile/ProfileProvider'
 import { ProgressProvider } from '../progress/ProgressProvider'
 import { LessonsProvider } from './LessonsProvider'
+import { addDays, localDay } from './srs'
+import { WordsProvider } from './WordsProvider'
 
 const PROFILE = { ageRange: '25-30', education: 'college', profession: 'welder', germanLevel: 'none', dailyTime: '30', departure: '1y', createdAt: '2026-11-01T00:00:00.000Z', schemaVersion: 1 }
 
@@ -22,9 +24,11 @@ function renderApp(path: string, lang?: string) {
         <ProfileProvider>
           <ProgressProvider>
             <LessonsProvider>
+              <WordsProvider>
               <MemoryRouter initialEntries={[path]}>
                 <AppRoutes />
               </MemoryRouter>
+              </WordsProvider>
             </LessonsProvider>
           </ProgressProvider>
         </ProfileProvider>
@@ -108,6 +112,11 @@ describe('marshrut: Bosh → Til → modul → dars → natija → modulga qayti
     expect(screen.getByRole('heading', { name: 'Salomlashish va tanishuv' })).toBeTruthy()
     expect(screen.getByText('1 / 6 dars')).toBeTruthy()
     expect(JSON.parse(localStorage.getItem('qaldirgoch.lessons')!)['a1-m1-l1']).toMatchObject({ score: 6, total: 7 })
+    // Dars soʻzlari takrorlash qutisiga tushdi (ertaga keladi), har mashq kunlik maqsadga qoʻshildi
+    const words = JSON.parse(localStorage.getItem('qaldirgoch.words')!)
+    expect(Object.keys(words)).toEqual(['a1-m1-hallo', 'a1-m1-guten-morgen', 'a1-m1-guten-tag', 'a1-m1-guten-abend'])
+    expect(words['a1-m1-hallo']).toMatchObject({ due: addDays(localDay(), 1), interval: 1, mistakes: 0 })
+    expect(JSON.parse(localStorage.getItem('qaldirgoch.activity')!)[localDay()].count).toBe(8)
     expect(errors).not.toHaveBeenCalled()
     errors.mockRestore()
   })

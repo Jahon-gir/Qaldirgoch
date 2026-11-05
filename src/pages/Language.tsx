@@ -5,10 +5,13 @@ import { Card } from '../components/ui/Card'
 import { OptionCard } from '../components/ui/OptionCard'
 import { ProgressBar } from '../components/ui/ProgressBar'
 import { DIRECTIONS, LEVELS, LEVEL_LOCKED, moduleById, type Level } from '../content/german'
+import { GoalCard, ReviewCard, StreakLine, WordsBreakdown } from '../components/german/progress'
 import { useI18n } from '../i18n/I18nProvider'
 import { useDirection } from '../german/useDirection'
 import { useLessons } from '../german/LessonsProvider'
 import { levelProgress, lessonsOf, moduleProgress, nextUnfinished, visibleModules } from '../german/logic'
+import { nextDueDay } from '../german/srs'
+import { useWords } from '../german/WordsProvider'
 
 export default function Language() {
   const { lang, t } = useI18n()
@@ -17,6 +20,8 @@ export default function Language() {
   const [level, setLevel] = useState<Level>('A1')
   const [picking, setPicking] = useState(false)
 
+  const { words, activity, today, goal, due, streak } = useWords()
+  const lp = levelProgress(level, direction, results)
   const next = nextUnfinished(direction, results)
   const nextModule = next ? moduleById(next.moduleId) : null
   const modules = visibleModules(direction).filter((m) => m.level === level)
@@ -55,6 +60,10 @@ export default function Language() {
         </div>
       )}
 
+      <GoalCard activity={activity} today={today} goal={goal} />
+      <StreakLine current={streak.current} record={streak.record} />
+      <ReviewCard due={due.length} nextDue={nextDueDay(words, today)} today={today} hasWords={Object.keys(words).length > 0} />
+
       <div className="rounded-card bg-accent p-4 text-on-accent">
         <p className="text-base opacity-90">{t('german.continueTitle')}</p>
         {next && nextModule ? (
@@ -72,6 +81,7 @@ export default function Language() {
           <p className="text-lg font-semibold">{t('german.allDone')}</p>
         )}
       </div>
+      <WordsBreakdown words={words} />
 
       <div role="group" aria-label={t('german.levels')} className="grid grid-cols-3 gap-2">
         {LEVELS.map((lv) => {
@@ -98,6 +108,18 @@ export default function Language() {
           )
         })}
       </div>
+
+      {!LEVEL_LOCKED[level] && (
+        <section aria-labelledby="level-title" className="space-y-1.5 px-1">
+          <div className="flex items-baseline justify-between gap-2">
+            <h2 id="level-title" className="text-lg font-semibold">
+              {t('german.levelTitle', { level })}
+            </h2>
+            <p className="text-base text-ink-2">{t('german.levelCount', { n: lp.done, total: lp.total })}</p>
+          </div>
+          <ProgressBar value={lp.percent} tone="success" label={t('german.levelTitle', { level })} />
+        </section>
+      )}
 
       <h2 className="sr-only">{t('german.modules')}</h2>
       {modules.length === 0 ? (

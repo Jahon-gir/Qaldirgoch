@@ -27,7 +27,7 @@ export default function ProfilePage() {
 
   return (
     <div className="space-y-3">
-      <PageHeader title={t('profile.title')} back />
+      <PageHeader title={t('profile.title')} back backTo="/sozlamalar" />
       <AccountBlock />
       <Card className="py-1">
         {profile ? (

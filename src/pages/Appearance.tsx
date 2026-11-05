@@ -13,7 +13,7 @@ export default function Appearance() {
   const tr = useT()
   return (
     <div className="space-y-5">
-      <PageHeader title={tr('settings.appearance')} back />
+      <PageHeader title={tr('settings.appearance')} back backTo="/sozlamalar" />
 
       <section>
         <h2 className="mb-2 text-sm text-ink-2">{tr('appearance.mode')}</h2>

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { Navigate, useNavigate, useParams } from 'react-router-dom'
+import { Navigate, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { IconCheck, IconX } from '@tabler/icons-react'
 import { ChoiceStep, MatchStep, WordStep } from '../../components/german/steps'
 import { ListenIcon, NoVoice } from '../../components/german/Listen'
@@ -12,6 +12,9 @@ import { useDirection } from '../../german/useDirection'
 import { useLessons } from '../../german/LessonsProvider'
 import { nextLessonAfter, summarize, type Outcome } from '../../german/logic'
 import { useSpeech } from '../../german/useSpeech'
+import { useWords } from '../../german/WordsProvider'
+import { wordIdsOfLesson } from '../../content/german/words'
+import { FROM_MODULE, useBackToModule, useHistoryAnchor } from '../../lib/useHistoryAnchor'
 
 /** Darsdan chiqishni tasdiqlash: natija saqlanmasligi aytiladi. */
 function ConfirmExit({ onStay, onLeave }: { onStay: () => void; onLeave: () => void }) {
@@ -41,10 +44,12 @@ function ConfirmExit({ onStay, onLeave }: { onStay: () => void; onLeave: () => v
 function ResultView({ lesson, summary }: { lesson: Lesson; summary: ReturnType<typeof summarize> }) {
   const { lang, t } = useI18n()
   const nav = useNavigate()
+  const loc = useLocation()
   const speech = useSpeech()
   const { direction } = useDirection()
   const next = nextLessonAfter(lesson.id, direction)
-  const toModule = () => nav(`/til/modul/${lesson.moduleId}`, { replace: true })
+  // Darsga modul ekranidan kiriladi: orqaga qaytish tarixni ikkilantirmaydi ("orqaga" tugmasi modulda qolib ketmaydi)
+  const toModule = useBackToModule(`/til/modul/${lesson.moduleId}`)
   return (
     <div className="flex flex-1 flex-col gap-4">
       <div className="flex flex-col items-center gap-2 pt-4 text-center">
@@ -90,7 +95,7 @@ function ResultView({ lesson, summary }: { lesson: Lesson; summary: ReturnType<t
         </section>
       )}
       <div className="sticky bottom-0 -mx-4 mt-auto space-y-2 bg-bg px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-3">
-        {next && <Button onClick={() => nav(`/til/dars/${next.id}`, { replace: true })}>{t('german.nextLesson')}</Button>}
+        {next && <Button onClick={() => nav(`/til/dars/${next.id}`, { replace: true, state: loc.state })}>{t('german.nextLesson')}</Button>}
         <Button variant={next ? 'secondary' : 'primary'} onClick={toModule}>
           {t('german.backToModule')}
         </Button>
@@ -101,9 +106,12 @@ function ResultView({ lesson, summary }: { lesson: Lesson; summary: ReturnType<t
 
 function LessonRunner({ lesson }: { lesson: Lesson }) {
   const { t } = useI18n()
-  const nav = useNavigate()
   const { record } = useLessons()
+  const leave = useBackToModule(`/til/modul/${lesson.moduleId}`)
+  const { learn, addExercise } = useWords()
   const speech = useSpeech()
+  // Toʻgʻridan-toʻgʻri ochilsa tarixga modul qoʻyiladi — "Modulga qaytish" bir qadam orqaga boʻladi
+  useHistoryAnchor(`/til/modul/${lesson.moduleId}`, FROM_MODULE)
   const exercises = exercisesOf(lesson.id)
   const [i, setI] = useState(0)
   const outcomes = useRef<Outcome[]>([])
@@ -117,9 +125,11 @@ function LessonRunner({ lesson }: { lesson: Lesson }) {
 
   const onStepDone = (o: Outcome) => {
     outcomes.current = [...outcomes.current, o]
+    addExercise(1) // kunlik maqsad: har bajarilgan mashq
     if (i + 1 < exercises.length) return setI(i + 1)
     const s = summarize(exercises, outcomes.current)
     record(lesson.id, s.score, s.total)
+    learn(wordIdsOfLesson(lesson.id)) // darsdagi soʻzlar takrorlash qutisiga (ertaga keladi)
     setSummary(s)
   }
 
@@ -146,7 +156,7 @@ function LessonRunner({ lesson }: { lesson: Lesson }) {
           </div>
         </>
       )}
-      {confirmExit && <ConfirmExit onStay={() => setConfirmExit(false)} onLeave={() => nav(`/til/modul/${lesson.moduleId}`, { replace: true })} />}
+      {confirmExit && <ConfirmExit onStay={() => setConfirmExit(false)} onLeave={leave} />}
     </div>
   )
 }

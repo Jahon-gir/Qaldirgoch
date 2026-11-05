@@ -4,6 +4,7 @@ import { supabase } from '../lib/supabase'
 import { clearProgressStorage } from '../progress/storage'
 import { countryById, effectiveCountry, type CountryId } from '../content/countries'
 import type { Direction } from '../content/german/types'
+import { DEFAULT_GOAL, isGoal, type DailyGoal } from '../german/daily'
 import { PROFILE_SCHEMA_VERSION, type Answers, type Profile } from './questions'
 import { cleanText, decideSync, fetchRemoteProfile, normalizeProfile, pushRemoteProfile } from './sync'
 
@@ -51,7 +52,12 @@ type Ctx = {
   /** Tanlangan davlat (yopiq davlatda tanlov oʻzgarmaydi). Profilda saqlanadi va akkaunt bilan sinxronlanadi. */
   selectedCountry: CountryId
   selectCountry: (id: CountryId) => void
+  /** Kunlik maqsad (mashqlar soni). Profilda saqlanadi va akkaunt bilan sinxronlanadi. */
+  dailyGoal: DailyGoal
+  setDailyGoal: (g: DailyGoal) => void
   sync: SyncPhase
+  /** Mehmon akkauntga kirib "yangidan boshlash"ni tanladi: mahalliy soʻzlar va faollik akkauntga koʻchirilmaydi. */
+  guestDiscarded: boolean
   /** Serverga yuborilmagan oʻzgarish bor. */
   syncPending: boolean
   /** "ask" dialogi: true — akkauntga koʻchirish, false — mahalliy profilni tozalab yangidan boshlash. */
@@ -72,6 +78,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
   const [sync, setSync] = useState<SyncPhase>('off')
   const [syncPending, setSyncPending] = useState(() => read(DIRTY_KEY, (s) => !!s, false))
   const [retry, setRetry] = useState(0)
+  const [guestDiscarded, setGuestDiscarded] = useState(false)
 
   // Eng yangi qiymatlar (asinxron funksiyalar eskirgan yopilmani ushlamasligi uchun)
   const profileRef = useRef(profile)
@@ -192,7 +199,8 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
       schemaVersion: PROFILE_SCHEMA_VERSION,
       // Qoʻlda tanlangan yoʻnalish kasb oʻzgarmaguncha saqlanadi
       germanDirection: profile && profile.profession === a.profession ? profile.germanDirection : undefined,
-      selectedCountry: profile?.selectedCountry
+      selectedCountry: profile?.selectedCountry,
+      dailyGoal: profile?.dailyGoal
     }
     setProfile(p)
     write(PROFILE_KEY, JSON.stringify(p))
@@ -218,6 +226,15 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
     if (userId && phaseRef.current === 'ready') void push(userId, p)
   }
 
+  const setDailyGoal = (g: DailyGoal) => {
+    const cur = profileRef.current
+    if (!cur || !isGoal(g) || (cur.dailyGoal ?? DEFAULT_GOAL) === g) return
+    const p: Profile = { ...cur, dailyGoal: g }
+    setProfile(p)
+    write(PROFILE_KEY, JSON.stringify(p))
+    if (userId && phaseRef.current === 'ready') void push(userId, p)
+  }
+
   const completeOnboarding = () => {
     setOnboarded(true)
     write(DONE_KEY, '1')
@@ -229,6 +246,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
       const local = profileRef.current
       if (local) await push(userId, local)
     } else {
+      setGuestDiscarded(true)
       applyLocal(null)
       setOnboarded(false)
       write(DONE_KEY, null)
@@ -256,7 +274,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
 
   return (
     <ProfileContext.Provider
-      value={{ profile, onboarded, saveAnswers, completeOnboarding, setGermanDirection, selectedCountry: effectiveCountry(profile?.selectedCountry), selectCountry, sync, syncPending, answerMigrate, answerChoose, signOutAndClear }}
+      value={{ profile, onboarded, saveAnswers, completeOnboarding, setGermanDirection, selectedCountry: effectiveCountry(profile?.selectedCountry), selectCountry, dailyGoal: profile?.dailyGoal ?? DEFAULT_GOAL, setDailyGoal, sync, guestDiscarded, syncPending, answerMigrate, answerChoose, signOutAndClear }}
     >
       {children}
     </ProfileContext.Provider>

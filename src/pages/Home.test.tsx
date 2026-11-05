@@ -5,6 +5,7 @@ import { MemoryRouter, useLocation } from 'react-router-dom'
 import { AppRoutes } from '../App'
 import { AuthProvider } from '../auth/AuthProvider'
 import { LessonsProvider } from '../german/LessonsProvider'
+import { WordsProvider } from '../german/WordsProvider'
 import { I18nProvider } from '../i18n/I18nProvider'
 import { ProfileProvider } from '../profile/ProfileProvider'
 import { ProgressProvider } from '../progress/ProgressProvider'
@@ -21,10 +22,12 @@ function renderHome(profile: Record<string, unknown> = PROFILE) {
         <ProfileProvider>
           <ProgressProvider>
             <LessonsProvider>
+              <WordsProvider>
               <MemoryRouter initialEntries={['/']}>
                 <AppRoutes />
                 <Where />
               </MemoryRouter>
+              </WordsProvider>
             </LessonsProvider>
           </ProgressProvider>
         </ProfileProvider>
