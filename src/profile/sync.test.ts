@@ -106,3 +106,20 @@ describe('tanlangan davlat profilda', () => {
     expect(normalizeProfile(base)?.selectedCountry).toBeUndefined()
   })
 })
+
+describe('kunlik maqsad profilda (eski mashq birligi → dars/takrorlash)', () => {
+  const goal = (v: unknown) => normalizeProfile({ ...base, dailyGoal: v })?.dailyGoal
+  it('eski 10 / 15 / 20 → 1 / 2 / 3', () => {
+    expect([10, 15, 20].map(goal)).toEqual([1, 2, 3])
+  })
+  it('yangi 1 / 2 / 3 oʻzgarmaydi; takror oʻqilsa ham bir xil', () => {
+    expect([1, 2, 3].map(goal)).toEqual([1, 2, 3])
+    const once = normalizeProfile({ ...base, dailyGoal: 15 })
+    expect(normalizeProfile(once)?.dailyGoal).toBe(2)
+  })
+  it('notoʻgʻri qiymat → 1, yoʻq boʻlsa — yoʻq (standart 1)', () => {
+    expect([0, 7, 25, '10', NaN].map(goal)).toEqual([1, 1, 1, 1, 1])
+    expect(goal(null)).toBeUndefined()
+    expect(normalizeProfile(base)?.dailyGoal).toBeUndefined()
+  })
+})

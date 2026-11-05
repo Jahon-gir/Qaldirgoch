@@ -4,6 +4,7 @@ import { sanitizeActivity, type Activity, type DayActivity } from './daily'
 import { sanitizeWords, type WordState, type Words } from './srs'
 
 type WordRow = { word_id: string; keyingi_takror: string; interval: number; xatolar: number; updated_at: string }
+// mashqlar_soni ustuni nomi qoldi: 0.6.1 dan beri unda tugatilgan dars va takrorlash soni (migratsiya kerak emas)
 type DayRow = { sana: string; mashqlar_soni: number; maqsad: number; kechirim: boolean }
 
 /** Serverdagi (RLS bilan faqat oʻz) soʻzlar. Xatoda tashlaydi. */

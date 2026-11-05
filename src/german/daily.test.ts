@@ -1,10 +1,13 @@
 import { describe, expect, it } from 'vitest'
 import {
   activityToPush,
-  addExercises,
+  addDone,
   applyForgiveness,
   isGoal,
   isoWeekStart,
+  LEGACY_GOAL,
+  migrateTodayRow,
+  normalizeGoal,
   mergeActivity,
   sanitizeActivity,
   setTodayGoal,
@@ -20,13 +23,13 @@ const act = (days: Record<string, number>, forgiven: string[] = [], goal = 10): 
 
 // 2026-11-02 — dushanba, 2026-11-08 — yakshanba
 describe('kunlik hisob', () => {
-  it('mashqlar qoʻshiladi, kunga oʻsha paytdagi maqsad yoziladi; notoʻgʻri son eʼtiborsiz', () => {
+  it('tugatilgan dars/takrorlash qoʻshiladi, kunga oʻsha paytdagi maqsad yoziladi; notoʻgʻri son eʼtiborsiz', () => {
     let a: Activity = {}
-    a = addExercises(a, '2026-11-05', 1, 10)
-    a = addExercises(a, '2026-11-05', 7, 15)
-    expect(a['2026-11-05']).toEqual({ count: 8, goal: 15, forgiven: false })
-    expect(addExercises(a, '2026-11-05', 0, 10)).toBe(a)
-    expect(addExercises(a, '2026-11-05', -3, 10)).toBe(a)
+    a = addDone(a, '2026-11-05', 1)
+    a = addDone(a, '2026-11-05', 2)
+    expect(a['2026-11-05']).toEqual({ count: 2, goal: 2, forgiven: false })
+    expect(addDone(a, '2026-11-05', 2, 0)).toBe(a)
+    expect(addDone(a, '2026-11-05', 2, -3)).toBe(a)
   })
 
   it('maqsad oʻzgarsa faqat bugungi kun yangilanadi', () => {
@@ -39,14 +42,14 @@ describe('kunlik hisob', () => {
   })
 
   it('maqsad: qolgan mashqlar va bajarilgani', () => {
-    expect(todayProgress(act({ '2026-11-05': 6 }), '2026-11-05', 10)).toEqual({ count: 6, goal: 10, left: 4, met: false, percent: 60 })
-    expect(todayProgress(act({ '2026-11-05': 12 }), '2026-11-05', 10)).toMatchObject({ left: 0, met: true, percent: 100 })
-    expect(todayProgress({}, '2026-11-05', 15)).toMatchObject({ count: 0, left: 15, met: false })
+    expect(todayProgress(act({ '2026-11-05': 1 }, [], 2), '2026-11-05', 2)).toEqual({ count: 1, goal: 2, left: 1, met: false, percent: 50 })
+    expect(todayProgress(act({ '2026-11-05': 3 }, [], 2), '2026-11-05', 2)).toMatchObject({ left: 0, met: true, percent: 100 })
+    expect(todayProgress({}, '2026-11-05', 3)).toMatchObject({ count: 0, left: 3, met: false })
   })
 
-  it('maqsad qiymatlari: 10 / 15 / 20', () => {
-    expect([10, 15, 20].every(isGoal)).toBe(true)
-    expect([0, 5, 12, '10', null].some(isGoal)).toBe(false)
+  it('maqsad qiymatlari: 1 / 2 / 3', () => {
+    expect([1, 2, 3].every(isGoal)).toBe(true)
+    expect([0, 4, 10, 15, 20, '1', null].some(isGoal)).toBe(false)
   })
 })
 
@@ -181,5 +184,74 @@ describe('faollikni saqlash va birlashtirish', () => {
     const server = act({ '2026-11-04': 12, '2026-11-05': 3, '2026-11-07': 2 })
     const merged = { ...act({ '2026-11-04': 12, '2026-11-05': 8, '2026-11-06': 1 }), ...act({ '2026-11-07': 2 }, [], 20) }
     expect(activityToPush(merged, server).map(([d]) => d)).toEqual(['2026-11-05', '2026-11-06', '2026-11-07'])
+  })
+})
+
+describe('eski birlik (mashq 10/15/20) → yangi (dars/takrorlash 1/2/3)', () => {
+  it('profildagi dailyGoal xaritasi: 10→1, 15→2, 20→3; yangilari va yoʻqligi oʻzgarmaydi; notoʻgʻri → 1', () => {
+    expect([10, 15, 20].map(normalizeGoal)).toEqual([1, 2, 3])
+    expect([1, 2, 3].map(normalizeGoal)).toEqual([1, 2, 3])
+    expect([undefined, null].map(normalizeGoal)).toEqual([undefined, undefined])
+    expect([0, 4, 12, 25, -1, 1.5, '10', '2', NaN, {}, true].map(normalizeGoal)).toEqual(Array(11).fill(1))
+    // takror chaqirilsa natija oʻzgarmaydi (bir martalik oʻtkazish)
+    expect([10, 15, 20].map((v) => normalizeGoal(normalizeGoal(v)))).toEqual([1, 2, 3])
+  })
+
+  it('bugungi eski yozuv: bajarilgan boʻlsa soni = yangi maqsad, aks holda 0; maqsad = yangi maqsad', () => {
+    const done = act({ '2026-11-05': 12 }) // 12 >= 10
+    expect(migrateTodayRow(done, '2026-11-05', 2)['2026-11-05']).toEqual({ count: 2, goal: 2, forgiven: false })
+    const notDone = act({ '2026-11-05': 6 })
+    expect(migrateTodayRow(notDone, '2026-11-05', 2)['2026-11-05']).toEqual({ count: 0, goal: 2, forgiven: false })
+    const exact = act({ '2026-11-05': 15 }, [], 15)
+    expect(migrateTodayRow(exact, '2026-11-05', 3)['2026-11-05']).toEqual({ count: 3, goal: 3, forgiven: false })
+    expect(migrateTodayRow(act({ '2026-11-05': 19 }, [], 20), '2026-11-05', 3)['2026-11-05']).toMatchObject({ count: 0, goal: 3 })
+  })
+
+  it('yangi yozuv va boshqa kunlar tegilmaydi; takror chaqirilsa oʻzgarmaydi', () => {
+    const fresh = act({ '2026-11-05': 1 }, [], 2)
+    const a0 = act({ '2026-11-05': 12 })
+    expect(migrateTodayRow(fresh, '2026-11-05', 2)).toBe(fresh)
+    expect(migrateTodayRow({}, '2026-11-05', 1)).toEqual({})
+    expect(migrateTodayRow(a0, '2026-11-05', 10)).toBe(a0) // yaroqsiz yangi maqsad — tegilmaydi
+    const a = { ...act({ '2026-11-04': 12 }), ...act({ '2026-11-05': 12 }) }
+    const m = migrateTodayRow(a, '2026-11-05', 1)
+    expect(m['2026-11-04']).toBe(a['2026-11-04']) // oʻtgan kun — oʻz birligida
+    expect(migrateTodayRow(m, '2026-11-05', 1)).toBe(m)
+  })
+
+  it('eski streak va rekord saqlanadi: oʻtgan kunlar oʻz maqsadi (10/15/20) bilan baholanadi, yangi kunlar 1/2/3 bilan', () => {
+    // Rekord 5: 26–30 oktyabr (maqsad 10). 31-oktyabr kechirilgan. 2–4 noyabr: 10, 15, 20 maqsadli kunlar bajarilgan.
+    const old = {
+      ...act({ '2026-10-26': 10, '2026-10-27': 11, '2026-10-28': 12, '2026-10-29': 10, '2026-10-30': 10, '2026-10-31': 0 }, ['2026-10-31']),
+      ...act({ '2026-11-02': 10 }, [], 10),
+      ...act({ '2026-11-03': 15 }, [], 15),
+      ...act({ '2026-11-04': 22 }, [], 20)
+    }
+    const before = streakInfo({ ...old, ...act({ '2026-11-05': 4 }) }, '2026-11-05', 10)
+    expect(before).toEqual({ current: 3, record: 5, forgiven: ['2026-10-31'] })
+    // 0.6.1: foydalanuvchi eski maqsad 10 → yangi 1; bugungi yozuv (4 < 10) → 0/1
+    const migrated = migrateTodayRow({ ...old, ...act({ '2026-11-05': 4 }) }, '2026-11-05', normalizeGoal(10)!)
+    expect(streakInfo(migrated, '2026-11-05', 1)).toEqual(before) // streak, rekord, kechirim — oʻzgarmadi
+    expect(weekDays(migrated, '2026-11-05', 1).map((d) => d.done)).toEqual([true, true, true, false, false, false, false])
+    // Bugun 1 ta dars tugatildi — maqsad 1 bajarildi, streak 4, rekord 5 saqlanadi
+    const doneToday = addDone(migrated, '2026-11-05', 1)
+    expect(streakInfo(doneToday, '2026-11-05', 1)).toEqual({ current: 4, record: 5, forgiven: ['2026-10-31'] })
+    expect(applyForgiveness(doneToday, '2026-11-05', 1)).toBe(doneToday) // kechirim sarflanmaydi
+  })
+
+  it('bugungi eski yozuvga yangi dars qoʻshilsa avval oʻtkaziladi (birliklar aralashmaydi)', () => {
+    const a = addDone(act({ '2026-11-05': 6 }), '2026-11-05', 2) // 6 < 10 → 0, +1
+    expect(a['2026-11-05']).toEqual({ count: 1, goal: 2, forgiven: false })
+    const b = addDone(act({ '2026-11-05': 12 }), '2026-11-05', 2) // bajarilgan → 2, +1
+    expect(b['2026-11-05']).toEqual({ count: 3, goal: 2, forgiven: false })
+  })
+
+  it('maqsadi yoʻq eski yozuv (0.6.0 dan oldin) 10 deb oʻqiladi va oʻtgan kunda shu bilan baholanadi', () => {
+    expect(LEGACY_GOAL).toBe(10)
+    const raw = { '2026-11-03': { count: 10, forgiven: false }, '2026-11-04': { count: 9, forgiven: false } }
+    const a = sanitizeActivity(raw)
+    expect(a['2026-11-03'].goal).toBe(10)
+    expect(streakInfo(a, '2026-11-05', 1)).toEqual({ current: 1, record: 1, forgiven: ['2026-11-04'] }) // 4-noyabr: 9 < 10 — bajarilmagan (kechirildi)
+    expect(streakInfo({ ...a, '2026-11-04': { count: 10, goal: 10, forgiven: false } }, '2026-11-05', 1).current).toBe(2)
   })
 })

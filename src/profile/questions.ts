@@ -28,7 +28,7 @@ export type Profile = Answers & {
   germanDirection?: Direction
   /** Tanlangan (ochiq) davlat; yoʻq boʻlsa Germaniya. */
   selectedCountry?: CountryId
-  /** Kunlik maqsad (mashqlar soni): 10 / 15 / 20; yoʻq boʻlsa 10. */
+  /** Kunlik maqsad (tugatilgan dars yoki takrorlash soni): 1 / 2 / 3; yoʻq boʻlsa 1. */
   dailyGoal?: DailyGoal
 }
 export type QuestionId = Exclude<keyof Answers, 'professionOther'>

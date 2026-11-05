@@ -338,9 +338,9 @@ export const uz = {
   'update.action': 'Yangilash',
 
   'german.goal.title': 'Bugungi maqsad',
-  'german.goal.left': 'Yana {n} ta mashq qoldi',
+  'german.goal.left': 'Yana {n} ta dars yoki takrorlash qoldi',
   'german.goal.done': 'Bugungi maqsad bajarildi',
-  'german.goal.ring': 'Bugun {n} / {goal} mashq',
+  'german.goal.ring': 'Bugun {n} / {goal} dars yoki takrorlash',
   'german.week.label': 'Shu hafta kunlari',
   'german.week.0': 'D',
   'german.week.1': 'S',
@@ -389,7 +389,7 @@ export const uz = {
   'home.goalLabel': 'Bugungi maqsad boʻyicha progress',
   'home.reviewWaiting': '{n} ta soʻz takrorlashni kutyapti',
   'settings.dailyGoal': 'Kunlik maqsad',
-  'settings.goalN': '{n} ta mashq'
+  'settings.goalN': 'kuniga {n} dars yoki takrorlash'
 } as const
 
 export type Key = keyof typeof uz

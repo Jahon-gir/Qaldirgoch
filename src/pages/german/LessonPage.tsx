@@ -47,6 +47,7 @@ function ResultView({ lesson, summary }: { lesson: Lesson; summary: ReturnType<t
   const loc = useLocation()
   const speech = useSpeech()
   const { direction } = useDirection()
+  const { progress } = useWords()
   const next = nextLessonAfter(lesson.id, direction)
   // Darsga modul ekranidan kiriladi: orqaga qaytish tarixni ikkilantirmaydi ("orqaga" tugmasi modulda qolib ketmaydi)
   const toModule = useBackToModule(`/til/modul/${lesson.moduleId}`)
@@ -58,6 +59,12 @@ function ResultView({ lesson, summary }: { lesson: Lesson; summary: ReturnType<t
         </span>
         <h1 className="text-2xl font-semibold">{t('german.done')}</h1>
         <p className="text-base text-ink-2">{lesson.title[lang]}</p>
+        {progress.met && (
+          <p role="status" className="mt-1 inline-flex items-center gap-1.5 rounded-full bg-success-soft px-3 py-1.5 text-base font-semibold text-success-text">
+            <IconCheck size={18} aria-hidden />
+            {t('german.goal.done')}
+          </p>
+        )}
       </div>
       <div className="grid grid-cols-2 gap-3">
         <Card className="text-center">
@@ -108,13 +115,14 @@ function LessonRunner({ lesson }: { lesson: Lesson }) {
   const { t } = useI18n()
   const { record } = useLessons()
   const leave = useBackToModule(`/til/modul/${lesson.moduleId}`)
-  const { learn, addExercise } = useWords()
+  const { learn, addDone } = useWords()
   const speech = useSpeech()
   // Toʻgʻridan-toʻgʻri ochilsa tarixga modul qoʻyiladi — "Modulga qaytish" bir qadam orqaga boʻladi
   useHistoryAnchor(`/til/modul/${lesson.moduleId}`, FROM_MODULE)
   const exercises = exercisesOf(lesson.id)
   const [i, setI] = useState(0)
   const outcomes = useRef<Outcome[]>([])
+  const finished = useRef(false)
   const [summary, setSummary] = useState<ReturnType<typeof summarize> | null>(null)
   const [confirmExit, setConfirmExit] = useState(false)
 
@@ -125,11 +133,13 @@ function LessonRunner({ lesson }: { lesson: Lesson }) {
 
   const onStepDone = (o: Outcome) => {
     outcomes.current = [...outcomes.current, o]
-    addExercise(1) // kunlik maqsad: har bajarilgan mashq
     if (i + 1 < exercises.length) return setI(i + 1)
+    if (finished.current) return
+    finished.current = true
     const s = summarize(exercises, outcomes.current)
     record(lesson.id, s.score, s.total)
     learn(wordIdsOfLesson(lesson.id)) // darsdagi soʻzlar takrorlash qutisiga (ertaga keladi)
+    addDone() // kunlik maqsad +1: dars oxirigacha tugadi (qayta tugatish ham sanaladi); tashlab chiqilgani sanalmaydi
     setSummary(s)
   }
 

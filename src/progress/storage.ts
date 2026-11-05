@@ -8,7 +8,7 @@ export const PROGRESS_KEYS = {
   synced: 'qaldirgoch.progress.synced', // mehmon progressi shu akkaunt bilan birlashtirilgan: foydalanuvchi id
   lessons: 'qaldirgoch.lessons', // til darslari natijalari (user_lessons keshi)
   words: 'qaldirgoch.words', // takrorlash qutisidagi soʻzlar (user_words keshi)
-  activity: 'qaldirgoch.activity', // kunlik mashqlar soni va kechirim (user_daily_activity keshi)
+  activity: 'qaldirgoch.activity', // kunlik tugatilgan dars va takrorlash soni, maqsad, kechirim (user_daily_activity keshi)
   wordsSynced: 'qaldirgoch.words.synced' // mehmon soʻzlari shu akkauntga koʻchirilgan: foydalanuvchi id
 }
 
