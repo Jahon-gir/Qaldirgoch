@@ -11,6 +11,7 @@ import { CountryRoute, ProgramRoute, StepRoute } from './pages/countries/routes'
 import Language from './pages/Language'
 import ModulePage from './pages/german/ModulePage'
 import LessonPage from './pages/german/LessonPage'
+import ReviewPage from './pages/german/ReviewPage'
 import Safety from './pages/Safety'
 import Assistant from './pages/Assistant'
 import Settings from './pages/Settings'
@@ -56,9 +57,10 @@ export function AppRoutes() {
         <Route path="sozlamalar/til" element={<InterfaceLanguage />} />
         <Route path="sozlamalar/korinish" element={<Appearance />} />
       </Route>
-      {/* Dars ekrani pastki menyusiz */}
+      {/* Dars va takrorlash ekranlari pastki menyusiz */}
       <Route element={<RequireOnboarding bare />}>
         <Route path="til/dars/:lessonId" element={<LessonPage />} />
+        <Route path="til/takrorlash" element={<ReviewPage />} />
       </Route>
     </Routes>
   )

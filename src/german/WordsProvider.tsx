@@ -1,0 +1,191 @@
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
+import { useAuth } from '../auth/AuthProvider'
+import { WORD_IDS, wordIdsOfLesson } from '../content/german/words'
+import { supabase } from '../lib/supabase'
+import { useProfile } from '../profile/ProfileProvider'
+import { PROGRESS_KEYS, read, write } from '../progress/storage'
+import { activityToPush, addExercises, applyForgiveness, mergeActivity, sanitizeActivity, streakInfo, todayProgress, type Activity } from './daily'
+import { useLessons } from './LessonsProvider'
+import { addNewWords, answerWord, dueWordIds, localDay, mergeWords, sanitizeWords, wordsToPush, type Day, type Words } from './srs'
+import { fetchRemoteActivity, fetchRemoteWords, pushRemoteActivity, pushRemoteWords } from './wordsRemote'
+
+type Ctx = {
+  words: Words
+  activity: Activity
+  /** Foydalanuvchining mahalliy bugungi kuni (yarim tunda yangilanadi). */
+  today: Day
+  goal: number
+  due: string[]
+  progress: ReturnType<typeof todayProgress>
+  streak: ReturnType<typeof streakInfo>
+  /** Soʻzlar takrorlash qutisiga (bor boʻlsa — tegilmaydi). */
+  learn: (ids: string[]) => void
+  /** Mashq bajarildi (kunlik maqsad uchun). */
+  addExercise: (n?: number) => void
+  /** Takrorlash javobi: mashq +1; schedule — true boʻlsa jadval oʻzgaradi (sessiyadagi birinchi javob). */
+  answer: (wordId: string, correct: boolean, schedule: boolean) => void
+}
+const WordsContext = createContext<Ctx | null>(null)
+
+const loadWords = () => read(PROGRESS_KEYS.words, (s) => sanitizeWords(JSON.parse(s), WORD_IDS), {})
+const loadActivity = () => read(PROGRESS_KEYS.activity, (s) => sanitizeActivity(JSON.parse(s)), {})
+
+/**
+ * Soʻzlar va kunlik faollik har doim shu telefonda (localStorage). Kirgan boʻlsa user_words va user_daily_activity bilan
+ * birlashtiriladi; serverga yetmaganlari mahalliy nusxadan hisoblanib internet qaytganda yuboriladi (user_lessons kabi).
+ * Birinchi sinxron — profilni koʻchirish savoli hal boʻlgach (mehmon maʼlumoti shu oqim bilan akkauntga oʻtadi).
+ */
+export function WordsProvider({ children }: { children: ReactNode }) {
+  const auth = useAuth()
+  const { sync, guestDiscarded, dailyGoal } = useProfile()
+  const { results } = useLessons()
+  const userId = auth.status === 'signedIn' ? auth.user!.id : null
+  const [words, setWords] = useState<Words>(loadWords)
+  const [activity, setActivity] = useState<Activity>(loadActivity)
+  const [today, setToday] = useState<Day>(() => localDay())
+  const wordsRef = useRef(words)
+  wordsRef.current = words
+  const actRef = useRef(activity)
+  actRef.current = activity
+  const [retry, setRetry] = useState(0)
+  const busy = useRef(false)
+
+  const commitWords = useCallback((next: Words) => {
+    wordsRef.current = next
+    setWords(next)
+    write(PROGRESS_KEYS.words, JSON.stringify(next))
+  }, [])
+  const commitActivity = useCallback((next: Activity) => {
+    actRef.current = next
+    setActivity(next)
+    write(PROGRESS_KEYS.activity, JSON.stringify(next))
+  }, [])
+
+  // Kun almashishi: ilova tun boʻyi ochiq qolsa ham "bugun" yangilanadi
+  useEffect(() => {
+    const tick = () => setToday(localDay())
+    const id = window.setInterval(tick, 60000)
+    document.addEventListener('visibilitychange', tick)
+    return () => {
+      window.clearInterval(id)
+      document.removeEventListener('visibilitychange', tick)
+    }
+  }, [])
+
+  // Avval tugatilgan darslar soʻzlari ham qutiga tushadi (0.6.0 dan oldingi natijalar)
+  useEffect(() => {
+    const ids = Object.keys(results).flatMap(wordIdsOfLesson)
+    const next = addNewWords(wordsRef.current, ids, today, new Date().toISOString(), WORD_IDS)
+    if (next !== wordsRef.current) commitWords(next)
+  }, [results, today, commitWords])
+
+  // Oʻtkazilgan kun uchun kechirim yoziladi (sof hisob: daily.ts)
+  useEffect(() => {
+    const next = applyForgiveness(actRef.current, today, dailyGoal)
+    if (next !== actRef.current) commitActivity(next)
+  }, [today, dailyGoal, activity, commitActivity])
+
+  // Kirganda (profil savoli hal boʻlgach) va internet qaytganda: server bilan birlashtirish + navbatdagilarni yuborish
+  useEffect(() => {
+    if (!userId || !supabase || sync !== 'ready') return
+    const client = supabase
+    let cancelled = false
+    const run = async () => {
+      if (busy.current || cancelled) return
+      busy.current = true
+      try {
+        const firstSync = read(PROGRESS_KEYS.wordsSynced, (s) => s !== userId, true)
+        if (firstSync && guestDiscarded) {
+          // "Yangidan boshlash": mehmon soʻzlari akkauntga koʻchirilmaydi
+          commitWords({})
+          commitActivity({})
+        }
+        const snapshot = wordsRef.current
+        const [serverWords, serverAct] = await Promise.all([fetchRemoteWords(client, userId), fetchRemoteActivity(client, userId)])
+        if (cancelled) return
+        const mergedWords = mergeWords(snapshot, serverWords, firstSync ? 'migrate' : 'sync')
+        const mergedAct = mergeActivity(actRef.current, serverAct)
+        await pushRemoteWords(client, userId, wordsToPush(mergedWords, serverWords))
+        await pushRemoteActivity(client, userId, activityToPush(mergedAct, serverAct))
+        if (cancelled) return
+        write(PROGRESS_KEYS.wordsSynced, userId)
+        // Sinxron paytida berilgan javoblar yoʻqolmasin: shu orada oʻzgargan soʻz mahalliy holatda qoladi
+        const latest = wordsRef.current
+        const next = { ...mergedWords }
+        for (const [id, st] of Object.entries(latest)) if (st !== snapshot[id]) next[id] = st
+        commitWords(next)
+        commitActivity(mergeActivity(actRef.current, mergedAct))
+      } catch {
+        // Tarmoq xatosi: mahalliy nusxa bilan ishlayveradi, internet qaytganda qayta uriniladi
+      } finally {
+        busy.current = false
+      }
+    }
+    void run()
+    const onOnline = () => void run()
+    window.addEventListener('online', onOnline)
+    return () => {
+      cancelled = true
+      busy.current = false
+      window.removeEventListener('online', onOnline)
+    }
+  }, [userId, sync, guestDiscarded, retry, commitWords, commitActivity])
+
+  const kick = useCallback(() => {
+    if (userId) setRetry((n) => n + 1) // darhol yuborishga urinish (internet boʻlmasa xato yutiladi)
+  }, [userId])
+
+  const learn = useCallback(
+    (ids: string[]) => {
+      const next = addNewWords(wordsRef.current, ids, localDay(), new Date().toISOString(), WORD_IDS)
+      if (next === wordsRef.current) return
+      commitWords(next)
+      kick()
+    },
+    [commitWords, kick]
+  )
+
+  const addExercise = useCallback(
+    (n = 1) => {
+      const next = addExercises(actRef.current, localDay(), n)
+      if (next === actRef.current) return
+      commitActivity(next)
+      kick()
+    },
+    [commitActivity, kick]
+  )
+
+  const answer = useCallback(
+    (wordId: string, correct: boolean, schedule: boolean) => {
+      const day = localDay()
+      const cur = wordsRef.current[wordId]
+      if (schedule && cur) commitWords({ ...wordsRef.current, [wordId]: answerWord(cur, correct, day, new Date().toISOString()) })
+      commitActivity(addExercises(actRef.current, day, 1))
+      kick()
+    },
+    [commitWords, commitActivity, kick]
+  )
+
+  const value = useMemo<Ctx>(
+    () => ({
+      words,
+      activity,
+      today,
+      goal: dailyGoal,
+      due: dueWordIds(words, today),
+      progress: todayProgress(activity, today, dailyGoal),
+      streak: streakInfo(activity, today, dailyGoal),
+      learn,
+      addExercise,
+      answer
+    }),
+    [words, activity, today, dailyGoal, learn, addExercise, answer]
+  )
+  return <WordsContext.Provider value={value}>{children}</WordsContext.Provider>
+}
+
+export function useWords() {
+  const c = useContext(WordsContext)
+  if (!c) throw new Error('useWords WordsProvider ichida ishlatilishi kerak')
+  return c
+}

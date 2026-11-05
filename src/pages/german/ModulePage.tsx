@@ -5,12 +5,14 @@ import { ProgressBar } from '../../components/ui/ProgressBar'
 import { moduleById } from '../../content/german'
 import { useI18n } from '../../i18n/I18nProvider'
 import { useLessons } from '../../german/LessonsProvider'
+import { useBack } from '../../lib/useHistoryAnchor'
 import { currentInModule, lessonsOf, moduleProgress } from '../../german/logic'
 
 export default function ModulePage() {
   const { moduleId = '' } = useParams()
   const { lang, t } = useI18n()
   const { results } = useLessons()
+  const back = useBack('/til')
   const mod = moduleById(moduleId)
   const lessons = mod ? lessonsOf(mod.id) : []
   if (!mod || lessons.length === 0) return <Navigate to="/til" replace />
@@ -19,9 +21,9 @@ export default function ModulePage() {
   return (
     <div className="space-y-3">
       <header className="flex min-h-[56px] items-center gap-2">
-        <Link to="/til" aria-label={t('common.back')} className="-ml-2 flex h-11 w-11 shrink-0 items-center justify-center rounded-full active:bg-surface-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent">
+        <button type="button" onClick={back} aria-label={t('common.back')} className="-ml-2 flex h-11 w-11 shrink-0 items-center justify-center rounded-full active:bg-surface-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent">
           <IconArrowLeft size={24} aria-hidden />
-        </Link>
+        </button>
         <div>
           <p className="text-base text-ink-2">{t('german.moduleLabel', { level: mod.level, n: mod.order })}</p>
           <h1 className="text-xl font-semibold">{mod.title[lang]}</h1>

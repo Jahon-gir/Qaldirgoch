@@ -12,6 +12,9 @@ import { useDirection } from '../../german/useDirection'
 import { useLessons } from '../../german/LessonsProvider'
 import { nextLessonAfter, summarize, type Outcome } from '../../german/logic'
 import { useSpeech } from '../../german/useSpeech'
+import { useWords } from '../../german/WordsProvider'
+import { wordIdsOfLesson } from '../../content/german/words'
+import { useBack, useHistoryAnchor } from '../../lib/useHistoryAnchor'
 
 /** Darsdan chiqishni tasdiqlash: natija saqlanmasligi aytiladi. */
 function ConfirmExit({ onStay, onLeave }: { onStay: () => void; onLeave: () => void }) {
@@ -44,7 +47,8 @@ function ResultView({ lesson, summary }: { lesson: Lesson; summary: ReturnType<t
   const speech = useSpeech()
   const { direction } = useDirection()
   const next = nextLessonAfter(lesson.id, direction)
-  const toModule = () => nav(`/til/modul/${lesson.moduleId}`, { replace: true })
+  // Darsga modul ekranidan kiriladi: orqaga qaytish tarixni ikkilantirmaydi ("orqaga" tugmasi modulda qolib ketmaydi)
+  const toModule = useBack(`/til/modul/${lesson.moduleId}`)
   return (
     <div className="flex flex-1 flex-col gap-4">
       <div className="flex flex-col items-center gap-2 pt-4 text-center">
@@ -101,9 +105,11 @@ function ResultView({ lesson, summary }: { lesson: Lesson; summary: ReturnType<t
 
 function LessonRunner({ lesson }: { lesson: Lesson }) {
   const { t } = useI18n()
-  const nav = useNavigate()
   const { record } = useLessons()
+  const leave = useBack(`/til/modul/${lesson.moduleId}`)
+  const { learn, addExercise } = useWords()
   const speech = useSpeech()
+  useHistoryAnchor(`/til/modul/${lesson.moduleId}`)
   const exercises = exercisesOf(lesson.id)
   const [i, setI] = useState(0)
   const outcomes = useRef<Outcome[]>([])
@@ -117,9 +123,11 @@ function LessonRunner({ lesson }: { lesson: Lesson }) {
 
   const onStepDone = (o: Outcome) => {
     outcomes.current = [...outcomes.current, o]
+    addExercise(1) // kunlik maqsad: har bajarilgan mashq
     if (i + 1 < exercises.length) return setI(i + 1)
     const s = summarize(exercises, outcomes.current)
     record(lesson.id, s.score, s.total)
+    learn(wordIdsOfLesson(lesson.id)) // darsdagi soʻzlar takrorlash qutisiga (ertaga keladi)
     setSummary(s)
   }
 
@@ -146,7 +154,7 @@ function LessonRunner({ lesson }: { lesson: Lesson }) {
           </div>
         </>
       )}
-      {confirmExit && <ConfirmExit onStay={() => setConfirmExit(false)} onLeave={() => nav(`/til/modul/${lesson.moduleId}`, { replace: true })} />}
+      {confirmExit && <ConfirmExit onStay={() => setConfirmExit(false)} onLeave={leave} />}
     </div>
   )
 }

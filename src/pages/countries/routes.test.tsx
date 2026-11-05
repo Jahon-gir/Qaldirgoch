@@ -6,6 +6,7 @@ import { AppRoutes } from '../../App'
 import { AuthProvider } from '../../auth/AuthProvider'
 import { I18nProvider } from '../../i18n/I18nProvider'
 import { LessonsProvider } from '../../german/LessonsProvider'
+import { WordsProvider } from '../../german/WordsProvider'
 import { ProfileProvider } from '../../profile/ProfileProvider'
 import { ProgressProvider } from '../../progress/ProgressProvider'
 
@@ -25,10 +26,12 @@ function renderApp(path: string, { lang, profile = PROFILE }: { lang?: string; p
         <ProfileProvider>
           <ProgressProvider>
             <LessonsProvider>
+              <WordsProvider>
               <MemoryRouter initialEntries={[path]}>
                 <AppRoutes />
                 <Where />
               </MemoryRouter>
+              </WordsProvider>
             </LessonsProvider>
           </ProgressProvider>
         </ProfileProvider>

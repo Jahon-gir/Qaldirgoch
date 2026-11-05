@@ -1,5 +1,6 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
 import { countryById } from '../content/countries'
+import { isGoal } from '../german/daily'
 import { isDirection } from '../german/logic'
 import { isComplete, PROFILE_SCHEMA_VERSION, QUESTIONS, type Answers, type Profile } from './questions'
 
@@ -18,6 +19,7 @@ export function normalizeProfile(raw: unknown): Profile | null {
   const r = raw as Answers & { schemaVersion?: unknown; createdAt?: unknown }
   const g = (raw as { germanDirection?: unknown }).germanDirection
   const sc = (raw as { selectedCountry?: unknown }).selectedCountry
+  const goal = (raw as { dailyGoal?: unknown }).dailyGoal
   const version = typeof r.schemaVersion === 'number' ? r.schemaVersion : 1
   if (version > PROFILE_SCHEMA_VERSION) return null
   return {
@@ -31,7 +33,8 @@ export function normalizeProfile(raw: unknown): Profile | null {
     createdAt: typeof r.createdAt === 'string' ? r.createdAt : new Date().toISOString(),
     schemaVersion: PROFILE_SCHEMA_VERSION,
     germanDirection: isDirection(g) ? (g as Profile['germanDirection']) : undefined,
-    selectedCountry: typeof sc === 'string' && countryById(sc)?.status === 'open' ? (sc as Profile['selectedCountry']) : undefined
+    selectedCountry: typeof sc === 'string' && countryById(sc)?.status === 'open' ? (sc as Profile['selectedCountry']) : undefined,
+    dailyGoal: isGoal(goal) ? goal : undefined
   }
 }
 

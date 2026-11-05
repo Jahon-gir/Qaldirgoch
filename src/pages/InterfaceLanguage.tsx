@@ -6,7 +6,7 @@ export default function InterfaceLanguage() {
   const t = useT()
   return (
     <div className="space-y-3">
-      <PageHeader title={t('settings.language')} back />
+      <PageHeader title={t('settings.language')} back backTo="/sozlamalar" />
       <LanguagePicker />
     </div>
   )

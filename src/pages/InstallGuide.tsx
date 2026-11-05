@@ -27,7 +27,7 @@ export default function InstallGuide() {
   ]
   return (
     <div className="space-y-3">
-      <PageHeader title={t('settings.install')} back />
+      <PageHeader title={t('settings.install')} back backTo="/sozlamalar" />
       <p className="text-base text-ink-2">{t('install.intro')}</p>
       {installed ? (
         <Card role="status">

@@ -1,5 +1,6 @@
 import type { CountryId } from '../content/countries'
 import type { Direction } from '../content/german/types'
+import type { DailyGoal } from '../german/daily'
 import type { Key } from '../i18n/uz'
 
 export const AGE = ['under18', '18-24', '25-30', '31-35', '36plus'] as const
@@ -27,6 +28,8 @@ export type Profile = Answers & {
   germanDirection?: Direction
   /** Tanlangan (ochiq) davlat; yoʻq boʻlsa Germaniya. */
   selectedCountry?: CountryId
+  /** Kunlik maqsad (mashqlar soni): 10 / 15 / 20; yoʻq boʻlsa 10. */
+  dailyGoal?: DailyGoal
 }
 export type QuestionId = Exclude<keyof Answers, 'professionOther'>
 
