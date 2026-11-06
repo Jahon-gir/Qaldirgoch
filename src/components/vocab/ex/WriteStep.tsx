@@ -1,11 +1,9 @@
 import { useRef, useState, type FormEvent } from 'react'
 import { useI18n } from '../../../i18n/I18nProvider'
-import { check, isBlank, isRight, type CheckResult } from '../../../german/answer'
+import { check, isBlank, isRight, specialLettersOf, specialToInsert, type CheckResult, type SpecialLetter } from '../../../german/answer'
 import { useFeedback } from '../../../ui/useFeedback'
 import { Footer, navyBtn } from '../parts'
 import { Prompt, Verdict, type ExProps } from './common'
-
-export const SPECIAL = ['ä', 'ö', 'ü', 'ß'] as const
 
 /** Yozish: savol — tarjima; ä ö ü ß tugmalari kursor turgan joyga qoʻyadi; Enter ham tekshiradi. */
 export function WriteStep({ word, onAnswer, onDone }: ExProps) {
@@ -17,10 +15,12 @@ export function WriteStep({ word, onAnswer, onDone }: ExProps) {
   const input = useRef<HTMLInputElement>(null)
   const done = result !== null
 
-  const insert = (c: string) => {
+  const letters = specialLettersOf(word.de) // faqat javobda bor harflar; boʻlmasa qator umuman yoʻq
+  const insert = (key: SpecialLetter) => {
     const el = input.current
     const start = el?.selectionStart ?? value.length
     const end = el?.selectionEnd ?? value.length
+    const c = specialToInsert(key, word.de, value.slice(0, start))
     setValue(value.slice(0, start) + c + value.slice(end))
     setBlank(false)
     // Fokus va kursor maydonga qaytadi (qoʻyilgan harfdan keyin)
@@ -46,8 +46,9 @@ export function WriteStep({ word, onAnswer, onDone }: ExProps) {
   return (
     <form onSubmit={submit} className="flex flex-1 flex-col gap-4 pt-4" noValidate>
       <Prompt label={t('ex.writeQ')}>{word.tr[lang]}</Prompt>
-      <div className="grid grid-cols-4 gap-2">
-        {SPECIAL.map((c) => (
+      {letters.length > 0 && (
+      <div className="flex justify-center gap-2">
+        {letters.map((c) => (
           <button
             key={c}
             type="button"
@@ -56,12 +57,13 @@ export function WriteStep({ word, onAnswer, onDone }: ExProps) {
             onMouseDown={(e) => e.preventDefault()}
             onClick={() => insert(c)}
             aria-label={t('ex.insert', { c })}
-            className="flex h-12 items-center justify-center rounded-xl border border-vedge bg-vf text-xl font-semibold text-vink active:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:opacity-40"
+            className="flex h-12 w-[52px] items-center justify-center rounded-xl border border-vedge bg-vf text-xl font-semibold text-vink active:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:opacity-40"
           >
             {c}
           </button>
         ))}
       </div>
+      )}
       <input
         ref={input}
         value={value}

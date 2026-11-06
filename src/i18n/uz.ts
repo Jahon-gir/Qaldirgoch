@@ -406,22 +406,18 @@ export const uz = {
   'vocab.mode.list': 'Roʻyxat',
   'vocab.mode.cards': 'Kartochka',
   'vocab.mode.test': 'Test',
-  'vocab.frontTitle': 'Old tomoni / savol tili',
   'vocab.front.de': 'Nemischa',
   'vocab.front.tr': 'Oʻzbekcha',
-  'vocab.sheetDone': 'Tayyor',
   'vocab.listHint': 'Bosib tarjimasini koʻring',
   'vocab.all': 'Hammasi',
   'vocab.tapShow': 'bosing',
   'vocab.hidden': 'Tarjima yashirin',
-  'vocab.frontChip': 'Old: {side}',
   'vocab.progress': 'Mashq boʻyicha progress',
   'vocab.cardCount': '{n} / {total}',
   'vocab.flip': 'Kartochkani aylantirish',
   'vocab.known': 'Bildim',
   'vocab.unknown': 'Bilmadim',
   'vocab.qDe': 'Bu soʻz nima degani?',
-  'vocab.qTr': 'Nemischasi qaysi?',
   'vocab.testSub': 'Test · {n} / {total}',
   'vocab.done': 'Mashq tugadi',
   'vocab.summary': '{n} tadan {m} tasini bildingiz',
@@ -466,7 +462,9 @@ export const uz = {
   'ex.articleQ': 'Artiklni tanlang · {tr}',
   'ex.der': 'erkak',
   'ex.die': 'ayol',
-  'ex.das': 'oʻrta'
+  'ex.das': 'oʻrta',
+  'vocab.frontSwap': 'DE ⇄ UZ',
+  'vocab.frontSwapA11y': 'Old tomoni tilini almashtirish (hozir: {side})'
 } as const
 
 export type Key = keyof typeof uz

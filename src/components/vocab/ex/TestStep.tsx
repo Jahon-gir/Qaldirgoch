@@ -1,22 +1,22 @@
 import { useMemo, useRef, useState } from 'react'
 import { IconCheck, IconX } from '@tabler/icons-react'
 import { useI18n } from '../../../i18n/I18nProvider'
-import { faceText, pickVocabOptions } from '../../../german/vocab'
-import type { VocabFront } from '../../../profile/questions'
+import { pickVocabOptions } from '../../../german/vocab'
 import { useFeedback } from '../../../ui/useFeedback'
 import { ContinueFooter, Prompt, type ExProps } from './common'
 
 /** Test: savol moviy blokda, 4 variant; javobdan keyin "Davom etish". */
-export function TestStep({ word, front, onAnswer, onDone }: ExProps & { front: VocabFront }) {
+/** Savol tili doim nemischa → oʻzbekcha (vocabFront testga taʼsir qilmaydi). */
+export function TestStep({ word, onAnswer, onDone }: ExProps) {
   const { lang, t } = useI18n()
   const fx = useFeedback()
   // Variantlar shu savol uchun bir marta aralashtiriladi
-  const options = useMemo(() => pickVocabOptions(word, front, lang), [word, front, lang])
+  const options = useMemo(() => pickVocabOptions(word, 'de', lang), [word, lang])
   const [picked, setPicked] = useState<string | null>(null)
   const refs = useRef<Record<string, HTMLButtonElement | null>>({})
   const answered = picked !== null
   const ok = picked === word.id
-  const q = front === 'de' ? t('vocab.qDe') : t('vocab.qTr')
+  const q = t('vocab.qDe')
   const pick = (id: string) => {
     if (answered) return
     setPicked(id)
@@ -26,8 +26,8 @@ export function TestStep({ word, front, onAnswer, onDone }: ExProps & { front: V
   }
   return (
     <div className="flex flex-1 flex-col gap-4 pt-4">
-      <Prompt label={q} lang={front === 'de' ? 'de' : undefined}>
-        {faceText(word, front, lang)}
+      <Prompt label={q} lang="de">
+        {word.de}
       </Prompt>
       <div className="space-y-2" role="group" aria-label={q}>
         {options.map((o) => {
@@ -46,7 +46,6 @@ export function TestStep({ word, front, onAnswer, onDone }: ExProps & { front: V
                 refs.current[o.id] = el
               }}
               type="button"
-              lang={front === 'de' ? undefined : 'de'}
               disabled={answered}
               onClick={() => pick(o.id)}
               className={`flex min-h-[48px] w-full items-center justify-between gap-3 rounded-xl border-2 px-4 py-2 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${cls} ${fxCls}`}

@@ -55,3 +55,25 @@ export function check(input: string, target: string): CheckResult {
 }
 
 export const isRight = (r: CheckResult) => r !== 'wrong'
+
+/* ---------- Yozish: maxsus harf tugmalari ---------- */
+
+export const SPECIAL_LETTERS = ['ä', 'ö', 'ü', 'ß'] as const
+export type SpecialLetter = (typeof SPECIAL_LETTERS)[number]
+
+/**
+ * Faqat javob soʻzida (target) bor harflar, nemischa alifbo tartibida (ä, ö, ü, ß); katta harf ham kichik koʻrinishda.
+ * "ss" bor soʻzda ß ham chiqadi: ß va ss bir xil qabul qilinadi (normalize), masalan "Tschüss" → ü ß.
+ */
+export function specialLettersOf(target: string): SpecialLetter[] {
+  const low = target.normalize('NFC').toLowerCase()
+  return SPECIAL_LETTERS.filter((c) => low.includes(c) || (c === 'ß' && low.includes('ss')))
+}
+
+/** Tugma bosilganda qoʻyiladigan belgi: kursor oldida belgi yoʻq yoki boʻsh joy boʻlsa va targetda shu harf soʻz boshida katta boʻlsa — katta. */
+export function specialToInsert(c: SpecialLetter, target: string, before: string): string {
+  const upper = c.toUpperCase()
+  const wordStart = target.normalize('NFC').split(/\s+/).some((w) => w.startsWith(upper))
+  const atStart = before === '' || before.endsWith(' ')
+  return wordStart && atStart && upper !== c ? upper : c
+}

@@ -52,14 +52,19 @@ function Practice({ lessonId, title, ids }: { lessonId: string; title: string; i
   runRef.current = run
 
   const finished = sessionDone(run.session)
-  const change = (p: { mode?: VocabMode; front?: VocabFront }) => {
-    if (p.front) setFront(p.front)
-    setVocabPrefs(p)
-    if (!p.mode || p.mode === mode) return
-    setMode(p.mode)
-    // Usul oʻzgarsa mashq yangidan boshlanadi. Old tomoni — faqat koʻrinish
+  const pickMode = (m: VocabMode) => {
+    setVocabPrefs({ mode: m })
+    if (m === mode) return
+    setMode(m)
+    // Usul oʻzgarsa mashq yangidan boshlanadi
     const base = run.counted ? (lessonId === MIXED ? shuffled(ids) : ids) : uniq(run.session.queue)
-    setRun(start(base, run.counted, p.mode))
+    setRun(start(base, run.counted, m))
+  }
+  // Kartochka: old tomon tili almashadi (profilda saqlanadi), mashq qayta boshlanmaydi
+  const swapFront = () => {
+    const next: VocabFront = front === 'de' ? 'tr' : 'de'
+    setFront(next)
+    setVocabPrefs({ front: next })
   }
   const answer = (correct: boolean) => {
     const cur = runRef.current
@@ -113,12 +118,12 @@ function Practice({ lessonId, title, ids }: { lessonId: string; title: string; i
         ) : finished ? (
           <VocabResult session={run.session} counted={run.counted} onDone={back} onRetry={retry} />
         ) : eff === 'cards' ? (
-          <FlashCards session={run.session} front={front} speech={speech} onAnswer={answer} onOpenSettings={() => setSheet(true)} />
+          <FlashCards session={run.session} front={front} speech={speech} onAnswer={answer} onSwapFront={swapFront} />
         ) : word ? (
-          <Exercise key={`${run.session.pos}-${eff}`} kind={kind} word={word} front={front} speech={speech} onDone={answer} />
+          <Exercise key={`${run.session.pos}-${eff}`} kind={kind} word={word} speech={speech} onDone={answer} />
         ) : null}
       </div>
-      {sheet && <SettingsSheet mode={eff} front={front} hasNouns={nounIds.length > 0} canListen={canListen} onChange={change} onClose={() => setSheet(false)} />}
+      {sheet && <SettingsSheet mode={eff} hasNouns={nounIds.length > 0} canListen={canListen} onPick={pickMode} onClose={() => setSheet(false)} />}
     </div>
   )
 }

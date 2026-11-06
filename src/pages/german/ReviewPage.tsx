@@ -229,7 +229,6 @@ export default function ReviewPage() {
               <Exercise
                 kind={kinds[session.pos]}
                 word={wordById(sessionCurrent(session)!)!}
-                front="de"
                 speech={speech}
                 onAnswer={(correct) => {
                   const id = sessionCurrent(session)!
