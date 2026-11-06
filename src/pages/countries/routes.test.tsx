@@ -220,7 +220,7 @@ describe('Ausbildung kirish ekrani', () => {
 
   it('bosqichlar soni AUSBILDUNG_STEPS dan; manba va sana ausbildung.ts dagi MIG/BIBB dan', () => {
     renderApp('/yol/de/ausbildung/kirish')
-    const how = `${AUSBILDUNG_STEPS.length} bosqich. Har birida vazifalar, hujjatlar va rasmiy manba bor. Bajarganingizni belgilab borasiz.`
+    const how = `${AUSBILDUNG_STEPS.length} bosqich. Har birida vazifalar va hujjatlar bor. Manbasi tasdiqlanmaganlari “Tekshiruvda” deb belgilanadi. Bajarganingizni belgilab borasiz.`
     expect(screen.getByText((_, el) => el?.tagName === 'P' && el.textContent === how)).toBeTruthy()
     expect(screen.getAllByText(String(AUSBILDUNG_STEPS.length)).length).toBeGreaterThan(0) // yumaloq nishon
     expect(screen.getByTestId('source').textContent).toBe(`Manba: ${MIG.title}, ${BIBB.title} · tekshirilgan: ${MIG.checkedAt}`)

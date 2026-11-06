@@ -476,7 +476,7 @@ export const uz = {
   'intro.needContract': 'Ish beruvchi bilan shartnoma',
   'intro.needContractText': 'Ish beruvchi bilan Ausbildung shartnomasi tuziladi',
   'intro.howTitle': 'Qanday ishlaydi',
-  'intro.how': 'bosqich. Har birida vazifalar, hujjatlar va rasmiy manba bor. Bajarganingizni belgilab borasiz.',
+  'intro.how': 'bosqich. Har birida vazifalar va hujjatlar bor. Manbasi tasdiqlanmaganlari “Tekshiruvda” deb belgilanadi. Bajarganingizni belgilab borasiz.',
   'intro.readMore': 'Batafsil oʻqish',
   'intro.openMap': 'Yoʻl xaritasini ochish',
   'detail.title': 'Ausbildung haqida toʻliq',
