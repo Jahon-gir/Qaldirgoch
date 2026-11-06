@@ -105,3 +105,10 @@ export function effectiveCountry(id: unknown): CountryId {
 
 /** Davlat sahifasidagi "Germaniyaga oʻtish" va yoʻl tafsilotidagi tugma manzillari. */
 export const AUSBILDUNG_PATH = '/yol/de/ausbildung'
+
+/** Ausbildung kirish ekrani va batafsil sahifa (yoʻl xaritasi — AUSBILDUNG_PATH oʻzida). */
+export const AUSBILDUNG_INTRO_PATH = `${AUSBILDUNG_PATH}/kirish`
+export const AUSBILDUNG_DETAIL_PATH = `${AUSBILDUNG_PATH}/batafsil`
+
+/** Yoʻl kartochkasi manzili: Ausbildung — kirish ekraniga, qolgan yoʻllar — oʻz sahifasiga. */
+export const programPath = (c: Country, p: Program) => (c.id === 'de' && p.id === 'ausbildung' ? AUSBILDUNG_INTRO_PATH : `/yol/${c.id}/${p.id}`)

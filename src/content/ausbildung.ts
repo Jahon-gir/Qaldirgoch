@@ -32,12 +32,12 @@ export type StepId = (typeof STEP_IDS)[number]
 export const AUTO_DONE_STEPS: readonly StepId[] = ['profil', 'yol']
 
 const CHECKED_AT = '2026-11-04'
-const MIG: Source = {
+export const MIG: Source = {
   title: 'Make it in Germany',
   url: 'https://www.make-it-in-germany.com/fileadmin/1_Rebrush_2022/a_Fachkraefte/PDF-Dateien/3_Visum_u_Aufenthalt/Visagrafik_EN/Visum_Absolvierung_Berufsausbildung_EN.pdf',
   checkedAt: CHECKED_AT
 }
-const BIBB: Source = { title: 'BIBB', url: 'https://www.bibb.de/de/pressemitteilung_212952.php', checkedAt: CHECKED_AT }
+export const BIBB: Source = { title: 'BIBB', url: 'https://www.bibb.de/de/pressemitteilung_212952.php', checkedAt: CHECKED_AT }
 
 export const AUSBILDUNG_STEPS: Step[] = [
   {

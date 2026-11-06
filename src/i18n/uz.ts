@@ -464,7 +464,31 @@ export const uz = {
   'ex.die': 'ayol',
   'ex.das': 'oʻrta',
   'vocab.frontSwap': 'DE ⇄ UZ',
-  'vocab.frontSwapA11y': 'Old tomoni tilini almashtirish (hozir: {side})'
+  'vocab.frontSwapA11y': 'Old tomoni tilini almashtirish (hozir: {side})',
+  'countries.soonBadge': 'Tez orada',
+  'intro.whatTitle': 'Bu nima',
+  'intro.what': 'Siz Germaniyada korxonada ishlab kasbni oʻrganasiz. Oʻqish davomida haq olasiz: eng kam haq 2026 yilda, oyiga, yalpi: 1-yil {y1} EUR, 3-yil {y3} EUR.',
+  'intro.needTitle': 'Sizga nima kerak boʻladi',
+  'intro.needLang': 'Nemis tili',
+  'intro.needLangText': 'Odatda B1 darajasi',
+  'intro.needMoney': 'Moliyaviy talab',
+  'intro.needMoneyText': 'Oyiga kamida {amount} EUR sof',
+  'intro.needContract': 'Ish beruvchi bilan shartnoma',
+  'intro.needContractText': 'Ish beruvchi bilan Ausbildung shartnomasi tuziladi',
+  'intro.howTitle': 'Qanday ishlaydi',
+  'intro.how': 'bosqich. Har birida vazifalar va hujjatlar bor. Manbasi tasdiqlanmaganlari “Tekshiruvda” deb belgilanadi. Bajarganingizni belgilab borasiz.',
+  'intro.readMore': 'Batafsil oʻqish',
+  'intro.openMap': 'Yoʻl xaritasini ochish',
+  'detail.title': 'Ausbildung haqida toʻliq',
+  'detail.chips': 'Tez oʻtish',
+  'detail.what': 'Bu nima',
+  'detail.money': 'Pul',
+  'detail.lang': 'Til',
+  'detail.docs': 'Hujjat',
+  'detail.job': 'Ish joyi',
+  'detail.contract': 'Shartnoma va viza',
+  'detail.abroad': 'Germaniyada',
+  'detail.perMonthGross': 'oyiga, yalpi'
 } as const
 
 export type Key = keyof typeof uz

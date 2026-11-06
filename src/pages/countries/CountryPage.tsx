@@ -3,7 +3,7 @@ import { IconChevronRight, IconClockHour4, IconLock, IconShieldCheck } from '@ta
 import { Flag } from '../../components/countries/Flag'
 import { PROGRAM_ICONS } from '../../components/countries/icons'
 import { Overlap, SourceLine, TrustHeader, safeUrl } from '../../components/countries/parts'
-import type { Country } from '../../content/countries'
+import { programPath, type Country } from '../../content/countries'
 import { useI18n } from '../../i18n/I18nProvider'
 
 export default function CountryPage({ country }: { country: Country }) {
@@ -28,29 +28,31 @@ export default function CountryPage({ country }: { country: Country }) {
               const pOpen = p.status === 'open'
               return (
                 <li key={p.id}>
-                  <Link
-                    to={`/yol/${country.id}/${p.id}`}
-                    className={`flex min-h-[64px] items-center gap-3 rounded-card px-3 py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
-                      pOpen ? 'border-[1.5px] border-accent bg-surface' : 'border-[1.5px] border-dashed border-line bg-surface-2 text-ink-2'
-                    }`}
-                  >
-                    <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${pOpen ? 'bg-accent-soft text-accent-strong' : 'bg-surface text-ink-2'}`}>{Icon && <Icon size={24} aria-hidden />}</span>
-                    <span className="flex-1">
-                      <span className={`block text-base font-semibold ${pOpen ? 'text-ink' : ''}`}>{p.name[lang]}</span>
-                      <span className="block text-base">{p.short[lang]}</span>
-                    </span>
-                    {pOpen ? (
-                      <>
-                        <span className="rounded-full bg-success-soft px-2.5 py-1 text-sm font-semibold text-success-text">{t('countries.open')}</span>
-                        <IconChevronRight size={20} className="shrink-0 text-ink-3" aria-hidden />
-                      </>
-                    ) : (
-                      <>
-                        <IconLock size={20} className="shrink-0" aria-hidden />
-                        <span className="sr-only">{t('countries.locked')}</span>
-                      </>
-                    )}
-                  </Link>
+                  {pOpen ? (
+                    <Link
+                      to={programPath(country, p)}
+                      className="flex min-h-[64px] items-center gap-3 rounded-card border-[1.5px] border-accent bg-surface px-3 py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                    >
+                      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-accent-soft text-accent-strong">{Icon && <Icon size={24} aria-hidden />}</span>
+                      <span className="flex-1">
+                        <span className="block text-base font-semibold text-ink">{p.name[lang]}</span>
+                        <span className="block text-base">{p.short[lang]}</span>
+                      </span>
+                      <span className="rounded-full bg-success-soft px-2.5 py-1 text-sm font-semibold text-success-text">{t('countries.open')}</span>
+                      <IconChevronRight size={20} className="shrink-0 text-ink-3" aria-hidden />
+                    </Link>
+                  ) : (
+                    // Yopiq yoʻl: bosilmaydi (havola emas), sokin koʻrinish, hover/active effekti yoʻq
+                    <div className="flex min-h-[64px] items-center gap-3 rounded-card border-[1.5px] border-dashed border-line bg-surface-2 px-3 py-2 text-ink-2">
+                      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-surface text-ink-2">{Icon && <Icon size={24} aria-hidden />}</span>
+                      <span className="min-w-0 flex-1">
+                        <span className="block text-base font-semibold">{p.name[lang]}</span>
+                        <span className="block text-base">{p.short[lang]}</span>
+                      </span>
+                      <span className="shrink-0 rounded-full bg-surface px-2.5 py-1 text-sm font-semibold">{t('countries.soonBadge')}</span>
+                      <IconLock size={20} className="shrink-0" aria-hidden />
+                    </div>
+                  )}
                 </li>
               )
             })}
