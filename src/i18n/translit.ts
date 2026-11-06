@@ -6,7 +6,7 @@
  */
 
 /** Oʻgirilmaydigan lotin soʻzlar (aniq yozuvi bilan). Qoʻshimchali shakli ham saqlanadi: "Ausbildungda" → "Ausbildungда". */
-export const LATIN_EXCEPTIONS = ['Ausbildung', 'Google', 'Telegram', 'WhatsApp', 'AI', 'PWA', 'URL', 'Goethe', 'telc', 'ÖSD', 'TestDaF', 'EUR', 'CV', 'AufenthG']
+export const LATIN_EXCEPTIONS = ['Ausbildung', 'Google', 'Telegram', 'WhatsApp', 'AI', 'PWA', 'URL', 'Goethe', 'telc', 'ÖSD', 'TestDaF', 'EUR', 'CV', 'AufenthG', 'Chancenkarte', 'Verpflichtungserklärung', 'Auslandsportal', 'ZAB', 'BIBB', 'AHK']
 
 const LEVEL = /^[ABC][12]/ // A1, A2, B1 … va "A1da" kabi shakllar
 
@@ -73,7 +73,7 @@ function keepPrefix(w: string): string | null {
   return null
 }
 
-const TOKEN = /(\{[^}]*\})|([A-Za-zÖöʻʼ‘’'`]+[0-9]*[A-Za-zʻʼ'`]*)/g
+const TOKEN = /(\{[^}]*\})|([A-Za-zÖöÄäÜüßʻʼ‘’'`]+[0-9]*[A-Za-zʻʼ'`]*)/g
 
 export function toCyrillic(text: string): string {
   return text.replace(TOKEN, (m, placeholder: string | undefined) => {
