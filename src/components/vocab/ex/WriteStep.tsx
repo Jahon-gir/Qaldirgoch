@@ -1,4 +1,4 @@
-import { useRef, useState, type FormEvent } from 'react'
+import { useRef, useState, type FormEvent, type ReactNode } from 'react'
 import { useI18n } from '../../../i18n/I18nProvider'
 import { check, isBlank, isRight, specialLettersOf, specialToInsert, type CheckResult, type SpecialLetter } from '../../../german/answer'
 import { useFeedback } from '../../../ui/useFeedback'
@@ -8,6 +8,21 @@ import { Prompt, Verdict, type ExProps } from './common'
 /** Yozish: savol — tarjima; ä ö ü ß tugmalari kursor turgan joyga qoʻyadi; Enter ham tekshiradi. */
 export function WriteStep({ word, onAnswer, onDone }: ExProps) {
   const { lang, t } = useI18n()
+  return <WriteCore target={word.de} prompt={<Prompt label={t('ex.writeQ')}>{word.tr[lang]}</Prompt>} onAnswer={onAnswer} onDone={onDone} />
+}
+
+/** Bir nechta toʻgʻri javobdan eng yaxshi natija (exact > correct > almost > wrong). */
+export function bestCheck(value: string, targets: string[]): CheckResult {
+  const order: CheckResult[] = ['exact', 'correct', 'almost', 'wrong']
+  return targets.map((x) => check(value, x)).sort((a, b) => order.indexOf(a) - order.indexOf(b))[0] ?? 'wrong'
+}
+
+/**
+ * Yozish yadrosi (Lugʻat, takrorlash, yakuniy testdagi gap): target — asosiy javob (xabarlarda koʻrsatiladi),
+ * accept — qoʻshimcha toʻgʻri javoblar. Maxsus harf tugmalari faqat targetda bor harflar.
+ */
+export function WriteCore({ target, accept = [], prompt, onAnswer, onDone }: { target: string; accept?: string[]; prompt: ReactNode; onAnswer?: (correct: boolean) => void; onDone: (correct: boolean) => void }) {
+  const { t } = useI18n()
   const fx = useFeedback()
   const [value, setValue] = useState('')
   const [result, setResult] = useState<CheckResult | null>(null)
@@ -15,12 +30,12 @@ export function WriteStep({ word, onAnswer, onDone }: ExProps) {
   const input = useRef<HTMLInputElement>(null)
   const done = result !== null
 
-  const letters = specialLettersOf(word.de) // faqat javobda bor harflar; boʻlmasa qator umuman yoʻq
+  const letters = specialLettersOf(target) // faqat javobda bor harflar; boʻlmasa qator umuman yoʻq
   const insert = (key: SpecialLetter) => {
     const el = input.current
     const start = el?.selectionStart ?? value.length
     const end = el?.selectionEnd ?? value.length
-    const c = specialToInsert(key, word.de, value.slice(0, start))
+    const c = specialToInsert(key, target, value.slice(0, start))
     setValue(value.slice(0, start) + c + value.slice(end))
     setBlank(false)
     // Fokus va kursor maydonga qaytadi (qoʻyilgan harfdan keyin)
@@ -33,7 +48,7 @@ export function WriteStep({ word, onAnswer, onDone }: ExProps) {
     e.preventDefault()
     if (done) return onDone(isRight(result))
     if (isBlank(value)) return setBlank(true)
-    const r = check(value, word.de)
+    const r = bestCheck(value, [target, ...accept])
     setResult(r)
     if (isRight(r)) fx.right(input.current)
     else fx.wrong()
@@ -41,11 +56,11 @@ export function WriteStep({ word, onAnswer, onDone }: ExProps) {
   }
   const tone = result === null ? '' : result === 'almost' ? 'border-warn' : isRight(result) ? 'border-success' : 'border-danger'
   const message =
-    result === 'exact' ? t('ex.exact') : result === 'correct' ? t('ex.correct', { t: word.de }) : result === 'almost' ? t('ex.almost', { t: word.de }) : t('ex.wrong', { t: word.de })
+    result === 'exact' ? t('ex.exact') : result === 'correct' ? t('ex.correct', { t: target }) : result === 'almost' ? t('ex.almost', { t: target }) : t('ex.wrong', { t: target })
 
   return (
     <form onSubmit={submit} className="flex flex-1 flex-col gap-4 pt-4" noValidate>
-      <Prompt label={t('ex.writeQ')}>{word.tr[lang]}</Prompt>
+      {prompt}
       {letters.length > 0 && (
       <div className="flex justify-center gap-2">
         {letters.map((c) => (

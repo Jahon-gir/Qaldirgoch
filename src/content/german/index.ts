@@ -5,7 +5,7 @@ import { A1_M1_L4 } from './a1-m1-l4'
 import { A1_M1_L5 } from './a1-m1-l5'
 import { A1_M1_L6 } from './a1-m1-l6'
 import { l3, REVIEW } from './helpers'
-import type { Exercise, Lesson, Module } from './types'
+import { LEVELS, type Exercise, type Lesson, type Module } from './types'
 
 export * from './types'
 
@@ -43,3 +43,9 @@ export const exercisesOf = (lessonId: string): Exercise[] => EXERCISES[lessonId]
 export const lessonById = (id: string) => LESSONS.find((l) => l.id === id)
 export const moduleById = (id: string) => MODULES.find((m) => m.id === id)
 export const LESSON_IDS: ReadonlySet<string> = new Set(LESSONS.map((l) => l.id))
+
+/** Yakuniy test natijalari ham user_lessons da saqlanadi: "test:<modul id>" va "test:level-<daraja>". Dars deb sanalmaydi. */
+export const testResultId = (scope: string) => `test:${scope}`
+export const TEST_IDS: ReadonlySet<string> = new Set([...MODULES.map((m) => testResultId(m.id)), ...LEVELS.map((lv) => testResultId(`level-${lv}`))])
+/** Saqlanadigan natija id'lari: darslar + testlar. */
+export const RESULT_IDS: ReadonlySet<string> = new Set([...LESSON_IDS, ...TEST_IDS])

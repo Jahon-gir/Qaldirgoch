@@ -24,6 +24,8 @@ type Ctx = {
   addDone: () => void
   /** Takrorlash javobi: schedule — true boʻlsa jadval oʻzgaradi (sessiyadagi birinchi javob). Kunlik maqsadga tegmaydi. */
   answer: (wordId: string, correct: boolean, schedule: boolean) => void
+  /** Yakuniy testdagi xato soʻzlar: qutida yoʻq boʻlsa qoʻshiladi, keyin xato deb belgilanadi (oraliq 1, ertaga keladi). Toʻgʻrilar oʻzgarmaydi. */
+  markMistakes: (ids: string[]) => void
 }
 const WordsContext = createContext<Ctx | null>(null)
 
@@ -163,6 +165,20 @@ export function WordsProvider({ children }: { children: ReactNode }) {
     [commitWords, commitActivity, kick]
   )
 
+  const markMistakes = useCallback(
+    (ids: string[]) => {
+      const day = localDay()
+      const now = new Date().toISOString()
+      const known = ids.filter((id) => WORD_IDS.has(id))
+      if (!known.length) return
+      const next = { ...addNewWords(wordsRef.current, known, day, now, WORD_IDS) }
+      for (const id of known) next[id] = answerWord(next[id], false, day, now)
+      commitWords(next)
+      kick()
+    },
+    [commitWords, kick]
+  )
+
   const value = useMemo<Ctx>(
     () => ({
       words,
@@ -174,9 +190,10 @@ export function WordsProvider({ children }: { children: ReactNode }) {
       streak: streakInfo(activity, today, dailyGoal),
       learn,
       addDone: done,
-      answer
+      answer,
+      markMistakes
     }),
-    [words, activity, today, dailyGoal, learn, done, answer]
+    [words, activity, today, dailyGoal, learn, done, answer, markMistakes]
   )
   return <WordsContext.Provider value={value}>{children}</WordsContext.Provider>
 }

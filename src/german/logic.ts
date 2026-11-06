@@ -1,4 +1,4 @@
-import { DIRECTIONS, LESSON_IDS, LESSONS, MODULES, type ChoiceExercise, type Direction, type Exercise, type Lesson, type Level, type MatchExercise, type Module } from '../content/german'
+import { DIRECTIONS, RESULT_IDS, LESSONS, MODULES, type ChoiceExercise, type Direction, type Exercise, type Lesson, type Level, type MatchExercise, type Module } from '../content/german'
 import type { Answers } from '../profile/questions'
 
 /* ---------- Yoʻnalish ---------- */
@@ -157,8 +157,8 @@ export function summarize(exercises: Exercise[], outcomes: Outcome[]) {
 
 /* ---------- Natijalarni saqlash va birlashtirish ---------- */
 
-/** Tashqaridan (localStorage/server) kelgan qiymatni tozalaydi: maʼlum dars, butun ball, yaroqli sana. */
-export function sanitizeResults(raw: unknown, known: ReadonlySet<string> = LESSON_IDS): Results {
+/** Tashqaridan (localStorage/server) kelgan qiymatni tozalaydi: maʼlum dars yoki test, butun ball, yaroqli sana. */
+export function sanitizeResults(raw: unknown, known: ReadonlySet<string> = RESULT_IDS): Results {
   const out: Results = {}
   if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return out
   for (const [id, v] of Object.entries(raw as Record<string, unknown>)) {

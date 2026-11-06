@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { useAuth } from '../auth/AuthProvider'
-import { LESSON_IDS } from '../content/german'
+import { RESULT_IDS } from '../content/german'
 import { supabase } from '../lib/supabase'
 import { PROGRESS_KEYS, read, write } from '../progress/storage'
 import { mergeResults, recordResult, resultsToPush, sanitizeResults, type Result, type Results } from './logic'
@@ -8,7 +8,7 @@ import { fetchRemoteResults, pushRemoteResults } from './remote'
 
 type Ctx = {
   results: Results
-  /** Dars tugadi: eng yuqori ball saqlanadi (mehmon — telefonda, kirgan — serverga ham). */
+  /** Dars yoki yakuniy test ("test:<scope>") tugadi: eng yuqori ball saqlanadi (mehmon — telefonda, kirgan — serverga ham). */
   record: (lessonId: string, score: number, total: number) => void
 }
 const LessonsContext = createContext<Ctx | null>(null)
@@ -65,7 +65,7 @@ export function LessonsProvider({ children }: { children: ReactNode }) {
 
   const record = useCallback(
     (lessonId: string, score: number, total: number) => {
-      if (!LESSON_IDS.has(lessonId) || !Number.isInteger(score) || !Number.isInteger(total) || total <= 0 || score < 0 || score > total) return
+      if (!RESULT_IDS.has(lessonId) || !Number.isInteger(score) || !Number.isInteger(total) || total <= 0 || score < 0 || score > total) return
       const incoming: Result = { lessonId, score, total, completedAt: new Date().toISOString() }
       const next = recordResult(ref.current, incoming)
       if (next !== ref.current) commit(next)

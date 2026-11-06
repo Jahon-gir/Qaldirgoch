@@ -7,12 +7,16 @@ import { useI18n } from '../../i18n/I18nProvider'
 import { useLessons } from '../../german/LessonsProvider'
 import { FROM_MODULE, useBack } from '../../lib/useHistoryAnchor'
 import { currentInModule, lessonsOf, moduleProgress } from '../../german/logic'
+import { TestCard } from '../../components/german/TestCard'
+import { scopeInfo } from '../../german/finalTest'
+import { useDirection } from '../../german/useDirection'
 
 export default function ModulePage() {
   const { moduleId = '' } = useParams()
   const { lang, t } = useI18n()
   const { results } = useLessons()
   const back = useBack('/til')
+  const { direction } = useDirection()
   const mod = moduleById(moduleId)
   const lessons = mod ? lessonsOf(mod.id) : []
   if (!mod || lessons.length === 0) return <Navigate to="/til" replace />
@@ -46,6 +50,11 @@ export default function ModulePage() {
           <ProgressBar value={p.percent} tone="success" label={t('german.moduleProgress')} />
         </div>
       </Card>
+
+      {(() => {
+        const info = scopeInfo(mod.id, direction)
+        return info && <TestCard info={info} results={results} title={t('ft.moduleTitle', { n: mod.order })} />
+      })()}
 
       <Card className="p-2">
         <ol>

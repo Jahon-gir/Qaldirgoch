@@ -14,6 +14,7 @@ import LessonPage from './pages/german/LessonPage'
 import ReviewPage from './pages/german/ReviewPage'
 import VocabPage from './pages/german/VocabPage'
 import VocabLessonPage from './pages/german/VocabLessonPage'
+import FinalTestPage from './pages/german/FinalTestPage'
 import Safety from './pages/Safety'
 import Assistant from './pages/Assistant'
 import Settings from './pages/Settings'
@@ -68,6 +69,7 @@ export function AppRoutes() {
         <Route path="til/takrorlash" element={<ReviewPage />} />
         <Route path="til/lugat" element={<VocabPage />} />
         <Route path="til/lugat/:lessonId" element={<VocabLessonPage />} />
+        <Route path="til/test/:scope" element={<FinalTestPage />} />
       </Route>
     </Routes>
   )
