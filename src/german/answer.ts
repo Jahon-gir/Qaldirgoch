@@ -63,11 +63,11 @@ export type SpecialLetter = (typeof SPECIAL_LETTERS)[number]
 
 /**
  * Faqat javob soʻzida (target) bor harflar, nemischa alifbo tartibida (ä, ö, ü, ß); katta harf ham kichik koʻrinishda.
- * "ss" bor soʻzda ß ham chiqadi: ß va ss bir xil qabul qilinadi (normalize), masalan "Tschüss" → ü ß.
+ * Tugma faqat soʻzda aynan shu harf boʻlsagina chiqadi ("ss" bor, ß yoʻq soʻzda ß chiqmaydi: "Tschüss" → ü).
  */
 export function specialLettersOf(target: string): SpecialLetter[] {
   const low = target.normalize('NFC').toLowerCase()
-  return SPECIAL_LETTERS.filter((c) => low.includes(c) || (c === 'ß' && low.includes('ss')))
+  return SPECIAL_LETTERS.filter((c) => low.includes(c))
 }
 
 /** Tugma bosilganda qoʻyiladigan belgi: kursor oldida belgi yoʻq yoki boʻsh joy boʻlsa va targetda shu harf soʻz boshida katta boʻlsa — katta. */

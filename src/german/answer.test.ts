@@ -73,7 +73,12 @@ describe('levenshtein', () => {
 
 describe('Yozish: faqat kerakli harflar', () => {
   it('javobdagi harflar, ä ö ü ß tartibida', () => {
-    expect(specialLettersOf('Tschüss')).toEqual(['ü', 'ß']) // ss ≡ ß qabul qilinadi
+    expect(specialLettersOf('Tschüss')).toEqual(['ü'])
+    expect(specialLettersOf('Straße')).toEqual(['ß'])
+    expect(specialLettersOf('Schön')).toEqual(['ö'])
+    expect(specialLettersOf('Grüße')).toEqual(['ü', 'ß'])
+    expect(specialLettersOf('Wiedersehen')).toEqual([])
+    expect(specialLettersOf('Auf Wiedersehen')).toEqual([])
     expect(specialLettersOf('Guten Tag')).toEqual([])
     expect(specialLettersOf('Ärger')).toEqual(['ä'])
     expect(specialLettersOf('Öl')).toEqual(['ö'])
@@ -81,6 +86,14 @@ describe('Yozish: faqat kerakli harflar', () => {
     expect(specialLettersOf('der Schweißer')).toEqual(['ß'])
     expect(specialLettersOf('Größe über Äpfel')).toEqual(['ä', 'ö', 'ü', 'ß'])
     expect(specialLettersOf('Hallo')).toEqual([])
+  })
+  it('"ss" bor, lekin ß yoʻq soʻzlarda ß tugmasi chiqmaydi', () => {
+    for (const w of ['Tschüss', 'Kuss', 'Fluss', 'Wasser', 'Passwort']) expect(specialLettersOf(w)).not.toContain('ß')
+  })
+  it('tugmalar roʻyxati javob tekshiruvini oʻzgartirmaydi: Tschuess/Tschuss hozirgi qoida boʻyicha', () => {
+    expect(check('Tschuess', 'Tschüss')).toBe('correct')
+    expect(check('Tschuss', 'Tschüss')).toBe('almost')
+    expect(check('Tschüß', 'Tschüss')).toBe('correct')
   })
   it('katta harf: soʻz boshida (kursor oldida belgi yoʻq/boʻsh joy) va targetda katta boʻlsa', () => {
     expect(specialToInsert('ä', 'Ärger', '')).toBe('Ä')

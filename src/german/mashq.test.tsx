@@ -231,8 +231,8 @@ describe('Yozish', () => {
     expect(screen.getByText('Yozish · 2 / 5')).toBeTruthy()
   })
 
-  it('faqat javobdagi harflar: Tschüss → ü ß (ä ö yoʻq); tugma kursor turgan joyga qoʻyadi', () => {
-    expect(screen.getAllByRole('button', { name: /harfini qoʻyish/ }).map((b) => b.textContent)).toEqual(['ü', 'ß'])
+  it('faqat javobdagi harflar: Tschüss → faqat ü (ß va ä ö yoʻq); tugma kursor turgan joyga qoʻyadi', () => {
+    expect(screen.getAllByRole('button', { name: /harfini qoʻyish/ }).map((b) => b.textContent)).toEqual(['ü'])
     type('Tschss')
     input().setSelectionRange(4, 4)
     click('ü harfini qoʻyish')
@@ -446,11 +446,11 @@ describe('Yozish: harflar qatori', () => {
     expect(screen.getByRole('textbox', { name: 'Nemischa javob' })).toBeTruthy()
     expect(screen.queryAllByRole('button', { name: /harfini qoʻyish/ })).toHaveLength(0)
   })
-  it('takrorlashdagi Yozishda ham (Tschüss, 14 kun): ü ß, 52×48', () => {
+  it('takrorlashdagi Yozishda ham (Tschüss, 14 kun): faqat ü, 52×48', () => {
     seed({ lessons: {}, words: { 'a1-m1-tschuess': { due: TODAY, interval: 14, mistakes: 0, updatedAt: NOW } } })
     renderApp('/til/takrorlash')
     const btns = screen.getAllByRole('button', { name: /harfini qoʻyish/ })
-    expect(btns.map((b) => b.textContent)).toEqual(['ü', 'ß'])
+    expect(btns.map((b) => b.textContent)).toEqual(['ü'])
     expect(btns.every((b) => b.className.includes('w-[52px]') && b.className.includes('h-12'))).toBe(true)
   })
 })
