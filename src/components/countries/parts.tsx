@@ -5,14 +5,14 @@ import { useT } from '../../i18n/I18nProvider'
 import type { Key } from '../../i18n/uz'
 
 /** Toʻq koʻk (ishonch) sarlavha bloki; roʻyxat/kartochkalar uning ostiga 12px kirib turadi (`Overlap`). */
-export function TrustHeader({ children, back }: { children: ReactNode; back?: { to: string; label: Key } }) {
+export function TrustHeader({ children, back }: { children: ReactNode; back?: { to: string; label?: Key; text?: string } }) {
   const t = useT()
   return (
     <header className="rounded-card bg-trust px-4 pb-6 pt-4 text-surface">
       {back && (
         <Link to={back.to} className="-ml-2 mb-1 inline-flex min-h-[44px] items-center gap-2 rounded-full px-2 text-base font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-surface">
           <IconArrowLeft size={22} aria-hidden />
-          {t(back.label)}
+          {back.text ?? (back.label ? t(back.label) : '')}
         </Link>
       )}
       {children}

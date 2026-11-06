@@ -78,3 +78,8 @@ export function reconcile(local: Items, server: Items, pending: PendingOps, firs
   }
   return { items, toPush, toDelete }
 }
+
+/** Foydalanuvchi yoʻlni boshlaganmi: 1 va 2-bosqichdan (avtomatik) boshqa bosqichda belgilangan element bor. */
+export function hasStarted(items: Items, auto: readonly string[] = AUTO_DONE_STEPS): boolean {
+  return Object.keys(items).some((id) => !auto.includes(id.split('.')[0]))
+}

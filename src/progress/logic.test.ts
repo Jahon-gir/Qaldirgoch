@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest'
 import { ALL_ITEM_IDS, AUSBILDUNG_STEPS } from '../content/ausbildung'
-import { applyPending, mergeItems, progressSummary, reconcile, sanitizeItems, stepStatuses } from './logic'
+import { applyPending, hasStarted, mergeItems, progressSummary, reconcile, sanitizeItems, stepStatuses } from './logic'
 import { deleteRemoteProgress, fetchRemoteProgress, pushRemoteProgress } from './remote'
 
 const T1 = '2026-11-01T10:00:00.000Z'
@@ -133,5 +133,17 @@ describe('server bilan ishlash (mock)', () => {
     await deleteRemoteProgress(client, 'u1', ['viza.t1'])
     expect(eqDelete).toHaveBeenCalledWith('user_id', 'u1')
     expect(inFn).toHaveBeenCalledWith('item_id', ['viza.t1'])
+  })
+})
+
+describe('hasStarted (kirish ekrani tugmasi)', () => {
+  const at = '2026-11-01T00:00:00.000Z'
+  it('boʻsh yoki faqat 1-2-bosqich elementlari — boshlamagan', () => {
+    expect(hasStarted({})).toBe(false)
+    expect(hasStarted({ 'profil.t1': at, 'yol.t1': at, 'yol.t2': at })).toBe(false)
+  })
+  it('boshqa bosqichda vazifa yoki hujjat belgilangan — boshlagan', () => {
+    expect(hasStarted({ 'nemis.t1': at })).toBe(true)
+    expect(hasStarted({ 'yol.t1': at, 'hujjatlar.d1': at })).toBe(true)
   })
 })
