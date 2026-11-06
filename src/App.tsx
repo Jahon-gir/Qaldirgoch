@@ -7,9 +7,7 @@ import { useT } from './i18n/I18nProvider'
 import { useProfile } from './profile/ProfileProvider'
 import Home from './pages/Home'
 import Countries from './pages/countries/Countries'
-import { CountryRoute, ProgramRoute, StepRoute } from './pages/countries/routes'
-import IntroPage from './pages/countries/IntroPage'
-import DetailPage from './pages/countries/DetailPage'
+import { CountryRoute, ProgramGuideRoute, ProgramRoute, StepRoute } from './pages/countries/routes'
 import Language from './pages/Language'
 import ModulePage from './pages/german/ModulePage'
 import LessonPage from './pages/german/LessonPage'
@@ -50,8 +48,8 @@ export function AppRoutes() {
         <Route path="yol/:country" element={<CountryRoute />} />
         <Route path="yol/:country/:program" element={<ProgramRoute />} />
         {/* Aniq manzillar :stepId dan oldin: kirish ekrani va toʻliq tushuntirish */}
-        <Route path="yol/de/ausbildung/kirish" element={<IntroPage />} />
-        <Route path="yol/de/ausbildung/batafsil" element={<DetailPage />} />
+        <Route path="yol/:country/:program/kirish" element={<ProgramGuideRoute kind="kirish" />} />
+        <Route path="yol/:country/:program/batafsil" element={<ProgramGuideRoute kind="batafsil" />} />
         <Route path="yol/:country/:program/:stepId" element={<StepRoute />} />
         <Route path="yol/*" element={<Navigate to="/yol" replace />} />
         <Route path="til" element={<Language />} />

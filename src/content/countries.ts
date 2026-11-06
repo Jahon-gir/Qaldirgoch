@@ -1,5 +1,6 @@
 import { l3 } from './german/helpers'
 import type { L3 } from './german/types'
+import { contentOf } from './programs'
 
 /**
  * Davlatlar va yoʻllar katalogi. Matnlar uch tilda (kirill qoʻlda yozilgan).
@@ -42,27 +43,27 @@ export const COUNTRIES: Country[] = [
         short: l3('Korxonada ishlab, kasb oʻrganish', 'Корхонада ишлаб, касб ўрганиш', 'Учёба профессии с работой на предприятии')
       },
       {
-        id: 'chancenkarte', icon: 'ticket', status: 'locked', ...base,
+        id: 'chancenkarte', icon: 'ticket', status: 'open', ...base,
         name: l3('Chancenkarte', 'Chancenkarte', 'Chancenkarte'),
         short: l3('Ish qidirish uchun karta', 'Иш қидириш учун карта', 'Карта для поиска работы')
       },
       {
-        id: 'tan-oldirish', icon: 'certificate', status: 'locked', ...base,
+        id: 'tan-oldirish', icon: 'certificate', status: 'open', ...base,
         name: l3('Malakani tan oldirish', 'Малакани тан олдириш', 'Признание квалификации'),
         short: l3('Diplomni tan oldirish, hamshiralik ham', 'Дипломни тан олдириш, ҳамширалик ҳам', 'Признание диплома, в том числе медсестёр')
       },
       {
-        id: 'mutaxassis', icon: 'briefcase', status: 'locked', ...base,
+        id: 'mutaxassis', icon: 'briefcase', status: 'open', ...base,
         name: l3('Malakali mutaxassis', 'Малакали мутахассис', 'Квалифицированный специалист'),
         short: l3('Tan olingan kasb va ish taklifi bilan', 'Тан олинган касб ва иш таклифи билан', 'С признанной профессией и предложением работы')
       },
       {
-        id: 'oqish', icon: 'school', status: 'locked', ...base,
+        id: 'oqish', icon: 'school', status: 'open', ...base,
         name: l3('Oʻqish', 'Ўқиш', 'Учёба'),
         short: l3('Universitetda oʻqish', 'Университетда ўқиш', 'Учёба в университете')
       },
       {
-        id: 'til-kursi', icon: 'language', status: 'locked', ...base,
+        id: 'til-kursi', icon: 'language', status: 'open', ...base,
         name: l3('Til kursi', 'Тил курси', 'Языковой курс'),
         short: l3('Germaniyada nemis tili kursi', 'Германияда немис тили курси', 'Курс немецкого языка в Германии')
       }
@@ -111,4 +112,4 @@ export const AUSBILDUNG_INTRO_PATH = `${AUSBILDUNG_PATH}/kirish`
 export const AUSBILDUNG_DETAIL_PATH = `${AUSBILDUNG_PATH}/batafsil`
 
 /** Yoʻl kartochkasi manzili: Ausbildung — kirish ekraniga, qolgan yoʻllar — oʻz sahifasiga. */
-export const programPath = (c: Country, p: Program) => (c.id === 'de' && p.id === 'ausbildung' ? AUSBILDUNG_INTRO_PATH : `/yol/${c.id}/${p.id}`)
+export const programPath = (c: Country, p: Program) => (contentOf(c.id, p.id) ? `/yol/${c.id}/${p.id}/kirish` : `/yol/${c.id}/${p.id}`)

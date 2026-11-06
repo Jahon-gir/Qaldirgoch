@@ -19,9 +19,9 @@ describe('davlatlar katalogi: tuzilma', () => {
     expect(COUNTRIES.map((c) => [c.id, c.status])).toEqual([['de', 'open'], ['kr', 'locked'], ['jp', 'locked'], ['gb', 'locked']])
     expect(COUNTRY_IDS).toEqual(COUNTRIES.map((c) => c.id))
   })
-  it('Germaniya: 6 yoʻl, faqat Ausbildung ochiq', () => {
+  it('Germaniya: 6 yoʻl, hammasi ochiq (0.6.7)', () => {
     const de = COUNTRIES[0]
-    expect(de.programs.map((p) => [p.id, p.status])).toEqual([['ausbildung', 'open'], ['chancenkarte', 'locked'], ['tan-oldirish', 'locked'], ['mutaxassis', 'locked'], ['oqish', 'locked'], ['til-kursi', 'locked']])
+    expect(de.programs.map((p) => [p.id, p.status])).toEqual([['ausbildung', 'open'], ['chancenkarte', 'open'], ['tan-oldirish', 'open'], ['mutaxassis', 'open'], ['oqish', 'open'], ['til-kursi', 'open']])
   })
   it('Koreya: bitta yoʻl (eps) va xavfsizlik eslatmasi tekshiruvda; Yaponiya va Britaniyada yoʻl yoʻq', () => {
     const [, kr, jp, gb] = COUNTRIES
