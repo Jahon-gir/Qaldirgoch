@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Navigate, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { IconCheck, IconX } from '@tabler/icons-react'
 import { ChoiceStep, MatchStep, WordStep } from '../../components/german/steps'
+import { ConfirmExit } from '../../components/german/ConfirmExit'
 import { ListenIcon, NoVoice } from '../../components/german/Listen'
 import { LearnedWords } from '../../components/vocab/LearnedWords'
 import { Button } from '../../components/ui/Button'
@@ -16,31 +17,6 @@ import { useSpeech } from '../../german/useSpeech'
 import { useWords } from '../../german/WordsProvider'
 import { wordIdsOfLesson } from '../../content/german/words'
 import { FROM_MODULE, useBackToModule, useHistoryAnchor } from '../../lib/useHistoryAnchor'
-
-/** Darsdan chiqishni tasdiqlash: natija saqlanmasligi aytiladi. */
-function ConfirmExit({ onStay, onLeave }: { onStay: () => void; onLeave: () => void }) {
-  const t = useI18n().t
-  const ref = useRef<HTMLDivElement>(null)
-  useEffect(() => {
-    ref.current?.focus()
-  }, [])
-  return (
-    <div className="fixed inset-0 z-40 flex items-end justify-center bg-ink/50 p-4 sm:items-center" onKeyDown={(e) => e.key === 'Escape' && onStay()}>
-      <div ref={ref} tabIndex={-1} role="dialog" aria-modal="true" aria-labelledby="exit-title" className="w-full max-w-md outline-none">
-        <Card className="space-y-3 p-5 shadow-lg">
-          <h2 id="exit-title" className="text-lg font-semibold">
-            {t('german.exitTitle')}
-          </h2>
-          <p className="text-base text-ink-2">{t('german.exitText')}</p>
-          <Button onClick={onStay}>{t('german.exitStay')}</Button>
-          <Button variant="secondary" onClick={onLeave}>
-            {t('german.exitLeave')}
-          </Button>
-        </Card>
-      </div>
-    </div>
-  )
-}
 
 function ResultView({ lesson, summary }: { lesson: Lesson; summary: ReturnType<typeof summarize> }) {
   const { lang, t } = useI18n()
@@ -173,7 +149,7 @@ function LessonRunner({ lesson }: { lesson: Lesson }) {
           </div>
         </>
       )}
-      {confirmExit && <ConfirmExit onStay={() => setConfirmExit(false)} onLeave={leave} />}
+      {confirmExit && <ConfirmExit title={t('german.exitTitle')} text={t('german.exitText')} onStay={() => setConfirmExit(false)} onLeave={leave} />}
     </div>
   )
 }

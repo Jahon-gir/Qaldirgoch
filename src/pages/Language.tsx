@@ -12,6 +12,8 @@ import { useLessons } from '../german/LessonsProvider'
 import { levelProgress, lessonsOf, moduleProgress, nextUnfinished, visibleModules } from '../german/logic'
 import { nextDueDay } from '../german/srs'
 import { useWords } from '../german/WordsProvider'
+import { TestCard } from '../components/german/TestCard'
+import { levelScope, scopeInfo } from '../german/finalTest'
 
 export default function Language() {
   const { lang, t } = useI18n()
@@ -120,6 +122,11 @@ export default function Language() {
           <ProgressBar value={lp.percent} tone="success" label={t('german.levelTitle', { level })} />
         </section>
       )}
+      {!LEVEL_LOCKED[level] &&
+        (() => {
+          const info = scopeInfo(levelScope(level), direction)
+          return info && <TestCard info={info} results={results} title={t('ft.levelTitle', { level })} always />
+        })()}
 
       <h2 className="sr-only">{t('german.modules')}</h2>
       {modules.length === 0 ? (
@@ -161,6 +168,11 @@ export default function Language() {
                 ) : (
                   <div className="flex min-h-[64px] items-center gap-3 rounded-card bg-surface p-3 opacity-80">{body}</div>
                 )}
+                {(() => {
+                  // Modul testi: modulning barcha darslari tugagach ostida chiqadi
+                  const info = scopeInfo(m.id, direction)
+                  return info && <TestCard info={info} results={results} title={t('ft.moduleTitle', { n: m.order })} className="mt-2" />
+                })()}
               </li>
             )
           })}
