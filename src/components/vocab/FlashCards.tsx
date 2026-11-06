@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { IconChevronDown, IconVolume } from '@tabler/icons-react'
+import { IconVolume } from '@tabler/icons-react'
 import { wordById } from '../../content/german/words'
 import { useI18n } from '../../i18n/I18nProvider'
 import { sessionCurrent, type Session } from '../../german/srs'
@@ -88,7 +88,7 @@ function Card({ id, front, speech }: { id: string; front: VocabFront; speech: Sp
 }
 
 /** Kartochka rejimi: "Bilmadim" soʻz oxirida yana bir marta chiqadi; keyingi kartochka old tomondan ochiladi. */
-export function FlashCards({ session, front, speech, onAnswer, onOpenSettings }: { session: Session; front: VocabFront; speech: Speech; onAnswer: (known: boolean) => void; onOpenSettings: () => void }) {
+export function FlashCards({ session, front, speech, onAnswer, onSwapFront }: { session: Session; front: VocabFront; speech: Speech; onAnswer: (known: boolean) => void; onSwapFront: () => void }) {
   const t = useI18n().t
   const fx = useFeedback()
   const holder = useRef<HTMLDivElement>(null)
@@ -106,14 +106,14 @@ export function FlashCards({ session, front, speech, onAnswer, onOpenSettings }:
         <Dots pos={session.pos} total={session.queue.length} />
         <button
           type="button"
-          onClick={onOpenSettings}
-          className="flex min-h-[44px] items-center gap-1 rounded-full bg-trust-soft px-3 text-base font-semibold text-trust-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          onClick={onSwapFront}
+          aria-label={t('vocab.frontSwapA11y', { side: t(`vocab.front.${front}`) })}
+          className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-trust-soft px-3 text-base font-semibold text-trust-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         >
-          {t('vocab.frontChip', { side: t(`vocab.front.${front}`) })}
-          <IconChevronDown size={18} aria-hidden />
+          {t('vocab.frontSwap')}
         </button>
       </div>
-      <div ref={holder} className="flex flex-1 flex-col justify-center" key={`${session.pos}-${id}`}>
+      <div ref={holder} className="flex flex-1 flex-col justify-center" key={`${session.pos}-${id}-${front}`}>
         <Card id={id} front={front} speech={speech} />
       </div>
       <Footer>

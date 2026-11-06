@@ -175,22 +175,17 @@ describe('Dars soʻzlari: Roʻyxat', () => {
 })
 
 describe('Sozlash oynasi va saqlash', () => {
-  it('tanlov profilda saqlanadi (vocabMode, vocabFront) va keyingi safar shu bilan ochiladi', () => {
+  it('usul bosilsa tanlov profilda saqlanadi, ekran shu usulga oʻtadi, keyingi safar shu bilan ochiladi', () => {
     seed()
     renderApp('/til/lugat/a1-m1-l1')
     click('Mashq sozlamalari')
-    expect(screen.getByRole('dialog')).toBeTruthy()
     expect(screen.getByRole('radio', { name: 'Roʻyxat' }).getAttribute('aria-checked')).toBe('true')
-    expect(screen.getByRole('radio', { name: 'Nemischa' }).getAttribute('aria-checked')).toBe('true')
     fireEvent.click(screen.getByRole('radio', { name: 'Kartochka' }))
-    fireEvent.click(screen.getByRole('radio', { name: 'Oʻzbekcha' }))
-    expect(stored('profile')).toMatchObject({ vocabMode: 'cards', vocabFront: 'tr' })
-    click('Tayyor')
-    expect(screen.queryByRole('dialog')).toBeNull()
+    expect(stored('profile')).toMatchObject({ vocabMode: 'cards' })
+    expect(screen.getByTestId('vocab-card')).toBeTruthy() // ekran darhol oʻtdi
     cleanup()
     renderApp('/til/lugat/a1-m1-l1')
     expect(screen.getByText(`Kartochka · ${L1.length} ta soʻz`)).toBeTruthy()
-    expect(screen.getByText(L1[0].tr.uz)).toBeTruthy() // old tomoni — Oʻzbekcha
   })
 })
 
@@ -369,12 +364,14 @@ describe('Test', () => {
     expect(localStorage.getItem('qaldirgoch.words')).toBe(wordsBefore)
   })
 
-  it('old tomoni Oʻzbekcha: savol "Nemischasi qaysi?", variantlar nemischa', () => {
+  it('vocabFront Oʻzbekcha boʻlsa ham test savol tili doim nemischa → oʻzbekcha', () => {
     seed(testMode('tr'))
     renderApp('/til/lugat/a1-m1-l1')
-    expect(screen.getByText('Nemischasi qaysi?')).toBeTruthy()
+    expect(screen.getByText('Bu soʻz nima degani?')).toBeTruthy()
+    expect(screen.queryByText('Nemischasi qaysi?')).toBeNull()
+    expect(within(screen.getByText('Bu soʻz nima degani?').parentElement!).getByText(L1[0].de)).toBeTruthy()
     const btns = within(group()).getAllByRole('button')
-    expect(btns.every((b) => L1.some((w) => w.de === b.textContent))).toBe(true)
+    expect(btns.every((b) => L1.some((w) => w.tr.uz === b.textContent))).toBe(true)
   })
 })
 

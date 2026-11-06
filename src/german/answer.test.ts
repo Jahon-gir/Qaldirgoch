@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { check, isBlank, isRight, levenshtein, normalize, squash } from './answer'
+import { check, isBlank, isRight, levenshtein, normalize, specialLettersOf, specialToInsert, squash } from './answer'
 
 describe('normalize', () => {
   it('trim, kichik harf, boʻsh joylar siqiladi', () => {
@@ -68,5 +68,28 @@ describe('levenshtein', () => {
     expect(levenshtein('kitten', 'sitting')).toBe(3)
     expect(levenshtein('abc', 'abxc')).toBe(1)
     expect(levenshtein('abc', 'ab')).toBe(1)
+  })
+})
+
+describe('Yozish: faqat kerakli harflar', () => {
+  it('javobdagi harflar, ä ö ü ß tartibida', () => {
+    expect(specialLettersOf('Tschüss')).toEqual(['ü', 'ß']) // ss ≡ ß qabul qilinadi
+    expect(specialLettersOf('Guten Tag')).toEqual([])
+    expect(specialLettersOf('Ärger')).toEqual(['ä'])
+    expect(specialLettersOf('Öl')).toEqual(['ö'])
+    expect(specialLettersOf('Übung')).toEqual(['ü'])
+    expect(specialLettersOf('der Schweißer')).toEqual(['ß'])
+    expect(specialLettersOf('Größe über Äpfel')).toEqual(['ä', 'ö', 'ü', 'ß'])
+    expect(specialLettersOf('Hallo')).toEqual([])
+  })
+  it('katta harf: soʻz boshida (kursor oldida belgi yoʻq/boʻsh joy) va targetda katta boʻlsa', () => {
+    expect(specialToInsert('ä', 'Ärger', '')).toBe('Ä')
+    expect(specialToInsert('ö', 'Öl', '')).toBe('Ö')
+    expect(specialToInsert('ü', 'Übung', '')).toBe('Ü')
+    expect(specialToInsert('ü', 'die Übung', 'die ')).toBe('Ü')
+    expect(specialToInsert('ü', 'Übung', 'Üb')).toBe('ü') // soʻz oʻrtasida
+    expect(specialToInsert('ä', 'Ärger', 'x')).toBe('ä')
+    expect(specialToInsert('ü', 'Tschüss', '')).toBe('ü') // targetda katta Ü yoʻq
+    expect(specialToInsert('ß', 'heißen', '')).toBe('ß')
   })
 })

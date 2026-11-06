@@ -10,6 +10,8 @@ import { ProgressProvider } from '../progress/ProgressProvider'
 import { InstallProvider } from '../pwa/InstallProvider'
 import { LessonsProvider } from './LessonsProvider'
 import { localDay, type Words } from './srs'
+import { act } from '@testing-library/react'
+import { CLOSE_MS, PICK_DELAY_MS } from '../components/vocab/SettingsSheet'
 import { lessonWords } from './vocab'
 import { WordsProvider } from './WordsProvider'
 
@@ -229,12 +231,12 @@ describe('Yozish', () => {
     expect(screen.getByText('Yozish · 2 / 5')).toBeTruthy()
   })
 
-  it('ä ö ü ß tugmalari kursor turgan joyga qoʻyadi', () => {
+  it('faqat javobdagi harflar: Tschüss → ü ß (ä ö yoʻq); tugma kursor turgan joyga qoʻyadi', () => {
+    expect(screen.getAllByRole('button', { name: /harfini qoʻyish/ }).map((b) => b.textContent)).toEqual(['ü', 'ß'])
     type('Tschss')
     input().setSelectionRange(4, 4)
     click('ü harfini qoʻyish')
     expect(input().value).toBe('Tschüss')
-    expect(screen.getAllByRole('button', { name: /harfini qoʻyish/ })).toHaveLength(4)
   })
 })
 
@@ -246,7 +248,7 @@ describe('Artikl', () => {
     renderApp('/til/lugat/a1-m1-l1')
     click('Mashq sozlamalari')
     expect(screen.queryByRole('radio', { name: /Artikl/ })).toBeNull()
-    expect(screen.getAllByRole('radio')).toHaveLength(7 + 2) // 7 usul + 2 til
+    expect(screen.getAllByRole('radio')).toHaveLength(7) // Artikl yoʻq, til boʻlimi yoʻq
   })
 
   it('"___ Elektriker", uch tugma; toʻgʻri — yashil ramka va "Toʻgʻri: der Elektriker"; faqat otlar soʻraladi', () => {
@@ -292,7 +294,6 @@ describe('Sozlash oynasi va Aralash', () => {
     for (const n of names) expect(screen.getByRole('radio', { name: n })).toBeTruthy()
     fireEvent.click(screen.getByRole('radio', { name: 'Aralash' }))
     expect(stored('profile').vocabMode).toBe('mixed')
-    click('Tayyor')
     expect(screen.getByText(/^Aralash · 1 \/ \d+$/)).toBeTruthy()
   })
 })
@@ -351,5 +352,105 @@ describe('Takrorlash sessiyasi', () => {
     click('Davom etish')
     expect(screen.getByText('2 / 2')).toBeTruthy()
     expect(screen.getByText('Bu soʻz nima degani?')).toBeTruthy()
+  })
+})
+
+/* ---------- 0.6.4: usul oynasi, DE ⇄ UZ, Yozishda harflar ---------- */
+
+describe('Mashq usuli oynasi (A2)', () => {
+  const advance = (ms: number) => act(() => vi.advanceTimersByTime(ms))
+  beforeEach(() => {
+    vi.useFakeTimers({ toFake: ['setTimeout', 'clearTimeout'] })
+  })
+  afterEach(() => {
+    vi.useRealTimers()
+  })
+
+  it('"Tayyor" tugmasi va "Old tomoni / savol tili" boʻlimi yoʻq; 2 ustunli plitkalar, joriy usul belgilangan', () => {
+    seed()
+    renderApp('/til/lugat/a1-m1-l1')
+    click('Mashq sozlamalari')
+    expect(screen.getByRole('heading', { name: 'Mashq usuli' })).toBeTruthy()
+    expect(screen.queryByRole('button', { name: 'Tayyor' })).toBeNull()
+    expect(screen.queryByText('Old tomoni / savol tili')).toBeNull()
+    const group = screen.getByRole('radiogroup', { name: 'Mashq usuli' })
+    expect(group.className).toContain('grid-cols-2')
+    expect(screen.getByRole('radio', { name: 'Roʻyxat' }).className).toContain('bg-sel')
+    expect(screen.getByRole('radio', { name: 'Test' }).className).toContain('bg-vf')
+    expect(screen.getAllByRole('radio').every((r) => r.className.includes('min-h-[72px]'))).toBe(true)
+  })
+
+  it('usul bosilsa: darhol saqlanadi va ekran oʻtadi; ~180 ms dan keyin oyna pastga sirpanadi, 0,3 s dan keyin yopiladi', () => {
+    seed()
+    renderApp('/til/lugat/a1-m1-l1')
+    click('Mashq sozlamalari')
+    fireEvent.click(screen.getByRole('radio', { name: 'Yozish' }))
+    expect(stored('profile').vocabMode).toBe('write')
+    expect(screen.getByRole('textbox', { name: 'Nemischa javob' })).toBeTruthy()
+    const dialog = screen.getByRole('dialog')
+    advance(PICK_DELAY_MS - 20)
+    expect(dialog.className).not.toContain('sheet-down')
+    advance(40)
+    expect(screen.getByRole('dialog').className).toContain('sheet-down')
+    advance(CLOSE_MS)
+    expect(screen.queryByRole('dialog')).toBeNull()
+  })
+
+  it('fon (dim) bosilsa — tanlovsiz yopiladi', () => {
+    seed()
+    renderApp('/til/lugat/a1-m1-l1')
+    click('Mashq sozlamalari')
+    fireEvent.click(screen.getByRole('dialog').parentElement!)
+    advance(CLOSE_MS + 20)
+    expect(screen.queryByRole('dialog')).toBeNull()
+    expect(stored('profile').vocabMode).toBeUndefined()
+    expect(screen.getByText(`Roʻyxat · ${lessonWords('a1-m1-l1').length} ta soʻz`)).toBeTruthy()
+  })
+
+  it('prefers-reduced-motion: oyna darhol yopiladi', () => {
+    vi.stubGlobal('matchMedia', (q: string) => ({ matches: q.includes('reduce'), media: q, addEventListener: vi.fn(), removeEventListener: vi.fn() }))
+    seed()
+    renderApp('/til/lugat/a1-m1-l1')
+    click('Mashq sozlamalari')
+    fireEvent.click(screen.getByRole('radio', { name: 'Test' }))
+    expect(screen.queryByRole('dialog')).toBeNull()
+    expect(stored('profile').vocabMode).toBe('test')
+  })
+})
+
+describe('Kartochka: DE ⇄ UZ chipi', () => {
+  it('old tomon tili almashadi va saqlanadi; joriy kartochka old tomondan qayta ochiladi; mashq qayta boshlanmaydi', () => {
+    seed({ profile: { vocabMode: 'cards' } })
+    renderApp('/til/lugat/a1-m1-l1')
+    const words = lessonWords('a1-m1-l1')
+    click('Bildim') // 2-kartochka
+    fireEvent.click(screen.getByTestId('vocab-card'))
+    expect(screen.getByTestId('vocab-card').getAttribute('data-flipped')).toBe('true')
+    const chip = screen.getByRole('button', { name: /Old tomoni tilini almashtirish/ })
+    expect(chip.textContent).toBe('DE ⇄ UZ')
+    fireEvent.click(chip)
+    expect(stored('profile').vocabFront).toBe('tr')
+    const card = screen.getByTestId('vocab-card')
+    expect(card.getAttribute('data-flipped')).toBe('false')
+    expect(within(card).getAllByText(words[1].tr.uz).length).toBeGreaterThan(0) // hali 2-soʻz (qayta boshlanmadi)
+    expect(screen.queryByRole('dialog')).toBeNull()
+    fireEvent.click(screen.getByRole('button', { name: /Old tomoni tilini almashtirish/ }))
+    expect(stored('profile').vocabFront).toBe('de')
+  })
+})
+
+describe('Yozish: harflar qatori', () => {
+  it('soʻzda ä ö ü ß boʻlmasa qator umuman yoʻq (Hallo)', () => {
+    seed({ profile: { vocabMode: 'write' } })
+    renderApp('/til/lugat/a1-m1-l1')
+    expect(screen.getByRole('textbox', { name: 'Nemischa javob' })).toBeTruthy()
+    expect(screen.queryAllByRole('button', { name: /harfini qoʻyish/ })).toHaveLength(0)
+  })
+  it('takrorlashdagi Yozishda ham (Tschüss, 14 kun): ü ß, 52×48', () => {
+    seed({ lessons: {}, words: { 'a1-m1-tschuess': { due: TODAY, interval: 14, mistakes: 0, updatedAt: NOW } } })
+    renderApp('/til/takrorlash')
+    const btns = screen.getAllByRole('button', { name: /harfini qoʻyish/ })
+    expect(btns.map((b) => b.textContent)).toEqual(['ü', 'ß'])
+    expect(btns.every((b) => b.className.includes('w-[52px]') && b.className.includes('h-12'))).toBe(true)
   })
 })

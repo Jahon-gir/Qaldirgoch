@@ -13,6 +13,7 @@
   --c-head: 12 68 124; --c-head-line: 12 68 124;
   --c-vf: 230 241 251; --c-vb: 181 212 244; --c-vink: 12 68 124; --c-vedge: 230 241 251;
   --c-vbtn: 24 95 165; --c-vbtn-on: 4 44 83; --c-vbtn-ink: 255 255 255;
+  --c-sel: 153 60 29; --c-sel-ink: 255 255 255;
   --c-warn: 186 117 23; --c-warn-soft: 250 238 218; --c-warn-text: 99 56 6;
   --c-der-bg: 230 241 251; --c-der: 12 68 124; --c-die-bg: 251 234 240; --c-die: 153 53 86; --c-das-bg: 238 237 254; --c-das: 83 74 183;
   --c-on-accent: 255 255 255;
@@ -28,6 +29,7 @@
   --c-head: 24 95 165; --c-head-line: 133 183 235;
   --c-vf: 12 68 124; --c-vb: 4 44 83; --c-vink: 230 241 251; --c-vedge: 133 183 235;
   --c-vbtn: 133 183 235; --c-vbtn-on: 55 138 221; --c-vbtn-ink: 4 44 83;
+  --c-sel: 240 153 123; --c-sel-ink: 74 27 12;
   --c-warn: 239 159 39; --c-warn-soft: 65 36 2; --c-warn-text: 250 199 117;
   --c-der-bg: 4 44 83; --c-der: 181 212 244; --c-die-bg: 75 21 40; --c-die: 244 192 209; --c-das-bg: 38 33 92; --c-das: 206 203 246;
   --c-on-accent: 30 30 28;
@@ -80,7 +82,22 @@ body {
 .card-face { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
 .card-back { transform: rotateY(180deg); }
 
+/* Mashq usuli oynasi: plitkalar pastdan birin-ketin chiqadi, ripple, oyna sirpanib yopiladi */
+@keyframes sheet-tile-in { from { opacity: 0; transform: translateY(14px) scale(0.95); } to { opacity: 1; transform: none; } }
+@keyframes sheet-up { from { transform: translateY(100%); } to { transform: none; } }
+@keyframes sheet-down { from { transform: none; } to { transform: translateY(100%); } }
+@keyframes dim-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes dim-out { from { opacity: 1; } to { opacity: 0; } }
+@keyframes ripple { from { transform: translate(-50%, -50%) scale(0); opacity: 0.35; } to { transform: translate(-50%, -50%) scale(1); opacity: 0; } }
+.sheet-tile { animation: sheet-tile-in 0.35s ease-out both; }
+.sheet-up { animation: sheet-up 0.3s ease-out; }
+.sheet-down { animation: sheet-down 0.3s ease-in forwards; }
+.dim-in { animation: dim-in 0.3s ease-out; }
+.dim-out { animation: dim-out 0.3s ease-in forwards; }
+.ripple { animation: ripple 0.5s ease-out forwards; }
+
 @media (prefers-reduced-motion: reduce) {
+  .sheet-tile, .sheet-up, .sheet-down, .dim-in, .dim-out, .ripple { animation: none; }
   .fx-pop, .fx-shake, .card-float, .card-shadow { animation: none; }
   .card-flip { transition: none; }
 }
