@@ -24,7 +24,9 @@ const dots = []
 for (let y = STEP / 2; y < H; y += STEP) {
   for (let x = STEP / 2; x < W; x += STEP) {
     const ll = projection.invert([x, y])
-    if (!ll || !geoContains(land, ll) || geoContains(uz, ll)) continue
+    if (!ll) continue
+    if (ll[1] < -56) continue // Antarktida chizigʻi chiqmasin
+    if (!geoContains(land, ll) || geoContains(uz, ll)) continue
     dots.push(`M${r1(x)} ${r1(y)}h0`)
   }
 }
