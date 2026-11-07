@@ -1,86 +1,101 @@
-import { Link, useNavigate } from 'react-router-dom'
-import { IconChevronRight, IconRepeat, IconRoute, IconSettings, IconShieldCheck } from '@tabler/icons-react'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { IconSettings } from '@tabler/icons-react'
 import { Logo } from '../components/Logo'
-import { AUSBILDUNG_PATH } from '../content/countries'
-import { Card } from '../components/ui/Card'
-import { Button } from '../components/ui/Button'
-import { ProgressBar } from '../components/ui/ProgressBar'
-import { AUSBILDUNG_STEPS } from '../content/ausbildung'
-import { professionLabel } from '../profile/format'
-import { useProfile } from '../profile/ProfileProvider'
-import { useProgress } from '../progress/ProgressProvider'
+import { AUSBILDUNG_PATH, COUNTRIES, countryById, programById, programPath } from '../content/countries'
+import { readLastPath, type LastPath } from '../home/lastPath'
+import { WorldMap } from '../home/WorldMap'
 import { useI18n } from '../i18n/I18nProvider'
-import { useWords } from '../german/WordsProvider'
+import { useProfile } from '../profile/ProfileProvider'
+import { hasStarted } from '../progress/logic'
+import { useProgress } from '../progress/ProgressProvider'
+
+const focusRing = 'focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
+
+/** Oxirgi yoʻl; u boʻlmasa, lekin progress bor boʻlsa — Ausbildung (hozircha qadamlar faqat unda). */
+function useContinue(): LastPath | null {
+  const { items } = useProgress()
+  const [last] = useState(readLastPath)
+  if (last) return last
+  if (!hasStarted(items)) return null
+  const de = countryById('de')!
+  return { country: de, program: programById(de, 'ausbildung')! }
+}
 
 export default function Home() {
-  const nav = useNavigate()
-  const { t } = useI18n()
-  const { profile } = useProfile()
-  const { progress, streak, due } = useWords()
+  const { lang, t } = useI18n()
+  const { selectCountry } = useProfile()
   const { summary } = useProgress()
-  const currentStep = summary.currentIndex >= 0 ? AUSBILDUNG_STEPS[summary.currentIndex] : null
-  // "Boshqa" tanlanib matn yozilmagan boʻlsa — kasb koʻrsatilmaydi
-  const showProfession = profile && (profile.profession !== 'other' || profile.professionOther)
+  const cont = useContinue()
+  const isAusbildung = cont?.country.id === 'de' && cont.program.id === 'ausbildung'
+
   return (
-    <div className="space-y-3">
-      <h1 className="sr-only">{t('app.name')}</h1>
-      <div className="flex justify-end">
-        <Link to="/sozlamalar" aria-label={t('home.settings')} className="flex h-11 w-11 items-center justify-center rounded-full bg-surface text-ink-2">
-          <IconSettings size={22} aria-hidden />
-        </Link>
-      </div>
-      <div className="flex flex-col items-center pb-2 text-center">
-        <Logo />
-        <p className="mt-3 text-xl font-medium">{t('home.welcome')}</p>
-        {showProfession && <p className="text-sm text-ink-2">{t('home.profession', { name: professionLabel(profile, t) })}</p>}
-      </div>
-
-      <Card>
-        <p className="text-sm text-ink-2">{t('home.german')}</p>
-        <p className="mt-0.5 text-lg font-semibold">{t('home.germanToday', { n: Math.min(progress.count, progress.goal), goal: progress.goal, s: streak.current })}</p>
-        <div className="mt-2">
-          <ProgressBar value={progress.percent} tone="success" thin label={t('home.goalLabel')} />
+    <div className="space-y-4">
+      {/* Hero: har ikkala rejimda qora */}
+      <section className="-mx-4 -mt-[max(1rem,env(safe-area-inset-top))] rounded-b-[24px] bg-[#0B0E14] px-4 pb-5 pt-[max(1rem,env(safe-area-inset-top))] text-white">
+        <div className="flex items-center justify-between">
+          <Logo size={30} />
+          <Link to="/sozlamalar" aria-label={t('home.settings')} className={`-mr-2 flex h-11 w-11 items-center justify-center rounded-full text-[#C9CED8] ${focusRing} focus-visible:outline-white`}>
+            <IconSettings size={22} aria-hidden />
+          </Link>
         </div>
-        <Button className="mt-3" onClick={() => nav('/til')}>
-          {t('home.start')}
-        </Button>
-      </Card>
+        <div className="mt-2">
+          <WorldMap label={t('home.mapUz')} />
+        </div>
+        <h1 className="mt-3 text-[21px] font-semibold leading-snug">{t('home.hero')}</h1>
+      </section>
 
-      {due.length > 0 && (
+      {cont && (
         <Link
-          to="/til/takrorlash"
-          className="flex min-h-[56px] items-center gap-3 rounded-card bg-accent px-4 py-3 text-on-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          to={isAusbildung ? AUSBILDUNG_PATH : programPath(cont.country, cont.program)}
+          className={`flex min-h-[56px] flex-col justify-center rounded-card bg-[#D85A30] px-4 py-3 text-white ${focusRing} focus-visible:outline-[#D85A30]`}
         >
-          <IconRepeat size={22} className="shrink-0" aria-hidden />
-          <span className="flex-1 text-base font-semibold">{t('home.reviewWaiting', { n: due.length })}</span>
-          <IconChevronRight size={20} className="shrink-0" aria-hidden />
+          <span className="text-base">{t('common.continue')}</span>
+          <span className="text-lg font-semibold">
+            {cont.country.name[lang]} · {cont.program.name[lang]}
+            {isAusbildung && ` · ${summary.done}/${summary.total}`}
+          </span>
         </Link>
       )}
 
-      <Link to={AUSBILDUNG_PATH} className="block">
-        <Card className="flex items-center gap-3">
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-trust-soft text-trust-text">
-            <IconRoute size={22} aria-hidden />
-          </span>
-          <span className="flex-1">
-            <span className="block text-base font-semibold">{t('home.road', { n: summary.done, total: summary.total })}</span>
-            <span className="block text-base text-ink-2">{currentStep ? t('home.now', { step: t(currentStep.title) }) : t('roadmap.allDone')}</span>
-          </span>
-          <IconChevronRight size={20} className="text-ink-3" aria-hidden />
-        </Card>
-      </Link>
+      <section aria-labelledby="home-countries">
+        <h2 id="home-countries" className="mb-2 text-lg font-semibold">
+          {t('home.whichCountry')}
+        </h2>
+        <ul className="grid grid-cols-2 gap-2">
+          {COUNTRIES.map((c) => {
+            const open = c.status === 'open'
+            const openPaths = c.programs.filter((p) => p.status === 'open').length
+            return (
+              <li key={c.id}>
+                <Link
+                  to={`/yol/${c.id}`}
+                  // Countries sahifasidagidek: faqat ochiq davlat tanlanadi
+                  onClick={() => open && selectCountry(c.id)}
+                  className={`flex h-full min-h-[44px] flex-col gap-2 rounded-card border-[1.5px] p-3 ${focusRing} focus-visible:outline-accent ${
+                    open ? 'border-accent bg-surface' : 'border-transparent bg-surface-2'
+                  }`}
+                >
+                  <span
+                    aria-hidden
+                    className={`flex h-9 w-9 items-center justify-center rounded-lg text-base font-bold ${open ? 'bg-accent-soft text-accent-strong' : 'bg-surface text-ink-3'}`}
+                  >
+                    {c.id.toUpperCase()}
+                  </span>
+                  <span className={`text-base font-semibold leading-tight ${open ? '' : 'text-ink-2'}`}>{c.name[lang]}</span>
+                  <span className={`text-base ${open ? 'font-semibold text-success-text' : 'text-ink-2'}`}>
+                    {open ? t('home.openPaths', { n: openPaths }) : t('common.soon')}
+                  </span>
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+      </section>
 
-      <Link to="/xavfsizlik" className="block">
-        <Card className="flex items-center gap-3">
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-danger-soft text-danger-text">
-            <IconShieldCheck size={22} aria-hidden />
-          </span>
-          <span className="flex-1">
-            <span className="block font-semibold">{t('home.offerTitle')}</span>
-            <span className="block text-sm text-ink-2">{t('home.offerText')}</span>
-          </span>
-          <IconChevronRight size={20} className="text-ink-3" aria-hidden />
-        </Card>
+      <Link to="/xavfsizlik/agentlik" className={`block rounded-card bg-trust px-4 py-4 text-surface ${focusRing} focus-visible:outline-trust`}>
+        <span className="block text-base opacity-90">{t('home.anyCountry')}</span>
+        <span className="block text-lg font-semibold">{t('home.checkAgency')}</span>
       </Link>
     </div>
   )

@@ -109,7 +109,12 @@ body {
 .dim-out { animation: dim-out 0.3s ease-in forwards; }
 .ripple { animation: ripple 0.5s ease-out forwards; }
 
+/* Bosh ekran xaritasi: Toshkent ustidagi toʻlqin (r 4 -> 18, 2 s) */
+@keyframes map-wave { from { transform: scale(1); opacity: 0.9; } to { transform: scale(4.5); opacity: 0; } }
+.map-wave { transform-box: fill-box; transform-origin: center; animation: map-wave 2s ease-out infinite; }
+
 @media (prefers-reduced-motion: reduce) {
+  .map-wave { animation: none; opacity: 0; }
   .sheet-tile, .sheet-up, .sheet-down, .dim-in, .dim-out, .ripple { animation: none; }
   .fx-pop, .fx-shake, .card-float, .card-shadow { animation: none; }
   .card-flip { transition: none; }

@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { IconAlertTriangle, IconBook2, IconBriefcase, IconCertificate, IconClockHour4, IconCoinEuro, IconContract, IconFileCheck, IconFileText, IconInfoCircle, IconLanguage, IconSchool, IconShieldCheck, IconShieldExclamation, type Icon } from '@tabler/icons-react'
 import { Overlap, SourceLine, TrustHeader } from '../../components/countries/parts'
@@ -10,6 +11,7 @@ import { hasStarted } from '../../progress/logic'
 import { useProgress } from '../../progress/ProgressProvider'
 import { ProgramCta } from './ProgramCta'
 import { payByYear } from './intro'
+import { writeLastPath } from '../../home/lastPath'
 
 export const NEED_ICONS: Record<NeedIcon, Icon> = {
   language: IconLanguage,
@@ -43,6 +45,7 @@ export default function IntroPage({ country, program, content }: { country: Coun
   const { lang, t } = useI18n()
   const { items } = useProgress()
   const started = hasStarted(items)
+  useEffect(() => writeLastPath(country.id, program.id), [country.id, program.id]) // bosh ekrandagi "Davom etish" uchun
   const pay = payByYear(t('step.yol.f3'))
   // Ausbildung: "Bu nima" dagi raqamlar step.yol.f3 dan, talab — AUSBILDUNG_STEPS dan (bitta manba)
   const vars = { y1: pay[1] ?? '', y3: pay[3] ?? '', amount: stepById('yol')?.cost?.amount ?? '' }

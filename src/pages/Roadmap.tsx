@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { IconArrowLeft, IconCheck, IconChevronRight, IconShieldExclamation } from '@tabler/icons-react'
 import { Card } from '../components/ui/Card'
@@ -6,11 +7,13 @@ import { AUSBILDUNG_PATH } from '../content/countries'
 import { AUSBILDUNG_STEPS } from '../content/ausbildung'
 import { useT } from '../i18n/I18nProvider'
 import { useProgress } from '../progress/ProgressProvider'
+import { writeLastPath } from '../home/lastPath'
 
 export default function Roadmap() {
   const t = useT()
   const { statuses, summary } = useProgress()
   const last = AUSBILDUNG_STEPS.length - 1
+  useEffect(() => writeLastPath('de', 'ausbildung'), []) // bosh ekrandagi "Davom etish" uchun
   return (
     <div className="space-y-3">
       <Link to="/yol/de" aria-label={t('common.back')} className="-ml-2 flex h-11 w-11 items-center justify-center rounded-full active:bg-surface-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent">
