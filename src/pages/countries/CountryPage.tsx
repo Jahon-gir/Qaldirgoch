@@ -1,10 +1,10 @@
 import { useRef } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { IconAlertTriangle, IconArrowLeft, IconChevronRight, IconLock, IconShieldCheck } from '@tabler/icons-react'
 import { FlagBand } from '../../components/countries/Flag'
 import { PROGRAM_ICONS } from '../../components/countries/icons'
 import { SourceLine, safeUrl } from '../../components/countries/parts'
-import { useEnterAnimation } from '../../home/flight'
+import { cameFromHome, useEnterAnimation } from '../../home/flight'
 import { programPath, type Country } from '../../content/countries'
 import { useI18n } from '../../i18n/I18nProvider'
 
@@ -13,6 +13,8 @@ export default function CountryPage({ country }: { country: Country }) {
   const open = country.status === 'open'
   const safety = country.safety
   const root = useRef<HTMLDivElement>(null)
+  const navigate = useNavigate()
+  const fromHome = cameFromHome(useLocation().state) // bosh ekran kartasidan kelingan boʻlsa — orqaga bosh ekranga
   useEnterAnimation(root) // bosh ekrandan uchib kelinganda elementlar bittadan chiqadi
   return (
     <div ref={root}>
@@ -21,7 +23,12 @@ export default function CountryPage({ country }: { country: Country }) {
         <Link
           to="/yol"
           aria-label={t('countries.all')}
-          className="absolute left-3 top-[max(0.75rem,env(safe-area-inset-top))] flex h-11 w-11 items-center justify-center rounded-full bg-black/45 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          onClick={(e) => {
+            if (!fromHome) return
+            e.preventDefault()
+            navigate(-1)
+          }}
+          className="absolute left-3 top-[max(0.75rem,env(safe-area-inset-top))] flex h-11 w-11 items-center justify-center rounded-full bg-black/45 text-white ring-1 ring-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
         >
           <IconArrowLeft size={24} aria-hidden />
         </Link>

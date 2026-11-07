@@ -192,4 +192,31 @@ describe('davlat kartasi: oʻtish animatsiyasi', () => {
     act(() => vi.advanceTimersByTime(FULL.navAt + 2000))
     expect(where()).toBe('/yol/de')
   })
+
+  it('orqaga: bosh ekrandan (animatsiya orqali) kelingan boʻlsa — bosh ekranga', () => {
+    renderHome()
+    fireEvent.click(card(/Germaniya/))
+    act(() => vi.advanceTimersByTime(FULL.navAt + 1000))
+    expect(where()).toBe('/yol/de')
+    fireEvent.click(screen.getByRole('link', { name: 'Davlatlar' }))
+    expect(where()).toBe('/')
+  })
+
+  it('orqaga: reduced-motion bilan bosh ekrandan kelingan boʻlsa ham — bosh ekranga', () => {
+    stubMotion(true)
+    renderHome()
+    fireEvent.click(card(/Janubiy Koreya/))
+    expect(where()).toBe('/yol/kr')
+    fireEvent.click(screen.getByRole('link', { name: 'Davlatlar' }))
+    expect(where()).toBe('/')
+  })
+
+  it('orqaga: toʻgʻridan-toʻgʻri havola bilan ochilgan boʻlsa — /yol', () => {
+    renderAt('/yol/de')
+    const back = screen.getByRole('link', { name: 'Davlatlar' })
+    expect(back.getAttribute('href')).toBe('/yol')
+    expect(back.className).toContain('ring-white/60')
+    fireEvent.click(back)
+    expect(where()).toBe('/yol')
+  })
 })

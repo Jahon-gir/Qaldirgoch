@@ -22,6 +22,10 @@ export const tunnelGradient = ({ colors, step }: { colors: string[]; step: numbe
 
 export const FULL = { fly: 900, impact: 220, tunnel: 900, navAt: 900 + 780, flashFrom: 900 + 600, flash: 400 }
 export const SHORT = { tunnel: 400, navAt: Math.round((400 * 780) / 900) }
+/** Davlat sahifasiga bosh ekrandan kelinganini bildiradi: orqaga tugmasi navigate(-1) qiladi. */
+export const FROM_HOME = { fromHome: true } as const
+export const cameFromHome = (state: unknown) => !!state && typeof state === 'object' && (state as { fromHome?: unknown }).fromHome === true
+
 const FLY_EASE = 'cubic-bezier(.5,0,.75,0)'
 const TUNNEL_SIZE = 900
 
@@ -76,7 +80,7 @@ export function FlightProvider({ children }: { children: ReactNode }) {
       if (busy.current) return // bir vaqtda faqat bitta oʻtish
       const path = `/yol/${country}`
       if (reducedMotion() || !canAnimate()) {
-        navigate(path)
+        navigate(path, { state: FROM_HOME })
         return
       }
       busy.current = true
@@ -123,7 +127,7 @@ export function FlightProvider({ children }: { children: ReactNode }) {
 
     const nav = window.setTimeout(() => {
       enterPending = true
-      navRef.current(`/yol/${country}`)
+      navRef.current(`/yol/${country}`, { state: FROM_HOME })
     }, full ? FULL.navAt : SHORT.navAt)
     const done = window.setTimeout(() => {
       busy.current = false
@@ -173,7 +177,7 @@ export function FlightProvider({ children }: { children: ReactNode }) {
 export function useCountryFlight(): Launch {
   const launch = useContext(FlightContext)
   const navigate = useNavigate()
-  return launch ?? ((country) => navigate(`/yol/${country}`))
+  return launch ?? ((country) => navigate(`/yol/${country}`, { state: FROM_HOME }))
 }
 
 /** Davlat sahifasi: [data-enter] elementlari bittadan suzib chiqadi (+45 ms). */
