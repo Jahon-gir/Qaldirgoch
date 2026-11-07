@@ -18,6 +18,9 @@
   --c-warn: 186 117 23; --c-warn-soft: 250 238 218; --c-warn-text: 99 56 6;
   --c-der-bg: 230 241 251; --c-der: 12 68 124; --c-die-bg: 251 234 240; --c-die: 153 53 86; --c-das-bg: 238 237 254; --c-das: 83 74 183;
   --c-on-accent: 255 255 255;
+  /* Xavfsizlik moduli (bank uslubi): sovuq fon, oq karta, koʻk gradient. Accent'ga bogʻliq emas (trust/head kabi) */
+  --c-bank-bg: 243 245 249; --c-bank-card: 255 255 255; --c-bank-soft: 233 236 242; --c-bank-shadow: 11 37 69;
+  --c-bank-1: 11 37 69; --c-bank-2: 20 60 140; --c-bank-3: 47 111 237;
   color-scheme: light;
 }
 [data-mode='dark'] {
@@ -35,8 +38,16 @@
   --c-warn: 239 159 39; --c-warn-soft: 65 36 2; --c-warn-text: 250 199 117;
   --c-der-bg: 4 44 83; --c-der: 181 212 244; --c-die-bg: 75 21 40; --c-die: 244 192 209; --c-das-bg: 38 33 92; --c-das: 206 203 246;
   --c-on-accent: 30 30 28;
+  --c-bank-bg: 17 21 29; --c-bank-card: 30 36 47; --c-bank-soft: 44 51 64; --c-bank-shadow: 0 0 0;
+  --c-bank-1: 8 24 48; --c-bank-2: 14 42 100; --c-bank-3: 31 78 180;
   color-scheme: dark;
 }
+
+/* Xavfsizlik modulida sahifa foni sovuq kulrang (SafetyLayout data-surface qoʻyadi) */
+html[data-surface='bank'] { --c-bg: var(--c-bank-bg); }
+.bank-head { background: linear-gradient(160deg, rgb(var(--c-bank-1)), rgb(var(--c-bank-2)) 55%, rgb(var(--c-bank-3))); border-radius: 0 0 28px 28px; }
+.bank-btn { background: linear-gradient(135deg, rgb(var(--c-bank-2)), rgb(var(--c-bank-3))); }
+.bank-card { background: rgb(var(--c-bank-card)); border-radius: 1rem; box-shadow: 0 1px 2px rgb(var(--c-bank-shadow) / 0.06), 0 4px 14px rgb(var(--c-bank-shadow) / 0.08); }
 
 /* Asosiy ranglar: yorug'da oq matn bilan, qorong'ida to'q matn bilan kamida 4.5:1 kontrast */
 [data-accent='marjon']   { --c-accent: 194 78 39;  --c-accent-strong: 113 43 19;  --c-accent-soft: 250 236 231; }

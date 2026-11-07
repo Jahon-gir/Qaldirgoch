@@ -2,18 +2,24 @@ import type { ReactNode } from 'react'
 import { IconArrowLeft } from '@tabler/icons-react'
 import { useT } from '../../i18n/I18nProvider'
 
-/** B uslubi: toʻq koʻk rasmiy sarlavha. Qorongʻida bir pogʻona ochroq moviy + ingichka och chiziq. */
-export function VocabHeader({ title, sub, onBack, right }: { title: string; sub: string; onBack: () => void; right?: ReactNode }) {
+/**
+ * B uslubi: toʻq koʻk rasmiy sarlavha. Qorongʻida bir pogʻona ochroq moviy + ingichka och chiziq.
+ * bank — xavfsizlik moduli: gradient fon, 28 px burchak, AppShell chetlarigacha yoyiladi.
+ */
+export function VocabHeader({ title, sub, onBack, right, bank }: { title: string; sub?: string; onBack: () => void; right?: ReactNode; bank?: boolean }) {
   const t = useT()
+  const look = bank
+    ? 'bank-head -mx-4 -mt-[max(1rem,env(safe-area-inset-top))] px-4 pb-5 pt-[max(1rem,env(safe-area-inset-top))]'
+    : 'rounded-b-[20px] border-b border-head-line bg-head px-4 pb-4 pt-[max(0.5rem,env(safe-area-inset-top))]'
   return (
-    <header className="rounded-b-[20px] border-b border-head-line bg-head px-4 pb-4 pt-[max(0.5rem,env(safe-area-inset-top))] text-white">
+    <header className={`${look} text-white`}>
       <div className="flex items-center gap-2">
         <button type="button" onClick={onBack} aria-label={t('common.back')} className="-ml-2 flex h-11 w-11 shrink-0 items-center justify-center rounded-full active:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white">
           <IconArrowLeft size={24} aria-hidden />
         </button>
         <div className="min-w-0 flex-1 py-1">
           <h1 className="break-words text-xl font-semibold leading-tight">{title}</h1>
-          <p className="text-base text-white/90">{sub}</p>
+          {sub && <p className="text-base text-white/90">{sub}</p>}
         </div>
         {right}
       </div>
