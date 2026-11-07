@@ -17,7 +17,11 @@ export const isNoun = (w: VocabWord) => articleOf(w.de) !== null
 /* ---------- Usullar ---------- */
 
 /** Bitta savol koʻrinishi (Kartochka va Roʻyxat — savol emas). */
-export type ExerciseKind = 'test' | 'build' | 'listen' | 'write' | 'article'
+/**
+ * 'speak' (Talaffuz) — FAQAT lugʻat mashq usuli sifatida tanlanganda. kindsFor/Aralash, takrorlash (reviewKind) va yakuniy testga kirmaydi:
+ * mikrofon ruxsati faqat foydalanuvchi shu usulni oʻzi tanlaganda soʻraladi.
+ */
+export type ExerciseKind = 'test' | 'build' | 'listen' | 'write' | 'article' | 'speak'
 
 /** 3+ soʻzli gap — soʻz boʻlaklaridan yigʻiladi; 2 soʻzgacha — harflardan. */
 export const wordCount = (de: string) => de.trim().split(/\s+/).length

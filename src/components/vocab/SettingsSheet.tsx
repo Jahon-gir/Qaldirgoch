@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState, type MouseEvent } from 'react'
-import { IconArrowsShuffle, IconCards, IconEar, IconKeyboard, IconList, IconListCheck, IconPuzzle, IconTag, type Icon } from '@tabler/icons-react'
+import { IconArrowsShuffle, IconCards, IconEar, IconKeyboard, IconList, IconListCheck, IconMicrophone, IconPuzzle, IconTag, type Icon } from '@tabler/icons-react'
 import { useI18n } from '../../i18n/I18nProvider'
 import { VOCAB_MODES, type VocabMode } from '../../profile/questions'
 import { reducedMotion } from '../../ui/feedback'
 
-const ICONS: Record<VocabMode, Icon> = { list: IconList, cards: IconCards, test: IconListCheck, build: IconPuzzle, listen: IconEar, write: IconKeyboard, article: IconTag, mixed: IconArrowsShuffle }
+const ICONS: Record<VocabMode, Icon> = { list: IconList, cards: IconCards, test: IconListCheck, build: IconPuzzle, listen: IconEar, write: IconKeyboard, article: IconTag, speak: IconMicrophone, mixed: IconArrowsShuffle }
 
 /** Tanlovdan keyin oyna yopilguncha kutish va yopilish animatsiyasi (ms). */
 export const PICK_DELAY_MS = 180
@@ -15,7 +15,7 @@ const STAGGER_MS = 45
  * Mashq usuli oynasi (pastdan). Plitka bosilishi bilan tanlov saqlanadi va ekran shu usulga oʻtadi (onPick);
  * ripple, ~180 ms dan keyin oyna pastga sirpanib yopiladi. Fon bosilsa — tanlovsiz yopiladi.
  */
-export function SettingsSheet({ mode, hasNouns = true, canListen = true, onPick, onClose }: { mode: VocabMode; hasNouns?: boolean; canListen?: boolean; onPick: (m: VocabMode) => void; onClose: () => void }) {
+export function SettingsSheet({ mode, hasNouns = true, canListen = true, canSpeakMic = true, onPick, onClose }: { mode: VocabMode; hasNouns?: boolean; canListen?: boolean; canSpeakMic?: boolean; onPick: (m: VocabMode) => void; onClose: () => void }) {
   const t = useI18n().t
   const ref = useRef<HTMLDivElement>(null)
   const [closing, setClosing] = useState(false)
@@ -47,7 +47,7 @@ export function SettingsSheet({ mode, hasNouns = true, canListen = true, onPick,
     }
     close(PICK_DELAY_MS)
   }
-  const modes = VOCAB_MODES.filter((m) => m !== 'article' || hasNouns)
+  const modes = VOCAB_MODES.filter((m) => (m !== 'article' || hasNouns) && (m !== 'speak' || canSpeakMic))
   return (
     <div
       className={`fixed inset-0 z-40 flex items-end justify-center bg-black/50 sm:items-center ${closing ? 'dim-out' : 'dim-in'}`}
