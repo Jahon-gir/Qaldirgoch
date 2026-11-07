@@ -7,7 +7,10 @@ import { Footer, navyBtn } from '../parts'
 import { useT } from '../../../i18n/I18nProvider'
 
 /** Har bir mashq komponenti: javob aniqlanganda onAnswer (takrorlashda SRS shu paytda yoziladi), "Davom etish"da onDone. */
-export type ExProps = { word: VocabWord; speech: Speech; onAnswer?: (correct: boolean) => void; onDone: (correct: boolean) => void }
+/** Talaffuz natijasi: spoken — aytib tanildi; tried — 3 urinish ishlatildi, tanilmadi; skipped — oʻtkazib yuborildi. */
+export type SpeakOutcome = 'spoken' | 'tried' | 'skipped'
+/** onDone ning ikkinchi argumenti faqat Talaffuz (SpeakStep) uchun; boshqa mashqlar uni yubormaydi. */
+export type ExProps = { word: VocabWord; speech: Speech; onAnswer?: (correct: boolean) => void; onDone: (correct: boolean, outcome?: SpeakOutcome) => void }
 
 /** Artikl ranglari (Roʻyxat, Kartochka va Artikl mashqida bir xil). */
 export const ARTICLE_TEXT: Record<Article, string> = { der: 'text-der', die: 'text-die', das: 'text-das' }

@@ -6,6 +6,7 @@ import { SettingsSheet } from '../../components/vocab/SettingsSheet'
 import { VocabHeader } from '../../components/vocab/parts'
 import { VocabResult } from '../../components/vocab/VocabResult'
 import { Exercise } from '../../components/vocab/ex/Exercise'
+import type { SpeakOutcome } from '../../components/vocab/ex/common'
 import { WordList } from '../../components/vocab/WordList'
 import { lessonById } from '../../content/german'
 import { wordById, type VocabWord } from '../../content/german/words'
@@ -22,7 +23,11 @@ import { useWords } from '../../german/WordsProvider'
 import { useProfile } from '../../profile/ProfileProvider'
 import type { VocabFront, VocabMode } from '../../profile/questions'
 
-type Run = { session: Session; counted: boolean; kinds: ExerciseKind[] }
+type Run = { session: Session; counted: boolean; kinds: ExerciseKind[]; outcomes: Record<string, SpeakOutcome> }
+
+/** Talaffuz: kunlik maqsadga +1 faqat soʻzlarning kamida yarmi (ceil(N/2)) mashq qilingan (spoken/tried) boʻlsa. */
+export const speakPracticed = (outcomes: Record<string, SpeakOutcome>) => Object.values(outcomes).filter((o) => o !== 'skipped').length
+export const speakGoalMet = (outcomes: Record<string, SpeakOutcome>, total: number) => total > 0 && speakPracticed(outcomes) >= Math.ceil(total / 2)
 const QUESTION_MODES: readonly VocabMode[] = ['test', 'build', 'listen', 'write', 'article', 'speak', 'mixed']
 
 function Practice({ lessonId, title, ids }: { lessonId: string; title: string; ids: string[] }) {
@@ -46,6 +51,7 @@ function Practice({ lessonId, title, ids }: { lessonId: string; title: string; i
     (list: string[], counted: boolean, m: VocabMode): Run => ({
       session: startVocabSession(m === 'article' ? list.filter((id) => nounIds.includes(id)) : list),
       counted,
+      outcomes: {},
       kinds: m === 'mixed' ? mixedKinds(list.flatMap((id) => wordById(id) ?? []), canListen) : []
     }),
     [nounIds, canListen]
@@ -69,8 +75,9 @@ function Practice({ lessonId, title, ids }: { lessonId: string; title: string; i
     setFront(next)
     setVocabPrefs({ front: next })
   }
-  const answer = (correct: boolean) => {
+  const answer = (correct: boolean, outcome?: SpeakOutcome) => {
     const cur = runRef.current
+    const curId = sessionCurrent(cur.session)
     const next = vocabAnswer(cur.session, correct)
     // Qayta soʻraladigan soʻz uchun ham usul tanlanadi (oldingisi bilan bir xil emas)
     let kinds = cur.kinds
@@ -78,11 +85,13 @@ function Practice({ lessonId, title, ids }: { lessonId: string; title: string; i
       const w = wordById(next.queue[next.queue.length - 1])
       kinds = w ? [...kinds, nextMixedKind(w, kinds[kinds.length - 1], canListen)] : kinds
     }
-    const r = { ...cur, session: next, kinds }
+    const outcomes = eff === 'speak' && curId ? { ...cur.outcomes, [curId]: outcome ?? 'skipped' } : cur.outcomes
+    const r = { ...cur, session: next, kinds, outcomes }
     runRef.current = r
     setRun(r)
     // Kunlik maqsad +1: mashq OXIRIGACHA tugadi (natija ekrani); bilmaganlarni qayta mashq qilish sanalmaydi
-    if (sessionDone(next) && cur.counted) addDone()
+    // Talaffuzda +1 faqat yetarlicha soʻz mashq qilingan boʻlsa
+    if (sessionDone(next) && cur.counted && (eff !== 'speak' || speakGoalMet(outcomes, next.queue.length))) addDone()
   }
   const retry = () => {
     const wrong = Object.keys(run.session.first).filter((id) => !run.session.first[id])
@@ -119,7 +128,10 @@ function Practice({ lessonId, title, ids }: { lessonId: string; title: string; i
         {eff === 'list' ? (
           <WordList words={lessonWordsOf(ids)} front={front} speech={speech} />
         ) : finished ? (
-          <VocabResult session={run.session} counted={run.counted} speak={eff === 'speak'} onDone={back} onRetry={retry} />
+          <VocabResult
+            session={run.session}
+            counted={run.counted && (eff !== 'speak' || speakGoalMet(run.outcomes, run.session.queue.length))}
+            speak={eff === 'speak' ? { total: run.session.queue.length, practiced: speakPracticed(run.outcomes) } : undefined} onDone={back} onRetry={retry} />
         ) : eff === 'cards' ? (
           <FlashCards session={run.session} front={front} speech={speech} onAnswer={answer} onSwapFront={swapFront} />
         ) : word ? (
