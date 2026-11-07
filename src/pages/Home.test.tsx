@@ -1,6 +1,6 @@
 // @vitest-environment jsdom
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { cleanup, fireEvent, render, screen, within } from '@testing-library/react'
+import { act, cleanup, fireEvent, render, screen, within } from '@testing-library/react'
 import { MemoryRouter, useLocation } from 'react-router-dom'
 import { AppRoutes } from '../App'
 import { AuthProvider } from '../auth/AuthProvider'
@@ -12,6 +12,7 @@ import { ProgressProvider } from '../progress/ProgressProvider'
 import { COUNTRIES } from '../content/countries'
 import { AUSBILDUNG_STEPS, AUTO_DONE_STEPS } from '../content/ausbildung'
 import { LAST_PATH_KEY } from '../home/lastPath'
+import { FULL, SHORT } from '../home/flight'
 
 const PROFILE = { ageRange: '25-30', education: 'college', profession: 'welder', germanLevel: 'none', dailyTime: '30', departure: '1y', createdAt: '2026-11-01T00:00:00.000Z', schemaVersion: 1 }
 const Where = () => <output data-testid="where">{useLocation().pathname}</output>
@@ -128,5 +129,94 @@ describe('Bosh sahifa', () => {
     cleanup()
     renderAt('/yol/de/oqish/kirish')
     expect(JSON.parse(localStorage.getItem(LAST_PATH_KEY)!)).toEqual({ country: 'de', program: 'oqish' })
+  })
+})
+
+describe('davlat kartasi: oʻtish animatsiyasi', () => {
+  const animate = vi.fn(() => ({ cancel: vi.fn() }))
+  const where = () => screen.getByTestId('where').textContent
+  const card = (name: RegExp) => within(screen.getByRole('heading', { level: 2, name: 'Qaysi davlatga?' }).nextElementSibling as HTMLElement).getByRole('link', { name })
+  const stubMotion = (reduce: boolean) => vi.stubGlobal('matchMedia', (q: string) => ({ matches: reduce && q.includes('reduce'), media: q, addEventListener() {}, removeEventListener() {} }))
+
+  beforeEach(() => {
+    vi.useFakeTimers()
+    animate.mockClear()
+    Object.defineProperty(Element.prototype, 'animate', { value: animate, configurable: true, writable: true })
+    stubMotion(false)
+  })
+  afterEach(() => {
+    vi.useRealTimers()
+    delete (Element.prototype as { animate?: unknown }).animate
+  })
+
+  it('birinchi marta: toʻliq animatsiya, tugagach /yol/:country ga', () => {
+    renderHome()
+    fireEvent.click(card(/Janubiy Koreya/))
+    expect(screen.getByTestId('flight')).toBeTruthy()
+    expect(screen.getByTestId('swallow')).toBeTruthy() // haqiqiy qaldirgʻoch uchadi
+    expect(where()).toBe('/')
+    act(() => vi.advanceTimersByTime(FULL.navAt - 1))
+    expect(where()).toBe('/')
+    act(() => vi.advanceTimersByTime(1))
+    expect(where()).toBe('/yol/kr')
+    act(() => vi.advanceTimersByTime(1000))
+    expect(screen.queryByTestId('flight')).toBeNull() // overlay olib tashlandi
+    expect(animate).toHaveBeenCalled()
+    expect(localStorage.getItem('qaldirgoch.countryFlightSeen')).toBe('1')
+  })
+
+  it('keyingi safar: qisqa (faqat tunnel)', () => {
+    localStorage.setItem('qaldirgoch.countryFlightSeen', '1')
+    renderHome()
+    fireEvent.click(card(/Germaniya/))
+    expect(screen.queryByTestId('swallow')).toBeNull()
+    act(() => vi.advanceTimersByTime(SHORT.navAt))
+    expect(where()).toBe('/yol/de')
+  })
+
+  it('reduced-motion: animatsiyasiz darhol oʻtadi', () => {
+    stubMotion(true)
+    renderHome()
+    fireEvent.click(card(/Yaponiya/))
+    expect(where()).toBe('/yol/jp')
+    expect(screen.queryByTestId('flight')).toBeNull()
+    expect(localStorage.getItem('qaldirgoch.countryFlightSeen')).toBeNull()
+  })
+
+  it('ikki marta bosish bloklanadi: faqat birinchisi', () => {
+    renderHome()
+    fireEvent.click(card(/Germaniya/))
+    fireEvent.click(card(/Germaniya/))
+    fireEvent.click(card(/Buyuk Britaniya/))
+    expect(screen.getAllByTestId('flight')).toHaveLength(1)
+    act(() => vi.advanceTimersByTime(FULL.navAt + 2000))
+    expect(where()).toBe('/yol/de')
+  })
+
+  it('orqaga: bosh ekrandan (animatsiya orqali) kelingan boʻlsa — bosh ekranga', () => {
+    renderHome()
+    fireEvent.click(card(/Germaniya/))
+    act(() => vi.advanceTimersByTime(FULL.navAt + 1000))
+    expect(where()).toBe('/yol/de')
+    fireEvent.click(screen.getByRole('link', { name: 'Davlatlar' }))
+    expect(where()).toBe('/')
+  })
+
+  it('orqaga: reduced-motion bilan bosh ekrandan kelingan boʻlsa ham — bosh ekranga', () => {
+    stubMotion(true)
+    renderHome()
+    fireEvent.click(card(/Janubiy Koreya/))
+    expect(where()).toBe('/yol/kr')
+    fireEvent.click(screen.getByRole('link', { name: 'Davlatlar' }))
+    expect(where()).toBe('/')
+  })
+
+  it('orqaga: toʻgʻridan-toʻgʻri havola bilan ochilgan boʻlsa — /yol', () => {
+    renderAt('/yol/de')
+    const back = screen.getByRole('link', { name: 'Davlatlar' })
+    expect(back.getAttribute('href')).toBe('/yol')
+    expect(back.className).toContain('ring-white/60')
+    fireEvent.click(back)
+    expect(where()).toBe('/yol')
   })
 })

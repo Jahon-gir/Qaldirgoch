@@ -4,7 +4,17 @@ import jp from '../../assets/flags/jp.svg'
 import kr from '../../assets/flags/kr.svg'
 import type { CountryId } from '../../content/countries'
 
-const FLAGS: Record<CountryId, string> = { de, kr, jp, gb }
+export const FLAGS: Record<CountryId, string> = { de, kr, jp, gb }
+
+/**
+ * Davlat sahifasi tepasidagi toʻliq kenglikdagi bayroq tasmasi (118 px). Asl SVG 4:3, markazdan qirqiladi (doira/belgi buzilmaydi).
+ * Germaniya: qirqilsa qora va oltin yoʻl yoʻqoladi — uch teng gorizontal yoʻl rasmiy ranglarda chiziladi.
+ */
+const DE_BAND = 'linear-gradient(#000 0 33.333%, #DD0000 33.333% 66.667%, #FFCE00 66.667%)'
+export function FlagBand({ id }: { id: CountryId }) {
+  if (id === 'de') return <div data-testid="flag-band" className="h-[118px] w-full" style={{ background: DE_BAND }} />
+  return <img src={FLAGS[id]} alt="" data-testid="flag-band" className="block h-[118px] w-full object-cover" />
+}
 
 /** Bayroq 3:2 (flag-icons, MIT): burchak 4px, ingichka chegara. Asl SVG 4:3 — markazdan qirqiladi. */
 export function Flag({ id, dim = false }: { id: CountryId; dim?: boolean }) {

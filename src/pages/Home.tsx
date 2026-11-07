@@ -5,6 +5,7 @@ import { Logo } from '../components/Logo'
 import { AUSBILDUNG_PATH, COUNTRIES, countryById, programById, programPath } from '../content/countries'
 import { readLastPath, type LastPath } from '../home/lastPath'
 import { WorldMap } from '../home/WorldMap'
+import { useCountryFlight } from '../home/flight'
 import { useI18n } from '../i18n/I18nProvider'
 import { useProfile } from '../profile/ProfileProvider'
 import { hasStarted } from '../progress/logic'
@@ -27,6 +28,7 @@ export default function Home() {
   const { selectCountry } = useProfile()
   const { summary } = useProgress()
   const cont = useContinue()
+  const fly = useCountryFlight()
   const isAusbildung = cont?.country.id === 'de' && cont.program.id === 'ausbildung'
 
   return (
@@ -70,8 +72,13 @@ export default function Home() {
               <li key={c.id}>
                 <Link
                   to={`/yol/${c.id}`}
-                  // Countries sahifasidagidek: faqat ochiq davlat tanlanadi
-                  onClick={() => open && selectCountry(c.id)}
+                  onClick={(e) => {
+                    // Yangi oynada ochish (Ctrl/Cmd va h.k.) — brauzerning oʻzi
+                    if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
+                    e.preventDefault()
+                    if (open) selectCountry(c.id) // Countries sahifasidagidek: faqat ochiq davlat tanlanadi
+                    fly(c.id, e.currentTarget)
+                  }}
                   className={`flex h-full min-h-[44px] flex-col gap-2 rounded-card border-[1.5px] p-3 ${focusRing} focus-visible:outline-accent ${
                     open ? 'border-accent bg-surface' : 'border-transparent bg-surface-2'
                   }`}
