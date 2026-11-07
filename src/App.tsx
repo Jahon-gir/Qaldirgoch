@@ -16,6 +16,8 @@ import VocabPage from './pages/german/VocabPage'
 import VocabLessonPage from './pages/german/VocabLessonPage'
 import FinalTestPage from './pages/german/FinalTestPage'
 import Safety from './pages/Safety'
+import SafetyLayout from './pages/safety/SafetyLayout'
+import AgencyCheck from './pages/safety/AgencyCheck'
 import Assistant from './pages/Assistant'
 import Settings from './pages/Settings'
 import Appearance from './pages/Appearance'
@@ -55,7 +57,10 @@ export function AppRoutes() {
         <Route path="yol/*" element={<Navigate to="/yol" replace />} />
         <Route path="til" element={<Language />} />
         <Route path="til/modul/:moduleId" element={<ModulePage />} />
-        <Route path="xavfsizlik" element={<Safety />} />
+        <Route path="xavfsizlik" element={<SafetyLayout />}>
+          <Route index element={<Safety />} />
+          <Route path="agentlik" element={<AgencyCheck />} />
+        </Route>
         <Route path="ai" element={<Assistant />} />
         <Route path="sozlamalar" element={<Settings />} />
         <Route path="sozlamalar/profil" element={<ProfilePage />} />
