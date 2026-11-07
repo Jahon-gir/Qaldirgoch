@@ -86,7 +86,8 @@ describe('marshrut: Bosh → Til → modul → dars → natija → modulga qayti
   it('bosh ekran chiqmay qolmaydi, darsni tugatib modulga qaytiladi', async () => {
     const errors = vi.spyOn(console, 'error').mockImplementation(() => undefined)
     renderApp('/')
-    click('Boshlash') // Bosh
+    expect(screen.getByRole('heading', { level: 1, name: 'Oʻzbekistondan chet elga, faqat qonuniy yoʻl bilan' })).toBeTruthy() // Bosh
+    fireEvent.click(screen.getByRole('link', { name: 'Til' })) // pastki menyu
     expect(screen.getByRole('heading', { name: 'Nemis tili' })).toBeTruthy() // Til
     expect(screen.getByText('Yoʻnalish: Texnik kasblar')).toBeTruthy() // payvandchi → technical
     expect(screen.getByText('Ish joyida')).toBeTruthy() // technical modul koʻrinadi

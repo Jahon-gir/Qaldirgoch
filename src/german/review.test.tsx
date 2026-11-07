@@ -347,22 +347,21 @@ describe('dars → takrorlash qutisi va kunlik maqsad (birlik — dars yoki takr
 })
 
 describe('Bosh sahifa va Sozlamalar', () => {
-  it('"Nemis tili" kartochkasi: bugungi maqsad va streak; takrorlash qatori faqat soʻz boʻlsa', () => {
+  it('Bosh ekranda nemis tili kartochkasi yoʻq; bugungi maqsad va takrorlash Til boʻlimida', () => {
     seed({ words: WORDS3, profile: PROFILE2, activity: { [TODAY]: { count: 1, goal: 2, forgiven: false } } })
     renderApp('/')
-    expect(screen.getByText('Bugun 1/2 · 0 kun ketma-ket')).toBeTruthy()
-    expect(screen.getByRole('progressbar', { name: 'Bugungi maqsad boʻyicha progress' }).getAttribute('aria-valuenow')).toBe('50')
-    fireEvent.click(screen.getByRole('link', { name: '3 ta soʻz takrorlashni kutyapti' }))
-    expect(where()).toBe('/til/takrorlash')
+    expect(screen.queryByText(/^Bugun /)).toBeNull()
+    expect(screen.queryByText(/takrorlash/i)).toBeNull()
     cleanup()
-    seed()
-    renderApp('/')
-    expect(screen.queryByText(/takrorlashni kutyapti/)).toBeNull()
+    renderApp('/til')
+    expect(screen.getByRole('img', { name: 'Bugun 1 / 2 dars yoki takrorlash' })).toBeTruthy()
+    fireEvent.click(screen.getByRole('link', { name: 'Takrorlashni boshlash' }))
+    expect(where()).toBe('/til/takrorlash')
   })
 
   it('Sozlamalarda "Kunlik maqsad": 1 / 2 / 3, har birining ostida izoh; 3 tanlansa profilga yoziladi va bugungi maqsad oʻzgaradi', () => {
     seed({ activity: { [TODAY]: { count: 1, goal: 1, forgiven: false } } })
-    renderApp(['/', '/sozlamalar'])
+    renderApp(['/til', '/sozlamalar'])
     const group = screen.getByRole('radiogroup', { name: 'Kunlik maqsad' })
     expect(within(group).getAllByRole('radio').map((r) => r.getAttribute('aria-label'))).toEqual(['kuniga 1 dars yoki takrorlash', 'kuniga 2 dars yoki takrorlash', 'kuniga 3 dars yoki takrorlash'])
     expect(within(group).getByRole('radio', { name: 'kuniga 1 dars yoki takrorlash' }).getAttribute('aria-checked')).toBe('true')
@@ -371,17 +370,18 @@ describe('Bosh sahifa va Sozlamalar', () => {
     expect(JSON.parse(localStorage.getItem('qaldirgoch.profile')!).dailyGoal).toBe(3)
     expect(JSON.parse(localStorage.getItem('qaldirgoch.activity')!)[TODAY]).toEqual({ count: 1, goal: 3, forgiven: false }) // bugungi kunga yangi maqsad
     fireEvent.click(screen.getByRole('button', { name: 'Orqaga' }))
-    expect(screen.getByText('Bugun 1/3 · 0 kun ketma-ket')).toBeTruthy()
+    expect(screen.getByRole('img', { name: 'Bugun 1 / 3 dars yoki takrorlash' })).toBeTruthy()
   })
 
   it('maqsad 3 ga oshirilsa kechagi bajarilgan kun va streak saqlanadi', () => {
     const y = addDays(TODAY, -1)
     const y2 = addDays(TODAY, -2)
     seed({ activity: { [y2]: { count: 1, goal: 1, forgiven: false }, [y]: { count: 1, goal: 1, forgiven: false } } })
-    renderApp(['/', '/sozlamalar'])
+    renderApp(['/til', '/sozlamalar'])
     fireEvent.click(within(screen.getByRole('radiogroup', { name: 'Kunlik maqsad' })).getByRole('radio', { name: 'kuniga 3 dars yoki takrorlash' }))
     fireEvent.click(screen.getByRole('button', { name: 'Orqaga' }))
-    expect(screen.getByText('Bugun 0/3 · 2 kun ketma-ket')).toBeTruthy()
+    expect(screen.getByRole('img', { name: 'Bugun 0 / 3 dars yoki takrorlash' })).toBeTruthy()
+    expect(screen.getByText(/^2 kun ketma-ket/)).toBeTruthy()
     const a = JSON.parse(localStorage.getItem('qaldirgoch.activity')!)
     expect(a[y]).toEqual({ count: 1, goal: 1, forgiven: false })
     expect(Object.values(a).some((d) => (d as { forgiven: boolean }).forgiven)).toBe(false)

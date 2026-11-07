@@ -28,3 +28,9 @@ npm test
 4. Authentication → URL Configuration → Redirect URLs ga qo'shing:
    `https://jahon-gir.github.io/Qaldirgoch/` va `http://localhost:5173/`.
 5. GitHub → Settings → Secrets and variables → Actions → **Variables**: `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`.
+
+## Bosh ekran xaritasi
+
+`src/home/worldMap.ts` qo'lda chizilmaydi: `node scripts/build-world-dots.mjs` bilan hosil qilinadi va commit qilinadi
+(ilova ishlaganda kutubxona yuklanmaydi). Ma'lumot: [Natural Earth](https://www.naturalearthdata.com/) (public domain),
+`world-atlas@2.0.2` (ISC); `topojson-client`, `d3-geo` (ISC) — faqat devDependencies.

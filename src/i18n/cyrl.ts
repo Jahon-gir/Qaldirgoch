@@ -2,6 +2,12 @@ import type { Dict } from './uz'
 
 /** Qoʻlda yozilgan kirill matnlar: avtomatik translit oʻrniga ishlatiladi (ts→ц, unli+e→э kabi xatolar boʻlmasligi uchun). */
 export const cyrlOverrides: Partial<Dict> = {
+  'home.hero': 'Ўзбекистондан чет элга, фақат қонуний йўл билан',
+  'home.whichCountry': 'Қайси давлатга?',
+  'home.openPaths': '{n} та йўл очиқ',
+  'home.anyCountry': 'Ҳар қандай давлат учун',
+  'home.checkAgency': 'Агентликни расмий реестрдан текширинг',
+  'home.mapUz': 'Ўзбекистон',
   'settings.install': 'Телефонга ўрнатиш',
   'install.intro': 'Илова бош экранда иконка бўлиб туради ва тезроқ очилади.',
   'install.step1': 'Ҳаволани Safari браузерида очинг.',
@@ -58,9 +64,6 @@ export const cyrlOverrides: Partial<Dict> = {
   'review.showMistakes': 'Хато қилинган {n} та сўзни кўриш',
   'review.mistakesTitle': 'Хато қилинган сўзлар',
   'review.empty': 'Бугун такрорлаш йўқ',
-  'home.germanToday': 'Бугун {n}/{goal} · {s} кун кетма-кет',
-  'home.goalLabel': 'Бугунги мақсад бўйича прогресс',
-  'home.reviewWaiting': '{n} та сўз такрорлашни кутяпти',
   'settings.dailyGoal': 'Кунлик мақсад',
   'settings.goalN': 'кунига {n} дарс ёки такрорлаш',
   'vocab.title': 'Сўзларингиз',
