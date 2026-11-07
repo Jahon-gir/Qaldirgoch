@@ -6,7 +6,7 @@ import { vocabSummary } from '../../german/vocab'
 import { Footer, navyBtn } from './parts'
 
 /** Natija (Kartochka va Test uchun umumiy). Lugʻat mashqi SRS jadvaliga tegmaydi. */
-export function VocabResult({ session, counted, onDone, onRetry }: { session: Session; counted: boolean; onDone: () => void; onRetry: () => void }) {
+export function VocabResult({ session, counted, speak = false, onDone, onRetry }: { session: Session; counted: boolean; speak?: boolean; onDone: () => void; onRetry: () => void }) {
   const { lang, t } = useI18n()
   const s = vocabSummary(session)
   return (
@@ -16,7 +16,7 @@ export function VocabResult({ session, counted, onDone, onRetry }: { session: Se
           <IconCheck size={56} stroke={3} aria-hidden />
         </span>
         <h2 className="text-2xl font-semibold">{t('vocab.done')}</h2>
-        <p className="text-base text-ink-2">{t('vocab.summary', { n: s.total, m: s.known })}</p>
+        <p className="text-base text-ink-2">{speak ? t('vocab.summarySpeak', { n: s.total }) : t('vocab.summary', { n: s.total, m: s.known })}</p>
         {counted && (
           <p role="status" className="mt-1 inline-flex items-center gap-1.5 rounded-full bg-success-soft px-3 py-1.5 text-base font-semibold text-success-text">
             <IconCheck size={18} aria-hidden />

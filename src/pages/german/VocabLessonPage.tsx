@@ -16,13 +16,14 @@ import { useDirection } from '../../german/useDirection'
 import { sessionCurrent, sessionDone, type Session } from '../../german/srs'
 import { isNoun, mixedKinds, nextMixedKind, type ExerciseKind } from '../../german/exercises'
 import { useSpeech } from '../../german/useSpeech'
+import { speechRecognitionSupported } from '../../german/useSpeechRecognition'
 import { MIXED, isUnlocked, lessonWords, shuffled, startVocabSession, unlockedWords, vocabAnswer, vocabGroups, vocabLesson } from '../../german/vocab'
 import { useWords } from '../../german/WordsProvider'
 import { useProfile } from '../../profile/ProfileProvider'
 import type { VocabFront, VocabMode } from '../../profile/questions'
 
 type Run = { session: Session; counted: boolean; kinds: ExerciseKind[] }
-const QUESTION_MODES: readonly VocabMode[] = ['test', 'build', 'listen', 'write', 'article', 'mixed']
+const QUESTION_MODES: readonly VocabMode[] = ['test', 'build', 'listen', 'write', 'article', 'speak', 'mixed']
 
 function Practice({ lessonId, title, ids }: { lessonId: string; title: string; ids: string[] }) {
   const { t } = useI18n()
@@ -30,6 +31,7 @@ function Practice({ lessonId, title, ids }: { lessonId: string; title: string; i
   const back = useBack('/til/lugat')
   const speech = useSpeech()
   const canListen = speech.canSpeak()
+  const [canSpeakMic] = useState(speechRecognitionSupported) // feature detect: SpeechRecognition bormi
   const { addDone } = useWords()
   const { vocabMode, vocabFront, setVocabPrefs } = useProfile()
   const nounIds = useMemo(() => ids.filter((id) => { const w = wordById(id); return !!w && isNoun(w) }), [ids])
@@ -38,7 +40,8 @@ function Practice({ lessonId, title, ids }: { lessonId: string; title: string; i
   const [front, setFront] = useState<VocabFront>(vocabFront)
   const [sheet, setSheet] = useState(false)
   // Darsda ot boʻlmasa Artikl, ovoz boʻlmasa Tinglash — Test bilan almashtiriladi
-  const eff: VocabMode = mode === 'article' && nounIds.length === 0 ? 'test' : mode === 'listen' && !canListen ? 'test' : mode
+  // Mikrofon tanish yoʻq, lekin profilda Talaffuz tanlangan — Roʻyxatga qaytadi (xato bermaydi)
+  const eff: VocabMode = mode === 'article' && nounIds.length === 0 ? 'test' : mode === 'listen' && !canListen ? 'test' : mode === 'speak' && !canSpeakMic ? 'list' : mode
   const start = useCallback(
     (list: string[], counted: boolean, m: VocabMode): Run => ({
       session: startVocabSession(m === 'article' ? list.filter((id) => nounIds.includes(id)) : list),
@@ -116,14 +119,14 @@ function Practice({ lessonId, title, ids }: { lessonId: string; title: string; i
         {eff === 'list' ? (
           <WordList words={lessonWordsOf(ids)} front={front} speech={speech} />
         ) : finished ? (
-          <VocabResult session={run.session} counted={run.counted} onDone={back} onRetry={retry} />
+          <VocabResult session={run.session} counted={run.counted} speak={eff === 'speak'} onDone={back} onRetry={retry} />
         ) : eff === 'cards' ? (
           <FlashCards session={run.session} front={front} speech={speech} onAnswer={answer} onSwapFront={swapFront} />
         ) : word ? (
           <Exercise key={`${run.session.pos}-${eff}`} kind={kind} word={word} speech={speech} onDone={answer} />
         ) : null}
       </div>
-      {sheet && <SettingsSheet mode={eff} hasNouns={nounIds.length > 0} canListen={canListen} onPick={pickMode} onClose={() => setSheet(false)} />}
+      {sheet && <SettingsSheet mode={eff} hasNouns={nounIds.length > 0} canListen={canListen} canSpeakMic={canSpeakMic} onPick={pickMode} onClose={() => setSheet(false)} />}
     </div>
   )
 }

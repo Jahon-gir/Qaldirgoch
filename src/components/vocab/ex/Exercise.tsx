@@ -3,6 +3,7 @@ import { ArticleStep } from './ArticleStep'
 import { BuildStep } from './BuildStep'
 import type { ExProps } from './common'
 import { ListenStep } from './ListenStep'
+import { SpeakStep } from './SpeakStep'
 import { TestStep } from './TestStep'
 import { WriteStep } from './WriteStep'
 
@@ -19,6 +20,8 @@ export function Exercise({ kind, ...p }: ExProps & { kind: ExerciseKind }) {
       return <WriteStep {...p} />
     case 'article':
       return <ArticleStep {...p} />
+    case 'speak':
+      return <SpeakStep {...p} />
     default:
       return <TestStep {...p} />
   }
