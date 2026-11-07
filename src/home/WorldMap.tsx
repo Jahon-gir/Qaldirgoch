@@ -168,7 +168,7 @@ export function WorldMap({ label }: { label: string }) {
       <text x={169} y={62} textAnchor="middle" fontSize={10} fontWeight={600} fill="#FFC56B">
         {label}
       </text>
-      <path ref={birdRef} d={SWALLOW_PATH} fill="#FFFFFF" transform={birdTransform(DE, animate ? 0 : 1)} style={{ opacity: 0 }} />
+      <path ref={birdRef} data-swallow="" d={SWALLOW_PATH} fill="#FFFFFF" transform={birdTransform(DE, animate ? 0 : 1)} style={{ opacity: 0 }} />
     </svg>
   )
 }

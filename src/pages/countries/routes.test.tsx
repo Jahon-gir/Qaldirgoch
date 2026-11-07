@@ -98,7 +98,9 @@ describe('marshrut: davlatlar → yoʻllar', () => {
     h1('Janubiy Koreya')
     expect(screen.getByText('Keyingi versiyada ochiladi')).toBeTruthy()
     expect(screen.getByText('EPS davlatlararo dastur. «Tez joylashtiramiz» degan xususiy vositachilarga ishonmang.')).toBeTruthy()
-    expect(screen.getByText('Yoʻl xaritasi, til kursi va talablar hali tekshirilmoqda')).toBeTruthy()
+    expect(screen.getByText(/Bu davlat yoʻllari hozir rasmiy manbalardan tayyorlanmoqda/)).toBeTruthy()
+    expect(screen.getByRole('link', { name: 'Agentlikni tekshirish' }).getAttribute('href')).toBe('/xavfsizlik/agentlik')
+    expect(screen.getByTestId('flag-band')).toBeTruthy()
     expect(savedProfile().selectedCountry).toBeUndefined()
     expect(screen.queryByRole('link', { name: 'Germaniyaga oʻtish' })).toBeNull()
     link('Davlatlar') // orqaga strelka
@@ -115,7 +117,7 @@ describe('marshrut: davlatlar → yoʻllar', () => {
       expect(savedProfile().selectedCountry).toBe('de')
     }
     link(/^Yaponiya/)
-    expect(screen.queryByText('Yoʻl xaritasi, til kursi va talablar hali tekshirilmoqda')).toBeNull()
+    expect(screen.getByText(/Bu davlat yoʻllari hozir rasmiy manbalardan tayyorlanmoqda/)).toBeTruthy() // yoʻl yoʻq boʻlsa ham ogohlantirish
   })
 
   it('Chancenkarte manzili toʻgʻridan-toʻgʻri ochilsa → kirish ekraniga; rasmiy havola xavfsiz; orqaga → Germaniya', () => {
