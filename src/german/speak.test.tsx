@@ -24,6 +24,7 @@ import { LISTEN_MAX_MS, speechRecognitionSupported, useSpeechRecognition } from 
 import { VOCAB } from '../content/german/words'
 import { lessonWords } from './vocab'
 import { WordsProvider } from './WordsProvider'
+import { speakGoalMet, speakPracticed } from '../pages/german/VocabLessonPage'
 
 /* ---------- Soxta SpeechRecognition ---------- */
 
@@ -377,30 +378,6 @@ describe('Talaffuz mashqi', () => {
     expect(r.aborted).toBe(true)
   })
 
-  it('bilmaganlar roʻyxati va natija: hammasi oʻtkazilsa/tanilmasa ham roʻyxat paydo boʻlmaydi; maqsadga +1 faqat oxirida', () => {
-    renderApp()
-    const wordsBefore = JSON.stringify(stored('words'))
-    pressMic()
-    for (let i = 0; i < 3; i++) {
-      say('Banane')
-      if (i < 2) click('Qayta urinish')
-    }
-    click('Davom etish') // 1-soʻz: 3 marta tanilmadi
-    expect(activityToday()).toBe(0)
-    for (let i = 1; i < L1.length - 1; i++) click('Oʻtkazib yuborish')
-    expect(activityToday()).toBe(0) // hali oxiriga yetmadi
-    expect(screen.getByText('Talaffuz · 4 / 4')).toBeTruthy()
-    click('Oʻtkazib yuborish')
-    expect(screen.getByRole('heading', { name: 'Mashq tugadi' })).toBeTruthy()
-    expect(screen.getByText(`${L1.length} ta soʻz mashq qilindi`)).toBeTruthy()
-    expect(screen.queryByText(/tasini bildingiz/)).toBeNull()
-    expect(screen.queryByRole('region', { name: 'Bilmaganlaringiz' })).toBeNull()
-    expect(screen.queryByRole('button', { name: 'Bilmaganlarimni qayta mashq qilish' })).toBeNull()
-    expect(screen.getByText('Bugungi maqsadga +1')).toBeTruthy()
-    expect(activityToday()).toBe(1)
-    expect(JSON.stringify(stored('words'))).toBe(wordsBefore) // soʻz holati (SRS / bilmaganlar) oʻzgarmadi
-  })
-
   it('Aralash usulda Talaffuz chiqmaydi (mikrofon tugmasi yoʻq)', () => {
     seed({ mode: 'mixed' })
     renderApp()
@@ -481,5 +458,163 @@ describe('Usul oynasi va qoʻllab-quvvatlash', () => {
     expect(stored('profile').vocabMode).toBe('speak')
     expect(screen.getByText('Talaffuz · 1 / 4')).toBeTruthy()
     expect(mic()).toBeTruthy()
+  })
+})
+
+/* ---------- Natija: oʻtkazib yuborilgan soʻz mashq qilingan hisoblanmaydi (0.8.1) ---------- */
+
+describe('Talaffuz: natija va kunlik maqsad', () => {
+  beforeEach(() => {
+    withRec()
+    seed()
+  })
+  const N = L1.length // 4 → maqsad uchun kamida 2 ta mashq qilingan soʻz
+  const skip = () => click('Oʻtkazib yuborish')
+  /** Aytib tanildi → Davom etish */
+  const spoken = (word: string) => {
+    pressMic()
+    say(word)
+    click('Davom etish')
+  }
+  /** 3 urinish tanilmadi → Davom etish ('tried') */
+  const tried = () => {
+    pressMic()
+    for (let i = 0; i < 3; i++) {
+      say('Banane')
+      if (i < 2) click('Qayta urinish')
+    }
+    click('Davom etish')
+  }
+  const result = () => expect(screen.getByRole('heading', { name: 'Mashq tugadi' })).toBeTruthy()
+  const noGoalLine = () => expect(screen.queryByText('Bugungi maqsadga +1')).toBeNull()
+
+  it('hammasini oʻtkazib yuborish: "Hech qaysi soʻz mashq qilinmadi", maqsadga +1 yoʻq, +1 haqida qator ham yoʻq', () => {
+    renderApp()
+    const wordsBefore = JSON.stringify(stored('words'))
+    for (let i = 0; i < N; i++) skip()
+    result()
+    expect(screen.getByText('Hech qaysi soʻz mashq qilinmadi')).toBeTruthy()
+    expect(screen.queryByText(/mashq qilindi/)).toBeNull()
+    expect(screen.queryByText(/maqsad/i)).toBeNull()
+    noGoalLine()
+    expect(activityToday()).toBe(0)
+    expect(screen.queryByRole('region', { name: 'Bilmaganlaringiz' })).toBeNull()
+    expect(JSON.stringify(stored('words'))).toBe(wordsBefore) // SRS / bilmaganlar oʻzgarmadi
+  })
+
+  it('yarmi aytib/urinib mashq qilingan (2 / 4): "4 ta soʻzdan 2 tasi mashq qilindi", maqsadga +1', () => {
+    renderApp()
+    const wordsBefore = JSON.stringify(stored('words'))
+    spoken('Hallo')
+    tried()
+    skip()
+    expect(activityToday()).toBe(0) // oxirigacha hali yetmadi
+    skip()
+    result()
+    expect(screen.getByText('4 ta soʻzdan 2 tasi mashq qilindi')).toBeTruthy()
+    expect(screen.getByText('Bugungi maqsadga +1')).toBeTruthy()
+    expect(activityToday()).toBe(1)
+    expect(screen.queryByRole('region', { name: 'Bilmaganlaringiz' })).toBeNull()
+    expect(screen.queryByRole('button', { name: 'Bilmaganlarimni qayta mashq qilish' })).toBeNull()
+    expect(JSON.stringify(stored('words'))).toBe(wordsBefore)
+  })
+
+  it('yarmidan kamrogʻi (1 / 4): maqsadga +1 yoʻq, lekin soni koʻrsatiladi', () => {
+    renderApp()
+    spoken('Hallo')
+    for (let i = 1; i < N; i++) skip()
+    result()
+    expect(screen.getByText('4 ta soʻzdan 1 tasi mashq qilindi')).toBeTruthy()
+    noGoalLine()
+    expect(activityToday()).toBe(0)
+  })
+
+  it('3 urinish ("Davom etish" bilan oʻtgan) "tried" — mashq qilingan hisoblanadi', () => {
+    renderApp()
+    tried()
+    tried()
+    skip()
+    skip()
+    expect(screen.getByText('4 ta soʻzdan 2 tasi mashq qilindi')).toBeTruthy()
+    expect(activityToday()).toBe(1)
+  })
+
+  it('"Bekor qilish" va urinish tugamay oʻtkazib yuborish — mashq qilinmagan', () => {
+    renderApp()
+    for (let i = 0; i < N; i++) {
+      pressMic()
+      click('Bekor qilish')
+      if (i === 1) {
+        pressMic()
+        say('Banane') // 1 ta urinish, tugamagan
+      }
+      skip()
+    }
+    result()
+    expect(screen.getByText('Hech qaysi soʻz mashq qilinmadi')).toBeTruthy()
+    expect(activityToday()).toBe(0)
+  })
+
+  it('bir marta aytib tanilib, keyin "Qayta aytish" → "Oʻtkazib yuborish": hamon mashq qilingan', () => {
+    renderApp()
+    pressMic()
+    say('Hallo')
+    click('Qayta aytish')
+    skip()
+    skip()
+    skip()
+    skip()
+    expect(screen.getByText('4 ta soʻzdan 1 tasi mashq qilindi')).toBeTruthy()
+  })
+
+  it('toq son: ceil(N/2); 0 ta soʻzda hech qachon', () => {
+    const o = (...a: ('spoken' | 'tried' | 'skipped')[]) => Object.fromEntries(a.map((x, i) => [`w${i}`, x]))
+    expect(speakGoalMet(o('spoken', 'skipped', 'skipped'), 3)).toBe(false)
+    expect(speakGoalMet(o('spoken', 'tried', 'skipped'), 3)).toBe(true)
+    expect(speakGoalMet(o('tried'), 1)).toBe(true)
+    expect(speakGoalMet(o('skipped'), 1)).toBe(false)
+    expect(speakGoalMet({}, 0)).toBe(false)
+    expect(speakPracticed(o('spoken', 'tried', 'skipped'))).toBe(2)
+  })
+
+  it('"Qayta mashq" (retry) tugmasi yoʻq va +1 qayta qoʻshilmaydi', () => {
+    renderApp()
+    spoken('Hallo')
+    spoken('Guten Morgen')
+    skip()
+    skip()
+    expect(activityToday()).toBe(1)
+    expect(screen.queryByRole('button', { name: 'Bilmaganlarimni qayta mashq qilish' })).toBeNull()
+    expect(activityToday()).toBe(1)
+  })
+
+  it('rus va kirill natija matnlari', () => {
+    renderApp('/til/lugat/a1-m1-l1', 'ru')
+    for (let i = 0; i < N; i++) fireEvent.click(screen.getByRole('button', { name: 'Пропустить' }))
+    expect(screen.getByText('Ни одно слово не отработано')).toBeTruthy()
+    cleanup()
+    localStorage.clear()
+    seed()
+    renderApp('/til/lugat/a1-m1-l1', 'uz-Cyrl')
+    fireEvent.click(screen.getByRole('button', { name: 'Гапириш учун босинг' }))
+    act(() => rec().say(['Hallo']))
+    fireEvent.click(screen.getByRole('button', { name: 'Давом этиш' }))
+    fireEvent.click(screen.getByRole('button', { name: 'Гапириш учун босинг' }))
+    act(() => rec().say(['Guten Morgen']))
+    fireEvent.click(screen.getByRole('button', { name: 'Давом этиш' }))
+    for (let i = 0; i < 2; i++) fireEvent.click(screen.getByRole('button', { name: 'Ўтказиб юбориш' }))
+    expect(screen.getByText('4 та сўздан 2 таси машқ қилинди')).toBeTruthy()
+  })
+})
+
+describe('Boshqa usullarda maqsad hisobi oʻzgarmagan', () => {
+  it('Kartochka: oxirigacha tugasa +1 (oʻtkazib yuborish tushunchasi yoʻq)', () => {
+    withRec()
+    seed({ mode: 'cards' })
+    renderApp()
+    for (let i = 0; i < L1.length; i++) click('Bildim')
+    expect(screen.getByText('Bugungi maqsadga +1')).toBeTruthy()
+    expect(activityToday()).toBe(1)
+    expect(screen.getByText(`${L1.length} tadan ${L1.length} tasini bildingiz`)).toBeTruthy()
   })
 })

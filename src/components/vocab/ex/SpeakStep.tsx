@@ -59,7 +59,8 @@ function PrivacyDialog({ onOk, onCancel }: { onOk: () => void; onCancel: () => v
 /**
  * Talaffuz: eshiting → mikrofonga takrorlang → brauzer ovozni matnga aylantiradi → javob bilan solishtiriladi.
  * Faqat "toʻgʻri tanildi" / "tanilmadi": sifat, foiz yoki ball YOʻQ. Natija soʻzning "bilmaganlar" roʻyxatiga taʼsir qilmaydi
- * (xato mikrofon/tanish xatosi boʻlishi mumkin), shuning uchun onDone har doim true.
+ * (xato mikrofon/tanish xatosi boʻlishi mumkin), shuning uchun onDone har doim true; natija (spoken/tried/skipped) ikkinchi argumentda:
+ * sahifa shundan "mashq qilingan" soni va kunlik maqsadni hisoblaydi. Oʻtkazib yuborilgan soʻz mashq qilingan hisoblanmaydi.
  */
 export function SpeakStep({ word, speech, onDone }: ExProps) {
   const { lang, t } = useI18n()
@@ -69,6 +70,7 @@ export function SpeakStep({ word, speech, onDone }: ExProps) {
   const [verdict, setVerdict] = useState<Judged | null>(null)
   const [fails, setFails] = useState(0)
   const [privacy, setPrivacy] = useState(false)
+  const spokenOnce = useRef(false) // shu soʻz bir marta aytib tanilgan boʻlsa — keyin oʻtkazib yuborilsa ham 'spoken'
   const micRef = useRef<HTMLButtonElement>(null)
   const { speak } = speech
   const canListen = speech.canSpeak()
@@ -78,7 +80,10 @@ export function SpeakStep({ word, speech, onDone }: ExProps) {
     if (state.status !== 'result') return
     const j = judgeSpoken(state.alternatives, word.de)
     setVerdict(j)
-    if (j.ok) fx.right(micRef.current)
+    if (j.ok) {
+      spokenOnce.current = true
+      fx.right(micRef.current)
+    }
     else setFails((n) => n + 1)
   }, [state, word.de, fx])
 
@@ -96,7 +101,8 @@ export function SpeakStep({ word, speech, onDone }: ExProps) {
     setVerdict(null)
     rec.reset()
   }
-  const skip = () => onDone(true)
+  const skip = () => onDone(true, spokenOnce.current ? 'spoken' : 'skipped')
+  const proceed = () => onDone(true, spokenOnce.current ? 'spoken' : 'tried') // "Davom etish": tanildi yoki 3 urinish ishlatildi
 
   const s = state.status
   const right = s === 'result' && verdict?.ok === true
@@ -199,7 +205,7 @@ export function SpeakStep({ word, speech, onDone }: ExProps) {
         )}
       </div>
 
-      {canMove && <ContinueFooter onClick={skip} />}
+      {canMove && <ContinueFooter onClick={proceed} />}
       {privacy && <PrivacyDialog onOk={confirmPrivacy} onCancel={() => setPrivacy(false)} />}
     </div>
   )
