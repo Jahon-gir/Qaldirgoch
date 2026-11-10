@@ -1,6 +1,7 @@
 import {
   IconBolt, IconCalendarEvent, IconDoorExit, IconFlame, IconHandStop, IconHeartHandshake, IconId, IconMapPin, IconMessageCircle, IconMessages,
   IconMoodSmile, IconMoonStars, IconStethoscope, IconSun, IconSunrise, IconSunset2, IconTools, IconToolsKitchen2, IconUser, IconUsers, IconWorld,
+  IconCheck, IconChefHat, IconCoffee, IconDog, IconFlag, IconGenderFemale, IconGrape, IconHanger, IconLeaf, IconMan, IconMap, IconMeat, IconMilk, IconMoodKid, IconMusic, IconNumber1, IconPaw, IconRadio, IconRipple, IconSalad, IconSquare, IconToiletPaper, IconTrain, IconWoman,
   type Icon
 } from '@tabler/icons-react'
 
@@ -26,5 +27,30 @@ export const LESSON_ICONS: Record<string, Icon> = {
   'tools-kitchen-2': IconToolsKitchen2,
   user: IconUser,
   users: IconUsers,
-  world: IconWorld
+  world: IconWorld,
+  // Koreys 1-modul
+  'check': IconCheck,
+  'chef-hat': IconChefHat,
+  'coffee': IconCoffee,
+  'dog': IconDog,
+  'flag': IconFlag,
+  'gender-female': IconGenderFemale,
+  'grape': IconGrape,
+  'hanger': IconHanger,
+  'leaf': IconLeaf,
+  'man': IconMan,
+  'map': IconMap,
+  'meat': IconMeat,
+  'milk': IconMilk,
+  'mood-kid': IconMoodKid,
+  'music': IconMusic,
+  'number-1': IconNumber1,
+  'paw': IconPaw,
+  'radio': IconRadio,
+  'ripple': IconRipple,
+  'salad': IconSalad,
+  'square': IconSquare,
+  'toilet-paper': IconToiletPaper,
+  'train': IconTrain,
+  'woman': IconWoman
 }

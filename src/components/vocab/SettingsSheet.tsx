@@ -15,7 +15,7 @@ const STAGGER_MS = 45
  * Mashq usuli oynasi (pastdan). Plitka bosilishi bilan tanlov saqlanadi va ekran shu usulga oʻtadi (onPick);
  * ripple, ~180 ms dan keyin oyna pastga sirpanib yopiladi. Fon bosilsa — tanlovsiz yopiladi.
  */
-export function SettingsSheet({ mode, hasNouns = true, canListen = true, canSpeakMic = true, onPick, onClose }: { mode: VocabMode; hasNouns?: boolean; canListen?: boolean; canSpeakMic?: boolean; onPick: (m: VocabMode) => void; onClose: () => void }) {
+export function SettingsSheet({ mode, hasNouns = true, canWrite = true, canListen = true, canSpeakMic = true, onPick, onClose }: { mode: VocabMode; hasNouns?: boolean; canWrite?: boolean; canListen?: boolean; canSpeakMic?: boolean; onPick: (m: VocabMode) => void; onClose: () => void }) {
   const t = useI18n().t
   const ref = useRef<HTMLDivElement>(null)
   const [closing, setClosing] = useState(false)
@@ -47,7 +47,7 @@ export function SettingsSheet({ mode, hasNouns = true, canListen = true, canSpea
     }
     close(PICK_DELAY_MS)
   }
-  const modes = VOCAB_MODES.filter((m) => (m !== 'article' || hasNouns) && (m !== 'speak' || canSpeakMic))
+  const modes = VOCAB_MODES.filter((m) => (m !== 'article' || hasNouns) && (m !== 'write' || canWrite) && (m !== 'speak' || canSpeakMic))
   return (
     <div
       className={`fixed inset-0 z-40 flex items-end justify-center bg-black/50 sm:items-center ${closing ? 'dim-out' : 'dim-in'}`}

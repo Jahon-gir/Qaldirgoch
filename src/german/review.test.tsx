@@ -116,7 +116,7 @@ afterEach(() => {
 describe('takrorlash sessiyasi (/til/takrorlash)', () => {
   it('savol: nemischa soʻz, 4 variant, "1 / 3"', () => {
     seed({ words: WORDS3 })
-    renderApp(['/til', '/til/takrorlash'])
+    renderApp(['/til/de', '/til/takrorlash'])
     expect(screen.getByText('Bu soʻz nima degani?')).toBeTruthy()
     expect(screen.getByText('1 / 3')).toBeTruthy()
     const { w, buttons } = currentWord()
@@ -127,7 +127,7 @@ describe('takrorlash sessiyasi (/til/takrorlash)', () => {
 
   it('toʻgʻri javob: yashil, "N kundan keyin", jadval keyingi oraliqqa; oʻzi keyingi savolga oʻtadi', () => {
     seed({ words: WORDS3 })
-    renderApp(['/til', '/til/takrorlash'])
+    renderApp(['/til/de', '/til/takrorlash'])
     const w = answer(true)
     const before = WORDS3[w.id]
     const after = stored()[w.id]
@@ -141,7 +141,7 @@ describe('takrorlash sessiyasi (/til/takrorlash)', () => {
 
   it('xato javob: tanlangan qizil, toʻgʻrisi yashil, "Davom etish"; soʻz sessiya oxirida yana soʻraladi', () => {
     seed({ words: WORDS3 })
-    renderApp(['/til', '/til/takrorlash'])
+    renderApp(['/til/de', '/til/takrorlash'])
     const { w, buttons } = currentWord()
     const wrong = buttons.find((b) => b.textContent !== w.tr.uz)!
     fireEvent.click(wrong)
@@ -155,7 +155,7 @@ describe('takrorlash sessiyasi (/til/takrorlash)', () => {
 
   it('natija: soni, toʻgʻrilari, streak, xatolar roʻyxati; "Tayyor" oldingi ekranga qaytaradi (maqsad 2: hali bajarilmagan)', () => {
     seed({ words: WORDS3, profile: PROFILE2 })
-    renderApp(['/til', '/til/takrorlash'])
+    renderApp(['/til/de', '/til/takrorlash'])
     const missed = answer(false)
     fireEvent.click(screen.getByRole('button', { name: 'Davom etish' }))
     answer(true)
@@ -176,13 +176,13 @@ describe('takrorlash sessiyasi (/til/takrorlash)', () => {
     expect(screen.getByText(missed.term)).toBeTruthy()
     expect(screen.getByText(missed.tr.uz)).toBeTruthy()
     fireEvent.click(screen.getByRole('button', { name: 'Tayyor' }))
-    expect(where()).toBe('/til')
+    expect(where()).toBe('/til/de')
     expect(screen.getByText(/Bugun takrorlash yoʻq\. Keyingisi: ertaga/)).toBeTruthy()
   })
 
   it('maqsad (standart 1) bajarilsa: "Bugungi maqsad bajarildi" va streak 1', () => {
     seed({ words: { 'a1-m1-hallo': due() } })
-    renderApp(['/til', '/til/takrorlash'])
+    renderApp(['/til/de', '/til/takrorlash'])
     answer(true)
     expect(activityToday()).toBe(0) // natija ekrani ochilmaguncha hisoblanmaydi
     advance()
@@ -194,7 +194,7 @@ describe('takrorlash sessiyasi (/til/takrorlash)', () => {
 
   it('takrorlash ikkinchi marta tugatilsa yana +1', () => {
     seed({ words: { 'a1-m1-hallo': due() }, profile: PROFILE2 })
-    renderApp(['/til', '/til/takrorlash'])
+    renderApp(['/til/de', '/til/takrorlash'])
     answer(true)
     advance()
     expect(activityToday()).toBe(1)
@@ -202,7 +202,7 @@ describe('takrorlash sessiyasi (/til/takrorlash)', () => {
     // bir xil soʻz bugun yana kelsin (masalan, boshqa qurilmada oʻzgargan)
     localStorage.setItem('qaldirgoch.words', JSON.stringify({ 'a1-m1-hallo': due() }))
     cleanup()
-    renderApp(['/til', '/til/takrorlash'])
+    renderApp(['/til/de', '/til/takrorlash'])
     answer(true)
     advance()
     expect(activityToday()).toBe(2)
@@ -214,7 +214,7 @@ describe('takrorlash sessiyasi (/til/takrorlash)', () => {
     renderApp('/til/takrorlash')
     expect(where()).toBe('/til/takrorlash')
     act(() => goBack!())
-    expect(where()).toBe('/til')
+    expect(where()).toBe('/til/de')
     expect(screen.getByRole('heading', { name: 'Nemis tili' })).toBeTruthy()
   })
 
@@ -230,19 +230,19 @@ describe('takrorlash sessiyasi (/til/takrorlash)', () => {
 
   it('bugun soʻz yoʻq — sokin xabar va "Tayyor"', () => {
     seed()
-    renderApp(['/til', '/til/takrorlash'])
+    renderApp(['/til/de', '/til/takrorlash'])
     expect(screen.getByRole('heading', { name: 'Bugun takrorlash yoʻq' })).toBeTruthy()
     fireEvent.click(screen.getByRole('button', { name: 'Tayyor' }))
-    expect(where()).toBe('/til')
+    expect(where()).toBe('/til/de')
   })
 
   it('rus va kirill interfeysida', () => {
     seed({ words: { 'a1-m1-hallo': due() } })
-    renderApp(['/til', '/til/takrorlash'], 'ru')
+    renderApp(['/til/de', '/til/takrorlash'], 'ru')
     expect(screen.getByText('Что значит это слово?')).toBeTruthy()
     expect(screen.getByRole('button', { name: 'Привет' })).toBeTruthy()
     cleanup()
-    renderApp(['/til', '/til/takrorlash'], 'uz-Cyrl')
+    renderApp(['/til/de', '/til/takrorlash'], 'uz-Cyrl')
     expect(screen.getByText('Бу сўз нима дегани?')).toBeTruthy()
     fireEvent.click(screen.getByRole('button', { name: 'Салом' }))
     expect(screen.getByText('Тўғри. Бу сўз 7 кундан кейин яна сўралади.')).toBeTruthy()
@@ -257,7 +257,7 @@ describe('Til ekrani', () => {
       words: { ...WORDS3, 'a1-m1-tschuess': { due: addDays(TODAY, 2), interval: 14, mistakes: 0, updatedAt: NOW }, 'a1-m1-gute-nacht': { due: addDays(TODAY, 1), interval: 1, mistakes: 0, updatedAt: NOW } },
       activity: { [TODAY]: { count: 1, goal: 2, forgiven: false }, [yesterday]: { count: 2, goal: 2, forgiven: false } }
     })
-    renderApp('/til')
+    renderApp('/til/de')
     expect(screen.getByRole('img', { name: 'Bugun 1 / 2 dars yoki takrorlash' })).toBeTruthy()
     expect(screen.getByText('1/2')).toBeTruthy()
     expect(screen.getByText('Bugungi maqsad')).toBeTruthy()
@@ -280,7 +280,7 @@ describe('Til ekrani', () => {
 
   it('maqsad bajarilgan holat', () => {
     seed({ activity: { [TODAY]: { count: 1, goal: 1, forgiven: false } } })
-    renderApp('/til')
+    renderApp('/til/de')
     expect(screen.getByText('Bugungi maqsad bajarildi')).toBeTruthy()
     expect(screen.queryByText(/qoldi/)).toBeNull()
     expect(screen.getByText(/Bugun takrorlash yoʻq/)).toBeTruthy()
@@ -290,14 +290,14 @@ describe('Til ekrani', () => {
 describe('"Davom eting" → dars → qaytish', () => {
   it('Til ekranidan kirilgan dars "Modulga qaytish"da modul ekraniga, "orqaga" — Til ekraniga olib boradi', () => {
     seed()
-    renderApp('/til')
+    renderApp('/til/de')
     fireEvent.click(screen.getByRole('link', { name: 'Davom etish' }))
     expect(where()).toBe('/til/dars/a1-m1-l1')
     fireEvent.click(screen.getByRole('button', { name: 'Darsdan chiqish' }))
     fireEvent.click(screen.getByRole('button', { name: 'Chiqish' }))
     expect(where()).toBe('/til/modul/a1-m1')
     act(() => goBack!())
-    expect(where()).toBe('/til')
+    expect(where()).toBe('/til/de')
   })
 })
 
@@ -353,7 +353,7 @@ describe('Bosh sahifa va Sozlamalar', () => {
     expect(screen.queryByText(/^Bugun /)).toBeNull()
     expect(screen.queryByText(/takrorlash/i)).toBeNull()
     cleanup()
-    renderApp('/til')
+    renderApp('/til/de')
     expect(screen.getByRole('img', { name: 'Bugun 1 / 2 dars yoki takrorlash' })).toBeTruthy()
     fireEvent.click(screen.getByRole('link', { name: 'Takrorlashni boshlash' }))
     expect(where()).toBe('/til/takrorlash')
@@ -361,7 +361,7 @@ describe('Bosh sahifa va Sozlamalar', () => {
 
   it('Sozlamalarda "Kunlik maqsad": 1 / 2 / 3, har birining ostida izoh; 3 tanlansa profilga yoziladi va bugungi maqsad oʻzgaradi', () => {
     seed({ activity: { [TODAY]: { count: 1, goal: 1, forgiven: false } } })
-    renderApp(['/til', '/sozlamalar'])
+    renderApp(['/til/de', '/sozlamalar'])
     const group = screen.getByRole('radiogroup', { name: 'Kunlik maqsad' })
     expect(within(group).getAllByRole('radio').map((r) => r.getAttribute('aria-label'))).toEqual(['kuniga 1 dars yoki takrorlash', 'kuniga 2 dars yoki takrorlash', 'kuniga 3 dars yoki takrorlash'])
     expect(within(group).getByRole('radio', { name: 'kuniga 1 dars yoki takrorlash' }).getAttribute('aria-checked')).toBe('true')
@@ -377,7 +377,7 @@ describe('Bosh sahifa va Sozlamalar', () => {
     const y = addDays(TODAY, -1)
     const y2 = addDays(TODAY, -2)
     seed({ activity: { [y2]: { count: 1, goal: 1, forgiven: false }, [y]: { count: 1, goal: 1, forgiven: false } } })
-    renderApp(['/til', '/sozlamalar'])
+    renderApp(['/til/de', '/sozlamalar'])
     fireEvent.click(within(screen.getByRole('radiogroup', { name: 'Kunlik maqsad' })).getByRole('radio', { name: 'kuniga 3 dars yoki takrorlash' }))
     fireEvent.click(screen.getByRole('button', { name: 'Orqaga' }))
     expect(screen.getByRole('img', { name: 'Bugun 0 / 3 dars yoki takrorlash' })).toBeTruthy()
@@ -417,7 +417,7 @@ describe('0.6.0 dan oʻtish: eski mashq birligidagi maʼlumot', () => {
         [y3]: { count: 20, goal: 20, forgiven: false }
       }
     })
-    renderApp('/til')
+    renderApp('/til/de')
     expect(screen.getByText('Bugungi maqsad bajarildi')).toBeTruthy()
     expect(screen.getByText('4 kun ketma-ket. Rekordingiz: 4 kun')).toBeTruthy()
     const a = JSON.parse(localStorage.getItem('qaldirgoch.activity')!)
@@ -429,7 +429,7 @@ describe('0.6.0 dan oʻtish: eski mashq birligidagi maʼlumot', () => {
 
   it('bugungi eski yozuv bajarilmagan: 0 / yangi maqsad', () => {
     seed({ profile: { ...PROFILE, dailyGoal: 15 }, activity: { [TODAY]: { count: 9, goal: 15, forgiven: false } } })
-    renderApp('/til')
+    renderApp('/til/de')
     expect(screen.getByRole('img', { name: 'Bugun 0 / 2 dars yoki takrorlash' })).toBeTruthy()
     expect(screen.getByText('Yana 2 ta dars yoki takrorlash qoldi')).toBeTruthy()
     expect(JSON.parse(localStorage.getItem('qaldirgoch.activity')!)[TODAY]).toEqual({ count: 0, goal: 2, forgiven: false })

@@ -1,5 +1,7 @@
-import { exercisesOf, lessonById, LESSONS, MODULES, type Direction, type Lesson, type Module } from '../content/german'
-import { VOCAB, wordById, wordIdsOfLesson, type VocabWord } from '../content/german/words'
+import type { Direction, Lesson, Module } from '../content/german'
+import { VOCAB, type VocabWord } from '../content/german/words'
+import { DE_COURSE } from '../lang/de'
+import type { Course } from '../lang/types'
 import type { Lang } from '../i18n/I18nProvider'
 import type { VocabFront } from '../profile/questions'
 import { lessonsOf, visibleModules, type Results } from './logic'
@@ -8,13 +10,13 @@ import { sessionAnswer, sessionCurrent, startSession, type Session } from './srs
 /** Lugʻat ekranidagi "aralash" mashq: dars id oʻrnida. */
 export const MIXED = 'aralash'
 
-/** Darsdagi barcha soʻzlar (holatidan qatʼi nazar), dars tartibida. */
-export function lessonWords(lessonId: string): VocabWord[] {
-  return wordIdsOfLesson(lessonId).flatMap((id) => wordById(id) ?? [])
+/** Darsdagi barcha soʻzlar (holatidan qatʼi nazar), dars tartibida. course — standart nemis kursi. */
+export function lessonWords(lessonId: string, course: Course = DE_COURSE): VocabWord[] {
+  return course.wordIdsOfLesson(lessonId).flatMap((id) => course.wordById(id) ?? [])
 }
 
 /** Faqat word mashqi bor darslar (modul testi chiqmaydi). */
-export const hasWords = (lessonId: string) => exercisesOf(lessonId).some((e) => e.type === 'word')
+export const hasWords = (lessonId: string, course: Course = DE_COURSE) => course.exercisesOf(lessonId).some((e) => e.type === 'word')
 
 /** Dars ochiqmi: oxirigacha tugatilgan (user_lessons da bor). */
 export const isUnlocked = (lessonId: string, results: Results) => lessonId in results
@@ -22,13 +24,13 @@ export const isUnlocked = (lessonId: string, results: Results) => lessonId in re
 export type VocabGroup = { module: Module; lessons: { lesson: Lesson; words: VocabWord[]; unlocked: boolean }[] }
 
 /** Modul → darslar (faqat soʻzi bor darslar; soʻzi yoʻq modul chiqmaydi). */
-export function vocabGroups(direction: Direction, results: Results, modules: Module[] = MODULES, lessons: Lesson[] = LESSONS): VocabGroup[] {
-  return visibleModules(direction, modules)
+export function vocabGroups(direction: Direction, results: Results, course: Course = DE_COURSE): VocabGroup[] {
+  return visibleModules(direction, course.modules)
     .map((module) => ({
       module,
-      lessons: lessonsOf(module.id, lessons)
-        .filter((l) => hasWords(l.id))
-        .map((lesson) => ({ lesson, words: lessonWords(lesson.id), unlocked: isUnlocked(lesson.id, results) }))
+      lessons: lessonsOf(module.id, course.lessons)
+        .filter((l) => hasWords(l.id, course))
+        .map((lesson) => ({ lesson, words: lessonWords(lesson.id, course), unlocked: isUnlocked(lesson.id, results) }))
     }))
     .filter((g) => g.lessons.length > 0)
 }
@@ -110,7 +112,7 @@ export function vocabSummary(s: Session) {
 }
 
 /** Lugʻat darsini id boʻyicha topish (mavjud va soʻzi bor boʻlsa). */
-export const vocabLesson = (id: string) => {
-  const l = lessonById(id)
-  return l && hasWords(l.id) ? l : undefined
+export const vocabLesson = (id: string, course: Course = DE_COURSE) => {
+  const l = course.lessonById(id)
+  return l && hasWords(l.id, course) ? l : undefined
 }

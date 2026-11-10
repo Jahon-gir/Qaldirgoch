@@ -51,7 +51,7 @@ function renderApp(path: string) {
             <LessonsProvider>
               <WordsProvider>
                 <InstallProvider>
-                  <MemoryRouter initialEntries={['/til', path]} initialIndex={1}>
+                  <MemoryRouter initialEntries={['/til/de', path]} initialIndex={1}>
                     <AppRoutes />
                     <Where />
                   </MemoryRouter>
@@ -105,7 +105,7 @@ function playAll({ firstRight = true } = {}) {
 describe('kartochkalar va ochilish', () => {
   it('modul darslari tugamaguncha modul testi kartochkasi yoʻq; daraja testi qulf', () => {
     seed(M1.slice(0, 5))
-    renderApp('/til')
+    renderApp('/til/de')
     expect(screen.queryByText('1-modul yakuniy testi')).toBeNull()
     expect(screen.getByText('A1 daraja testi')).toBeTruthy()
     expect(screen.getByText('Barcha A1 modullari tugagach ochiladi')).toBeTruthy()
@@ -114,7 +114,7 @@ describe('kartochkalar va ochilish', () => {
 
   it('6 dars tugagach: "1-modul yakuniy testi · Ochiq · 12 savol" (Til va modul ekranida); daraja testi baribir qulf (draft modul)', () => {
     seed()
-    renderApp('/til')
+    renderApp('/til/de')
     const card = screen.getByRole('link', { name: /1-modul yakuniy testi/ })
     expect(card.getAttribute('href')).toBe('/til/test/a1-m1')
     expect(within(card).getByText('Ochiq · 12 savol')).toBeTruthy()
@@ -127,21 +127,21 @@ describe('kartochkalar va ochilish', () => {
   it('oʻtilgan boʻlsa: "Oʻtildi · 11/12"', () => {
     seed()
     localStorage.setItem('qaldirgoch.lessons', JSON.stringify({ ...done(M1), 'test:a1-m1': { lessonId: 'test:a1-m1', score: 11, total: 12, completedAt: NOW } }))
-    renderApp('/til')
+    renderApp('/til/de')
     expect(within(screen.getByRole('link', { name: /1-modul yakuniy testi/ })).getByText('Oʻtildi · 11/12')).toBeTruthy()
   })
 
   it('ochilmagan test manzili toʻgʻridan-toʻgʻri ochilsa — Til ekraniga; daraja testi ham', () => {
     seed(M1.slice(0, 2))
     renderApp('/til/test/a1-m1')
-    expect(where()).toBe('/til')
+    expect(where()).toBe('/til/de')
     cleanup()
     seed()
     renderApp('/til/test/level-A1')
-    expect(where()).toBe('/til')
+    expect(where()).toBe('/til/de')
     cleanup()
     renderApp('/til/test/yoq')
-    expect(where()).toBe('/til')
+    expect(where()).toBe('/til/de')
   })
 })
 
@@ -187,7 +187,7 @@ describe('kirish ekrani va savollar', () => {
     expect(screen.queryByRole('dialog')).toBeNull()
     click('Testdan chiqish')
     click('Chiqish')
-    expect(where()).toBe('/til')
+    expect(where()).toBe('/til/de')
     expect(activityToday()).toBe(0)
     expect(stored('lessons')['test:a1-m1']).toBeUndefined()
   })
@@ -247,7 +247,7 @@ describe('natija', () => {
     expect(stored('lessons')['test:a1-m1']).toMatchObject({ score: 4, total: 4 })
     expect(activityToday()).toBe(2)
     click('Til sahifasiga qaytish')
-    expect(where()).toBe('/til')
+    expect(where()).toBe('/til/de')
   })
 })
 

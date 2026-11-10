@@ -1,15 +1,18 @@
 import { IconVolume, IconVolume2 } from '@tabler/icons-react'
 import { useT } from '../../i18n/I18nProvider'
 import type { useSpeech } from '../../german/useSpeech'
+import { useCourse } from '../../lang/CourseContext'
+import { COURSE_TEXT } from '../../lang/text'
 
 export type Speech = ReturnType<typeof useSpeech>
 
 /** Ovoz yoʻq boʻlsa — tugma oʻrnida sokin yozuv (xato emas, ekran buzilmaydi). */
 export function NoVoice() {
   const t = useT()
+  const course = useCourse()
   return (
     <p role="note" className="rounded-xl bg-surface-2 px-3 py-3 text-center text-base text-ink-2">
-      {t('german.noVoice')}
+      {t(COURSE_TEXT[course.id].noVoice)}
     </p>
   )
 }

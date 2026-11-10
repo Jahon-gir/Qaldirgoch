@@ -2,7 +2,6 @@ import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } fro
 import { IconCheck, IconFlameFilled, IconVolume, IconX } from '@tabler/icons-react'
 import { Button } from '../../components/ui/Button'
 import { ProgressBar } from '../../components/ui/ProgressBar'
-import { VOCAB, wordById } from '../../content/german/words'
 import { useI18n } from '../../i18n/I18nProvider'
 import { useBack, useHistoryAnchor } from '../../lib/useHistoryAnchor'
 import { daysBetween, isFirstAttempt, pickOptions, sessionAnswer, sessionCurrent, sessionDone, sessionSummary, startSession, type Session } from '../../german/srs'
@@ -11,7 +10,7 @@ import { useWords } from '../../german/WordsProvider'
 import { useFeedback } from '../../ui/useFeedback'
 import { Exercise } from '../../components/vocab/ex/Exercise'
 import { reviewKinds, type ExerciseKind } from '../../german/exercises'
-import { useCourse } from '../../lang/CourseContext'
+import { useCourse, useCoursePaths } from '../../lang/CourseContext'
 
 /** Toʻgʻri javobdan keyin keyingi soʻzga oʻtish (xato javobda — "Davom etish" tugmasi). */
 export const RIGHT_ADVANCE_MS = 1500
@@ -22,14 +21,15 @@ function Footer({ children }: { children: ReactNode }) {
 
 function Question({ session, onAnswered }: { session: Session; onAnswered: (correct: boolean) => void }) {
   const { lang, t } = useI18n()
-  const speech = useSpeech(useCourse().speechLang)
+  const course = useCourse()
+  const speech = useSpeech(course.speechLang)
   const { words, today, answer } = useWords()
   const fx = useFeedback()
   const refs = useRef<Record<string, HTMLButtonElement | null>>({})
   const id = sessionCurrent(session)!
-  const word = wordById(id)!
-  // Variantlar shu savol uchun bir marta aralashtiriladi
-  const options = useMemo(() => pickOptions(word, VOCAB, lang), [word, lang])
+  const word = course.wordById(id)!
+  // Variantlar shu savol uchun bir marta aralashtiriladi (oʻqilishi koʻrsatilmaydi)
+  const options = useMemo(() => pickOptions(word, course.vocab, lang), [word, lang, course])
   const [picked, setPicked] = useState<string | null>(null)
   const answered = picked !== null
   const ok = answered && picked === word.id
@@ -55,7 +55,7 @@ function Question({ session, onAnswered }: { session: Session; onAnswered: (corr
     <div className="flex flex-1 flex-col gap-4">
       <p className="text-base text-ink-2">{t('review.question')}</p>
       <div className="flex flex-col items-center gap-3 py-4 text-center">
-        <h1 lang="de" className="break-words text-4xl font-bold">
+        <h1 lang={course.id} className="break-words text-4xl font-bold">
           {word.term}
         </h1>
         {speech.canSpeak() && (
@@ -116,6 +116,7 @@ function Question({ session, onAnswered }: { session: Session; onAnswered: (corr
 
 function Result({ session, onDone }: { session: Session; onDone: () => void }) {
   const { lang, t } = useI18n()
+  const course = useCourse()
   const { progress, streak } = useWords()
   const [showMistakes, setShowMistakes] = useState(false)
   const s = sessionSummary(session)
@@ -140,11 +141,11 @@ function Result({ session, onDone }: { session: Session; onDone: () => void }) {
           <div className="rounded-card bg-surface">
             <ul>
               {s.wrongIds.map((id) => {
-                const w = wordById(id)
+                const w = course.wordById(id)
                 if (!w) return null
                 return (
                   <li key={id} className="border-b border-line px-4 py-3 text-base last:border-0">
-                    <span lang="de" className="font-semibold">
+                    <span lang={course.id} className="font-semibold">
                       {w.term}
                     </span>{' '}
                     — <span className="text-ink-2">{w.tr[lang]}</span>
@@ -169,9 +170,11 @@ function Result({ session, onDone }: { session: Session; onDone: () => void }) {
 
 export default function ReviewPage() {
   const { t } = useI18n()
-  useHistoryAnchor('/til')
-  const back = useBack('/til')
   const course = useCourse()
+  const paths = useCoursePaths()
+  const wordById = course.wordById
+  useHistoryAnchor(paths.home)
+  const back = useBack(paths.home)
   const { dueFor, words, addDone, answer } = useWords()
   const speech = useSpeech(course.speechLang)
   const due = dueFor(course.id)

@@ -1,5 +1,5 @@
-import { DIRECTIONS, LESSONS, MODULES, type ChoiceExercise, type Direction, type Exercise, type Lesson, type MatchExercise, type Module } from '../content/german'
-import { ALL_RESULT_IDS } from '../lang/registry'
+import { DIRECTIONS, LESSONS, MODULES, type ChoiceExercise, type Direction, type Exercise, type Lesson, type MatchExercise, type Module, type SyllableExercise } from '../content/german'
+import { ALL_RESULT_IDS, COURSES } from '../lang/registry'
 import type { Answers } from '../profile/questions'
 
 /* ---------- Yoʻnalish ---------- */
@@ -32,28 +32,28 @@ export function effectiveDirection(p: { profession: Answers['profession']; germa
 export type Result = { lessonId: string; score: number; total: number; completedAt: string }
 export type Results = Record<string, Result>
 
-/** Daraja tartibi (nemischa); notanish daraja id'si — oxirida. */
-const LEVEL_ORDER: Record<string, number> = { A1: 0, A2: 1, B1: 2 }
+/** Daraja tartibi (kurs ichidagi oʻrni: A1 < A2 < B1, ko-H < ko-T1 < ko-T2); notanish daraja id'si — oxirida. */
+const LEVEL_ORDER: Record<string, number> = Object.fromEntries(COURSES.flatMap((c) => c.levels.map((lv, i) => [lv.id, i])))
 const levelOrder = (level: string) => LEVEL_ORDER[level] ?? Number.MAX_SAFE_INTEGER
 
 /** Umumiy modullar hammaga, kasbiy modullar faqat oʻz yoʻnalishiga. Daraja va tartib boʻyicha. */
-export function visibleModules(direction: Direction, modules: Module[] = MODULES): Module[] {
+export function visibleModules(direction: Direction, modules: readonly Module[] = MODULES): Module[] {
   return modules
     .filter((m) => m.direction === 'general' || m.direction === direction)
     .sort((a, b) => levelOrder(a.level) - levelOrder(b.level) || a.order - b.order)
 }
 
-export const lessonsOf = (moduleId: string, lessons: Lesson[] = LESSONS): Lesson[] =>
+export const lessonsOf = (moduleId: string, lessons: readonly Lesson[] = LESSONS): Lesson[] =>
   lessons.filter((l) => l.moduleId === moduleId).sort((a, b) => a.order - b.order)
 
-export function moduleProgress(moduleId: string, results: Results, lessons: Lesson[] = LESSONS) {
+export function moduleProgress(moduleId: string, results: Results, lessons: readonly Lesson[] = LESSONS) {
   const list = lessonsOf(moduleId, lessons)
   const done = list.filter((l) => l.id in results).length
   return { done, total: list.length, percent: list.length ? Math.round((done / list.length) * 100) : 0 }
 }
 
 /** level — daraja id'si (string: nemischa "A1", boshqa kurslar "ko-T1"). */
-export function levelProgress(level: string, direction: Direction, results: Results, modules: Module[] = MODULES, lessons: Lesson[] = LESSONS) {
+export function levelProgress(level: string, direction: Direction, results: Results, modules: readonly Module[] = MODULES, lessons: readonly Lesson[] = LESSONS) {
   let done = 0
   let total = 0
   for (const m of visibleModules(direction, modules).filter((x) => x.level === level)) {
@@ -65,21 +65,21 @@ export function levelProgress(level: string, direction: Direction, results: Resu
 }
 
 /** Koʻrinadigan darslar tartibli roʻyxati (daraja → modul → dars). */
-export function visibleLessons(direction: Direction, modules: Module[] = MODULES, lessons: Lesson[] = LESSONS): Lesson[] {
+export function visibleLessons(direction: Direction, modules: readonly Module[] = MODULES, lessons: readonly Lesson[] = LESSONS): Lesson[] {
   return visibleModules(direction, modules).flatMap((m) => lessonsOf(m.id, lessons))
 }
 
 /** Keyingi tugallanmagan dars ("Davom eting"); hammasi tugagan boʻlsa null. */
-export function nextUnfinished(direction: Direction, results: Results, modules: Module[] = MODULES, lessons: Lesson[] = LESSONS): Lesson | null {
+export function nextUnfinished(direction: Direction, results: Results, modules: readonly Module[] = MODULES, lessons: readonly Lesson[] = LESSONS): Lesson | null {
   return visibleLessons(direction, modules, lessons).find((l) => !(l.id in results)) ?? null
 }
 
 /** Modul ichida joriy dars: birinchi tugallanmagani. */
-export const currentInModule = (moduleId: string, results: Results, lessons: Lesson[] = LESSONS): Lesson | null =>
+export const currentInModule = (moduleId: string, results: Results, lessons: readonly Lesson[] = LESSONS): Lesson | null =>
   lessonsOf(moduleId, lessons).find((l) => !(l.id in results)) ?? null
 
 /** Shu darsdan keyingi dars (modul ichida, keyin keyingi modulning birinchisi); oxirgisi boʻlsa null. */
-export function nextLessonAfter(lessonId: string, direction: Direction, modules: Module[] = MODULES, lessons: Lesson[] = LESSONS): Lesson | null {
+export function nextLessonAfter(lessonId: string, direction: Direction, modules: readonly Module[] = MODULES, lessons: readonly Lesson[] = LESSONS): Lesson | null {
   const list = visibleLessons(direction, modules, lessons)
   const i = list.findIndex((l) => l.id === lessonId)
   return i >= 0 ? (list[i + 1] ?? null) : null
@@ -140,6 +140,11 @@ export function matchOutcome(ex: MatchExercise, wrongLeft: Iterable<string>): Ou
   const wrong = new Set(wrongLeft)
   const mistakes = ex.pairs.filter((p) => wrong.has(p.id)).map<Mistake>((p) => ({ key: p.id, de: p.term, tr: p.tr }))
   return { total: ex.pairs.length, correct: ex.pairs.length - mistakes.length, mistakes }
+}
+
+/** Boʻgʻin yigʻish: 1 birlik; xato boʻlsa toʻgʻri boʻgʻin va oʻqilishi xatolar roʻyxatiga. */
+export function syllableOutcome(ex: SyllableExercise, target: string, ok: boolean): Outcome {
+  return { total: 1, correct: ok ? 1 : 0, mistakes: ok ? [] : [{ key: ex.id, de: target, tr: ex.pron }] }
 }
 
 export function summarize(exercises: Exercise[], outcomes: Outcome[]) {

@@ -5,7 +5,7 @@ import { A1_M1_L4 } from './a1-m1-l4'
 import { A1_M1_L5 } from './a1-m1-l5'
 import { A1_M1_L6 } from './a1-m1-l6'
 import { l3, REVIEW } from './helpers'
-import { LEVELS, type Exercise, type Lesson, type Module } from './types'
+import { LEVELS, type GermanExercise, type Lesson, type Module } from './types'
 
 export * from './types'
 
@@ -30,7 +30,7 @@ export const LESSONS: Lesson[] = [
   lesson(6, 'test', 6, l3('Modul testi', 'Модул тести', 'Тест модуля'))
 ]
 
-const EXERCISES: Record<string, Exercise[]> = {
+const EXERCISES: Record<string, GermanExercise[]> = {
   'a1-m1-l1': A1_M1_L1,
   'a1-m1-l2': A1_M1_L2,
   'a1-m1-l3': A1_M1_L3,
@@ -39,7 +39,7 @@ const EXERCISES: Record<string, Exercise[]> = {
   'a1-m1-l6': A1_M1_L6
 }
 
-export const exercisesOf = (lessonId: string): Exercise[] => EXERCISES[lessonId] ?? []
+export const exercisesOf = (lessonId: string): GermanExercise[] => EXERCISES[lessonId] ?? []
 export const lessonById = (id: string) => LESSONS.find((l) => l.id === id)
 export const moduleById = (id: string) => MODULES.find((m) => m.id === id)
 export const LESSON_IDS: ReadonlySet<string> = new Set(LESSONS.map((l) => l.id))

@@ -119,7 +119,22 @@ body {
 .flap .wl { animation: flap-l 0.13s ease-in-out infinite alternate; }
 .flap .wr { animation: flap-r 0.13s ease-in-out infinite alternate; }
 
+/* Til tanlash (src/pages/LanguagePicker.tsx): bayroq suzishi, yashil toʻlqin, qulfli kafel silkinishi — faqat transform/opacity */
+@keyframes lp-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+@keyframes lp-wave { from { transform: scale(1); opacity: 0.6; } to { transform: scale(1.4); opacity: 0; } }
+@keyframes lp-shake { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-6px); } 40% { transform: translateX(6px); } 60% { transform: translateX(-4px); } 80% { transform: translateX(4px); } }
+@keyframes lp-toast { 0% { opacity: 0; transform: translateY(8px); } 12%, 85% { opacity: 1; transform: none; } 100% { opacity: 0; } }
+.lp-float { animation: lp-float 2.8s ease-in-out infinite; }
+.lp-wave { animation: lp-wave 1.8s ease-out infinite; }
+.lp-shake { animation: lp-shake 0.4s ease-in-out; }
+.lp-toast { animation: lp-toast 1.8s ease-out forwards; }
+
+/* Koreyscha matn: tizim shrifti (fayl yuklanmaydi — ilova hajmi oshmasin) */
+:lang(ko) { font-family: 'Noto Sans KR', 'Noto Sans CJK KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; }
+
 @media (prefers-reduced-motion: reduce) {
+  .lp-float, .lp-shake, .lp-toast { animation: none; }
+  .lp-wave { animation: none; opacity: 0; }
   .flap .wl, .flap .wr { animation: none; }
   .map-wave { animation: none; opacity: 0; }
   .sheet-tile, .sheet-up, .sheet-down, .dim-in, .dim-out, .ripple { animation: none; }

@@ -81,7 +81,7 @@ afterEach(() => {
 describe('Lugʻat ekrani', () => {
   it('Til ekranidagi "Soʻzlaringiz" kartochkasi Lugʻatga olib boradi', () => {
     seed()
-    renderApp('/til')
+    renderApp('/til/de')
     const link = screen.getByRole('link', { name: /Soʻzlaringiz: \d+ ta/ })
     fireEvent.click(link)
     expect(where()).toBe('/til/lugat')

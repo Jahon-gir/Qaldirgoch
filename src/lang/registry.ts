@@ -1,8 +1,9 @@
 import { DE_COURSE } from './de'
+import { KO_COURSE } from './ko'
 import type { Course, CourseId } from './types'
 
-/** Reyestrdagi kurslar. Koreys tili ('ko') keyingi versiyada qoʻshiladi. */
-export const COURSES: readonly Course[] = [DE_COURSE]
+/** Reyestrdagi kurslar. */
+export const COURSES: readonly Course[] = [DE_COURSE, KO_COURSE]
 
 /** Kurs (reyestrda boʻlmasa — standart nemis kursi). */
 export const courseOf = (id: CourseId): Course => COURSES.find((c) => c.id === id) ?? DE_COURSE

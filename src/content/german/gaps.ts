@@ -30,9 +30,10 @@ export const GAPS_STATUS: ContentStatus = 'review'
 /** Darsdagi barcha (nemischa → tarjima) juftlar: soʻz, misol gap, toʻldirilgan variant gap, juftlash. */
 export function lessonPhrases(lessonId: string): { de: string; tr: L3 }[] {
   return exercisesOf(lessonId).flatMap((ex) => {
-    if (ex.type === 'word') return [{ de: ex.term, tr: ex.tr }, { de: ex.example.de, tr: ex.example.tr }]
+    if (ex.type === 'word') return [{ de: ex.term, tr: ex.tr }, ...(ex.example ? [{ de: ex.example.term, tr: ex.example.tr }] : [])]
     if (ex.type === 'choice') return [{ de: ex.full, tr: ex.translation }]
-    return ex.pairs.map((p) => ({ de: p.term, tr: p.tr }))
+    if (ex.type === 'match') return ex.pairs.map((p) => ({ de: p.term, tr: p.tr }))
+    return []
   })
 }
 

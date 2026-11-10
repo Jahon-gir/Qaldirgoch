@@ -17,7 +17,7 @@ export type ContentStatus = 'draft' | 'review' | 'approved'
 /** level — daraja id'si (nemischa: Level; boshqa kurslar: oʻz id'si, masalan "ko-T1"). */
 export type Module = { id: string; level: string; direction: Direction; title: L3; order: number; status: ContentStatus }
 
-export type LessonKind = 'words' | 'phrases' | 'grammar' | 'test'
+export type LessonKind = 'words' | 'phrases' | 'grammar' | 'test' | 'letters'
 export type Lesson = { id: string; moduleId: string; title: L3; kind: LessonKind; minutes: number; order: number }
 
 /** Yangi soʻz: oʻrganilayotgan tilda, tarjima, talaffuz (tilga mos harflarda), Tabler ikonka nomi, misol gap. */
@@ -31,7 +31,8 @@ export type WordExercise = {
   tr: L3
   pron: L3
   icon: string
-  example: { de: string; tr: L3 }
+  /** Misol gap (darslardan). Koreys 1-modulida yoʻq (yangi gap toʻqilmaydi). */
+  example?: { term: string; tr: L3 }
   audioUrl?: string
 }
 
@@ -52,4 +53,33 @@ export type ChoiceExercise = {
 export type MatchPair = { id: string; term: string; tr: L3 }
 export type MatchExercise = { type: 'match'; id: string; prompt: L3; pairs: MatchPair[] }
 
-export type Exercise = WordExercise | ChoiceExercise | MatchExercise
+/**
+ * Yangi harf(lar) kartochkasi (koreys alifbosi): 1–3 harf, har birining lotincha tovushi, qisqa izoh, ixtiyoriy misol soʻz.
+ * Lugʻatga TUSHMAYDI (soʻz emas).
+ */
+export type LetterExercise = {
+  type: 'letter'
+  id: string
+  letters: { char: string; sound: string }[]
+  note: L3
+  example?: { term: string; pron: L3; tr: L3 }
+}
+
+/**
+ * Boʻgʻin yigʻish: undosh + unli (+ ixtiyoriy ostki harf) katakchalari; pastda harf tugmalari (toʻgʻrilari + chalgʻituvchilar shu darsdan).
+ * Javob: compose(initial, vowel, final) — Unicode boʻgʻin.
+ */
+export type SyllableExercise = {
+  type: 'syllable'
+  id: string
+  initial: string
+  vowel: string
+  final?: string
+  /** Oʻqilishi (masalan «na»). */
+  pron: L3
+  distractors: string[]
+}
+
+export type Exercise = WordExercise | ChoiceExercise | MatchExercise | LetterExercise | SyllableExercise
+/** Nemis darslaridagi mashqlar (harf va boʻgʻin mashqlari yoʻq). */
+export type GermanExercise = WordExercise | ChoiceExercise | MatchExercise

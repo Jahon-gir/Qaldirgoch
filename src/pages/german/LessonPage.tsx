@@ -2,33 +2,38 @@ import { useEffect, useRef, useState } from 'react'
 import { Navigate, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { IconCheck, IconX } from '@tabler/icons-react'
 import { ChoiceStep, MatchStep, WordStep } from '../../components/german/steps'
+import { LetterStep, SyllableStep } from '../../components/korean/steps'
 import { ConfirmExit } from '../../components/german/ConfirmExit'
 import { ListenIcon, NoVoice } from '../../components/german/Listen'
 import { LearnedWords } from '../../components/vocab/LearnedWords'
 import { Button } from '../../components/ui/Button'
 import { Card } from '../../components/ui/Card'
 import { ProgressBar } from '../../components/ui/ProgressBar'
-import { exercisesOf, lessonById, type Lesson } from '../../content/german'
+import type { Lesson } from '../../content/german'
 import { useI18n } from '../../i18n/I18nProvider'
 import { useDirection } from '../../german/useDirection'
 import { useLessons } from '../../german/LessonsProvider'
 import { nextLessonAfter, summarize, type Outcome } from '../../german/logic'
 import { useSpeech } from '../../german/useSpeech'
 import { useWords } from '../../german/WordsProvider'
-import { useCourse } from '../../lang/CourseContext'
-import { wordIdsOfLesson } from '../../content/german/words'
+import { useCourse, useCoursePaths } from '../../lang/CourseContext'
 import { FROM_MODULE, useBackToModule, useHistoryAnchor } from '../../lib/useHistoryAnchor'
+import { coursePaths } from '../../lang/paths'
+import { HangulText } from '../../components/korean/HangulText'
 
 function ResultView({ lesson, summary }: { lesson: Lesson; summary: ReturnType<typeof summarize> }) {
   const { lang, t } = useI18n()
   const nav = useNavigate()
   const loc = useLocation()
-  const speech = useSpeech(useCourse().speechLang)
-  const { direction } = useDirection()
+  const course = useCourse()
+  const paths = useCoursePaths()
+  const speech = useSpeech(course.speechLang)
+  const { direction: profileDirection } = useDirection()
+  const direction = course.directions ? profileDirection : 'general'
   const { progress } = useWords()
-  const next = nextLessonAfter(lesson.id, direction)
+  const next = nextLessonAfter(lesson.id, direction, course.modules, course.lessons)
   // Darsga modul ekranidan kiriladi: orqaga qaytish tarixni ikkilantirmaydi ("orqaga" tugmasi modulda qolib ketmaydi)
-  const toModule = useBackToModule(`/til/modul/${lesson.moduleId}`)
+  const toModule = useBackToModule(paths.module(lesson.moduleId))
   return (
     <div className="flex flex-1 flex-col gap-4">
       <div className="flex flex-col items-center gap-2 pt-4 text-center">
@@ -36,7 +41,9 @@ function ResultView({ lesson, summary }: { lesson: Lesson; summary: ReturnType<t
           <IconCheck size={56} stroke={3} aria-hidden />
         </span>
         <h1 className="text-2xl font-semibold">{t('german.done')}</h1>
-        <p className="text-base text-ink-2">{lesson.title[lang]}</p>
+        <p className="text-base text-ink-2">
+          <HangulText text={lesson.title[lang]} />
+        </p>
         {progress.met && (
           <p role="status" className="mt-1 inline-flex items-center gap-1.5 rounded-full bg-success-soft px-3 py-1.5 text-base font-semibold text-success-text">
             <IconCheck size={18} aria-hidden />
@@ -68,7 +75,7 @@ function ResultView({ lesson, summary }: { lesson: Lesson; summary: ReturnType<t
               <li key={m.key}>
                 <Card className="flex items-center gap-3 py-3">
                   <span className="flex-1">
-                    <span lang="de" className="block text-base font-semibold">
+                    <span lang={course.id} className="block text-base font-semibold">
                       {m.de}
                     </span>
                     <span className="block text-base text-ink-2">{m.tr[lang]}</span>
@@ -81,9 +88,9 @@ function ResultView({ lesson, summary }: { lesson: Lesson; summary: ReturnType<t
         </section>
       )}
       <div className="sticky bottom-0 -mx-4 mt-auto space-y-2 bg-bg px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-3">
-        {next && <Button onClick={() => nav(`/til/dars/${next.id}`, { replace: true, state: loc.state })}>{t('german.nextLesson')}</Button>}
-        {wordIdsOfLesson(lesson.id).length > 0 && (
-          <Button variant="secondary" onClick={() => nav(`/til/lugat/${lesson.id}`, { replace: true })}>
+        {next && <Button onClick={() => nav(paths.lesson(next.id), { replace: true, state: loc.state })}>{t('german.nextLesson')}</Button>}
+        {course.wordIdsOfLesson(lesson.id).length > 0 && (
+          <Button variant="secondary" onClick={() => nav(paths.vocabLesson(lesson.id), { replace: true })}>
             {t('vocab.practice')}
           </Button>
         )}
@@ -98,12 +105,14 @@ function ResultView({ lesson, summary }: { lesson: Lesson; summary: ReturnType<t
 function LessonRunner({ lesson }: { lesson: Lesson }) {
   const { t } = useI18n()
   const { record } = useLessons()
-  const leave = useBackToModule(`/til/modul/${lesson.moduleId}`)
+  const course = useCourse()
+  const paths = useCoursePaths()
+  const leave = useBackToModule(paths.module(lesson.moduleId))
   const { learn, addDone } = useWords()
-  const speech = useSpeech(useCourse().speechLang)
+  const speech = useSpeech(course.speechLang)
   // Toʻgʻridan-toʻgʻri ochilsa tarixga modul qoʻyiladi — "Modulga qaytish" bir qadam orqaga boʻladi
-  useHistoryAnchor(`/til/modul/${lesson.moduleId}`, FROM_MODULE)
-  const exercises = exercisesOf(lesson.id)
+  useHistoryAnchor(paths.module(lesson.moduleId), FROM_MODULE)
+  const exercises = course.exercisesOf(lesson.id)
   const [i, setI] = useState(0)
   const outcomes = useRef<Outcome[]>([])
   const finished = useRef(false)
@@ -122,7 +131,7 @@ function LessonRunner({ lesson }: { lesson: Lesson }) {
     finished.current = true
     const s = summarize(exercises, outcomes.current)
     record(lesson.id, s.score, s.total)
-    learn(wordIdsOfLesson(lesson.id)) // darsdagi soʻzlar takrorlash qutisiga (ertaga keladi)
+    learn(course.wordIdsOfLesson(lesson.id)) // darsdagi soʻzlar takrorlash qutisiga (ertaga keladi)
     addDone() // kunlik maqsad +1: dars oxirigacha tugadi (qayta tugatish ham sanaladi); tashlab chiqilgani sanalmaydi
     setSummary(s)
   }
@@ -147,6 +156,8 @@ function LessonRunner({ lesson }: { lesson: Lesson }) {
             {ex.type === 'word' && <WordStep ex={ex} speech={speech} onDone={onStepDone} />}
             {ex.type === 'choice' && <ChoiceStep ex={ex} onDone={onStepDone} />}
             {ex.type === 'match' && <MatchStep ex={ex} onDone={onStepDone} />}
+            {ex.type === 'letter' && <LetterStep ex={ex} speech={speech} onDone={onStepDone} />}
+            {ex.type === 'syllable' && <SyllableStep ex={ex} onDone={onStepDone} />}
           </div>
         </>
       )}
@@ -157,7 +168,8 @@ function LessonRunner({ lesson }: { lesson: Lesson }) {
 
 export default function LessonPage() {
   const { lessonId = '' } = useParams()
-  const lesson = lessonById(lessonId)
-  if (!lesson || exercisesOf(lessonId).length === 0) return <Navigate to="/til" replace />
+  const course = useCourse()
+  const lesson = course.lessonById(lessonId)
+  if (!lesson || course.exercisesOf(lessonId).length === 0) return <Navigate to={coursePaths(course.id).home} replace />
   return <LessonRunner key={lesson.id} lesson={lesson} />
 }

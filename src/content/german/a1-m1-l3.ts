@@ -1,5 +1,5 @@
 import { choice, l3, match, word } from './helpers'
-import type { Exercise } from './types'
+import type { GermanExercise as Exercise } from './types'
 
 /** A1 · 1-modul · 3-dars: Oʻzingizni tanishtiring (ich / du / Sie) */
 export const A1_M1_L3: Exercise[] = [
@@ -7,25 +7,25 @@ export const A1_M1_L3: Exercise[] = [
     id: 'a1-m1-l3-e1', term: 'ich heiße', icon: 'id',
     tr: l3('mening ismim', 'менинг исмим', 'меня зовут'),
     pron: l3('ix hay-se', 'их хай-се', 'их хай-се'),
-    example: { de: 'Ich heiße Anna.', tr: l3('Mening ismim Anna.', 'Менинг исмим Анна.', 'Меня зовут Анна.') }
+    example: { term: 'Ich heiße Anna.', tr: l3('Mening ismim Anna.', 'Менинг исмим Анна.', 'Меня зовут Анна.') }
   }),
   word({
     id: 'a1-m1-l3-e2', term: 'ich bin', icon: 'user',
     tr: l3('men … man', 'мен … ман', 'я …'),
     pron: l3('ix bin', 'их бин', 'их бин'),
-    example: { de: 'Ich bin Anna.', tr: l3('Men Annaman.', 'Мен Аннаман.', 'Я Анна.') }
+    example: { term: 'Ich bin Anna.', tr: l3('Men Annaman.', 'Мен Аннаман.', 'Я Анна.') }
   }),
   word({
     id: 'a1-m1-l3-e3', term: 'du heißt', icon: 'users',
     tr: l3('sening isming', 'сенинг исминг', 'тебя зовут'),
     pron: l3('du hayst', 'ду хайст', 'ду хайст'),
-    example: { de: 'Du heißt Max.', tr: l3('Sening isming Maks.', 'Сенинг исминг Макс.', 'Тебя зовут Макс.') }
+    example: { term: 'Du heißt Max.', tr: l3('Sening isming Maks.', 'Сенинг исминг Макс.', 'Тебя зовут Макс.') }
   }),
   word({
     id: 'a1-m1-l3-e4', term: 'Sie heißen', icon: 'heart-handshake',
     tr: l3('sizning ismingiz', 'сизнинг исмингиз', 'вас зовут'),
     pron: l3('zi hay-sen', 'зи хай-сен', 'зи хай-сен'),
-    example: { de: 'Sie heißen Anna Weber.', tr: l3('Sizning ismingiz Anna Veber.', 'Сизнинг исмингиз Анна Вебер.', 'Вас зовут Анна Вебер.') }
+    example: { term: 'Sie heißen Anna Weber.', tr: l3('Sizning ismingiz Anna Veber.', 'Сизнинг исмингиз Анна Вебер.', 'Вас зовут Анна Вебер.') }
   }),
   choice({
     id: 'a1-m1-l3-e5', sentence: 'Ich ___ Anna.',

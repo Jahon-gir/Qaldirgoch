@@ -1,6 +1,7 @@
 import { VOCAB, type VocabWord } from '../content/german/words'
 import { DE_COURSE } from '../lang/de'
 import type { Course } from '../lang/types'
+import { syllablesOf } from '../korean/hangul'
 import { normalize } from './answer'
 import { shuffled } from './vocab'
 
@@ -57,6 +58,23 @@ export const lettersMatch = (placed: string[], term: string, locale = DE_COURSE.
 export function lettersPrefixOk(placed: string[], term: string, locale = DE_COURSE.letterLocale) {
   const t = targetLetters(term)
   return placed.every((c, i) => c.toLocaleLowerCase(locale) === t[i]?.toLocaleLowerCase(locale))
+}
+
+/* ---------- Boʻgʻin bloklaridan yigʻish (koreyscha: features.build === 'syllables') ---------- */
+
+/** Soʻz boʻgʻinlari (Hangul bloklari, boʻsh joysiz). */
+export const syllableBlocks = (term: string) => syllablesOf(term)
+
+/** Bir boʻgʻinli soʻz (나, 네, 개) yigʻilmaydi — oʻrniga Test. */
+export const canBuildSyllables = (term: string) => syllableBlocks(term).length >= 2
+
+/** Boʻgʻin tugmalari: soʻz boʻgʻinlari + 2 ta chalgʻituvchi boʻgʻin (shu moduldagi boshqa soʻzlardan, soʻzda yoʻqlari). Tartib aralash. */
+export function syllableTiles(word: VocabWord, vocab: readonly VocabWord[], rand: () => number = Math.random, extra = 2): Tile[] {
+  const own = syllableBlocks(word.term)
+  const have = new Set(own)
+  const pool = [...new Set(vocab.filter((w) => w.moduleId === word.moduleId && w.id !== word.id).flatMap((w) => syllableBlocks(w.term)))].filter((c) => !have.has(c))
+  const distract = shuffled(pool, rand).slice(0, extra)
+  return shuffled([...own, ...distract].map((text, i) => ({ id: `s${i}`, text })), rand)
 }
 
 /* ---------- Soʻz boʻlaklaridan yigʻish (3+ soʻz) ---------- */

@@ -8,9 +8,6 @@ import { Exercise } from '../../components/vocab/ex/Exercise'
 import { GapStep } from '../../components/vocab/ex/GapStep'
 import { Footer, VocabHeader } from '../../components/vocab/parts'
 import { useAuth } from '../../auth/AuthProvider'
-import { moduleById } from '../../content/german'
-import { gapById } from '../../content/german/gaps'
-import { wordById } from '../../content/german/words'
 import { useI18n } from '../../i18n/I18nProvider'
 import { useBack, useHistoryAnchor } from '../../lib/useHistoryAnchor'
 import { buildTest, resultLine, isPassed, isScopeUnlocked, passMark, scopeInfo, testId, testSize, type Question, type ScopeInfo } from '../../german/finalTest'
@@ -20,7 +17,9 @@ import { localDay } from '../../german/srs'
 import { useSpeech } from '../../german/useSpeech'
 import { useWords } from '../../german/WordsProvider'
 import { cleanText } from '../../profile/ProfileProvider'
-import { useCourse } from '../../lang/CourseContext'
+import { useCourse, useCoursePaths } from '../../lang/CourseContext'
+import { COURSE_TEXT, levelName } from '../../lang/text'
+import { coursePaths } from '../../lang/paths'
 import { formatDate } from '../StepDetail'
 
 const accentBtn =
@@ -31,25 +30,30 @@ type Done = { score: number; total: number; wrongWords: string[] }
 /** /til/test/:scope — modul ("a1-m1") yoki daraja ("level-A1") yakuniy testi. Ochilmagan boʻlsa — Til ekraniga. */
 export default function FinalTestPage() {
   const { scope = '' } = useParams()
-  const { direction } = useDirection()
+  const course = useCourse()
+  const { direction: profileDirection } = useDirection()
+  const direction = course.directions ? profileDirection : 'general'
   const { results } = useLessons()
-  const info = scopeInfo(scope, direction)
-  if (!info || !isScopeUnlocked(info, results) || testSize(info) === 0) return <Navigate to="/til" replace />
+  const info = scopeInfo(scope, direction, course)
+  if (!info || !isScopeUnlocked(info, results) || testSize(info) === 0) return <Navigate to={coursePaths(course.id).home} replace />
   return <FinalTest key={scope} info={info} />
 }
 
 function FinalTest({ info }: { info: ScopeInfo }) {
   const { lang, t } = useI18n()
-  useHistoryAnchor('/til')
-  const back = useBack('/til')
   const course = useCourse()
+  const paths = useCoursePaths()
+  const { wordById, gapById, moduleById } = course
+  useHistoryAnchor(paths.home)
+  const back = useBack(paths.home)
   const speech = useSpeech(course.speechLang)
   const auth = useAuth()
   const { record } = useLessons()
   const { markMistakes, addDone } = useWords()
   const mod = info.type === 'module' ? moduleById(info.moduleIds[0]) : undefined
-  const title = mod ? t('ft.moduleTitle', { n: mod.order }) : t('ft.levelTitle', { level: info.level })
-  const sub = mod ? mod.title[lang] : t('german.levelTitle', { level: info.level })
+  const lv = levelName(course, info.level, lang)
+  const title = mod ? t('ft.moduleTitle', { n: mod.order }) : t('ft.levelTitle', { level: lv })
+  const sub = mod ? mod.title[lang] : t('german.levelTitle', { level: lv })
   const size = testSize(info)
 
   const [questions, setQuestions] = useState<Question[] | null>(null)
@@ -101,7 +105,7 @@ function FinalTest({ info }: { info: ScopeInfo }) {
                 <IconCheck size={56} stroke={3} aria-hidden />
               </span>
             )}
-            <h1 className="text-2xl font-semibold">{passed ? (mod ? t('ft.moduleDone') : t('ft.levelDone', { level: info.level })) : t('ft.notPassedTitle')}</h1>
+            <h1 className="text-2xl font-semibold">{passed ? (mod ? t('ft.moduleDone') : t('ft.levelDone', { level: lv })) : t('ft.notPassedTitle')}</h1>
             <p className="text-base text-ink-2">{t('ft.summary', { total: done.total, score: done.score })}</p>
             {!passed && <p className="text-base font-semibold">{t('ft.more', { need: passMark(done.total), got: done.score })}</p>}
           </div>
@@ -113,7 +117,7 @@ function FinalTest({ info }: { info: ScopeInfo }) {
               <p className="break-words text-base font-semibold">{line}</p>
             </section>
           )}
-          {passed && <p className="text-base text-ink-2">{t('ft.notOfficial')}</p>}
+          {passed && <p className="text-base text-ink-2">{t(COURSE_TEXT[course.id].ftNotOfficial)}</p>}
           {done.wrongWords.length > 0 && (
             <section aria-labelledby="ft-added" className="rounded-xl bg-warn-soft px-4 py-3 text-base text-warn-text">
               <h2 id="ft-added" className="font-semibold">
@@ -124,7 +128,7 @@ function FinalTest({ info }: { info: ScopeInfo }) {
                   const w = wordById(id)
                   return w ? (
                     <li key={id}>
-                      <span lang="de" className="font-semibold">
+                      <span lang={course.id} className="font-semibold">
                         {w.term}
                       </span>{' '}
                       — {w.tr[lang]}
@@ -188,7 +192,7 @@ function FinalTest({ info }: { info: ScopeInfo }) {
         </div>
         <Card>
           <h2 className="text-lg font-semibold">{t('ft.insideTitle')}</h2>
-          <p className="mt-1 text-base">{t('ft.inside')}</p>
+          <p className="mt-1 text-base">{t(COURSE_TEXT[course.id].ftInside)}</p>
         </Card>
         <p className="flex items-center gap-2 px-1 text-base text-ink-2">
           <IconRepeat size={20} aria-hidden />

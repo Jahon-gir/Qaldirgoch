@@ -3,6 +3,7 @@ import { IconCheck, IconSnail, IconVolume, IconX } from '@tabler/icons-react'
 import { useI18n } from '../../../i18n/I18nProvider'
 import { pickVocabOptions } from '../../../german/vocab'
 import { useFeedback } from '../../../ui/useFeedback'
+import { useCourse } from '../../../lang/CourseContext'
 import { ContinueFooter, type ExProps } from './common'
 
 export const LISTEN_RATE = 0.8
@@ -11,8 +12,9 @@ export const LISTEN_SLOW = 0.45
 /** Tinglab topish: ekranda yozuv yoʻq; 4 ta yozma nemischa variant. Ochilganda bir marta oʻqiladi. */
 export function ListenStep({ word, speech, onAnswer, onDone }: ExProps) {
   const { lang, t } = useI18n()
+  const course = useCourse()
   const fx = useFeedback()
-  const options = useMemo(() => pickVocabOptions(word, 'tr', lang), [word, lang])
+  const options = useMemo(() => pickVocabOptions(word, 'tr', lang, Math.random, course.vocab), [word, lang, course])
   const [picked, setPicked] = useState<string | null>(null)
   const refs = useRef<Record<string, HTMLButtonElement | null>>({})
   const played = useRef(false)
@@ -74,7 +76,7 @@ export function ListenStep({ word, speech, onAnswer, onDone }: ExProps) {
               className={`flex min-h-[48px] w-full items-center justify-between gap-3 rounded-xl border-2 px-4 py-2 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${cls} ${fxCls}`}
             >
               <span>
-                <span lang="de" className="block">
+                <span lang={course.id} className="block">
                   {o.text}
                 </span>
                 {state === 'right' && <span className="block text-base font-normal">{word.tr[lang]}</span>}

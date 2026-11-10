@@ -1,5 +1,5 @@
 import { choice, l3 } from './helpers'
-import type { Exercise } from './types'
+import type { GermanExercise as Exercise } from './types'
 
 /** A1 · 1-modul · 6-dars: Modul testi (1–5-darslardan 10 savol) */
 export const A1_M1_L6: Exercise[] = [

@@ -1,8 +1,9 @@
+import type { CountryId } from '../content/countries'
 import type { GapItem } from '../content/german/gaps'
 import type { Direction, Exercise, L3, Lesson, Module } from '../content/german/types'
 
 /**
- * Til kurslari. Hozir reyestrda faqat nemis tili ('de'); koreys tili ('ko') keyingi versiyada qoʻshiladi.
+ * Til kurslari: nemis ('de') va koreys ('ko'). Qulfli tillar (yapon, ingliz) CourseId emas — faqat katalogda (LANGUAGE_CATALOG).
  *
  * ID QOIDASI (serverda saqlanadi — bir marta berilgach oʻzgarmaydi):
  * - Nemischa id'lar prefikssiz va AYNAN avvalgidek: dars "a1-m1-l1", soʻz "a1-m1-guten-morgen",
@@ -17,9 +18,10 @@ export const COURSE_IDS: readonly CourseId[] = ['de', 'ko']
 export const isCourseId = (v: unknown): v is CourseId => typeof v === 'string' && (COURSE_IDS as readonly string[]).includes(v)
 
 /** Lugʻatdagi soʻz: faqat darslardagi "word" mashqlaridan olinadi (yangi soʻz toʻqilmaydi). term — oʻrganilayotgan tilda. */
-export type VocabWord = { id: string; moduleId: string; lessonId: string; exerciseId: string; term: string; tr: L3 }
+export type VocabWord = { id: string; moduleId: string; lessonId: string; exerciseId: string; term: string; tr: L3; pron: L3 }
 
-export type CourseLevel = { id: string; locked: boolean }
+/** Daraja: label boʻlmasa ekranda id koʻrsatiladi (nemischa "A1"). */
+export type CourseLevel = { id: string; locked: boolean; label?: L3 }
 
 export type CourseFeatures = {
   /** Artikl mashqi (der/die/das) bormi. */
@@ -28,10 +30,15 @@ export type CourseFeatures = {
   write: boolean
   /** Yigʻish: harflardan yoki boʻgʻinlardan ('syllables' — keyingi versiyada). */
   build: 'letters' | 'syllables'
+  /** Lugʻat Roʻyxati va Kartochkasida oʻqilishi (pron) koʻrsatiladimi (lotin boʻlmagan yozuv — koreyscha). */
+  pron: boolean
 }
 
-export type Course = {
+/** Kurs taʼrifi (kontent). Qidiruv funksiyalari makeCourse() da qoʻshiladi. */
+export type CourseDef = {
   id: CourseId
+  /** Tanlash ekrani va sarlavhadagi bayroq. */
+  flag: CountryId
   /** Ovoz (speechSynthesis va SpeechRecognition) tili. */
   speechLang: 'de-DE' | 'ko-KR'
   levels: readonly CourseLevel[]
@@ -47,4 +54,15 @@ export type Course = {
   normalize: (s: string) => string
   /** Harflarni katta-kichik farqsiz solishtirish uchun locale (toLocaleLowerCase). */
   letterLocale: string
+}
+
+/** Kurs: taʼrif + tez qidiruv (Map bilan). */
+export type Course = CourseDef & {
+  moduleById: (id: string) => Module | undefined
+  lessonById: (id: string) => Lesson | undefined
+  wordById: (id: string) => VocabWord | undefined
+  wordOfExercise: (exerciseId: string) => VocabWord | undefined
+  gapById: (id: string) => GapItem | undefined
+  /** Dars tugaganda takrorlash qutisiga tushadigan soʻzlar. */
+  wordIdsOfLesson: (lessonId: string) => string[]
 }

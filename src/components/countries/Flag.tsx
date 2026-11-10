@@ -21,3 +21,20 @@ export function Flag({ id, dim = false }: { id: CountryId; dim?: boolean }) {
   const [w, h] = [48, 32]
   return <img src={FLAGS[id]} alt="" width={w} height={h} className={`shrink-0 rounded-[4px] border-[0.5px] border-ink/25 object-cover ${dim ? 'opacity-60' : ''}`} style={{ width: w, height: h }} />
 }
+
+/**
+ * Dumaloq bayroq (til tanlash va kurs sarlavhasi): asl 4:3 SVG doiraga qirqiladi (object-fit: cover).
+ * gray — qulfli til (oq-qora va xira).
+ */
+export function RoundFlag({ id, size, gray = false }: { id: CountryId; size: number; gray?: boolean }) {
+  return (
+    <img
+      src={FLAGS[id]}
+      alt=""
+      width={size}
+      height={size}
+      className={`block shrink-0 rounded-full border-[0.5px] border-ink/20 object-cover ${gray ? 'opacity-50 grayscale' : ''}`}
+      style={{ width: size, height: size }}
+    />
+  )
+}
