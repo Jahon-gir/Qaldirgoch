@@ -3,6 +3,7 @@ import { IconArrowBackUp, IconBulb } from '@tabler/icons-react'
 import { useI18n } from '../../../i18n/I18nProvider'
 import { chunksMatch, chunksOf, chunkTiles, isSentence, letterTiles, lettersMatch, lettersPrefixOk, targetLetters, type Tile } from '../../../german/exercises'
 import { useFeedback } from '../../../ui/useFeedback'
+import { useCourse } from '../../../lang/CourseContext'
 import { ContinueFooter, Prompt, Verdict, type ExProps } from './common'
 
 const tileCls =
@@ -12,7 +13,7 @@ const toolCls =
 
 /** Harflardan (2 soʻzgacha) yoki soʻz boʻlaklaridan (3+ soʻz) yigʻish. Savol doim tarjima tilida. */
 export function BuildStep(p: ExProps) {
-  return isSentence(p.word.de) ? <Chunks {...p} /> : <Letters {...p} />
+  return isSentence(p.word.term) ? <Chunks {...p} /> : <Letters {...p} />
 }
 
 function useFinish({ word, speech, onAnswer }: ExProps) {
@@ -23,7 +24,7 @@ function useFinish({ word, speech, onAnswer }: ExProps) {
     setResult(ok)
     if (ok) {
       fx.right(box.current)
-      speech.speak(word.de)
+      speech.speak(word.term)
     } else fx.wrong()
     onAnswer?.(ok)
   }
@@ -33,8 +34,9 @@ function useFinish({ word, speech, onAnswer }: ExProps) {
 function Letters(props: ExProps) {
   const { word, onDone } = props
   const { lang, t } = useI18n()
+  const loc = useCourse().letterLocale
   const tiles = useMemo(() => letterTiles(word), [word])
-  const letters = useMemo(() => targetLetters(word.de), [word])
+  const letters = useMemo(() => targetLetters(word.term), [word])
   const [placed, setPlaced] = useState<Tile[]>([])
   const { result, finish, box } = useFinish(props)
   const done = result !== null
@@ -43,24 +45,24 @@ function Letters(props: ExProps) {
   const commit = (next: Tile[]) => {
     setPlaced(next)
     // Hamma kataklar toʻlganda avtomatik tekshiriladi (katta-kichik farqsiz)
-    if (next.length === letters.length) finish(lettersMatch(next.map((x) => x.text), word.de))
+    if (next.length === letters.length) finish(lettersMatch(next.map((x) => x.text), word.term, loc))
   }
   const put = (tile: Tile) => !done && !used.has(tile.id) && placed.length < letters.length && commit([...placed, tile])
   const undo = () => !done && setPlaced(placed.slice(0, -1))
   const hint = () => {
     if (done) return
     // Qoʻyilganlar notoʻgʻri boʻlsa — avval hammasi tozalanadi
-    const base = lettersPrefixOk(placed.map((x) => x.text), word.de) ? placed : []
+    const base = lettersPrefixOk(placed.map((x) => x.text), word.term, loc) ? placed : []
     const need = letters[base.length]
     const free = tiles.filter((x) => !base.some((b) => b.id === x.id))
-    const tile = free.find((x) => x.text === need) ?? free.find((x) => x.text.toLocaleLowerCase('de') === need.toLocaleLowerCase('de'))
+    const tile = free.find((x) => x.text === need) ?? free.find((x) => x.text.toLocaleLowerCase(loc) === need.toLocaleLowerCase(loc))
     if (tile) commit([...base, tile])
     else setPlaced(base)
   }
 
   // Kataklar: soʻzlar orasida oraliq (boʻsh joy kiritilmaydi)
   let k = 0
-  const groups = word.de.split(' ').map((part) => [...part.normalize('NFC')].map(() => k++))
+  const groups = word.term.split(' ').map((part) => [...part.normalize('NFC')].map(() => k++))
   const slotTone = result === null ? 'border-ink-3' : result ? 'border-success text-success-text' : 'border-danger text-danger-text'
   const sofar = placed.map((x) => x.text).join('')
 
@@ -79,7 +81,7 @@ function Letters(props: ExProps) {
         ))}
       </div>
       {done ? (
-        <Verdict tone={result ? 'right' : 'wrong'}>{result ? t('ex.rightIs', { t: word.de }) : t('ex.wrong', { t: word.de })}</Verdict>
+        <Verdict tone={result ? 'right' : 'wrong'}>{result ? t('ex.rightIs', { t: word.term }) : t('ex.wrong', { t: word.term })}</Verdict>
       ) : (
         <>
           <div className="flex flex-wrap justify-center gap-2" role="group" aria-label={t('ex.buildQ')}>
@@ -110,7 +112,7 @@ function Chunks(props: ExProps) {
   const { word, onDone } = props
   const { lang, t } = useI18n()
   const tiles = useMemo(() => chunkTiles(word), [word])
-  const need = chunksOf(word.de).length
+  const need = chunksOf(word.term).length
   const [placed, setPlaced] = useState<Tile[]>([])
   const { result, finish, box } = useFinish(props)
   const done = result !== null
@@ -118,7 +120,7 @@ function Chunks(props: ExProps) {
     if (done || placed.some((x) => x.id === tile.id)) return
     const next = [...placed, tile]
     setPlaced(next)
-    if (next.length === need) finish(chunksMatch(next.map((x) => x.text), word.de))
+    if (next.length === need) finish(chunksMatch(next.map((x) => x.text), word.term))
   }
   const takeBack = (tile: Tile) => !done && setPlaced(placed.filter((x) => x.id !== tile.id))
   const lineTone = result === null ? 'border-line' : result ? 'border-success' : 'border-danger'
@@ -138,7 +140,7 @@ function Chunks(props: ExProps) {
         ))}
       </div>
       {done ? (
-        <Verdict tone={result ? 'right' : 'wrong'}>{result ? t('ex.rightIs', { t: word.de }) : t('ex.wrong', { t: word.de })}</Verdict>
+        <Verdict tone={result ? 'right' : 'wrong'}>{result ? t('ex.rightIs', { t: word.term }) : t('ex.wrong', { t: word.term })}</Verdict>
       ) : (
         <div className="flex flex-wrap justify-center gap-2" role="group" aria-label={t('ex.chunksQ')}>
           {tiles.map((x) => (

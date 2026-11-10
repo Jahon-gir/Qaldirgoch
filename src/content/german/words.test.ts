@@ -38,11 +38,11 @@ describe('lugʻat — faqat darslardagi soʻzlar', () => {
 
   it('har soʻz darsdagi word mashqidan, tarjima uch tilda', () => {
     const fromLessons = LESSONS.flatMap((l) => exercisesOf(l.id)).filter((e) => e.type === 'word')
-    expect(VOCAB).toHaveLength(new Set(fromLessons.map((e) => e.de)).size)
+    expect(VOCAB).toHaveLength(new Set(fromLessons.map((e) => e.term)).size)
     expect(WORD_IDS.size).toBe(VOCAB.length)
     for (const w of VOCAB) {
       const ex = fromLessons.find((e) => e.id === w.exerciseId)!
-      expect(ex.de).toBe(w.de)
+      expect(ex.term).toBe(w.term)
       expect(w.tr).toBe(ex.tr)
       for (const lang of ['uz', 'uz-Cyrl', 'ru'] as const) expect(w.tr[lang].trim()).not.toBe('')
       expect(wordById(w.id)).toBe(w)

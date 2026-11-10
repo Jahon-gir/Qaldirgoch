@@ -24,12 +24,12 @@ export function WordStep({ ex, speech, onDone }: { ex: WordExercise; speech: Spe
       <div className="flex flex-col items-center gap-3 pt-2 text-center">
         <span className="flex h-24 w-24 items-center justify-center rounded-full bg-accent-soft text-accent-strong">{Icon && <Icon size={48} aria-hidden />}</span>
         <h2 lang="de" className="break-words text-3xl font-bold">
-          {ex.de}
+          {ex.term}
         </h2>
         <p className="text-xl">{ex.tr[lang]}</p>
         <p className="text-base text-ink-2">{ex.pron[lang]}</p>
       </div>
-      <ListenButtons speech={speech} text={ex.de} audioUrl={ex.audioUrl} />
+      <ListenButtons speech={speech} text={ex.term} audioUrl={ex.audioUrl} />
       <Card>
         <p lang="de" className="text-base font-semibold">
           {ex.example.de}
@@ -193,7 +193,7 @@ export function MatchStep({ ex, onDone }: { ex: MatchExercise; onDone: (o: Outco
             <button key={p.id} type="button" lang="de" aria-pressed={sel === p.id} aria-hidden={gone.includes(p.id) || undefined} tabIndex={gone.includes(p.id) ? -1 : undefined} onClick={() => pickLeft(p.id)} className={`${base} ${itemCls(p.id, 'left')}`}>
               {matched.includes(p.id) && <IconCheck size={18} aria-hidden />}
               {wrong?.left === p.id && <IconX size={18} aria-hidden />}
-              {p.de}
+              {p.term}
             </button>
           ))}
         </div>

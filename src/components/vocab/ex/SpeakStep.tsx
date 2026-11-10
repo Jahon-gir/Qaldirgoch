@@ -4,6 +4,7 @@ import { useI18n } from '../../../i18n/I18nProvider'
 import { judgeSpoken, type Judged } from '../../../german/speakCheck'
 import { useSpeechRecognition } from '../../../german/useSpeechRecognition'
 import { useFeedback } from '../../../ui/useFeedback'
+import { useCourse } from '../../../lang/CourseContext'
 import { navyBtn } from '../parts'
 import { ContinueFooter, Verdict, type ExProps } from './common'
 import { LISTEN_RATE, LISTEN_SLOW } from './ListenStep'
@@ -65,7 +66,8 @@ function PrivacyDialog({ onOk, onCancel }: { onOk: () => void; onCancel: () => v
 export function SpeakStep({ word, speech, onDone }: ExProps) {
   const { lang, t } = useI18n()
   const fx = useFeedback()
-  const rec = useSpeechRecognition()
+  const course = useCourse()
+  const rec = useSpeechRecognition(course.speechLang)
   const { state } = rec
   const [verdict, setVerdict] = useState<Judged | null>(null)
   const [fails, setFails] = useState(0)
@@ -78,14 +80,14 @@ export function SpeakStep({ word, speech, onDone }: ExProps) {
   // Yangi natija: solishtirish (bir marta)
   useEffect(() => {
     if (state.status !== 'result') return
-    const j = judgeSpoken(state.alternatives, word.de)
+    const j = judgeSpoken(state.alternatives, word.term, course.id)
     setVerdict(j)
     if (j.ok) {
       spokenOnce.current = true
       fx.right(micRef.current)
     }
     else setFails((n) => n + 1)
-  }, [state, word.de, fx])
+  }, [state, word.term, fx, course.id])
 
   const begin = () => {
     setVerdict(null)
@@ -127,16 +129,16 @@ export function SpeakStep({ word, speech, onDone }: ExProps) {
       <div className="rounded-2xl border border-head-line bg-head px-5 py-5 text-center text-white">
         <p className="text-base text-white/90">{t('ex.speak.hint')}</p>
         <p lang="de" className="mt-2 break-words text-3xl font-bold">
-          {word.de}
+          {word.term}
         </p>
         <p className="mt-1 text-base text-white/90">{word.tr[lang]}</p>
         {canListen && (
           <div className="mt-3 flex items-center justify-center gap-3">
-            <button type="button" onClick={() => speak(word.de, { rate: LISTEN_RATE })} className={`inline-flex min-h-[44px] items-center gap-2 rounded-full px-4 text-base font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-white ${speech.speaking ? 'bg-vbtn-on' : 'bg-white/15'}`}>
+            <button type="button" onClick={() => speak(word.term, { rate: LISTEN_RATE })} className={`inline-flex min-h-[44px] items-center gap-2 rounded-full px-4 text-base font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-white ${speech.speaking ? 'bg-vbtn-on' : 'bg-white/15'}`}>
               <IconVolume size={22} aria-hidden />
               {t('ex.speak.listen')}
             </button>
-            <button type="button" onClick={() => speak(word.de, { rate: LISTEN_SLOW })} aria-label={t('ex.playSlow')} className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-white">
+            <button type="button" onClick={() => speak(word.term, { rate: LISTEN_SLOW })} aria-label={t('ex.playSlow')} className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-white">
               <IconSnail size={24} aria-hidden />
             </button>
           </div>

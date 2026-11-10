@@ -4,25 +4,25 @@ import type { Exercise } from './types'
 /** A1 · 1-modul · 5-dars: Kimligingizni soʻrash */
 export const A1_M1_L5: Exercise[] = [
   word({
-    id: 'a1-m1-l5-e1', de: 'Woher kommen Sie?', icon: 'world',
+    id: 'a1-m1-l5-e1', term: 'Woher kommen Sie?', icon: 'world',
     tr: l3('Siz qayerdansiz?', 'Сиз қаердансиз?', 'Откуда вы?'),
     pron: l3('vo-her ko-men zi', 'во-хер ко-мен зи', 'во-хер ко-мен зи'),
     example: { de: 'Woher kommen Sie? – Ich komme aus Taschkent.', tr: l3('Siz qayerdansiz? – Men Toshkentdanman.', 'Сиз қаердансиз? – Мен Тошкентданман.', 'Откуда вы? – Я из Ташкента.') }
   }),
   word({
-    id: 'a1-m1-l5-e2', de: 'Ich komme aus Usbekistan.', icon: 'map-pin',
+    id: 'a1-m1-l5-e2', term: 'Ich komme aus Usbekistan.', icon: 'map-pin',
     tr: l3('Men Oʻzbekistondanman.', 'Мен Ўзбекистонданман.', 'Я из Узбекистана.'),
     pron: l3('ix ko-me aus us-be-ki-stan', 'их ко-ме аус ус-бе-ки-стан', 'их ко-ме аус ус-бе-ки-стан'),
     example: { de: 'Ich komme aus Usbekistan.', tr: l3('Men Oʻzbekistondanman.', 'Мен Ўзбекистонданман.', 'Я из Узбекистана.') }
   }),
   word({
-    id: 'a1-m1-l5-e3', de: 'Wie geht es Ihnen?', icon: 'mood-smile',
+    id: 'a1-m1-l5-e3', term: 'Wie geht es Ihnen?', icon: 'mood-smile',
     tr: l3('Ahvolingiz qalay?', 'Аҳволингиз қалай?', 'Как у вас дела?'),
     pron: l3('vi geyt es i-nen', 'ви гейт эс и-нен', 'ви гейт эс и-нен'),
     example: { de: 'Guten Tag! Wie geht es Ihnen?', tr: l3('Xayrli kun! Ahvolingiz qalay?', 'Хайрли кун! Аҳволингиз қалай?', 'Добрый день! Как у вас дела?') }
   }),
   word({
-    id: 'a1-m1-l5-e4', de: 'Mir geht es gut, danke.', icon: 'messages',
+    id: 'a1-m1-l5-e4', term: 'Mir geht es gut, danke.', icon: 'messages',
     tr: l3('Yaxshi, rahmat.', 'Яхши, раҳмат.', 'Хорошо, спасибо.'),
     pron: l3('mir geyt es gut, dan-ke', 'мир гейт эс гут, дан-ке', 'мир гейт эс гут, дан-ке'),
     example: { de: 'Mir geht es gut, danke. Und Ihnen?', tr: l3('Yaxshi, rahmat. Sizda-chi?', 'Яхши, раҳмат. Сизда-чи?', 'Хорошо, спасибо. А у вас?') }

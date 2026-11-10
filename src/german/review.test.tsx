@@ -78,7 +78,7 @@ function playLesson(lessonId: string) {
       click('Davom etish')
     } else {
       for (const p of ex.pairs) {
-        fireEvent.click(screen.getByRole('button', { name: exact(p.de) }))
+        fireEvent.click(screen.getByRole('button', { name: exact(p.term) }))
         fireEvent.click(screen.getByRole('button', { name: exact(p.tr.uz) }))
       }
       click('Davom etish')
@@ -89,7 +89,7 @@ function playLesson(lessonId: string) {
 /** Joriy savoldagi soʻz va variantlar. */
 function currentWord() {
   const de = screen.getByRole('heading', { level: 1 }).textContent!
-  const w = [...Object.keys(WORDS3), 'a1-m1-guten-morgen', 'a1-m1-tschuess'].map(wordById).find((x) => x?.de === de)!
+  const w = [...Object.keys(WORDS3), 'a1-m1-guten-morgen', 'a1-m1-tschuess'].map(wordById).find((x) => x?.term === de)!
   const group = screen.getByRole('group', { name: 'Bu soʻz nima degani?' })
   return { w, buttons: within(group).getAllByRole('button') }
 }
@@ -173,7 +173,7 @@ describe('takrorlash sessiyasi (/til/takrorlash)', () => {
     expect(screen.getByText('0 kun ketma-ket')).toBeTruthy()
     expect(activityToday()).toBe(1) // oxirigacha tugatilgan sessiya = +1 (4 ta javob emas)
     fireEvent.click(screen.getByRole('button', { name: 'Xato qilingan 1 ta soʻzni koʻrish' }))
-    expect(screen.getByText(missed.de)).toBeTruthy()
+    expect(screen.getByText(missed.term)).toBeTruthy()
     expect(screen.getByText(missed.tr.uz)).toBeTruthy()
     fireEvent.click(screen.getByRole('button', { name: 'Tayyor' }))
     expect(where()).toBe('/til')

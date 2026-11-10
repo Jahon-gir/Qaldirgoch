@@ -8,7 +8,7 @@ import { ARTICLE_BTN, ContinueFooter, Verdict, type ExProps } from './common'
 export function ArticleStep({ word, onAnswer, onDone }: ExProps) {
   const { lang, t } = useI18n()
   const fx = useFeedback()
-  const a = articleOf(word.de)!
+  const a = articleOf(word.term)!
   const [picked, setPicked] = useState<Article | null>(null)
   const refs = useRef<Partial<Record<Article, HTMLButtonElement | null>>>({})
   const ok = picked === a.article
@@ -51,7 +51,7 @@ export function ArticleStep({ word, onAnswer, onDone }: ExProps) {
           )
         })}
       </div>
-      {picked && <Verdict tone={ok ? 'right' : 'wrong'}>{ok ? t('ex.rightIs', { t: word.de }) : t('ex.wrong', { t: word.de })}</Verdict>}
+      {picked && <Verdict tone={ok ? 'right' : 'wrong'}>{ok ? t('ex.rightIs', { t: word.term }) : t('ex.wrong', { t: word.term })}</Verdict>}
       <ContinueFooter disabled={!picked} onClick={() => onDone(ok)} />
     </div>
   )

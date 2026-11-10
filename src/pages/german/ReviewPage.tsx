@@ -11,6 +11,7 @@ import { useWords } from '../../german/WordsProvider'
 import { useFeedback } from '../../ui/useFeedback'
 import { Exercise } from '../../components/vocab/ex/Exercise'
 import { reviewKinds, type ExerciseKind } from '../../german/exercises'
+import { useCourse } from '../../lang/CourseContext'
 
 /** Toʻgʻri javobdan keyin keyingi soʻzga oʻtish (xato javobda — "Davom etish" tugmasi). */
 export const RIGHT_ADVANCE_MS = 1500
@@ -21,7 +22,7 @@ function Footer({ children }: { children: ReactNode }) {
 
 function Question({ session, onAnswered }: { session: Session; onAnswered: (correct: boolean) => void }) {
   const { lang, t } = useI18n()
-  const speech = useSpeech()
+  const speech = useSpeech(useCourse().speechLang)
   const { words, today, answer } = useWords()
   const fx = useFeedback()
   const refs = useRef<Record<string, HTMLButtonElement | null>>({})
@@ -55,13 +56,13 @@ function Question({ session, onAnswered }: { session: Session; onAnswered: (corr
       <p className="text-base text-ink-2">{t('review.question')}</p>
       <div className="flex flex-col items-center gap-3 py-4 text-center">
         <h1 lang="de" className="break-words text-4xl font-bold">
-          {word.de}
+          {word.term}
         </h1>
         {speech.canSpeak() && (
           <button
             type="button"
-            onClick={() => speech.speak(word.de, { slow: true })}
-            aria-label={t('german.listenWord', { de: word.de })}
+            onClick={() => speech.speak(word.term, { slow: true })}
+            aria-label={t('german.listenWord', { de: word.term })}
             className="flex h-12 w-12 items-center justify-center rounded-full bg-accent-soft text-accent-strong active:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           >
             <IconVolume size={26} aria-hidden />
@@ -144,7 +145,7 @@ function Result({ session, onDone }: { session: Session; onDone: () => void }) {
                 return (
                   <li key={id} className="border-b border-line px-4 py-3 text-base last:border-0">
                     <span lang="de" className="font-semibold">
-                      {w.de}
+                      {w.term}
                     </span>{' '}
                     — <span className="text-ink-2">{w.tr[lang]}</span>
                   </li>
@@ -170,13 +171,15 @@ export default function ReviewPage() {
   const { t } = useI18n()
   useHistoryAnchor('/til')
   const back = useBack('/til')
-  const { due, words, addDone, answer } = useWords()
-  const speech = useSpeech()
+  const course = useCourse()
+  const { dueFor, words, addDone, answer } = useWords()
+  const speech = useSpeech(course.speechLang)
+  const due = dueFor(course.id)
   // Sessiya ochilgan paytdagi soʻzlar bilan boshlanadi (javob berilgani roʻyxatdan chiqib ketmasin)
   const [session, setSession] = useState<Session>(() => startSession(due.filter((id) => wordById(id))))
   // Usul soʻz holatiga qarab — sessiya boshidagi oraliq boʻyicha (javobdan keyin oraliq oʻzgaradi, savol oʻrtasida almashmasin).
   // Sessiya oxirida qayta soʻraladigan xato soʻz — Test.
-  const [kinds] = useState<ExerciseKind[]>(() => reviewKinds(session.queue, (id) => words[id]?.interval ?? 1, wordById, speech.canSpeak()))
+  const [kinds] = useState<ExerciseKind[]>(() => reviewKinds(session.queue, (id) => words[id]?.interval ?? 1, wordById, speech.canSpeak(), course))
   const finished = sessionDone(session)
   const onAnswered = useCallback(
     (correct: boolean) => {

@@ -28,26 +28,29 @@ function Label({ children }: { children: string }) {
 }
 
 /** Bitta kartochka: suzadi, bosilsa 3D aylanadi. Ovoz tugmasi nemischa tomonda va kartochkani AYLANTIRMAYDI. */
+/** Tomon yorligʻi: 'target' — oʻrganilayotgan til (hozir nemischa). */
+const frontKey = (side: VocabFront) => (side === 'target' ? 'vocab.front.de' : 'vocab.front.tr')
+
 function Card({ id, front, speech }: { id: string; front: VocabFront; speech: Speech }) {
   const { lang, t } = useI18n()
   const [flipped, setFlipped] = useState(false)
   const w = wordById(id)!
-  const back: VocabFront = front === 'de' ? 'tr' : 'de'
+  const back: VocabFront = front === 'target' ? 'tr' : 'target'
   const face = (side: VocabFront, hidden: boolean, cls: string) => (
     <div aria-hidden={hidden || undefined} className={`card-face absolute inset-0 flex flex-col items-center justify-center gap-3 rounded-[20px] px-5 text-center text-vink ${cls}`}>
-      <Label>{t(`vocab.front.${side}`)}</Label>
-      <p lang={side === 'de' ? 'de' : undefined} className="break-words text-[30px] font-bold leading-tight">
-        {side === 'de' ? <DeWord de={w.de} /> : faceText(w, side, lang)}
+      <Label>{t(frontKey(side))}</Label>
+      <p lang={side === 'target' ? 'de' : undefined} className="break-words text-[30px] font-bold leading-tight">
+        {side === 'target' ? <DeWord de={w.term} /> : faceText(w, side, lang)}
       </p>
-      {side === 'de' && speech.canSpeak() && (
+      {side === 'target' && speech.canSpeak() && (
         <button
           type="button"
           tabIndex={hidden ? -1 : undefined}
           onClick={(e) => {
             e.stopPropagation()
-            speech.speak(w.de)
+            speech.speak(w.term)
           }}
-          aria-label={t('german.listenWord', { de: w.de })}
+          aria-label={t('german.listenWord', { de: w.term })}
           aria-pressed={speech.speaking}
           className={`flex h-12 w-12 items-center justify-center rounded-full text-vbtn-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vink ${speech.speaking ? 'bg-vbtn-on' : 'bg-vbtn'}`}
         >
@@ -107,7 +110,7 @@ export function FlashCards({ session, front, speech, onAnswer, onSwapFront }: { 
         <button
           type="button"
           onClick={onSwapFront}
-          aria-label={t('vocab.frontSwapA11y', { side: t(`vocab.front.${front}`) })}
+          aria-label={t('vocab.frontSwapA11y', { side: t(frontKey(front)) })}
           className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-trust-soft px-3 text-base font-semibold text-trust-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         >
           {t('vocab.frontSwap')}

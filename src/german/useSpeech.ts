@@ -1,23 +1,28 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 
-/** Brauzerda nemis ovozi bormi (speechSynthesis yoʻq boʻlsa — yoʻq). Xato tashlamaydi. */
-export function germanVoice(synth: Pick<SpeechSynthesis, 'getVoices'> | undefined | null): SpeechSynthesisVoice | null {
+/** Brauzerda shu til ovozi bormi: avval aniq ("ko-KR"), keyin til boʻyicha ("ko"). speechSynthesis yoʻq boʻlsa — yoʻq. Xato tashlamaydi. */
+export function voiceFor(synth: Pick<SpeechSynthesis, 'getVoices'> | undefined | null, lang: string): SpeechSynthesisVoice | null {
   try {
     const voices = synth?.getVoices?.() ?? []
-    return voices.find((v) => v.lang?.toLowerCase().replace('_', '-') === 'de-de') ?? voices.find((v) => v.lang?.toLowerCase().startsWith('de')) ?? null
+    const full = lang.toLowerCase()
+    const base = full.split('-')[0]
+    return voices.find((v) => v.lang?.toLowerCase().replace('_', '-') === full) ?? voices.find((v) => v.lang?.toLowerCase().startsWith(base)) ?? null
   } catch {
     return null
   }
 }
 
+/** Brauzerda nemis ovozi bormi. */
+export const germanVoice = (synth: Pick<SpeechSynthesis, 'getVoices'> | undefined | null) => voiceFor(synth, 'de-DE')
+
 const getSynth = (): SpeechSynthesis | null => (typeof window !== 'undefined' && 'speechSynthesis' in window && typeof SpeechSynthesisUtterance !== 'undefined' ? window.speechSynthesis : null)
 
 /**
- * Nemis tilidagi matnni ovozda oʻqish. audioUrl boʻlsa — fayl, aks holda brauzerning speechSynthesis (de-DE).
+ * Kurs tilidagi matnni ovozda oʻqish (lang — course.speechLang, standart de-DE). audioUrl boʻlsa — fayl, aks holda brauzerning speechSynthesis.
  * Kalit ham, tashqi TTS ham yoʻq. Ovoz yoʻq boʻlsa `canSpeak` false — ekran buzilmaydi.
  */
-export function useSpeech() {
-  const [hasVoice, setHasVoice] = useState<boolean | null>(() => (getSynth() ? (germanVoice(getSynth()) ? true : null) : false))
+export function useSpeech(lang: string = 'de-DE') {
+  const [hasVoice, setHasVoice] = useState<boolean | null>(() => (getSynth() ? (voiceFor(getSynth(), lang) ? true : null) : false))
   const audioRef = useRef<HTMLAudioElement | null>(null)
   /** Hozir oʻqilmoqdami (tugmani toʻq rangda koʻrsatish uchun). Hodisa kelmasa ham taymer bilan oʻchadi. */
   const [speaking, setSpeaking] = useState(false)
@@ -31,7 +36,7 @@ export function useSpeech() {
       setHasVoice(false)
       return
     }
-    const check = () => setHasVoice(germanVoice(synth) ? true : null)
+    const check = () => setHasVoice(voiceFor(synth, lang) ? true : null)
     check()
     const timer = window.setTimeout(() => setHasVoice((v) => (v === null ? false : v)), 1500)
     try {
@@ -50,9 +55,9 @@ export function useSpeech() {
       }
       audioRef.current?.pause()
     }
-  }, [])
+  }, [lang])
 
-  /** Tugma koʻrsatiladimi: fayl bor yoki nemis ovozi bor (yoki hali aniqlanmoqda). */
+  /** Tugma koʻrsatiladimi: fayl bor yoki shu til ovozi bor (yoki hali aniqlanmoqda). */
   const canSpeak = useCallback((audioUrl?: string) => !!audioUrl || hasVoice !== false, [hasVoice])
 
   const speak = useCallback((text: string, opts: { audioUrl?: string; slow?: boolean; rate?: number } = {}) => {
@@ -83,9 +88,9 @@ export function useSpeech() {
       const synth = getSynth()
       if (!synth) return
       const u = new SpeechSynthesisUtterance(text)
-      u.lang = 'de-DE'
+      u.lang = lang
       u.rate = opts.rate ?? (opts.slow ? 0.7 : 1)
-      const voice = germanVoice(synth)
+      const voice = voiceFor(synth, lang)
       if (voice) u.voice = voice
       u.onend = end
       u.onerror = end
@@ -94,7 +99,7 @@ export function useSpeech() {
     } catch {
       /* ovoz ishlamasa ham mashq davom etadi */
     }
-  }, [])
+  }, [lang])
 
   return { canSpeak, speak, speaking }
 }

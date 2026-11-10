@@ -129,7 +129,7 @@ describe('Soʻz boʻlaklaridan yigʻish (3+ soʻz)', () => {
     seed({ lessons: done('a1-m1-l5'), profile: { vocabMode: 'build' } })
     renderApp('/til/lugat/a1-m1-l5')
     const first = lessonWords('a1-m1-l5')[0]
-    const parts = first.de.split(' ')
+    const parts = first.term.split(' ')
     expect(parts.length).toBe(3)
     const pool = () => screen.getByRole('group', { name: 'Soʻzlardan gap tuzing' })
     expect(within(pool()).getAllByRole('button')).toHaveLength(4)
@@ -139,7 +139,7 @@ describe('Soʻz boʻlaklaridan yigʻish (3+ soʻz)', () => {
     fireEvent.click(within(answer).getByRole('button', { name: parts[1] })) // qaytarildi
     expect(screen.getByRole('group', { name: 'Javobingiz: boʻsh' })).toBeTruthy()
     for (const p of parts) put(p)
-    expect(screen.getByText(`Toʻgʻri: ${first.de}`)).toBeTruthy()
+    expect(screen.getByText(`Toʻgʻri: ${first.term}`)).toBeTruthy()
   })
 })
 
@@ -435,7 +435,7 @@ describe('Kartochka: DE ⇄ UZ chipi', () => {
     expect(within(card).getAllByText(words[1].tr.uz).length).toBeGreaterThan(0) // hali 2-soʻz (qayta boshlanmadi)
     expect(screen.queryByRole('dialog')).toBeNull()
     fireEvent.click(screen.getByRole('button', { name: /Old tomoni tilini almashtirish/ }))
-    expect(stored('profile').vocabFront).toBe('de')
+    expect(stored('profile').vocabFront).toBe('target')
   })
 })
 
@@ -452,5 +452,14 @@ describe('Yozish: harflar qatori', () => {
     const btns = screen.getAllByRole('button', { name: /harfini qoʻyish/ })
     expect(btns.map((b) => b.textContent)).toEqual(['ü'])
     expect(btns.every((b) => b.className.includes('w-[52px]') && b.className.includes('h-12'))).toBe(true)
+  })
+})
+
+describe("Profil: eski vocabFront 'de' → 'target' (0.10.0)", () => {
+  it('telefondagi eski qiymat oʻqilganda yangilanadi; kartochka avvalgidek nemischa tomondan', () => {
+    seed({ profile: { vocabMode: 'cards', vocabFront: 'de' } })
+    renderApp('/til/lugat/a1-m1-l1')
+    expect(stored('profile').vocabFront).toBe('target')
+    expect(screen.getByRole('button', { name: 'Old tomoni tilini almashtirish (hozir: Nemischa)' })).toBeTruthy()
   })
 })

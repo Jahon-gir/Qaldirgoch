@@ -1,6 +1,8 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { useAuth } from '../auth/AuthProvider'
-import { WORD_IDS, wordIdsOfLesson } from '../content/german/words'
+import { lessonWordIds } from '../lang/words'
+import { ALL_WORD_IDS, courseIdOfLesson, courseIdOfWord, courseOf } from '../lang/registry'
+import type { CourseId } from '../lang/types'
 import { supabase } from '../lib/supabase'
 import { useProfile } from '../profile/ProfileProvider'
 import { PROGRESS_KEYS, read, write } from '../progress/storage'
@@ -10,12 +12,17 @@ import { addNewWords, answerWord, dueWordIds, localDay, mergeWords, sanitizeWord
 import { fetchRemoteActivity, fetchRemoteWords, pushRemoteActivity, pushRemoteWords } from './wordsRemote'
 
 type Ctx = {
+  /** Barcha kurslar soʻzlari (id prefiksi boʻyicha kursga tegishli). Ekranlar kurs boʻyicha wordsOf/dueFor dan oladi. */
   words: Words
+  /** Shu kurs soʻzlari. */
+  wordsOf: (course: CourseId) => Words
+  /** Shu kursda bugun takrorlanadiganlar (avval eng eskisi). */
+  dueFor: (course: CourseId) => string[]
+  /** Kunlik faollik, maqsad va streak — barcha tillar uchun BITTA. */
   activity: Activity
   /** Foydalanuvchining mahalliy bugungi kuni (yarim tunda yangilanadi). */
   today: Day
   goal: number
-  due: string[]
   progress: ReturnType<typeof todayProgress>
   streak: ReturnType<typeof streakInfo>
   /** Soʻzlar takrorlash qutisiga (bor boʻlsa — tegilmaydi). */
@@ -29,8 +36,13 @@ type Ctx = {
 }
 const WordsContext = createContext<Ctx | null>(null)
 
-const loadWords = () => read(PROGRESS_KEYS.words, (s) => sanitizeWords(JSON.parse(s), WORD_IDS), {})
+const loadWords = () => read(PROGRESS_KEYS.words, (s) => sanitizeWords(JSON.parse(s), ALL_WORD_IDS), {})
 const loadActivity = () => read(PROGRESS_KEYS.activity, (s) => sanitizeActivity(JSON.parse(s)), {})
+
+/** Dars (istalgan kurs) soʻzlari id'lari. */
+const wordIdsOfAnyLesson = (lessonId: string) => lessonWordIds(courseOf(courseIdOfLesson(lessonId)), lessonId)
+
+const onlyCourse = (words: Words, course: CourseId): Words => Object.fromEntries(Object.entries(words).filter(([id]) => courseIdOfWord(id) === course))
 
 /**
  * Soʻzlar va kunlik faollik har doim shu telefonda (localStorage). Kirgan boʻlsa user_words va user_daily_activity bilan
@@ -78,8 +90,8 @@ export function WordsProvider({ children }: { children: ReactNode }) {
 
   // Avval tugatilgan darslar soʻzlari ham qutiga tushadi (0.6.0 dan oldingi natijalar)
   useEffect(() => {
-    const ids = Object.keys(results).flatMap(wordIdsOfLesson)
-    const next = addNewWords(wordsRef.current, ids, today, new Date().toISOString(), WORD_IDS)
+    const ids = Object.keys(results).flatMap(wordIdsOfAnyLesson)
+    const next = addNewWords(wordsRef.current, ids, today, new Date().toISOString(), ALL_WORD_IDS)
     if (next !== wordsRef.current) commitWords(next)
   }, [results, today, commitWords])
 
@@ -142,7 +154,7 @@ export function WordsProvider({ children }: { children: ReactNode }) {
 
   const learn = useCallback(
     (ids: string[]) => {
-      const next = addNewWords(wordsRef.current, ids, localDay(), new Date().toISOString(), WORD_IDS)
+      const next = addNewWords(wordsRef.current, ids, localDay(), new Date().toISOString(), ALL_WORD_IDS)
       if (next === wordsRef.current) return
       commitWords(next)
       kick()
@@ -169,9 +181,9 @@ export function WordsProvider({ children }: { children: ReactNode }) {
     (ids: string[]) => {
       const day = localDay()
       const now = new Date().toISOString()
-      const known = ids.filter((id) => WORD_IDS.has(id))
+      const known = ids.filter((id) => ALL_WORD_IDS.has(id))
       if (!known.length) return
-      const next = { ...addNewWords(wordsRef.current, known, day, now, WORD_IDS) }
+      const next = { ...addNewWords(wordsRef.current, known, day, now, ALL_WORD_IDS) }
       for (const id of known) next[id] = answerWord(next[id], false, day, now)
       commitWords(next)
       kick()
@@ -179,13 +191,17 @@ export function WordsProvider({ children }: { children: ReactNode }) {
     [commitWords, kick]
   )
 
+  const wordsOf = useCallback((course: CourseId) => onlyCourse(words, course), [words])
+  const dueFor = useCallback((course: CourseId) => dueWordIds(onlyCourse(words, course), today), [words, today])
+
   const value = useMemo<Ctx>(
     () => ({
       words,
+      wordsOf,
+      dueFor,
       activity,
       today,
       goal: dailyGoal,
-      due: dueWordIds(words, today),
       progress: todayProgress(activity, today, dailyGoal),
       streak: streakInfo(activity, today, dailyGoal),
       learn,
@@ -193,7 +209,7 @@ export function WordsProvider({ children }: { children: ReactNode }) {
       answer,
       markMistakes
     }),
-    [words, activity, today, dailyGoal, learn, done, answer, markMistakes]
+    [words, wordsOf, dueFor, activity, today, dailyGoal, learn, done, answer, markMistakes]
   )
   return <WordsContext.Provider value={value}>{children}</WordsContext.Provider>
 }

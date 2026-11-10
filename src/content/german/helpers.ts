@@ -33,11 +33,11 @@ export const choice = (a: ChoiceArgs): ChoiceExercise => ({
   explain: a.explain
 })
 
-export const match = (id: string, pairs: [de: string, tr: L3][]): MatchExercise => ({
+export const match = (id: string, pairs: [term: string, tr: L3][]): MatchExercise => ({
   type: 'match',
   id,
   prompt: PROMPT_MATCH,
-  pairs: pairs.map<MatchPair>(([de, tr], i) => ({ id: `${id}-p${i + 1}`, de, tr }))
+  pairs: pairs.map<MatchPair>(([term, tr], i) => ({ id: `${id}-p${i + 1}`, term, tr }))
 })
 
 export const REVIEW: ContentStatus = 'review'

@@ -2,19 +2,21 @@ import { useRef, useState, type FormEvent, type ReactNode } from 'react'
 import { useI18n } from '../../../i18n/I18nProvider'
 import { check, isBlank, isRight, specialLettersOf, specialToInsert, type CheckResult, type SpecialLetter } from '../../../german/answer'
 import { useFeedback } from '../../../ui/useFeedback'
+import { useCourse } from '../../../lang/CourseContext'
+import type { CourseId } from '../../../lang/types'
 import { Footer, navyBtn } from '../parts'
 import { Prompt, Verdict, type ExProps } from './common'
 
 /** Yozish: savol — tarjima; ä ö ü ß tugmalari kursor turgan joyga qoʻyadi; Enter ham tekshiradi. */
 export function WriteStep({ word, onAnswer, onDone }: ExProps) {
   const { lang, t } = useI18n()
-  return <WriteCore target={word.de} prompt={<Prompt label={t('ex.writeQ')}>{word.tr[lang]}</Prompt>} onAnswer={onAnswer} onDone={onDone} />
+  return <WriteCore target={word.term} prompt={<Prompt label={t('ex.writeQ')}>{word.tr[lang]}</Prompt>} onAnswer={onAnswer} onDone={onDone} />
 }
 
 /** Bir nechta toʻgʻri javobdan eng yaxshi natija (exact > correct > almost > wrong). */
-export function bestCheck(value: string, targets: string[]): CheckResult {
+export function bestCheck(value: string, targets: string[], course: CourseId = 'de'): CheckResult {
   const order: CheckResult[] = ['exact', 'correct', 'almost', 'wrong']
-  return targets.map((x) => check(value, x)).sort((a, b) => order.indexOf(a) - order.indexOf(b))[0] ?? 'wrong'
+  return targets.map((x) => check(value, x, course)).sort((a, b) => order.indexOf(a) - order.indexOf(b))[0] ?? 'wrong'
 }
 
 /**
@@ -23,6 +25,7 @@ export function bestCheck(value: string, targets: string[]): CheckResult {
  */
 export function WriteCore({ target, accept = [], prompt, onAnswer, onDone }: { target: string; accept?: string[]; prompt: ReactNode; onAnswer?: (correct: boolean) => void; onDone: (correct: boolean) => void }) {
   const { t } = useI18n()
+  const course = useCourse()
   const fx = useFeedback()
   const [value, setValue] = useState('')
   const [result, setResult] = useState<CheckResult | null>(null)
@@ -48,7 +51,7 @@ export function WriteCore({ target, accept = [], prompt, onAnswer, onDone }: { t
     e.preventDefault()
     if (done) return onDone(isRight(result))
     if (isBlank(value)) return setBlank(true)
-    const r = bestCheck(value, [target, ...accept])
+    const r = bestCheck(value, [target, ...accept], course.id)
     setResult(r)
     if (isRight(r)) fx.right(input.current)
     else fx.wrong()

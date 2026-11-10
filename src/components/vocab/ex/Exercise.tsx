@@ -1,4 +1,5 @@
-import { isNoun, playable, type ExerciseKind } from '../../../german/exercises'
+import { hasArticle, playable, type ExerciseKind } from '../../../german/exercises'
+import { useCourse } from '../../../lang/CourseContext'
 import { ArticleStep } from './ArticleStep'
 import { BuildStep } from './BuildStep'
 import type { ExProps } from './common'
@@ -9,8 +10,9 @@ import { WriteStep } from './WriteStep'
 
 /** Bitta savol: usulga qarab. Ovoz yoʻq boʻlsa tinglash — Test; ot boʻlmasa artikl — Test. */
 export function Exercise({ kind, ...p }: ExProps & { kind: ExerciseKind }) {
+  const course = useCourse()
   let k = playable(kind, p.speech.canSpeak())
-  if (k === 'article' && !isNoun(p.word)) k = 'test'
+  if (k === 'article' && !hasArticle(p.word, course)) k = 'test'
   switch (k) {
     case 'build':
       return <BuildStep {...p} />

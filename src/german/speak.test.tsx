@@ -271,7 +271,7 @@ describe('Talaffuz mashqi', () => {
     renderApp()
     expect(screen.getByText('Talaffuz · 1 / 4')).toBeTruthy()
     expect(screen.getByText('Eshiting va takrorlang')).toBeTruthy()
-    expect(screen.getByText(L1[0].de)).toBeTruthy()
+    expect(screen.getByText(L1[0].term)).toBeTruthy()
     expect(screen.getByText('Salom')).toBeTruthy()
     expect(mic().className).toContain('h-[80px]')
     expect(btn('Oʻtkazib yuborish')).toBeTruthy()
@@ -298,7 +298,7 @@ describe('Talaffuz mashqi', () => {
     expect(btn('Qayta aytish')).toBeTruthy()
     click('Davom etish')
     expect(screen.getByText('Talaffuz · 2 / 4')).toBeTruthy()
-    expect(screen.getByText(L1[1].de)).toBeTruthy()
+    expect(screen.getByText(L1[1].term)).toBeTruthy()
   })
 
   it('toʻgʻri: faqat ikkinchi alternativ mos kelsa ham; "Qayta aytish" boshlanishga qaytaradi', () => {

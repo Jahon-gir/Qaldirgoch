@@ -20,8 +20,8 @@ export function ListenStep({ word, speech, onAnswer, onDone }: ExProps) {
   useEffect(() => {
     if (played.current) return
     played.current = true
-    speak(word.de, { rate: LISTEN_RATE })
-  }, [speak, word.de])
+    speak(word.term, { rate: LISTEN_RATE })
+  }, [speak, word.term])
   const answered = picked !== null
   const ok = picked === word.id
   const pick = (id: string) => {
@@ -37,7 +37,7 @@ export function ListenStep({ word, speech, onAnswer, onDone }: ExProps) {
       <div className="flex items-center justify-center gap-4 py-2">
         <button
           type="button"
-          onClick={() => speak(word.de, { rate: LISTEN_RATE })}
+          onClick={() => speak(word.term, { rate: LISTEN_RATE })}
           aria-label={t('ex.play')}
           className={`flex h-[84px] w-[84px] items-center justify-center rounded-full border border-head-line text-white shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${speech.speaking ? 'bg-vbtn-on' : 'bg-head'}`}
         >
@@ -45,7 +45,7 @@ export function ListenStep({ word, speech, onAnswer, onDone }: ExProps) {
         </button>
         <button
           type="button"
-          onClick={() => speak(word.de, { rate: LISTEN_SLOW })}
+          onClick={() => speak(word.term, { rate: LISTEN_SLOW })}
           aria-label={t('ex.playSlow')}
           className="flex h-[52px] w-[52px] items-center justify-center rounded-full bg-trust-soft text-trust-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         >
