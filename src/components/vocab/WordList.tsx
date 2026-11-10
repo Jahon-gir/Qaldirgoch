@@ -5,6 +5,7 @@ import { useI18n } from '../../i18n/I18nProvider'
 import type { VocabFront } from '../../profile/questions'
 import type { Speech } from '../german/Listen'
 import { DeWord } from './ex/common'
+import { useCourse } from '../../lang/CourseContext'
 
 /** Ovoz tugmasi: koʻrinishi 40px doira, bosish maydoni 44px. Har doim nemischani oʻqiydi. */
 export function SpeakDot({ speech, de }: { speech: Speech; de: string }) {
@@ -30,6 +31,7 @@ export function SpeakDot({ speech, de }: { speech: Speech; de: string }) {
 /** Roʻyxat: qator bosilsa tarjima ochiladi/yopiladi; ovoz tugmasi faqat oʻqiydi. */
 export function WordList({ words, front, speech }: { words: VocabWord[]; front: VocabFront; speech: Speech }) {
   const { lang, t } = useI18n()
+  const course = useCourse()
   const [open, setOpen] = useState<ReadonlySet<string>>(new Set())
   const allOpen = words.length > 0 && words.every((w) => open.has(w.id))
   const toggle = (id: string) =>
@@ -64,12 +66,14 @@ export function WordList({ words, front, speech }: { words: VocabWord[]; front: 
                 onClick={() => toggle(w.id)}
                 className="flex min-h-[64px] min-w-0 flex-1 flex-col justify-center px-4 py-2 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-accent"
               >
-                <span lang={front === 'target' ? 'de' : undefined} className="break-words text-lg font-semibold">
+                <span lang={front === 'target' ? course.id : undefined} className="break-words text-lg font-semibold">
                   {main}
                 </span>
+                {course.features.pron && front === 'target' && <span className="text-base text-ink-2">{w.pron[lang]}</span>}
                 {shown ? (
-                  <span lang={front === 'target' ? undefined : 'de'} className="break-words text-base text-ink-2">
+                  <span lang={front === 'target' ? undefined : course.id} className="break-words text-base text-ink-2">
                     {other}
+                    {course.features.pron && front !== 'target' && <span className="block">{w.pron[lang]}</span>}
                   </span>
                 ) : (
                   <span className="flex items-center gap-1.5 text-base text-ink-3">

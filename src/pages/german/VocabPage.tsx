@@ -6,21 +6,27 @@ import { useBack, useHistoryAnchor } from '../../lib/useHistoryAnchor'
 import { useDirection } from '../../german/useDirection'
 import { useLessons } from '../../german/LessonsProvider'
 import { MIXED, unlockedWords, vocabGroups } from '../../german/vocab'
+import { useCourse, useCoursePaths } from '../../lang/CourseContext'
+import { levelName } from '../../lang/text'
+import { HangulText } from '../../components/korean/HangulText'
 
 /** Lugʻat: modul → darslar. Dars oxirigacha tugatilgan boʻlsa ochiq (user_lessons), aks holda qulf. */
 export default function VocabPage() {
   const { lang, t } = useI18n()
-  useHistoryAnchor('/til')
-  const back = useBack('/til')
-  const { direction } = useDirection()
+  const course = useCourse()
+  const paths = useCoursePaths()
+  useHistoryAnchor(paths.home)
+  const back = useBack(paths.home)
+  const { direction: profileDirection } = useDirection()
+  const direction = course.directions ? profileDirection : 'general'
   const { results } = useLessons()
-  const groups = vocabGroups(direction, results)
+  const groups = vocabGroups(direction, results, course)
   const opened = unlockedWords(groups)
-  const levels = [...new Set(groups.map((g) => g.module.level))].join(', ')
+  const levels = [...new Set(groups.map((g) => levelName(course, g.module.level, lang)))].join(', ')
   const first = groups[0]?.lessons[0]?.lesson
   return (
     <div className="mx-auto flex min-h-full w-full max-w-md flex-col">
-      <VocabHeader title={t('vocab.title')} sub={t('vocab.sub', { level: levels || 'A1', n: opened.length })} onBack={back} />
+      <VocabHeader title={t('vocab.title')} sub={t('vocab.sub', { level: levels || levelName(course, course.levels[0].id, lang), n: opened.length })} onBack={back} />
       <div className="flex flex-1 flex-col gap-4 px-4 pt-4">
         {groups.map((g) => (
           <section key={g.module.id} aria-labelledby={`vg-${g.module.id}`} className="space-y-2">
@@ -33,9 +39,11 @@ export default function VocabPage() {
                 return (
                   <li key={lesson.id}>
                     {unlocked ? (
-                      <Link to={`/til/lugat/${lesson.id}`} className="flex min-h-[64px] items-center gap-3 rounded-card bg-surface p-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
+                      <Link to={paths.vocabLesson(lesson.id)} className="flex min-h-[64px] items-center gap-3 rounded-card bg-surface p-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
                         <span className="flex-1">
-                          <span className="block text-base font-semibold">{title}</span>
+                          <span className="block text-base font-semibold">
+                            <HangulText text={title} />
+                          </span>
                           <span className="block text-base text-ink-2">{t('vocab.words', { n: words.length })}</span>
                         </span>
                         <span className="inline-flex items-center gap-1 rounded-full bg-success-soft px-2.5 py-1 text-[13px] font-semibold text-success-text">
@@ -61,14 +69,14 @@ export default function VocabPage() {
         ))}
         <Footer>
           {opened.length > 0 ? (
-            <Link to={`/til/lugat/${MIXED}`} className={navyBtn}>
+            <Link to={paths.vocabLesson(MIXED)} className={navyBtn}>
               {t('vocab.mixedBtn')}
             </Link>
           ) : (
             <div className="space-y-2 text-center">
               <p className="text-base text-ink-2">{t('vocab.finishFirst')}</p>
               {first && (
-                <Link to={`/til/dars/${first.id}`} className={navyBtn}>
+                <Link to={paths.lesson(first.id)} className={navyBtn}>
                   {t('vocab.finishFirstLink')}
                 </Link>
               )}

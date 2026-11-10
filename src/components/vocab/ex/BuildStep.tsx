@@ -1,7 +1,7 @@
 import { useMemo, useRef, useState } from 'react'
 import { IconArrowBackUp, IconBulb } from '@tabler/icons-react'
 import { useI18n } from '../../../i18n/I18nProvider'
-import { chunksMatch, chunksOf, chunkTiles, isSentence, letterTiles, lettersMatch, lettersPrefixOk, targetLetters, type Tile } from '../../../german/exercises'
+import { chunksMatch, chunksOf, chunkTiles, isSentence, letterTiles, lettersMatch, lettersPrefixOk, syllableBlocks, syllableTiles, targetLetters, type Tile } from '../../../german/exercises'
 import { useFeedback } from '../../../ui/useFeedback'
 import { useCourse } from '../../../lang/CourseContext'
 import { ContinueFooter, Prompt, Verdict, type ExProps } from './common'
@@ -11,8 +11,10 @@ const tileCls =
 const toolCls =
   'flex min-h-[44px] flex-1 items-center justify-center gap-2 rounded-xl border-2 border-line bg-surface px-3 text-base font-semibold text-ink active:bg-surface-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:opacity-40'
 
-/** Harflardan (2 soʻzgacha) yoki soʻz boʻlaklaridan (3+ soʻz) yigʻish. Savol doim tarjima tilida. */
+/** Harflardan (2 soʻzgacha), soʻz boʻlaklaridan (3+ soʻz) yoki — koreyschada — boʻgʻin bloklaridan yigʻish. Savol doim tarjima tilida. */
 export function BuildStep(p: ExProps) {
+  const course = useCourse()
+  if (course.features.build === 'syllables') return <Syllables {...p} />
   return isSentence(p.word.term) ? <Chunks {...p} /> : <Letters {...p} />
 }
 
@@ -35,7 +37,8 @@ function Letters(props: ExProps) {
   const { word, onDone } = props
   const { lang, t } = useI18n()
   const loc = useCourse().letterLocale
-  const tiles = useMemo(() => letterTiles(word), [word])
+  const vocab = useCourse().vocab
+  const tiles = useMemo(() => letterTiles(word, Math.random, vocab), [word, vocab])
   const letters = useMemo(() => targetLetters(word.term), [word])
   const [placed, setPlaced] = useState<Tile[]>([])
   const { result, finish, box } = useFinish(props)
@@ -108,10 +111,66 @@ function Letters(props: ExProps) {
   )
 }
 
+/** Boʻgʻin bloklaridan: soʻz boʻgʻinlari + 2 chalgʻituvchi (shu moduldan). Oʻqilishi koʻrsatilmaydi. */
+function Syllables(props: ExProps) {
+  const { word, onDone } = props
+  const { lang, t } = useI18n()
+  const course = useCourse()
+  const tiles = useMemo(() => syllableTiles(word, course.vocab), [word, course])
+  const need = syllableBlocks(word.term)
+  const [placed, setPlaced] = useState<Tile[]>([])
+  const { result, finish, box } = useFinish(props)
+  const done = result !== null
+  const put = (tile: Tile) => {
+    if (done || placed.some((x) => x.id === tile.id) || placed.length >= need.length) return
+    const next = [...placed, tile]
+    setPlaced(next)
+    if (next.length === need.length) finish(next.map((x) => x.text).join('') === need.join(''))
+  }
+  const takeBack = (i: number) => !done && setPlaced(placed.filter((_, k) => k !== i))
+  const slotTone = result === null ? 'border-ink-3' : result ? 'border-success text-success-text' : 'border-danger text-danger-text'
+  const sofar = placed.map((x) => x.text).join('')
+  return (
+    <div className="flex flex-1 flex-col gap-4 pt-4">
+      <Prompt label={t('syl.buildQ')}>{word.tr[lang]}</Prompt>
+      <div ref={box} role="group" aria-label={t('ex.answerSoFar', { text: sofar || t('ex.empty') })} className={`flex justify-center gap-2 py-2 ${result === false ? 'fx-shake' : result ? 'fx-pop' : ''}`}>
+        {need.map((_, i) => (
+          <button
+            key={i}
+            type="button"
+            lang={course.id}
+            disabled={done || !placed[i]}
+            onClick={() => takeBack(i)}
+            className={`flex h-16 w-16 items-center justify-center rounded-xl border-b-[3px] text-3xl font-bold ${slotTone}`}
+          >
+            {placed[i]?.text ?? ''}
+          </button>
+        ))}
+      </div>
+      {done ? (
+        <Verdict tone={result ? 'right' : 'wrong'}>
+          {result ? t('ex.rightIs', { t: '' }) : t('ex.wrong', { t: '' })}
+          <span lang={course.id}>{word.term}</span>
+        </Verdict>
+      ) : (
+        <div className="flex flex-wrap justify-center gap-2" role="group" aria-label={t('syl.buildQ')}>
+          {tiles.map((x) => (
+            <button key={x.id} type="button" lang={course.id} disabled={placed.some((p) => p.id === x.id)} onClick={() => put(x)} className={`${tileCls} h-14 min-w-[56px] text-3xl`}>
+              {x.text}
+            </button>
+          ))}
+        </div>
+      )}
+      <ContinueFooter disabled={!done} onClick={() => onDone(!!result)} />
+    </div>
+  )
+}
+
 function Chunks(props: ExProps) {
   const { word, onDone } = props
   const { lang, t } = useI18n()
-  const tiles = useMemo(() => chunkTiles(word), [word])
+  const vocab = useCourse().vocab
+  const tiles = useMemo(() => chunkTiles(word, Math.random, vocab), [word, vocab])
   const need = chunksOf(word.term).length
   const [placed, setPlaced] = useState<Tile[]>([])
   const { result, finish, box } = useFinish(props)

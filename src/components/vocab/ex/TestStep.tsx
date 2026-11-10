@@ -3,15 +3,17 @@ import { IconCheck, IconX } from '@tabler/icons-react'
 import { useI18n } from '../../../i18n/I18nProvider'
 import { pickVocabOptions } from '../../../german/vocab'
 import { useFeedback } from '../../../ui/useFeedback'
+import { useCourse } from '../../../lang/CourseContext'
 import { ContinueFooter, Prompt, type ExProps } from './common'
 
 /** Test: savol moviy blokda, 4 variant; javobdan keyin "Davom etish". */
 /** Savol tili doim nemischa → oʻzbekcha (vocabFront testga taʼsir qilmaydi). */
 export function TestStep({ word, onAnswer, onDone }: ExProps) {
   const { lang, t } = useI18n()
+  const course = useCourse()
   const fx = useFeedback()
   // Variantlar shu savol uchun bir marta aralashtiriladi
-  const options = useMemo(() => pickVocabOptions(word, 'target', lang), [word, lang])
+  const options = useMemo(() => pickVocabOptions(word, 'target', lang, Math.random, course.vocab), [word, lang, course])
   const [picked, setPicked] = useState<string | null>(null)
   const refs = useRef<Record<string, HTMLButtonElement | null>>({})
   const answered = picked !== null
@@ -26,7 +28,7 @@ export function TestStep({ word, onAnswer, onDone }: ExProps) {
   }
   return (
     <div className="flex flex-1 flex-col gap-4 pt-4">
-      <Prompt label={q} lang="de">
+      <Prompt label={q} lang={course.id}>
         {word.term}
       </Prompt>
       <div className="space-y-2" role="group" aria-label={q}>

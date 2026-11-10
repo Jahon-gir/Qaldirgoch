@@ -3,12 +3,15 @@ import { IconCheck, IconChevronRight, IconLock, IconTrophy } from '@tabler/icons
 import { useI18n } from '../../i18n/I18nProvider'
 import { isPassed, isScopeUnlocked, testId, testSize, type ScopeInfo } from '../../german/finalTest'
 import type { Results } from '../../german/logic'
+import { coursePaths } from '../../lang/paths'
+import { courseOf } from '../../lang/registry'
+import { levelName } from '../../lang/text'
 
 /**
  * Yakuniy test kartochkasi. Modul testi — faqat ochilganda koʻrinadi (always=false); daraja testi — doim, ochilmaguncha qulf.
  */
 export function TestCard({ info, results, title, always = false, className = '' }: { info: ScopeInfo; results: Results; title: string; always?: boolean; className?: string }) {
-  const t = useI18n().t
+  const { lang, t } = useI18n()
   const unlocked = isScopeUnlocked(info, results)
   if (!unlocked && !always) return null
   const size = testSize(info)
@@ -23,14 +26,14 @@ export function TestCard({ info, results, title, always = false, className = '' 
         </span>
         <span className="min-w-0 flex-1">
           <span className="block text-base font-semibold">{title}</span>
-          <span className="block text-base">{t('ft.levelLocked', { level: info.level })}</span>
+          <span className="block text-base">{t('ft.levelLocked', { level: levelName(courseOf(info.course), info.level, lang) })}</span>
         </span>
         <IconLock size={22} className="shrink-0" aria-hidden />
       </div>
     )
   return (
     <Link
-      to={`/til/test/${info.scope}`}
+      to={coursePaths(info.course).test(info.scope)}
       className={`flex min-h-[64px] items-center gap-3 rounded-card border-[1.5px] border-accent bg-surface p-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${className}`}
     >
       <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent-soft text-accent-strong">

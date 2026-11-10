@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import { IconArrowLeft } from '@tabler/icons-react'
 import { useT } from '../../i18n/I18nProvider'
+import { HangulText } from '../korean/HangulText'
 
 /**
  * B uslubi: toʻq koʻk rasmiy sarlavha. Qorongʻida bir pogʻona ochroq moviy + ingichka och chiziq.
@@ -18,7 +19,9 @@ export function VocabHeader({ title, sub, onBack, right, bank }: { title: string
           <IconArrowLeft size={24} aria-hidden />
         </button>
         <div className="min-w-0 flex-1 py-1">
-          <h1 className="break-words text-xl font-semibold leading-tight">{title}</h1>
+          <h1 className="break-words text-xl font-semibold leading-tight">
+            <HangulText text={title} />
+          </h1>
           {sub && <p className="text-base text-white/90">{sub}</p>}
         </div>
         {right}

@@ -8,15 +8,13 @@ import { VocabResult } from '../../components/vocab/VocabResult'
 import { Exercise } from '../../components/vocab/ex/Exercise'
 import type { SpeakOutcome } from '../../components/vocab/ex/common'
 import { WordList } from '../../components/vocab/WordList'
-import { lessonById } from '../../content/german'
-import { wordById, type VocabWord } from '../../content/german/words'
 import { useI18n } from '../../i18n/I18nProvider'
 import { useBack, useHistoryAnchor } from '../../lib/useHistoryAnchor'
 import { useLessons } from '../../german/LessonsProvider'
 import { useDirection } from '../../german/useDirection'
 import { sessionCurrent, sessionDone, type Session } from '../../german/srs'
 import { hasArticle, mixedKinds, nextMixedKind, type ExerciseKind } from '../../german/exercises'
-import { useCourse } from '../../lang/CourseContext'
+import { useCourse, useCoursePaths } from '../../lang/CourseContext'
 import { useSpeech } from '../../german/useSpeech'
 import { speechRecognitionSupported } from '../../german/useSpeechRecognition'
 import { MIXED, isUnlocked, lessonWords, shuffled, startVocabSession, unlockedWords, vocabAnswer, vocabGroups, vocabLesson } from '../../german/vocab'
@@ -33,9 +31,11 @@ const QUESTION_MODES: readonly VocabMode[] = ['test', 'build', 'listen', 'write'
 
 function Practice({ lessonId, title, ids }: { lessonId: string; title: string; ids: string[] }) {
   const { t } = useI18n()
-  useHistoryAnchor('/til/lugat')
-  const back = useBack('/til/lugat')
   const course = useCourse()
+  const paths = useCoursePaths()
+  const wordById = course.wordById
+  useHistoryAnchor(paths.vocab)
+  const back = useBack(paths.vocab)
   const speech = useSpeech(course.speechLang)
   const canListen = speech.canSpeak()
   const [canSpeakMic] = useState(speechRecognitionSupported) // feature detect: SpeechRecognition bormi
@@ -48,7 +48,8 @@ function Practice({ lessonId, title, ids }: { lessonId: string; title: string; i
   const [sheet, setSheet] = useState(false)
   // Darsda ot boʻlmasa Artikl, ovoz boʻlmasa Tinglash — Test bilan almashtiriladi
   // Mikrofon tanish yoʻq, lekin profilda Talaffuz tanlangan — Roʻyxatga qaytadi (xato bermaydi)
-  const eff: VocabMode = mode === 'article' && nounIds.length === 0 ? 'test' : mode === 'listen' && !canListen ? 'test' : mode === 'speak' && !canSpeakMic ? 'list' : mode
+  // Yozish usuli yoʻq kursda (koreys) — Test
+  const eff: VocabMode = mode === 'article' && nounIds.length === 0 ? 'test' : mode === 'write' && !course.features.write ? 'test' : mode === 'listen' && !canListen ? 'test' : mode === 'speak' && !canSpeakMic ? 'list' : mode
   const start = useCallback(
     (list: string[], counted: boolean, m: VocabMode): Run => ({
       session: startVocabSession(m === 'article' ? list.filter((id) => nounIds.includes(id)) : list),
@@ -128,7 +129,7 @@ function Practice({ lessonId, title, ids }: { lessonId: string; title: string; i
       />
       <div className="flex flex-1 flex-col px-4 pb-4 pt-3">
         {eff === 'list' ? (
-          <WordList words={lessonWordsOf(ids)} front={front} speech={speech} />
+          <WordList words={ids.flatMap((id) => wordById(id) ?? [])} front={front} speech={speech} />
         ) : finished ? (
           <VocabResult
             session={run.session}
@@ -140,28 +141,30 @@ function Practice({ lessonId, title, ids }: { lessonId: string; title: string; i
           <Exercise key={`${run.session.pos}-${eff}`} kind={kind} word={word} speech={speech} onDone={answer} />
         ) : null}
       </div>
-      {sheet && <SettingsSheet mode={eff} hasNouns={nounIds.length > 0} canListen={canListen} canSpeakMic={canSpeakMic} onPick={pickMode} onClose={() => setSheet(false)} />}
+      {sheet && <SettingsSheet mode={eff} hasNouns={nounIds.length > 0} canWrite={course.features.write} canListen={canListen} canSpeakMic={canSpeakMic} onPick={pickMode} onClose={() => setSheet(false)} />}
     </div>
   )
 }
 
 const uniq = (a: string[]) => a.filter((x, i) => a.indexOf(x) === i)
-const lessonWordsOf = (ids: string[]): VocabWord[] => ids.flatMap((id) => wordById(id) ?? [])
 
 /** /til/lugat/:lessonId — dars soʻzlari; /til/lugat/aralash — ochilgan barcha darslar soʻzlari aralash. */
 export default function VocabLessonPage() {
   const { lessonId = '' } = useParams()
   const { lang, t } = useI18n()
   const { results } = useLessons()
-  const { direction } = useDirection()
+  const course = useCourse()
+  const paths = useCoursePaths()
+  const { direction: profileDirection } = useDirection()
+  const direction = course.directions ? profileDirection : 'general'
   const mixed = lessonId === MIXED
-  const lesson = mixed ? undefined : vocabLesson(lessonId)
+  const lesson = mixed ? undefined : vocabLesson(lessonId, course)
   const ids = useMemo(() => {
-    if (mixed) return unlockedWords(vocabGroups(direction, results)).map((w) => w.id)
-    return lesson ? lessonWords(lesson.id).map((w) => w.id) : []
-  }, [mixed, lesson, direction, results])
+    if (mixed) return unlockedWords(vocabGroups(direction, results, course)).map((w) => w.id)
+    return lesson ? lessonWords(lesson.id, course).map((w) => w.id) : []
+  }, [mixed, lesson, direction, results, course])
   // Notanish dars, qulflangan dars yoki ochiq dars yoʻq (aralash) — Lugʻat ekraniga
-  if (ids.length === 0 || (lesson && !isUnlocked(lesson.id, results))) return <Navigate to="/til/lugat" replace />
-  const title = mixed ? t('vocab.mixedTitle') : t('vocab.lessonTitle', { n: lessonById(lessonId)!.order, title: lessonById(lessonId)!.title[lang] })
+  if (ids.length === 0 || (lesson && !isUnlocked(lesson.id, results))) return <Navigate to={paths.vocab} replace />
+  const title = mixed ? t('vocab.mixedTitle') : t('vocab.lessonTitle', { n: lesson!.order, title: lesson!.title[lang] })
   return <Practice key={lessonId} lessonId={lessonId} title={title} ids={ids} />
 }

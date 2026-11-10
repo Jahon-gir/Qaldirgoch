@@ -128,7 +128,7 @@ export function SpeakStep({ word, speech, onDone }: ExProps) {
     <div className="flex flex-1 flex-col gap-4 pt-4">
       <div className="rounded-2xl border border-head-line bg-head px-5 py-5 text-center text-white">
         <p className="text-base text-white/90">{t('ex.speak.hint')}</p>
-        <p lang="de" className="mt-2 break-words text-3xl font-bold">
+        <p lang={course.id} className="mt-2 break-words text-3xl font-bold">
           {word.term}
         </p>
         <p className="mt-1 text-base text-white/90">{word.tr[lang]}</p>
@@ -169,7 +169,7 @@ export function SpeakStep({ word, speech, onDone }: ExProps) {
           <div className="w-full space-y-3 text-left">
             <Verdict tone="right">
               <span className="block">{t('ex.speak.ok')}</span>
-              <span lang="de" className="block font-normal">
+              <span lang={course.id} className="block font-normal">
                 {t('ex.speak.said', { heard: verdict.heard })}
               </span>
             </Verdict>
@@ -181,7 +181,7 @@ export function SpeakStep({ word, speech, onDone }: ExProps) {
         {unheard && verdict && (
           <div className="w-full space-y-3 text-left">
             <Verdict tone="almost">
-              <span lang="de" className="block">
+              <span lang={course.id} className="block">
                 {t('ex.speak.heard', { heard: verdict.heard })}
               </span>
               <span className="block font-normal">{t('ex.speak.heardHint')}</span>

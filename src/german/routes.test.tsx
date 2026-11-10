@@ -88,6 +88,8 @@ describe('marshrut: Bosh → Til → modul → dars → natija → modulga qayti
     renderApp('/')
     expect(screen.getByRole('heading', { level: 1, name: 'Oʻzbekistondan chet elga, faqat qonuniy yoʻl bilan' })).toBeTruthy() // Bosh
     fireEvent.click(screen.getByRole('link', { name: 'Til' })) // pastki menyu
+    expect(screen.getByRole('heading', { name: 'Tillar' })).toBeTruthy() // til tanlash
+    fireEvent.click(screen.getByTestId('lang-de'))
     expect(screen.getByRole('heading', { name: 'Nemis tili' })).toBeTruthy() // Til
     expect(screen.getByText('Yoʻnalish: Texnik kasblar')).toBeTruthy() // payvandchi → technical
     expect(screen.getByText('Ish joyida')).toBeTruthy() // technical modul koʻrinadi
@@ -169,7 +171,7 @@ describe('marshrut: Bosh → Til → modul → dars → natija → modulga qayti
   })
 
   it('yoʻnalishni qoʻlda oʻzgartirish profilga yoziladi', () => {
-    renderApp('/til')
+    renderApp('/til/de')
     click('oʻzgartirish')
     fireEvent.click(screen.getByRole('radio', { name: 'Parvarish va tibbiyot' }))
     expect(screen.getByText('Yoʻnalish: Parvarish va tibbiyot')).toBeTruthy()

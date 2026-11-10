@@ -83,14 +83,14 @@ export function StreakLine({ current, record }: { current: number; record: numbe
 
 /* ---------- Takrorlash ---------- */
 
-export function ReviewCard({ due, nextDue, today, hasWords }: { due: number; nextDue: Day | null; today: Day; hasWords: boolean }) {
+export function ReviewCard({ due, nextDue, today, hasWords, to = '/til/takrorlash' }: { due: number; nextDue: Day | null; today: Day; hasWords: boolean; to?: string }) {
   const t = useI18n().t
   if (due > 0) {
     return (
       <div className="rounded-card bg-accent p-4 text-on-accent">
         <p className="text-lg font-semibold">{t('review.cardTitle', { n: due })}</p>
         <Link
-          to="/til/takrorlash"
+          to={to}
           className="mt-3 flex min-h-[48px] items-center justify-center rounded-btn bg-surface px-4 text-base font-semibold text-accent-strong focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-surface"
         >
           {t('review.start')}

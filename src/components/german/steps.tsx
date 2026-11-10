@@ -5,9 +5,12 @@ import { Card } from '../ui/Card'
 import { useI18n } from '../../i18n/I18nProvider'
 import { useFeedback } from '../../ui/useFeedback'
 import type { ChoiceExercise, MatchExercise, WordExercise } from '../../content/german'
+import { useCourse } from '../../lang/CourseContext'
+import { COURSE_TEXT } from '../../lang/text'
 import { choiceOutcome, isCorrectOption, isMatchingPair, matchColumns, matchOutcome, wordOutcome, type Outcome } from '../../german/logic'
 import { LESSON_ICONS } from './icons'
 import { ListenButtons, type Speech } from './Listen'
+import { HangulText } from '../korean/HangulText'
 
 /** Qadam pastidagi tugma: kichik ekranda ham doim koʻrinib turadi. */
 function Footer({ children }: { children: ReactNode }) {
@@ -18,24 +21,27 @@ function Footer({ children }: { children: ReactNode }) {
 
 export function WordStep({ ex, speech, onDone }: { ex: WordExercise; speech: Speech; onDone: (o: Outcome) => void }) {
   const { lang, t } = useI18n()
+  const cl = useCourse().id
   const Icon = LESSON_ICONS[ex.icon]
   return (
     <div className="flex flex-1 flex-col gap-4">
       <div className="flex flex-col items-center gap-3 pt-2 text-center">
         <span className="flex h-24 w-24 items-center justify-center rounded-full bg-accent-soft text-accent-strong">{Icon && <Icon size={48} aria-hidden />}</span>
-        <h2 lang="de" className="break-words text-3xl font-bold">
+        <h2 lang={cl} className="break-words text-3xl font-bold">
           {ex.term}
         </h2>
         <p className="text-xl">{ex.tr[lang]}</p>
         <p className="text-base text-ink-2">{ex.pron[lang]}</p>
       </div>
       <ListenButtons speech={speech} text={ex.term} audioUrl={ex.audioUrl} />
-      <Card>
-        <p lang="de" className="text-base font-semibold">
-          {ex.example.de}
-        </p>
-        <p className="mt-1 text-base text-ink-2">{ex.example.tr[lang]}</p>
-      </Card>
+      {ex.example && (
+        <Card>
+          <p lang={cl} className="text-base font-semibold">
+            {ex.example.term}
+          </p>
+          <p className="mt-1 text-base text-ink-2">{ex.example.tr[lang]}</p>
+        </Card>
+      )}
       <Footer>
         <Button onClick={() => onDone(wordOutcome())}>{t('common.next')}</Button>
       </Footer>
@@ -47,6 +53,7 @@ export function WordStep({ ex, speech, onDone }: { ex: WordExercise; speech: Spe
 
 export function ChoiceStep({ ex, onDone }: { ex: ChoiceExercise; onDone: (o: Outcome) => void }) {
   const { lang, t } = useI18n()
+  const cl = useCourse().id
   const fx = useFeedback()
   const refs = useRef<Record<string, HTMLButtonElement | null>>({})
   const [picked, setPicked] = useState<string | null>(null)
@@ -58,14 +65,16 @@ export function ChoiceStep({ ex, onDone }: { ex: ChoiceExercise; onDone: (o: Out
     <div className="flex flex-1 flex-col gap-4">
       <p className="text-base text-ink-2">{ex.prompt[lang]}</p>
       <Card>
-        <p lang="de" className="text-xl font-semibold leading-relaxed">
+        <p lang={cl} className="text-xl font-semibold leading-relaxed">
           {before}
           <span className={`mx-1 inline-block min-w-[4rem] border-b-2 text-center ${answered ? 'border-success text-success-text' : 'border-ink-3'}`}>
             {answered ? right?.text : ' '}
           </span>
           {after}
         </p>
-        <p className="mt-2 text-base text-ink-2">{ex.translation[lang]}</p>
+        <p className="mt-2 text-base text-ink-2">
+          <HangulText text={ex.translation[lang]} />
+        </p>
       </Card>
       <div className="space-y-2" role="group" aria-label={ex.prompt[lang]}>
         {ex.options.map((o) => {
@@ -85,7 +94,7 @@ export function ChoiceStep({ ex, onDone }: { ex: ChoiceExercise; onDone: (o: Out
                 refs.current[o.id] = el
               }}
               type="button"
-              lang="de"
+              lang={cl}
               disabled={answered}
               onClick={() => {
                 setPicked(o.id)
@@ -108,7 +117,9 @@ export function ChoiceStep({ ex, onDone }: { ex: ChoiceExercise; onDone: (o: Out
               {ok ? <IconCheck size={20} aria-hidden /> : <IconX size={20} aria-hidden />}
               {ok ? t('german.right') : t('german.wrong')}
             </p>
-            <p className="mt-1 text-base">{ex.explain[lang]}</p>
+            <p className="mt-1 text-base">
+              <HangulText text={ex.explain[lang]} />
+            </p>
           </div>
         )}
       </div>
@@ -128,6 +139,7 @@ const FLASH_WRONG_MS = 600
 
 export function MatchStep({ ex, onDone }: { ex: MatchExercise; onDone: (o: Outcome) => void }) {
   const { lang, t } = useI18n()
+  const course = useCourse()
   const fx = useFeedback()
   const rightRefs = useRef<Record<string, HTMLButtonElement | null>>({})
   const cols = useMemo(() => matchColumns(ex), [ex])
@@ -188,9 +200,9 @@ export function MatchStep({ ex, onDone }: { ex: MatchExercise; onDone: (o: Outco
     <div className="flex flex-1 flex-col gap-4">
       <p className="text-base text-ink-2">{ex.prompt[lang]}</p>
       <div className="grid grid-cols-2 gap-3">
-        <div className="space-y-2" role="group" aria-label={t('german.matchGerman')}>
+        <div className="space-y-2" role="group" aria-label={t(COURSE_TEXT[course.id].matchTarget)}>
           {cols.left.map((p) => (
-            <button key={p.id} type="button" lang="de" aria-pressed={sel === p.id} aria-hidden={gone.includes(p.id) || undefined} tabIndex={gone.includes(p.id) ? -1 : undefined} onClick={() => pickLeft(p.id)} className={`${base} ${itemCls(p.id, 'left')}`}>
+            <button key={p.id} type="button" lang={course.id} aria-pressed={sel === p.id} aria-hidden={gone.includes(p.id) || undefined} tabIndex={gone.includes(p.id) ? -1 : undefined} onClick={() => pickLeft(p.id)} className={`${base} ${itemCls(p.id, 'left')}`}>
               {matched.includes(p.id) && <IconCheck size={18} aria-hidden />}
               {wrong?.left === p.id && <IconX size={18} aria-hidden />}
               {p.term}

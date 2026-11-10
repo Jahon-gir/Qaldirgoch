@@ -30,7 +30,7 @@ export function buildVocab({ lessons, exercisesOf }: Source): VocabWord[] {
       const id = wordId(l.moduleId, ex.term, ex.slug)
       if (seen.has(id)) continue
       seen.add(id)
-      out.push({ id, moduleId: l.moduleId, lessonId: l.id, exerciseId: ex.id, term: ex.term, tr: ex.tr })
+      out.push({ id, moduleId: l.moduleId, lessonId: l.id, exerciseId: ex.id, term: ex.term, tr: ex.tr, pron: ex.pron })
     }
   }
   return out

@@ -6,7 +6,7 @@ import { sessionDone } from './srs'
 import { MIXED, pickVocabOptions, startVocabSession, unlockedWords, vocabAnswer, vocabGroups, vocabSummary } from './vocab'
 
 const R = (...ids: string[]): Results => Object.fromEntries(ids.map((id) => [id, { lessonId: id, score: 1, total: 1, completedAt: '2026-11-01T00:00:00.000Z' }]))
-const w = (id: string, lessonId: string, moduleId: string, term: string, uz: string): VocabWord => ({ id, lessonId, moduleId, exerciseId: id, term, tr: l3(uz, uz, uz) })
+const w = (id: string, lessonId: string, moduleId: string, term: string, uz: string): VocabWord => ({ id, lessonId, moduleId, exerciseId: id, term, tr: l3(uz, uz, uz), pron: l3(uz, uz, uz) })
 
 describe('lugʻat ekrani: guruhlar va qulf', () => {
   it('faqat word mashqi bor darslar; modul testi chiqmaydi', () => {

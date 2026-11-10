@@ -4,7 +4,7 @@ import { VOCAB, wordById, type VocabWord } from '../content/german/words'
 import { articleOf, chunksMatch, chunksOf, chunkTiles, isNoun, kindsFor, letterTiles, lettersMatch, lettersPrefixOk, mixedKinds, nextMixedKind, playable, reviewKind, reviewKinds, targetLetters } from './exercises'
 import { normalize } from './answer'
 
-const w = (id: string, term: string, moduleId = 'm1'): VocabWord => ({ id, lessonId: 'l1', moduleId, exerciseId: id, term, tr: l3('x', 'x', 'x') })
+const w = (id: string, term: string, moduleId = 'm1'): VocabWord => ({ id, lessonId: 'l1', moduleId, exerciseId: id, term, tr: l3('x', 'x', 'x'), pron: l3('x', 'x', 'x') })
 const byDe = (de: string) => VOCAB.find((x) => x.term === de)!
 
 describe('artikl aniqlash', () => {

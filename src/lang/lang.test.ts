@@ -12,6 +12,7 @@ import { DE_COURSE } from './de'
 import { ALL_RESULT_IDS, ALL_WORD_IDS, COURSES, courseIdOfLesson, courseIdOfWord, courseOf, resultIdsOf, unionResultIds, unionWordIds, wordIdsOf } from './registry'
 import type { Course } from './types'
 import { buildVocab, slugErrors, wordId } from './words'
+import { makeCourse } from './course'
 
 const DE_WORD_IDS = [
   'a1-m1-hallo',
@@ -40,13 +41,14 @@ const DE_WORD_IDS = [
 
 /* ---------- Soxta koreys kursi: FAQAT testda (reyestrga qoʻshilmaydi) ---------- */
 
-const koWord = (id: string, term: string, slug?: string): WordExercise => ({ type: 'word', id, term, slug, tr: l3('Salom', 'Салом', 'Привет'), pron: l3('an-nyon', 'ан-нён', 'ан-нён'), icon: 'hand-stop', example: { de: term, tr: l3('Salom', 'Салом', 'Привет') } })
+const koWord = (id: string, term: string, slug?: string): WordExercise => ({ type: 'word', id, term, slug, tr: l3('Salom', 'Салом', 'Привет'), pron: l3('an-nyon', 'ан-нён', 'ан-нён'), icon: 'hand-stop', example: { term, tr: l3('Salom', 'Салом', 'Привет') } })
 const KO_MODULES: Module[] = [{ id: 'ko-t1-m1', level: 'ko-T1', direction: 'general', order: 1, status: 'draft', title: l3('Salom', 'Салом', 'Привет') }]
 const KO_LESSONS: Lesson[] = [{ id: 'ko-t1-m1-l1', moduleId: 'ko-t1-m1', title: l3('Salom', 'Салом', 'Привет'), kind: 'words', minutes: 5, order: 1 }]
 const KO_EX: Record<string, Exercise[]> = { 'ko-t1-m1-l1': [koWord('ko-t1-m1-l1-e1', '안녕하세요', 'annyeonghaseyo'), koWord('ko-t1-m1-l1-e2', '감사합니다', 'gamsahamnida')] }
 const koSource = { lessons: KO_LESSONS, exercisesOf: (id: string) => KO_EX[id] ?? [] }
-const KO_FAKE: Course = {
+const KO_FAKE: Course = makeCourse({
   id: 'ko',
+  flag: 'kr',
   speechLang: 'ko-KR',
   levels: [{ id: 'ko-T1', locked: false }],
   modules: KO_MODULES,
@@ -54,15 +56,15 @@ const KO_FAKE: Course = {
   exercisesOf: koSource.exercisesOf,
   vocab: buildVocab(koSource),
   gaps: [],
-  features: { article: false, write: false, build: 'syllables' },
+  features: { article: false, write: false, build: 'syllables', pron: true },
   normalize: normalizeKo,
   letterLocale: 'ko'
-}
+})
 
 describe("nemis kursi: id'lar oʻzgarmagan", () => {
   it("22 ta soʻz id'si aynan avvalgidek (bittasi oʻzgarsa progress yoʻqoladi)", () => {
     expect(courseOf('de').vocab.map((w) => w.id)).toEqual(DE_WORD_IDS)
-    expect([...ALL_WORD_IDS]).toEqual(DE_WORD_IDS)
+    expect([...ALL_WORD_IDS].filter((id) => courseIdOfWord(id) === 'de')).toEqual(DE_WORD_IDS)
   })
   it("dars va test id'lari prefikssiz", () => {
     expect(resultIdsOf(DE_COURSE)).toEqual([
@@ -70,22 +72,23 @@ describe("nemis kursi: id'lar oʻzgarmagan", () => {
       'test:a1-m1', 'test:a1-m2', 'test:a1-m3',
       'test:level-A1', 'test:level-A2', 'test:level-B1'
     ])
-    expect([...ALL_RESULT_IDS].sort()).toEqual(resultIdsOf(DE_COURSE).sort())
+    expect([...ALL_RESULT_IDS].filter((id) => courseIdOfLesson(id) === 'de').sort()).toEqual(resultIdsOf(DE_COURSE).sort())
   })
   it('nemis kontentida slug xatosi yoʻq', () => {
     expect(slugErrors(DE_COURSE)).toEqual([])
   })
   it('kurs xususiyatlari va ovoz tili', () => {
-    expect(DE_COURSE.features).toEqual({ article: true, write: true, build: 'letters' })
+    expect(DE_COURSE.features).toEqual({ article: true, write: true, build: 'letters', pron: false })
     expect(DE_COURSE.speechLang).toBe('de-DE')
     expect(DE_COURSE.levels).toEqual([{ id: 'A1', locked: false }, { id: 'A2', locked: false }, { id: 'B1', locked: true }])
   })
 })
 
 describe('reyestr', () => {
-  it('hozircha faqat de; notanish kurs — standart de', () => {
-    expect(COURSES.map((c) => c.id)).toEqual(['de'])
-    expect(courseOf('ko')).toBe(DE_COURSE)
+  it('reyestrda de va ko', () => {
+    expect(COURSES.map((c) => c.id)).toEqual(['de', 'ko'])
+    expect(courseOf('de')).toBe(DE_COURSE)
+    expect(courseOf('ko').id).toBe('ko')
   })
   it('kurs prefiksi boʻyicha aniqlanadi', () => {
     expect(courseIdOfLesson('a1-m1-l1')).toBe('de')
@@ -97,7 +100,7 @@ describe('reyestr', () => {
     expect(courseIdOfWord('ko-t1-m1-annyeonghaseyo')).toBe('ko')
   })
   it("id'lar kurslar orasida takrorlanmaydi; prefikssiz id faqat de da", () => {
-    for (const set of [[...COURSES], [...COURSES, KO_FAKE]]) {
+    for (const set of [[...COURSES], [DE_COURSE, KO_FAKE]]) {
       const results = set.flatMap(resultIdsOf)
       const words = set.flatMap(wordIdsOf)
       expect(new Set(results).size).toBe(results.length)
@@ -139,8 +142,8 @@ describe('sanitize: kurslar birlashmasi', () => {
     const known = unionResultIds([DE_COURSE, KO_FAKE])
     const raw = { 'a1-m1-l1': r('a1-m1-l1'), 'test:level-A1': r('test:level-A1'), 'ko-t1-m1-l1': r('ko-t1-m1-l1'), 'test:level-ko-T1': r('test:level-ko-T1'), 'ko-x-l9': r('ko-x-l9'), 'b2-m1-l1': r('b2-m1-l1') }
     expect(Object.keys(sanitizeResults(raw, known)).sort()).toEqual(['a1-m1-l1', 'ko-t1-m1-l1', 'test:level-A1', 'test:level-ko-T1'])
-    // Standart (reyestr) — koreys hali yoʻq
-    expect(Object.keys(sanitizeResults(raw)).sort()).toEqual(['a1-m1-l1', 'test:level-A1'])
+    // Standart (reyestr): haqiqiy koreys kursida ko-t1-m1-l1 darsi hali yoʻq, daraja testi id'si bor
+    expect(Object.keys(sanitizeResults(raw)).sort()).toEqual(['a1-m1-l1', 'test:level-A1', 'test:level-ko-T1'])
   })
   it('soʻzlar: nemis ham, koreys ham saqlanadi; notanish id tashlanadi', () => {
     const known = unionWordIds([DE_COURSE, KO_FAKE])

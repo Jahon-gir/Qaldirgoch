@@ -2,11 +2,12 @@ import { DIRECTIONS, LESSONS, LEVELS, LEVEL_LOCKED, MODULES, exercisesOf } from 
 import { GAPS } from '../content/german/gaps'
 import { VOCAB } from '../content/german/words'
 import { normalizeDe } from '../german/answer'
-import type { Course } from './types'
+import { makeCourse } from './course'
 
 /** Nemis tili kursi: mavjud kontent aynan oʻzgarishsiz (id'lar prefikssiz). */
-export const DE_COURSE: Course = {
+export const DE_COURSE = makeCourse({
   id: 'de',
+  flag: 'de',
   speechLang: 'de-DE',
   levels: LEVELS.map((id) => ({ id, locked: LEVEL_LOCKED[id] })),
   directions: DIRECTIONS,
@@ -15,7 +16,7 @@ export const DE_COURSE: Course = {
   exercisesOf,
   vocab: VOCAB,
   gaps: GAPS,
-  features: { article: true, write: true, build: 'letters' },
+  features: { article: true, write: true, build: 'letters', pron: false },
   normalize: normalizeDe,
   letterLocale: 'de'
-}
+})

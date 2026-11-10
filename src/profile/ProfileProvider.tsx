@@ -7,6 +7,7 @@ import type { Direction } from '../content/german/types'
 import { DEFAULT_GOAL, isGoal, type DailyGoal } from '../german/daily'
 import { DEFAULT_VOCAB_FRONT, PROFILE_SCHEMA_VERSION, VOCAB_FRONTS, VOCAB_MODES, type Answers, type Profile, type VocabFront, type VocabMode } from './questions'
 import { cleanText, decideSync, fetchRemoteProfile, normalizeProfile, pushRemoteProfile } from './sync'
+import { isCourseId, type CourseId } from '../lang/types'
 
 export { cleanText }
 
@@ -70,6 +71,9 @@ type Ctx = {
   vocabMode: VocabMode
   vocabFront: VocabFront
   setVocabPrefs: (p: { mode?: VocabMode; front?: VocabFront }) => void
+  /** Oxirgi tanlangan til kursi (til tanlash ekranida belgilanadi); yoʻq boʻlsa — undefined. */
+  activeCourse: CourseId | undefined
+  setActiveCourse: (c: CourseId) => void
   /** Ovoz effektlari (standart yoqilgan). */
   soundEffects: boolean
   setSoundEffects: (on: boolean) => void
@@ -269,6 +273,15 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
     if (userId && phaseRef.current === 'ready') void push(userId, p)
   }
 
+  const setActiveCourse = (c: CourseId) => {
+    const cur = profileRef.current
+    if (!cur || !isCourseId(c) || cur.activeCourse === c) return
+    const p: Profile = { ...cur, activeCourse: c }
+    setProfile(p)
+    write(PROFILE_KEY, JSON.stringify(p))
+    if (userId && phaseRef.current === 'ready') void push(userId, p)
+  }
+
   const setSoundEffects = (on: boolean) => {
     const cur = profileRef.current
     if (!cur || (cur.soundEffects ?? true) === on) return
@@ -317,7 +330,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
 
   return (
     <ProfileContext.Provider
-      value={{ profile, onboarded, saveAnswers, completeOnboarding, setGermanDirection, selectedCountry: effectiveCountry(profile?.selectedCountry), selectCountry, dailyGoal: profile?.dailyGoal ?? DEFAULT_GOAL, setDailyGoal, vocabMode: profile?.vocabMode ?? 'list', vocabFront: profile?.vocabFront ?? DEFAULT_VOCAB_FRONT, setVocabPrefs, soundEffects: profile?.soundEffects ?? true, setSoundEffects, sync, guestDiscarded, syncPending, answerMigrate, answerChoose, signOutAndClear }}
+      value={{ profile, onboarded, saveAnswers, completeOnboarding, setGermanDirection, selectedCountry: effectiveCountry(profile?.selectedCountry), selectCountry, dailyGoal: profile?.dailyGoal ?? DEFAULT_GOAL, setDailyGoal, vocabMode: profile?.vocabMode ?? 'list', vocabFront: profile?.vocabFront ?? DEFAULT_VOCAB_FRONT, setVocabPrefs, activeCourse: profile?.activeCourse, setActiveCourse, soundEffects: profile?.soundEffects ?? true, setSoundEffects, sync, guestDiscarded, syncPending, answerMigrate, answerChoose, signOutAndClear }}
     >
       {children}
     </ProfileContext.Provider>

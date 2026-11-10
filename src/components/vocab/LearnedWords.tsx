@@ -3,6 +3,7 @@ import { useI18n } from '../../i18n/I18nProvider'
 import { addDays } from '../../german/srs'
 import { lessonWords } from '../../german/vocab'
 import { useWords } from '../../german/WordsProvider'
+import { useCourse } from '../../lang/CourseContext'
 import { ListenIcon } from '../german/Listen'
 import type { Speech } from '../german/Listen'
 import { Card } from '../ui/Card'
@@ -13,7 +14,8 @@ const SHOWN = 3
 export function LearnedWords({ lessonId, speech }: { lessonId: string; speech: Speech }) {
   const { lang, t } = useI18n()
   const { words, today } = useWords()
-  const list = lessonWords(lessonId)
+  const course = useCourse()
+  const list = lessonWords(lessonId, course)
   if (list.length === 0) return null
   const tomorrow = addDays(today, 1)
   // Faqat rost boʻlsa: kamida bitta soʻz ertaga takrorlashga keladi (avval oʻrganilgan soʻzlar oʻz jadvalida qoladi)
@@ -28,7 +30,7 @@ export function LearnedWords({ lessonId, speech }: { lessonId: string; speech: S
           <li key={w.id}>
             <Card className="flex items-center gap-3 py-3">
               <span className="flex-1">
-                <span lang="de" className="block text-base font-semibold">
+                <span lang={course.id} className="block text-base font-semibold">
                   {w.term}
                 </span>
                 <span className="block text-base text-ink-2">{w.tr[lang]}</span>

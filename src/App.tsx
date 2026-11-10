@@ -9,6 +9,8 @@ import Home from './pages/Home'
 import Countries from './pages/countries/Countries'
 import { CountryRoute, ProgramGuideRoute, ProgramRoute, StepRoute } from './pages/countries/routes'
 import Language from './pages/Language'
+import LanguagePicker from './pages/LanguagePicker'
+import { CourseScope } from './lang/CourseContext'
 import ModulePage from './pages/german/ModulePage'
 import LessonPage from './pages/german/LessonPage'
 import ReviewPage from './pages/german/ReviewPage'
@@ -55,8 +57,16 @@ export function AppRoutes() {
         <Route path="yol/:country/:program/batafsil" element={<ProgramGuideRoute kind="batafsil" />} />
         <Route path="yol/:country/:program/:stepId" element={<StepRoute />} />
         <Route path="yol/*" element={<Navigate to="/yol" replace />} />
-        <Route path="til" element={<Language />} />
-        <Route path="til/modul/:moduleId" element={<ModulePage />} />
+        {/* /til — har safar til tanlash; kurs ekranlari: /til/de (nemischa ichki manzillar avvalgidek), /til/ko/... */}
+        <Route path="til" element={<LanguagePicker />} />
+        <Route element={<CourseScope id="de" />}>
+          <Route path="til/de" element={<Language />} />
+          <Route path="til/modul/:moduleId" element={<ModulePage />} />
+        </Route>
+        <Route element={<CourseScope id="ko" />}>
+          <Route path="til/ko" element={<Language />} />
+          <Route path="til/ko/modul/:moduleId" element={<ModulePage />} />
+        </Route>
         <Route path="xavfsizlik" element={<SafetyLayout />}>
           <Route index element={<Safety />} />
           <Route path="agentlik" element={<AgencyCheck />} />
@@ -70,11 +80,20 @@ export function AppRoutes() {
       </Route>
       {/* Dars, takrorlash va lugʻat ekranlari pastki menyusiz */}
       <Route element={<RequireOnboarding bare />}>
-        <Route path="til/dars/:lessonId" element={<LessonPage />} />
-        <Route path="til/takrorlash" element={<ReviewPage />} />
-        <Route path="til/lugat" element={<VocabPage />} />
-        <Route path="til/lugat/:lessonId" element={<VocabLessonPage />} />
-        <Route path="til/test/:scope" element={<FinalTestPage />} />
+        <Route element={<CourseScope id="de" />}>
+          <Route path="til/dars/:lessonId" element={<LessonPage />} />
+          <Route path="til/takrorlash" element={<ReviewPage />} />
+          <Route path="til/lugat" element={<VocabPage />} />
+          <Route path="til/lugat/:lessonId" element={<VocabLessonPage />} />
+          <Route path="til/test/:scope" element={<FinalTestPage />} />
+        </Route>
+        <Route element={<CourseScope id="ko" />}>
+          <Route path="til/ko/dars/:lessonId" element={<LessonPage />} />
+          <Route path="til/ko/takrorlash" element={<ReviewPage />} />
+          <Route path="til/ko/lugat" element={<VocabPage />} />
+          <Route path="til/ko/lugat/:lessonId" element={<VocabLessonPage />} />
+          <Route path="til/ko/test/:scope" element={<FinalTestPage />} />
+        </Route>
       </Route>
     </Routes>
   )

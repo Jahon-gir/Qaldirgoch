@@ -1,5 +1,5 @@
 import { IconCheck } from '@tabler/icons-react'
-import { wordById } from '../../content/german/words'
+import { useCourse } from '../../lang/CourseContext'
 import { useI18n } from '../../i18n/I18nProvider'
 import type { Session } from '../../german/srs'
 import { vocabSummary } from '../../german/vocab'
@@ -8,6 +8,7 @@ import { Footer, navyBtn } from './parts'
 /** Natija (Kartochka va Test uchun umumiy). Lugʻat mashqi SRS jadvaliga tegmaydi. */
 export function VocabResult({ session, counted, speak, onDone, onRetry }: { session: Session; counted: boolean; speak?: { total: number; practiced: number }; onDone: () => void; onRetry: () => void }) {
   const { lang, t } = useI18n()
+  const course = useCourse()
   const s = vocabSummary(session)
   return (
     <div className="flex flex-1 flex-col gap-4 pt-4">
@@ -31,11 +32,11 @@ export function VocabResult({ session, counted, speak, onDone, onRetry }: { sess
           </h2>
           <ul className="overflow-hidden rounded-card bg-surface">
             {s.wrongIds.map((id) => {
-              const w = wordById(id)
+              const w = course.wordById(id)
               if (!w) return null
               return (
                 <li key={id} className="border-b border-line px-4 py-3 text-base last:border-0">
-                  <span lang="de" className="font-semibold">
+                  <span lang={course.id} className="font-semibold">
                     {w.term}
                   </span>{' '}
                   — <span className="text-ink-2">{w.tr[lang]}</span>

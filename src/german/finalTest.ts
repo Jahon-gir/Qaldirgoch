@@ -1,8 +1,9 @@
-import { LESSONS, TEST_IDS, moduleById, testResultId, type Direction } from '../content/german'
-import { GAPS, type GapItem } from '../content/german/gaps'
-import { VOCAB, type VocabWord } from '../content/german/words'
+import { testResultId, type Direction } from '../content/german'
+import type { GapItem } from '../content/german/gaps'
+import type { VocabWord } from '../content/german/words'
 import { DE_COURSE } from '../lang/de'
-import type { Course } from '../lang/types'
+import { ALL_RESULT_IDS, courseOf } from '../lang/registry'
+import type { Course, CourseId } from '../lang/types'
 import { hasArticle, type ExerciseKind } from './exercises'
 import { lessonsOf, visibleModules, type Results } from './logic'
 
@@ -20,7 +21,7 @@ export const LEVEL_PREFIX = 'level-'
 /** lv — daraja id'si (nemischa "A1"; boshqa kurslar "ko-T1"). */
 export const levelScope = (lv: string) => `${LEVEL_PREFIX}${lv}`
 export const testId = (scope: Scope) => testResultId(scope)
-export const isTestId = (id: string) => TEST_IDS.has(id)
+export const isTestId = (id: string) => id.startsWith('test:') && ALL_RESULT_IDS.has(id)
 
 export const PASS_RATIO = 11 / 12
 export const passMark = (total: number) => Math.ceil(total * PASS_RATIO - 1e-9)
@@ -53,33 +54,35 @@ function shuffle<T>(items: readonly T[], rand: () => number): T[] {
 
 /* ---------- Doira (scope) ---------- */
 
-export type ScopeInfo = { scope: Scope; type: 'module' | 'level'; level: string; moduleIds: string[]; wordCount: number; gapCount: number }
+/** course — qaysi kursning testi (soʻzlar, gaplar va darslar shu kursdan olinadi). */
+export type ScopeInfo = { scope: Scope; type: 'module' | 'level'; level: string; moduleIds: string[]; wordCount: number; gapCount: number; course: CourseId }
 
 /** Doiradagi modullar: modul — oʻzi; daraja — shu darajadagi koʻrinadigan modullar (soni kontentdan). */
-export function scopeInfo(scope: Scope, direction: Direction): ScopeInfo | null {
+export function scopeInfo(scope: Scope, direction: Direction, course: Course = DE_COURSE): ScopeInfo | null {
   if (scope.startsWith(LEVEL_PREFIX)) {
     const level = scope.slice(LEVEL_PREFIX.length)
-    const mods = visibleModules(direction).filter((m) => m.level === level)
+    const mods = visibleModules(direction, course.modules).filter((m) => m.level === level)
     if (!mods.length) return null
-    return { scope, type: 'level', level, moduleIds: mods.map((m) => m.id), wordCount: 16, gapCount: 4 }
+    return { scope, type: 'level', level, moduleIds: mods.map((m) => m.id), wordCount: 16, gapCount: 4, course: course.id }
   }
-  const m = moduleById(scope)
+  const m = course.moduleById(scope)
   if (!m) return null
-  return { scope, type: 'module', level: m.level, moduleIds: [m.id], wordCount: 8, gapCount: 4 }
+  return { scope, type: 'module', level: m.level, moduleIds: [m.id], wordCount: 8, gapCount: 4, course: course.id }
 }
 
-const wordsOf = (moduleIds: string[], vocab: readonly VocabWord[] = VOCAB) => vocab.filter((w) => moduleIds.includes(w.moduleId))
-const gapsOf = (moduleIds: string[], gaps: readonly GapItem[] = GAPS) => gaps.filter((g) => moduleIds.includes(g.moduleId))
+const wordsOf = (moduleIds: string[], vocab: readonly VocabWord[]) => vocab.filter((w) => moduleIds.includes(w.moduleId))
+const gapsOf = (moduleIds: string[], gaps: readonly GapItem[]) => gaps.filter((g) => moduleIds.includes(g.moduleId))
 
 /** Savollar soni (kartochka uchun): soʻz va gap yetmasa — qisqaroq. */
-export function testSize(info: ScopeInfo, vocab: readonly VocabWord[] = VOCAB, gaps: readonly GapItem[] = GAPS) {
+export function testSize(info: ScopeInfo, vocab: readonly VocabWord[] = courseOf(info.course).vocab, gaps: readonly GapItem[] = courseOf(info.course).gaps) {
   return Math.min(info.wordCount, wordsOf(info.moduleIds, vocab).length) + Math.min(info.gapCount, gapsOf(info.moduleIds, gaps).length)
 }
 
 /** Ochilganmi: modul — barcha darslari tugagan; daraja — barcha koʻrinadigan modullarning barcha darslari (darsi yoʻq modul — tugamagan). */
 export function isScopeUnlocked(info: ScopeInfo, results: Results): boolean {
+  const lessons = courseOf(info.course).lessons
   return info.moduleIds.every((id) => {
-    const ls = lessonsOf(id, LESSONS)
+    const ls = lessonsOf(id, lessons)
     return ls.length > 0 && ls.every((l) => l.id in results)
   })
 }
@@ -130,9 +133,10 @@ export function arrange(counts: Map<ExerciseKind, number>, rand: () => number): 
 
 /** Test savollari: soʻzlar aralash (usullar ketma-ket takrorlanmaydi), keyin gap-tanlash, eng oxirida gap-yozish. */
 export function buildTest(info: ScopeInfo, opts: { canListen: boolean; seed: string | number; vocab?: readonly VocabWord[]; gaps?: readonly GapItem[]; course?: Pick<Course, 'features'> }): Question[] {
-  const course = opts.course ?? DE_COURSE
+  const own = courseOf(info.course)
+  const course = opts.course ?? own
   const rand = seeded(opts.seed)
-  const words = shuffle(wordsOf(info.moduleIds, opts.vocab), rand).slice(0, info.wordCount)
+  const words = shuffle(wordsOf(info.moduleIds, opts.vocab ?? own.vocab), rand).slice(0, info.wordCount)
   const nouns = words.filter((w) => hasArticle(w, course))
   const methods = arrange(methodCounts(words.length, opts.canListen, nouns.length, course.features.write), rand)
   // Artikl — faqat ot soʻzga; qolganlari tasodifiy
@@ -147,7 +151,7 @@ export function buildTest(info: ScopeInfo, opts: { canListen: boolean; seed: str
     return { kind: 'word', method, wordId: w!.id }
   })
   // Artikl uchun otlar ishlatilgan boʻlsa (otga boshqa usul tushgan) — tartib saqlanadi, chunki otlar soni artikl sonidan kam emas
-  const gaps = shuffle(gapsOf(info.moduleIds, opts.gaps), rand).slice(0, info.gapCount)
+  const gaps = shuffle(gapsOf(info.moduleIds, opts.gaps ?? own.gaps), rand).slice(0, info.gapCount)
   const gapQs: Question[] = gaps.map((g, i) => ({ kind: 'gap', mode: i === gaps.length - 1 ? 'write' : 'choice', gapId: g.id }))
   return [...wordQs, ...gapQs]
 }
