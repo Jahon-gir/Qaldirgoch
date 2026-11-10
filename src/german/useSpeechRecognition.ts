@@ -50,11 +50,11 @@ function errorState(code: string | undefined): RecState {
 }
 
 /**
- * Nemischa ovoz tanish: de-DE, bitta jumla, oraliq natijalarsiz, 3 tagacha variant.
+ * Ovoz tanish (lang — course.speechLang, standart de-DE), bitta jumla, oraliq natijalarsiz, 3 tagacha variant.
  * ~8 soniyadan keyin oʻzi toʻxtaydi; ekrandan chiqilganda yoki cancel() da toʻxtatiladi (mikrofon oqib qolmasin).
  * Ovoz saqlanmaydi: faqat tanilgan matn xotirada turadi.
  */
-export function useSpeechRecognition() {
+export function useSpeechRecognition(lang: string = 'de-DE') {
   const [state, setState] = useState<RecState>(IDLE)
   const stopRef = useRef<(() => void) | null>(null)
 
@@ -85,7 +85,7 @@ export function useSpeechRecognition() {
     }
     try {
       rec = new Ctor()
-      rec.lang = 'de-DE'
+      rec.lang = lang
       rec.continuous = false
       rec.interimResults = false
       rec.maxAlternatives = MAX_ALTERNATIVES
@@ -125,7 +125,7 @@ export function useSpeechRecognition() {
     } catch {
       settle({ status: 'error' })
     }
-  }, [])
+  }, [lang])
 
   // Ekrandan chiqilganda tinglash toʻxtaydi
   useEffect(() => () => stopRef.current?.(), [])

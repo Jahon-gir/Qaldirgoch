@@ -5,7 +5,7 @@ import { clearProgressStorage } from '../progress/storage'
 import { countryById, effectiveCountry, type CountryId } from '../content/countries'
 import type { Direction } from '../content/german/types'
 import { DEFAULT_GOAL, isGoal, type DailyGoal } from '../german/daily'
-import { PROFILE_SCHEMA_VERSION, VOCAB_FRONTS, VOCAB_MODES, type Answers, type Profile, type VocabFront, type VocabMode } from './questions'
+import { DEFAULT_VOCAB_FRONT, PROFILE_SCHEMA_VERSION, VOCAB_FRONTS, VOCAB_MODES, type Answers, type Profile, type VocabFront, type VocabMode } from './questions'
 import { cleanText, decideSync, fetchRemoteProfile, normalizeProfile, pushRemoteProfile } from './sync'
 
 export { cleanText }
@@ -37,7 +37,18 @@ function write(key: string, value: string | null) {
   }
 }
 
-const loadProfile = (): Profile | null => read(PROFILE_KEY, (s) => normalizeProfile(JSON.parse(s)), null)
+const loadProfile = (): Profile | null =>
+  read(
+    PROFILE_KEY,
+    (s) => {
+      const raw = JSON.parse(s)
+      const p = normalizeProfile(raw)
+      // Eski vocabFront 'de' → 'target': telefondagi nusxa ham darhol yangilanadi
+      if (p && (raw as { vocabFront?: unknown }).vocabFront === 'de') write(PROFILE_KEY, JSON.stringify(p))
+      return p
+    },
+    null
+  )
 
 /** off — mehmon; checking — server bilan solishtirilmoqda; ask/choose — foydalanuvchi javobi kutilmoqda; ready — tayyor; error — tarmoq/oʻqib boʻlmadi. */
 export type SyncPhase = 'off' | 'checking' | 'ask' | 'choose' | 'ready' | 'error'
@@ -55,7 +66,7 @@ type Ctx = {
   /** Kunlik maqsad (tugatilgan dars yoki takrorlash soni: 1 / 2 / 3). Profilda saqlanadi va akkaunt bilan sinxronlanadi. */
   dailyGoal: DailyGoal
   setDailyGoal: (g: DailyGoal) => void
-  /** Lugʻat: mashq usuli va old tomoni (profilda saqlanadi; standart — roʻyxat, nemischa). */
+  /** Lugʻat: mashq usuli va old tomoni (profilda saqlanadi; standart — roʻyxat, oʻrganilayotgan til). */
   vocabMode: VocabMode
   vocabFront: VocabFront
   setVocabPrefs: (p: { mode?: VocabMode; front?: VocabFront }) => void
@@ -210,7 +221,8 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
       dailyGoal: profile?.dailyGoal,
       vocabMode: profile?.vocabMode,
       vocabFront: profile?.vocabFront,
-      soundEffects: profile?.soundEffects
+      soundEffects: profile?.soundEffects,
+      activeCourse: profile?.activeCourse
     }
     setProfile(p)
     write(PROFILE_KEY, JSON.stringify(p))
@@ -305,7 +317,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
 
   return (
     <ProfileContext.Provider
-      value={{ profile, onboarded, saveAnswers, completeOnboarding, setGermanDirection, selectedCountry: effectiveCountry(profile?.selectedCountry), selectCountry, dailyGoal: profile?.dailyGoal ?? DEFAULT_GOAL, setDailyGoal, vocabMode: profile?.vocabMode ?? 'list', vocabFront: profile?.vocabFront ?? 'de', setVocabPrefs, soundEffects: profile?.soundEffects ?? true, setSoundEffects, sync, guestDiscarded, syncPending, answerMigrate, answerChoose, signOutAndClear }}
+      value={{ profile, onboarded, saveAnswers, completeOnboarding, setGermanDirection, selectedCountry: effectiveCountry(profile?.selectedCountry), selectCountry, dailyGoal: profile?.dailyGoal ?? DEFAULT_GOAL, setDailyGoal, vocabMode: profile?.vocabMode ?? 'list', vocabFront: profile?.vocabFront ?? DEFAULT_VOCAB_FRONT, setVocabPrefs, soundEffects: profile?.soundEffects ?? true, setSoundEffects, sync, guestDiscarded, syncPending, answerMigrate, answerChoose, signOutAndClear }}
     >
       {children}
     </ProfileContext.Provider>

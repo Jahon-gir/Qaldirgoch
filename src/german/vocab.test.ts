@@ -6,7 +6,7 @@ import { sessionDone } from './srs'
 import { MIXED, pickVocabOptions, startVocabSession, unlockedWords, vocabAnswer, vocabGroups, vocabSummary } from './vocab'
 
 const R = (...ids: string[]): Results => Object.fromEntries(ids.map((id) => [id, { lessonId: id, score: 1, total: 1, completedAt: '2026-11-01T00:00:00.000Z' }]))
-const w = (id: string, lessonId: string, moduleId: string, de: string, uz: string): VocabWord => ({ id, lessonId, moduleId, exerciseId: id, de, tr: l3(uz, uz, uz) })
+const w = (id: string, lessonId: string, moduleId: string, term: string, uz: string): VocabWord => ({ id, lessonId, moduleId, exerciseId: id, term, tr: l3(uz, uz, uz) })
 
 describe('lugʻat ekrani: guruhlar va qulf', () => {
   it('faqat word mashqi bor darslar; modul testi chiqmaydi', () => {
@@ -47,7 +47,7 @@ describe('test variantlari', () => {
   const ids = (o: ReturnType<typeof pickVocabOptions>) => o.filter((x) => !x.correct).map((x) => x.id).sort()
 
   it('4 variant: 1 toʻgʻri + 3 notoʻgʻri; avval shu darsdan', () => {
-    const o = pickVocabOptions(word, 'de', 'uz', Math.random, vocab)
+    const o = pickVocabOptions(word, 'target', 'uz', Math.random, vocab)
     expect(o).toHaveLength(4)
     expect(o.filter((x) => x.correct)).toHaveLength(1)
     expect(o.find((x) => x.correct)).toMatchObject({ id: 'a', text: 'Salom' })
@@ -58,12 +58,12 @@ describe('test variantlari', () => {
 
   it('shu darsdan yetsa — faqat shu darsdan', () => {
     const big = [...vocab, w('g', 'l1', 'm1', 'Nachmittag', 'Tushdan keyin')]
-    for (let i = 0; i < 20; i++) expect(ids(pickVocabOptions(word, 'de', 'uz', Math.random, big)).every((x) => ['b', 'c', 'g'].includes(x))).toBe(true)
+    for (let i = 0; i < 20; i++) expect(ids(pickVocabOptions(word, 'target', 'uz', Math.random, big)).every((x) => ['b', 'c', 'g'].includes(x))).toBe(true)
   })
 
   it('moduldan ham yetmasa — boshqa modullardan; matni bir xil variantlar olinmaydi', () => {
     const few = [word, w('b', 'l1', 'm1', 'Tag', 'Kun'), w('f', 'l3', 'm2', 'Koch', 'Oshpaz'), w('g', 'l3', 'm2', 'Arzt', 'Oshpaz'), w('h', 'l3', 'm2', 'Arzt2', 'Shifokor')]
-    const o = pickVocabOptions(word, 'de', 'uz', Math.random, few)
+    const o = pickVocabOptions(word, 'target', 'uz', Math.random, few)
     expect(o).toHaveLength(4)
     expect(new Set(o.map((x) => x.text)).size).toBe(4)
   })
@@ -76,9 +76,9 @@ describe('test variantlari', () => {
 
   it('tartib aralash (rand bilan boshqarilsa oʻzgaradi), haqiqiy lugʻatda ham 4 ta', () => {
     const first = VOCAB[0]
-    expect(pickVocabOptions(first, 'de', 'ru')).toHaveLength(4)
+    expect(pickVocabOptions(first, 'target', 'ru')).toHaveLength(4)
     const pos = new Set<number>()
-    for (let i = 0; i < 60; i++) pos.add(pickVocabOptions(first, 'de', 'uz').findIndex((x) => x.correct))
+    for (let i = 0; i < 60; i++) pos.add(pickVocabOptions(first, 'target', 'uz').findIndex((x) => x.correct))
     expect(pos.size).toBeGreaterThan(1)
   })
 })

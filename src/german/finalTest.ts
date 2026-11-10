@@ -1,7 +1,9 @@
-import { LESSONS, TEST_IDS, moduleById, testResultId, type Direction, type Level } from '../content/german'
+import { LESSONS, TEST_IDS, moduleById, testResultId, type Direction } from '../content/german'
 import { GAPS, type GapItem } from '../content/german/gaps'
 import { VOCAB, type VocabWord } from '../content/german/words'
-import { isNoun, type ExerciseKind } from './exercises'
+import { DE_COURSE } from '../lang/de'
+import type { Course } from '../lang/types'
+import { hasArticle, type ExerciseKind } from './exercises'
 import { lessonsOf, visibleModules, type Results } from './logic'
 
 /**
@@ -11,11 +13,12 @@ import { lessonsOf, visibleModules, type Results } from './logic'
  * Natija user_lessons da "test:<scope>" id bilan saqlanadi (yangi jadval yoʻq).
  */
 
-export type Scope = string // modul id (masalan "a1-m1") yoki "level-A1"
+export type Scope = string // modul id (masalan "a1-m1") yoki "level-A1" (boshqa kurs: "ko-t1-m1", "level-ko-T1")
 export type Question = { kind: 'word'; method: ExerciseKind; wordId: string } | { kind: 'gap'; mode: 'choice' | 'write'; gapId: string }
 
 export const LEVEL_PREFIX = 'level-'
-export const levelScope = (lv: Level) => `${LEVEL_PREFIX}${lv}`
+/** lv — daraja id'si (nemischa "A1"; boshqa kurslar "ko-T1"). */
+export const levelScope = (lv: string) => `${LEVEL_PREFIX}${lv}`
 export const testId = (scope: Scope) => testResultId(scope)
 export const isTestId = (id: string) => TEST_IDS.has(id)
 
@@ -50,12 +53,12 @@ function shuffle<T>(items: readonly T[], rand: () => number): T[] {
 
 /* ---------- Doira (scope) ---------- */
 
-export type ScopeInfo = { scope: Scope; type: 'module' | 'level'; level: Level; moduleIds: string[]; wordCount: number; gapCount: number }
+export type ScopeInfo = { scope: Scope; type: 'module' | 'level'; level: string; moduleIds: string[]; wordCount: number; gapCount: number }
 
 /** Doiradagi modullar: modul — oʻzi; daraja — shu darajadagi koʻrinadigan modullar (soni kontentdan). */
 export function scopeInfo(scope: Scope, direction: Direction): ScopeInfo | null {
   if (scope.startsWith(LEVEL_PREFIX)) {
-    const level = scope.slice(LEVEL_PREFIX.length) as Level
+    const level = scope.slice(LEVEL_PREFIX.length)
     const mods = visibleModules(direction).filter((m) => m.level === level)
     if (!mods.length) return null
     return { scope, type: 'level', level, moduleIds: mods.map((m) => m.id), wordCount: 16, gapCount: 4 }
@@ -83,8 +86,11 @@ export function isScopeUnlocked(info: ScopeInfo, results: Results): boolean {
 
 /* ---------- Usullar ketma-ketligi ---------- */
 
-/** Usullar sanogʻi n ta soʻz uchun; ovoz yoʻq — tinglash Test; ot yetmasa — artikl Test; Test juda koʻp boʻlsa — yigʻishga. */
-export function methodCounts(n: number, canListen: boolean, nouns: number): Map<ExerciseKind, number> {
+/**
+ * Usullar sanogʻi n ta soʻz uchun; ovoz yoʻq — tinglash Test; ot yetmasa — artikl Test; kursda yozish yoʻq (write = false) — yozish yigʻishga;
+ * Test juda koʻp boʻlsa — yigʻishga (yozish boʻlsa navbat bilan yozishga ham).
+ */
+export function methodCounts(n: number, canListen: boolean, nouns: number, write = true): Map<ExerciseKind, number> {
   const list: ExerciseKind[] = Array.from({ length: n }, (_, i) => PATTERN[i % PATTERN.length])
   const c = new Map<ExerciseKind, number>()
   let art = 0
@@ -92,15 +98,16 @@ export function methodCounts(n: number, canListen: boolean, nouns: number): Map<
     let m = k
     if (m === 'listen' && !canListen) m = 'test'
     if (m === 'article' && ++art > nouns) m = 'test'
+    if (m === 'write' && !write) m = 'build'
     c.set(m, (c.get(m) ?? 0) + 1)
   }
   // Ketma-ket bir xil usul boʻlmasligi uchun birorta usul yarmidan oshmasin
   const cap = Math.ceil(n / 2)
-  const swap: ExerciseKind[] = ['build', 'write']
+  const swap: ExerciseKind[] = write ? ['build', 'write'] : ['build']
   let i = 0
   while ((c.get('test') ?? 0) > cap) {
     c.set('test', c.get('test')! - 1)
-    const to = swap[i++ % 2]
+    const to = swap[i++ % swap.length]
     c.set(to, (c.get(to) ?? 0) + 1)
   }
   return c
@@ -122,11 +129,12 @@ export function arrange(counts: Map<ExerciseKind, number>, rand: () => number): 
 }
 
 /** Test savollari: soʻzlar aralash (usullar ketma-ket takrorlanmaydi), keyin gap-tanlash, eng oxirida gap-yozish. */
-export function buildTest(info: ScopeInfo, opts: { canListen: boolean; seed: string | number; vocab?: readonly VocabWord[]; gaps?: readonly GapItem[] }): Question[] {
+export function buildTest(info: ScopeInfo, opts: { canListen: boolean; seed: string | number; vocab?: readonly VocabWord[]; gaps?: readonly GapItem[]; course?: Pick<Course, 'features'> }): Question[] {
+  const course = opts.course ?? DE_COURSE
   const rand = seeded(opts.seed)
   const words = shuffle(wordsOf(info.moduleIds, opts.vocab), rand).slice(0, info.wordCount)
-  const nouns = words.filter(isNoun)
-  const methods = arrange(methodCounts(words.length, opts.canListen, nouns.length), rand)
+  const nouns = words.filter((w) => hasArticle(w, course))
+  const methods = arrange(methodCounts(words.length, opts.canListen, nouns.length, course.features.write), rand)
   // Artikl — faqat ot soʻzga; qolganlari tasodifiy
   const nounPool = [...nouns]
   const restPool = words.filter((w) => !nounPool.includes(w))

@@ -2,7 +2,8 @@ import type { SupabaseClient } from '@supabase/supabase-js'
 import { countryById } from '../content/countries'
 import { normalizeGoal } from '../german/daily'
 import { isDirection } from '../german/logic'
-import { isComplete, PROFILE_SCHEMA_VERSION, QUESTIONS, VOCAB_FRONTS, VOCAB_MODES, type Answers, type Profile } from './questions'
+import { isCourseId } from '../lang/types'
+import { isComplete, normalizeVocabFront, PROFILE_SCHEMA_VERSION, QUESTIONS, VOCAB_MODES, type Answers, type Profile } from './questions'
 
 /** Foydalanuvchi yozgan matn: boshqaruv belgilarisiz, qisqa. Ekranga React orqali (escape bilan) chiqadi. */
 export function cleanText(s: string | undefined): string | undefined {
@@ -23,6 +24,7 @@ export function normalizeProfile(raw: unknown): Profile | null {
   const vm = (raw as { vocabMode?: unknown }).vocabMode
   const vf = (raw as { vocabFront?: unknown }).vocabFront
   const se = (raw as { soundEffects?: unknown }).soundEffects
+  const ac = (raw as { activeCourse?: unknown }).activeCourse
   const version = typeof r.schemaVersion === 'number' ? r.schemaVersion : 1
   if (version > PROFILE_SCHEMA_VERSION) return null
   return {
@@ -39,8 +41,9 @@ export function normalizeProfile(raw: unknown): Profile | null {
     selectedCountry: typeof sc === 'string' && countryById(sc)?.status === 'open' ? (sc as Profile['selectedCountry']) : undefined,
     dailyGoal: normalizeGoal(goal), // eski 10/15/20 → 1/2/3
     vocabMode: (VOCAB_MODES as readonly unknown[]).includes(vm) ? (vm as Profile['vocabMode']) : undefined,
-    vocabFront: (VOCAB_FRONTS as readonly unknown[]).includes(vf) ? (vf as Profile['vocabFront']) : undefined,
-    soundEffects: typeof se === 'boolean' ? se : undefined
+    vocabFront: normalizeVocabFront(vf), // eski 'de' → 'target'
+    soundEffects: typeof se === 'boolean' ? se : undefined,
+    activeCourse: isCourseId(ac) ? ac : undefined
   }
 }
 

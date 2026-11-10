@@ -1,4 +1,5 @@
-import { DIRECTIONS, RESULT_IDS, LESSONS, MODULES, type ChoiceExercise, type Direction, type Exercise, type Lesson, type Level, type MatchExercise, type Module } from '../content/german'
+import { DIRECTIONS, LESSONS, MODULES, type ChoiceExercise, type Direction, type Exercise, type Lesson, type MatchExercise, type Module } from '../content/german'
+import { ALL_RESULT_IDS } from '../lang/registry'
 import type { Answers } from '../profile/questions'
 
 /* ---------- Yoʻnalish ---------- */
@@ -31,13 +32,15 @@ export function effectiveDirection(p: { profession: Answers['profession']; germa
 export type Result = { lessonId: string; score: number; total: number; completedAt: string }
 export type Results = Record<string, Result>
 
-const LEVEL_ORDER: Record<Level, number> = { A1: 0, A2: 1, B1: 2 }
+/** Daraja tartibi (nemischa); notanish daraja id'si — oxirida. */
+const LEVEL_ORDER: Record<string, number> = { A1: 0, A2: 1, B1: 2 }
+const levelOrder = (level: string) => LEVEL_ORDER[level] ?? Number.MAX_SAFE_INTEGER
 
 /** Umumiy modullar hammaga, kasbiy modullar faqat oʻz yoʻnalishiga. Daraja va tartib boʻyicha. */
 export function visibleModules(direction: Direction, modules: Module[] = MODULES): Module[] {
   return modules
     .filter((m) => m.direction === 'general' || m.direction === direction)
-    .sort((a, b) => LEVEL_ORDER[a.level] - LEVEL_ORDER[b.level] || a.order - b.order)
+    .sort((a, b) => levelOrder(a.level) - levelOrder(b.level) || a.order - b.order)
 }
 
 export const lessonsOf = (moduleId: string, lessons: Lesson[] = LESSONS): Lesson[] =>
@@ -49,7 +52,8 @@ export function moduleProgress(moduleId: string, results: Results, lessons: Less
   return { done, total: list.length, percent: list.length ? Math.round((done / list.length) * 100) : 0 }
 }
 
-export function levelProgress(level: Level, direction: Direction, results: Results, modules: Module[] = MODULES, lessons: Lesson[] = LESSONS) {
+/** level — daraja id'si (string: nemischa "A1", boshqa kurslar "ko-T1"). */
+export function levelProgress(level: string, direction: Direction, results: Results, modules: Module[] = MODULES, lessons: Lesson[] = LESSONS) {
   let done = 0
   let total = 0
   for (const m of visibleModules(direction, modules).filter((x) => x.level === level)) {
@@ -134,7 +138,7 @@ export function choiceOutcome(ex: ChoiceExercise, optionId: string): Outcome {
 /** wrongLeft — xato juftlashda bosilgan chap elementlar id'lari: har biri alohida xato juft. */
 export function matchOutcome(ex: MatchExercise, wrongLeft: Iterable<string>): Outcome {
   const wrong = new Set(wrongLeft)
-  const mistakes = ex.pairs.filter((p) => wrong.has(p.id)).map<Mistake>((p) => ({ key: p.id, de: p.de, tr: p.tr }))
+  const mistakes = ex.pairs.filter((p) => wrong.has(p.id)).map<Mistake>((p) => ({ key: p.id, de: p.term, tr: p.tr }))
   return { total: ex.pairs.length, correct: ex.pairs.length - mistakes.length, mistakes }
 }
 
@@ -157,8 +161,8 @@ export function summarize(exercises: Exercise[], outcomes: Outcome[]) {
 
 /* ---------- Natijalarni saqlash va birlashtirish ---------- */
 
-/** Tashqaridan (localStorage/server) kelgan qiymatni tozalaydi: maʼlum dars yoki test, butun ball, yaroqli sana. */
-export function sanitizeResults(raw: unknown, known: ReadonlySet<string> = RESULT_IDS): Results {
+/** Tashqaridan (localStorage/server) kelgan qiymatni tozalaydi: maʼlum dars yoki test (reyestrdagi barcha kurslar), butun ball, yaroqli sana. */
+export function sanitizeResults(raw: unknown, known: ReadonlySet<string> = ALL_RESULT_IDS): Results {
   const out: Results = {}
   if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return out
   for (const [id, v] of Object.entries(raw as Record<string, unknown>)) {

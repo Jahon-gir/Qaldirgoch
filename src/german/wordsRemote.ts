@@ -1,5 +1,5 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
-import { WORD_IDS } from '../content/german/words'
+import { ALL_WORD_IDS } from '../lang/registry'
 import { sanitizeActivity, type Activity, type DayActivity } from './daily'
 import { sanitizeWords, type WordState, type Words } from './srs'
 
@@ -13,7 +13,7 @@ export async function fetchRemoteWords(client: SupabaseClient, userId: string): 
   if (error) throw error
   const raw: Record<string, unknown> = {}
   for (const r of (data ?? []) as WordRow[]) raw[r.word_id] = { due: r.keyingi_takror, interval: r.interval, mistakes: r.xatolar, updatedAt: r.updated_at }
-  return sanitizeWords(raw, WORD_IDS)
+  return sanitizeWords(raw, ALL_WORD_IDS)
 }
 
 export async function pushRemoteWords(client: SupabaseClient, userId: string, words: [string, WordState][]): Promise<void> {

@@ -15,7 +15,8 @@ import { useBack, useHistoryAnchor } from '../../lib/useHistoryAnchor'
 import { useLessons } from '../../german/LessonsProvider'
 import { useDirection } from '../../german/useDirection'
 import { sessionCurrent, sessionDone, type Session } from '../../german/srs'
-import { isNoun, mixedKinds, nextMixedKind, type ExerciseKind } from '../../german/exercises'
+import { hasArticle, mixedKinds, nextMixedKind, type ExerciseKind } from '../../german/exercises'
+import { useCourse } from '../../lang/CourseContext'
 import { useSpeech } from '../../german/useSpeech'
 import { speechRecognitionSupported } from '../../german/useSpeechRecognition'
 import { MIXED, isUnlocked, lessonWords, shuffled, startVocabSession, unlockedWords, vocabAnswer, vocabGroups, vocabLesson } from '../../german/vocab'
@@ -34,12 +35,13 @@ function Practice({ lessonId, title, ids }: { lessonId: string; title: string; i
   const { t } = useI18n()
   useHistoryAnchor('/til/lugat')
   const back = useBack('/til/lugat')
-  const speech = useSpeech()
+  const course = useCourse()
+  const speech = useSpeech(course.speechLang)
   const canListen = speech.canSpeak()
   const [canSpeakMic] = useState(speechRecognitionSupported) // feature detect: SpeechRecognition bormi
   const { addDone } = useWords()
   const { vocabMode, vocabFront, setVocabPrefs } = useProfile()
-  const nounIds = useMemo(() => ids.filter((id) => { const w = wordById(id); return !!w && isNoun(w) }), [ids])
+  const nounIds = useMemo(() => ids.filter((id) => { const w = wordById(id); return !!w && hasArticle(w, course) }), [ids, course])
   // Aralash mashq (barcha soʻzlar) Kartochka rejimida ochiladi; keyin tanlov odatdagidek profilda saqlanadi
   const [mode, setMode] = useState<VocabMode>(lessonId === MIXED ? 'cards' : vocabMode)
   const [front, setFront] = useState<VocabFront>(vocabFront)
@@ -52,9 +54,9 @@ function Practice({ lessonId, title, ids }: { lessonId: string; title: string; i
       session: startVocabSession(m === 'article' ? list.filter((id) => nounIds.includes(id)) : list),
       counted,
       outcomes: {},
-      kinds: m === 'mixed' ? mixedKinds(list.flatMap((id) => wordById(id) ?? []), canListen) : []
+      kinds: m === 'mixed' ? mixedKinds(list.flatMap((id) => wordById(id) ?? []), canListen, Math.random, course) : []
     }),
-    [nounIds, canListen]
+    [nounIds, canListen, course]
   )
   const [run, setRun] = useState<Run>(() => start(lessonId === MIXED ? shuffled(ids) : ids, true, eff))
   const runRef = useRef(run)
@@ -71,7 +73,7 @@ function Practice({ lessonId, title, ids }: { lessonId: string; title: string; i
   }
   // Kartochka: old tomon tili almashadi (profilda saqlanadi), mashq qayta boshlanmaydi
   const swapFront = () => {
-    const next: VocabFront = front === 'de' ? 'tr' : 'de'
+    const next: VocabFront = front === 'target' ? 'tr' : 'target'
     setFront(next)
     setVocabPrefs({ front: next })
   }
@@ -83,7 +85,7 @@ function Practice({ lessonId, title, ids }: { lessonId: string; title: string; i
     let kinds = cur.kinds
     if (eff === 'mixed' && next.queue.length > kinds.length) {
       const w = wordById(next.queue[next.queue.length - 1])
-      kinds = w ? [...kinds, nextMixedKind(w, kinds[kinds.length - 1], canListen)] : kinds
+      kinds = w ? [...kinds, nextMixedKind(w, kinds[kinds.length - 1], canListen, Math.random, course)] : kinds
     }
     const outcomes = eff === 'speak' && curId ? { ...cur.outcomes, [curId]: outcome ?? 'skipped' } : cur.outcomes
     const r = { ...cur, session: next, kinds, outcomes }

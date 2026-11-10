@@ -54,8 +54,8 @@ export function WordList({ words, front, speech }: { words: VocabWord[]; front: 
       <ul className="overflow-hidden rounded-card bg-surface">
         {words.map((w) => {
           const shown = open.has(w.id)
-          const main = front === 'de' ? <DeWord de={w.de} /> : w.tr[lang]
-          const other = front === 'de' ? w.tr[lang] : <DeWord de={w.de} />
+          const main = front === 'target' ? <DeWord de={w.term} /> : w.tr[lang]
+          const other = front === 'target' ? w.tr[lang] : <DeWord de={w.term} />
           return (
             <li key={w.id} className="flex items-center border-b border-line last:border-0">
               <button
@@ -64,11 +64,11 @@ export function WordList({ words, front, speech }: { words: VocabWord[]; front: 
                 onClick={() => toggle(w.id)}
                 className="flex min-h-[64px] min-w-0 flex-1 flex-col justify-center px-4 py-2 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-accent"
               >
-                <span lang={front === 'de' ? 'de' : undefined} className="break-words text-lg font-semibold">
+                <span lang={front === 'target' ? 'de' : undefined} className="break-words text-lg font-semibold">
                   {main}
                 </span>
                 {shown ? (
-                  <span lang={front === 'de' ? undefined : 'de'} className="break-words text-base text-ink-2">
+                  <span lang={front === 'target' ? undefined : 'de'} className="break-words text-base text-ink-2">
                     {other}
                   </span>
                 ) : (
@@ -80,7 +80,7 @@ export function WordList({ words, front, speech }: { words: VocabWord[]; front: 
                 )}
               </button>
               <div className="pr-2">
-                <SpeakDot speech={speech} de={w.de} />
+                <SpeakDot speech={speech} de={w.term} />
               </div>
             </li>
           )

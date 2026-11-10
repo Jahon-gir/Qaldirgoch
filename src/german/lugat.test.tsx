@@ -140,18 +140,18 @@ describe('Dars soʻzlari: Roʻyxat', () => {
     renderApp('/til/lugat/a1-m1-l1')
     expect(screen.getByRole('heading', { level: 1, name: '1-dars: Salomlashish' })).toBeTruthy()
     expect(screen.getByText(`Roʻyxat · ${L1.length} ta soʻz`)).toBeTruthy()
-    for (const w of L1) expect(screen.getByText(w.de)).toBeTruthy()
+    for (const w of L1) expect(screen.getByText(w.term)).toBeTruthy()
     expect(screen.queryByText(L1[0].tr.uz)).toBeNull()
-    const row = screen.getByRole('button', { name: new RegExp(`^${L1[0].de}`) })
+    const row = screen.getByRole('button', { name: new RegExp(`^${L1[0].term}`) })
     expect(row.getAttribute('aria-expanded')).toBe('false')
     fireEvent.click(row)
     expect(screen.getByText(L1[0].tr.uz)).toBeTruthy()
     fireEvent.click(row)
     expect(screen.queryByText(L1[0].tr.uz)).toBeNull()
     // ovoz tugmasi: oʻqiydi, tarjimani ochmaydi
-    fireEvent.click(screen.getByRole('button', { name: `Tinglash: ${L1[1].de}` }))
+    fireEvent.click(screen.getByRole('button', { name: `Tinglash: ${L1[1].term}` }))
     expect(speak).toHaveBeenCalledTimes(1)
-    expect((speak.mock.calls[0][0] as { text: string }).text).toBe(L1[1].de)
+    expect((speak.mock.calls[0][0] as { text: string }).text).toBe(L1[1].term)
     expect(screen.queryByText(L1[1].tr.uz)).toBeNull()
   })
 
@@ -168,9 +168,9 @@ describe('Dars soʻzlari: Roʻyxat', () => {
     seed({ profile: { ...PROFILE, vocabFront: 'tr' } })
     renderApp('/til/lugat/a1-m1-l1')
     expect(screen.getByText(L1[0].tr.uz)).toBeTruthy()
-    expect(screen.queryByText(L1[0].de)).toBeNull()
-    fireEvent.click(screen.getByRole('button', { name: `Tinglash: ${L1[0].de}` }))
-    expect((speak.mock.calls[0][0] as { text: string }).text).toBe(L1[0].de)
+    expect(screen.queryByText(L1[0].term)).toBeNull()
+    fireEvent.click(screen.getByRole('button', { name: `Tinglash: ${L1[0].term}` }))
+    expect((speak.mock.calls[0][0] as { text: string }).text).toBe(L1[0].term)
   })
 })
 
@@ -196,7 +196,7 @@ describe('Kartochka', () => {
     renderApp('/til/lugat/a1-m1-l1')
     const card = screen.getByTestId('vocab-card')
     expect(card.getAttribute('data-flipped')).toBe('false')
-    fireEvent.click(screen.getByRole('button', { name: `Tinglash: ${L1[0].de}`, hidden: true }))
+    fireEvent.click(screen.getByRole('button', { name: `Tinglash: ${L1[0].term}`, hidden: true }))
     expect(speak).toHaveBeenCalledTimes(1)
     expect(card.getAttribute('data-flipped')).toBe('false')
     fireEvent.click(card)
@@ -211,7 +211,7 @@ describe('Kartochka', () => {
     const card = screen.getByTestId('vocab-card')
     expect(within(card).getByText('Oʻzbekcha')).toBeTruthy()
     expect(within(card).getByText('Nemischa')).toBeTruthy()
-    const btn = within(card).getByRole('button', { name: `Tinglash: ${L1[0].de}`, hidden: true })
+    const btn = within(card).getByRole('button', { name: `Tinglash: ${L1[0].term}`, hidden: true })
     expect(card.querySelectorAll('button')).toHaveLength(1) // oʻzbekcha tomonda ovoz tugmasi yoʻq
     expect(btn.closest('.card-back')).not.toBeNull()
   })
@@ -226,12 +226,12 @@ describe('Kartochka', () => {
     expect(activityToday()).toBe(0)
     for (let i = 1; i < n; i++) click('Bildim')
     // oxirida 1-soʻz yana bir marta
-    expect(within(screen.getByTestId('vocab-card')).getByText(L1[0].de)).toBeTruthy()
+    expect(within(screen.getByTestId('vocab-card')).getByText(L1[0].term)).toBeTruthy()
     click('Bilmadim') // yana xato — boshqa qaytmaydi
     expect(screen.getByRole('heading', { name: 'Mashq tugadi' })).toBeTruthy()
     expect(screen.getByText(`${n} tadan ${n - 1} tasini bildingiz`)).toBeTruthy()
     const unknown = screen.getByRole('region', { name: 'Bilmaganlaringiz' })
-    expect(within(unknown).getByText(L1[0].de)).toBeTruthy()
+    expect(within(unknown).getByText(L1[0].term)).toBeTruthy()
     expect(screen.getByText('Bugungi maqsadga +1')).toBeTruthy()
     expect(activityToday()).toBe(1)
   })
@@ -245,7 +245,7 @@ describe('Kartochka', () => {
     click('Bildim') // qaytgan soʻz
     expect(activityToday()).toBe(1)
     click('Bilmaganlarimni qayta mashq qilish')
-    expect(within(screen.getByTestId('vocab-card')).getByText(L1[0].de)).toBeTruthy()
+    expect(within(screen.getByTestId('vocab-card')).getByText(L1[0].term)).toBeTruthy()
     click('Bildim')
     expect(screen.getByText('1 tadan 1 tasini bildingiz')).toBeTruthy()
     expect(screen.queryByText('Bugungi maqsadga +1')).toBeNull()
@@ -295,7 +295,7 @@ describe('Kartochka', () => {
 describe('Test', () => {
   const testMode = (front?: string) => ({ profile: { ...PROFILE, vocabMode: 'test', ...(front ? { vocabFront: front } : {}) } })
   const group = () => screen.getByRole('group', { name: /Bu soʻz nima degani\?|Nemischasi qaysi\?/ })
-  const current = () => L1.find((w) => screen.queryByRole('heading', { level: 1 }) && within(screen.getByText('Bu soʻz nima degani?').parentElement!).queryByText(w.de))!
+  const current = () => L1.find((w) => screen.queryByRole('heading', { level: 1 }) && within(screen.getByText('Bu soʻz nima degani?').parentElement!).queryByText(w.term))!
   const answer = (right: boolean) => {
     const w = current()
     const btns = within(group()).getAllByRole('button')
@@ -354,12 +354,12 @@ describe('Test', () => {
       click('Davom etish')
     }
     expect(screen.getByText(`Test · ${L1.length + 1} / ${L1.length + 1}`)).toBeTruthy()
-    expect(within(screen.getByText('Bu soʻz nima degani?').parentElement!).getByText(first.de)).toBeTruthy()
+    expect(within(screen.getByText('Bu soʻz nima degani?').parentElement!).getByText(first.term)).toBeTruthy()
     answer(true)
     click('Davom etish')
     expect(screen.getByRole('heading', { name: 'Mashq tugadi' })).toBeTruthy()
     expect(screen.getByText(`${L1.length} tadan ${L1.length - 1} tasini bildingiz`)).toBeTruthy()
-    expect(within(screen.getByRole('region', { name: 'Bilmaganlaringiz' })).getByText(first.de)).toBeTruthy()
+    expect(within(screen.getByRole('region', { name: 'Bilmaganlaringiz' })).getByText(first.term)).toBeTruthy()
     expect(activityToday()).toBe(1)
     expect(localStorage.getItem('qaldirgoch.words')).toBe(wordsBefore)
   })
@@ -369,7 +369,7 @@ describe('Test', () => {
     renderApp('/til/lugat/a1-m1-l1')
     expect(screen.getByText('Bu soʻz nima degani?')).toBeTruthy()
     expect(screen.queryByText('Nemischasi qaysi?')).toBeNull()
-    expect(within(screen.getByText('Bu soʻz nima degani?').parentElement!).getByText(L1[0].de)).toBeTruthy()
+    expect(within(screen.getByText('Bu soʻz nima degani?').parentElement!).getByText(L1[0].term)).toBeTruthy()
     const btns = within(group()).getAllByRole('button')
     expect(btns.every((b) => L1.some((w) => w.tr.uz === b.textContent))).toBe(true)
   })
@@ -394,7 +394,7 @@ describe('Dars natijasidagi soʻzlar bloki', () => {
         click('Davom etish')
       } else {
         for (const p of ex.pairs) {
-          fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${p.de}$`) }))
+          fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${p.term}$`) }))
           fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${p.tr.uz}$`) }))
         }
         click('Davom etish')
@@ -410,11 +410,11 @@ describe('Dars natijasidagi soʻzlar bloki', () => {
     vi.useRealTimers()
     const block = screen.getByRole('region', { name: `Bu darsda oʻrgangan soʻzlaringiz: ${L1.length} ta` })
     for (const w of L1.slice(0, 3)) {
-      expect(within(block).getByText(w.de)).toBeTruthy()
+      expect(within(block).getByText(w.term)).toBeTruthy()
       expect(within(block).getByText(w.tr.uz)).toBeTruthy()
-      expect(within(block).getByRole('button', { name: `Tinglash: ${w.de}` })).toBeTruthy()
+      expect(within(block).getByRole('button', { name: `Tinglash: ${w.term}` })).toBeTruthy()
     }
-    expect(within(block).queryByText(L1[3].de)).toBeNull()
+    expect(within(block).queryByText(L1[3].term)).toBeNull()
     expect(within(block).getByText(`+ yana ${L1.length - 3} ta`)).toBeTruthy()
     expect(within(block).getByText('Ertaga takrorlashga keladi')).toBeTruthy()
     click('Soʻzlarni mashq qilish')

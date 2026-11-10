@@ -53,7 +53,7 @@ export function shuffled<T>(items: readonly T[], rand: () => number = Math.rando
 }
 
 /** Soʻzning koʻrinadigan matni: nemischa yoki tarjima. */
-export const faceText = (w: VocabWord, side: VocabFront, lang: Lang) => (side === 'de' ? w.de : w.tr[lang])
+export const faceText = (w: VocabWord, side: VocabFront, lang: Lang) => (side === 'target' ? w.term : w.tr[lang])
 
 /* ---------- Test variantlari ---------- */
 
@@ -62,10 +62,10 @@ export type VocabOption = { id: string; text: string; correct: boolean }
 /**
  * 4 variant: 1 toʻgʻri + 3 notoʻgʻri. Notoʻgʻrilari avval shu darsdan, yetmasa shu moduldan, yana yetmasa boshqa modullardan.
  * Matni (shu tilda) toʻgʻrisi bilan yoki bir-biri bilan bir xil variantlar olinmaydi. Tartib aralash.
- * front = savol tomoni: 'de' — savol nemischa, variantlar tarjima; 'tr' — savol tarjima, variantlar nemischa.
+ * front = savol tomoni: 'target' — savol oʻrganilayotgan tilda (nemischa), variantlar tarjima; 'tr' — savol tarjima, variantlar nemischa.
  */
 export function pickVocabOptions(word: VocabWord, front: VocabFront, lang: Lang, rand: () => number = Math.random, vocab: readonly VocabWord[] = VOCAB, count = 4): VocabOption[] {
-  const answerSide: VocabFront = front === 'de' ? 'tr' : 'de'
+  const answerSide: VocabFront = front === 'target' ? 'tr' : 'target'
   const text = (w: VocabWord) => faceText(w, answerSide, lang)
   const used = new Set([text(word)])
   const take = (pool: readonly VocabWord[], need: number) => {

@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { LESSON_ICONS } from '../../components/german/icons'
+import { slugErrors } from '../../lang/words'
 import { LESSONS, MODULES, exercisesOf, type Exercise, type L3 } from '.'
 
 const LANGS = ['uz', 'uz-Cyrl', 'ru'] as const
@@ -41,6 +42,9 @@ describe('nemis kontenti: tuzilma', () => {
     expect(t).toHaveLength(10)
     expect(t.every((e) => e.type === 'choice')).toBe(true)
   })
+  it("har soʻzning slug'i boʻsh emas (id barqaror; lotin boʻlmagan yozuvda slug majburiy)", () => {
+    expect(slugErrors({ lessons: LESSONS, exercisesOf })).toEqual([])
+  })
   it('soʻz ikonkalari mavjud', () => {
     for (const e of allExercises) if (e.type === 'word') expect(LESSON_ICONS[e.icon], e.id).toBeTruthy()
   })
@@ -63,7 +67,7 @@ describe('nemis kontenti: matn', () => {
     for (const t of allL3) expect(t.ru).not.toMatch(/[ʻʼ]/)
   })
   it('nemis matnda ß va umlaut toʻgʻri; oddiy apostrof yoʻq', () => {
-    const de = allExercises.flatMap((e) => (e.type === 'word' ? [e.de, e.example.de] : e.type === 'choice' ? [e.sentence, e.full, ...e.options.map((o) => o.text)] : e.pairs.map((p) => p.de)))
+    const de = allExercises.flatMap((e) => (e.type === 'word' ? [e.term, e.example.de] : e.type === 'choice' ? [e.sentence, e.full, ...e.options.map((o) => o.text)] : e.pairs.map((p) => p.term)))
     for (const s of de) expect(s).not.toMatch(/['‘’`]/)
     const joined = de.join(' ')
     expect(joined).toContain('Schweißer')
@@ -93,7 +97,7 @@ describe('nemis kontenti: mashqlar', () => {
     for (const e of allExercises) {
       if (e.type !== 'match') continue
       expect(e.pairs, e.id).toHaveLength(4)
-      expect(new Set(e.pairs.map((p) => p.de)).size).toBe(4)
+      expect(new Set(e.pairs.map((p) => p.term)).size).toBe(4)
       for (const lang of LANGS) expect(new Set(e.pairs.map((p) => p.tr[lang])).size, `${e.id} ${lang}`).toBe(4)
     }
   })

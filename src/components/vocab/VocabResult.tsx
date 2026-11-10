@@ -36,7 +36,7 @@ export function VocabResult({ session, counted, speak, onDone, onRetry }: { sess
               return (
                 <li key={id} className="border-b border-line px-4 py-3 text-base last:border-0">
                   <span lang="de" className="font-semibold">
-                    {w.de}
+                    {w.term}
                   </span>{' '}
                   — <span className="text-ink-2">{w.tr[lang]}</span>
                 </li>

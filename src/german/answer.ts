@@ -1,8 +1,11 @@
+import type { CourseId } from '../lang/types'
+
 /**
  * Yozma javobni tekshirish (sof funksiyalar). Qoidalar:
  * - exact: kiritilgan matn (chetlari kesilgan, boʻsh joylari siqilgan) targetga harfma-harf teng;
- * - correct: normalize() teng (katta-kichik, tinish belgilari, ä↔ae, ö↔oe, ü↔ue, ß↔ss farqi yoʻq);
- * - almost: target (normalize, boʻsh joysiz) ≥ 5 harf va Levenshtein masofa = 1;
+ * - correct: kurs normalize() si teng (katta-kichik, tinish belgilari; nemischa: ä↔ae, ö↔oe, ü↔ue, ß↔ss farqi yoʻq);
+ * - almost: target (normalize, boʻsh joysiz) ≥ 5 harf va Levenshtein masofa = 1
+ *   (koreyschada masofa Hangul boʻgʻinlari harflarga — jamo — ajratib hisoblanadi: 안 → ᄋ ᅡ ᆫ);
  * - wrong: qolgani.
  * exact, correct, almost — TOʻGʻRI hisoblanadi (SRS va kunlik maqsad uchun ham).
  */
@@ -14,17 +17,21 @@ export const squash = (s: string) => s.normalize('NFC').trim().replace(/\s+/g, '
 
 const PUNCT = /[.,!?;:«»"'„“”‘’]/g
 
-export function normalize(s: string): string {
-  return squash(s)
-    .toLowerCase()
-    .replace(PUNCT, '')
-    .replace(/ä/g, 'ae')
-    .replace(/ö/g, 'oe')
-    .replace(/ü/g, 'ue')
-    .replace(/ß/g, 'ss')
-    .replace(/\s+/g, ' ')
-    .trim()
+/** Umumiy qism (barcha tillar): NFC, chetlarini kesish, kichik harf, tinish belgilari, boʻsh joylarni siqish. */
+export const normalizeBase = (s: string) => squash(s).toLowerCase().replace(PUNCT, '').replace(/\s+/g, ' ').trim()
+
+/** Nemischa: umumiy qism + ä/ö/ü/ß ↔ ae/oe/ue/ss. */
+export function normalizeDe(s: string): string {
+  return normalizeBase(s).replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
 }
+
+/** Koreyscha: umumiy qism; Hangul NFC da boʻgʻinlarga yigʻiladi (alohida jamo bilan yozilgani ham bir xil boʻladi). */
+export const normalizeKo = (s: string) => normalizeBase(s)
+
+/** Eski nom (nemischa). */
+export const normalize = normalizeDe
+
+const NORMALIZE: Record<CourseId, (s: string) => string> = { de: normalizeDe, ko: normalizeKo }
 
 /** Boʻsh javob tekshirilmaydi ("Avval javobni yozing"). */
 export const isBlank = (s: string) => squash(s) === ''
@@ -44,13 +51,22 @@ export function levenshtein(a: string, b: string): number {
 
 export const ALMOST_MIN = 5
 
-export function check(input: string, target: string): CheckResult {
+/** Hangul boʻgʻinlari harflarga (jamo): NFD. Boshqa yozuvlar oʻzgarmaydi. */
+export const toJamo = (s: string) => s.normalize('NFD')
+
+/**
+ * course — kurs id'si (standart 'de'). Harflar soni (ALMOST_MIN) koʻrinadigan belgilarda (NFC, boʻsh joysiz) sanaladi —
+ * nemischa ham, koreyscha ham bir xil; koreyschada faqat masofa jamo boʻyicha (bitta harf xatosi = 1).
+ */
+export function check(input: string, target: string, course: CourseId = 'de'): CheckResult {
   if (isBlank(input)) return 'wrong'
   if (squash(input) === squash(target)) return 'exact'
-  const a = normalize(input)
-  const b = normalize(target)
+  const norm = NORMALIZE[course]
+  const a = norm(input)
+  const b = norm(target)
   if (a === b) return 'correct'
-  if (b.replace(/ /g, '').length >= ALMOST_MIN && levenshtein(a, b) === 1) return 'almost'
+  const dist = course === 'ko' ? levenshtein(toJamo(a), toJamo(b)) : levenshtein(a, b)
+  if ([...b.replace(/ /g, '')].length >= ALMOST_MIN && dist === 1) return 'almost'
   return 'wrong'
 }
 

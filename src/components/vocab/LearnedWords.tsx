@@ -29,11 +29,11 @@ export function LearnedWords({ lessonId, speech }: { lessonId: string; speech: S
             <Card className="flex items-center gap-3 py-3">
               <span className="flex-1">
                 <span lang="de" className="block text-base font-semibold">
-                  {w.de}
+                  {w.term}
                 </span>
                 <span className="block text-base text-ink-2">{w.tr[lang]}</span>
               </span>
-              <ListenIcon speech={speech} text={w.de} />
+              <ListenIcon speech={speech} text={w.term} />
             </Card>
           </li>
         ))}

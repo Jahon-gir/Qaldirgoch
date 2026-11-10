@@ -134,7 +134,7 @@ describe('qutiga qoʻshish va bugungi soʻzlar', () => {
 })
 
 describe('variant tanlash', () => {
-  const w = (id: string, moduleId: string, uz: string): VocabWord => ({ id, moduleId, lessonId: `${moduleId}-l1`, exerciseId: id, de: id, tr: l3(uz, uz, uz) })
+  const w = (id: string, moduleId: string, uz: string): VocabWord => ({ id, moduleId, lessonId: `${moduleId}-l1`, exerciseId: id, term: id, tr: l3(uz, uz, uz) })
 
   it('4 ta: 1 toʻgʻri + 3 notoʻgʻri, takror yoʻq, toʻgʻrisi bitta', () => {
     for (let seed = 1; seed < 30; seed++) {

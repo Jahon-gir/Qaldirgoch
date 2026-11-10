@@ -20,6 +20,7 @@ import { localDay } from '../../german/srs'
 import { useSpeech } from '../../german/useSpeech'
 import { useWords } from '../../german/WordsProvider'
 import { cleanText } from '../../profile/ProfileProvider'
+import { useCourse } from '../../lang/CourseContext'
 import { formatDate } from '../StepDetail'
 
 const accentBtn =
@@ -41,7 +42,8 @@ function FinalTest({ info }: { info: ScopeInfo }) {
   const { lang, t } = useI18n()
   useHistoryAnchor('/til')
   const back = useBack('/til')
-  const speech = useSpeech()
+  const course = useCourse()
+  const speech = useSpeech(course.speechLang)
   const auth = useAuth()
   const { record } = useLessons()
   const { markMistakes, addDone } = useWords()
@@ -61,7 +63,7 @@ function FinalTest({ info }: { info: ScopeInfo }) {
   }, [i, done, questions])
 
   const start = () => {
-    setQuestions(buildTest(info, { canListen: speech.canSpeak(), seed: `${Date.now()}-${Math.random()}` }))
+    setQuestions(buildTest(info, { canListen: speech.canSpeak(), seed: `${Date.now()}-${Math.random()}`, course }))
     setI(0)
     setAnswers([])
     setDone(null)
@@ -123,7 +125,7 @@ function FinalTest({ info }: { info: ScopeInfo }) {
                   return w ? (
                     <li key={id}>
                       <span lang="de" className="font-semibold">
-                        {w.de}
+                        {w.term}
                       </span>{' '}
                       — {w.tr[lang]}
                     </li>

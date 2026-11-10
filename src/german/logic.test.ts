@@ -68,7 +68,7 @@ describe('ball hisoblash', () => {
     expect(wrong.mistakes).toEqual([{ key: choiceEx.id, de: choiceEx.full, tr: choiceEx.translation }])
     const m = matchOutcome(matchEx, [matchEx.pairs[0].id, matchEx.pairs[0].id]) // bir juftda ikki xato — bitta xato juft
     expect(m).toMatchObject({ total: 4, correct: 3 })
-    expect(m.mistakes.map((x) => x.de)).toEqual([matchEx.pairs[0].de])
+    expect(m.mistakes.map((x) => x.de)).toEqual([matchEx.pairs[0].term])
     expect(matchOutcome(matchEx, [])).toMatchObject({ total: 4, correct: 4, mistakes: [] })
   })
   it('summarize: ball, yangi soʻzlar, takrorlanmaydigan xatolar', () => {

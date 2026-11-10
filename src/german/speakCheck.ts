@@ -1,3 +1,4 @@
+import type { CourseId } from '../lang/types'
 import { check, isRight, type CheckResult } from './answer'
 
 /** Ovoz tanish raqamni raqam bilan yozadi ("1"): 0–20 oraligʻida nemischa soʻzga aylantiriladi. */
@@ -16,11 +17,11 @@ export type Judged = { ok: boolean; result: CheckResult; heard: string }
  * Talaffuz SIFATI baholanmaydi: faqat tanildi / tanilmadi. heard — foydalanuvchiga koʻrsatiladigan matn
  * (toʻgʻri boʻlsa mos kelgan variant, aks holda eng birinchi variant).
  */
-export function judgeSpoken(alternatives: readonly string[], target: string): Judged {
+export function judgeSpoken(alternatives: readonly string[], target: string, course: CourseId = 'de'): Judged {
   for (const alt of alternatives) {
     const nw = numberWord(alt)
     for (const cand of nw ? [alt, nw] : [alt]) {
-      const result = check(cand, target)
+      const result = check(cand, target, course)
       if (isRight(result)) return { ok: true, result, heard: alt.trim() }
     }
   }

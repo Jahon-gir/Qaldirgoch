@@ -4,8 +4,8 @@ import { VOCAB, wordById, type VocabWord } from '../content/german/words'
 import { articleOf, chunksMatch, chunksOf, chunkTiles, isNoun, kindsFor, letterTiles, lettersMatch, lettersPrefixOk, mixedKinds, nextMixedKind, playable, reviewKind, reviewKinds, targetLetters } from './exercises'
 import { normalize } from './answer'
 
-const w = (id: string, de: string, moduleId = 'm1'): VocabWord => ({ id, lessonId: 'l1', moduleId, exerciseId: id, de, tr: l3('x', 'x', 'x') })
-const byDe = (de: string) => VOCAB.find((x) => x.de === de)!
+const w = (id: string, term: string, moduleId = 'm1'): VocabWord => ({ id, lessonId: 'l1', moduleId, exerciseId: id, term, tr: l3('x', 'x', 'x') })
+const byDe = (de: string) => VOCAB.find((x) => x.term === de)!
 
 describe('artikl aniqlash', () => {
   it('der / die / das + bosh harf — ot', () => {
@@ -24,7 +24,7 @@ describe('artikl aniqlash', () => {
   })
   it('darslarda: 1-darsda ot yoʻq, 4-darsda bor', () => {
     expect(VOCAB.filter((x) => x.lessonId === 'a1-m1-l1').some(isNoun)).toBe(false)
-    expect(VOCAB.filter((x) => x.lessonId === 'a1-m1-l4').filter(isNoun).map((x) => x.de)).toEqual(['der Elektriker', 'der Mechaniker', 'der Schweißer', 'die Pflegekraft', 'der Koch'])
+    expect(VOCAB.filter((x) => x.lessonId === 'a1-m1-l4').filter(isNoun).map((x) => x.term)).toEqual(['der Elektriker', 'der Mechaniker', 'der Schweißer', 'die Pflegekraft', 'der Koch'])
   })
 })
 
@@ -33,7 +33,7 @@ describe('harflardan yigʻish', () => {
     const word = byDe('Guten Morgen')
     const tiles = letterTiles(word)
     expect(tiles).toHaveLength(targetLetters('Guten Morgen').length + 2)
-    const pool = new Set(VOCAB.filter((x) => x.moduleId === word.moduleId && x.id !== word.id).flatMap((x) => targetLetters(x.de)))
+    const pool = new Set(VOCAB.filter((x) => x.moduleId === word.moduleId && x.id !== word.id).flatMap((x) => targetLetters(x.term)))
     const rest = [...tiles.map((x) => x.text)]
     for (const c of targetLetters('Guten Morgen')) rest.splice(rest.indexOf(c), 1)
     expect(rest).toHaveLength(2)
@@ -67,7 +67,7 @@ describe('soʻz boʻlaklari (3+ soʻz)', () => {
     for (let i = 0; i < 20; i++) {
       const tiles = chunkTiles(word)
       expect(tiles).toHaveLength(4)
-      const extra = tiles.map((x) => x.text).filter((x) => !chunksOf(word.de).includes(x))
+      const extra = tiles.map((x) => x.text).filter((x) => !chunksOf(word.term).includes(x))
       expect(extra).toHaveLength(1)
       expect(['wie', 'heissen', 'sie']).not.toContain(normalize(extra[0]))
     }

@@ -14,16 +14,20 @@ export const DIRECTIONS: readonly Direction[] = ['general', 'technical', 'care',
 /** Kontent holati: faqat approved — yakuniy. Bu versiyadagi darslar review. */
 export type ContentStatus = 'draft' | 'review' | 'approved'
 
-export type Module = { id: string; level: Level; direction: Direction; title: L3; order: number; status: ContentStatus }
+/** level — daraja id'si (nemischa: Level; boshqa kurslar: oʻz id'si, masalan "ko-T1"). */
+export type Module = { id: string; level: string; direction: Direction; title: L3; order: number; status: ContentStatus }
 
 export type LessonKind = 'words' | 'phrases' | 'grammar' | 'test'
 export type Lesson = { id: string; moduleId: string; title: L3; kind: LessonKind; minutes: number; order: number }
 
-/** Yangi soʻz: nemischa, tarjima, talaffuz (tilga mos harflarda), Tabler ikonka nomi, misol gap. */
+/** Yangi soʻz: oʻrganilayotgan tilda, tarjima, talaffuz (tilga mos harflarda), Tabler ikonka nomi, misol gap. */
 export type WordExercise = {
   type: 'word'
   id: string
-  de: string
+  /** Oʻrganilayotgan tildagi soʻz (nemischa, koreyscha ...). */
+  term: string
+  /** Soʻz id'si uchun barqaror qism. Boʻlmasa — term'dan (wordSlug). Lotin boʻlmagan yozuvda (Hangul) MAJBURIY. */
+  slug?: string
   tr: L3
   pron: L3
   icon: string
@@ -45,7 +49,7 @@ export type ChoiceExercise = {
   explain: L3
 }
 
-export type MatchPair = { id: string; de: string; tr: L3 }
+export type MatchPair = { id: string; term: string; tr: L3 }
 export type MatchExercise = { type: 'match'; id: string; prompt: L3; pairs: MatchPair[] }
 
 export type Exercise = WordExercise | ChoiceExercise | MatchExercise

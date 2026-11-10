@@ -1,6 +1,7 @@
 import type { CountryId } from '../content/countries'
 import type { Direction } from '../content/german/types'
 import type { DailyGoal } from '../german/daily'
+import type { CourseId } from '../lang/types'
 import type { Key } from '../i18n/uz'
 
 export const AGE = ['under18', '18-24', '25-30', '31-35', '36plus'] as const
@@ -30,16 +31,26 @@ export type Profile = Answers & {
   selectedCountry?: CountryId
   /** Kunlik maqsad (tugatilgan dars yoki takrorlash soni): 1 / 2 / 3; yoʻq boʻlsa 1. */
   dailyGoal?: DailyGoal
-  /** Lugʻat mashq usuli va old tomoni (yoʻq boʻlsa: roʻyxat, nemischa). */
+  /** Lugʻat mashq usuli va old tomoni (yoʻq boʻlsa: roʻyxat, oʻrganilayotgan til). */
   vocabMode?: VocabMode
   vocabFront?: VocabFront
+  /** Joriy til kursi (hozir UI'da ishlatilmaydi; yoʻq boʻlsa 'de'). */
+  activeCourse?: CourseId
   /** Ovoz effektlari (yoʻq boʻlsa yoqilgan). */
   soundEffects?: boolean
 }
 export const VOCAB_MODES = ['list', 'cards', 'test', 'build', 'listen', 'write', 'article', 'speak', 'mixed'] as const
 export type VocabMode = (typeof VOCAB_MODES)[number]
-export const VOCAB_FRONTS = ['de', 'tr'] as const
+/** Old tomon: 'target' — oʻrganilayotgan til (nemischa, koreyscha ...), 'tr' — tarjima. 0.10.0 gacha 'target' oʻrnida 'de' saqlangan. */
+export const VOCAB_FRONTS = ['target', 'tr'] as const
 export type VocabFront = (typeof VOCAB_FRONTS)[number]
+export const DEFAULT_VOCAB_FRONT: VocabFront = 'target'
+
+/** Saqlangan qiymat: eski 'de' → 'target'; notanish → undefined. */
+export function normalizeVocabFront(v: unknown): VocabFront | undefined {
+  if (v === 'de') return 'target'
+  return (VOCAB_FRONTS as readonly unknown[]).includes(v) ? (v as VocabFront) : undefined
+}
 export type QuestionId = Exclude<keyof Answers, 'professionOther'>
 
 /** Onboarding savollari tartibi. Matnlar lugʻatda: q.<lugʻat nomi>.<qiymat>. */

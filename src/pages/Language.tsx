@@ -14,6 +14,7 @@ import { nextDueDay } from '../german/srs'
 import { useWords } from '../german/WordsProvider'
 import { TestCard } from '../components/german/TestCard'
 import { levelScope, scopeInfo } from '../german/finalTest'
+import { useCourse } from '../lang/CourseContext'
 
 export default function Language() {
   const { lang, t } = useI18n()
@@ -22,7 +23,11 @@ export default function Language() {
   const [level, setLevel] = useState<Level>('A1')
   const [picking, setPicking] = useState(false)
 
-  const { words, activity, today, goal, due, streak } = useWords()
+  // Kunlik maqsad va streak — barcha tillar uchun bitta; soʻzlar va takrorlash — joriy kurs (hozir 'de')
+  const course = useCourse()
+  const { wordsOf, dueFor, activity, today, goal, streak } = useWords()
+  const words = wordsOf(course.id)
+  const due = dueFor(course.id)
   const lp = levelProgress(level, direction, results)
   const next = nextUnfinished(direction, results)
   const nextModule = next ? moduleById(next.moduleId) : null

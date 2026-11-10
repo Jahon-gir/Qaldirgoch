@@ -11,7 +11,7 @@ export function TestStep({ word, onAnswer, onDone }: ExProps) {
   const { lang, t } = useI18n()
   const fx = useFeedback()
   // Variantlar shu savol uchun bir marta aralashtiriladi
-  const options = useMemo(() => pickVocabOptions(word, 'de', lang), [word, lang])
+  const options = useMemo(() => pickVocabOptions(word, 'target', lang), [word, lang])
   const [picked, setPicked] = useState<string | null>(null)
   const refs = useRef<Record<string, HTMLButtonElement | null>>({})
   const answered = picked !== null
@@ -27,7 +27,7 @@ export function TestStep({ word, onAnswer, onDone }: ExProps) {
   return (
     <div className="flex flex-1 flex-col gap-4 pt-4">
       <Prompt label={q} lang="de">
-        {word.de}
+        {word.term}
       </Prompt>
       <div className="space-y-2" role="group" aria-label={q}>
         {options.map((o) => {

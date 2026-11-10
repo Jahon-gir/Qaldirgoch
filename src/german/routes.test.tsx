@@ -45,7 +45,7 @@ async function playLesson(lesson: Lesson, { wrongOnce = false } = {}) {
   let first = true
   for (const ex of exercisesOf(lesson.id)) {
     if (ex.type === 'word') {
-      expect(screen.getByRole('heading', { name: ex.de })).toBeTruthy()
+      expect(screen.getByRole('heading', { name: ex.term })).toBeTruthy()
       click('Keyingisi')
     } else if (ex.type === 'choice') {
       const pick = wrongOnce && first ? ex.options.find((o) => !o.correct)! : ex.options.find((o) => o.correct)!
@@ -62,12 +62,12 @@ async function playLesson(lesson: Lesson, { wrongOnce = false } = {}) {
 
 async function playMatch(ex: MatchExercise, withMistake: boolean) {
   if (withMistake) {
-    fireEvent.click(screen.getByRole('button', { name: exact(ex.pairs[0].de) }))
+    fireEvent.click(screen.getByRole('button', { name: exact(ex.pairs[0].term) }))
     fireEvent.click(screen.getByRole('button', { name: exact(ex.pairs[1].tr.uz) })) // xato juft
     await waitFor(() => expect(within(screen.getByRole('group', { name: 'Tarjima' })).getAllByRole('button').every((b) => !b.className.includes('border-danger'))).toBe(true))
   }
   for (const p of ex.pairs) {
-    fireEvent.click(screen.getByRole('button', { name: exact(p.de) }))
+    fireEvent.click(screen.getByRole('button', { name: exact(p.term) }))
     fireEvent.click(screen.getByRole('button', { name: exact(p.tr.uz) }))
   }
   await waitFor(() => expect((screen.getByRole('button', { name: 'Davom etish' }) as HTMLButtonElement).disabled).toBe(false))
@@ -150,7 +150,7 @@ describe('marshrut: Bosh → Til → modul → dars → natija → modulga qayti
     expect(screen.getByText('6/7')).toBeTruthy()
     // xato qilingan roʻyxatda (natijada "oʻrgangan soʻzlar" bloki ham shu soʻzni koʻrsatishi mumkin — shuning uchun boʻlim ichida)
     const mistakes = screen.getByRole('region', { name: 'Xato qilingan' })
-    expect(within(mistakes).getByText(m.pairs[0].de)).toBeTruthy()
+    expect(within(mistakes).getByText(m.pairs[0].term)).toBeTruthy()
   })
 
   it('kirill interfeysda dars ochiladi', () => {

@@ -15,6 +15,7 @@ import { useLessons } from '../../german/LessonsProvider'
 import { nextLessonAfter, summarize, type Outcome } from '../../german/logic'
 import { useSpeech } from '../../german/useSpeech'
 import { useWords } from '../../german/WordsProvider'
+import { useCourse } from '../../lang/CourseContext'
 import { wordIdsOfLesson } from '../../content/german/words'
 import { FROM_MODULE, useBackToModule, useHistoryAnchor } from '../../lib/useHistoryAnchor'
 
@@ -22,7 +23,7 @@ function ResultView({ lesson, summary }: { lesson: Lesson; summary: ReturnType<t
   const { lang, t } = useI18n()
   const nav = useNavigate()
   const loc = useLocation()
-  const speech = useSpeech()
+  const speech = useSpeech(useCourse().speechLang)
   const { direction } = useDirection()
   const { progress } = useWords()
   const next = nextLessonAfter(lesson.id, direction)
@@ -99,7 +100,7 @@ function LessonRunner({ lesson }: { lesson: Lesson }) {
   const { record } = useLessons()
   const leave = useBackToModule(`/til/modul/${lesson.moduleId}`)
   const { learn, addDone } = useWords()
-  const speech = useSpeech()
+  const speech = useSpeech(useCourse().speechLang)
   // Toʻgʻridan-toʻgʻri ochilsa tarixga modul qoʻyiladi — "Modulga qaytish" bir qadam orqaga boʻladi
   useHistoryAnchor(`/til/modul/${lesson.moduleId}`, FROM_MODULE)
   const exercises = exercisesOf(lesson.id)

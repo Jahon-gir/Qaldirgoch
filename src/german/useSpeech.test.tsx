@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { act, cleanup, renderHook } from '@testing-library/react'
-import { germanVoice, useSpeech } from './useSpeech'
+import { germanVoice, useSpeech, voiceFor } from './useSpeech'
 
 afterEach(() => {
   cleanup()
@@ -10,6 +10,16 @@ afterEach(() => {
 })
 
 const voice = (lang: string) => ({ lang, name: lang }) as SpeechSynthesisVoice
+
+describe('voiceFor', () => {
+  it('til boʻyicha: aniq mos afzal, keyin shu til; boshqa til olinmaydi', () => {
+    const synth = { getVoices: () => [voice('de-DE'), voice('ko_KR'), voice('ko-KP')] }
+    expect(voiceFor(synth, 'ko-KR')?.lang).toBe('ko_KR')
+    expect(voiceFor({ getVoices: () => [voice('de-DE'), voice('ko-KP')] }, 'ko-KR')?.lang).toBe('ko-KP')
+    expect(voiceFor({ getVoices: () => [voice('de-DE')] }, 'ko-KR')).toBeNull()
+    expect(voiceFor(synth, 'de-DE')?.lang).toBe('de-DE')
+  })
+})
 
 describe('germanVoice', () => {
   it('de-DE afzal; boshqa de ham mos; yoʻq boʻlsa null; API yoʻq boʻlsa null', () => {
