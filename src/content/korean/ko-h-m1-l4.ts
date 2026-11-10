@@ -21,12 +21,12 @@ export const KO_H_M1_L4: Exercise[] = [
       'ㅍ — ҳаво билан «п». ㅊ — ҳаво билан «ч» (ㅈ нинг нафасли жуфтлиги).',
       'ㅍ — «п» с выдохом. ㅊ — «ч» с выдохом (придыхательная пара ㅈ).'
     ),
-    example: { term: '기차', pron: l3('ki-cha', 'ки-ча', 'ки-ча'), tr: l3('poyezd', 'поезд', 'поезд') }
+    example: { term: '기차', pron: l3('gi-cha', 'ги-ча', 'ги-ча'), tr: l3('poyezd', 'поезд', 'поезд') }
   }),
   word({ id: 'ko-h-m1-l4-e3', term: '커피', slug: 'keopi', icon: 'coffee', tr: l3('qahva', 'қаҳва', 'кофе'), pron: l3('ko-pi', 'ко-пи', 'ко-пи') }),
   word({ id: 'ko-h-m1-l4-e4', term: '토마토', slug: 'tomato', icon: 'salad', tr: l3('pomidor', 'помидор', 'помидор'), pron: l3('toʻ-ma-toʻ', 'тў-ма-тў', 'то-ма-то') }),
   word({ id: 'ko-h-m1-l4-e5', term: '포도', slug: 'podo', icon: 'grape', tr: l3('uzum', 'узум', 'виноград'), pron: l3('poʻ-doʻ', 'пў-дў', 'по-до') }),
-  word({ id: 'ko-h-m1-l4-e6', term: '기차', slug: 'gicha', icon: 'train', tr: l3('poyezd', 'поезд', 'поезд'), pron: l3('ki-cha', 'ки-ча', 'ки-ча') }),
+  word({ id: 'ko-h-m1-l4-e6', term: '기차', slug: 'gicha', icon: 'train', tr: l3('poyezd', 'поезд', 'поезд'), pron: l3('gi-cha', 'ги-ча', 'ги-ча') }),
   match('ko-h-m1-l4-e7', [
     ['ㅋ', l3('k', 'k', 'k')],
     ['ㅌ', l3('t', 't', 't')],

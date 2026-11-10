@@ -160,6 +160,36 @@ describe('koreys kontenti: matn uch tilda', () => {
       expect(t['uz-Cyrl']).not.toMatch(/тс(?![а-я])|ц/i)
     }
   })
+  it("oʻqilishi qoidasi: yumshoq ㄱ ㄷ ㅂ ㅈ — g d b j (soʻz boshida ham); nafasli ㅋ ㅌ ㅍ ㅊ — k t p ch", () => {
+    // [uz, uz-Cyrl, ru] boshlanishi; ㅈ: uz j, kirill ж, ru дж (kontentdagi mavjud yozilish)
+    const RULE: Record<string, [string, string, string]> = {
+      ㄱ: ['g', 'г', 'г'], ㄷ: ['d', 'д', 'д'], ㅂ: ['b', 'б', 'б'], ㅈ: ['j', 'ж', 'дж'],
+      ㅋ: ['k', 'к', 'к'], ㅌ: ['t', 'т', 'т'], ㅍ: ['p', 'п', 'п'], ㅊ: ['ch', 'ч', 'ч']
+    }
+    const items: { term: string; pron: L3 }[] = all.flatMap((e) =>
+      e.type === 'word' ? [{ term: e.term, pron: e.pron }]
+        : e.type === 'letter' && e.example ? [{ term: e.example.term, pron: e.example.pron }]
+        : e.type === 'syllable' ? [{ term: compose(e.initial, e.vowel, e.final)!, pron: e.pron }]
+        : []
+    )
+    expect(items.length).toBeGreaterThan(30)
+    let checked = 0
+    for (const { term, pron } of items) {
+      const syl = syllablesOf(term)
+      const parts = (['uz', 'uz-Cyrl', 'ru'] as const).map((k) => pron[k].split('-'))
+      for (const [k, segs] of parts.entries()) expect(segs.length, `${term} ${k}`).toBe(syl.length)
+      syl.forEach((sy, i) => {
+        const rule = RULE[decompose(sy)![0]]
+        if (!rule) return
+        checked++
+        parts.forEach((segs, k) => expect(segs[i].startsWith(rule[k]), `${term} [${sy}] ${segs[i]} → ${rule[k]}`).toBe(true))
+      })
+    }
+    expect(checked).toBeGreaterThan(30)
+    // 고 va 코 bir xil yozilmasin (4-darsdagi farq)
+    expect(KO_COURSE.wordById('ko-h-m1-gogi')!.pron.uz.startsWith('go')).toBe(true)
+    expect(KO_COURSE.wordById('ko-h-m1-keopi')!.pron.uz.startsWith('ko')).toBe(true)
+  })
   it('oʻqilishi (pron): uz — lotin, kirill va ru — kirill harflarida', () => {
     const prons = all.flatMap((e) => (e.type === 'word' || e.type === 'syllable' ? [e.pron] : e.type === 'letter' && e.example ? [e.example.pron] : []))
     for (const p of prons) {

@@ -29,7 +29,7 @@ export const KO_H_M1_L5: Exercise[] = [
   word({ id: 'ko-h-m1-l5-e6', term: '휴지', slug: 'hyuji', icon: 'toilet-paper', tr: l3('salfetka', 'салфетка', 'салфетка'), pron: l3('hyu-ji', 'ҳю-жи', 'хю-джи') }),
   word({ id: 'ko-h-m1-l5-e7', term: '노래', slug: 'norae', icon: 'music', tr: l3('qoʻshiq', 'қўшиқ', 'песня'), pron: l3('noʻ-re', 'нў-ре', 'но-рэ') }),
   word({ id: 'ko-h-m1-l5-e8', term: '네', slug: 'ne', icon: 'check', tr: l3('ha', 'ҳа', 'да'), pron: l3('ne', 'не', 'нэ') }),
-  word({ id: 'ko-h-m1-l5-e9', term: '개', slug: 'gae', icon: 'dog', tr: l3('it', 'ит', 'собака'), pron: l3('ke', 'ке', 'кэ') }),
+  word({ id: 'ko-h-m1-l5-e9', term: '개', slug: 'gae', icon: 'dog', tr: l3('it', 'ит', 'собака'), pron: l3('ge', 'ге', 'гэ') }),
   match('ko-h-m1-l5-e10', [
     ['ㅑ', same('ya')],
     ['ㅕ', same('yeo')],
