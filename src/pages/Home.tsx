@@ -36,7 +36,7 @@ export default function Home() {
       {/* Hero: har ikkala rejimda qora */}
       <section className="-mx-4 -mt-[max(1rem,env(safe-area-inset-top))] rounded-b-[24px] bg-[#0B0E14] px-4 pb-5 pt-[max(1rem,env(safe-area-inset-top))] text-white">
         <div className="flex items-center justify-between">
-          <Logo size={30} />
+          <Logo size={30} variant="plain" />
           <Link to="/sozlamalar" aria-label={t('home.settings')} className={`-mr-2 flex h-11 w-11 items-center justify-center rounded-full text-[#C9CED8] ${focusRing} focus-visible:outline-white`}>
             <IconSettings size={22} aria-hidden />
           </Link>
@@ -100,8 +100,8 @@ export default function Home() {
         </ul>
       </section>
 
-      <Link to="/xavfsizlik/agentlik" className={`block rounded-card bg-trust px-4 py-4 text-surface ${focusRing} focus-visible:outline-trust`}>
-        <span className="block text-base opacity-90">{t('home.anyCountry')}</span>
+      <Link to="/xavfsizlik/agentlik" className={`block rounded-card bg-trust-soft px-4 py-4 text-trust-text ${focusRing} focus-visible:outline-trust`}>
+        <span className="block text-base">{t('home.anyCountry')}</span>
         <span className="block text-lg font-semibold">{t('home.checkAgency')}</span>
       </Link>
     </div>

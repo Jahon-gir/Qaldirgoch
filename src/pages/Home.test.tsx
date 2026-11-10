@@ -165,13 +165,44 @@ describe('davlat kartasi: oʻtish animatsiyasi', () => {
     expect(localStorage.getItem('qaldirgoch.countryFlightSeen')).toBe('1')
   })
 
-  it('keyingi safar: qisqa (faqat tunnel)', () => {
+  it('keyingi safar: qisqa, lekin qaldirgʻoch baribir uchadi (~1 s)', () => {
     localStorage.setItem('qaldirgoch.countryFlightSeen', '1')
     renderHome()
     fireEvent.click(card(/Germaniya/))
-    expect(screen.queryByTestId('swallow')).toBeNull()
-    act(() => vi.advanceTimersByTime(SHORT.navAt))
+    expect(within(screen.getByTestId('flight')).getByTestId('swallow')).toBeTruthy()
+    expect(screen.getByTestId('flight-ghost')).toBeTruthy() // xaritadagi oq qaldirgʻochdan boshlanadi
+    expect(SHORT.fly + SHORT.tunnel).toBeLessThanOrEqual(1000)
+    act(() => vi.advanceTimersByTime(SHORT.navAt - 1))
+    expect(where()).toBe('/')
+    act(() => vi.advanceTimersByTime(1))
     expect(where()).toBe('/yol/de')
+  })
+
+  it('ikkinchi bosishda ham qaldirgʻoch elementi bor', () => {
+    renderHome()
+    fireEvent.click(card(/Germaniya/))
+    expect(within(screen.getByTestId('flight')).getByTestId('swallow')).toBeTruthy()
+    act(() => vi.advanceTimersByTime(FULL.navAt + 1000))
+    expect(where()).toBe('/yol/de')
+    cleanup()
+    renderHome()
+    fireEvent.click(card(/Yaponiya/))
+    expect(within(screen.getByTestId('flight')).getByTestId('swallow')).toBeTruthy()
+    act(() => vi.advanceTimersByTime(SHORT.end))
+    expect(where()).toBe('/yol/jp')
+    expect(screen.queryByTestId('flight')).toBeNull()
+  })
+
+  it('xaritadagi oq qaldirgʻoch oxirida yoʻqolmaydi, uchish paytida yashiriladi', () => {
+    stubMotion(true) // xarita darhol yakuniy holatda
+    renderHome()
+    const bird = screen.getByTestId('world-map').querySelector<SVGElement>('[data-swallow]')!
+    expect(bird.style.opacity).toBe('1')
+    cleanup()
+    stubMotion(false)
+    renderHome()
+    fireEvent.click(card(/Germaniya/))
+    expect(screen.getByTestId('world-map').querySelector<SVGElement>('[data-swallow]')!.style.visibility).toBe('hidden')
   })
 
   it('reduced-motion: animatsiyasiz darhol oʻtadi', () => {
