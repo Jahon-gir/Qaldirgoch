@@ -66,7 +66,7 @@ export type LetterExercise = {
 }
 
 /**
- * Boʻgʻin yigʻish: undosh + unli (+ ixtiyoriy ostki harf) katakchalari; pastda harf tugmalari (toʻgʻrilari + chalgʻituvchilar shu darsdan).
+ * Boʻgʻin yigʻish: undosh + unli (+ ixtiyoriy pastki harf) katakchalari; pastda harf tugmalari (toʻgʻrilari + chalgʻituvchilar shu darsdan).
  * Javob: compose(initial, vowel, final) — Unicode boʻgʻin.
  */
 export type SyllableExercise = {
@@ -74,7 +74,10 @@ export type SyllableExercise = {
   id: string
   initial: string
   vowel: string
+  /** Pastki harf (batchim). Berilsa 3 katak chiqadi: undosh + unli + pastki harf. */
   final?: string
+  /** Pastki harf yoʻq, lekin 3 katak va "Yoʻq" tugmasi chiqadi (pastki harf yoʻqligini tanlash mashqi). */
+  showFinal?: boolean
   /** Oʻqilishi (masalan «na»). */
   pron: L3
   distractors: string[]

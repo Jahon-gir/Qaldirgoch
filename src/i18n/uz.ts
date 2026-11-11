@@ -703,7 +703,7 @@ export const uz = {
   'syl.title': 'Boʻgʻinni yigʻing',
   'syl.initial': 'Undosh',
   'syl.vowel': 'Unli',
-  'syl.final': 'Ostki harf',
+  'syl.final': 'Pastki harf',
   'syl.empty': 'boʻsh',
   'syl.slot': '{part}: {v}',
   'syl.result': 'Yigʻilgan boʻgʻin: {s}',
@@ -711,7 +711,10 @@ export const uz = {
   'syl.clear': 'Tozalash',
   'syl.right': 'Toʻgʻri:',
   'syl.wrong': 'Xato. Toʻgʻri javob:',
-  'syl.buildQ': 'Boʻgʻinlardan yigʻing'
+  'syl.buildQ': 'Boʻgʻinlardan yigʻing',
+  'syl.none': 'Yoʻq',
+  'syl.noFinal': 'Pastki harf yoʻq',
+  'syl.noneA11y': 'yoʻq'
 } as const
 
 export type Key = keyof typeof uz

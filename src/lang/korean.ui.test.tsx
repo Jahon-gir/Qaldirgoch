@@ -112,10 +112,10 @@ describe('/til — til tanlash ekrani', () => {
     })
     expect(screen.queryByText('Bu til tayyorlanmoqda — tez orada ochiladi')).toBeNull()
   })
-  it('koreys darsi boshlangan boʻlsa — "Hangul · N%"', () => {
+  it('koreys darsi boshlangan boʻlsa — "Hangul · N%" (2 modul, 12 dars)', () => {
     seed({ lessons: done('ko-h-m1-l1', 'ko-h-m1-l2', 'ko-h-m1-l3') })
     renderApp('/til')
-    expect(screen.getByTestId('lang-ko').textContent).toContain('Hangul · 50%')
+    expect(screen.getByTestId('lang-ko').textContent).toContain('Hangul · 25%')
   })
 })
 
@@ -149,7 +149,7 @@ describe('koreys kurs ekrani /til/ko', () => {
     expect(screen.getByText('Ilova til kursini toʻldiradi, almashtirmaydi. Darslar tekshiruvda.')).toBeTruthy()
     expect(screen.queryByText(/Yoʻnalish:/)).toBeNull()
     const levels = within(screen.getByRole('group', { name: 'Darajalar' })).getAllByRole('button')
-    expect(levels.map((b) => b.textContent)).toEqual(['Hangul0/6', 'TOPIK 10/0', 'TOPIK 2keyin'])
+    expect(levels.map((b) => b.textContent)).toEqual(['Hangul0/12', 'TOPIK 10/0', 'TOPIK 2keyin'])
     expect(screen.getByRole('link', { name: /Harflar/ }).getAttribute('href')).toBe('/til/ko/modul/ko-h-m1')
     expect(screen.getByText('Oʻqish qoidalari')).toBeTruthy()
     expect(screen.getByRole('link', { name: 'Davom etish' }).getAttribute('href')).toBe('/til/ko/dars/ko-h-m1-l1')

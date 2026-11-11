@@ -709,5 +709,8 @@ export const ru: Dict = {
   'syl.clear': 'Очистить',
   'syl.right': 'Верно:',
   'syl.wrong': 'Неверно. Правильный ответ:',
-  'syl.buildQ': 'Соберите из слогов'
+  'syl.buildQ': 'Соберите из слогов',
+  'syl.none': 'Нет',
+  'syl.noFinal': 'Нижней буквы нет',
+  'syl.noneA11y': 'нет'
 }

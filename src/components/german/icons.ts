@@ -2,6 +2,7 @@ import {
   IconBolt, IconCalendarEvent, IconDoorExit, IconFlame, IconHandStop, IconHeartHandshake, IconId, IconMapPin, IconMessageCircle, IconMessages,
   IconMoodSmile, IconMoonStars, IconStethoscope, IconSun, IconSunrise, IconSunset2, IconTools, IconToolsKitchen2, IconUser, IconUsers, IconWorld,
   IconCheck, IconChefHat, IconCoffee, IconDog, IconFlag, IconGenderFemale, IconGrape, IconHanger, IconLeaf, IconMan, IconMap, IconMeat, IconMilk, IconMoodKid, IconMusic, IconNumber1, IconPaw, IconRadio, IconRipple, IconSalad, IconSquare, IconToiletPaper, IconTrain, IconWoman,
+  IconAbc, IconAlertTriangle, IconApple, IconArmchair, IconBackpack, IconBook, IconBowlChopsticks, IconBriefcase, IconBuildingSkyscraper, IconClock, IconCookie, IconDoor, IconDoorEnter, IconDroplet, IconHome, IconLanguage, IconMountain, IconPig, IconPlant, IconRun, IconShirt, IconSmokingNo, IconSoup, IconVolume, IconWaveSine,
   type Icon
 } from '@tabler/icons-react'
 
@@ -52,5 +53,31 @@ export const LESSON_ICONS: Record<string, Icon> = {
   'square': IconSquare,
   'toilet-paper': IconToiletPaper,
   'train': IconTrain,
-  'woman': IconWoman
+  'woman': IconWoman,
+  // Koreys 2-modul
+  'abc': IconAbc,
+  'alert-triangle': IconAlertTriangle,
+  'apple': IconApple,
+  'armchair': IconArmchair,
+  'backpack': IconBackpack,
+  'book': IconBook,
+  'bowl': IconBowlChopsticks,
+  'briefcase': IconBriefcase,
+  'building': IconBuildingSkyscraper,
+  'clock': IconClock,
+  'cookie': IconCookie,
+  'door': IconDoor,
+  'door-enter': IconDoorEnter,
+  'droplet': IconDroplet,
+  'home': IconHome,
+  'language': IconLanguage,
+  'mountain': IconMountain,
+  'pig': IconPig,
+  'plant': IconPlant,
+  'run': IconRun,
+  'shirt': IconShirt,
+  'smoking-no': IconSmokingNo,
+  'soup': IconSoup,
+  'volume': IconVolume,
+  'wave-sine': IconWaveSine
 }
