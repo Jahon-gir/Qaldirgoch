@@ -260,7 +260,7 @@ export const cyrlOverrides: Partial<Dict> = {
   'syl.title': 'Бўғинни йиғинг',
   'syl.initial': 'Ундош',
   'syl.vowel': 'Унли',
-  'syl.final': 'Остки ҳарф',
+  'syl.final': 'Пастки ҳарф',
   'syl.empty': 'бўш',
   'syl.slot': '{part}: {v}',
   'syl.result': 'Йиғилган бўғин: {s}',
@@ -268,5 +268,8 @@ export const cyrlOverrides: Partial<Dict> = {
   'syl.clear': 'Тозалаш',
   'syl.right': 'Тўғри:',
   'syl.wrong': 'Хато. Тўғри жавоб:',
-  'syl.buildQ': 'Бўғинлардан йиғинг'
+  'syl.buildQ': 'Бўғинлардан йиғинг',
+  'syl.none': 'Йўқ',
+  'syl.noFinal': 'Пастки ҳарф йўқ',
+  'syl.noneA11y': 'йўқ'
 }

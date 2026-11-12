@@ -1,13 +1,13 @@
 /**
  * Hangul: moslik harflari (U+3131…, klaviaturadagi ㄱ ㅏ) ↔ Unicode boʻgʻin (U+AC00…).
- * Boʻgʻin = 0xAC00 + (L × 21 + V) × 28 + T; L — bosh undosh (19), V — unli (21), T — ostki harf (0 = yoʻq, 27 ta).
+ * Boʻgʻin = 0xAC00 + (L × 21 + V) × 28 + T; L — bosh undosh (19), V — unli (21), T — pastki harf (0 = yoʻq, 27 ta).
  */
 
 /** Bosh undoshlar (choseong) tartibi. */
 const INITIALS = ['ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ']
 /** Unlilar (jungseong) tartibi. */
 const VOWELS = ['ㅏ', 'ㅐ', 'ㅑ', 'ㅒ', 'ㅓ', 'ㅔ', 'ㅕ', 'ㅖ', 'ㅗ', 'ㅘ', 'ㅙ', 'ㅚ', 'ㅛ', 'ㅜ', 'ㅝ', 'ㅞ', 'ㅟ', 'ㅠ', 'ㅡ', 'ㅢ', 'ㅣ']
-/** Ostki harflar (jongseong); 0-oʻrin — yoʻq. */
+/** Pastki harflar (jongseong); 0-oʻrin — yoʻq. */
 const FINALS = ['', 'ㄱ', 'ㄲ', 'ㄳ', 'ㄴ', 'ㄵ', 'ㄶ', 'ㄷ', 'ㄹ', 'ㄺ', 'ㄻ', 'ㄼ', 'ㄽ', 'ㄾ', 'ㄿ', 'ㅀ', 'ㅁ', 'ㅂ', 'ㅄ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ']
 
 const BASE = 0xac00
@@ -37,7 +37,7 @@ export function decompose(syllable: string): string[] | null {
 
 /** Hangul boʻgʻinimi. */
 export const isSyllable = (s: string) => decompose(s) !== null
-/** Boʻgʻinda ostki harf (batchim) bormi. */
+/** Boʻgʻinda pastki harf (batchim) bormi. */
 export const hasFinal = (s: string) => (decompose(s)?.length ?? 0) === 3
 /** Soʻzning boʻgʻinlari (boʻsh joy va tinish belgilarisiz). */
 export const syllablesOf = (term: string) => [...term.normalize('NFC')].filter(isSyllable)

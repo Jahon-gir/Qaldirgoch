@@ -6,7 +6,7 @@ import { useI18n } from '../../i18n/I18nProvider'
 import { useFeedback } from '../../ui/useFeedback'
 import type { LetterExercise, SyllableExercise } from '../../content/german'
 import { seededShuffle, syllableOutcome, wordOutcome, type Outcome } from '../../german/logic'
-import { compose, isInitial, isVowel } from '../../korean/hangul'
+import { compose, isVowel } from '../../korean/hangul'
 import { ListenIcon, NoVoice, type Speech } from '../german/Listen'
 import { HangulText } from './HangulText'
 
@@ -21,13 +21,16 @@ function Footer({ children }: { children: ReactNode }) {
 export function LetterStep({ ex, speech, onDone }: { ex: LetterExercise; speech: Speech; onDone: (o: Outcome) => void }) {
   const { lang, t } = useI18n()
   const voice = speech.canSpeak()
+  // 1–2 belgili kartalar: 1–2 ustun; 3 va undan koʻp: 3 ustun (qatorlar); 2 dan uzun yozuv ("한국어", "감사합니다") — 1 ustun
+  const long = ex.letters.some((l) => [...l.char].length > 2)
+  const cols = long || ex.letters.length === 1 ? 'grid-cols-1' : ex.letters.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
   return (
     <div className="flex flex-1 flex-col gap-4">
       <p className="text-base text-ink-2">{t(ex.letters.length > 1 ? 'letter.many' : 'letter.one')}</p>
-      <ul className={`grid gap-2 ${ex.letters.length === 3 ? 'grid-cols-3' : ex.letters.length === 2 ? 'grid-cols-2' : 'grid-cols-1'}`}>
+      <ul className={`grid gap-2 ${cols}`}>
         {ex.letters.map((l) => (
           <li key={l.char} className="flex flex-col items-center gap-1 rounded-card bg-surface px-2 py-3 text-center" data-testid="letter-card">
-            <span lang="ko" className="text-[64px] font-bold leading-none">
+            <span lang="ko" className={`font-bold leading-none ${[...l.char].length <= 2 ? 'text-[64px]' : [...l.char].length <= 4 ? 'text-5xl' : 'text-4xl'}`}>
               {l.char}
             </span>
             <span className="text-lg font-semibold text-accent-strong">{l.sound}</span>
@@ -72,36 +75,64 @@ export function LetterStep({ ex, speech, onDone }: { ex: LetterExercise; speech:
 /* ---------- Boʻgʻin yigʻish ---------- */
 
 type Slot = 'initial' | 'vowel' | 'final'
+/** Tugma: id har tugmaga noyob (pastki harf bosh harf bilan bir xil boʻlishi mumkin: 밥 = ㅂ + ㅏ + ㅂ). text '' — "Yoʻq". */
+type SylTile = { id: string; text: string }
+const NONE = 'none'
 
 const tileCls =
   'flex h-14 min-w-[56px] items-center justify-center rounded-xl border border-vedge bg-vf px-3 text-3xl font-bold text-vink active:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:opacity-30'
 
 /**
- * Undosh + unli (+ ostki harf) katakchalari; har tanlovda blok jonli yigʻiladi (ㄴ + ㅏ = 나).
- * Undosh tugmasi undosh katagiga, unli — unli katagiga tushadi; toʻla katak bosilsa boʻshaydi.
+ * Undosh + unli (+ pastki harf) katakchalari; har tanlovda blok jonli yigʻiladi (ㄴ + ㅏ = 나, ㅂ + ㅏ + ㅂ = 밥).
+ * Unli tugmasi unli katagiga tushadi (murakkab unli — bitta tugma); undosh — avval bosh katakka, u toʻla boʻlsa pastki katakka.
+ * Aniq katakni tanlash uchun boʻsh katakni bosing. Toʻla katak bosilsa boʻshaydi. Pastki katak "Yoʻq" ham boʻla oladi.
  */
 export function SyllableStep({ ex, onDone }: { ex: SyllableExercise; onDone: (o: Outcome) => void }) {
   const { lang, t } = useI18n()
   const fx = useFeedback()
   const box = useRef<HTMLDivElement>(null)
   const target = compose(ex.initial, ex.vowel, ex.final) ?? ''
-  const tiles = useMemo(() => seededShuffle([ex.initial, ex.vowel, ...(ex.final ? [ex.final] : []), ...ex.distractors], ex.id), [ex])
-  const [filled, setFilled] = useState<Partial<Record<Slot, string>>>({})
+  const hasFinalSlot = !!ex.final || !!ex.showFinal
+  const tiles = useMemo<SylTile[]>(() => {
+    const list: SylTile[] = [{ id: 'i', text: ex.initial }, { id: 'v', text: ex.vowel }]
+    if (ex.final) list.push({ id: 'f', text: ex.final })
+    ex.distractors.forEach((d, k) => list.push({ id: `d${k}`, text: d }))
+    if (ex.showFinal && !ex.final) list.push({ id: NONE, text: '' })
+    return seededShuffle(list, ex.id)
+  }, [ex])
+  const [filled, setFilled] = useState<Partial<Record<Slot, SylTile>>>({})
+  const [aim, setAim] = useState<Slot | null>(null) // bosilgan boʻsh katak: keyingi undosh shu yerga tushadi
   const [result, setResult] = useState<boolean | null>(null)
   const done = result !== null
-  const slots: Slot[] = ex.final ? ['initial', 'vowel', 'final'] : ['initial', 'vowel']
+  const slots: Slot[] = hasFinalSlot ? ['initial', 'vowel', 'final'] : ['initial', 'vowel']
   const label: Record<Slot, string> = { initial: t('syl.initial'), vowel: t('syl.vowel'), final: t('syl.final') }
   const complete = slots.every((s) => filled[s])
-  const built = filled.initial && filled.vowel ? compose(filled.initial, filled.vowel, filled.final) : null
-  const preview = built ?? (filled.initial || filled.vowel || '')
+  const finalText = filled.final?.text || undefined
+  const built = filled.initial && filled.vowel ? compose(filled.initial.text, filled.vowel.text, finalText) : null
+  const preview = built ?? (filled.initial?.text || filled.vowel?.text || '')
+  // 3 katakda (pastki harf bilan) katakchalar kichikroq: 360 px da chetga tegmasin
+  const box3 = slots.length === 3
+  const slotSize = box3 ? 'h-14 w-14 text-2xl' : 'h-16 w-16 text-3xl'
+  const used = new Set(Object.values(filled).flatMap((x) => (x ? [x.id] : []))) // boʻshatilgan katak undefined boʻladi
+  const shown = (s: Slot) => (filled[s] ? filled[s]!.text || '—' : '')
+  const spoken = (s: Slot) => (filled[s] ? filled[s]!.text || t('syl.noneA11y') : t('syl.empty'))
 
-  const put = (c: string) => {
-    if (done) return
-    // Undosh — avval bosh katak, u toʻla boʻlsa (va ostki harf kutilsa) — ostki katak
-    const slot: Slot | null = isVowel(c) ? 'vowel' : isInitial(c) ? (filled.initial && ex.final ? 'final' : 'initial') : null
-    if (slot) setFilled({ ...filled, [slot]: c })
+  const put = (tile: SylTile) => {
+    if (done || used.has(tile.id)) return
+    let slot: Slot
+    if (tile.id === NONE) slot = 'final'
+    else if (isVowel(tile.text)) slot = 'vowel'
+    else if (aim && aim !== 'vowel' && slots.includes(aim)) slot = aim
+    else if (!filled.initial) slot = 'initial'
+    else slot = hasFinalSlot ? 'final' : 'initial'
+    setFilled({ ...filled, [slot]: tile })
+    setAim(null)
   }
-  const clear = (s: Slot) => !done && setFilled({ ...filled, [s]: undefined })
+  const tap = (s: Slot) => {
+    if (done) return
+    if (filled[s]) setFilled({ ...filled, [s]: undefined })
+    else if (s !== 'vowel') setAim(aim === s ? null : s)
+  }
   const check = () => {
     if (!complete || done) return
     const ok = built === target
@@ -117,9 +148,9 @@ export function SyllableStep({ ex, onDone }: { ex: SyllableExercise; onDone: (o:
         <p className="mt-1 text-2xl font-bold">«{ex.pron[lang]}»</p>
       </div>
 
-      <div ref={box} className={`flex items-center justify-center gap-2 ${result === false ? 'fx-shake' : result ? 'fx-pop' : ''}`}>
+      <div ref={box} className={`flex items-center justify-center ${box3 ? 'gap-1' : 'gap-2'} ${result === false ? 'fx-shake' : result ? 'fx-pop' : ''}`}>
         {slots.map((s, i) => (
-          <span key={s} className="flex items-center gap-2">
+          <span key={s} className={`flex items-center ${box3 ? 'gap-1' : 'gap-2'}`}>
             {i > 0 && (
               <span aria-hidden className="text-2xl font-bold text-ink-3">
                 +
@@ -128,14 +159,15 @@ export function SyllableStep({ ex, onDone }: { ex: SyllableExercise; onDone: (o:
             <button
               type="button"
               lang="ko"
-              disabled={done || !filled[s]}
-              onClick={() => clear(s)}
-              aria-label={t('syl.slot', { part: label[s], v: filled[s] ?? t('syl.empty') })}
-              className={`flex h-16 w-16 flex-col items-center justify-center rounded-xl border-2 text-3xl font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
-                filled[s] ? 'border-head bg-surface text-ink' : 'border-dashed border-ink-3 bg-surface-2 text-ink-3'
+              disabled={done || (!filled[s] && s === 'vowel')}
+              onClick={() => tap(s)}
+              aria-label={t('syl.slot', { part: label[s], v: spoken(s) })}
+              aria-pressed={aim === s || undefined}
+              className={`flex ${slotSize} flex-col items-center justify-center rounded-xl border-2 font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
+                filled[s] ? 'border-head bg-surface text-ink' : aim === s ? 'border-solid border-accent bg-surface text-ink-3' : 'border-dashed border-ink-3 bg-surface-2 text-ink-3'
               }`}
             >
-              {filled[s] ?? ''}
+              {shown(s)}
             </button>
           </span>
         ))}
@@ -145,7 +177,7 @@ export function SyllableStep({ ex, onDone }: { ex: SyllableExercise; onDone: (o:
         <span
           lang="ko"
           data-testid="syllable-preview"
-          className={`flex h-16 min-w-[64px] items-center justify-center rounded-xl border-2 px-2 text-4xl font-bold ${
+          className={`flex ${box3 ? 'h-14 min-w-[56px] text-3xl' : 'h-16 min-w-[64px] text-4xl'} items-center justify-center rounded-xl border-2 px-2 font-bold ${
             result === null ? 'border-line bg-surface' : result ? 'border-success bg-success-soft text-success-text' : 'border-danger bg-danger-soft text-danger-text'
           }`}
         >
@@ -167,16 +199,25 @@ export function SyllableStep({ ex, onDone }: { ex: SyllableExercise; onDone: (o:
       ) : (
         <>
           <div className="flex flex-wrap justify-center gap-2" role="group" aria-label={t('syl.letters')}>
-            {tiles.map((c) => (
-              <button key={c} type="button" lang="ko" onClick={() => put(c)} disabled={Object.values(filled).includes(c)} className={tileCls}>
-                {c}
-              </button>
-            ))}
+            {tiles.map((c) =>
+              c.id === NONE ? (
+                <button key={c.id} type="button" onClick={() => put(c)} disabled={used.has(c.id)} aria-label={t('syl.noFinal')} className={`${tileCls} text-xl`}>
+                  {t('syl.none')}
+                </button>
+              ) : (
+                <button key={c.id} type="button" lang="ko" onClick={() => put(c)} disabled={used.has(c.id)} className={tileCls}>
+                  {c.text}
+                </button>
+              )
+            )}
           </div>
           <div className="flex justify-center">
             <button
               type="button"
-              onClick={() => setFilled({})}
+              onClick={() => {
+                setFilled({})
+                setAim(null)
+              }}
               disabled={!Object.values(filled).some(Boolean)}
               className="flex min-h-[44px] items-center gap-2 rounded-xl border-2 border-line bg-surface px-4 text-base font-semibold text-ink active:bg-surface-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:opacity-40"
             >

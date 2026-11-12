@@ -14,6 +14,8 @@ export const letter = (a: Omit<LetterExercise, 'type'>): LetterExercise => ({ ty
 
 export const syllable = (a: Omit<SyllableExercise, 'type'>): SyllableExercise => ({ type: 'syllable', ...a })
 
+/** Murakkab unli (ㅘ ㅝ ㅚ ...) syllable mashqida BITTA tugma: qismlarga boʻlinmaydi (compose/decompose shunday ishlaydi). */
+
 export const PROMPT_MATCH = l3('Juftlarni toping: avval chapdan, keyin oʻngdan tanlang', 'Жуфтларни топинг: аввал чапдан, кейин ўнгдан танланг', 'Найдите пары: сначала слева, потом справа')
 
 export const match = (id: string, pairs: [term: string, tr: L3][]): MatchExercise => ({
@@ -38,3 +40,6 @@ export const pick = (a: PickArgs): ChoiceExercise => ({
 
 export const PROMPT_LETTER = l3('Tovushga mos harfni tanlang', 'Товушга мос ҳарфни танланг', 'Выберите букву для звука')
 export const PROMPT_WORD = l3('Tarjimaga mos soʻzni tanlang', 'Таржимага мос сўзни танланг', 'Выберите слово по переводу')
+
+export const PROMPT_READ = l3('Qanday oʻqiladi?', 'Қандай ўқилади?', 'Как это читается?')
+export const PROMPT_SIGN = l3('Qaysi yozuv shu maʼnoni bildiradi?', 'Қайси ёзув шу маънони билдиради?', 'Какая надпись означает это?')
