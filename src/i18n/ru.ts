@@ -150,6 +150,8 @@ export const ru: Dict = {
   'dir.metal': 'Металл и автомобили',
   'dir.cleaning': 'Клининг (уборка)',
   'dir.agriculture': 'Сельское хозяйство',
+  'dir.retail': 'Торговля (магазин)',
+  'dir.food': 'Пищевое производство',
   'german.continueTitle': 'Продолжайте',
   'german.allDone': 'Все доступные уроки пройдены',
   'german.levels': 'Уровни',

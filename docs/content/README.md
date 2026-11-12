@@ -9,7 +9,7 @@ Shablon: [`shablon.xlsx`](shablon.xlsx). Har bir soha yoki jamoa aʼzosi uchun n
 | Varaq | Nima yoziladi |
 |---|---|
 | **Qollanma** | Qisqa eslatma (import qilinmaydi) |
-| **Sohalar** | Soha: `general` (umumiy: ish kundaligi), `care` (parvarish va tibbiyot), `technical` (texnik kasblar), `hospitality` (mehmonxona va oshxona), `logistics` (logistika va haydovchilik), `metal` (metall va avtomobil), `cleaning` (tozalash xizmati), `agriculture` (qishloq xoʻjaligi). Nomlar uch tilda |
+| **Sohalar** | Soha: `general` (umumiy: ish kundaligi), `care` (parvarish va tibbiyot), `technical` (texnik kasblar), `hospitality` (mehmonxona va oshxona), `logistics` (logistika va haydovchilik), `metal` (metall va avtomobil), `cleaning` (tozalash xizmati), `agriculture` (qishloq xoʻjaligi), `retail` (savdo), `food` (oziq-ovqat ishlab chiqarish). Nomlar uch tilda |
 | **Vaziyatlar** | Soha ichidagi vaziyat: masalan, `technical` → `asboblar` "Asboblar", `birinchi-kun` "Birinchi ish kuni" |
 | **Sozlar** | Har bir qator — bitta soʻz yoki ibora |
 
