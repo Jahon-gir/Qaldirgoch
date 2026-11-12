@@ -54,3 +54,21 @@ describe('nemis kursi kasbiy paketlar bilan', () => {
     expect(qs.every((q) => q.kind === 'word')).toBe(true)
   })
 })
+
+describe('paket darslaridagi boʻshliq mashqlari', () => {
+  it('har birida bitta toʻgʻri javob, ___ bor va toʻliq gap = toʻgʻri javob qoʻyilgan gap', () => {
+    let n = 0
+    for (const l of DE_COURSE.lessons.filter((x) => !x.id.startsWith('a1-'))) {
+      for (const e of DE_COURSE.exercisesOf(l.id)) {
+        if (e.type !== 'choice') continue
+        n++
+        const right = e.options.filter((o) => o.correct)
+        expect(right, e.id).toHaveLength(1)
+        expect(e.sentence.split('___')).toHaveLength(2)
+        expect(e.sentence.replace('___', right[0].text)).toBe(e.full)
+        expect(new Set(e.options.map((o) => o.text)).size).toBe(3)
+      }
+    }
+    expect(n).toBeGreaterThan(20)
+  })
+})
