@@ -1,0 +1,597 @@
+{
+  "schema": 1,
+  "course": "de",
+  "field": "food",
+  "title": {
+    "uz": "Oziq-ovqat ishlab chiqarish",
+    "uz-Cyrl": "Озиқ-овқат ишлаб чиқариш",
+    "ru": "Пищевое производство"
+  },
+  "order": 10,
+  "situations": [
+    {
+      "id": "sex",
+      "title": {
+        "uz": "Ishlab chiqarish sexida",
+        "uz-Cyrl": "Ишлаб чиқариш сехида",
+        "ru": "В цехе"
+      },
+      "order": 1,
+      "level": "A1"
+    },
+    {
+      "id": "novvoy",
+      "title": {
+        "uz": "Novvoyxona va qassobxona",
+        "uz-Cyrl": "Новвойхона ва қассобхона",
+        "ru": "Пекарня и мясная лавка"
+      },
+      "order": 2,
+      "level": "A1"
+    }
+  ],
+  "words": [
+    {
+      "id": "food-sex-fliessband",
+      "slug": "fliessband",
+      "term": "das Fließband",
+      "icon": "tools",
+      "article": "das",
+      "plural": "die Fließbänder",
+      "tr": {
+        "uz": "konveyer",
+        "uz-Cyrl": "конвейер",
+        "ru": "конвейер"
+      },
+      "pron": {
+        "uz": "das flis-bant",
+        "uz-Cyrl": "дас флис-бант",
+        "ru": "дас флис-бант"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "sex",
+      "example": {
+        "term": "Das Fließband läuft heute schnell.",
+        "tr": {
+          "uz": "Konveyer bugun tez yuryapti.",
+          "uz-Cyrl": "Конвейер бугун тез юряпти.",
+          "ru": "Конвейер сегодня идёт быстро."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sex-maschine",
+      "slug": "maschine",
+      "term": "die Maschine",
+      "icon": "power",
+      "article": "die",
+      "plural": "die Maschinen",
+      "tr": {
+        "uz": "dastgoh (mashina)",
+        "uz-Cyrl": "дастгоҳ (машина)",
+        "ru": "станок, машина"
+      },
+      "pron": {
+        "uz": "die ma-shi-ne",
+        "uz-Cyrl": "ди ма-ши-не",
+        "ru": "ди ма-ши-не"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "sex",
+      "example": {
+        "term": "Schalten Sie die Maschine aus.",
+        "tr": {
+          "uz": "Dastgohni oʻchiring.",
+          "uz-Cyrl": "Дастгоҳни ўчиринг.",
+          "ru": "Выключите станок."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sex-verpackung",
+      "slug": "verpackung",
+      "term": "die Verpackung",
+      "icon": "briefcase",
+      "article": "die",
+      "plural": "die Verpackungen",
+      "tr": {
+        "uz": "qadoqlash (boʻlimi)",
+        "uz-Cyrl": "қадоқлаш (бўлими)",
+        "ru": "упаковка (участок)"
+      },
+      "pron": {
+        "uz": "die fer-pa-kung",
+        "uz-Cyrl": "ди фер-па-кунг",
+        "ru": "ди фер-па-кунг"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "sex",
+      "example": {
+        "term": "Ich arbeite in der Verpackung.",
+        "tr": {
+          "uz": "Qadoqlash boʻlimida ishlayman.",
+          "uz-Cyrl": "Қадоқлаш бўлимида ишлайман.",
+          "ru": "Я работаю на упаковке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sex-hygiene",
+      "slug": "hygiene",
+      "term": "die Hygiene",
+      "icon": "droplet",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "gigiyena",
+        "uz-Cyrl": "гигиена",
+        "ru": "гигиена"
+      },
+      "pron": {
+        "uz": "die hyu-gi-e-ne",
+        "uz-Cyrl": "ди хю-ги-е-не",
+        "ru": "ди хю-ги-е-не"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "sex",
+      "example": {
+        "term": "Hygiene ist hier sehr wichtig.",
+        "tr": {
+          "uz": "Bu yerda gigiyena juda muhim.",
+          "uz-Cyrl": "Бу ерда гигиена жуда муҳим.",
+          "ru": "Здесь гигиена очень важна."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sex-temperatur",
+      "slug": "temperatur",
+      "term": "die Temperatur",
+      "icon": "thermometer",
+      "article": "die",
+      "plural": "die Temperaturen",
+      "tr": {
+        "uz": "harorat",
+        "uz-Cyrl": "ҳарорат",
+        "ru": "температура"
+      },
+      "pron": {
+        "uz": "die tem-pe-ra-tur",
+        "uz-Cyrl": "ди тем-пе-ра-тур",
+        "ru": "ди тем-пе-ра-тур"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "sex",
+      "example": {
+        "term": "Kontrollieren Sie die Temperatur.",
+        "tr": {
+          "uz": "Haroratni nazorat qiling.",
+          "uz-Cyrl": "Ҳароратни назорат қилинг.",
+          "ru": "Контролируйте температуру."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sex-kuehlhaus",
+      "slug": "kuehlhaus",
+      "term": "das Kühlhaus",
+      "icon": "home",
+      "article": "das",
+      "plural": "die Kühlhäuser",
+      "tr": {
+        "uz": "muzxona (sovutish kamerasi)",
+        "uz-Cyrl": "музхона (совутиш камераси)",
+        "ru": "холодильная камера"
+      },
+      "pron": {
+        "uz": "das kyul-haus",
+        "uz-Cyrl": "дас кюль-хаус",
+        "ru": "дас кюль-хаус"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "sex",
+      "example": {
+        "term": "Im Kühlhaus ist es sehr kalt.",
+        "tr": {
+          "uz": "Muzxonada juda sovuq.",
+          "uz-Cyrl": "Музхонада жуда совуқ.",
+          "ru": "В холодильной камере очень холодно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sex-qualitaet",
+      "slug": "qualitaet",
+      "term": "die Qualität",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Qualitäten",
+      "tr": {
+        "uz": "sifat",
+        "uz-Cyrl": "сифат",
+        "ru": "качество"
+      },
+      "pron": {
+        "uz": "die kva-li-tet",
+        "uz-Cyrl": "ди ква-ли-тет",
+        "ru": "ди ква-ли-тет"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "sex",
+      "example": {
+        "term": "Die Qualität muss stimmen.",
+        "tr": {
+          "uz": "Sifat talabga javob berishi kerak.",
+          "uz-Cyrl": "Сифат талабга жавоб бериши керак.",
+          "ru": "Качество должно соответствовать."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sex-sortieren",
+      "slug": "sortieren",
+      "term": "sortieren",
+      "icon": "apple",
+      "tr": {
+        "uz": "saralamoq",
+        "uz-Cyrl": "сараламоқ",
+        "ru": "сортировать"
+      },
+      "pron": {
+        "uz": "zor-ti-ren",
+        "uz-Cyrl": "зор-ти-рен",
+        "ru": "зор-ти-рен"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "sex",
+      "example": {
+        "term": "Wir sortieren das Obst.",
+        "tr": {
+          "uz": "Mevalarni saralayapmiz.",
+          "uz-Cyrl": "Меваларни саралаяпмиз.",
+          "ru": "Мы сортируем фрукты."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-novvoy-brot",
+      "slug": "brot",
+      "term": "das Brot",
+      "icon": "bowl",
+      "article": "das",
+      "plural": "die Brote",
+      "tr": {
+        "uz": "non",
+        "uz-Cyrl": "нон",
+        "ru": "хлеб"
+      },
+      "pron": {
+        "uz": "das brot",
+        "uz-Cyrl": "дас брот",
+        "ru": "дас брот"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "baecker",
+        "fleischer"
+      ],
+      "situation": "novvoy",
+      "example": {
+        "term": "Das Brot ist frisch.",
+        "tr": {
+          "uz": "Non yangi.",
+          "uz-Cyrl": "Нон янги.",
+          "ru": "Хлеб свежий."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-novvoy-broetchen",
+      "slug": "broetchen",
+      "term": "das Brötchen",
+      "icon": "cookie",
+      "article": "das",
+      "plural": "die Brötchen",
+      "tr": {
+        "uz": "bulochka",
+        "uz-Cyrl": "булочка",
+        "ru": "булочка"
+      },
+      "pron": {
+        "uz": "das bryot-xen",
+        "uz-Cyrl": "дас брёт-хен",
+        "ru": "дас брёт-хен"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "baecker",
+        "fleischer"
+      ],
+      "situation": "novvoy",
+      "example": {
+        "term": "Ein Brötchen, bitte.",
+        "tr": {
+          "uz": "Bitta bulochka, iltimos.",
+          "uz-Cyrl": "Битта булочка, илтимос.",
+          "ru": "Одну булочку, пожалуйста."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-novvoy-teig",
+      "slug": "teig",
+      "term": "der Teig",
+      "icon": "bowl",
+      "article": "der",
+      "plural": "die Teige",
+      "tr": {
+        "uz": "xamir",
+        "uz-Cyrl": "хамир",
+        "ru": "тесто"
+      },
+      "pron": {
+        "uz": "der tayk",
+        "uz-Cyrl": "дер тайк",
+        "ru": "дер тайк"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "baecker",
+        "fleischer"
+      ],
+      "situation": "novvoy",
+      "example": {
+        "term": "Der Teig muss ruhen.",
+        "tr": {
+          "uz": "Xamir tindirilishi kerak.",
+          "uz-Cyrl": "Хамир тиндирилиши керак.",
+          "ru": "Тесто должно отдохнуть."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-novvoy-backen",
+      "slug": "backen",
+      "term": "backen",
+      "icon": "flame",
+      "tr": {
+        "uz": "pishirmoq (pechda)",
+        "uz-Cyrl": "пиширмоқ (печда)",
+        "ru": "печь, выпекать"
+      },
+      "pron": {
+        "uz": "ba-ken",
+        "uz-Cyrl": "ба-кен",
+        "ru": "ба-кен"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "baecker",
+        "fleischer"
+      ],
+      "situation": "novvoy",
+      "example": {
+        "term": "Wir backen ab vier Uhr morgens.",
+        "tr": {
+          "uz": "Ertalab soat toʻrtdan non yopamiz.",
+          "uz-Cyrl": "Эрталаб соат тўртдан нон ёпамиз.",
+          "ru": "Мы печём с четырёх утра."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-novvoy-wurst",
+      "slug": "wurst",
+      "term": "die Wurst",
+      "icon": "meat",
+      "article": "die",
+      "plural": "die Würste",
+      "tr": {
+        "uz": "kolbasa",
+        "uz-Cyrl": "колбаса",
+        "ru": "колбаса"
+      },
+      "pron": {
+        "uz": "die vurst",
+        "uz-Cyrl": "ди вурст",
+        "ru": "ди вурст"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "baecker",
+        "fleischer"
+      ],
+      "situation": "novvoy",
+      "example": {
+        "term": "Ist in der Wurst Schweinefleisch?",
+        "tr": {
+          "uz": "Kolbasada choʻchqa goʻshti bormi?",
+          "uz-Cyrl": "Колбасада чўчқа гўшти борми?",
+          "ru": "В колбасе есть свинина?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-novvoy-rindfleisch",
+      "slug": "rindfleisch",
+      "term": "das Rindfleisch",
+      "icon": "meat",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "mol goʻshti",
+        "uz-Cyrl": "мол гўшти",
+        "ru": "говядина"
+      },
+      "pron": {
+        "uz": "das rint-flaysh",
+        "uz-Cyrl": "дас ринт-флайш",
+        "ru": "дас ринт-флайш"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "baecker",
+        "fleischer"
+      ],
+      "situation": "novvoy",
+      "example": {
+        "term": "Ich möchte Rindfleisch, bitte.",
+        "tr": {
+          "uz": "Mol goʻshti olmoqchiman, iltimos.",
+          "uz-Cyrl": "Мол гўшти олмоқчиман, илтимос.",
+          "ru": "Мне говядину, пожалуйста."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-novvoy-theke",
+      "slug": "theke",
+      "term": "die Theke",
+      "icon": "home",
+      "article": "die",
+      "plural": "die Theken",
+      "tr": {
+        "uz": "peshtaxta",
+        "uz-Cyrl": "пештахта",
+        "ru": "прилавок"
+      },
+      "pron": {
+        "uz": "die te-ke",
+        "uz-Cyrl": "ди те-ке",
+        "ru": "ди те-ке"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "baecker",
+        "fleischer"
+      ],
+      "situation": "novvoy",
+      "example": {
+        "term": "Die Wurst liegt in der Theke.",
+        "tr": {
+          "uz": "Kolbasa peshtaxtada.",
+          "uz-Cyrl": "Колбаса пештахтада.",
+          "ru": "Колбаса лежит на прилавке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-novvoy-scharf",
+      "slug": "scharf",
+      "term": "scharf",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "oʻtkir",
+        "uz-Cyrl": "ўткир",
+        "ru": "острый"
+      },
+      "pron": {
+        "uz": "sharf",
+        "uz-Cyrl": "шарф",
+        "ru": "шарф"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "baecker",
+        "fleischer"
+      ],
+      "situation": "novvoy",
+      "example": {
+        "term": "Vorsicht, das Messer ist scharf!",
+        "tr": {
+          "uz": "Ehtiyot boʻling, pichoq oʻtkir!",
+          "uz-Cyrl": "Эҳтиёт бўлинг, пичоқ ўткир!",
+          "ru": "Осторожно, нож острый!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    }
+  ]
+}

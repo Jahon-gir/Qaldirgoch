@@ -152,6 +152,8 @@ export const uz = {
   'dir.metal': 'Metall va avtomobil',
   'dir.cleaning': 'Tozalash xizmati',
   'dir.agriculture': 'Qishloq xoʻjaligi',
+  'dir.retail': 'Savdo (doʻkon)',
+  'dir.food': 'Oziq-ovqat ishlab chiqarish',
   'german.continueTitle': 'Davom eting',
   'german.allDone': 'Mavjud darslar tugadi',
   'german.levels': 'Darajalar',

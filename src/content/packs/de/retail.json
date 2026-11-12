@@ -1,0 +1,579 @@
+{
+  "schema": 1,
+  "course": "de",
+  "field": "retail",
+  "title": {
+    "uz": "Savdo (doʻkon)",
+    "uz-Cyrl": "Савдо (дўкон)",
+    "ru": "Торговля (магазин)"
+  },
+  "order": 9,
+  "situations": [
+    {
+      "id": "kassa",
+      "title": {
+        "uz": "Kassada",
+        "uz-Cyrl": "Кассада",
+        "ru": "На кассе"
+      },
+      "order": 1,
+      "level": "A1"
+    },
+    {
+      "id": "javon",
+      "title": {
+        "uz": "Tovar va javonlar",
+        "uz-Cyrl": "Товар ва жавонлар",
+        "ru": "Товар и полки"
+      },
+      "order": 2,
+      "level": "A1"
+    }
+  ],
+  "words": [
+    {
+      "id": "retail-kassa-kasse",
+      "slug": "kasse",
+      "term": "die Kasse",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "die Kassen",
+      "tr": {
+        "uz": "kassa",
+        "uz-Cyrl": "касса",
+        "ru": "касса"
+      },
+      "pron": {
+        "uz": "die ka-se",
+        "uz-Cyrl": "ди ка-се",
+        "ru": "ди ка-се"
+      },
+      "level": "A1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer"
+      ],
+      "situation": "kassa",
+      "example": {
+        "term": "Bitte zahlen Sie an der Kasse.",
+        "tr": {
+          "uz": "Iltimos, kassada toʻlang.",
+          "uz-Cyrl": "Илтимос, кассада тўланг.",
+          "ru": "Пожалуйста, оплатите на кассе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-kassa-preis",
+      "slug": "preis",
+      "term": "der Preis",
+      "icon": "receipt",
+      "article": "der",
+      "plural": "die Preise",
+      "tr": {
+        "uz": "narx",
+        "uz-Cyrl": "нарх",
+        "ru": "цена"
+      },
+      "pron": {
+        "uz": "der prays",
+        "uz-Cyrl": "дер прайс",
+        "ru": "дер прайс"
+      },
+      "level": "A1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer"
+      ],
+      "situation": "kassa",
+      "example": {
+        "term": "Der Preis steht auf dem Schild.",
+        "tr": {
+          "uz": "Narx yorliqda yozilgan.",
+          "uz-Cyrl": "Нарх ёрлиқда ёзилган.",
+          "ru": "Цена указана на ценнике."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-kassa-was-kostet-das",
+      "slug": "was-kostet-das",
+      "term": "Was kostet das?",
+      "icon": "receipt",
+      "tr": {
+        "uz": "Bu qancha turadi?",
+        "uz-Cyrl": "Бу қанча туради?",
+        "ru": "Сколько это стоит?"
+      },
+      "pron": {
+        "uz": "vas kos-tet das",
+        "uz-Cyrl": "вас кос-тет дас",
+        "ru": "вас кос-тет дас"
+      },
+      "level": "A1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer"
+      ],
+      "situation": "kassa",
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-kassa-kassenbon",
+      "slug": "kassenbon",
+      "term": "der Kassenbon",
+      "icon": "receipt",
+      "article": "der",
+      "plural": "die Kassenbons",
+      "tr": {
+        "uz": "chek",
+        "uz-Cyrl": "чек",
+        "ru": "чек"
+      },
+      "pron": {
+        "uz": "der ka-sen-bon",
+        "uz-Cyrl": "дер ка-сен-бон",
+        "ru": "дер ка-сен-бон"
+      },
+      "level": "A1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer"
+      ],
+      "situation": "kassa",
+      "example": {
+        "term": "Möchten Sie den Kassenbon?",
+        "tr": {
+          "uz": "Chek kerakmi?",
+          "uz-Cyrl": "Чек керакми?",
+          "ru": "Вам нужен чек?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-kassa-bar",
+      "slug": "bar",
+      "term": "bar",
+      "icon": "receipt",
+      "tr": {
+        "uz": "naqd",
+        "uz-Cyrl": "нақд",
+        "ru": "наличными"
+      },
+      "pron": {
+        "uz": "bar",
+        "uz-Cyrl": "бар",
+        "ru": "бар"
+      },
+      "level": "A1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer"
+      ],
+      "situation": "kassa",
+      "example": {
+        "term": "Zahlen Sie bar oder mit Karte?",
+        "tr": {
+          "uz": "Naqd toʻlaysizmi yoki karta bilanmi?",
+          "uz-Cyrl": "Нақд тўлайсизми ёки карта биланми?",
+          "ru": "Вы платите наличными или картой?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-kassa-wechselgeld",
+      "slug": "wechselgeld",
+      "term": "das Wechselgeld",
+      "icon": "receipt",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "qaytim",
+        "uz-Cyrl": "қайтим",
+        "ru": "сдача"
+      },
+      "pron": {
+        "uz": "das vek-sel-gelt",
+        "uz-Cyrl": "дас век-сель-гельт",
+        "ru": "дас век-сель-гельт"
+      },
+      "level": "A1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer"
+      ],
+      "situation": "kassa",
+      "example": {
+        "term": "Hier ist Ihr Wechselgeld.",
+        "tr": {
+          "uz": "Mana qaytimingiz.",
+          "uz-Cyrl": "Мана қайтимингиз.",
+          "ru": "Вот ваша сдача."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-kassa-tuete",
+      "slug": "tuete",
+      "term": "die Tüte",
+      "icon": "briefcase",
+      "article": "die",
+      "plural": "die Tüten",
+      "tr": {
+        "uz": "paket (xalta)",
+        "uz-Cyrl": "пакет (халта)",
+        "ru": "пакет"
+      },
+      "pron": {
+        "uz": "die tyu-te",
+        "uz-Cyrl": "ди тю-те",
+        "ru": "ди тю-те"
+      },
+      "level": "A1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer"
+      ],
+      "situation": "kassa",
+      "example": {
+        "term": "Brauchen Sie eine Tüte?",
+        "tr": {
+          "uz": "Paket kerakmi?",
+          "uz-Cyrl": "Пакет керакми?",
+          "ru": "Вам нужен пакет?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-kassa-angebot",
+      "slug": "angebot",
+      "term": "das Angebot",
+      "icon": "receipt",
+      "article": "das",
+      "plural": "die Angebote",
+      "tr": {
+        "uz": "aksiya (chegirma)",
+        "uz-Cyrl": "акция (чегирма)",
+        "ru": "акция, спецпредложение"
+      },
+      "pron": {
+        "uz": "das an-ge-bot",
+        "uz-Cyrl": "дас ан-ге-бот",
+        "ru": "дас ан-ге-бот"
+      },
+      "level": "A1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer"
+      ],
+      "situation": "kassa",
+      "example": {
+        "term": "Das Angebot gilt nur heute.",
+        "tr": {
+          "uz": "Aksiya faqat bugun amal qiladi.",
+          "uz-Cyrl": "Акция фақат бугун амал қилади.",
+          "ru": "Акция действует только сегодня."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-javon-auffuellen",
+      "slug": "auffuellen",
+      "term": "auffüllen",
+      "icon": "tools",
+      "tr": {
+        "uz": "toʻldirmoq (javonni)",
+        "uz-Cyrl": "тўлдирмоқ (жавонни)",
+        "ru": "пополнять (полку)"
+      },
+      "pron": {
+        "uz": "auf-fyu-len",
+        "uz-Cyrl": "ауф-фю-лен",
+        "ru": "ауф-фю-лен"
+      },
+      "level": "A1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer"
+      ],
+      "situation": "javon",
+      "example": {
+        "term": "Ich fülle das Regal auf.",
+        "tr": {
+          "uz": "Javonni toʻldiryapman.",
+          "uz-Cyrl": "Жавонни тўлдиряпман.",
+          "ru": "Я пополняю полку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-javon-haltbarkeitsdatum",
+      "slug": "haltbarkeitsdatum",
+      "term": "das Haltbarkeitsdatum",
+      "icon": "calendar-event",
+      "article": "das",
+      "plural": "die Haltbarkeitsdaten",
+      "tr": {
+        "uz": "yaroqlilik muddati",
+        "uz-Cyrl": "яроқлилик муддати",
+        "ru": "срок годности"
+      },
+      "pron": {
+        "uz": "das halt-bar-kayts-da-tum",
+        "uz-Cyrl": "дас хальт-бар-кайтс-да-тум",
+        "ru": "дас хальт-бар-кайтс-да-тум"
+      },
+      "level": "A1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer"
+      ],
+      "situation": "javon",
+      "example": {
+        "term": "Prüfen Sie das Haltbarkeitsdatum.",
+        "tr": {
+          "uz": "Yaroqlilik muddatini tekshiring.",
+          "uz-Cyrl": "Яроқлилик муддатини текширинг.",
+          "ru": "Проверьте срок годности."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-javon-preisschild",
+      "slug": "preisschild",
+      "term": "das Preisschild",
+      "icon": "receipt",
+      "article": "das",
+      "plural": "die Preisschilder",
+      "tr": {
+        "uz": "narx yorligʻi",
+        "uz-Cyrl": "нарх ёрлиғи",
+        "ru": "ценник"
+      },
+      "pron": {
+        "uz": "das prays-shilt",
+        "uz-Cyrl": "дас прайс-шильт",
+        "ru": "дас прайс-шильт"
+      },
+      "level": "A1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer"
+      ],
+      "situation": "javon",
+      "example": {
+        "term": "Das Preisschild fehlt.",
+        "tr": {
+          "uz": "Narx yorligʻi yoʻq.",
+          "uz-Cyrl": "Нарх ёрлиғи йўқ.",
+          "ru": "Ценника нет."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-javon-abteilung",
+      "slug": "abteilung",
+      "term": "die Abteilung",
+      "icon": "building",
+      "article": "die",
+      "plural": "die Abteilungen",
+      "tr": {
+        "uz": "boʻlim",
+        "uz-Cyrl": "бўлим",
+        "ru": "отдел"
+      },
+      "pron": {
+        "uz": "die ap-tay-lung",
+        "uz-Cyrl": "ди ап-тай-лунг",
+        "ru": "ди ап-тай-лунг"
+      },
+      "level": "A1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer"
+      ],
+      "situation": "javon",
+      "example": {
+        "term": "Die Abteilung für Getränke ist hinten.",
+        "tr": {
+          "uz": "Ichimliklar boʻlimi orqa tomonda.",
+          "uz-Cyrl": "Ичимликлар бўлими орқа томонда.",
+          "ru": "Отдел напитков сзади."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-javon-packung",
+      "slug": "packung",
+      "term": "die Packung",
+      "icon": "briefcase",
+      "article": "die",
+      "plural": "die Packungen",
+      "tr": {
+        "uz": "qadoq (pachka)",
+        "uz-Cyrl": "қадоқ (пачка)",
+        "ru": "упаковка, пачка"
+      },
+      "pron": {
+        "uz": "die pa-kung",
+        "uz-Cyrl": "ди па-кунг",
+        "ru": "ди па-кунг"
+      },
+      "level": "A1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer"
+      ],
+      "situation": "javon",
+      "example": {
+        "term": "Die Packung ist offen.",
+        "tr": {
+          "uz": "Qadoq ochilgan.",
+          "uz-Cyrl": "Қадоқ очилган.",
+          "ru": "Упаковка открыта."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-javon-einkaufswagen",
+      "slug": "einkaufswagen",
+      "term": "der Einkaufswagen",
+      "icon": "briefcase",
+      "article": "der",
+      "plural": "die Einkaufswagen",
+      "tr": {
+        "uz": "xarid aravachasi",
+        "uz-Cyrl": "харид аравачаси",
+        "ru": "тележка для покупок"
+      },
+      "pron": {
+        "uz": "der ayn-kaufs-va-gen",
+        "uz-Cyrl": "дер айн-кауфс-ва-ген",
+        "ru": "дер айн-кауфс-ва-ген"
+      },
+      "level": "A1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer"
+      ],
+      "situation": "javon",
+      "example": {
+        "term": "Holen Sie bitte die Einkaufswagen rein.",
+        "tr": {
+          "uz": "Iltimos, xarid aravachalarini ichkariga olib kiring.",
+          "uz-Cyrl": "Илтимос, харид аравачаларини ичкарига олиб киринг.",
+          "ru": "Пожалуйста, закатите тележки внутрь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-javon-kundin",
+      "slug": "kundin",
+      "term": "die Kundin",
+      "icon": "user",
+      "article": "die",
+      "plural": "die Kundinnen",
+      "tr": {
+        "uz": "xaridor (ayol)",
+        "uz-Cyrl": "харидор (аёл)",
+        "ru": "покупательница"
+      },
+      "pron": {
+        "uz": "die kun-din",
+        "uz-Cyrl": "ди кун-дин",
+        "ru": "ди кун-дин"
+      },
+      "level": "A1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer"
+      ],
+      "situation": "javon",
+      "example": {
+        "term": "Die Kundin sucht Brot.",
+        "tr": {
+          "uz": "Xaridor ayol non qidiryapti.",
+          "uz-Cyrl": "Харидор аёл нон қидиряпти.",
+          "ru": "Покупательница ищет хлеб."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-javon-ausverkauft",
+      "slug": "ausverkauft",
+      "term": "ausverkauft",
+      "icon": "milk",
+      "tr": {
+        "uz": "sotilib tugagan",
+        "uz-Cyrl": "сотилиб тугаган",
+        "ru": "распродано"
+      },
+      "pron": {
+        "uz": "aus-fer-kauft",
+        "uz-Cyrl": "аус-фер-кауфт",
+        "ru": "аус-фер-кауфт"
+      },
+      "level": "A1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer"
+      ],
+      "situation": "javon",
+      "example": {
+        "term": "Die Milch ist leider ausverkauft.",
+        "tr": {
+          "uz": "Afsuski, sut sotilib tugagan.",
+          "uz-Cyrl": "Афсуски, сут сотилиб тугаган.",
+          "ru": "К сожалению, молоко распродано."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    }
+  ]
+}
