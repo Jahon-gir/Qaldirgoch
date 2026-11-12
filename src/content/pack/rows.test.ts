@@ -13,7 +13,7 @@ const sit = (o: Record<string, string> = {}) => row({ field: 'technical', id: 'a
 const word = (o: Record<string, string> = {}) =>
   row({
     field: 'technical', situation: 'asboblar', level: 'A1', article: 'der', term: 'Hammer', plural: 'die Hämmer',
-    uz: 'bolgʻa', uz_cyrl: 'болға', ru: 'молоток', safety: 'yoʻq', status: 'tekshiruvda', ...o
+    uz: 'bolgʻa', uz_cyrl: 'болға', ru: 'молоток', pron_uz: 'der ha-mer', pron_cyrl: 'дер ха-мер', pron_ru: 'дер ха-мер', safety: 'yoʻq', status: 'tekshiruvda', ...o
   })
 const sheets = (words: Row[], extra: Partial<Sheets> = {}): Sheets => ({ fields: [field()], situations: [sit()], words, ...extra })
 const errors = (s: Sheets, rules = de, opts = {}) => rowsToPacks(s, rules, opts).issues.filter((i) => i.level === 'error').map((i) => i.message)
@@ -99,7 +99,9 @@ describe('rowsToPacks — xatolar', () => {
     ['tasdiqlangan, rasm koʻrilmagan', sheets([word({ status: 'tasdiqlangan', verified_by: 'X', verified_at: '2026-11-13', image_file: 'a.webp', image_source: 'ai', image_checked: 'yoʻq' })]), /image_checked = ha/],
     ['audio formati', sheets([word({ audio_file: 'a.wav' })]), /mp3, ogg yoki m4a/],
     ['kasb formati', sheets([word({ jobs: 'Elektroniker' })]), /kasb "Elektroniker"/],
-    ['oʻqilishi qisman', sheets([word({ pron_uz: 'ha-mer' })]), /uch tilda toʻliq/],
+    ['oʻqilishi qisman', sheets([word({ status: 'qoralama', pron_cyrl: '', pron_ru: '' })]), /uch tilda toʻliq/],
+    ['tekshiruvda oʻqilishisiz', sheets([word({ pron_uz: '', pron_cyrl: '', pron_ru: '' })]), /qoralamadan boshqa holatda majburiy/],
+    ['ikonka nomi', sheets([word({ icon: 'Hammer' })]), /Tabler nomi/],
     ['misol tarjimasiz', sheets([word({ example_term: 'Gib mir den Hammer.' })]), /misol: gap/],
     ['id juda uzun', sheets([word({ slug: 'a'.repeat(90) })]), /belgi \(≤ 96\)/]
   ]
@@ -120,7 +122,8 @@ describe('rowsToPacks — xatolar', () => {
   it('koreys: slugsiz va oʻqilishisiz — xato; artikl ishlatilmaydi', () => {
     expect(errors(sheets([word({ article: '', plural: '', term: '출구', level: 'ko-T1' })], { situations: [sit({ level: 'ko-T1' })] }), ko)[0]).toMatch(/slug majburiy/)
     const e = errors(sheets([word({ term: '출구', slug: 'chulgu', level: 'ko-T1' })], { situations: [sit({ level: 'ko-T1' })] }), ko)
-    expect(e).toEqual(expect.arrayContaining(['bu kursda artikl ustuni ishlatilmaydi', 'oʻqilishi (pron_uz, pron_cyrl, pron_ru) bu kursda majburiy']))
+    expect(e).toEqual(expect.arrayContaining(['bu kursda artikl ustuni ishlatilmaydi', 'bu kursda koʻplik ustuni ishlatilmaydi']))
+    expect(errors(sheets([word({ article: '', plural: '', term: '출구', slug: 'chulgu', level: 'ko-T1', pron_uz: '', pron_cyrl: '', pron_ru: '' })], { situations: [sit({ level: 'ko-T1' })] }), ko)).toContain('oʻqilishi (pron_uz, pron_cyrl, pron_ru) bu kursda majburiy')
   })
 
   it('xato qayerda ekanini qator raqami bilan aytadi', () => {

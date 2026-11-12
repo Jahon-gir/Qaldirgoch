@@ -90,6 +90,7 @@ function checkWord(w: PackWord, p: ContentPack, situations: ReadonlySet<string>,
 
   // Matn
   if (!filled(w.term)) err('soʻz (term) boʻsh')
+  if (w.icon !== undefined && !/^[a-z0-9]+(-[a-z0-9]+)*$/.test(w.icon)) err(`ikonka "${w.icon}" — Tabler nomi (masalan tools, first-aid-kit)`)
   if (!filled(w.tr?.uz)) err('tarjima (uz) boʻsh')
   const needAll = w.status !== 'draft'
   const missing3 = (l: { 'uz-Cyrl'?: string; ru?: string } | undefined, what: string) => {
@@ -119,6 +120,7 @@ function checkWord(w: PackWord, p: ContentPack, situations: ReadonlySet<string>,
   // Oʻqilishi
   const pronParts = w.pron ? [w.pron.uz, w.pron['uz-Cyrl'], w.pron.ru].filter(filled).length : 0
   if (rules.pron && pronParts < 3) err('oʻqilishi (pron_uz, pron_cyrl, pron_ru) bu kursda majburiy')
+  else if (w.status !== 'draft' && pronParts < 3) err('oʻqilishi (pron_uz, pron_cyrl, pron_ru) qoralamadan boshqa holatda majburiy — dars kartasida chiqadi')
   else if (pronParts > 0 && pronParts < 3) err('oʻqilishi uch tilda toʻliq boʻlsin (pron_uz, pron_cyrl, pron_ru)')
 
   // Misol

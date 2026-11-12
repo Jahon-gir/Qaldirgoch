@@ -27,6 +27,7 @@ const NOTES = {
   article: 'Faqat otlarda: der / die / das. Boshqa soʻzda boʻsh',
   term: 'Soʻz yoki ibora ARTIKLSIZ. Misol: Hammer',
   plural: 'Koʻplik: die Hämmer. Koʻpligi yoʻq boʻlsa: —',
+  icon: 'Ikonka (rasm boʻlmasa). Tabler nomi: tools, first-aid-kit. Boʻsh — umumiy belgi',
   slug: 'Boʻsh qoldiring (oʻzi chiqadi). Koreys tilida majburiy: chulgu',
   uz: 'Oʻzbekcha tarjima (lotin). Misol: bolgʻa',
   uz_cyrl: 'Kirill, qoʻlda yozing. Misol: болға',

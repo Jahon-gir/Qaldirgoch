@@ -34,7 +34,7 @@ async function workbook(root, words) {
 
 const hammer = {
   field: 'technical', situation: 'asboblar', level: 'A1', article: 'der', term: 'Hammer', plural: 'die Hämmer',
-  uz: 'bolgʻa', uz_cyrl: 'болға', ru: 'молоток', safety: 'yoʻq', image_file: 'technical/hammer.webp', image_source: 'ai',
+  uz: 'bolgʻa', uz_cyrl: 'болға', ru: 'молоток', pron_uz: 'der ha-mer', pron_cyrl: 'дер ха-мер', pron_ru: 'дер ха-мер', safety: 'yoʻq', image_file: 'technical/hammer.webp', image_source: 'ai',
   image_checked: 'ha', status: 'tasdiqlangan', verified_by: 'Tekshiruvchi', verified_at: new Date(Date.UTC(2026, 10, 13))
 }
 
