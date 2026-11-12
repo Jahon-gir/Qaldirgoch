@@ -22,7 +22,7 @@ const NOTES = {
   title_ru: 'Nomi (rus). Misol: Первый рабочий день',
   order: 'Tartib raqami: 1, 2, 3 ...',
   level: 'Daraja: A1, A2, B1, B2',
-  field: 'Soha id (roʻyxatdan): general, care, technical, hospitality, logistics, metal',
+  field: 'Soha id (roʻyxatdan): general, care, technical, hospitality, logistics, metal, cleaning, agriculture',
   situation: 'Vaziyat id ("Vaziyatlar" varagʻidan). Misol: asboblar',
   article: 'Faqat otlarda: der / die / das. Boshqa soʻzda boʻsh',
   term: 'Soʻz yoki ibora ARTIKLSIZ. Misol: Hammer',
@@ -85,7 +85,7 @@ export async function makeTemplate(out = join(ROOT, 'docs/content/shablon.xlsx')
   guide.getColumn(1).width = 110
   ;[
     'Kasbiy soʻzlar shabloni — qanday toʻldirish',
-    '1. "Sohalar": soha id roʻyxatdan (general, care, technical, hospitality, logistics, metal). Nomlar uch tilda.',
+    '1. "Sohalar": soha id roʻyxatdan (general, care, technical, hospitality, logistics, metal, cleaning, agriculture). Nomlar uch tilda.',
     '2. "Vaziyatlar": har soha ichidagi vaziyatlar (masalan, Birinchi ish kuni, Asboblar). id — lotin kichik harf va chiziqcha.',
     '3. "Sozlar": har qator — bitta soʻz. Ot boʻlsa artikl alohida ustunda (der/die/das), "term" da artiklsiz.',
     '4. 2-qatordagi kulrang izohlarni oʻchirmang — import ularni oʻtkazib yuboradi. Maʼlumot 3-qatordan boshlanadi.',
@@ -106,7 +106,9 @@ export async function makeTemplate(out = join(ROOT, 'docs/content/shablon.xlsx')
     ['technical', 'Texnik kasblar', 'Техник касблар', 'Технические профессии', 3],
     ['hospitality', 'Mehmonxona va oshxona', 'Меҳмонхона ва ошхона', 'Гостиницы и кухня', 4],
     ['logistics', 'Logistika va haydovchilik', 'Логистика ва ҳайдовчилик', 'Логистика и водители', 5],
-    ['metal', 'Metall va avtomobil', 'Металл ва автомобил', 'Металл и автомобили', 6]
+    ['metal', 'Metall va avtomobil', 'Металл ва автомобил', 'Металл и автомобили', 6],
+    ['cleaning', 'Tozalash xizmati', 'Тозалаш хизмати', 'Клининг (уборка)', 7],
+    ['agriculture', 'Qishloq xoʻjaligi', 'Қишлоқ хўжалиги', 'Сельское хозяйство', 8]
   ].forEach((r) => fields.addRow(r))
 
   sheet(wb, SHEET.situations, SITUATION_COLUMNS, { field: list([...de.fields]), level: list([...de.levels]) })
