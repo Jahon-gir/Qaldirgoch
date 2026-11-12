@@ -48,6 +48,26 @@
       },
       "order": 4,
       "level": "A2"
+    },
+    {
+      "id": "tana",
+      "title": {
+        "uz": "Tana qismlari",
+        "uz-Cyrl": "Тана қисмлари",
+        "ru": "Части тела"
+      },
+      "order": 5,
+      "level": "A1"
+    },
+    {
+      "id": "kiyinish",
+      "title": {
+        "uz": "Kiyinish",
+        "uz-Cyrl": "Кийиниш",
+        "ru": "Одевание"
+      },
+      "order": 6,
+      "level": "A1"
     }
   ],
   "words": [
@@ -1165,6 +1185,568 @@
           "uz": "Hojatxonaga borasizmi?",
           "uz-Cyrl": "Ҳожатхонага борасизми?",
           "ru": "Хотите в туалет?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-tana-kopf",
+      "slug": "kopf",
+      "term": "der Kopf",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Köpfe",
+      "tr": {
+        "uz": "bosh",
+        "uz-Cyrl": "бош",
+        "ru": "голова"
+      },
+      "pron": {
+        "uz": "der kopf",
+        "uz-Cyrl": "дер копф",
+        "ru": "дер копф"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "tana",
+      "example": {
+        "term": "Haben Sie Kopfschmerzen?",
+        "tr": {
+          "uz": "Boshingiz ogʻriyaptimi?",
+          "uz-Cyrl": "Бошингиз оғрияптими?",
+          "ru": "У вас болит голова?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-tana-arm",
+      "slug": "arm",
+      "term": "der Arm",
+      "icon": "hand-stop",
+      "article": "der",
+      "plural": "die Arme",
+      "tr": {
+        "uz": "qoʻl (yelkadan)",
+        "uz-Cyrl": "қўл (елкадан)",
+        "ru": "рука"
+      },
+      "pron": {
+        "uz": "der arm",
+        "uz-Cyrl": "дер арм",
+        "ru": "дер арм"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "tana",
+      "example": {
+        "term": "Heben Sie bitte den Arm.",
+        "tr": {
+          "uz": "Iltimos, qoʻlingizni koʻtaring.",
+          "uz-Cyrl": "Илтимос, қўлингизни кўтаринг.",
+          "ru": "Поднимите, пожалуйста, руку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-tana-hand",
+      "slug": "hand",
+      "term": "die Hand",
+      "icon": "hand-stop",
+      "article": "die",
+      "plural": "die Hände",
+      "tr": {
+        "uz": "qoʻl (kaft)",
+        "uz-Cyrl": "қўл (кафт)",
+        "ru": "кисть руки"
+      },
+      "pron": {
+        "uz": "die hant",
+        "uz-Cyrl": "ди хант",
+        "ru": "ди хант"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "tana",
+      "example": {
+        "term": "Geben Sie mir Ihre Hand.",
+        "tr": {
+          "uz": "Qoʻlingizni bering.",
+          "uz-Cyrl": "Қўлингизни беринг.",
+          "ru": "Дайте мне вашу руку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-tana-bein",
+      "slug": "bein",
+      "term": "das Bein",
+      "icon": "run",
+      "article": "das",
+      "plural": "die Beine",
+      "tr": {
+        "uz": "oyoq",
+        "uz-Cyrl": "оёқ",
+        "ru": "нога"
+      },
+      "pron": {
+        "uz": "das bayn",
+        "uz-Cyrl": "дас байн",
+        "ru": "дас байн"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "tana",
+      "example": {
+        "term": "Mein Bein tut weh.",
+        "tr": {
+          "uz": "Oyogʻim ogʻriyapti.",
+          "uz-Cyrl": "Оёғим оғрияпти.",
+          "ru": "У меня болит нога."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-tana-ruecken",
+      "slug": "ruecken",
+      "term": "der Rücken",
+      "icon": "bed",
+      "article": "der",
+      "plural": "die Rücken",
+      "tr": {
+        "uz": "bel, orqa",
+        "uz-Cyrl": "бел, орқа",
+        "ru": "спина"
+      },
+      "pron": {
+        "uz": "der ryu-ken",
+        "uz-Cyrl": "дер рю-кен",
+        "ru": "дер рю-кен"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "tana",
+      "example": {
+        "term": "Legen Sie sich bitte auf den Rücken.",
+        "tr": {
+          "uz": "Iltimos, chalqancha yoting.",
+          "uz-Cyrl": "Илтимос, чалқанча ётинг.",
+          "ru": "Лягте, пожалуйста, на спину."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-tana-bauch",
+      "slug": "bauch",
+      "term": "der Bauch",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Bäuche",
+      "tr": {
+        "uz": "qorin",
+        "uz-Cyrl": "қорин",
+        "ru": "живот"
+      },
+      "pron": {
+        "uz": "der baux",
+        "uz-Cyrl": "дер баух",
+        "ru": "дер баух"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "tana",
+      "example": {
+        "term": "Tut der Bauch weh?",
+        "tr": {
+          "uz": "Qorningiz ogʻriyaptimi?",
+          "uz-Cyrl": "Қорнингиз оғрияптими?",
+          "ru": "Болит живот?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-tana-haut",
+      "slug": "haut",
+      "term": "die Haut",
+      "icon": "droplet",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "teri",
+        "uz-Cyrl": "тери",
+        "ru": "кожа"
+      },
+      "pron": {
+        "uz": "die haut",
+        "uz-Cyrl": "ди хаут",
+        "ru": "ди хаут"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "tana",
+      "example": {
+        "term": "Die Haut ist sehr trocken.",
+        "tr": {
+          "uz": "Teri juda quruq.",
+          "uz-Cyrl": "Тери жуда қуруқ.",
+          "ru": "Кожа очень сухая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-tana-wo-tut-es-weh",
+      "slug": "wo-tut-es-weh",
+      "term": "Wo tut es weh?",
+      "icon": "mood-sad",
+      "tr": {
+        "uz": "Qayeringiz ogʻriyapti?",
+        "uz-Cyrl": "Қаерингиз оғрияпти?",
+        "ru": "Где болит?"
+      },
+      "pron": {
+        "uz": "vo tut es ve",
+        "uz-Cyrl": "во тут эс ве",
+        "ru": "во тут эс ве"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "tana",
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-kiyinish-anziehen",
+      "slug": "anziehen",
+      "term": "anziehen",
+      "icon": "shirt",
+      "tr": {
+        "uz": "kiymoq",
+        "uz-Cyrl": "киймоқ",
+        "ru": "надевать"
+      },
+      "pron": {
+        "uz": "an-tsi-en",
+        "uz-Cyrl": "ан-ци-ен",
+        "ru": "ан-ци-ен"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "kiyinish",
+      "example": {
+        "term": "Ich helfe Ihnen beim Anziehen.",
+        "tr": {
+          "uz": "Kiyinishingizga yordam beraman.",
+          "uz-Cyrl": "Кийинишингизга ёрдам бераман.",
+          "ru": "Я помогу вам одеться."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-kiyinish-ausziehen",
+      "slug": "ausziehen",
+      "term": "ausziehen",
+      "icon": "shirt",
+      "tr": {
+        "uz": "yechmoq",
+        "uz-Cyrl": "ечмоқ",
+        "ru": "снимать (одежду)"
+      },
+      "pron": {
+        "uz": "aus-tsi-en",
+        "uz-Cyrl": "аус-ци-ен",
+        "ru": "аус-ци-ен"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "kiyinish",
+      "example": {
+        "term": "Ziehen Sie bitte die Jacke aus.",
+        "tr": {
+          "uz": "Iltimos, kurtkani yeching.",
+          "uz-Cyrl": "Илтимос, курткани ечинг.",
+          "ru": "Снимите, пожалуйста, куртку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-kiyinish-hemd",
+      "slug": "hemd",
+      "term": "das Hemd",
+      "icon": "shirt",
+      "article": "das",
+      "plural": "die Hemden",
+      "tr": {
+        "uz": "koʻylak",
+        "uz-Cyrl": "кўйлак",
+        "ru": "рубашка"
+      },
+      "pron": {
+        "uz": "das hemt",
+        "uz-Cyrl": "дас хемт",
+        "ru": "дас хемт"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "kiyinish",
+      "example": {
+        "term": "Welches Hemd möchten Sie?",
+        "tr": {
+          "uz": "Qaysi koʻylakni xohlaysiz?",
+          "uz-Cyrl": "Қайси кўйлакни хоҳлайсиз?",
+          "ru": "Какую рубашку вы хотите?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-kiyinish-hose",
+      "slug": "hose",
+      "term": "die Hose",
+      "icon": "shirt",
+      "article": "die",
+      "plural": "die Hosen",
+      "tr": {
+        "uz": "shim",
+        "uz-Cyrl": "шим",
+        "ru": "брюки"
+      },
+      "pron": {
+        "uz": "die ho-ze",
+        "uz-Cyrl": "ди хо-зе",
+        "ru": "ди хо-зе"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "kiyinish",
+      "example": {
+        "term": "Die Hose ist zu groß.",
+        "tr": {
+          "uz": "Shim juda katta.",
+          "uz-Cyrl": "Шим жуда катта.",
+          "ru": "Брюки слишком большие."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-kiyinish-socke",
+      "slug": "socke",
+      "term": "die Socke",
+      "icon": "shirt",
+      "article": "die",
+      "plural": "die Socken",
+      "tr": {
+        "uz": "paypoq",
+        "uz-Cyrl": "пайпоқ",
+        "ru": "носок"
+      },
+      "pron": {
+        "uz": "die zo-ke",
+        "uz-Cyrl": "ди зо-ке",
+        "ru": "ди зо-ке"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "kiyinish",
+      "example": {
+        "term": "Hier sind warme Socken.",
+        "tr": {
+          "uz": "Mana iliq paypoqlar.",
+          "uz-Cyrl": "Мана илиқ пайпоқлар.",
+          "ru": "Вот тёплые носки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-kiyinish-schuh",
+      "slug": "schuh",
+      "term": "der Schuh",
+      "icon": "shoe",
+      "article": "der",
+      "plural": "die Schuhe",
+      "tr": {
+        "uz": "poyabzal",
+        "uz-Cyrl": "пойабзал",
+        "ru": "ботинок, туфля"
+      },
+      "pron": {
+        "uz": "der shu",
+        "uz-Cyrl": "дер шу",
+        "ru": "дер шу"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "kiyinish",
+      "example": {
+        "term": "Ihre Schuhe stehen hier.",
+        "tr": {
+          "uz": "Poyabzalingiz shu yerda.",
+          "uz-Cyrl": "Пойабзалингиз шу ерда.",
+          "ru": "Ваша обувь стоит здесь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-kiyinish-brille",
+      "slug": "brille",
+      "term": "die Brille",
+      "icon": "eye",
+      "article": "die",
+      "plural": "die Brillen",
+      "tr": {
+        "uz": "koʻzoynak",
+        "uz-Cyrl": "кўзойнак",
+        "ru": "очки"
+      },
+      "pron": {
+        "uz": "die bri-le",
+        "uz-Cyrl": "ди бри-ле",
+        "ru": "ди бри-ле"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "kiyinish",
+      "example": {
+        "term": "Wo ist Ihre Brille?",
+        "tr": {
+          "uz": "Koʻzoynagingiz qayerda?",
+          "uz-Cyrl": "Кўзойнагингиз қаерда?",
+          "ru": "Где ваши очки?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-kiyinish-hoergeraet",
+      "slug": "hoergeraet",
+      "term": "das Hörgerät",
+      "icon": "volume",
+      "article": "das",
+      "plural": "die Hörgeräte",
+      "tr": {
+        "uz": "eshitish apparati",
+        "uz-Cyrl": "эшитиш аппарати",
+        "ru": "слуховой аппарат"
+      },
+      "pron": {
+        "uz": "das hyor-ge-ret",
+        "uz-Cyrl": "дас хёр-ге-рет",
+        "ru": "дас хёр-ге-рет"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "kiyinish",
+      "example": {
+        "term": "Das Hörgerät braucht eine neue Batterie.",
+        "tr": {
+          "uz": "Eshitish apparatiga yangi batareya kerak.",
+          "uz-Cyrl": "Эшитиш аппаратига янги батарея керак.",
+          "ru": "Слуховому аппарату нужна новая батарейка."
         }
       },
       "safety": false,
