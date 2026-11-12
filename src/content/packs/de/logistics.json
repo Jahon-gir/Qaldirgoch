@@ -68,6 +68,26 @@
       },
       "order": 6,
       "level": "A2"
+    },
+    {
+      "id": "sovuq-yuk",
+      "title": {
+        "uz": "Sovutilgan yuk",
+        "uz-Cyrl": "Совутилган юк",
+        "ru": "Охлаждённый груз"
+      },
+      "order": 7,
+      "level": "A2"
+    },
+    {
+      "id": "xavfli-yuk",
+      "title": {
+        "uz": "Xavfli yuk",
+        "uz-Cyrl": "Хавфли юк",
+        "ru": "Опасный груз"
+      },
+      "order": 8,
+      "level": "A2"
     }
   ],
   "words": [
@@ -3185,6 +3205,1044 @@
           "uz": "Poddon agʻdarilib ketishi mumkin!",
           "uz-Cyrl": "Поддон ағдарилиб кетиши мумкин!",
           "ru": "Поддон может опрокинуться!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-sovuq-yuk-kuehlwagen",
+      "slug": "kuehlwagen",
+      "term": "der Kühlwagen",
+      "icon": "truck",
+      "article": "der",
+      "plural": "die Kühlwagen",
+      "tr": {
+        "uz": "refrijerator (sovutgichli mashina)",
+        "uz-Cyrl": "рефрижератор (совутгичли машина)",
+        "ru": "рефрижератор"
+      },
+      "pron": {
+        "uz": "der kyul-va-gen",
+        "uz-Cyrl": "дер кюль-ва-ген",
+        "ru": "дер кюль-ва-ген"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "sovuq-yuk",
+      "example": {
+        "term": "Der Kühlwagen ist schon da.",
+        "tr": {
+          "uz": "Refrijerator allaqachon keldi.",
+          "uz-Cyrl": "Рефрижератор аллақачон келди.",
+          "ru": "Рефрижератор уже приехал."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-sovuq-yuk-kuehlkette",
+      "slug": "kuehlkette",
+      "term": "die Kühlkette",
+      "icon": "thermometer",
+      "article": "die",
+      "plural": "die Kühlketten",
+      "tr": {
+        "uz": "sovuqlik zanjiri",
+        "uz-Cyrl": "совуқлик занжири",
+        "ru": "холодовая цепь"
+      },
+      "pron": {
+        "uz": "die kyul-ke-te",
+        "uz-Cyrl": "ди кюль-ке-те",
+        "ru": "ди кюль-ке-те"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "sovuq-yuk",
+      "example": {
+        "term": "Die Kühlkette darf nicht unterbrochen werden.",
+        "tr": {
+          "uz": "Sovuqlik zanjiri uzilmasligi kerak.",
+          "uz-Cyrl": "Совуқлик занжири узилмаслиги керак.",
+          "ru": "Холодовую цепь нельзя прерывать."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-sovuq-yuk-kuehlzelle",
+      "slug": "kuehlzelle",
+      "term": "die Kühlzelle",
+      "icon": "door",
+      "article": "die",
+      "plural": "die Kühlzellen",
+      "tr": {
+        "uz": "sovutish kamerasi",
+        "uz-Cyrl": "совутиш камераси",
+        "ru": "холодильная камера"
+      },
+      "pron": {
+        "uz": "die kyul-tse-le",
+        "uz-Cyrl": "ди кюль-це-ле",
+        "ru": "ди кюль-це-ле"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "sovuq-yuk",
+      "example": {
+        "term": "Die Ware kommt sofort in die Kühlzelle.",
+        "tr": {
+          "uz": "Mol darhol sovutish kamerasiga kiradi.",
+          "uz-Cyrl": "Мол дарҳол совутиш камерасига киради.",
+          "ru": "Товар сразу идёт в холодильную камеру."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-sovuq-yuk-tiefkuehlware",
+      "slug": "tiefkuehlware",
+      "term": "die Tiefkühlware",
+      "icon": "thermometer",
+      "article": "die",
+      "plural": "die Tiefkühlwaren",
+      "tr": {
+        "uz": "muzlatilgan mahsulot",
+        "uz-Cyrl": "музлатилган маҳсулот",
+        "ru": "замороженный товар"
+      },
+      "pron": {
+        "uz": "die tif-kyul-va-re",
+        "uz-Cyrl": "ди тиф-кюль-ва-ре",
+        "ru": "ди тиф-кюль-ва-ре"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "sovuq-yuk",
+      "example": {
+        "term": "Die Tiefkühlware zuerst ausladen.",
+        "tr": {
+          "uz": "Avval muzlatilgan mahsulotni tushiring.",
+          "uz-Cyrl": "Аввал музлатилган маҳсулотни туширинг.",
+          "ru": "Сначала выгрузите замороженный товар."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-sovuq-yuk-gefroren",
+      "slug": "gefroren",
+      "term": "gefroren",
+      "icon": "thermometer",
+      "tr": {
+        "uz": "muzlagan",
+        "uz-Cyrl": "музлаган",
+        "ru": "замороженный"
+      },
+      "pron": {
+        "uz": "ge-fro-ren",
+        "uz-Cyrl": "ге-фро-рен",
+        "ru": "ге-фро-рен"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "sovuq-yuk",
+      "example": {
+        "term": "Das Fleisch ist noch gefroren.",
+        "tr": {
+          "uz": "Goʻsht hali muzlagan.",
+          "uz-Cyrl": "Гўшт ҳали музлаган.",
+          "ru": "Мясо ещё замороженное."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-sovuq-yuk-auftauen",
+      "slug": "auftauen",
+      "term": "auftauen",
+      "icon": "droplet",
+      "tr": {
+        "uz": "erib ketmoq (muzdan)",
+        "uz-Cyrl": "эриб кетмоқ (муздан)",
+        "ru": "размораживаться"
+      },
+      "pron": {
+        "uz": "auf-tau-en",
+        "uz-Cyrl": "ауф-тау-ен",
+        "ru": "ауф-тау-ен"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "sovuq-yuk",
+      "example": {
+        "term": "Die Ware darf nicht auftauen.",
+        "tr": {
+          "uz": "Mol erib ketmasligi kerak.",
+          "uz-Cyrl": "Мол эриб кетмаслиги керак.",
+          "ru": "Товар не должен разморозиться."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-sovuq-yuk-grad",
+      "slug": "grad",
+      "term": "der Grad",
+      "icon": "thermometer",
+      "article": "der",
+      "plural": "die Grade",
+      "tr": {
+        "uz": "daraja (harorat)",
+        "uz-Cyrl": "даража (ҳарорат)",
+        "ru": "градус"
+      },
+      "pron": {
+        "uz": "der grat",
+        "uz-Cyrl": "дер грат",
+        "ru": "дер грат"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "sovuq-yuk",
+      "example": {
+        "term": "Im Kühlwagen sind es minus 18 Grad.",
+        "tr": {
+          "uz": "Refrijeratorda minus 18 daraja.",
+          "uz-Cyrl": "Рефрижераторда минус 18 даража.",
+          "ru": "В рефрижераторе минус 18 градусов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-sovuq-yuk-frisch",
+      "slug": "frisch",
+      "term": "frisch",
+      "icon": "apple",
+      "tr": {
+        "uz": "yangi (sarxil)",
+        "uz-Cyrl": "янги (сархил)",
+        "ru": "свежий"
+      },
+      "pron": {
+        "uz": "frish",
+        "uz-Cyrl": "фриш",
+        "ru": "фриш"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "sovuq-yuk",
+      "example": {
+        "term": "Das Obst ist frisch.",
+        "tr": {
+          "uz": "Mevalar yangi.",
+          "uz-Cyrl": "Мевалар янги.",
+          "ru": "Фрукты свежие."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-sovuq-yuk-verderben",
+      "slug": "verderben",
+      "term": "verderben",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "buzilmoq (ovqat)",
+        "uz-Cyrl": "бузилмоқ (овқат)",
+        "ru": "портиться"
+      },
+      "pron": {
+        "uz": "fer-der-ben",
+        "uz-Cyrl": "фер-дер-бен",
+        "ru": "фер-дер-бен"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "sovuq-yuk",
+      "example": {
+        "term": "Ohne Kühlung verdirbt die Milch.",
+        "tr": {
+          "uz": "Sovutilmasa, sut buziladi.",
+          "uz-Cyrl": "Совутилмаса, сут бузилади.",
+          "ru": "Без охлаждения молоко портится."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-sovuq-yuk-haltbarkeitsdatum",
+      "slug": "haltbarkeitsdatum",
+      "term": "das Haltbarkeitsdatum",
+      "icon": "calendar-event",
+      "article": "das",
+      "plural": "die Haltbarkeitsdaten",
+      "tr": {
+        "uz": "yaroqlilik muddati",
+        "uz-Cyrl": "яроқлилик муддати",
+        "ru": "срок годности"
+      },
+      "pron": {
+        "uz": "das halt-bar-kayts-da-tum",
+        "uz-Cyrl": "дас хальт-бар-кайц-да-тум",
+        "ru": "дас хальт-бар-кайц-да-тум"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "sovuq-yuk",
+      "example": {
+        "term": "Prüfen Sie das Haltbarkeitsdatum.",
+        "tr": {
+          "uz": "Yaroqlilik muddatini tekshiring.",
+          "uz-Cyrl": "Яроқлилик муддатини текширинг.",
+          "ru": "Проверьте срок годности."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-sovuq-yuk-lebensmittel",
+      "slug": "lebensmittel",
+      "term": "das Lebensmittel",
+      "icon": "bowl",
+      "article": "das",
+      "plural": "die Lebensmittel",
+      "tr": {
+        "uz": "oziq-ovqat mahsuloti",
+        "uz-Cyrl": "озиқ-овқат маҳсулоти",
+        "ru": "продукт питания"
+      },
+      "pron": {
+        "uz": "das le-bens-mi-tel",
+        "uz-Cyrl": "дас ле-бенс-ми-тель",
+        "ru": "дас ле-бенс-ми-тель"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "sovuq-yuk",
+      "example": {
+        "term": "Wir transportieren Lebensmittel.",
+        "tr": {
+          "uz": "Biz oziq-ovqat tashiymiz.",
+          "uz-Cyrl": "Биз озиқ-овқат ташиймиз.",
+          "ru": "Мы перевозим продукты."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-sovuq-yuk-obst",
+      "slug": "obst",
+      "term": "das Obst",
+      "icon": "apple",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "meva",
+        "uz-Cyrl": "мева",
+        "ru": "фрукты"
+      },
+      "pron": {
+        "uz": "das opst",
+        "uz-Cyrl": "дас опст",
+        "ru": "дас опст"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "sovuq-yuk",
+      "example": {
+        "term": "Das Obst kommt aus Spanien.",
+        "tr": {
+          "uz": "Mevalar Ispaniyadan keladi.",
+          "uz-Cyrl": "Мевалар Испаниядан келади.",
+          "ru": "Фрукты из Испании."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-sovuq-yuk-kaelteschutzkleidung",
+      "slug": "kaelteschutzkleidung",
+      "term": "die Kälteschutzkleidung",
+      "icon": "shirt",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "sovuqdan himoya kiyimi",
+        "uz-Cyrl": "совуқдан ҳимоя кийими",
+        "ru": "защитная одежда от холода"
+      },
+      "pron": {
+        "uz": "die kel-te-shuts-klay-dung",
+        "uz-Cyrl": "ди кель-те-шуц-клай-дунг",
+        "ru": "ди кель-те-шуц-клай-дунг"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "sovuq-yuk",
+      "example": {
+        "term": "In der Kühlzelle tragen Sie Kälteschutzkleidung.",
+        "tr": {
+          "uz": "Sovutish kamerasida sovuqdan himoya kiyimini kiying.",
+          "uz-Cyrl": "Совутиш камерасида совуқдан ҳимоя кийимини кийинг.",
+          "ru": "В холодильной камере носите защитную одежду."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-sovuq-yuk-schliessen-sie-die-tuer",
+      "slug": "schliessen-sie-die-tuer",
+      "term": "Schließen Sie die Tür!",
+      "icon": "door",
+      "tr": {
+        "uz": "Eshikni yoping!",
+        "uz-Cyrl": "Эшикни ёпинг!",
+        "ru": "Закройте дверь!"
+      },
+      "pron": {
+        "uz": "shli-sen zi di tyur",
+        "uz-Cyrl": "шли-сен зи ди тюр",
+        "ru": "шли-сен зи ди тюр"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "sovuq-yuk",
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-sovuq-yuk-pruefen",
+      "slug": "pruefen",
+      "term": "prüfen",
+      "icon": "check",
+      "tr": {
+        "uz": "tekshirmoq",
+        "uz-Cyrl": "текширмоқ",
+        "ru": "проверять"
+      },
+      "pron": {
+        "uz": "pryu-fen",
+        "uz-Cyrl": "прю-фен",
+        "ru": "прю-фен"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "sovuq-yuk",
+      "example": {
+        "term": "Ich prüfe die Temperatur.",
+        "tr": {
+          "uz": "Haroratni tekshiraman.",
+          "uz-Cyrl": "Ҳароратни текшираман.",
+          "ru": "Я проверяю температуру."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-xavfli-yuk-gefahrgut",
+      "slug": "gefahrgut",
+      "term": "das Gefahrgut",
+      "icon": "alert-triangle",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "xavfli yuk",
+        "uz-Cyrl": "хавфли юк",
+        "ru": "опасный груз"
+      },
+      "pron": {
+        "uz": "das ge-far-gut",
+        "uz-Cyrl": "дас ге-фар-гут",
+        "ru": "дас ге-фар-гут"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "xavfli-yuk",
+      "example": {
+        "term": "Für Gefahrgut gibt es besondere Regeln.",
+        "tr": {
+          "uz": "Xavfli yuk uchun alohida qoidalar bor.",
+          "uz-Cyrl": "Хавфли юк учун алоҳида қоидалар бор.",
+          "ru": "Для опасных грузов есть особые правила."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-xavfli-yuk-warnschild",
+      "slug": "warnschild",
+      "term": "das Warnschild",
+      "icon": "alert-triangle",
+      "article": "das",
+      "plural": "die Warnschilder",
+      "tr": {
+        "uz": "ogohlantirish belgisi",
+        "uz-Cyrl": "огоҳлантириш белгиси",
+        "ru": "предупреждающий знак"
+      },
+      "pron": {
+        "uz": "das varn-shilt",
+        "uz-Cyrl": "дас варн-шильт",
+        "ru": "дас варн-шильт"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "xavfli-yuk",
+      "example": {
+        "term": "Was bedeutet dieses Warnschild?",
+        "tr": {
+          "uz": "Bu ogohlantirish belgisi nimani bildiradi?",
+          "uz-Cyrl": "Бу огоҳлантириш белгиси нимани билдиради?",
+          "ru": "Что означает этот знак?"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-xavfli-yuk-brennbar",
+      "slug": "brennbar",
+      "term": "brennbar",
+      "icon": "flame",
+      "tr": {
+        "uz": "yonuvchan",
+        "uz-Cyrl": "ёнувчан",
+        "ru": "горючий"
+      },
+      "pron": {
+        "uz": "bren-bar",
+        "uz-Cyrl": "брен-бар",
+        "ru": "брен-бар"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "xavfli-yuk",
+      "example": {
+        "term": "Vorsicht, das ist brennbar!",
+        "tr": {
+          "uz": "Ehtiyot boʻling, bu yonuvchan!",
+          "uz-Cyrl": "Эҳтиёт бўлинг, бу ёнувчан!",
+          "ru": "Осторожно, это горючее!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-xavfli-yuk-giftig",
+      "slug": "giftig",
+      "term": "giftig",
+      "icon": "alert-octagon",
+      "tr": {
+        "uz": "zaharli",
+        "uz-Cyrl": "заҳарли",
+        "ru": "ядовитый"
+      },
+      "pron": {
+        "uz": "gif-tix",
+        "uz-Cyrl": "гиф-тих",
+        "ru": "гиф-тих"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "xavfli-yuk",
+      "example": {
+        "term": "Der Stoff ist giftig.",
+        "tr": {
+          "uz": "Bu modda zaharli.",
+          "uz-Cyrl": "Бу модда заҳарли.",
+          "ru": "Это вещество ядовито."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-xavfli-yuk-aetzend",
+      "slug": "aetzend",
+      "term": "ätzend",
+      "icon": "alert-octagon",
+      "tr": {
+        "uz": "kuydiruvchi (kislota kabi)",
+        "uz-Cyrl": "куйдирувчи (кислота каби)",
+        "ru": "едкий"
+      },
+      "pron": {
+        "uz": "et-tsent",
+        "uz-Cyrl": "эт-цент",
+        "ru": "эт-цент"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "xavfli-yuk",
+      "example": {
+        "term": "Die Flüssigkeit ist ätzend.",
+        "tr": {
+          "uz": "Bu suyuqlik kuydiruvchi.",
+          "uz-Cyrl": "Бу суюқлик куйдирувчи.",
+          "ru": "Эта жидкость едкая."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-xavfli-yuk-explosiv",
+      "slug": "explosiv",
+      "term": "explosiv",
+      "icon": "flame",
+      "tr": {
+        "uz": "portlovchi",
+        "uz-Cyrl": "портловчи",
+        "ru": "взрывоопасный"
+      },
+      "pron": {
+        "uz": "eks-plo-ziv",
+        "uz-Cyrl": "экс-пло-зив",
+        "ru": "экс-пло-зив"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "xavfli-yuk",
+      "example": {
+        "term": "Explosive Stoffe nie neben Feuer lagern.",
+        "tr": {
+          "uz": "Portlovchi moddalarni hech qachon olov yonida saqlamang.",
+          "uz-Cyrl": "Портловчи моддаларни ҳеч қачон олов ёнида сақламанг.",
+          "ru": "Никогда не храните взрывчатые вещества рядом с огнём."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-xavfli-yuk-auslaufen",
+      "slug": "auslaufen",
+      "term": "auslaufen",
+      "icon": "droplet",
+      "tr": {
+        "uz": "oqib chiqmoq",
+        "uz-Cyrl": "оқиб чиқмоқ",
+        "ru": "вытекать"
+      },
+      "pron": {
+        "uz": "aus-lau-fen",
+        "uz-Cyrl": "аус-лау-фен",
+        "ru": "аус-лау-фен"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "xavfli-yuk",
+      "example": {
+        "term": "Aus dem Fass läuft etwas aus.",
+        "tr": {
+          "uz": "Bochkadan nimadir oqib chiqyapti.",
+          "uz-Cyrl": "Бочкадан нимадир оқиб чиқяпти.",
+          "ru": "Из бочки что-то вытекает."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-xavfli-yuk-fass",
+      "slug": "fass",
+      "term": "das Fass",
+      "icon": "trash",
+      "article": "das",
+      "plural": "die Fässer",
+      "tr": {
+        "uz": "bochka",
+        "uz-Cyrl": "бочка",
+        "ru": "бочка"
+      },
+      "pron": {
+        "uz": "das fas",
+        "uz-Cyrl": "дас фас",
+        "ru": "дас фас"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "xavfli-yuk",
+      "example": {
+        "term": "Das Fass ist sehr schwer.",
+        "tr": {
+          "uz": "Bochka juda ogʻir.",
+          "uz-Cyrl": "Бочка жуда оғир.",
+          "ru": "Бочка очень тяжёлая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-xavfli-yuk-kanister",
+      "slug": "kanister",
+      "term": "der Kanister",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Kanister",
+      "tr": {
+        "uz": "kanistr",
+        "uz-Cyrl": "канистр",
+        "ru": "канистра"
+      },
+      "pron": {
+        "uz": "der ka-nis-ter",
+        "uz-Cyrl": "дер ка-нис-тер",
+        "ru": "дер ка-нис-тер"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "xavfli-yuk",
+      "example": {
+        "term": "Stellen Sie den Kanister gerade hin.",
+        "tr": {
+          "uz": "Kanistrni tik qoʻying.",
+          "uz-Cyrl": "Канистрни тик қўйинг.",
+          "ru": "Поставьте канистру ровно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-xavfli-yuk-sicherheitsdatenblatt",
+      "slug": "sicherheitsdatenblatt",
+      "term": "das Sicherheitsdatenblatt",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "die Sicherheitsdatenblätter",
+      "tr": {
+        "uz": "xavfsizlik maʼlumotnomasi",
+        "uz-Cyrl": "хавфсизлик маълумотномаси",
+        "ru": "паспорт безопасности"
+      },
+      "pron": {
+        "uz": "das zi-xer-hayts-da-ten-blat",
+        "uz-Cyrl": "дас зи-хер-хайц-да-тен-блат",
+        "ru": "дас зи-хер-хайц-да-тен-блат"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "xavfli-yuk",
+      "example": {
+        "term": "Das Sicherheitsdatenblatt liegt im Fahrerhaus.",
+        "tr": {
+          "uz": "Xavfsizlik maʼlumotnomasi kabinada.",
+          "uz-Cyrl": "Хавфсизлик маълумотномаси кабинада.",
+          "ru": "Паспорт безопасности лежит в кабине."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-xavfli-yuk-feuerwehr",
+      "slug": "feuerwehr",
+      "term": "die Feuerwehr",
+      "icon": "fire-extinguisher",
+      "article": "die",
+      "plural": "die Feuerwehren",
+      "tr": {
+        "uz": "oʻt oʻchirish xizmati",
+        "uz-Cyrl": "ўт ўчириш хизмати",
+        "ru": "пожарная служба"
+      },
+      "pron": {
+        "uz": "die foy-er-ver",
+        "uz-Cyrl": "ди фой-ер-вер",
+        "ru": "ди фой-ер-вер"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "xavfli-yuk",
+      "example": {
+        "term": "Rufen Sie sofort die Feuerwehr: 112.",
+        "tr": {
+          "uz": "Darhol oʻt oʻchiruvchilarni chaqiring: 112.",
+          "uz-Cyrl": "Дарҳол ўт ўчирувчиларни чақиринг: 112.",
+          "ru": "Сразу вызовите пожарных: 112."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-xavfli-yuk-abstand-halten",
+      "slug": "abstand-halten",
+      "term": "Abstand halten!",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Uzoqroq turing!",
+        "uz-Cyrl": "Узоқроқ туринг!",
+        "ru": "Держите дистанцию!"
+      },
+      "pron": {
+        "uz": "ap-shtant hal-ten",
+        "uz-Cyrl": "ап-штант халь-тен",
+        "ru": "ап-штант халь-тен"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "xavfli-yuk",
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-xavfli-yuk-geruch",
+      "slug": "geruch",
+      "term": "der Geruch",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Gerüche",
+      "tr": {
+        "uz": "hid",
+        "uz-Cyrl": "ҳид",
+        "ru": "запах"
+      },
+      "pron": {
+        "uz": "der ge-rux",
+        "uz-Cyrl": "дер ге-рух",
+        "ru": "дер ге-рух"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "xavfli-yuk",
+      "example": {
+        "term": "Hier ist ein komischer Geruch.",
+        "tr": {
+          "uz": "Bu yerda gʻalati hid bor.",
+          "uz-Cyrl": "Бу ерда ғалати ҳид бор.",
+          "ru": "Здесь странный запах."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-xavfli-yuk-melden",
+      "slug": "melden",
+      "term": "melden",
+      "icon": "messages",
+      "tr": {
+        "uz": "xabar bermoq",
+        "uz-Cyrl": "хабар бермоқ",
+        "ru": "сообщать"
+      },
+      "pron": {
+        "uz": "mel-den",
+        "uz-Cyrl": "мель-ден",
+        "ru": "мель-ден"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "xavfli-yuk",
+      "example": {
+        "term": "Melden Sie den Schaden sofort.",
+        "tr": {
+          "uz": "Shikast haqida darhol xabar bering.",
+          "uz-Cyrl": "Шикаст ҳақида дарҳол хабар беринг.",
+          "ru": "Сообщите о повреждении сразу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-xavfli-yuk-absperrung",
+      "slug": "absperrung",
+      "term": "die Absperrung",
+      "icon": "hand-stop",
+      "article": "die",
+      "plural": "die Absperrungen",
+      "tr": {
+        "uz": "toʻsiq (oʻrab qoʻyish)",
+        "uz-Cyrl": "тўсиқ (ўраб қўйиш)",
+        "ru": "ограждение"
+      },
+      "pron": {
+        "uz": "die ap-shpe-rung",
+        "uz-Cyrl": "ди ап-шпе-рунг",
+        "ru": "ди ап-шпе-рунг"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "xavfli-yuk",
+      "example": {
+        "term": "Gehen Sie nicht hinter die Absperrung.",
+        "tr": {
+          "uz": "Toʻsiqdan nariga oʻtmang.",
+          "uz-Cyrl": "Тўсиқдан нарига ўтманг.",
+          "ru": "Не заходите за ограждение."
         }
       },
       "safety": true,
