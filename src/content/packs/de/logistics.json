@@ -28,6 +28,26 @@
       },
       "order": 2,
       "level": "A2"
+    },
+    {
+      "id": "yetkazish",
+      "title": {
+        "uz": "Yetkazib berish",
+        "uz-Cyrl": "Етказиб бериш",
+        "ru": "Доставка"
+      },
+      "order": 3,
+      "level": "A1"
+    },
+    {
+      "id": "yuklash",
+      "title": {
+        "uz": "Yuklash va xavfsizlik",
+        "uz-Cyrl": "Юклаш ва хавфсизлик",
+        "ru": "Погрузка и безопасность"
+      },
+      "order": 4,
+      "level": "A2"
     }
   ],
   "words": [
@@ -614,6 +634,576 @@
           "uz": "Yukni qayerda tushiray?",
           "uz-Cyrl": "Юкни қаерда туширай?",
           "ru": "Где можно разгрузиться?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-yetkazish-lieferung",
+      "slug": "lieferung",
+      "term": "die Lieferung",
+      "icon": "truck",
+      "article": "die",
+      "plural": "die Lieferungen",
+      "tr": {
+        "uz": "yetkazma",
+        "uz-Cyrl": "етказма",
+        "ru": "доставка"
+      },
+      "pron": {
+        "uz": "die li-fe-rung",
+        "uz-Cyrl": "ди ли-фе-рунг",
+        "ru": "ди ли-фе-рунг"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer",
+        "kurier"
+      ],
+      "situation": "yetkazish",
+      "example": {
+        "term": "Die Lieferung kommt heute.",
+        "tr": {
+          "uz": "Yetkazma bugun keladi.",
+          "uz-Cyrl": "Етказма бугун келади.",
+          "ru": "Доставка придёт сегодня."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-yetkazish-liefern",
+      "slug": "liefern",
+      "term": "liefern",
+      "icon": "truck",
+      "tr": {
+        "uz": "yetkazib bermoq",
+        "uz-Cyrl": "етказиб бермоқ",
+        "ru": "доставлять"
+      },
+      "pron": {
+        "uz": "li-fern",
+        "uz-Cyrl": "ли-ферн",
+        "ru": "ли-ферн"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer",
+        "kurier"
+      ],
+      "situation": "yetkazish",
+      "example": {
+        "term": "Wir liefern bis 18 Uhr.",
+        "tr": {
+          "uz": "Soat 18 gacha yetkazib beramiz.",
+          "uz-Cyrl": "Соат 18 гача етказиб берамиз.",
+          "ru": "Мы доставляем до 18 часов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-yetkazish-adresse",
+      "slug": "adresse",
+      "term": "die Adresse",
+      "icon": "map-pin",
+      "article": "die",
+      "plural": "die Adressen",
+      "tr": {
+        "uz": "manzil",
+        "uz-Cyrl": "манзил",
+        "ru": "адрес"
+      },
+      "pron": {
+        "uz": "die a-dre-se",
+        "uz-Cyrl": "ди а-дре-се",
+        "ru": "ди а-дре-се"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer",
+        "kurier"
+      ],
+      "situation": "yetkazish",
+      "example": {
+        "term": "Die Adresse stimmt nicht.",
+        "tr": {
+          "uz": "Manzil notoʻgʻri.",
+          "uz-Cyrl": "Манзил нотўғри.",
+          "ru": "Адрес неверный."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-yetkazish-hausnummer",
+      "slug": "hausnummer",
+      "term": "die Hausnummer",
+      "icon": "home",
+      "article": "die",
+      "plural": "die Hausnummern",
+      "tr": {
+        "uz": "uy raqami",
+        "uz-Cyrl": "уй рақами",
+        "ru": "номер дома"
+      },
+      "pron": {
+        "uz": "die haus-nu-mer",
+        "uz-Cyrl": "ди хаус-ну-мер",
+        "ru": "ди хаус-ну-мер"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer",
+        "kurier"
+      ],
+      "situation": "yetkazish",
+      "example": {
+        "term": "Welche Hausnummer ist das?",
+        "tr": {
+          "uz": "Bu qaysi uy raqami?",
+          "uz-Cyrl": "Бу қайси уй рақами?",
+          "ru": "Какой это номер дома?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-yetkazish-empfaenger",
+      "slug": "empfaenger",
+      "term": "der Empfänger",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Empfänger",
+      "tr": {
+        "uz": "qabul qiluvchi",
+        "uz-Cyrl": "қабул қилувчи",
+        "ru": "получатель"
+      },
+      "pron": {
+        "uz": "der emp-fen-ger",
+        "uz-Cyrl": "дер эмп-фен-гер",
+        "ru": "дер эмп-фен-гер"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer",
+        "kurier"
+      ],
+      "situation": "yetkazish",
+      "example": {
+        "term": "Der Empfänger ist nicht zu Hause.",
+        "tr": {
+          "uz": "Qabul qiluvchi uyda yoʻq.",
+          "uz-Cyrl": "Қабул қилувчи уйда йўқ.",
+          "ru": "Получателя нет дома."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-yetkazish-unterschrift",
+      "slug": "unterschrift",
+      "term": "die Unterschrift",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Unterschriften",
+      "tr": {
+        "uz": "imzo",
+        "uz-Cyrl": "имзо",
+        "ru": "подпись"
+      },
+      "pron": {
+        "uz": "die un-ter-shrift",
+        "uz-Cyrl": "ди ун-тер-шрифт",
+        "ru": "ди ун-тер-шрифт"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer",
+        "kurier"
+      ],
+      "situation": "yetkazish",
+      "example": {
+        "term": "Ich brauche hier Ihre Unterschrift.",
+        "tr": {
+          "uz": "Bu yerga imzongiz kerak.",
+          "uz-Cyrl": "Бу ерга имзонгиз керак.",
+          "ru": "Мне нужна здесь ваша подпись."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-yetkazish-briefkasten",
+      "slug": "briefkasten",
+      "term": "der Briefkasten",
+      "icon": "home",
+      "article": "der",
+      "plural": "die Briefkästen",
+      "tr": {
+        "uz": "pochta qutisi",
+        "uz-Cyrl": "почта қутиси",
+        "ru": "почтовый ящик"
+      },
+      "pron": {
+        "uz": "der brif-kas-ten",
+        "uz-Cyrl": "дер бриф-кас-тен",
+        "ru": "дер бриф-кас-тен"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer",
+        "kurier"
+      ],
+      "situation": "yetkazish",
+      "example": {
+        "term": "Die Karte liegt im Briefkasten.",
+        "tr": {
+          "uz": "Xabarnoma pochta qutisida.",
+          "uz-Cyrl": "Хабарнома почта қутисида.",
+          "ru": "Извещение в почтовом ящике."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-yetkazish-nachbar",
+      "slug": "nachbar",
+      "term": "der Nachbar",
+      "icon": "users",
+      "article": "der",
+      "plural": "die Nachbarn",
+      "tr": {
+        "uz": "qoʻshni",
+        "uz-Cyrl": "қўшни",
+        "ru": "сосед"
+      },
+      "pron": {
+        "uz": "der nax-bar",
+        "uz-Cyrl": "дер нах-бар",
+        "ru": "дер нах-бар"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer",
+        "kurier"
+      ],
+      "situation": "yetkazish",
+      "example": {
+        "term": "Kann ich das Paket beim Nachbarn abgeben?",
+        "tr": {
+          "uz": "Posilkani qoʻshniga topshirsam boʻladimi?",
+          "uz-Cyrl": "Посилкани қўшнига топширсам бўладими?",
+          "ru": "Можно оставить посылку у соседа?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-yuklash-spanngurt",
+      "slug": "spanngurt",
+      "term": "der Spanngurt",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Spanngurte",
+      "tr": {
+        "uz": "tortma kamar (yuk mahkamlagich)",
+        "uz-Cyrl": "тортма камар (юк маҳкамлагич)",
+        "ru": "стяжной ремень"
+      },
+      "pron": {
+        "uz": "der shpan-gurt",
+        "uz-Cyrl": "дер шпан-гурт",
+        "ru": "дер шпан-гурт"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "yuklash",
+      "example": {
+        "term": "Sichern Sie die Ladung mit dem Spanngurt.",
+        "tr": {
+          "uz": "Yukni tortma kamar bilan mahkamlang.",
+          "uz-Cyrl": "Юкни тортма камар билан маҳкамланг.",
+          "ru": "Закрепите груз стяжным ремнём."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-yuklash-rampe",
+      "slug": "rampe",
+      "term": "die Rampe",
+      "icon": "truck",
+      "article": "die",
+      "plural": "die Rampen",
+      "tr": {
+        "uz": "yuklash maydonchasi (rampa)",
+        "uz-Cyrl": "юклаш майдончаси (рампа)",
+        "ru": "погрузочная рампа"
+      },
+      "pron": {
+        "uz": "die ram-pe",
+        "uz-Cyrl": "ди рам-пе",
+        "ru": "ди рам-пе"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "yuklash",
+      "example": {
+        "term": "Fahren Sie bitte an die Rampe.",
+        "tr": {
+          "uz": "Iltimos, rampaga yaqinlashing.",
+          "uz-Cyrl": "Илтимос, рампага яқинлашинг.",
+          "ru": "Пожалуйста, подъезжайте к рампе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-yuklash-warnweste",
+      "slug": "warnweste",
+      "term": "die Warnweste",
+      "icon": "shirt",
+      "article": "die",
+      "plural": "die Warnwesten",
+      "tr": {
+        "uz": "signal jilet",
+        "uz-Cyrl": "сигнал жилет",
+        "ru": "сигнальный жилет"
+      },
+      "pron": {
+        "uz": "die varn-ves-te",
+        "uz-Cyrl": "ди варн-вес-те",
+        "ru": "ди варн-вес-те"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "yuklash",
+      "example": {
+        "term": "Ziehen Sie bitte die Warnweste an.",
+        "tr": {
+          "uz": "Iltimos, signal jiletni kiying.",
+          "uz-Cyrl": "Илтимос, сигнал жилетни кийинг.",
+          "ru": "Пожалуйста, наденьте сигнальный жилет."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-yuklash-hubwagen",
+      "slug": "hubwagen",
+      "term": "der Hubwagen",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Hubwagen",
+      "tr": {
+        "uz": "qoʻl aravasi (gidravlik)",
+        "uz-Cyrl": "қўл араваси (гидравлик)",
+        "ru": "гидравлическая тележка"
+      },
+      "pron": {
+        "uz": "der hup-va-gen",
+        "uz-Cyrl": "дер хуп-ва-ген",
+        "ru": "дер хуп-ва-ген"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "yuklash",
+      "example": {
+        "term": "Nehmen Sie den Hubwagen.",
+        "tr": {
+          "uz": "Qoʻl aravasini oling.",
+          "uz-Cyrl": "Қўл аравасини олинг.",
+          "ru": "Возьмите тележку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-yuklash-heben",
+      "slug": "heben",
+      "term": "heben",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "koʻtarmoq",
+        "uz-Cyrl": "кўтармоқ",
+        "ru": "поднимать"
+      },
+      "pron": {
+        "uz": "he-ben",
+        "uz-Cyrl": "хе-бен",
+        "ru": "хе-бен"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "yuklash",
+      "example": {
+        "term": "Heben Sie mit geradem Rücken.",
+        "tr": {
+          "uz": "Belingizni tik tutib koʻtaring.",
+          "uz-Cyrl": "Белингизни тик тутиб кўтаринг.",
+          "ru": "Поднимайте с прямой спиной."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-yuklash-zerbrechlich",
+      "slug": "zerbrechlich",
+      "term": "zerbrechlich",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "tez sinadigan",
+        "uz-Cyrl": "тез синадиган",
+        "ru": "хрупкий"
+      },
+      "pron": {
+        "uz": "tser-brex-lix",
+        "uz-Cyrl": "цер-брех-лих",
+        "ru": "цер-брех-лих"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "yuklash",
+      "example": {
+        "term": "Vorsicht, das ist zerbrechlich!",
+        "tr": {
+          "uz": "Ehtiyot boʻling, bu tez sinadi!",
+          "uz-Cyrl": "Эҳтиёт бўлинг, бу тез синади!",
+          "ru": "Осторожно, это хрупкое!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-yuklash-waage",
+      "slug": "waage",
+      "term": "die Waage",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Waagen",
+      "tr": {
+        "uz": "tarozi",
+        "uz-Cyrl": "тарози",
+        "ru": "весы"
+      },
+      "pron": {
+        "uz": "die va-ge",
+        "uz-Cyrl": "ди ва-ге",
+        "ru": "ди ва-ге"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "yuklash",
+      "example": {
+        "term": "Stellen Sie das Paket auf die Waage.",
+        "tr": {
+          "uz": "Posilkani taroziga qoʻying.",
+          "uz-Cyrl": "Посилкани тарозига қўйинг.",
+          "ru": "Поставьте посылку на весы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-yuklash-scanner",
+      "slug": "scanner",
+      "term": "der Scanner",
+      "icon": "eye",
+      "article": "der",
+      "plural": "die Scanner",
+      "tr": {
+        "uz": "skaner",
+        "uz-Cyrl": "сканер",
+        "ru": "сканер"
+      },
+      "pron": {
+        "uz": "der ske-ner",
+        "uz-Cyrl": "дер ске-нер",
+        "ru": "дер ске-нер"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "yuklash",
+      "example": {
+        "term": "Der Scanner liest den Code nicht.",
+        "tr": {
+          "uz": "Skaner kodni oʻqimayapti.",
+          "uz-Cyrl": "Сканер кодни ўқимаяпти.",
+          "ru": "Сканер не считывает код."
         }
       },
       "safety": false,
