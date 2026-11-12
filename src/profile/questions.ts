@@ -6,7 +6,7 @@ import type { Key } from '../i18n/uz'
 
 export const AGE = ['under18', '18-24', '25-30', '31-35', '36plus'] as const
 export const EDUCATION = ['school', 'college', 'higher', 'studying'] as const
-export const PROFESSION = ['electrician', 'welder', 'mechanic', 'nurse', 'cook', 'construction', 'other'] as const
+export const PROFESSION = ['electrician', 'welder', 'mechanic', 'nurse', 'cook', 'construction', 'driver', 'other'] as const
 export const GERMAN = ['none', 'a1', 'a2', 'b1'] as const
 export const DAILY = ['15', '30', '60'] as const
 export const DEPARTURE = ['unknown', '1y', '1-2y'] as const

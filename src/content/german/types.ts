@@ -8,8 +8,9 @@ export const LEVELS: readonly Level[] = ['A1', 'A2', 'B1']
 /** Darajalar holati: B1 hozircha "keyin" (qulf). */
 export const LEVEL_LOCKED: Record<Level, boolean> = { A1: false, A2: false, B1: true }
 
-export type Direction = 'general' | 'technical' | 'care' | 'hospitality'
-export const DIRECTIONS: readonly Direction[] = ['general', 'technical', 'care', 'hospitality']
+/** Yoʻnalish (kasbiy soha). logistics va metal — 2-toʻlqin (0.14.0). */
+export type Direction = 'general' | 'technical' | 'care' | 'hospitality' | 'logistics' | 'metal'
+export const DIRECTIONS: readonly Direction[] = ['general', 'technical', 'care', 'hospitality', 'logistics', 'metal']
 
 /** Kontent holati: faqat approved — yakuniy. Bu versiyadagi darslar review. */
 export type ContentStatus = 'draft' | 'review' | 'approved'
