@@ -34,7 +34,20 @@ export type WordExercise = {
   /** Misol gap (darslardan). Koreys 1-modulida yoʻq (yangi gap toʻqilmaydi). */
   example?: { term: string; tr: L3 }
   audioUrl?: string
+  /** Koʻplik shakli (nemischa otlarda, masalan "die Hämmer"; koʻpligi yoʻq — "—"). Kasbiy kontent (0.12.0) uchun; hozir ekranda yoʻq. */
+  plural?: string
+  /** Soʻz rasmi (kasbiy kontent). Hozir ekranda yoʻq. */
+  image?: ContentImage
+  /** Xavfsizlik soʻzi (Vorsicht, Notausgang ...). */
+  safety?: boolean
 }
+
+/**
+ * Kontent rasmi: src — public/ ichidagi yoʻl (masalan "content/de/img/technical/hammer.webp").
+ * source: ai — AI chizgan, own — jamoa chizgan/suratga olgan, cc — erkin litsenziya (license va author majburiy).
+ * checked — odam koʻrib chiqqan (tasdiqlangan soʻzda majburiy).
+ */
+export type ContentImage = { src: string; source: 'ai' | 'own' | 'cc'; license?: string; author?: string; checked: boolean }
 
 export type ChoiceOption = { id: string; text: string; correct: boolean }
 /** Variant tanlash: `sentence` ichida ___ — boʻshliq; `full` — boʻshliq toʻldirilgan gap (xatolar roʻyxati uchun). */
