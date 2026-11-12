@@ -76,6 +76,6 @@ XATO  Sozlar, 7-qator: koʻplik "Hämmer" — "die ..." shaklida yoki koʻpligi 
 ## Ilovada qanday chiqadi (0.12.1 dan)
 
 - Har bir **vaziyat** — Til ekranida alohida **modul**. `general` modullari hammaga, qolganlari foydalanuvchi tanlagan yoʻnalishga (Til ekranidagi "Yoʻnalish: … · Oʻzgartirish") koʻrinadi.
-- Soʻzlar **6 tadan darsga** boʻlinadi (oxirida 1–2 soʻz qolsa, oldingi darsga qoʻshiladi); har darsda soʻz kartalari va juftlash mashqi.
+- Soʻzlar **6 tadan darsga** boʻlinadi (oxirida 1–2 soʻz qolsa, oldingi darsga qoʻshiladi); har darsda soʻz kartalari, juftlash va 2 tagacha **"boʻshliqni toʻldiring"** mashqi. Bu mashq otning misol gapidan avtomatik yasaladi: ot misolda aynan shu shaklda (masalan `Hammer`, `Nägel` emas) boʻlsa, oʻsha joy boʻsh qoldiriladi va tarjima koʻrsatiladi. Shuning uchun misol gapda otni lugʻatdagi shaklida ishlatish foydali.
 - Dars tugagach soʻzlar **Lugʻat** va **takrorlash** qutisiga tushadi, modul yakuniy testi ochiladi — mavjud barcha mashq usullari ishlaydi.
 - **Qoralama** soʻzlar ilovaga chiqmaydi.

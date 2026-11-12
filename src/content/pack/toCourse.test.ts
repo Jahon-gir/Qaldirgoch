@@ -53,3 +53,32 @@ describe('packsToCourse', () => {
     expect(visibleModules('technical', c.modules).map((m) => m.id)).toEqual(['general-asboblar', 'technical-asboblar'])
   })
 })
+
+describe('boʻshliqni toʻldiring (misol gapdan)', () => {
+  const ex = (term: string) => ({ term, tr: L(`tarjima: ${term}`) })
+  it('ot misolda boʻlsa — boʻshliq, tarjima va 3 variant (bittasi toʻgʻri); oʻzgargan shakl — mashq yoʻq', () => {
+    const words = [
+      w('hammer', { example: ex('Gib mir bitte den Hammer.') }),
+      w('zange', { article: 'die', term: 'die Zange', example: ex('Die Zange liegt dort.') }),
+      w('nagel', { example: ex('Ich brauche zehn Nägel.') }),
+      w('saege', { article: 'die', term: 'die Säge' })
+    ]
+    const c = packsToCourse([pack(words)])
+    const choices = c.exercises['technical-asboblar-l1'].filter((e) => e.type === 'choice')
+    expect(choices).toHaveLength(2)
+    const [a, b] = choices as Extract<(typeof choices)[number], { type: 'choice' }>[]
+    expect(a.sentence).toBe('Gib mir bitte den ___.')
+    expect(a.options.filter((o) => o.correct).map((o) => o.text)).toEqual(['Hammer'])
+    expect(a.options).toHaveLength(3)
+    expect(a.translation.uz).toBe('tarjima: Gib mir bitte den Hammer.')
+    expect(b.sentence).toBe('Die ___ liegt dort.')
+    expect(b.options.find((o) => o.correct)?.text).toBe('Zange')
+    // toʻgʻri javob har doim birinchi emas
+    expect(a.options.findIndex((o) => o.correct)).not.toBe(b.options.findIndex((o) => o.correct))
+  })
+
+  it('soʻz qismi (Hammer → Vorschlaghammer) boʻshliqqa aylanmaydi', () => {
+    const words = [w('hammer', { example: ex('Das ist ein Vorschlaghammer.') }), w('zange'), w('saege')]
+    expect(packsToCourse([pack(words)]).exercises['technical-asboblar-l1'].some((e) => e.type === 'choice')).toBe(false)
+  })
+})

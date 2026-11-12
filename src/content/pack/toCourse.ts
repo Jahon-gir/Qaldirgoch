@@ -1,4 +1,4 @@
-import type { Direction, Exercise, L3, Lesson, MatchExercise, Module, WordExercise } from '../german/types'
+import type { ChoiceExercise, Direction, Exercise, L3, Lesson, MatchExercise, Module, WordExercise } from '../german/types'
 import type { ContentPack, PackWord } from './types'
 
 /**
@@ -20,6 +20,51 @@ const MATCH_PROMPT: L3 = {
   uz: 'Juftlarni toping: avval chapdan, keyin oʻngdan tanlang',
   'uz-Cyrl': 'Жуфтларни топинг: аввал чапдан, кейин ўнгдан танланг',
   ru: 'Найдите пары: сначала слева, потом справа'
+}
+
+const FILL: L3 = { uz: 'Boʻshliqni toʻldiring', 'uz-Cyrl': 'Бўшлиқни тўлдиринг', ru: 'Заполните пропуск' }
+/** Bir darsda nechta "boʻshliqni toʻldiring" mashqi. */
+export const CHOICES_PER_LESSON = 2
+
+/** Artikl bilan yozilgan ot ("der Hammer") → "Hammer"; boshqa soʻz — null. */
+const nounOf = (w: PackWord) => (w.article ? w.term.slice(w.article.length + 1) : null)
+const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+
+/**
+ * Misol gapdan "boʻshliqni toʻldiring": ot misolda aynan shu shaklda (butun soʻz) boʻlsa, oʻrniga ___.
+ * Tarjima koʻrsatiladi — toʻgʻri javob bir maʼnoli. Chalgʻituvchilar — shu darsdagi boshqa otlar.
+ * Ot boʻlmasa, misol boʻlmasa yoki shakl oʻzgargan boʻlsa (Nägel, Sicherheitsschuhe) — mashq yoʻq.
+ */
+export function choicesFrom(chunk: readonly PackWord[], lessonId: string, startIndex: number): ChoiceExercise[] {
+  const nouns = chunk.flatMap((w) => {
+    const n = nounOf(w)
+    return n ? [{ w, n }] : []
+  })
+  const out: ChoiceExercise[] = []
+  for (const { w, n } of nouns) {
+    if (out.length >= CHOICES_PER_LESSON || !w.example) continue
+    const re = new RegExp(`(^|[^\\p{L}])${escapeRe(n)}(?=$|[^\\p{L}])`, 'u')
+    if (!re.test(w.example.term)) continue
+    const others = nouns.filter((x) => x.n !== n && !w.example!.term.includes(x.n)).map((x) => x.n)
+    if (others.length < 2) continue
+    const k = out.length
+    const distract = [others[k % others.length], others[(k + 1) % others.length]]
+    const answer = (startIndex + k) % 3
+    const options = [...distract]
+    options.splice(answer, 0, n)
+    const id = `${lessonId}-e${startIndex + k}`
+    out.push({
+      type: 'choice',
+      id,
+      prompt: FILL,
+      sentence: w.example.term.replace(re, (_m, pre: string) => `${pre}___`),
+      full: w.example.term,
+      translation: w.example.tr,
+      options: options.map((text, i) => ({ id: `${id}-o${i + 1}`, text, correct: i === answer })),
+      explain: { uz: `«${n}» — ${w.tr.uz}.`, 'uz-Cyrl': `«${n}» — ${w.tr['uz-Cyrl']}.`, ru: `«${n}» — ${w.tr.ru}.` }
+    })
+  }
+  return out
 }
 
 export type PackCourse = { modules: Module[]; lessons: Lesson[]; exercises: Record<string, Exercise[]> }
@@ -77,6 +122,7 @@ export function packsToCourse(packs: readonly ContentPack[], opts: { icons?: Rea
           }
           ex.push(m)
         }
+        ex.push(...choicesFrom(chunk, lessonId, ex.length + 1))
         out.exercises[lessonId] = ex
       })
     }
