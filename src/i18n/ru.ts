@@ -146,6 +146,8 @@ export const ru: Dict = {
   'dir.technical': 'Технические профессии',
   'dir.care': 'Уход и медицина',
   'dir.hospitality': 'Гостиницы и кухня',
+  'dir.logistics': 'Логистика и водители',
+  'dir.metal': 'Металл и автомобили',
   'german.continueTitle': 'Продолжайте',
   'german.allDone': 'Все доступные уроки пройдены',
   'german.levels': 'Уровни',
@@ -302,6 +304,7 @@ export const ru: Dict = {
   'q.profession.nurse': 'Медсестра, уход',
   'q.profession.cook': 'Повар, гостиница',
   'q.profession.construction': 'Строительство',
+  'q.profession.driver': 'Водитель, склад',
   'q.profession.other': 'Другое',
 
   'q.germanLevel.title': 'Как хорошо вы знаете немецкий?',

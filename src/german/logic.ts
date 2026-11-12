@@ -4,17 +4,20 @@ import type { Answers } from '../profile/questions'
 
 /* ---------- Yoʻnalish ---------- */
 
-/** Profildagi kasbdan yoʻnalish: elektrik/payvandchi/mexanik → technical; hamshira → care; oshpaz/mehmonxona → hospitality; qolgani → general. */
+/** Profildagi kasbdan yoʻnalish: elektrik/payvandchi/mexanik/quruvchi → technical; haydovchi → logistics; hamshira → care; oshpaz/mehmonxona → hospitality; qolgani → general. */
 export function directionFromProfession(profession: Answers['profession'] | undefined): Direction {
   switch (profession) {
     case 'electrician':
     case 'welder':
     case 'mechanic':
+    case 'construction':
       return 'technical'
     case 'nurse':
       return 'care'
     case 'cook':
       return 'hospitality'
+    case 'driver':
+      return 'logistics'
     default:
       return 'general'
   }

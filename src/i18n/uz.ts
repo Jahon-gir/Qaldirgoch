@@ -148,6 +148,8 @@ export const uz = {
   'dir.technical': 'Texnik kasblar',
   'dir.care': 'Parvarish va tibbiyot',
   'dir.hospitality': 'Mehmonxona va oshxona',
+  'dir.logistics': 'Logistika va haydovchilik',
+  'dir.metal': 'Metall va avtomobil',
   'german.continueTitle': 'Davom eting',
   'german.allDone': 'Mavjud darslar tugadi',
   'german.levels': 'Darajalar',
@@ -304,6 +306,7 @@ export const uz = {
   'q.profession.nurse': 'Hamshira, parvarish',
   'q.profession.cook': 'Oshpaz, mehmonxona',
   'q.profession.construction': 'Qurilish',
+  'q.profession.driver': 'Haydovchi, ombor',
   'q.profession.other': 'Boshqa',
 
   'q.germanLevel.title': 'Nemis tilini qanchalik bilasiz?',
