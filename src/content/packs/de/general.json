@@ -3102,6 +3102,700 @@
       "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xavfsizlik-feueralarm",
+      "slug": "feueralarm",
+      "term": "der Feueralarm",
+      "icon": "alert-octagon",
+      "article": "der",
+      "plural": "die Feueralarme",
+      "tr": {
+        "uz": "yongʻin signali",
+        "uz-Cyrl": "ёнғин сигнали",
+        "ru": "пожарная тревога"
+      },
+      "pron": {
+        "uz": "der foy-er-a-larm",
+        "uz-Cyrl": "дер фой-ер-а-ларм",
+        "ru": "дер фой-ер-а-ларм"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Der Feueralarm ist sehr laut.",
+        "tr": {
+          "uz": "Yongʻin signali juda baland.",
+          "uz-Cyrl": "Ёнғин сигнали жуда баланд.",
+          "ru": "Пожарная тревога очень громкая."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xavfsizlik-sammelplatz",
+      "slug": "sammelplatz",
+      "term": "der Sammelplatz",
+      "icon": "map-pin",
+      "article": "der",
+      "plural": "die Sammelplätze",
+      "tr": {
+        "uz": "yigʻilish joyi (evakuatsiyada)",
+        "uz-Cyrl": "йиғилиш жойи (эвакуацияда)",
+        "ru": "место сбора"
+      },
+      "pron": {
+        "uz": "der za-mel-plats",
+        "uz-Cyrl": "дер за-мель-плац",
+        "ru": "дер за-мель-плац"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Bei Feueralarm gehen alle zum Sammelplatz.",
+        "tr": {
+          "uz": "Yongʻin signalida hamma yigʻilish joyiga boradi.",
+          "uz-Cyrl": "Ёнғин сигналида ҳамма йиғилиш жойига боради.",
+          "ru": "При пожарной тревоге все идут к месту сбора."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-vaqti-nachtschicht",
+      "slug": "nachtschicht",
+      "term": "die Nachtschicht",
+      "icon": "moon-stars",
+      "article": "die",
+      "plural": "die Nachtschichten",
+      "tr": {
+        "uz": "tungi smena",
+        "uz-Cyrl": "тунги смена",
+        "ru": "ночная смена"
+      },
+      "pron": {
+        "uz": "die naxt-shixt",
+        "uz-Cyrl": "ди нахт-шихт",
+        "ru": "ди нахт-шихт"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-vaqti",
+      "example": {
+        "term": "Die Nachtschicht ist anstrengend.",
+        "tr": {
+          "uz": "Tungi smena ogʻir.",
+          "uz-Cyrl": "Тунги смена оғир.",
+          "ru": "Ночная смена тяжёлая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-vaqti-feiertag",
+      "slug": "feiertag",
+      "term": "der Feiertag",
+      "icon": "calendar-event",
+      "article": "der",
+      "plural": "die Feiertage",
+      "tr": {
+        "uz": "bayram kuni",
+        "uz-Cyrl": "байрам куни",
+        "ru": "праздничный день"
+      },
+      "pron": {
+        "uz": "der fay-er-tak",
+        "uz-Cyrl": "дер фай-ер-так",
+        "ru": "дер фай-ер-так"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-vaqti",
+      "example": {
+        "term": "Morgen ist ein Feiertag.",
+        "tr": {
+          "uz": "Ertaga bayram kuni.",
+          "uz-Cyrl": "Эртага байрам куни.",
+          "ru": "Завтра праздник."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-vaqti-stunde",
+      "slug": "stunde",
+      "term": "die Stunde",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Stunden",
+      "tr": {
+        "uz": "soat (vaqt birligi)",
+        "uz-Cyrl": "соат (вақт бирлиги)",
+        "ru": "час"
+      },
+      "pron": {
+        "uz": "die shtun-de",
+        "uz-Cyrl": "ди штун-де",
+        "ru": "ди штун-де"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-vaqti",
+      "example": {
+        "term": "Die Pause dauert eine Stunde.",
+        "tr": {
+          "uz": "Tanaffus bir soat davom etadi.",
+          "uz-Cyrl": "Танаффус бир соат давом этади.",
+          "ru": "Перерыв длится час."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-korsatma-noch-einmal-bitte",
+      "slug": "noch-einmal-bitte",
+      "term": "Noch einmal, bitte.",
+      "icon": "repeat",
+      "tr": {
+        "uz": "Yana bir marta, iltimos.",
+        "uz-Cyrl": "Яна бир марта, илтимос.",
+        "ru": "Ещё раз, пожалуйста."
+      },
+      "pron": {
+        "uz": "nox ayn-mal, bi-te",
+        "uz-Cyrl": "нох айн-маль, би-те",
+        "ru": "нох айн-маль, би-те"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "korsatma",
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-korsatma-was-bedeutet-das",
+      "slug": "was-bedeutet-das",
+      "term": "Was bedeutet das?",
+      "icon": "help",
+      "tr": {
+        "uz": "Bu nimani anglatadi?",
+        "uz-Cyrl": "Бу нимани англатади?",
+        "ru": "Что это значит?"
+      },
+      "pron": {
+        "uz": "vas be-doy-tet das",
+        "uz-Cyrl": "вас бе-дой-тет дас",
+        "ru": "вас бе-дой-тет дас"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "korsatma",
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-korsatma-ich-habe-verstanden",
+      "slug": "ich-habe-verstanden",
+      "term": "Ich habe verstanden.",
+      "icon": "check",
+      "tr": {
+        "uz": "Tushundim.",
+        "uz-Cyrl": "Тушундим.",
+        "ru": "Я понял(а)."
+      },
+      "pron": {
+        "uz": "ix ha-be fer-shtan-den",
+        "uz-Cyrl": "их ха-бе фер-штан-ден",
+        "ru": "их ха-бе фер-штан-ден"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "korsatma",
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kasallik-gesundheitskarte",
+      "slug": "gesundheitskarte",
+      "term": "die Gesundheitskarte",
+      "icon": "id",
+      "article": "die",
+      "plural": "die Gesundheitskarten",
+      "tr": {
+        "uz": "tibbiy sugʻurta kartasi",
+        "uz-Cyrl": "тиббий суғурта картаси",
+        "ru": "карта медицинского страхования"
+      },
+      "pron": {
+        "uz": "die ge-zunt-hayts-kar-te",
+        "uz-Cyrl": "ди ге-зунт-хайтс-кар-те",
+        "ru": "ди ге-зунт-хайтс-кар-те"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kasallik",
+      "example": {
+        "term": "Bringen Sie Ihre Gesundheitskarte mit.",
+        "tr": {
+          "uz": "Tibbiy sugʻurta kartangizni olib keling.",
+          "uz-Cyrl": "Тиббий суғурта картангизни олиб келинг.",
+          "ru": "Возьмите с собой медицинскую карту."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kasallik-gesund",
+      "slug": "gesund",
+      "term": "gesund",
+      "icon": "heart-handshake",
+      "tr": {
+        "uz": "sogʻlom",
+        "uz-Cyrl": "соғлом",
+        "ru": "здоровый"
+      },
+      "pron": {
+        "uz": "ge-zunt",
+        "uz-Cyrl": "ге-зунт",
+        "ru": "ге-зунт"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kasallik",
+      "example": {
+        "term": "Ich bin wieder gesund.",
+        "tr": {
+          "uz": "Yana sogʻaydim.",
+          "uz-Cyrl": "Яна соғайдим.",
+          "ru": "Я снова здоров."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shartnoma-mindestlohn",
+      "slug": "mindestlohn",
+      "term": "der Mindestlohn",
+      "icon": "receipt",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "eng kam ish haqi",
+        "uz-Cyrl": "энг кам иш ҳақи",
+        "ru": "минимальная зарплата"
+      },
+      "pron": {
+        "uz": "der min-dest-lon",
+        "uz-Cyrl": "дер мин-дест-лон",
+        "ru": "дер мин-дест-лон"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "shartnoma",
+      "example": {
+        "term": "In Deutschland gibt es einen Mindestlohn.",
+        "tr": {
+          "uz": "Germaniyada eng kam ish haqi belgilangan.",
+          "uz-Cyrl": "Германияда энг кам иш ҳақи белгиланган.",
+          "ru": "В Германии есть минимальная зарплата."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shartnoma-teilzeit",
+      "slug": "teilzeit",
+      "term": "die Teilzeit",
+      "icon": "clock",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "toʻliqsiz ish kuni",
+        "uz-Cyrl": "тўлиқсиз иш куни",
+        "ru": "неполный рабочий день"
+      },
+      "pron": {
+        "uz": "die tayl-tsayt",
+        "uz-Cyrl": "ди тайл-цайт",
+        "ru": "ди тайл-цайт"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "shartnoma",
+      "example": {
+        "term": "Ich arbeite in Teilzeit.",
+        "tr": {
+          "uz": "Toʻliqsiz ish kunida ishlayman.",
+          "uz-Cyrl": "Тўлиқсиз иш кунида ишлайман.",
+          "ru": "Я работаю неполный день."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shartnoma-vollzeit",
+      "slug": "vollzeit",
+      "term": "die Vollzeit",
+      "icon": "clock",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "toʻliq ish kuni",
+        "uz-Cyrl": "тўлиқ иш куни",
+        "ru": "полный рабочий день"
+      },
+      "pron": {
+        "uz": "die fol-tsayt",
+        "uz-Cyrl": "ди фоль-цайт",
+        "ru": "ди фоль-цайт"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "shartnoma",
+      "example": {
+        "term": "Die Stelle ist in Vollzeit.",
+        "tr": {
+          "uz": "Bu ish oʻrni toʻliq ish kuni uchun.",
+          "uz-Cyrl": "Бу иш ўрни тўлиқ иш куни учун.",
+          "ru": "Это место на полный день."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-berufsschule-heft",
+      "slug": "heft",
+      "term": "das Heft",
+      "icon": "book",
+      "article": "das",
+      "plural": "die Hefte",
+      "tr": {
+        "uz": "daftar",
+        "uz-Cyrl": "дафтар",
+        "ru": "тетрадь"
+      },
+      "pron": {
+        "uz": "das heft",
+        "uz-Cyrl": "дас хефт",
+        "ru": "дас хефт"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "berufsschule",
+      "example": {
+        "term": "Schreiben Sie das ins Heft.",
+        "tr": {
+          "uz": "Buni daftarga yozing.",
+          "uz-Cyrl": "Буни дафтарга ёзинг.",
+          "ru": "Запишите это в тетрадь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-berufsschule-unterricht",
+      "slug": "unterricht",
+      "term": "der Unterricht",
+      "icon": "book",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "dars (mashgʻulot)",
+        "uz-Cyrl": "дарс (машғулот)",
+        "ru": "занятия"
+      },
+      "pron": {
+        "uz": "der un-ter-rixt",
+        "uz-Cyrl": "дер ун-тер-рихт",
+        "ru": "дер ун-тер-рихт"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "berufsschule",
+      "example": {
+        "term": "Der Unterricht beginnt um acht.",
+        "tr": {
+          "uz": "Dars sakkizda boshlanadi.",
+          "uz-Cyrl": "Дарс саккизда бошланади.",
+          "ru": "Занятия начинаются в восемь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-berufsschule-frage",
+      "slug": "frage",
+      "term": "die Frage",
+      "icon": "help",
+      "article": "die",
+      "plural": "die Fragen",
+      "tr": {
+        "uz": "savol",
+        "uz-Cyrl": "савол",
+        "ru": "вопрос"
+      },
+      "pron": {
+        "uz": "die fra-ge",
+        "uz-Cyrl": "ди фра-ге",
+        "ru": "ди фра-ге"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "berufsschule",
+      "example": {
+        "term": "Ich habe eine Frage zur Aufgabe.",
+        "tr": {
+          "uz": "Topshiriq boʻyicha savolim bor.",
+          "uz-Cyrl": "Топшириқ бўйича саволим бор.",
+          "ru": "У меня вопрос по заданию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-transport-strassenbahn",
+      "slug": "strassenbahn",
+      "term": "die Straßenbahn",
+      "icon": "train",
+      "article": "die",
+      "plural": "die Straßenbahnen",
+      "tr": {
+        "uz": "tramvay",
+        "uz-Cyrl": "трамвай",
+        "ru": "трамвай"
+      },
+      "pron": {
+        "uz": "die shtra-sen-ban",
+        "uz-Cyrl": "ди штра-сен-бан",
+        "ru": "ди штра-сен-бан"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "transport",
+      "example": {
+        "term": "Die Straßenbahn kommt gleich.",
+        "tr": {
+          "uz": "Tramvay hozir keladi.",
+          "uz-Cyrl": "Трамвай ҳозир келади.",
+          "ru": "Трамвай сейчас придёт."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-transport-u-bahn",
+      "slug": "u-bahn",
+      "term": "die U-Bahn",
+      "icon": "train",
+      "article": "die",
+      "plural": "die U-Bahnen",
+      "tr": {
+        "uz": "metro",
+        "uz-Cyrl": "метро",
+        "ru": "метро"
+      },
+      "pron": {
+        "uz": "die u-ban",
+        "uz-Cyrl": "ди у-бан",
+        "ru": "ди у-бан"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "transport",
+      "example": {
+        "term": "Ich fahre mit der U-Bahn.",
+        "tr": {
+          "uz": "Metroda boraman.",
+          "uz-Cyrl": "Метрода бораман.",
+          "ru": "Я еду на метро."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-transport-gleis",
+      "slug": "gleis",
+      "term": "das Gleis",
+      "icon": "train",
+      "article": "das",
+      "plural": "die Gleise",
+      "tr": {
+        "uz": "yoʻl (platforma)",
+        "uz-Cyrl": "йўл (платформа)",
+        "ru": "путь (платформа)"
+      },
+      "pron": {
+        "uz": "das glays",
+        "uz-Cyrl": "дас глайс",
+        "ru": "дас глайс"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "transport",
+      "example": {
+        "term": "Der Zug fährt von Gleis drei.",
+        "tr": {
+          "uz": "Poyezd uchinchi yoʻldan joʻnaydi.",
+          "uz-Cyrl": "Поезд учинчи йўлдан жўнайди.",
+          "ru": "Поезд отправляется с третьего пути."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-idoralar-wartenummer",
+      "slug": "wartenummer",
+      "term": "die Wartenummer",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "die Wartenummern",
+      "tr": {
+        "uz": "navbat raqami",
+        "uz-Cyrl": "навбат рақами",
+        "ru": "номер очереди"
+      },
+      "pron": {
+        "uz": "die var-te-nu-mer",
+        "uz-Cyrl": "ди вар-те-ну-мер",
+        "ru": "ди вар-те-ну-мер"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "idoralar",
+      "example": {
+        "term": "Ziehen Sie bitte eine Wartenummer.",
+        "tr": {
+          "uz": "Iltimos, navbat raqamini oling.",
+          "uz-Cyrl": "Илтимос, навбат рақамини олинг.",
+          "ru": "Пожалуйста, возьмите номер очереди."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-idoralar-antrag",
+      "slug": "antrag",
+      "term": "der Antrag",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Anträge",
+      "tr": {
+        "uz": "ariza",
+        "uz-Cyrl": "ариза",
+        "ru": "заявление"
+      },
+      "pron": {
+        "uz": "der an-trak",
+        "uz-Cyrl": "дер ан-трак",
+        "ru": "дер ан-трак"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "idoralar",
+      "example": {
+        "term": "Ich möchte einen Antrag stellen.",
+        "tr": {
+          "uz": "Ariza bermoqchiman.",
+          "uz-Cyrl": "Ариза бермоқчиман.",
+          "ru": "Я хочу подать заявление."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-idoralar-unterschrift",
+      "slug": "unterschrift",
+      "term": "die Unterschrift",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Unterschriften",
+      "tr": {
+        "uz": "imzo",
+        "uz-Cyrl": "имзо",
+        "ru": "подпись"
+      },
+      "pron": {
+        "uz": "die un-ter-shrift",
+        "uz-Cyrl": "ди ун-тер-шрифт",
+        "ru": "ди ун-тер-шрифт"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "idoralar",
+      "example": {
+        "term": "Hier fehlt Ihre Unterschrift.",
+        "tr": {
+          "uz": "Bu yerda imzongiz yoʻq.",
+          "uz-Cyrl": "Бу ерда имзонгиз йўқ.",
+          "ru": "Здесь не хватает вашей подписи."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
