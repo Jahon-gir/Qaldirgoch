@@ -3,7 +3,7 @@ import {
   IconMoodSmile, IconMoonStars, IconStethoscope, IconSun, IconSunrise, IconSunset2, IconTools, IconToolsKitchen2, IconUser, IconUsers, IconWorld,
   IconCheck, IconChefHat, IconCoffee, IconDog, IconFlag, IconGenderFemale, IconGrape, IconHanger, IconLeaf, IconMan, IconMap, IconMeat, IconMilk, IconMoodKid, IconMusic, IconNumber1, IconPaw, IconRadio, IconRipple, IconSalad, IconSquare, IconToiletPaper, IconTrain, IconWoman,
   IconAbc, IconAlertTriangle, IconApple, IconArmchair, IconBackpack, IconBook, IconBowlChopsticks, IconBriefcase, IconBuildingSkyscraper, IconClock, IconCookie, IconDoor, IconDoorEnter, IconDroplet, IconHome, IconLanguage, IconMountain, IconPig, IconPlant, IconRun, IconShirt, IconSmokingNo, IconSoup, IconVolume, IconWaveSine,
-  IconFireExtinguisher, IconFirstAidKit, IconHelmet, IconShoe, IconAlertOctagon, IconBeach, IconRepeat, IconHelp, IconEye, IconThermometer, IconMoodSad, IconFileText, IconPill, IconHammer, IconLadder, IconRuler, IconPlug, IconToggleLeft, IconBulb, IconPower, IconBath, IconBed, IconWheelchair, IconHeartbeat, IconReceipt, IconGlass,
+  IconFireExtinguisher, IconFirstAidKit, IconHelmet, IconShoe, IconAlertOctagon, IconBeach, IconRepeat, IconHelp, IconEye, IconThermometer, IconMoodSad, IconFileText, IconPill, IconHammer, IconLadder, IconRuler, IconPlug, IconToggleLeft, IconBulb, IconPower, IconBath, IconBed, IconWheelchair, IconHeartbeat, IconReceipt, IconGlass, IconTrash, IconKey,
   type Icon
 } from '@tabler/icons-react'
 
@@ -107,5 +107,7 @@ export const LESSON_ICONS: Record<string, Icon> = {
   'wheelchair': IconWheelchair,
   'heartbeat': IconHeartbeat,
   'receipt': IconReceipt,
-  'glass': IconGlass
+  'glass': IconGlass,
+  trash: IconTrash,
+  key: IconKey
 }

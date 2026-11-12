@@ -48,6 +48,26 @@
       },
       "order": 4,
       "level": "A1"
+    },
+    {
+      "id": "shartnoma",
+      "title": {
+        "uz": "Shartnoma va maosh",
+        "uz-Cyrl": "Шартнома ва маош",
+        "ru": "Договор и зарплата"
+      },
+      "order": 5,
+      "level": "A2"
+    },
+    {
+      "id": "berufsschule",
+      "title": {
+        "uz": "Kasb maktabi (Berufsschule)",
+        "uz-Cyrl": "Касб мактаби (Berufsschule)",
+        "ru": "Профессиональное училище"
+      },
+      "order": 6,
+      "level": "A2"
     }
   ],
   "words": [
@@ -1035,6 +1055,520 @@
           "uz": "Dorixona vokzal yonida.",
           "uz-Cyrl": "Дорихона вокзал ёнида.",
           "ru": "Аптека рядом с вокзалом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shartnoma-arbeitsvertrag",
+      "slug": "arbeitsvertrag",
+      "term": "der Arbeitsvertrag",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Arbeitsverträge",
+      "tr": {
+        "uz": "mehnat shartnomasi",
+        "uz-Cyrl": "меҳнат шартномаси",
+        "ru": "трудовой договор"
+      },
+      "pron": {
+        "uz": "der ar-bayts-fer-trak",
+        "uz-Cyrl": "дер ар-байтс-фер-трак",
+        "ru": "дер ар-байтс-фер-трак"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "shartnoma",
+      "example": {
+        "term": "Bitte lesen Sie den Arbeitsvertrag genau.",
+        "tr": {
+          "uz": "Iltimos, mehnat shartnomasini diqqat bilan oʻqing.",
+          "uz-Cyrl": "Илтимос, меҳнат шартномасини диққат билан ўқинг.",
+          "ru": "Пожалуйста, внимательно прочитайте трудовой договор."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shartnoma-unterschreiben",
+      "slug": "unterschreiben",
+      "term": "unterschreiben",
+      "icon": "file-text",
+      "tr": {
+        "uz": "imzolamoq",
+        "uz-Cyrl": "имзоламоқ",
+        "ru": "подписывать"
+      },
+      "pron": {
+        "uz": "un-ter-shray-ben",
+        "uz-Cyrl": "ун-тер-шрай-бен",
+        "ru": "ун-тер-шрай-бен"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "shartnoma",
+      "example": {
+        "term": "Unterschreiben Sie hier, bitte.",
+        "tr": {
+          "uz": "Iltimos, shu yerga imzo cheking.",
+          "uz-Cyrl": "Илтимос, шу ерга имзо чекинг.",
+          "ru": "Подпишите здесь, пожалуйста."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shartnoma-probezeit",
+      "slug": "probezeit",
+      "term": "die Probezeit",
+      "icon": "calendar-event",
+      "article": "die",
+      "plural": "die Probezeiten",
+      "tr": {
+        "uz": "sinov muddati",
+        "uz-Cyrl": "синов муддати",
+        "ru": "испытательный срок"
+      },
+      "pron": {
+        "uz": "die pro-be-tsayt",
+        "uz-Cyrl": "ди про-бе-цайт",
+        "ru": "ди про-бе-цайт"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "shartnoma",
+      "example": {
+        "term": "Wie lange dauert die Probezeit?",
+        "tr": {
+          "uz": "Sinov muddati qancha davom etadi?",
+          "uz-Cyrl": "Синов муддати қанча давом этади?",
+          "ru": "Сколько длится испытательный срок?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shartnoma-lohn",
+      "slug": "lohn",
+      "term": "der Lohn",
+      "icon": "receipt",
+      "article": "der",
+      "plural": "die Löhne",
+      "tr": {
+        "uz": "ish haqi, maosh",
+        "uz-Cyrl": "иш ҳақи, маош",
+        "ru": "заработная плата"
+      },
+      "pron": {
+        "uz": "der lon",
+        "uz-Cyrl": "дер лон",
+        "ru": "дер лон"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "shartnoma",
+      "example": {
+        "term": "Der Lohn kommt am Monatsende.",
+        "tr": {
+          "uz": "Maosh oy oxirida keladi.",
+          "uz-Cyrl": "Маош ой охирида келади.",
+          "ru": "Зарплата приходит в конце месяца."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shartnoma-lohnabrechnung",
+      "slug": "lohnabrechnung",
+      "term": "die Lohnabrechnung",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "die Lohnabrechnungen",
+      "tr": {
+        "uz": "maosh varaqasi",
+        "uz-Cyrl": "маош варақаси",
+        "ru": "расчётный лист"
+      },
+      "pron": {
+        "uz": "die lon-ap-rex-nung",
+        "uz-Cyrl": "ди лон-ап-рех-нунг",
+        "ru": "ди лон-ап-рех-нунг"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "shartnoma",
+      "example": {
+        "term": "Ich verstehe meine Lohnabrechnung nicht.",
+        "tr": {
+          "uz": "Maosh varaqamni tushunmayapman.",
+          "uz-Cyrl": "Маош варақамни тушунмаяпман.",
+          "ru": "Я не понимаю свой расчётный лист."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shartnoma-brutto",
+      "slug": "brutto",
+      "term": "brutto",
+      "icon": "receipt",
+      "tr": {
+        "uz": "yalpi (soliq va badallardan oldin)",
+        "uz-Cyrl": "ялпи (солиқ ва бадаллардан олдин)",
+        "ru": "брутто (до вычетов)"
+      },
+      "pron": {
+        "uz": "bru-to",
+        "uz-Cyrl": "бру-то",
+        "ru": "бру-то"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "shartnoma",
+      "example": {
+        "term": "Ist das brutto oder netto?",
+        "tr": {
+          "uz": "Bu yalpimi yoki sofmi?",
+          "uz-Cyrl": "Бу ялпими ёки софми?",
+          "ru": "Это брутто или нетто?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shartnoma-netto",
+      "slug": "netto",
+      "term": "netto",
+      "icon": "receipt",
+      "tr": {
+        "uz": "sof (qoʻlga tegadigan)",
+        "uz-Cyrl": "соф (қўлга тегадиган)",
+        "ru": "нетто (на руки)"
+      },
+      "pron": {
+        "uz": "ne-to",
+        "uz-Cyrl": "не-то",
+        "ru": "не-то"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "shartnoma",
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shartnoma-ueberstunde",
+      "slug": "ueberstunde",
+      "term": "die Überstunde",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Überstunden",
+      "tr": {
+        "uz": "qoʻshimcha ish soati",
+        "uz-Cyrl": "қўшимча иш соати",
+        "ru": "сверхурочный час"
+      },
+      "pron": {
+        "uz": "die yu-ber-shtun-de",
+        "uz-Cyrl": "ди ю-бер-штун-де",
+        "ru": "ди ю-бер-штун-де"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "shartnoma",
+      "example": {
+        "term": "Ich habe heute zwei Überstunden gemacht.",
+        "tr": {
+          "uz": "Bugun ikki soat qoʻshimcha ishladim.",
+          "uz-Cyrl": "Бугун икки соат қўшимча ишладим.",
+          "ru": "Сегодня я отработал два сверхурочных часа."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-berufsschule-berufsschule",
+      "slug": "berufsschule",
+      "term": "die Berufsschule",
+      "icon": "book",
+      "article": "die",
+      "plural": "die Berufsschulen",
+      "tr": {
+        "uz": "kasb maktabi",
+        "uz-Cyrl": "касб мактаби",
+        "ru": "профессиональное училище"
+      },
+      "pron": {
+        "uz": "die be-rufs-shu-le",
+        "uz-Cyrl": "ди бе-руфс-шу-ле",
+        "ru": "ди бе-руфс-шу-ле"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "berufsschule",
+      "example": {
+        "term": "Montags gehe ich in die Berufsschule.",
+        "tr": {
+          "uz": "Dushanba kunlari kasb maktabiga boraman.",
+          "uz-Cyrl": "Душанба кунлари касб мактабига бораман.",
+          "ru": "По понедельникам я хожу в профучилище."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-berufsschule-ausbilder",
+      "slug": "ausbilder",
+      "term": "der Ausbilder",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Ausbilder",
+      "tr": {
+        "uz": "ustoz (ishxonada oʻrgatuvchi)",
+        "uz-Cyrl": "устоз (ишхонада ўргатувчи)",
+        "ru": "наставник на производстве"
+      },
+      "pron": {
+        "uz": "der aus-bil-der",
+        "uz-Cyrl": "дер аус-биль-дер",
+        "ru": "дер аус-биль-дер"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "berufsschule",
+      "example": {
+        "term": "Mein Ausbilder erklärt mir alles.",
+        "tr": {
+          "uz": "Ustozim menga hammasini tushuntiradi.",
+          "uz-Cyrl": "Устозим менга ҳаммасини тушунтиради.",
+          "ru": "Мой наставник мне всё объясняет."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-berufsschule-azubi",
+      "slug": "azubi",
+      "term": "der Azubi",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Azubis",
+      "tr": {
+        "uz": "Ausbildung oʻquvchisi",
+        "uz-Cyrl": "Ausbildung ўқувчиси",
+        "ru": "ученик (Ausbildung)"
+      },
+      "pron": {
+        "uz": "der a-tsu-bi",
+        "uz-Cyrl": "дер а-цу-би",
+        "ru": "дер а-цу-би"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "berufsschule",
+      "example": {
+        "term": "Ich bin Azubi im ersten Jahr.",
+        "tr": {
+          "uz": "Men birinchi yil oʻquvchisiman.",
+          "uz-Cyrl": "Мен биринчи йил ўқувчисиман.",
+          "ru": "Я ученик первого года."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-berufsschule-pruefung",
+      "slug": "pruefung",
+      "term": "die Prüfung",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Prüfungen",
+      "tr": {
+        "uz": "imtihon",
+        "uz-Cyrl": "имтиҳон",
+        "ru": "экзамен"
+      },
+      "pron": {
+        "uz": "die pryu-fung",
+        "uz-Cyrl": "ди прю-фунг",
+        "ru": "ди прю-фунг"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "berufsschule",
+      "example": {
+        "term": "Die Prüfung ist im Juni.",
+        "tr": {
+          "uz": "Imtihon iyunda.",
+          "uz-Cyrl": "Имтиҳон июнда.",
+          "ru": "Экзамен в июне."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-berufsschule-berichtsheft",
+      "slug": "berichtsheft",
+      "term": "das Berichtsheft",
+      "icon": "book",
+      "article": "das",
+      "plural": "die Berichtshefte",
+      "tr": {
+        "uz": "hisobot daftari",
+        "uz-Cyrl": "ҳисобот дафтари",
+        "ru": "отчётная тетрадь"
+      },
+      "pron": {
+        "uz": "das be-rixts-heft",
+        "uz-Cyrl": "дас бе-рихтс-хефт",
+        "ru": "дас бе-рихтс-хефт"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "berufsschule",
+      "example": {
+        "term": "Ich schreibe jede Woche mein Berichtsheft.",
+        "tr": {
+          "uz": "Har hafta hisobot daftarimni yozaman.",
+          "uz-Cyrl": "Ҳар ҳафта ҳисобот дафтаримни ёзаман.",
+          "ru": "Каждую неделю я заполняю отчётную тетрадь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-berufsschule-stundenplan",
+      "slug": "stundenplan",
+      "term": "der Stundenplan",
+      "icon": "calendar-event",
+      "article": "der",
+      "plural": "die Stundenpläne",
+      "tr": {
+        "uz": "dars jadvali",
+        "uz-Cyrl": "дарс жадвали",
+        "ru": "расписание уроков"
+      },
+      "pron": {
+        "uz": "der shtun-den-plan",
+        "uz-Cyrl": "дер штун-ден-план",
+        "ru": "дер штун-ден-план"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "berufsschule",
+      "example": {
+        "term": "Wo ist der Stundenplan?",
+        "tr": {
+          "uz": "Dars jadvali qayerda?",
+          "uz-Cyrl": "Дарс жадвали қаерда?",
+          "ru": "Где расписание?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-berufsschule-hausaufgabe",
+      "slug": "hausaufgabe",
+      "term": "die Hausaufgabe",
+      "icon": "book",
+      "article": "die",
+      "plural": "die Hausaufgaben",
+      "tr": {
+        "uz": "uy vazifasi",
+        "uz-Cyrl": "уй вазифаси",
+        "ru": "домашнее задание"
+      },
+      "pron": {
+        "uz": "die haus-auf-ga-be",
+        "uz-Cyrl": "ди хаус-ауф-га-бе",
+        "ru": "ди хаус-ауф-га-бе"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "berufsschule",
+      "example": {
+        "term": "Ich mache meine Hausaufgaben am Abend.",
+        "tr": {
+          "uz": "Uy vazifalarimni kechqurun qilaman.",
+          "uz-Cyrl": "Уй вазифаларимни кечқурун қиламан.",
+          "ru": "Я делаю домашние задания вечером."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-berufsschule-zeugnis",
+      "slug": "zeugnis",
+      "term": "das Zeugnis",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "die Zeugnisse",
+      "tr": {
+        "uz": "tabel (baholar hujjati)",
+        "uz-Cyrl": "табель (баҳолар ҳужжати)",
+        "ru": "табель, свидетельство с оценками"
+      },
+      "pron": {
+        "uz": "das tsoyk-nis",
+        "uz-Cyrl": "дас цойк-нис",
+        "ru": "дас цойк-нис"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "berufsschule",
+      "example": {
+        "term": "Ich bekomme heute mein Zeugnis.",
+        "tr": {
+          "uz": "Bugun tabelimni olaman.",
+          "uz-Cyrl": "Бугун табелимни оламан.",
+          "ru": "Сегодня я получаю табель."
         }
       },
       "safety": false,

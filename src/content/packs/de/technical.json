@@ -28,6 +28,26 @@
       },
       "order": 2,
       "level": "A2"
+    },
+    {
+      "id": "qurilish",
+      "title": {
+        "uz": "Qurilish maydonida",
+        "uz-Cyrl": "Қурилиш майдонида",
+        "ru": "На стройке"
+      },
+      "order": 3,
+      "level": "A1"
+    },
+    {
+      "id": "santexnika",
+      "title": {
+        "uz": "Suv, isitish, santexnika",
+        "uz-Cyrl": "Сув, иситиш, сантехника",
+        "ru": "Вода, отопление, сантехника"
+      },
+      "order": 4,
+      "level": "A2"
     }
   ],
   "words": [
@@ -629,6 +649,552 @@
         }
       },
       "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-qurilish-baustelle",
+      "slug": "baustelle",
+      "term": "die Baustelle",
+      "icon": "building",
+      "article": "die",
+      "plural": "die Baustellen",
+      "tr": {
+        "uz": "qurilish maydoni",
+        "uz-Cyrl": "қурилиш майдони",
+        "ru": "стройка"
+      },
+      "pron": {
+        "uz": "die bau-shte-le",
+        "uz-Cyrl": "ди бау-ште-ле",
+        "ru": "ди бау-ште-ле"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Auf der Baustelle trägt man einen Helm.",
+        "tr": {
+          "uz": "Qurilish maydonida kaska kiyiladi.",
+          "uz-Cyrl": "Қурилиш майдонида каска кийилади.",
+          "ru": "На стройке носят каску."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-qurilish-zement",
+      "slug": "zement",
+      "term": "der Zement",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Zemente",
+      "tr": {
+        "uz": "sement",
+        "uz-Cyrl": "цемент",
+        "ru": "цемент"
+      },
+      "pron": {
+        "uz": "der tse-ment",
+        "uz-Cyrl": "дер це-мент",
+        "ru": "дер це-мент"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Wir brauchen noch Zement.",
+        "tr": {
+          "uz": "Bizga yana sement kerak.",
+          "uz-Cyrl": "Бизга яна цемент керак.",
+          "ru": "Нам ещё нужен цемент."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-qurilish-ziegel",
+      "slug": "ziegel",
+      "term": "der Ziegel",
+      "icon": "home",
+      "article": "der",
+      "plural": "die Ziegel",
+      "tr": {
+        "uz": "gʻisht",
+        "uz-Cyrl": "ғишт",
+        "ru": "кирпич"
+      },
+      "pron": {
+        "uz": "der tsi-gel",
+        "uz-Cyrl": "дер ци-гель",
+        "ru": "дер ци-гель"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Die Ziegel liegen dort.",
+        "tr": {
+          "uz": "Gʻishtlar u yerda.",
+          "uz-Cyrl": "Ғиштлар у ерда.",
+          "ru": "Кирпичи лежат там."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-qurilish-schubkarre",
+      "slug": "schubkarre",
+      "term": "die Schubkarre",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Schubkarren",
+      "tr": {
+        "uz": "tachka",
+        "uz-Cyrl": "тачка",
+        "ru": "тачка"
+      },
+      "pron": {
+        "uz": "die shup-ka-re",
+        "uz-Cyrl": "ди шуп-ка-ре",
+        "ru": "ди шуп-ка-ре"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Bring bitte die Schubkarre hierher.",
+        "tr": {
+          "uz": "Iltimos, tachkani bu yerga olib kel.",
+          "uz-Cyrl": "Илтимос, тачкани бу ерга олиб кел.",
+          "ru": "Привези, пожалуйста, тачку сюда."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-qurilish-schaufel",
+      "slug": "schaufel",
+      "term": "die Schaufel",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Schaufeln",
+      "tr": {
+        "uz": "belkurak",
+        "uz-Cyrl": "белкурак",
+        "ru": "лопата"
+      },
+      "pron": {
+        "uz": "die shau-fel",
+        "uz-Cyrl": "ди шау-фель",
+        "ru": "ди шау-фель"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Nimm bitte die Schaufel.",
+        "tr": {
+          "uz": "Iltimos, belkurakni ol.",
+          "uz-Cyrl": "Илтимос, белкуракни ол.",
+          "ru": "Возьми, пожалуйста, лопату."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-qurilish-geruest",
+      "slug": "geruest",
+      "term": "das Gerüst",
+      "icon": "ladder",
+      "article": "das",
+      "plural": "die Gerüste",
+      "tr": {
+        "uz": "havoza (iskala)",
+        "uz-Cyrl": "ҳавоза (искала)",
+        "ru": "строительные леса"
+      },
+      "pron": {
+        "uz": "das ge-ryust",
+        "uz-Cyrl": "дас ге-рюст",
+        "ru": "дас ге-рюст"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Vorsicht auf dem Gerüst!",
+        "tr": {
+          "uz": "Havozada ehtiyot boʻling!",
+          "uz-Cyrl": "Ҳавозада эҳтиёт бўлинг!",
+          "ru": "Осторожно на лесах!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-qurilish-kran",
+      "slug": "kran",
+      "term": "der Kran",
+      "icon": "building",
+      "article": "der",
+      "plural": "die Kräne",
+      "tr": {
+        "uz": "kran",
+        "uz-Cyrl": "кран",
+        "ru": "кран"
+      },
+      "pron": {
+        "uz": "der kran",
+        "uz-Cyrl": "дер кран",
+        "ru": "дер кран"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Der Kran hebt die Ziegel.",
+        "tr": {
+          "uz": "Kran gʻishtlarni koʻtaradi.",
+          "uz-Cyrl": "Кран ғиштларни кўтаради.",
+          "ru": "Кран поднимает кирпичи."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-qurilish-tragen",
+      "slug": "tragen",
+      "term": "tragen",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "koʻtarib olib bormoq",
+        "uz-Cyrl": "кўтариб олиб бормоқ",
+        "ru": "нести, носить"
+      },
+      "pron": {
+        "uz": "tra-gen",
+        "uz-Cyrl": "тра-ген",
+        "ru": "тра-ген"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Können Sie mir helfen, das zu tragen?",
+        "tr": {
+          "uz": "Buni koʻtarishga yordam bera olasizmi?",
+          "uz-Cyrl": "Буни кўтаришга ёрдам бера оласизми?",
+          "ru": "Можете помочь мне это донести?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-santexnika-rohr",
+      "slug": "rohr",
+      "term": "das Rohr",
+      "icon": "tools",
+      "article": "das",
+      "plural": "die Rohre",
+      "tr": {
+        "uz": "quvur",
+        "uz-Cyrl": "қувур",
+        "ru": "труба"
+      },
+      "pron": {
+        "uz": "das ror",
+        "uz-Cyrl": "дас рор",
+        "ru": "дас рор"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "santexnika",
+      "example": {
+        "term": "Das Rohr ist undicht.",
+        "tr": {
+          "uz": "Quvur oqyapti.",
+          "uz-Cyrl": "Қувур оқяпти.",
+          "ru": "Труба протекает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-santexnika-heizung",
+      "slug": "heizung",
+      "term": "die Heizung",
+      "icon": "flame",
+      "article": "die",
+      "plural": "die Heizungen",
+      "tr": {
+        "uz": "isitish tizimi",
+        "uz-Cyrl": "иситиш тизими",
+        "ru": "отопление"
+      },
+      "pron": {
+        "uz": "die hay-tsung",
+        "uz-Cyrl": "ди хай-цунг",
+        "ru": "ди хай-цунг"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "santexnika",
+      "example": {
+        "term": "Die Heizung funktioniert nicht.",
+        "tr": {
+          "uz": "Isitish ishlamayapti.",
+          "uz-Cyrl": "Иситиш ишламаяпти.",
+          "ru": "Отопление не работает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-santexnika-wasserhahn",
+      "slug": "wasserhahn",
+      "term": "der Wasserhahn",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Wasserhähne",
+      "tr": {
+        "uz": "suv joʻmragi",
+        "uz-Cyrl": "сув жўмраги",
+        "ru": "водопроводный кран"
+      },
+      "pron": {
+        "uz": "der va-ser-han",
+        "uz-Cyrl": "дер ва-сер-хан",
+        "ru": "дер ва-сер-хан"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "santexnika",
+      "example": {
+        "term": "Der Wasserhahn tropft.",
+        "tr": {
+          "uz": "Joʻmrak tomchilayapti.",
+          "uz-Cyrl": "Жўмрак томчилаяпти.",
+          "ru": "Кран капает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-santexnika-waschbecken",
+      "slug": "waschbecken",
+      "term": "das Waschbecken",
+      "icon": "droplet",
+      "article": "das",
+      "plural": "die Waschbecken",
+      "tr": {
+        "uz": "rakovina (qoʻl yuvgich)",
+        "uz-Cyrl": "раковина (қўл ювгич)",
+        "ru": "раковина"
+      },
+      "pron": {
+        "uz": "das vash-be-ken",
+        "uz-Cyrl": "дас ваш-бе-кен",
+        "ru": "дас ваш-бе-кен"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "santexnika",
+      "example": {
+        "term": "Das Waschbecken ist verstopft.",
+        "tr": {
+          "uz": "Rakovina tiqilib qolgan.",
+          "uz-Cyrl": "Раковина тиқилиб қолган.",
+          "ru": "Раковина засорилась."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-santexnika-dichtung",
+      "slug": "dichtung",
+      "term": "die Dichtung",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Dichtungen",
+      "tr": {
+        "uz": "prokladka (zichlagich)",
+        "uz-Cyrl": "прокладка (зичлагич)",
+        "ru": "прокладка, уплотнитель"
+      },
+      "pron": {
+        "uz": "die dix-tung",
+        "uz-Cyrl": "ди дих-тунг",
+        "ru": "ди дих-тунг"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "santexnika",
+      "example": {
+        "term": "Wir müssen die Dichtung wechseln.",
+        "tr": {
+          "uz": "Prokladkani almashtirishimiz kerak.",
+          "uz-Cyrl": "Прокладкани алмаштиришимиз керак.",
+          "ru": "Нужно поменять прокладку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-santexnika-schraubenschluessel",
+      "slug": "schraubenschluessel",
+      "term": "der Schraubenschlüssel",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Schraubenschlüssel",
+      "tr": {
+        "uz": "gayka kaliti",
+        "uz-Cyrl": "гайка калити",
+        "ru": "гаечный ключ"
+      },
+      "pron": {
+        "uz": "der shrau-ben-shlyu-sel",
+        "uz-Cyrl": "дер шрау-бен-шлю-сель",
+        "ru": "дер шрау-бен-шлю-сель"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "santexnika",
+      "example": {
+        "term": "Gib mir bitte den Schraubenschlüssel.",
+        "tr": {
+          "uz": "Iltimos, gayka kalitini ber.",
+          "uz-Cyrl": "Илтимос, гайка калитини бер.",
+          "ru": "Дай мне, пожалуйста, гаечный ключ."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-santexnika-stellen-sie-das-wasser-ab",
+      "slug": "stellen-sie-das-wasser-ab",
+      "term": "Stellen Sie das Wasser ab!",
+      "icon": "droplet",
+      "tr": {
+        "uz": "Suvni yoping!",
+        "uz-Cyrl": "Сувни ёпинг!",
+        "ru": "Перекройте воду!"
+      },
+      "pron": {
+        "uz": "shte-len zi das va-ser ap",
+        "uz-Cyrl": "ште-лен зи дас ва-сер ап",
+        "ru": "ште-лен зи дас ва-сер ап"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "santexnika",
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-santexnika-warm",
+      "slug": "warm",
+      "term": "warm",
+      "icon": "sun",
+      "tr": {
+        "uz": "iliq",
+        "uz-Cyrl": "илиқ",
+        "ru": "тёплый"
+      },
+      "pron": {
+        "uz": "varm",
+        "uz-Cyrl": "варм",
+        "ru": "варм"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "santexnika",
+      "example": {
+        "term": "Das Wasser ist nicht warm.",
+        "tr": {
+          "uz": "Suv iliq emas.",
+          "uz-Cyrl": "Сув илиқ эмас.",
+          "ru": "Вода не тёплая."
+        }
+      },
+      "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
     }
