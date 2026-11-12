@@ -48,6 +48,26 @@
       },
       "order": 4,
       "level": "A2"
+    },
+    {
+      "id": "dastgoh",
+      "title": {
+        "uz": "Dastgohda ishlash",
+        "uz-Cyrl": "Дастгоҳда ишлаш",
+        "ru": "Работа на станке"
+      },
+      "order": 5,
+      "level": "A2"
+    },
+    {
+      "id": "kuzov",
+      "title": {
+        "uz": "Kuzov va boʻyoq",
+        "uz-Cyrl": "Кузов ва бўёқ",
+        "ru": "Кузов и покраска"
+      },
+      "order": 6,
+      "level": "A2"
     }
   ],
   "words": [
@@ -1718,6 +1738,578 @@
         }
       },
       "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-dastgoh-drehmaschine",
+      "slug": "drehmaschine",
+      "term": "die Drehmaschine",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Drehmaschinen",
+      "tr": {
+        "uz": "tokarlik dastgohi",
+        "uz-Cyrl": "токарлик дастгоҳи",
+        "ru": "токарный станок"
+      },
+      "pron": {
+        "uz": "die dre-ma-shi-ne",
+        "uz-Cyrl": "ди дре-ма-ши-не",
+        "ru": "ди дре-ма-ши-не"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "dastgoh",
+      "example": {
+        "term": "Die Drehmaschine läuft noch.",
+        "tr": {
+          "uz": "Tokarlik dastgohi hali ishlayapti.",
+          "uz-Cyrl": "Токарлик дастгоҳи ҳали ишлаяпти.",
+          "ru": "Токарный станок ещё работает."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-dastgoh-fraesmaschine",
+      "slug": "fraesmaschine",
+      "term": "die Fräsmaschine",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Fräsmaschinen",
+      "tr": {
+        "uz": "frezer dastgohi",
+        "uz-Cyrl": "фрезер дастгоҳи",
+        "ru": "фрезерный станок"
+      },
+      "pron": {
+        "uz": "die fres-ma-shi-ne",
+        "uz-Cyrl": "ди фрес-ма-ши-не",
+        "ru": "ди фрес-ма-ши-не"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "dastgoh",
+      "example": {
+        "term": "Die Fräsmaschine ist neu.",
+        "tr": {
+          "uz": "Frezer dastgohi yangi.",
+          "uz-Cyrl": "Фрезер дастгоҳи янги.",
+          "ru": "Фрезерный станок новый."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-dastgoh-werkstueck",
+      "slug": "werkstueck",
+      "term": "das Werkstück",
+      "icon": "tools",
+      "article": "das",
+      "plural": "die Werkstücke",
+      "tr": {
+        "uz": "detal (ishlov beriladigan)",
+        "uz-Cyrl": "детал (ишлов бериладиган)",
+        "ru": "заготовка"
+      },
+      "pron": {
+        "uz": "das verk-shtyuk",
+        "uz-Cyrl": "дас верк-штюк",
+        "ru": "дас верк-штюк"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "dastgoh",
+      "example": {
+        "term": "Spannen Sie das Werkstück fest.",
+        "tr": {
+          "uz": "Detalni mahkam qisting.",
+          "uz-Cyrl": "Детални маҳкам қистинг.",
+          "ru": "Зажмите заготовку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-dastgoh-messschieber",
+      "slug": "messschieber",
+      "term": "der Messschieber",
+      "icon": "ruler",
+      "article": "der",
+      "plural": "die Messschieber",
+      "tr": {
+        "uz": "shtangensirkul",
+        "uz-Cyrl": "штангенциркуль",
+        "ru": "штангенциркуль"
+      },
+      "pron": {
+        "uz": "der mes-shi-ber",
+        "uz-Cyrl": "дер мес-ши-бер",
+        "ru": "дер мес-ши-бер"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "dastgoh",
+      "example": {
+        "term": "Messen Sie mit dem Messschieber.",
+        "tr": {
+          "uz": "Shtangensirkul bilan oʻlchang.",
+          "uz-Cyrl": "Штангенциркуль билан ўлчанг.",
+          "ru": "Измерьте штангенциркулем."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-dastgoh-millimeter",
+      "slug": "millimeter",
+      "term": "der Millimeter",
+      "icon": "ruler",
+      "article": "der",
+      "plural": "die Millimeter",
+      "tr": {
+        "uz": "millimetr",
+        "uz-Cyrl": "миллиметр",
+        "ru": "миллиметр"
+      },
+      "pron": {
+        "uz": "der mi-li-me-ter",
+        "uz-Cyrl": "дер ми-ли-ме-тер",
+        "ru": "дер ми-ли-ме-тер"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "dastgoh",
+      "example": {
+        "term": "Es fehlt ein Millimeter.",
+        "tr": {
+          "uz": "Bir millimetr yetmayapti.",
+          "uz-Cyrl": "Бир миллиметр етмаяпти.",
+          "ru": "Не хватает одного миллиметра."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-dastgoh-kuehlmittel",
+      "slug": "kuehlmittel",
+      "term": "das Kühlmittel",
+      "icon": "droplet",
+      "article": "das",
+      "plural": "die Kühlmittel",
+      "tr": {
+        "uz": "sovutish suyuqligi",
+        "uz-Cyrl": "совутиш суюқлиги",
+        "ru": "охлаждающая жидкость"
+      },
+      "pron": {
+        "uz": "das kyul-mi-tel",
+        "uz-Cyrl": "дас кюль-ми-тель",
+        "ru": "дас кюль-ми-тель"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "dastgoh",
+      "example": {
+        "term": "Das Kühlmittel ist fast leer.",
+        "tr": {
+          "uz": "Sovutish suyuqligi deyarli tugagan.",
+          "uz-Cyrl": "Совутиш суюқлиги деярли тугаган.",
+          "ru": "Охлаждающая жидкость почти закончилась."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-dastgoh-span",
+      "slug": "span",
+      "term": "der Span",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Späne",
+      "tr": {
+        "uz": "qirindi (metall)",
+        "uz-Cyrl": "қиринди (металл)",
+        "ru": "стружка"
+      },
+      "pron": {
+        "uz": "der shpan",
+        "uz-Cyrl": "дер шпан",
+        "ru": "дер шпан"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "dastgoh",
+      "example": {
+        "term": "Vorsicht, die Späne sind scharf!",
+        "tr": {
+          "uz": "Ehtiyot boʻling, qirindilar oʻtkir!",
+          "uz-Cyrl": "Эҳтиёт бўлинг, қириндилар ўткир!",
+          "ru": "Осторожно, стружка острая!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-dastgoh-genau",
+      "slug": "genau",
+      "term": "genau",
+      "icon": "ruler",
+      "tr": {
+        "uz": "aniq",
+        "uz-Cyrl": "аниқ",
+        "ru": "точно"
+      },
+      "pron": {
+        "uz": "ge-nau",
+        "uz-Cyrl": "ге-нау",
+        "ru": "ге-нау"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "dastgoh",
+      "example": {
+        "term": "Sie müssen sehr genau arbeiten.",
+        "tr": {
+          "uz": "Juda aniq ishlashingiz kerak.",
+          "uz-Cyrl": "Жуда аниқ ишлашингиз керак.",
+          "ru": "Нужно работать очень точно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-kuzov-karosserie",
+      "slug": "karosserie",
+      "term": "die Karosserie",
+      "icon": "car",
+      "article": "die",
+      "plural": "die Karosserien",
+      "tr": {
+        "uz": "kuzov",
+        "uz-Cyrl": "кузов",
+        "ru": "кузов"
+      },
+      "pron": {
+        "uz": "die ka-ro-se-ri",
+        "uz-Cyrl": "ди ка-ро-се-ри",
+        "ru": "ди ка-ро-се-ри"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "karosseriebauer",
+        "lackierer"
+      ],
+      "situation": "kuzov",
+      "example": {
+        "term": "Die Karosserie hat eine Delle.",
+        "tr": {
+          "uz": "Kuzovda botiq bor.",
+          "uz-Cyrl": "Кузовда ботиқ бор.",
+          "ru": "На кузове вмятина."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-kuzov-delle",
+      "slug": "delle",
+      "term": "die Delle",
+      "icon": "car",
+      "article": "die",
+      "plural": "die Dellen",
+      "tr": {
+        "uz": "botiq (vmyatina)",
+        "uz-Cyrl": "ботиқ (вмятина)",
+        "ru": "вмятина"
+      },
+      "pron": {
+        "uz": "die de-le",
+        "uz-Cyrl": "ди де-ле",
+        "ru": "ди де-ле"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "karosseriebauer",
+        "lackierer"
+      ],
+      "situation": "kuzov",
+      "example": {
+        "term": "Wir drücken die Delle heraus.",
+        "tr": {
+          "uz": "Botiqni toʻgʻrilaymiz.",
+          "uz-Cyrl": "Ботиқни тўғрилаймиз.",
+          "ru": "Мы выправим вмятину."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-kuzov-kratzer",
+      "slug": "kratzer",
+      "term": "der Kratzer",
+      "icon": "car",
+      "article": "der",
+      "plural": "die Kratzer",
+      "tr": {
+        "uz": "tirnalgan joy",
+        "uz-Cyrl": "тирналган жой",
+        "ru": "царапина"
+      },
+      "pron": {
+        "uz": "der kra-tser",
+        "uz-Cyrl": "дер кра-цер",
+        "ru": "дер кра-цер"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "karosseriebauer",
+        "lackierer"
+      ],
+      "situation": "kuzov",
+      "example": {
+        "term": "Hier ist ein Kratzer.",
+        "tr": {
+          "uz": "Bu yerda tirnalgan joy bor.",
+          "uz-Cyrl": "Бу ерда тирналган жой бор.",
+          "ru": "Здесь царапина."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-kuzov-stossstange",
+      "slug": "stossstange",
+      "term": "die Stoßstange",
+      "icon": "car",
+      "article": "die",
+      "plural": "die Stoßstangen",
+      "tr": {
+        "uz": "bamper",
+        "uz-Cyrl": "бампер",
+        "ru": "бампер"
+      },
+      "pron": {
+        "uz": "die shtos-shtan-ge",
+        "uz-Cyrl": "ди штос-штан-ге",
+        "ru": "ди штос-штан-ге"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "karosseriebauer",
+        "lackierer"
+      ],
+      "situation": "kuzov",
+      "example": {
+        "term": "Die Stoßstange ist kaputt.",
+        "tr": {
+          "uz": "Bamper singan.",
+          "uz-Cyrl": "Бампер синган.",
+          "ru": "Бампер разбит."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-kuzov-scheibe",
+      "slug": "scheibe",
+      "term": "die Scheibe",
+      "icon": "car",
+      "article": "die",
+      "plural": "die Scheiben",
+      "tr": {
+        "uz": "mashina oynasi",
+        "uz-Cyrl": "машина ойнаси",
+        "ru": "стекло автомобиля"
+      },
+      "pron": {
+        "uz": "die shay-be",
+        "uz-Cyrl": "ди шай-бе",
+        "ru": "ди шай-бе"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "karosseriebauer",
+        "lackierer"
+      ],
+      "situation": "kuzov",
+      "example": {
+        "term": "Die Scheibe hat einen Riss.",
+        "tr": {
+          "uz": "Oynada yoriq bor.",
+          "uz-Cyrl": "Ойнада ёриқ бор.",
+          "ru": "На стекле трещина."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-kuzov-lack",
+      "slug": "lack",
+      "term": "der Lack",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Lacke",
+      "tr": {
+        "uz": "avtoboʻyoq (lak)",
+        "uz-Cyrl": "автобўёқ (лак)",
+        "ru": "лак, автоэмаль"
+      },
+      "pron": {
+        "uz": "der lak",
+        "uz-Cyrl": "дер лак",
+        "ru": "дер лак"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "karosseriebauer",
+        "lackierer"
+      ],
+      "situation": "kuzov",
+      "example": {
+        "term": "Der Lack muss trocknen.",
+        "tr": {
+          "uz": "Boʻyoq qurishi kerak.",
+          "uz-Cyrl": "Бўёқ қуриши керак.",
+          "ru": "Лак должен высохнуть."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-kuzov-lackieren",
+      "slug": "lackieren",
+      "term": "lackieren",
+      "icon": "droplet",
+      "tr": {
+        "uz": "boʻyamoq (avtomobilni)",
+        "uz-Cyrl": "бўямоқ (автомобилни)",
+        "ru": "красить, лакировать"
+      },
+      "pron": {
+        "uz": "la-ki-ren",
+        "uz-Cyrl": "ла-ки-рен",
+        "ru": "ла-ки-рен"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "karosseriebauer",
+        "lackierer"
+      ],
+      "situation": "kuzov",
+      "example": {
+        "term": "Wir lackieren die Tür neu.",
+        "tr": {
+          "uz": "Eshikni qaytadan boʻyaymiz.",
+          "uz-Cyrl": "Эшикни қайтадан бўяймиз.",
+          "ru": "Мы перекрасим дверь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-kuzov-atemschutzmaske",
+      "slug": "atemschutzmaske",
+      "term": "die Atemschutzmaske",
+      "icon": "helmet",
+      "article": "die",
+      "plural": "die Atemschutzmasken",
+      "tr": {
+        "uz": "respirator",
+        "uz-Cyrl": "респиратор",
+        "ru": "респиратор"
+      },
+      "pron": {
+        "uz": "die a-tem-shuts-mas-ke",
+        "uz-Cyrl": "ди а-тем-шуц-мас-ке",
+        "ru": "ди а-тем-шуц-мас-ке"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "karosseriebauer",
+        "lackierer"
+      ],
+      "situation": "kuzov",
+      "example": {
+        "term": "Beim Lackieren tragen Sie eine Atemschutzmaske.",
+        "tr": {
+          "uz": "Boʻyash paytida respirator taqasiz.",
+          "uz-Cyrl": "Бўяш пайтида респиратор тақасиз.",
+          "ru": "При покраске носите респиратор."
+        }
+      },
+      "safety": true,
       "status": "review",
       "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
     }
