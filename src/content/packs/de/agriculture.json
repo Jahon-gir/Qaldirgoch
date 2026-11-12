@@ -28,6 +28,26 @@
       },
       "order": 2,
       "level": "A1"
+    },
+    {
+      "id": "bog",
+      "title": {
+        "uz": "Bogʻda",
+        "uz-Cyrl": "Боғда",
+        "ru": "В саду"
+      },
+      "order": 3,
+      "level": "A1"
+    },
+    {
+      "id": "texnika",
+      "title": {
+        "uz": "Texnika va xavfsizlik",
+        "uz-Cyrl": "Техника ва хавфсизлик",
+        "ru": "Техника и безопасность"
+      },
+      "order": 4,
+      "level": "A2"
     }
   ],
   "words": [
@@ -598,6 +618,566 @@
         }
       },
       "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-bog-baum",
+      "slug": "baum",
+      "term": "der Baum",
+      "icon": "plant",
+      "article": "der",
+      "plural": "die Bäume",
+      "tr": {
+        "uz": "daraxt",
+        "uz-Cyrl": "дарахт",
+        "ru": "дерево"
+      },
+      "pron": {
+        "uz": "der baum",
+        "uz-Cyrl": "дер баум",
+        "ru": "дер баум"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "landwirt"
+      ],
+      "situation": "bog",
+      "example": {
+        "term": "Der Baum ist sehr hoch.",
+        "tr": {
+          "uz": "Daraxt juda baland.",
+          "uz-Cyrl": "Дарахт жуда баланд.",
+          "ru": "Дерево очень высокое."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-bog-traube",
+      "slug": "traube",
+      "term": "die Traube",
+      "icon": "grape",
+      "article": "die",
+      "plural": "die Trauben",
+      "tr": {
+        "uz": "uzum",
+        "uz-Cyrl": "узум",
+        "ru": "виноград"
+      },
+      "pron": {
+        "uz": "die trau-be",
+        "uz-Cyrl": "ди трау-бе",
+        "ru": "ди трау-бе"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "landwirt"
+      ],
+      "situation": "bog",
+      "example": {
+        "term": "Die Traube ist süß.",
+        "tr": {
+          "uz": "Uzum shirin.",
+          "uz-Cyrl": "Узум ширин.",
+          "ru": "Виноград сладкий."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-bog-pfluecken",
+      "slug": "pfluecken",
+      "term": "pflücken",
+      "icon": "apple",
+      "tr": {
+        "uz": "termoq",
+        "uz-Cyrl": "термоқ",
+        "ru": "срывать, собирать"
+      },
+      "pron": {
+        "uz": "pflyu-ken",
+        "uz-Cyrl": "пфлю-кен",
+        "ru": "пфлю-кен"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "landwirt"
+      ],
+      "situation": "bog",
+      "example": {
+        "term": "Pflücken Sie nur reife Äpfel.",
+        "tr": {
+          "uz": "Faqat pishgan olmalarni tering.",
+          "uz-Cyrl": "Фақат пишган олмаларни теринг.",
+          "ru": "Срывайте только спелые яблоки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-bog-reif",
+      "slug": "reif",
+      "term": "reif",
+      "icon": "apple",
+      "tr": {
+        "uz": "pishgan",
+        "uz-Cyrl": "пишган",
+        "ru": "спелый"
+      },
+      "pron": {
+        "uz": "rayf",
+        "uz-Cyrl": "райф",
+        "ru": "райф"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "landwirt"
+      ],
+      "situation": "bog",
+      "example": {
+        "term": "Die Kirschen sind reif.",
+        "tr": {
+          "uz": "Gilos pishdi.",
+          "uz-Cyrl": "Гилос пишди.",
+          "ru": "Черешня созрела."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-bog-schere",
+      "slug": "schere",
+      "term": "die Schere",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Scheren",
+      "tr": {
+        "uz": "qaychi",
+        "uz-Cyrl": "қайчи",
+        "ru": "ножницы"
+      },
+      "pron": {
+        "uz": "die she-re",
+        "uz-Cyrl": "ди ше-ре",
+        "ru": "ди ше-ре"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "landwirt"
+      ],
+      "situation": "bog",
+      "example": {
+        "term": "Schneiden Sie mit der Schere.",
+        "tr": {
+          "uz": "Qaychi bilan kesing.",
+          "uz-Cyrl": "Қайчи билан кесинг.",
+          "ru": "Режьте ножницами."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-bog-pflanze",
+      "slug": "pflanze",
+      "term": "die Pflanze",
+      "icon": "plant",
+      "article": "die",
+      "plural": "die Pflanzen",
+      "tr": {
+        "uz": "oʻsimlik",
+        "uz-Cyrl": "ўсимлик",
+        "ru": "растение"
+      },
+      "pron": {
+        "uz": "die pflan-tse",
+        "uz-Cyrl": "ди пфлан-це",
+        "ru": "ди пфлан-це"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "landwirt"
+      ],
+      "situation": "bog",
+      "example": {
+        "term": "Die Pflanze braucht Wasser.",
+        "tr": {
+          "uz": "Oʻsimlikka suv kerak.",
+          "uz-Cyrl": "Ўсимликка сув керак.",
+          "ru": "Растению нужна вода."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-bog-giessen",
+      "slug": "giessen",
+      "term": "gießen",
+      "icon": "droplet",
+      "tr": {
+        "uz": "sugʻormoq",
+        "uz-Cyrl": "суғормоқ",
+        "ru": "поливать"
+      },
+      "pron": {
+        "uz": "gi-sen",
+        "uz-Cyrl": "ги-сен",
+        "ru": "ги-сен"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "landwirt"
+      ],
+      "situation": "bog",
+      "example": {
+        "term": "Wir gießen die Pflanzen am Abend.",
+        "tr": {
+          "uz": "Oʻsimliklarni kechqurun sugʻoramiz.",
+          "uz-Cyrl": "Ўсимликларни кечқурун суғорамиз.",
+          "ru": "Мы поливаем растения вечером."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-bog-reihe",
+      "slug": "reihe",
+      "term": "die Reihe",
+      "icon": "plant",
+      "article": "die",
+      "plural": "die Reihen",
+      "tr": {
+        "uz": "qator",
+        "uz-Cyrl": "қатор",
+        "ru": "ряд"
+      },
+      "pron": {
+        "uz": "die ray-e",
+        "uz-Cyrl": "ди рай-е",
+        "ru": "ди рай-е"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "landwirt"
+      ],
+      "situation": "bog",
+      "example": {
+        "term": "Arbeiten Sie in dieser Reihe.",
+        "tr": {
+          "uz": "Shu qatorda ishlang.",
+          "uz-Cyrl": "Шу қаторда ишланг.",
+          "ru": "Работайте в этом ряду."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-texnika-anhaenger",
+      "slug": "anhaenger",
+      "term": "der Anhänger",
+      "icon": "truck",
+      "article": "der",
+      "plural": "die Anhänger",
+      "tr": {
+        "uz": "tirkama",
+        "uz-Cyrl": "тиркама",
+        "ru": "прицеп"
+      },
+      "pron": {
+        "uz": "der an-hen-ger",
+        "uz-Cyrl": "дер ан-хен-гер",
+        "ru": "дер ан-хен-гер"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt"
+      ],
+      "situation": "texnika",
+      "example": {
+        "term": "Der Anhänger ist voll.",
+        "tr": {
+          "uz": "Tirkama toʻla.",
+          "uz-Cyrl": "Тиркама тўла.",
+          "ru": "Прицеп полный."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-texnika-pflanzenschutzmittel",
+      "slug": "pflanzenschutzmittel",
+      "term": "das Pflanzenschutzmittel",
+      "icon": "alert-octagon",
+      "article": "das",
+      "plural": "die Pflanzenschutzmittel",
+      "tr": {
+        "uz": "oʻsimlik himoya vositasi (pestitsid)",
+        "uz-Cyrl": "ўсимлик ҳимоя воситаси (пестицид)",
+        "ru": "средство защиты растений"
+      },
+      "pron": {
+        "uz": "das pflan-tsen-shuts-mi-tel",
+        "uz-Cyrl": "дас пфлан-цен-шуц-ми-тель",
+        "ru": "дас пфлан-цен-шуц-ми-тель"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt"
+      ],
+      "situation": "texnika",
+      "example": {
+        "term": "Fassen Sie das Pflanzenschutzmittel nicht an!",
+        "tr": {
+          "uz": "Pestitsidga tegmang!",
+          "uz-Cyrl": "Пестицидга тегманг!",
+          "ru": "Не трогайте средство защиты растений!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-texnika-atemschutzmaske",
+      "slug": "atemschutzmaske",
+      "term": "die Atemschutzmaske",
+      "icon": "helmet",
+      "article": "die",
+      "plural": "die Atemschutzmasken",
+      "tr": {
+        "uz": "respirator",
+        "uz-Cyrl": "респиратор",
+        "ru": "респиратор"
+      },
+      "pron": {
+        "uz": "die a-tem-shuts-mas-ke",
+        "uz-Cyrl": "ди а-тем-шуц-мас-ке",
+        "ru": "ди а-тем-шуц-мас-ке"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt"
+      ],
+      "situation": "texnika",
+      "example": {
+        "term": "Tragen Sie bitte eine Atemschutzmaske.",
+        "tr": {
+          "uz": "Iltimos, respirator taqing.",
+          "uz-Cyrl": "Илтимос, респиратор тақинг.",
+          "ru": "Пожалуйста, наденьте респиратор."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-texnika-duenger",
+      "slug": "duenger",
+      "term": "der Dünger",
+      "icon": "plant",
+      "article": "der",
+      "plural": "die Dünger",
+      "tr": {
+        "uz": "oʻgʻit",
+        "uz-Cyrl": "ўғит",
+        "ru": "удобрение"
+      },
+      "pron": {
+        "uz": "der dyun-ger",
+        "uz-Cyrl": "дер дюн-гер",
+        "ru": "дер дюн-гер"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt"
+      ],
+      "situation": "texnika",
+      "example": {
+        "term": "Der Dünger liegt in der Scheune.",
+        "tr": {
+          "uz": "Oʻgʻit ambarda.",
+          "uz-Cyrl": "Ўғит амбарда.",
+          "ru": "Удобрение лежит в амбаре."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-texnika-scheune",
+      "slug": "scheune",
+      "term": "die Scheune",
+      "icon": "home",
+      "article": "die",
+      "plural": "die Scheunen",
+      "tr": {
+        "uz": "ambar",
+        "uz-Cyrl": "амбар",
+        "ru": "амбар, сарай"
+      },
+      "pron": {
+        "uz": "die shoy-ne",
+        "uz-Cyrl": "ди шой-не",
+        "ru": "ди шой-не"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt"
+      ],
+      "situation": "texnika",
+      "example": {
+        "term": "Die Scheune ist offen.",
+        "tr": {
+          "uz": "Ambar ochiq.",
+          "uz-Cyrl": "Амбар очиқ.",
+          "ru": "Амбар открыт."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-texnika-hitze",
+      "slug": "hitze",
+      "term": "die Hitze",
+      "icon": "sun",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "jazirama",
+        "uz-Cyrl": "жазирама",
+        "ru": "жара"
+      },
+      "pron": {
+        "uz": "die hi-tse",
+        "uz-Cyrl": "ди хи-це",
+        "ru": "ди хи-це"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt"
+      ],
+      "situation": "texnika",
+      "example": {
+        "term": "Bei Hitze müssen Sie viel trinken.",
+        "tr": {
+          "uz": "Jaziramada koʻp suv ichish kerak.",
+          "uz-Cyrl": "Жазирамада кўп сув ичиш керак.",
+          "ru": "В жару нужно много пить."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-texnika-schatten",
+      "slug": "schatten",
+      "term": "der Schatten",
+      "icon": "sun",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "soya",
+        "uz-Cyrl": "соя",
+        "ru": "тень"
+      },
+      "pron": {
+        "uz": "der sha-ten",
+        "uz-Cyrl": "дер ша-тен",
+        "ru": "дер ша-тен"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt"
+      ],
+      "situation": "texnika",
+      "example": {
+        "term": "Machen Sie Pause im Schatten.",
+        "tr": {
+          "uz": "Soyada dam oling.",
+          "uz-Cyrl": "Сояда дам олинг.",
+          "ru": "Отдыхайте в тени."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-texnika-rueckwaerts",
+      "slug": "rueckwaerts",
+      "term": "rückwärts",
+      "icon": "truck",
+      "tr": {
+        "uz": "orqaga",
+        "uz-Cyrl": "орқага",
+        "ru": "задним ходом"
+      },
+      "pron": {
+        "uz": "ryuk-verts",
+        "uz-Cyrl": "рюк-верц",
+        "ru": "рюк-верц"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt"
+      ],
+      "situation": "texnika",
+      "example": {
+        "term": "Der Anhänger fährt rückwärts.",
+        "tr": {
+          "uz": "Tirkama orqaga yuryapti.",
+          "uz-Cyrl": "Тиркама орқага юряпти.",
+          "ru": "Прицеп едет назад."
+        }
+      },
+      "safety": true,
       "status": "review",
       "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
     }

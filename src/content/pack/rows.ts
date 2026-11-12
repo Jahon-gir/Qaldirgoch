@@ -87,7 +87,8 @@ export function rowsToPacks(sheets: Sheets, rules: PackRules, opts: Omit<Validat
     }
     let term = plain(r.term)
     const article = opt(r.article)?.toLowerCase()
-    if (rules.article && /^(der|die|das)\s/i.test(term)) {
+    // Faqat "der Hammer" kabi (artikl + bitta ot) xato; "Das ist im Gang drei." — ibora, artikl emas
+    if (rules.article && /^(der|die|das)\s+\p{Lu}[\p{L}-]*$/iu.test(term)) {
       err(where, `"${term}": artiklni "article" ustuniga alohida yozing, "term" da faqat ot qolsin`)
       continue
     }

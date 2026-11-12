@@ -28,6 +28,26 @@
       },
       "order": 2,
       "level": "A2"
+    },
+    {
+      "id": "ofis",
+      "title": {
+        "uz": "Ofisni tozalash",
+        "uz-Cyrl": "Офисни тозалаш",
+        "ru": "Уборка офиса"
+      },
+      "order": 3,
+      "level": "A1"
+    },
+    {
+      "id": "kir",
+      "title": {
+        "uz": "Kir yuvish xonasida",
+        "uz-Cyrl": "Кир ювиш хонасида",
+        "ru": "В прачечной"
+      },
+      "order": 4,
+      "level": "A2"
     }
   ],
   "words": [
@@ -559,6 +579,556 @@
           "uz": "Shishaning qopqogʻini yoping.",
           "uz-Cyrl": "Шишанинг қопқоғини ёпинг.",
           "ru": "Закройте бутылку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ofis-buero",
+      "slug": "buero",
+      "term": "das Büro",
+      "icon": "building",
+      "article": "das",
+      "plural": "die Büros",
+      "tr": {
+        "uz": "ofis",
+        "uz-Cyrl": "офис",
+        "ru": "офис"
+      },
+      "pron": {
+        "uz": "das byu-ro",
+        "uz-Cyrl": "дас бю-ро",
+        "ru": "дас бю-ро"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ofis",
+      "example": {
+        "term": "Ich putze abends das Büro.",
+        "tr": {
+          "uz": "Kechqurun ofisni tozalayman.",
+          "uz-Cyrl": "Кечқурун офисни тозалайман.",
+          "ru": "Вечером я убираю офис."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ofis-schreibtisch",
+      "slug": "schreibtisch",
+      "term": "der Schreibtisch",
+      "icon": "home",
+      "article": "der",
+      "plural": "die Schreibtische",
+      "tr": {
+        "uz": "ish stoli",
+        "uz-Cyrl": "иш столи",
+        "ru": "письменный стол"
+      },
+      "pron": {
+        "uz": "der shrayp-tish",
+        "uz-Cyrl": "дер шрайп-тиш",
+        "ru": "дер шрайп-тиш"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ofis",
+      "example": {
+        "term": "Auf dem Schreibtisch liegen Papiere.",
+        "tr": {
+          "uz": "Ish stolida qogʻozlar bor.",
+          "uz-Cyrl": "Иш столида қоғозлар бор.",
+          "ru": "На столе лежат бумаги."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ofis-papierkorb",
+      "slug": "papierkorb",
+      "term": "der Papierkorb",
+      "icon": "trash",
+      "article": "der",
+      "plural": "die Papierkörbe",
+      "tr": {
+        "uz": "qogʻoz savati",
+        "uz-Cyrl": "қоғоз савати",
+        "ru": "корзина для бумаг"
+      },
+      "pron": {
+        "uz": "der pa-pir-korp",
+        "uz-Cyrl": "дер па-пир-корп",
+        "ru": "дер па-пир-корп"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ofis",
+      "example": {
+        "term": "Leeren Sie den Papierkorb.",
+        "tr": {
+          "uz": "Qogʻoz savatini boʻshating.",
+          "uz-Cyrl": "Қоғоз саватини бўшатинг.",
+          "ru": "Опорожните корзину для бумаг."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ofis-teppich",
+      "slug": "teppich",
+      "term": "der Teppich",
+      "icon": "home",
+      "article": "der",
+      "plural": "die Teppiche",
+      "tr": {
+        "uz": "gilam",
+        "uz-Cyrl": "гилам",
+        "ru": "ковёр"
+      },
+      "pron": {
+        "uz": "der te-pix",
+        "uz-Cyrl": "дер те-пих",
+        "ru": "дер те-пих"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ofis",
+      "example": {
+        "term": "Saugen Sie bitte den Teppich.",
+        "tr": {
+          "uz": "Iltimos, gilamni changyutgich bilan tozalang.",
+          "uz-Cyrl": "Илтимос, гиламни чангютгич билан тозаланг.",
+          "ru": "Пожалуйста, пропылесосьте ковёр."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ofis-kueche",
+      "slug": "kueche",
+      "term": "die Küche",
+      "icon": "tools-kitchen-2",
+      "article": "die",
+      "plural": "die Küchen",
+      "tr": {
+        "uz": "oshxona",
+        "uz-Cyrl": "ошхона",
+        "ru": "кухня"
+      },
+      "pron": {
+        "uz": "die kyu-xe",
+        "uz-Cyrl": "ди кю-хе",
+        "ru": "ди кю-хе"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ofis",
+      "example": {
+        "term": "Die Küche im Büro ist klein.",
+        "tr": {
+          "uz": "Ofisdagi oshxona kichik.",
+          "uz-Cyrl": "Офисдаги ошхона кичик.",
+          "ru": "Кухня в офисе маленькая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ofis-abwischen",
+      "slug": "abwischen",
+      "term": "abwischen",
+      "icon": "droplet",
+      "tr": {
+        "uz": "artib tozalamoq",
+        "uz-Cyrl": "артиб тозаламоқ",
+        "ru": "протирать"
+      },
+      "pron": {
+        "uz": "ap-vi-shen",
+        "uz-Cyrl": "ап-ви-шен",
+        "ru": "ап-ви-шен"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ofis",
+      "example": {
+        "term": "Wischen Sie bitte den Tisch ab.",
+        "tr": {
+          "uz": "Iltimos, stolni arting.",
+          "uz-Cyrl": "Илтимос, столни артинг.",
+          "ru": "Протрите, пожалуйста, стол."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ofis-abschliessen",
+      "slug": "abschliessen",
+      "term": "abschließen",
+      "icon": "key",
+      "tr": {
+        "uz": "qulflamoq",
+        "uz-Cyrl": "қулфламоқ",
+        "ru": "запирать"
+      },
+      "pron": {
+        "uz": "ap-shli-sen",
+        "uz-Cyrl": "ап-шли-сен",
+        "ru": "ап-шли-сен"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ofis",
+      "example": {
+        "term": "Bitte schließen Sie die Tür ab.",
+        "tr": {
+          "uz": "Iltimos, eshikni qulflang.",
+          "uz-Cyrl": "Илтимос, эшикни қулфланг.",
+          "ru": "Пожалуйста, заприте дверь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ofis-machen-sie-das-licht-aus",
+      "slug": "machen-sie-das-licht-aus",
+      "term": "Machen Sie das Licht aus.",
+      "icon": "bulb",
+      "tr": {
+        "uz": "Chiroqni oʻchiring.",
+        "uz-Cyrl": "Чироқни ўчиринг.",
+        "ru": "Выключите свет."
+      },
+      "pron": {
+        "uz": "ma-xen zi das lixt aus",
+        "uz-Cyrl": "ма-хен зи дас лихт аус",
+        "ru": "ма-хен зи дас лихт аус"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ofis",
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-kir-waesche",
+      "slug": "waesche",
+      "term": "die Wäsche",
+      "icon": "shirt",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "kir (yuviladigan kiyim)",
+        "uz-Cyrl": "кир (ювиладиган кийим)",
+        "ru": "бельё"
+      },
+      "pron": {
+        "uz": "die ve-she",
+        "uz-Cyrl": "ди ве-ше",
+        "ru": "ди ве-ше"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "kir",
+      "example": {
+        "term": "Die Wäsche ist trocken.",
+        "tr": {
+          "uz": "Kir quridi.",
+          "uz-Cyrl": "Кир қуриди.",
+          "ru": "Бельё высохло."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-kir-waschmaschine",
+      "slug": "waschmaschine",
+      "term": "die Waschmaschine",
+      "icon": "droplet",
+      "article": "die",
+      "plural": "die Waschmaschinen",
+      "tr": {
+        "uz": "kir yuvish mashinasi",
+        "uz-Cyrl": "кир ювиш машинаси",
+        "ru": "стиральная машина"
+      },
+      "pron": {
+        "uz": "die vash-ma-shi-ne",
+        "uz-Cyrl": "ди ваш-ма-ши-не",
+        "ru": "ди ваш-ма-ши-не"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "kir",
+      "example": {
+        "term": "Die Waschmaschine ist voll.",
+        "tr": {
+          "uz": "Kir yuvish mashinasi toʻla.",
+          "uz-Cyrl": "Кир ювиш машинаси тўла.",
+          "ru": "Стиральная машина полная."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-kir-trockner",
+      "slug": "trockner",
+      "term": "der Trockner",
+      "icon": "sun",
+      "article": "der",
+      "plural": "die Trockner",
+      "tr": {
+        "uz": "quritgich",
+        "uz-Cyrl": "қуритгич",
+        "ru": "сушильная машина"
+      },
+      "pron": {
+        "uz": "der trok-ner",
+        "uz-Cyrl": "дер трок-нер",
+        "ru": "дер трок-нер"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "kir",
+      "example": {
+        "term": "Der Trockner ist fertig.",
+        "tr": {
+          "uz": "Quritgich ishini tugatdi.",
+          "uz-Cyrl": "Қуритгич ишини тугатди.",
+          "ru": "Сушилка закончила."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-kir-buegeln",
+      "slug": "buegeln",
+      "term": "bügeln",
+      "icon": "shirt",
+      "tr": {
+        "uz": "dazmollamoq",
+        "uz-Cyrl": "дазмолламоқ",
+        "ru": "гладить"
+      },
+      "pron": {
+        "uz": "byu-geln",
+        "uz-Cyrl": "бю-гельн",
+        "ru": "бю-гельн"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "kir",
+      "example": {
+        "term": "Ich bügle die Hemden.",
+        "tr": {
+          "uz": "Koʻylaklarni dazmollayapman.",
+          "uz-Cyrl": "Кўйлакларни дазмоллаяпман.",
+          "ru": "Я глажу рубашки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-kir-buegeleisen",
+      "slug": "buegeleisen",
+      "term": "das Bügeleisen",
+      "icon": "flame",
+      "article": "das",
+      "plural": "die Bügeleisen",
+      "tr": {
+        "uz": "dazmol",
+        "uz-Cyrl": "дазмол",
+        "ru": "утюг"
+      },
+      "pron": {
+        "uz": "das byu-gel-ay-zen",
+        "uz-Cyrl": "дас бю-гель-ай-зен",
+        "ru": "дас бю-гель-ай-зен"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "kir",
+      "example": {
+        "term": "Das Bügeleisen ist noch heiß.",
+        "tr": {
+          "uz": "Dazmol hali issiq.",
+          "uz-Cyrl": "Дазмол ҳали иссиқ.",
+          "ru": "Утюг ещё горячий."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-kir-falten",
+      "slug": "falten",
+      "term": "falten",
+      "icon": "shirt",
+      "tr": {
+        "uz": "taxlamoq",
+        "uz-Cyrl": "тахламоқ",
+        "ru": "складывать"
+      },
+      "pron": {
+        "uz": "fal-ten",
+        "uz-Cyrl": "фаль-тен",
+        "ru": "фаль-тен"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "kir",
+      "example": {
+        "term": "Falten Sie bitte die Handtücher.",
+        "tr": {
+          "uz": "Iltimos, sochiqlarni taxlang.",
+          "uz-Cyrl": "Илтимос, сочиқларни тахланг.",
+          "ru": "Сложите, пожалуйста, полотенца."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-kir-waschmittel",
+      "slug": "waschmittel",
+      "term": "das Waschmittel",
+      "icon": "droplet",
+      "article": "das",
+      "plural": "die Waschmittel",
+      "tr": {
+        "uz": "kir yuvish kukuni",
+        "uz-Cyrl": "кир ювиш кукуни",
+        "ru": "стиральный порошок"
+      },
+      "pron": {
+        "uz": "das vash-mi-tel",
+        "uz-Cyrl": "дас ваш-ми-тель",
+        "ru": "дас ваш-ми-тель"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "kir",
+      "example": {
+        "term": "Wie viel Waschmittel brauche ich?",
+        "tr": {
+          "uz": "Qancha kir yuvish kukuni kerak?",
+          "uz-Cyrl": "Қанча кир ювиш кукуни керак?",
+          "ru": "Сколько порошка мне нужно?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-kir-fleck",
+      "slug": "fleck",
+      "term": "der Fleck",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Flecken",
+      "tr": {
+        "uz": "dogʻ",
+        "uz-Cyrl": "доғ",
+        "ru": "пятно"
+      },
+      "pron": {
+        "uz": "der flek",
+        "uz-Cyrl": "дер флек",
+        "ru": "дер флек"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "kir",
+      "example": {
+        "term": "Der Fleck geht nicht weg.",
+        "tr": {
+          "uz": "Dogʻ ketmayapti.",
+          "uz-Cyrl": "Доғ кетмаяпти.",
+          "ru": "Пятно не отходит."
         }
       },
       "safety": false,

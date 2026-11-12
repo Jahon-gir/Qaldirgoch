@@ -28,6 +28,26 @@
       },
       "order": 2,
       "level": "A1"
+    },
+    {
+      "id": "qadoq",
+      "title": {
+        "uz": "Qadoqlash va yorliq",
+        "uz-Cyrl": "Қадоқлаш ва ёрлиқ",
+        "ru": "Упаковка и маркировка"
+      },
+      "order": 3,
+      "level": "A1"
+    },
+    {
+      "id": "xavfsizlik",
+      "title": {
+        "uz": "Sexda xavfsizlik",
+        "uz-Cyrl": "Сехда хавфсизлик",
+        "ru": "Безопасность в цехе"
+      },
+      "order": 4,
+      "level": "A2"
     }
   ],
   "words": [
@@ -590,6 +610,556 @@
         }
       },
       "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-qadoq-folie",
+      "slug": "folie",
+      "term": "die Folie",
+      "icon": "briefcase",
+      "article": "die",
+      "plural": "die Folien",
+      "tr": {
+        "uz": "plyonka",
+        "uz-Cyrl": "плёнка",
+        "ru": "плёнка"
+      },
+      "pron": {
+        "uz": "die fo-li-e",
+        "uz-Cyrl": "ди фо-ли-е",
+        "ru": "ди фо-ли-е"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "qadoq",
+      "example": {
+        "term": "Wickeln Sie die Palette in Folie.",
+        "tr": {
+          "uz": "Poddonni plyonkaga oʻrang.",
+          "uz-Cyrl": "Поддонни плёнкага ўранг.",
+          "ru": "Обмотайте поддон плёнкой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-qadoq-gewicht",
+      "slug": "gewicht",
+      "term": "das Gewicht",
+      "icon": "tools",
+      "article": "das",
+      "plural": "die Gewichte",
+      "tr": {
+        "uz": "ogʻirlik",
+        "uz-Cyrl": "оғирлик",
+        "ru": "вес"
+      },
+      "pron": {
+        "uz": "das ge-vixt",
+        "uz-Cyrl": "дас ге-вихт",
+        "ru": "дас ге-вихт"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "qadoq",
+      "example": {
+        "term": "Das Gewicht steht auf dem Etikett.",
+        "tr": {
+          "uz": "Ogʻirlik yorliqda yozilgan.",
+          "uz-Cyrl": "Оғирлик ёрлиқда ёзилган.",
+          "ru": "Вес указан на этикетке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-qadoq-wiegen",
+      "slug": "wiegen",
+      "term": "wiegen",
+      "icon": "tools",
+      "tr": {
+        "uz": "tortmoq (tarozida)",
+        "uz-Cyrl": "тортмоқ (тарозида)",
+        "ru": "взвешивать"
+      },
+      "pron": {
+        "uz": "vi-gen",
+        "uz-Cyrl": "ви-ген",
+        "ru": "ви-ген"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "qadoq",
+      "example": {
+        "term": "Wiegen Sie jede Packung.",
+        "tr": {
+          "uz": "Har bir qadoqni torting.",
+          "uz-Cyrl": "Ҳар бир қадоқни тортинг.",
+          "ru": "Взвешивайте каждую упаковку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-qadoq-verpacken",
+      "slug": "verpacken",
+      "term": "verpacken",
+      "icon": "briefcase",
+      "tr": {
+        "uz": "qadoqlamoq",
+        "uz-Cyrl": "қадоқламоқ",
+        "ru": "упаковывать"
+      },
+      "pron": {
+        "uz": "fer-pa-ken",
+        "uz-Cyrl": "фер-па-кен",
+        "ru": "фер-па-кен"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "qadoq",
+      "example": {
+        "term": "Wir verpacken heute Käse.",
+        "tr": {
+          "uz": "Bugun pishloq qadoqlaymiz.",
+          "uz-Cyrl": "Бугун пишлоқ қадоқлаймиз.",
+          "ru": "Сегодня мы упаковываем сыр."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-qadoq-kaese",
+      "slug": "kaese",
+      "term": "der Käse",
+      "icon": "milk",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "pishloq",
+        "uz-Cyrl": "пишлоқ",
+        "ru": "сыр"
+      },
+      "pron": {
+        "uz": "der ke-ze",
+        "uz-Cyrl": "дер ке-зе",
+        "ru": "дер ке-зе"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "qadoq",
+      "example": {
+        "term": "Der Käse muss kühl bleiben.",
+        "tr": {
+          "uz": "Pishloq salqin joyda turishi kerak.",
+          "uz-Cyrl": "Пишлоқ салқин жойда туриши керак.",
+          "ru": "Сыр должен оставаться в холоде."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-qadoq-datum",
+      "slug": "datum",
+      "term": "das Datum",
+      "icon": "calendar-event",
+      "article": "das",
+      "plural": "die Daten",
+      "tr": {
+        "uz": "sana",
+        "uz-Cyrl": "сана",
+        "ru": "дата"
+      },
+      "pron": {
+        "uz": "das da-tum",
+        "uz-Cyrl": "дас да-тум",
+        "ru": "дас да-тум"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "qadoq",
+      "example": {
+        "term": "Das Datum ist falsch gedruckt.",
+        "tr": {
+          "uz": "Sana notoʻgʻri bosilgan.",
+          "uz-Cyrl": "Сана нотўғри босилган.",
+          "ru": "Дата напечатана неправильно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-qadoq-charge",
+      "slug": "charge",
+      "term": "die Charge",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Chargen",
+      "tr": {
+        "uz": "partiya (seriya)",
+        "uz-Cyrl": "партия (серия)",
+        "ru": "партия"
+      },
+      "pron": {
+        "uz": "die shar-zhe",
+        "uz-Cyrl": "ди шар-же",
+        "ru": "ди шар-же"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "qadoq",
+      "example": {
+        "term": "Notieren Sie die Nummer der Charge.",
+        "tr": {
+          "uz": "Partiya raqamini yozib qoʻying.",
+          "uz-Cyrl": "Партия рақамини ёзиб қўйинг.",
+          "ru": "Запишите номер партии."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-qadoq-fehlerhaft",
+      "slug": "fehlerhaft",
+      "term": "fehlerhaft",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "nuqsonli",
+        "uz-Cyrl": "нуқсонли",
+        "ru": "бракованный"
+      },
+      "pron": {
+        "uz": "fe-ler-haft",
+        "uz-Cyrl": "фе-лер-хафт",
+        "ru": "фе-лер-хафт"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "qadoq",
+      "example": {
+        "term": "Diese Packung ist fehlerhaft.",
+        "tr": {
+          "uz": "Bu qadoq nuqsonli.",
+          "uz-Cyrl": "Бу қадоқ нуқсонли.",
+          "ru": "Эта упаковка бракованная."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-xavfsizlik-notschalter",
+      "slug": "notschalter",
+      "term": "der Notschalter",
+      "icon": "alert-octagon",
+      "article": "der",
+      "plural": "die Notschalter",
+      "tr": {
+        "uz": "avariya tugmasi",
+        "uz-Cyrl": "авария тугмаси",
+        "ru": "аварийная кнопка"
+      },
+      "pron": {
+        "uz": "der not-shal-ter",
+        "uz-Cyrl": "дер нот-шаль-тер",
+        "ru": "дер нот-шаль-тер"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Drücken Sie im Notfall den Notschalter.",
+        "tr": {
+          "uz": "Favqulodda holatda avariya tugmasini bosing.",
+          "uz-Cyrl": "Фавқулодда ҳолатда авария тугмасини босинг.",
+          "ru": "В экстренном случае нажмите аварийную кнопку."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-xavfsizlik-haube",
+      "slug": "haube",
+      "term": "die Haube",
+      "icon": "user",
+      "article": "die",
+      "plural": "die Hauben",
+      "tr": {
+        "uz": "qalpoq (bosh kiyim)",
+        "uz-Cyrl": "қалпоқ (бош кийим)",
+        "ru": "шапочка"
+      },
+      "pron": {
+        "uz": "die hau-be",
+        "uz-Cyrl": "ди хау-бе",
+        "ru": "ди хау-бе"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Setzen Sie bitte die Haube auf.",
+        "tr": {
+          "uz": "Iltimos, qalpoqni kiying.",
+          "uz-Cyrl": "Илтимос, қалпоқни кийинг.",
+          "ru": "Пожалуйста, наденьте шапочку."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-xavfsizlik-kittel",
+      "slug": "kittel",
+      "term": "der Kittel",
+      "icon": "shirt",
+      "article": "der",
+      "plural": "die Kittel",
+      "tr": {
+        "uz": "xalat",
+        "uz-Cyrl": "халат",
+        "ru": "халат"
+      },
+      "pron": {
+        "uz": "der ki-tel",
+        "uz-Cyrl": "дер ки-тель",
+        "ru": "дер ки-тель"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Der Kittel muss sauber sein.",
+        "tr": {
+          "uz": "Xalat toza boʻlishi kerak.",
+          "uz-Cyrl": "Халат тоза бўлиши керак.",
+          "ru": "Халат должен быть чистым."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-xavfsizlik-kaelte",
+      "slug": "kaelte",
+      "term": "die Kälte",
+      "icon": "thermometer",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "sovuq",
+        "uz-Cyrl": "совуқ",
+        "ru": "холод"
+      },
+      "pron": {
+        "uz": "die kel-te",
+        "uz-Cyrl": "ди кель-те",
+        "ru": "ди кель-те"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "In der Kälte tragen Sie eine Jacke.",
+        "tr": {
+          "uz": "Sovuqda kurtka kiyasiz.",
+          "uz-Cyrl": "Совуқда куртка киясиз.",
+          "ru": "На холоде вы носите куртку."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-xavfsizlik-rutschig",
+      "slug": "rutschig",
+      "term": "rutschig",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "sirpanchiq",
+        "uz-Cyrl": "сирпанчиқ",
+        "ru": "скользкий"
+      },
+      "pron": {
+        "uz": "ru-chix",
+        "uz-Cyrl": "ру-чих",
+        "ru": "ру-чих"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Der Boden ist rutschig.",
+        "tr": {
+          "uz": "Pol sirpanchiq.",
+          "uz-Cyrl": "Пол сирпанчиқ.",
+          "ru": "Пол скользкий."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-xavfsizlik-laerm",
+      "slug": "laerm",
+      "term": "der Lärm",
+      "icon": "volume",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "shovqin",
+        "uz-Cyrl": "шовқин",
+        "ru": "шум"
+      },
+      "pron": {
+        "uz": "der lerm",
+        "uz-Cyrl": "дер лерм",
+        "ru": "дер лерм"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Hier ist viel Lärm.",
+        "tr": {
+          "uz": "Bu yerda shovqin koʻp.",
+          "uz-Cyrl": "Бу ерда шовқин кўп.",
+          "ru": "Здесь много шума."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-xavfsizlik-verletzt",
+      "slug": "verletzt",
+      "term": "verletzt",
+      "icon": "first-aid-kit",
+      "tr": {
+        "uz": "jarohatlangan",
+        "uz-Cyrl": "жароҳатланган",
+        "ru": "травмирован"
+      },
+      "pron": {
+        "uz": "fer-letst",
+        "uz-Cyrl": "фер-лецт",
+        "ru": "фер-лецт"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Ein Kollege ist verletzt.",
+        "tr": {
+          "uz": "Bir hamkasb jarohat oldi.",
+          "uz-Cyrl": "Бир ҳамкасб жароҳат олди.",
+          "ru": "Коллега травмирован."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-xavfsizlik-schichtleiter",
+      "slug": "schichtleiter",
+      "term": "der Schichtleiter",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Schichtleiter",
+      "tr": {
+        "uz": "smena boshligʻi",
+        "uz-Cyrl": "смена бошлиғи",
+        "ru": "начальник смены"
+      },
+      "pron": {
+        "uz": "der shixt-lay-ter",
+        "uz-Cyrl": "дер шихт-лай-тер",
+        "ru": "дер шихт-лай-тер"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Melden Sie das dem Schichtleiter.",
+        "tr": {
+          "uz": "Bu haqda smena boshligʻiga xabar bering.",
+          "uz-Cyrl": "Бу ҳақда смена бошлиғига хабар беринг.",
+          "ru": "Сообщите об этом начальнику смены."
+        }
+      },
+      "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
     }
