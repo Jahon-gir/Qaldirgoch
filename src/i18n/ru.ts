@@ -7,6 +7,8 @@ export const ru: Dict = {
   'common.back': 'Назад',
   'common.continue': 'Продолжить',
   'common.next': 'Далее',
+  'word.plural': 'Мн. число: {p}',
+  'word.safety': 'Слово безопасности',
   'common.soon': 'Скоро',
 
   'nav.label': 'Главное меню',
