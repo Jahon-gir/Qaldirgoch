@@ -43,6 +43,16 @@ export function visibleModules(direction: Direction, modules: readonly Module[] 
     .sort((a, b) => levelOrder(a.level) - levelOrder(b.level) || a.order - b.order)
 }
 
+/**
+ * Modulning ekrandagi raqami: shu yoʻnalishda koʻrinadigan, shu darajadagi modullar ichidagi oʻrni (1 dan).
+ * order emas — kasbiy paket modullarining order'i katta (101, 201 ...), ekranda esa 1, 2, 3 ... chiqishi kerak.
+ */
+export function moduleNumber(moduleId: string, direction: Direction, modules: readonly Module[] = MODULES): number {
+  const m = modules.find((x) => x.id === moduleId)
+  if (!m) return 0
+  return visibleModules(direction, modules).filter((x) => x.level === m.level).findIndex((x) => x.id === moduleId) + 1
+}
+
 export const lessonsOf = (moduleId: string, lessons: readonly Lesson[] = LESSONS): Lesson[] =>
   lessons.filter((l) => l.moduleId === moduleId).sort((a, b) => a.order - b.order)
 

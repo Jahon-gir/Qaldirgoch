@@ -166,12 +166,12 @@ export default function Language() {
         </Card>
       ) : (
         <ul className="space-y-2">
-          {modules.map((m) => {
+          {modules.map((m, idx) => {
             const count = lessonsOf(m.id, course.lessons).length
             const p = moduleProgress(m.id, results, course.lessons)
             const body = (
               <>
-                <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-base font-semibold ${count ? 'bg-accent-soft text-accent-strong' : 'border-2 border-line text-ink-3'}`}>{m.order}</span>
+                <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-base font-semibold ${count ? 'bg-accent-soft text-accent-strong' : 'border-2 border-line text-ink-3'}`}>{idx + 1}</span>
                 <span className="flex-1">
                   <span className={`block text-base font-semibold ${count ? '' : 'text-ink-2'}`}>{m.title[lang]}</span>
                   {count === 0 ? (
@@ -202,7 +202,7 @@ export default function Language() {
                 {(() => {
                   // Modul testi: modulning barcha darslari tugagach ostida chiqadi
                   const info = scopeInfo(m.id, direction, course)
-                  return info && <TestCard info={info} results={results} title={t('ft.moduleTitle', { n: m.order })} className="mt-2" />
+                  return info && <TestCard info={info} results={results} title={t('ft.moduleTitle', { n: idx + 1 })} className="mt-2" />
                 })()}
               </li>
             )

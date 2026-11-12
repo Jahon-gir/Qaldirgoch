@@ -3,6 +3,7 @@ import {
   IconMoodSmile, IconMoonStars, IconStethoscope, IconSun, IconSunrise, IconSunset2, IconTools, IconToolsKitchen2, IconUser, IconUsers, IconWorld,
   IconCheck, IconChefHat, IconCoffee, IconDog, IconFlag, IconGenderFemale, IconGrape, IconHanger, IconLeaf, IconMan, IconMap, IconMeat, IconMilk, IconMoodKid, IconMusic, IconNumber1, IconPaw, IconRadio, IconRipple, IconSalad, IconSquare, IconToiletPaper, IconTrain, IconWoman,
   IconAbc, IconAlertTriangle, IconApple, IconArmchair, IconBackpack, IconBook, IconBowlChopsticks, IconBriefcase, IconBuildingSkyscraper, IconClock, IconCookie, IconDoor, IconDoorEnter, IconDroplet, IconHome, IconLanguage, IconMountain, IconPig, IconPlant, IconRun, IconShirt, IconSmokingNo, IconSoup, IconVolume, IconWaveSine,
+  IconFireExtinguisher, IconFirstAidKit, IconHelmet, IconShoe, IconAlertOctagon, IconBeach, IconRepeat, IconHelp, IconEye, IconThermometer, IconMoodSad, IconFileText, IconPill, IconHammer, IconLadder, IconRuler, IconPlug, IconToggleLeft, IconBulb, IconPower, IconBath, IconBed, IconWheelchair, IconHeartbeat, IconReceipt, IconGlass,
   type Icon
 } from '@tabler/icons-react'
 
@@ -79,5 +80,32 @@ export const LESSON_ICONS: Record<string, Icon> = {
   'smoking-no': IconSmokingNo,
   'soup': IconSoup,
   'volume': IconVolume,
-  'wave-sine': IconWaveSine
+  'wave-sine': IconWaveSine,
+  // Kasbiy paketlar (0.13.0)
+  'fire-extinguisher': IconFireExtinguisher,
+  'first-aid-kit': IconFirstAidKit,
+  'helmet': IconHelmet,
+  'shoe': IconShoe,
+  'alert-octagon': IconAlertOctagon,
+  'beach': IconBeach,
+  'repeat': IconRepeat,
+  'help': IconHelp,
+  'eye': IconEye,
+  'thermometer': IconThermometer,
+  'mood-sad': IconMoodSad,
+  'file-text': IconFileText,
+  'pill': IconPill,
+  'hammer': IconHammer,
+  'ladder': IconLadder,
+  'ruler': IconRuler,
+  'plug': IconPlug,
+  'toggle-left': IconToggleLeft,
+  'bulb': IconBulb,
+  'power': IconPower,
+  'bath': IconBath,
+  'bed': IconBed,
+  'wheelchair': IconWheelchair,
+  'heartbeat': IconHeartbeat,
+  'receipt': IconReceipt,
+  'glass': IconGlass
 }

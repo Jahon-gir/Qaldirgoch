@@ -180,3 +180,18 @@ describe('server bilan ishlash (mock)', () => {
     expect(upsert).not.toHaveBeenCalled()
   })
 })
+
+describe('moduleNumber', () => {
+  it('ekrandagi raqam — koʻrinadigan modullar ichidagi oʻrni (order emas)', async () => {
+    const { moduleNumber } = await import('./logic')
+    const mods = [
+      { id: 'a1-m1', level: 'A1', direction: 'general', order: 1, status: 'review', title: { uz: '', 'uz-Cyrl': '', ru: '' } },
+      { id: 'a1-m3', level: 'A1', direction: 'technical', order: 3, status: 'draft', title: { uz: '', 'uz-Cyrl': '', ru: '' } },
+      { id: 'general-x', level: 'A1', direction: 'general', order: 101, status: 'review', title: { uz: '', 'uz-Cyrl': '', ru: '' } },
+      { id: 'care-y', level: 'A1', direction: 'care', order: 201, status: 'review', title: { uz: '', 'uz-Cyrl': '', ru: '' } }
+    ] as const
+    expect(['a1-m1', 'general-x', 'care-y'].map((id) => moduleNumber(id, 'care', mods))).toEqual([1, 2, 3])
+    expect(['a1-m1', 'a1-m3', 'general-x'].map((id) => moduleNumber(id, 'technical', mods))).toEqual([1, 2, 3])
+    expect(moduleNumber('yoq', 'care', mods)).toBe(0)
+  })
+})

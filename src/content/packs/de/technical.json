@@ -1,0 +1,636 @@
+{
+  "schema": 1,
+  "course": "de",
+  "field": "technical",
+  "title": {
+    "uz": "Texnik kasblar",
+    "uz-Cyrl": "Техник касблар",
+    "ru": "Технические профессии"
+  },
+  "order": 3,
+  "situations": [
+    {
+      "id": "asboblar",
+      "title": {
+        "uz": "Asboblar",
+        "uz-Cyrl": "Асбоблар",
+        "ru": "Инструменты"
+      },
+      "order": 1,
+      "level": "A1"
+    },
+    {
+      "id": "elektr",
+      "title": {
+        "uz": "Elektr va xavfsizlik",
+        "uz-Cyrl": "Электр ва хавфсизлик",
+        "ru": "Электричество и безопасность"
+      },
+      "order": 2,
+      "level": "A2"
+    }
+  ],
+  "words": [
+    {
+      "id": "technical-asboblar-hammer",
+      "slug": "hammer",
+      "term": "der Hammer",
+      "icon": "hammer",
+      "article": "der",
+      "plural": "die Hämmer",
+      "tr": {
+        "uz": "bolgʻa",
+        "uz-Cyrl": "болға",
+        "ru": "молоток"
+      },
+      "pron": {
+        "uz": "der ha-mer",
+        "uz-Cyrl": "дер ха-мер",
+        "ru": "дер ха-мер"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "asboblar",
+      "example": {
+        "term": "Gib mir bitte den Hammer.",
+        "tr": {
+          "uz": "Bolgʻani bering, iltimos.",
+          "uz-Cyrl": "Болғани беринг, илтимос.",
+          "ru": "Дай мне, пожалуйста, молоток."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-asboblar-zange",
+      "slug": "zange",
+      "term": "die Zange",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Zangen",
+      "tr": {
+        "uz": "ombir",
+        "uz-Cyrl": "омбир",
+        "ru": "плоскогубцы"
+      },
+      "pron": {
+        "uz": "die tsan-ge",
+        "uz-Cyrl": "ди цан-ге",
+        "ru": "ди цан-ге"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "asboblar",
+      "example": {
+        "term": "Die Zange liegt im Werkzeugkasten.",
+        "tr": {
+          "uz": "Ombir asboblar qutisida.",
+          "uz-Cyrl": "Омбир асбоблар қутисида.",
+          "ru": "Плоскогубцы лежат в ящике для инструментов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-asboblar-schraubendreher",
+      "slug": "schraubendreher",
+      "term": "der Schraubendreher",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Schraubendreher",
+      "tr": {
+        "uz": "otvyortka",
+        "uz-Cyrl": "отвёртка",
+        "ru": "отвёртка"
+      },
+      "pron": {
+        "uz": "der shrau-ben-dre-er",
+        "uz-Cyrl": "дер шрау-бен-дре-ер",
+        "ru": "дер шрау-бен-дре-ер"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "asboblar",
+      "example": {
+        "term": "Ich brauche einen Schraubendreher.",
+        "tr": {
+          "uz": "Menga otvyortka kerak.",
+          "uz-Cyrl": "Менга отвёртка керак.",
+          "ru": "Мне нужна отвёртка."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-asboblar-bohrmaschine",
+      "slug": "bohrmaschine",
+      "term": "die Bohrmaschine",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Bohrmaschinen",
+      "tr": {
+        "uz": "drel",
+        "uz-Cyrl": "дрель",
+        "ru": "дрель"
+      },
+      "pron": {
+        "uz": "die bor-ma-shi-ne",
+        "uz-Cyrl": "ди бор-ма-ши-не",
+        "ru": "ди бор-ма-ши-не"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "asboblar",
+      "example": {
+        "term": "Die Bohrmaschine ist laut.",
+        "tr": {
+          "uz": "Drel shovqinli.",
+          "uz-Cyrl": "Дрель шовқинли.",
+          "ru": "Дрель шумная."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-asboblar-saege",
+      "slug": "saege",
+      "term": "die Säge",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Sägen",
+      "tr": {
+        "uz": "arra",
+        "uz-Cyrl": "арра",
+        "ru": "пила"
+      },
+      "pron": {
+        "uz": "die ze-ge",
+        "uz-Cyrl": "ди зе-ге",
+        "ru": "ди зе-ге"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "asboblar",
+      "example": {
+        "term": "Vorsicht mit der Säge!",
+        "tr": {
+          "uz": "Arra bilan ehtiyot boʻling!",
+          "uz-Cyrl": "Арра билан эҳтиёт бўлинг!",
+          "ru": "Осторожно с пилой!"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-asboblar-schraube",
+      "slug": "schraube",
+      "term": "die Schraube",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Schrauben",
+      "tr": {
+        "uz": "vint, shurup",
+        "uz-Cyrl": "винт, шуруп",
+        "ru": "винт, шуруп"
+      },
+      "pron": {
+        "uz": "die shrau-be",
+        "uz-Cyrl": "ди шрау-бе",
+        "ru": "ди шрау-бе"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "asboblar",
+      "example": {
+        "term": "Die Schraube ist zu kurz.",
+        "tr": {
+          "uz": "Vint juda kalta.",
+          "uz-Cyrl": "Винт жуда калта.",
+          "ru": "Винт слишком короткий."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-asboblar-nagel",
+      "slug": "nagel",
+      "term": "der Nagel",
+      "icon": "hammer",
+      "article": "der",
+      "plural": "die Nägel",
+      "tr": {
+        "uz": "mix",
+        "uz-Cyrl": "мих",
+        "ru": "гвоздь"
+      },
+      "pron": {
+        "uz": "der na-gel",
+        "uz-Cyrl": "дер на-гель",
+        "ru": "дер на-гель"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "asboblar",
+      "example": {
+        "term": "Ich brauche zehn Nägel.",
+        "tr": {
+          "uz": "Menga oʻnta mix kerak.",
+          "uz-Cyrl": "Менга ўнта мих керак.",
+          "ru": "Мне нужно десять гвоздей."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-asboblar-leiter",
+      "slug": "leiter",
+      "term": "die Leiter",
+      "icon": "ladder",
+      "article": "die",
+      "plural": "die Leitern",
+      "tr": {
+        "uz": "narvon",
+        "uz-Cyrl": "нарвон",
+        "ru": "лестница, стремянка"
+      },
+      "pron": {
+        "uz": "die lay-ter",
+        "uz-Cyrl": "ди лай-тер",
+        "ru": "ди лай-тер"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "asboblar",
+      "example": {
+        "term": "Halten Sie bitte die Leiter.",
+        "tr": {
+          "uz": "Narvonni ushlab turing, iltimos.",
+          "uz-Cyrl": "Нарвонни ушлаб туринг, илтимос.",
+          "ru": "Подержите, пожалуйста, лестницу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-asboblar-massband",
+      "slug": "massband",
+      "term": "das Maßband",
+      "icon": "ruler",
+      "article": "das",
+      "plural": "die Maßbänder",
+      "tr": {
+        "uz": "ruletka",
+        "uz-Cyrl": "рулетка",
+        "ru": "рулетка"
+      },
+      "pron": {
+        "uz": "das mas-bant",
+        "uz-Cyrl": "дас мас-бант",
+        "ru": "дас мас-бант"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "asboblar",
+      "example": {
+        "term": "Messen Sie das mit dem Maßband.",
+        "tr": {
+          "uz": "Buni ruletka bilan oʻlchang.",
+          "uz-Cyrl": "Буни рулетка билан ўлчанг.",
+          "ru": "Измерьте это рулеткой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-strom",
+      "slug": "strom",
+      "term": "der Strom",
+      "icon": "bolt",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "elektr toki",
+        "uz-Cyrl": "электр токи",
+        "ru": "электрический ток"
+      },
+      "pron": {
+        "uz": "der shtrom",
+        "uz-Cyrl": "дер штром",
+        "ru": "дер штром"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr",
+      "example": {
+        "term": "Der Strom ist aus.",
+        "tr": {
+          "uz": "Tok oʻchirilgan.",
+          "uz-Cyrl": "Ток ўчирилган.",
+          "ru": "Ток выключен."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-vorsicht-strom",
+      "slug": "vorsicht-strom",
+      "term": "Vorsicht, Strom!",
+      "icon": "bolt",
+      "tr": {
+        "uz": "Ehtiyot boʻling, elektr toki!",
+        "uz-Cyrl": "Эҳтиёт бўлинг, электр токи!",
+        "ru": "Осторожно, ток!"
+      },
+      "pron": {
+        "uz": "for-zixt, shtrom",
+        "uz-Cyrl": "фор-зихт, штром",
+        "ru": "фор-зихт, штром"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr",
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-kabel",
+      "slug": "kabel",
+      "term": "das Kabel",
+      "icon": "plug",
+      "article": "das",
+      "plural": "die Kabel",
+      "tr": {
+        "uz": "kabel, sim",
+        "uz-Cyrl": "кабель, сим",
+        "ru": "кабель"
+      },
+      "pron": {
+        "uz": "das ka-bel",
+        "uz-Cyrl": "дас ка-бель",
+        "ru": "дас ка-бель"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr",
+      "example": {
+        "term": "Das Kabel ist kaputt.",
+        "tr": {
+          "uz": "Kabel buzilgan.",
+          "uz-Cyrl": "Кабель бузилган.",
+          "ru": "Кабель повреждён."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-steckdose",
+      "slug": "steckdose",
+      "term": "die Steckdose",
+      "icon": "plug",
+      "article": "die",
+      "plural": "die Steckdosen",
+      "tr": {
+        "uz": "rozetka",
+        "uz-Cyrl": "розетка",
+        "ru": "розетка"
+      },
+      "pron": {
+        "uz": "die shtek-do-ze",
+        "uz-Cyrl": "ди штек-до-зе",
+        "ru": "ди штек-до-зе"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr",
+      "example": {
+        "term": "Wo ist die Steckdose?",
+        "tr": {
+          "uz": "Rozetka qayerda?",
+          "uz-Cyrl": "Розетка қаерда?",
+          "ru": "Где розетка?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-schalter",
+      "slug": "schalter",
+      "term": "der Schalter",
+      "icon": "toggle-left",
+      "article": "der",
+      "plural": "die Schalter",
+      "tr": {
+        "uz": "oʻchirgich (vyklyuchatel)",
+        "uz-Cyrl": "ўчиргич (выключатель)",
+        "ru": "выключатель"
+      },
+      "pron": {
+        "uz": "der shal-ter",
+        "uz-Cyrl": "дер шаль-тер",
+        "ru": "дер шаль-тер"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr",
+      "example": {
+        "term": "Der Schalter ist neben der Tür.",
+        "tr": {
+          "uz": "Oʻchirgich eshik yonida.",
+          "uz-Cyrl": "Ўчиргич эшик ёнида.",
+          "ru": "Выключатель рядом с дверью."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-lampe",
+      "slug": "lampe",
+      "term": "die Lampe",
+      "icon": "bulb",
+      "article": "die",
+      "plural": "die Lampen",
+      "tr": {
+        "uz": "chiroq",
+        "uz-Cyrl": "чироқ",
+        "ru": "лампа"
+      },
+      "pron": {
+        "uz": "die lam-pe",
+        "uz-Cyrl": "ди лам-пе",
+        "ru": "ди лам-пе"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr",
+      "example": {
+        "term": "Die Lampe funktioniert nicht.",
+        "tr": {
+          "uz": "Chiroq ishlamayapti.",
+          "uz-Cyrl": "Чироқ ишламаяпти.",
+          "ru": "Лампа не работает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-ausschalten",
+      "slug": "ausschalten",
+      "term": "ausschalten",
+      "icon": "power",
+      "tr": {
+        "uz": "oʻchirmoq",
+        "uz-Cyrl": "ўчирмоқ",
+        "ru": "выключать"
+      },
+      "pron": {
+        "uz": "aus-shal-ten",
+        "uz-Cyrl": "аус-шаль-тен",
+        "ru": "аус-шаль-тен"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr",
+      "example": {
+        "term": "Schalten Sie bitte den Strom aus.",
+        "tr": {
+          "uz": "Iltimos, tokni oʻchiring.",
+          "uz-Cyrl": "Илтимос, токни ўчиринг.",
+          "ru": "Пожалуйста, выключите ток."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-handschuh",
+      "slug": "handschuh",
+      "term": "der Handschuh",
+      "icon": "hand-stop",
+      "article": "der",
+      "plural": "die Handschuhe",
+      "tr": {
+        "uz": "qoʻlqop",
+        "uz-Cyrl": "қўлқоп",
+        "ru": "перчатка"
+      },
+      "pron": {
+        "uz": "der hant-shu",
+        "uz-Cyrl": "дер хант-шу",
+        "ru": "дер хант-шу"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr",
+      "example": {
+        "term": "Tragen Sie bitte Handschuhe.",
+        "tr": {
+          "uz": "Iltimos, qoʻlqop kiying.",
+          "uz-Cyrl": "Илтимос, қўлқоп кийинг.",
+          "ru": "Пожалуйста, наденьте перчатки."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    }
+  ]
+}
