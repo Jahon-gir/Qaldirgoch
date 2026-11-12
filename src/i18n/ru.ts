@@ -148,6 +148,8 @@ export const ru: Dict = {
   'dir.hospitality': 'Гостиницы и кухня',
   'dir.logistics': 'Логистика и водители',
   'dir.metal': 'Металл и автомобили',
+  'dir.cleaning': 'Клининг (уборка)',
+  'dir.agriculture': 'Сельское хозяйство',
   'german.continueTitle': 'Продолжайте',
   'german.allDone': 'Все доступные уроки пройдены',
   'german.levels': 'Уровни',

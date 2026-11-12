@@ -95,7 +95,7 @@ describe('shablon', () => {
     const out = await makeTemplate(join(root, 'shablon.xlsx'))
     const res = await importWorkbook(out, { root })
     expect(res.issues).toEqual([])
-    expect(res.packs.map((p) => p.field)).toEqual(['general', 'care', 'technical', 'hospitality', 'logistics', 'metal'])
+    expect(res.packs.map((p) => p.field)).toEqual(['general', 'care', 'technical', 'hospitality', 'logistics', 'metal', 'cleaning', 'agriculture'])
     expect(res.written).toEqual([])
   })
 })

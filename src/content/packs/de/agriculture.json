@@ -1,0 +1,605 @@
+{
+  "schema": 1,
+  "course": "de",
+  "field": "agriculture",
+  "title": {
+    "uz": "Qishloq xoʻjaligi",
+    "uz-Cyrl": "Қишлоқ хўжалиги",
+    "ru": "Сельское хозяйство"
+  },
+  "order": 8,
+  "situations": [
+    {
+      "id": "dala",
+      "title": {
+        "uz": "Dalada va issiqxonada",
+        "uz-Cyrl": "Далада ва иссиқхонада",
+        "ru": "В поле и в теплице"
+      },
+      "order": 1,
+      "level": "A1"
+    },
+    {
+      "id": "ferma",
+      "title": {
+        "uz": "Fermada",
+        "uz-Cyrl": "Фермада",
+        "ru": "На ферме"
+      },
+      "order": 2,
+      "level": "A1"
+    }
+  ],
+  "words": [
+    {
+      "id": "agriculture-dala-feld",
+      "slug": "feld",
+      "term": "das Feld",
+      "icon": "plant",
+      "article": "das",
+      "plural": "die Felder",
+      "tr": {
+        "uz": "dala",
+        "uz-Cyrl": "дала",
+        "ru": "поле"
+      },
+      "pron": {
+        "uz": "das felt",
+        "uz-Cyrl": "дас фельт",
+        "ru": "дас фельт"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "landwirt"
+      ],
+      "situation": "dala",
+      "example": {
+        "term": "Wir arbeiten heute auf dem Feld.",
+        "tr": {
+          "uz": "Bugun dalada ishlaymiz.",
+          "uz-Cyrl": "Бугун далада ишлаймиз.",
+          "ru": "Сегодня мы работаем в поле."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-dala-ernten",
+      "slug": "ernten",
+      "term": "ernten",
+      "icon": "plant",
+      "tr": {
+        "uz": "hosil yigʻmoq",
+        "uz-Cyrl": "ҳосил йиғмоқ",
+        "ru": "собирать урожай"
+      },
+      "pron": {
+        "uz": "ern-ten",
+        "uz-Cyrl": "эрн-тен",
+        "ru": "эрн-тен"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "landwirt"
+      ],
+      "situation": "dala",
+      "example": {
+        "term": "Wir ernten heute Erdbeeren.",
+        "tr": {
+          "uz": "Bugun qulupnay teramiz.",
+          "uz-Cyrl": "Бугун қулупнай терамиз.",
+          "ru": "Сегодня мы собираем клубнику."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-dala-erdbeere",
+      "slug": "erdbeere",
+      "term": "die Erdbeere",
+      "icon": "apple",
+      "article": "die",
+      "plural": "die Erdbeeren",
+      "tr": {
+        "uz": "qulupnay",
+        "uz-Cyrl": "қулупнай",
+        "ru": "клубника"
+      },
+      "pron": {
+        "uz": "die ert-be-re",
+        "uz-Cyrl": "ди эрт-бе-ре",
+        "ru": "ди эрт-бе-ре"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "landwirt"
+      ],
+      "situation": "dala",
+      "example": {
+        "term": "Die Erdbeere ist reif.",
+        "tr": {
+          "uz": "Qulupnay pishgan.",
+          "uz-Cyrl": "Қулупнай пишган.",
+          "ru": "Клубника спелая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-dala-apfel",
+      "slug": "apfel",
+      "term": "der Apfel",
+      "icon": "apple",
+      "article": "der",
+      "plural": "die Äpfel",
+      "tr": {
+        "uz": "olma",
+        "uz-Cyrl": "олма",
+        "ru": "яблоко"
+      },
+      "pron": {
+        "uz": "der ap-fel",
+        "uz-Cyrl": "дер ап-фель",
+        "ru": "дер ап-фель"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "landwirt"
+      ],
+      "situation": "dala",
+      "example": {
+        "term": "Der Apfel ist noch grün.",
+        "tr": {
+          "uz": "Olma hali xom.",
+          "uz-Cyrl": "Олма ҳали хом.",
+          "ru": "Яблоко ещё зелёное."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-dala-korb",
+      "slug": "korb",
+      "term": "der Korb",
+      "icon": "briefcase",
+      "article": "der",
+      "plural": "die Körbe",
+      "tr": {
+        "uz": "savat",
+        "uz-Cyrl": "сават",
+        "ru": "корзина"
+      },
+      "pron": {
+        "uz": "der korp",
+        "uz-Cyrl": "дер корп",
+        "ru": "дер корп"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "landwirt"
+      ],
+      "situation": "dala",
+      "example": {
+        "term": "Der Korb ist voll.",
+        "tr": {
+          "uz": "Savat toʻla.",
+          "uz-Cyrl": "Сават тўла.",
+          "ru": "Корзина полная."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-dala-traktor",
+      "slug": "traktor",
+      "term": "der Traktor",
+      "icon": "truck",
+      "article": "der",
+      "plural": "die Traktoren",
+      "tr": {
+        "uz": "traktor",
+        "uz-Cyrl": "трактор",
+        "ru": "трактор"
+      },
+      "pron": {
+        "uz": "der trak-tor",
+        "uz-Cyrl": "дер трак-тор",
+        "ru": "дер трак-тор"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "landwirt"
+      ],
+      "situation": "dala",
+      "example": {
+        "term": "Vorsicht, der Traktor fährt rückwärts!",
+        "tr": {
+          "uz": "Ehtiyot boʻling, traktor orqaga yuryapti!",
+          "uz-Cyrl": "Эҳтиёт бўлинг, трактор орқага юряпти!",
+          "ru": "Осторожно, трактор едет назад!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-dala-gewaechshaus",
+      "slug": "gewaechshaus",
+      "term": "das Gewächshaus",
+      "icon": "plant",
+      "article": "das",
+      "plural": "die Gewächshäuser",
+      "tr": {
+        "uz": "issiqxona",
+        "uz-Cyrl": "иссиқхона",
+        "ru": "теплица"
+      },
+      "pron": {
+        "uz": "das ge-veks-haus",
+        "uz-Cyrl": "дас ге-векс-хаус",
+        "ru": "дас ге-векс-хаус"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "landwirt"
+      ],
+      "situation": "dala",
+      "example": {
+        "term": "Im Gewächshaus ist es sehr warm.",
+        "tr": {
+          "uz": "Issiqxonada juda issiq.",
+          "uz-Cyrl": "Иссиқхонада жуда иссиқ.",
+          "ru": "В теплице очень тепло."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-dala-sonnencreme",
+      "slug": "sonnencreme",
+      "term": "die Sonnencreme",
+      "icon": "sun",
+      "article": "die",
+      "plural": "die Sonnencremes",
+      "tr": {
+        "uz": "quyoshdan himoya kremi",
+        "uz-Cyrl": "қуёшдан ҳимоя креми",
+        "ru": "солнцезащитный крем"
+      },
+      "pron": {
+        "uz": "die zo-nen-krem",
+        "uz-Cyrl": "ди зо-нен-крем",
+        "ru": "ди зо-нен-крем"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "landwirt"
+      ],
+      "situation": "dala",
+      "example": {
+        "term": "Benutzen Sie bitte Sonnencreme.",
+        "tr": {
+          "uz": "Iltimos, quyoshdan himoya kremini surting.",
+          "uz-Cyrl": "Илтимос, қуёшдан ҳимоя кремини суртинг.",
+          "ru": "Пожалуйста, пользуйтесь солнцезащитным кремом."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ferma-tier",
+      "slug": "tier",
+      "term": "das Tier",
+      "icon": "paw",
+      "article": "das",
+      "plural": "die Tiere",
+      "tr": {
+        "uz": "hayvon",
+        "uz-Cyrl": "ҳайвон",
+        "ru": "животное"
+      },
+      "pron": {
+        "uz": "das tir",
+        "uz-Cyrl": "дас тир",
+        "ru": "дас тир"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "ferma",
+      "example": {
+        "term": "Das Tier braucht Wasser.",
+        "tr": {
+          "uz": "Hayvonga suv kerak.",
+          "uz-Cyrl": "Ҳайвонга сув керак.",
+          "ru": "Животному нужна вода."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ferma-kuh",
+      "slug": "kuh",
+      "term": "die Kuh",
+      "icon": "milk",
+      "article": "die",
+      "plural": "die Kühe",
+      "tr": {
+        "uz": "sigir",
+        "uz-Cyrl": "сигир",
+        "ru": "корова"
+      },
+      "pron": {
+        "uz": "die ku",
+        "uz-Cyrl": "ди ку",
+        "ru": "ди ку"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "ferma",
+      "example": {
+        "term": "Die Kuh gibt viel Milch.",
+        "tr": {
+          "uz": "Sigir koʻp sut beradi.",
+          "uz-Cyrl": "Сигир кўп сут беради.",
+          "ru": "Корова даёт много молока."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ferma-schwein",
+      "slug": "schwein",
+      "term": "das Schwein",
+      "icon": "pig",
+      "article": "das",
+      "plural": "die Schweine",
+      "tr": {
+        "uz": "choʻchqa",
+        "uz-Cyrl": "чўчқа",
+        "ru": "свинья"
+      },
+      "pron": {
+        "uz": "das shvayn",
+        "uz-Cyrl": "дас швайн",
+        "ru": "дас швайн"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "ferma",
+      "example": {
+        "term": "Das Schwein ist krank.",
+        "tr": {
+          "uz": "Choʻchqa kasal.",
+          "uz-Cyrl": "Чўчқа касал.",
+          "ru": "Свинья больна."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ferma-huhn",
+      "slug": "huhn",
+      "term": "das Huhn",
+      "icon": "egg",
+      "article": "das",
+      "plural": "die Hühner",
+      "tr": {
+        "uz": "tovuq",
+        "uz-Cyrl": "товуқ",
+        "ru": "курица"
+      },
+      "pron": {
+        "uz": "das hun",
+        "uz-Cyrl": "дас хун",
+        "ru": "дас хун"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "ferma",
+      "example": {
+        "term": "Das Huhn legt Eier.",
+        "tr": {
+          "uz": "Tovuq tuxum qiladi.",
+          "uz-Cyrl": "Товуқ тухум қилади.",
+          "ru": "Курица несёт яйца."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ferma-stall",
+      "slug": "stall",
+      "term": "der Stall",
+      "icon": "home",
+      "article": "der",
+      "plural": "die Ställe",
+      "tr": {
+        "uz": "molxona (ogʻil)",
+        "uz-Cyrl": "молхона (оғил)",
+        "ru": "хлев"
+      },
+      "pron": {
+        "uz": "der shtal",
+        "uz-Cyrl": "дер штал",
+        "ru": "дер штал"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "ferma",
+      "example": {
+        "term": "Ich mache den Stall sauber.",
+        "tr": {
+          "uz": "Molxonani tozalayapman.",
+          "uz-Cyrl": "Молхонани тозалаяпман.",
+          "ru": "Я чищу хлев."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ferma-futter",
+      "slug": "futter",
+      "term": "das Futter",
+      "icon": "paw",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "yem",
+        "uz-Cyrl": "ем",
+        "ru": "корм"
+      },
+      "pron": {
+        "uz": "das fu-ter",
+        "uz-Cyrl": "дас фу-тер",
+        "ru": "дас фу-тер"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "ferma",
+      "example": {
+        "term": "Das Futter ist im Lager.",
+        "tr": {
+          "uz": "Yem omborda.",
+          "uz-Cyrl": "Ем омборда.",
+          "ru": "Корм на складе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ferma-fuettern",
+      "slug": "fuettern",
+      "term": "füttern",
+      "icon": "paw",
+      "tr": {
+        "uz": "yem bermoq",
+        "uz-Cyrl": "ем бермоқ",
+        "ru": "кормить (животных)"
+      },
+      "pron": {
+        "uz": "fyu-tern",
+        "uz-Cyrl": "фю-терн",
+        "ru": "фю-терн"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "ferma",
+      "example": {
+        "term": "Wir füttern die Tiere am Morgen.",
+        "tr": {
+          "uz": "Hayvonlarga ertalab yem beramiz.",
+          "uz-Cyrl": "Ҳайвонларга эрталаб ем берамиз.",
+          "ru": "Мы кормим животных утром."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ferma-melken",
+      "slug": "melken",
+      "term": "melken",
+      "icon": "milk",
+      "tr": {
+        "uz": "sogʻmoq",
+        "uz-Cyrl": "соғмоқ",
+        "ru": "доить"
+      },
+      "pron": {
+        "uz": "mel-ken",
+        "uz-Cyrl": "мель-кен",
+        "ru": "мель-кен"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "ferma",
+      "example": {
+        "term": "Wir melken die Kühe zweimal am Tag.",
+        "tr": {
+          "uz": "Sigirlarni kuniga ikki marta sogʻamiz.",
+          "uz-Cyrl": "Сигирларни кунига икки марта соғамиз.",
+          "ru": "Мы доим коров два раза в день."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    }
+  ]
+}
