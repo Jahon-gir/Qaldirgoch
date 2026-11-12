@@ -36,6 +36,11 @@ describe('rowsToPacks — toʻgʻri qator', () => {
     expect(packs[0].words[0].id).toBe('technical-asboblar-saege')
   })
 
+  it('"Das ..." bilan boshlanadigan ibora — artikl xatosi emas', () => {
+    const r = rowsToPacks(sheets([word({ article: '', plural: '', term: 'Das ist im Gang drei.' }), word({ article: '', plural: '', term: 'Das haben wir leider nicht.' })]), de)
+    expect(r.issues.filter((i) => i.level === 'error')).toEqual([])
+  })
+
   it('ibora artiklsiz ham boʻladi (ogohlantirishsiz)', () => {
     const r = rowsToPacks(sheets([word({ article: '', plural: '', term: 'Vorsicht!', safety: 'ha' })]), de)
     expect(r.issues).toEqual([])
