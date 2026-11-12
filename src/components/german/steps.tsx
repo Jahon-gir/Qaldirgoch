@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
-import { IconCheck, IconX } from '@tabler/icons-react'
+import { IconAlertTriangle, IconCheck, IconX } from '@tabler/icons-react'
 import { Button } from '../ui/Button'
 import { Card } from '../ui/Card'
 import { useI18n } from '../../i18n/I18nProvider'
@@ -26,12 +26,30 @@ export function WordStep({ ex, speech, onDone }: { ex: WordExercise; speech: Spe
   return (
     <div className="flex flex-1 flex-col gap-4">
       <div className="flex flex-col items-center gap-3 pt-2 text-center">
-        <span className="flex h-24 w-24 items-center justify-center rounded-full bg-accent-soft text-accent-strong">{Icon && <Icon size={48} aria-hidden />}</span>
+        {ex.image ? (
+          <img src={ex.image.src} alt="" width={160} height={160} loading="lazy" decoding="async" className="h-40 w-40 rounded-card bg-surface object-contain" />
+        ) : (
+          <span className={`flex h-24 w-24 items-center justify-center rounded-full ${ex.safety ? 'bg-danger-soft text-danger-text' : 'bg-accent-soft text-accent-strong'}`}>{Icon && <Icon size={48} aria-hidden />}</span>
+        )}
+        {ex.safety && (
+          <span className="inline-flex min-h-[32px] items-center gap-1.5 rounded-full bg-danger-soft px-3 text-base font-semibold text-danger-text">
+            <IconAlertTriangle size={18} aria-hidden />
+            {t('word.safety')}
+          </span>
+        )}
         <h2 lang={cl} className="break-words text-3xl font-bold">
           {ex.term}
         </h2>
         <p className="text-xl">{ex.tr[lang]}</p>
         <p className="text-base text-ink-2">{ex.pron[lang]}</p>
+        {ex.plural && ex.plural !== '—' && (
+          <p className="text-base text-ink-2">
+            {t('word.plural', { p: '' })}
+            <span lang={cl} className="font-semibold text-ink">
+              {ex.plural}
+            </span>
+          </p>
+        )}
       </div>
       <ListenButtons speech={speech} text={ex.term} audioUrl={ex.audioUrl} />
       {ex.example && (

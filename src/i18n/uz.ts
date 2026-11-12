@@ -9,6 +9,8 @@ export const uz = {
   'common.back': 'Orqaga',
   'common.continue': 'Davom etish',
   'common.next': 'Keyingisi',
+  'word.plural': 'Koʻpligi: {p}',
+  'word.safety': 'Xavfsizlik soʻzi',
   'common.soon': 'Tez orada',
 
   'nav.label': 'Asosiy menyu',
