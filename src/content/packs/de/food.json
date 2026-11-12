@@ -1162,6 +1162,975 @@
       "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sex-produktion",
+      "slug": "produktion",
+      "term": "die Produktion",
+      "icon": "building",
+      "article": "die",
+      "plural": "die Produktionen",
+      "tr": {
+        "uz": "ishlab chiqarish",
+        "uz-Cyrl": "ишлаб чиқариш",
+        "ru": "производство"
+      },
+      "pron": {
+        "uz": "die pro-duk-tsi-on",
+        "uz-Cyrl": "ди про-дук-ци-он",
+        "ru": "ди про-дук-ци-он"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "sex",
+      "example": {
+        "term": "Die Produktion beginnt um sechs.",
+        "tr": {
+          "uz": "Ishlab chiqarish oltida boshlanadi.",
+          "uz-Cyrl": "Ишлаб чиқариш олтида бошланади.",
+          "ru": "Производство начинается в шесть."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sex-halle",
+      "slug": "halle",
+      "term": "die Halle",
+      "icon": "building",
+      "article": "die",
+      "plural": "die Hallen",
+      "tr": {
+        "uz": "sex (zal)",
+        "uz-Cyrl": "сех (зал)",
+        "ru": "цех, зал"
+      },
+      "pron": {
+        "uz": "die ha-le",
+        "uz-Cyrl": "ди ха-ле",
+        "ru": "ди ха-ле"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "sex",
+      "example": {
+        "term": "In der Halle ist es laut.",
+        "tr": {
+          "uz": "Sexda shovqin.",
+          "uz-Cyrl": "Сехда шовқин.",
+          "ru": "В цехе шумно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sex-kollege",
+      "slug": "kollege",
+      "term": "der Kollege",
+      "icon": "users",
+      "article": "der",
+      "plural": "die Kollegen",
+      "tr": {
+        "uz": "hamkasb",
+        "uz-Cyrl": "ҳамкасб",
+        "ru": "коллега"
+      },
+      "pron": {
+        "uz": "der ko-le-ge",
+        "uz-Cyrl": "дер ко-ле-ге",
+        "ru": "дер ко-ле-ге"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "sex",
+      "example": {
+        "term": "Mein Kollege zeigt mir alles.",
+        "tr": {
+          "uz": "Hamkasbim menga hammasini koʻrsatadi.",
+          "uz-Cyrl": "Ҳамкасбим менга ҳаммасини кўрсатади.",
+          "ru": "Мой коллега мне всё показывает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sex-stueck",
+      "slug": "stueck",
+      "term": "das Stück",
+      "icon": "check",
+      "article": "das",
+      "plural": "die Stücke",
+      "tr": {
+        "uz": "dona",
+        "uz-Cyrl": "дона",
+        "ru": "штука"
+      },
+      "pron": {
+        "uz": "das shtyuk",
+        "uz-Cyrl": "дас штюк",
+        "ru": "дас штюк"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "sex",
+      "example": {
+        "term": "Ein Stück fehlt in der Packung.",
+        "tr": {
+          "uz": "Qadoqda bitta dona yetishmayapti.",
+          "uz-Cyrl": "Қадоқда битта дона етишмаяпти.",
+          "ru": "В упаковке не хватает одной штуки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sex-schnell",
+      "slug": "schnell",
+      "term": "schnell",
+      "icon": "clock",
+      "tr": {
+        "uz": "tez",
+        "uz-Cyrl": "тез",
+        "ru": "быстро"
+      },
+      "pron": {
+        "uz": "shnel",
+        "uz-Cyrl": "шнель",
+        "ru": "шнель"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "sex",
+      "example": {
+        "term": "Das Band läuft zu schnell.",
+        "tr": {
+          "uz": "Konveyer juda tez yuryapti.",
+          "uz-Cyrl": "Конвейер жуда тез юряпти.",
+          "ru": "Лента идёт слишком быстро."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sex-stoerung",
+      "slug": "stoerung",
+      "term": "die Störung",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Störungen",
+      "tr": {
+        "uz": "nosozlik (toʻxtab qolish)",
+        "uz-Cyrl": "носозлик (тўхтаб қолиш)",
+        "ru": "неполадка, сбой"
+      },
+      "pron": {
+        "uz": "die shtyo-rung",
+        "uz-Cyrl": "ди штё-рунг",
+        "ru": "ди штё-рунг"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "sex",
+      "example": {
+        "term": "Die Maschine hat eine Störung.",
+        "tr": {
+          "uz": "Dastgohda nosozlik bor.",
+          "uz-Cyrl": "Дастгоҳда носозлик бор.",
+          "ru": "У станка сбой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sex-die-maschine-steht",
+      "slug": "die-maschine-steht",
+      "term": "Die Maschine steht.",
+      "icon": "power",
+      "tr": {
+        "uz": "Dastgoh toʻxtab qoldi.",
+        "uz-Cyrl": "Дастгоҳ тўхтаб қолди.",
+        "ru": "Станок остановился."
+      },
+      "pron": {
+        "uz": "di ma-shi-ne shteyt",
+        "uz-Cyrl": "ди ма-ши-не штейт",
+        "ru": "ди ма-ши-не штейт"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "sex",
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-novvoy-ofen",
+      "slug": "ofen",
+      "term": "der Ofen",
+      "icon": "flame",
+      "article": "der",
+      "plural": "die Öfen",
+      "tr": {
+        "uz": "pech",
+        "uz-Cyrl": "печь",
+        "ru": "печь"
+      },
+      "pron": {
+        "uz": "der o-fen",
+        "uz-Cyrl": "дер о-фен",
+        "ru": "дер о-фен"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "baecker",
+        "fleischer"
+      ],
+      "situation": "novvoy",
+      "example": {
+        "term": "Der Ofen ist sehr heiß.",
+        "tr": {
+          "uz": "Pech juda issiq.",
+          "uz-Cyrl": "Печь жуда иссиқ.",
+          "ru": "Печь очень горячая."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-novvoy-mehl",
+      "slug": "mehl",
+      "term": "das Mehl",
+      "icon": "bowl",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "un",
+        "uz-Cyrl": "ун",
+        "ru": "мука"
+      },
+      "pron": {
+        "uz": "das mel",
+        "uz-Cyrl": "дас мел",
+        "ru": "дас мел"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "baecker",
+        "fleischer"
+      ],
+      "situation": "novvoy",
+      "example": {
+        "term": "Das Mehl kommt in die Schüssel.",
+        "tr": {
+          "uz": "Un kosaga solinadi.",
+          "uz-Cyrl": "Ун косага солинади.",
+          "ru": "Муку кладут в миску."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-novvoy-kuchen",
+      "slug": "kuchen",
+      "term": "der Kuchen",
+      "icon": "cookie",
+      "article": "der",
+      "plural": "die Kuchen",
+      "tr": {
+        "uz": "pirog",
+        "uz-Cyrl": "пирог",
+        "ru": "пирог"
+      },
+      "pron": {
+        "uz": "der ku-xen",
+        "uz-Cyrl": "дер ку-хен",
+        "ru": "дер ку-хен"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "baecker",
+        "fleischer"
+      ],
+      "situation": "novvoy",
+      "example": {
+        "term": "Der Kuchen ist noch warm.",
+        "tr": {
+          "uz": "Pirog hali iliq.",
+          "uz-Cyrl": "Пирог ҳали илиқ.",
+          "ru": "Пирог ещё тёплый."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-novvoy-hackfleisch",
+      "slug": "hackfleisch",
+      "term": "das Hackfleisch",
+      "icon": "meat",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "qiyma",
+        "uz-Cyrl": "қийма",
+        "ru": "фарш"
+      },
+      "pron": {
+        "uz": "das hak-flaysh",
+        "uz-Cyrl": "дас хак-флайш",
+        "ru": "дас хак-флайш"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "baecker",
+        "fleischer"
+      ],
+      "situation": "novvoy",
+      "example": {
+        "term": "Ist das Hackfleisch vom Rind?",
+        "tr": {
+          "uz": "Bu qiyma mol goʻshtidanmi?",
+          "uz-Cyrl": "Бу қийма мол гўштиданми?",
+          "ru": "Этот фарш говяжий?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-novvoy-lammfleisch",
+      "slug": "lammfleisch",
+      "term": "das Lammfleisch",
+      "icon": "meat",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "qoʻy goʻshti",
+        "uz-Cyrl": "қўй гўшти",
+        "ru": "баранина"
+      },
+      "pron": {
+        "uz": "das lam-flaysh",
+        "uz-Cyrl": "дас лам-флайш",
+        "ru": "дас лам-флайш"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "baecker",
+        "fleischer"
+      ],
+      "situation": "novvoy",
+      "example": {
+        "term": "Haben Sie Lammfleisch?",
+        "tr": {
+          "uz": "Qoʻy goʻshti bormi?",
+          "uz-Cyrl": "Қўй гўшти борми?",
+          "ru": "У вас есть баранина?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-novvoy-halal",
+      "slug": "halal",
+      "term": "halal",
+      "icon": "meat",
+      "tr": {
+        "uz": "halol",
+        "uz-Cyrl": "ҳалол",
+        "ru": "халяль"
+      },
+      "pron": {
+        "uz": "ha-lal",
+        "uz-Cyrl": "ха-лал",
+        "ru": "ха-лал"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "baecker",
+        "fleischer"
+      ],
+      "situation": "novvoy",
+      "example": {
+        "term": "Ist dieses Fleisch halal?",
+        "tr": {
+          "uz": "Bu goʻsht halolmi?",
+          "uz-Cyrl": "Бу гўшт ҳалолми?",
+          "ru": "Это мясо халяльное?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-novvoy-waage",
+      "slug": "waage",
+      "term": "die Waage",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Waagen",
+      "tr": {
+        "uz": "tarozi",
+        "uz-Cyrl": "тарози",
+        "ru": "весы"
+      },
+      "pron": {
+        "uz": "die va-ge",
+        "uz-Cyrl": "ди ва-ге",
+        "ru": "ди ва-ге"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "baecker",
+        "fleischer"
+      ],
+      "situation": "novvoy",
+      "example": {
+        "term": "Legen Sie das Fleisch auf die Waage.",
+        "tr": {
+          "uz": "Goʻshtni taroziga qoʻying.",
+          "uz-Cyrl": "Гўштни тарозига қўйинг.",
+          "ru": "Положите мясо на весы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-qadoq-aufkleber",
+      "slug": "aufkleber",
+      "term": "der Aufkleber",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Aufkleber",
+      "tr": {
+        "uz": "stiker (yopishqoq yorliq)",
+        "uz-Cyrl": "стикер (ёпишқоқ ёрлиқ)",
+        "ru": "наклейка"
+      },
+      "pron": {
+        "uz": "der auf-kle-ber",
+        "uz-Cyrl": "дер ауф-кле-бер",
+        "ru": "дер ауф-кле-бер"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "qadoq",
+      "example": {
+        "term": "Der Aufkleber ist schief.",
+        "tr": {
+          "uz": "Stiker qiyshiq.",
+          "uz-Cyrl": "Стикер қийшиқ.",
+          "ru": "Наклейка кривая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-qadoq-zutat",
+      "slug": "zutat",
+      "term": "die Zutat",
+      "icon": "salad",
+      "article": "die",
+      "plural": "die Zutaten",
+      "tr": {
+        "uz": "masalliq (tarkib)",
+        "uz-Cyrl": "масаллиқ (таркиб)",
+        "ru": "ингредиент"
+      },
+      "pron": {
+        "uz": "die tsu-tat",
+        "uz-Cyrl": "ди цу-тат",
+        "ru": "ди цу-тат"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "qadoq",
+      "example": {
+        "term": "Welche Zutat fehlt?",
+        "tr": {
+          "uz": "Qaysi masalliq yetishmayapti?",
+          "uz-Cyrl": "Қайси масаллиқ етишмаяпти?",
+          "ru": "Какого ингредиента не хватает?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-qadoq-allergen",
+      "slug": "allergen",
+      "term": "das Allergen",
+      "icon": "alert-triangle",
+      "article": "das",
+      "plural": "die Allergene",
+      "tr": {
+        "uz": "allergen",
+        "uz-Cyrl": "аллерген",
+        "ru": "аллерген"
+      },
+      "pron": {
+        "uz": "das a-ler-gen",
+        "uz-Cyrl": "дас а-лер-ген",
+        "ru": "дас а-лер-ген"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "qadoq",
+      "example": {
+        "term": "Jedes Allergen muss auf dem Etikett stehen.",
+        "tr": {
+          "uz": "Har bir allergen yorliqda yozilishi kerak.",
+          "uz-Cyrl": "Ҳар бир аллерген ёрлиқда ёзилиши керак.",
+          "ru": "Каждый аллерген должен быть указан на этикетке."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-qadoq-deckel",
+      "slug": "deckel",
+      "term": "der Deckel",
+      "icon": "bowl",
+      "article": "der",
+      "plural": "die Deckel",
+      "tr": {
+        "uz": "qopqoq",
+        "uz-Cyrl": "қопқоқ",
+        "ru": "крышка"
+      },
+      "pron": {
+        "uz": "der de-kel",
+        "uz-Cyrl": "дер де-кель",
+        "ru": "дер де-кель"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "qadoq",
+      "example": {
+        "term": "Der Deckel ist nicht richtig zu.",
+        "tr": {
+          "uz": "Qopqoq toʻgʻri yopilmagan.",
+          "uz-Cyrl": "Қопқоқ тўғри ёпилмаган.",
+          "ru": "Крышка закрыта неправильно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-qadoq-glas",
+      "slug": "glas",
+      "term": "das Glas",
+      "icon": "glass",
+      "article": "das",
+      "plural": "die Gläser",
+      "tr": {
+        "uz": "shisha banka",
+        "uz-Cyrl": "шиша банка",
+        "ru": "стеклянная банка"
+      },
+      "pron": {
+        "uz": "das glas",
+        "uz-Cyrl": "дас глас",
+        "ru": "дас глас"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "qadoq",
+      "example": {
+        "term": "Das Glas hat einen Riss.",
+        "tr": {
+          "uz": "Shisha bankada yoriq bor.",
+          "uz-Cyrl": "Шиша банкада ёриқ бор.",
+          "ru": "В банке трещина."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-qadoq-verschliessen",
+      "slug": "verschliessen",
+      "term": "verschließen",
+      "icon": "tools",
+      "tr": {
+        "uz": "germetik yopmoq",
+        "uz-Cyrl": "герметик ёпмоқ",
+        "ru": "запечатывать"
+      },
+      "pron": {
+        "uz": "fer-shli-sen",
+        "uz-Cyrl": "фер-шли-сен",
+        "ru": "фер-шли-сен"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "qadoq",
+      "example": {
+        "term": "Die Maschine verschließt die Gläser.",
+        "tr": {
+          "uz": "Mashina bankalarni germetik yopadi.",
+          "uz-Cyrl": "Машина банкаларни герметик ёпади.",
+          "ru": "Машина закупоривает банки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-qadoq-karton",
+      "slug": "karton",
+      "term": "der Karton",
+      "icon": "briefcase",
+      "article": "der",
+      "plural": "die Kartons",
+      "tr": {
+        "uz": "karton quti",
+        "uz-Cyrl": "картон қути",
+        "ru": "коробка"
+      },
+      "pron": {
+        "uz": "der kar-ton",
+        "uz-Cyrl": "дер кар-тон",
+        "ru": "дер кар-тон"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "qadoq",
+      "example": {
+        "term": "In jeden Karton kommen zwölf Gläser.",
+        "tr": {
+          "uz": "Har bir qutiga oʻn ikkita banka solinadi.",
+          "uz-Cyrl": "Ҳар бир қутига ўн иккита банка солинади.",
+          "ru": "В каждую коробку кладут двенадцать банок."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-xavfsizlik-gehoerschutz",
+      "slug": "gehoerschutz",
+      "term": "der Gehörschutz",
+      "icon": "volume",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "quloq himoyasi",
+        "uz-Cyrl": "қулоқ ҳимояси",
+        "ru": "защита слуха"
+      },
+      "pron": {
+        "uz": "der ge-hyor-shuts",
+        "uz-Cyrl": "дер ге-хёр-шуц",
+        "ru": "дер ге-хёр-шуц"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "In der Halle tragen wir Gehörschutz.",
+        "tr": {
+          "uz": "Sexda quloq himoyasini taqamiz.",
+          "uz-Cyrl": "Сехда қулоқ ҳимоясини тақамиз.",
+          "ru": "В цехе мы носим защиту слуха."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-xavfsizlik-schnittschutzhandschuh",
+      "slug": "schnittschutzhandschuh",
+      "term": "der Schnittschutzhandschuh",
+      "icon": "hand-stop",
+      "article": "der",
+      "plural": "die Schnittschutzhandschuhe",
+      "tr": {
+        "uz": "kesilishdan himoya qoʻlqopi",
+        "uz-Cyrl": "кесилишдан ҳимоя қўлқопи",
+        "ru": "перчатка от порезов"
+      },
+      "pron": {
+        "uz": "der shnit-shuts-hant-shu",
+        "uz-Cyrl": "дер шнит-шуц-хант-шу",
+        "ru": "дер шнит-шуц-хант-шу"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Beim Schneiden tragen Sie einen Schnittschutzhandschuh.",
+        "tr": {
+          "uz": "Kesishda himoya qoʻlqopini kiyasiz.",
+          "uz-Cyrl": "Кесишда ҳимоя қўлқопини киясиз.",
+          "ru": "При нарезке надевайте перчатку от порезов."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-xavfsizlik-erste-hilfe-kasten",
+      "slug": "erste-hilfe-kasten",
+      "term": "der Erste-Hilfe-Kasten",
+      "icon": "first-aid-kit",
+      "article": "der",
+      "plural": "die Erste-Hilfe-Kästen",
+      "tr": {
+        "uz": "aptechka (birinchi yordam qutisi)",
+        "uz-Cyrl": "аптечка (биринчи ёрдам қутиси)",
+        "ru": "аптечка"
+      },
+      "pron": {
+        "uz": "der ers-te-hil-fe-kas-ten",
+        "uz-Cyrl": "дер эрс-те-хиль-фе-кас-тен",
+        "ru": "дер эрс-те-хиль-фе-кас-тен"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Wo ist der Erste-Hilfe-Kasten?",
+        "tr": {
+          "uz": "Aptechka qayerda?",
+          "uz-Cyrl": "Аптечка қаерда?",
+          "ru": "Где аптечка?"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-xavfsizlik-fluchtweg",
+      "slug": "fluchtweg",
+      "term": "der Fluchtweg",
+      "icon": "door-exit",
+      "article": "der",
+      "plural": "die Fluchtwege",
+      "tr": {
+        "uz": "evakuatsiya yoʻli",
+        "uz-Cyrl": "эвакуация йўли",
+        "ru": "путь эвакуации"
+      },
+      "pron": {
+        "uz": "der fluxt-vek",
+        "uz-Cyrl": "дер флухт-век",
+        "ru": "дер флухт-век"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Der Fluchtweg muss frei bleiben.",
+        "tr": {
+          "uz": "Evakuatsiya yoʻli boʻsh turishi kerak.",
+          "uz-Cyrl": "Эвакуация йўли бўш туриши керак.",
+          "ru": "Путь эвакуации должен оставаться свободным."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-xavfsizlik-unterweisung",
+      "slug": "unterweisung",
+      "term": "die Unterweisung",
+      "icon": "users",
+      "article": "die",
+      "plural": "die Unterweisungen",
+      "tr": {
+        "uz": "instruktaj (yoʻl-yoʻriq)",
+        "uz-Cyrl": "инструктаж (йўл-йўриқ)",
+        "ru": "инструктаж"
+      },
+      "pron": {
+        "uz": "die un-ter-vay-zung",
+        "uz-Cyrl": "ди ун-тер-вай-зунг",
+        "ru": "ди ун-тер-вай-зунг"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Heute haben wir eine Unterweisung.",
+        "tr": {
+          "uz": "Bugun instruktaj boʻladi.",
+          "uz-Cyrl": "Бугун инструктаж бўлади.",
+          "ru": "Сегодня у нас инструктаж."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-xavfsizlik-melden",
+      "slug": "melden",
+      "term": "melden",
+      "icon": "messages",
+      "tr": {
+        "uz": "xabar bermoq",
+        "uz-Cyrl": "хабар бермоқ",
+        "ru": "сообщать"
+      },
+      "pron": {
+        "uz": "mel-den",
+        "uz-Cyrl": "мель-ден",
+        "ru": "мель-ден"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Bitte melden Sie jeden Unfall.",
+        "tr": {
+          "uz": "Iltimos, har bir baxtsiz hodisa haqida xabar bering.",
+          "uz-Cyrl": "Илтимос, ҳар бир бахтсиз ҳодиса ҳақида хабар беринг.",
+          "ru": "Пожалуйста, сообщайте о каждом несчастном случае."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-xavfsizlik-schmuck",
+      "slug": "schmuck",
+      "term": "der Schmuck",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "taqinchoq",
+        "uz-Cyrl": "тақинчоқ",
+        "ru": "украшения"
+      },
+      "pron": {
+        "uz": "der shmuk",
+        "uz-Cyrl": "дер шмук",
+        "ru": "дер шмук"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "lebensmittel"
+      ],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "In der Produktion ist Schmuck verboten.",
+        "tr": {
+          "uz": "Ishlab chiqarishda taqinchoq taqish mumkin emas.",
+          "uz-Cyrl": "Ишлаб чиқаришда тақинчоқ тақиш мумкин эмас.",
+          "ru": "На производстве украшения запрещены."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
