@@ -1,3 +1,5 @@
+import { moduleNumber } from '../../german/logic'
+import type { Direction } from '../../content/german/types'
 import { useEffect, useState } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import { IconCheck, IconRepeat, IconX } from '@tabler/icons-react'
@@ -36,10 +38,10 @@ export default function FinalTestPage() {
   const { results } = useLessons()
   const info = scopeInfo(scope, direction, course)
   if (!info || !isScopeUnlocked(info, results) || testSize(info) === 0) return <Navigate to={coursePaths(course.id).home} replace />
-  return <FinalTest key={scope} info={info} />
+  return <FinalTest key={scope} info={info} direction={direction} />
 }
 
-function FinalTest({ info }: { info: ScopeInfo }) {
+function FinalTest({ info, direction }: { info: ScopeInfo; direction: Direction }) {
   const { lang, t } = useI18n()
   const course = useCourse()
   const paths = useCoursePaths()
@@ -52,7 +54,7 @@ function FinalTest({ info }: { info: ScopeInfo }) {
   const { markMistakes, addDone } = useWords()
   const mod = info.type === 'module' ? moduleById(info.moduleIds[0]) : undefined
   const lv = levelName(course, info.level, lang)
-  const title = mod ? t('ft.moduleTitle', { n: mod.order }) : t('ft.levelTitle', { level: lv })
+  const title = mod ? t('ft.moduleTitle', { n: moduleNumber(mod.id, direction, course.modules) }) : t('ft.levelTitle', { level: lv })
   const sub = mod ? mod.title[lang] : t('german.levelTitle', { level: lv })
   const size = testSize(info)
 

@@ -1,4 +1,6 @@
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
+
+vi.unmock('../german/packs')
 import { KO_LEVELS } from '../korean'
 import { LEVELS } from '../german/types'
 import { ALL_WORD_IDS } from '../../lang/registry'

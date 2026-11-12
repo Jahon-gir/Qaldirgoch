@@ -19,7 +19,7 @@ describe('packsToCourse', () => {
     const words = 'hammer zange saege bohrer schraube nagel meter leiter kelle'.split(' ').map((s) => w(s))
     const c = packsToCourse([pack(words)])
     expect(c.modules).toEqual([{ id: 'technical-asboblar', level: 'A1', direction: 'technical', order: 301, status: 'review', title: L('Asboblar') }])
-    expect(c.lessons.map((l) => [l.id, l.title.uz])).toEqual([['technical-asboblar-l1', 'Asboblar · 1-qism'], ['technical-asboblar-l2', 'Asboblar · 2-qism']])
+    expect(c.lessons.map((l) => [l.id, l.title.uz])).toEqual([['technical-asboblar-l1', '1-qism'], ['technical-asboblar-l2', '2-qism']])
     expect(c.exercises['technical-asboblar-l1'].map((e) => e.type)).toEqual([...Array(WORDS_PER_LESSON).fill('word'), 'match'])
     const src = { lessons: c.lessons, exercisesOf: (id: string) => c.exercises[id] ?? [] }
     expect(buildVocab(src).map((v) => v.id)).toEqual(words.map((x) => x.id))

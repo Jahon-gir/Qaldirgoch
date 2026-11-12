@@ -24,8 +24,9 @@ const MATCH_PROMPT: L3 = {
 
 export type PackCourse = { modules: Module[]; lessons: Lesson[]; exercises: Record<string, Exercise[]> }
 
+/** Bitta darsli vaziyatda dars nomi = vaziyat nomi; koʻp darsli boʻlsa "1-qism", "2-qism" (modul nomi tepada koʻrinib turadi). */
 const partTitle = (title: L3, n: number, total: number): L3 =>
-  total === 1 ? title : { uz: `${title.uz} · ${PART.uz.replace('{n}', String(n))}`, 'uz-Cyrl': `${title['uz-Cyrl']} · ${PART['uz-Cyrl'].replace('{n}', String(n))}`, ru: `${title.ru} · ${PART.ru.replace('{n}', String(n))}` }
+  total === 1 ? title : { uz: PART.uz.replace('{n}', String(n)), 'uz-Cyrl': PART['uz-Cyrl'].replace('{n}', String(n)), ru: PART.ru.replace('{n}', String(n)) }
 
 function toWord(w: PackWord, id: string, icons?: ReadonlySet<string>): WordExercise {
   return {

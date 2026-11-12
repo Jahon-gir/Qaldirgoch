@@ -5,7 +5,7 @@ import { ProgressBar } from '../../components/ui/ProgressBar'
 import { useI18n } from '../../i18n/I18nProvider'
 import { useLessons } from '../../german/LessonsProvider'
 import { FROM_MODULE, useBack } from '../../lib/useHistoryAnchor'
-import { currentInModule, lessonsOf, moduleProgress } from '../../german/logic'
+import { currentInModule, lessonsOf, moduleNumber, moduleProgress } from '../../german/logic'
 import { TestCard } from '../../components/german/TestCard'
 import { scopeInfo } from '../../german/finalTest'
 import { useDirection } from '../../german/useDirection'
@@ -34,7 +34,7 @@ export default function ModulePage() {
           <IconArrowLeft size={24} aria-hidden />
         </button>
         <div>
-          <p className="text-base text-ink-2">{t('german.moduleLabel', { level: levelName(course, mod.level, lang), n: mod.order })}</p>
+          <p className="text-base text-ink-2">{t('german.moduleLabel', { level: levelName(course, mod.level, lang), n: moduleNumber(mod.id, direction, course.modules) })}</p>
           <h1 className="text-xl font-semibold">{mod.title[lang]}</h1>
         </div>
       </header>
@@ -58,7 +58,7 @@ export default function ModulePage() {
 
       {(() => {
         const info = scopeInfo(mod.id, direction, course)
-        return info && <TestCard info={info} results={results} title={t('ft.moduleTitle', { n: mod.order })} />
+        return info && <TestCard info={info} results={results} title={t('ft.moduleTitle', { n: moduleNumber(mod.id, direction, course.modules) })} />
       })()}
 
       <Card className="p-2">
