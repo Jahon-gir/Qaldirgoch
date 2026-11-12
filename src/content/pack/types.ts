@@ -21,6 +21,8 @@ export type PackWord = {
   slug: string
   /** Ilovadagi koʻrinish: nemischa otda artikl bilan ("der Hammer") — mavjud Artikl mashqi shunday ishlaydi. */
   term: string
+  /** Tabler ikonka nomi (LESSON_ICONS kalitlaridan); rasm boʻlmasa koʻrsatiladi. Boʻlmasa — 'abc'. */
+  icon?: string
   article?: 'der' | 'die' | 'das'
   plural?: string
   tr: L3
@@ -60,7 +62,7 @@ export type PackRules = {
   levels: readonly string[]
   /** Nemischa: artikl va koʻplik ustunlari ishlaydi. */
   article: boolean
-  /** Lotin boʻlmagan yozuv: oʻqilishi (pron) majburiy, slug majburiy. */
+  /** Lotin boʻlmagan yozuv: slug majburiy va oʻqilishi qoralamada ham majburiy. (Qoralamadan boshqa holatda oʻqilishi hamma kursda majburiy — dars kartasida koʻrsatiladi.) */
   pron: boolean
 }
 

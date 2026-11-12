@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { KO_LEVELS } from '../korean'
 import { LEVELS } from '../german/types'
 import { ALL_WORD_IDS } from '../../lang/registry'
+import { LESSON_ICON_NAMES } from '../../components/german/iconNames'
 import { PACK_RULES } from './rules'
 import { validatePacks } from './validate'
 import type { ContentPack } from './types'
@@ -19,14 +20,23 @@ describe('kasbiy kontent paketlari', () => {
     for (const [course, packs] of byCourse) {
       const rules = PACK_RULES[course]
       expect(rules, `nomaʼlum til papkasi: ${course}`).toBeDefined()
-      expect(validatePacks(packs, rules, { existingWordIds: ALL_WORD_IDS }).filter((i) => i.level === 'error')).toEqual([])
+      expect(validatePacks(packs, rules).filter((i) => i.level === 'error')).toEqual([])
     }
   })
 
-  it('paket soʻzlari ilovadagi mavjud soʻz id larini band qilmaydi va oʻzaro takrorlanmaydi', () => {
+  it('paket soʻzlari oʻzaro takrorlanmaydi', () => {
     const ids = [...byCourse.values()].flat().flatMap((p) => p.words.map((w) => w.id))
-    expect(ids.filter((id) => ALL_WORD_IDS.has(id))).toEqual([])
     expect(new Set(ids).size).toBe(ids.length)
+  })
+
+  it('ilovaga chiqqan paket soʻzlari lugʻatda aynan paket id si bilan (progress shu id bilan saqlanadi)', () => {
+    const live = [...byCourse.values()].flat().flatMap((p) => p.words.filter((w) => w.status !== 'draft').map((w) => w.id))
+    expect(live.filter((id) => !ALL_WORD_IDS.has(id))).toEqual([])
+  })
+
+  it('ikonkalar darslar roʻyxatida bor (aks holda umumiy belgi chiqadi)', () => {
+    const bad = [...byCourse.values()].flat().flatMap((p) => p.words.filter((w) => w.icon && !LESSON_ICON_NAMES.has(w.icon)).map((w) => `${w.id}: ${w.icon}`))
+    expect(bad).toEqual([])
   })
 })
 

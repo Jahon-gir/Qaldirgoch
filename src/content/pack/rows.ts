@@ -17,7 +17,7 @@ export const SHEET = { fields: 'Sohalar', situations: 'Vaziyatlar', words: 'Sozl
 export const FIELD_COLUMNS = ['id', 'title_uz', 'title_cyrl', 'title_ru', 'order'] as const
 export const SITUATION_COLUMNS = ['field', 'id', 'title_uz', 'title_cyrl', 'title_ru', 'order', 'level'] as const
 export const WORD_COLUMNS = [
-  'field', 'situation', 'level', 'article', 'term', 'plural', 'slug',
+  'field', 'situation', 'level', 'article', 'term', 'plural', 'slug', 'icon',
   'uz', 'uz_cyrl', 'ru', 'pron_uz', 'pron_cyrl', 'pron_ru',
   'example_term', 'example_uz', 'example_cyrl', 'example_ru',
   'jobs', 'safety', 'image_file', 'image_source', 'image_license', 'image_author', 'image_checked', 'audio_file',
@@ -110,6 +110,7 @@ export function rowsToPacks(sheets: Sheets, rules: PackRules, opts: Omit<Validat
       id: wordIdOf(rules, p.field, situation, slug),
       slug,
       term,
+      ...(opt(r.icon) !== undefined && { icon: opt(r.icon) }),
       ...(article !== undefined && { article: article as PackWord['article'] }),
       ...(opt(r.plural) !== undefined && { plural: opt(r.plural) }),
       tr: l3(r.uz, r.uz_cyrl, r.ru),

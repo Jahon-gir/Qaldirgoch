@@ -23,9 +23,10 @@ Shablon: [`shablon.xlsx`](shablon.xlsx). Har bir soha yoki jamoa aʼzosi uchun n
 | article | otlarda | `der` / `die` / `das`. Ilovada "der Hammer" boʻlib chiqadi, Artikl mashqi ishlaydi |
 | term | ha | Soʻz **artiklsiz**: `Hammer`. Ibora ham boʻladi: `Vorsicht!` |
 | plural | otlarda | `die Hämmer`; koʻpligi yoʻq boʻlsa `—` |
+| icon | tavsiya | Rasm hali boʻlmasa koʻrsatiladigan ikonka (Tabler nomi, `src/components/german/icons.ts` roʻyxatidan): `tools`, `stethoscope` |
 | slug | yoʻq | Boʻsh qoldiring — soʻzdan oʻzi chiqadi (`Säge` → `saege`). Koreys tilida majburiy |
 | uz, uz_cyrl, ru | ha | Tarjima. Kirillni qoʻlda yozing (avtomatik emas). Qoralamada faqat `uz` yetadi |
-| pron_uz, pron_cyrl, pron_ru | koreysda | Oʻqilishi |
+| pron_uz, pron_cyrl, pron_ru | tekshiruvda/tasdiqlanganda | Oʻqilishi (dars kartasida chiqadi): `der ha-mer` / `дер ха-мер`. ch → x, sch → sh, ei → ay, eu → oy, ü → yu |
 | example_term, example_uz, example_cyrl, example_ru | tavsiya | Ishdan olingan qisqa gap va tarjimasi |
 | jobs | yoʻq | Kasblar, vergul bilan: `elektroniker, shk` |
 | safety | yoʻq | Xavfsizlik soʻzi boʻlsa `ha` |
@@ -72,4 +73,9 @@ Xato boʻlsa hech narsa yozilmaydi; har bir xato varaq, qator va sabab bilan chi
 XATO  Sozlar, 7-qator: koʻplik "Hämmer" — "die ..." shaklida yoki koʻpligi yoʻq boʻlsa "—"
 ```
 
-Hozircha paketlar ilovaga ulanmagan: ekranga chiqishi keyingi versiyalarda (soha tanlash ekrani, rasmli soʻz kartasi).
+## Ilovada qanday chiqadi (0.12.1 dan)
+
+- Har bir **vaziyat** — Til ekranida alohida **modul**. `general` modullari hammaga, qolganlari foydalanuvchi tanlagan yoʻnalishga (Til ekranidagi "Yoʻnalish: … · Oʻzgartirish") koʻrinadi.
+- Soʻzlar **6 tadan darsga** boʻlinadi (oxirida 1–2 soʻz qolsa, oldingi darsga qoʻshiladi); har darsda soʻz kartalari va juftlash mashqi.
+- Dars tugagach soʻzlar **Lugʻat** va **takrorlash** qutisiga tushadi, modul yakuniy testi ochiladi — mavjud barcha mashq usullari ishlaydi.
+- **Qoralama** soʻzlar ilovaga chiqmaydi.
