@@ -48,6 +48,26 @@
       },
       "order": 4,
       "level": "A2"
+    },
+    {
+      "id": "masalliq",
+      "title": {
+        "uz": "Masalliqlar",
+        "uz-Cyrl": "Масаллиқлар",
+        "ru": "Продукты"
+      },
+      "order": 5,
+      "level": "A1"
+    },
+    {
+      "id": "xona-tozalash",
+      "title": {
+        "uz": "Xonani tozalash",
+        "uz-Cyrl": "Хонани тозалаш",
+        "ru": "Уборка номера"
+      },
+      "order": 6,
+      "level": "A2"
     }
   ],
   "words": [
@@ -1107,6 +1127,554 @@
         "hotelfach"
       ],
       "situation": "mehmonxona",
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-masalliq-fleisch",
+      "slug": "fleisch",
+      "term": "das Fleisch",
+      "icon": "meat",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "goʻsht",
+        "uz-Cyrl": "гўшт",
+        "ru": "мясо"
+      },
+      "pron": {
+        "uz": "das flaysh",
+        "uz-Cyrl": "дас флайш",
+        "ru": "дас флайш"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "koch"
+      ],
+      "situation": "masalliq",
+      "example": {
+        "term": "Das Fleisch ist frisch.",
+        "tr": {
+          "uz": "Goʻsht yangi.",
+          "uz-Cyrl": "Гўшт янги.",
+          "ru": "Мясо свежее."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-masalliq-schweinefleisch",
+      "slug": "schweinefleisch",
+      "term": "das Schweinefleisch",
+      "icon": "pig",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "choʻchqa goʻshti",
+        "uz-Cyrl": "чўчқа гўшти",
+        "ru": "свинина"
+      },
+      "pron": {
+        "uz": "das shvay-ne-flaysh",
+        "uz-Cyrl": "дас швай-не-флайш",
+        "ru": "дас швай-не-флайш"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "koch"
+      ],
+      "situation": "masalliq",
+      "example": {
+        "term": "Ist hier Schweinefleisch drin?",
+        "tr": {
+          "uz": "Buning ichida choʻchqa goʻshti bormi?",
+          "uz-Cyrl": "Бунинг ичида чўчқа гўшти борми?",
+          "ru": "Здесь есть свинина?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-masalliq-haehnchen",
+      "slug": "haehnchen",
+      "term": "das Hähnchen",
+      "icon": "meat",
+      "article": "das",
+      "plural": "die Hähnchen",
+      "tr": {
+        "uz": "tovuq goʻshti",
+        "uz-Cyrl": "товуқ гўшти",
+        "ru": "курица"
+      },
+      "pron": {
+        "uz": "das hen-xen",
+        "uz-Cyrl": "дас хен-хен",
+        "ru": "дас хен-хен"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "koch"
+      ],
+      "situation": "masalliq",
+      "example": {
+        "term": "Heute gibt es Hähnchen mit Reis.",
+        "tr": {
+          "uz": "Bugun guruch bilan tovuq.",
+          "uz-Cyrl": "Бугун гуруч билан товуқ.",
+          "ru": "Сегодня курица с рисом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-masalliq-reis",
+      "slug": "reis",
+      "term": "der Reis",
+      "icon": "bowl",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "guruch",
+        "uz-Cyrl": "гуруч",
+        "ru": "рис"
+      },
+      "pron": {
+        "uz": "der rays",
+        "uz-Cyrl": "дер райс",
+        "ru": "дер райс"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "koch"
+      ],
+      "situation": "masalliq",
+      "example": {
+        "term": "Der Reis ist fertig.",
+        "tr": {
+          "uz": "Guruch tayyor.",
+          "uz-Cyrl": "Гуруч тайёр.",
+          "ru": "Рис готов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-masalliq-kartoffel",
+      "slug": "kartoffel",
+      "term": "die Kartoffel",
+      "icon": "salad",
+      "article": "die",
+      "plural": "die Kartoffeln",
+      "tr": {
+        "uz": "kartoshka",
+        "uz-Cyrl": "картошка",
+        "ru": "картофель"
+      },
+      "pron": {
+        "uz": "die kar-to-fel",
+        "uz-Cyrl": "ди кар-то-фель",
+        "ru": "ди кар-то-фель"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "koch"
+      ],
+      "situation": "masalliq",
+      "example": {
+        "term": "Schälen Sie bitte die Kartoffeln.",
+        "tr": {
+          "uz": "Iltimos, kartoshkani arching.",
+          "uz-Cyrl": "Илтимос, картошкани арчинг.",
+          "ru": "Почистите, пожалуйста, картофель."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-masalliq-gemuese",
+      "slug": "gemuese",
+      "term": "das Gemüse",
+      "icon": "salad",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "sabzavot",
+        "uz-Cyrl": "сабзавот",
+        "ru": "овощи"
+      },
+      "pron": {
+        "uz": "das ge-myu-ze",
+        "uz-Cyrl": "дас ге-мю-зе",
+        "ru": "дас ге-мю-зе"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "koch"
+      ],
+      "situation": "masalliq",
+      "example": {
+        "term": "Das Gemüse muss gewaschen werden.",
+        "tr": {
+          "uz": "Sabzavotni yuvish kerak.",
+          "uz-Cyrl": "Сабзавотни ювиш керак.",
+          "ru": "Овощи нужно помыть."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-masalliq-salz",
+      "slug": "salz",
+      "term": "das Salz",
+      "icon": "salad",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "tuz",
+        "uz-Cyrl": "туз",
+        "ru": "соль"
+      },
+      "pron": {
+        "uz": "das zalts",
+        "uz-Cyrl": "дас зальц",
+        "ru": "дас зальц"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "koch"
+      ],
+      "situation": "masalliq",
+      "example": {
+        "term": "Bitte nicht zu viel Salz.",
+        "tr": {
+          "uz": "Iltimos, tuz koʻp boʻlmasin.",
+          "uz-Cyrl": "Илтимос, туз кўп бўлмасин.",
+          "ru": "Пожалуйста, не слишком много соли."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-masalliq-ei",
+      "slug": "ei",
+      "term": "das Ei",
+      "icon": "egg",
+      "article": "das",
+      "plural": "die Eier",
+      "tr": {
+        "uz": "tuxum",
+        "uz-Cyrl": "тухум",
+        "ru": "яйцо"
+      },
+      "pron": {
+        "uz": "das ay",
+        "uz-Cyrl": "дас ай",
+        "ru": "дас ай"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "koch"
+      ],
+      "situation": "masalliq",
+      "example": {
+        "term": "Wir brauchen zehn Eier.",
+        "tr": {
+          "uz": "Bizga oʻnta tuxum kerak.",
+          "uz-Cyrl": "Бизга ўнта тухум керак.",
+          "ru": "Нам нужно десять яиц."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-xona-tozalash-putzen",
+      "slug": "putzen",
+      "term": "putzen",
+      "icon": "droplet",
+      "tr": {
+        "uz": "tozalamoq",
+        "uz-Cyrl": "тозаламоқ",
+        "ru": "убирать, чистить"
+      },
+      "pron": {
+        "uz": "pu-tsen",
+        "uz-Cyrl": "пу-цен",
+        "ru": "пу-цен"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "hotelfach"
+      ],
+      "situation": "xona-tozalash",
+      "example": {
+        "term": "Ich putze jetzt das Zimmer.",
+        "tr": {
+          "uz": "Hozir xonani tozalayapman.",
+          "uz-Cyrl": "Ҳозир хонани тозалаяпман.",
+          "ru": "Сейчас я убираю номер."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-xona-tozalash-staubsauger",
+      "slug": "staubsauger",
+      "term": "der Staubsauger",
+      "icon": "home",
+      "article": "der",
+      "plural": "die Staubsauger",
+      "tr": {
+        "uz": "changyutgich",
+        "uz-Cyrl": "чангютгич",
+        "ru": "пылесос"
+      },
+      "pron": {
+        "uz": "der shtaup-zau-ger",
+        "uz-Cyrl": "дер штауп-зау-гер",
+        "ru": "дер штауп-зау-гер"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "hotelfach"
+      ],
+      "situation": "xona-tozalash",
+      "example": {
+        "term": "Der Staubsauger ist kaputt.",
+        "tr": {
+          "uz": "Changyutgich buzilgan.",
+          "uz-Cyrl": "Чангютгич бузилган.",
+          "ru": "Пылесос сломан."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-xona-tozalash-eimer",
+      "slug": "eimer",
+      "term": "der Eimer",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Eimer",
+      "tr": {
+        "uz": "chelak",
+        "uz-Cyrl": "челак",
+        "ru": "ведро"
+      },
+      "pron": {
+        "uz": "der ay-mer",
+        "uz-Cyrl": "дер ай-мер",
+        "ru": "дер ай-мер"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "hotelfach"
+      ],
+      "situation": "xona-tozalash",
+      "example": {
+        "term": "Der Eimer ist voll.",
+        "tr": {
+          "uz": "Chelak toʻla.",
+          "uz-Cyrl": "Челак тўла.",
+          "ru": "Ведро полное."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-xona-tozalash-putzmittel",
+      "slug": "putzmittel",
+      "term": "das Putzmittel",
+      "icon": "alert-triangle",
+      "article": "das",
+      "plural": "die Putzmittel",
+      "tr": {
+        "uz": "tozalash vositasi",
+        "uz-Cyrl": "тозалаш воситаси",
+        "ru": "моющее средство"
+      },
+      "pron": {
+        "uz": "das puts-mi-tel",
+        "uz-Cyrl": "дас пуц-ми-тель",
+        "ru": "дас пуц-ми-тель"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "hotelfach"
+      ],
+      "situation": "xona-tozalash",
+      "example": {
+        "term": "Vorsicht, das Putzmittel ist gefährlich!",
+        "tr": {
+          "uz": "Ehtiyot boʻling, tozalash vositasi xavfli!",
+          "uz-Cyrl": "Эҳтиёт бўлинг, тозалаш воситаси хавфли!",
+          "ru": "Осторожно, моющее средство опасно!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-xona-tozalash-spiegel",
+      "slug": "spiegel",
+      "term": "der Spiegel",
+      "icon": "eye",
+      "article": "der",
+      "plural": "die Spiegel",
+      "tr": {
+        "uz": "koʻzgu (oyna)",
+        "uz-Cyrl": "кўзгу (ойна)",
+        "ru": "зеркало"
+      },
+      "pron": {
+        "uz": "der shpi-gel",
+        "uz-Cyrl": "дер шпи-гель",
+        "ru": "дер шпи-гель"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "hotelfach"
+      ],
+      "situation": "xona-tozalash",
+      "example": {
+        "term": "Bitte putzen Sie den Spiegel.",
+        "tr": {
+          "uz": "Iltimos, koʻzguni arting.",
+          "uz-Cyrl": "Илтимос, кўзгуни артинг.",
+          "ru": "Пожалуйста, протрите зеркало."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-xona-tozalash-kissen",
+      "slug": "kissen",
+      "term": "das Kissen",
+      "icon": "bed",
+      "article": "das",
+      "plural": "die Kissen",
+      "tr": {
+        "uz": "yostiq",
+        "uz-Cyrl": "ёстиқ",
+        "ru": "подушка"
+      },
+      "pron": {
+        "uz": "das ki-sen",
+        "uz-Cyrl": "дас ки-сен",
+        "ru": "дас ки-сен"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "hotelfach"
+      ],
+      "situation": "xona-tozalash",
+      "example": {
+        "term": "Der Gast möchte ein zweites Kissen.",
+        "tr": {
+          "uz": "Mehmon yana bitta yostiq soʻrayapti.",
+          "uz-Cyrl": "Меҳмон яна битта ёстиқ сўраяпти.",
+          "ru": "Гость хочет вторую подушку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-xona-tozalash-boden",
+      "slug": "boden",
+      "term": "der Boden",
+      "icon": "home",
+      "article": "der",
+      "plural": "die Böden",
+      "tr": {
+        "uz": "pol",
+        "uz-Cyrl": "пол",
+        "ru": "пол"
+      },
+      "pron": {
+        "uz": "der bo-den",
+        "uz-Cyrl": "дер бо-ден",
+        "ru": "дер бо-ден"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "hotelfach"
+      ],
+      "situation": "xona-tozalash",
+      "example": {
+        "term": "Der Boden ist noch nass.",
+        "tr": {
+          "uz": "Pol hali hoʻl.",
+          "uz-Cyrl": "Пол ҳали ҳўл.",
+          "ru": "Пол ещё мокрый."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-xona-tozalash-bitte-nicht-stoeren",
+      "slug": "bitte-nicht-stoeren",
+      "term": "Bitte nicht stören.",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Iltimos, bezovta qilmang.",
+        "uz-Cyrl": "Илтимос, безовта қилманг.",
+        "ru": "Пожалуйста, не беспокоить."
+      },
+      "pron": {
+        "uz": "bi-te nixt shtyo-ren",
+        "uz-Cyrl": "би-те нихт штё-рен",
+        "ru": "би-те нихт штё-рен"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "hotelfach"
+      ],
+      "situation": "xona-tozalash",
       "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"

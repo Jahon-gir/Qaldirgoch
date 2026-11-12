@@ -68,6 +68,26 @@
       },
       "order": 6,
       "level": "A2"
+    },
+    {
+      "id": "transport",
+      "title": {
+        "uz": "Ishga yoʻl: transport",
+        "uz-Cyrl": "Ишга йўл: транспорт",
+        "ru": "Дорога на работу: транспорт"
+      },
+      "order": 7,
+      "level": "A1"
+    },
+    {
+      "id": "idoralar",
+      "title": {
+        "uz": "Uy-joy va rasmiy idoralar",
+        "uz-Cyrl": "Уй-жой ва расмий идоралар",
+        "ru": "Жильё и ведомства"
+      },
+      "order": 8,
+      "level": "A2"
     }
   ],
   "words": [
@@ -1569,6 +1589,522 @@
           "uz": "Bugun tabelimni olaman.",
           "uz-Cyrl": "Бугун табелимни оламан.",
           "ru": "Сегодня я получаю табель."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-transport-bus",
+      "slug": "bus",
+      "term": "der Bus",
+      "icon": "bus",
+      "article": "der",
+      "plural": "die Busse",
+      "tr": {
+        "uz": "avtobus",
+        "uz-Cyrl": "автобус",
+        "ru": "автобус"
+      },
+      "pron": {
+        "uz": "der bus",
+        "uz-Cyrl": "дер бус",
+        "ru": "дер бус"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "transport",
+      "example": {
+        "term": "Ich fahre mit dem Bus zur Arbeit.",
+        "tr": {
+          "uz": "Ishga avtobusda boraman.",
+          "uz-Cyrl": "Ишга автобусда бораман.",
+          "ru": "Я езжу на работу на автобусе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-transport-bahn",
+      "slug": "bahn",
+      "term": "die Bahn",
+      "icon": "train",
+      "article": "die",
+      "plural": "die Bahnen",
+      "tr": {
+        "uz": "poyezd",
+        "uz-Cyrl": "поезд",
+        "ru": "поезд"
+      },
+      "pron": {
+        "uz": "die ban",
+        "uz-Cyrl": "ди бан",
+        "ru": "ди бан"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "transport",
+      "example": {
+        "term": "Die Bahn hat Verspätung.",
+        "tr": {
+          "uz": "Poyezd kechikyapti.",
+          "uz-Cyrl": "Поезд кечикяпти.",
+          "ru": "Поезд опаздывает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-transport-haltestelle",
+      "slug": "haltestelle",
+      "term": "die Haltestelle",
+      "icon": "map-pin",
+      "article": "die",
+      "plural": "die Haltestellen",
+      "tr": {
+        "uz": "bekat",
+        "uz-Cyrl": "бекат",
+        "ru": "остановка"
+      },
+      "pron": {
+        "uz": "die hal-te-shte-le",
+        "uz-Cyrl": "ди халь-те-ште-ле",
+        "ru": "ди халь-те-ште-ле"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "transport",
+      "example": {
+        "term": "Wo ist die Haltestelle?",
+        "tr": {
+          "uz": "Bekat qayerda?",
+          "uz-Cyrl": "Бекат қаерда?",
+          "ru": "Где остановка?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-transport-fahrkarte",
+      "slug": "fahrkarte",
+      "term": "die Fahrkarte",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "die Fahrkarten",
+      "tr": {
+        "uz": "chipta",
+        "uz-Cyrl": "чипта",
+        "ru": "билет"
+      },
+      "pron": {
+        "uz": "die far-kar-te",
+        "uz-Cyrl": "ди фар-кар-те",
+        "ru": "ди фар-кар-те"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "transport",
+      "example": {
+        "term": "Ich brauche eine Fahrkarte.",
+        "tr": {
+          "uz": "Menga chipta kerak.",
+          "uz-Cyrl": "Менга чипта керак.",
+          "ru": "Мне нужен билет."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-transport-umsteigen",
+      "slug": "umsteigen",
+      "term": "umsteigen",
+      "icon": "train",
+      "tr": {
+        "uz": "boshqa transportga oʻtmoq",
+        "uz-Cyrl": "бошқа транспортга ўтмоқ",
+        "ru": "делать пересадку"
+      },
+      "pron": {
+        "uz": "um-shtay-gen",
+        "uz-Cyrl": "ум-штай-ген",
+        "ru": "ум-штай-ген"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "transport",
+      "example": {
+        "term": "Ich muss am Bahnhof umsteigen.",
+        "tr": {
+          "uz": "Vokzalda boshqasiga oʻtishim kerak.",
+          "uz-Cyrl": "Вокзалда бошқасига ўтишим керак.",
+          "ru": "Мне нужно сделать пересадку на вокзале."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-transport-verspaetung",
+      "slug": "verspaetung",
+      "term": "die Verspätung",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Verspätungen",
+      "tr": {
+        "uz": "kechikish",
+        "uz-Cyrl": "кечикиш",
+        "ru": "опоздание"
+      },
+      "pron": {
+        "uz": "die fer-shpe-tung",
+        "uz-Cyrl": "ди фер-шпе-тунг",
+        "ru": "ди фер-шпе-тунг"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "transport",
+      "example": {
+        "term": "Entschuldigung für die Verspätung.",
+        "tr": {
+          "uz": "Kechikkanim uchun uzr.",
+          "uz-Cyrl": "Кечикканим учун узр.",
+          "ru": "Извините за опоздание."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-transport-fahrrad",
+      "slug": "fahrrad",
+      "term": "das Fahrrad",
+      "icon": "bike",
+      "article": "das",
+      "plural": "die Fahrräder",
+      "tr": {
+        "uz": "velosiped",
+        "uz-Cyrl": "велосипед",
+        "ru": "велосипед"
+      },
+      "pron": {
+        "uz": "das far-rat",
+        "uz-Cyrl": "дас фар-рат",
+        "ru": "дас фар-рат"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "transport",
+      "example": {
+        "term": "Ich fahre mit dem Fahrrad.",
+        "tr": {
+          "uz": "Velosipedda boraman.",
+          "uz-Cyrl": "Велосипедда бораман.",
+          "ru": "Я езжу на велосипеде."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-transport-wie-komme-ich-zum-bahnhof",
+      "slug": "wie-komme-ich-zum-bahnhof",
+      "term": "Wie komme ich zum Bahnhof?",
+      "icon": "map",
+      "tr": {
+        "uz": "Vokzalga qanday borsam boʻladi?",
+        "uz-Cyrl": "Вокзалга қандай борсам бўлади?",
+        "ru": "Как мне добраться до вокзала?"
+      },
+      "pron": {
+        "uz": "vi ko-me ix tsum ban-hof",
+        "uz-Cyrl": "ви ко-ме их цум бан-хоф",
+        "ru": "ви ко-ме их цум бан-хоф"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "transport",
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-idoralar-wohnung",
+      "slug": "wohnung",
+      "term": "die Wohnung",
+      "icon": "home",
+      "article": "die",
+      "plural": "die Wohnungen",
+      "tr": {
+        "uz": "kvartira",
+        "uz-Cyrl": "квартира",
+        "ru": "квартира"
+      },
+      "pron": {
+        "uz": "die vo-nung",
+        "uz-Cyrl": "ди во-нунг",
+        "ru": "ди во-нунг"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "idoralar",
+      "example": {
+        "term": "Ich suche eine Wohnung.",
+        "tr": {
+          "uz": "Kvartira qidiryapman.",
+          "uz-Cyrl": "Квартира қидиряпман.",
+          "ru": "Я ищу квартиру."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-idoralar-miete",
+      "slug": "miete",
+      "term": "die Miete",
+      "icon": "home",
+      "article": "die",
+      "plural": "die Mieten",
+      "tr": {
+        "uz": "ijara haqi",
+        "uz-Cyrl": "ижара ҳақи",
+        "ru": "арендная плата"
+      },
+      "pron": {
+        "uz": "die mi-te",
+        "uz-Cyrl": "ди ми-те",
+        "ru": "ди ми-те"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "idoralar",
+      "example": {
+        "term": "Die Miete zahle ich jeden Monat.",
+        "tr": {
+          "uz": "Ijara haqini har oy toʻlayman.",
+          "uz-Cyrl": "Ижара ҳақини ҳар ой тўлайман.",
+          "ru": "Арендную плату я плачу каждый месяц."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-idoralar-vermieter",
+      "slug": "vermieter",
+      "term": "der Vermieter",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Vermieter",
+      "tr": {
+        "uz": "uy egasi (ijaraga beruvchi)",
+        "uz-Cyrl": "уй эгаси (ижарага берувчи)",
+        "ru": "арендодатель"
+      },
+      "pron": {
+        "uz": "der fer-mi-ter",
+        "uz-Cyrl": "дер фер-ми-тер",
+        "ru": "дер фер-ми-тер"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "idoralar",
+      "example": {
+        "term": "Ich rufe den Vermieter an.",
+        "tr": {
+          "uz": "Uy egasiga qoʻngʻiroq qilaman.",
+          "uz-Cyrl": "Уй эгасига қўнғироқ қиламан.",
+          "ru": "Я позвоню арендодателю."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-idoralar-anmeldung",
+      "slug": "anmeldung",
+      "term": "die Anmeldung",
+      "icon": "id",
+      "article": "die",
+      "plural": "die Anmeldungen",
+      "tr": {
+        "uz": "yashash joyida roʻyxatdan oʻtish",
+        "uz-Cyrl": "яшаш жойида рўйхатдан ўтиш",
+        "ru": "регистрация по месту жительства"
+      },
+      "pron": {
+        "uz": "die an-mel-dung",
+        "uz-Cyrl": "ди ан-мель-дунг",
+        "ru": "ди ан-мель-дунг"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "idoralar",
+      "example": {
+        "term": "Ich brauche einen Termin für die Anmeldung.",
+        "tr": {
+          "uz": "Roʻyxatdan oʻtish uchun navbat kerak.",
+          "uz-Cyrl": "Рўйхатдан ўтиш учун навбат керак.",
+          "ru": "Мне нужна запись для регистрации."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-idoralar-auslaenderbehoerde",
+      "slug": "auslaenderbehoerde",
+      "term": "die Ausländerbehörde",
+      "icon": "building",
+      "article": "die",
+      "plural": "die Ausländerbehörden",
+      "tr": {
+        "uz": "chet elliklar idorasi",
+        "uz-Cyrl": "чет элликлар идораси",
+        "ru": "ведомство по делам иностранцев"
+      },
+      "pron": {
+        "uz": "die aus-len-der-be-hyor-de",
+        "uz-Cyrl": "ди аус-лен-дер-бе-хёр-де",
+        "ru": "ди аус-лен-дер-бе-хёр-де"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "idoralar",
+      "example": {
+        "term": "Mein Termin bei der Ausländerbehörde ist morgen.",
+        "tr": {
+          "uz": "Chet elliklar idorasidagi navbatim ertaga.",
+          "uz-Cyrl": "Чет элликлар идорасидаги навбатим эртага.",
+          "ru": "Моя запись в ведомство по делам иностранцев — завтра."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-idoralar-aufenthaltstitel",
+      "slug": "aufenthaltstitel",
+      "term": "der Aufenthaltstitel",
+      "icon": "id",
+      "article": "der",
+      "plural": "die Aufenthaltstitel",
+      "tr": {
+        "uz": "yashash ruxsatnomasi",
+        "uz-Cyrl": "яшаш рухсатномаси",
+        "ru": "вид на жительство"
+      },
+      "pron": {
+        "uz": "der auf-ent-halts-ti-tel",
+        "uz-Cyrl": "дер ауф-энт-хальтс-ти-тель",
+        "ru": "дер ауф-энт-хальтс-ти-тель"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "idoralar",
+      "example": {
+        "term": "Mein Aufenthaltstitel ist noch gültig.",
+        "tr": {
+          "uz": "Yashash ruxsatnomam hali amal qiladi.",
+          "uz-Cyrl": "Яшаш рухсатномам ҳали амал қилади.",
+          "ru": "Мой вид на жительство ещё действителен."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-idoralar-formular",
+      "slug": "formular",
+      "term": "das Formular",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "die Formulare",
+      "tr": {
+        "uz": "blanka (ariza shakli)",
+        "uz-Cyrl": "бланка (ариза шакли)",
+        "ru": "бланк, анкета"
+      },
+      "pron": {
+        "uz": "das for-mu-lar",
+        "uz-Cyrl": "дас фор-му-лар",
+        "ru": "дас фор-му-лар"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "idoralar",
+      "example": {
+        "term": "Füllen Sie bitte das Formular aus.",
+        "tr": {
+          "uz": "Iltimos, blankani toʻldiring.",
+          "uz-Cyrl": "Илтимос, бланкани тўлдиринг.",
+          "ru": "Пожалуйста, заполните бланк."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-idoralar-konto",
+      "slug": "konto",
+      "term": "das Konto",
+      "icon": "receipt",
+      "article": "das",
+      "plural": "die Konten",
+      "tr": {
+        "uz": "bank hisobi",
+        "uz-Cyrl": "банк ҳисоби",
+        "ru": "банковский счёт"
+      },
+      "pron": {
+        "uz": "das kon-to",
+        "uz-Cyrl": "дас кон-то",
+        "ru": "дас кон-то"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "idoralar",
+      "example": {
+        "term": "Ich möchte ein Konto eröffnen.",
+        "tr": {
+          "uz": "Bank hisobi ochmoqchiman.",
+          "uz-Cyrl": "Банк ҳисоби очмоқчиман.",
+          "ru": "Я хочу открыть счёт."
         }
       },
       "safety": false,

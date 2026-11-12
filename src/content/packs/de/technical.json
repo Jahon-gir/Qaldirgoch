@@ -48,6 +48,26 @@
       },
       "order": 4,
       "level": "A2"
+    },
+    {
+      "id": "boyoq-plitka",
+      "title": {
+        "uz": "Boʻyoq va plitka",
+        "uz-Cyrl": "Бўёқ ва плитка",
+        "ru": "Покраска и плитка"
+      },
+      "order": 5,
+      "level": "A1"
+    },
+    {
+      "id": "olchov",
+      "title": {
+        "uz": "Oʻlchash va material",
+        "uz-Cyrl": "Ўлчаш ва материал",
+        "ru": "Измерения и материал"
+      },
+      "order": 6,
+      "level": "A1"
     }
   ],
   "words": [
@@ -1192,6 +1212,582 @@
           "uz": "Suv iliq emas.",
           "uz-Cyrl": "Сув илиқ эмас.",
           "ru": "Вода не тёплая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-boyoq-plitka-farbe",
+      "slug": "farbe",
+      "term": "die Farbe",
+      "icon": "droplet",
+      "article": "die",
+      "plural": "die Farben",
+      "tr": {
+        "uz": "boʻyoq",
+        "uz-Cyrl": "бўёқ",
+        "ru": "краска"
+      },
+      "pron": {
+        "uz": "die far-be",
+        "uz-Cyrl": "ди фар-бе",
+        "ru": "ди фар-бе"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "maler",
+        "fliesenleger"
+      ],
+      "situation": "boyoq-plitka",
+      "example": {
+        "term": "Die Farbe ist noch nass.",
+        "tr": {
+          "uz": "Boʻyoq hali hoʻl.",
+          "uz-Cyrl": "Бўёқ ҳали ҳўл.",
+          "ru": "Краска ещё мокрая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-boyoq-plitka-pinsel",
+      "slug": "pinsel",
+      "term": "der Pinsel",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Pinsel",
+      "tr": {
+        "uz": "moʻyqalam",
+        "uz-Cyrl": "мўйқалам",
+        "ru": "кисть"
+      },
+      "pron": {
+        "uz": "der pin-zel",
+        "uz-Cyrl": "дер пин-зель",
+        "ru": "дер пин-зель"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "maler",
+        "fliesenleger"
+      ],
+      "situation": "boyoq-plitka",
+      "example": {
+        "term": "Wasch bitte den Pinsel.",
+        "tr": {
+          "uz": "Iltimos, moʻyqalamni yuv.",
+          "uz-Cyrl": "Илтимос, мўйқаламни юв.",
+          "ru": "Помой, пожалуйста, кисть."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-boyoq-plitka-farbrolle",
+      "slug": "farbrolle",
+      "term": "die Farbrolle",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Farbrollen",
+      "tr": {
+        "uz": "boʻyoq valigi",
+        "uz-Cyrl": "бўёқ валиги",
+        "ru": "малярный валик"
+      },
+      "pron": {
+        "uz": "die farp-ro-le",
+        "uz-Cyrl": "ди фарп-ро-ле",
+        "ru": "ди фарп-ро-ле"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "maler",
+        "fliesenleger"
+      ],
+      "situation": "boyoq-plitka",
+      "example": {
+        "term": "Mit der Farbrolle geht es schneller.",
+        "tr": {
+          "uz": "Valik bilan tezroq boʻladi.",
+          "uz-Cyrl": "Валик билан тезроқ бўлади.",
+          "ru": "Валиком получается быстрее."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-boyoq-plitka-wand",
+      "slug": "wand",
+      "term": "die Wand",
+      "icon": "home",
+      "article": "die",
+      "plural": "die Wände",
+      "tr": {
+        "uz": "devor",
+        "uz-Cyrl": "девор",
+        "ru": "стена"
+      },
+      "pron": {
+        "uz": "die vant",
+        "uz-Cyrl": "ди вант",
+        "ru": "ди вант"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "maler",
+        "fliesenleger"
+      ],
+      "situation": "boyoq-plitka",
+      "example": {
+        "term": "Wir streichen heute die Wand.",
+        "tr": {
+          "uz": "Bugun devorni boʻyaymiz.",
+          "uz-Cyrl": "Бугун деворни бўяймиз.",
+          "ru": "Сегодня мы красим стену."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-boyoq-plitka-decke",
+      "slug": "decke",
+      "term": "die Decke",
+      "icon": "home",
+      "article": "die",
+      "plural": "die Decken",
+      "tr": {
+        "uz": "shift",
+        "uz-Cyrl": "шифт",
+        "ru": "потолок"
+      },
+      "pron": {
+        "uz": "die de-ke",
+        "uz-Cyrl": "ди де-ке",
+        "ru": "ди де-ке"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "maler",
+        "fliesenleger"
+      ],
+      "situation": "boyoq-plitka",
+      "example": {
+        "term": "Die Decke ist weiß.",
+        "tr": {
+          "uz": "Shift oq.",
+          "uz-Cyrl": "Шифт оқ.",
+          "ru": "Потолок белый."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-boyoq-plitka-fliese",
+      "slug": "fliese",
+      "term": "die Fliese",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Fliesen",
+      "tr": {
+        "uz": "plitka",
+        "uz-Cyrl": "плитка",
+        "ru": "плитка"
+      },
+      "pron": {
+        "uz": "die fli-ze",
+        "uz-Cyrl": "ди фли-зе",
+        "ru": "ди фли-зе"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "maler",
+        "fliesenleger"
+      ],
+      "situation": "boyoq-plitka",
+      "example": {
+        "term": "Die Fliesen kommen ins Bad.",
+        "tr": {
+          "uz": "Plitkalar hammomga yotqiziladi.",
+          "uz-Cyrl": "Плиткалар ҳаммомга ётқизилади.",
+          "ru": "Плитку кладут в ванной."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-boyoq-plitka-kleber",
+      "slug": "kleber",
+      "term": "der Kleber",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Kleber",
+      "tr": {
+        "uz": "yelim",
+        "uz-Cyrl": "елим",
+        "ru": "клей"
+      },
+      "pron": {
+        "uz": "der kle-ber",
+        "uz-Cyrl": "дер кле-бер",
+        "ru": "дер кле-бер"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "maler",
+        "fliesenleger"
+      ],
+      "situation": "boyoq-plitka",
+      "example": {
+        "term": "Der Kleber muss trocknen.",
+        "tr": {
+          "uz": "Yelim qurishi kerak.",
+          "uz-Cyrl": "Елим қуриши керак.",
+          "ru": "Клей должен высохнуть."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-boyoq-plitka-streichen",
+      "slug": "streichen",
+      "term": "streichen",
+      "icon": "droplet",
+      "tr": {
+        "uz": "boʻyamoq",
+        "uz-Cyrl": "бўямоқ",
+        "ru": "красить"
+      },
+      "pron": {
+        "uz": "shtray-xen",
+        "uz-Cyrl": "штрай-хен",
+        "ru": "штрай-хен"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "maler",
+        "fliesenleger"
+      ],
+      "situation": "boyoq-plitka",
+      "example": {
+        "term": "Wir streichen die Tür.",
+        "tr": {
+          "uz": "Eshikni boʻyaymiz.",
+          "uz-Cyrl": "Эшикни бўяймиз.",
+          "ru": "Мы красим дверь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-olchov-meter",
+      "slug": "meter",
+      "term": "der Meter",
+      "icon": "ruler",
+      "article": "der",
+      "plural": "die Meter",
+      "tr": {
+        "uz": "metr",
+        "uz-Cyrl": "метр",
+        "ru": "метр"
+      },
+      "pron": {
+        "uz": "der me-ter",
+        "uz-Cyrl": "дер ме-тер",
+        "ru": "дер ме-тер"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau",
+        "shk",
+        "elektroniker"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Das Kabel ist zehn Meter lang.",
+        "tr": {
+          "uz": "Kabel oʻn metr uzun.",
+          "uz-Cyrl": "Кабель ўн метр узун.",
+          "ru": "Кабель длиной десять метров."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-olchov-zentimeter",
+      "slug": "zentimeter",
+      "term": "der Zentimeter",
+      "icon": "ruler",
+      "article": "der",
+      "plural": "die Zentimeter",
+      "tr": {
+        "uz": "santimetr",
+        "uz-Cyrl": "сантиметр",
+        "ru": "сантиметр"
+      },
+      "pron": {
+        "uz": "der tsen-ti-me-ter",
+        "uz-Cyrl": "дер цен-ти-ме-тер",
+        "ru": "дер цен-ти-ме-тер"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau",
+        "shk",
+        "elektroniker"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Noch fünf Zentimeter.",
+        "tr": {
+          "uz": "Yana besh santimetr.",
+          "uz-Cyrl": "Яна беш сантиметр.",
+          "ru": "Ещё пять сантиметров."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-olchov-messen",
+      "slug": "messen",
+      "term": "messen",
+      "icon": "ruler",
+      "tr": {
+        "uz": "oʻlchamoq",
+        "uz-Cyrl": "ўлчамоқ",
+        "ru": "измерять"
+      },
+      "pron": {
+        "uz": "me-sen",
+        "uz-Cyrl": "ме-сен",
+        "ru": "ме-сен"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau",
+        "shk",
+        "elektroniker"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Ich messe die Länge.",
+        "tr": {
+          "uz": "Uzunlikni oʻlchayapman.",
+          "uz-Cyrl": "Узунликни ўлчаяпман.",
+          "ru": "Я измеряю длину."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-olchov-gerade",
+      "slug": "gerade",
+      "term": "gerade",
+      "icon": "ruler",
+      "tr": {
+        "uz": "tekis, toʻgʻri",
+        "uz-Cyrl": "текис, тўғри",
+        "ru": "ровный, прямой"
+      },
+      "pron": {
+        "uz": "ge-ra-de",
+        "uz-Cyrl": "ге-ра-де",
+        "ru": "ге-ра-де"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau",
+        "shk",
+        "elektroniker"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Die Linie ist gerade.",
+        "tr": {
+          "uz": "Chiziq toʻgʻri.",
+          "uz-Cyrl": "Чизиқ тўғри.",
+          "ru": "Линия ровная."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-olchov-schief",
+      "slug": "schief",
+      "term": "schief",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "qiyshiq",
+        "uz-Cyrl": "қийшиқ",
+        "ru": "кривой"
+      },
+      "pron": {
+        "uz": "shif",
+        "uz-Cyrl": "шиф",
+        "ru": "шиф"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau",
+        "shk",
+        "elektroniker"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Das Regal hängt schief.",
+        "tr": {
+          "uz": "Javon qiyshiq osilgan.",
+          "uz-Cyrl": "Жавон қийшиқ осилган.",
+          "ru": "Полка висит криво."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-olchov-wasserwaage",
+      "slug": "wasserwaage",
+      "term": "die Wasserwaage",
+      "icon": "ruler",
+      "article": "die",
+      "plural": "die Wasserwaagen",
+      "tr": {
+        "uz": "uroven (sath oʻlchagich)",
+        "uz-Cyrl": "уровень (сатҳ ўлчагич)",
+        "ru": "строительный уровень"
+      },
+      "pron": {
+        "uz": "die va-ser-va-ge",
+        "uz-Cyrl": "ди ва-сер-ва-ге",
+        "ru": "ди ва-сер-ва-ге"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau",
+        "shk",
+        "elektroniker"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Prüfen Sie es mit der Wasserwaage.",
+        "tr": {
+          "uz": "Buni uroven bilan tekshiring.",
+          "uz-Cyrl": "Буни уровень билан текширинг.",
+          "ru": "Проверьте уровнем."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-olchov-brett",
+      "slug": "brett",
+      "term": "das Brett",
+      "icon": "tools",
+      "article": "das",
+      "plural": "die Bretter",
+      "tr": {
+        "uz": "taxta",
+        "uz-Cyrl": "тахта",
+        "ru": "доска"
+      },
+      "pron": {
+        "uz": "das bret",
+        "uz-Cyrl": "дас брет",
+        "ru": "дас брет"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau",
+        "shk",
+        "elektroniker"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Das Brett ist zu kurz.",
+        "tr": {
+          "uz": "Taxta juda kalta.",
+          "uz-Cyrl": "Тахта жуда калта.",
+          "ru": "Доска слишком короткая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-olchov-holz",
+      "slug": "holz",
+      "term": "das Holz",
+      "icon": "plant",
+      "article": "das",
+      "plural": "die Hölzer",
+      "tr": {
+        "uz": "yogʻoch",
+        "uz-Cyrl": "ёғоч",
+        "ru": "дерево (материал)"
+      },
+      "pron": {
+        "uz": "das holts",
+        "uz-Cyrl": "дас хольц",
+        "ru": "дас хольц"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau",
+        "shk",
+        "elektroniker"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Wir brauchen mehr Holz.",
+        "tr": {
+          "uz": "Bizga koʻproq yogʻoch kerak.",
+          "uz-Cyrl": "Бизга кўпроқ ёғоч керак.",
+          "ru": "Нам нужно больше дерева."
         }
       },
       "safety": false,
