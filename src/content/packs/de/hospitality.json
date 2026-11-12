@@ -68,6 +68,26 @@
       },
       "order": 6,
       "level": "A2"
+    },
+    {
+      "id": "bar",
+      "title": {
+        "uz": "Bar va ichimliklar",
+        "uz-Cyrl": "Бар ва ичимликлар",
+        "ru": "Бар и напитки"
+      },
+      "order": 7,
+      "level": "A1"
+    },
+    {
+      "id": "bufet",
+      "title": {
+        "uz": "Bufet va tadbirlar",
+        "uz-Cyrl": "Буфет ва тадбирлар",
+        "ru": "Буфет и мероприятия"
+      },
+      "order": 8,
+      "level": "A2"
     }
   ],
   "words": [
@@ -3132,6 +3152,1071 @@
           "uz": "Topilgan buyumni qabulxonaga olib boring.",
           "uz-Cyrl": "Топилган буюмни қабулхонага олиб боринг.",
           "ru": "Отнесите найденную вещь на ресепшн."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bar-theke",
+      "slug": "theke",
+      "term": "die Theke",
+      "icon": "glass",
+      "article": "die",
+      "plural": "die Theken",
+      "tr": {
+        "uz": "peshtaxta (bar stoyka)",
+        "uz-Cyrl": "пештахта (бар стойка)",
+        "ru": "барная стойка"
+      },
+      "pron": {
+        "uz": "die te-ke",
+        "uz-Cyrl": "ди те-ке",
+        "ru": "ди те-ке"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach"
+      ],
+      "situation": "bar",
+      "example": {
+        "term": "Die Gläser stehen auf der Theke.",
+        "tr": {
+          "uz": "Stakanlar peshtaxtada turibdi.",
+          "uz-Cyrl": "Стаканлар пештахтада турибди.",
+          "ru": "Стаканы стоят на стойке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bar-kaffee",
+      "slug": "kaffee",
+      "term": "der Kaffee",
+      "icon": "coffee",
+      "article": "der",
+      "plural": "die Kaffees",
+      "tr": {
+        "uz": "qahva",
+        "uz-Cyrl": "қаҳва",
+        "ru": "кофе"
+      },
+      "pron": {
+        "uz": "der ka-fe",
+        "uz-Cyrl": "дер ка-фе",
+        "ru": "дер ка-фе"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach"
+      ],
+      "situation": "bar",
+      "example": {
+        "term": "Ein Kaffee mit Milch, bitte.",
+        "tr": {
+          "uz": "Iltimos, bitta sutli qahva.",
+          "uz-Cyrl": "Илтимос, битта сутли қаҳва.",
+          "ru": "Один кофе с молоком, пожалуйста."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bar-kaffeemaschine",
+      "slug": "kaffeemaschine",
+      "term": "die Kaffeemaschine",
+      "icon": "coffee",
+      "article": "die",
+      "plural": "die Kaffeemaschinen",
+      "tr": {
+        "uz": "qahva mashinasi",
+        "uz-Cyrl": "қаҳва машинаси",
+        "ru": "кофемашина"
+      },
+      "pron": {
+        "uz": "die ka-fe-ma-shi-ne",
+        "uz-Cyrl": "ди ка-фе-ма-ши-не",
+        "ru": "ди ка-фе-ма-ши-не"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach"
+      ],
+      "situation": "bar",
+      "example": {
+        "term": "Die Kaffeemaschine ist heiß.",
+        "tr": {
+          "uz": "Qahva mashinasi issiq.",
+          "uz-Cyrl": "Қаҳва машинаси иссиқ.",
+          "ru": "Кофемашина горячая."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bar-tasse",
+      "slug": "tasse",
+      "term": "die Tasse",
+      "icon": "coffee",
+      "article": "die",
+      "plural": "die Tassen",
+      "tr": {
+        "uz": "finjon",
+        "uz-Cyrl": "финжон",
+        "ru": "чашка"
+      },
+      "pron": {
+        "uz": "die ta-se",
+        "uz-Cyrl": "ди та-се",
+        "ru": "ди та-се"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach"
+      ],
+      "situation": "bar",
+      "example": {
+        "term": "Die Tasse hat einen Sprung.",
+        "tr": {
+          "uz": "Finjon darz ketgan.",
+          "uz-Cyrl": "Финжон дарз кетган.",
+          "ru": "На чашке трещина."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bar-flasche",
+      "slug": "flasche",
+      "term": "die Flasche",
+      "icon": "glass",
+      "article": "die",
+      "plural": "die Flaschen",
+      "tr": {
+        "uz": "shisha (butilka)",
+        "uz-Cyrl": "шиша (бутилка)",
+        "ru": "бутылка"
+      },
+      "pron": {
+        "uz": "die fla-she",
+        "uz-Cyrl": "ди фла-ше",
+        "ru": "ди фла-ше"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach"
+      ],
+      "situation": "bar",
+      "example": {
+        "term": "Bringen Sie bitte eine Flasche Wasser.",
+        "tr": {
+          "uz": "Iltimos, bir shisha suv olib keling.",
+          "uz-Cyrl": "Илтимос, бир шиша сув олиб келинг.",
+          "ru": "Принесите, пожалуйста, бутылку воды."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bar-saft",
+      "slug": "saft",
+      "term": "der Saft",
+      "icon": "apple",
+      "article": "der",
+      "plural": "die Säfte",
+      "tr": {
+        "uz": "sharbat",
+        "uz-Cyrl": "шарбат",
+        "ru": "сок"
+      },
+      "pron": {
+        "uz": "der zaft",
+        "uz-Cyrl": "дер зафт",
+        "ru": "дер зафт"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach"
+      ],
+      "situation": "bar",
+      "example": {
+        "term": "Wir haben Apfelsaft und Orangensaft.",
+        "tr": {
+          "uz": "Bizda olma va apelsin sharbati bor.",
+          "uz-Cyrl": "Бизда олма ва апельсин шарбати бор.",
+          "ru": "У нас есть яблочный и апельсиновый сок."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bar-mineralwasser",
+      "slug": "mineralwasser",
+      "term": "das Mineralwasser",
+      "icon": "droplet",
+      "article": "das",
+      "plural": "die Mineralwasser",
+      "tr": {
+        "uz": "mineral suv",
+        "uz-Cyrl": "минерал сув",
+        "ru": "минеральная вода"
+      },
+      "pron": {
+        "uz": "das mi-ne-ral-va-ser",
+        "uz-Cyrl": "дас ми-не-раль-ва-сер",
+        "ru": "дас ми-не-раль-ва-сер"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach"
+      ],
+      "situation": "bar",
+      "example": {
+        "term": "Ein Mineralwasser für Tisch fünf.",
+        "tr": {
+          "uz": "Beshinchi stolga bitta mineral suv.",
+          "uz-Cyrl": "Бешинчи столга битта минерал сув.",
+          "ru": "Одну минеральную воду на пятый стол."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bar-bier",
+      "slug": "bier",
+      "term": "das Bier",
+      "icon": "glass",
+      "article": "das",
+      "plural": "die Biere",
+      "tr": {
+        "uz": "pivo",
+        "uz-Cyrl": "пиво",
+        "ru": "пиво"
+      },
+      "pron": {
+        "uz": "das bir",
+        "uz-Cyrl": "дас бир",
+        "ru": "дас бир"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach"
+      ],
+      "situation": "bar",
+      "example": {
+        "term": "Kein Bier für Gäste unter 16 Jahren.",
+        "tr": {
+          "uz": "16 yoshdan kichiklarga pivo berilmaydi.",
+          "uz-Cyrl": "16 ёшдан кичикларга пиво берилмайди.",
+          "ru": "Пиво не продаётся гостям младше 16 лет."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bar-wein",
+      "slug": "wein",
+      "term": "der Wein",
+      "icon": "glass",
+      "article": "der",
+      "plural": "die Weine",
+      "tr": {
+        "uz": "vino",
+        "uz-Cyrl": "вино",
+        "ru": "вино"
+      },
+      "pron": {
+        "uz": "der vayn",
+        "uz-Cyrl": "дер вайн",
+        "ru": "дер вайн"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach"
+      ],
+      "situation": "bar",
+      "example": {
+        "term": "Möchten Sie Rotwein oder Weißwein?",
+        "tr": {
+          "uz": "Qizil vino yoki oq vino xohlaysizmi?",
+          "uz-Cyrl": "Қизил вино ёки оқ вино хоҳлайсизми?",
+          "ru": "Вы хотите красное или белое вино?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bar-eiswuerfel",
+      "slug": "eiswuerfel",
+      "term": "der Eiswürfel",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Eiswürfel",
+      "tr": {
+        "uz": "muz boʻlakchasi",
+        "uz-Cyrl": "муз бўлакчаси",
+        "ru": "кубик льда"
+      },
+      "pron": {
+        "uz": "der ays-vyur-fel",
+        "uz-Cyrl": "дер айс-вюр-фель",
+        "ru": "дер айс-вюр-фель"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach"
+      ],
+      "situation": "bar",
+      "example": {
+        "term": "Mit Eiswürfeln, bitte.",
+        "tr": {
+          "uz": "Muz bilan, iltimos.",
+          "uz-Cyrl": "Муз билан, илтимос.",
+          "ru": "Со льдом, пожалуйста."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bar-einschenken",
+      "slug": "einschenken",
+      "term": "einschenken",
+      "icon": "glass",
+      "tr": {
+        "uz": "quymoq (ichimlik)",
+        "uz-Cyrl": "қуймоқ (ичимлик)",
+        "ru": "наливать"
+      },
+      "pron": {
+        "uz": "ayn-shen-ken",
+        "uz-Cyrl": "айн-шен-кен",
+        "ru": "айн-шен-кен"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach"
+      ],
+      "situation": "bar",
+      "example": {
+        "term": "Darf ich Ihnen einschenken?",
+        "tr": {
+          "uz": "Sizga quyib bersam boʻladimi?",
+          "uz-Cyrl": "Сизга қуйиб берсам бўладими?",
+          "ru": "Можно вам налить?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bar-alkoholfrei",
+      "slug": "alkoholfrei",
+      "term": "alkoholfrei",
+      "icon": "check",
+      "tr": {
+        "uz": "alkogolsiz",
+        "uz-Cyrl": "алкоголсиз",
+        "ru": "безалкогольный"
+      },
+      "pron": {
+        "uz": "al-ko-hol-fray",
+        "uz-Cyrl": "аль-ко-холь-фрай",
+        "ru": "аль-ко-холь-фрай"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach"
+      ],
+      "situation": "bar",
+      "example": {
+        "term": "Haben Sie alkoholfreies Bier?",
+        "tr": {
+          "uz": "Alkogolsiz pivongiz bormi?",
+          "uz-Cyrl": "Алкоголсиз пивонгиз борми?",
+          "ru": "У вас есть безалкогольное пиво?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bar-mit-oder-ohne-kohlensaeure",
+      "slug": "mit-oder-ohne-kohlensaeure",
+      "term": "Mit oder ohne Kohlensäure?",
+      "icon": "droplet",
+      "tr": {
+        "uz": "Gazlimi yoki gazsizmi?",
+        "uz-Cyrl": "Газлими ёки газсизми?",
+        "ru": "С газом или без газа?"
+      },
+      "pron": {
+        "uz": "mit o-der o-ne ko-len-zoy-re",
+        "uz-Cyrl": "мит о-дер о-не ко-лен-зой-ре",
+        "ru": "мит о-дер о-не ко-лен-зой-ре"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach"
+      ],
+      "situation": "bar",
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bar-zahlen-sie-bar-oder-mit-karte",
+      "slug": "zahlen-sie-bar-oder-mit-karte",
+      "term": "Zahlen Sie bar oder mit Karte?",
+      "icon": "receipt",
+      "tr": {
+        "uz": "Naqd toʻlaysizmi yoki karta bilan?",
+        "uz-Cyrl": "Нақд тўлайсизми ёки карта билан?",
+        "ru": "Вы платите наличными или картой?"
+      },
+      "pron": {
+        "uz": "tsa-len zi bar o-der mit kar-te",
+        "uz-Cyrl": "ца-лен зи бар о-дер мит кар-те",
+        "ru": "ца-лен зи бар о-дер мит кар-те"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach"
+      ],
+      "situation": "bar",
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bar-tablett",
+      "slug": "tablett",
+      "term": "das Tablett",
+      "icon": "tools-kitchen-2",
+      "article": "das",
+      "plural": "die Tabletts",
+      "tr": {
+        "uz": "patnis",
+        "uz-Cyrl": "патнис",
+        "ru": "поднос"
+      },
+      "pron": {
+        "uz": "das ta-blet",
+        "uz-Cyrl": "дас та-блет",
+        "ru": "дас та-блет"
+      },
+      "level": "A1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach"
+      ],
+      "situation": "bar",
+      "example": {
+        "term": "Tragen Sie das Tablett mit beiden Händen.",
+        "tr": {
+          "uz": "Patnisni ikki qoʻl bilan koʻtaring.",
+          "uz-Cyrl": "Патнисни икки қўл билан кўтаринг.",
+          "ru": "Несите поднос двумя руками."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bufet-buffet",
+      "slug": "buffet",
+      "term": "das Buffet",
+      "icon": "bowl",
+      "article": "das",
+      "plural": "die Buffets",
+      "tr": {
+        "uz": "bufet (shved stoli)",
+        "uz-Cyrl": "буфет (швед столи)",
+        "ru": "шведский стол"
+      },
+      "pron": {
+        "uz": "das byu-fe",
+        "uz-Cyrl": "дас бю-фе",
+        "ru": "дас бю-фе"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach",
+        "koch"
+      ],
+      "situation": "bufet",
+      "example": {
+        "term": "Das Buffet ist ab sieben Uhr offen.",
+        "tr": {
+          "uz": "Bufet soat yettidan ochiq.",
+          "uz-Cyrl": "Буфет соат еттидан очиқ.",
+          "ru": "Шведский стол открыт с семи часов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bufet-auffuellen",
+      "slug": "auffuellen",
+      "term": "auffüllen",
+      "icon": "repeat",
+      "tr": {
+        "uz": "toʻldirib qoʻymoq",
+        "uz-Cyrl": "тўлдириб қўймоқ",
+        "ru": "пополнять"
+      },
+      "pron": {
+        "uz": "auf-fyu-len",
+        "uz-Cyrl": "ауф-фю-лен",
+        "ru": "ауф-фю-лен"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach",
+        "koch"
+      ],
+      "situation": "bufet",
+      "example": {
+        "term": "Bitte füllen Sie das Brot auf.",
+        "tr": {
+          "uz": "Iltimos, nonni toʻldirib qoʻying.",
+          "uz-Cyrl": "Илтимос, нонни тўлдириб қўйинг.",
+          "ru": "Пожалуйста, пополните хлеб."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bufet-besteck",
+      "slug": "besteck",
+      "term": "das Besteck",
+      "icon": "tools-kitchen-2",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "qoshiq-sanchqi (oshxona anjomi)",
+        "uz-Cyrl": "қошиқ-санчқи (ошхона анжоми)",
+        "ru": "столовые приборы"
+      },
+      "pron": {
+        "uz": "das be-shtek",
+        "uz-Cyrl": "дас бе-штек",
+        "ru": "дас бе-штек"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach",
+        "koch"
+      ],
+      "situation": "bufet",
+      "example": {
+        "term": "Das Besteck liegt neben dem Teller.",
+        "tr": {
+          "uz": "Qoshiq-sanchqi likopcha yonida yotadi.",
+          "uz-Cyrl": "Қошиқ-санчқи ликопча ёнида ётади.",
+          "ru": "Приборы лежат рядом с тарелкой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bufet-tischdecke",
+      "slug": "tischdecke",
+      "term": "die Tischdecke",
+      "icon": "home",
+      "article": "die",
+      "plural": "die Tischdecken",
+      "tr": {
+        "uz": "dasturxon",
+        "uz-Cyrl": "дастурхон",
+        "ru": "скатерть"
+      },
+      "pron": {
+        "uz": "die tish-de-ke",
+        "uz-Cyrl": "ди тиш-де-ке",
+        "ru": "ди тиш-де-ке"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach",
+        "koch"
+      ],
+      "situation": "bufet",
+      "example": {
+        "term": "Die Tischdecke ist schmutzig.",
+        "tr": {
+          "uz": "Dasturxon iflos.",
+          "uz-Cyrl": "Дастурхон ифлос.",
+          "ru": "Скатерть грязная."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bufet-eindecken",
+      "slug": "eindecken",
+      "term": "eindecken",
+      "icon": "tools-kitchen-2",
+      "tr": {
+        "uz": "stolni bezatmoq (servirovka)",
+        "uz-Cyrl": "столни безатмоқ (сервировка)",
+        "ru": "накрывать на стол"
+      },
+      "pron": {
+        "uz": "ayn-de-ken",
+        "uz-Cyrl": "айн-де-кен",
+        "ru": "айн-де-кен"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach",
+        "koch"
+      ],
+      "situation": "bufet",
+      "example": {
+        "term": "Wir decken die Tische für 50 Gäste ein.",
+        "tr": {
+          "uz": "50 mehmon uchun stollarni bezatamiz.",
+          "uz-Cyrl": "50 меҳмон учун столларни безатамиз.",
+          "ru": "Мы накрываем столы на 50 гостей."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bufet-warmhalteplatte",
+      "slug": "warmhalteplatte",
+      "term": "die Warmhalteplatte",
+      "icon": "flame",
+      "article": "die",
+      "plural": "die Warmhalteplatten",
+      "tr": {
+        "uz": "isitib turuvchi plita",
+        "uz-Cyrl": "иситиб турувчи плита",
+        "ru": "подогревательная плита"
+      },
+      "pron": {
+        "uz": "die varm-hal-te-pla-te",
+        "uz-Cyrl": "ди варм-халь-те-пла-те",
+        "ru": "ди варм-халь-те-пла-те"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach",
+        "koch"
+      ],
+      "situation": "bufet",
+      "example": {
+        "term": "Vorsicht, die Warmhalteplatte ist heiß!",
+        "tr": {
+          "uz": "Ehtiyot boʻling, isitish plitasi issiq!",
+          "uz-Cyrl": "Эҳтиёт бўлинг, иситиш плитаси иссиқ!",
+          "ru": "Осторожно, плита горячая!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bufet-veranstaltung",
+      "slug": "veranstaltung",
+      "term": "die Veranstaltung",
+      "icon": "calendar-event",
+      "article": "die",
+      "plural": "die Veranstaltungen",
+      "tr": {
+        "uz": "tadbir",
+        "uz-Cyrl": "тадбир",
+        "ru": "мероприятие"
+      },
+      "pron": {
+        "uz": "die fer-an-shtal-tung",
+        "uz-Cyrl": "ди фер-ан-шталь-тунг",
+        "ru": "ди фер-ан-шталь-тунг"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach",
+        "koch"
+      ],
+      "situation": "bufet",
+      "example": {
+        "term": "Heute Abend haben wir eine Veranstaltung.",
+        "tr": {
+          "uz": "Bugun kechqurun bizda tadbir bor.",
+          "uz-Cyrl": "Бугун кечқурун бизда тадбир бор.",
+          "ru": "Сегодня вечером у нас мероприятие."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bufet-saal",
+      "slug": "saal",
+      "term": "der Saal",
+      "icon": "building",
+      "article": "der",
+      "plural": "die Säle",
+      "tr": {
+        "uz": "zal",
+        "uz-Cyrl": "зал",
+        "ru": "зал"
+      },
+      "pron": {
+        "uz": "der zal",
+        "uz-Cyrl": "дер заль",
+        "ru": "дер заль"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach",
+        "koch"
+      ],
+      "situation": "bufet",
+      "example": {
+        "term": "Der Saal ist für 100 Personen.",
+        "tr": {
+          "uz": "Zal 100 kishiga moʻljallangan.",
+          "uz-Cyrl": "Зал 100 кишига мўлжалланган.",
+          "ru": "Зал рассчитан на 100 человек."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bufet-hochzeit",
+      "slug": "hochzeit",
+      "term": "die Hochzeit",
+      "icon": "heart-handshake",
+      "article": "die",
+      "plural": "die Hochzeiten",
+      "tr": {
+        "uz": "toʻy",
+        "uz-Cyrl": "тўй",
+        "ru": "свадьба"
+      },
+      "pron": {
+        "uz": "die hox-tsayt",
+        "uz-Cyrl": "ди хох-цайт",
+        "ru": "ди хох-цайт"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach",
+        "koch"
+      ],
+      "situation": "bufet",
+      "example": {
+        "term": "Am Samstag ist eine Hochzeit.",
+        "tr": {
+          "uz": "Shanba kuni toʻy bor.",
+          "uz-Cyrl": "Шанба куни тўй бор.",
+          "ru": "В субботу свадьба."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bufet-broetchen",
+      "slug": "broetchen",
+      "term": "das Brötchen",
+      "icon": "cookie",
+      "article": "das",
+      "plural": "die Brötchen",
+      "tr": {
+        "uz": "bulochka",
+        "uz-Cyrl": "булочка",
+        "ru": "булочка"
+      },
+      "pron": {
+        "uz": "das bryot-xen",
+        "uz-Cyrl": "дас брёт-хен",
+        "ru": "дас брёт-хен"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach",
+        "koch"
+      ],
+      "situation": "bufet",
+      "example": {
+        "term": "Die Brötchen sind noch warm.",
+        "tr": {
+          "uz": "Bulochkalar hali iliq.",
+          "uz-Cyrl": "Булочкалар ҳали илиқ.",
+          "ru": "Булочки ещё тёплые."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bufet-marmelade",
+      "slug": "marmelade",
+      "term": "die Marmelade",
+      "icon": "grape",
+      "article": "die",
+      "plural": "die Marmeladen",
+      "tr": {
+        "uz": "murabbo",
+        "uz-Cyrl": "мураббо",
+        "ru": "джем"
+      },
+      "pron": {
+        "uz": "die mar-me-la-de",
+        "uz-Cyrl": "ди мар-ме-ла-де",
+        "ru": "ди мар-ме-ла-де"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach",
+        "koch"
+      ],
+      "situation": "bufet",
+      "example": {
+        "term": "Die Marmelade ist fast leer.",
+        "tr": {
+          "uz": "Murabbo deyarli tugagan.",
+          "uz-Cyrl": "Мураббо деярли тугаган.",
+          "ru": "Джем почти закончился."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bufet-ruehrei",
+      "slug": "ruehrei",
+      "term": "das Rührei",
+      "icon": "egg",
+      "article": "das",
+      "plural": "die Rühreier",
+      "tr": {
+        "uz": "quymoq (tuxum)",
+        "uz-Cyrl": "қуймоқ (тухум)",
+        "ru": "яичница-болтунья"
+      },
+      "pron": {
+        "uz": "das ryur-ay",
+        "uz-Cyrl": "дас рюр-ай",
+        "ru": "дас рюр-ай"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach",
+        "koch"
+      ],
+      "situation": "bufet",
+      "example": {
+        "term": "Machen Sie bitte noch Rührei.",
+        "tr": {
+          "uz": "Iltimos, yana quymoq qiling.",
+          "uz-Cyrl": "Илтимос, яна қуймоқ қилинг.",
+          "ru": "Сделайте, пожалуйста, ещё омлет."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bufet-joghurt",
+      "slug": "joghurt",
+      "term": "der Joghurt",
+      "icon": "milk",
+      "article": "der",
+      "plural": "die Joghurts",
+      "tr": {
+        "uz": "yogurt",
+        "uz-Cyrl": "йогурт",
+        "ru": "йогурт"
+      },
+      "pron": {
+        "uz": "der yo-gurt",
+        "uz-Cyrl": "дер йо-гурт",
+        "ru": "дер йо-гурт"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach",
+        "koch"
+      ],
+      "situation": "bufet",
+      "example": {
+        "term": "Der Joghurt muss in den Kühlschrank.",
+        "tr": {
+          "uz": "Yogurt muzlatgichga qoʻyilishi kerak.",
+          "uz-Cyrl": "Йогурт музлатгичга қўйилиши керак.",
+          "ru": "Йогурт нужно убрать в холодильник."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bufet-abraeumen",
+      "slug": "abraeumen",
+      "term": "abräumen",
+      "icon": "trash",
+      "tr": {
+        "uz": "stolni yigʻishtirmoq",
+        "uz-Cyrl": "столни йиғиштирмоқ",
+        "ru": "убирать со стола"
+      },
+      "pron": {
+        "uz": "ap-roy-men",
+        "uz-Cyrl": "ап-рой-мен",
+        "ru": "ап-рой-мен"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach",
+        "koch"
+      ],
+      "situation": "bufet",
+      "example": {
+        "term": "Bitte räumen Sie Tisch drei ab.",
+        "tr": {
+          "uz": "Iltimos, uchinchi stolni yigʻishtiring.",
+          "uz-Cyrl": "Илтимос, учинчи столни йиғиштиринг.",
+          "ru": "Пожалуйста, уберите третий стол."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-bufet-schild",
+      "slug": "schild",
+      "term": "das Schild",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "die Schilder",
+      "tr": {
+        "uz": "yorliq (tablichka)",
+        "uz-Cyrl": "ёрлиқ (табличка)",
+        "ru": "табличка"
+      },
+      "pron": {
+        "uz": "das shilt",
+        "uz-Cyrl": "дас шильт",
+        "ru": "дас шильт"
+      },
+      "level": "A2",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "hotelfach",
+        "koch"
+      ],
+      "situation": "bufet",
+      "example": {
+        "term": "Auf dem Schild stehen die Allergene.",
+        "tr": {
+          "uz": "Yorliqda allergenlar yozilgan.",
+          "uz-Cyrl": "Ёрлиқда аллергенлар ёзилган.",
+          "ru": "На табличке указаны аллергены."
         }
       },
       "safety": false,
