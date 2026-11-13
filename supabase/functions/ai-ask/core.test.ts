@@ -89,3 +89,16 @@ describe('provayder', () => {
     expect(body.response_format).toEqual({ type: 'json_object' })
   })
 })
+
+describe('zaxira limit (xotirada)', () => {
+  it('kalit va jami limit, kun almashganda tozalanadi', async () => {
+    const { memoryTake } = await import('./limit')
+    const d1 = new Date('2026-11-13T06:00:00Z')
+    expect(memoryTake('a', 2, 3, d1)).toBe(1)
+    expect(memoryTake('a', 2, 3, d1)).toBe(0)
+    expect(memoryTake('a', 2, 3, d1)).toBe(-1)
+    expect(memoryTake('b', 2, 3, d1)).toBe(1)
+    expect(memoryTake('c', 2, 3, d1)).toBe(-1) // jami 3 tugadi
+    expect(memoryTake('a', 2, 3, new Date('2026-11-14T06:00:00Z'))).toBe(1)
+  })
+})

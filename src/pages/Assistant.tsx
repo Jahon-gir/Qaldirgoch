@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react'
 import { IconAlertTriangle, IconExternalLink, IconLoader2, IconSend, IconSparkles } from '@tabler/icons-react'
 import { askAi, MAX_QUESTION, safeUrl, type AiAnswer, type AiError } from '../ai/ask'
-import { useAuth } from '../auth/AuthProvider'
-import { useGoogleSignIn } from '../auth/useGoogleSignIn'
 import { useI18n } from '../i18n/I18nProvider'
 import type { Key } from '../i18n/uz'
 import { supabase } from '../lib/supabase'
@@ -15,8 +13,6 @@ const ERR: Record<AiError, Key> = { auth: 'ai.err.auth', empty: 'ai.err.empty', 
 /** AI maslahatchi: faqat tasdiqlangan kontentdan javob, har javobda manba va sana. */
 export default function Assistant() {
   const { t, lang } = useI18n()
-  const { status } = useAuth()
-  const google = useGoogleSignIn()
   const [q, setQ] = useState('')
   const [asked, setAsked] = useState('')
   const [busy, setBusy] = useState(false)
@@ -49,8 +45,6 @@ export default function Assistant() {
     void send(q)
   }
 
-  const signedIn = status === 'signedIn'
-
   return (
     <div className="space-y-4">
       <header className="bank-head -mx-4 -mt-[max(1rem,env(safe-area-inset-top))] px-4 pb-6 pt-[max(1.5rem,env(safe-area-inset-top))] text-white">
@@ -65,17 +59,8 @@ export default function Assistant() {
         </div>
       </header>
 
-      {!signedIn ? (
-        <div className="bank-card space-y-3 p-4">
-          <p className="text-base">{t('ai.signin')}</p>
-          {google.configured && (
-            <button type="button" onClick={google.start} disabled={google.busy} className={`bank-btn flex min-h-[48px] w-full items-center justify-center rounded-btn px-4 text-base font-semibold text-white disabled:opacity-60 ${focus}`}>
-              {t('ai.signinBtn')}
-            </button>
-          )}
-        </div>
-      ) : (
-        <>
+      {/* Mehmon ham soʻray oladi (kirish shart emas); limit serverda */}
+      <>
           <form onSubmit={onSubmit} className="bank-card space-y-3 p-4">
             <label htmlFor="ai-q" className="block text-base font-semibold">
               {t('ai.label')}
@@ -167,8 +152,7 @@ export default function Assistant() {
               </article>
             )}
           </div>
-        </>
-      )}
+      </>
 
       <p className="px-1 text-sm text-ink-2">{t('ai.disclaimer')}</p>
     </div>
