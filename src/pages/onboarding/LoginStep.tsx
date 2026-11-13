@@ -3,6 +3,7 @@ import { useGoogleSignIn } from '../../auth/useGoogleSignIn'
 import { Button } from '../../components/ui/Button'
 import { GoogleButton } from '../../components/ui/GoogleButton'
 import { Notice } from '../../components/ui/Notice'
+import { MigraLogo } from '../../components/Logo'
 import { useT } from '../../i18n/I18nProvider'
 
 export function LoginStep({ onNext }: { onNext: () => void }) {
@@ -11,7 +12,7 @@ export function LoginStep({ onNext }: { onNext: () => void }) {
   return (
     <>
       <div className="flex flex-col items-center pt-10 text-center">
-        <img src="./icon.svg" alt="" width={72} height={72} className="h-[72px] w-[72px]" />
+        <MigraLogo size={88} />
         <h1 className="mt-4 text-2xl font-semibold">{t('login.title')}</h1>
         <p className="mt-2 text-ink-2">{t('login.text')}</p>
       </div>
