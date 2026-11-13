@@ -110,7 +110,90 @@
         "ru": "Товар и полки"
       },
       "order": 2,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Wir füllen heute die Regale auf. Das Obst ist hinten im Lager.",
+            "tr": {
+              "uz": "Bugun javonlarni toʻldiramiz. Meva orqada omborda.",
+              "uz-Cyrl": "Бугун жавонларни тўлдирамиз. Мева орқада омборда.",
+              "ru": "Сегодня пополняем полки. Фрукты сзади на складе."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wo kommen die Dosen hin?",
+            "tr": {
+              "uz": "Bankalar qayerga qoʻyiladi?",
+              "uz-Cyrl": "Банкалар қаерга қўйилади?",
+              "ru": "Куда ставить консервы?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "In die Abteilung dort. Prüfen Sie das Haltbarkeitsdatum.",
+            "tr": {
+              "uz": "Oʻsha boʻlimga. Yaroqlilik muddatini tekshiring.",
+              "uz-Cyrl": "Ўша бўлимга. Яроқлилик муддатини текширинг.",
+              "ru": "В тот отдел. Проверяйте срок годности."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Was mache ich mit alter Ware?",
+            "tr": {
+              "uz": "Eski tovar bilan nima qilaman?",
+              "uz-Cyrl": "Эски товар билан нима қиламан?",
+              "ru": "Что делать со старым товаром?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Nach vorne stellen, neue nach hinten. Ein Preisschild fehlt noch.",
+            "tr": {
+              "uz": "Oldinga qoʻying, yangisini orqaga. Bitta narx yorligʻi hali yoʻq.",
+              "uz-Cyrl": "Олдинга қўйинг, янгисини орқага. Битта нарх ёрлиғи ҳали йўқ.",
+              "ru": "Старый вперёд, новый назад. Одного ценника ещё нет."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut, ich hole ein neues Preisschild.",
+            "tr": {
+              "uz": "Yaxshi, yangi narx yorligʻini olib kelaman.",
+              "uz-Cyrl": "Яхши, янги нарх ёрлиғини олиб келаман.",
+              "ru": "Хорошо, принесу новый ценник."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "mijoz",
@@ -120,7 +203,90 @@
         "ru": "Разговор с покупателем"
       },
       "order": 3,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Guten Tag. Ich möchte diese Hose umtauschen.",
+            "tr": {
+              "uz": "Xayrli kun. Men bu shimni almashtirmoqchiman.",
+              "uz-Cyrl": "Хайрли кун. Мен бу шимни алмаштирмоқчиман.",
+              "ru": "Добрый день. Я хочу обменять эти брюки."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Haben Sie den Kassenbon dabei?",
+            "tr": {
+              "uz": "Chek yoningizdami?",
+              "uz-Cyrl": "Чек ёнингиздами?",
+              "ru": "Чек у вас с собой?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Ja, hier. Die Größe ist zu klein.",
+            "tr": {
+              "uz": "Ha, mana. Oʻlcham juda kichik.",
+              "uz-Cyrl": "Ҳа, мана. Ўлчам жуда кичик.",
+              "ru": "Да, вот. Размер слишком маленький."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Möchten Sie eine andere Größe anprobieren?",
+            "tr": {
+              "uz": "Boshqa oʻlchamni kiyib koʻrasizmi?",
+              "uz-Cyrl": "Бошқа ўлчамни кийиб кўрасизми?",
+              "ru": "Хотите примерить другой размер?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Gern. Wo ist die Umkleidekabine?",
+            "tr": {
+              "uz": "Mamnuniyat bilan. Kiyib koʻrish xonasi qayerda?",
+              "uz-Cyrl": "Мамнуният билан. Кийиб кўриш хонаси қаерда?",
+              "ru": "С удовольствием. Где примерочная?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Dort rechts neben dem Spiegel. Ich helfe Ihnen gern.",
+            "tr": {
+              "uz": "Oʻsha oʻngda, koʻzgu yonida. Yordam berishdan mamnunman.",
+              "uz-Cyrl": "Ўша ўнгда, кўзгу ёнида. Ёрдам беришдан мамнунман.",
+              "ru": "Там справа у зеркала. Рад вам помочь."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "qabul",
@@ -130,7 +296,90 @@
         "ru": "Приёмка товара"
       },
       "order": 4,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Die Anlieferung ist da. Wir prüfen die Ware und die Menge.",
+            "tr": {
+              "uz": "Yetkazib berish keldi. Tovar va miqdorni tekshiramiz.",
+              "uz-Cyrl": "Етказиб бериш келди. Товар ва миқдорни текширамиз.",
+              "ru": "Поставка прибыла. Проверяем товар и количество."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Womit öffne ich die Kartons?",
+            "tr": {
+              "uz": "Kartonlarni nima bilan ochaman?",
+              "uz-Cyrl": "Картонларни нима билан очаман?",
+              "ru": "Чем вскрывать коробки?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Mit dem Cuttermesser, aber vorsichtig. Nichts beschädigen.",
+            "tr": {
+              "uz": "Kanselyar pichoq bilan, lekin ehtiyotkorlik bilan. Hech narsani shikastlamang.",
+              "uz-Cyrl": "Канселяр пичоқ билан, лекин эҳтиёткорлик билан. Ҳеч нарсани шикастламанг.",
+              "ru": "Канцелярским ножом, но осторожно. Ничего не повредите."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wohin kommt die Tiefkühlware?",
+            "tr": {
+              "uz": "Muzlatilgan mahsulot qayerga qoʻyiladi?",
+              "uz-Cyrl": "Музлатилган маҳсулот қаерга қўйилади?",
+              "ru": "Куда идёт замороженный товар?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Sofort ins Kühlregal. Die Kühlkette darf nicht brechen.",
+            "tr": {
+              "uz": "Darhol sovutgichli javonga. Sovuq zanjir uzilmasligi kerak.",
+              "uz-Cyrl": "Дарҳол совутгичли жавонга. Совуқ занжир узилмаслиги керак.",
+              "ru": "Сразу в холодильную витрину. Холодовая цепь не должна прерываться."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Verstanden, ich bringe sie zuerst weg.",
+            "tr": {
+              "uz": "Tushundim, avval oʻshani olib qoʻyaman.",
+              "uz-Cyrl": "Тушундим, аввал ўшани олиб қўяман.",
+              "ru": "Понял, сначала унесу её."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "kiyim",
@@ -140,7 +389,90 @@
         "ru": "В магазине одежды"
       },
       "order": 5,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Hallo, ich suche ein Kleid in Blau.",
+            "tr": {
+              "uz": "Salom, men koʻk rangdagi koʻylak qidiryapman.",
+              "uz-Cyrl": "Салом, мен кўк рангдаги кўйлак қидиряпман.",
+              "ru": "Здравствуйте, я ищу платье синего цвета."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Welche Größe haben Sie?",
+            "tr": {
+              "uz": "Oʻlchamingiz qanaqa?",
+              "uz-Cyrl": "Ўлчамингиз қанақа?",
+              "ru": "Какой у вас размер?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Größe achtunddreißig. Haben Sie das hier?",
+            "tr": {
+              "uz": "Oʻttiz sakkizinchi oʻlcham. Shu yerda bormi?",
+              "uz-Cyrl": "Ўттиз саккизинчи ўлчам. Шу ерда борми?",
+              "ru": "Размер тридцать восемь. У вас есть здесь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Möchten Sie es anprobieren?",
+            "tr": {
+              "uz": "Kiyib koʻrasizmi?",
+              "uz-Cyrl": "Кийиб кўрасизми?",
+              "ru": "Хотите примерить?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Ja, gern. Wo ist die Umkleidekabine?",
+            "tr": {
+              "uz": "Ha, mamnuniyat bilan. Kiyib koʻrish xonasi qayerda?",
+              "uz-Cyrl": "Ҳа, мамнуният билан. Кийиб кўриш хонаси қаерда?",
+              "ru": "Да, с удовольствием. Где примерочная?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Dort hinten am Spiegel. Das steht Ihnen bestimmt gut.",
+            "tr": {
+              "uz": "Oʻsha orqada, koʻzgu yonida. Bu sizga albatta yarashadi.",
+              "uz-Cyrl": "Ўша орқада, кўзгу ёнида. Бу сизга албатта ярашади.",
+              "ru": "Там сзади у зеркала. Вам это точно пойдёт."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "bolimlar",
@@ -150,7 +482,90 @@
         "ru": "Отделы супермаркета"
       },
       "order": 6,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Entschuldigung, wo finde ich Käse?",
+            "tr": {
+              "uz": "Kechirasiz, pishloqni qayerdan topaman?",
+              "uz-Cyrl": "Кечирасиз, пишлоқни қаердан топаман?",
+              "ru": "Извините, где найти сыр?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "An der Fleischtheke links, bei den Milchprodukten.",
+            "tr": {
+              "uz": "Goʻsht peshtaxtasi chapida, sut mahsulotlari yonida.",
+              "uz-Cyrl": "Гўшт пештахтаси чапида, сут маҳсулотлари ёнида.",
+              "ru": "Слева у мясного прилавка, рядом с молочными продуктами."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Und wo ist das Brot?",
+            "tr": {
+              "uz": "Non qayerda?",
+              "uz-Cyrl": "Нон қаерда?",
+              "ru": "А где хлеб?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Möchten Sie frische Backware oder Brot im Regal?",
+            "tr": {
+              "uz": "Yangi non mahsulotini xohlaysizmi yoki javondagi nonnimi?",
+              "uz-Cyrl": "Янги нон маҳсулотини хоҳлайсизми ёки жавондаги ноннными?",
+              "ru": "Хотите свежую выпечку или хлеб на полке?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Frische Backware, bitte. Haben Sie auch Bio-Mehl?",
+            "tr": {
+              "uz": "Yangi non mahsuloti, iltimos. Bio un ham bormi?",
+              "uz-Cyrl": "Янги нон маҳсулоти, илтимос. Био ун ҳам борми?",
+              "ru": "Свежую выпечку, пожалуйста. А органическая мука есть?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, in der Abteilung dort hinten.",
+            "tr": {
+              "uz": "Ha, oʻsha orqadagi boʻlimda.",
+              "uz-Cyrl": "Ҳа, ўша орқадаги бўлимда.",
+              "ru": "Да, в том отделе сзади."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "tolov",
@@ -160,7 +575,90 @@
         "ru": "Оплата и закрытие кассы"
       },
       "order": 7,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Kann ich mit Karte zahlen?",
+            "tr": {
+              "uz": "Karta bilan toʻlasam boʻladimi?",
+              "uz-Cyrl": "Карта билан тўласам бўладими?",
+              "ru": "Можно оплатить картой?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, kontaktlos oder mit Geheimzahl.",
+            "tr": {
+              "uz": "Ha, kontaktsiz yoki PIN-kod bilan.",
+              "uz-Cyrl": "Ҳа, контактсиз ёки ПИН-код билан.",
+              "ru": "Да, бесконтактно или с ПИН-кодом."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Die Summe stimmt nicht. Das ist zu viel.",
+            "tr": {
+              "uz": "Jami summa toʻgʻri emas. Bu juda koʻp.",
+              "uz-Cyrl": "Жами сумма тўғри эмас. Бу жуда кўп.",
+              "ru": "Сумма неверная. Это слишком много."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Einen Moment, ich prüfe den Kassenbon.",
+            "tr": {
+              "uz": "Bir daqiqa, chekni tekshiraman.",
+              "uz-Cyrl": "Бир дақиқа, чекни текшираман.",
+              "ru": "Минутку, я проверю чек."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Hier, dieser Artikel ist doppelt.",
+            "tr": {
+              "uz": "Mana, bu mahsulot ikki marta.",
+              "uz-Cyrl": "Мана, бу маҳсулот икки марта.",
+              "ru": "Вот, этот товар дважды."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Entschuldigung, ich storniere ihn sofort.",
+            "tr": {
+              "uz": "Kechirasiz, uni darhol bekor qilaman.",
+              "uz-Cyrl": "Кечирасиз, уни дарҳол бекор қиламан.",
+              "ru": "Извините, я сразу его отменю."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "xavfsizlik",
@@ -170,7 +668,90 @@
         "ru": "Безопасность в магазине"
       },
       "order": 8,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Doʻkon detektivi",
+              "uz-Cyrl": "Дўкон детективи",
+              "ru": "Детектив магазина"
+            },
+            "de": "Beobachten Sie die Person dort? Sie wirkt verdächtig.",
+            "tr": {
+              "uz": "Oʻsha odamni kuzatyapsizmi? U shubhali koʻrinadi.",
+              "uz-Cyrl": "Ўша одамни кузатяпсизми? У шубҳали кўринади.",
+              "ru": "Вы наблюдаете за тем человеком? Он выглядит подозрительно."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Soll ich den Marktleiter holen?",
+            "tr": {
+              "uz": "Doʻkon rahbarini chaqiraymi?",
+              "uz-Cyrl": "Дўкон раҳбарини чақирайми?",
+              "ru": "Позвать руководителя магазина?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Doʻkon detektivi",
+              "uz-Cyrl": "Дўкон детективи",
+              "ru": "Детектив магазина"
+            },
+            "de": "Ja, aber bleiben Sie ruhig. Kein Streit im Laden.",
+            "tr": {
+              "uz": "Ha, lekin xotirjam boʻling. Doʻkonda janjal boʻlmasin.",
+              "uz-Cyrl": "Ҳа, лекин хотиржам бўлинг. Дўконда жанжал бўлмасин.",
+              "ru": "Да, но сохраняйте спокойствие. Никаких ссор в магазине."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Was mache ich bei einem Diebstahl?",
+            "tr": {
+              "uz": "Oʻgʻirlik boʻlsa nima qilaman?",
+              "uz-Cyrl": "Ўғирлик бўлса нима қиламан?",
+              "ru": "Что делать при краже?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Doʻkon detektivi",
+              "uz-Cyrl": "Дўкон детективи",
+              "ru": "Детектив магазина"
+            },
+            "de": "Nichts allein. Rufen Sie mich oder die Polizei.",
+            "tr": {
+              "uz": "Yolgʻiz hech narsa qilmang. Meni yoki politsiyani chaqiring.",
+              "uz-Cyrl": "Ёлғиз ҳеч нарса қилманг. Мени ёки полицияни чақиринг.",
+              "ru": "Ничего в одиночку. Зовите меня или полицию."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Verstanden. Ich bleibe an der Kasse.",
+            "tr": {
+              "uz": "Tushundim. Men kassada qolaman.",
+              "uz-Cyrl": "Тушундим. Мен кассада қоламан.",
+              "ru": "Понял. Я останусь на кассе."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
