@@ -8,6 +8,7 @@ export function AppShell() {
   // Effekt hech narsa qaytarmasin: scrollTo yangi brauzerlarda Promise qaytaradi, React uni tozalash funksiyasi deb chaqirib qulaydi
   useEffect(() => {
     window.scrollTo(0, 0) // yangi ekran yuqoridan ochilsin
+    document.getElementById('root')?.scrollTo(0, 0) // telefon ramkasida (keng ekran) #root aylanadi
   }, [pathname])
   return (
     <FlightProvider>
