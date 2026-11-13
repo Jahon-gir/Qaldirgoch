@@ -28,7 +28,12 @@ export default defineConfig({
           { src: 'icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
         ]
       },
-      workbox: { globPatterns: ['**/*.{js,css,html,svg,png,woff2,webp}'] }
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,svg,png,woff2,webp}'],
+        // Asosiy JS (kontent paketlari bilan) 2 MiB dan oshdi — oflayn ishlashi uchun keshga sigʻsin.
+        // Keyingi qadam: paketlarni alohida boʻlakka ajratish (dynamic import).
+        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024
+      }
     })
   ]
 })
