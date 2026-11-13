@@ -752,6 +752,378 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "deraza",
+      "title": {
+        "uz": "Deraza va oyna yuvish",
+        "uz-Cyrl": "Дераза ва ойна ювиш",
+        "ru": "Мойка окон и стёкол"
+      },
+      "order": 9,
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Heute putzen wir die Fenster im zweiten Stock.",
+            "tr": {
+              "uz": "Bugun ikkinchi qavatdagi derazalarni yuvamiz.",
+              "uz-Cyrl": "Бугун иккинчи қаватдаги деразаларни ювамиз.",
+              "ru": "Сегодня моем окна на втором этаже."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Brauche ich die Leiter?",
+            "tr": {
+              "uz": "Yaxshi. Narvon kerakmi?",
+              "uz-Cyrl": "Яхши. Нарвон керакми?",
+              "ru": "Хорошо. Мне нужна стремянка?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Nein, nehmen Sie die Teleskopstange. Wie machen Sie das Glas sauber?",
+            "tr": {
+              "uz": "Yoʻq, teleskopik tayoqni oling. Oynani qanday tozalaysiz?",
+              "uz-Cyrl": "Йўқ, телескопик таёқни олинг. Ойнани қандай тозалайсиз?",
+              "ru": "Нет, возьмите телескопическую штангу. Как вы чистите стекло?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Zuerst mit dem Einwascher, dann mit dem Abzieher.",
+            "tr": {
+              "uz": "Avval yuvgich bilan, keyin rezina sidirgich bilan.",
+              "uz-Cyrl": "Аввал ювгич билан, кейин резина сидиргич билан.",
+              "ru": "Сначала шубкой, потом склизом."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Genau. Und bitte keine Streifen, der Kunde schaut genau hin.",
+            "tr": {
+              "uz": "Toʻgʻri. Iz qolmasin, mijoz diqqat bilan qaraydi.",
+              "uz-Cyrl": "Тўғри. Из қолмасин, мижоз диққат билан қарайди.",
+              "ru": "Именно. И без разводов, клиент смотрит внимательно."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Verstanden. Die Fensterrahmen wische ich auch ab.",
+            "tr": {
+              "uz": "Tushunarli. Deraza romlarini ham artaman.",
+              "uz-Cyrl": "Тушунарли. Дераза ромларини ҳам артаман.",
+              "ru": "Понял. Рамы я тоже протру."
+            }
+          }
+        ],
+        "status": "review"
+      }
+    },
+    {
+      "id": "mehmonxona",
+      "title": {
+        "uz": "Mehmonxona xonasi",
+        "uz-Cyrl": "Меҳмонхона хонаси",
+        "ru": "Номер в гостинице"
+      },
+      "order": 10,
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Katta xizmatchi",
+              "uz-Cyrl": "Катта хизматчи",
+              "ru": "Хаусдама"
+            },
+            "de": "Zimmer 214 hat heute Abreise. Machen Sie es bitte zuerst.",
+            "tr": {
+              "uz": "214-xonadan bugun mehmon ketadi. Iltimos, avval uni qiling.",
+              "uz-Cyrl": "214-хонадан бугун меҳмон кетади. Илтимос, аввал уни қилинг.",
+              "ru": "Из 214-го сегодня выезд. Сделайте его, пожалуйста, первым."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Und Zimmer 216? Dort hängt „Bitte nicht stören“.",
+            "tr": {
+              "uz": "Yaxshi. 216-xona-chi? U yerda „Bezovta qilmang“ osilgan.",
+              "uz-Cyrl": "Яхши. 216-хона-чи? У ерда „Безовта қилманг“ осилган.",
+              "ru": "Хорошо. А 216-й? Там висит «Не беспокоить»."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Katta xizmatchi",
+              "uz-Cyrl": "Катта хизматчи",
+              "ru": "Хаусдама"
+            },
+            "de": "Das machen wir später. Was tun Sie, wenn Sie etwas vom Gast finden?",
+            "tr": {
+              "uz": "Uni keyin qilamiz. Mehmonning biror narsasini topsangiz, nima qilasiz?",
+              "uz-Cyrl": "Уни кейин қиламиз. Меҳмоннинг бирор нарсасини топсангиз, нима қиласиз?",
+              "ru": "Это потом. Что вы делаете, если найдёте вещь гостя?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich bringe die Fundsache zur Rezeption.",
+            "tr": {
+              "uz": "Topilgan buyumni qabulxonaga olib boraman.",
+              "uz-Cyrl": "Топилган буюмни қабулхонага олиб бораман.",
+              "ru": "Я отнесу найденную вещь на ресепшен."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Katta xizmatchi",
+              "uz-Cyrl": "Катта хизматчи",
+              "ru": "Хаусдама"
+            },
+            "de": "Richtig. Beziehen Sie die Betten neu und legen Sie frische Handtücher hin.",
+            "tr": {
+              "uz": "Toʻgʻri. Karavotlarga yangi choyshab soling va toza sochiqlar qoʻying.",
+              "uz-Cyrl": "Тўғри. Каравотларга янги чойшаб солинг ва тоза сочиқлар қўйинг.",
+              "ru": "Верно. Перестелите кровати и положите свежие полотенца."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mache ich. Danach kontrolliere ich die Minibar.",
+            "tr": {
+              "uz": "Xoʻp. Keyin minibarni tekshiraman.",
+              "uz-Cyrl": "Хўп. Кейин минибарни текшираман.",
+              "ru": "Сделаю. Потом проверю мини-бар."
+            }
+          }
+        ],
+        "status": "review"
+      }
+    },
+    {
+      "id": "chiqindi",
+      "title": {
+        "uz": "Chiqindini saralash",
+        "uz-Cyrl": "Чиқиндини саралаш",
+        "ru": "Сортировка мусора"
+      },
+      "order": 11,
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Die Mülleimer im Büro sind voll. Hilfst du mir?",
+            "tr": {
+              "uz": "Ofisdagi chiqindi chelaklari toʻla. Yordam berasanmi?",
+              "uz-Cyrl": "Офисдаги чиқинди челаклари тўла. Ёрдам берасанми?",
+              "ru": "Мусорные вёдра в офисе полные. Поможешь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Klar. Wo sind die neuen Müllsäcke?",
+            "tr": {
+              "uz": "Albatta. Yangi chiqindi qoplari qayerda?",
+              "uz-Cyrl": "Албатта. Янги чиқинди қоплари қаерда?",
+              "ru": "Конечно. Где новые мешки для мусора?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Im Wagen. Und wohin kommen die Kartons?",
+            "tr": {
+              "uz": "Aravachada. Karton qutilar qayerga ketadi?",
+              "uz-Cyrl": "Аравачада. Картон қутилар қаерга кетади?",
+              "ru": "В тележке. А куда идут коробки?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ins Altpapier. Ich falte sie vorher klein.",
+            "tr": {
+              "uz": "Makulaturaga. Avval ularni kichik qilib buklayman.",
+              "uz-Cyrl": "Макулатурага. Аввал уларни кичик қилиб буклайман.",
+              "ru": "В макулатуру. Я их сначала сложу."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Gut. Und Vorsicht: Gestern war eine Glasscherbe im Küchenmüll.",
+            "tr": {
+              "uz": "Yaxshi. Ehtiyot boʻl: kecha oshxona chiqindisida shisha siniqi bor edi.",
+              "uz-Cyrl": "Яхши. Эҳтиёт бўл: кеча ошхона чиқиндисида шиша синиғи бор эди.",
+              "ru": "Хорошо. И осторожно: вчера в кухонном мусоре был осколок стекла."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Danke. Ich trage Handschuhe und fasse nichts direkt an.",
+            "tr": {
+              "uz": "Rahmat. Qoʻlqop kiyaman va hech narsani toʻgʻridan-toʻgʻri ushlamayman.",
+              "uz-Cyrl": "Раҳмат. Қўлқоп кияман ва ҳеч нарсани тўғридан-тўғри ушламайман.",
+              "ru": "Спасибо. Я в перчатках и ничего не беру голыми руками."
+            }
+          }
+        ],
+        "status": "review"
+      }
+    },
+    {
+      "id": "qurilish",
+      "title": {
+        "uz": "Qurilishdan keyingi tozalash",
+        "uz-Cyrl": "Қурилишдан кейинги тозалаш",
+        "ru": "Уборка после ремонта"
+      },
+      "order": 12,
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Prorab",
+              "uz-Cyrl": "Прораб",
+              "ru": "Прораб"
+            },
+            "de": "Die Handwerker sind fertig. Morgen ist die Abnahme.",
+            "tr": {
+              "uz": "Ustalar ishni tugatdi. Ertaga obyekt topshiriladi.",
+              "uz-Cyrl": "Усталар ишни тугатди. Эртага объект топширилади.",
+              "ru": "Мастера закончили. Завтра приёмка."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Dann fangen wir heute mit der Bauendreinigung an.",
+            "tr": {
+              "uz": "Unda bugun qurilishdan keyingi tozalashni boshlaymiz.",
+              "uz-Cyrl": "Унда бугун қурилишдан кейинги тозалашни бошлаймиз.",
+              "ru": "Тогда сегодня начинаем уборку после строительства."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Prorab",
+              "uz-Cyrl": "Прораб",
+              "ru": "Прораб"
+            },
+            "de": "Ja. Was machen Sie mit dem Bauschutt?",
+            "tr": {
+              "uz": "Ha. Qurilish chiqindisini nima qilasiz?",
+              "uz-Cyrl": "Ҳа. Қурилиш чиқиндисини нима қиласиз?",
+              "ru": "Да. Что вы сделаете со строительным мусором?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Den bringen wir zum Container im Hof.",
+            "tr": {
+              "uz": "Uni hovlidagi konteynerga olib boramiz.",
+              "uz-Cyrl": "Уни ҳовлидаги контейнерга олиб борамиз.",
+              "ru": "Отнесём его к контейнеру во дворе."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Prorab",
+              "uz-Cyrl": "Прораб",
+              "ru": "Прораб"
+            },
+            "de": "Gut. Hier ist viel Feinstaub. Tragen Sie bitte eine Staubmaske.",
+            "tr": {
+              "uz": "Yaxshi. Bu yerda mayda chang koʻp. Iltimos, changga qarshi niqob taqing.",
+              "uz-Cyrl": "Яхши. Бу ерда майда чанг кўп. Илтимос, чангга қарши ниқоб тақинг.",
+              "ru": "Хорошо. Здесь много мелкой пыли. Наденьте, пожалуйста, пылезащитную маску."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Natürlich. Die Schutzfolie an den Fenstern ziehen wir zuletzt ab.",
+            "tr": {
+              "uz": "Albatta. Derazalardagi himoya plyonkasini eng oxirida olamiz.",
+              "uz-Cyrl": "Албатта. Деразалардаги ҳимоя плёнкасини энг охирида оламиз.",
+              "ru": "Конечно. Защитную плёнку с окон снимем в последнюю очередь."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -4822,6 +5194,2103 @@
           "uz": "Kirish zalini har kuni tozalaymiz.",
           "uz-Cyrl": "Кириш залини ҳар куни тозалаймиз.",
           "ru": "Вестибюль мы убираем ежедневно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-deraza-glasscheibe",
+      "slug": "glasscheibe",
+      "term": "die Glasscheibe",
+      "icon": "square",
+      "article": "die",
+      "plural": "die Glasscheiben",
+      "tr": {
+        "uz": "oyna (shisha)",
+        "uz-Cyrl": "ойна (шиша)",
+        "ru": "стекло"
+      },
+      "pron": {
+        "uz": "di glas-shay-be",
+        "uz-Cyrl": "ди глас-шай-бе",
+        "ru": "ди глас-шай-бе"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "deraza",
+      "example": {
+        "term": "Die Glasscheibe ist sehr groß.",
+        "tr": {
+          "uz": "Oyna juda katta.",
+          "uz-Cyrl": "Ойна жуда катта.",
+          "ru": "Стекло очень большое."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-deraza-streifen",
+      "slug": "streifen",
+      "term": "der Streifen",
+      "icon": "eye",
+      "article": "der",
+      "plural": "die Streifen",
+      "tr": {
+        "uz": "iz (oynadagi chiziq)",
+        "uz-Cyrl": "из (ойнадаги чизиқ)",
+        "ru": "разводы, полосы"
+      },
+      "pron": {
+        "uz": "der shtray-fen",
+        "uz-Cyrl": "дер штрай-фен",
+        "ru": "дер штрай-фен"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "deraza",
+      "example": {
+        "term": "Auf dem Glas sind noch Streifen.",
+        "tr": {
+          "uz": "Oynada hali izlar bor.",
+          "uz-Cyrl": "Ойнада ҳали излар бор.",
+          "ru": "На стекле ещё есть разводы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-deraza-fensterrahmen",
+      "slug": "fensterrahmen",
+      "term": "der Fensterrahmen",
+      "icon": "square",
+      "article": "der",
+      "plural": "die Fensterrahmen",
+      "tr": {
+        "uz": "deraza romi",
+        "uz-Cyrl": "дераза роми",
+        "ru": "оконная рама"
+      },
+      "pron": {
+        "uz": "der fens-ter-ra-men",
+        "uz-Cyrl": "дер фенс-тер-ра-мен",
+        "ru": "дер фенс-тер-ра-мен"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "deraza",
+      "example": {
+        "term": "Wischen Sie auch den Fensterrahmen ab.",
+        "tr": {
+          "uz": "Deraza romini ham arting.",
+          "uz-Cyrl": "Дераза ромини ҳам артинг.",
+          "ru": "Протрите и оконную раму."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-deraza-fensterbank",
+      "slug": "fensterbank",
+      "term": "die Fensterbank",
+      "icon": "home",
+      "article": "die",
+      "plural": "die Fensterbänke",
+      "tr": {
+        "uz": "deraza tokchasi",
+        "uz-Cyrl": "дераза токчаси",
+        "ru": "подоконник"
+      },
+      "pron": {
+        "uz": "di fens-ter-bank",
+        "uz-Cyrl": "ди фенс-тер-банк",
+        "ru": "ди фенс-тер-банк"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "deraza",
+      "example": {
+        "term": "Die Fensterbank ist voller Staub.",
+        "tr": {
+          "uz": "Deraza tokchasi chang bosgan.",
+          "uz-Cyrl": "Дераза токчаси чанг босган.",
+          "ru": "Подоконник весь в пыли."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-deraza-leiter",
+      "slug": "leiter",
+      "term": "die Leiter",
+      "icon": "ladder",
+      "article": "die",
+      "plural": "die Leitern",
+      "tr": {
+        "uz": "narvon (stremyanka)",
+        "uz-Cyrl": "нарвон (стремянка)",
+        "ru": "стремянка, лестница"
+      },
+      "pron": {
+        "uz": "di lay-ter",
+        "uz-Cyrl": "ди лай-тер",
+        "ru": "ди лай-тер"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "deraza",
+      "example": {
+        "term": "Stellen Sie die Leiter sicher auf.",
+        "tr": {
+          "uz": "Narvonni mustahkam qilib qoʻying.",
+          "uz-Cyrl": "Нарвонни мустаҳкам қилиб қўйинг.",
+          "ru": "Установите стремянку надёжно."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-deraza-teleskopstange",
+      "slug": "teleskopstange",
+      "term": "die Teleskopstange",
+      "icon": "ruler",
+      "article": "die",
+      "plural": "die Teleskopstangen",
+      "tr": {
+        "uz": "teleskopik tayoq",
+        "uz-Cyrl": "телескопик таёқ",
+        "ru": "телескопическая штанга"
+      },
+      "pron": {
+        "uz": "di te-le-skop-shtan-ge",
+        "uz-Cyrl": "ди те-ле-скоп-штан-ге",
+        "ru": "ди те-ле-скоп-штан-ге"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "deraza",
+      "example": {
+        "term": "Mit der Teleskopstange erreichen Sie die oberen Fenster.",
+        "tr": {
+          "uz": "Teleskopik tayoq bilan yuqori derazalarga yetasiz.",
+          "uz-Cyrl": "Телескопик таёқ билан юқори деразаларга етасиз.",
+          "ru": "Телескопической штангой вы достанете до верхних окон."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-deraza-einwascher",
+      "slug": "einwascher",
+      "term": "der Einwascher",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Einwascher",
+      "tr": {
+        "uz": "oyna yuvgich (shubka)",
+        "uz-Cyrl": "ойна ювгич (шубка)",
+        "ru": "шубка для мойки окон"
+      },
+      "pron": {
+        "uz": "der ayn-va-sher",
+        "uz-Cyrl": "дер айн-ва-шер",
+        "ru": "дер айн-ва-шер"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "deraza",
+      "example": {
+        "term": "Machen Sie den Einwascher nass.",
+        "tr": {
+          "uz": "Yuvgichni hoʻllang.",
+          "uz-Cyrl": "Ювгични ҳўлланг.",
+          "ru": "Намочите шубку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-deraza-absturzsicherung",
+      "slug": "absturzsicherung",
+      "term": "die Absturzsicherung",
+      "icon": "helmet",
+      "article": "die",
+      "plural": "die Absturzsicherungen",
+      "tr": {
+        "uz": "yiqilishdan himoya (straxovka)",
+        "uz-Cyrl": "йиқилишдан ҳимоя (страховка)",
+        "ru": "страховка от падения"
+      },
+      "pron": {
+        "uz": "di ap-shturts-zi-xe-rung",
+        "uz-Cyrl": "ди ап-штурц-зи-хе-рунг",
+        "ru": "ди ап-штурц-зи-хе-рунг"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "deraza",
+      "example": {
+        "term": "Am offenen Fenster tragen Sie die Absturzsicherung.",
+        "tr": {
+          "uz": "Ochiq deraza oldida straxovka taqing.",
+          "uz-Cyrl": "Очиқ дераза олдида страховка тақинг.",
+          "ru": "У открытого окна надевайте страховку."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-deraza-arbeitsbuehne",
+      "slug": "arbeitsbuehne",
+      "term": "die Arbeitsbühne",
+      "icon": "ladder",
+      "article": "die",
+      "plural": "die Arbeitsbühnen",
+      "tr": {
+        "uz": "ish platformasi (koʻtargich)",
+        "uz-Cyrl": "иш платформаси (кўтаргич)",
+        "ru": "подъёмная платформа"
+      },
+      "pron": {
+        "uz": "di ar-bayts-byu-ne",
+        "uz-Cyrl": "ди ар-байтс-бю-не",
+        "ru": "ди ар-байтс-бю-не"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "deraza",
+      "example": {
+        "term": "Fahren Sie die Arbeitsbühne langsam nach oben.",
+        "tr": {
+          "uz": "Platformani sekin yuqoriga koʻtaring.",
+          "uz-Cyrl": "Платформани секин юқорига кўтаринг.",
+          "ru": "Поднимайте платформу медленно."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-deraza-jalousie",
+      "slug": "jalousie",
+      "term": "die Jalousie",
+      "icon": "square",
+      "article": "die",
+      "plural": "die Jalousien",
+      "tr": {
+        "uz": "jalyuzi",
+        "uz-Cyrl": "жалюзи",
+        "ru": "жалюзи"
+      },
+      "pron": {
+        "uz": "di ja-lu-zi",
+        "uz-Cyrl": "ди жа-лу-зи",
+        "ru": "ди жа-лу-зи"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "deraza",
+      "example": {
+        "term": "Ziehen Sie zuerst die Jalousie hoch.",
+        "tr": {
+          "uz": "Avval jalyuzini koʻtaring.",
+          "uz-Cyrl": "Аввал жалюзини кўтаринг.",
+          "ru": "Сначала поднимите жалюзи."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-deraza-spiegel",
+      "slug": "spiegel",
+      "term": "der Spiegel",
+      "icon": "eye",
+      "article": "der",
+      "plural": "die Spiegel",
+      "tr": {
+        "uz": "koʻzgu (oyna)",
+        "uz-Cyrl": "кўзгу (ойна)",
+        "ru": "зеркало"
+      },
+      "pron": {
+        "uz": "der shpi-gel",
+        "uz-Cyrl": "дер шпи-гель",
+        "ru": "дер шпи-гель"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "deraza",
+      "example": {
+        "term": "Der Spiegel im Flur hat Flecken.",
+        "tr": {
+          "uz": "Yoʻlakdagi koʻzguda dogʻlar bor.",
+          "uz-Cyrl": "Йўлакдаги кўзгуда доғлар бор.",
+          "ru": "На зеркале в коридоре пятна."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-deraza-streifenfrei",
+      "slug": "streifenfrei",
+      "term": "streifenfrei",
+      "icon": "check",
+      "tr": {
+        "uz": "iz qoldirmasdan",
+        "uz-Cyrl": "из қолдирмасдан",
+        "ru": "без разводов"
+      },
+      "pron": {
+        "uz": "shtray-fen-fray",
+        "uz-Cyrl": "штрай-фен-фрай",
+        "ru": "штрай-фен-фрай"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "deraza",
+      "example": {
+        "term": "Das Glas muss streifenfrei sein.",
+        "tr": {
+          "uz": "Oynada iz qolmasligi kerak.",
+          "uz-Cyrl": "Ойнада из қолмаслиги керак.",
+          "ru": "Стекло должно быть без разводов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-deraza-abziehen",
+      "slug": "abziehen",
+      "term": "abziehen",
+      "icon": "droplet",
+      "tr": {
+        "uz": "(suvni rezina bilan) sidirmoq",
+        "uz-Cyrl": "(сувни резина билан) сидирмоқ",
+        "ru": "сгонять воду (склизом)"
+      },
+      "pron": {
+        "uz": "ap-tsi-en",
+        "uz-Cyrl": "ап-ци-ен",
+        "ru": "ап-ци-ен"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "deraza",
+      "example": {
+        "term": "Ziehen Sie das Wasser von oben nach unten ab.",
+        "tr": {
+          "uz": "Suvni yuqoridan pastga sidiring.",
+          "uz-Cyrl": "Сувни юқоридан пастга сидиринг.",
+          "ru": "Сгоняйте воду сверху вниз."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-deraza-aussenseite",
+      "slug": "aussenseite",
+      "term": "die Außenseite",
+      "icon": "sun",
+      "article": "die",
+      "plural": "die Außenseiten",
+      "tr": {
+        "uz": "tashqi tomon",
+        "uz-Cyrl": "ташқи томон",
+        "ru": "наружная сторона"
+      },
+      "pron": {
+        "uz": "di au-sen-zay-te",
+        "uz-Cyrl": "ди ау-сен-зай-те",
+        "ru": "ди ау-сен-зай-те"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "deraza",
+      "example": {
+        "term": "Die Außenseite putzen wir morgen.",
+        "tr": {
+          "uz": "Tashqi tomonini ertaga yuvamiz.",
+          "uz-Cyrl": "Ташқи томонини эртага ювамиз.",
+          "ru": "Наружную сторону помоем завтра."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-deraza-innenseite",
+      "slug": "innenseite",
+      "term": "die Innenseite",
+      "icon": "home",
+      "article": "die",
+      "plural": "die Innenseiten",
+      "tr": {
+        "uz": "ichki tomon",
+        "uz-Cyrl": "ички томон",
+        "ru": "внутренняя сторона"
+      },
+      "pron": {
+        "uz": "di i-nen-zay-te",
+        "uz-Cyrl": "ди и-нен-зай-те",
+        "ru": "ди и-нен-зай-те"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "deraza",
+      "example": {
+        "term": "Heute putzen Sie nur die Innenseite.",
+        "tr": {
+          "uz": "Bugun faqat ichki tomonini yuvasiz.",
+          "uz-Cyrl": "Бугун фақат ички томонини ювасиз.",
+          "ru": "Сегодня вы моете только внутреннюю сторону."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mehmonxona-hotelzimmer",
+      "slug": "hotelzimmer",
+      "term": "das Hotelzimmer",
+      "icon": "bed",
+      "article": "das",
+      "plural": "die Hotelzimmer",
+      "tr": {
+        "uz": "mehmonxona xonasi",
+        "uz-Cyrl": "меҳмонхона хонаси",
+        "ru": "гостиничный номер"
+      },
+      "pron": {
+        "uz": "das ho-tel-tsi-mer",
+        "uz-Cyrl": "дас хо-тель-ци-мер",
+        "ru": "дас хо-тель-ци-мер"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "mehmonxona",
+      "example": {
+        "term": "Das Hotelzimmer ist jetzt frei.",
+        "tr": {
+          "uz": "Mehmonxona xonasi endi boʻsh.",
+          "uz-Cyrl": "Меҳмонхона хонаси энди бўш.",
+          "ru": "Гостиничный номер теперь свободен."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mehmonxona-bett",
+      "slug": "bett",
+      "term": "das Bett",
+      "icon": "bed",
+      "article": "das",
+      "plural": "die Betten",
+      "tr": {
+        "uz": "karavot",
+        "uz-Cyrl": "каравот",
+        "ru": "кровать"
+      },
+      "pron": {
+        "uz": "das bet",
+        "uz-Cyrl": "дас бет",
+        "ru": "дас бет"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "mehmonxona",
+      "example": {
+        "term": "Machen Sie bitte das Bett.",
+        "tr": {
+          "uz": "Iltimos, karavotni yigʻishtiring.",
+          "uz-Cyrl": "Илтимос, каравотни йиғиштиринг.",
+          "ru": "Заправьте, пожалуйста, кровать."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mehmonxona-bettdecke",
+      "slug": "bettdecke",
+      "term": "die Bettdecke",
+      "icon": "bed",
+      "article": "die",
+      "plural": "die Bettdecken",
+      "tr": {
+        "uz": "koʻrpa",
+        "uz-Cyrl": "кўрпа",
+        "ru": "одеяло"
+      },
+      "pron": {
+        "uz": "di bet-de-ke",
+        "uz-Cyrl": "ди бет-де-ке",
+        "ru": "ди бет-де-ке"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "mehmonxona",
+      "example": {
+        "term": "Schütteln Sie die Bettdecke gut auf.",
+        "tr": {
+          "uz": "Koʻrpani yaxshilab silkiting.",
+          "uz-Cyrl": "Кўрпани яхшилаб силкитинг.",
+          "ru": "Хорошо взбейте одеяло."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mehmonxona-handtuch",
+      "slug": "handtuch",
+      "term": "das Handtuch",
+      "icon": "bath",
+      "article": "das",
+      "plural": "die Handtücher",
+      "tr": {
+        "uz": "sochiq",
+        "uz-Cyrl": "сочиқ",
+        "ru": "полотенце"
+      },
+      "pron": {
+        "uz": "das hant-tux",
+        "uz-Cyrl": "дас хант-тух",
+        "ru": "дас хант-тух"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "mehmonxona",
+      "example": {
+        "term": "Legen Sie ein frisches Handtuch ins Bad.",
+        "tr": {
+          "uz": "Hammomga toza sochiq qoʻying.",
+          "uz-Cyrl": "Ҳаммомга тоза сочиқ қўйинг.",
+          "ru": "Положите в ванную свежее полотенце."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mehmonxona-minibar",
+      "slug": "minibar",
+      "term": "die Minibar",
+      "icon": "glass",
+      "article": "die",
+      "plural": "die Minibars",
+      "tr": {
+        "uz": "minibar",
+        "uz-Cyrl": "минибар",
+        "ru": "мини-бар"
+      },
+      "pron": {
+        "uz": "di mi-ni-bar",
+        "uz-Cyrl": "ди ми-ни-бар",
+        "ru": "ди ми-ни-бар"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "mehmonxona",
+      "example": {
+        "term": "Kontrollieren Sie bitte die Minibar.",
+        "tr": {
+          "uz": "Iltimos, minibarni tekshiring.",
+          "uz-Cyrl": "Илтимос, минибарни текширинг.",
+          "ru": "Проверьте, пожалуйста, мини-бар."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mehmonxona-gast",
+      "slug": "gast",
+      "term": "der Gast",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Gäste",
+      "tr": {
+        "uz": "mehmon",
+        "uz-Cyrl": "меҳмон",
+        "ru": "гость"
+      },
+      "pron": {
+        "uz": "der gast",
+        "uz-Cyrl": "дер гаст",
+        "ru": "дер гаст"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "mehmonxona",
+      "example": {
+        "term": "Der Gast ist noch im Zimmer.",
+        "tr": {
+          "uz": "Mehmon hali xonada.",
+          "uz-Cyrl": "Меҳмон ҳали хонада.",
+          "ru": "Гость ещё в номере."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mehmonxona-bitte-nicht-stoeren",
+      "slug": "bitte-nicht-stoeren",
+      "term": "Bitte nicht stören",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Iltimos, bezovta qilmang",
+        "uz-Cyrl": "Илтимос, безовта қилманг",
+        "ru": "Не беспокоить"
+      },
+      "pron": {
+        "uz": "bit-te nixt shtyo-ren",
+        "uz-Cyrl": "бит-те нихт штё-рен",
+        "ru": "бит-те нихт штё-рен"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "mehmonxona",
+      "example": {
+        "term": "An der Tür hängt „Bitte nicht stören“. Wir kommen später.",
+        "tr": {
+          "uz": "Eshikda „Bezovta qilmang“ osilgan. Keyinroq kelamiz.",
+          "uz-Cyrl": "Эшикда „Безовта қилманг“ осилган. Кейинроқ келамиз.",
+          "ru": "На двери висит «Не беспокоить». Придём позже."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mehmonxona-abreise",
+      "slug": "abreise",
+      "term": "die Abreise",
+      "icon": "door-exit",
+      "article": "die",
+      "plural": "die Abreisen",
+      "tr": {
+        "uz": "ketish (mehmon chiqishi)",
+        "uz-Cyrl": "кетиш (меҳмон чиқиши)",
+        "ru": "выезд (гостя)"
+      },
+      "pron": {
+        "uz": "di ap-ray-ze",
+        "uz-Cyrl": "ди ап-рай-зе",
+        "ru": "ди ап-рай-зе"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "mehmonxona",
+      "example": {
+        "term": "Nach der Abreise reinigen wir das Zimmer gründlich.",
+        "tr": {
+          "uz": "Mehmon ketgandan keyin xonani puxta tozalaymiz.",
+          "uz-Cyrl": "Меҳмон кетгандан кейин хонани пухта тозалаймиз.",
+          "ru": "После выезда мы тщательно убираем номер."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mehmonxona-fundsache",
+      "slug": "fundsache",
+      "term": "die Fundsache",
+      "icon": "briefcase",
+      "article": "die",
+      "plural": "die Fundsachen",
+      "tr": {
+        "uz": "topilgan buyum",
+        "uz-Cyrl": "топилган буюм",
+        "ru": "найденная вещь"
+      },
+      "pron": {
+        "uz": "di funt-za-xe",
+        "uz-Cyrl": "ди фунт-за-хе",
+        "ru": "ди фунт-за-хе"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "mehmonxona",
+      "example": {
+        "term": "Geben Sie jede Fundsache an der Rezeption ab.",
+        "tr": {
+          "uz": "Har bir topilgan buyumni qabulxonaga topshiring.",
+          "uz-Cyrl": "Ҳар бир топилган буюмни қабулхонага топширинг.",
+          "ru": "Сдавайте каждую найденную вещь на ресепшен."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mehmonxona-zimmerwagen",
+      "slug": "zimmerwagen",
+      "term": "der Zimmerwagen",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Zimmerwagen",
+      "tr": {
+        "uz": "xizmatchi aravachasi",
+        "uz-Cyrl": "хизматчи аравачаси",
+        "ru": "тележка горничной"
+      },
+      "pron": {
+        "uz": "der tsi-mer-va-gen",
+        "uz-Cyrl": "дер ци-мер-ва-ген",
+        "ru": "дер ци-мер-ва-ген"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "mehmonxona",
+      "example": {
+        "term": "Der Zimmerwagen steht im Flur.",
+        "tr": {
+          "uz": "Aravacha yoʻlakda turibdi.",
+          "uz-Cyrl": "Аравача йўлакда турибди.",
+          "ru": "Тележка стоит в коридоре."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mehmonxona-vorhang",
+      "slug": "vorhang",
+      "term": "der Vorhang",
+      "icon": "home",
+      "article": "der",
+      "plural": "die Vorhänge",
+      "tr": {
+        "uz": "parda",
+        "uz-Cyrl": "парда",
+        "ru": "штора"
+      },
+      "pron": {
+        "uz": "der for-hang",
+        "uz-Cyrl": "дер фор-ханг",
+        "ru": "дер фор-ханг"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "mehmonxona",
+      "example": {
+        "term": "Öffnen Sie den Vorhang und lüften Sie.",
+        "tr": {
+          "uz": "Pardani oching va xonani shamollating.",
+          "uz-Cyrl": "Пардани очинг ва хонани шамоллатинг.",
+          "ru": "Откройте штору и проветрите."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mehmonxona-hausdame",
+      "slug": "hausdame",
+      "term": "die Hausdame",
+      "icon": "woman",
+      "article": "die",
+      "plural": "die Hausdamen",
+      "tr": {
+        "uz": "xona xizmati boshligʻi",
+        "uz-Cyrl": "хона хизмати бошлиғи",
+        "ru": "старшая горничная (хаусдама)"
+      },
+      "pron": {
+        "uz": "di haus-da-me",
+        "uz-Cyrl": "ди хаус-да-ме",
+        "ru": "ди хаус-да-ме"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "mehmonxona",
+      "example": {
+        "term": "Die Hausdame kontrolliert jedes Zimmer.",
+        "tr": {
+          "uz": "Xona xizmati boshligʻi har bir xonani tekshiradi.",
+          "uz-Cyrl": "Хона хизмати бошлиғи ҳар бир хонани текширади.",
+          "ru": "Хаусдама проверяет каждый номер."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mehmonxona-beziehen",
+      "slug": "beziehen",
+      "term": "beziehen",
+      "icon": "bed",
+      "tr": {
+        "uz": "(karavotga) choyshab solmoq",
+        "uz-Cyrl": "(каравотга) чойшаб солмоқ",
+        "ru": "застилать (менять бельё)"
+      },
+      "pron": {
+        "uz": "be-tsi-en",
+        "uz-Cyrl": "бе-ци-ен",
+        "ru": "бе-ци-ен"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "mehmonxona",
+      "example": {
+        "term": "Beziehen Sie das Bett neu.",
+        "tr": {
+          "uz": "Karavotga yangi choyshab soling.",
+          "uz-Cyrl": "Каравотга янги чойшаб солинг.",
+          "ru": "Перестелите кровать."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mehmonxona-kleiderbuegel",
+      "slug": "kleiderbuegel",
+      "term": "der Kleiderbügel",
+      "icon": "hanger",
+      "article": "der",
+      "plural": "die Kleiderbügel",
+      "tr": {
+        "uz": "kiyim ilgich",
+        "uz-Cyrl": "кийим илгич",
+        "ru": "вешалка (плечики)"
+      },
+      "pron": {
+        "uz": "der klay-der-byu-gel",
+        "uz-Cyrl": "дер клай-дер-бю-гель",
+        "ru": "дер клай-дер-бю-гель"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "mehmonxona",
+      "example": {
+        "term": "Im Schrank fehlt ein Kleiderbügel.",
+        "tr": {
+          "uz": "Shkafda bitta ilgich yetishmaydi.",
+          "uz-Cyrl": "Шкафда битта илгич етишмайди.",
+          "ru": "В шкафу не хватает одной вешалки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mehmonxona-belegt",
+      "slug": "belegt",
+      "term": "belegt",
+      "icon": "key",
+      "tr": {
+        "uz": "band (xona)",
+        "uz-Cyrl": "банд (хона)",
+        "ru": "занят (номер)"
+      },
+      "pron": {
+        "uz": "be-lekt",
+        "uz-Cyrl": "бе-лект",
+        "ru": "бе-лект"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger",
+        "hotelfach"
+      ],
+      "situation": "mehmonxona",
+      "example": {
+        "term": "Das Zimmer ist noch belegt.",
+        "tr": {
+          "uz": "Xona hali band.",
+          "uz-Cyrl": "Хона ҳали банд.",
+          "ru": "Номер ещё занят."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-chiqindi-muelltrennung",
+      "slug": "muelltrennung",
+      "term": "die Mülltrennung",
+      "icon": "trash",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "chiqindini saralash",
+        "uz-Cyrl": "чиқиндини саралаш",
+        "ru": "сортировка мусора"
+      },
+      "pron": {
+        "uz": "di myul-tre-nung",
+        "uz-Cyrl": "ди мюль-тре-нунг",
+        "ru": "ди мюль-тре-нунг"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "chiqindi",
+      "example": {
+        "term": "Achten Sie bitte auf die Mülltrennung.",
+        "tr": {
+          "uz": "Iltimos, chiqindini saralashga eʼtibor bering.",
+          "uz-Cyrl": "Илтимос, чиқиндини саралашга эътибор беринг.",
+          "ru": "Пожалуйста, соблюдайте сортировку мусора."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-chiqindi-restmuell",
+      "slug": "restmuell",
+      "term": "der Restmüll",
+      "icon": "trash",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "aralash chiqindi",
+        "uz-Cyrl": "аралаш чиқинди",
+        "ru": "несортируемые отходы"
+      },
+      "pron": {
+        "uz": "der rest-myul",
+        "uz-Cyrl": "дер рест-мюль",
+        "ru": "дер рест-мюль"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "chiqindi",
+      "example": {
+        "term": "Das kommt in den Restmüll.",
+        "tr": {
+          "uz": "Bu aralash chiqindiga ketadi.",
+          "uz-Cyrl": "Бу аралаш чиқиндига кетади.",
+          "ru": "Это идёт в общий мусор."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-chiqindi-biomuell",
+      "slug": "biomuell",
+      "term": "der Biomüll",
+      "icon": "leaf",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "organik chiqindi",
+        "uz-Cyrl": "органик чиқинди",
+        "ru": "пищевые (био) отходы"
+      },
+      "pron": {
+        "uz": "der bi-o-myul",
+        "uz-Cyrl": "дер би-о-мюль",
+        "ru": "дер би-о-мюль"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "chiqindi",
+      "example": {
+        "term": "Kaffeesatz kommt in den Biomüll.",
+        "tr": {
+          "uz": "Qahva quyqasi organik chiqindiga ketadi.",
+          "uz-Cyrl": "Қаҳва қуйқаси органик чиқиндига кетади.",
+          "ru": "Кофейная гуща идёт в биоотходы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-chiqindi-altpapier",
+      "slug": "altpapier",
+      "term": "das Altpapier",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "makulatura (eski qogʻoz)",
+        "uz-Cyrl": "макулатура (эски қоғоз)",
+        "ru": "макулатура"
+      },
+      "pron": {
+        "uz": "das alt-pa-pir",
+        "uz-Cyrl": "дас альт-па-пир",
+        "ru": "дас альт-па-пир"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "chiqindi",
+      "example": {
+        "term": "Die Zeitungen kommen ins Altpapier.",
+        "tr": {
+          "uz": "Gazetalar makulaturaga ketadi.",
+          "uz-Cyrl": "Газеталар макулатурага кетади.",
+          "ru": "Газеты идут в макулатуру."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-chiqindi-altglas",
+      "slug": "altglas",
+      "term": "das Altglas",
+      "icon": "glass",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "eski shisha (idish)",
+        "uz-Cyrl": "эски шиша (идиш)",
+        "ru": "стеклотара"
+      },
+      "pron": {
+        "uz": "das alt-glas",
+        "uz-Cyrl": "дас альт-глас",
+        "ru": "дас альт-глас"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "chiqindi",
+      "example": {
+        "term": "Leere Flaschen sind Altglas.",
+        "tr": {
+          "uz": "Boʻsh shishalar — eski shisha chiqindisi.",
+          "uz-Cyrl": "Бўш шишалар — эски шиша чиқиндиси.",
+          "ru": "Пустые бутылки — это стеклотара."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-chiqindi-verpackung",
+      "slug": "verpackung",
+      "term": "die Verpackung",
+      "icon": "square",
+      "article": "die",
+      "plural": "die Verpackungen",
+      "tr": {
+        "uz": "qadoq (oʻram)",
+        "uz-Cyrl": "қадоқ (ўрам)",
+        "ru": "упаковка"
+      },
+      "pron": {
+        "uz": "di fer-pa-kung",
+        "uz-Cyrl": "ди фер-па-кунг",
+        "ru": "ди фер-па-кунг"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "chiqindi",
+      "example": {
+        "term": "Wohin kommt diese Verpackung?",
+        "tr": {
+          "uz": "Bu qadoq qayerga ketadi?",
+          "uz-Cyrl": "Бу қадоқ қаерга кетади?",
+          "ru": "Куда идёт эта упаковка?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-chiqindi-tonne",
+      "slug": "tonne",
+      "term": "die Tonne",
+      "icon": "trash",
+      "article": "die",
+      "plural": "die Tonnen",
+      "tr": {
+        "uz": "chiqindi bochkasi (konteyner)",
+        "uz-Cyrl": "чиқинди бочкаси (контейнер)",
+        "ru": "мусорный бак"
+      },
+      "pron": {
+        "uz": "di to-ne",
+        "uz-Cyrl": "ди то-не",
+        "ru": "ди то-не"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "chiqindi",
+      "example": {
+        "term": "Die blaue Tonne ist schon voll.",
+        "tr": {
+          "uz": "Koʻk bochka allaqachon toʻla.",
+          "uz-Cyrl": "Кўк бочка аллақачон тўла.",
+          "ru": "Синий бак уже полный."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-chiqindi-container",
+      "slug": "container",
+      "term": "der Container",
+      "icon": "truck",
+      "article": "der",
+      "plural": "die Container",
+      "tr": {
+        "uz": "katta konteyner",
+        "uz-Cyrl": "катта контейнер",
+        "ru": "контейнер"
+      },
+      "pron": {
+        "uz": "der kon-tey-ner",
+        "uz-Cyrl": "дер кон-тей-нер",
+        "ru": "дер кон-тей-нер"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "chiqindi",
+      "example": {
+        "term": "Bringen Sie die Säcke zum Container.",
+        "tr": {
+          "uz": "Qoplarni konteynerga olib boring.",
+          "uz-Cyrl": "Қопларни контейнерга олиб боринг.",
+          "ru": "Отнесите мешки к контейнеру."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-chiqindi-muellsack",
+      "slug": "muellsack",
+      "term": "der Müllsack",
+      "icon": "trash",
+      "article": "der",
+      "plural": "die Müllsäcke",
+      "tr": {
+        "uz": "chiqindi qopi",
+        "uz-Cyrl": "чиқинди қопи",
+        "ru": "мешок для мусора"
+      },
+      "pron": {
+        "uz": "der myul-zak",
+        "uz-Cyrl": "дер мюль-зак",
+        "ru": "дер мюль-зак"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "chiqindi",
+      "example": {
+        "term": "Nehmen Sie einen neuen Müllsack.",
+        "tr": {
+          "uz": "Yangi chiqindi qopini oling.",
+          "uz-Cyrl": "Янги чиқинди қопини олинг.",
+          "ru": "Возьмите новый мешок для мусора."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-chiqindi-nadel",
+      "slug": "nadel",
+      "term": "die Nadel",
+      "icon": "alert-octagon",
+      "article": "die",
+      "plural": "die Nadeln",
+      "tr": {
+        "uz": "igna (shprits ignasi)",
+        "uz-Cyrl": "игна (шприц игнаси)",
+        "ru": "игла"
+      },
+      "pron": {
+        "uz": "di na-del",
+        "uz-Cyrl": "ди на-дель",
+        "ru": "ди на-дель"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "chiqindi",
+      "example": {
+        "term": "Fassen Sie keine Nadel mit der Hand an!",
+        "tr": {
+          "uz": "Ignani qoʻl bilan ushlamang!",
+          "uz-Cyrl": "Игнани қўл билан ушламанг!",
+          "ru": "Не берите иглу голой рукой!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-chiqindi-glasscherbe",
+      "slug": "glasscherbe",
+      "term": "die Glasscherbe",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Glasscherben",
+      "tr": {
+        "uz": "shisha siniqi",
+        "uz-Cyrl": "шиша синиғи",
+        "ru": "осколок стекла"
+      },
+      "pron": {
+        "uz": "di glas-sher-be",
+        "uz-Cyrl": "ди глас-шер-бе",
+        "ru": "ди глас-шер-бе"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "chiqindi",
+      "example": {
+        "term": "Vorsicht, im Sack ist eine Glasscherbe!",
+        "tr": {
+          "uz": "Ehtiyot boʻling, qopda shisha siniqi bor!",
+          "uz-Cyrl": "Эҳтиёт бўлинг, қопда шиша синиғи бор!",
+          "ru": "Осторожно, в мешке осколок стекла!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-chiqindi-trennen",
+      "slug": "trennen",
+      "term": "trennen",
+      "icon": "check",
+      "tr": {
+        "uz": "ajratmoq (saralamoq)",
+        "uz-Cyrl": "ажратмоқ (сараламоқ)",
+        "ru": "разделять, сортировать"
+      },
+      "pron": {
+        "uz": "tre-nen",
+        "uz-Cyrl": "тре-нен",
+        "ru": "тре-нен"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "chiqindi",
+      "example": {
+        "term": "Trennen Sie Papier und Plastik.",
+        "tr": {
+          "uz": "Qogʻoz va plastikni ajrating.",
+          "uz-Cyrl": "Қоғоз ва пластикни ажратинг.",
+          "ru": "Разделяйте бумагу и пластик."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-chiqindi-entsorgen",
+      "slug": "entsorgen",
+      "term": "entsorgen",
+      "icon": "trash",
+      "tr": {
+        "uz": "yoʻq qilmoq (utilizatsiya)",
+        "uz-Cyrl": "йўқ қилмоқ (утилизация)",
+        "ru": "утилизировать"
+      },
+      "pron": {
+        "uz": "ent-zor-gen",
+        "uz-Cyrl": "энт-зор-ген",
+        "ru": "энт-зор-ген"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "chiqindi",
+      "example": {
+        "term": "Wie entsorgen wir alte Batterien?",
+        "tr": {
+          "uz": "Eski batareyalarni qanday yoʻq qilamiz?",
+          "uz-Cyrl": "Эски батареяларни қандай йўқ қиламиз?",
+          "ru": "Как мы утилизируем старые батарейки?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-chiqindi-karton",
+      "slug": "karton",
+      "term": "der Karton",
+      "icon": "square",
+      "article": "der",
+      "plural": "die Kartons",
+      "tr": {
+        "uz": "karton quti",
+        "uz-Cyrl": "картон қути",
+        "ru": "картонная коробка"
+      },
+      "pron": {
+        "uz": "der kar-ton",
+        "uz-Cyrl": "дер кар-тон",
+        "ru": "дер кар-тон"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "chiqindi",
+      "example": {
+        "term": "Falten Sie den Karton klein.",
+        "tr": {
+          "uz": "Karton qutini kichik qilib buklang.",
+          "uz-Cyrl": "Картон қутини кичик қилиб букланг.",
+          "ru": "Сложите коробку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-chiqindi-voll",
+      "slug": "voll",
+      "term": "voll",
+      "icon": "trash",
+      "tr": {
+        "uz": "toʻla",
+        "uz-Cyrl": "тўла",
+        "ru": "полный"
+      },
+      "pron": {
+        "uz": "fol",
+        "uz-Cyrl": "фол",
+        "ru": "фол"
+      },
+      "level": "A1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "chiqindi",
+      "example": {
+        "term": "Der Container ist voll.",
+        "tr": {
+          "uz": "Konteyner toʻla.",
+          "uz-Cyrl": "Контейнер тўла.",
+          "ru": "Контейнер полный."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-qurilish-bauendreinigung",
+      "slug": "bauendreinigung",
+      "term": "die Bauendreinigung",
+      "icon": "building",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "qurilishdan keyingi tozalash",
+        "uz-Cyrl": "қурилишдан кейинги тозалаш",
+        "ru": "уборка после строительства"
+      },
+      "pron": {
+        "uz": "di bau-ent-ray-ni-gung",
+        "uz-Cyrl": "ди бау-энт-рай-ни-гунг",
+        "ru": "ди бау-энт-рай-ни-гунг"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Morgen beginnt die Bauendreinigung im neuen Haus.",
+        "tr": {
+          "uz": "Ertaga yangi uyda qurilishdan keyingi tozalash boshlanadi.",
+          "uz-Cyrl": "Эртага янги уйда қурилишдан кейинги тозалаш бошланади.",
+          "ru": "Завтра в новом доме начинается уборка после строительства."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-qurilish-baustelle",
+      "slug": "baustelle",
+      "term": "die Baustelle",
+      "icon": "helmet",
+      "article": "die",
+      "plural": "die Baustellen",
+      "tr": {
+        "uz": "qurilish maydoni",
+        "uz-Cyrl": "қурилиш майдони",
+        "ru": "стройка, стройплощадка"
+      },
+      "pron": {
+        "uz": "di bau-shte-le",
+        "uz-Cyrl": "ди бау-ште-ле",
+        "ru": "ди бау-ште-ле"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Auf der Baustelle tragen Sie Sicherheitsschuhe.",
+        "tr": {
+          "uz": "Qurilish maydonida xavfsizlik poyabzali kiyasiz.",
+          "uz-Cyrl": "Қурилиш майдонида хавфсизлик пойабзали киясиз.",
+          "ru": "На стройке вы носите защитную обувь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-qurilish-bauschutt",
+      "slug": "bauschutt",
+      "term": "der Bauschutt",
+      "icon": "trash",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "qurilish chiqindisi",
+        "uz-Cyrl": "қурилиш чиқиндиси",
+        "ru": "строительный мусор"
+      },
+      "pron": {
+        "uz": "der bau-shut",
+        "uz-Cyrl": "дер бау-шут",
+        "ru": "дер бау-шут"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Der Bauschutt kommt in den Container.",
+        "tr": {
+          "uz": "Qurilish chiqindisi konteynerga ketadi.",
+          "uz-Cyrl": "Қурилиш чиқиндиси контейнерга кетади.",
+          "ru": "Строительный мусор идёт в контейнер."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-qurilish-farbspritzer",
+      "slug": "farbspritzer",
+      "term": "der Farbspritzer",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Farbspritzer",
+      "tr": {
+        "uz": "boʻyoq sachrandisi",
+        "uz-Cyrl": "бўёқ сачрандиси",
+        "ru": "брызги краски"
+      },
+      "pron": {
+        "uz": "der farp-shpri-tser",
+        "uz-Cyrl": "дер фарп-шпри-цер",
+        "ru": "дер фарп-шпри-цер"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Auf dem Boden ist ein Farbspritzer.",
+        "tr": {
+          "uz": "Polda boʻyoq sachrandisi bor.",
+          "uz-Cyrl": "Полда бўёқ сачрандиси бор.",
+          "ru": "На полу брызги краски."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-qurilish-moertel",
+      "slug": "moertel",
+      "term": "der Mörtel",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Mörtel",
+      "tr": {
+        "uz": "qorishma (sement)",
+        "uz-Cyrl": "қоришма (цемент)",
+        "ru": "строительный раствор"
+      },
+      "pron": {
+        "uz": "der myor-tel",
+        "uz-Cyrl": "дер мёр-тель",
+        "ru": "дер мёр-тель"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Am Fenster klebt noch Mörtel.",
+        "tr": {
+          "uz": "Derazada hali qorishma yopishib turibdi.",
+          "uz-Cyrl": "Деразада ҳали қоришма ёпишиб турибди.",
+          "ru": "На окне ещё присох раствор."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-qurilish-schaber",
+      "slug": "schaber",
+      "term": "der Schaber",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Schaber",
+      "tr": {
+        "uz": "qirgʻich",
+        "uz-Cyrl": "қирғич",
+        "ru": "скребок"
+      },
+      "pron": {
+        "uz": "der sha-ber",
+        "uz-Cyrl": "дер ша-бер",
+        "ru": "дер ша-бер"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Entfernen Sie die Reste mit dem Schaber.",
+        "tr": {
+          "uz": "Qoldiqlarni qirgʻich bilan olib tashlang.",
+          "uz-Cyrl": "Қолдиқларни қирғич билан олиб ташланг.",
+          "ru": "Удалите остатки скребком."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-qurilish-klinge",
+      "slug": "klinge",
+      "term": "die Klinge",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Klingen",
+      "tr": {
+        "uz": "tigʻ (qirgʻich tigʻi)",
+        "uz-Cyrl": "тиғ (қирғич тиғи)",
+        "ru": "лезвие"
+      },
+      "pron": {
+        "uz": "di klin-ge",
+        "uz-Cyrl": "ди клин-ге",
+        "ru": "ди клин-ге"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Die Klinge ist sehr scharf. Vorsicht!",
+        "tr": {
+          "uz": "Tigʻ juda oʻtkir. Ehtiyot boʻling!",
+          "uz-Cyrl": "Тиғ жуда ўткир. Эҳтиёт бўлинг!",
+          "ru": "Лезвие очень острое. Осторожно!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-qurilish-feinstaub",
+      "slug": "feinstaub",
+      "term": "der Feinstaub",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "mayda chang",
+        "uz-Cyrl": "майда чанг",
+        "ru": "мелкая пыль"
+      },
+      "pron": {
+        "uz": "der fayn-shtaup",
+        "uz-Cyrl": "дер файн-штауп",
+        "ru": "дер файн-штауп"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Hier ist viel Feinstaub.",
+        "tr": {
+          "uz": "Bu yerda mayda chang koʻp.",
+          "uz-Cyrl": "Бу ерда майда чанг кўп.",
+          "ru": "Здесь много мелкой пыли."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-qurilish-staubmaske",
+      "slug": "staubmaske",
+      "term": "die Staubmaske",
+      "icon": "helmet",
+      "article": "die",
+      "plural": "die Staubmasken",
+      "tr": {
+        "uz": "changga qarshi niqob",
+        "uz-Cyrl": "чангга қарши ниқоб",
+        "ru": "пылезащитная маска"
+      },
+      "pron": {
+        "uz": "di shtaup-mas-ke",
+        "uz-Cyrl": "ди штауп-мас-ке",
+        "ru": "ди штауп-мас-ке"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Setzen Sie die Staubmaske auf.",
+        "tr": {
+          "uz": "Changga qarshi niqobni taqing.",
+          "uz-Cyrl": "Чангга қарши ниқобни тақинг.",
+          "ru": "Наденьте пылезащитную маску."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-qurilish-industriesauger",
+      "slug": "industriesauger",
+      "term": "der Industriesauger",
+      "icon": "power",
+      "article": "der",
+      "plural": "die Industriesauger",
+      "tr": {
+        "uz": "sanoat changyutgichi",
+        "uz-Cyrl": "саноат чангютгичи",
+        "ru": "промышленный пылесос"
+      },
+      "pron": {
+        "uz": "der in-dus-tri-zau-ger",
+        "uz-Cyrl": "дер ин-дус-три-зау-гер",
+        "ru": "дер ин-дус-три-зау-гер"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Der Industriesauger nimmt auch groben Schmutz auf.",
+        "tr": {
+          "uz": "Sanoat changyutgichi yirik axlatni ham tortadi.",
+          "uz-Cyrl": "Саноат чангютгичи йирик ахлатни ҳам тортади.",
+          "ru": "Промышленный пылесос собирает и крупный мусор."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-qurilish-schutzfolie",
+      "slug": "schutzfolie",
+      "term": "die Schutzfolie",
+      "icon": "square",
+      "article": "die",
+      "plural": "die Schutzfolien",
+      "tr": {
+        "uz": "himoya plyonkasi",
+        "uz-Cyrl": "ҳимоя плёнкаси",
+        "ru": "защитная плёнка"
+      },
+      "pron": {
+        "uz": "di shuts-fo-li-e",
+        "uz-Cyrl": "ди шуц-фо-ли-е",
+        "ru": "ди шуц-фо-ли-е"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Ziehen Sie die Schutzfolie vom Fenster ab.",
+        "tr": {
+          "uz": "Derazadan himoya plyonkasini olib tashlang.",
+          "uz-Cyrl": "Деразадан ҳимоя плёнкасини олиб ташланг.",
+          "ru": "Снимите защитную плёнку с окна."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-qurilish-aufkleber",
+      "slug": "aufkleber",
+      "term": "der Aufkleber",
+      "icon": "square",
+      "article": "der",
+      "plural": "die Aufkleber",
+      "tr": {
+        "uz": "yorliq (stiker)",
+        "uz-Cyrl": "ёрлиқ (стикер)",
+        "ru": "наклейка"
+      },
+      "pron": {
+        "uz": "der auf-kle-ber",
+        "uz-Cyrl": "дер ауф-кле-бер",
+        "ru": "дер ауф-кле-бер"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Auf der Tür ist noch ein Aufkleber.",
+        "tr": {
+          "uz": "Eshikda hali yorliq bor.",
+          "uz-Cyrl": "Эшикда ҳали ёрлиқ бор.",
+          "ru": "На двери ещё наклейка."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-qurilish-entfernen",
+      "slug": "entfernen",
+      "term": "entfernen",
+      "icon": "trash",
+      "tr": {
+        "uz": "olib tashlamoq",
+        "uz-Cyrl": "олиб ташламоқ",
+        "ru": "удалять"
+      },
+      "pron": {
+        "uz": "ent-fer-nen",
+        "uz-Cyrl": "энт-фер-нен",
+        "ru": "энт-фер-нен"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Entfernen Sie den Staub von allen Türen.",
+        "tr": {
+          "uz": "Hamma eshiklardan changni arting.",
+          "uz-Cyrl": "Ҳамма эшиклардан чангни артинг.",
+          "ru": "Удалите пыль со всех дверей."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-qurilish-bauleiter",
+      "slug": "bauleiter",
+      "term": "der Bauleiter",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Bauleiter",
+      "tr": {
+        "uz": "qurilish rahbari (prorab)",
+        "uz-Cyrl": "қурилиш раҳбари (прораб)",
+        "ru": "прораб"
+      },
+      "pron": {
+        "uz": "der bau-lay-ter",
+        "uz-Cyrl": "дер бау-лай-тер",
+        "ru": "дер бау-лай-тер"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Der Bauleiter zeigt uns die Räume.",
+        "tr": {
+          "uz": "Prorab bizga xonalarni koʻrsatadi.",
+          "uz-Cyrl": "Прораб бизга хоналарни кўрсатади.",
+          "ru": "Прораб показывает нам помещения."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-qurilish-abnahme",
+      "slug": "abnahme",
+      "term": "die Abnahme",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Abnahmen",
+      "tr": {
+        "uz": "qabul qilish (obyektni topshirish)",
+        "uz-Cyrl": "қабул қилиш (объектни топшириш)",
+        "ru": "приёмка (объекта)"
+      },
+      "pron": {
+        "uz": "di ap-na-me",
+        "uz-Cyrl": "ди ап-на-ме",
+        "ru": "ди ап-на-ме"
+      },
+      "level": "A2",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Vor der Abnahme muss alles sauber sein.",
+        "tr": {
+          "uz": "Topshirishdan oldin hammasi toza boʻlishi kerak.",
+          "uz-Cyrl": "Топширишдан олдин ҳаммаси тоза бўлиши керак.",
+          "ru": "До приёмки всё должно быть чистым."
         }
       },
       "safety": false,
