@@ -4,7 +4,7 @@
  * Oqim: CORS → token (Supabase Auth) → savolni tekshirish → kunlik limit (ai_take_quota) → parchalar → model → javob + manbalar.
  */
 import knowledge from './knowledge.json' with { type: 'json' }
-import { asLang, buildMessages, checkQuestion, DAILY_LIMIT, GUEST_LIMIT, GUEST_TOTAL, noInfo, parseAnswer, rank, type Chunk } from './core.ts'
+import { asLang, buildMessages, checkQuestion, DAILY_LIMIT, GUEST_LIMIT, GUEST_TOTAL, parseAnswer, rankScored, type Chunk } from './core.ts'
 import { chat, configFromEnv } from './provider.ts'
 import { memoryTake } from './limit.ts'
 
@@ -60,11 +60,13 @@ Deno.serve(async (req) => {
   if (left < 0) return json({ error: 'limit', limit: userId ? DAILY_LIMIT : GUEST_LIMIT }, 429)
 
   // 4) Parchalar → model → javob
-  const chunks = rank(q.q, KB)
-  if (!chunks.length) return json({ ...noInfo(lang), left })
+  // Model kichik suhbatga ham javob bersin, lekin manba faqat savolga rostdan mos kelgan (ball > 0) parchadan olinadi
+  const scored = rankScored(q.q, KB)
+  const chunks = scored.map((x) => x.chunk)
+  const relevant = new Set(scored.filter((x) => x.score > 0).map((x) => x.chunk.id))
   try {
     const raw = await chat(cfg, buildMessages(q.q, chunks, lang))
-    return json({ ...parseAnswer(raw, chunks, lang), left })
+    return json({ ...parseAnswer(raw, chunks, lang, relevant), left })
   } catch (e) {
     console.error('ai', String(e))
     return json({ error: 'ai' }, 502)

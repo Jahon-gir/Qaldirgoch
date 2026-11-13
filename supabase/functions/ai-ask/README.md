@@ -3,7 +3,7 @@
 Savol → bilim bazasidan mos parchalar (`knowledge.json`, faqat manbali tasdiqlangan matn) → model → javob + manba va sana.
 
 - `core.ts` — savolni tekshirish, kalit soʻz qidiruvi, tizim xabari, javobni tozalash (vitest bilan sinalgan).
-- `provider.ts` — model provayderi (bitta joy). Secrets: `OPENAI_API_KEY` (yoki `AI_API_KEY`), ixtiyoriy `AI_MODEL` (standart `gpt-4.1-mini`), `AI_BASE_URL` (universitet serveri: OpenAI'ga mos manzil, masalan `http://<server>/v1`).
+- `provider.ts` — model provayderi (bitta joy). Secrets: `OPENAI_API_KEY` (yoki `AI_API_KEY`), ixtiyoriy `AI_MODEL` (standart `gpt-4.1`), `AI_BASE_URL` (universitet serveri: OpenAI'ga mos manzil, masalan `http://<server>/v1`).
 - `index.ts` — Deno handler. Kirish shart emas (0.18.1): kirgan foydalanuvchiga kuniga 20 savol (`ai_take_quota`, 0006), mehmonga bitta IP'dan 10 va hamma mehmonlarga jami 300 (`ai_take_guest_quota`, 0007; IP xeshi, IP saqlanmaydi). Jadval boʻlmasa — xotiradagi zaxira limit (`limit.ts`).
 - Kontent oʻzgarsa: `npm run ai:knowledge` (test farqni ushlaydi).
 

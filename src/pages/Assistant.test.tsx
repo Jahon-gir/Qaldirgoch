@@ -30,7 +30,7 @@ describe('AI chat', () => {
   })
 
   it('tayyor savol: foydalanuvchi pufagi, javob va manba chipi', async () => {
-    askAi.mockResolvedValue({ ok: true, data: { answer: '<b>822 EUR</b> sof', found: true, sources: [{ title: 'BIBB', url: 'https://bibb.de', checkedAt: '2026-11-04' }] } })
+    askAi.mockResolvedValue({ ok: true, data: { answer: '<b>822 EUR</b> sof', found: true, kind: 'fact', sources: [{ title: 'BIBB', url: 'https://bibb.de', checkedAt: '2026-11-04' }] } })
     renderPage()
     fireEvent.click(screen.getByRole('button', { name: 'Ausbildung uchun qancha pul kerak?' }))
     expect(screen.getByText('Ausbildung uchun qancha pul kerak?')).toBeTruthy()
@@ -41,7 +41,7 @@ describe('AI chat', () => {
   })
 
   it('xato: ogohlantirish va qayta soʻrash; yangi suhbat tozalaydi', async () => {
-    askAi.mockResolvedValueOnce({ ok: false, error: 'ai' }).mockResolvedValueOnce({ ok: true, data: { answer: 'Javob', found: false, sources: [] } })
+    askAi.mockResolvedValueOnce({ ok: false, error: 'ai' }).mockResolvedValueOnce({ ok: true, data: { answer: 'Javob', found: false, kind: 'no_info', sources: [] } })
     renderPage()
     fireEvent.change(screen.getByLabelText('Savol yozing…'), { target: { value: 'Chancenkarte nima?' } })
     fireEvent.click(screen.getByRole('button', { name: 'Soʻrash' }))
@@ -50,6 +50,7 @@ describe('AI chat', () => {
     await waitFor(() => expect(screen.getByText('Javob')).toBeTruthy())
     expect(screen.getByText('Tasdiqlangan maʼlumot yoʻq')).toBeTruthy()
     fireEvent.click(screen.getByRole('button', { name: 'Yangi suhbat' }))
+    expect(screen.queryByText('Javob')).toBeNull()
     expect(screen.getByText('Nima haqida bilmoqchisiz?')).toBeTruthy()
   })
 })

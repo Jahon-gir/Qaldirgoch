@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from 'react'
 import { IconAlertTriangle, IconArrowLeft, IconArrowUp, IconCheck, IconCopy, IconEdit, IconExternalLink, IconPlayerStop, IconRefresh, IconRobot, IconVolume } from '@tabler/icons-react'
-import { askAi, MAX_QUESTION, safeUrl, type AiError, type AiSource } from '../ai/ask'
+import { askAi, MAX_QUESTION, safeUrl, type AiError, type AiKind, type AiSource } from '../ai/ask'
 import { useI18n } from '../i18n/I18nProvider'
 import type { Key } from '../i18n/uz'
 import { supabase } from '../lib/supabase'
@@ -15,7 +15,7 @@ const SPEECH_LANG = { uz: 'uz-UZ', 'uz-Cyrl': 'uz-UZ', ru: 'ru-RU' } as const
 type Msg =
   | { id: number; role: 'user'; text: string }
   | { id: number; role: 'ai'; q: string; pending: true }
-  | { id: number; role: 'ai'; q: string; pending?: false; text: string; found: boolean; sources: AiSource[] }
+  | { id: number; role: 'ai'; q: string; pending?: false; text: string; kind: AiKind; sources: AiSource[] }
   | { id: number; role: 'ai'; q: string; pending?: false; error: AiError }
 
 /** Robot avatar (marjon doira). */
@@ -78,7 +78,7 @@ export default function Assistant() {
     const r = await askAi(supabase, text, lang)
     if (active.current !== id) return // toʻxtatilgan yoki yangi suhbat
     active.current = null
-    setMsgs((m) => m.map((x) => (x.id !== id ? x : r.ok ? { id, role: 'ai', q: text, text: r.data.answer, found: r.data.found, sources: r.data.sources } : { id, role: 'ai', q: text, error: r.error })))
+    setMsgs((m) => m.map((x) => (x.id !== id ? x : r.ok ? { id, role: 'ai', q: text, text: r.data.answer, kind: r.data.kind, sources: r.data.sources } : { id, role: 'ai', q: text, error: r.error })))
   }
 
   const stop = () => {
@@ -199,7 +199,7 @@ export default function Assistant() {
                       </div>
                     ) : (
                       <>
-                        {!m.found && <p className="mb-1.5 inline-block rounded-full bg-warn-soft px-3 py-0.5 text-sm font-semibold text-warn-text">{t('ai.noInfo')}</p>}
+                        {m.kind === 'no_info' && <p className="mb-1.5 inline-block rounded-full bg-warn-soft px-3 py-0.5 text-sm font-semibold text-warn-text">{t('ai.noInfo')}</p>}
                         <p className="whitespace-pre-line break-words text-base leading-relaxed">{m.text}</p>
                         {m.sources.length > 0 && (
                           <ul className="mt-2 flex flex-wrap gap-1.5" aria-label={t('ai.sources')}>
