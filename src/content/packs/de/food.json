@@ -48,6 +48,46 @@
       },
       "order": 4,
       "level": "A2"
+    },
+    {
+      "id": "gigiyena",
+      "title": {
+        "uz": "Ishlab chiqarishda gigiyena",
+        "uz-Cyrl": "Ишлаб чиқаришда гигиена",
+        "ru": "Гигиена на производстве"
+      },
+      "order": 5,
+      "level": "A1"
+    },
+    {
+      "id": "sut",
+      "title": {
+        "uz": "Sut zavodida",
+        "uz-Cyrl": "Сут заводида",
+        "ru": "На молочном заводе"
+      },
+      "order": 6,
+      "level": "A2"
+    },
+    {
+      "id": "gosht",
+      "title": {
+        "uz": "Goʻshtni qayta ishlash",
+        "uz-Cyrl": "Гўштни қайта ишлаш",
+        "ru": "Переработка мяса"
+      },
+      "order": 7,
+      "level": "A2"
+    },
+    {
+      "id": "liniya",
+      "title": {
+        "uz": "Liniya va mashinani boshqarish",
+        "uz-Cyrl": "Линия ва машинани бошқариш",
+        "ru": "Управление линией и машиной"
+      },
+      "order": 8,
+      "level": "A2"
     }
   ],
   "words": [
@@ -2126,6 +2166,2101 @@
           "uz": "Ishlab chiqarishda taqinchoq taqish mumkin emas.",
           "uz-Cyrl": "Ишлаб чиқаришда тақинчоқ тақиш мумкин эмас.",
           "ru": "На производстве украшения запрещены."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gigiyena-hygieneschleuse",
+      "slug": "hygieneschleuse",
+      "term": "die Hygieneschleuse",
+      "icon": "door",
+      "article": "die",
+      "plural": "die Hygieneschleusen",
+      "tr": {
+        "uz": "gigiyena shlyuzi (kirish joyi)",
+        "uz-Cyrl": "гигиена шлюзи (кириш жойи)",
+        "ru": "санитарный шлюз"
+      },
+      "pron": {
+        "uz": "die hyu-gi-e-ne-shloy-ze",
+        "uz-Cyrl": "ди хю-ги-е-не-шлой-зе",
+        "ru": "ди хю-ги-е-не-шлой-зе"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Gehen Sie immer durch die Hygieneschleuse.",
+        "tr": {
+          "uz": "Doim gigiyena shlyuzidan oʻting.",
+          "uz-Cyrl": "Доим гигиена шлюзидан ўтинг.",
+          "ru": "Всегда проходите через санитарный шлюз."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gigiyena-bartbinde",
+      "slug": "bartbinde",
+      "term": "die Bartbinde",
+      "icon": "user",
+      "article": "die",
+      "plural": "die Bartbinden",
+      "tr": {
+        "uz": "soqol niqobi",
+        "uz-Cyrl": "соқол ниқоби",
+        "ru": "бородная маска"
+      },
+      "pron": {
+        "uz": "die bart-bin-de",
+        "uz-Cyrl": "ди барт-бин-де",
+        "ru": "ди барт-бин-де"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Mit Bart tragen Sie eine Bartbinde.",
+        "tr": {
+          "uz": "Soqolingiz boʻlsa, soqol niqobini taqing.",
+          "uz-Cyrl": "Соқолингиз бўлса, соқол ниқобини тақинг.",
+          "ru": "С бородой надевайте бородную маску."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gigiyena-ueberschuh",
+      "slug": "ueberschuh",
+      "term": "der Überschuh",
+      "icon": "shoe",
+      "article": "der",
+      "plural": "die Überschuhe",
+      "tr": {
+        "uz": "bahila",
+        "uz-Cyrl": "бахила",
+        "ru": "бахила"
+      },
+      "pron": {
+        "uz": "der yu-ber-shu",
+        "uz-Cyrl": "дер ю-бер-шу",
+        "ru": "дер ю-бер-шу"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Besucher tragen Überschuhe.",
+        "tr": {
+          "uz": "Mehmonlar bahila kiyadi.",
+          "uz-Cyrl": "Меҳмонлар бахила кияди.",
+          "ru": "Посетители надевают бахилы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gigiyena-handwaschbecken",
+      "slug": "handwaschbecken",
+      "term": "das Handwaschbecken",
+      "icon": "droplet",
+      "article": "das",
+      "plural": "die Handwaschbecken",
+      "tr": {
+        "uz": "qoʻl yuvish chanogʻi",
+        "uz-Cyrl": "қўл ювиш чаноғи",
+        "ru": "раковина для рук"
+      },
+      "pron": {
+        "uz": "das hant-vash-be-ken",
+        "uz-Cyrl": "дас хант-ваш-бе-кен",
+        "ru": "дас хант-ваш-бе-кен"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Das Handwaschbecken ist nur für die Hände.",
+        "tr": {
+          "uz": "Bu chanoq faqat qoʻl yuvish uchun.",
+          "uz-Cyrl": "Бу чаноқ фақат қўл ювиш учун.",
+          "ru": "Эта раковина только для рук."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gigiyena-seife",
+      "slug": "seife",
+      "term": "die Seife",
+      "icon": "droplet",
+      "article": "die",
+      "plural": "die Seifen",
+      "tr": {
+        "uz": "sovun",
+        "uz-Cyrl": "совун",
+        "ru": "мыло"
+      },
+      "pron": {
+        "uz": "die zay-fe",
+        "uz-Cyrl": "ди зай-фе",
+        "ru": "ди зай-фе"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Waschen Sie die Hände mit Seife.",
+        "tr": {
+          "uz": "Qoʻllarni sovun bilan yuving.",
+          "uz-Cyrl": "Қўлларни совун билан ювинг.",
+          "ru": "Мойте руки с мылом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gigiyena-abtrocknen",
+      "slug": "abtrocknen",
+      "term": "abtrocknen",
+      "icon": "toilet-paper",
+      "tr": {
+        "uz": "quritmoq (artib)",
+        "uz-Cyrl": "қуритмоқ (артиб)",
+        "ru": "вытирать насухо"
+      },
+      "pron": {
+        "uz": "ap-trok-nen",
+        "uz-Cyrl": "ап-трок-нен",
+        "ru": "ап-трок-нен"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Trocknen Sie die Hände mit Papier ab.",
+        "tr": {
+          "uz": "Qoʻllarni qogʻoz bilan arting.",
+          "uz-Cyrl": "Қўлларни қоғоз билан артинг.",
+          "ru": "Вытрите руки бумагой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gigiyena-fremdkoerper",
+      "slug": "fremdkoerper",
+      "term": "der Fremdkörper",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Fremdkörper",
+      "tr": {
+        "uz": "begona jism",
+        "uz-Cyrl": "бегона жисм",
+        "ru": "посторонний предмет"
+      },
+      "pron": {
+        "uz": "der fremt-kyor-per",
+        "uz-Cyrl": "дер фремт-кёр-пер",
+        "ru": "дер фремт-кёр-пер"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Im Teig war ein Fremdkörper.",
+        "tr": {
+          "uz": "Xamirda begona jism bor edi.",
+          "uz-Cyrl": "Хамирда бегона жисм бор эди.",
+          "ru": "В тесте был посторонний предмет."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gigiyena-schaedling",
+      "slug": "schaedling",
+      "term": "der Schädling",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Schädlinge",
+      "tr": {
+        "uz": "zararkunanda",
+        "uz-Cyrl": "зараркунанда",
+        "ru": "вредитель"
+      },
+      "pron": {
+        "uz": "der shet-ling",
+        "uz-Cyrl": "дер шет-линг",
+        "ru": "дер шет-линг"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Melden Sie Schädlinge sofort.",
+        "tr": {
+          "uz": "Zararkunandalar haqida darhol xabar bering.",
+          "uz-Cyrl": "Зараркунандалар ҳақида дарҳол хабар беринг.",
+          "ru": "Сразу сообщайте о вредителях."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gigiyena-fliege",
+      "slug": "fliege",
+      "term": "die Fliege",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Fliegen",
+      "tr": {
+        "uz": "pashsha",
+        "uz-Cyrl": "пашша",
+        "ru": "муха"
+      },
+      "pron": {
+        "uz": "die fli-ge",
+        "uz-Cyrl": "ди фли-ге",
+        "ru": "ди фли-ге"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Machen Sie die Tür zu, sonst kommen Fliegen.",
+        "tr": {
+          "uz": "Eshikni yoping, boʻlmasa pashsha kiradi.",
+          "uz-Cyrl": "Эшикни ёпинг, бўлмаса пашша киради.",
+          "ru": "Закройте дверь, иначе налетят мухи."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gigiyena-reinigung",
+      "slug": "reinigung",
+      "term": "die Reinigung",
+      "icon": "droplet",
+      "article": "die",
+      "plural": "die Reinigungen",
+      "tr": {
+        "uz": "tozalash",
+        "uz-Cyrl": "тозалаш",
+        "ru": "уборка, чистка"
+      },
+      "pron": {
+        "uz": "die ray-ni-gung",
+        "uz-Cyrl": "ди рай-ни-гунг",
+        "ru": "ди рай-ни-гунг"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Nach der Schicht ist Reinigung.",
+        "tr": {
+          "uz": "Smenadan keyin tozalash.",
+          "uz-Cyrl": "Сменадан кейин тозалаш.",
+          "ru": "После смены — уборка."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gigiyena-verschmutzt",
+      "slug": "verschmutzt",
+      "term": "verschmutzt",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "ifloslangan",
+        "uz-Cyrl": "ифлосланган",
+        "ru": "загрязнённый"
+      },
+      "pron": {
+        "uz": "fer-shmutst",
+        "uz-Cyrl": "фер-шмуцт",
+        "ru": "фер-шмуцт"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Die Ware ist verschmutzt, nicht verpacken!",
+        "tr": {
+          "uz": "Mahsulot ifloslangan, qadoqlamang!",
+          "uz-Cyrl": "Маҳсулот ифлосланган, қадоқламанг!",
+          "ru": "Товар загрязнён, не упаковывать!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gigiyena-pflaster",
+      "slug": "pflaster",
+      "term": "das Pflaster",
+      "icon": "first-aid-kit",
+      "article": "das",
+      "plural": "die Pflaster",
+      "tr": {
+        "uz": "plastir",
+        "uz-Cyrl": "пластир",
+        "ru": "пластырь"
+      },
+      "pron": {
+        "uz": "das pflas-ter",
+        "uz-Cyrl": "дас пфлас-тер",
+        "ru": "дас пфлас-тер"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "In der Produktion benutzen wir blaue Pflaster.",
+        "tr": {
+          "uz": "Ishlab chiqarishda koʻk plastir ishlatamiz.",
+          "uz-Cyrl": "Ишлаб чиқаришда кўк пластир ишлатамиз.",
+          "ru": "На производстве мы используем синие пластыри."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gigiyena-kein-essen-in-der-produktion",
+      "slug": "kein-essen-in-der-produktion",
+      "term": "Kein Essen in der Produktion!",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Ishlab chiqarishda ovqat yemang!",
+        "uz-Cyrl": "Ишлаб чиқаришда овқат еманг!",
+        "ru": "Не есть на производстве!"
+      },
+      "pron": {
+        "uz": "kayn e-sen in der pro-duk-tsi-on",
+        "uz-Cyrl": "кайн э-сен ин дер про-дук-ци-он",
+        "ru": "кайн э-сен ин дер про-дук-ци-он"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gigiyena",
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gigiyena-arbeitsflaeche",
+      "slug": "arbeitsflaeche",
+      "term": "die Arbeitsfläche",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Arbeitsflächen",
+      "tr": {
+        "uz": "ish yuzasi (stol usti)",
+        "uz-Cyrl": "иш юзаси (стол усти)",
+        "ru": "рабочая поверхность"
+      },
+      "pron": {
+        "uz": "die ar-bayts-fle-xe",
+        "uz-Cyrl": "ди ар-байц-фле-хе",
+        "ru": "ди ар-байц-фле-хе"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Die Arbeitsfläche muss sauber sein.",
+        "tr": {
+          "uz": "Ish yuzasi toza boʻlishi kerak.",
+          "uz-Cyrl": "Иш юзаси тоза бўлиши керак.",
+          "ru": "Рабочая поверхность должна быть чистой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gigiyena-lebensmittelsicherheit",
+      "slug": "lebensmittelsicherheit",
+      "term": "die Lebensmittelsicherheit",
+      "icon": "check",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "oziq-ovqat xavfsizligi",
+        "uz-Cyrl": "озиқ-овқат хавфсизлиги",
+        "ru": "безопасность пищевых продуктов"
+      },
+      "pron": {
+        "uz": "die le-bens-mi-tel-zi-xer-hayt",
+        "uz-Cyrl": "ди ле-бенс-ми-тель-зи-хер-хайт",
+        "ru": "ди ле-бенс-ми-тель-зи-хер-хайт"
+      },
+      "level": "A1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Lebensmittelsicherheit ist sehr wichtig.",
+        "tr": {
+          "uz": "Oziq-ovqat xavfsizligi juda muhim.",
+          "uz-Cyrl": "Озиқ-овқат хавфсизлиги жуда муҳим.",
+          "ru": "Безопасность продуктов очень важна."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sut-molkerei",
+      "slug": "molkerei",
+      "term": "die Molkerei",
+      "icon": "milk",
+      "article": "die",
+      "plural": "die Molkereien",
+      "tr": {
+        "uz": "sut zavodi",
+        "uz-Cyrl": "сут заводи",
+        "ru": "молочный завод"
+      },
+      "pron": {
+        "uz": "die mol-ke-ray",
+        "uz-Cyrl": "ди моль-ке-рай",
+        "ru": "ди моль-ке-рай"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "milchtechnologe",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sut",
+      "example": {
+        "term": "Ich arbeite in einer Molkerei.",
+        "tr": {
+          "uz": "Men sut zavodida ishlayman.",
+          "uz-Cyrl": "Мен сут заводида ишлайман.",
+          "ru": "Я работаю на молочном заводе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sut-rohmilch",
+      "slug": "rohmilch",
+      "term": "die Rohmilch",
+      "icon": "milk",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "xom sut",
+        "uz-Cyrl": "хом сут",
+        "ru": "сырое молоко"
+      },
+      "pron": {
+        "uz": "die ro-milx",
+        "uz-Cyrl": "ди ро-мильх",
+        "ru": "ди ро-мильх"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "milchtechnologe",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sut",
+      "example": {
+        "term": "Die Rohmilch kommt am Morgen.",
+        "tr": {
+          "uz": "Xom sut ertalab keladi.",
+          "uz-Cyrl": "Хом сут эрталаб келади.",
+          "ru": "Сырое молоко привозят утром."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sut-sahne",
+      "slug": "sahne",
+      "term": "die Sahne",
+      "icon": "milk",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "qaymoq (slivka)",
+        "uz-Cyrl": "қаймоқ (сливка)",
+        "ru": "сливки"
+      },
+      "pron": {
+        "uz": "die za-ne",
+        "uz-Cyrl": "ди за-не",
+        "ru": "ди за-не"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "milchtechnologe",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sut",
+      "example": {
+        "term": "Die Sahne muss kalt bleiben.",
+        "tr": {
+          "uz": "Qaymoq sovuq turishi kerak.",
+          "uz-Cyrl": "Қаймоқ совуқ туриши керак.",
+          "ru": "Сливки должны оставаться холодными."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sut-quark",
+      "slug": "quark",
+      "term": "der Quark",
+      "icon": "milk",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "tvorog",
+        "uz-Cyrl": "творог",
+        "ru": "творог"
+      },
+      "pron": {
+        "uz": "der kvark",
+        "uz-Cyrl": "дер кварк",
+        "ru": "дер кварк"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "milchtechnologe",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sut",
+      "example": {
+        "term": "Heute produzieren wir Quark.",
+        "tr": {
+          "uz": "Bugun tvorog ishlab chiqaramiz.",
+          "uz-Cyrl": "Бугун творог ишлаб чиқарамиз.",
+          "ru": "Сегодня мы производим творог."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sut-joghurt",
+      "slug": "joghurt",
+      "term": "der Joghurt",
+      "icon": "milk",
+      "article": "der",
+      "plural": "die Joghurts",
+      "tr": {
+        "uz": "yogurt",
+        "uz-Cyrl": "йогурт",
+        "ru": "йогурт"
+      },
+      "pron": {
+        "uz": "der yo-gurt",
+        "uz-Cyrl": "дер йо-гурт",
+        "ru": "дер йо-гурт"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "milchtechnologe",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sut",
+      "example": {
+        "term": "Der Joghurt kommt in Becher.",
+        "tr": {
+          "uz": "Yogurt stakanchalarga quyiladi.",
+          "uz-Cyrl": "Йогурт стаканчаларга қуйилади.",
+          "ru": "Йогурт разливают в стаканчики."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sut-becher",
+      "slug": "becher",
+      "term": "der Becher",
+      "icon": "glass",
+      "article": "der",
+      "plural": "die Becher",
+      "tr": {
+        "uz": "stakancha",
+        "uz-Cyrl": "стаканча",
+        "ru": "стаканчик"
+      },
+      "pron": {
+        "uz": "der be-xer",
+        "uz-Cyrl": "дер бе-хер",
+        "ru": "дер бе-хер"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "milchtechnologe",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sut",
+      "example": {
+        "term": "Der Becher ist nicht richtig verschlossen.",
+        "tr": {
+          "uz": "Stakancha yaxshi yopilmagan.",
+          "uz-Cyrl": "Стаканча яхши ёпилмаган.",
+          "ru": "Стаканчик плохо закрыт."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sut-pasteurisieren",
+      "slug": "pasteurisieren",
+      "term": "pasteurisieren",
+      "icon": "thermometer",
+      "tr": {
+        "uz": "pasterizatsiya qilmoq",
+        "uz-Cyrl": "пастеризация қилмоқ",
+        "ru": "пастеризовать"
+      },
+      "pron": {
+        "uz": "pas-tyo-ri-zi-ren",
+        "uz-Cyrl": "пас-тё-ри-зи-рен",
+        "ru": "пас-тё-ри-зи-рен"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "milchtechnologe",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sut",
+      "example": {
+        "term": "Die Milch wird pasteurisiert.",
+        "tr": {
+          "uz": "Sut pasterizatsiya qilinadi.",
+          "uz-Cyrl": "Сут пастеризация қилинади.",
+          "ru": "Молоко пастеризуют."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sut-erhitzen",
+      "slug": "erhitzen",
+      "term": "erhitzen",
+      "icon": "flame",
+      "tr": {
+        "uz": "qizdirmoq",
+        "uz-Cyrl": "қиздирмоқ",
+        "ru": "нагревать"
+      },
+      "pron": {
+        "uz": "er-hi-tsen",
+        "uz-Cyrl": "эр-хи-цен",
+        "ru": "эр-хи-цен"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "milchtechnologe",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sut",
+      "example": {
+        "term": "Die Anlage erhitzt die Milch.",
+        "tr": {
+          "uz": "Uskuna sutni qizdiradi.",
+          "uz-Cyrl": "Ускуна сутни қиздиради.",
+          "ru": "Установка нагревает молоко."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sut-abfuellen",
+      "slug": "abfuellen",
+      "term": "abfüllen",
+      "icon": "glass",
+      "tr": {
+        "uz": "quymoq (idishga)",
+        "uz-Cyrl": "қуймоқ (идишга)",
+        "ru": "разливать (по таре)"
+      },
+      "pron": {
+        "uz": "ap-fyu-len",
+        "uz-Cyrl": "ап-фю-лен",
+        "ru": "ап-фю-лен"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "milchtechnologe",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sut",
+      "example": {
+        "term": "Wir füllen die Milch in Flaschen ab.",
+        "tr": {
+          "uz": "Sutni shishalarga quyamiz.",
+          "uz-Cyrl": "Сутни шишаларга қуямиз.",
+          "ru": "Мы разливаем молоко по бутылкам."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sut-tank",
+      "slug": "tank",
+      "term": "der Tank",
+      "icon": "alert-octagon",
+      "article": "der",
+      "plural": "die Tanks",
+      "tr": {
+        "uz": "bak (sisterna)",
+        "uz-Cyrl": "бак (цистерна)",
+        "ru": "танк, ёмкость"
+      },
+      "pron": {
+        "uz": "der tank",
+        "uz-Cyrl": "дер танк",
+        "ru": "дер танк"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "milchtechnologe",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sut",
+      "example": {
+        "term": "Steigen Sie nie allein in den Tank!",
+        "tr": {
+          "uz": "Hech qachon bakka yolgʻiz tushmang!",
+          "uz-Cyrl": "Ҳеч қачон бакка ёлғиз тушманг!",
+          "ru": "Никогда не спускайтесь в танк в одиночку!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sut-schlauch",
+      "slug": "schlauch",
+      "term": "der Schlauch",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Schläuche",
+      "tr": {
+        "uz": "shlang",
+        "uz-Cyrl": "шланг",
+        "ru": "шланг"
+      },
+      "pron": {
+        "uz": "der shlaux",
+        "uz-Cyrl": "дер шлаух",
+        "ru": "дер шлаух"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "milchtechnologe",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sut",
+      "example": {
+        "term": "Der Schlauch ist undicht.",
+        "tr": {
+          "uz": "Shlang oqyapti.",
+          "uz-Cyrl": "Шланг оқяпти.",
+          "ru": "Шланг протекает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sut-ventil",
+      "slug": "ventil",
+      "term": "das Ventil",
+      "icon": "toggle-left",
+      "article": "das",
+      "plural": "die Ventile",
+      "tr": {
+        "uz": "klapan (ventil)",
+        "uz-Cyrl": "клапан (вентиль)",
+        "ru": "клапан"
+      },
+      "pron": {
+        "uz": "das ven-til",
+        "uz-Cyrl": "дас вен-тиль",
+        "ru": "дас вен-тиль"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "milchtechnologe",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sut",
+      "example": {
+        "term": "Schließen Sie das Ventil.",
+        "tr": {
+          "uz": "Klapanni yoping.",
+          "uz-Cyrl": "Клапанни ёпинг.",
+          "ru": "Закройте клапан."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sut-sauer",
+      "slug": "sauer",
+      "term": "sauer",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "nordon (achigan)",
+        "uz-Cyrl": "нордон (ачиган)",
+        "ru": "кислый"
+      },
+      "pron": {
+        "uz": "zau-er",
+        "uz-Cyrl": "зау-ер",
+        "ru": "зау-ер"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "milchtechnologe",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sut",
+      "example": {
+        "term": "Die Milch ist sauer.",
+        "tr": {
+          "uz": "Sut achib qolgan.",
+          "uz-Cyrl": "Сут ачиб қолган.",
+          "ru": "Молоко скисло."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sut-kuehl",
+      "slug": "kuehl",
+      "term": "kühl",
+      "icon": "thermometer",
+      "tr": {
+        "uz": "salqin",
+        "uz-Cyrl": "салқин",
+        "ru": "прохладный"
+      },
+      "pron": {
+        "uz": "kyul",
+        "uz-Cyrl": "кюль",
+        "ru": "кюль"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "milchtechnologe",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sut",
+      "example": {
+        "term": "Kühl lagern!",
+        "tr": {
+          "uz": "Salqin joyda saqlang!",
+          "uz-Cyrl": "Салқин жойда сақланг!",
+          "ru": "Хранить в прохладном месте!"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sut-probe",
+      "slug": "probe",
+      "term": "die Probe",
+      "icon": "eye",
+      "article": "die",
+      "plural": "die Proben",
+      "tr": {
+        "uz": "namuna",
+        "uz-Cyrl": "намуна",
+        "ru": "проба"
+      },
+      "pron": {
+        "uz": "die pro-be",
+        "uz-Cyrl": "ди про-бе",
+        "ru": "ди про-бе"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "milchtechnologe",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sut",
+      "example": {
+        "term": "Bringen Sie die Probe ins Labor.",
+        "tr": {
+          "uz": "Namunani laboratoriyaga olib boring.",
+          "uz-Cyrl": "Намунани лабораторияга олиб боринг.",
+          "ru": "Отнесите пробу в лабораторию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gosht-schlachthof",
+      "slug": "schlachthof",
+      "term": "der Schlachthof",
+      "icon": "building",
+      "article": "der",
+      "plural": "die Schlachthöfe",
+      "tr": {
+        "uz": "soʻyish joyi (qushxona)",
+        "uz-Cyrl": "сўйиш жойи (қушхона)",
+        "ru": "бойня"
+      },
+      "pron": {
+        "uz": "der shlaxt-hof",
+        "uz-Cyrl": "дер шлахт-хоф",
+        "ru": "дер шлахт-хоф"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "fleischer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gosht",
+      "example": {
+        "term": "Der Schlachthof ist am Stadtrand.",
+        "tr": {
+          "uz": "Qushxona shahar chetida.",
+          "uz-Cyrl": "Қушхона шаҳар четида.",
+          "ru": "Бойня на окраине города."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gosht-zerlegen",
+      "slug": "zerlegen",
+      "term": "zerlegen",
+      "icon": "meat",
+      "tr": {
+        "uz": "boʻlaklarga ajratmoq",
+        "uz-Cyrl": "бўлакларга ажратмоқ",
+        "ru": "разделывать"
+      },
+      "pron": {
+        "uz": "tser-le-gen",
+        "uz-Cyrl": "цер-ле-ген",
+        "ru": "цер-ле-ген"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "fleischer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gosht",
+      "example": {
+        "term": "Wir zerlegen heute Rinder.",
+        "tr": {
+          "uz": "Bugun mol goʻshtini boʻlaklaymiz.",
+          "uz-Cyrl": "Бугун мол гўштини бўлаклаймиз.",
+          "ru": "Сегодня мы разделываем говядину."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gosht-gefluegel",
+      "slug": "gefluegel",
+      "term": "das Geflügel",
+      "icon": "meat",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "parranda goʻshti",
+        "uz-Cyrl": "парранда гўшти",
+        "ru": "птица (мясо)"
+      },
+      "pron": {
+        "uz": "das ge-flyu-gel",
+        "uz-Cyrl": "дас ге-флю-гель",
+        "ru": "дас ге-флю-гель"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "fleischer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gosht",
+      "example": {
+        "term": "Geflügel und Rind getrennt lagern.",
+        "tr": {
+          "uz": "Parranda va mol goʻshtini alohida saqlang.",
+          "uz-Cyrl": "Парранда ва мол гўштини алоҳида сақланг.",
+          "ru": "Птицу и говядину хранить отдельно."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gosht-knochen",
+      "slug": "knochen",
+      "term": "der Knochen",
+      "icon": "meat",
+      "article": "der",
+      "plural": "die Knochen",
+      "tr": {
+        "uz": "suyak",
+        "uz-Cyrl": "суяк",
+        "ru": "кость"
+      },
+      "pron": {
+        "uz": "der kno-xen",
+        "uz-Cyrl": "дер кно-хен",
+        "ru": "дер кно-хен"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "fleischer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gosht",
+      "example": {
+        "term": "Die Knochen kommen in diese Kiste.",
+        "tr": {
+          "uz": "Suyaklar bu yashikka solinadi.",
+          "uz-Cyrl": "Суяклар бу яшикка солинади.",
+          "ru": "Кости идут в этот ящик."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gosht-fett",
+      "slug": "fett",
+      "term": "das Fett",
+      "icon": "meat",
+      "article": "das",
+      "plural": "die Fette",
+      "tr": {
+        "uz": "yogʻ",
+        "uz-Cyrl": "ёғ",
+        "ru": "жир"
+      },
+      "pron": {
+        "uz": "das fet",
+        "uz-Cyrl": "дас фет",
+        "ru": "дас фет"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "fleischer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gosht",
+      "example": {
+        "term": "Schneiden Sie das Fett ab.",
+        "tr": {
+          "uz": "Yogʻini kesib tashlang.",
+          "uz-Cyrl": "Ёғини кесиб ташланг.",
+          "ru": "Срежьте жир."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gosht-fleischwolf",
+      "slug": "fleischwolf",
+      "term": "der Fleischwolf",
+      "icon": "alert-octagon",
+      "article": "der",
+      "plural": "die Fleischwölfe",
+      "tr": {
+        "uz": "goʻsht qiymalagich",
+        "uz-Cyrl": "гўшт қиймалагич",
+        "ru": "мясорубка"
+      },
+      "pron": {
+        "uz": "der flaysh-volf",
+        "uz-Cyrl": "дер флайш-вольф",
+        "ru": "дер флайш-вольф"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "fleischer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gosht",
+      "example": {
+        "term": "Nie mit der Hand in den Fleischwolf greifen!",
+        "tr": {
+          "uz": "Hech qachon qoʻlni qiymalagichga tiqmang!",
+          "uz-Cyrl": "Ҳеч қачон қўлни қиймалагичга тиқманг!",
+          "ru": "Никогда не суйте руку в мясорубку!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gosht-wetzstahl",
+      "slug": "wetzstahl",
+      "term": "der Wetzstahl",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Wetzstähle",
+      "tr": {
+        "uz": "pichoq qayragʻich (musat)",
+        "uz-Cyrl": "пичоқ қайрағич (мусат)",
+        "ru": "мусат"
+      },
+      "pron": {
+        "uz": "der vets-shtal",
+        "uz-Cyrl": "дер вец-шталь",
+        "ru": "дер вец-шталь"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "fleischer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gosht",
+      "example": {
+        "term": "Benutzen Sie den Wetzstahl vorsichtig.",
+        "tr": {
+          "uz": "Qayragʻichni ehtiyotkorlik bilan ishlating.",
+          "uz-Cyrl": "Қайрағични эҳтиёткорлик билан ишлатинг.",
+          "ru": "Пользуйтесь мусатом осторожно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gosht-schaerfen",
+      "slug": "schaerfen",
+      "term": "schärfen",
+      "icon": "tools",
+      "tr": {
+        "uz": "charxlamoq (oʻtkirlamoq)",
+        "uz-Cyrl": "чархламоқ (ўткирламоқ)",
+        "ru": "точить"
+      },
+      "pron": {
+        "uz": "sher-fen",
+        "uz-Cyrl": "шер-фен",
+        "ru": "шер-фен"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "fleischer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gosht",
+      "example": {
+        "term": "Das Messer muss geschärft werden.",
+        "tr": {
+          "uz": "Pichoqni charxlash kerak.",
+          "uz-Cyrl": "Пичоқни чархлаш керак.",
+          "ru": "Нож нужно наточить."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gosht-stechschutzschuerze",
+      "slug": "stechschutzschuerze",
+      "term": "die Stechschutzschürze",
+      "icon": "shirt",
+      "article": "die",
+      "plural": "die Stechschutzschürzen",
+      "tr": {
+        "uz": "kesilishdan himoya fartugi",
+        "uz-Cyrl": "кесилишдан ҳимоя фартуги",
+        "ru": "защитный фартук от порезов"
+      },
+      "pron": {
+        "uz": "die shtex-shuts-shyur-tse",
+        "uz-Cyrl": "ди штех-шуц-шюр-це",
+        "ru": "ди штех-шуц-шюр-це"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "fleischer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gosht",
+      "example": {
+        "term": "Beim Ausbeinen tragen Sie die Stechschutzschürze.",
+        "tr": {
+          "uz": "Suyakdan ajratishda himoya fartugini kiying.",
+          "uz-Cyrl": "Суякдан ажратишда ҳимоя фартугини кийинг.",
+          "ru": "При обвалке надевайте защитный фартук."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gosht-haken",
+      "slug": "haken",
+      "term": "der Haken",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Haken",
+      "tr": {
+        "uz": "ilmoq (ilgak)",
+        "uz-Cyrl": "илмоқ (илгак)",
+        "ru": "крюк"
+      },
+      "pron": {
+        "uz": "der ha-ken",
+        "uz-Cyrl": "дер ха-кен",
+        "ru": "дер ха-кен"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "fleischer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gosht",
+      "example": {
+        "term": "Vorsicht, die Haken sind spitz!",
+        "tr": {
+          "uz": "Ehtiyot boʻling, ilmoqlar oʻtkir!",
+          "uz-Cyrl": "Эҳтиёт бўлинг, илмоқлар ўткир!",
+          "ru": "Осторожно, крюки острые!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gosht-filet",
+      "slug": "filet",
+      "term": "das Filet",
+      "icon": "meat",
+      "article": "das",
+      "plural": "die Filets",
+      "tr": {
+        "uz": "file",
+        "uz-Cyrl": "филе",
+        "ru": "филе"
+      },
+      "pron": {
+        "uz": "das fi-le",
+        "uz-Cyrl": "дас фи-ле",
+        "ru": "дас фи-ле"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "fleischer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gosht",
+      "example": {
+        "term": "Das Filet ist teuer, schneiden Sie genau.",
+        "tr": {
+          "uz": "File qimmat, aniq kesing.",
+          "uz-Cyrl": "Филе қиммат, аниқ кесинг.",
+          "ru": "Филе дорогое, режьте точно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gosht-wuerfeln",
+      "slug": "wuerfeln",
+      "term": "würfeln",
+      "icon": "meat",
+      "tr": {
+        "uz": "kubik qilib toʻgʻramoq",
+        "uz-Cyrl": "кубик қилиб тўғрамоқ",
+        "ru": "нарезать кубиками"
+      },
+      "pron": {
+        "uz": "vyur-feln",
+        "uz-Cyrl": "вюр-фельн",
+        "ru": "вюр-фельн"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "fleischer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gosht",
+      "example": {
+        "term": "Würfeln Sie das Fleisch für Gulasch.",
+        "tr": {
+          "uz": "Goʻshtni gulyash uchun kubik qilib toʻgʻrang.",
+          "uz-Cyrl": "Гўштни гуляш учун кубик қилиб тўғранг.",
+          "ru": "Нарежьте мясо кубиками для гуляша."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gosht-gewuerz",
+      "slug": "gewuerz",
+      "term": "das Gewürz",
+      "icon": "salad",
+      "article": "das",
+      "plural": "die Gewürze",
+      "tr": {
+        "uz": "ziravor",
+        "uz-Cyrl": "зиравор",
+        "ru": "специя"
+      },
+      "pron": {
+        "uz": "das ge-vyurts",
+        "uz-Cyrl": "дас ге-вюрц",
+        "ru": "дас ге-вюрц"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "fleischer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gosht",
+      "example": {
+        "term": "Die Gewürze stehen im Regal.",
+        "tr": {
+          "uz": "Ziravorlar javonda turibdi.",
+          "uz-Cyrl": "Зираворлар жавонда турибди.",
+          "ru": "Специи стоят на полке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gosht-marinade",
+      "slug": "marinade",
+      "term": "die Marinade",
+      "icon": "droplet",
+      "article": "die",
+      "plural": "die Marinaden",
+      "tr": {
+        "uz": "marinad",
+        "uz-Cyrl": "маринад",
+        "ru": "маринад"
+      },
+      "pron": {
+        "uz": "die ma-ri-na-de",
+        "uz-Cyrl": "ди ма-ри-на-де",
+        "ru": "ди ма-ри-на-де"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "fleischer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gosht",
+      "example": {
+        "term": "Das Fleisch liegt in der Marinade.",
+        "tr": {
+          "uz": "Goʻsht marinadda turibdi.",
+          "uz-Cyrl": "Гўшт маринадда турибди.",
+          "ru": "Мясо лежит в маринаде."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-liniya-einschalten",
+      "slug": "einschalten",
+      "term": "einschalten",
+      "icon": "power",
+      "tr": {
+        "uz": "yoqmoq",
+        "uz-Cyrl": "ёқмоқ",
+        "ru": "включать"
+      },
+      "pron": {
+        "uz": "ayn-shal-ten",
+        "uz-Cyrl": "айн-шаль-тен",
+        "ru": "айн-шаль-тен"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "maschinen-anlagenfuehrer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "liniya",
+      "example": {
+        "term": "Schalten Sie die Linie erst nach der Prüfung ein.",
+        "tr": {
+          "uz": "Liniyani faqat tekshiruvdan keyin yoqing.",
+          "uz-Cyrl": "Линияни фақат текширувдан кейин ёқинг.",
+          "ru": "Включайте линию только после проверки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-liniya-anzeige",
+      "slug": "anzeige",
+      "term": "die Anzeige",
+      "icon": "eye",
+      "article": "die",
+      "plural": "die Anzeigen",
+      "tr": {
+        "uz": "koʻrsatkich (ekran)",
+        "uz-Cyrl": "кўрсаткич (экран)",
+        "ru": "индикатор, дисплей"
+      },
+      "pron": {
+        "uz": "die an-tsay-ge",
+        "uz-Cyrl": "ди ан-цай-ге",
+        "ru": "ди ан-цай-ге"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "maschinen-anlagenfuehrer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "liniya",
+      "example": {
+        "term": "Was steht auf der Anzeige?",
+        "tr": {
+          "uz": "Ekranda nima yozilgan?",
+          "uz-Cyrl": "Экранда нима ёзилган?",
+          "ru": "Что написано на дисплее?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-liniya-knopf",
+      "slug": "knopf",
+      "term": "der Knopf",
+      "icon": "toggle-left",
+      "article": "der",
+      "plural": "die Knöpfe",
+      "tr": {
+        "uz": "tugma",
+        "uz-Cyrl": "тугма",
+        "ru": "кнопка"
+      },
+      "pron": {
+        "uz": "der knopf",
+        "uz-Cyrl": "дер кнопф",
+        "ru": "дер кнопф"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "maschinen-anlagenfuehrer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "liniya",
+      "example": {
+        "term": "Drücken Sie den grünen Knopf.",
+        "tr": {
+          "uz": "Yashil tugmani bosing.",
+          "uz-Cyrl": "Яшил тугмани босинг.",
+          "ru": "Нажмите зелёную кнопку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-liniya-geschwindigkeit",
+      "slug": "geschwindigkeit",
+      "term": "die Geschwindigkeit",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Geschwindigkeiten",
+      "tr": {
+        "uz": "tezlik",
+        "uz-Cyrl": "тезлик",
+        "ru": "скорость"
+      },
+      "pron": {
+        "uz": "die ge-shvin-dix-kayt",
+        "uz-Cyrl": "ди ге-швин-дих-кайт",
+        "ru": "ди ге-швин-дих-кайт"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "maschinen-anlagenfuehrer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "liniya",
+      "example": {
+        "term": "Die Geschwindigkeit ist zu hoch.",
+        "tr": {
+          "uz": "Tezlik juda baland.",
+          "uz-Cyrl": "Тезлик жуда баланд.",
+          "ru": "Скорость слишком высокая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-liniya-behaelter",
+      "slug": "behaelter",
+      "term": "der Behälter",
+      "icon": "trash",
+      "article": "der",
+      "plural": "die Behälter",
+      "tr": {
+        "uz": "idish (konteyner)",
+        "uz-Cyrl": "идиш (контейнер)",
+        "ru": "ёмкость, контейнер"
+      },
+      "pron": {
+        "uz": "der be-hel-ter",
+        "uz-Cyrl": "дер бе-хель-тер",
+        "ru": "дер бе-хель-тер"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "maschinen-anlagenfuehrer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "liniya",
+      "example": {
+        "term": "Der Behälter ist fast leer.",
+        "tr": {
+          "uz": "Idish deyarli boʻsh.",
+          "uz-Cyrl": "Идиш деярли бўш.",
+          "ru": "Ёмкость почти пустая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-liniya-umruesten",
+      "slug": "umruesten",
+      "term": "umrüsten",
+      "icon": "tools",
+      "tr": {
+        "uz": "qayta sozlamoq (boshqa mahsulotga)",
+        "uz-Cyrl": "қайта созламоқ (бошқа маҳсулотга)",
+        "ru": "переналаживать"
+      },
+      "pron": {
+        "uz": "um-ryus-ten",
+        "uz-Cyrl": "ум-рюс-тен",
+        "ru": "ум-рюс-тен"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "maschinen-anlagenfuehrer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "liniya",
+      "example": {
+        "term": "Nach der Pause rüsten wir die Linie um.",
+        "tr": {
+          "uz": "Tanaffusdan keyin liniyani qayta sozlaymiz.",
+          "uz-Cyrl": "Танаффусдан кейин линияни қайта созлаймиз.",
+          "ru": "После перерыва мы переналаживаем линию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-liniya-schutzabdeckung",
+      "slug": "schutzabdeckung",
+      "term": "die Schutzabdeckung",
+      "icon": "alert-octagon",
+      "article": "die",
+      "plural": "die Schutzabdeckungen",
+      "tr": {
+        "uz": "himoya qopqogʻi",
+        "uz-Cyrl": "ҳимоя қопқоғи",
+        "ru": "защитный кожух"
+      },
+      "pron": {
+        "uz": "die shuts-ap-de-kung",
+        "uz-Cyrl": "ди шуц-ап-де-кунг",
+        "ru": "ди шуц-ап-де-кунг"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "maschinen-anlagenfuehrer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "liniya",
+      "example": {
+        "term": "Die Schutzabdeckung nie entfernen!",
+        "tr": {
+          "uz": "Himoya qopqogʻini hech qachon olib tashlamang!",
+          "uz-Cyrl": "Ҳимоя қопқоғини ҳеч қачон олиб ташламанг!",
+          "ru": "Никогда не снимайте защитный кожух!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-liniya-haende-weg",
+      "slug": "haende-weg",
+      "term": "Hände weg!",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Qoʻllarni tortib oling!",
+        "uz-Cyrl": "Қўлларни тортиб олинг!",
+        "ru": "Руки прочь!"
+      },
+      "pron": {
+        "uz": "hen-de vek",
+        "uz-Cyrl": "хен-де век",
+        "ru": "хен-де век"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "maschinen-anlagenfuehrer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "liniya",
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-liniya-lichtschranke",
+      "slug": "lichtschranke",
+      "term": "die Lichtschranke",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Lichtschranken",
+      "tr": {
+        "uz": "nurli toʻsiq (datchik)",
+        "uz-Cyrl": "нурли тўсиқ (датчик)",
+        "ru": "световой барьер"
+      },
+      "pron": {
+        "uz": "die lixt-shran-ke",
+        "uz-Cyrl": "ди лихт-шран-ке",
+        "ru": "ди лихт-шран-ке"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "maschinen-anlagenfuehrer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "liniya",
+      "example": {
+        "term": "Die Lichtschranke stoppt die Maschine.",
+        "tr": {
+          "uz": "Nurli toʻsiq mashinani toʻxtatadi.",
+          "uz-Cyrl": "Нурли тўсиқ машинани тўхтатади.",
+          "ru": "Световой барьер останавливает машину."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-liniya-fehlermeldung",
+      "slug": "fehlermeldung",
+      "term": "die Fehlermeldung",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Fehlermeldungen",
+      "tr": {
+        "uz": "xato haqida xabar",
+        "uz-Cyrl": "хато ҳақида хабар",
+        "ru": "сообщение об ошибке"
+      },
+      "pron": {
+        "uz": "die fe-ler-mel-dung",
+        "uz-Cyrl": "ди фе-лер-мель-дунг",
+        "ru": "ди фе-лер-мель-дунг"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "maschinen-anlagenfuehrer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "liniya",
+      "example": {
+        "term": "Auf dem Display ist eine Fehlermeldung.",
+        "tr": {
+          "uz": "Ekranda xato haqida xabar chiqdi.",
+          "uz-Cyrl": "Экранда хато ҳақида хабар чиқди.",
+          "ru": "На дисплее сообщение об ошибке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-liniya-quittieren",
+      "slug": "quittieren",
+      "term": "quittieren",
+      "icon": "check",
+      "tr": {
+        "uz": "tasdiqlamoq (xabarni)",
+        "uz-Cyrl": "тасдиқламоқ (хабарни)",
+        "ru": "квитировать (сигнал)"
+      },
+      "pron": {
+        "uz": "kvi-ti-ren",
+        "uz-Cyrl": "кви-ти-рен",
+        "ru": "кви-ти-рен"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "maschinen-anlagenfuehrer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "liniya",
+      "example": {
+        "term": "Quittieren Sie die Meldung.",
+        "tr": {
+          "uz": "Xabarni tasdiqlang.",
+          "uz-Cyrl": "Хабарни тасдиқланг.",
+          "ru": "Подтвердите сообщение."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-liniya-neu-starten",
+      "slug": "neu-starten",
+      "term": "neu starten",
+      "icon": "repeat",
+      "tr": {
+        "uz": "qayta ishga tushirmoq",
+        "uz-Cyrl": "қайта ишга туширмоқ",
+        "ru": "перезапустить"
+      },
+      "pron": {
+        "uz": "noy shtar-ten",
+        "uz-Cyrl": "ной штар-тен",
+        "ru": "ной штар-тен"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "maschinen-anlagenfuehrer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "liniya",
+      "example": {
+        "term": "Wir müssen die Maschine neu starten.",
+        "tr": {
+          "uz": "Mashinani qayta ishga tushirishimiz kerak.",
+          "uz-Cyrl": "Машинани қайта ишга туширишимиз керак.",
+          "ru": "Нужно перезапустить машину."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-liniya-instandhalter",
+      "slug": "instandhalter",
+      "term": "der Instandhalter",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Instandhalter",
+      "tr": {
+        "uz": "taʼmirlash ustasi",
+        "uz-Cyrl": "таъмирлаш устаси",
+        "ru": "ремонтник, наладчик"
+      },
+      "pron": {
+        "uz": "der in-shtant-hal-ter",
+        "uz-Cyrl": "дер ин-штант-халь-тер",
+        "ru": "дер ин-штант-халь-тер"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "maschinen-anlagenfuehrer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "liniya",
+      "example": {
+        "term": "Rufen Sie den Instandhalter.",
+        "tr": {
+          "uz": "Taʼmirlash ustasini chaqiring.",
+          "uz-Cyrl": "Таъмирлаш устасини чақиринг.",
+          "ru": "Вызовите ремонтника."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-liniya-wartung",
+      "slug": "wartung",
+      "term": "die Wartung",
+      "icon": "calendar-event",
+      "article": "die",
+      "plural": "die Wartungen",
+      "tr": {
+        "uz": "texnik xizmat",
+        "uz-Cyrl": "техник хизмат",
+        "ru": "техобслуживание"
+      },
+      "pron": {
+        "uz": "die var-tung",
+        "uz-Cyrl": "ди вар-тунг",
+        "ru": "ди вар-тунг"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "maschinen-anlagenfuehrer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "liniya",
+      "example": {
+        "term": "Die Linie steht wegen Wartung.",
+        "tr": {
+          "uz": "Liniya texnik xizmat sababli toʻxtagan.",
+          "uz-Cyrl": "Линия техник хизмат сабабли тўхтаган.",
+          "ru": "Линия стоит из-за техобслуживания."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-liniya-stau",
+      "slug": "stau",
+      "term": "der Stau",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Staus",
+      "tr": {
+        "uz": "tiqilib qolish (liniyada)",
+        "uz-Cyrl": "тиқилиб қолиш (линияда)",
+        "ru": "затор (на линии)"
+      },
+      "pron": {
+        "uz": "der shtau",
+        "uz-Cyrl": "дер штау",
+        "ru": "дер штау"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "maschinen-anlagenfuehrer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "liniya",
+      "example": {
+        "term": "Am Band gibt es einen Stau.",
+        "tr": {
+          "uz": "Lentada tiqilib qolish bor.",
+          "uz-Cyrl": "Лентада тиқилиб қолиш бор.",
+          "ru": "На ленте затор."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-gosht-ausbeinen",
+      "slug": "ausbeinen",
+      "term": "ausbeinen",
+      "icon": "meat",
+      "tr": {
+        "uz": "suyakdan ajratmoq",
+        "uz-Cyrl": "суякдан ажратмоқ",
+        "ru": "обваливать (отделять от кости)"
+      },
+      "pron": {
+        "uz": "aus-bay-nen",
+        "uz-Cyrl": "аус-бай-нен",
+        "ru": "аус-бай-нен"
+      },
+      "level": "A2",
+      "field": "food",
+      "jobs": [
+        "fleischer",
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "gosht",
+      "example": {
+        "term": "Ausbeinen nur mit Schnittschutzhandschuh!",
+        "tr": {
+          "uz": "Suyakdan ajratish faqat himoya qoʻlqopi bilan!",
+          "uz-Cyrl": "Суякдан ажратиш фақат ҳимоя қўлқопи билан!",
+          "ru": "Обвалка только в защитной перчатке!"
         }
       },
       "safety": true,
