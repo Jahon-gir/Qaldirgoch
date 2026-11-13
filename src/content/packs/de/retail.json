@@ -17,7 +17,90 @@
         "ru": "На кассе"
       },
       "order": 1,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Guten Tag. Was kostet das?",
+            "tr": {
+              "uz": "Xayrli kun. Bu qancha turadi?",
+              "uz-Cyrl": "Хайрли кун. Бу қанча туради?",
+              "ru": "Добрый день. Сколько это стоит?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Einen Moment, ich scanne es.",
+            "tr": {
+              "uz": "Bir daqiqa, skanerlayman.",
+              "uz-Cyrl": "Бир дақиқа, сканерлайман.",
+              "ru": "Минутку, я отсканирую."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Ist das im Angebot?",
+            "tr": {
+              "uz": "Bu aksiyadami?",
+              "uz-Cyrl": "Бу аксиядами?",
+              "ru": "Это по акции?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, heute gibt es Rabatt. Brauchen Sie eine Tüte?",
+            "tr": {
+              "uz": "Ha, bugun chegirma bor. Paket kerakmi?",
+              "uz-Cyrl": "Ҳа, бугун чегирма бор. Пакет керакми?",
+              "ru": "Да, сегодня скидка. Вам нужен пакет?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Nein, danke. Ich zahle bar.",
+            "tr": {
+              "uz": "Yoʻq, rahmat. Naqd toʻlayman.",
+              "uz-Cyrl": "Йўқ, раҳмат. Нақд тўлайман.",
+              "ru": "Нет, спасибо. Я заплачу наличными."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Hier sind Ihr Wechselgeld und der Kassenbon.",
+            "tr": {
+              "uz": "Mana qaytimingiz va chek.",
+              "uz-Cyrl": "Мана қайтимингиз ва чек.",
+              "ru": "Вот ваша сдача и чек."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "javon",

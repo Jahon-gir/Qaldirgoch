@@ -17,7 +17,90 @@
         "ru": "Уборка здания"
       },
       "order": 1,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Bino xizmatchisi",
+              "uz-Cyrl": "Бино хизматчиси",
+              "ru": "Завхоз"
+            },
+            "de": "Bitte putzen Sie heute das Treppenhaus.",
+            "tr": {
+              "uz": "Iltimos, bugun podyezdni tozalang.",
+              "uz-Cyrl": "Илтимос, бугун подъездни тозаланг.",
+              "ru": "Пожалуйста, уберите сегодня подъезд."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Soll ich auch die Fenster putzen?",
+            "tr": {
+              "uz": "Derazalarni ham tozalaymi?",
+              "uz-Cyrl": "Деразаларни ҳам тозалайми?",
+              "ru": "Окна тоже помыть?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Bino xizmatchisi",
+              "uz-Cyrl": "Бино хизматчиси",
+              "ru": "Завхоз"
+            },
+            "de": "Ja, im Flur. Der Glasreiniger ist im Keller.",
+            "tr": {
+              "uz": "Ha, yoʻlakdagilarini. Oyna tozalash suyuqligi yertoʻlada.",
+              "uz-Cyrl": "Ҳа, йўлакдагиларини. Ойна тозалаш суюқлиги ертўлада.",
+              "ru": "Да, в коридоре. Средство для стёкол в подвале."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Danke. Ich hole ihn sofort.",
+            "tr": {
+              "uz": "Rahmat. Hozir olib kelaman.",
+              "uz-Cyrl": "Раҳмат. Ҳозир олиб келаман.",
+              "ru": "Спасибо. Сейчас принесу."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Bino xizmatchisi",
+              "uz-Cyrl": "Бино хизматчиси",
+              "ru": "Завхоз"
+            },
+            "de": "Stellen Sie nach dem Wischen das Schild „Achtung, rutschig!“ auf.",
+            "tr": {
+              "uz": "Pol artilgach, «Diqqat, sirpanchiq!» belgisini qoʻying.",
+              "uz-Cyrl": "Пол артилгач, «Диққат, сирпанчиқ!» белгисини қўйинг.",
+              "ru": "После мытья пола поставьте табличку «Осторожно, скользко!»."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Natürlich. Wo ist das Schild?",
+            "tr": {
+              "uz": "Albatta. Belgi qayerda?",
+              "uz-Cyrl": "Албатта. Белги қаерда?",
+              "ru": "Конечно. Где табличка?"
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "vositalar",

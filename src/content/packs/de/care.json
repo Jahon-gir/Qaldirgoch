@@ -17,7 +17,90 @@
         "ru": "Утренний уход"
       },
       "order": 1,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Guten Morgen! Bitte helfen Sie heute dem Bewohner in Zimmer zwölf.",
+            "tr": {
+              "uz": "Xayrli tong! Iltimos, bugun oʻn ikkinchi xonadagi yashovchiga yordam bering.",
+              "uz-Cyrl": "Хайрли тонг! Илтимос, бугун ўн иккинчи хонадаги яшовчига ёрдам беринг.",
+              "ru": "Доброе утро! Пожалуйста, помогите сегодня проживающему из двенадцатой комнаты."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gern. Was soll ich machen?",
+            "tr": {
+              "uz": "Bajonidil. Nima qilishim kerak?",
+              "uz-Cyrl": "Бажонидил. Нима қилишим керак?",
+              "ru": "С удовольствием. Что мне нужно сделать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Er möchte duschen. Er braucht den Rollstuhl.",
+            "tr": {
+              "uz": "U dush qabul qilmoqchi. Unga nogironlar aravachasi kerak.",
+              "uz-Cyrl": "У душ қабул қилмоқчи. Унга ногиронлар аравачаси керак.",
+              "ru": "Он хочет принять душ. Ему нужна инвалидная коляска."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wo sind die Handtücher und die Seife?",
+            "tr": {
+              "uz": "Sochiq va sovun qayerda?",
+              "uz-Cyrl": "Сочиқ ва совун қаерда?",
+              "ru": "Где полотенца и мыло?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Im Bad, im Schrank links. Danach bringen Sie ihn bitte zum Frühstück.",
+            "tr": {
+              "uz": "Hammomda, chapdagi shkafda. Keyin, iltimos, uni nonushtaga olib boring.",
+              "uz-Cyrl": "Ҳаммомда, чапдаги шкафда. Кейин, илтимос, уни нонуштага олиб боринг.",
+              "ru": "В ванной, в шкафу слева. Потом, пожалуйста, отведите его на завтрак."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Zum Frühstück? Gut, mache ich.",
+            "tr": {
+              "uz": "Nonushtagami? Yaxshi, olib boraman.",
+              "uz-Cyrl": "Нонуштагами? Яхши, олиб бораман.",
+              "ru": "На завтрак? Хорошо, отведу."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "olchash",

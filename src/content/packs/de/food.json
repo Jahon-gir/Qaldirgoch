@@ -17,7 +17,90 @@
         "ru": "В цехе"
       },
       "order": 1,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Smena boshligʻi",
+              "uz-Cyrl": "Смена бошлиғи",
+              "ru": "Начальник смены"
+            },
+            "de": "Achtung! Die Maschine steht.",
+            "tr": {
+              "uz": "Diqqat! Dastgoh toʻxtab qoldi.",
+              "uz-Cyrl": "Диққат! Дастгоҳ тўхтаб қолди.",
+              "ru": "Внимание! Машина остановилась."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Was ist passiert?",
+            "tr": {
+              "uz": "Nima boʻldi?",
+              "uz-Cyrl": "Нима бўлди?",
+              "ru": "Что случилось?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Smena boshligʻi",
+              "uz-Cyrl": "Смена бошлиғи",
+              "ru": "Начальник смены"
+            },
+            "de": "Eine Störung am Fließband. Fassen Sie nichts an!",
+            "tr": {
+              "uz": "Konveyerda nosozlik. Hech narsaga tegmang!",
+              "uz-Cyrl": "Конвейерда носозлик. Ҳеч нарсага тегманг!",
+              "ru": "Неисправность на конвейере. Ничего не трогайте!"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Verstanden. Soll ich den Techniker holen?",
+            "tr": {
+              "uz": "Tushundim. Texnikni chaqiraymi?",
+              "uz-Cyrl": "Тушундим. Техникни чақирайми?",
+              "ru": "Понял. Позвать техника?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Smena boshligʻi",
+              "uz-Cyrl": "Смена бошлиғи",
+              "ru": "Начальник смены"
+            },
+            "de": "Ja, bitte schnell. Wir sortieren so lange per Hand.",
+            "tr": {
+              "uz": "Ha, tezroq, iltimos. Shu orada qoʻlda saralaymiz.",
+              "uz-Cyrl": "Ҳа, тезроқ, илтимос. Шу орада қўлда саралаймиз.",
+              "ru": "Да, быстрее, пожалуйста. Пока будем сортировать вручную."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Okay, ich gehe sofort.",
+            "tr": {
+              "uz": "Xoʻp, hozir boraman.",
+              "uz-Cyrl": "Хўп, ҳозир бораман.",
+              "ru": "Хорошо, сейчас иду."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "novvoy",

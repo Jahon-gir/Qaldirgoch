@@ -17,7 +17,90 @@
         "ru": "В поле и в теплице"
       },
       "order": 1,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Heute ernten wir Erdbeeren. Hier sind die Körbe.",
+            "tr": {
+              "uz": "Bugun qulupnay teramiz. Mana savatlar.",
+              "uz-Cyrl": "Бугун қулупнай терамиз. Мана саватлар.",
+              "ru": "Сегодня собираем клубнику. Вот корзины."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Welche Reihen soll ich machen?",
+            "tr": {
+              "uz": "Qaysi qatorlarni terayin?",
+              "uz-Cyrl": "Қайси қаторларни терайин?",
+              "ru": "Какие ряды мне собирать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Zuerst diese zwei Reihen. Nehmen Sie nur rote Erdbeeren.",
+            "tr": {
+              "uz": "Avval mana shu ikki qator. Faqat qizil qulupnaylarni oling.",
+              "uz-Cyrl": "Аввал мана шу икки қатор. Фақат қизил қулупнайларни олинг.",
+              "ru": "Сначала эти два ряда. Берите только красную клубнику."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Und wohin bringe ich die vollen Körbe?",
+            "tr": {
+              "uz": "Toʻla savatlarni qayerga olib boraman?",
+              "uz-Cyrl": "Тўла саватларни қаерга олиб бораман?",
+              "ru": "А куда нести полные корзины?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Zum Traktor, am Ende des Feldes. Trinken Sie genug Wasser!",
+            "tr": {
+              "uz": "Traktorga, dalaning oxirida. Suvni yetarli iching!",
+              "uz-Cyrl": "Тракторга, даланинг охирида. Сувни етарли ичинг!",
+              "ru": "К трактору, в конце поля. Пейте достаточно воды!"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Danke, ich habe eine Flasche dabei.",
+            "tr": {
+              "uz": "Rahmat, yonimda bir shisha suv bor.",
+              "uz-Cyrl": "Раҳмат, ёнимда бир шиша сув бор.",
+              "ru": "Спасибо, у меня с собой бутылка воды."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "ferma",

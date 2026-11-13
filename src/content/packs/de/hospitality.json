@@ -17,7 +17,90 @@
         "ru": "На кухне"
       },
       "order": 1,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Oshpaz",
+              "uz-Cyrl": "Ошпаз",
+              "ru": "Повар"
+            },
+            "de": "Schneiden Sie bitte die Zwiebeln.",
+            "tr": {
+              "uz": "Iltimos, piyozni toʻgʻrang.",
+              "uz-Cyrl": "Илтимос, пиёзни тўғранг.",
+              "ru": "Нарежьте, пожалуйста, лук."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wie viele Zwiebeln?",
+            "tr": {
+              "uz": "Nechta piyoz?",
+              "uz-Cyrl": "Нечта пиёз?",
+              "ru": "Сколько луковиц?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Oshpaz",
+              "uz-Cyrl": "Ошпаз",
+              "ru": "Повар"
+            },
+            "de": "Zehn Stück. Das Messer liegt neben dem Schneidebrett.",
+            "tr": {
+              "uz": "Oʻnta. Pichoq taxtakach yonida.",
+              "uz-Cyrl": "Ўнта. Пичоқ тахтакач ёнида.",
+              "ru": "Десять штук. Нож лежит рядом с разделочной доской."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Soll ich sie klein oder groß schneiden?",
+            "tr": {
+              "uz": "Mayda toʻgʻraymi yoki yirik?",
+              "uz-Cyrl": "Майда тўғрайми ёки йирик?",
+              "ru": "Резать мелко или крупно?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Oshpaz",
+              "uz-Cyrl": "Ошпаз",
+              "ru": "Повар"
+            },
+            "de": "Klein, bitte. Dann braten wir sie in der Pfanne.",
+            "tr": {
+              "uz": "Mayda, iltimos. Keyin tovada qovuramiz.",
+              "uz-Cyrl": "Майда, илтимос. Кейин товада қовурамиз.",
+              "ru": "Мелко, пожалуйста. Потом обжарим его на сковороде."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Welche Pfanne nehme ich?",
+            "tr": {
+              "uz": "Yaxshi. Qaysi tovani olay?",
+              "uz-Cyrl": "Яхши. Қайси товани олай?",
+              "ru": "Хорошо. Какую сковороду взять?"
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "xizmat",
