@@ -752,6 +752,378 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "stapler",
+      "title": {
+        "uz": "Forklift (Stapler)",
+        "uz-Cyrl": "Форклифт (Stapler)",
+        "ru": "Погрузчик"
+      },
+      "order": 9,
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Ombor boshligʻi",
+              "uz-Cyrl": "Омбор бошлиғи",
+              "ru": "Начальник склада"
+            },
+            "de": "Können Sie heute Stapler fahren? Haben Sie einen Staplerschein?",
+            "tr": {
+              "uz": "Bugun forklift hayday olasizmi? Guvohnomangiz bormi?",
+              "uz-Cyrl": "Бугун форклифт ҳайдай оласизми? Гувоҳномангиз борми?",
+              "ru": "Вы сегодня можете работать на погрузчике? У вас есть удостоверение?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, ich habe einen Staplerschein.",
+            "tr": {
+              "uz": "Ha, guvohnomam bor.",
+              "uz-Cyrl": "Ҳа, гувоҳномам бор.",
+              "ru": "Да, у меня есть удостоверение."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Ombor boshligʻi",
+              "uz-Cyrl": "Омбор бошлиғи",
+              "ru": "Начальник склада"
+            },
+            "de": "Gut. Die Palette dort ist sehr schwer. Was prüfen Sie zuerst?",
+            "tr": {
+              "uz": "Yaxshi. Anavi palet juda ogʻir. Avval nimani tekshirasiz?",
+              "uz-Cyrl": "Яхши. Анави палет жуда оғир. Аввал нимани текширасиз?",
+              "ru": "Хорошо. Тот поддон очень тяжёлый. Что вы проверите сначала?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Zuerst prüfe ich die Höchstlast auf dem Schild.",
+            "tr": {
+              "uz": "Avval belgidagi eng koʻp yukni tekshiraman.",
+              "uz-Cyrl": "Аввал белгидаги энг кўп юкни текшираман.",
+              "ru": "Сначала проверю максимальную нагрузку на табличке."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Ombor boshligʻi",
+              "uz-Cyrl": "Омбор бошлиғи",
+              "ru": "Начальник склада"
+            },
+            "de": "Richtig. Und im Gang fahren Sie langsam, dort sind Fußgänger.",
+            "tr": {
+              "uz": "Toʻgʻri. Yoʻlakda esa sekin yurasiz, u yerda piyodalar bor.",
+              "uz-Cyrl": "Тўғри. Йўлакда эса секин юрасиз, у ерда пиёдалар бор.",
+              "ru": "Правильно. А в проходе ездите медленно, там пешеходы."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Verstanden. Ich lege auch den Sicherheitsgurt an.",
+            "tr": {
+              "uz": "Tushundim. Xavfsizlik kamarini ham taqaman.",
+              "uz-Cyrl": "Тушундим. Хавфсизлик камарини ҳам тақаман.",
+              "ru": "Понял. Я ещё пристегну ремень безопасности."
+            }
+          }
+        ],
+        "status": "review"
+      }
+    },
+    {
+      "id": "terish",
+      "title": {
+        "uz": "Buyurtma terish",
+        "uz-Cyrl": "Буюртма териш",
+        "ru": "Комплектация заказов"
+      },
+      "order": 10,
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Hier ist Ihre Pickliste. Zwanzig Artikel für den Versand.",
+            "tr": {
+              "uz": "Mana terish roʻyxatingiz. Joʻnatish uchun yigirmata tovar.",
+              "uz-Cyrl": "Мана териш рўйхатингиз. Жўнатиш учун йигирмата товар.",
+              "ru": "Вот ваш лист подбора. Двадцать позиций на отправку."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Danke. Wo ist dieser Artikel? Die Nummer kenne ich nicht.",
+            "tr": {
+              "uz": "Rahmat. Bu tovar qayerda? Bu raqamni bilmayman.",
+              "uz-Cyrl": "Раҳмат. Бу товар қаерда? Бу рақамни билмайман.",
+              "ru": "Спасибо. Где этот товар? Я не знаю этот номер."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Gang vier, oben im Fach. Wie viele brauchen Sie?",
+            "tr": {
+              "uz": "Toʻrtinchi yoʻlak, yuqoridagi uyachada. Sizga nechta kerak?",
+              "uz-Cyrl": "Тўртинчи йўлак, юқоридаги уячада. Сизга нечта керак?",
+              "ru": "Четвёртый проход, вверху в ячейке. Сколько вам нужно?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Zehn Stück. Aber im Fach sind nur acht.",
+            "tr": {
+              "uz": "Oʻnta. Lekin uyachada faqat sakkizta bor.",
+              "uz-Cyrl": "Ўнта. Лекин уячада фақат саккизта бор.",
+              "ru": "Десять штук. Но в ячейке только восемь."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Dann fehlen zwei. Schreiben Sie das auf die Pickliste.",
+            "tr": {
+              "uz": "Unda ikkitasi yetishmaydi. Buni terish roʻyxatiga yozing.",
+              "uz-Cyrl": "Унда иккитаси етишмайди. Буни териш рўйхатига ёзинг.",
+              "ru": "Значит, не хватает двух. Запишите это в лист подбора."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mache ich. Danach verpacke ich alles.",
+            "tr": {
+              "uz": "Xoʻp. Keyin hammasini qadoqlayman.",
+              "uz-Cyrl": "Хўп. Кейин ҳаммасини қадоқлайман.",
+              "ru": "Хорошо. Потом я всё упакую."
+            }
+          }
+        ],
+        "status": "review"
+      }
+    },
+    {
+      "id": "tekshiruv",
+      "title": {
+        "uz": "Yoʻl oldi tekshiruvi",
+        "uz-Cyrl": "Йўл олди текшируви",
+        "ru": "Проверка перед рейсом"
+      },
+      "order": 11,
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Dispetcher",
+              "uz-Cyrl": "Диспетчер",
+              "ru": "Диспетчер"
+            },
+            "de": "Guten Morgen! Haben Sie die Abfahrtskontrolle schon gemacht?",
+            "tr": {
+              "uz": "Xayrli tong! Yoʻl oldi tekshiruvini qildingizmi?",
+              "uz-Cyrl": "Хайрли тонг! Йўл олди текширувини қилдингизми?",
+              "ru": "Доброе утро! Вы уже провели проверку перед выездом?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Noch nicht ganz. Die Bremsen und der Reifendruck sind in Ordnung.",
+            "tr": {
+              "uz": "Hali toʻliq emas. Tormoz va shina bosimi joyida.",
+              "uz-Cyrl": "Ҳали тўлиқ эмас. Тормоз ва шина босими жойида.",
+              "ru": "Ещё не полностью. Тормоза и давление в шинах в порядке."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Dispetcher",
+              "uz-Cyrl": "Диспетчер",
+              "ru": "Диспетчер"
+            },
+            "de": "Und das Licht am Anhänger?",
+            "tr": {
+              "uz": "Tirkamadagi chiroqlar-chi?",
+              "uz-Cyrl": "Тиркамадаги чироқлар-чи?",
+              "ru": "А свет на прицепе?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Der Blinker rechts am Anhänger geht nicht.",
+            "tr": {
+              "uz": "Tirkamaning oʻng burilish chirogʻi yonmayapti.",
+              "uz-Cyrl": "Тиркаманинг ўнг бурилиш чироғи ёнмаяпти.",
+              "ru": "Правый поворотник на прицепе не работает."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Dispetcher",
+              "uz-Cyrl": "Диспетчер",
+              "ru": "Диспетчер"
+            },
+            "de": "Dann fahren Sie zuerst in die Werkstatt.",
+            "tr": {
+              "uz": "Unda avval ustaxonaga boring.",
+              "uz-Cyrl": "Унда аввал устахонага боринг.",
+              "ru": "Тогда сначала заезжайте в мастерскую."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Ich rufe Sie danach an.",
+            "tr": {
+              "uz": "Yaxshi. Keyin sizga qoʻngʻiroq qilaman.",
+              "uz-Cyrl": "Яхши. Кейин сизга қўнғироқ қиламан.",
+              "ru": "Хорошо. Потом я вам позвоню."
+            }
+          }
+        ],
+        "status": "review"
+      }
+    },
+    {
+      "id": "avariya",
+      "title": {
+        "uz": "Yoʻlda avariya va nosozlik",
+        "uz-Cyrl": "Йўлда авария ва носозлик",
+        "ru": "Авария и поломка в пути"
+      },
+      "order": 12,
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Dispetcher",
+              "uz-Cyrl": "Диспетчер",
+              "ru": "Диспетчер"
+            },
+            "de": "Disposition, guten Tag. Was ist passiert?",
+            "tr": {
+              "uz": "Dispetcherlik, assalomu alaykum. Nima boʻldi?",
+              "uz-Cyrl": "Диспетчерлик, ассалому алайкум. Нима бўлди?",
+              "ru": "Диспетчерская, добрый день. Что случилось?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ein Auto ist hinten auf meinen Anhänger gefahren.",
+            "tr": {
+              "uz": "Bir mashina tirkamamga orqadan urildi.",
+              "uz-Cyrl": "Бир машина тиркамамга орқадан урилди.",
+              "ru": "Машина врезалась сзади в мой прицеп."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Dispetcher",
+              "uz-Cyrl": "Диспетчер",
+              "ru": "Диспетчер"
+            },
+            "de": "Oh! Ist jemand verletzt?",
+            "tr": {
+              "uz": "Voy! Kimdir jarohatlandimi?",
+              "uz-Cyrl": "Вой! Кимдир жароҳатландими?",
+              "ru": "Ой! Кто-нибудь ранен?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, niemand ist verletzt. Das Warndreieck steht schon.",
+            "tr": {
+              "uz": "Yoʻq, hech kim jarohatlanmadi. Ogohlantirish uchburchagi qoʻyildi.",
+              "uz-Cyrl": "Йўқ, ҳеч ким жароҳатланмади. Огоҳлантириш учбурчаги қўйилди.",
+              "ru": "Нет, никто не ранен. Знак аварийной остановки уже стоит."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Dispetcher",
+              "uz-Cyrl": "Диспетчер",
+              "ru": "Диспетчер"
+            },
+            "de": "Gut. Warten Sie nicht auf der Fahrbahn auf die Polizei.",
+            "tr": {
+              "uz": "Yaxshi. Politsiyani qatnov qismida turib kutmang.",
+              "uz-Cyrl": "Яхши. Полицияни қатнов қисмида туриб кутманг.",
+              "ru": "Хорошо. Ждите полицию не на проезжей части."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Okay. Ich mache auch Fotos für den Unfallbericht.",
+            "tr": {
+              "uz": "Xoʻp. Bayonnoma uchun suratlar ham olaman.",
+              "uz-Cyrl": "Хўп. Баённома учун суратлар ҳам оламан.",
+              "ru": "Хорошо. Я ещё сделаю фото для извещения о ДТП."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -4910,6 +5282,2074 @@
         }
       },
       "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-stapler-gabel",
+      "slug": "gabel",
+      "term": "die Gabel",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Gabeln",
+      "tr": {
+        "uz": "vilka (forkliftniki)",
+        "uz-Cyrl": "вилка (форклифтники)",
+        "ru": "вилы (погрузчика)"
+      },
+      "pron": {
+        "uz": "die ga-bel",
+        "uz-Cyrl": "ди га-бель",
+        "ru": "ди га-бель"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "stapler",
+      "example": {
+        "term": "Die Gabel ist ganz unten.",
+        "tr": {
+          "uz": "Vilka eng pastda.",
+          "uz-Cyrl": "Вилка энг пастда.",
+          "ru": "Вилы в самом низу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-stapler-last",
+      "slug": "last",
+      "term": "die Last",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Lasten",
+      "tr": {
+        "uz": "koʻtarilgan yuk",
+        "uz-Cyrl": "кўтарилган юк",
+        "ru": "груз"
+      },
+      "pron": {
+        "uz": "die last",
+        "uz-Cyrl": "ди ласт",
+        "ru": "ди ласт"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "stapler",
+      "example": {
+        "term": "Die Last ist zu schwer.",
+        "tr": {
+          "uz": "Yuk juda ogʻir.",
+          "uz-Cyrl": "Юк жуда оғир.",
+          "ru": "Груз слишком тяжёлый."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-stapler-staplerschein",
+      "slug": "staplerschein",
+      "term": "der Staplerschein",
+      "icon": "id",
+      "article": "der",
+      "plural": "die Staplerscheine",
+      "tr": {
+        "uz": "forklift haydash guvohnomasi",
+        "uz-Cyrl": "форклифт ҳайдаш гувоҳномаси",
+        "ru": "удостоверение водителя погрузчика"
+      },
+      "pron": {
+        "uz": "der shtap-ler-shayn",
+        "uz-Cyrl": "дер штап-лер-шайн",
+        "ru": "дер штап-лер-шайн"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "stapler",
+      "example": {
+        "term": "Haben Sie einen Staplerschein?",
+        "tr": {
+          "uz": "Forklift guvohnomangiz bormi?",
+          "uz-Cyrl": "Форклифт гувоҳномангиз борми?",
+          "ru": "У вас есть удостоверение на погрузчик?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-stapler-anheben",
+      "slug": "anheben",
+      "term": "anheben",
+      "icon": "ladder",
+      "tr": {
+        "uz": "koʻtarmoq",
+        "uz-Cyrl": "кўтармоқ",
+        "ru": "поднимать"
+      },
+      "pron": {
+        "uz": "an-he-ben",
+        "uz-Cyrl": "ан-хе-бен",
+        "ru": "ан-хе-бен"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "stapler",
+      "example": {
+        "term": "Heben Sie die Palette langsam an.",
+        "tr": {
+          "uz": "Paletni sekin koʻtaring.",
+          "uz-Cyrl": "Палетни секин кўтаринг.",
+          "ru": "Поднимайте поддон медленно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-stapler-absenken",
+      "slug": "absenken",
+      "term": "absenken",
+      "icon": "ladder",
+      "tr": {
+        "uz": "tushirmoq",
+        "uz-Cyrl": "туширмоқ",
+        "ru": "опускать"
+      },
+      "pron": {
+        "uz": "ap-zen-ken",
+        "uz-Cyrl": "ап-зен-кен",
+        "ru": "ап-зен-кен"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "stapler",
+      "example": {
+        "term": "Senken Sie die Gabel ab.",
+        "tr": {
+          "uz": "Vilkani tushiring.",
+          "uz-Cyrl": "Вилкани туширинг.",
+          "ru": "Опустите вилы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-stapler-rueckwaerts",
+      "slug": "rueckwaerts",
+      "term": "rückwärts",
+      "icon": "truck",
+      "tr": {
+        "uz": "orqaga",
+        "uz-Cyrl": "орқага",
+        "ru": "задним ходом"
+      },
+      "pron": {
+        "uz": "ryuk-verts",
+        "uz-Cyrl": "рюк-вертс",
+        "ru": "рюк-вертс"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "stapler",
+      "example": {
+        "term": "Fahren Sie rückwärts aus dem Gang.",
+        "tr": {
+          "uz": "Yoʻlakdan orqaga yurib chiqing.",
+          "uz-Cyrl": "Йўлакдан орқага юриб чиқинг.",
+          "ru": "Выезжайте из прохода задним ходом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-stapler-fussgaenger",
+      "slug": "fussgaenger",
+      "term": "der Fußgänger",
+      "icon": "run",
+      "article": "der",
+      "plural": "die Fußgänger",
+      "tr": {
+        "uz": "piyoda",
+        "uz-Cyrl": "пиёда",
+        "ru": "пешеход"
+      },
+      "pron": {
+        "uz": "der fus-gen-ger",
+        "uz-Cyrl": "дер фус-ген-гер",
+        "ru": "дер фус-ген-гер"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "stapler",
+      "example": {
+        "term": "Achten Sie auf jeden Fußgänger.",
+        "tr": {
+          "uz": "Har bir piyodaga eʼtibor bering.",
+          "uz-Cyrl": "Ҳар бир пиёдага эътибор беринг.",
+          "ru": "Следите за каждым пешеходом."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-stapler-gang",
+      "slug": "gang",
+      "term": "der Gang",
+      "icon": "map-pin",
+      "article": "der",
+      "plural": "die Gänge",
+      "tr": {
+        "uz": "yoʻlak (javonlar orasi)",
+        "uz-Cyrl": "йўлак (жавонлар ораси)",
+        "ru": "проход (между стеллажами)"
+      },
+      "pron": {
+        "uz": "der gang",
+        "uz-Cyrl": "дер ганг",
+        "ru": "дер ганг"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "stapler",
+      "example": {
+        "term": "Der Gang ist frei.",
+        "tr": {
+          "uz": "Yoʻlak boʻsh.",
+          "uz-Cyrl": "Йўлак бўш.",
+          "ru": "Проход свободен."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-stapler-batterie",
+      "slug": "batterie",
+      "term": "die Batterie",
+      "icon": "bolt",
+      "article": "die",
+      "plural": "die Batterien",
+      "tr": {
+        "uz": "akkumulyator",
+        "uz-Cyrl": "аккумулятор",
+        "ru": "аккумулятор"
+      },
+      "pron": {
+        "uz": "die ba-te-ri",
+        "uz-Cyrl": "ди ба-те-ри",
+        "ru": "ди ба-те-ри"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "stapler",
+      "example": {
+        "term": "Die Batterie ist fast leer.",
+        "tr": {
+          "uz": "Akkumulyator deyarli tugadi.",
+          "uz-Cyrl": "Аккумулятор деярли тугади.",
+          "ru": "Аккумулятор почти разряжен."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-stapler-aufladen",
+      "slug": "aufladen",
+      "term": "aufladen",
+      "icon": "plug",
+      "tr": {
+        "uz": "zaryadlamoq",
+        "uz-Cyrl": "зарядламоқ",
+        "ru": "заряжать"
+      },
+      "pron": {
+        "uz": "auf-la-den",
+        "uz-Cyrl": "ауф-ла-ден",
+        "ru": "ауф-ла-ден"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "stapler",
+      "example": {
+        "term": "Laden Sie den Stapler nach der Schicht auf.",
+        "tr": {
+          "uz": "Smenadan keyin forkliftni zaryadlang.",
+          "uz-Cyrl": "Сменадан кейин форклифтни зарядланг.",
+          "ru": "После смены поставьте погрузчик на зарядку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-stapler-sicherheitsgurt",
+      "slug": "sicherheitsgurt",
+      "term": "der Sicherheitsgurt",
+      "icon": "check",
+      "article": "der",
+      "plural": "die Sicherheitsgurte",
+      "tr": {
+        "uz": "xavfsizlik kamari",
+        "uz-Cyrl": "хавфсизлик камари",
+        "ru": "ремень безопасности"
+      },
+      "pron": {
+        "uz": "der zi-xer-hayts-gurt",
+        "uz-Cyrl": "дер зи-хер-хайтс-гурт",
+        "ru": "дер зи-хер-хайтс-гурт"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "stapler",
+      "example": {
+        "term": "Legen Sie den Sicherheitsgurt an.",
+        "tr": {
+          "uz": "Xavfsizlik kamarini taqing.",
+          "uz-Cyrl": "Хавфсизлик камарини тақинг.",
+          "ru": "Пристегните ремень безопасности."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-stapler-langsam",
+      "slug": "langsam",
+      "term": "langsam",
+      "icon": "clock",
+      "tr": {
+        "uz": "sekin",
+        "uz-Cyrl": "секин",
+        "ru": "медленно"
+      },
+      "pron": {
+        "uz": "lang-zam",
+        "uz-Cyrl": "ланг-зам",
+        "ru": "ланг-зам"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "stapler",
+      "example": {
+        "term": "Fahren Sie im Lager langsam.",
+        "tr": {
+          "uz": "Omborda sekin haydang.",
+          "uz-Cyrl": "Омборда секин ҳайданг.",
+          "ru": "На складе ездите медленно."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-stapler-achtung-stapler",
+      "slug": "achtung-stapler",
+      "term": "Achtung, Stapler!",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Ehtiyot boʻling, forklift!",
+        "uz-Cyrl": "Эҳтиёт бўлинг, форклифт!",
+        "ru": "Осторожно, погрузчик!"
+      },
+      "pron": {
+        "uz": "ax-tung shtap-ler",
+        "uz-Cyrl": "ах-тунг штап-лер",
+        "ru": "ах-тунг штап-лер"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "stapler",
+      "example": {
+        "term": "Achtung, Stapler! Bitte zur Seite gehen.",
+        "tr": {
+          "uz": "Ehtiyot boʻling, forklift! Iltimos, chetga oʻting.",
+          "uz-Cyrl": "Эҳтиёт бўлинг, форклифт! Илтимос, четга ўтинг.",
+          "ru": "Осторожно, погрузчик! Пожалуйста, отойдите в сторону."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-stapler-hoechstlast",
+      "slug": "hoechstlast",
+      "term": "die Höchstlast",
+      "icon": "alert-octagon",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "ruxsat etilgan eng koʻp yuk",
+        "uz-Cyrl": "рухсат этилган энг кўп юк",
+        "ru": "максимальная нагрузка"
+      },
+      "pron": {
+        "uz": "die hyoxst-last",
+        "uz-Cyrl": "ди хёхст-ласт",
+        "ru": "ди хёхст-ласт"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "stapler",
+      "example": {
+        "term": "Die Höchstlast steht auf dem Schild.",
+        "tr": {
+          "uz": "Eng koʻp yuk belgida yozilgan.",
+          "uz-Cyrl": "Энг кўп юк белгида ёзилган.",
+          "ru": "Максимальная нагрузка указана на табличке."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-stapler-sicht",
+      "slug": "sicht",
+      "term": "die Sicht",
+      "icon": "eye",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "koʻrinish (koʻrish imkoni)",
+        "uz-Cyrl": "кўриниш (кўриш имкони)",
+        "ru": "обзор (видимость)"
+      },
+      "pron": {
+        "uz": "die zixt",
+        "uz-Cyrl": "ди зихт",
+        "ru": "ди зихт"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "stapler",
+      "example": {
+        "term": "Die Sicht ist schlecht. Fahren Sie langsam!",
+        "tr": {
+          "uz": "Koʻrinish yomon. Sekin haydang!",
+          "uz-Cyrl": "Кўриниш ёмон. Секин ҳайданг!",
+          "ru": "Плохой обзор. Езжайте медленно!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-terish-kommissionieren",
+      "slug": "kommissionieren",
+      "term": "kommissionieren",
+      "icon": "receipt",
+      "tr": {
+        "uz": "buyurtmani termoq (yigʻmoq)",
+        "uz-Cyrl": "буюртмани термоқ (йиғмоқ)",
+        "ru": "комплектовать заказ"
+      },
+      "pron": {
+        "uz": "ko-mi-si-o-ni-ren",
+        "uz-Cyrl": "ко-ми-си-о-ни-рен",
+        "ru": "ко-ми-си-о-ни-рен"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "terish",
+      "example": {
+        "term": "Heute kommissionieren wir die Bestellungen für Berlin.",
+        "tr": {
+          "uz": "Bugun Berlin buyurtmalarini teramiz.",
+          "uz-Cyrl": "Бугун Берлин буюртмаларини терамиз.",
+          "ru": "Сегодня мы комплектуем заказы для Берлина."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-terish-pickliste",
+      "slug": "pickliste",
+      "term": "die Pickliste",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Picklisten",
+      "tr": {
+        "uz": "terish roʻyxati",
+        "uz-Cyrl": "териш рўйхати",
+        "ru": "лист подбора"
+      },
+      "pron": {
+        "uz": "die pik-lis-te",
+        "uz-Cyrl": "ди пик-лис-те",
+        "ru": "ди пик-лис-те"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "terish",
+      "example": {
+        "term": "Die Pickliste ist auf dem Scanner.",
+        "tr": {
+          "uz": "Terish roʻyxati skanerda.",
+          "uz-Cyrl": "Териш рўйхати сканерда.",
+          "ru": "Лист подбора — в сканере."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-terish-artikel",
+      "slug": "artikel",
+      "term": "der Artikel",
+      "icon": "square",
+      "article": "der",
+      "plural": "die Artikel",
+      "tr": {
+        "uz": "tovar (mahsulot birligi)",
+        "uz-Cyrl": "товар (маҳсулот бирлиги)",
+        "ru": "товар (артикул)"
+      },
+      "pron": {
+        "uz": "der ar-ti-kel",
+        "uz-Cyrl": "дер ар-ти-кель",
+        "ru": "дер ар-ти-кель"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "terish",
+      "example": {
+        "term": "Der Artikel liegt oben im Fach.",
+        "tr": {
+          "uz": "Tovar yuqoridagi uyachada.",
+          "uz-Cyrl": "Товар юқоридаги уячада.",
+          "ru": "Товар лежит вверху в ячейке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-terish-artikelnummer",
+      "slug": "artikelnummer",
+      "term": "die Artikelnummer",
+      "icon": "number-1",
+      "article": "die",
+      "plural": "die Artikelnummern",
+      "tr": {
+        "uz": "tovar raqami",
+        "uz-Cyrl": "товар рақами",
+        "ru": "номер артикула"
+      },
+      "pron": {
+        "uz": "die ar-ti-kel-nu-mer",
+        "uz-Cyrl": "ди ар-ти-кель-ну-мер",
+        "ru": "ди ар-ти-кель-ну-мер"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "terish",
+      "example": {
+        "term": "Prüfen Sie die Artikelnummer.",
+        "tr": {
+          "uz": "Tovar raqamini tekshiring.",
+          "uz-Cyrl": "Товар рақамини текширинг.",
+          "ru": "Проверьте номер артикула."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-terish-menge",
+      "slug": "menge",
+      "term": "die Menge",
+      "icon": "number-1",
+      "article": "die",
+      "plural": "die Mengen",
+      "tr": {
+        "uz": "miqdor",
+        "uz-Cyrl": "миқдор",
+        "ru": "количество"
+      },
+      "pron": {
+        "uz": "die men-ge",
+        "uz-Cyrl": "ди мен-ге",
+        "ru": "ди мен-ге"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "terish",
+      "example": {
+        "term": "Die Menge stimmt nicht.",
+        "tr": {
+          "uz": "Miqdor toʻgʻri kelmayapti.",
+          "uz-Cyrl": "Миқдор тўғри келмаяпти.",
+          "ru": "Количество не совпадает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-terish-fach",
+      "slug": "fach",
+      "term": "das Fach",
+      "icon": "square",
+      "article": "das",
+      "plural": "die Fächer",
+      "tr": {
+        "uz": "uyacha (javonda)",
+        "uz-Cyrl": "уяча (жавонда)",
+        "ru": "ячейка"
+      },
+      "pron": {
+        "uz": "das fax",
+        "uz-Cyrl": "дас фах",
+        "ru": "дас фах"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "terish",
+      "example": {
+        "term": "Das Fach ist leer.",
+        "tr": {
+          "uz": "Uyacha boʻsh.",
+          "uz-Cyrl": "Уяча бўш.",
+          "ru": "Ячейка пустая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-terish-bestand",
+      "slug": "bestand",
+      "term": "der Bestand",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Bestände",
+      "tr": {
+        "uz": "zaxira (qoldiq)",
+        "uz-Cyrl": "захира (қолдиқ)",
+        "ru": "остаток (запас)"
+      },
+      "pron": {
+        "uz": "der be-shtant",
+        "uz-Cyrl": "дер бе-штант",
+        "ru": "дер бе-штант"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "terish",
+      "example": {
+        "term": "Der Bestand ist zu niedrig.",
+        "tr": {
+          "uz": "Zaxira juda kam.",
+          "uz-Cyrl": "Захира жуда кам.",
+          "ru": "Остаток слишком маленький."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-terish-fehlen",
+      "slug": "fehlen",
+      "term": "fehlen",
+      "icon": "help",
+      "tr": {
+        "uz": "yetishmaslik (yoʻq boʻlmoq)",
+        "uz-Cyrl": "етишмаслик (йўқ бўлмоқ)",
+        "ru": "не хватать"
+      },
+      "pron": {
+        "uz": "fe-len",
+        "uz-Cyrl": "фе-лен",
+        "ru": "фе-лен"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "terish",
+      "example": {
+        "term": "Zwei Kartons fehlen.",
+        "tr": {
+          "uz": "Ikkita quti yetishmayapti.",
+          "uz-Cyrl": "Иккита қути етишмаяпти.",
+          "ru": "Не хватает двух коробок."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-terish-vollstaendig",
+      "slug": "vollstaendig",
+      "term": "vollständig",
+      "icon": "check",
+      "tr": {
+        "uz": "toʻliq",
+        "uz-Cyrl": "тўлиқ",
+        "ru": "полный (комплектный)"
+      },
+      "pron": {
+        "uz": "fol-shten-dix",
+        "uz-Cyrl": "фоль-штен-дих",
+        "ru": "фоль-штен-дих"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "terish",
+      "example": {
+        "term": "Die Bestellung ist vollständig.",
+        "tr": {
+          "uz": "Buyurtma toʻliq.",
+          "uz-Cyrl": "Буюртма тўлиқ.",
+          "ru": "Заказ собран полностью."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-terish-verpacken",
+      "slug": "verpacken",
+      "term": "verpacken",
+      "icon": "square",
+      "tr": {
+        "uz": "qadoqlamoq",
+        "uz-Cyrl": "қадоқламоқ",
+        "ru": "упаковывать"
+      },
+      "pron": {
+        "uz": "fer-pa-ken",
+        "uz-Cyrl": "фер-па-кен",
+        "ru": "фер-па-кен"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "terish",
+      "example": {
+        "term": "Verpacken Sie die Gläser gut.",
+        "tr": {
+          "uz": "Shisha idishlarni yaxshi qadoqlang.",
+          "uz-Cyrl": "Шиша идишларни яхши қадоқланг.",
+          "ru": "Хорошо упакуйте стеклянную посуду."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-terish-klebeband",
+      "slug": "klebeband",
+      "term": "das Klebeband",
+      "icon": "square",
+      "article": "das",
+      "plural": "die Klebebänder",
+      "tr": {
+        "uz": "yopishqoq lenta (skotch)",
+        "uz-Cyrl": "ёпишқоқ лента (скотч)",
+        "ru": "скотч"
+      },
+      "pron": {
+        "uz": "das kle-be-bant",
+        "uz-Cyrl": "дас кле-бе-бант",
+        "ru": "дас кле-бе-бант"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "terish",
+      "example": {
+        "term": "Das Klebeband ist alle.",
+        "tr": {
+          "uz": "Skotch tugadi.",
+          "uz-Cyrl": "Скотч тугади.",
+          "ru": "Скотч закончился."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-terish-folie",
+      "slug": "folie",
+      "term": "die Folie",
+      "icon": "square",
+      "article": "die",
+      "plural": "die Folien",
+      "tr": {
+        "uz": "plyonka",
+        "uz-Cyrl": "плёнка",
+        "ru": "плёнка"
+      },
+      "pron": {
+        "uz": "die fo-li-e",
+        "uz-Cyrl": "ди фо-ли-е",
+        "ru": "ди фо-ли-е"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "terish",
+      "example": {
+        "term": "Wickeln Sie die Palette in Folie.",
+        "tr": {
+          "uz": "Paletni plyonkaga oʻrang.",
+          "uz-Cyrl": "Палетни плёнкага ўранг.",
+          "ru": "Оберните поддон плёнкой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-terish-etikett",
+      "slug": "etikett",
+      "term": "das Etikett",
+      "icon": "receipt",
+      "article": "das",
+      "plural": "die Etiketten",
+      "tr": {
+        "uz": "yorliq (etiketka)",
+        "uz-Cyrl": "ёрлиқ (этикетка)",
+        "ru": "этикетка"
+      },
+      "pron": {
+        "uz": "das e-ti-ket",
+        "uz-Cyrl": "дас э-ти-кет",
+        "ru": "дас э-ти-кет"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "terish",
+      "example": {
+        "term": "Kleben Sie das Etikett auf den Karton.",
+        "tr": {
+          "uz": "Yorliqni qutiga yopishtiring.",
+          "uz-Cyrl": "Ёрлиқни қутига ёпиштиринг.",
+          "ru": "Наклейте этикетку на коробку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-terish-versand",
+      "slug": "versand",
+      "term": "der Versand",
+      "icon": "truck",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "joʻnatish",
+        "uz-Cyrl": "жўнатиш",
+        "ru": "отправка"
+      },
+      "pron": {
+        "uz": "der fer-zant",
+        "uz-Cyrl": "дер фер-зант",
+        "ru": "дер фер-зант"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "terish",
+      "example": {
+        "term": "Die Pakete gehen heute in den Versand.",
+        "tr": {
+          "uz": "Posilkalar bugun joʻnatishga ketadi.",
+          "uz-Cyrl": "Посилкалар бугун жўнатишга кетади.",
+          "ru": "Посылки сегодня уходят на отправку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-terish-wo-ist-dieser-artikel",
+      "slug": "wo-ist-dieser-artikel",
+      "term": "Wo ist dieser Artikel?",
+      "icon": "help",
+      "tr": {
+        "uz": "Bu tovar qayerda?",
+        "uz-Cyrl": "Бу товар қаерда?",
+        "ru": "Где этот товар?"
+      },
+      "pron": {
+        "uz": "vo ist di-zer ar-ti-kel",
+        "uz-Cyrl": "во ист ди-зер ар-ти-кель",
+        "ru": "во ист ди-зер ар-ти-кель"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist"
+      ],
+      "situation": "terish",
+      "example": {
+        "term": "Entschuldigung, wo ist dieser Artikel?",
+        "tr": {
+          "uz": "Kechirasiz, bu tovar qayerda?",
+          "uz-Cyrl": "Кечирасиз, бу товар қаерда?",
+          "ru": "Извините, где этот товар?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-tekshiruv-abfahrtskontrolle",
+      "slug": "abfahrtskontrolle",
+      "term": "die Abfahrtskontrolle",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Abfahrtskontrollen",
+      "tr": {
+        "uz": "yoʻl oldi tekshiruvi",
+        "uz-Cyrl": "йўл олди текшируви",
+        "ru": "проверка перед выездом"
+      },
+      "pron": {
+        "uz": "die ap-farts-kon-tro-le",
+        "uz-Cyrl": "ди ап-фартс-кон-тро-ле",
+        "ru": "ди ап-фартс-кон-тро-ле"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "tekshiruv",
+      "example": {
+        "term": "Machen Sie vor jeder Fahrt die Abfahrtskontrolle.",
+        "tr": {
+          "uz": "Har safar yoʻlga chiqishdan oldin tekshiruv qiling.",
+          "uz-Cyrl": "Ҳар сафар йўлга чиқишдан олдин текширув қилинг.",
+          "ru": "Перед каждой поездкой проводите проверку."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-tekshiruv-anhaenger",
+      "slug": "anhaenger",
+      "term": "der Anhänger",
+      "icon": "truck",
+      "article": "der",
+      "plural": "die Anhänger",
+      "tr": {
+        "uz": "tirkama",
+        "uz-Cyrl": "тиркама",
+        "ru": "прицеп"
+      },
+      "pron": {
+        "uz": "der an-hen-ger",
+        "uz-Cyrl": "дер ан-хен-гер",
+        "ru": "дер ан-хен-гер"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "tekshiruv",
+      "example": {
+        "term": "Der Anhänger ist schon beladen.",
+        "tr": {
+          "uz": "Tirkama allaqachon yuklangan.",
+          "uz-Cyrl": "Тиркама аллақачон юкланган.",
+          "ru": "Прицеп уже загружен."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-tekshiruv-bremse",
+      "slug": "bremse",
+      "term": "die Bremse",
+      "icon": "alert-octagon",
+      "article": "die",
+      "plural": "die Bremsen",
+      "tr": {
+        "uz": "tormoz",
+        "uz-Cyrl": "тормоз",
+        "ru": "тормоз"
+      },
+      "pron": {
+        "uz": "die brem-ze",
+        "uz-Cyrl": "ди брем-зе",
+        "ru": "ди брем-зе"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "tekshiruv",
+      "example": {
+        "term": "Die Bremse funktioniert gut.",
+        "tr": {
+          "uz": "Tormoz yaxshi ishlayapti.",
+          "uz-Cyrl": "Тормоз яхши ишлаяпти.",
+          "ru": "Тормоз работает хорошо."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-tekshiruv-licht",
+      "slug": "licht",
+      "term": "das Licht",
+      "icon": "bulb",
+      "article": "das",
+      "plural": "die Lichter",
+      "tr": {
+        "uz": "chiroq (fara)",
+        "uz-Cyrl": "чироқ (фара)",
+        "ru": "свет (фары)"
+      },
+      "pron": {
+        "uz": "das lixt",
+        "uz-Cyrl": "дас лихт",
+        "ru": "дас лихт"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "tekshiruv",
+      "example": {
+        "term": "Schalten Sie das Licht ein.",
+        "tr": {
+          "uz": "Chiroqni yoqing.",
+          "uz-Cyrl": "Чироқни ёқинг.",
+          "ru": "Включите свет."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-tekshiruv-blinker",
+      "slug": "blinker",
+      "term": "der Blinker",
+      "icon": "bulb",
+      "article": "der",
+      "plural": "die Blinker",
+      "tr": {
+        "uz": "burilish chirogʻi",
+        "uz-Cyrl": "бурилиш чироғи",
+        "ru": "поворотник"
+      },
+      "pron": {
+        "uz": "der blin-ker",
+        "uz-Cyrl": "дер блин-кер",
+        "ru": "дер блин-кер"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "tekshiruv",
+      "example": {
+        "term": "Der Blinker links ist kaputt.",
+        "tr": {
+          "uz": "Chap burilish chirogʻi buzilgan.",
+          "uz-Cyrl": "Чап бурилиш чироғи бузилган.",
+          "ru": "Левый поворотник сломан."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-tekshiruv-reifendruck",
+      "slug": "reifendruck",
+      "term": "der Reifendruck",
+      "icon": "check",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "shina bosimi",
+        "uz-Cyrl": "шина босими",
+        "ru": "давление в шинах"
+      },
+      "pron": {
+        "uz": "der ray-fen-druk",
+        "uz-Cyrl": "дер рай-фен-друк",
+        "ru": "дер рай-фен-друк"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "tekshiruv",
+      "example": {
+        "term": "Prüfen Sie den Reifendruck.",
+        "tr": {
+          "uz": "Shina bosimini tekshiring.",
+          "uz-Cyrl": "Шина босимини текширинг.",
+          "ru": "Проверьте давление в шинах."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-tekshiruv-motoroel",
+      "slug": "motoroel",
+      "term": "das Motoröl",
+      "icon": "droplet",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "motor moyi",
+        "uz-Cyrl": "мотор мойи",
+        "ru": "моторное масло"
+      },
+      "pron": {
+        "uz": "das mo-tor-yol",
+        "uz-Cyrl": "дас мо-тор-ёль",
+        "ru": "дас мо-тор-ёль"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "tekshiruv",
+      "example": {
+        "term": "Es fehlt Motoröl.",
+        "tr": {
+          "uz": "Motor moyi kam.",
+          "uz-Cyrl": "Мотор мойи кам.",
+          "ru": "Не хватает моторного масла."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-tekshiruv-scheibenwischer",
+      "slug": "scheibenwischer",
+      "term": "der Scheibenwischer",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Scheibenwischer",
+      "tr": {
+        "uz": "oyna tozalagich (dvornik)",
+        "uz-Cyrl": "ойна тозалагич (дворник)",
+        "ru": "дворник"
+      },
+      "pron": {
+        "uz": "der shay-ben-vi-sher",
+        "uz-Cyrl": "дер шай-бен-ви-шер",
+        "ru": "дер шай-бен-ви-шер"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "tekshiruv",
+      "example": {
+        "term": "Der Scheibenwischer ist alt.",
+        "tr": {
+          "uz": "Dvornik eskirgan.",
+          "uz-Cyrl": "Дворник эскирган.",
+          "ru": "Дворник старый."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-tekshiruv-plane",
+      "slug": "plane",
+      "term": "die Plane",
+      "icon": "square",
+      "article": "die",
+      "plural": "die Planen",
+      "tr": {
+        "uz": "tent (brezent)",
+        "uz-Cyrl": "тент (брезент)",
+        "ru": "тент"
+      },
+      "pron": {
+        "uz": "die pla-ne",
+        "uz-Cyrl": "ди пла-не",
+        "ru": "ди пла-не"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "tekshiruv",
+      "example": {
+        "term": "Die Plane hat ein Loch.",
+        "tr": {
+          "uz": "Tentda teshik bor.",
+          "uz-Cyrl": "Тентда тешик бор.",
+          "ru": "В тенте дыра."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-tekshiruv-werkstatt",
+      "slug": "werkstatt",
+      "term": "die Werkstatt",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Werkstätten",
+      "tr": {
+        "uz": "ustaxona (avtoservis)",
+        "uz-Cyrl": "устахона (автосервис)",
+        "ru": "мастерская (автосервис)"
+      },
+      "pron": {
+        "uz": "die verk-shtat",
+        "uz-Cyrl": "ди верк-штат",
+        "ru": "ди верк-штат"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "tekshiruv",
+      "example": {
+        "term": "Der Lkw muss in die Werkstatt.",
+        "tr": {
+          "uz": "Yuk mashinasini ustaxonaga olib borish kerak.",
+          "uz-Cyrl": "Юк машинасини устахонага олиб бориш керак.",
+          "ru": "Грузовик нужно отвезти в мастерскую."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-tekshiruv-undicht",
+      "slug": "undicht",
+      "term": "undicht",
+      "icon": "droplet",
+      "tr": {
+        "uz": "oqyapti (germetik emas)",
+        "uz-Cyrl": "оқяпти (герметик эмас)",
+        "ru": "протекает"
+      },
+      "pron": {
+        "uz": "un-dixt",
+        "uz-Cyrl": "ун-дихт",
+        "ru": "ун-дихт"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "tekshiruv",
+      "example": {
+        "term": "Der Tank ist undicht.",
+        "tr": {
+          "uz": "Bak oqyapti.",
+          "uz-Cyrl": "Бак оқяпти.",
+          "ru": "Бак протекает."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-tekshiruv-das-licht-geht-nicht",
+      "slug": "das-licht-geht-nicht",
+      "term": "Das Licht geht nicht.",
+      "icon": "bulb",
+      "tr": {
+        "uz": "Chiroq yonmayapti.",
+        "uz-Cyrl": "Чироқ ёнмаяпти.",
+        "ru": "Свет не работает."
+      },
+      "pron": {
+        "uz": "das lixt get nixt",
+        "uz-Cyrl": "дас лихт гет нихт",
+        "ru": "дас лихт гет нихт"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "tekshiruv",
+      "example": {
+        "term": "Chef, das Licht geht nicht.",
+        "tr": {
+          "uz": "Boshliq, chiroq yonmayapti.",
+          "uz-Cyrl": "Бошлиқ, чироқ ёнмаяпти.",
+          "ru": "Шеф, свет не работает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-tekshiruv-achse",
+      "slug": "achse",
+      "term": "die Achse",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Achsen",
+      "tr": {
+        "uz": "oʻq (gʻildirak oʻqi)",
+        "uz-Cyrl": "ўқ (ғилдирак ўқи)",
+        "ru": "ось"
+      },
+      "pron": {
+        "uz": "die ak-se",
+        "uz-Cyrl": "ди ак-се",
+        "ru": "ди ак-се"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "tekshiruv",
+      "example": {
+        "term": "Die Achse macht ein Geräusch.",
+        "tr": {
+          "uz": "Oʻqdan shovqin chiqyapti.",
+          "uz-Cyrl": "Ўқдан шовқин чиқяпти.",
+          "ru": "Ось издаёт шум."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-tekshiruv-warnleuchte",
+      "slug": "warnleuchte",
+      "term": "die Warnleuchte",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Warnleuchten",
+      "tr": {
+        "uz": "ogohlantirish chirogʻi",
+        "uz-Cyrl": "огоҳлантириш чироғи",
+        "ru": "контрольная лампа"
+      },
+      "pron": {
+        "uz": "die varn-loyx-te",
+        "uz-Cyrl": "ди варн-лойх-те",
+        "ru": "ди варн-лойх-те"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "tekshiruv",
+      "example": {
+        "term": "Die Warnleuchte ist rot. Halten Sie an!",
+        "tr": {
+          "uz": "Ogohlantirish chirogʻi qizil. Toʻxtang!",
+          "uz-Cyrl": "Огоҳлантириш чироғи қизил. Тўхтанг!",
+          "ru": "Горит красная лампа. Остановитесь!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-tekshiruv-kuehlwasser",
+      "slug": "kuehlwasser",
+      "term": "das Kühlwasser",
+      "icon": "droplet",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "sovutish suyuqligi",
+        "uz-Cyrl": "совутиш суюқлиги",
+        "ru": "охлаждающая жидкость"
+      },
+      "pron": {
+        "uz": "das kyul-va-ser",
+        "uz-Cyrl": "дас кюль-ва-сер",
+        "ru": "дас кюль-ва-сер"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "tekshiruv",
+      "example": {
+        "term": "Es gibt zu wenig Kühlwasser.",
+        "tr": {
+          "uz": "Sovutish suyuqligi juda kam.",
+          "uz-Cyrl": "Совутиш суюқлиги жуда кам.",
+          "ru": "Слишком мало охлаждающей жидкости."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-avariya-warndreieck",
+      "slug": "warndreieck",
+      "term": "das Warndreieck",
+      "icon": "alert-triangle",
+      "article": "das",
+      "plural": "die Warndreiecke",
+      "tr": {
+        "uz": "ogohlantirish uchburchagi",
+        "uz-Cyrl": "огоҳлантириш учбурчаги",
+        "ru": "знак аварийной остановки"
+      },
+      "pron": {
+        "uz": "das varn-dray-ek",
+        "uz-Cyrl": "дас варн-драй-ек",
+        "ru": "дас варн-драй-ек"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "avariya",
+      "example": {
+        "term": "Stellen Sie das Warndreieck auf.",
+        "tr": {
+          "uz": "Ogohlantirish uchburchagini qoʻying.",
+          "uz-Cyrl": "Огоҳлантириш учбурчагини қўйинг.",
+          "ru": "Выставьте знак аварийной остановки."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-avariya-unfallbericht",
+      "slug": "unfallbericht",
+      "term": "der Unfallbericht",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Unfallberichte",
+      "tr": {
+        "uz": "avariya bayonnomasi",
+        "uz-Cyrl": "авария баённомаси",
+        "ru": "извещение о ДТП"
+      },
+      "pron": {
+        "uz": "der un-fal-be-rixt",
+        "uz-Cyrl": "дер ун-фаль-бе-рихт",
+        "ru": "дер ун-фаль-бе-рихт"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "avariya",
+      "example": {
+        "term": "Wir schreiben zusammen den Unfallbericht.",
+        "tr": {
+          "uz": "Avariya bayonnomasini birga yozamiz.",
+          "uz-Cyrl": "Авария баённомасини бирга ёзамиз.",
+          "ru": "Мы вместе заполним извещение о ДТП."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-avariya-pannendienst",
+      "slug": "pannendienst",
+      "term": "der Pannendienst",
+      "icon": "phone",
+      "article": "der",
+      "plural": "die Pannendienste",
+      "tr": {
+        "uz": "yoʻlda texnik yordam",
+        "uz-Cyrl": "йўлда техник ёрдам",
+        "ru": "техпомощь на дороге"
+      },
+      "pron": {
+        "uz": "der pa-nen-dinst",
+        "uz-Cyrl": "дер па-нен-динст",
+        "ru": "дер па-нен-динст"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "avariya",
+      "example": {
+        "term": "Ich rufe den Pannendienst an.",
+        "tr": {
+          "uz": "Texnik yordamga qoʻngʻiroq qilaman.",
+          "uz-Cyrl": "Техник ёрдамга қўнғироқ қиламан.",
+          "ru": "Я позвоню в техпомощь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-avariya-abschleppwagen",
+      "slug": "abschleppwagen",
+      "term": "der Abschleppwagen",
+      "icon": "truck",
+      "article": "der",
+      "plural": "die Abschleppwagen",
+      "tr": {
+        "uz": "evakuator",
+        "uz-Cyrl": "эвакуатор",
+        "ru": "эвакуатор"
+      },
+      "pron": {
+        "uz": "der ap-shlep-va-gen",
+        "uz-Cyrl": "дер ап-шлеп-ва-ген",
+        "ru": "дер ап-шлеп-ва-ген"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "avariya",
+      "example": {
+        "term": "Der Abschleppwagen kommt in einer Stunde.",
+        "tr": {
+          "uz": "Evakuator bir soatdan keyin keladi.",
+          "uz-Cyrl": "Эвакуатор бир соатдан кейин келади.",
+          "ru": "Эвакуатор приедет через час."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-avariya-warnblinkanlage",
+      "slug": "warnblinkanlage",
+      "term": "die Warnblinkanlage",
+      "icon": "bulb",
+      "article": "die",
+      "plural": "die Warnblinkanlagen",
+      "tr": {
+        "uz": "avariya chiroqlari",
+        "uz-Cyrl": "авария чироқлари",
+        "ru": "аварийная сигнализация"
+      },
+      "pron": {
+        "uz": "die varn-blink-an-la-ge",
+        "uz-Cyrl": "ди варн-блинк-ан-ла-ге",
+        "ru": "ди варн-блинк-ан-ла-ге"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "avariya",
+      "example": {
+        "term": "Schalten Sie die Warnblinkanlage ein.",
+        "tr": {
+          "uz": "Avariya chiroqlarini yoqing.",
+          "uz-Cyrl": "Авария чироқларини ёқинг.",
+          "ru": "Включите аварийную сигнализацию."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-avariya-seitenstreifen",
+      "slug": "seitenstreifen",
+      "term": "der Seitenstreifen",
+      "icon": "map-pin",
+      "article": "der",
+      "plural": "die Seitenstreifen",
+      "tr": {
+        "uz": "yoʻl cheti (obochina)",
+        "uz-Cyrl": "йўл чети (обочина)",
+        "ru": "обочина"
+      },
+      "pron": {
+        "uz": "der zay-ten-shtray-fen",
+        "uz-Cyrl": "дер зай-тен-штрай-фен",
+        "ru": "дер зай-тен-штрай-фен"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "avariya",
+      "example": {
+        "term": "Der Lkw steht auf dem Seitenstreifen.",
+        "tr": {
+          "uz": "Yuk mashinasi yoʻl chetida turibdi.",
+          "uz-Cyrl": "Юк машинаси йўл четида турибди.",
+          "ru": "Грузовик стоит на обочине."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-avariya-verletzt",
+      "slug": "verletzt",
+      "term": "verletzt",
+      "icon": "first-aid-kit",
+      "tr": {
+        "uz": "jarohatlangan",
+        "uz-Cyrl": "жароҳатланган",
+        "ru": "ранен"
+      },
+      "pron": {
+        "uz": "fer-letst",
+        "uz-Cyrl": "фер-лецт",
+        "ru": "фер-лецт"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "avariya",
+      "example": {
+        "term": "Der Fahrer ist leicht verletzt.",
+        "tr": {
+          "uz": "Haydovchi biroz jarohatlangan.",
+          "uz-Cyrl": "Ҳайдовчи бироз жароҳатланган.",
+          "ru": "Водитель легко ранен."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-avariya-verbandskasten",
+      "slug": "verbandskasten",
+      "term": "der Verbandskasten",
+      "icon": "first-aid-kit",
+      "article": "der",
+      "plural": "die Verbandskästen",
+      "tr": {
+        "uz": "dori qutisi (aptechka)",
+        "uz-Cyrl": "дори қутиси (аптечка)",
+        "ru": "аптечка"
+      },
+      "pron": {
+        "uz": "der fer-bants-kas-ten",
+        "uz-Cyrl": "дер фер-бантс-кас-тен",
+        "ru": "дер фер-бантс-кас-тен"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "avariya",
+      "example": {
+        "term": "Der Verbandskasten ist hinter dem Sitz.",
+        "tr": {
+          "uz": "Aptechka oʻrindiq orqasida.",
+          "uz-Cyrl": "Аптечка ўриндиқ орқасида.",
+          "ru": "Аптечка за сиденьем."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-avariya-fahrbahn",
+      "slug": "fahrbahn",
+      "term": "die Fahrbahn",
+      "icon": "map",
+      "article": "die",
+      "plural": "die Fahrbahnen",
+      "tr": {
+        "uz": "yoʻlning qatnov qismi",
+        "uz-Cyrl": "йўлнинг қатнов қисми",
+        "ru": "проезжая часть"
+      },
+      "pron": {
+        "uz": "die far-ban",
+        "uz-Cyrl": "ди фар-бан",
+        "ru": "ди фар-бан"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "avariya",
+      "example": {
+        "term": "Bleiben Sie nicht auf der Fahrbahn!",
+        "tr": {
+          "uz": "Qatnov qismida turmang!",
+          "uz-Cyrl": "Қатнов қисмида турманг!",
+          "ru": "Не стойте на проезжей части!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-avariya-glatteis",
+      "slug": "glatteis",
+      "term": "das Glatteis",
+      "icon": "alert-triangle",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "yaxlak (yoʻldagi muz)",
+        "uz-Cyrl": "яхлак (йўлдаги муз)",
+        "ru": "гололёд"
+      },
+      "pron": {
+        "uz": "das glat-ays",
+        "uz-Cyrl": "дас глат-айс",
+        "ru": "дас глат-айс"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "avariya",
+      "example": {
+        "term": "Vorsicht, heute gibt es Glatteis!",
+        "tr": {
+          "uz": "Ehtiyot boʻling, bugun yoʻl muzlagan!",
+          "uz-Cyrl": "Эҳтиёт бўлинг, бугун йўл музлаган!",
+          "ru": "Осторожно, сегодня гололёд!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-avariya-reifen",
+      "slug": "reifen",
+      "term": "der Reifen",
+      "icon": "car",
+      "article": "der",
+      "plural": "die Reifen",
+      "tr": {
+        "uz": "shina",
+        "uz-Cyrl": "шина",
+        "ru": "шина"
+      },
+      "pron": {
+        "uz": "der ray-fen",
+        "uz-Cyrl": "дер рай-фен",
+        "ru": "дер рай-фен"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "avariya",
+      "example": {
+        "term": "Der Reifen ist platt.",
+        "tr": {
+          "uz": "Shina teshilgan.",
+          "uz-Cyrl": "Шина тешилган.",
+          "ru": "Шина спустила."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-avariya-platt",
+      "slug": "platt",
+      "term": "platt",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "teshilgan (havosi chiqqan)",
+        "uz-Cyrl": "тешилган (ҳавоси чиққан)",
+        "ru": "спущенный (о шине)"
+      },
+      "pron": {
+        "uz": "plat",
+        "uz-Cyrl": "плат",
+        "ru": "плат"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "avariya",
+      "example": {
+        "term": "Ich habe einen platten Reifen.",
+        "tr": {
+          "uz": "Shinam teshildi.",
+          "uz-Cyrl": "Шинам тешилди.",
+          "ru": "У меня спустило колесо."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-avariya-zeuge",
+      "slug": "zeuge",
+      "term": "der Zeuge",
+      "icon": "eye",
+      "article": "der",
+      "plural": "die Zeugen",
+      "tr": {
+        "uz": "guvoh",
+        "uz-Cyrl": "гувоҳ",
+        "ru": "свидетель"
+      },
+      "pron": {
+        "uz": "der tsoy-ge",
+        "uz-Cyrl": "дер цой-ге",
+        "ru": "дер цой-ге"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "avariya",
+      "example": {
+        "term": "Ein Zeuge hat alles gesehen.",
+        "tr": {
+          "uz": "Bir guvoh hammasini koʻrgan.",
+          "uz-Cyrl": "Бир гувоҳ ҳаммасини кўрган.",
+          "ru": "Свидетель всё видел."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-avariya-ist-jemand-verletzt",
+      "slug": "ist-jemand-verletzt",
+      "term": "Ist jemand verletzt?",
+      "icon": "help",
+      "tr": {
+        "uz": "Kimdir jarohatlandimi?",
+        "uz-Cyrl": "Кимдир жароҳатландими?",
+        "ru": "Кто-нибудь ранен?"
+      },
+      "pron": {
+        "uz": "ist ye-mant fer-letst",
+        "uz-Cyrl": "ист е-мант фер-лецт",
+        "ru": "ист е-мант фер-лецт"
+      },
+      "level": "A1",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "avariya",
+      "example": {
+        "term": "Hallo! Ist jemand verletzt?",
+        "tr": {
+          "uz": "Hoy! Kimdir jarohatlandimi?",
+          "uz-Cyrl": "Ҳой! Кимдир жароҳатландими?",
+          "ru": "Эй! Кто-нибудь ранен?"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-avariya-disponent",
+      "slug": "disponent",
+      "term": "der Disponent",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Disponenten",
+      "tr": {
+        "uz": "dispetcher",
+        "uz-Cyrl": "диспетчер",
+        "ru": "диспетчер (логист)"
+      },
+      "pron": {
+        "uz": "der dis-po-nent",
+        "uz-Cyrl": "дер дис-по-нент",
+        "ru": "дер дис-по-нент"
+      },
+      "level": "A2",
+      "field": "logistics",
+      "jobs": [
+        "berufskraftfahrer"
+      ],
+      "situation": "avariya",
+      "example": {
+        "term": "Der Disponent plant die Touren.",
+        "tr": {
+          "uz": "Dispetcher qatnovlarni rejalashtiradi.",
+          "uz-Cyrl": "Диспетчер қатновларни режалаштиради.",
+          "ru": "Диспетчер планирует рейсы."
+        }
+      },
+      "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
     }
