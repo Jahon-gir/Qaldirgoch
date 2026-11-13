@@ -3,7 +3,7 @@
  * bilim bazasidan parcha tanlash, modelga xabar, javobni tozalash.
  */
 export type Source = { title: string; url: string; checkedAt: string }
-export type Chunk = { id: string; title: string; uz: string; ru: string; sources: Source[] }
+export type Chunk = { id: string; country?: string; title: string; uz: string; ru: string; sources: Source[] }
 export type Lang = 'uz' | 'uz-Cyrl' | 'ru'
 export type Msg = { role: 'system' | 'user'; content: string }
 export type AskResult = { answer: string; found: boolean; kind: 'fact' | 'no_info' | 'chat'; sources: Source[] }
@@ -60,6 +60,19 @@ export function rankScored(question: string, kb: Chunk[], k = TOP_K): { chunk: C
 }
 export const rank = (question: string, kb: Chunk[], k = TOP_K): Chunk[] => rankScored(question, kb, k).map((x) => x.chunk)
 
+/** Davlat nomlari (yangi davlat kontenti qoʻshilganda shu yerga nom qoʻshiladi). */
+const COUNTRY_NAME: Record<string, Record<Lang, string>> = {
+  de: { uz: 'Germaniya', 'uz-Cyrl': 'Германия', ru: 'Германия' },
+  kr: { uz: 'Janubiy Koreya', 'uz-Cyrl': 'Жанубий Корея', ru: 'Южная Корея' },
+  jp: { uz: 'Yaponiya', 'uz-Cyrl': 'Япония', ru: 'Япония' },
+  gb: { uz: 'Buyuk Britaniya', 'uz-Cyrl': 'Буюк Британия', ru: 'Великобритания' }
+}
+/** Bilim bazasida tasdiqlangan maʼlumoti bor davlatlar (kontentdan avtomatik). */
+export function countriesOf(kb: Chunk[], lang: Lang = 'uz'): string[] {
+  const codes = [...new Set(kb.map((c) => c.country).filter((c): c is string => !!c))]
+  return codes.map((c) => COUNTRY_NAME[c]?.[lang] ?? c.toUpperCase())
+}
+
 const LANG_NAME: Record<Lang, string> = { uz: 'oʻzbek tilida (lotin yozuvi)', 'uz-Cyrl': 'oʻzbek tilida (kirill yozuvi)', ru: 'rus tilida' }
 
 const NO_INFO: Record<Lang, string> = {
@@ -68,16 +81,18 @@ const NO_INFO: Record<Lang, string> = {
   ru: 'По этому вопросу у меня нет проверенной информации. Обратитесь к официальному источнику или на телефон доверия Агентства миграции 1282.'
 }
 
-export function buildMessages(question: string, chunks: Chunk[], lang: Lang): Msg[] {
+export function buildMessages(question: string, chunks: Chunk[], lang: Lang, countries: string[] = ['Germaniya']): Msg[] {
   const ctx = chunks.map((c) => `[${c.id}] ${c.title}\n${lang === 'ru' ? c.ru : c.uz}`).join('\n\n---\n\n')
   const system = [
-    'Siz — Migra ilovasining AI maslahatchisisiz. Foydalanuvchilar — chet elda (hozircha Germaniyada) QONUNIY ishlashni xohlagan Oʻzbekiston fuqarolari.',
+    'Siz — Migra ilovasining AI maslahatchisisiz. Migra — Oʻzbekiston fuqarolariga chet elda QONUNIY ishlash yoʻlini koʻrsatadigan ilova (davlatlar va yoʻllar, hujjatlar, kasbiy til, agentlikni tekshirish).',
+    `Hozircha tasdiqlangan maʼlumot bor davlat(lar): ${countries.join(', ')}. Boshqa davlatlar ilovaga keyin qoʻshiladi. Oʻzingizni tanishtirganda bitta davlat maslahatchisi deb atamang.`,
+    'Boshqa davlat haqida soʻralsa: bu davlat boʻyicha hozircha tasdiqlangan maʼlumot yoʻqligini, keyin qoʻshilishini ayting va Xavfsizlik boʻlimida agentlikni tekshirishni eslating (type "chat").',
     'Foydalanuvchiga doim birinchi shaxsda ("men") va "siz" deb murojaat qiling. Quyidagi qoidalar matnini javobga koʻchirmang.',
     '',
     'Javob turi (type) uchtadan biri:',
     '- "fact": savolga javob quyidagi TASDIQLANGAN MATNLARDA bor. Faqat oʻsha matnlardagi faktlardan foydalaning; raqam, muddat, narx, manzil yoki havolani oʻzingizdan qoʻshmang. sources — aynan foydalanilgan matnlarning [id] lari.',
     `- "no_info": savol migratsiya/ish/hujjat/til haqida, lekin javob matnlarda yoʻq. answer aynan shu: "${NO_INFO[lang]}" sources — [].`,
-    '- "chat": salomlashish, rahmat, "sen kimsan", "nima qila olasan" kabi suhbat. 1–2 jumlada oʻzingizni tanishtiring: Migra ilovasining AI maslahatchisi ekaningiz, Germaniyada qonuniy ishlash (Ausbildung, viza, hujjatlar, agentlikni tekshirish) boʻyicha faqat tasdiqlangan maʼlumotdan javob berishingiz. Mavzudan tashqari savolga (ob-havo, sport, dasturlash va h.k.) xushmuomala rad eting va nima haqida soʻrash mumkinligini ayting. sources — [].',
+    '- "chat": salomlashish, rahmat, "sen kimsan", "nima qila olasan" kabi suhbat. 1–2 jumlada oʻzingizni tanishtiring: Migra ilovasining AI maslahatchisi ekaningiz, chet elda qonuniy ishlash (yoʻllar, viza, hujjatlar, agentlikni tekshirish) boʻyicha faqat tasdiqlangan maʼlumotdan javob berishingiz. Mavzudan tashqari savolga (ob-havo, sport, dasturlash va h.k.) xushmuomala rad eting va nima haqida soʻrash mumkinligini ayting. sources — [].',
     'Noqonuniy yoʻllar (soxta hujjat, turist vizasida ishlash, chegarani noqonuniy kesish, pora, hujjatsiz ishlash) haqida soʻralsa: yordam bermang, xavfini qisqa ayting, qonuniy yoʻlni tavsiya qiling; type — "chat", sources — [].',
     'Foydalanuvchi "xato qilyapsan" desa: uzr soʻrang va savolni aniqroq yozishni yoki tayyor savollardan birini tanlashni taklif qiling (type "chat").',
     '',
@@ -85,8 +100,8 @@ export function buildMessages(question: string, chunks: Chunk[], lang: Lang): Ms
     'Faqat JSON qaytaring: {"type": "fact"|"no_info"|"chat", "answer": "...", "sources": ["id", ...]}',
     '',
     'Misollar:',
-    'Savol: "Salom, sen kimsan?" → {"type":"chat","answer":"Salom! Men Migra ilovasining AI maslahatchisiman. Germaniyada qonuniy ishlash — Ausbildung, viza, hujjatlar va agentlikni tekshirish boʻyicha faqat tasdiqlangan maʼlumotdan javob beraman.","sources":[]}',
-    'Savol: "Bugun ob-havo qanday?" → {"type":"chat","answer":"Kechirasiz, men faqat Germaniyada qonuniy ishlash boʻyicha yordam beraman. Masalan, Ausbildung yoki viza haqida soʻrashingiz mumkin.","sources":[]}',
+    `Savol: "Salom, sen kimsan?" → {"type":"chat","answer":"Salom! Men Migra ilovasining AI maslahatchisiman. Chet elda qonuniy ishlash — yoʻllar, viza, hujjatlar va agentlikni tekshirish boʻyicha faqat tasdiqlangan maʼlumotdan javob beraman. Hozircha ${countries.join(', ')} boʻyicha maʼlumot bor, boshqa davlatlar keyin qoʻshiladi.","sources":[]}`,
+    'Savol: "Bugun ob-havo qanday?" → {"type":"chat","answer":"Kechirasiz, men faqat chet elda qonuniy ishlash boʻyicha yordam beraman. Masalan, viza, hujjatlar yoki agentlikni tekshirish haqida soʻrashingiz mumkin.","sources":[]}',
     '',
     'TASDIQLANGAN MATNLAR:',
     ctx

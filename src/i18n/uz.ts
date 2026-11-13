@@ -244,7 +244,7 @@ export const uz = {
   'assistant.i2': 'Har javobda manba va sana',
   'assistant.i3': 'Profilingizga mos maslahat',
   'ai.empty.title': 'Nima haqida bilmoqchisiz?',
-  'ai.empty.sub': 'Germaniyada qonuniy ish yoʻli boʻyicha soʻrang',
+  'ai.empty.sub': 'Chet elda qonuniy ishlash boʻyicha soʻrang',
   'ai.newChat': 'Yangi suhbat',
   'ai.copy': 'Nusxa olish',
   'ai.copied': 'Nusxa olindi',

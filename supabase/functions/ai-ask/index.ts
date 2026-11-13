@@ -4,7 +4,7 @@
  * Oqim: CORS → token (Supabase Auth) → savolni tekshirish → kunlik limit (ai_take_quota) → parchalar → model → javob + manbalar.
  */
 import knowledge from './knowledge.json' with { type: 'json' }
-import { asLang, buildMessages, checkQuestion, DAILY_LIMIT, GUEST_LIMIT, GUEST_TOTAL, parseAnswer, rankScored, type Chunk } from './core.ts'
+import { asLang, buildMessages, checkQuestion, countriesOf, DAILY_LIMIT, GUEST_LIMIT, GUEST_TOTAL, parseAnswer, rankScored, type Chunk } from './core.ts'
 import { chat, configFromEnv } from './provider.ts'
 import { memoryTake } from './limit.ts'
 
@@ -65,7 +65,7 @@ Deno.serve(async (req) => {
   const chunks = scored.map((x) => x.chunk)
   const relevant = new Set(scored.filter((x) => x.score > 0).map((x) => x.chunk.id))
   try {
-    const raw = await chat(cfg, buildMessages(q.q, chunks, lang))
+    const raw = await chat(cfg, buildMessages(q.q, chunks, lang, countriesOf(KB, lang)))
     return json({ ...parseAnswer(raw, chunks, lang, relevant), left })
   } catch (e) {
     console.error('ai', String(e))

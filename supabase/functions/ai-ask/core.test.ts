@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { buildKnowledge } from '../../../scripts/build-ai-knowledge'
 import knowledge from './knowledge.json'
-import { buildMessages, checkQuestion, parseAnswer, rank, rankScored, sanitize, type Chunk } from './core'
+import { buildMessages, checkQuestion, countriesOf, parseAnswer, rank, rankScored, sanitize, type Chunk } from './core'
 import { chat, configFromEnv } from './provider'
 
 const KB = knowledge as Chunk[]
@@ -79,6 +79,17 @@ describe('javob', () => {
   it('kichik suhbatda hech bir parcha ball olmaydi', () => {
     expect(rankScored('Sen kimsan', KB).every((x) => x.score === 0)).toBe(true)
     expect(rankScored('Ausbildung uchun qancha pul kerak?', KB)[0].score).toBeGreaterThan(0)
+  })
+})
+
+describe('davlatlar', () => {
+  it('roʻyxat kontentdan olinadi; tanishtiruv bitta davlatga bogʻlanmaydi', () => {
+    expect(countriesOf(KB)).toEqual(['Germaniya'])
+    expect(countriesOf(KB, 'ru')).toEqual(['Германия'])
+    const [sys] = buildMessages('Salom', KB.slice(0, 1), 'uz', ['Germaniya', 'Janubiy Koreya'])
+    expect(sys.content).toContain('davlat(lar): Germaniya, Janubiy Koreya')
+    expect(sys.content).toContain('Chet elda qonuniy ishlash')
+    expect(sys.content).not.toMatch(/faqat Germaniyada/)
   })
 })
 

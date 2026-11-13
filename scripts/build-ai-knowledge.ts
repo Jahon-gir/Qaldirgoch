@@ -10,7 +10,8 @@ import { HOTLINE } from '../src/safety/hotline'
 import { uz, type Key } from '../src/i18n/uz'
 import { ru } from '../src/i18n/ru'
 
-export type Chunk = { id: string; title: string; uz: string; ru: string; sources: Source[] }
+/** country — qaysi davlatga tegishli (ISO kodi); umumiy parchada yoʻq. */
+export type Chunk = { id: string; country?: string; title: string; uz: string; ru: string; sources: Source[] }
 
 const ok = (k: Key) => !uz[k].includes('{') && !ru[k].includes('{')
 const join = (keys: Key[], d: Record<Key, string>) => keys.filter(ok).map((k) => d[k]).join('\n')
@@ -29,14 +30,14 @@ export function buildKnowledge(): Chunk[] {
   for (const s of AUSBILDUNG_STEPS) {
     if (!s.sources.length) continue
     const keys: Key[] = [s.title, s.summary, ...s.tasks.map((x) => x.text), ...s.documents.map((x) => x.text), ...(s.facts ?? []), ...(s.warning ? [s.warning] : [])]
-    out.push({ id: `ausbildung-${s.id}`, title: `Ausbildung, ${s.order}-bosqich: ${uz[s.title]}`, uz: join(keys, uz), ru: join(keys, ru), sources: s.sources })
+    out.push({ id: `ausbildung-${s.id}`, country: 'de', title: `Ausbildung, ${s.order}-bosqich: ${uz[s.title]}`, uz: join(keys, uz), ru: join(keys, ru), sources: s.sources })
   }
   for (const [id, c] of Object.entries(PROGRAM_CONTENT)) {
     if (!c.sources.length) continue
     const keys: Key[] = [c.what, ...c.needs.flatMap((n) => [n.title, n.text]), ...(c.notice ? [c.notice] : []), c.warning]
     for (const d of c.detail) keys.push(d.title, ...d.items, ...(d.blocks ?? []).flatMap((b) => [...(b.sub ? [b.sub] : []), ...b.keys]), ...(d.callout ? [d.callout] : []))
     const uniq = [...new Set(keys)]
-    out.push({ id: `yol-${id.replace('/', '-')}`, title: PROGRAM_TITLES[id] ?? id, uz: join(uniq, uz), ru: join(uniq, ru), sources: c.sources })
+    out.push({ id: `yol-${id.replace('/', '-')}`, country: id.split('/')[0], title: PROGRAM_TITLES[id] ?? id, uz: join(uniq, uz), ru: join(uniq, ru), sources: c.sources })
   }
   const agencyKeys: Key[] = ['safety.agency.desc', 'safety.found.note', 'safety.nf.body', 'safety.nf.before', 'safety.nf.s1', 'safety.nf.s2', 'safety.nf.s3', 'safety.hotline.title', 'safety.disclaimer']
   out.push({
