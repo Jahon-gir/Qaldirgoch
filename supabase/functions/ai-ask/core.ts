@@ -10,6 +10,9 @@ export type AskResult = { answer: string; found: boolean; sources: Source[] }
 
 export const MAX_QUESTION = 500
 export const DAILY_LIMIT = 20
+/** Mehmon (kirmagan): bitta IP'dan kuniga; hamma mehmonlar birga kuniga (pulni himoya qilish). */
+export const GUEST_LIMIT = 10
+export const GUEST_TOTAL = 300
 export const TOP_K = 6
 
 /** Savol: matn, 3..500 belgi. Xato boʻlsa kod qaytaradi. */

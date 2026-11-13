@@ -244,8 +244,6 @@ export const uz = {
   'assistant.i2': 'Har javobda manba va sana',
   'assistant.i3': 'Profilingizga mos maslahat',
   'ai.sub': 'Faqat tasdiqlangan maʼlumotdan, manba va sana bilan',
-  'ai.signin': 'Savol berish uchun Google akkaunt bilan kiring. Bu kuniga savollar sonini hisoblash uchun kerak.',
-  'ai.signinBtn': 'Google bilan kirish',
   'ai.label': 'Savolingiz',
   'ai.placeholder': 'Masalan: Ausbildung uchun qancha pul kerak?',
   'ai.send': 'Soʻrash',
