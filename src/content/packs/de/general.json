@@ -752,6 +752,378 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "tanishuv",
+      "title": {
+        "uz": "Hamkasblar bilan tanishish",
+        "uz-Cyrl": "Ҳамкасблар билан танишиш",
+        "ru": "Знакомство с коллегами"
+      },
+      "order": 9,
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Hallo! Sind Sie der neue Kollege?",
+            "tr": {
+              "uz": "Salom! Yangi hamkasb sizmisiz?",
+              "uz-Cyrl": "Салом! Янги ҳамкасб сизмисиз?",
+              "ru": "Привет! Вы новый коллега?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, ich bin Aziz. Ich komme aus Usbekistan.",
+            "tr": {
+              "uz": "Ha, men Azizman. Oʻzbekistondanman.",
+              "uz-Cyrl": "Ҳа, мен Азизман. Ўзбекистонданман.",
+              "ru": "Да, я Азиз. Я из Узбекистана."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Freut mich! Ich bin Anna. Im Team duzen wir uns, okay?",
+            "tr": {
+              "uz": "Tanishganimdan xursandman! Men Annaman. Jamoada bir-birimizga «sen» deymiz, maylimi?",
+              "uz-Cyrl": "Танишганимдан хурсандман! Мен Аннаман. Жамоада бир-биримизга «сен» деймиз, майлими?",
+              "ru": "Очень приятно! Я Анна. В команде мы на «ты», хорошо?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Okay, gerne! Freut mich auch, Anna.",
+            "tr": {
+              "uz": "Mayli, bajonidil! Men ham xursandman, Anna.",
+              "uz-Cyrl": "Майли, бажонидил! Мен ҳам хурсандман, Анна.",
+              "ru": "Хорошо, с удовольствием! Мне тоже очень приятно, Анна."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Komm, ich zeige dir die Abteilung.",
+            "tr": {
+              "uz": "Yur, senga boʻlimni koʻrsataman.",
+              "uz-Cyrl": "Юр, сенга бўлимни кўрсатаман.",
+              "ru": "Пойдём, я покажу тебе отдел."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Super! Wo ist mein Platz?",
+            "tr": {
+              "uz": "Zoʻr! Mening joyim qayerda?",
+              "uz-Cyrl": "Зўр! Менинг жойим қаерда?",
+              "ru": "Отлично! Где моё место?"
+            }
+          }
+        ],
+        "status": "review"
+      }
+    },
+    {
+      "id": "telefon",
+      "title": {
+        "uz": "Telefonda gaplashish",
+        "uz-Cyrl": "Телефонда гаплашиш",
+        "ru": "Разговор по телефону"
+      },
+      "order": 10,
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Kotiba",
+              "uz-Cyrl": "Котиба",
+              "ru": "Секретарь"
+            },
+            "de": "Firma Becker, guten Tag. Wer spricht da, bitte?",
+            "tr": {
+              "uz": "Bekker firmasi, xayrli kun. Kim gapiryapti, iltimos?",
+              "uz-Cyrl": "Беккер фирмаси, хайрли кун. Ким гапиряпти, илтимос?",
+              "ru": "Фирма Беккер, добрый день. Кто говорит, пожалуйста?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Hier spricht Aziz Karimov. Ich möchte Herrn Weber sprechen.",
+            "tr": {
+              "uz": "Aziz Karimov gapiryapti. Veber janoblari bilan gaplashmoqchiman.",
+              "uz-Cyrl": "Азиз Каримов гапиряпти. Вебер жаноблари билан гаплашмоқчиман.",
+              "ru": "Говорит Азиз Каримов. Я хотел бы поговорить с господином Вебером."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kotiba",
+              "uz-Cyrl": "Котиба",
+              "ru": "Секретарь"
+            },
+            "de": "Moment, bitte … Herr Weber ist leider nicht da. Kann er Sie zurückrufen?",
+            "tr": {
+              "uz": "Bir daqiqa, iltimos… Afsuski, Veber janoblari yoʻq. U sizga qayta qoʻngʻiroq qilsinmi?",
+              "uz-Cyrl": "Бир дақиқа, илтимос… Афсуски, Вебер жаноблари йўқ. У сизга қайта қўнғироқ қилсинми?",
+              "ru": "Минутку, пожалуйста… К сожалению, господина Вебера нет. Он может вам перезвонить?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, gerne. Er hat meine Telefonnummer.",
+            "tr": {
+              "uz": "Ha, bajonidil. Telefon raqamim unda bor.",
+              "uz-Cyrl": "Ҳа, бажонидил. Телефон рақамим унда бор.",
+              "ru": "Да, конечно. У него есть мой номер телефона."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kotiba",
+              "uz-Cyrl": "Котиба",
+              "ru": "Секретарь"
+            },
+            "de": "Gut, ich sage es ihm. Auf Wiederhören!",
+            "tr": {
+              "uz": "Yaxshi, unga aytaman. Xayr!",
+              "uz-Cyrl": "Яхши, унга айтаман. Хайр!",
+              "ru": "Хорошо, я ему передам. До свидания!"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Vielen Dank. Auf Wiederhören!",
+            "tr": {
+              "uz": "Katta rahmat. Xayr!",
+              "uz-Cyrl": "Катта раҳмат. Хайр!",
+              "ru": "Большое спасибо. До свидания!"
+            }
+          }
+        ],
+        "status": "review"
+      }
+    },
+    {
+      "id": "ish-qidirish",
+      "title": {
+        "uz": "Ishga ariza va suhbat",
+        "uz-Cyrl": "Ишга ариза ва суҳбат",
+        "ru": "Заявление и собеседование"
+      },
+      "order": 11,
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Kadrlar xodimi",
+              "uz-Cyrl": "Кадрлар ходими",
+              "ru": "Сотрудник отдела кадров"
+            },
+            "de": "Guten Tag, Herr Karimov. Danke für Ihre Bewerbung.",
+            "tr": {
+              "uz": "Xayrli kun, Karimov janoblari. Arizangiz uchun rahmat.",
+              "uz-Cyrl": "Хайрли кун, Каримов жаноблари. Аризангиз учун раҳмат.",
+              "ru": "Добрый день, господин Каримов. Спасибо за ваше заявление."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Guten Tag. Vielen Dank für die Einladung.",
+            "tr": {
+              "uz": "Xayrli kun. Taklif uchun katta rahmat.",
+              "uz-Cyrl": "Хайрли кун. Таклиф учун катта раҳмат.",
+              "ru": "Добрый день. Большое спасибо за приглашение."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kadrlar xodimi",
+              "uz-Cyrl": "Кадрлар ходими",
+              "ru": "Сотрудник отдела кадров"
+            },
+            "de": "Warum möchten Sie diese Ausbildung machen?",
+            "tr": {
+              "uz": "Nega bu kasbiy taʼlimni olmoqchisiz?",
+              "uz-Cyrl": "Нега бу касбий таълимни олмоқчисиз?",
+              "ru": "Почему вы хотите пройти это обучение?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich arbeite gern mit Menschen und möchte den Beruf richtig lernen.",
+            "tr": {
+              "uz": "Odamlar bilan ishlashni yaxshi koʻraman va kasbni puxta oʻrganmoqchiman.",
+              "uz-Cyrl": "Одамлар билан ишлашни яхши кўраман ва касбни пухта ўрганмоқчиман.",
+              "ru": "Я люблю работать с людьми и хочу как следует освоить профессию."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kadrlar xodimi",
+              "uz-Cyrl": "Кадрлар ходими",
+              "ru": "Сотрудник отдела кадров"
+            },
+            "de": "Gut. Haben Sie schon Erfahrung?",
+            "tr": {
+              "uz": "Yaxshi. Tajribangiz bormi?",
+              "uz-Cyrl": "Яхши. Тажрибангиз борми?",
+              "ru": "Хорошо. У вас уже есть опыт?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, ich habe ein Praktikum gemacht.",
+            "tr": {
+              "uz": "Ha, amaliyot oʻtganman.",
+              "uz-Cyrl": "Ҳа, амалиёт ўтганман.",
+              "ru": "Да, я проходил практику."
+            }
+          }
+        ],
+        "status": "review"
+      }
+    },
+    {
+      "id": "muammo",
+      "title": {
+        "uz": "Muammo haqida xabar berish",
+        "uz-Cyrl": "Муаммо ҳақида хабар бериш",
+        "ru": "Сообщить о проблеме"
+      },
+      "order": 12,
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Was ist passiert? Warum steht die Maschine?",
+            "tr": {
+              "uz": "Nima boʻldi? Nega mashina toʻxtab turibdi?",
+              "uz-Cyrl": "Нима бўлди? Нега машина тўхтаб турибди?",
+              "ru": "Что случилось? Почему машина стоит?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Sie funktioniert nicht. Ich glaube, ein Kabel ist kaputt.",
+            "tr": {
+              "uz": "U ishlamayapti. Menimcha, bitta kabel buzilgan.",
+              "uz-Cyrl": "У ишламаяпти. Менимча, битта кабель бузилган.",
+              "ru": "Она не работает. Думаю, повреждён кабель."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Haben Sie die Maschine ausgeschaltet?",
+            "tr": {
+              "uz": "Mashinani oʻchirdingizmi?",
+              "uz-Cyrl": "Машинани ўчирдингизми?",
+              "ru": "Вы выключили машину?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, sofort. Ich habe nichts angefasst.",
+            "tr": {
+              "uz": "Ha, darhol. Hech narsaga tegmadim.",
+              "uz-Cyrl": "Ҳа, дарҳол. Ҳеч нарсага тегмадим.",
+              "ru": "Да, сразу. Я ничего не трогал."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Sehr gut. Ich rufe den Elektriker.",
+            "tr": {
+              "uz": "Juda yaxshi. Elektrikni chaqiraman.",
+              "uz-Cyrl": "Жуда яхши. Электрикни чақираман.",
+              "ru": "Очень хорошо. Я вызову электрика."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Danke. Sagen Sie mir Bescheid, wenn ich weiterarbeiten kann.",
+            "tr": {
+              "uz": "Rahmat. Ishni davom ettirsam boʻladigan boʻlsa, menga xabar bering.",
+              "uz-Cyrl": "Раҳмат. Ишни давом эттирсам бўладиган бўлса, менга хабар беринг.",
+              "ru": "Спасибо. Дайте мне знать, когда можно будет продолжить работу."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -4458,6 +4830,1934 @@
         }
       },
       "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-kollege",
+      "slug": "kollege",
+      "term": "der Kollege",
+      "icon": "users",
+      "article": "der",
+      "plural": "die Kollegen",
+      "tr": {
+        "uz": "hamkasb (erkak)",
+        "uz-Cyrl": "ҳамкасб (эркак)",
+        "ru": "коллега (мужчина)"
+      },
+      "pron": {
+        "uz": "der ko-le-ge",
+        "uz-Cyrl": "дер ко-ле-ге",
+        "ru": "дер ко-ле-ге"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Das ist mein Kollege Jonas.",
+        "tr": {
+          "uz": "Bu mening hamkasbim Yonas.",
+          "uz-Cyrl": "Бу менинг ҳамкасбим Йонас.",
+          "ru": "Это мой коллега Йонас."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-kollegin",
+      "slug": "kollegin",
+      "term": "die Kollegin",
+      "icon": "woman",
+      "article": "die",
+      "plural": "die Kolleginnen",
+      "tr": {
+        "uz": "hamkasb (ayol)",
+        "uz-Cyrl": "ҳамкасб (аёл)",
+        "ru": "коллега (женщина)"
+      },
+      "pron": {
+        "uz": "die ko-le-gin",
+        "uz-Cyrl": "ди ко-ле-гин",
+        "ru": "ди ко-ле-гин"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Meine Kollegin hilft mir am ersten Tag.",
+        "tr": {
+          "uz": "Birinchi kuni hamkasbim menga yordam beradi.",
+          "uz-Cyrl": "Биринчи куни ҳамкасбим менга ёрдам беради.",
+          "ru": "В первый день мне помогает моя коллега."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-chef",
+      "slug": "chef",
+      "term": "der Chef",
+      "icon": "briefcase",
+      "article": "der",
+      "plural": "die Chefs",
+      "tr": {
+        "uz": "boshliq",
+        "uz-Cyrl": "бошлиқ",
+        "ru": "начальник"
+      },
+      "pron": {
+        "uz": "der shef",
+        "uz-Cyrl": "дер шеф",
+        "ru": "дер шеф"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Der Chef kommt um acht Uhr.",
+        "tr": {
+          "uz": "Boshliq soat sakkizda keladi.",
+          "uz-Cyrl": "Бошлиқ соат саккизда келади.",
+          "ru": "Начальник приходит в восемь часов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-chefin",
+      "slug": "chefin",
+      "term": "die Chefin",
+      "icon": "briefcase",
+      "article": "die",
+      "plural": "die Chefinnen",
+      "tr": {
+        "uz": "boshliq (ayol)",
+        "uz-Cyrl": "бошлиқ (аёл)",
+        "ru": "начальница"
+      },
+      "pron": {
+        "uz": "die she-fin",
+        "uz-Cyrl": "ди ше-фин",
+        "ru": "ди ше-фин"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Die Chefin zeigt mir den Betrieb.",
+        "tr": {
+          "uz": "Boshliq menga korxonani koʻrsatadi.",
+          "uz-Cyrl": "Бошлиқ менга корхонани кўрсатади.",
+          "ru": "Начальница показывает мне предприятие."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-team",
+      "slug": "team",
+      "term": "das Team",
+      "icon": "users",
+      "article": "das",
+      "plural": "die Teams",
+      "tr": {
+        "uz": "jamoa",
+        "uz-Cyrl": "жамоа",
+        "ru": "команда"
+      },
+      "pron": {
+        "uz": "das tim",
+        "uz-Cyrl": "дас тим",
+        "ru": "дас тим"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Willkommen in unserem Team!",
+        "tr": {
+          "uz": "Jamoamizga xush kelibsiz!",
+          "uz-Cyrl": "Жамоамизга хуш келибсиз!",
+          "ru": "Добро пожаловать в нашу команду!"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-wie-heissen-sie",
+      "slug": "wie-heissen-sie",
+      "term": "Wie heißen Sie?",
+      "icon": "user",
+      "tr": {
+        "uz": "Ismingiz nima?",
+        "uz-Cyrl": "Исмингиз нима?",
+        "ru": "Как вас зовут?"
+      },
+      "pron": {
+        "uz": "vi hay-sen zi",
+        "uz-Cyrl": "ви хай-сен зи",
+        "ru": "ви хай-сен зи"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Wie heißen Sie? – Ich heiße Aziz.",
+        "tr": {
+          "uz": "Ismingiz nima? – Ismim Aziz.",
+          "uz-Cyrl": "Исмингиз нима? – Исмим Азиз.",
+          "ru": "Как вас зовут? – Меня зовут Азиз."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-woher-kommen-sie",
+      "slug": "woher-kommen-sie",
+      "term": "Woher kommen Sie?",
+      "icon": "world",
+      "tr": {
+        "uz": "Qayerdansiz?",
+        "uz-Cyrl": "Қаердансиз?",
+        "ru": "Откуда вы?"
+      },
+      "pron": {
+        "uz": "vo-her ko-men zi",
+        "uz-Cyrl": "во-хер ко-мен зи",
+        "ru": "во-хер ко-мен зи"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Woher kommen Sie? – Aus Usbekistan.",
+        "tr": {
+          "uz": "Qayerdansiz? – Oʻzbekistondan.",
+          "uz-Cyrl": "Қаердансиз? – Ўзбекистондан.",
+          "ru": "Откуда вы? – Из Узбекистана."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-freut-mich",
+      "slug": "freut-mich",
+      "term": "Freut mich!",
+      "icon": "mood-smile",
+      "tr": {
+        "uz": "Tanishganimdan xursandman!",
+        "uz-Cyrl": "Танишганимдан хурсандман!",
+        "ru": "Очень приятно!"
+      },
+      "pron": {
+        "uz": "froyt mix",
+        "uz-Cyrl": "фройт мих",
+        "ru": "фройт мих"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Ich bin Aziz. – Freut mich, ich bin Anna.",
+        "tr": {
+          "uz": "Men Azizman. – Tanishganimdan xursandman, men Annaman.",
+          "uz-Cyrl": "Мен Азизман. – Танишганимдан хурсандман, мен Аннаман.",
+          "ru": "Я Азиз. – Очень приятно, я Анна."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-guten-morgen",
+      "slug": "guten-morgen",
+      "term": "Guten Morgen!",
+      "icon": "sunrise",
+      "tr": {
+        "uz": "Xayrli tong!",
+        "uz-Cyrl": "Хайрли тонг!",
+        "ru": "Доброе утро!"
+      },
+      "pron": {
+        "uz": "gu-ten mor-gen",
+        "uz-Cyrl": "гу-тен мор-ген",
+        "ru": "гу-тен мор-ген"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Guten Morgen, Frau Weber!",
+        "tr": {
+          "uz": "Xayrli tong, Veber xonim!",
+          "uz-Cyrl": "Хайрли тонг, Вебер хоним!",
+          "ru": "Доброе утро, госпожа Вебер!"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-bis-morgen",
+      "slug": "bis-morgen",
+      "term": "Bis morgen!",
+      "icon": "sunset-2",
+      "tr": {
+        "uz": "Ertagacha!",
+        "uz-Cyrl": "Эртагача!",
+        "ru": "До завтра!"
+      },
+      "pron": {
+        "uz": "bis mor-gen",
+        "uz-Cyrl": "бис мор-ген",
+        "ru": "бис мор-ген"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Tschüss, bis morgen!",
+        "tr": {
+          "uz": "Xayr, ertagacha!",
+          "uz-Cyrl": "Хайр, эртагача!",
+          "ru": "Пока, до завтра!"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-abteilung",
+      "slug": "abteilung",
+      "term": "die Abteilung",
+      "icon": "building",
+      "article": "die",
+      "plural": "die Abteilungen",
+      "tr": {
+        "uz": "boʻlim",
+        "uz-Cyrl": "бўлим",
+        "ru": "отдел"
+      },
+      "pron": {
+        "uz": "die ap-tay-lung",
+        "uz-Cyrl": "ди ап-тай-лунг",
+        "ru": "ди ап-тай-лунг"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "In welcher Abteilung arbeiten Sie?",
+        "tr": {
+          "uz": "Qaysi boʻlimda ishlaysiz?",
+          "uz-Cyrl": "Қайси бўлимда ишлайсиз?",
+          "ru": "В каком отделе вы работаете?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-name",
+      "slug": "name",
+      "term": "der Name",
+      "icon": "id",
+      "article": "der",
+      "plural": "die Namen",
+      "tr": {
+        "uz": "ism",
+        "uz-Cyrl": "исм",
+        "ru": "имя"
+      },
+      "pron": {
+        "uz": "der na-me",
+        "uz-Cyrl": "дер на-ме",
+        "ru": "дер на-ме"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Mein Name ist Aziz Karimov.",
+        "tr": {
+          "uz": "Mening ismim Aziz Karimov.",
+          "uz-Cyrl": "Менинг исмим Азиз Каримов.",
+          "ru": "Меня зовут Азиз Каримов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-duzen",
+      "slug": "duzen",
+      "term": "duzen",
+      "icon": "messages",
+      "tr": {
+        "uz": "«sen» deb murojaat qilmoq",
+        "uz-Cyrl": "«сен» деб мурожаат қилмоқ",
+        "ru": "обращаться на «ты»"
+      },
+      "pron": {
+        "uz": "du-tsen",
+        "uz-Cyrl": "ду-цен",
+        "ru": "ду-цен"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Im Team duzen wir uns.",
+        "tr": {
+          "uz": "Jamoada bir-birimizga «sen» deymiz.",
+          "uz-Cyrl": "Жамоада бир-биримизга «сен» деймиз.",
+          "ru": "В команде мы на «ты»."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-mitarbeiter",
+      "slug": "mitarbeiter",
+      "term": "der Mitarbeiter",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Mitarbeiter",
+      "tr": {
+        "uz": "xodim",
+        "uz-Cyrl": "ходим",
+        "ru": "сотрудник"
+      },
+      "pron": {
+        "uz": "der mit-ar-bay-ter",
+        "uz-Cyrl": "дер мит-ар-бай-тер",
+        "ru": "дер мит-ар-бай-тер"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Ich bin der neue Mitarbeiter.",
+        "tr": {
+          "uz": "Men yangi xodimman.",
+          "uz-Cyrl": "Мен янги ходимман.",
+          "ru": "Я новый сотрудник."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-wie-geht-s",
+      "slug": "wie-geht-s",
+      "term": "Wie geht’s?",
+      "icon": "heart-handshake",
+      "tr": {
+        "uz": "Qalaysiz?",
+        "uz-Cyrl": "Қалайсиз?",
+        "ru": "Как дела?"
+      },
+      "pron": {
+        "uz": "vi gets",
+        "uz-Cyrl": "ви гец",
+        "ru": "ви гец"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Hallo Jonas, wie geht’s? – Gut, danke!",
+        "tr": {
+          "uz": "Salom, Yonas, qalaysiz? – Yaxshi, rahmat!",
+          "uz-Cyrl": "Салом, Йонас, қалайсиз? – Яхши, раҳмат!",
+          "ru": "Привет, Йонас, как дела? – Хорошо, спасибо!"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-telefon",
+      "slug": "telefon",
+      "term": "das Telefon",
+      "icon": "phone",
+      "article": "das",
+      "plural": "die Telefone",
+      "tr": {
+        "uz": "telefon",
+        "uz-Cyrl": "телефон",
+        "ru": "телефон"
+      },
+      "pron": {
+        "uz": "das te-le-fon",
+        "uz-Cyrl": "дас те-ле-фон",
+        "ru": "дас те-ле-фон"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Das Telefon klingelt.",
+        "tr": {
+          "uz": "Telefon jiringlayapti.",
+          "uz-Cyrl": "Телефон жиринглаяпти.",
+          "ru": "Звонит телефон."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-handy",
+      "slug": "handy",
+      "term": "das Handy",
+      "icon": "phone",
+      "article": "das",
+      "plural": "die Handys",
+      "tr": {
+        "uz": "mobil telefon",
+        "uz-Cyrl": "мобил телефон",
+        "ru": "мобильный телефон"
+      },
+      "pron": {
+        "uz": "das hen-di",
+        "uz-Cyrl": "дас хен-ди",
+        "ru": "дас хен-ди"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Mein Handy ist leer.",
+        "tr": {
+          "uz": "Telefonimning quvvati tugadi.",
+          "uz-Cyrl": "Телефонимнинг қуввати тугади.",
+          "ru": "У меня сел мобильный."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-anrufen",
+      "slug": "anrufen",
+      "term": "anrufen",
+      "icon": "phone",
+      "tr": {
+        "uz": "qoʻngʻiroq qilmoq",
+        "uz-Cyrl": "қўнғироқ қилмоқ",
+        "ru": "звонить"
+      },
+      "pron": {
+        "uz": "an-ru-fen",
+        "uz-Cyrl": "ан-ру-фен",
+        "ru": "ан-ру-фен"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Ich rufe den Chef an.",
+        "tr": {
+          "uz": "Boshliqqa qoʻngʻiroq qilaman.",
+          "uz-Cyrl": "Бошлиққа қўнғироқ қиламан.",
+          "ru": "Я позвоню начальнику."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-zurueckrufen",
+      "slug": "zurueckrufen",
+      "term": "zurückrufen",
+      "icon": "repeat",
+      "tr": {
+        "uz": "qayta qoʻngʻiroq qilmoq",
+        "uz-Cyrl": "қайта қўнғироқ қилмоқ",
+        "ru": "перезвонить"
+      },
+      "pron": {
+        "uz": "tsu-ryuk-ru-fen",
+        "uz-Cyrl": "цу-рюк-ру-фен",
+        "ru": "цу-рюк-ру-фен"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Können Sie mich bitte zurückrufen?",
+        "tr": {
+          "uz": "Iltimos, menga qayta qoʻngʻiroq qila olasizmi?",
+          "uz-Cyrl": "Илтимос, менга қайта қўнғироқ қила оласизми?",
+          "ru": "Можете мне, пожалуйста, перезвонить?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-telefonnummer",
+      "slug": "telefonnummer",
+      "term": "die Telefonnummer",
+      "icon": "phone",
+      "article": "die",
+      "plural": "die Telefonnummern",
+      "tr": {
+        "uz": "telefon raqami",
+        "uz-Cyrl": "телефон рақами",
+        "ru": "номер телефона"
+      },
+      "pron": {
+        "uz": "die te-le-fon-nu-mer",
+        "uz-Cyrl": "ди те-ле-фон-ну-мер",
+        "ru": "ди те-ле-фон-ну-мер"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Wie ist Ihre Telefonnummer?",
+        "tr": {
+          "uz": "Telefon raqamingiz qanday?",
+          "uz-Cyrl": "Телефон рақамингиз қандай?",
+          "ru": "Какой у вас номер телефона?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-nachricht",
+      "slug": "nachricht",
+      "term": "die Nachricht",
+      "icon": "message-circle",
+      "article": "die",
+      "plural": "die Nachrichten",
+      "tr": {
+        "uz": "xabar",
+        "uz-Cyrl": "хабар",
+        "ru": "сообщение"
+      },
+      "pron": {
+        "uz": "die nax-rixt",
+        "uz-Cyrl": "ди нах-рихт",
+        "ru": "ди нах-рихт"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Ich schreibe Ihnen eine Nachricht.",
+        "tr": {
+          "uz": "Sizga xabar yozaman.",
+          "uz-Cyrl": "Сизга хабар ёзаман.",
+          "ru": "Я напишу вам сообщение."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-mailbox",
+      "slug": "mailbox",
+      "term": "die Mailbox",
+      "icon": "volume",
+      "article": "die",
+      "plural": "die Mailboxen",
+      "tr": {
+        "uz": "ovozli pochta",
+        "uz-Cyrl": "овозли почта",
+        "ru": "голосовая почта"
+      },
+      "pron": {
+        "uz": "die meyl-boks",
+        "uz-Cyrl": "ди мейль-бокс",
+        "ru": "ди мейль-бокс"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Bitte sprechen Sie auf die Mailbox.",
+        "tr": {
+          "uz": "Iltimos, ovozli pochtaga xabar qoldiring.",
+          "uz-Cyrl": "Илтимос, овозли почтага хабар қолдиринг.",
+          "ru": "Пожалуйста, оставьте сообщение на голосовой почте."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-besetzt",
+      "slug": "besetzt",
+      "term": "besetzt",
+      "icon": "phone",
+      "tr": {
+        "uz": "band (liniya)",
+        "uz-Cyrl": "банд (линия)",
+        "ru": "занято"
+      },
+      "pron": {
+        "uz": "be-zetst",
+        "uz-Cyrl": "бе-зецт",
+        "ru": "бе-зецт"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Die Leitung ist besetzt.",
+        "tr": {
+          "uz": "Liniya band.",
+          "uz-Cyrl": "Линия банд.",
+          "ru": "Линия занята."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-moment-bitte",
+      "slug": "moment-bitte",
+      "term": "Moment, bitte.",
+      "icon": "clock",
+      "tr": {
+        "uz": "Bir daqiqa, iltimos.",
+        "uz-Cyrl": "Бир дақиқа, илтимос.",
+        "ru": "Минутку, пожалуйста."
+      },
+      "pron": {
+        "uz": "mo-ment bi-te",
+        "uz-Cyrl": "мо-мент би-те",
+        "ru": "мо-мент би-те"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Moment, bitte. Ich hole Frau Weber.",
+        "tr": {
+          "uz": "Bir daqiqa, iltimos. Veber xonimni chaqiraman.",
+          "uz-Cyrl": "Бир дақиқа, илтимос. Вебер хонимни чақираман.",
+          "ru": "Минутку, пожалуйста. Я позову госпожу Вебер."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-koennen-sie-das-buchstabieren",
+      "slug": "koennen-sie-das-buchstabieren",
+      "term": "Können Sie das buchstabieren?",
+      "icon": "abc",
+      "tr": {
+        "uz": "Buni harfma-harf ayta olasizmi?",
+        "uz-Cyrl": "Буни ҳарфма-ҳарф айта оласизми?",
+        "ru": "Можете продиктовать по буквам?"
+      },
+      "pron": {
+        "uz": "kyo-nen zi das bux-shta-bi-ren",
+        "uz-Cyrl": "кё-нен зи дас бух-шта-би-рен",
+        "ru": "кё-нен зи дас бух-шта-би-рен"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Ihr Name ist schwer. Können Sie das buchstabieren?",
+        "tr": {
+          "uz": "Ismingiz qiyin ekan. Buni harfma-harf ayta olasizmi?",
+          "uz-Cyrl": "Исмингиз қийин экан. Буни ҳарфма-ҳарф айта оласизми?",
+          "ru": "Ваше имя сложное. Можете продиктовать по буквам?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-ich-verstehe-sie-schlecht",
+      "slug": "ich-verstehe-sie-schlecht",
+      "term": "Ich verstehe Sie schlecht.",
+      "icon": "volume",
+      "tr": {
+        "uz": "Sizni yomon eshityapman.",
+        "uz-Cyrl": "Сизни ёмон эшитяпман.",
+        "ru": "Я вас плохо слышу."
+      },
+      "pron": {
+        "uz": "ix fer-shte-e zi shlext",
+        "uz-Cyrl": "их фер-ште-е зи шлехт",
+        "ru": "их фер-ште-е зи шлехт"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Ich verstehe Sie schlecht. Können Sie lauter sprechen?",
+        "tr": {
+          "uz": "Sizni yomon eshityapman. Balandroq gapira olasizmi?",
+          "uz-Cyrl": "Сизни ёмон эшитяпман. Баландроқ гапира оласизми?",
+          "ru": "Я вас плохо слышу. Можете говорить громче?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-wer-spricht-da",
+      "slug": "wer-spricht-da",
+      "term": "Wer spricht da?",
+      "icon": "help",
+      "tr": {
+        "uz": "Kim gapiryapti?",
+        "uz-Cyrl": "Ким гапиряпти?",
+        "ru": "Кто говорит?"
+      },
+      "pron": {
+        "uz": "ver shprixt da",
+        "uz-Cyrl": "вер шприхт да",
+        "ru": "вер шприхт да"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Hallo? Wer spricht da, bitte?",
+        "tr": {
+          "uz": "Allo? Kim gapiryapti, iltimos?",
+          "uz-Cyrl": "Алло? Ким гапиряпти, илтимос?",
+          "ru": "Алло? Кто говорит, пожалуйста?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-auf-wiederhoeren",
+      "slug": "auf-wiederhoeren",
+      "term": "Auf Wiederhören!",
+      "icon": "phone",
+      "tr": {
+        "uz": "Xayr! (telefonda)",
+        "uz-Cyrl": "Хайр! (телефонда)",
+        "ru": "До свидания! (по телефону)"
+      },
+      "pron": {
+        "uz": "auf vi-der-hyo-ren",
+        "uz-Cyrl": "ауф ви-дер-хё-рен",
+        "ru": "ауф ви-дер-хё-рен"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Danke für Ihren Anruf. Auf Wiederhören!",
+        "tr": {
+          "uz": "Qoʻngʻirogʻingiz uchun rahmat. Xayr!",
+          "uz-Cyrl": "Қўнғироғингиз учун раҳмат. Хайр!",
+          "ru": "Спасибо за звонок. До свидания!"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-anruf",
+      "slug": "anruf",
+      "term": "der Anruf",
+      "icon": "phone",
+      "article": "der",
+      "plural": "die Anrufe",
+      "tr": {
+        "uz": "qoʻngʻiroq",
+        "uz-Cyrl": "қўнғироқ",
+        "ru": "звонок"
+      },
+      "pron": {
+        "uz": "der an-ruf",
+        "uz-Cyrl": "дер ан-руф",
+        "ru": "дер ан-руф"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Ich warte auf einen Anruf vom Chef.",
+        "tr": {
+          "uz": "Boshliqdan qoʻngʻiroq kutyapman.",
+          "uz-Cyrl": "Бошлиқдан қўнғироқ кутяпман.",
+          "ru": "Я жду звонка от начальника."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-erreichen",
+      "slug": "erreichen",
+      "term": "erreichen",
+      "icon": "phone",
+      "tr": {
+        "uz": "bogʻlana olmoq (telefonda topmoq)",
+        "uz-Cyrl": "боғлана олмоқ (телефонда топмоқ)",
+        "ru": "дозвониться, связаться"
+      },
+      "pron": {
+        "uz": "er-ray-xen",
+        "uz-Cyrl": "эр-рай-хен",
+        "ru": "эр-рай-хен"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Ich kann den Chef nicht erreichen.",
+        "tr": {
+          "uz": "Boshliq bilan bogʻlana olmayapman.",
+          "uz-Cyrl": "Бошлиқ билан боғлана олмаяпман.",
+          "ru": "Я не могу дозвониться до начальника."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-bewerbung",
+      "slug": "bewerbung",
+      "term": "die Bewerbung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Bewerbungen",
+      "tr": {
+        "uz": "ishga ariza",
+        "uz-Cyrl": "ишга ариза",
+        "ru": "заявление о приёме на работу"
+      },
+      "pron": {
+        "uz": "die be-ver-bung",
+        "uz-Cyrl": "ди бе-вер-бунг",
+        "ru": "ди бе-вер-бунг"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Ich schicke meine Bewerbung per E-Mail.",
+        "tr": {
+          "uz": "Arizamni elektron pochta orqali yuboraman.",
+          "uz-Cyrl": "Аризамни электрон почта орқали юбораман.",
+          "ru": "Я отправлю своё заявление по электронной почте."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-lebenslauf",
+      "slug": "lebenslauf",
+      "term": "der Lebenslauf",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Lebensläufe",
+      "tr": {
+        "uz": "tarjimai hol (rezyume)",
+        "uz-Cyrl": "таржимаи ҳол (резюме)",
+        "ru": "резюме"
+      },
+      "pron": {
+        "uz": "der le-bens-lauf",
+        "uz-Cyrl": "дер ле-бенс-лауф",
+        "ru": "дер ле-бенс-лауф"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Mein Lebenslauf ist auf Deutsch.",
+        "tr": {
+          "uz": "Tarjimai holim nemis tilida.",
+          "uz-Cyrl": "Таржимаи ҳолим немис тилида.",
+          "ru": "Моё резюме на немецком языке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-anschreiben",
+      "slug": "anschreiben",
+      "term": "das Anschreiben",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "die Anschreiben",
+      "tr": {
+        "uz": "motivatsion xat",
+        "uz-Cyrl": "мотивацион хат",
+        "ru": "сопроводительное письмо"
+      },
+      "pron": {
+        "uz": "das an-shray-ben",
+        "uz-Cyrl": "дас ан-шрай-бен",
+        "ru": "дас ан-шрай-бен"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Im Anschreiben erkläre ich, warum ich den Beruf lernen möchte.",
+        "tr": {
+          "uz": "Motivatsion xatda nega bu kasbni oʻrganmoqchi ekanimni tushuntiraman.",
+          "uz-Cyrl": "Мотивацион хатда нега бу касбни ўрганмоқчи эканимни тушунтираман.",
+          "ru": "В сопроводительном письме я объясняю, почему хочу освоить эту профессию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-vorstellungsgespraech",
+      "slug": "vorstellungsgespraech",
+      "term": "das Vorstellungsgespräch",
+      "icon": "messages",
+      "article": "das",
+      "plural": "die Vorstellungsgespräche",
+      "tr": {
+        "uz": "ish boʻyicha suhbat (intervyu)",
+        "uz-Cyrl": "иш бўйича суҳбат (интервью)",
+        "ru": "собеседование"
+      },
+      "pron": {
+        "uz": "das for-shte-lungs-ge-shprex",
+        "uz-Cyrl": "дас фор-ште-лунгс-ге-шпрех",
+        "ru": "дас фор-ште-лунгс-ге-шпрех"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Morgen habe ich ein Vorstellungsgespräch.",
+        "tr": {
+          "uz": "Ertaga ish boʻyicha suhbatim bor.",
+          "uz-Cyrl": "Эртага иш бўйича суҳбатим бор.",
+          "ru": "Завтра у меня собеседование."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-stelle",
+      "slug": "stelle",
+      "term": "die Stelle",
+      "icon": "briefcase",
+      "article": "die",
+      "plural": "die Stellen",
+      "tr": {
+        "uz": "ish oʻrni",
+        "uz-Cyrl": "иш ўрни",
+        "ru": "место (вакансия)"
+      },
+      "pron": {
+        "uz": "die shte-le",
+        "uz-Cyrl": "ди ште-ле",
+        "ru": "ди ште-ле"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Ist die Stelle noch frei?",
+        "tr": {
+          "uz": "Ish oʻrni hali boʻshmi?",
+          "uz-Cyrl": "Иш ўрни ҳали бўшми?",
+          "ru": "Место ещё свободно?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-stellenanzeige",
+      "slug": "stellenanzeige",
+      "term": "die Stellenanzeige",
+      "icon": "eye",
+      "article": "die",
+      "plural": "die Stellenanzeigen",
+      "tr": {
+        "uz": "ish eʼloni",
+        "uz-Cyrl": "иш эълони",
+        "ru": "объявление о вакансии"
+      },
+      "pron": {
+        "uz": "die shte-len-an-tsay-ge",
+        "uz-Cyrl": "ди ште-лен-ан-цай-ге",
+        "ru": "ди ште-лен-ан-цай-ге"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Ich habe die Stellenanzeige im Internet gelesen.",
+        "tr": {
+          "uz": "Ish eʼlonini internetda oʻqidim.",
+          "uz-Cyrl": "Иш эълонини интернетда ўқидим.",
+          "ru": "Я прочитал объявление о вакансии в интернете."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-ausbildungsplatz",
+      "slug": "ausbildungsplatz",
+      "term": "der Ausbildungsplatz",
+      "icon": "book",
+      "article": "der",
+      "plural": "die Ausbildungsplätze",
+      "tr": {
+        "uz": "kasbiy taʼlim (Ausbildung) oʻrni",
+        "uz-Cyrl": "касбий таълим (аусбилдунг) ўрни",
+        "ru": "место профобучения (Ausbildung)"
+      },
+      "pron": {
+        "uz": "der aus-bil-dungs-plats",
+        "uz-Cyrl": "дер аус-биль-дунгс-плац",
+        "ru": "дер аус-биль-дунгс-плац"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Ich suche einen Ausbildungsplatz als Koch.",
+        "tr": {
+          "uz": "Oshpazlik boʻyicha Ausbildung oʻrnini qidiryapman.",
+          "uz-Cyrl": "Ошпазлик бўйича аусбилдунг ўрнини қидиряпман.",
+          "ru": "Я ищу место профобучения на повара."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-sich-bewerben",
+      "slug": "sich-bewerben",
+      "term": "sich bewerben",
+      "icon": "file-text",
+      "tr": {
+        "uz": "ishga ariza bermoq",
+        "uz-Cyrl": "ишга ариза бермоқ",
+        "ru": "подавать заявление (на работу)"
+      },
+      "pron": {
+        "uz": "zix be-ver-ben",
+        "uz-Cyrl": "зих бе-вер-бен",
+        "ru": "зих бе-вер-бен"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Ich möchte mich als Lagerist bewerben.",
+        "tr": {
+          "uz": "Omborchi lavozimiga ariza bermoqchiman.",
+          "uz-Cyrl": "Омборчи лавозимига ариза бермоқчиман.",
+          "ru": "Я хочу подать заявление на должность кладовщика."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-erfahrung",
+      "slug": "erfahrung",
+      "term": "die Erfahrung",
+      "icon": "briefcase",
+      "article": "die",
+      "plural": "die Erfahrungen",
+      "tr": {
+        "uz": "tajriba",
+        "uz-Cyrl": "тажриба",
+        "ru": "опыт"
+      },
+      "pron": {
+        "uz": "die er-fa-rung",
+        "uz-Cyrl": "ди эр-фа-рунг",
+        "ru": "ди эр-фа-рунг"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Ich habe Erfahrung als Schweißer.",
+        "tr": {
+          "uz": "Payvandchi sifatida tajribam bor.",
+          "uz-Cyrl": "Пайвандчи сифатида тажрибам бор.",
+          "ru": "У меня есть опыт работы сварщиком."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-zusage",
+      "slug": "zusage",
+      "term": "die Zusage",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Zusagen",
+      "tr": {
+        "uz": "ijobiy javob (qabul)",
+        "uz-Cyrl": "ижобий жавоб (қабул)",
+        "ru": "положительный ответ"
+      },
+      "pron": {
+        "uz": "die tsu-za-ge",
+        "uz-Cyrl": "ди цу-за-ге",
+        "ru": "ди цу-за-ге"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Ich habe eine Zusage bekommen!",
+        "tr": {
+          "uz": "Ijobiy javob oldim!",
+          "uz-Cyrl": "Ижобий жавоб олдим!",
+          "ru": "Я получил положительный ответ!"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-absage",
+      "slug": "absage",
+      "term": "die Absage",
+      "icon": "mood-sad",
+      "article": "die",
+      "plural": "die Absagen",
+      "tr": {
+        "uz": "rad javobi",
+        "uz-Cyrl": "рад жавоби",
+        "ru": "отказ"
+      },
+      "pron": {
+        "uz": "die ap-za-ge",
+        "uz-Cyrl": "ди ап-за-ге",
+        "ru": "ди ап-за-ге"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Leider habe ich eine Absage bekommen.",
+        "tr": {
+          "uz": "Afsuski, rad javobi oldim.",
+          "uz-Cyrl": "Афсуски, рад жавоби олдим.",
+          "ru": "К сожалению, я получил отказ."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-praktikum",
+      "slug": "praktikum",
+      "term": "das Praktikum",
+      "icon": "tools",
+      "article": "das",
+      "plural": "die Praktika",
+      "tr": {
+        "uz": "amaliyot (stajirovka)",
+        "uz-Cyrl": "амалиёт (стажировка)",
+        "ru": "практика (стажировка)"
+      },
+      "pron": {
+        "uz": "das prak-ti-kum",
+        "uz-Cyrl": "дас прак-ти-кум",
+        "ru": "дас прак-ти-кум"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Kann ich zuerst ein Praktikum machen?",
+        "tr": {
+          "uz": "Avval amaliyot oʻtsam boʻladimi?",
+          "uz-Cyrl": "Аввал амалиёт ўтсам бўладими?",
+          "ru": "Можно мне сначала пройти практику?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-staerke",
+      "slug": "staerke",
+      "term": "die Stärke",
+      "icon": "mood-smile",
+      "article": "die",
+      "plural": "die Stärken",
+      "tr": {
+        "uz": "kuchli tomon",
+        "uz-Cyrl": "кучли томон",
+        "ru": "сильная сторона"
+      },
+      "pron": {
+        "uz": "die shter-ke",
+        "uz-Cyrl": "ди штер-ке",
+        "ru": "ди штер-ке"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Meine Stärke ist Teamarbeit.",
+        "tr": {
+          "uz": "Mening kuchli tomonim — jamoada ishlash.",
+          "uz-Cyrl": "Менинг кучли томоним — жамоада ишлаш.",
+          "ru": "Моя сильная сторона — работа в команде."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-agentur-fuer-arbeit",
+      "slug": "agentur-fuer-arbeit",
+      "term": "die Agentur für Arbeit",
+      "icon": "building",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "Bandlik agentligi (Germaniya)",
+        "uz-Cyrl": "Бандлик агентлиги (Германия)",
+        "ru": "Агентство по труду (Германия)"
+      },
+      "pron": {
+        "uz": "die a-gen-tur fyur ar-bayt",
+        "uz-Cyrl": "ди а-ген-тур фюр ар-байт",
+        "ru": "ди а-ген-тур фюр ар-байт"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Die Agentur für Arbeit hilft bei der Suche nach einer Stelle.",
+        "tr": {
+          "uz": "Bandlik agentligi ish oʻrni qidirishda yordam beradi.",
+          "uz-Cyrl": "Бандлик агентлиги иш ўрни қидиришда ёрдам беради.",
+          "ru": "Агентство по труду помогает в поиске работы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-unterlagen",
+      "slug": "unterlagen",
+      "term": "die Unterlagen",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "hujjatlar",
+        "uz-Cyrl": "ҳужжатлар",
+        "ru": "документы"
+      },
+      "pron": {
+        "uz": "die un-ter-la-gen",
+        "uz-Cyrl": "ди ун-тер-ла-ген",
+        "ru": "ди ун-тер-ла-ген"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Bitte schicken Sie alle Unterlagen bis Freitag.",
+        "tr": {
+          "uz": "Iltimos, barcha hujjatlarni jumagacha yuboring.",
+          "uz-Cyrl": "Илтимос, барча ҳужжатларни жумагача юборинг.",
+          "ru": "Пожалуйста, пришлите все документы до пятницы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-problem",
+      "slug": "problem",
+      "term": "das Problem",
+      "icon": "alert-triangle",
+      "article": "das",
+      "plural": "die Probleme",
+      "tr": {
+        "uz": "muammo",
+        "uz-Cyrl": "муаммо",
+        "ru": "проблема"
+      },
+      "pron": {
+        "uz": "das pro-blem",
+        "uz-Cyrl": "дас про-блем",
+        "ru": "дас про-блем"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Ich habe ein Problem mit der Maschine.",
+        "tr": {
+          "uz": "Mashina bilan muammom bor.",
+          "uz-Cyrl": "Машина билан муаммом бор.",
+          "ru": "У меня проблема с машиной."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-kaputt",
+      "slug": "kaputt",
+      "term": "kaputt",
+      "icon": "tools",
+      "tr": {
+        "uz": "buzuq, buzilgan",
+        "uz-Cyrl": "бузуқ, бузилган",
+        "ru": "сломан, сломано"
+      },
+      "pron": {
+        "uz": "ka-put",
+        "uz-Cyrl": "ка-пут",
+        "ru": "ка-пут"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Der Drucker ist kaputt.",
+        "tr": {
+          "uz": "Printer buzilgan.",
+          "uz-Cyrl": "Принтер бузилган.",
+          "ru": "Принтер сломан."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-das-funktioniert-nicht",
+      "slug": "das-funktioniert-nicht",
+      "term": "Das funktioniert nicht.",
+      "icon": "power",
+      "tr": {
+        "uz": "Bu ishlamayapti.",
+        "uz-Cyrl": "Бу ишламаяпти.",
+        "ru": "Это не работает."
+      },
+      "pron": {
+        "uz": "das funk-tsio-nirt nixt",
+        "uz-Cyrl": "дас функ-цио-нирт нихт",
+        "ru": "дас функ-цио-нирт нихт"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Ich habe es zweimal versucht, aber das funktioniert nicht.",
+        "tr": {
+          "uz": "Ikki marta urinib koʻrdim, lekin bu ishlamayapti.",
+          "uz-Cyrl": "Икки марта уриниб кўрдим, лекин бу ишламаяпти.",
+          "ru": "Я пробовал два раза, но это не работает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-fehler",
+      "slug": "fehler",
+      "term": "der Fehler",
+      "icon": "alert-octagon",
+      "article": "der",
+      "plural": "die Fehler",
+      "tr": {
+        "uz": "xato",
+        "uz-Cyrl": "хато",
+        "ru": "ошибка"
+      },
+      "pron": {
+        "uz": "der fe-ler",
+        "uz-Cyrl": "дер фе-лер",
+        "ru": "дер фе-лер"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Entschuldigung, das war mein Fehler.",
+        "tr": {
+          "uz": "Kechirasiz, bu mening xatoyim edi.",
+          "uz-Cyrl": "Кечирасиз, бу менинг хатойим эди.",
+          "ru": "Извините, это была моя ошибка."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-melden",
+      "slug": "melden",
+      "term": "melden",
+      "icon": "message-circle",
+      "tr": {
+        "uz": "xabar bermoq",
+        "uz-Cyrl": "хабар бермоқ",
+        "ru": "сообщать"
+      },
+      "pron": {
+        "uz": "mel-den",
+        "uz-Cyrl": "мель-ден",
+        "ru": "мель-ден"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Bitte melden Sie jeden Schaden sofort.",
+        "tr": {
+          "uz": "Iltimos, har qanday shikastni darhol xabar qiling.",
+          "uz-Cyrl": "Илтимос, ҳар қандай шикастни дарҳол хабар қилинг.",
+          "ru": "Пожалуйста, сразу сообщайте о любом повреждении."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-bescheid-sagen",
+      "slug": "bescheid-sagen",
+      "term": "Bescheid sagen",
+      "icon": "messages",
+      "tr": {
+        "uz": "xabardor qilmoq",
+        "uz-Cyrl": "хабардор қилмоқ",
+        "ru": "дать знать, предупредить"
+      },
+      "pron": {
+        "uz": "be-shayt za-gen",
+        "uz-Cyrl": "бе-шайт за-ген",
+        "ru": "бе-шайт за-ген"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Sagen Sie mir bitte Bescheid, wenn Sie fertig sind.",
+        "tr": {
+          "uz": "Tugatganingizda, iltimos, menga xabar bering.",
+          "uz-Cyrl": "Тугатганингизда, илтимос, менга хабар беринг.",
+          "ru": "Пожалуйста, дайте мне знать, когда закончите."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-schaden",
+      "slug": "schaden",
+      "term": "der Schaden",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Schäden",
+      "tr": {
+        "uz": "shikast (zarar)",
+        "uz-Cyrl": "шикаст (зарар)",
+        "ru": "повреждение (ущерб)"
+      },
+      "pron": {
+        "uz": "der sha-den",
+        "uz-Cyrl": "дер ша-ден",
+        "ru": "дер ша-ден"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Ich sehe einen Schaden am Kabel.",
+        "tr": {
+          "uz": "Kabelda shikast koʻryapman.",
+          "uz-Cyrl": "Кабелда шикаст кўряпман.",
+          "ru": "Я вижу повреждение на кабеле."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-vorgesetzte",
+      "slug": "vorgesetzte",
+      "term": "der Vorgesetzte",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Vorgesetzten",
+      "tr": {
+        "uz": "rahbar (bevosita boshliq)",
+        "uz-Cyrl": "раҳбар (бевосита бошлиқ)",
+        "ru": "непосредственный начальник"
+      },
+      "pron": {
+        "uz": "der for-ge-zets-te",
+        "uz-Cyrl": "дер фор-ге-зец-те",
+        "ru": "дер фор-ге-зец-те"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Der Vorgesetzte entscheidet das.",
+        "tr": {
+          "uz": "Buni rahbar hal qiladi.",
+          "uz-Cyrl": "Буни раҳбар ҳал қилади.",
+          "ru": "Это решает начальник."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-verlieren",
+      "slug": "verlieren",
+      "term": "verlieren",
+      "icon": "key",
+      "tr": {
+        "uz": "yoʻqotmoq",
+        "uz-Cyrl": "йўқотмоқ",
+        "ru": "терять"
+      },
+      "pron": {
+        "uz": "fer-li-ren",
+        "uz-Cyrl": "фер-ли-рен",
+        "ru": "фер-ли-рен"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Ich habe meinen Schlüssel verloren.",
+        "tr": {
+          "uz": "Kalitimni yoʻqotib qoʻydim.",
+          "uz-Cyrl": "Калитимни йўқотиб қўйдим.",
+          "ru": "Я потерял свой ключ."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-es-tut-mir-leid",
+      "slug": "es-tut-mir-leid",
+      "term": "Es tut mir leid.",
+      "icon": "mood-sad",
+      "tr": {
+        "uz": "Kechirasiz (afsusdaman).",
+        "uz-Cyrl": "Кечирасиз (афсусдаман).",
+        "ru": "Мне жаль."
+      },
+      "pron": {
+        "uz": "es tut mir layt",
+        "uz-Cyrl": "эс тут мир лайт",
+        "ru": "эс тут мир лайт"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Es tut mir leid, das ist kaputt.",
+        "tr": {
+          "uz": "Kechirasiz, bu buzilib qoldi.",
+          "uz-Cyrl": "Кечирасиз, бу бузилиб қолди.",
+          "ru": "Мне жаль, это сломалось."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-reparieren",
+      "slug": "reparieren",
+      "term": "reparieren",
+      "icon": "hammer",
+      "tr": {
+        "uz": "taʼmirlamoq",
+        "uz-Cyrl": "таъмирламоқ",
+        "ru": "ремонтировать, чинить"
+      },
+      "pron": {
+        "uz": "re-pa-ri-ren",
+        "uz-Cyrl": "ре-па-ри-рен",
+        "ru": "ре-па-ри-рен"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Wer kann die Tür reparieren?",
+        "tr": {
+          "uz": "Eshikni kim taʼmirlay oladi?",
+          "uz-Cyrl": "Эшикни ким таъмирлай олади?",
+          "ru": "Кто может починить дверь?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-was-ist-passiert",
+      "slug": "was-ist-passiert",
+      "term": "Was ist passiert?",
+      "icon": "help",
+      "tr": {
+        "uz": "Nima boʻldi?",
+        "uz-Cyrl": "Нима бўлди?",
+        "ru": "Что случилось?"
+      },
+      "pron": {
+        "uz": "vas ist pa-sirt",
+        "uz-Cyrl": "вас ист па-сирт",
+        "ru": "вас ист па-сирт"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Was ist passiert? – Die Maschine ist plötzlich stehen geblieben.",
+        "tr": {
+          "uz": "Nima boʻldi? – Mashina birdan toʻxtab qoldi.",
+          "uz-Cyrl": "Нима бўлди? – Машина бирдан тўхтаб қолди.",
+          "ru": "Что случилось? – Машина вдруг остановилась."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-loesung",
+      "slug": "loesung",
+      "term": "die Lösung",
+      "icon": "bulb",
+      "article": "die",
+      "plural": "die Lösungen",
+      "tr": {
+        "uz": "yechim",
+        "uz-Cyrl": "ечим",
+        "ru": "решение"
+      },
+      "pron": {
+        "uz": "die lyo-zung",
+        "uz-Cyrl": "ди лё-зунг",
+        "ru": "ди лё-зунг"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Wir finden zusammen eine Lösung.",
+        "tr": {
+          "uz": "Birgalikda yechim topamiz.",
+          "uz-Cyrl": "Биргаликда ечим топамиз.",
+          "ru": "Мы вместе найдём решение."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-hausmeister",
+      "slug": "hausmeister",
+      "term": "der Hausmeister",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Hausmeister",
+      "tr": {
+        "uz": "bino ustasi (xoʻjalik xodimi)",
+        "uz-Cyrl": "бино устаси (хўжалик ходими)",
+        "ru": "завхоз, техник здания"
+      },
+      "pron": {
+        "uz": "der haus-may-ster",
+        "uz-Cyrl": "дер хаус-май-стер",
+        "ru": "дер хаус-май-стер"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Der Hausmeister repariert die Heizung.",
+        "tr": {
+          "uz": "Bino ustasi isitish tizimini taʼmirlaydi.",
+          "uz-Cyrl": "Бино устаси иситиш тизимини таъмирлайди.",
+          "ru": "Завхоз ремонтирует отопление."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-dringend",
+      "slug": "dringend",
+      "term": "dringend",
+      "icon": "alert-octagon",
+      "tr": {
+        "uz": "shoshilinch",
+        "uz-Cyrl": "шошилинч",
+        "ru": "срочно, срочный"
+      },
+      "pron": {
+        "uz": "drin-gent",
+        "uz-Cyrl": "дрин-гент",
+        "ru": "дрин-гент"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Es ist dringend, bitte kommen Sie schnell!",
+        "tr": {
+          "uz": "Bu shoshilinch, iltimos, tez keling!",
+          "uz-Cyrl": "Бу шошилинч, илтимос, тез келинг!",
+          "ru": "Это срочно, пожалуйста, приходите быстрее!"
+        }
+      },
+      "safety": true,
       "status": "review",
       "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
     }
