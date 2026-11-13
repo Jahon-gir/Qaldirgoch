@@ -48,6 +48,46 @@
       },
       "order": 4,
       "level": "A2"
+    },
+    {
+      "id": "saralash",
+      "title": {
+        "uz": "Hosilni saralash va qadoqlash",
+        "uz-Cyrl": "Ҳосилни саралаш ва қадоқлаш",
+        "ru": "Сортировка и упаковка урожая"
+      },
+      "order": 5,
+      "level": "A1"
+    },
+    {
+      "id": "ob-havo",
+      "title": {
+        "uz": "Ob-havo va fasllar",
+        "uz-Cyrl": "Об-ҳаво ва фасллар",
+        "ru": "Погода и времена года"
+      },
+      "order": 6,
+      "level": "A1"
+    },
+    {
+      "id": "hayvon-sogligi",
+      "title": {
+        "uz": "Hayvonlar sogʻligʻi",
+        "uz-Cyrl": "Ҳайвонлар соғлиғи",
+        "ru": "Здоровье животных"
+      },
+      "order": 7,
+      "level": "A2"
+    },
+    {
+      "id": "mavsumiy-ish",
+      "title": {
+        "uz": "Mavsumiy ish",
+        "uz-Cyrl": "Мавсумий иш",
+        "ru": "Сезонная работа"
+      },
+      "order": 8,
+      "level": "A2"
     }
   ],
   "words": [
@@ -2175,6 +2215,2091 @@
         }
       },
       "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-saralash-kiste",
+      "slug": "kiste",
+      "term": "die Kiste",
+      "icon": "briefcase",
+      "article": "die",
+      "plural": "die Kisten",
+      "tr": {
+        "uz": "yashik (quti)",
+        "uz-Cyrl": "яшик (қути)",
+        "ru": "ящик"
+      },
+      "pron": {
+        "uz": "die kis-te",
+        "uz-Cyrl": "ди кис-те",
+        "ru": "ди кис-те"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "saralash",
+      "example": {
+        "term": "Stellen Sie die Kiste auf die Palette.",
+        "tr": {
+          "uz": "Yashikni poddonga qoʻying.",
+          "uz-Cyrl": "Яшикни поддонга қўйинг.",
+          "ru": "Поставьте ящик на поддон."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-saralash-foerderband",
+      "slug": "foerderband",
+      "term": "das Förderband",
+      "icon": "alert-triangle",
+      "article": "das",
+      "plural": "die Förderbänder",
+      "tr": {
+        "uz": "konveyer lentasi",
+        "uz-Cyrl": "конвейер лентаси",
+        "ru": "конвейерная лента"
+      },
+      "pron": {
+        "uz": "das fyor-der-bant",
+        "uz-Cyrl": "дас фёр-дер-бант",
+        "ru": "дас фёр-дер-бант"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "saralash",
+      "example": {
+        "term": "Greifen Sie nicht in das laufende Förderband!",
+        "tr": {
+          "uz": "Ishlayotgan konveyerga qoʻl tiqmang!",
+          "uz-Cyrl": "Ишлаётган конвейерга қўл тиқманг!",
+          "ru": "Не лезьте руками в работающий конвейер!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-saralash-aussortieren",
+      "slug": "aussortieren",
+      "term": "aussortieren",
+      "icon": "check",
+      "tr": {
+        "uz": "saralab ajratmoq",
+        "uz-Cyrl": "саралаб ажратмоқ",
+        "ru": "отбраковывать"
+      },
+      "pron": {
+        "uz": "aus-zor-ti-ren",
+        "uz-Cyrl": "аус-зор-ти-рен",
+        "ru": "аус-зор-ти-рен"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "saralash",
+      "example": {
+        "term": "Sortieren Sie die kleinen Äpfel aus.",
+        "tr": {
+          "uz": "Mayda olmalarni ajratib oling.",
+          "uz-Cyrl": "Майда олмаларни ажратиб олинг.",
+          "ru": "Отберите мелкие яблоки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-saralash-faul",
+      "slug": "faul",
+      "term": "faul",
+      "icon": "trash",
+      "tr": {
+        "uz": "chirigan",
+        "uz-Cyrl": "чириган",
+        "ru": "гнилой"
+      },
+      "pron": {
+        "uz": "faul",
+        "uz-Cyrl": "фауль",
+        "ru": "фауль"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "saralash",
+      "example": {
+        "term": "Faule Früchte kommen in den Eimer.",
+        "tr": {
+          "uz": "Chirigan mevalar chelakka tashlanadi.",
+          "uz-Cyrl": "Чириган мевалар челакка ташланади.",
+          "ru": "Гнилые фрукты — в ведро."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-saralash-druckstelle",
+      "slug": "druckstelle",
+      "term": "die Druckstelle",
+      "icon": "eye",
+      "article": "die",
+      "plural": "die Druckstellen",
+      "tr": {
+        "uz": "ezilgan joy (dogʻ)",
+        "uz-Cyrl": "эзилган жой (доғ)",
+        "ru": "вмятина (на фрукте)"
+      },
+      "pron": {
+        "uz": "die druk-shte-le",
+        "uz-Cyrl": "ди друк-ште-ле",
+        "ru": "ди друк-ште-ле"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "saralash",
+      "example": {
+        "term": "Der Apfel hat eine Druckstelle.",
+        "tr": {
+          "uz": "Olmaning ezilgan joyi bor.",
+          "uz-Cyrl": "Олманинг эзилган жойи бор.",
+          "ru": "На яблоке вмятина."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-saralash-schale",
+      "slug": "schale",
+      "term": "die Schale",
+      "icon": "bowl",
+      "article": "die",
+      "plural": "die Schalen",
+      "tr": {
+        "uz": "plastik idishcha (lotok)",
+        "uz-Cyrl": "пластик идишча (лоток)",
+        "ru": "лоток"
+      },
+      "pron": {
+        "uz": "die sha-le",
+        "uz-Cyrl": "ди ша-ле",
+        "ru": "ди ша-ле"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "saralash",
+      "example": {
+        "term": "In jede Schale kommen 500 Gramm Erdbeeren.",
+        "tr": {
+          "uz": "Har bir lotokka 500 gramm qulupnay solinadi.",
+          "uz-Cyrl": "Ҳар бир лотокка 500 грамм қулупнай солинади.",
+          "ru": "В каждый лоток кладём 500 граммов клубники."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-saralash-kilo",
+      "slug": "kilo",
+      "term": "das Kilo",
+      "icon": "ruler",
+      "article": "das",
+      "plural": "die Kilos",
+      "tr": {
+        "uz": "kilogramm",
+        "uz-Cyrl": "килограмм",
+        "ru": "килограмм"
+      },
+      "pron": {
+        "uz": "das ki-lo",
+        "uz-Cyrl": "дас ки-ло",
+        "ru": "дас ки-ло"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "saralash",
+      "example": {
+        "term": "Die Kiste wiegt zehn Kilo.",
+        "tr": {
+          "uz": "Yashik oʻn kilogramm keladi.",
+          "uz-Cyrl": "Яшик ўн килограмм келади.",
+          "ru": "Ящик весит десять килограммов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-saralash-voll",
+      "slug": "voll",
+      "term": "voll",
+      "icon": "check",
+      "tr": {
+        "uz": "toʻla",
+        "uz-Cyrl": "тўла",
+        "ru": "полный"
+      },
+      "pron": {
+        "uz": "fol",
+        "uz-Cyrl": "фоль",
+        "ru": "фоль"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "saralash",
+      "example": {
+        "term": "Die Kiste ist voll.",
+        "tr": {
+          "uz": "Yashik toʻla.",
+          "uz-Cyrl": "Яшик тўла.",
+          "ru": "Ящик полный."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-saralash-leer",
+      "slug": "leer",
+      "term": "leer",
+      "icon": "briefcase",
+      "tr": {
+        "uz": "boʻsh",
+        "uz-Cyrl": "бўш",
+        "ru": "пустой"
+      },
+      "pron": {
+        "uz": "ler",
+        "uz-Cyrl": "лер",
+        "ru": "лер"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "saralash",
+      "example": {
+        "term": "Bringen Sie leere Kisten.",
+        "tr": {
+          "uz": "Boʻsh yashiklar olib keling.",
+          "uz-Cyrl": "Бўш яшиклар олиб келинг.",
+          "ru": "Принесите пустые ящики."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-saralash-packhalle",
+      "slug": "packhalle",
+      "term": "die Packhalle",
+      "icon": "building",
+      "article": "die",
+      "plural": "die Packhallen",
+      "tr": {
+        "uz": "qadoqlash sexi",
+        "uz-Cyrl": "қадоқлаш сехи",
+        "ru": "упаковочный цех"
+      },
+      "pron": {
+        "uz": "die pak-ha-le",
+        "uz-Cyrl": "ди пак-ха-ле",
+        "ru": "ди пак-ха-ле"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "saralash",
+      "example": {
+        "term": "Am Nachmittag arbeiten Sie in der Packhalle.",
+        "tr": {
+          "uz": "Tushdan keyin qadoqlash sexida ishlaysiz.",
+          "uz-Cyrl": "Тушдан кейин қадоқлаш сехида ишлайсиз.",
+          "ru": "После обеда вы работаете в упаковочном цехе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-saralash-salat",
+      "slug": "salat",
+      "term": "der Salat",
+      "icon": "salad",
+      "article": "der",
+      "plural": "die Salate",
+      "tr": {
+        "uz": "salat bargi",
+        "uz-Cyrl": "салат барги",
+        "ru": "салат (растение)"
+      },
+      "pron": {
+        "uz": "der za-lat",
+        "uz-Cyrl": "дер за-лат",
+        "ru": "дер за-лат"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "saralash",
+      "example": {
+        "term": "Schneiden Sie den Salat unten ab.",
+        "tr": {
+          "uz": "Salatni pastidan kesing.",
+          "uz-Cyrl": "Салатни пастидан кесинг.",
+          "ru": "Срежьте салат снизу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-saralash-kartoffel",
+      "slug": "kartoffel",
+      "term": "die Kartoffel",
+      "icon": "plant",
+      "article": "die",
+      "plural": "die Kartoffeln",
+      "tr": {
+        "uz": "kartoshka",
+        "uz-Cyrl": "картошка",
+        "ru": "картофель"
+      },
+      "pron": {
+        "uz": "die kar-to-fel",
+        "uz-Cyrl": "ди кар-то-фель",
+        "ru": "ди кар-то-фель"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "saralash",
+      "example": {
+        "term": "Die Kartoffeln kommen in Säcke.",
+        "tr": {
+          "uz": "Kartoshka qoplarga solinadi.",
+          "uz-Cyrl": "Картошка қопларга солинади.",
+          "ru": "Картофель кладут в мешки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-saralash-zwiebel",
+      "slug": "zwiebel",
+      "term": "die Zwiebel",
+      "icon": "plant",
+      "article": "die",
+      "plural": "die Zwiebeln",
+      "tr": {
+        "uz": "piyoz",
+        "uz-Cyrl": "пиёз",
+        "ru": "лук"
+      },
+      "pron": {
+        "uz": "die tsvi-bel",
+        "uz-Cyrl": "ди цви-бель",
+        "ru": "ди цви-бель"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "saralash",
+      "example": {
+        "term": "Die Zwiebeln müssen trocken sein.",
+        "tr": {
+          "uz": "Piyoz quruq boʻlishi kerak.",
+          "uz-Cyrl": "Пиёз қуруқ бўлиши керак.",
+          "ru": "Лук должен быть сухим."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-saralash-moehre",
+      "slug": "moehre",
+      "term": "die Möhre",
+      "icon": "plant",
+      "article": "die",
+      "plural": "die Möhren",
+      "tr": {
+        "uz": "sabzi",
+        "uz-Cyrl": "сабзи",
+        "ru": "морковь"
+      },
+      "pron": {
+        "uz": "die myo-re",
+        "uz-Cyrl": "ди мё-ре",
+        "ru": "ди мё-ре"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "saralash",
+      "example": {
+        "term": "Waschen Sie die Möhren.",
+        "tr": {
+          "uz": "Sabzilarni yuving.",
+          "uz-Cyrl": "Сабзиларни ювинг.",
+          "ru": "Помойте морковь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-saralash-kuehlraum",
+      "slug": "kuehlraum",
+      "term": "der Kühlraum",
+      "icon": "thermometer",
+      "article": "der",
+      "plural": "die Kühlräume",
+      "tr": {
+        "uz": "sovutish xonasi",
+        "uz-Cyrl": "совутиш хонаси",
+        "ru": "холодильное помещение"
+      },
+      "pron": {
+        "uz": "der kyul-raum",
+        "uz-Cyrl": "дер кюль-раум",
+        "ru": "дер кюль-раум"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "saralash",
+      "example": {
+        "term": "Die Erdbeeren kommen sofort in den Kühlraum.",
+        "tr": {
+          "uz": "Qulupnay darhol sovutish xonasiga kiradi.",
+          "uz-Cyrl": "Қулупнай дарҳол совутиш хонасига киради.",
+          "ru": "Клубника сразу идёт в холодильное помещение."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ob-havo-wetter",
+      "slug": "wetter",
+      "term": "das Wetter",
+      "icon": "sun",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "ob-havo",
+        "uz-Cyrl": "об-ҳаво",
+        "ru": "погода"
+      },
+      "pron": {
+        "uz": "das ve-ter",
+        "uz-Cyrl": "дас ве-тер",
+        "ru": "дас ве-тер"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Wie ist das Wetter morgen?",
+        "tr": {
+          "uz": "Ertaga ob-havo qanday?",
+          "uz-Cyrl": "Эртага об-ҳаво қандай?",
+          "ru": "Какая погода завтра?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ob-havo-sonne",
+      "slug": "sonne",
+      "term": "die Sonne",
+      "icon": "sun",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "quyosh",
+        "uz-Cyrl": "қуёш",
+        "ru": "солнце"
+      },
+      "pron": {
+        "uz": "die zo-ne",
+        "uz-Cyrl": "ди зо-не",
+        "ru": "ди зо-не"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Die Sonne ist heute sehr stark.",
+        "tr": {
+          "uz": "Bugun quyosh juda kuchli.",
+          "uz-Cyrl": "Бугун қуёш жуда кучли.",
+          "ru": "Сегодня солнце очень сильное."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ob-havo-wind",
+      "slug": "wind",
+      "term": "der Wind",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Winde",
+      "tr": {
+        "uz": "shamol",
+        "uz-Cyrl": "шамол",
+        "ru": "ветер"
+      },
+      "pron": {
+        "uz": "der vint",
+        "uz-Cyrl": "дер винт",
+        "ru": "дер винт"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Bei starkem Wind nicht auf die Leiter!",
+        "tr": {
+          "uz": "Kuchli shamolda narvonga chiqmang!",
+          "uz-Cyrl": "Кучли шамолда нарвонга чиқманг!",
+          "ru": "При сильном ветре не лезьте на лестницу!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ob-havo-frost",
+      "slug": "frost",
+      "term": "der Frost",
+      "icon": "thermometer",
+      "article": "der",
+      "plural": "die Fröste",
+      "tr": {
+        "uz": "ayoz",
+        "uz-Cyrl": "аёз",
+        "ru": "мороз"
+      },
+      "pron": {
+        "uz": "der frost",
+        "uz-Cyrl": "дер фрост",
+        "ru": "дер фрост"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Heute Nacht kommt Frost.",
+        "tr": {
+          "uz": "Bugun kechasi ayoz boʻladi.",
+          "uz-Cyrl": "Бугун кечаси аёз бўлади.",
+          "ru": "Сегодня ночью будет мороз."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ob-havo-hagel",
+      "slug": "hagel",
+      "term": "der Hagel",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "doʻl",
+        "uz-Cyrl": "дўл",
+        "ru": "град"
+      },
+      "pron": {
+        "uz": "der ha-gel",
+        "uz-Cyrl": "дер ха-гель",
+        "ru": "дер ха-гель"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Der Hagel hat die Äpfel beschädigt.",
+        "tr": {
+          "uz": "Doʻl olmalarni shikastladi.",
+          "uz-Cyrl": "Дўл олмаларни шикастлади.",
+          "ru": "Град повредил яблоки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ob-havo-nass",
+      "slug": "nass",
+      "term": "nass",
+      "icon": "droplet",
+      "tr": {
+        "uz": "hoʻl",
+        "uz-Cyrl": "ҳўл",
+        "ru": "мокрый"
+      },
+      "pron": {
+        "uz": "nas",
+        "uz-Cyrl": "нас",
+        "ru": "нас"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Das Gras ist noch nass.",
+        "tr": {
+          "uz": "Oʻt hali hoʻl.",
+          "uz-Cyrl": "Ўт ҳали ҳўл.",
+          "ru": "Трава ещё мокрая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ob-havo-trocken",
+      "slug": "trocken",
+      "term": "trocken",
+      "icon": "sun",
+      "tr": {
+        "uz": "quruq",
+        "uz-Cyrl": "қуруқ",
+        "ru": "сухой"
+      },
+      "pron": {
+        "uz": "tro-ken",
+        "uz-Cyrl": "тро-кен",
+        "ru": "тро-кен"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Der Boden ist zu trocken.",
+        "tr": {
+          "uz": "Tuproq juda quruq.",
+          "uz-Cyrl": "Тупроқ жуда қуруқ.",
+          "ru": "Земля слишком сухая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ob-havo-heiss",
+      "slug": "heiss",
+      "term": "heiß",
+      "icon": "sun",
+      "tr": {
+        "uz": "issiq (jazirama)",
+        "uz-Cyrl": "иссиқ (жазирама)",
+        "ru": "жаркий"
+      },
+      "pron": {
+        "uz": "hays",
+        "uz-Cyrl": "хайс",
+        "ru": "хайс"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Heute ist es heiß, trinken Sie viel Wasser.",
+        "tr": {
+          "uz": "Bugun issiq, koʻp suv iching.",
+          "uz-Cyrl": "Бугун иссиқ, кўп сув ичинг.",
+          "ru": "Сегодня жарко, пейте много воды."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ob-havo-kalt",
+      "slug": "kalt",
+      "term": "kalt",
+      "icon": "thermometer",
+      "tr": {
+        "uz": "sovuq",
+        "uz-Cyrl": "совуқ",
+        "ru": "холодный"
+      },
+      "pron": {
+        "uz": "kalt",
+        "uz-Cyrl": "кальт",
+        "ru": "кальт"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Am Morgen ist es noch kalt.",
+        "tr": {
+          "uz": "Ertalab hali sovuq.",
+          "uz-Cyrl": "Эрталаб ҳали совуқ.",
+          "ru": "Утром ещё холодно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ob-havo-fruehling",
+      "slug": "fruehling",
+      "term": "der Frühling",
+      "icon": "plant",
+      "article": "der",
+      "plural": "die Frühlinge",
+      "tr": {
+        "uz": "bahor",
+        "uz-Cyrl": "баҳор",
+        "ru": "весна"
+      },
+      "pron": {
+        "uz": "der fryu-ling",
+        "uz-Cyrl": "дер фрю-линг",
+        "ru": "дер фрю-линг"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Im Frühling pflanzen wir.",
+        "tr": {
+          "uz": "Bahorda ekamiz.",
+          "uz-Cyrl": "Баҳорда экамиз.",
+          "ru": "Весной мы сажаем."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ob-havo-sommer",
+      "slug": "sommer",
+      "term": "der Sommer",
+      "icon": "sun",
+      "article": "der",
+      "plural": "die Sommer",
+      "tr": {
+        "uz": "yoz",
+        "uz-Cyrl": "ёз",
+        "ru": "лето"
+      },
+      "pron": {
+        "uz": "der zo-mer",
+        "uz-Cyrl": "дер зо-мер",
+        "ru": "дер зо-мер"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Im Sommer ernten wir Erdbeeren.",
+        "tr": {
+          "uz": "Yozda qulupnay yigʻamiz.",
+          "uz-Cyrl": "Ёзда қулупнай йиғамиз.",
+          "ru": "Летом мы собираем клубнику."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ob-havo-herbst",
+      "slug": "herbst",
+      "term": "der Herbst",
+      "icon": "apple",
+      "article": "der",
+      "plural": "die Herbste",
+      "tr": {
+        "uz": "kuz",
+        "uz-Cyrl": "куз",
+        "ru": "осень"
+      },
+      "pron": {
+        "uz": "der herpst",
+        "uz-Cyrl": "дер херпст",
+        "ru": "дер херпст"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Im Herbst ist die Apfelernte.",
+        "tr": {
+          "uz": "Kuzda olma hosili yigʻiladi.",
+          "uz-Cyrl": "Кузда олма ҳосили йиғилади.",
+          "ru": "Осенью сбор яблок."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ob-havo-winter",
+      "slug": "winter",
+      "term": "der Winter",
+      "icon": "thermometer",
+      "article": "der",
+      "plural": "die Winter",
+      "tr": {
+        "uz": "qish",
+        "uz-Cyrl": "қиш",
+        "ru": "зима"
+      },
+      "pron": {
+        "uz": "der vin-ter",
+        "uz-Cyrl": "дер вин-тер",
+        "ru": "дер вин-тер"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Im Winter gibt es weniger Arbeit auf dem Feld.",
+        "tr": {
+          "uz": "Qishda dalada ish kamroq.",
+          "uz-Cyrl": "Қишда далада иш камроқ.",
+          "ru": "Зимой на поле меньше работы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ob-havo-regenjacke",
+      "slug": "regenjacke",
+      "term": "die Regenjacke",
+      "icon": "shirt",
+      "article": "die",
+      "plural": "die Regenjacken",
+      "tr": {
+        "uz": "yomgʻirpoʻsh",
+        "uz-Cyrl": "ёмғирпўш",
+        "ru": "дождевик"
+      },
+      "pron": {
+        "uz": "die re-gen-ya-ke",
+        "uz-Cyrl": "ди ре-ген-я-ке",
+        "ru": "ди ре-ген-я-ке"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Nehmen Sie eine Regenjacke mit.",
+        "tr": {
+          "uz": "Yomgʻirpoʻsh olib oling.",
+          "uz-Cyrl": "Ёмғирпўш олиб олинг.",
+          "ru": "Возьмите с собой дождевик."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-ob-havo-es-regnet",
+      "slug": "es-regnet",
+      "term": "Es regnet.",
+      "icon": "droplet",
+      "tr": {
+        "uz": "Yomgʻir yogʻyapti.",
+        "uz-Cyrl": "Ёмғир ёғяпти.",
+        "ru": "Идёт дождь."
+      },
+      "pron": {
+        "uz": "es reg-net",
+        "uz-Cyrl": "эс рег-нет",
+        "ru": "эс рег-нет"
+      },
+      "level": "A1",
+      "field": "agriculture",
+      "jobs": [
+        "gaertner",
+        "landwirt"
+      ],
+      "situation": "ob-havo",
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-sogligi-tierarzt",
+      "slug": "tierarzt",
+      "term": "der Tierarzt",
+      "icon": "stethoscope",
+      "article": "der",
+      "plural": "die Tierärzte",
+      "tr": {
+        "uz": "veterinar",
+        "uz-Cyrl": "ветеринар",
+        "ru": "ветеринар"
+      },
+      "pron": {
+        "uz": "der tir-artst",
+        "uz-Cyrl": "дер тир-арцт",
+        "ru": "дер тир-арцт"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "hayvon-sogligi",
+      "example": {
+        "term": "Rufen Sie den Tierarzt.",
+        "tr": {
+          "uz": "Veterinarni chaqiring.",
+          "uz-Cyrl": "Ветеринарни чақиринг.",
+          "ru": "Вызовите ветеринара."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-sogligi-krank",
+      "slug": "krank",
+      "term": "krank",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "kasal",
+        "uz-Cyrl": "касал",
+        "ru": "больной"
+      },
+      "pron": {
+        "uz": "krank",
+        "uz-Cyrl": "кранк",
+        "ru": "кранк"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "hayvon-sogligi",
+      "example": {
+        "term": "Die Kuh ist krank.",
+        "tr": {
+          "uz": "Sigir kasal.",
+          "uz-Cyrl": "Сигир касал.",
+          "ru": "Корова больна."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-sogligi-hinken",
+      "slug": "hinken",
+      "term": "hinken",
+      "icon": "paw",
+      "tr": {
+        "uz": "oqsoqlanmoq",
+        "uz-Cyrl": "оқсоқланмоқ",
+        "ru": "хромать"
+      },
+      "pron": {
+        "uz": "hin-ken",
+        "uz-Cyrl": "хин-кен",
+        "ru": "хин-кен"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "hayvon-sogligi",
+      "example": {
+        "term": "Das Schaf hinkt.",
+        "tr": {
+          "uz": "Qoʻy oqsoqlanyapti.",
+          "uz-Cyrl": "Қўй оқсоқланяпти.",
+          "ru": "Овца хромает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-sogligi-fressen",
+      "slug": "fressen",
+      "term": "fressen",
+      "icon": "paw",
+      "tr": {
+        "uz": "yemoq (hayvon)",
+        "uz-Cyrl": "емоқ (ҳайвон)",
+        "ru": "есть (о животных)"
+      },
+      "pron": {
+        "uz": "fre-sen",
+        "uz-Cyrl": "фре-сен",
+        "ru": "фре-сен"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "hayvon-sogligi",
+      "example": {
+        "term": "Die Schweine fressen gut.",
+        "tr": {
+          "uz": "Choʻchqalar yaxshi yeyapti.",
+          "uz-Cyrl": "Чўчқалар яхши еяпти.",
+          "ru": "Свиньи хорошо едят."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-sogligi-das-tier-frisst-nicht",
+      "slug": "das-tier-frisst-nicht",
+      "term": "Das Tier frisst nicht.",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Hayvon yemayapti.",
+        "uz-Cyrl": "Ҳайвон емаяпти.",
+        "ru": "Животное не ест."
+      },
+      "pron": {
+        "uz": "das tir frist nixt",
+        "uz-Cyrl": "дас тир фрист нихт",
+        "ru": "дас тир фрист нихт"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "hayvon-sogligi",
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-sogligi-geburt",
+      "slug": "geburt",
+      "term": "die Geburt",
+      "icon": "heart-handshake",
+      "article": "die",
+      "plural": "die Geburten",
+      "tr": {
+        "uz": "tugʻish",
+        "uz-Cyrl": "туғиш",
+        "ru": "роды"
+      },
+      "pron": {
+        "uz": "die ge-burt",
+        "uz-Cyrl": "ди ге-бурт",
+        "ru": "ди ге-бурт"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "hayvon-sogligi",
+      "example": {
+        "term": "Die Geburt beginnt bald.",
+        "tr": {
+          "uz": "Tugʻish tez orada boshlanadi.",
+          "uz-Cyrl": "Туғиш тез орада бошланади.",
+          "ru": "Скоро начнутся роды."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-sogligi-kalben",
+      "slug": "kalben",
+      "term": "kalben",
+      "icon": "paw",
+      "tr": {
+        "uz": "buzoqlamoq",
+        "uz-Cyrl": "бузоқламоқ",
+        "ru": "телиться"
+      },
+      "pron": {
+        "uz": "kal-ben",
+        "uz-Cyrl": "каль-бен",
+        "ru": "каль-бен"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "hayvon-sogligi",
+      "example": {
+        "term": "Die Kuh kalbt heute Nacht.",
+        "tr": {
+          "uz": "Sigir bu kecha buzoqlaydi.",
+          "uz-Cyrl": "Сигир бу кеча бузоқлайди.",
+          "ru": "Корова отелится этой ночью."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-sogligi-ferkel",
+      "slug": "ferkel",
+      "term": "das Ferkel",
+      "icon": "pig",
+      "article": "das",
+      "plural": "die Ferkel",
+      "tr": {
+        "uz": "choʻchqa bolasi",
+        "uz-Cyrl": "чўчқа боласи",
+        "ru": "поросёнок"
+      },
+      "pron": {
+        "uz": "das fer-kel",
+        "uz-Cyrl": "дас фер-кель",
+        "ru": "дас фер-кель"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "hayvon-sogligi",
+      "example": {
+        "term": "Die Ferkel brauchen Wärme.",
+        "tr": {
+          "uz": "Choʻchqa bolalariga issiqlik kerak.",
+          "uz-Cyrl": "Чўчқа болаларига иссиқлик керак.",
+          "ru": "Поросятам нужно тепло."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-sogligi-traenke",
+      "slug": "traenke",
+      "term": "die Tränke",
+      "icon": "droplet",
+      "article": "die",
+      "plural": "die Tränken",
+      "tr": {
+        "uz": "sugʻorish idishi",
+        "uz-Cyrl": "суғориш идиши",
+        "ru": "поилка"
+      },
+      "pron": {
+        "uz": "die tren-ke",
+        "uz-Cyrl": "ди трен-ке",
+        "ru": "ди трен-ке"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "hayvon-sogligi",
+      "example": {
+        "term": "Die Tränke ist leer.",
+        "tr": {
+          "uz": "Sugʻorish idishi boʻsh.",
+          "uz-Cyrl": "Суғориш идиши бўш.",
+          "ru": "Поилка пустая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-sogligi-ohrmarke",
+      "slug": "ohrmarke",
+      "term": "die Ohrmarke",
+      "icon": "id",
+      "article": "die",
+      "plural": "die Ohrmarken",
+      "tr": {
+        "uz": "quloq birkasi",
+        "uz-Cyrl": "қулоқ биркаси",
+        "ru": "ушная бирка"
+      },
+      "pron": {
+        "uz": "die or-mar-ke",
+        "uz-Cyrl": "ди ор-мар-ке",
+        "ru": "ди ор-мар-ке"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "hayvon-sogligi",
+      "example": {
+        "term": "Lesen Sie die Nummer auf der Ohrmarke.",
+        "tr": {
+          "uz": "Quloq birkasidagi raqamni oʻqing.",
+          "uz-Cyrl": "Қулоқ биркасидаги рақамни ўқинг.",
+          "ru": "Прочитайте номер на бирке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-sogligi-bulle",
+      "slug": "bulle",
+      "term": "der Bulle",
+      "icon": "alert-octagon",
+      "article": "der",
+      "plural": "die Bullen",
+      "tr": {
+        "uz": "buqa",
+        "uz-Cyrl": "буқа",
+        "ru": "бык"
+      },
+      "pron": {
+        "uz": "der bu-le",
+        "uz-Cyrl": "дер бу-ле",
+        "ru": "дер бу-ле"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "hayvon-sogligi",
+      "example": {
+        "term": "Gehen Sie nie allein zum Bullen!",
+        "tr": {
+          "uz": "Buqaning oldiga hech qachon yolgʻiz bormang!",
+          "uz-Cyrl": "Буқанинг олдига ҳеч қачон ёлғиз борманг!",
+          "ru": "Никогда не подходите к быку в одиночку!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-sogligi-treten",
+      "slug": "treten",
+      "term": "treten",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "tepmoq",
+        "uz-Cyrl": "тепмоқ",
+        "ru": "лягаться"
+      },
+      "pron": {
+        "uz": "tre-ten",
+        "uz-Cyrl": "тре-тен",
+        "ru": "тре-тен"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "hayvon-sogligi",
+      "example": {
+        "term": "Vorsicht, das Pferd kann treten!",
+        "tr": {
+          "uz": "Ehtiyot boʻling, ot tepishi mumkin!",
+          "uz-Cyrl": "Эҳтиёт бўлинг, от тепиши мумкин!",
+          "ru": "Осторожно, лошадь может лягнуть!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-sogligi-desinfektionswanne",
+      "slug": "desinfektionswanne",
+      "term": "die Desinfektionswanne",
+      "icon": "droplet",
+      "article": "die",
+      "plural": "die Desinfektionswannen",
+      "tr": {
+        "uz": "oyoq kiyim dezinfeksiya vannasi",
+        "uz-Cyrl": "оёқ кийим дезинфекция ваннаси",
+        "ru": "дезинфекционная ванночка"
+      },
+      "pron": {
+        "uz": "die des-in-fek-tsi-ons-va-ne",
+        "uz-Cyrl": "ди дес-ин-фек-ци-онс-ва-не",
+        "ru": "ди дес-ин-фек-ци-онс-ва-не"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "hayvon-sogligi",
+      "example": {
+        "term": "Gehen Sie vor dem Stall durch die Desinfektionswanne.",
+        "tr": {
+          "uz": "Molxonaga kirishdan oldin dezinfeksiya vannasidan oʻting.",
+          "uz-Cyrl": "Молхонага киришдан олдин дезинфекция ваннасидан ўтинг.",
+          "ru": "Перед хлевом пройдите через дезванночку."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-sogligi-medikament",
+      "slug": "medikament",
+      "term": "das Medikament",
+      "icon": "pill",
+      "article": "das",
+      "plural": "die Medikamente",
+      "tr": {
+        "uz": "dori",
+        "uz-Cyrl": "дори",
+        "ru": "лекарство"
+      },
+      "pron": {
+        "uz": "das me-di-ka-ment",
+        "uz-Cyrl": "дас ме-ди-ка-мент",
+        "ru": "дас ме-ди-ка-мент"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "hayvon-sogligi",
+      "example": {
+        "term": "Nur der Tierarzt gibt Medikamente.",
+        "tr": {
+          "uz": "Dorini faqat veterinar beradi.",
+          "uz-Cyrl": "Дорини фақат ветеринар беради.",
+          "ru": "Лекарства даёт только ветеринар."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-sogligi-ei",
+      "slug": "ei",
+      "term": "das Ei",
+      "icon": "egg",
+      "article": "das",
+      "plural": "die Eier",
+      "tr": {
+        "uz": "tuxum",
+        "uz-Cyrl": "тухум",
+        "ru": "яйцо"
+      },
+      "pron": {
+        "uz": "das ay",
+        "uz-Cyrl": "дас ай",
+        "ru": "дас ай"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "landwirt",
+        "tierwirt"
+      ],
+      "situation": "hayvon-sogligi",
+      "example": {
+        "term": "Sammeln Sie die Eier am Morgen.",
+        "tr": {
+          "uz": "Tuxumlarni ertalab yigʻing.",
+          "uz-Cyrl": "Тухумларни эрталаб йиғинг.",
+          "ru": "Собирайте яйца утром."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsumiy-ish-saisonarbeit",
+      "slug": "saisonarbeit",
+      "term": "die Saisonarbeit",
+      "icon": "calendar-event",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "mavsumiy ish",
+        "uz-Cyrl": "мавсумий иш",
+        "ru": "сезонная работа"
+      },
+      "pron": {
+        "uz": "die ze-zon-ar-bayt",
+        "uz-Cyrl": "ди зе-зон-ар-байт",
+        "ru": "ди зе-зон-ар-байт"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "erntehelfer"
+      ],
+      "situation": "mavsumiy-ish",
+      "example": {
+        "term": "Die Saisonarbeit dauert bis Oktober.",
+        "tr": {
+          "uz": "Mavsumiy ish oktyabrgacha davom etadi.",
+          "uz-Cyrl": "Мавсумий иш октябргача давом этади.",
+          "ru": "Сезонная работа длится до октября."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsumiy-ish-saisonkraft",
+      "slug": "saisonkraft",
+      "term": "die Saisonkraft",
+      "icon": "users",
+      "article": "die",
+      "plural": "die Saisonkräfte",
+      "tr": {
+        "uz": "mavsumiy ishchi",
+        "uz-Cyrl": "мавсумий ишчи",
+        "ru": "сезонный работник"
+      },
+      "pron": {
+        "uz": "die ze-zon-kraft",
+        "uz-Cyrl": "ди зе-зон-крафт",
+        "ru": "ди зе-зон-крафт"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "erntehelfer"
+      ],
+      "situation": "mavsumiy-ish",
+      "example": {
+        "term": "Der Hof sucht Saisonkräfte.",
+        "tr": {
+          "uz": "Ferma mavsumiy ishchilar qidiryapti.",
+          "uz-Cyrl": "Ферма мавсумий ишчилар қидиряпти.",
+          "ru": "Ферма ищет сезонных работников."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsumiy-ish-unterkunft",
+      "slug": "unterkunft",
+      "term": "die Unterkunft",
+      "icon": "home",
+      "article": "die",
+      "plural": "die Unterkünfte",
+      "tr": {
+        "uz": "turar joy",
+        "uz-Cyrl": "турар жой",
+        "ru": "жильё"
+      },
+      "pron": {
+        "uz": "die un-ter-kunft",
+        "uz-Cyrl": "ди ун-тер-кунфт",
+        "ru": "ди ун-тер-кунфт"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "erntehelfer"
+      ],
+      "situation": "mavsumiy-ish",
+      "example": {
+        "term": "Wo ist die Unterkunft?",
+        "tr": {
+          "uz": "Turar joy qayerda?",
+          "uz-Cyrl": "Турар жой қаерда?",
+          "ru": "Где жильё?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsumiy-ish-stundenlohn",
+      "slug": "stundenlohn",
+      "term": "der Stundenlohn",
+      "icon": "receipt",
+      "article": "der",
+      "plural": "die Stundenlöhne",
+      "tr": {
+        "uz": "soatbay ish haqi",
+        "uz-Cyrl": "соатбай иш ҳақи",
+        "ru": "почасовая оплата"
+      },
+      "pron": {
+        "uz": "der shtun-den-lon",
+        "uz-Cyrl": "дер штун-ден-лон",
+        "ru": "дер штун-ден-лон"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "erntehelfer"
+      ],
+      "situation": "mavsumiy-ish",
+      "example": {
+        "term": "Wie hoch ist der Stundenlohn?",
+        "tr": {
+          "uz": "Soatbay ish haqi qancha?",
+          "uz-Cyrl": "Соатбай иш ҳақи қанча?",
+          "ru": "Какая почасовая оплата?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsumiy-ish-vorarbeiter",
+      "slug": "vorarbeiter",
+      "term": "der Vorarbeiter",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Vorarbeiter",
+      "tr": {
+        "uz": "brigadir",
+        "uz-Cyrl": "бригадир",
+        "ru": "бригадир"
+      },
+      "pron": {
+        "uz": "der for-ar-bay-ter",
+        "uz-Cyrl": "дер фор-ар-бай-тер",
+        "ru": "дер фор-ар-бай-тер"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "erntehelfer"
+      ],
+      "situation": "mavsumiy-ish",
+      "example": {
+        "term": "Der Vorarbeiter zeigt Ihnen die Reihe.",
+        "tr": {
+          "uz": "Brigadir sizga qatorni koʻrsatadi.",
+          "uz-Cyrl": "Бригадир сизга қаторни кўрсатади.",
+          "ru": "Бригадир покажет вам ряд."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsumiy-ish-gruppe",
+      "slug": "gruppe",
+      "term": "die Gruppe",
+      "icon": "users",
+      "article": "die",
+      "plural": "die Gruppen",
+      "tr": {
+        "uz": "guruh",
+        "uz-Cyrl": "гуруҳ",
+        "ru": "группа"
+      },
+      "pron": {
+        "uz": "die gru-pe",
+        "uz-Cyrl": "ди гру-пе",
+        "ru": "ди гру-пе"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "erntehelfer"
+      ],
+      "situation": "mavsumiy-ish",
+      "example": {
+        "term": "Sie sind heute in Gruppe zwei.",
+        "tr": {
+          "uz": "Bugun siz ikkinchi guruhdasiz.",
+          "uz-Cyrl": "Бугун сиз иккинчи гуруҳдасиз.",
+          "ru": "Сегодня вы во второй группе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsumiy-ish-akkordlohn",
+      "slug": "akkordlohn",
+      "term": "der Akkordlohn",
+      "icon": "receipt",
+      "article": "der",
+      "plural": "die Akkordlöhne",
+      "tr": {
+        "uz": "ishbay haq (hajmga qarab)",
+        "uz-Cyrl": "ишбай ҳақ (ҳажмга қараб)",
+        "ru": "сдельная оплата"
+      },
+      "pron": {
+        "uz": "der a-kort-lon",
+        "uz-Cyrl": "дер а-корт-лон",
+        "ru": "дер а-корт-лон"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "erntehelfer"
+      ],
+      "situation": "mavsumiy-ish",
+      "example": {
+        "term": "Gibt es Stundenlohn oder Akkordlohn?",
+        "tr": {
+          "uz": "Soatbay haqmi yoki ishbay haqmi?",
+          "uz-Cyrl": "Соатбай ҳақми ёки ишбай ҳақми?",
+          "ru": "Оплата почасовая или сдельная?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsumiy-ish-arbeitskleidung",
+      "slug": "arbeitskleidung",
+      "term": "die Arbeitskleidung",
+      "icon": "shirt",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "ish kiyimi",
+        "uz-Cyrl": "иш кийими",
+        "ru": "рабочая одежда"
+      },
+      "pron": {
+        "uz": "die ar-bayts-klay-dung",
+        "uz-Cyrl": "ди ар-байц-клай-дунг",
+        "ru": "ди ар-байц-клай-дунг"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "erntehelfer"
+      ],
+      "situation": "mavsumiy-ish",
+      "example": {
+        "term": "Bringen Sie feste Arbeitskleidung mit.",
+        "tr": {
+          "uz": "Mustahkam ish kiyimi olib keling.",
+          "uz-Cyrl": "Мустаҳкам иш кийими олиб келинг.",
+          "ru": "Возьмите с собой прочную рабочую одежду."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsumiy-ish-trinkpause",
+      "slug": "trinkpause",
+      "term": "die Trinkpause",
+      "icon": "droplet",
+      "article": "die",
+      "plural": "die Trinkpausen",
+      "tr": {
+        "uz": "suv ichish tanaffusi",
+        "uz-Cyrl": "сув ичиш танаффуси",
+        "ru": "перерыв попить"
+      },
+      "pron": {
+        "uz": "die trink-pau-ze",
+        "uz-Cyrl": "ди тринк-пау-зе",
+        "ru": "ди тринк-пау-зе"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "erntehelfer"
+      ],
+      "situation": "mavsumiy-ish",
+      "example": {
+        "term": "Bei Hitze machen wir oft eine Trinkpause.",
+        "tr": {
+          "uz": "Issiqda tez-tez suv ichish tanaffusi qilamiz.",
+          "uz-Cyrl": "Иссиқда тез-тез сув ичиш танаффуси қиламиз.",
+          "ru": "В жару мы часто делаем перерыв попить."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsumiy-ish-trinkwasser",
+      "slug": "trinkwasser",
+      "term": "das Trinkwasser",
+      "icon": "droplet",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "ichimlik suvi",
+        "uz-Cyrl": "ичимлик суви",
+        "ru": "питьевая вода"
+      },
+      "pron": {
+        "uz": "das trink-va-ser",
+        "uz-Cyrl": "дас тринк-ва-сер",
+        "ru": "дас тринк-ва-сер"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "erntehelfer"
+      ],
+      "situation": "mavsumiy-ish",
+      "example": {
+        "term": "Ist das Trinkwasser?",
+        "tr": {
+          "uz": "Bu ichimlik suvimi?",
+          "uz-Cyrl": "Бу ичимлик сувими?",
+          "ru": "Это питьевая вода?"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsumiy-ish-wann-fangen-wir-an",
+      "slug": "wann-fangen-wir-an",
+      "term": "Wann fangen wir an?",
+      "icon": "clock",
+      "tr": {
+        "uz": "Qachon boshlaymiz?",
+        "uz-Cyrl": "Қачон бошлаймиз?",
+        "ru": "Когда мы начинаем?"
+      },
+      "pron": {
+        "uz": "van fan-gen vir an",
+        "uz-Cyrl": "ван фан-ген вир ан",
+        "ru": "ван фан-ген вир ан"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "erntehelfer"
+      ],
+      "situation": "mavsumiy-ish",
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsumiy-ish-frueh",
+      "slug": "frueh",
+      "term": "früh",
+      "icon": "sunrise",
+      "tr": {
+        "uz": "erta",
+        "uz-Cyrl": "эрта",
+        "ru": "рано"
+      },
+      "pron": {
+        "uz": "fryu",
+        "uz-Cyrl": "фрю",
+        "ru": "фрю"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "erntehelfer"
+      ],
+      "situation": "mavsumiy-ish",
+      "example": {
+        "term": "Wir fangen sehr früh an.",
+        "tr": {
+          "uz": "Juda erta boshlaymiz.",
+          "uz-Cyrl": "Жуда эрта бошлаймиз.",
+          "ru": "Мы начинаем очень рано."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsumiy-ish-abholen",
+      "slug": "abholen",
+      "term": "abholen",
+      "icon": "bus",
+      "tr": {
+        "uz": "olib ketmoq (kutib olmoq)",
+        "uz-Cyrl": "олиб кетмоқ (кутиб олмоқ)",
+        "ru": "забирать (кого-то)"
+      },
+      "pron": {
+        "uz": "ap-ho-len",
+        "uz-Cyrl": "ап-хо-лен",
+        "ru": "ап-хо-лен"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "erntehelfer"
+      ],
+      "situation": "mavsumiy-ish",
+      "example": {
+        "term": "Der Bus holt uns um sechs Uhr ab.",
+        "tr": {
+          "uz": "Avtobus bizni soat oltida olib ketadi.",
+          "uz-Cyrl": "Автобус бизни соат олтида олиб кетади.",
+          "ru": "Автобус заберёт нас в шесть часов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsumiy-ish-arbeitstag",
+      "slug": "arbeitstag",
+      "term": "der Arbeitstag",
+      "icon": "calendar-event",
+      "article": "der",
+      "plural": "die Arbeitstage",
+      "tr": {
+        "uz": "ish kuni",
+        "uz-Cyrl": "иш куни",
+        "ru": "рабочий день"
+      },
+      "pron": {
+        "uz": "der ar-bayts-tak",
+        "uz-Cyrl": "дер ар-байц-так",
+        "ru": "дер ар-байц-так"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "erntehelfer"
+      ],
+      "situation": "mavsumiy-ish",
+      "example": {
+        "term": "Der Arbeitstag ist lang.",
+        "tr": {
+          "uz": "Ish kuni uzun.",
+          "uz-Cyrl": "Иш куни узун.",
+          "ru": "Рабочий день длинный."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsumiy-ish-ansprechpartner",
+      "slug": "ansprechpartner",
+      "term": "der Ansprechpartner",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Ansprechpartner",
+      "tr": {
+        "uz": "murojaat qilinadigan shaxs",
+        "uz-Cyrl": "мурожаат қилинадиган шахс",
+        "ru": "контактное лицо"
+      },
+      "pron": {
+        "uz": "der an-shprex-part-ner",
+        "uz-Cyrl": "дер ан-шпрех-парт-нер",
+        "ru": "дер ан-шпрех-парт-нер"
+      },
+      "level": "A2",
+      "field": "agriculture",
+      "jobs": [
+        "erntehelfer"
+      ],
+      "situation": "mavsumiy-ish",
+      "example": {
+        "term": "Wer ist mein Ansprechpartner bei Problemen?",
+        "tr": {
+          "uz": "Muammo boʻlsa, kimga murojaat qilaman?",
+          "uz-Cyrl": "Муаммо бўлса, кимга мурожаат қиламан?",
+          "ru": "К кому мне обращаться при проблемах?"
+        }
+      },
+      "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
     }
