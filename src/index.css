@@ -161,4 +161,7 @@ body {
     scrollbar-width: none;
   }
   #root::-webkit-scrollbar { display: none; }
+  /* vh/dvh oyna balandligini oladi; ramka ichida ramka balandligiga boʻysunsin */
+  #root .h-\[100dvh\] { height: 100%; }
+  #root .max-h-\[90vh\] { max-height: 90%; }
 }
