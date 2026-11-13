@@ -110,7 +110,90 @@
         "ru": "Электричество и безопасность"
       },
       "order": 2,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Wir wechseln heute die Steckdose in der Küche.",
+            "tr": {
+              "uz": "Bugun oshxonadagi rozetkani almashtiramiz.",
+              "uz-Cyrl": "Бугун ошхонадаги розеткани алмаштирамиз.",
+              "ru": "Сегодня мы меняем розетку на кухне."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Soll ich die Sicherung ausschalten?",
+            "tr": {
+              "uz": "Yaxshi. Saqlagichni oʻchiraymi?",
+              "uz-Cyrl": "Яхши. Сақлагични ўчирайми?",
+              "ru": "Хорошо. Выключить предохранитель?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Ja, bitte. Der Sicherungskasten ist im Keller.",
+            "tr": {
+              "uz": "Ha, iltimos. Elektr shiti yertoʻlada.",
+              "uz-Cyrl": "Ҳа, илтимос. Электр шити ертўлада.",
+              "ru": "Да, пожалуйста. Электрощиток в подвале."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich gehe in den Keller und schalte sie aus.",
+            "tr": {
+              "uz": "Yertoʻlaga tushib, uni oʻchiraman.",
+              "uz-Cyrl": "Ертўлага тушиб, уни ўчираман.",
+              "ru": "Я спущусь в подвал и выключу его."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Danke. Dann prüfe ich, ob die Leitung ohne Strom ist.",
+            "tr": {
+              "uz": "Rahmat. Keyin simda tok yoʻqligini tekshiraman.",
+              "uz-Cyrl": "Раҳмат. Кейин симда ток йўқлигини текшираман.",
+              "ru": "Спасибо. Потом я проверю, что в проводе нет тока."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut, und ich gebe Ihnen die Handschuhe.",
+            "tr": {
+              "uz": "Yaxshi, men esa sizga qoʻlqoplarni beraman.",
+              "uz-Cyrl": "Яхши, мен эса сизга қўлқопларни бераман.",
+              "ru": "Хорошо, а я дам вам перчатки."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "qurilish",
@@ -120,7 +203,90 @@
         "ru": "На стройке"
       },
       "order": 3,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Heute mischen wir Beton für das Fundament.",
+            "tr": {
+              "uz": "Bugun poydevor uchun beton qoramiz.",
+              "uz-Cyrl": "Бугун пойдевор учун бетон қорамиз.",
+              "ru": "Сегодня мешаем бетон для фундамента."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Was brauchen wir dafür?",
+            "tr": {
+              "uz": "Buning uchun bizga nima kerak?",
+              "uz-Cyrl": "Бунинг учун бизга нима керак?",
+              "ru": "Что нам для этого нужно?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Zement, Sand und Wasser. Holen Sie bitte die Schubkarre.",
+            "tr": {
+              "uz": "Sement, qum va suv. Iltimos, tachkani olib keling.",
+              "uz-Cyrl": "Цемент, қум ва сув. Илтимос, тачкани олиб келинг.",
+              "ru": "Цемент, песок и вода. Пожалуйста, принесите тачку."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wo steht die Schubkarre?",
+            "tr": {
+              "uz": "Tachka qayerda turibdi?",
+              "uz-Cyrl": "Тачка қаерда турибди?",
+              "ru": "Где стоит тачка?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Hinter dem Gerüst. Und setzen Sie bitte den Helm auf, der Kran arbeitet.",
+            "tr": {
+              "uz": "Havozaning orqasida. Va iltimos, kaska kiying, kran ishlayapti.",
+              "uz-Cyrl": "Ҳавозанинг орқасида. Ва илтимос, каска кийинг, кран ишлаяпти.",
+              "ru": "За лесами. И, пожалуйста, наденьте каску, работает кран."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "In Ordnung, ich setze den Helm auf.",
+            "tr": {
+              "uz": "Xoʻp, kaskani kiyaman.",
+              "uz-Cyrl": "Хўп, каскани кияман.",
+              "ru": "Хорошо, надену каску."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "santexnika",
@@ -130,7 +296,90 @@
         "ru": "Вода, отопление, сантехника"
       },
       "order": 4,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Der Kunde sagt, der Wasserhahn im Bad ist undicht.",
+            "tr": {
+              "uz": "Mijozning aytishicha, hammomdagi suv joʻmragi oqyapti.",
+              "uz-Cyrl": "Мижознинг айтишича, ҳаммомдаги сув жўмраги оқяпти.",
+              "ru": "Клиент говорит, что кран в ванной протекает."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Soll ich zuerst das Wasser abstellen?",
+            "tr": {
+              "uz": "Avval suvni yopaymi?",
+              "uz-Cyrl": "Аввал сувни ёпайми?",
+              "ru": "Сначала перекрыть воду?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Ja, sofort. Das Ventil ist unter dem Waschbecken.",
+            "tr": {
+              "uz": "Ha, darhol. Ventil rakovina ostida.",
+              "uz-Cyrl": "Ҳа, дарҳол. Вентиль раковина остида.",
+              "ru": "Да, сразу. Вентиль под раковиной."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich habe es gefunden. Das Wasser ist aus.",
+            "tr": {
+              "uz": "Topdim. Suv yopildi.",
+              "uz-Cyrl": "Топдим. Сув ёпилди.",
+              "ru": "Нашёл. Вода перекрыта."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Gut. Wahrscheinlich ist die Dichtung kaputt. Geben Sie mir bitte den Schraubenschlüssel.",
+            "tr": {
+              "uz": "Yaxshi. Ehtimol, prokladka buzilgan. Iltimos, menga gayka kalitini bering.",
+              "uz-Cyrl": "Яхши. Эҳтимол, прокладка бузилган. Илтимос, менга гайка калитини беринг.",
+              "ru": "Хорошо. Наверное, испортилась прокладка. Дайте мне, пожалуйста, гаечный ключ."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Hier ist der Schraubenschlüssel.",
+            "tr": {
+              "uz": "Mana, gayka kaliti.",
+              "uz-Cyrl": "Мана, гайка калити.",
+              "ru": "Вот гаечный ключ."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "boyoq-plitka",
@@ -140,7 +389,90 @@
         "ru": "Покраска и плитка"
       },
       "order": 5,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Heute streichen wir die Wand im Wohnzimmer.",
+            "tr": {
+              "uz": "Bugun mehmonxonadagi devorni boʻyaymiz.",
+              "uz-Cyrl": "Бугун меҳмонхонадаги деворни бўяймиз.",
+              "ru": "Сегодня красим стену в гостиной."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Soll ich zuerst den Boden abdecken?",
+            "tr": {
+              "uz": "Avval polni yopib qoʻyaymi?",
+              "uz-Cyrl": "Аввал полни ёпиб қўяйми?",
+              "ru": "Сначала накрыть пол?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Ja, mit der Abdeckfolie. Und kleben Sie die Fenster mit Klebeband ab.",
+            "tr": {
+              "uz": "Ha, himoya plyonkasi bilan. Derazalarni esa skotch bilan yopishtiring.",
+              "uz-Cyrl": "Ҳа, ҳимоя плёнкаси билан. Деразаларни эса скотч билан ёпиштиринг.",
+              "ru": "Да, укрывной плёнкой. А окна заклейте малярной лентой."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mache ich. Wo finde ich die Folie und das Klebeband?",
+            "tr": {
+              "uz": "Xoʻp. Plyonka va skotchni qayerdan topaman?",
+              "uz-Cyrl": "Хўп. Плёнка ва скотчни қаердан топаман?",
+              "ru": "Хорошо. Где мне найти плёнку и ленту?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Im Auto. Danach brauchen wir die Grundierung und die Farbrolle.",
+            "tr": {
+              "uz": "Mashinada. Keyin bizga grunt va boʻyoq valigi kerak.",
+              "uz-Cyrl": "Машинада. Кейин бизга грунт ва бўёқ валиги керак.",
+              "ru": "В машине. Потом нам нужны грунтовка и валик."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Die Farbrolle bringe ich auch mit.",
+            "tr": {
+              "uz": "Valikni ham olib kelaman.",
+              "uz-Cyrl": "Валикни ҳам олиб келаман.",
+              "ru": "Валик я тоже принесу."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "olchov",
@@ -150,7 +482,90 @@
         "ru": "Измерения и материал"
       },
       "order": 6,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Messen Sie bitte die Länge von diesem Brett.",
+            "tr": {
+              "uz": "Iltimos, shu taxtaning uzunligini oʻlchang.",
+              "uz-Cyrl": "Илтимос, шу тахтанинг узунлигини ўлчанг.",
+              "ru": "Пожалуйста, измерьте длину этой доски."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gern. Wo ist das Maßband?",
+            "tr": {
+              "uz": "Bajonidil. Ruletka qayerda?",
+              "uz-Cyrl": "Бажонидил. Рулетка қаерда?",
+              "ru": "Хорошо. Где рулетка?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "In meiner Tasche. Das Brett muss genau zwei Meter lang sein.",
+            "tr": {
+              "uz": "Sumkamda. Taxta roppa-rosa ikki metr boʻlishi kerak.",
+              "uz-Cyrl": "Сумкамда. Тахта роппа-роса икки метр бўлиши керак.",
+              "ru": "В моей сумке. Доска должна быть ровно два метра."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Es ist zwei Meter und fünf Zentimeter lang.",
+            "tr": {
+              "uz": "U ikki metr besh santimetr ekan.",
+              "uz-Cyrl": "У икки метр беш сантиметр экан.",
+              "ru": "Её длина два метра пять сантиметров."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Dann sägen wir fünf Zentimeter ab. Prüfen Sie danach mit der Wasserwaage, ob es gerade ist.",
+            "tr": {
+              "uz": "Unda besh santimetrini arralab tashlaymiz. Keyin uroven bilan tekisligini tekshiring.",
+              "uz-Cyrl": "Унда беш сантиметрини арралаб ташлаймиз. Кейин уровень билан текислигини текширинг.",
+              "ru": "Тогда отпилим пять сантиметров. Потом проверьте уровнем, ровно ли."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mit der Wasserwaage, verstanden.",
+            "tr": {
+              "uz": "Uroven bilan, tushunarli.",
+              "uz-Cyrl": "Уровень билан, тушунарли.",
+              "ru": "Уровнем, понятно."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "yogoch",
@@ -160,7 +575,90 @@
         "ru": "Работа с деревом"
       },
       "order": 7,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Wir schneiden jetzt die Spanplatte mit der Kreissäge.",
+            "tr": {
+              "uz": "Hozir DSP plitani diskli arra bilan kesamiz.",
+              "uz-Cyrl": "Ҳозир ДСП плитани дискли арра билан кесамиз.",
+              "ru": "Сейчас режем плиту ДСП циркулярной пилой."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Brauche ich eine Schutzbrille?",
+            "tr": {
+              "uz": "Menga himoya koʻzoynagi kerakmi?",
+              "uz-Cyrl": "Менга ҳимоя кўзойнаги керакми?",
+              "ru": "Мне нужны защитные очки?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Ja, und auch den Gehörschutz. Die Säge ist sehr laut.",
+            "tr": {
+              "uz": "Ha, quloq himoyasi ham. Arra juda shovqinli.",
+              "uz-Cyrl": "Ҳа, қулоқ ҳимояси ҳам. Арра жуда шовқинли.",
+              "ru": "Да, и защиту слуха тоже. Пила очень громкая."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich hole beides aus der Werkstatt.",
+            "tr": {
+              "uz": "Ikkalasini ham ustaxonadan olib kelaman.",
+              "uz-Cyrl": "Иккаласини ҳам устахонадан олиб келаман.",
+              "ru": "Я принесу и то, и другое из мастерской."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Gut. Danach schleifen Sie die Kanten mit Schleifpapier, wegen der Splitter.",
+            "tr": {
+              "uz": "Yaxshi. Keyin zirapcha boʻlmasligi uchun chetlarini jilvir qogʻoz bilan silliqlang.",
+              "uz-Cyrl": "Яхши. Кейин зирапча бўлмаслиги учун четларини жилвир қоғоз билан силлиқланг.",
+              "ru": "Хорошо. Потом зашлифуйте края наждачной бумагой, чтобы не было заноз."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mit Schleifpapier, alles klar.",
+            "tr": {
+              "uz": "Jilvir qogʻoz bilan, tushunarli.",
+              "uz-Cyrl": "Жилвир қоғоз билан, тушунарли.",
+              "ru": "Наждачной бумагой, всё ясно."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "isitish",
@@ -170,7 +668,90 @@
         "ru": "Отопление и кондиционер"
       },
       "order": 8,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Der Kunde sagt, die Heizung ist kalt. Wir machen heute die Wartung am Heizkessel.",
+            "tr": {
+              "uz": "Mijozning aytishicha, isitish sovuq. Bugun isitish qozoniga texnik xizmat koʻrsatamiz.",
+              "uz-Cyrl": "Мижознинг айтишича, иситиш совуқ. Бугун иситиш қозонига техник хизмат кўрсатамиз.",
+              "ru": "Клиент говорит, что отопление холодное. Сегодня делаем обслуживание котла."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Was soll ich zuerst machen?",
+            "tr": {
+              "uz": "Yaxshi. Avval nima qilay?",
+              "uz-Cyrl": "Яхши. Аввал нима қилай?",
+              "ru": "Хорошо. Что мне сделать сначала?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Schauen Sie bitte, wie das Thermostat eingestellt ist.",
+            "tr": {
+              "uz": "Iltimos, termostat qanday sozlanganini qarang.",
+              "uz-Cyrl": "Илтимос, термостат қандай созланганини қаранг.",
+              "ru": "Пожалуйста, посмотрите, как настроен термостат."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Das Thermostat steht auf fünf Grad. Das ist zu niedrig.",
+            "tr": {
+              "uz": "Termostat besh darajada turibdi. Bu juda past.",
+              "uz-Cyrl": "Термостат беш даражада турибди. Бу жуда паст.",
+              "ru": "Термостат стоит на пяти градусах. Это слишком низко."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Ach, deshalb ist es kalt. Stellen Sie es bitte auf zwanzig Grad. Ich wechsle den Filter.",
+            "tr": {
+              "uz": "Shuning uchun sovuq ekan-da. Iltimos, yigirma darajaga qoʻying. Men filtrni almashtiraman.",
+              "uz-Cyrl": "Шунинг учун совуқ экан-да. Илтимос, йигирма даражага қўйинг. Мен фильтрни алмаштираман.",
+              "ru": "А, поэтому холодно. Поставьте, пожалуйста, на двадцать градусов. Я поменяю фильтр."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Zwanzig Grad, mache ich.",
+            "tr": {
+              "uz": "Yigirma daraja, xoʻp.",
+              "uz-Cyrl": "Йигирма даража, хўп.",
+              "ru": "Двадцать градусов, сделаю."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
