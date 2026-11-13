@@ -29,4 +29,4 @@ jobs:
       - name: ai-ask ni joylash
         run: |
           REF=$(echo "$SUPABASE_URL" | sed -E 's#https://([^.]+)\..*#\1#')
-          supabase functions deploy ai-ask --project-ref "$REF" --no-verify-jwt --use-api
+          supabase functions deploy ai-ask --project-ref "$REF" --no-verify-jwt --use-api --yes
