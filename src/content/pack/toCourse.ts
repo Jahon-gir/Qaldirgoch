@@ -70,8 +70,16 @@ export function choicesFrom(chunk: readonly PackWord[], lessonId: string, startI
 /**
  * Dialog → mashq. Birinchi soʻzlovchi (usta, xodim) chapda, oʻrganuvchi oʻngda. Savol: soʻzlovchi almashadigan juft,
  * javobni oʻrganuvchi (birinchi soʻzlovchi emas) aytadi, birinchi juftdan keyingisi (salomlashuvdan keyingi asosiy gap).
- * Variantlar: toʻgʻri javob + shu dialogning boshqa 2 replikasi (avval javob bergan kishiniki). Toʻgʻri javob joyi savolga qarab almashadi.
+ * Variantlar: toʻgʻri javob + shu dialogning boshqa 2 replikasi (avval javob bergan kishiniki).
+ * Toʻgʻri javob joyi mashq id'sidan (har dialogda boshqacha, lekin har safar bir xil) — doim bir joyda turmasin.
  */
+/** Satrdan 0, 1 yoki 2 (barqaror). */
+export const slot = (s: string): number => {
+  let h = 0
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0
+  return h % 3
+}
+
 export function dialogExercise(d: PackDialog, id: string): DialogExercise {
   const lines = d.lines.map((l) => ({ speaker: l.speaker, text: l.de, tr: l.tr }))
   const pairs: number[] = []
@@ -86,7 +94,7 @@ export function dialogExercise(d: PackDialog, id: string): DialogExercise {
   const distract = [...same, ...rest.filter((i) => !same.includes(i))].slice(0, 2)
   if (distract.length < 2) return ex
   const options = [...distract]
-  options.splice(ask % 3, 0, answer)
+  options.splice(slot(id), 0, answer)
   return { ...ex, check: { ask, answer, options } }
 }
 

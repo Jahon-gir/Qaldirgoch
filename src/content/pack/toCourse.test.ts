@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { buildVocab, lessonWordIds } from '../../lang/words'
 import { visibleModules } from '../../german/logic'
-import { FALLBACK_ICON, packsToCourse, WORDS_PER_LESSON } from './toCourse'
+import { FALLBACK_ICON, packsToCourse, slot, WORDS_PER_LESSON } from './toCourse'
 import type { ContentPack, PackWord } from './types'
 
 const L = (s: string) => ({ uz: s, 'uz-Cyrl': s, ru: s })
@@ -84,6 +84,12 @@ describe('boʻshliqni toʻldiring (misol gapdan)', () => {
 })
 
 describe('dialog (0.17.0)', () => {
+  it('slot: 0–2, barqaror, har xil id — har xil joy', () => {
+    const ids = Array.from({ length: 30 }, (_, i) => `x-l${i}-e7`)
+    expect(ids.every((id) => [0, 1, 2].includes(slot(id)) && slot(id) === slot(id))).toBe(true)
+    expect(new Set(ids.map(slot)).size).toBe(3)
+  })
+
   const line = (speaker: string, de: string) => ({ speaker: L(speaker), de, tr: L(`${de} (uz)`) })
   const dialog = (status: 'draft' | 'review' | 'approved' = 'review') => ({
     status,
@@ -99,7 +105,10 @@ describe('dialog (0.17.0)', () => {
     expect(last.type).toBe('dialog')
     if (last.type !== 'dialog') return
     expect(last.id).toBe(`technical-asboblar-l2-e${c.exercises['technical-asboblar-l2'].length}`)
-    expect(last.check).toEqual({ ask: 2, answer: 3, options: [1, 5, 3] }) // 2 % 3 = 2 — javob oxirida
+    expect(last.check?.ask).toBe(2)
+    expect(last.check?.answer).toBe(3)
+    expect([...(last.check?.options ?? [])].sort()).toEqual([1, 3, 5])
+    expect(last.check?.options.indexOf(3)).toBe(slot(last.id)) // javob joyi id'dan
     expect(last.lines[3].text).toBe('Im Wagen.')
   })
 
