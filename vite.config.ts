@@ -12,8 +12,8 @@ export default defineConfig({
       registerType: 'prompt',
       includeAssets: ['icon.svg', 'apple-touch-icon.png'],
       manifest: {
-        name: 'Qaldirgʻoch',
-        short_name: 'Qaldirgʻoch',
+        name: 'Migra',
+        short_name: 'Migra',
         description: 'Chet elda qonuniy ish sari ishonchli yoʻl',
         lang: 'uz',
         start_url: './',

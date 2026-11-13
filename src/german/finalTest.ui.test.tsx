@@ -202,7 +202,7 @@ describe('natija', () => {
     expect(screen.getByRole('heading', { name: 'Modul yakunlandi' })).toBeTruthy()
     expect(screen.getByText('4 savoldan 4 tasi toʻgʻri')).toBeTruthy()
     const card = screen.getByTestId('result-card')
-    expect(within(card).getByText('Qaldirgʻoch · ilova ichidagi natija')).toBeTruthy()
+    expect(within(card).getByText('Migra · ilova ichidagi natija')).toBeTruthy()
     expect(within(card).getByText('1-modul yakuniy testi')).toBeTruthy()
     const line = `${TODAY.replace(/^(\d{4})-(\d{2})-(\d{2})$/, '$3.$2.$1')} · 4/4`
     expect(within(card).getByText(line)).toBeTruthy()

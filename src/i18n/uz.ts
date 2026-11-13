@@ -3,7 +3,7 @@
  * Tutuq belgilari: oʻ, gʻ uchun U+02BB (ʻ), tutuq uchun U+02BC (ʼ).
  */
 export const uz = {
-  'app.name': 'Qaldirgʻoch',
+  'app.name': 'Migra',
   'app.tagline': 'Chet elda qonuniy ish sari ishonchli yoʻl',
 
   'common.back': 'Orqaga',
@@ -526,7 +526,7 @@ export const uz = {
   'ex.speak.network': 'Ovozni tanish uchun internet kerak.',
   'ex.speak.error': 'Ovozni tanib boʻlmadi. Yana urinib koʻring yoki mashqni oʻtkazib yuboring.',
   'ex.speak.privacyTitle': 'Ovoz haqida',
-  'ex.speak.privacy': 'Ovoz telefoningiz brauzeri orqali matnga aylantiriladi (Chromeʼda bu Google xizmati). Qaldirgʻoch ovozingizni saqlamaydi va oʻz serveriga yubormaydi.',
+  'ex.speak.privacy': 'Ovoz telefoningiz brauzeri orqali matnga aylantiriladi (Chromeʼda bu Google xizmati). Migra ovozingizni saqlamaydi va oʻz serveriga yubormaydi.',
   'vocab.noVoice': 'Telefoningizda nemischa ovoz yoʻq',
   'vocab.qOf': '{mode} · {n} / {total}',
   'ex.buildQ': 'Nemischa yozing',
@@ -712,7 +712,7 @@ export const uz = {
   'ft.levelDone': '{level} daraja yakunlandi',
   'ft.notPassedTitle': 'Test tugadi',
   'ft.summary': '{total} savoldan {score} tasi toʻgʻri',
-  'ft.cardBrand': 'Qaldirgʻoch · ilova ichidagi natija',
+  'ft.cardBrand': 'Migra · ilova ichidagi natija',
   'ft.notOfficial': 'Bu rasmiy til sertifikati emas. Rasmiy imtihon: Goethe, telc yoki ÖSD.',
   'ft.more': 'Yana bir oz mashq qiling: {need} ta kerak edi, sizda {got} ta',
   'ft.addedToReview': 'Xato qilgan soʻzlaringiz takrorlashga qoʻshildi',
