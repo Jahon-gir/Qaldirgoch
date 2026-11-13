@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { buildKnowledge } from '../../../scripts/build-ai-knowledge'
 import knowledge from './knowledge.json'
-import { buildMessages, checkQuestion, parseAnswer, rank, sanitize, type Chunk } from './core'
+import { buildMessages, checkQuestion, parseAnswer, rank, rankScored, sanitize, type Chunk } from './core'
 import { chat, configFromEnv } from './provider'
 
 const KB = knowledge as Chunk[]
@@ -43,26 +43,42 @@ describe('qidiruv', () => {
 
 describe('javob', () => {
   const chunks = KB.slice(0, 3)
-  it('manbali javob: manbalar parchadan olinadi', () => {
-    const r = parseAnswer(JSON.stringify({ answer: 'Javob', found: true, sources: [chunks[0].id] }), chunks, 'uz')
-    expect(r.found).toBe(true)
-    expect(r.sources).toEqual(chunks[0].sources)
+  const all = new Set(chunks.map((c) => c.id))
+  it('fact: manbalar parchadan olinadi', () => {
+    const r = parseAnswer(JSON.stringify({ type: 'fact', answer: 'Javob', sources: [chunks[0].id] }), chunks, 'uz', all)
+    expect(r).toEqual({ answer: 'Javob', found: true, kind: 'fact', sources: chunks[0].sources })
   })
-  it('manbasiz yoki notoʻgʻri id — found=false, manba yoʻq', () => {
-    expect(parseAnswer(JSON.stringify({ answer: 'X', found: true, sources: ['boshqa'] }), chunks, 'uz')).toEqual({ answer: 'X', found: false, sources: [] })
+  it('chat ("sen kimsan"): manbasiz, belgisiz', () => {
+    const r = parseAnswer(JSON.stringify({ type: 'chat', answer: "Men Migra maslahatchisiman, bo'yicha", sources: [chunks[0].id] }), chunks, 'uz', all)
+    expect(r).toEqual({ answer: 'Men Migra maslahatchisiman, boʻyicha', found: false, kind: 'chat', sources: [] })
+  })
+  it('savolga mos kelmagan parcha manba boʻla olmaydi → no_info', () => {
+    const r = parseAnswer(JSON.stringify({ type: 'fact', answer: 'X', sources: [chunks[0].id] }), chunks, 'uz', new Set())
+    expect(r.kind).toBe('no_info')
+    expect(r.sources).toEqual([])
+    expect(r.answer).toMatch(/^Bu savol boʻyicha menda/)
+  })
+  it('notoʻgʻri id yoki JSON emas — no_info, standart matn', () => {
+    expect(parseAnswer(JSON.stringify({ type: 'fact', answer: 'X', sources: ['boshqa'] }), chunks, 'uz', all).kind).toBe('no_info')
     expect(parseAnswer('json emas', chunks, 'ru').answer).toMatch(/нет проверенной/)
   })
   it('HTML tozalanadi', () => {
     expect(sanitize('<img src=x onerror=alert(1)>Salom <b>dunyo</b>')).toBe('Salom dunyo')
-    const r = parseAnswer(JSON.stringify({ answer: '<script>alert(1)</script>ok', found: false, sources: [] }), chunks, 'uz')
+    const r = parseAnswer(JSON.stringify({ type: 'chat', answer: '<script>alert(1)</script>ok', sources: [] }), chunks, 'uz')
     expect(r.answer).toBe('alert(1)ok')
   })
-  it('tizim xabarida qoidalar, til va parchalar bor', () => {
+  it('tizim xabari: qoidalar, til, misollar va parchalar; "qilsin" yoʻq', () => {
     const [sys, user] = buildMessages('Savol?', chunks, 'uz-Cyrl')
     expect(sys.content).toContain('Noqonuniy')
     expect(sys.content).toContain('kirill')
+    expect(sys.content).toContain('"type":"chat"')
     expect(sys.content).toContain(`[${chunks[0].id}]`)
+    expect(sys.content).not.toMatch(/qilsin/)
     expect(user).toEqual({ role: 'user', content: 'Savol?' })
+  })
+  it('kichik suhbatda hech bir parcha ball olmaydi', () => {
+    expect(rankScored('Sen kimsan', KB).every((x) => x.score === 0)).toBe(true)
+    expect(rankScored('Ausbildung uchun qancha pul kerak?', KB)[0].score).toBeGreaterThan(0)
   })
 })
 
@@ -70,7 +86,7 @@ describe('provayder', () => {
   it('OpenAI kalitsiz ishlamaydi; oʻz serverimizda kalit ixtiyoriy', () => {
     expect(configFromEnv(() => undefined)).toBeNull()
     const env: Record<string, string> = { OPENAI_API_KEY: 'k' }
-    expect(configFromEnv((k) => env[k])).toEqual({ baseUrl: 'https://api.openai.com/v1', apiKey: 'k', model: 'gpt-4.1-mini' })
+    expect(configFromEnv((k) => env[k])).toEqual({ baseUrl: 'https://api.openai.com/v1', apiKey: 'k', model: 'gpt-4.1' })
     const uni: Record<string, string> = { AI_BASE_URL: 'http://10.0.0.5:8000/v1/', AI_MODEL: 'qwen' }
     expect(configFromEnv((k) => uni[k])).toEqual({ baseUrl: 'http://10.0.0.5:8000/v1', apiKey: '', model: 'qwen' })
   })

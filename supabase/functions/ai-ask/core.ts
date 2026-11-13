@@ -6,14 +6,14 @@ export type Source = { title: string; url: string; checkedAt: string }
 export type Chunk = { id: string; title: string; uz: string; ru: string; sources: Source[] }
 export type Lang = 'uz' | 'uz-Cyrl' | 'ru'
 export type Msg = { role: 'system' | 'user'; content: string }
-export type AskResult = { answer: string; found: boolean; sources: Source[] }
+export type AskResult = { answer: string; found: boolean; kind: 'fact' | 'no_info' | 'chat'; sources: Source[] }
 
 export const MAX_QUESTION = 500
 export const DAILY_LIMIT = 20
 /** Mehmon (kirmagan): bitta IP'dan kuniga; hamma mehmonlar birga kuniga (pulni himoya qilish). */
 export const GUEST_LIMIT = 10
 export const GUEST_TOTAL = 300
-export const TOP_K = 6
+export const TOP_K = 8
 
 /** Savol: matn, 3..500 belgi. Xato boʻlsa kod qaytaradi. */
 export function checkQuestion(q: unknown): { ok: true; q: string } | { ok: false; code: 'empty' | 'long' } {
@@ -43,35 +43,50 @@ function words(s: string): string[] {
   return out
 }
 const stem = (w: string) => w.slice(0, 5)
-const STOP = new Set(['qanda', 'qanday', 'nima', 'kerak', 'uchun', 'bilan', 'qaysi', 'qancha', 'mumki', 'kak', 'chto', 'kakoi', 'kakie', 'nuzhn', 'как', 'что', 'какой', 'какие', 'нужно', 'для', 'это', 'germa', 'герма'])
+const STOP = new Set(['qanda', 'qanday', 'nima', 'kerak', 'uchun', 'bilan', 'qaysi', 'qancha', 'mumki', 'kak', 'chto', 'kakoi', 'kakie', 'nuzhn', 'как', 'что', 'какой', 'какие', 'нужно', 'для', 'это'])
 
 /** Kalit soʻz qidiruvi: soʻz oʻzaklari (5 harf) mos kelgan sari ball; sarlavhadagi moslik ikki baravar. */
-export function rank(question: string, kb: Chunk[], k = TOP_K): Chunk[] {
+export function rankScored(question: string, kb: Chunk[], k = TOP_K): { chunk: Chunk; score: number }[] {
   const q = [...new Set(words(question).map(stem))].filter((w) => !STOP.has(w))
   const scored = kb.map((c, i) => {
     const body = new Set(words(`${c.uz} ${c.ru}`).map(stem))
     const title = new Set(words(c.title).map(stem))
     let s = 0
     for (const w of q) s += (body.has(w) ? 1 : 0) + (title.has(w) ? 2 : 0)
-    return { c, s, i }
+    return { chunk: c, score: s, i }
   })
-  scored.sort((a, b) => b.s - a.s || a.i - b.i)
-  return scored.slice(0, k).map((x) => x.c)
+  scored.sort((a, b) => b.score - a.score || a.i - b.i)
+  return scored.slice(0, k).map(({ chunk, score }) => ({ chunk, score }))
 }
+export const rank = (question: string, kb: Chunk[], k = TOP_K): Chunk[] => rankScored(question, kb, k).map((x) => x.chunk)
 
 const LANG_NAME: Record<Lang, string> = { uz: 'oʻzbek tilida (lotin yozuvi)', 'uz-Cyrl': 'oʻzbek tilida (kirill yozuvi)', ru: 'rus tilida' }
+
+const NO_INFO: Record<Lang, string> = {
+  uz: 'Bu savol boʻyicha menda tasdiqlangan maʼlumot yoʻq. Rasmiy manbaga yoki Migratsiya agentligining 1282 ishonch telefoniga murojaat qiling.',
+  'uz-Cyrl': 'Бу савол бўйича менда тасдиқланган маълумот йўқ. Расмий манбага ёки Миграция агентлигининг 1282 ишонч телефонига мурожаат қилинг.',
+  ru: 'По этому вопросу у меня нет проверенной информации. Обратитесь к официальному источнику или на телефон доверия Агентства миграции 1282.'
+}
 
 export function buildMessages(question: string, chunks: Chunk[], lang: Lang): Msg[] {
   const ctx = chunks.map((c) => `[${c.id}] ${c.title}\n${lang === 'ru' ? c.ru : c.uz}`).join('\n\n---\n\n')
   const system = [
-    'Sen Migra ilovasining maslahatchisisan. Foydalanuvchi — chet elda (hozir Germaniyada) QONUNIY ishlashni xohlagan Oʻzbekiston fuqarosi.',
-    'QOIDALAR:',
-    '1. Faqat quyidagi TASDIQLANGAN MATNLAR asosida javob ber. Oʻzingdan raqam, muddat, narx, manzil yoki havola qoʻshma.',
-    '2. Javob matnlarda boʻlmasa: found=false va qisqa ayt: tasdiqlangan maʼlumot yoʻq, rasmiy manbaga yoki Migratsiya agentligining 1282 ishonch telefoniga murojaat qilsin.',
-    '3. Noqonuniy yoʻllarga (soxta hujjat, turist vizasida ishlash, chegarani noqonuniy kesish, pora, hujjatsiz ishlash) hech qachon yordam berma: rad et, xavfini ayt va qonuniy yoʻlni tavsiya qil; found=false.',
-    '4. Javob qisqa: 2–6 jumla yoki roʻyxat, oddiy soʻzlar bilan. HTML va markdown sarlavhalar ishlatma.',
-    `5. Javobni ${LANG_NAME[lang]} yoz.`,
-    '6. Faqat JSON qaytar: {"answer": "...", "found": true|false, "sources": ["foydalanilgan matn id", ...]}. sources — faqat quyidagi [id] lardan.',
+    'Siz — Migra ilovasining AI maslahatchisisiz. Foydalanuvchilar — chet elda (hozircha Germaniyada) QONUNIY ishlashni xohlagan Oʻzbekiston fuqarolari.',
+    'Foydalanuvchiga doim birinchi shaxsda ("men") va "siz" deb murojaat qiling. Quyidagi qoidalar matnini javobga koʻchirmang.',
+    '',
+    'Javob turi (type) uchtadan biri:',
+    '- "fact": savolga javob quyidagi TASDIQLANGAN MATNLARDA bor. Faqat oʻsha matnlardagi faktlardan foydalaning; raqam, muddat, narx, manzil yoki havolani oʻzingizdan qoʻshmang. sources — aynan foydalanilgan matnlarning [id] lari.',
+    `- "no_info": savol migratsiya/ish/hujjat/til haqida, lekin javob matnlarda yoʻq. answer aynan shu: "${NO_INFO[lang]}" sources — [].`,
+    '- "chat": salomlashish, rahmat, "sen kimsan", "nima qila olasan" kabi suhbat. 1–2 jumlada oʻzingizni tanishtiring: Migra ilovasining AI maslahatchisi ekaningiz, Germaniyada qonuniy ishlash (Ausbildung, viza, hujjatlar, agentlikni tekshirish) boʻyicha faqat tasdiqlangan maʼlumotdan javob berishingiz. Mavzudan tashqari savolga (ob-havo, sport, dasturlash va h.k.) xushmuomala rad eting va nima haqida soʻrash mumkinligini ayting. sources — [].',
+    'Noqonuniy yoʻllar (soxta hujjat, turist vizasida ishlash, chegarani noqonuniy kesish, pora, hujjatsiz ishlash) haqida soʻralsa: yordam bermang, xavfini qisqa ayting, qonuniy yoʻlni tavsiya qiling; type — "chat", sources — [].',
+    'Foydalanuvchi "xato qilyapsan" desa: uzr soʻrang va savolni aniqroq yozishni yoki tayyor savollardan birini tanlashni taklif qiling (type "chat").',
+    '',
+    `Uslub: ${LANG_NAME[lang]}, oddiy soʻzlar, 1–5 jumla yoki qisqa roʻyxat. Oʻzbek lotinida oʻ va gʻ ni "oʻ", "gʻ" bilan yozing. HTML va markdown sarlavha ishlatmang.`,
+    'Faqat JSON qaytaring: {"type": "fact"|"no_info"|"chat", "answer": "...", "sources": ["id", ...]}',
+    '',
+    'Misollar:',
+    'Savol: "Salom, sen kimsan?" → {"type":"chat","answer":"Salom! Men Migra ilovasining AI maslahatchisiman. Germaniyada qonuniy ishlash — Ausbildung, viza, hujjatlar va agentlikni tekshirish boʻyicha faqat tasdiqlangan maʼlumotdan javob beraman.","sources":[]}',
+    'Savol: "Bugun ob-havo qanday?" → {"type":"chat","answer":"Kechirasiz, men faqat Germaniyada qonuniy ishlash boʻyicha yordam beraman. Masalan, Ausbildung yoki viza haqida soʻrashingiz mumkin.","sources":[]}',
     '',
     'TASDIQLANGAN MATNLAR:',
     ctx
@@ -92,27 +107,33 @@ export function sanitize(s: string, max = 2000): string {
     .slice(0, max)
 }
 
-const NO_INFO: Record<Lang, string> = {
-  uz: 'Bu savol boʻyicha tasdiqlangan maʼlumot yoʻq. Rasmiy manbaga yoki Migratsiya agentligining 1282 ishonch telefoniga murojaat qiling.',
-  'uz-Cyrl': 'Бу савол бўйича тасдиқланган маълумот йўқ. Расмий манбага ёки Миграция агентлигининг 1282 ишонч телефонига мурожаат қилинг.',
-  ru: 'По этому вопросу нет проверенной информации. Обратитесь к официальному источнику или на телефон доверия Агентства миграции 1282.'
-}
-export const noInfo = (lang: Lang): AskResult => ({ answer: NO_INFO[lang], found: false, sources: [] })
+/** Oʻzbek lotinida o' g' → oʻ gʻ (ilovadagi yozuv bilan bir xil). */
+export const fixUzApostrophes = (s: string) => s.replace(/([oOgG])['’‘`]/g, '$1ʻ')
 
-/** Model javobini (JSON) oʻqiydi. Manbasiz "topildi" javobi qabul qilinmaydi. */
-export function parseAnswer(raw: string, chunks: Chunk[], lang: Lang): AskResult {
-  let j: { answer?: unknown; found?: unknown; sources?: unknown }
+export type Kind = 'fact' | 'no_info' | 'chat'
+export const noInfo = (lang: Lang): AskResult => ({ answer: NO_INFO[lang], found: false, kind: 'no_info', sources: [] })
+
+/**
+ * Model javobini (JSON) oʻqiydi. "fact" faqat savolga mos kelgan (ball > 0) parchalardan manba bilan qabul qilinadi;
+ * aks holda manbasiz "no_info". "chat" — manbasiz oddiy suhbat.
+ */
+export function parseAnswer(raw: string, chunks: Chunk[], lang: Lang, relevant?: Set<string>): AskResult {
+  let j: { type?: unknown; answer?: unknown; found?: unknown; sources?: unknown }
   try {
     j = JSON.parse(raw.replace(/^```(?:json)?\s*|\s*```$/g, ''))
   } catch {
     return noInfo(lang)
   }
-  const answer = typeof j.answer === 'string' ? sanitize(j.answer) : ''
+  let answer = typeof j.answer === 'string' ? sanitize(j.answer) : ''
+  if (lang === 'uz') answer = fixUzApostrophes(answer)
   if (!answer) return noInfo(lang)
+  const type: Kind = j.type === 'chat' ? 'chat' : j.type === 'fact' || j.found === true ? 'fact' : 'no_info'
+  if (type === 'chat') return { answer, found: false, kind: 'chat', sources: [] }
+  if (type === 'no_info') return noInfo(lang)
   const ids = Array.isArray(j.sources) ? j.sources.filter((x): x is string => typeof x === 'string') : []
-  const used = chunks.filter((c) => ids.includes(c.id))
-  if (j.found !== true || used.length === 0) return { answer, found: false, sources: [] }
+  const used = chunks.filter((c) => ids.includes(c.id) && (!relevant || relevant.has(c.id)))
+  if (used.length === 0) return noInfo(lang)
   const seen = new Set<string>()
   const sources = used.flatMap((c) => c.sources).filter((s) => (seen.has(s.url) ? false : (seen.add(s.url), true)))
-  return { answer, found: true, sources }
+  return { answer, found: true, kind: 'fact', sources }
 }

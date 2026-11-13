@@ -8,7 +8,7 @@ const client = (data: unknown, status?: number) =>
 describe('askAi', () => {
   it('javob va manbalarni qaytaradi', async () => {
     const r = await askAi(client({ answer: 'J', found: true, sources: [{ title: 'BIBB', url: 'https://bibb.de', checkedAt: '2026-11-04' }], left: 19 }), 'Savol?', 'uz')
-    expect(r).toEqual({ ok: true, data: { answer: 'J', found: true, sources: [{ title: 'BIBB', url: 'https://bibb.de', checkedAt: '2026-11-04' }], left: 19 } })
+    expect(r).toEqual({ ok: true, data: { answer: 'J', found: true, kind: 'fact', sources: [{ title: 'BIBB', url: 'https://bibb.de', checkedAt: '2026-11-04' }], left: 19 } })
   })
   it('xato holatlari', async () => {
     expect(await askAi(null, 'Savol?', 'uz')).toEqual({ ok: false, error: 'config' })

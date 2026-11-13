@@ -2,7 +2,8 @@ import type { SupabaseClient } from '@supabase/supabase-js'
 import type { Lang } from '../i18n/I18nProvider'
 
 export type AiSource = { title: string; url: string; checkedAt: string }
-export type AiAnswer = { answer: string; found: boolean; sources: AiSource[]; left?: number }
+export type AiKind = 'fact' | 'no_info' | 'chat'
+export type AiAnswer = { answer: string; found: boolean; kind: AiKind; sources: AiSource[]; left?: number }
 export type AiError = 'auth' | 'empty' | 'long' | 'limit' | 'offline' | 'config' | 'ai'
 export const MAX_QUESTION = 500
 
@@ -25,7 +26,8 @@ export async function askAi(client: SupabaseClient | null, question: string, lan
   }
   const d = data as Partial<AiAnswer>
   if (typeof d?.answer !== 'string') return { ok: false, error: 'ai' }
-  return { ok: true, data: { answer: d.answer, found: d.found === true, sources: Array.isArray(d.sources) ? d.sources : [], left: d.left } }
+  const kind: AiKind = d.kind === 'chat' || d.kind === 'fact' || d.kind === 'no_info' ? d.kind : d.found === true ? 'fact' : 'no_info'
+  return { ok: true, data: { answer: d.answer, found: d.found === true, kind, sources: Array.isArray(d.sources) ? d.sources : [], left: d.left } }
 }
 
 /** Faqat http(s) havola ekranga chiqadi. */
