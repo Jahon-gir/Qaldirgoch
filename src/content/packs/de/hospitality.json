@@ -110,7 +110,90 @@
         "ru": "Обслуживание гостей"
       },
       "order": 2,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Mehmon",
+              "uz-Cyrl": "Меҳмон",
+              "ru": "Гость"
+            },
+            "de": "Guten Abend! Wir haben eine Reservierung für zwei Personen.",
+            "tr": {
+              "uz": "Xayrli kech! Ikki kishiga bronimiz bor.",
+              "uz-Cyrl": "Хайрли кеч! Икки кишига бронимиз бор.",
+              "ru": "Добрый вечер! У нас бронь на двоих."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Guten Abend! Bitte, hier ist Ihr Tisch.",
+            "tr": {
+              "uz": "Xayrli kech! Marhamat, mana stolingiz.",
+              "uz-Cyrl": "Хайрли кеч! Марҳамат, мана столингиз.",
+              "ru": "Добрый вечер! Пожалуйста, вот ваш столик."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mehmon",
+              "uz-Cyrl": "Меҳмон",
+              "ru": "Гость"
+            },
+            "de": "Danke. Können wir die Speisekarte haben?",
+            "tr": {
+              "uz": "Rahmat. Menyuni bera olasizmi?",
+              "uz-Cyrl": "Раҳмат. Менюни бера оласизми?",
+              "ru": "Спасибо. Можно нам меню?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Natürlich. Was möchten Sie trinken?",
+            "tr": {
+              "uz": "Albatta. Nima ichasiz?",
+              "uz-Cyrl": "Албатта. Нима ичасиз?",
+              "ru": "Конечно. Что будете пить?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mehmon",
+              "uz-Cyrl": "Меҳмон",
+              "ru": "Гость"
+            },
+            "de": "Ein Mineralwasser und einen Apfelsaft, bitte.",
+            "tr": {
+              "uz": "Bitta mineral suv va bitta olma sharbati, iltimos.",
+              "uz-Cyrl": "Битта минерал сув ва битта олма шарбати, илтимос.",
+              "ru": "Одну минеральную воду и один яблочный сок, пожалуйста."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gern. Ich bringe die Getränke sofort.",
+            "tr": {
+              "uz": "Xoʻp. Ichimliklarni hozir olib kelaman.",
+              "uz-Cyrl": "Хўп. Ичимликларни ҳозир олиб келаман.",
+              "ru": "Хорошо. Сейчас принесу напитки."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "gigiyena",
@@ -120,7 +203,90 @@
         "ru": "Гигиена и чистота"
       },
       "order": 3,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Oshpaz",
+              "uz-Cyrl": "Ошпаз",
+              "ru": "Повар"
+            },
+            "de": "Stopp! Haben Sie sich die Hände gewaschen?",
+            "tr": {
+              "uz": "Toʻxtang! Qoʻlingizni yuvdingizmi?",
+              "uz-Cyrl": "Тўхтанг! Қўлингизни ювдингизми?",
+              "ru": "Стоп! Вы помыли руки?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, gerade eben. Mit Seife.",
+            "tr": {
+              "uz": "Ha, hozirgina. Sovun bilan.",
+              "uz-Cyrl": "Ҳа, ҳозиргина. Совун билан.",
+              "ru": "Да, только что. С мылом."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Oshpaz",
+              "uz-Cyrl": "Ошпаз",
+              "ru": "Повар"
+            },
+            "de": "Gut. Wo ist Ihr Haarnetz?",
+            "tr": {
+              "uz": "Yaxshi. Soch toʻringiz qani?",
+              "uz-Cyrl": "Яхши. Соч тўрингиз қани?",
+              "ru": "Хорошо. Где ваша сеточка для волос?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Entschuldigung, ich setze es sofort auf.",
+            "tr": {
+              "uz": "Kechirasiz, hozir kiyaman.",
+              "uz-Cyrl": "Кечирасиз, ҳозир кияман.",
+              "ru": "Извините, сейчас надену."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Oshpaz",
+              "uz-Cyrl": "Ошпаз",
+              "ru": "Повар"
+            },
+            "de": "Und das Fleisch hier ist abgelaufen. Bitte in den Müll.",
+            "tr": {
+              "uz": "Bu goʻshtning muddati oʻtgan. Iltimos, axlatga tashlang.",
+              "uz-Cyrl": "Бу гўштнинг муддати ўтган. Илтимос, ахлатга ташланг.",
+              "ru": "А у этого мяса истёк срок. Выбросите, пожалуйста."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mache ich. Danach desinfiziere ich den Tisch.",
+            "tr": {
+              "uz": "Xoʻp. Keyin stolni dezinfeksiya qilaman.",
+              "uz-Cyrl": "Хўп. Кейин столни дезинфекция қиламан.",
+              "ru": "Сделаю. Потом продезинфицирую стол."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "mehmonxona",
@@ -130,7 +296,90 @@
         "ru": "В гостинице"
       },
       "order": 4,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Mehmon",
+              "uz-Cyrl": "Меҳмон",
+              "ru": "Гость"
+            },
+            "de": "Guten Tag! Ich habe ein Zimmer reserviert. Mein Name ist Weber.",
+            "tr": {
+              "uz": "Assalomu alaykum! Xona bron qilganman. Familiyam Veber.",
+              "uz-Cyrl": "Ассалому алайкум! Хона брон қилганман. Фамилиям Вебер.",
+              "ru": "Добрый день! Я бронировал номер. Моя фамилия Вебер."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Willkommen, Herr Weber! Ich sehe Ihre Reservierung.",
+            "tr": {
+              "uz": "Xush kelibsiz, janob Veber! Broningizni koʻryapman.",
+              "uz-Cyrl": "Хуш келибсиз, жаноб Вебер! Бронингизни кўряпман.",
+              "ru": "Добро пожаловать, господин Вебер! Вижу вашу бронь."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mehmon",
+              "uz-Cyrl": "Меҳмон",
+              "ru": "Гость"
+            },
+            "de": "Ist das ein Einzelzimmer?",
+            "tr": {
+              "uz": "Bu bir kishilik xonami?",
+              "uz-Cyrl": "Бу бир кишилик хонами?",
+              "ru": "Это одноместный номер?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, Zimmer 214, für drei Nächte. Hier ist Ihr Schlüssel.",
+            "tr": {
+              "uz": "Ha, 214-xona, uch kechaga. Mana kalitingiz.",
+              "uz-Cyrl": "Ҳа, 214-хона, уч кечага. Мана калитингиз.",
+              "ru": "Да, номер 214, на три ночи. Вот ваш ключ."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mehmon",
+              "uz-Cyrl": "Меҳмон",
+              "ru": "Гость"
+            },
+            "de": "Danke. Wann gibt es Frühstück?",
+            "tr": {
+              "uz": "Rahmat. Nonushta qachon?",
+              "uz-Cyrl": "Раҳмат. Нонушта қачон?",
+              "ru": "Спасибо. Когда завтрак?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Von sieben bis zehn Uhr, im Erdgeschoss.",
+            "tr": {
+              "uz": "Soat yettidan oʻngacha, birinchi qavatda.",
+              "uz-Cyrl": "Соат еттидан ўнгача, биринчи қаватда.",
+              "ru": "С семи до десяти, на первом этаже."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "masalliq",
@@ -140,7 +389,90 @@
         "ru": "Продукты"
       },
       "order": 5,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Oshpaz",
+              "uz-Cyrl": "Ошпаз",
+              "ru": "Повар"
+            },
+            "de": "Wir brauchen Reis und Hähnchen für heute Abend.",
+            "tr": {
+              "uz": "Bugun kechga guruch va tovuq goʻshti kerak.",
+              "uz-Cyrl": "Бугун кечга гуруч ва товуқ гўшти керак.",
+              "ru": "На вечер нам нужны рис и курица."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wie viel Reis soll ich holen?",
+            "tr": {
+              "uz": "Qancha guruch olib kelay?",
+              "uz-Cyrl": "Қанча гуруч олиб келай?",
+              "ru": "Сколько риса принести?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Oshpaz",
+              "uz-Cyrl": "Ошпаз",
+              "ru": "Повар"
+            },
+            "de": "Fünf Kilo. Achtung: Ein Gast isst kein Schweinefleisch.",
+            "tr": {
+              "uz": "Besh kilo. Diqqat: bir mehmon choʻchqa goʻshti yemaydi.",
+              "uz-Cyrl": "Беш кило. Диққат: бир меҳмон чўчқа гўшти емайди.",
+              "ru": "Пять килограммов. Внимание: один гость не ест свинину."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Verstanden. Dann koche ich für ihn nur mit Hähnchen.",
+            "tr": {
+              "uz": "Tushundim. Unda unga faqat tovuq goʻshtidan pishiraman.",
+              "uz-Cyrl": "Тушундим. Унда унга фақат товуқ гўштидан пишираман.",
+              "ru": "Понял. Тогда для него готовлю только с курицей."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Oshpaz",
+              "uz-Cyrl": "Ошпаз",
+              "ru": "Повар"
+            },
+            "de": "Gut. Haben wir noch genug Butter?",
+            "tr": {
+              "uz": "Yaxshi. Sariyogʻ yetarlimi?",
+              "uz-Cyrl": "Яхши. Сариёғ етарлими?",
+              "ru": "Хорошо. Сливочного масла ещё достаточно?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, nur noch ein Stück. Ich schreibe es auf die Liste.",
+            "tr": {
+              "uz": "Yoʻq, faqat bitta boʻlak qoldi. Roʻyxatga yozib qoʻyaman.",
+              "uz-Cyrl": "Йўқ, фақат битта бўлак қолди. Рўйхатга ёзиб қўяман.",
+              "ru": "Нет, осталась одна пачка. Запишу в список."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "xona-tozalash",
@@ -150,7 +482,90 @@
         "ru": "Уборка номера"
       },
       "order": 6,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Bitte putzen Sie heute die Zimmer 301 bis 305.",
+            "tr": {
+              "uz": "Bugun 301–305-xonalarni tozalang.",
+              "uz-Cyrl": "Бугун 301–305-хоналарни тозаланг.",
+              "ru": "Сегодня уберите, пожалуйста, номера с 301 по 305."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "In Ordnung. Wo ist der Wäschewagen?",
+            "tr": {
+              "uz": "Xoʻp. Kir aravasi qayerda?",
+              "uz-Cyrl": "Хўп. Кир араваси қаерда?",
+              "ru": "Хорошо. Где тележка для белья?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Neben dem Aufzug. An Zimmer 303 hängt „Bitte nicht stören“.",
+            "tr": {
+              "uz": "Lift yonida. 303-xonada «Iltimos, bezovta qilmang» osilgan.",
+              "uz-Cyrl": "Лифт ёнида. 303-хонада «Илтимос, безовта қилманг» осилган.",
+              "ru": "Возле лифта. На 303-м висит «Не беспокоить»."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Dann putze ich Zimmer 303 später.",
+            "tr": {
+              "uz": "Unda 303-xonani keyinroq tozalayman.",
+              "uz-Cyrl": "Унда 303-хонани кейинроқ тозалайман.",
+              "ru": "Тогда уберу 303-й позже."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Genau. Und Fundsachen bringen Sie bitte zur Rezeption.",
+            "tr": {
+              "uz": "Toʻgʻri. Topilgan buyumlarni esa qabulxonaga olib boring.",
+              "uz-Cyrl": "Тўғри. Топилган буюмларни эса қабулхонага олиб боринг.",
+              "ru": "Именно. А найденные вещи несите, пожалуйста, на ресепшн."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Ich habe hier ein Handy gefunden.",
+            "tr": {
+              "uz": "Yaxshi. Bu yerda telefon topib oldim.",
+              "uz-Cyrl": "Яхши. Бу ерда телефон топиб олдим.",
+              "ru": "Хорошо. Я тут нашёл телефон."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "bar",
@@ -160,7 +575,90 @@
         "ru": "Бар и напитки"
       },
       "order": 7,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Mehmon",
+              "uz-Cyrl": "Меҳмон",
+              "ru": "Гость"
+            },
+            "de": "Einen Kaffee und ein Mineralwasser, bitte.",
+            "tr": {
+              "uz": "Bitta qahva va bitta mineral suv, iltimos.",
+              "uz-Cyrl": "Битта қаҳва ва битта минерал сув, илтимос.",
+              "ru": "Один кофе и одну минеральную воду, пожалуйста."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mit oder ohne Kohlensäure?",
+            "tr": {
+              "uz": "Gazlimi yoki gazsizmi?",
+              "uz-Cyrl": "Газлими ёки газсизми?",
+              "ru": "С газом или без?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mehmon",
+              "uz-Cyrl": "Меҳмон",
+              "ru": "Гость"
+            },
+            "de": "Ohne, bitte. Haben Sie auch alkoholfreies Bier?",
+            "tr": {
+              "uz": "Gazsiz, iltimos. Alkogolsiz pivo ham bormi?",
+              "uz-Cyrl": "Газсиз, илтимос. Алкоголсиз пиво ҳам борми?",
+              "ru": "Без газа, пожалуйста. А безалкогольное пиво у вас есть?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, wir haben alkoholfreies Bier in der Flasche.",
+            "tr": {
+              "uz": "Ha, shishada alkogolsiz pivo bor.",
+              "uz-Cyrl": "Ҳа, шишада алкоголсиз пиво бор.",
+              "ru": "Да, есть безалкогольное пиво в бутылке."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mehmon",
+              "uz-Cyrl": "Меҳмон",
+              "ru": "Гость"
+            },
+            "de": "Gut, dann ein Bier. Ich möchte zahlen.",
+            "tr": {
+              "uz": "Yaxshi, unda bitta pivo. Hisobni toʻlamoqchiman.",
+              "uz-Cyrl": "Яхши, унда битта пиво. Ҳисобни тўламоқчиман.",
+              "ru": "Хорошо, тогда одно пиво. Я хочу расплатиться."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Zahlen Sie bar oder mit Karte?",
+            "tr": {
+              "uz": "Naqd toʻlaysizmi yoki karta bilan?",
+              "uz-Cyrl": "Нақд тўлайсизми ёки карта билан?",
+              "ru": "Наличными или картой?"
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "bufet",
@@ -170,7 +668,90 @@
         "ru": "Буфет и мероприятия"
       },
       "order": 8,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Heute Abend ist eine Hochzeit im Saal. Wir decken jetzt ein.",
+            "tr": {
+              "uz": "Bugun kechqurun zalda toʻy. Hozir stollarni bezatamiz.",
+              "uz-Cyrl": "Бугун кечқурун залда тўй. Ҳозир столларни безатамиз.",
+              "ru": "Сегодня вечером в зале свадьба. Сейчас накрываем столы."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Welche Tischdecken nehmen wir?",
+            "tr": {
+              "uz": "Qaysi dasturxonlarni olamiz?",
+              "uz-Cyrl": "Қайси дастурхонларни оламиз?",
+              "ru": "Какие скатерти берём?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Die weißen. Danach legen Sie das Besteck auf die Tische.",
+            "tr": {
+              "uz": "Oqlarini. Keyin stollarga qoshiq-sanchqilarni qoʻying.",
+              "uz-Cyrl": "Оқларини. Кейин столларга қошиқ-санчқиларни қўйинг.",
+              "ru": "Белые. Потом разложите приборы на столы."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wie viele Gäste kommen?",
+            "tr": {
+              "uz": "Nechta mehmon keladi?",
+              "uz-Cyrl": "Нечта меҳмон келади?",
+              "ru": "Сколько придёт гостей?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Achtzig. Und das Buffet bitte immer auffüllen.",
+            "tr": {
+              "uz": "Sakson. Bufetni esa doim toʻldirib turing.",
+              "uz-Cyrl": "Саксон. Буфетни эса доим тўлдириб туринг.",
+              "ru": "Восемьдесят. И буфет, пожалуйста, всё время пополняйте."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Alles klar. Ich schaue jede halbe Stunde nach dem Buffet.",
+            "tr": {
+              "uz": "Tushunarli. Har yarim soatda bufetni koʻrib turaman.",
+              "uz-Cyrl": "Тушунарли. Ҳар ярим соатда буфетни кўриб тураман.",
+              "ru": "Понятно. Буду проверять буфет каждые полчаса."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
