@@ -30,8 +30,7 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2,webp}'],
-        // Asosiy JS (kontent paketlari bilan) 2 MiB dan oshdi — oflayn ishlashi uchun keshga sigʻsin.
-        // Keyingi qadam: paketlarni alohida boʻlakka ajratish (dynamic import).
+        // Kontent paketlari alohida boʻlaklarda (0.23.0); chegara zaxira uchun 4 MiB qoldirildi.
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024
       }
     })
