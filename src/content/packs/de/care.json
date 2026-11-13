@@ -110,7 +110,90 @@
         "ru": "Измерения, лекарства, смена"
       },
       "order": 2,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Bitte messen Sie bei Frau Weber den Blutdruck und den Puls.",
+            "tr": {
+              "uz": "Iltimos, Veber xonimning qon bosimi va pulsini oʻlchang.",
+              "uz-Cyrl": "Илтимос, Вебер хонимнинг қон босими ва пулсини ўлчанг.",
+              "ru": "Пожалуйста, измерьте фрау Вебер давление и пульс."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mache ich. Soll ich auch die Temperatur messen?",
+            "tr": {
+              "uz": "Xoʻp. Haroratini ham oʻlchaymi?",
+              "uz-Cyrl": "Хўп. Ҳароратини ҳам ўлчайми?",
+              "ru": "Хорошо. Температуру тоже измерить?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Ja, bitte. Sie hatte gestern Fieber.",
+            "tr": {
+              "uz": "Ha, iltimos. Kecha uning isitmasi bor edi.",
+              "uz-Cyrl": "Ҳа, илтимос. Кеча унинг иситмаси бор эди.",
+              "ru": "Да, пожалуйста. Вчера у неё была температура."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Ich schreibe alles in die Dokumentation.",
+            "tr": {
+              "uz": "Yaxshi. Hammasini hujjatlarga yozib qoʻyaman.",
+              "uz-Cyrl": "Яхши. Ҳаммасини ҳужжатларга ёзиб қўяман.",
+              "ru": "Хорошо. Я всё запишу в документацию."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Danke. Und um elf Uhr bekommt sie ihre Tablette.",
+            "tr": {
+              "uz": "Rahmat. Soat oʻn birda esa u tabletkasini oladi.",
+              "uz-Cyrl": "Раҳмат. Соат ўн бирда эса у таблеткасини олади.",
+              "ru": "Спасибо. А в одиннадцать часов она получает свою таблетку."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Um elf Uhr? In Ordnung, ich denke daran.",
+            "tr": {
+              "uz": "Soat oʻn birdami? Xoʻp, esimda boʻladi.",
+              "uz-Cyrl": "Соат ўн бирдами? Хўп, эсимда бўлади.",
+              "ru": "В одиннадцать? Хорошо, я буду помнить."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "ovqat",
@@ -120,7 +203,90 @@
         "ru": "Питание и питьё"
       },
       "order": 3,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Das Mittagessen ist da. Bitte helfen Sie Herrn Braun beim Essen.",
+            "tr": {
+              "uz": "Tushlik keldi. Iltimos, Braun janobga ovqatlanishda yordam bering.",
+              "uz-Cyrl": "Тушлик келди. Илтимос, Браун жанобга овқатланишда ёрдам беринг.",
+              "ru": "Обед привезли. Пожалуйста, помогите господину Брауну поесть."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gern. Was gibt es heute?",
+            "tr": {
+              "uz": "Bajonidil. Bugun nima bor?",
+              "uz-Cyrl": "Бажонидил. Бугун нима бор?",
+              "ru": "С удовольствием. Что сегодня?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Suppe und Brot. Er isst langsam, bitte haben Sie Geduld.",
+            "tr": {
+              "uz": "Shoʻrva va non. U sekin ovqatlanadi, iltimos, sabr qiling.",
+              "uz-Cyrl": "Шўрва ва нон. У секин овқатланади, илтимос, сабр қилинг.",
+              "ru": "Суп и хлеб. Он ест медленно, пожалуйста, будьте терпеливы."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Kein Problem, ich habe Zeit.",
+            "tr": {
+              "uz": "Muammo yoʻq, vaqtim bor.",
+              "uz-Cyrl": "Муаммо йўқ, вақтим бор.",
+              "ru": "Без проблем, у меня есть время."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Danke. Er muss auch viel trinken. Geben Sie ihm bitte Wasser oder Tee.",
+            "tr": {
+              "uz": "Rahmat. U koʻp ichishi ham kerak. Iltimos, unga suv yoki choy bering.",
+              "uz-Cyrl": "Раҳмат. У кўп ичиши ҳам керак. Илтимос, унга сув ёки чой беринг.",
+              "ru": "Спасибо. Ему также нужно много пить. Пожалуйста, дайте ему воду или чай."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wasser oder Tee? Gut, ich frage ihn.",
+            "tr": {
+              "uz": "Suv yoki choymi? Yaxshi, undan soʻrayman.",
+              "uz-Cyrl": "Сув ёки чойми? Яхши, ундан сўрайман.",
+              "ru": "Воду или чай? Хорошо, я спрошу его."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "harakat",
@@ -130,7 +296,90 @@
         "ru": "Передвижение и помощь"
       },
       "order": 4,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Frau Klein möchte spazieren gehen. Können Sie sie begleiten?",
+            "tr": {
+              "uz": "Klayn xonim sayr qilmoqchi. Unga hamroh boʻla olasizmi?",
+              "uz-Cyrl": "Кляйн хоним сайр қилмоқчи. Унга ҳамроҳ бўла оласизми?",
+              "ru": "Фрау Кляйн хочет погулять. Можете её сопроводить?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, gern. Nimmt sie den Rollator?",
+            "tr": {
+              "uz": "Ha, bajonidil. U yurish aravachasini oladimi?",
+              "uz-Cyrl": "Ҳа, бажонидил. У юриш аравачасини оладими?",
+              "ru": "Да, с удовольствием. Она возьмёт ходунки?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Ja. Aber Vorsicht an der Treppe! Nehmen Sie bitte den Aufzug.",
+            "tr": {
+              "uz": "Ha. Lekin zinada ehtiyot boʻling! Iltimos, liftdan foydalaning.",
+              "uz-Cyrl": "Ҳа. Лекин зинада эҳтиёт бўлинг! Илтимос, лифтдан фойдаланинг.",
+              "ru": "Да. Но осторожно на лестнице! Пожалуйста, поезжайте на лифте."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Natürlich, wir fahren mit dem Aufzug.",
+            "tr": {
+              "uz": "Albatta, liftda tushamiz.",
+              "uz-Cyrl": "Албатта, лифтда тушамиз.",
+              "ru": "Конечно, мы поедем на лифте."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Gut. Und wenn sie müde ist, machen Sie bitte eine Pause.",
+            "tr": {
+              "uz": "Yaxshi. Agar u charchasa, iltimos, dam oling.",
+              "uz-Cyrl": "Яхши. Агар у чарчаса, илтимос, дам олинг.",
+              "ru": "Хорошо. А если она устанет, пожалуйста, сделайте перерыв."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Eine Pause, wenn sie müde ist. Verstanden.",
+            "tr": {
+              "uz": "Charchasa, dam olamiz. Tushundim.",
+              "uz-Cyrl": "Чарчаса, дам оламиз. Тушундим.",
+              "ru": "Если устанет — сделаем перерыв. Понятно."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "tana",
@@ -140,7 +389,90 @@
         "ru": "Части тела"
       },
       "order": 5,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Yashovchi",
+              "uz-Cyrl": "Яшовчи",
+              "ru": "Проживающий"
+            },
+            "de": "Entschuldigung, können Sie mir helfen? Mir geht es nicht gut.",
+            "tr": {
+              "uz": "Kechirasiz, menga yordam bera olasizmi? Oʻzimni yaxshi his qilmayapman.",
+              "uz-Cyrl": "Кечирасиз, менга ёрдам бера оласизми? Ўзимни яхши ҳис қилмаяпман.",
+              "ru": "Извините, вы можете мне помочь? Мне нехорошо."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Natürlich. Wo tut es weh?",
+            "tr": {
+              "uz": "Albatta. Qayeringiz ogʻriyapti?",
+              "uz-Cyrl": "Албатта. Қаерингиз оғрияпти?",
+              "ru": "Конечно. Где болит?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Yashovchi",
+              "uz-Cyrl": "Яшовчи",
+              "ru": "Проживающий"
+            },
+            "de": "Der Rücken tut weh, und mein Knie auch.",
+            "tr": {
+              "uz": "Belim ogʻriyapti, tizzam ham.",
+              "uz-Cyrl": "Белим оғрияпти, тиззам ҳам.",
+              "ru": "Болит спина, и колено тоже."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Seit wann haben Sie die Schmerzen?",
+            "tr": {
+              "uz": "Ogʻriq qachondan beri?",
+              "uz-Cyrl": "Оғриқ қачондан бери?",
+              "ru": "С какого времени у вас боли?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Yashovchi",
+              "uz-Cyrl": "Яшовчи",
+              "ru": "Проживающий"
+            },
+            "de": "Seit heute Morgen. Ich kann nicht gut gehen.",
+            "tr": {
+              "uz": "Bugun ertalabdan beri. Yaxshi yura olmayapman.",
+              "uz-Cyrl": "Бугун эрталабдан бери. Яхши юра олмаяпман.",
+              "ru": "С сегодняшнего утра. Я не могу нормально ходить."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nicht gut gehen? Dann bleiben Sie bitte sitzen, ich hole die Kollegin.",
+            "tr": {
+              "uz": "Yaxshi yura olmayapsizmi? Unda, iltimos, oʻtirib turing, men hamkasbimni chaqiraman.",
+              "uz-Cyrl": "Яхши юра олмаяпсизми? Унда, илтимос, ўтириб туринг, мен ҳамкасбимни чақираман.",
+              "ru": "Не можете нормально ходить? Тогда, пожалуйста, посидите, я позову коллегу."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "kiyinish",
@@ -150,7 +482,90 @@
         "ru": "Одевание"
       },
       "order": 6,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Herr Lang geht heute zum Arzt. Bitte helfen Sie ihm beim Anziehen.",
+            "tr": {
+              "uz": "Lang janob bugun shifokorga boradi. Iltimos, unga kiyinishda yordam bering.",
+              "uz-Cyrl": "Ланг жаноб бугун шифокорга боради. Илтимос, унга кийинишда ёрдам беринг.",
+              "ru": "Господин Ланг сегодня идёт к врачу. Пожалуйста, помогите ему одеться."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gern. Was soll er anziehen?",
+            "tr": {
+              "uz": "Bajonidil. U nima kiyishi kerak?",
+              "uz-Cyrl": "Бажонидил. У нима кийиши керак?",
+              "ru": "С удовольствием. Что ему надеть?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Die blaue Hose, ein Hemd und den Pullover. Es ist kalt draußen.",
+            "tr": {
+              "uz": "Koʻk shim, koʻylak va sviter. Tashqarida sovuq.",
+              "uz-Cyrl": "Кўк шим, кўйлак ва свитер. Ташқарида совуқ.",
+              "ru": "Синие брюки, рубашку и свитер. На улице холодно."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Braucht er auch die Jacke und die Mütze?",
+            "tr": {
+              "uz": "Unga kurtka va shapka ham kerakmi?",
+              "uz-Cyrl": "Унга куртка ва шапка ҳам керакми?",
+              "ru": "Ему нужны ещё куртка и шапка?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Ja, bitte. Und vergessen Sie die Brille und das Hörgerät nicht.",
+            "tr": {
+              "uz": "Ha, iltimos. Koʻzoynak va eshitish apparatini ham unutmang.",
+              "uz-Cyrl": "Ҳа, илтимос. Кўзойнак ва эшитиш аппаратини ҳам унутманг.",
+              "ru": "Да, пожалуйста. И не забудьте очки и слуховой аппарат."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Brille und Hörgerät, alles klar.",
+            "tr": {
+              "uz": "Koʻzoynak va eshitish apparati, tushunarli.",
+              "uz-Cyrl": "Кўзойнак ва эшитиш аппарати, тушунарли.",
+              "ru": "Очки и слуховой аппарат, всё ясно."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "gigiyena",
@@ -160,7 +575,90 @@
         "ru": "Гигиена и защита от инфекций"
       },
       "order": 7,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Achtung, Frau Roth in Zimmer fünf ist ansteckend.",
+            "tr": {
+              "uz": "Diqqat, beshinchi xonadagi Rot xonimning kasalligi yuqumli.",
+              "uz-Cyrl": "Диққат, бешинчи хонадаги Рот хонимнинг касаллиги юқумли.",
+              "ru": "Внимание, фрау Рот из пятой комнаты заразна."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Oh. Was muss ich beachten?",
+            "tr": {
+              "uz": "Voy. Nimalarga eʼtibor berishim kerak?",
+              "uz-Cyrl": "Вой. Нималарга эътибор беришим керак?",
+              "ru": "Ой. На что мне обратить внимание?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Tragen Sie bitte Handschuhe, Mundschutz und Schürze.",
+            "tr": {
+              "uz": "Iltimos, qoʻlqop, tibbiy niqob va fartuk taqing.",
+              "uz-Cyrl": "Илтимос, қўлқоп, тиббий ниқоб ва фартук тақинг.",
+              "ru": "Пожалуйста, наденьте перчатки, маску и фартук."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Und wohin mit der schmutzigen Bettwäsche?",
+            "tr": {
+              "uz": "Iflos choyshablarni qayerga qoʻyaman?",
+              "uz-Cyrl": "Ифлос чойшабларни қаерга қўяман?",
+              "ru": "А куда девать грязное постельное бельё?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "In den Müllsack im Zimmer. Danach bitte die Hände desinfizieren.",
+            "tr": {
+              "uz": "Xonadagi axlat qopiga. Keyin, iltimos, qoʻllarni dezinfeksiya qiling.",
+              "uz-Cyrl": "Хонадаги ахлат қопига. Кейин, илтимос, қўлларни дезинфекция қилинг.",
+              "ru": "В мешок в комнате. Потом, пожалуйста, продезинфицируйте руки."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Alles klar, danach desinfiziere ich die Hände.",
+            "tr": {
+              "uz": "Tushunarli, keyin qoʻllarimni dezinfeksiya qilaman.",
+              "uz-Cyrl": "Тушунарли, кейин қўлларимни дезинфекция қиламан.",
+              "ru": "Понятно, потом я продезинфицирую руки."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "muloqot",
@@ -170,7 +668,90 @@
         "ru": "Разговор с пациентом и родственниками"
       },
       "order": 8,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Qarindosh",
+              "uz-Cyrl": "Қариндош",
+              "ru": "Родственник"
+            },
+            "de": "Guten Tag. Ich möchte meinen Vater besuchen, Herrn Becker.",
+            "tr": {
+              "uz": "Assalomu alaykum. Otamni, Bekker janobni koʻrgani keldim.",
+              "uz-Cyrl": "Ассалому алайкум. Отамни, Беккер жанобни кўргани келдим.",
+              "ru": "Здравствуйте. Я хочу навестить своего отца, господина Беккера."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Guten Tag. Herr Becker ist in Zimmer acht.",
+            "tr": {
+              "uz": "Assalomu alaykum. Bekker janob sakkizinchi xonada.",
+              "uz-Cyrl": "Ассалому алайкум. Беккер жаноб саккизинчи хонада.",
+              "ru": "Здравствуйте. Господин Беккер в восьмой комнате."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Qarindosh",
+              "uz-Cyrl": "Қариндош",
+              "ru": "Родственник"
+            },
+            "de": "Wie geht es ihm heute? Gestern war er sehr verwirrt.",
+            "tr": {
+              "uz": "Bugun ahvoli qanday? Kecha u juda parishon edi.",
+              "uz-Cyrl": "Бугун аҳволи қандай? Кеча у жуда паришон эди.",
+              "ru": "Как он сегодня? Вчера он был очень растерян."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Heute geht es ihm besser. Er hat gut gegessen.",
+            "tr": {
+              "uz": "Bugun ahvoli yaxshiroq. Yaxshi ovqatlandi.",
+              "uz-Cyrl": "Бугун аҳволи яхшироқ. Яхши овқатланди.",
+              "ru": "Сегодня ему лучше. Он хорошо поел."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Qarindosh",
+              "uz-Cyrl": "Қариндош",
+              "ru": "Родственник"
+            },
+            "de": "Gut. Kann ich mit der Stationsleitung sprechen?",
+            "tr": {
+              "uz": "Yaxshi. Boʻlim rahbari bilan gaplasha olamanmi?",
+              "uz-Cyrl": "Яхши. Бўлим раҳбари билан гаплаша оламанми?",
+              "ru": "Хорошо. Можно поговорить с заведующей отделением?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Einen Moment, bitte. Ich rufe sie.",
+            "tr": {
+              "uz": "Bir daqiqa, iltimos. Uni chaqiraman.",
+              "uz-Cyrl": "Бир дақиқа, илтимос. Уни чақираман.",
+              "ru": "Одну минуту, пожалуйста. Я её позову."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
