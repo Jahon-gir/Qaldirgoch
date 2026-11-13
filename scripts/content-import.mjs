@@ -14,7 +14,7 @@ import { mkdirSync, statSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import ExcelJS from 'exceljs'
-import { FIELD_COLUMNS, SHEET, SITUATION_COLUMNS, WORD_COLUMNS, rowsToPacks } from '../src/content/pack/rows.ts'
+import { DIALOG_COLUMNS, FIELD_COLUMNS, SHEET, SITUATION_COLUMNS, WORD_COLUMNS, rowsToPacks } from '../src/content/pack/rows.ts'
 import { rulesOf } from '../src/content/pack/rules.ts'
 import { packReport } from '../src/content/pack/validate.ts'
 
@@ -45,7 +45,7 @@ export function cellText(v) {
   return String(v)
 }
 
-const REQUIRED = { [SHEET.fields]: FIELD_COLUMNS, [SHEET.situations]: SITUATION_COLUMNS, [SHEET.words]: WORD_COLUMNS }
+const REQUIRED = { [SHEET.fields]: FIELD_COLUMNS, [SHEET.situations]: SITUATION_COLUMNS, [SHEET.words]: WORD_COLUMNS, [SHEET.dialogs]: DIALOG_COLUMNS }
 
 /** Varaqni qatorlarga aylantiradi: 1-qator — ustun nomlari, 2-qator — izoh, maʼlumot 3-qatordan; boʻsh qatorlar tashlanadi. */
 export function sheetRows(ws, issues) {
@@ -74,15 +74,16 @@ export async function readWorkbook(file) {
   const wb = new ExcelJS.Workbook()
   await wb.xlsx.readFile(file)
   const issues = []
-  const get = (name) => {
+  const get = (name, optional = false) => {
     const ws = wb.getWorksheet(name)
+    if (!ws && optional) return []
     if (!ws) {
       issues.push({ level: 'error', where: file, message: `"${name}" varagʻi yoʻq (shablondan foydalaning: docs/content/shablon.xlsx)` })
       return []
     }
     return sheetRows(ws, issues)
   }
-  return { sheets: { fields: get(SHEET.fields), situations: get(SHEET.situations), words: get(SHEET.words) }, issues }
+  return { sheets: { fields: get(SHEET.fields), situations: get(SHEET.situations), words: get(SHEET.words), dialogs: get(SHEET.dialogs, true) }, issues }
 }
 
 /** Import: xatolar boʻlsa yozmaydi. Natija: { ok, packs, issues, written }. */

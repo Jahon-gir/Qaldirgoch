@@ -71,6 +71,7 @@ function play(ex: Exercise) {
     }
     return click('Davom etish')
   }
+  if (ex.type !== 'syllable') throw new Error(`kutilmagan mashq: ${ex.type}`)
   fireEvent.click(tile(ex.initial))
   fireEvent.click(tile(ex.vowel))
   if (ex.final) fireEvent.click(tile(ex.final))

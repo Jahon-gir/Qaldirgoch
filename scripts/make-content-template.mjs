@@ -8,7 +8,7 @@ import { mkdirSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import ExcelJS from 'exceljs'
-import { FIELD_COLUMNS, SHEET, SITUATION_COLUMNS, WORD_COLUMNS } from '../src/content/pack/rows.ts'
+import { DIALOG_COLUMNS, FIELD_COLUMNS, SHEET, SITUATION_COLUMNS, WORD_COLUMNS } from '../src/content/pack/rows.ts'
 import { PACK_RULES } from '../src/content/pack/rules.ts'
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
@@ -50,7 +50,12 @@ const NOTES = {
   source: 'Manba (ixtiyoriy). Misol: Goethe A1 Wortliste — faqat daraja uchun',
   status: 'Holat: qoralama / tekshiruvda / tasdiqlangan',
   verified_by: 'Tasdiqlangan boʻlsa: tekshiruvchi ismi',
-  verified_at: 'Tasdiqlangan boʻlsa: sana YYYY-MM-DD'
+  verified_at: 'Tasdiqlangan boʻlsa: sana YYYY-MM-DD',
+  line: 'Dialog: replika tartibi 1, 2, 3 ... (4–8 replika, bitta vaziyatda bitta dialog)',
+  speaker_uz: 'Kim aytadi (lotin). Misol: Usta',
+  speaker_cyrl: 'Kim aytadi (kirill). Misol: Уста',
+  speaker_ru: 'Kim aytadi (rus). Misol: Мастер',
+  de: 'Nemischa gap (oʻzimiz yozamiz). Misol: Wo ist der Hammer?'
 }
 
 const list = (values) => ({ type: 'list', allowBlank: true, formulae: [`"${values.join(',')}"`], showErrorMessage: true, errorTitle: 'Roʻyxatdan tanlang', error: `Mumkin: ${values.join(', ')}` })
@@ -92,7 +97,8 @@ export async function makeTemplate(out = join(ROOT, 'docs/content/shablon.xlsx')
     '5. Rasm: .webp, ~30 KB (60 KB dan oshmasin), bitta uslubda. AI chizgan boʻlsa image_source = ai; odam koʻrib chiqqach image_checked = ha.',
     '6. Holat: qoralama → tekshiruvda → tasdiqlangan. "Tasdiqlangan" faqat nemis tilini biladigan tekshiruvchi koʻrgach (verified_by, verified_at).',
     '7. Darslik, telc, Goethe matni, misol gapi va rasmi KOʻCHIRILMAYDI. Misol gaplarni oʻzimiz yozamiz.',
-    '8. Tekshirish: npm run content:import -- fayl.xlsx --dry   ·   Yozish: npm run content:import -- fayl.xlsx',
+    '8. "Dialoglar" (ixtiyoriy): vaziyat uchun 4–8 replikali qisqa suhbat, 2–3 kishi. Holat hamma replikada bir xil. Darsda soʻzlardan keyin chiqadi.',
+    '9. Tekshirish: npm run content:import -- fayl.xlsx --dry   ·   Yozish: npm run content:import -- fayl.xlsx',
     'Batafsil: docs/content/README.md'
   ].forEach((t, i) => {
     const r = guide.addRow([t])
@@ -124,6 +130,8 @@ export async function makeTemplate(out = join(ROOT, 'docs/content/shablon.xlsx')
     image_checked: yn,
     status: list(['qoralama', 'tekshiruvda', 'tasdiqlangan'])
   })
+
+  sheet(wb, SHEET.dialogs, DIALOG_COLUMNS, { field: list([...de.fields]), status: list(['qoralama', 'tekshiruvda', 'tasdiqlangan']) })
 
   mkdirSync(dirname(out), { recursive: true })
   await wb.xlsx.writeFile(out)

@@ -7,7 +7,7 @@ import { WORD_IDS } from './words'
 const LESSON_TOKENS = new Set(
   LESSONS.flatMap((l) =>
     exercisesOf(l.id).flatMap((ex) => {
-      const texts = ex.type === 'word' ? [ex.term, ex.example!.term] : ex.type === 'choice' ? [ex.full, ...ex.options.map((o) => o.text)] : ex.pairs.map((p) => p.term)
+      const texts = ex.type === 'word' ? [ex.term, ex.example!.term] : ex.type === 'choice' ? [ex.full, ...ex.options.map((o) => o.text)] : ex.type === 'dialog' ? ex.lines.map((l) => l.text) : ex.pairs.map((p) => p.term)
       return texts.flatMap((s) => s.split(/[^\p{L}]+/u).filter(Boolean))
     })
   )

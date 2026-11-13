@@ -15,6 +15,9 @@ const word = (o: Record<string, string> = {}) =>
     field: 'technical', situation: 'asboblar', level: 'A1', article: 'der', term: 'Hammer', plural: 'die Hämmer',
     uz: 'bolgʻa', uz_cyrl: 'болға', ru: 'молоток', pron_uz: 'der ha-mer', pron_cyrl: 'дер ха-мер', pron_ru: 'дер ха-мер', safety: 'yoʻq', status: 'tekshiruvda', ...o
   })
+const dl = (line: string, speaker_uz: string, o: Record<string, string> = {}) =>
+  row({ field: 'technical', situation: 'asboblar', line, speaker_uz, speaker_cyrl: 'Уста', speaker_ru: 'Мастер', de: `Satz ${line}.`, uz: 'gap', uz_cyrl: 'гап', ru: 'фраза', status: 'tekshiruvda', ...o })
+const dialog4 = () => [dl('1', 'Usta'), dl('2', 'Ishchi'), dl('3', 'Usta'), dl('4', 'Ishchi')]
 const sheets = (words: Row[], extra: Partial<Sheets> = {}): Sheets => ({ fields: [field()], situations: [sit()], words, ...extra })
 const errors = (s: Sheets, rules = de, opts = {}) => rowsToPacks(s, rules, opts).issues.filter((i) => i.level === 'error').map((i) => i.message)
 const files = (m: Record<string, number>): FileInfo => (p) => (p in m ? { size: m[p] } : null)
@@ -108,6 +111,13 @@ describe('rowsToPacks — xatolar', () => {
     ['tekshiruvda oʻqilishisiz', sheets([word({ pron_uz: '', pron_cyrl: '', pron_ru: '' })]), /qoralamadan boshqa holatda majburiy/],
     ['ikonka nomi', sheets([word({ icon: 'Hammer' })]), /Tabler nomi/],
     ['misol tarjimasiz', sheets([word({ example_term: 'Gib mir den Hammer.' })]), /misol: gap/],
+    ['dialog: 3 replika', sheets([word()], { dialogs: dialog4().slice(0, 3) }), /3 replika — 4 tadan 8 tagacha/],
+    ['dialog: bitta soʻzlovchi', sheets([word()], { dialogs: dialog4().map((r) => ({ ...r, speaker_uz: 'Usta' })) }), /1 ta soʻzlovchi/],
+    ['dialog: raqam tushib qolgan', sheets([word()], { dialogs: [dl('1', 'Usta'), dl('2', 'Ishchi'), dl('3', 'Usta'), dl('5', 'Ishchi')] }), /ketma-ket/],
+    ['dialog: takror raqam', sheets([word()], { dialogs: [...dialog4(), dl('2', 'Usta')] }), /replika 2 takrorlangan/],
+    ['dialog: nomaʼlum vaziyat', sheets([word()], { dialogs: [dl('1', 'Usta', { situation: 'yoq' })] }), /vaziyat "yoq"/],
+    ['dialog: tekshiruvda rus tarjimasiz', sheets([word()], { dialogs: [...dialog4().slice(0, 3), dl('4', 'Ishchi', { ru: '' })] }), /4-replika: rus yoʻq/],
+    ['dialog: nemischa boʻsh', sheets([word()], { dialogs: [...dialog4().slice(0, 3), dl('4', 'Ishchi', { de: '' })] }), /nemischa gap \(de\) boʻsh/],
     ['id juda uzun', sheets([word({ slug: 'a'.repeat(90) })]), /belgi \(≤ 96\)/]
   ]
   it.each(cases)('%s', (_, s, re) => {

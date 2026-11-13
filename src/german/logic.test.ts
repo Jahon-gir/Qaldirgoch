@@ -81,7 +81,7 @@ describe('ball hisoblash', () => {
   })
   it('toʻliq toʻgʻri dars: ball = jami', () => {
     const ex = exercisesOf('a1-m1-l1')
-    const outs = ex.map((e) => (e.type === 'word' ? wordOutcome() : e.type === 'choice' ? choiceOutcome(e, e.options.find((o) => o.correct)!.id) : matchOutcome(e, [])))
+    const outs = ex.map((e) => (e.type === 'word' ? wordOutcome() : e.type === 'choice' ? choiceOutcome(e, e.options.find((o) => o.correct)!.id) : e.type === 'match' ? matchOutcome(e, []) : wordOutcome()))
     const s = summarize(ex, outs)
     expect(s.score).toBe(s.total)
     expect(s.total).toBe(7)

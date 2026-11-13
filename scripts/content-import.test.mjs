@@ -3,7 +3,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import ExcelJS from 'exceljs'
 import { describe, expect, it } from 'vitest'
-import { FIELD_COLUMNS, SITUATION_COLUMNS, WORD_COLUMNS } from '../src/content/pack/rows.ts'
+import { DIALOG_COLUMNS, FIELD_COLUMNS, SITUATION_COLUMNS, WORD_COLUMNS } from '../src/content/pack/rows.ts'
 import { cellText, importWorkbook } from './content-import.mjs'
 import { checkPacks } from './content-check.mjs'
 import { makeTemplate } from './make-content-template.mjs'
@@ -16,7 +16,7 @@ function tmpRoot() {
   return root
 }
 
-async function workbook(root, words) {
+async function workbook(root, words, dialogs) {
   const wb = new ExcelJS.Workbook()
   const add = (name, cols, rows) => {
     const ws = wb.addWorksheet(name)
@@ -27,6 +27,7 @@ async function workbook(root, words) {
   add('Sohalar', FIELD_COLUMNS, [{ id: 'technical', title_uz: 'Texnik kasblar', title_cyrl: 'Техник касблар', title_ru: 'Технические профессии', order: 1 }, { id: 'care', title_uz: 'Parvarish', order: 2 }])
   add('Vaziyatlar', SITUATION_COLUMNS, [{ field: 'technical', id: 'asboblar', title_uz: 'Asboblar', title_cyrl: 'Асбоблар', title_ru: 'Инструменты', order: 1, level: 'A1' }])
   add('Sozlar', WORD_COLUMNS, words)
+  if (dialogs) add('Dialoglar', DIALOG_COLUMNS, dialogs)
   const f = join(root, 'test.xlsx')
   await wb.xlsx.writeFile(f)
   return f
@@ -60,6 +61,20 @@ describe('content:import (Excel → JSON)', () => {
     expect(res.written).toEqual([])
     expect(res.issues).toContainEqual({ level: 'error', where: 'Sozlar, 4-qator', message: 'rasm fayli topilmadi: public/content/de/img/technical/zange.webp' })
     expect(existsSync(join(root, 'src/content/packs/de/technical.json'))).toBe(false)
+  })
+
+  it('"Dialoglar" varagʻi: replikalar line tartibida vaziyatga yoziladi; holat har xil boʻlsa — xato', async () => {
+    const line = (n, speaker, de) => ({ field: 'technical', situation: 'asboblar', line: n, speaker_uz: speaker, speaker_cyrl: 'Ким', speaker_ru: 'Кто', de, uz: 'tarjima', uz_cyrl: 'таржима', ru: 'перевод', status: 'tekshiruvda' })
+    const rows = [line(2, 'Ishchi', 'Hier, bitte.'), line(1, 'Usta', 'Gib mir den Hammer.'), line(3, 'Usta', 'Danke!'), line(4, 'Ishchi', 'Gern.')]
+    const root = tmpRoot()
+    const res = await importWorkbook(await workbook(root, [hammer], rows), { root })
+    expect(res.issues.filter((i) => i.level === 'error')).toEqual([])
+    const pack = JSON.parse(readFileSync(join(root, 'src/content/packs/de/technical.json'), 'utf8'))
+    expect(pack.situations[0].dialog.status).toBe('review')
+    expect(pack.situations[0].dialog.lines.map((l) => l.de)).toEqual(['Gib mir den Hammer.', 'Hier, bitte.', 'Danke!', 'Gern.'])
+    const bad = await importWorkbook(await workbook(tmpRoot(), [hammer], [...rows.slice(0, 3), { ...rows[3], status: 'qoralama' }]), { root: tmpRoot(), dry: true })
+    expect(bad.ok).toBe(false)
+    expect(bad.issues.map((i) => i.message).join('\n')).toMatch(/holat \(status\) hamma replikada bir xil/)
   })
 
   it('--dry: tekshiradi, lekin yozmaydi', async () => {

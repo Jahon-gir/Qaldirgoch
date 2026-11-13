@@ -17,7 +17,90 @@
         "ru": "Знаки безопасности"
       },
       "order": 1,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Halt! Hier ist es gefährlich.",
+            "tr": {
+              "uz": "Toʻxtang! Bu yer xavfli.",
+              "uz-Cyrl": "Тўхтанг! Бу ер хавфли.",
+              "ru": "Стойте! Здесь опасно."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Entschuldigung! Was ist los?",
+            "tr": {
+              "uz": "Kechirasiz! Nima boʻldi?",
+              "uz-Cyrl": "Кечирасиз! Нима бўлди?",
+              "ru": "Извините! Что случилось?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Ohne Helm dürfen Sie hier nicht arbeiten.",
+            "tr": {
+              "uz": "Bu yerda kaskasiz ishlash mumkin emas.",
+              "uz-Cyrl": "Бу ерда каскасиз ишлаш мумкин эмас.",
+              "ru": "Здесь нельзя работать без каски."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wo bekomme ich einen Helm?",
+            "tr": {
+              "uz": "Kaskani qayerdan olaman?",
+              "uz-Cyrl": "Каскани қаердан оламан?",
+              "ru": "Где мне взять каску?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Im Lager, neben dem Notausgang.",
+            "tr": {
+              "uz": "Omborda, favqulodda chiqish yonida.",
+              "uz-Cyrl": "Омборда, фавқулодда чиқиш ёнида.",
+              "ru": "На складе, рядом с аварийным выходом."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Danke! Ich gehe sofort ins Lager.",
+            "tr": {
+              "uz": "Rahmat! Hozir omborga boraman.",
+              "uz-Cyrl": "Раҳмат! Ҳозир омборга бораман.",
+              "ru": "Спасибо! Сейчас пойду на склад."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "ish-vaqti",
@@ -27,7 +110,90 @@
         "ru": "Рабочее время и перерыв"
       },
       "order": 2,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Morgen haben Sie Frühschicht.",
+            "tr": {
+              "uz": "Ertaga sizda ertalabki smena.",
+              "uz-Cyrl": "Эртага сизда эрталабки смена.",
+              "ru": "Завтра у вас утренняя смена."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Um wie viel Uhr fängt die Schicht an?",
+            "tr": {
+              "uz": "Smena soat nechada boshlanadi?",
+              "uz-Cyrl": "Смена соат нечада бошланади?",
+              "ru": "Во сколько начинается смена?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Um sechs Uhr. Bitte seien Sie pünktlich.",
+            "tr": {
+              "uz": "Soat oltida. Iltimos, oʻz vaqtida keling.",
+              "uz-Cyrl": "Соат олтида. Илтимос, ўз вақтида келинг.",
+              "ru": "В шесть часов. Пожалуйста, приходите вовремя."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Natürlich. Und wann ist die Pause?",
+            "tr": {
+              "uz": "Albatta. Tanaffus qachon?",
+              "uz-Cyrl": "Албатта. Танаффус қачон?",
+              "ru": "Конечно. А когда перерыв?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Um neun Uhr, eine halbe Stunde.",
+            "tr": {
+              "uz": "Soat toʻqqizda, yarim soat.",
+              "uz-Cyrl": "Соат тўққизда, ярим соат.",
+              "ru": "В девять часов, полчаса."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut, dann bis morgen!",
+            "tr": {
+              "uz": "Yaxshi, unda ertagacha!",
+              "uz-Cyrl": "Яхши, унда эртагача!",
+              "ru": "Хорошо, тогда до завтра!"
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "korsatma",
@@ -37,7 +203,90 @@
         "ru": "Понять указание"
       },
       "order": 3,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Bringen Sie bitte die Kisten ins Lager.",
+            "tr": {
+              "uz": "Iltimos, qutilarni omborga olib boring.",
+              "uz-Cyrl": "Илтимос, қутиларни омборга олиб боринг.",
+              "ru": "Пожалуйста, отнесите ящики на склад."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wie bitte? Langsamer, bitte.",
+            "tr": {
+              "uz": "Nima dedingiz? Sekinroq, iltimos.",
+              "uz-Cyrl": "Нима дедингиз? Секинроқ, илтимос.",
+              "ru": "Простите? Помедленнее, пожалуйста."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Die Kisten. Ins Lager.",
+            "tr": {
+              "uz": "Qutilarni. Omborga.",
+              "uz-Cyrl": "Қутиларни. Омборга.",
+              "ru": "Ящики. На склад."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Alles klar. Welche Kisten?",
+            "tr": {
+              "uz": "Tushunarli. Qaysi qutilarni?",
+              "uz-Cyrl": "Тушунарли. Қайси қутиларни?",
+              "ru": "Понятно. Какие ящики?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Die blauen Kisten hier.",
+            "tr": {
+              "uz": "Mana bu koʻk qutilarni.",
+              "uz-Cyrl": "Мана бу кўк қутиларни.",
+              "ru": "Вот эти синие ящики."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich habe verstanden. Ich mache das sofort.",
+            "tr": {
+              "uz": "Tushundim. Hozir qilaman.",
+              "uz-Cyrl": "Тушундим. Ҳозир қиламан.",
+              "ru": "Понял. Сейчас сделаю."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "kasallik",
@@ -47,7 +296,90 @@
         "ru": "Если вы заболели"
       },
       "order": 4,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Rahbar",
+              "uz-Cyrl": "Раҳбар",
+              "ru": "Руководитель"
+            },
+            "de": "Guten Morgen! Wie kann ich helfen?",
+            "tr": {
+              "uz": "Xayrli tong! Qanday yordam bera olaman?",
+              "uz-Cyrl": "Хайрли тонг! Қандай ёрдам бера оламан?",
+              "ru": "Доброе утро! Чем могу помочь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Guten Morgen. Ich bin krank. Ich kann heute nicht arbeiten.",
+            "tr": {
+              "uz": "Xayrli tong. Men kasalman. Bugun ishlay olmayman.",
+              "uz-Cyrl": "Хайрли тонг. Мен касалман. Бугун ишлай олмайман.",
+              "ru": "Доброе утро. Я болею. Сегодня не могу работать."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Rahbar",
+              "uz-Cyrl": "Раҳбар",
+              "ru": "Руководитель"
+            },
+            "de": "Gute Besserung! Gehen Sie heute zum Arzt?",
+            "tr": {
+              "uz": "Tezroq tuzaling! Bugun shifokorga borasizmi?",
+              "uz-Cyrl": "Тезроқ тузалинг! Бугун шифокорга борасизми?",
+              "ru": "Выздоравливайте! Сегодня пойдёте к врачу?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, ich habe um zehn Uhr einen Termin.",
+            "tr": {
+              "uz": "Ha, soat oʻnda qabulim bor.",
+              "uz-Cyrl": "Ҳа, соат ўнда қабулим бор.",
+              "ru": "Да, у меня приём в десять часов."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Rahbar",
+              "uz-Cyrl": "Раҳбар",
+              "ru": "Руководитель"
+            },
+            "de": "Gut. Schicken Sie mir bitte die Krankmeldung.",
+            "tr": {
+              "uz": "Yaxshi. Iltimos, kasallik varaqasini menga yuboring.",
+              "uz-Cyrl": "Яхши. Илтимос, касаллик варақасини менга юборинг.",
+              "ru": "Хорошо. Пришлите мне, пожалуйста, больничный лист."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, das mache ich. Danke!",
+            "tr": {
+              "uz": "Ha, yuboraman. Rahmat!",
+              "uz-Cyrl": "Ҳа, юбораман. Раҳмат!",
+              "ru": "Да, пришлю. Спасибо!"
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "shartnoma",
@@ -57,7 +389,90 @@
         "ru": "Договор и зарплата"
       },
       "order": 5,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Kadrlar xodimi",
+              "uz-Cyrl": "Кадрлар ходими",
+              "ru": "Сотрудник отдела кадров"
+            },
+            "de": "Hier ist Ihr Arbeitsvertrag. Bitte lesen Sie ihn genau.",
+            "tr": {
+              "uz": "Mana mehnat shartnomangiz. Iltimos, diqqat bilan oʻqing.",
+              "uz-Cyrl": "Мана меҳнат шартномангиз. Илтимос, диққат билан ўқинг.",
+              "ru": "Вот ваш трудовой договор. Пожалуйста, прочитайте его внимательно."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Danke. Wie lange ist die Probezeit?",
+            "tr": {
+              "uz": "Rahmat. Sinov muddati qancha?",
+              "uz-Cyrl": "Раҳмат. Синов муддати қанча?",
+              "ru": "Спасибо. Сколько длится испытательный срок?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kadrlar xodimi",
+              "uz-Cyrl": "Кадрлар ходими",
+              "ru": "Сотрудник отдела кадров"
+            },
+            "de": "Das steht hier, auf Seite zwei.",
+            "tr": {
+              "uz": "Bu yerda, ikkinchi betda yozilgan.",
+              "uz-Cyrl": "Бу ерда, иккинчи бетда ёзилган.",
+              "ru": "Это написано здесь, на второй странице."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Bekomme ich jeden Monat eine Lohnabrechnung?",
+            "tr": {
+              "uz": "Har oy maosh varaqasini olamanmi?",
+              "uz-Cyrl": "Ҳар ой маош варақасини оламанми?",
+              "ru": "Я буду получать расчётный лист каждый месяц?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kadrlar xodimi",
+              "uz-Cyrl": "Кадрлар ходими",
+              "ru": "Сотрудник отдела кадров"
+            },
+            "de": "Ja, per E-Mail. Haben Sie noch Fragen?",
+            "tr": {
+              "uz": "Ha, elektron pochta orqali. Yana savolingiz bormi?",
+              "uz-Cyrl": "Ҳа, электрон почта орқали. Яна саволингиз борми?",
+              "ru": "Да, по электронной почте. Есть ещё вопросы?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein. Ich lese alles und unterschreibe dann.",
+            "tr": {
+              "uz": "Yoʻq. Hammasini oʻqib chiqaman, keyin imzolayman.",
+              "uz-Cyrl": "Йўқ. Ҳаммасини ўқиб чиқаман, кейин имзолайман.",
+              "ru": "Нет. Я всё прочитаю и потом подпишу."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "berufsschule",
@@ -67,7 +482,90 @@
         "ru": "Профессиональное училище"
       },
       "order": 6,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Oʻqituvchi",
+              "uz-Cyrl": "Ўқитувчи",
+              "ru": "Учитель"
+            },
+            "de": "Wo ist Ihr Berichtsheft?",
+            "tr": {
+              "uz": "Hisobot daftaringiz qayerda?",
+              "uz-Cyrl": "Ҳисобот дафтарингиз қаерда?",
+              "ru": "Где ваша отчётная тетрадь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Entschuldigung, es ist zu Hause.",
+            "tr": {
+              "uz": "Kechirasiz, u uyda qoldi.",
+              "uz-Cyrl": "Кечирасиз, у уйда қолди.",
+              "ru": "Извините, она осталась дома."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Oʻqituvchi",
+              "uz-Cyrl": "Ўқитувчи",
+              "ru": "Учитель"
+            },
+            "de": "Bringen Sie es bitte morgen mit.",
+            "tr": {
+              "uz": "Iltimos, ertaga olib keling.",
+              "uz-Cyrl": "Илтимос, эртага олиб келинг.",
+              "ru": "Пожалуйста, принесите её завтра."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, natürlich. Wann ist die Prüfung?",
+            "tr": {
+              "uz": "Ha, albatta. Imtihon qachon?",
+              "uz-Cyrl": "Ҳа, албатта. Имтиҳон қачон?",
+              "ru": "Да, конечно. Когда экзамен?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Oʻqituvchi",
+              "uz-Cyrl": "Ўқитувчи",
+              "ru": "Учитель"
+            },
+            "de": "Am Freitag. Lernen Sie bitte Kapitel drei.",
+            "tr": {
+              "uz": "Juma kuni. Iltimos, uchinchi bobni oʻrganing.",
+              "uz-Cyrl": "Жума куни. Илтимос, учинчи бобни ўрганинг.",
+              "ru": "В пятницу. Пожалуйста, выучите третью главу."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Okay, danke für die Information.",
+            "tr": {
+              "uz": "Xoʻp, maʼlumot uchun rahmat.",
+              "uz-Cyrl": "Хўп, маълумот учун раҳмат.",
+              "ru": "Хорошо, спасибо за информацию."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "transport",
@@ -77,7 +575,90 @@
         "ru": "Дорога на работу: транспорт"
       },
       "order": 7,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Yoʻlovchi",
+              "uz-Cyrl": "Йўловчи",
+              "ru": "Прохожий"
+            },
+            "de": "Suchen Sie etwas? Kann ich helfen?",
+            "tr": {
+              "uz": "Biror narsa qidiryapsizmi? Yordam beraymi?",
+              "uz-Cyrl": "Бирор нарса қидиряпсизми? Ёрдам берайми?",
+              "ru": "Вы что-то ищете? Вам помочь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, bitte. Wie komme ich zum Bahnhof?",
+            "tr": {
+              "uz": "Ha, iltimos. Vokzalga qanday borsam boʻladi?",
+              "uz-Cyrl": "Ҳа, илтимос. Вокзалга қандай борсам бўлади?",
+              "ru": "Да, пожалуйста. Как мне добраться до вокзала?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Yoʻlovchi",
+              "uz-Cyrl": "Йўловчи",
+              "ru": "Прохожий"
+            },
+            "de": "Nehmen Sie den Bus. Die Haltestelle ist dort.",
+            "tr": {
+              "uz": "Avtobusga chiqing. Bekat ana u yerda.",
+              "uz-Cyrl": "Автобусга чиқинг. Бекат ана у ерда.",
+              "ru": "Садитесь на автобус. Остановка вон там."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Muss ich umsteigen?",
+            "tr": {
+              "uz": "Boshqa transportga oʻtishim kerakmi?",
+              "uz-Cyrl": "Бошқа транспортга ўтишим керакми?",
+              "ru": "Мне нужно делать пересадку?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Yoʻlovchi",
+              "uz-Cyrl": "Йўловчи",
+              "ru": "Прохожий"
+            },
+            "de": "Nein, der Bus fährt direkt zum Bahnhof.",
+            "tr": {
+              "uz": "Yoʻq, avtobus toʻgʻri vokzalga boradi.",
+              "uz-Cyrl": "Йўқ, автобус тўғри вокзалга боради.",
+              "ru": "Нет, автобус идёт прямо до вокзала."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Vielen Dank!",
+            "tr": {
+              "uz": "Katta rahmat!",
+              "uz-Cyrl": "Катта раҳмат!",
+              "ru": "Большое спасибо!"
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "idoralar",
@@ -87,7 +668,90 @@
         "ru": "Жильё и ведомства"
       },
       "order": 8,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Idora xodimi",
+              "uz-Cyrl": "Идора ходими",
+              "ru": "Сотрудник ведомства"
+            },
+            "de": "Guten Tag. Haben Sie eine Wartenummer?",
+            "tr": {
+              "uz": "Xayrli kun. Navbat raqamingiz bormi?",
+              "uz-Cyrl": "Хайрли кун. Навбат рақамингиз борми?",
+              "ru": "Добрый день. У вас есть номер очереди?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, hier. Ich möchte meine Wohnung anmelden.",
+            "tr": {
+              "uz": "Ha, mana. Yashash joyimda roʻyxatdan oʻtmoqchiman.",
+              "uz-Cyrl": "Ҳа, мана. Яшаш жойимда рўйхатдан ўтмоқчиман.",
+              "ru": "Да, вот. Я хочу зарегистрироваться по месту жительства."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Idora xodimi",
+              "uz-Cyrl": "Идора ходими",
+              "ru": "Сотрудник ведомства"
+            },
+            "de": "Haben Sie das Formular und Ihren Pass dabei?",
+            "tr": {
+              "uz": "Blanka va pasportingiz oʻzingiz bilanmi?",
+              "uz-Cyrl": "Бланка ва паспортингиз ўзингиз биланми?",
+              "ru": "У вас с собой бланк и паспорт?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja. Das Formular ist schon ausgefüllt.",
+            "tr": {
+              "uz": "Ha. Blanka allaqachon toʻldirilgan.",
+              "uz-Cyrl": "Ҳа. Бланка аллақачон тўлдирилган.",
+              "ru": "Да. Бланк уже заполнен."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Idora xodimi",
+              "uz-Cyrl": "Идора ходими",
+              "ru": "Сотрудник ведомства"
+            },
+            "de": "Gut. Bitte unterschreiben Sie hier.",
+            "tr": {
+              "uz": "Yaxshi. Iltimos, shu yerga imzo qoʻying.",
+              "uz-Cyrl": "Яхши. Илтимос, шу ерга имзо қўйинг.",
+              "ru": "Хорошо. Пожалуйста, распишитесь здесь."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Hier? Gut. Vielen Dank!",
+            "tr": {
+              "uz": "Shu yergami? Yaxshi. Katta rahmat!",
+              "uz-Cyrl": "Шу ергами? Яхши. Катта раҳмат!",
+              "ru": "Здесь? Хорошо. Большое спасибо!"
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [

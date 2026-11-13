@@ -76,7 +76,7 @@ function playLesson(lessonId: string) {
     else if (ex.type === 'choice') {
       fireEvent.click(screen.getByRole('button', { name: exact(ex.options.find((o) => o.correct)!.text) }))
       click('Davom etish')
-    } else {
+    } else if (ex.type === 'match') {
       for (const p of ex.pairs) {
         fireEvent.click(screen.getByRole('button', { name: exact(p.term) }))
         fireEvent.click(screen.getByRole('button', { name: exact(p.tr.uz) }))

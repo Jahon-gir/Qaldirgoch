@@ -7,6 +7,7 @@ import { ALL_WORD_IDS } from '../../lang/registry'
 import { LESSON_ICON_NAMES } from '../../components/german/iconNames'
 import { PACK_RULES } from './rules'
 import { validatePacks } from './validate'
+import { packsToCourse } from './toCourse'
 import type { ContentPack } from './types'
 
 /** Repodagi barcha paketlar (src/content/packs/<til>/<soha>.json). Hozircha ilovaga ulanmagan. */
@@ -34,6 +35,19 @@ describe('kasbiy kontent paketlari', () => {
   it('ilovaga chiqqan paket soʻzlari lugʻatda aynan paket id si bilan (progress shu id bilan saqlanadi)', () => {
     const live = [...byCourse.values()].flat().flatMap((p) => p.words.filter((w) => w.status !== 'draft').map((w) => w.id))
     expect(live.filter((id) => !ALL_WORD_IDS.has(id))).toEqual([])
+  })
+
+  it('dialoglar: har birida savol chiqadi (soʻzlovchi almashadi), ilovada vaziyatning oxirgi darsida', () => {
+    const course = packsToCourse([...byCourse.values()].flat().filter((p) => p.course === 'de'))
+    for (const p of byCourse.get('de') ?? []) {
+      for (const s of p.situations.filter((x) => x.dialog && x.dialog.status !== 'draft')) {
+        const lessons = course.lessons.filter((l) => l.moduleId === `${p.field}-${s.id}`)
+        const last = course.exercises[lessons[lessons.length - 1].id]
+        const d = last[last.length - 1]
+        expect(d.type, `${p.field}-${s.id}`).toBe('dialog')
+        if (d.type === 'dialog') expect(d.check, `${p.field}-${s.id}: savol yoʻq`).toBeDefined()
+      }
+    }
   })
 
   it('ikonkalar darslar roʻyxatida bor (aks holda umumiy belgi chiqadi)', () => {

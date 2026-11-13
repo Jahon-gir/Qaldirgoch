@@ -33,6 +33,7 @@ export function lessonPhrases(lessonId: string): { de: string; tr: L3 }[] {
     if (ex.type === 'word') return [{ de: ex.term, tr: ex.tr }, ...(ex.example ? [{ de: ex.example.term, tr: ex.example.tr }] : [])]
     if (ex.type === 'choice') return [{ de: ex.full, tr: ex.translation }]
     if (ex.type === 'match') return ex.pairs.map((p) => ({ de: p.term, tr: p.tr }))
+    if (ex.type === 'dialog') return ex.lines.map((l) => ({ de: l.text, tr: l.tr }))
     return []
   })
 }
