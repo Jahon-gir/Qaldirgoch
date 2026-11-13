@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { IconSettings } from '@tabler/icons-react'
-import { Logo } from '../components/Logo'
+import { MigraLogo } from '../components/Logo'
 import { AUSBILDUNG_PATH, COUNTRIES, countryById, programById, programPath } from '../content/countries'
 import { readLastPath, type LastPath } from '../home/lastPath'
 import { WorldMap } from '../home/WorldMap'
@@ -36,7 +36,7 @@ export default function Home() {
       {/* Hero: har ikkala rejimda qora */}
       <section className="-mx-4 -mt-[max(1rem,env(safe-area-inset-top))] rounded-b-[24px] bg-[#0B0E14] px-4 pb-5 pt-[max(1rem,env(safe-area-inset-top))] text-white">
         <div className="flex items-center justify-between">
-          <Logo size={30} variant="plain" />
+          <MigraLogo size={34} className="rounded-[9px]" />
           <Link to="/sozlamalar" aria-label={t('home.settings')} className={`-mr-2 flex h-11 w-11 items-center justify-center rounded-full text-[#C9CED8] ${focusRing} focus-visible:outline-white`}>
             <IconSettings size={22} aria-hidden />
           </Link>

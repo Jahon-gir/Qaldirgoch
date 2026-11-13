@@ -10,7 +10,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'prompt',
-      includeAssets: ['icon.svg', 'apple-touch-icon.png'],
+      includeAssets: ['logo.webp', 'apple-touch-icon.png'],
       manifest: {
         name: 'Migra',
         short_name: 'Migra',

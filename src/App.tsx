@@ -1,8 +1,11 @@
+import { useEffect, useState } from 'react'
 import { HashRouter, Navigate, Outlet, Route, Routes } from 'react-router-dom'
 import { AppShell } from './components/layout/AppShell'
 import { useAuth } from './auth/AuthProvider'
 import { SyncDialogs } from './components/SyncDialogs'
 import { UpdateBanner } from './components/UpdateBanner'
+import { MigraLogo } from './components/Logo'
+import { Splash } from './components/Splash'
 import { useT } from './i18n/I18nProvider'
 import { useProfile } from './profile/ProfileProvider'
 import Home from './pages/Home'
@@ -35,6 +38,20 @@ function RequireOnboarding({ bare = false }: { bare?: boolean }) {
   const { onboarded } = useProfile()
   if (!onboarded) return <Navigate to="/boshlash" replace />
   return bare ? <Outlet /> : <AppShell />
+}
+
+/** Splash faqat sahifa birinchi ochilganda (sovuq start) va kamida 1,8 soniya; testlarda koʻrsatilmaydi. */
+let splashDone = import.meta.env.MODE === 'test'
+function useSplash(booting: boolean) {
+  const [minTime, setMinTime] = useState(!splashDone)
+  useEffect(() => {
+    if (splashDone) return
+    const id = window.setTimeout(() => setMinTime(false), 1800)
+    return () => window.clearTimeout(id)
+  }, [])
+  const show = minTime || (!splashDone && booting)
+  useEffect(() => { if (!show) splashDone = true }, [show])
+  return show
 }
 
 /** Sessiya/akkaunt tekshirilayotganda (OAuth qaytishi) onboarding bir lahza ham yonib ketmasin. */
@@ -106,10 +123,12 @@ export function AppRoutes() {
 export default function App() {
   const t = useT()
   const booting = useBooting()
+  const splash = useSplash(booting)
+  if (splash) return <Splash />
   if (booting) {
     return (
       <div role="status" className="flex min-h-full flex-col items-center justify-center gap-3">
-        <img src="./icon.svg" alt="" width={72} height={72} className="h-[72px] w-[72px]" />
+        <MigraLogo size={72} />
         <p className="text-ink-2">{t('sync.loading')}</p>
       </div>
     )

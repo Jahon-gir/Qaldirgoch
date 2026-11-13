@@ -1,8 +1,13 @@
 /** Qaldirgʻoch shakli (100x100 koordinatada; bosh ekran xaritasida ham ishlatiladi). */
 export const SWALLOW_PATH = 'M12 38 Q34 33 50 49 Q66 33 88 38 Q69 46 56 59 L63 84 L50 70 L37 84 L44 59 Q31 46 12 38 Z'
 
+/** Migra ilova logotipi (globus, M, samolyot) — public/logo.webp. Bezak: ekran oʻqigichlar oʻtkazib yuboradi. */
+export function MigraLogo({ size = 72, className = '' }: { size?: number; className?: string }) {
+  return <img src="./logo.webp" alt="" width={size} height={size} style={{ width: size, height: size }} className={`shrink-0 ${className}`} data-testid="migra-logo" />
+}
+
 /**
- * Qaldirgʻoch logotipi (public/icon.svg bilan bir xil, inline: alohida soʻrov yoʻq). Bezak — ekran oʻqigichlar oʻtkazib yuboradi.
+ * Qaldirgʻoch belgisi (inline SVG; ilova logotipi emas — Xavfsizlik va xarita uchun). Bezak — ekran oʻqigichlar oʻtkazib yuboradi.
  * variant="plain" — oq kvadrat fonsiz: faqat marjon qaldirgʻoch va sariq nuqta (bosh ekranning qora fonida).
  */
 export function Logo({ size = 84, variant = 'tile' }: { size?: number; variant?: 'tile' | 'plain' }) {
