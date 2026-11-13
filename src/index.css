@@ -141,3 +141,24 @@ body {
   .fx-pop, .fx-shake, .card-float, .card-shadow { animation: none; }
   .card-flip { transition: none; }
 }
+
+/* VAQTINCHALIK (taqdimot): keng ekranda ilova telefon ramkasi ichida chiqadi. Olib tashlash: shu blokni oʻchirish.
+   transform — position:fixed (dialog, oyna) elementlar ham ramka ichida qoladi. */
+@media (min-width: 768px) and (min-height: 640px) {
+  html, body { background: #d9d6cf; }
+  body { display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  #root {
+    @apply bg-bg;
+    flex: none;
+    box-sizing: content-box;
+    width: 390px;
+    height: min(844px, calc(100vh - 56px));
+    border: 10px solid #1c1c1e;
+    border-radius: 46px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transform: translateZ(0);
+    scrollbar-width: none;
+  }
+  #root::-webkit-scrollbar { display: none; }
+}
