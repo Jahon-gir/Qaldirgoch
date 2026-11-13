@@ -2,6 +2,11 @@ import type { Dict } from './uz'
 
 /** Qoʻlda yozilgan kirill matnlar: avtomatik translit oʻrniga ishlatiladi (ts→ц, unli+e→э kabi xatolar boʻlmasligi uchun). */
 export const cyrlOverrides: Partial<Dict> = {
+  'kasb.section': 'Касб бўйича',
+  'kasb.open': 'Касблар',
+  'kasb.title': 'Касбингизни танланг',
+  'kasb.mine': 'Сизники',
+  'kasb.modulesN': '{n} модул',
   'dialog.title': 'Ишдаги суҳбат',
   'dialog.hint': 'Ҳар бир гапни тингланг ва ўқинг.',
   'dialog.hideTr': 'Таржимани яшириш',

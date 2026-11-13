@@ -12,6 +12,8 @@ export type CoursePaths = {
   vocab: string
   vocabLesson: (id: string) => string
   test: (scope: string) => string
+  professions: string
+  profession: (direction: string) => string
 }
 
 export function coursePaths(id: CourseId): CoursePaths {
@@ -23,6 +25,8 @@ export function coursePaths(id: CourseId): CoursePaths {
     review: `${base}/takrorlash`,
     vocab: `${base}/lugat`,
     vocabLesson: (l) => `${base}/lugat/${l}`,
-    test: (s) => `${base}/test/${s}`
+    test: (s) => `${base}/test/${s}`,
+    professions: `${base}/kasblar`,
+    profession: (d) => `${base}/kasblar/${d}`
   }
 }

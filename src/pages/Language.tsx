@@ -1,18 +1,18 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { IconArrowLeft, IconChevronRight, IconClockHour4, IconLock } from '@tabler/icons-react'
+import { IconArrowLeft, IconChevronRight, IconClockHour4, IconLock, IconTools } from '@tabler/icons-react'
 import { Card } from '../components/ui/Card'
-import { OptionCard } from '../components/ui/OptionCard'
 import { ProgressBar } from '../components/ui/ProgressBar'
 import { RoundFlag } from '../components/countries/Flag'
 import { GoalCard, ReviewCard, StreakLine, WordsBreakdown } from '../components/german/progress'
 import { useI18n } from '../i18n/I18nProvider'
 import { useDirection } from '../german/useDirection'
 import { useLessons } from '../german/LessonsProvider'
-import { levelProgress, lessonsOf, moduleProgress, nextUnfinished, visibleModules } from '../german/logic'
+import { levelProgress, nextUnfinished, visibleModules } from '../german/logic'
 import { nextDueDay } from '../german/srs'
 import { useWords } from '../german/WordsProvider'
 import { TestCard } from '../components/german/TestCard'
+import { ModuleList } from '../components/german/ModuleList'
 import { levelScope, scopeInfo } from '../german/finalTest'
 import { useCourse, useCoursePaths } from '../lang/CourseContext'
 import { COURSE_TEXT, levelName } from '../lang/text'
@@ -26,11 +26,10 @@ export default function Language() {
   const course = useCourse()
   const paths = useCoursePaths()
   const back = useBack('/til')
-  const { direction: profileDirection, setDirection } = useDirection()
+  const { direction: profileDirection } = useDirection()
   // Yoʻnalishsiz kursda (koreys) hamma modul umumiy — yoʻnalish taʼsir qilmaydi
   const direction = course.directions ? profileDirection : 'general'
   const [level, setLevel] = useState<string>(course.levels[0].id)
-  const [picking, setPicking] = useState(false)
   const lv = (id: string) => levelName(course, id, lang)
   const locked = (id: string) => course.levels.find((x) => x.id === id)?.locked ?? true
 
@@ -38,10 +37,11 @@ export default function Language() {
   const { wordsOf, dueFor, activity, today, goal, streak } = useWords()
   const words = wordsOf(course.id)
   const due = dueFor(course.id)
-  const lp = levelProgress(level, direction, results, course.modules, course.lessons)
+  // Roʻyxatda faqat umumiy modullar; kasbiy modullar alohida (Kasblar) — sanoq ham roʻyxatga mos
+  const lp = levelProgress(level, 'general', results, course.modules, course.lessons)
   const next = nextUnfinished(direction, results, course.modules, course.lessons)
   const nextModule = next ? course.moduleById(next.moduleId) : null
-  const modules = visibleModules(direction, course.modules).filter((m) => m.level === level)
+  const modules = visibleModules('general', course.modules).filter((m) => m.level === level)
 
   return (
     <div className="space-y-3">
@@ -53,19 +53,6 @@ export default function Language() {
           <RoundFlag id={course.flag} size={32} />
           <h1 className="text-2xl font-semibold">{t(COURSE_TEXT[course.id].name)}</h1>
         </div>
-        {course.directions && (
-          <p className="flex min-h-[44px] flex-wrap items-center gap-x-2 text-base text-ink-2">
-            {t('german.direction', { name: t(`dir.${direction}`) })}
-            <button
-              type="button"
-              aria-expanded={picking}
-              onClick={() => setPicking((v) => !v)}
-              className="min-h-[44px] px-1 font-semibold text-trust-text underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
-            >
-              {t('german.directionChange')}
-            </button>
-          </p>
-        )}
       </header>
 
       {course.id === 'ko' && (
@@ -73,23 +60,6 @@ export default function Language() {
           <IconClockHour4 size={20} className="mt-0.5 shrink-0" aria-hidden />
           {t('lang.ko.notice')}
         </p>
-      )}
-
-      {picking && course.directions && (
-        <div role="radiogroup" aria-label={t('german.directionPick')} className="space-y-2">
-          {course.directions.map((d) => (
-            <OptionCard
-              key={d}
-              selected={direction === d}
-              onClick={() => {
-                setDirection(d)
-                setPicking(false)
-              }}
-            >
-              {t(`dir.${d}`)}
-            </OptionCard>
-          ))}
-        </div>
       )}
 
       <GoalCard activity={activity} today={today} goal={goal} />
@@ -119,7 +89,7 @@ export default function Language() {
 
       <div role="group" aria-label={t('german.levels')} className="grid grid-cols-3 gap-2">
         {course.levels.map(({ id: lid, locked: isLocked }) => {
-          const p = levelProgress(lid, direction, results, course.modules, course.lessons)
+          const p = levelProgress(lid, 'general', results, course.modules, course.lessons)
           const on = level === lid
           return (
             <button
@@ -165,49 +135,20 @@ export default function Language() {
           <p className="text-base text-ink-2">{t('german.noLessons')}</p>
         </Card>
       ) : (
-        <ul className="space-y-2">
-          {modules.map((m, idx) => {
-            const count = lessonsOf(m.id, course.lessons).length
-            const p = moduleProgress(m.id, results, course.lessons)
-            const body = (
-              <>
-                <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-base font-semibold ${count ? 'bg-accent-soft text-accent-strong' : 'border-2 border-line text-ink-3'}`}>{idx + 1}</span>
-                <span className="flex-1">
-                  <span className={`block text-base font-semibold ${count ? '' : 'text-ink-2'}`}>{m.title[lang]}</span>
-                  {count === 0 ? (
-                    <span className="block text-base text-ink-3">{t('common.soon')}</span>
-                  ) : p.done > 0 ? (
-                    <span className="mt-1.5 flex items-center gap-2">
-                      <span className="flex-1">
-                        <ProgressBar value={p.percent} tone="success" label={t('german.moduleProgress')} />
-                      </span>
-                      <span className="text-base text-ink-2">{p.done}/{p.total}</span>
-                    </span>
-                  ) : (
-                    <span className="block text-base text-ink-2">{t('german.lessonsN', { n: count })}</span>
-                  )}
-                </span>
-                {count > 0 && <IconChevronRight size={20} className="shrink-0 text-ink-3" aria-hidden />}
-              </>
-            )
-            return (
-              <li key={m.id}>
-                {count > 0 ? (
-                  <Link to={paths.module(m.id)} className="flex min-h-[64px] items-center gap-3 rounded-card bg-surface p-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
-                    {body}
-                  </Link>
-                ) : (
-                  <div className="flex min-h-[64px] items-center gap-3 rounded-card bg-surface p-3 opacity-80">{body}</div>
-                )}
-                {(() => {
-                  // Modul testi: modulning barcha darslari tugagach ostida chiqadi
-                  const info = scopeInfo(m.id, direction, course)
-                  return info && <TestCard info={info} results={results} title={t('ft.moduleTitle', { n: idx + 1 })} className="mt-2" />
-                })()}
-              </li>
-            )
-          })}
-        </ul>
+        <ModuleList modules={modules} direction={direction} />
+      )}
+
+      {course.directions && (
+        <section aria-labelledby="kasb-title" className="space-y-2">
+          <h2 id="kasb-title" className="px-1 pt-2 text-lg font-semibold text-trust-text">{t('kasb.section')}</h2>
+          <Link to={paths.professions} className="flex min-h-[64px] items-center gap-3 rounded-card border-2 border-accent bg-surface p-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent-soft text-accent-strong">
+              <IconTools size={22} aria-hidden />
+            </span>
+            <span className="flex-1 text-base font-semibold">{t('kasb.open')}</span>
+            <IconChevronRight size={20} className="shrink-0 text-ink-3" aria-hidden />
+          </Link>
+        </section>
       )}
     </div>
   )

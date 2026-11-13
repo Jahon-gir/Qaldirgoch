@@ -12,6 +12,8 @@ import Language from './pages/Language'
 import LanguagePicker from './pages/LanguagePicker'
 import { CourseScope } from './lang/CourseContext'
 import ModulePage from './pages/german/ModulePage'
+import Professions from './pages/german/Professions'
+import ProfessionModules from './pages/german/ProfessionModules'
 import LessonPage from './pages/german/LessonPage'
 import ReviewPage from './pages/german/ReviewPage'
 import VocabPage from './pages/german/VocabPage'
@@ -62,6 +64,8 @@ export function AppRoutes() {
         <Route element={<CourseScope id="de" />}>
           <Route path="til/de" element={<Language />} />
           <Route path="til/modul/:moduleId" element={<ModulePage />} />
+          <Route path="til/kasblar" element={<Professions />} />
+          <Route path="til/kasblar/:soha" element={<ProfessionModules />} />
         </Route>
         <Route element={<CourseScope id="ko" />}>
           <Route path="til/ko" element={<Language />} />

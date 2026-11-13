@@ -183,7 +183,7 @@ describe('server bilan ishlash (mock)', () => {
 })
 
 describe('moduleNumber', () => {
-  it('ekrandagi raqam — koʻrinadigan modullar ichidagi oʻrni (order emas)', async () => {
+  it('ekrandagi raqam — shu guruh (umumiy yoki kasb) ichidagi oʻrni (order emas)', async () => {
     const { moduleNumber } = await import('./logic')
     const mods = [
       { id: 'a1-m1', level: 'A1', direction: 'general', order: 1, status: 'review', title: { uz: '', 'uz-Cyrl': '', ru: '' } },
@@ -191,8 +191,9 @@ describe('moduleNumber', () => {
       { id: 'general-x', level: 'A1', direction: 'general', order: 101, status: 'review', title: { uz: '', 'uz-Cyrl': '', ru: '' } },
       { id: 'care-y', level: 'A1', direction: 'care', order: 201, status: 'review', title: { uz: '', 'uz-Cyrl': '', ru: '' } }
     ] as const
-    expect(['a1-m1', 'general-x', 'care-y'].map((id) => moduleNumber(id, 'care', mods))).toEqual([1, 2, 3])
-    expect(['a1-m1', 'a1-m3', 'general-x'].map((id) => moduleNumber(id, 'technical', mods))).toEqual([1, 2, 3])
+    // Raqam guruh ichida: umumiy modullar 1, 2 ...; har bir kasbning modullari oʻz roʻyxatida 1 dan
+    expect(['a1-m1', 'general-x', 'care-y', 'a1-m3'].map((id) => moduleNumber(id, 'care', mods))).toEqual([1, 2, 1, 1])
+    expect(['a1-m1', 'a1-m3', 'general-x'].map((id) => moduleNumber(id, 'technical', mods))).toEqual([1, 1, 2])
     expect(moduleNumber('yoq', 'care', mods)).toBe(0)
   })
 })
