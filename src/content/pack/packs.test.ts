@@ -50,6 +50,14 @@ describe('kasbiy kontent paketlari', () => {
     }
   })
 
+  it('dialog savolida toʻgʻri javob doim bir joyda turmaydi', () => {
+    const course = packsToCourse([...byCourse.values()].flat().filter((p) => p.course === 'de'))
+    const at = Object.values(course.exercises).flat().flatMap((e) => (e.type === 'dialog' && e.check ? [e.check.options.indexOf(e.check.answer)] : []))
+    expect(at.length).toBeGreaterThan(0)
+    for (const pos of [0, 1, 2]) expect(at.filter((x) => x === pos).length, `${pos}-joy`).toBeLessThan(at.length * 0.6)
+    if (at.length >= 6) expect(new Set(at).size).toBe(3)
+  })
+
   it('ikonkalar darslar roʻyxatida bor (aks holda umumiy belgi chiqadi)', () => {
     const bad = [...byCourse.values()].flat().flatMap((p) => p.words.filter((w) => w.icon && !LESSON_ICON_NAMES.has(w.icon)).map((w) => `${w.id}: ${w.icon}`))
     expect(bad).toEqual([])
