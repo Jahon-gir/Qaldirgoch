@@ -1,7 +1,7 @@
 {
   "name": "qaldirgoch",
   "private": true,
-  "version": "0.17.3",
+  "version": "0.18.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +11,8 @@
     "test": "vitest run",
     "content:template": "node scripts/make-content-template.mjs",
     "content:import": "node scripts/content-import.mjs",
-    "content:check": "node scripts/content-check.mjs && vitest run src/content/pack"
+    "content:check": "node scripts/content-check.mjs && vitest run src/content/pack",
+    "ai:knowledge": "esbuild scripts/build-ai-knowledge.ts --bundle --platform=node --format=esm --outfile=node_modules/.tmp/build-ai-knowledge.mjs --log-level=warning && node node_modules/.tmp/build-ai-knowledge.mjs"
   },
   "dependencies": {
     "@fontsource/inter": "^5.3.0",
