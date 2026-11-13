@@ -11,6 +11,7 @@ import { LessonsProvider } from './german/LessonsProvider'
 import { WordsProvider } from './german/WordsProvider'
 import { InstallProvider } from './pwa/InstallProvider'
 import App from './App'
+import { PhoneRoot } from './phone/PhoneRoot'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -22,7 +23,9 @@ createRoot(document.getElementById('root')!).render(
               <LessonsProvider>
                 <WordsProvider>
                   <InstallProvider>
-                    <App />
+                    <PhoneRoot>
+                      <App />
+                    </PhoneRoot>
                   </InstallProvider>
                 </WordsProvider>
               </LessonsProvider>

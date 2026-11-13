@@ -6,6 +6,7 @@ import { SyncDialogs } from './components/SyncDialogs'
 import { UpdateBanner } from './components/UpdateBanner'
 import { MigraLogo } from './components/Logo'
 import { Splash } from './components/Splash'
+import { splashState } from './components/splashState'
 import { useT } from './i18n/I18nProvider'
 import { useProfile } from './profile/ProfileProvider'
 import Home from './pages/Home'
@@ -41,12 +42,11 @@ function RequireOnboarding({ bare = false }: { bare?: boolean }) {
 }
 
 /** Splash faqat sahifa birinchi ochilganda (sovuq start): kamida 2,6 soniya, soʻng 0,7 soniyada silliq soʻnadi; testlarda yoʻq. */
-let splashDone = import.meta.env.MODE === 'test'
 function useSplash(booting: boolean) {
-  const [phase, setPhase] = useState<'in' | 'out' | 'gone'>(splashDone ? 'gone' : 'in')
-  const [minPassed, setMinPassed] = useState(splashDone)
+  const [phase, setPhase] = useState<'in' | 'out' | 'gone'>(splashState.done ? 'gone' : 'in')
+  const [minPassed, setMinPassed] = useState(splashState.done)
   useEffect(() => {
-    if (splashDone) return
+    if (splashState.done) return
     const id = window.setTimeout(() => setMinPassed(true), 2600)
     return () => window.clearTimeout(id)
   }, [])
@@ -55,7 +55,7 @@ function useSplash(booting: boolean) {
   }, [phase, minPassed, booting])
   useEffect(() => {
     if (phase !== 'out') return
-    const id = window.setTimeout(() => { splashDone = true; setPhase('gone') }, 700)
+    const id = window.setTimeout(() => { splashState.done = true; setPhase('gone') }, 700)
     return () => window.clearTimeout(id)
   }, [phase])
   return phase
