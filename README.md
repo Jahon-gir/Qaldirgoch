@@ -1,4 +1,4 @@
-# Qaldirg'och
+# Migra
 
 Chet elda qonuniy ishlash uchun yo'l ko'rsatuvchi ilova: Germaniya (Ausbildung) yo'l xaritasi,
 kasbiy nemis tili va firibgarlikdan himoya.

@@ -59,7 +59,7 @@ describe('Bosh sahifa', () => {
   it('hero: logotip (soʻzsiz), sozlamalar, xarita aria-hidden, sarlavha h1', () => {
     renderHome()
     expect(screen.getByTestId('logo')).toBeTruthy()
-    expect(screen.queryByText('Qaldirgʻoch')).toBeNull()
+    expect(screen.queryByText('Migra')).toBeNull()
     expect(screen.getByRole('link', { name: 'Sozlamalar' }).getAttribute('href')).toBe('/sozlamalar')
     expect(screen.getByTestId('world-map').getAttribute('aria-hidden')).toBe('true')
     expect(screen.getByRole('heading', { level: 1, name: 'Oʻzbekistondan chet elga, faqat qonuniy yoʻl bilan' })).toBeTruthy()

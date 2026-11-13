@@ -1,7 +1,7 @@
 import type { Dict } from './uz'
 
 export const ru: Dict = {
-  'app.name': 'Qaldirgʻoch',
+  'app.name': 'Migra',
   'app.tagline': 'Надёжный путь к легальной работе за рубежом',
 
   'common.back': 'Назад',
@@ -524,7 +524,7 @@ export const ru: Dict = {
   'ex.speak.network': 'Для распознавания речи нужен интернет.',
   'ex.speak.error': 'Не удалось распознать речь. Попробуйте ещё раз или пропустите упражнение.',
   'ex.speak.privacyTitle': 'О голосе',
-  'ex.speak.privacy': 'Голос преобразуется в текст браузером вашего телефона (в Chrome это сервис Google). Qaldirgʻoch не сохраняет ваш голос и не отправляет его на свой сервер.',
+  'ex.speak.privacy': 'Голос преобразуется в текст браузером вашего телефона (в Chrome это сервис Google). Migra не сохраняет ваш голос и не отправляет его на свой сервер.',
   'vocab.noVoice': 'На телефоне нет немецкого голоса',
   'vocab.qOf': '{mode} · {n} / {total}',
   'ex.buildQ': 'Напишите по-немецки',
@@ -710,7 +710,7 @@ export const ru: Dict = {
   'ft.levelDone': 'Уровень {level} пройден',
   'ft.notPassedTitle': 'Тест окончен',
   'ft.summary': 'Верно {score} из {total}',
-  'ft.cardBrand': 'Qaldirgʻoch · результат в приложении',
+  'ft.cardBrand': 'Migra · результат в приложении',
   'ft.notOfficial': 'Это не официальный языковой сертификат. Официальный экзамен: Goethe, telc или ÖSD.',
   'ft.more': 'Ещё немного практики: нужно было {need}, у вас {got}',
   'ft.addedToReview': 'Слова с ошибками добавлены в повторение',
