@@ -184,11 +184,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Gut, dann bis morgen!",
+            "de": "Eine halbe Stunde? Gut, danke!",
             "tr": {
-              "uz": "Yaxshi, unda ertagacha!",
-              "uz-Cyrl": "Яхши, унда эртагача!",
-              "ru": "Хорошо, тогда до завтра!"
+              "uz": "Yarim soatmi? Yaxshi, rahmat!",
+              "uz-Cyrl": "Ярим соатми? Яхши, раҳмат!",
+              "ru": "Полчаса? Хорошо, спасибо!"
             }
           }
         ],
@@ -277,11 +277,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Ich habe verstanden. Ich mache das sofort.",
+            "de": "Danke, jetzt sehe ich sie.",
             "tr": {
-              "uz": "Tushundim. Hozir qilaman.",
-              "uz-Cyrl": "Тушундим. Ҳозир қиламан.",
-              "ru": "Понял. Сейчас сделаю."
+              "uz": "Rahmat, endi koʻryapman.",
+              "uz-Cyrl": "Раҳмат, энди кўряпман.",
+              "ru": "Спасибо, теперь вижу."
             }
           }
         ],
@@ -370,11 +370,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Ja, das mache ich. Danke!",
+            "de": "Die Krankmeldung? Ja, die schicke ich. Danke!",
             "tr": {
-              "uz": "Ha, yuboraman. Rahmat!",
-              "uz-Cyrl": "Ҳа, юбораман. Раҳмат!",
-              "ru": "Да, пришлю. Спасибо!"
+              "uz": "Kasallik varaqasinimi? Ha, yuboraman. Rahmat!",
+              "uz-Cyrl": "Касаллик варақасиними? Ҳа, юбораман. Раҳмат!",
+              "ru": "Больничный? Да, пришлю. Спасибо!"
             }
           }
         ],
@@ -556,11 +556,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Okay, danke für die Information.",
+            "de": "Kapitel drei? Okay, danke!",
             "tr": {
-              "uz": "Xoʻp, maʼlumot uchun rahmat.",
-              "uz-Cyrl": "Хўп, маълумот учун раҳмат.",
-              "ru": "Хорошо, спасибо за информацию."
+              "uz": "Uchinchi bobmi? Xoʻp, rahmat!",
+              "uz-Cyrl": "Учинчи бобми? Хўп, раҳмат!",
+              "ru": "Третья глава? Хорошо, спасибо!"
             }
           }
         ],

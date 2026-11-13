@@ -17,7 +17,90 @@
         "ru": "Сварка и металл"
       },
       "order": 1,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Haben Sie Ihre Schutzbrille und den Schweißhelm?",
+            "tr": {
+              "uz": "Himoya koʻzoynagi va payvandchi niqobingiz bormi?",
+              "uz-Cyrl": "Ҳимоя кўзойнаги ва пайвандчи ниқобингиз борми?",
+              "ru": "У вас есть защитные очки и сварочная маска?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, und die Lederschürze auch.",
+            "tr": {
+              "uz": "Ha, charm fartuk ham bor.",
+              "uz-Cyrl": "Ҳа, чарм фартук ҳам бор.",
+              "ru": "Да, и кожаный фартук тоже."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Gut. Wissen Sie, wo der Feuerlöscher steht?",
+            "tr": {
+              "uz": "Yaxshi. Oʻt oʻchirgich qayerda turganini bilasizmi?",
+              "uz-Cyrl": "Яхши. Ўт ўчиргич қаерда турганини биласизми?",
+              "ru": "Хорошо. Вы знаете, где стоит огнетушитель?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, neben der Tür.",
+            "tr": {
+              "uz": "Ha, eshik yonida.",
+              "uz-Cyrl": "Ҳа, эшик ёнида.",
+              "ru": "Да, у двери."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Richtig. Schleifen Sie zuerst die Kanten. Vorsicht, Funken!",
+            "tr": {
+              "uz": "Toʻgʻri. Avval chetlarini jilvirlang. Ehtiyot boʻling, uchqun!",
+              "uz-Cyrl": "Тўғри. Аввал четларини жилвирланг. Эҳтиёт бўлинг, учқун!",
+              "ru": "Верно. Сначала зашлифуйте края. Осторожно, искры!"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Alles klar, ich passe auf.",
+            "tr": {
+              "uz": "Tushunarli, ehtiyot boʻlaman.",
+              "uz-Cyrl": "Тушунарли, эҳтиёт бўламан.",
+              "ru": "Понятно, буду осторожен."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "ustaxona",

@@ -17,7 +17,90 @@
         "ru": "На складе"
       },
       "order": 1,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Ombor boshligʻi",
+              "uz-Cyrl": "Омбор бошлиғи",
+              "ru": "Начальник склада"
+            },
+            "de": "Heute kommt eine Lieferung. Bitte zählen Sie die Pakete.",
+            "tr": {
+              "uz": "Bugun yuk keladi. Iltimos, posilkalarni sanang.",
+              "uz-Cyrl": "Бугун юк келади. Илтимос, посилкаларни сананг.",
+              "ru": "Сегодня придёт поставка. Пожалуйста, посчитайте посылки."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wo ist der Lieferschein?",
+            "tr": {
+              "uz": "Yuk xati qayerda?",
+              "uz-Cyrl": "Юк хати қаерда?",
+              "ru": "Где накладная?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Ombor boshligʻi",
+              "uz-Cyrl": "Омбор бошлиғи",
+              "ru": "Начальник склада"
+            },
+            "de": "Hier. Prüfen Sie jede Bestellung genau.",
+            "tr": {
+              "uz": "Mana. Har bir buyurtmani diqqat bilan tekshiring.",
+              "uz-Cyrl": "Мана. Ҳар бир буюртмани диққат билан текширинг.",
+              "ru": "Вот. Внимательно проверьте каждый заказ."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ein Karton ist beschädigt. Was soll ich machen?",
+            "tr": {
+              "uz": "Bitta karton quti shikastlangan. Nima qilay?",
+              "uz-Cyrl": "Битта картон қути шикастланган. Нима қилай?",
+              "ru": "Одна коробка повреждена. Что мне делать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Ombor boshligʻi",
+              "uz-Cyrl": "Омбор бошлиғи",
+              "ru": "Начальник склада"
+            },
+            "de": "Machen Sie ein Foto und schreiben Sie es auf den Lieferschein.",
+            "tr": {
+              "uz": "Suratga oling va yuk xatiga yozib qoʻying.",
+              "uz-Cyrl": "Суратга олинг ва юк хатига ёзиб қўйинг.",
+              "ru": "Сфотографируйте и запишите это в накладную."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Danach räume ich die Ware ein.",
+            "tr": {
+              "uz": "Yaxshi. Keyin molni javonga joylayman.",
+              "uz-Cyrl": "Яхши. Кейин молни жавонга жойлайман.",
+              "ru": "Хорошо. Потом разложу товар по полкам."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "haydovchi",

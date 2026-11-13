@@ -17,7 +17,90 @@
         "ru": "Инструменты"
       },
       "order": 1,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Bringen Sie mir bitte die Bohrmaschine.",
+            "tr": {
+              "uz": "Iltimos, drelni olib keling.",
+              "uz-Cyrl": "Илтимос, дрелни олиб келинг.",
+              "ru": "Принесите мне, пожалуйста, дрель."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gern. Wo ist sie?",
+            "tr": {
+              "uz": "Xoʻp. U qayerda?",
+              "uz-Cyrl": "Хўп. У қаерда?",
+              "ru": "Хорошо. Где она?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Im Werkzeugkasten, im Auto.",
+            "tr": {
+              "uz": "Asboblar qutisida, mashinada.",
+              "uz-Cyrl": "Асбоблар қутисида, машинада.",
+              "ru": "В ящике с инструментами, в машине."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Brauchen Sie auch Schrauben und Dübel?",
+            "tr": {
+              "uz": "Vint va dyubel ham kerakmi?",
+              "uz-Cyrl": "Винт ва дюбел ҳам керакми?",
+              "ru": "Вам нужны ещё шурупы и дюбели?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Ja, und das Maßband, bitte.",
+            "tr": {
+              "uz": "Ha, ruletka ham, iltimos.",
+              "uz-Cyrl": "Ҳа, рулетка ҳам, илтимос.",
+              "ru": "Да, и рулетку, пожалуйста."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Das Maßband auch? Gut, ich hole es.",
+            "tr": {
+              "uz": "Ruletka hammi? Yaxshi, olib kelaman.",
+              "uz-Cyrl": "Рулетка ҳамми? Яхши, олиб келаман.",
+              "ru": "И рулетку? Хорошо, принесу."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "elektr",
