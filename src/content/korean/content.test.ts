@@ -38,6 +38,7 @@ function hangulTexts(e: Exercise): string[] {
   if (e.type === 'letter') return [...e.letters.map((l) => l.char), ...(e.example ? [e.example.term] : [])]
   if (e.type === 'syllable') return [e.initial, e.vowel, ...(e.final ? [e.final] : []), ...e.distractors]
   if (e.type === 'choice') return [...e.options.map((o) => o.text), ...(/\p{Script=Hangul}/u.test(e.translation.uz) ? [e.translation.uz] : [])]
+  if (e.type === 'dialog') return e.lines.map((l) => l.text)
   return e.pairs.map((p) => p.term)
 }
 function l3Texts(e: Exercise): L3[] {
@@ -45,6 +46,7 @@ function l3Texts(e: Exercise): L3[] {
   if (e.type === 'letter') return [e.note, ...(e.example ? [e.example.pron, e.example.tr] : [])]
   if (e.type === 'syllable') return [e.pron]
   if (e.type === 'choice') return [e.prompt, e.translation, e.explain]
+  if (e.type === 'dialog') return e.lines.flatMap((l) => [l.speaker, l.tr])
   return [e.prompt, ...e.pairs.map((p) => p.tr)]
 }
 /** Harflar (jamo) — boʻgʻinlarga ajratib. */

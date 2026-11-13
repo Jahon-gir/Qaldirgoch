@@ -392,7 +392,7 @@ describe('Dars natijasidagi soʻzlar bloki', () => {
       else if (ex.type === 'choice') {
         fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${ex.options.find((o) => o.correct)!.text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`) }))
         click('Davom etish')
-      } else {
+      } else if (ex.type === 'match') {
         for (const p of ex.pairs) {
           fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${p.term}$`) }))
           fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${p.tr.uz}$`) }))

@@ -1,5 +1,5 @@
-import type { ChoiceExercise, Direction, Exercise, L3, Lesson, MatchExercise, Module, WordExercise } from '../german/types'
-import type { ContentPack, PackWord } from './types'
+import type { ChoiceExercise, DialogExercise, Direction, Exercise, L3, Lesson, MatchExercise, Module, WordExercise } from '../german/types'
+import type { ContentPack, PackDialog, PackWord } from './types'
 
 /**
  * Paketlar → kurs modullari, darslari va mashqlari. Shu bilan kasbiy soʻzlar mavjud tizimga toʻliq ulanadi:
@@ -67,6 +67,29 @@ export function choicesFrom(chunk: readonly PackWord[], lessonId: string, startI
   return out
 }
 
+/**
+ * Dialog → mashq. Birinchi soʻzlovchi (usta, xodim) chapda, oʻrganuvchi oʻngda. Savol: soʻzlovchi almashadigan juft,
+ * javobni oʻrganuvchi (birinchi soʻzlovchi emas) aytadi, birinchi juftdan keyingisi (salomlashuvdan keyingi asosiy gap).
+ * Variantlar: toʻgʻri javob + shu dialogning boshqa 2 replikasi (avval javob bergan kishiniki). Toʻgʻri javob joyi savolga qarab almashadi.
+ */
+export function dialogExercise(d: PackDialog, id: string): DialogExercise {
+  const lines = d.lines.map((l) => ({ speaker: l.speaker, text: l.de, tr: l.tr }))
+  const pairs: number[] = []
+  for (let i = 0; i + 1 < lines.length; i++) if (lines[i].speaker.uz !== lines[i + 1].speaker.uz) pairs.push(i)
+  const ex: DialogExercise = { type: 'dialog', id, lines }
+  if (pairs.length === 0) return ex
+  const mine = pairs.filter((i) => lines[i + 1].speaker.uz !== lines[0].speaker.uz)
+  const ask = mine.find((i) => i > 0) ?? mine[0] ?? pairs[Math.min(1, pairs.length - 1)]
+  const answer = ask + 1
+  const rest = lines.map((_, i) => i).filter((i) => i !== ask && i !== answer && lines[i].text !== lines[answer].text)
+  const same = rest.filter((i) => lines[i].speaker.uz === lines[answer].speaker.uz)
+  const distract = [...same, ...rest.filter((i) => !same.includes(i))].slice(0, 2)
+  if (distract.length < 2) return ex
+  const options = [...distract]
+  options.splice(ask % 3, 0, answer)
+  return { ...ex, check: { ask, answer, options } }
+}
+
 export type PackCourse = { modules: Module[]; lessons: Lesson[]; exercises: Record<string, Exercise[]> }
 
 /** Bitta darsli vaziyatda dars nomi = vaziyat nomi; koʻp darsli boʻlsa "1-qism", "2-qism" (modul nomi tepada koʻrinib turadi). */
@@ -97,12 +120,13 @@ export function packsToCourse(packs: readonly ContentPack[], opts: { icons?: Rea
       const words = p.words.filter((w) => w.situation === s.id && w.status !== 'draft')
       if (words.length === 0) continue
       const moduleId = `${p.field}-${s.id}`
+      const dialog = s.dialog && s.dialog.status !== 'draft' ? s.dialog : undefined
       out.modules.push({
         id: moduleId,
         level: s.level,
         direction: p.field as Direction,
         order: p.order * PACK_ORDER_BASE + s.order,
-        status: words.every((w) => w.status === 'approved') ? 'approved' : 'review',
+        status: words.every((w) => w.status === 'approved') && (!dialog || dialog.status === 'approved') ? 'approved' : 'review',
         title: s.title
       })
       const chunks: PackWord[][] = []
@@ -123,6 +147,8 @@ export function packsToCourse(packs: readonly ContentPack[], opts: { icons?: Rea
           ex.push(m)
         }
         ex.push(...choicesFrom(chunk, lessonId, ex.length + 1))
+        // Dialog — vaziyatning oxirgi darsi oxirida (soʻzlar oʻrganilgach)
+        if (dialog && i === chunks.length - 1) ex.push(dialogExercise(dialog, `${lessonId}-e${ex.length + 1}`))
         out.exercises[lessonId] = ex
       })
     }

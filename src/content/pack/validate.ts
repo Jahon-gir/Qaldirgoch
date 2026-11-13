@@ -1,5 +1,5 @@
 import type { ContentStatus } from '../german/types.ts'
-import type { ContentPack, FileInfo, Issue, PackRules, PackWord } from './types.ts'
+import type { ContentPack, FileInfo, Issue, PackDialog, PackRules, PackWord } from './types.ts'
 
 /** Id va slug: kichik lotin harf, raqam, bitta chiziqcha bilan ajratilgan qismlar. */
 export const SLUG_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/
@@ -61,11 +61,39 @@ export function validatePacks(packs: readonly ContentPack[], rules: PackRules, o
       if (!filled(s.title?.uz)) err('vaziyat nomi (title_uz) boʻsh', w)
       if (!isInt(s.order)) err('tartib (order) butun son emas', w)
       if (!rules.levels.includes(s.level)) err(`daraja "${s.level}" notoʻgʻri (mumkin: ${rules.levels.join(', ')})`, w)
+      if (s.dialog) checkDialog(s.dialog, (m) => err(m, `${w} → dialog`), (m) => issues.push({ level: 'warning', where: `${w} → dialog`, message: m }))
     }
 
     for (const word of p.words) checkWord(word, p, sit, rules, opts, seenWords, issues, at)
   }
   return issues
+}
+
+/** Dialog: 4–8 replika, 2–3 kishi; har replikada nemischa gap va tarjima; qoralamadan boshqa holatda uch til. */
+export const DIALOG_MIN = 4
+export const DIALOG_MAX = 8
+function checkDialog(d: PackDialog, err: (m: string) => void, warn: (m: string) => void) {
+  const n = d.lines?.length ?? 0
+  if (n < DIALOG_MIN || n > DIALOG_MAX) err(`${n} replika — ${DIALOG_MIN} tadan ${DIALOG_MAX} tagacha boʻlsin`)
+  if (!STATUSES.includes(d.status)) err(`holat "${String(d.status)}" — qoralama, tekshiruvda yoki tasdiqlangan`)
+  const speakers = new Set((d.lines ?? []).map((l) => l.speaker?.uz?.trim()))
+  if (speakers.size < 2 || speakers.size > 3) err(`${speakers.size} ta soʻzlovchi — 2 yoki 3 ta boʻlsin`)
+  ;(d.lines ?? []).forEach((l, i) => {
+    const r = `${i + 1}-replika`
+    if (!filled(l.de)) err(`${r}: nemischa gap (de) boʻsh`)
+    if (!filled(l.tr?.uz)) err(`${r}: tarjima (uz) boʻsh`)
+    if (!filled(l.speaker?.uz)) err(`${r}: kim aytadi (speaker_uz) boʻsh`)
+    const miss = [!filled(l.tr?.['uz-Cyrl']) && 'kirill', !filled(l.tr?.ru) && 'rus', !filled(l.speaker?.['uz-Cyrl']) && 'speaker_cyrl', !filled(l.speaker?.ru) && 'speaker_ru'].filter(Boolean)
+    if (miss.length) {
+      const msg = `${r}: ${miss.join(', ')} yoʻq`
+      if (d.status !== 'draft') err(`${msg} (qoralamadan boshqa holatda majburiy)`)
+      else warn(msg)
+    }
+  })
+  if (d.status === 'approved') {
+    if (!filled(d.verifiedBy)) err('tasdiqlangan dialogda tekshiruvchi (verified_by) majburiy')
+    if (!filled(d.verifiedAt) || !isIsoDate(d.verifiedAt!)) err('tasdiqlangan dialogda sana (verified_at) YYYY-MM-DD shaklida majburiy')
+  }
 }
 
 function checkWord(w: PackWord, p: ContentPack, situations: ReadonlySet<string>, rules: PackRules, opts: ValidateOptions, seen: Set<string>, issues: Issue[], at: string) {
@@ -166,7 +194,7 @@ export function packReport(packs: readonly ContentPack[]): string[] {
     const c = (f: (w: PackWord) => boolean) => p.words.filter(f).length
     const st = STATUSES.map((s) => `${s} ${c((w) => w.status === s)}`).join(', ')
     lines.push(
-      `${p.course}/${p.field}: ${p.situations.length} vaziyat, ${n} soʻz · rasm ${c((w) => !!w.image)}/${n} · audio ${c((w) => !!w.audio)}/${n} · misol ${c((w) => !!w.example)}/${n} · xavfsizlik ${c((w) => w.safety)} · ${st}`
+      `${p.course}/${p.field}: ${p.situations.length} vaziyat, ${n} soʻz, ${p.situations.filter((s) => s.dialog).length} dialog · rasm ${c((w) => !!w.image)}/${n} · audio ${c((w) => !!w.audio)}/${n} · misol ${c((w) => !!w.example)}/${n} · xavfsizlik ${c((w) => w.safety)} · ${st}`
     )
   }
   return lines

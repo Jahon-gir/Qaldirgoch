@@ -1,4 +1,4 @@
-import { DIRECTIONS, LESSONS, MODULES, type ChoiceExercise, type Direction, type Exercise, type Lesson, type MatchExercise, type Module, type SyllableExercise } from '../content/german'
+import { DIRECTIONS, LESSONS, MODULES, type ChoiceExercise, type DialogExercise, type Direction, type Exercise, type Lesson, type MatchExercise, type Module, type SyllableExercise } from '../content/german'
 import { ALL_RESULT_IDS, COURSES } from '../lang/registry'
 import type { Answers } from '../profile/questions'
 
@@ -142,6 +142,16 @@ export type Mistake = { key: string; de: string; tr: ChoiceExercise['translation
 export type Outcome = { total: number; correct: number; mistakes: Mistake[] }
 
 export const wordOutcome = (): Outcome => ({ total: 0, correct: 0, mistakes: [] })
+
+/** Dialog: savoli boʻlmasa ball yoʻq (soʻz kartasi kabi); boʻlsa — 1 ball. Xato: savol va toʻgʻri javob birga (xatolar roʻyxati uchun). */
+export function dialogOutcome(ex: DialogExercise, picked?: number): Outcome {
+  if (!ex.check) return { total: 0, correct: 0, mistakes: [] }
+  const ok = picked === ex.check.answer
+  const q = ex.lines[ex.check.ask]
+  const a = ex.lines[ex.check.answer]
+  const tr = (Object.keys(q.tr) as (keyof typeof q.tr)[]).reduce((o, k) => ({ ...o, [k]: `${q.tr[k]} — ${a.tr[k]}` }), {} as typeof q.tr)
+  return { total: 1, correct: ok ? 1 : 0, mistakes: ok ? [] : [{ key: ex.id, de: `${q.text} — ${a.text}`, tr }] }
+}
 
 export function choiceOutcome(ex: ChoiceExercise, optionId: string): Outcome {
   const ok = isCorrectOption(ex, optionId)

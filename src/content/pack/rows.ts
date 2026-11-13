@@ -1,6 +1,6 @@
 import type { ContentStatus, L3 } from '../german/types.ts'
 import { wordSlug } from '../../lang/words.ts'
-import type { ContentPack, Issue, PackRules, PackWord } from './types.ts'
+import type { ContentPack, Issue, PackDialogLine, PackRules, PackWord } from './types.ts'
 import { PACK_SCHEMA } from './types.ts'
 import { validatePacks, wordIdOf, type ValidateOptions } from './validate.ts'
 
@@ -10,9 +10,10 @@ import { validatePacks, wordIdOf, type ValidateOptions } from './validate.ts'
  */
 /** Bitta qator: ustun nomi → matn; __row — Excel qator raqami (matn sifatida). */
 export type Row = Record<string, string>
-export type Sheets = { fields: Row[]; situations: Row[]; words: Row[] }
+/** dialogs — ixtiyoriy varaq (eski Excel fayllarda yoʻq). */
+export type Sheets = { fields: Row[]; situations: Row[]; words: Row[]; dialogs?: Row[] }
 
-export const SHEET = { fields: 'Sohalar', situations: 'Vaziyatlar', words: 'Sozlar' } as const
+export const SHEET = { fields: 'Sohalar', situations: 'Vaziyatlar', words: 'Sozlar', dialogs: 'Dialoglar' } as const
 
 export const FIELD_COLUMNS = ['id', 'title_uz', 'title_cyrl', 'title_ru', 'order'] as const
 export const SITUATION_COLUMNS = ['field', 'id', 'title_uz', 'title_cyrl', 'title_ru', 'order', 'level'] as const
@@ -22,6 +23,11 @@ export const WORD_COLUMNS = [
   'example_term', 'example_uz', 'example_cyrl', 'example_ru',
   'jobs', 'safety', 'image_file', 'image_source', 'image_license', 'image_author', 'image_checked', 'audio_file',
   'source', 'status', 'verified_by', 'verified_at'
+] as const
+
+/** Dialog: har qator — bitta replika; line — tartib (1, 2, 3 ...). Bitta vaziyatda bitta dialog. */
+export const DIALOG_COLUMNS = [
+  'field', 'situation', 'line', 'speaker_uz', 'speaker_cyrl', 'speaker_ru', 'de', 'uz', 'uz_cyrl', 'ru', 'status', 'verified_by', 'verified_at'
 ] as const
 
 /** Holat: Excel'da oʻzbekcha (ochiladigan roʻyxat), JSON'da kod. */
@@ -143,6 +149,51 @@ export function rowsToPacks(sheets: Sheets, rules: PackRules, opts: Omit<Validat
     if (opt(r.verified_at) !== undefined) w.verifiedAt = opt(r.verified_at)
     p.words.push(w)
     whereById.set(w.id, where)
+  }
+
+  // Dialoglar: vaziyat boʻyicha guruhlanadi, line tartibida; holat bir xil boʻlishi kerak
+  const dialogRows = new Map<string, { line: number; row: Row }[]>()
+  for (const r of sheets.dialogs ?? []) {
+    const where = at(SHEET.dialogs, r)
+    const p = packs.get(plain(r.field))
+    if (!p) {
+      err(where, `soha "${plain(r.field)}" "${SHEET.fields}" varagʻida yoʻq`)
+      continue
+    }
+    const s = p.situations.find((x) => x.id === plain(r.situation))
+    if (!s) {
+      err(where, `vaziyat "${plain(r.situation)}" "${SHEET.situations}" varagʻida yoʻq`)
+      continue
+    }
+    const line = int(r.line)
+    if (line === undefined || line < 1) {
+      err(where, 'replika tartibi (line) 1, 2, 3 ... boʻlsin')
+      continue
+    }
+    const k = `${p.field}/${s.id}`
+    const list = dialogRows.get(k) ?? []
+    if (list.some((x) => x.line === line)) {
+      err(where, `replika ${line} takrorlangan`)
+      continue
+    }
+    list.push({ line, row: r })
+    dialogRows.set(k, list)
+  }
+  for (const [k, list] of dialogRows) {
+    const [field, sid] = k.split('/')
+    const s = packs.get(field)!.situations.find((x) => x.id === sid)!
+    list.sort((a, b) => a.line - b.line)
+    const first = at(SHEET.dialogs, list[0].row)
+    if (list.some((x, i) => x.line !== i + 1)) err(first, `"${sid}" dialogi: replikalar 1 dan ketma-ket raqamlansin`)
+    const statuses = new Set(list.map((x) => STATUS_ALIASES[key(x.row.status)]))
+    if (statuses.has(undefined as never) || statuses.size !== 1) {
+      err(first, `"${sid}" dialogi: holat (status) hamma replikada bir xil boʻlsin — qoralama, tekshiruvda yoki tasdiqlangan`)
+      continue
+    }
+    const lines: PackDialogLine[] = list.map(({ row }) => ({ speaker: l3(row.speaker_uz, row.speaker_cyrl, row.speaker_ru), de: plain(row.de), tr: l3(row.uz, row.uz_cyrl, row.ru) }))
+    const by = list.map((x) => opt(x.row.verified_by)).find(Boolean)
+    const atDate = list.map((x) => opt(x.row.verified_at)).find(Boolean)
+    s.dialog = { lines, status: [...statuses][0], ...(by && { verifiedBy: by }), ...(atDate && { verifiedAt: atDate }) }
   }
 
   const out = [...packs.values()].sort((a, b) => a.order - b.order)

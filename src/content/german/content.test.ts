@@ -10,6 +10,7 @@ const allExercises = LESSONS.flatMap((l) => exercisesOf(l.id))
 function l3Texts(e: Exercise): L3[] {
   if (e.type === 'word') return [e.tr, e.pron, e.example!.tr]
   if (e.type === 'choice') return [e.prompt, e.translation, e.explain]
+  if (e.type === 'dialog') return e.lines.flatMap((l) => [l.speaker, l.tr])
   return [e.prompt, ...e.pairs.map((p) => p.tr)]
 }
 const allL3: L3[] = [...MODULES.map((m) => m.title), ...LESSONS.map((l) => l.title), ...allExercises.flatMap(l3Texts)]
@@ -67,7 +68,7 @@ describe('nemis kontenti: matn', () => {
     for (const t of allL3) expect(t.ru).not.toMatch(/[ʻʼ]/)
   })
   it('nemis matnda ß va umlaut toʻgʻri; oddiy apostrof yoʻq', () => {
-    const de = allExercises.flatMap((e) => (e.type === 'word' ? [e.term, e.example!.term] : e.type === 'choice' ? [e.sentence, e.full, ...e.options.map((o) => o.text)] : e.pairs.map((p) => p.term)))
+    const de = allExercises.flatMap((e) => (e.type === 'word' ? [e.term, e.example!.term] : e.type === 'choice' ? [e.sentence, e.full, ...e.options.map((o) => o.text)] : e.type === 'dialog' ? e.lines.map((l) => l.text) : e.pairs.map((p) => p.term)))
     for (const s of de) expect(s).not.toMatch(/['‘’`]/)
     const joined = de.join(' ')
     expect(joined).toContain('Schweißer')

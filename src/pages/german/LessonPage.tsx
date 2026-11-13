@@ -3,6 +3,7 @@ import { Navigate, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { IconCheck, IconX } from '@tabler/icons-react'
 import { ChoiceStep, MatchStep, WordStep } from '../../components/german/steps'
 import { LetterStep, SyllableStep } from '../../components/korean/steps'
+import { DialogStep } from '../../components/german/DialogStep'
 import { ConfirmExit } from '../../components/german/ConfirmExit'
 import { ListenIcon, NoVoice } from '../../components/german/Listen'
 import { LearnedWords } from '../../components/vocab/LearnedWords'
@@ -158,6 +159,7 @@ function LessonRunner({ lesson }: { lesson: Lesson }) {
             {ex.type === 'match' && <MatchStep ex={ex} onDone={onStepDone} />}
             {ex.type === 'letter' && <LetterStep ex={ex} speech={speech} onDone={onStepDone} />}
             {ex.type === 'syllable' && <SyllableStep ex={ex} onDone={onStepDone} />}
+            {ex.type === 'dialog' && <DialogStep ex={ex} speech={speech} onDone={onStepDone} />}
           </div>
         </>
       )}

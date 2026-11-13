@@ -12,6 +12,7 @@ Shablon: [`shablon.xlsx`](shablon.xlsx). Har bir soha yoki jamoa aʼzosi uchun n
 | **Sohalar** | Soha: `general` (umumiy: ish kundaligi), `care` (parvarish va tibbiyot), `technical` (texnik kasblar), `hospitality` (mehmonxona va oshxona), `logistics` (logistika va haydovchilik), `metal` (metall va avtomobil), `cleaning` (tozalash xizmati), `agriculture` (qishloq xoʻjaligi), `retail` (savdo), `food` (oziq-ovqat ishlab chiqarish). Nomlar uch tilda |
 | **Vaziyatlar** | Soha ichidagi vaziyat: masalan, `technical` → `asboblar` "Asboblar", `birinchi-kun` "Birinchi ish kuni" |
 | **Sozlar** | Har bir qator — bitta soʻz yoki ibora |
+| **Dialoglar** | Ixtiyoriy (0.17.0 dan). Vaziyat uchun qisqa ish suhbati: har qator — bitta replika |
 
 1-qator — ustun nomlari (oʻzgartirmang). 2-qatordagi kulrang yozuv — izoh va misol, import uni oʻtkazib yuboradi. Maʼlumot **3-qatordan** boshlanadi.
 
@@ -36,6 +37,19 @@ Shablon: [`shablon.xlsx`](shablon.xlsx). Har bir soha yoki jamoa aʼzosi uchun n
 | source | yoʻq | Masalan: `Goethe A1 Wortliste — faqat daraja uchun` |
 | status | ha | `qoralama` → `tekshiruvda` → `tasdiqlangan` |
 | verified_by, verified_at | tasdiqlanganda | Tekshiruvchi ismi va sana `2026-11-13` |
+
+## "Dialoglar" ustunlari (0.17.0)
+
+| Ustun | Izoh |
+|---|---|
+| field, situation | Soha va vaziyat id ("Vaziyatlar" varagʻidan). Bitta vaziyatda bitta dialog |
+| line | Replika tartibi: 1, 2, 3 ... ketma-ket. Dialogda **4–8 replika**, **2–3 kishi** |
+| speaker_uz, speaker_cyrl, speaker_ru | Kim aytadi: `Usta` / `Уста` / `Мастер`. Oʻrganuvchi — `Siz` / `Сиз` / `Вы` |
+| de | Nemischa gap — oʻzimiz yozamiz (darslikdan koʻchirilmaydi). Iloji boricha shu vaziyat soʻzlari bilan |
+| uz, uz_cyrl, ru | Tarjima (kirill qoʻlda) |
+| status, verified_by, verified_at | Hamma replikada bir xil holat |
+
+Ilovada: dialog vaziyatning **oxirgi darsi oxirida** chiqadi. Birinchi soʻzlovchi (usta, xodim) chapda, qolganlar oʻngda; har gapda tinglash tugmasi, tarjimani yashirsa boʻladi. Keyin bitta savol: "Suhbatdagi mos javobni tanlang" — oʻrganuvchi aytgan gap 3 variant ichidan tanlanadi (1 ball). Shuning uchun dialogni birinchi soʻzlovchi (usta, xodim) boshlagani yaxshi. Dialog lugʻatga tushmaydi.
 
 Soʻz id'si avtomatik yasaladi: `soha-vaziyat-slug` (masalan `technical-asboblar-hammer`). U foydalanuvchi progressida saqlanadi, shuning uchun **soʻz ilovaga chiqqandan keyin soha, vaziyat yoki slug'ni oʻzgartirmang**.
 

@@ -53,7 +53,7 @@ async function playLesson(lesson: Lesson, { wrongOnce = false } = {}) {
       expect(screen.getByText(pick.correct ? 'Toʻgʻri' : 'Xato')).toBeTruthy()
       first = false
       click('Davom etish')
-    } else {
+    } else if (ex.type === 'match') {
       await playMatch(ex, false)
       click('Davom etish')
     }

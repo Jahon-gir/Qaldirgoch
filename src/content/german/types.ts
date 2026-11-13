@@ -97,6 +97,19 @@ export type SyllableExercise = {
   distractors: string[]
 }
 
-export type Exercise = WordExercise | ChoiceExercise | MatchExercise | LetterExercise | SyllableExercise
+/**
+ * Qisqa ish dialogi (0.17.0): avval replikalar (tinglash, tarjima), keyin bitta savol — "mos javobni tanlang".
+ * check: ask — savol replikasi, answer — toʻgʻri javob replikasi, options — variantlar (replika indekslari, answer ichida).
+ * Lugʻatga TUSHMAYDI (soʻz emas).
+ */
+export type DialogLine = { speaker: L3; text: string; tr: L3 }
+export type DialogExercise = {
+  type: 'dialog'
+  id: string
+  lines: DialogLine[]
+  check?: { ask: number; answer: number; options: number[] }
+}
+
+export type Exercise = WordExercise | ChoiceExercise | MatchExercise | LetterExercise | SyllableExercise | DialogExercise
 /** Nemis darslaridagi mashqlar (harf va boʻgʻin mashqlari yoʻq). */
-export type GermanExercise = WordExercise | ChoiceExercise | MatchExercise
+export type GermanExercise = WordExercise | ChoiceExercise | MatchExercise | DialogExercise

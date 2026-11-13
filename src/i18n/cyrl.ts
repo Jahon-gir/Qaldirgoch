@@ -2,6 +2,11 @@ import type { Dict } from './uz'
 
 /** Qoʻlda yozilgan kirill matnlar: avtomatik translit oʻrniga ishlatiladi (ts→ц, unli+e→э kabi xatolar boʻlmasligi uchun). */
 export const cyrlOverrides: Partial<Dict> = {
+  'dialog.title': 'Ишдаги суҳбат',
+  'dialog.hint': 'Ҳар бир гапни тингланг ва ўқинг.',
+  'dialog.hideTr': 'Таржимани яшириш',
+  'dialog.showTr': 'Таржимани кўрсатиш',
+  'dialog.check': 'Суҳбатдаги мос жавобни танланг',
   'home.hero': 'Ўзбекистондан чет элга, фақат қонуний йўл билан',
   'home.whichCountry': 'Қайси давлатга?',
   'home.openPaths': '{n} та йўл очиқ',

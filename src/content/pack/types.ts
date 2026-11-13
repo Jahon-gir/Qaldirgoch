@@ -13,7 +13,13 @@ export type PackSituation = {
   title: L3
   order: number
   level: string
+  /** Qisqa ish dialogi (0.17.0): 4–8 replika. Excel'da "Dialoglar" varagʻi. */
+  dialog?: PackDialog
 }
+
+/** Dialog replikasi: kim aytadi (foydalanuvchi tilida, masalan "Usta"), nemischa gap va tarjimasi. */
+export type PackDialogLine = { speaker: L3; de: string; tr: L3 }
+export type PackDialog = { lines: PackDialogLine[]; status: ContentStatus; verifiedBy?: string; verifiedAt?: string }
 
 export type PackWord = {
   /** Barqaror soʻz id'si: <kurs prefiksi><soha>-<vaziyat>-<slug>. Serverda saqlanadi — oʻzgarmaydi. */
