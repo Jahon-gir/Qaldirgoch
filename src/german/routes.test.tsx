@@ -91,9 +91,10 @@ describe('marshrut: Bosh → Til → modul → dars → natija → modulga qayti
     expect(screen.getByRole('heading', { name: 'Tillar' })).toBeTruthy() // til tanlash
     fireEvent.click(screen.getByTestId('lang-de'))
     expect(screen.getByRole('heading', { name: 'Nemis tili' })).toBeTruthy() // Til
-    expect(screen.getByText('Yoʻnalish: Texnik kasblar')).toBeTruthy() // payvandchi → technical
-    expect(screen.getByText('Ish joyida')).toBeTruthy() // technical modul koʻrinadi
-    expect(screen.getAllByText('Tez orada').length).toBe(2) // 2- va 3-modul
+    expect(screen.getByRole('link', { name: 'Kasblar' })).toBeTruthy() // kasbiy modullar alohida boʻlimda
+    expect(screen.queryByText(/Yoʻnalish:/)).toBeNull()
+    expect(screen.queryByText('Ish joyida')).toBeNull() // technical modul endi Kasblar ichida
+    expect(screen.getAllByText('Tez orada').length).toBe(1) // 2-modul (umumiy)
 
     fireEvent.click(screen.getByRole('link', { name: /Salomlashish va tanishuv/ }))
     expect(screen.getByRole('heading', { name: 'Salomlashish va tanishuv' })).toBeTruthy() // modul
@@ -170,12 +171,17 @@ describe('marshrut: Bosh → Til → modul → dars → natija → modulga qayti
     expect(screen.getByRole('heading', { name: 'Nemis tili' })).toBeTruthy()
   })
 
-  it('yoʻnalishni qoʻlda oʻzgartirish profilga yoziladi', () => {
+  it('kasblar: roʻyxat → kasb modullari; tanlangan kasb profilga yoziladi', () => {
     renderApp('/til/de')
-    click('oʻzgartirish')
-    fireEvent.click(screen.getByRole('radio', { name: 'Parvarish va tibbiyot' }))
-    expect(screen.getByText('Yoʻnalish: Parvarish va tibbiyot')).toBeTruthy()
-    expect(screen.queryByText('Ish joyida')).toBeNull()
+    fireEvent.click(screen.getByRole('link', { name: 'Kasblar' }))
+    expect(screen.getByRole('heading', { name: 'Kasbingizni tanlang' })).toBeTruthy()
+    expect(screen.getByText('Sizniki')).toBeTruthy() // payvandchi → technical
+    expect(screen.getByRole('link', { name: /Texnik kasblar/ })).toBeTruthy()
+    fireEvent.click(screen.getByRole('link', { name: /Parvarish va tibbiyot/ }))
+    expect(screen.getByRole('heading', { name: 'Parvarish va tibbiyot' })).toBeTruthy()
     expect(JSON.parse(localStorage.getItem('qaldirgoch.profile')!).germanDirection).toBe('care')
+    cleanup()
+    renderApp('/til/kasblar/general') // umumiy — kasb emas: roʻyxatga qaytadi
+    expect(screen.getByRole('heading', { name: 'Kasbingizni tanlang' })).toBeTruthy()
   })
 })
