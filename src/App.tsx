@@ -40,18 +40,25 @@ function RequireOnboarding({ bare = false }: { bare?: boolean }) {
   return bare ? <Outlet /> : <AppShell />
 }
 
-/** Splash faqat sahifa birinchi ochilganda (sovuq start) va kamida 1,8 soniya; testlarda koʻrsatilmaydi. */
+/** Splash faqat sahifa birinchi ochilganda (sovuq start): kamida 2,6 soniya, soʻng 0,7 soniyada silliq soʻnadi; testlarda yoʻq. */
 let splashDone = import.meta.env.MODE === 'test'
 function useSplash(booting: boolean) {
-  const [minTime, setMinTime] = useState(!splashDone)
+  const [phase, setPhase] = useState<'in' | 'out' | 'gone'>(splashDone ? 'gone' : 'in')
+  const [minPassed, setMinPassed] = useState(splashDone)
   useEffect(() => {
     if (splashDone) return
-    const id = window.setTimeout(() => setMinTime(false), 1800)
+    const id = window.setTimeout(() => setMinPassed(true), 2600)
     return () => window.clearTimeout(id)
   }, [])
-  const show = minTime || (!splashDone && booting)
-  useEffect(() => { if (!show) splashDone = true }, [show])
-  return show
+  useEffect(() => {
+    if (phase === 'in' && minPassed && !booting) setPhase('out')
+  }, [phase, minPassed, booting])
+  useEffect(() => {
+    if (phase !== 'out') return
+    const id = window.setTimeout(() => { splashDone = true; setPhase('gone') }, 700)
+    return () => window.clearTimeout(id)
+  }, [phase])
+  return phase
 }
 
 /** Sessiya/akkaunt tekshirilayotganda (OAuth qaytishi) onboarding bir lahza ham yonib ketmasin. */
@@ -124,20 +131,27 @@ export default function App() {
   const t = useT()
   const booting = useBooting()
   const splash = useSplash(booting)
-  if (splash) return <Splash />
+  /* Splash ilova ustida turadi (bitta nusxa): soʻnganda ilova ostidan koʻrinadi */
+  const overlay = splash !== 'gone' && <Splash leaving={splash === 'out'} />
   if (booting) {
     return (
-      <div role="status" className="flex min-h-full flex-col items-center justify-center gap-3">
-        <MigraLogo size={72} />
-        <p className="text-ink-2">{t('sync.loading')}</p>
-      </div>
+      <>
+        {overlay}
+        <div role="status" className="flex min-h-full flex-col items-center justify-center gap-3">
+          <MigraLogo size={72} />
+          <p className="text-ink-2">{t('sync.loading')}</p>
+        </div>
+      </>
     )
   }
   return (
-    <HashRouter>
-      <UpdateBanner />
-      <SyncDialogs />
-      <AppRoutes />
-    </HashRouter>
+    <>
+      {overlay}
+      <HashRouter>
+        <UpdateBanner />
+        <SyncDialogs />
+        <AppRoutes />
+      </HashRouter>
+    </>
   )
 }
