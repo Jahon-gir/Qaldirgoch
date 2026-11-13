@@ -110,7 +110,90 @@
         "ru": "Чистящие средства и безопасность"
       },
       "order": 2,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Dieses Reinigungsmittel ist ätzend. Tragen Sie Gummihandschuhe.",
+            "tr": {
+              "uz": "Bu tozalash vositasi kuydiruvchi. Rezina qoʻlqop kiying.",
+              "uz-Cyrl": "Бу тозалаш воситаси куйдирувчи. Резина қўлқоп кийинг.",
+              "ru": "Это чистящее средство едкое. Надевайте резиновые перчатки."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Und eine Schutzbrille auch?",
+            "tr": {
+              "uz": "Himoya koʻzoynagi ham kerakmi?",
+              "uz-Cyrl": "Ҳимоя кўзойнаги ҳам керакми?",
+              "ru": "И защитные очки тоже?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Ja. Und mischen Sie es nie mit anderen Mitteln!",
+            "tr": {
+              "uz": "Ha. Va uni hech qachon boshqa vositalar bilan aralashtirmang!",
+              "uz-Cyrl": "Ҳа. Ва уни ҳеч қачон бошқа воситалар билан аралаштирманг!",
+              "ru": "Да. И никогда не смешивайте его с другими средствами!"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Verstanden. Wie viel soll ich in den Eimer geben?",
+            "tr": {
+              "uz": "Tushundim. Chelakka qancha solay?",
+              "uz-Cyrl": "Тушундим. Челакка қанча солай?",
+              "ru": "Понял. Сколько добавлять в ведро?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Die Dosierung steht auf dem Etikett. Und bitte gut lüften.",
+            "tr": {
+              "uz": "Miqdori yorliqda yozilgan. Yaxshilab shamollating ham.",
+              "uz-Cyrl": "Миқдори ёрлиқда ёзилган. Яхшилаб шамоллатинг ҳам.",
+              "ru": "Дозировка указана на этикетке. И хорошо проветривайте."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Okay, ich öffne das Fenster.",
+            "tr": {
+              "uz": "Xoʻp, derazani ochaman.",
+              "uz-Cyrl": "Хўп, деразани очаман.",
+              "ru": "Хорошо, открою окно."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "ofis",
@@ -120,7 +203,90 @@
         "ru": "Уборка офиса"
       },
       "order": 3,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Ofis xodimi",
+              "uz-Cyrl": "Офис ходими",
+              "ru": "Сотрудница офиса"
+            },
+            "de": "Guten Abend! Ich gehe jetzt nach Hause.",
+            "tr": {
+              "uz": "Xayrli kech! Men hozir uyga ketyapman.",
+              "uz-Cyrl": "Хайрли кеч! Мен ҳозир уйга кетяпман.",
+              "ru": "Добрый вечер! Я сейчас ухожу домой."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Guten Abend! Darf ich Ihren Schreibtisch abwischen?",
+            "tr": {
+              "uz": "Xayrli kech! Ish stolingizni artsam boʻladimi?",
+              "uz-Cyrl": "Хайрли кеч! Иш столингизни артсам бўладими?",
+              "ru": "Добрый вечер! Можно протереть ваш стол?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Ofis xodimi",
+              "uz-Cyrl": "Офис ходими",
+              "ru": "Сотрудница офиса"
+            },
+            "de": "Ja. Bitte machen Sie am Ende das Licht aus und schließen Sie ab.",
+            "tr": {
+              "uz": "Ha. Oxirida chiroqni oʻchirib, eshikni qulflang.",
+              "uz-Cyrl": "Ҳа. Охирида чироқни ўчириб, эшикни қулфланг.",
+              "ru": "Да. В конце выключите свет и заприте дверь."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mache ich. Und die Alarmanlage?",
+            "tr": {
+              "uz": "Xoʻp. Signalizatsiya-chi?",
+              "uz-Cyrl": "Хўп. Сигнализация-чи?",
+              "ru": "Сделаю. А сигнализация?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Ofis xodimi",
+              "uz-Cyrl": "Офис ходими",
+              "ru": "Сотрудница офиса"
+            },
+            "de": "Die schaltet der Hausmeister ein. Bitte leeren Sie noch die Papierkörbe.",
+            "tr": {
+              "uz": "Uni bino xizmatchisi yoqadi. Siz qogʻoz savatlarini boʻshatib qoʻying.",
+              "uz-Cyrl": "Уни бино хизматчиси ёқади. Сиз қоғоз саватларини бўшатиб қўйинг.",
+              "ru": "Её включает завхоз. А вы, пожалуйста, ещё опустошите корзины для бумаг."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gern. Ich mache auch die Küche sauber.",
+            "tr": {
+              "uz": "Xoʻp. Oshxonani ham tozalayman.",
+              "uz-Cyrl": "Хўп. Ошхонани ҳам тозалайман.",
+              "ru": "Хорошо. Кухню тоже уберу."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "kir",
@@ -130,7 +296,90 @@
         "ru": "В прачечной"
       },
       "order": 4,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Diese Wäsche kommt aus dem Hotel. Bitte sortieren Sie sie.",
+            "tr": {
+              "uz": "Bu kir mehmonxonadan keldi. Iltimos, uni saralang.",
+              "uz-Cyrl": "Бу кир меҳмонхонадан келди. Илтимос, уни сараланг.",
+              "ru": "Это бельё из отеля. Рассортируйте его, пожалуйста."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Weiß und bunt getrennt?",
+            "tr": {
+              "uz": "Oq va rangli alohidami?",
+              "uz-Cyrl": "Оқ ва рангли алоҳидами?",
+              "ru": "Белое и цветное отдельно?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Ja. Hier ist ein Laken mit einem Fleck.",
+            "tr": {
+              "uz": "Ha. Mana bu choyshabda dogʻ bor.",
+              "uz-Cyrl": "Ҳа. Мана бу чойшабда доғ бор.",
+              "ru": "Да. Вот простыня с пятном."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Soll ich den Fleck vorher mit der Hand waschen?",
+            "tr": {
+              "uz": "Dogʻni oldin qoʻlda yuvaymi?",
+              "uz-Cyrl": "Доғни олдин қўлда ювайми?",
+              "ru": "Застирать пятно сначала вручную?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Ja, bitte. Danach kommt alles in den Trockner.",
+            "tr": {
+              "uz": "Ha, iltimos. Keyin hammasi quritgichga.",
+              "uz-Cyrl": "Ҳа, илтимос. Кейин ҳаммаси қуритгичга.",
+              "ru": "Да, пожалуйста. Потом всё в сушилку."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Danach bügele und falte ich die Kissenbezüge.",
+            "tr": {
+              "uz": "Yaxshi. Keyin yostiq jildlarini dazmollab, taxlayman.",
+              "uz-Cyrl": "Яхши. Кейин ёстиқ жилдларини дазмоллаб, тахлайман.",
+              "ru": "Хорошо. Потом поглажу и сложу наволочки."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "sanitar",
@@ -140,7 +389,90 @@
         "ru": "Туалет и санузел"
       },
       "order": 5,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Obyekt rahbari",
+              "uz-Cyrl": "Объект раҳбари",
+              "ru": "Руководитель объекта"
+            },
+            "de": "In der Herrentoilette ist eine Toilette verstopft.",
+            "tr": {
+              "uz": "Erkaklar hojatxonasida bitta unitaz tiqilib qolgan.",
+              "uz-Cyrl": "Эркаклар ҳожатхонасида битта унитаз тиқилиб қолган.",
+              "ru": "В мужском туалете засорился унитаз."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Soll ich das Schild „Außer Betrieb“ an die Kabine hängen?",
+            "tr": {
+              "uz": "Kabinaga «Ishlamaydi» yozuvini ilaymi?",
+              "uz-Cyrl": "Кабинага «Ишламайди» ёзувини илайми?",
+              "ru": "Повесить на кабинку табличку «Не работает»?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Obyekt rahbari",
+              "uz-Cyrl": "Объект раҳбари",
+              "ru": "Руководитель объекта"
+            },
+            "de": "Ja, bitte. Und der Seifenspender ist leer.",
+            "tr": {
+              "uz": "Ha, iltimos. Sovun dispenseri ham boʻsh.",
+              "uz-Cyrl": "Ҳа, илтимос. Совун диспенсери ҳам бўш.",
+              "ru": "Да, пожалуйста. И дозатор для мыла пустой."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich fülle ihn sofort nach.",
+            "tr": {
+              "uz": "Hozir toʻldirib qoʻyaman.",
+              "uz-Cyrl": "Ҳозир тўлдириб қўяман.",
+              "ru": "Сейчас наполню."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Obyekt rahbari",
+              "uz-Cyrl": "Объект раҳбари",
+              "ru": "Руководитель объекта"
+            },
+            "de": "Danke. Nehmen Sie für die Toiletten immer die roten Tücher.",
+            "tr": {
+              "uz": "Rahmat. Hojatxona uchun doim qizil lattalardan foydalaning.",
+              "uz-Cyrl": "Раҳмат. Ҳожатхона учун доим қизил латталардан фойдаланинг.",
+              "ru": "Спасибо. Для туалетов всегда берите красные салфетки."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, ich weiß: Rot ist nur für WC und Urinal.",
+            "tr": {
+              "uz": "Ha, bilaman: qizil faqat unitaz va pissuar uchun.",
+              "uz-Cyrl": "Ҳа, биламан: қизил фақат унитаз ва писсуар учун.",
+              "ru": "Да, знаю: красный только для унитаза и писсуара."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "kasalxona",
@@ -150,7 +482,90 @@
         "ru": "Уборка в больнице"
       },
       "order": 6,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Zimmer 12 ist ein Isolierzimmer. Bitte ziehen Sie zuerst Schutzkittel und Handschuhe an.",
+            "tr": {
+              "uz": "12-xona izolyatsiya xonasi. Iltimos, avval himoya xalati va qoʻlqop kiying.",
+              "uz-Cyrl": "12-хона изоляция хонаси. Илтимос, аввал ҳимоя халати ва қўлқоп кийинг.",
+              "ru": "Палата 12 — изолятор. Сначала наденьте защитный халат и перчатки."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "In Ordnung. Welches Desinfektionsmittel nehme ich?",
+            "tr": {
+              "uz": "Xoʻp. Qaysi dezinfeksiya vositasini olay?",
+              "uz-Cyrl": "Хўп. Қайси дезинфекция воситасини олай?",
+              "ru": "Хорошо. Какое дезсредство взять?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Das hier. Achten Sie auf die Einwirkzeit.",
+            "tr": {
+              "uz": "Mana shuni. Taʼsir qilish vaqtiga eʼtibor bering.",
+              "uz-Cyrl": "Мана шуни. Таъсир қилиш вақтига эътибор беринг.",
+              "ru": "Вот это. Соблюдайте время воздействия."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wie lange ist die Einwirkzeit?",
+            "tr": {
+              "uz": "Taʼsir qilish vaqti qancha?",
+              "uz-Cyrl": "Таъсир қилиш вақти қанча?",
+              "ru": "Какое время воздействия?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Das steht auf der Flasche. Und denken Sie an die Reihenfolge.",
+            "tr": {
+              "uz": "Bu shishada yozilgan. Tartibni ham unutmang.",
+              "uz-Cyrl": "Бу шишада ёзилган. Тартибни ҳам унутманг.",
+              "ru": "Это написано на бутылке. И помните о порядке."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja: von sauber nach schmutzig und von oben nach unten.",
+            "tr": {
+              "uz": "Ha: tozadan iflosga va yuqoridan pastga.",
+              "uz-Cyrl": "Ҳа: тозадан ифлосга ва юқоридан пастга.",
+              "ru": "Да: от чистого к грязному и сверху вниз."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "mashinalar",
@@ -160,7 +575,90 @@
         "ru": "Уборочные машины"
       },
       "order": 7,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Heute reinigen Sie den Flur mit der Scheuersaugmaschine.",
+            "tr": {
+              "uz": "Bugun yoʻlakni pol yuvish mashinasi bilan tozalaysiz.",
+              "uz-Cyrl": "Бугун йўлакни пол ювиш машинаси билан тозалайсиз.",
+              "ru": "Сегодня моете коридор поломоечной машиной."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Ist der Akku aufgeladen?",
+            "tr": {
+              "uz": "Yaxshi. Akkumulyator zaryadlanganmi?",
+              "uz-Cyrl": "Яхши. Аккумулятор зарядланганми?",
+              "ru": "Хорошо. Аккумулятор заряжен?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Ja. Aber Sie müssen den Wassertank noch füllen.",
+            "tr": {
+              "uz": "Ha. Lekin suv bakini hali toʻldirishingiz kerak.",
+              "uz-Cyrl": "Ҳа. Лекин сув бакини ҳали тўлдиришингиз керак.",
+              "ru": "Да. Но вам ещё нужно наполнить бак для воды."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mit Reinigungsmittel?",
+            "tr": {
+              "uz": "Tozalash vositasi bilanmi?",
+              "uz-Cyrl": "Тозалаш воситаси биланми?",
+              "ru": "С моющим средством?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Ja, die Menge steht in der Bedienungsanleitung.",
+            "tr": {
+              "uz": "Ha, miqdori foydalanish yoʻriqnomasida yozilgan.",
+              "uz-Cyrl": "Ҳа, миқдори фойдаланиш йўриқномасида ёзилган.",
+              "ru": "Да, количество указано в инструкции."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Danke. Wo ist die Bedienungsanleitung?",
+            "tr": {
+              "uz": "Rahmat. Yoʻriqnoma qayerda?",
+              "uz-Cyrl": "Раҳмат. Йўриқнома қаерда?",
+              "ru": "Спасибо. А где инструкция?"
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "ish-tartibi",
@@ -170,7 +668,90 @@
         "ru": "План работы и объект"
       },
       "order": 8,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Obyekt rahbari",
+              "uz-Cyrl": "Объект раҳбари",
+              "ru": "Руководитель объекта"
+            },
+            "de": "Willkommen! Ich bin der Objektleiter. Hier ist Ihr Schlüssel.",
+            "tr": {
+              "uz": "Xush kelibsiz! Men obyekt rahbariman. Mana kalitingiz.",
+              "uz-Cyrl": "Хуш келибсиз! Мен объект раҳбариман. Мана калитингиз.",
+              "ru": "Добро пожаловать! Я руководитель объекта. Вот ваш ключ."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Danke. Wo soll ich anfangen?",
+            "tr": {
+              "uz": "Rahmat. Qayerdan boshlay?",
+              "uz-Cyrl": "Раҳмат. Қаердан бошлай?",
+              "ru": "Спасибо. С чего мне начать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Obyekt rahbari",
+              "uz-Cyrl": "Объект раҳбари",
+              "ru": "Руководитель объекта"
+            },
+            "de": "Mit dem Bereich im ersten Stock. Hier ist der Reinigungsplan.",
+            "tr": {
+              "uz": "Ikkinchi qavatdagi hududdan. Mana tozalash rejasi.",
+              "uz-Cyrl": "Иккинчи қаватдаги ҳудуддан. Мана тозалаш режаси.",
+              "ru": "С участка на втором этаже. Вот план уборки."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Muss ich die Checkliste jeden Tag abhaken?",
+            "tr": {
+              "uz": "Tekshiruv roʻyxatiga har kuni belgi qoʻyishim kerakmi?",
+              "uz-Cyrl": "Текширув рўйхатига ҳар куни белги қўйишим керакми?",
+              "ru": "Мне нужно каждый день отмечать чек-лист?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Obyekt rahbari",
+              "uz-Cyrl": "Объект раҳбари",
+              "ru": "Руководитель объекта"
+            },
+            "de": "Ja, täglich. Und tragen Sie Ihre Stunden in den Stundenzettel ein.",
+            "tr": {
+              "uz": "Ha, har kuni. Ish soatlaringizni ham ish soatlari varaqasiga yozing.",
+              "uz-Cyrl": "Ҳа, ҳар куни. Иш соатларингизни ҳам иш соатлари варақасига ёзинг.",
+              "ru": "Да, ежедневно. И записывайте свои часы в табель."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Wer unterschreibt den Stundenzettel?",
+            "tr": {
+              "uz": "Yaxshi. Varaqaga kim imzo qoʻyadi?",
+              "uz-Cyrl": "Яхши. Варақага ким имзо қўяди?",
+              "ru": "Хорошо. Кто подписывает табель?"
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [

@@ -110,7 +110,90 @@
         "ru": "В автомастерской"
       },
       "order": 2,
-      "level": "A1"
+      "level": "A1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Der Kunde braucht einen Ölwechsel. Fahren Sie das Auto auf die Hebebühne.",
+            "tr": {
+              "uz": "Mijozga moy almashtirish kerak. Mashinani koʻtargichga chiqaring.",
+              "uz-Cyrl": "Мижозга мой алмаштириш керак. Машинани кўтаргичга чиқаринг.",
+              "ru": "Клиенту нужна замена масла. Заезжайте на подъёмник."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mache ich. Soll ich auch den Filter wechseln?",
+            "tr": {
+              "uz": "Xoʻp. Filtrni ham almashtiraymi?",
+              "uz-Cyrl": "Хўп. Филтрни ҳам алмаштирайми?",
+              "ru": "Сделаю. Фильтр тоже менять?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Ja, den Ölfilter. Und prüfen Sie bitte den Luftdruck der Reifen.",
+            "tr": {
+              "uz": "Ha, moy filtrini. Shinalarning havo bosimini ham tekshiring.",
+              "uz-Cyrl": "Ҳа, мой филтрини. Шиналарнинг ҳаво босимини ҳам текширинг.",
+              "ru": "Да, масляный фильтр. И проверьте, пожалуйста, давление в шинах."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wie viel bar sollen es sein?",
+            "tr": {
+              "uz": "Necha bar boʻlishi kerak?",
+              "uz-Cyrl": "Неча бар бўлиши керак?",
+              "ru": "Сколько должно быть бар?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Das steht auf dem Aufkleber in der Tür.",
+            "tr": {
+              "uz": "Bu eshikdagi yorliqda yozilgan.",
+              "uz-Cyrl": "Бу эшикдаги ёрлиқда ёзилган.",
+              "ru": "Это написано на наклейке в двери."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ah, ich sehe den Aufkleber. Danke!",
+            "tr": {
+              "uz": "Ha, yorliqni koʻryapman. Rahmat!",
+              "uz-Cyrl": "Ҳа, ёрлиқни кўряпман. Раҳмат!",
+              "ru": "А, вижу наклейку. Спасибо!"
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "metallbau",
@@ -120,7 +203,90 @@
         "ru": "Металлоконструкции"
       },
       "order": 3,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Heute montieren wir das Geländer. Haben Sie die Zeichnung?",
+            "tr": {
+              "uz": "Bugun panjarani oʻrnatamiz. Chizma sizdami?",
+              "uz-Cyrl": "Бугун панжарани ўрнатамиз. Чизма сиздами?",
+              "ru": "Сегодня монтируем перила. Чертёж у вас?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, hier ist sie. Alle Maße stehen drauf.",
+            "tr": {
+              "uz": "Ha, mana. Hamma oʻlchamlar yozilgan.",
+              "uz-Cyrl": "Ҳа, мана. Ҳамма ўлчамлар ёзилган.",
+              "ru": "Да, вот он. Все размеры на нём."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Gut. Trennen Sie zuerst die Profile mit der Flex.",
+            "tr": {
+              "uz": "Yaxshi. Avval profillarni bolgarka bilan kesing.",
+              "uz-Cyrl": "Яхши. Аввал профилларни болгарка билан кесинг.",
+              "ru": "Хорошо. Сначала разрежьте профили болгаркой."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Okay. Ich setze vorher den Gehörschutz und die Schutzbrille auf.",
+            "tr": {
+              "uz": "Xoʻp. Oldin quloq himoyasi va himoya koʻzoynagini taqaman.",
+              "uz-Cyrl": "Хўп. Олдин қулоқ ҳимояси ва ҳимоя кўзойнагини тақаман.",
+              "ru": "Хорошо. Сначала надену наушники и защитные очки."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Sehr gut. Danach bohren Sie die Löcher für die Schrauben.",
+            "tr": {
+              "uz": "Juda yaxshi. Keyin boltlar uchun teshik parmalang.",
+              "uz-Cyrl": "Жуда яхши. Кейин болтлар учун тешик пармаланг.",
+              "ru": "Очень хорошо. Потом просверлите отверстия под болты."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Welchen Bohrer soll ich nehmen?",
+            "tr": {
+              "uz": "Qaysi parmani olay?",
+              "uz-Cyrl": "Қайси пармани олай?",
+              "ru": "Какое сверло взять?"
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "nosozlik",
@@ -130,7 +296,90 @@
         "ru": "Неисправности автомобиля"
       },
       "order": 4,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиент"
+            },
+            "de": "Guten Tag! Mein Auto macht ein komisches Geräusch.",
+            "tr": {
+              "uz": "Assalomu alaykum! Mashinam gʻalati tovush chiqaryapti.",
+              "uz-Cyrl": "Ассалому алайкум! Машинам ғалати товуш чиқаряпти.",
+              "ru": "Здравствуйте! Моя машина издаёт странный звук."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wann hören Sie das Geräusch?",
+            "tr": {
+              "uz": "Tovushni qachon eshitasiz?",
+              "uz-Cyrl": "Товушни қачон эшитасиз?",
+              "ru": "Когда вы слышите этот звук?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиент"
+            },
+            "de": "Beim Bremsen. Und die Warnleuchte ist an.",
+            "tr": {
+              "uz": "Tormoz bosganda. Ogohlantirish chirogʻi ham yonib turibdi.",
+              "uz-Cyrl": "Тормоз босганда. Огоҳлантириш чироғи ҳам ёниб турибди.",
+              "ru": "При торможении. И горит контрольная лампа."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Dann prüfen wir das mit dem Diagnosegerät.",
+            "tr": {
+              "uz": "Unda buni diagnostika apparati bilan tekshiramiz.",
+              "uz-Cyrl": "Унда буни диагностика аппарати билан текширамиз.",
+              "ru": "Тогда проверим это диагностическим прибором."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиент"
+            },
+            "de": "Was kostet die Reparatur?",
+            "tr": {
+              "uz": "Taʼmirlash qancha turadi?",
+              "uz-Cyrl": "Таъмирлаш қанча туради?",
+              "ru": "Сколько стоит ремонт?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Das weiß ich noch nicht. Sie bekommen zuerst einen Kostenvoranschlag.",
+            "tr": {
+              "uz": "Hozircha bilmayman. Avval sizga xarajatlar smetasini beramiz.",
+              "uz-Cyrl": "Ҳозирча билмайман. Аввал сизга харажатлар сметасини берамиз.",
+              "ru": "Пока не знаю. Сначала вы получите смету."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "dastgoh",
@@ -140,7 +389,90 @@
         "ru": "Работа на станке"
       },
       "order": 5,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Hier ist der Auftrag: zwanzig Teile an der Drehmaschine.",
+            "tr": {
+              "uz": "Mana topshiriq: tokarlik dastgohida yigirmata detal.",
+              "uz-Cyrl": "Мана топшириқ: токарлик дастгоҳида йигирмата детал.",
+              "ru": "Вот заказ: двадцать деталей на токарном станке."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Wo ist die Zeichnung?",
+            "tr": {
+              "uz": "Yaxshi. Chizma qayerda?",
+              "uz-Cyrl": "Яхши. Чизма қаерда?",
+              "ru": "Хорошо. Где чертёж?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Auf dem Tisch. Aber ziehen Sie zuerst die Handschuhe aus!",
+            "tr": {
+              "uz": "Stol ustida. Lekin avval qoʻlqopni yeching!",
+              "uz-Cyrl": "Стол устида. Лекин аввал қўлқопни ечинг!",
+              "ru": "На столе. Но сначала снимите перчатки!"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ach ja, keine Handschuhe an der Drehmaschine. Danke!",
+            "tr": {
+              "uz": "Ha, toʻgʻri, tokarlik dastgohida qoʻlqop kiyilmaydi. Rahmat!",
+              "uz-Cyrl": "Ҳа, тўғри, токарлик дастгоҳида қўлқоп кийилмайди. Раҳмат!",
+              "ru": "Ах да, у токарного станка без перчаток. Спасибо!"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Genau. Messen Sie jedes Werkstück mit dem Messschieber.",
+            "tr": {
+              "uz": "Toʻgʻri. Har bir detalni shtangensirkul bilan oʻlchang.",
+              "uz-Cyrl": "Тўғри. Ҳар бир детални штангенциркул билан ўлчанг.",
+              "ru": "Именно. Измеряйте каждую деталь штангенциркулем."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wie groß ist die Toleranz?",
+            "tr": {
+              "uz": "Dopusk qancha?",
+              "uz-Cyrl": "Допуск қанча?",
+              "ru": "Какой допуск?"
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "kuzov",
@@ -150,7 +482,90 @@
         "ru": "Кузов и покраска"
       },
       "order": 6,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Die Tür hat eine Delle und viele Kratzer. Wir lackieren sie neu.",
+            "tr": {
+              "uz": "Eshikda botiq va koʻp tirnalgan joy bor. Uni qaytadan boʻyaymiz.",
+              "uz-Cyrl": "Эшикда ботиқ ва кўп тирналган жой бор. Уни қайтадан бўяймиз.",
+              "ru": "На двери вмятина и много царапин. Покрасим её заново."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Welchen Farbton hat das Auto?",
+            "tr": {
+              "uz": "Yaxshi. Mashinaning rang tusi qanday?",
+              "uz-Cyrl": "Яхши. Машинанинг ранг туси қандай?",
+              "ru": "Хорошо. Какой оттенок у машины?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Das sehen wir später. Zuerst spachteln und schleifen Sie die Delle.",
+            "tr": {
+              "uz": "Buni keyin koʻramiz. Avval botiqni shpaklyovka qilib, jilvirlang.",
+              "uz-Cyrl": "Буни кейин кўрамиз. Аввал ботиқни шпаклёвка қилиб, жилвирланг.",
+              "ru": "Это посмотрим позже. Сначала зашпаклюйте и зашлифуйте вмятину."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Okay. Ich setze die Atemschutzmaske auf.",
+            "tr": {
+              "uz": "Xoʻp. Respiratorni taqaman.",
+              "uz-Cyrl": "Хўп. Респираторни тақаман.",
+              "ru": "Хорошо. Надену респиратор."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Gut. Danach kleben Sie die Scheibe ab.",
+            "tr": {
+              "uz": "Yaxshi. Keyin oynani skotch bilan yopib qoʻying.",
+              "uz-Cyrl": "Яхши. Кейин ойнани скотч билан ёпиб қўйинг.",
+              "ru": "Хорошо. Потом заклейте стекло."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mit Papier und Klebeband?",
+            "tr": {
+              "uz": "Qogʻoz va skotch bilanmi?",
+              "uz-Cyrl": "Қоғоз ва скотч биланми?",
+              "ru": "Бумагой и малярным скотчем?"
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "elektromobil",
@@ -160,7 +575,90 @@
         "ru": "Электромобиль и высокое напряжение"
       },
       "order": 7,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Achtung, das ist ein Elektroauto. Die orangen Kabel sind Hochvolt.",
+            "tr": {
+              "uz": "Diqqat, bu elektromobil. Toʻq sariq kabellar yuqori kuchlanishli.",
+              "uz-Cyrl": "Диққат, бу электромобил. Тўқ сариқ кабеллар юқори кучланишли.",
+              "ru": "Внимание, это электромобиль. Оранжевые кабели — высоковольтные."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Darf ich am Motor arbeiten?",
+            "tr": {
+              "uz": "Dvigatelda ishlasam boʻladimi?",
+              "uz-Cyrl": "Двигателда ишласам бўладими?",
+              "ru": "Мне можно работать с мотором?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Nein. Nur mit Schulung. Ein Kollege schaltet das Auto zuerst frei.",
+            "tr": {
+              "uz": "Yoʻq. Faqat oʻquv kursidan keyin. Avval hamkasb mashinani tokdan uzadi.",
+              "uz-Cyrl": "Йўқ. Фақат ўқув курсидан кейин. Аввал ҳамкасб машинани токдан узади.",
+              "ru": "Нет. Только после обучения. Сначала коллега обесточит машину."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Verstanden. Dann mache ich nur die Reifen.",
+            "tr": {
+              "uz": "Tushundim. Unda men faqat shinalarni qilaman.",
+              "uz-Cyrl": "Тушундим. Унда мен фақат шиналарни қиламан.",
+              "ru": "Понял. Тогда я займусь только шинами."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Gut. Und wenn ein Kabel kaputt ist: Nicht berühren!",
+            "tr": {
+              "uz": "Yaxshi. Agar kabel shikastlangan boʻlsa: tegmang!",
+              "uz-Cyrl": "Яхши. Агар кабел шикастланган бўлса: тегманг!",
+              "ru": "Хорошо. А если кабель повреждён — не трогать!"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Klar. Ich fasse es nicht an und rufe Sie.",
+            "tr": {
+              "uz": "Albatta. Unga tegmayman va sizni chaqiraman.",
+              "uz-Cyrl": "Албатта. Унга тегмайман ва сизни чақираман.",
+              "ru": "Ясно. Не трогаю и зову вас."
+            }
+          }
+        ],
+        "status": "review"
+      }
     },
     {
       "id": "sifat",
@@ -170,7 +668,90 @@
         "ru": "Контроль качества"
       },
       "order": 8,
-      "level": "A2"
+      "level": "A2",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Nazoratchi",
+              "uz-Cyrl": "Назоратчи",
+              "ru": "Контролёр"
+            },
+            "de": "Ich mache heute eine Stichprobe. Zeigen Sie mir bitte zehn Teile.",
+            "tr": {
+              "uz": "Bugun tanlab tekshiraman. Menga oʻnta detal koʻrsating.",
+              "uz-Cyrl": "Бугун танлаб текшираман. Менга ўнта детал кўрсатинг.",
+              "ru": "Сегодня я делаю выборочную проверку. Покажите мне десять деталей."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Hier, bitte. Das Prüfprotokoll liegt dabei.",
+            "tr": {
+              "uz": "Marhamat. Tekshiruv bayonnomasi ham shu yerda.",
+              "uz-Cyrl": "Марҳамат. Текширув баённомаси ҳам шу ерда.",
+              "ru": "Вот, пожалуйста. Протокол проверки рядом."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Nazoratchi",
+              "uz-Cyrl": "Назоратчи",
+              "ru": "Контролёр"
+            },
+            "de": "Dieses Teil hat einen Riss. Das ist Ausschuss.",
+            "tr": {
+              "uz": "Bu detalda yoriq bor. Bu brak.",
+              "uz-Cyrl": "Бу деталда ёриқ бор. Бу брак.",
+              "ru": "У этой детали трещина. Это брак."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Oh. Soll ich es rot kennzeichnen?",
+            "tr": {
+              "uz": "Voy. Uni qizil bilan belgilaymi?",
+              "uz-Cyrl": "Вой. Уни қизил билан белгилайми?",
+              "ru": "Ой. Пометить её красным?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Nazoratchi",
+              "uz-Cyrl": "Назоратчи",
+              "ru": "Контролёр"
+            },
+            "de": "Ja, und legen Sie es in die Kiste für Ausschuss. Die anderen sind in Ordnung.",
+            "tr": {
+              "uz": "Ha, va uni brak qutisiga soling. Qolganlari joyida.",
+              "uz-Cyrl": "Ҳа, ва уни брак қутисига солинг. Қолганлари жойида.",
+              "ru": "Да, и положите её в ящик для брака. Остальные в порядке."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Geben Sie die anderen dann frei?",
+            "tr": {
+              "uz": "Yaxshi. Unda qolganlariga ruxsat berasizmi?",
+              "uz-Cyrl": "Яхши. Унда қолганларига рухсат берасизми?",
+              "ru": "Хорошо. Тогда остальные вы допускаете?"
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
