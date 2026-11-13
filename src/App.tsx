@@ -71,7 +71,6 @@ export function AppRoutes() {
           <Route index element={<Safety />} />
           <Route path="agentlik" element={<AgencyCheck />} />
         </Route>
-        <Route path="ai" element={<Assistant />} />
         <Route path="sozlamalar" element={<Settings />} />
         <Route path="sozlamalar/profil" element={<ProfilePage />} />
         <Route path="sozlamalar/ornatish" element={<InstallGuide />} />
@@ -80,6 +79,7 @@ export function AppRoutes() {
       </Route>
       {/* Dars, takrorlash va lugʻat ekranlari pastki menyusiz */}
       <Route element={<RequireOnboarding bare />}>
+        <Route path="ai" element={<Assistant />} />
         <Route element={<CourseScope id="de" />}>
           <Route path="til/dars/:lessonId" element={<LessonPage />} />
           <Route path="til/takrorlash" element={<ReviewPage />} />
