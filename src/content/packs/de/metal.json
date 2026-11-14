@@ -7480,6 +7480,2128 @@
       "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-payvand-schutzgas",
+      "slug": "schutzgas",
+      "term": "das Schutzgas",
+      "icon": "wave-sine",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "himoya gazi",
+        "uz-Cyrl": "ҳимоя гази",
+        "ru": "защитный газ"
+      },
+      "pron": {
+        "uz": "das shuts-gas",
+        "uz-Cyrl": "дас шуц-гас",
+        "ru": "дас шуц-гас"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "schweisser",
+        "metallbauer"
+      ],
+      "situation": "payvand",
+      "example": {
+        "term": "Die Flasche mit Schutzgas ist fast leer.",
+        "tr": {
+          "uz": "Himoya gazi ballon deyarli boʻsh.",
+          "uz-Cyrl": "Ҳимоя гази баллон деярли бўш.",
+          "ru": "Баллон с защитным газом почти пуст."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-payvand-gasflasche",
+      "slug": "gasflasche",
+      "term": "die Gasflasche",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Gasflaschen",
+      "tr": {
+        "uz": "gaz ballon",
+        "uz-Cyrl": "газ баллон",
+        "ru": "газовый баллон"
+      },
+      "pron": {
+        "uz": "die gas-fla-she",
+        "uz-Cyrl": "ди гас-фла-ше",
+        "ru": "ди гас-фла-ше"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "schweisser",
+        "metallbauer"
+      ],
+      "situation": "payvand",
+      "example": {
+        "term": "Sichern Sie die Gasflasche mit einer Kette.",
+        "tr": {
+          "uz": "Gaz ballonni zanjir bilan mahkamlang.",
+          "uz-Cyrl": "Газ баллонни занжир билан маҳкамланг.",
+          "ru": "Закрепите газовый баллон цепью."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-payvand-schweissdraht",
+      "slug": "schweissdraht",
+      "term": "der Schweißdraht",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Schweißdrähte",
+      "tr": {
+        "uz": "payvand simi",
+        "uz-Cyrl": "пайванд сими",
+        "ru": "сварочная проволока"
+      },
+      "pron": {
+        "uz": "der shvays-drat",
+        "uz-Cyrl": "дер швайс-драт",
+        "ru": "дер швайс-драт"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "schweisser",
+        "metallbauer"
+      ],
+      "situation": "payvand",
+      "example": {
+        "term": "Der Schweißdraht ist gleich zu Ende.",
+        "tr": {
+          "uz": "Payvand simi hozir tugaydi.",
+          "uz-Cyrl": "Пайванд сими ҳозир тугайди.",
+          "ru": "Сварочная проволока скоро закончится."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-payvand-schlacke",
+      "slug": "schlacke",
+      "term": "die Schlacke",
+      "icon": "flame",
+      "article": "die",
+      "plural": "die Schlacken",
+      "tr": {
+        "uz": "shlak",
+        "uz-Cyrl": "шлак",
+        "ru": "шлак"
+      },
+      "pron": {
+        "uz": "die shla-ke",
+        "uz-Cyrl": "ди шла-ке",
+        "ru": "ди шла-ке"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "schweisser",
+        "metallbauer"
+      ],
+      "situation": "payvand",
+      "example": {
+        "term": "Klopfen Sie die Schlacke von der Naht ab.",
+        "tr": {
+          "uz": "Choʻkdagi shlakni urib tushiring.",
+          "uz-Cyrl": "Чокдаги шлакни уриб туширинг.",
+          "ru": "Отбейте шлак со шва."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-payvand-heften",
+      "slug": "heften",
+      "term": "heften",
+      "icon": "bolt",
+      "tr": {
+        "uz": "nuqtali payvandlamoq (prixvatka)",
+        "uz-Cyrl": "нуқтали пайвандламоқ (прихватка)",
+        "ru": "прихватывать (сваркой)"
+      },
+      "pron": {
+        "uz": "hef-ten",
+        "uz-Cyrl": "хеф-тен",
+        "ru": "хеф-тен"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "schweisser",
+        "metallbauer"
+      ],
+      "situation": "payvand",
+      "example": {
+        "term": "Heften Sie die Teile zuerst an drei Stellen.",
+        "tr": {
+          "uz": "Detallarni avval uch joyidan nuqtali payvandlang.",
+          "uz-Cyrl": "Деталларни аввал уч жойидан нуқтали пайвандланг.",
+          "ru": "Сначала прихватите детали в трёх местах."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ustaxona-kofferraum",
+      "slug": "kofferraum",
+      "term": "der Kofferraum",
+      "icon": "car",
+      "article": "der",
+      "plural": "die Kofferräume",
+      "tr": {
+        "uz": "yukxona (bagaj)",
+        "uz-Cyrl": "юкхона (багаж)",
+        "ru": "багажник"
+      },
+      "pron": {
+        "uz": "der ko-fer-raum",
+        "uz-Cyrl": "дер ко-фер-раум",
+        "ru": "дер ко-фер-раум"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "ustaxona",
+      "example": {
+        "term": "Das Warndreieck liegt im Kofferraum.",
+        "tr": {
+          "uz": "Avariya uchburchagi yukxonada turibdi.",
+          "uz-Cyrl": "Авария учбурчаги юкхонада турибди.",
+          "ru": "Знак аварийной остановки лежит в багажнике."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ustaxona-motorhaube",
+      "slug": "motorhaube",
+      "term": "die Motorhaube",
+      "icon": "car",
+      "article": "die",
+      "plural": "die Motorhauben",
+      "tr": {
+        "uz": "kapot",
+        "uz-Cyrl": "капот",
+        "ru": "капот"
+      },
+      "pron": {
+        "uz": "die mo-tor-hau-be",
+        "uz-Cyrl": "ди мо-тор-хау-бе",
+        "ru": "ди мо-тор-хау-бе"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "ustaxona",
+      "example": {
+        "term": "Öffnen Sie bitte die Motorhaube.",
+        "tr": {
+          "uz": "Iltimos, kapotni oching.",
+          "uz-Cyrl": "Илтимос, капотни очинг.",
+          "ru": "Откройте, пожалуйста, капот."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ustaxona-drehmomentschluessel",
+      "slug": "drehmomentschluessel",
+      "term": "der Drehmomentschlüssel",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Drehmomentschlüssel",
+      "tr": {
+        "uz": "dinamometrik kalit",
+        "uz-Cyrl": "динамометрик калит",
+        "ru": "динамометрический ключ"
+      },
+      "pron": {
+        "uz": "der dre-mo-ment-shlyu-sel",
+        "uz-Cyrl": "дер дре-мо-мент-шлю-зель",
+        "ru": "дер дре-мо-мент-шлю-зель"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "ustaxona",
+      "example": {
+        "term": "Ziehen Sie die Radmuttern mit dem Drehmomentschlüssel an.",
+        "tr": {
+          "uz": "Gʻildirak gaykalarini dinamometrik kalit bilan torting.",
+          "uz-Cyrl": "Ғилдирак гайкаларини динамометрик калит билан тортинг.",
+          "ru": "Затяните колёсные гайки динамометрическим ключом."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ustaxona-rad",
+      "slug": "rad",
+      "term": "das Rad",
+      "icon": "car",
+      "article": "das",
+      "plural": "die Räder",
+      "tr": {
+        "uz": "gʻildirak",
+        "uz-Cyrl": "ғилдирак",
+        "ru": "колесо"
+      },
+      "pron": {
+        "uz": "das rat",
+        "uz-Cyrl": "дас рат",
+        "ru": "дас рат"
+      },
+      "level": "A1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "ustaxona",
+      "example": {
+        "term": "Wir wechseln heute vier Räder.",
+        "tr": {
+          "uz": "Bugun toʻrtta gʻildirakni almashtiramiz.",
+          "uz-Cyrl": "Бугун тўртта ғилдиракни алмаштирамиз.",
+          "ru": "Сегодня мы меняем четыре колеса."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ustaxona-kuehler",
+      "slug": "kuehler",
+      "term": "der Kühler",
+      "icon": "thermometer",
+      "article": "der",
+      "plural": "die Kühler",
+      "tr": {
+        "uz": "radiator (sovutgich)",
+        "uz-Cyrl": "радиатор (совутгич)",
+        "ru": "радиатор"
+      },
+      "pron": {
+        "uz": "der kyu-ler",
+        "uz-Cyrl": "дер кю-лер",
+        "ru": "дер кю-лер"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "ustaxona",
+      "example": {
+        "term": "Öffnen Sie den Kühler nicht, wenn der Motor heiß ist.",
+        "tr": {
+          "uz": "Motor issiq boʻlsa, radiatorni ochmang.",
+          "uz-Cyrl": "Мотор иссиқ бўлса, радиаторни очманг.",
+          "ru": "Не открывайте радиатор, когда двигатель горячий."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-metallbau-rohr",
+      "slug": "rohr",
+      "term": "das Rohr",
+      "icon": "tools",
+      "article": "das",
+      "plural": "die Rohre",
+      "tr": {
+        "uz": "quvur, truba",
+        "uz-Cyrl": "қувур, труба",
+        "ru": "труба"
+      },
+      "pron": {
+        "uz": "das ror",
+        "uz-Cyrl": "дас рор",
+        "ru": "дас рор"
+      },
+      "level": "A1",
+      "field": "metal",
+      "jobs": [
+        "metallbauer"
+      ],
+      "situation": "metallbau",
+      "example": {
+        "term": "Das Rohr ist zwei Meter lang.",
+        "tr": {
+          "uz": "Quvur ikki metr uzunlikda.",
+          "uz-Cyrl": "Қувур икки метр узунликда.",
+          "ru": "Труба длиной два метра."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-metallbau-saege",
+      "slug": "saege",
+      "term": "die Säge",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Sägen",
+      "tr": {
+        "uz": "arra",
+        "uz-Cyrl": "арра",
+        "ru": "пила"
+      },
+      "pron": {
+        "uz": "die ze-ge",
+        "uz-Cyrl": "ди зе-ге",
+        "ru": "ди зе-ге"
+      },
+      "level": "A1",
+      "field": "metal",
+      "jobs": [
+        "metallbauer"
+      ],
+      "situation": "metallbau",
+      "example": {
+        "term": "Die Säge liegt auf der Werkbank.",
+        "tr": {
+          "uz": "Arra dastgoh stolida turibdi.",
+          "uz-Cyrl": "Арра дастгоҳ столида турибди.",
+          "ru": "Пила лежит на верстаке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-metallbau-leiter",
+      "slug": "leiter",
+      "term": "die Leiter",
+      "icon": "ladder",
+      "article": "die",
+      "plural": "die Leitern",
+      "tr": {
+        "uz": "narvon",
+        "uz-Cyrl": "нарвон",
+        "ru": "лестница (стремянка)"
+      },
+      "pron": {
+        "uz": "die lay-ter",
+        "uz-Cyrl": "ди лай-тер",
+        "ru": "ди лай-тер"
+      },
+      "level": "A1",
+      "field": "metal",
+      "jobs": [
+        "metallbauer"
+      ],
+      "situation": "metallbau",
+      "example": {
+        "term": "Stellen Sie die Leiter sicher auf.",
+        "tr": {
+          "uz": "Narvonni mustahkam qilib qoʻying.",
+          "uz-Cyrl": "Нарвонни мустаҳкам қилиб қўйинг.",
+          "ru": "Установите лестницу надёжно."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-metallbau-schweissen",
+      "slug": "schweissen",
+      "term": "schweißen",
+      "icon": "flame",
+      "tr": {
+        "uz": "payvandlamoq",
+        "uz-Cyrl": "пайвандламоқ",
+        "ru": "сваривать"
+      },
+      "pron": {
+        "uz": "shvay-sen",
+        "uz-Cyrl": "швай-сен",
+        "ru": "швай-сен"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "metallbauer"
+      ],
+      "situation": "metallbau",
+      "example": {
+        "term": "Wir schweißen das Geländer auf der Baustelle.",
+        "tr": {
+          "uz": "Panjarani qurilish joyida payvandlaymiz.",
+          "uz-Cyrl": "Панжарани қурилиш жойида пайвандлаймиз.",
+          "ru": "Мы свариваем перила на стройке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-metallbau-traeger",
+      "slug": "traeger",
+      "term": "der Träger",
+      "icon": "building",
+      "article": "der",
+      "plural": "die Träger",
+      "tr": {
+        "uz": "toʻsin (balka)",
+        "uz-Cyrl": "тўсин (балка)",
+        "ru": "балка"
+      },
+      "pron": {
+        "uz": "der tre-ger",
+        "uz-Cyrl": "дер тре-гер",
+        "ru": "дер тре-гер"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "metallbauer"
+      ],
+      "situation": "metallbau",
+      "example": {
+        "term": "Der Träger ist aus Stahl.",
+        "tr": {
+          "uz": "Toʻsin poʻlatdan.",
+          "uz-Cyrl": "Тўсин пўлатдан.",
+          "ru": "Балка из стали."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-nosozlik-fehlerspeicher",
+      "slug": "fehlerspeicher",
+      "term": "der Fehlerspeicher",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Fehlerspeicher",
+      "tr": {
+        "uz": "xatolar xotirasi",
+        "uz-Cyrl": "хатолар хотираси",
+        "ru": "память ошибок"
+      },
+      "pron": {
+        "uz": "der fe-ler-shpay-xer",
+        "uz-Cyrl": "дер фе-лер-шпай-хер",
+        "ru": "дер фе-лер-шпай-хер"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "nosozlik",
+      "example": {
+        "term": "Ich lese zuerst den Fehlerspeicher aus.",
+        "tr": {
+          "uz": "Avval xatolar xotirasini oʻqiyman.",
+          "uz-Cyrl": "Аввал хатолар хотирасини ўқийман.",
+          "ru": "Сначала я считываю память ошибок."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-nosozlik-quietschen",
+      "slug": "quietschen",
+      "term": "quietschen",
+      "icon": "volume",
+      "tr": {
+        "uz": "gʻichirlamoq",
+        "uz-Cyrl": "ғичирламоқ",
+        "ru": "скрипеть"
+      },
+      "pron": {
+        "uz": "kvit-shen",
+        "uz-Cyrl": "квит-шен",
+        "ru": "квит-шен"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "nosozlik",
+      "example": {
+        "term": "Die Bremse quietscht beim Bremsen.",
+        "tr": {
+          "uz": "Tormoz bosganda gʻichirlaydi.",
+          "uz-Cyrl": "Тормоз босганда ғичирлайди.",
+          "ru": "Тормоз скрипит при торможении."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-nosozlik-leerlauf",
+      "slug": "leerlauf",
+      "term": "der Leerlauf",
+      "icon": "wave-sine",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "salt yurish (neytral)",
+        "uz-Cyrl": "салт юриш (нейтрал)",
+        "ru": "холостой ход"
+      },
+      "pron": {
+        "uz": "der ler-lauf",
+        "uz-Cyrl": "дер лер-лауф",
+        "ru": "дер лер-лауф"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "nosozlik",
+      "example": {
+        "term": "Der Motor läuft im Leerlauf unruhig.",
+        "tr": {
+          "uz": "Motor salt yurishda notekis ishlayapti.",
+          "uz-Cyrl": "Мотор салт юришда нотекис ишлаяпти.",
+          "ru": "Двигатель неровно работает на холостом ходу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-nosozlik-rechnung",
+      "slug": "rechnung",
+      "term": "die Rechnung",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "die Rechnungen",
+      "tr": {
+        "uz": "hisob (schyot)",
+        "uz-Cyrl": "ҳисоб (счёт)",
+        "ru": "счёт"
+      },
+      "pron": {
+        "uz": "die rex-nung",
+        "uz-Cyrl": "ди рех-нунг",
+        "ru": "ди рех-нунг"
+      },
+      "level": "A1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "nosozlik",
+      "example": {
+        "term": "Der Kunde bekommt die Rechnung am Empfang.",
+        "tr": {
+          "uz": "Mijoz hisobni qabulxonada oladi.",
+          "uz-Cyrl": "Мижоз ҳисобни қабулхонада олади.",
+          "ru": "Клиент получает счёт на ресепшене."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-nosozlik-undicht",
+      "slug": "undicht",
+      "term": "undicht",
+      "icon": "droplet",
+      "tr": {
+        "uz": "oqadigan (germetik emas)",
+        "uz-Cyrl": "оқадиган (герметик эмас)",
+        "ru": "негерметичный, протекает"
+      },
+      "pron": {
+        "uz": "un-dixt",
+        "uz-Cyrl": "ун-дихт",
+        "ru": "ун-дихт"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "nosozlik",
+      "example": {
+        "term": "Der Kühler ist undicht.",
+        "tr": {
+          "uz": "Radiator oqyapti.",
+          "uz-Cyrl": "Радиатор оқяпти.",
+          "ru": "Радиатор протекает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-dastgoh-spannfutter",
+      "slug": "spannfutter",
+      "term": "das Spannfutter",
+      "icon": "tools",
+      "article": "das",
+      "plural": "die Spannfutter",
+      "tr": {
+        "uz": "patron (tokarlik dastgohida)",
+        "uz-Cyrl": "патрон (токарлик дастгоҳида)",
+        "ru": "патрон (токарного станка)"
+      },
+      "pron": {
+        "uz": "das shpan-fu-ter",
+        "uz-Cyrl": "дас шпан-фу-тер",
+        "ru": "дас шпан-фу-тер"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "dastgoh",
+      "example": {
+        "term": "Nehmen Sie den Schlüssel aus dem Spannfutter!",
+        "tr": {
+          "uz": "Kalitni patrondan oling!",
+          "uz-Cyrl": "Калитни патрондан олинг!",
+          "ru": "Выньте ключ из патрона!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-dastgoh-drehzahl",
+      "slug": "drehzahl",
+      "term": "die Drehzahl",
+      "icon": "wave-sine",
+      "article": "die",
+      "plural": "die Drehzahlen",
+      "tr": {
+        "uz": "aylanish tezligi",
+        "uz-Cyrl": "айланиш тезлиги",
+        "ru": "частота вращения"
+      },
+      "pron": {
+        "uz": "die dre-tsal",
+        "uz-Cyrl": "ди дре-цаль",
+        "ru": "ди дре-цаль"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "dastgoh",
+      "example": {
+        "term": "Stellen Sie eine niedrigere Drehzahl ein.",
+        "tr": {
+          "uz": "Aylanish tezligini pastroq qilib qoʻying.",
+          "uz-Cyrl": "Айланиш тезлигини пастроқ қилиб қўйинг.",
+          "ru": "Установите более низкую частоту вращения."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-dastgoh-vorschub",
+      "slug": "vorschub",
+      "term": "der Vorschub",
+      "icon": "repeat",
+      "article": "der",
+      "plural": "die Vorschübe",
+      "tr": {
+        "uz": "surish (podacha)",
+        "uz-Cyrl": "суриш (подача)",
+        "ru": "подача"
+      },
+      "pron": {
+        "uz": "der for-shup",
+        "uz-Cyrl": "дер фор-шуп",
+        "ru": "дер фор-шуп"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "dastgoh",
+      "example": {
+        "term": "Der Vorschub ist zu schnell.",
+        "tr": {
+          "uz": "Surish juda tez.",
+          "uz-Cyrl": "Суриш жуда тез.",
+          "ru": "Подача слишком быстрая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-dastgoh-entgraten",
+      "slug": "entgraten",
+      "term": "entgraten",
+      "icon": "tools",
+      "tr": {
+        "uz": "oʻtkir qirrani tozalamoq",
+        "uz-Cyrl": "ўткир қиррани тозаламоқ",
+        "ru": "снимать заусенцы"
+      },
+      "pron": {
+        "uz": "ent-gra-ten",
+        "uz-Cyrl": "энт-гра-тен",
+        "ru": "энт-гра-тен"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "dastgoh",
+      "example": {
+        "term": "Entgraten Sie die Kanten mit der Feile.",
+        "tr": {
+          "uz": "Qirralarni egov bilan tozalang.",
+          "uz-Cyrl": "Қирраларни эгов билан тозаланг.",
+          "ru": "Снимите заусенцы с кромок напильником."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-dastgoh-lange-haare-zusammenbinden",
+      "slug": "lange-haare-zusammenbinden",
+      "term": "Lange Haare zusammenbinden!",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Uzun sochni bogʻlang!",
+        "uz-Cyrl": "Узун сочни боғланг!",
+        "ru": "Длинные волосы завязать!"
+      },
+      "pron": {
+        "uz": "lan-ge ha-re tsu-za-men-bin-den",
+        "uz-Cyrl": "лан-ге ха-ре цу-за-мен-бин-ден",
+        "ru": "лан-ге ха-ре цу-за-мен-бин-ден"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "dastgoh",
+      "example": {
+        "term": "Vor der Arbeit an der Maschine: lange Haare zusammenbinden!",
+        "tr": {
+          "uz": "Dastgohda ishlashdan oldin uzun sochni bogʻlang!",
+          "uz-Cyrl": "Дастгоҳда ишлашдан олдин узун сочни боғланг!",
+          "ru": "Перед работой на станке завяжите длинные волосы!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-kuzov-grundierung",
+      "slug": "grundierung",
+      "term": "die Grundierung",
+      "icon": "droplet",
+      "article": "die",
+      "plural": "die Grundierungen",
+      "tr": {
+        "uz": "grunt (asosiy qatlam)",
+        "uz-Cyrl": "грунт (асосий қатлам)",
+        "ru": "грунтовка"
+      },
+      "pron": {
+        "uz": "die grun-di-rung",
+        "uz-Cyrl": "ди грун-ди-рунг",
+        "ru": "ди грун-ди-рунг"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "karosseriebauer",
+        "lackierer"
+      ],
+      "situation": "kuzov",
+      "example": {
+        "term": "Zuerst kommt die Grundierung.",
+        "tr": {
+          "uz": "Avval grunt suriladi.",
+          "uz-Cyrl": "Аввал грунт сурилади.",
+          "ru": "Сначала наносится грунтовка."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-kuzov-polieren",
+      "slug": "polieren",
+      "term": "polieren",
+      "icon": "sun",
+      "tr": {
+        "uz": "sayqallamoq (polirovka)",
+        "uz-Cyrl": "сайқалламоқ (полировка)",
+        "ru": "полировать"
+      },
+      "pron": {
+        "uz": "po-li-ren",
+        "uz-Cyrl": "по-ли-рен",
+        "ru": "по-ли-рен"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "karosseriebauer",
+        "lackierer"
+      ],
+      "situation": "kuzov",
+      "example": {
+        "term": "Danach polieren wir den Lack.",
+        "tr": {
+          "uz": "Keyin boʻyoqni sayqallaymiz.",
+          "uz-Cyrl": "Кейин бўёқни сайқаллаймиз.",
+          "ru": "Потом мы полируем лак."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-kuzov-spritzpistole",
+      "slug": "spritzpistole",
+      "term": "die Spritzpistole",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Spritzpistolen",
+      "tr": {
+        "uz": "boʻyoq purkagich",
+        "uz-Cyrl": "бўёқ пуркагич",
+        "ru": "краскопульт"
+      },
+      "pron": {
+        "uz": "die shprits-pis-to-le",
+        "uz-Cyrl": "ди шприц-пис-то-ле",
+        "ru": "ди шприц-пис-то-ле"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "karosseriebauer",
+        "lackierer"
+      ],
+      "situation": "kuzov",
+      "example": {
+        "term": "Reinigen Sie die Spritzpistole nach der Arbeit.",
+        "tr": {
+          "uz": "Ishdan keyin boʻyoq purkagichni tozalang.",
+          "uz-Cyrl": "Ишдан кейин бўёқ пуркагични тозаланг.",
+          "ru": "Почистите краскопульт после работы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-kuzov-kotfluegel",
+      "slug": "kotfluegel",
+      "term": "der Kotflügel",
+      "icon": "car",
+      "article": "der",
+      "plural": "die Kotflügel",
+      "tr": {
+        "uz": "qanot (avtomobil)",
+        "uz-Cyrl": "қанот (автомобиль)",
+        "ru": "крыло (автомобиля)"
+      },
+      "pron": {
+        "uz": "der kot-flyu-gel",
+        "uz-Cyrl": "дер кот-флю-гель",
+        "ru": "дер кот-флю-гель"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "karosseriebauer",
+        "lackierer"
+      ],
+      "situation": "kuzov",
+      "example": {
+        "term": "Der Kotflügel hat eine große Delle.",
+        "tr": {
+          "uz": "Qanotda katta pachoq bor.",
+          "uz-Cyrl": "Қанотда катта пачоқ бор.",
+          "ru": "На крыле большая вмятина."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-kuzov-trocknen",
+      "slug": "trocknen",
+      "term": "trocknen",
+      "icon": "sun",
+      "tr": {
+        "uz": "qurimoq, quritmoq",
+        "uz-Cyrl": "қуримоқ, қуритмоқ",
+        "ru": "сохнуть, сушить"
+      },
+      "pron": {
+        "uz": "trok-nen",
+        "uz-Cyrl": "трок-нен",
+        "ru": "трок-нен"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "karosseriebauer",
+        "lackierer"
+      ],
+      "situation": "kuzov",
+      "example": {
+        "term": "Der Lack muss eine Nacht trocknen.",
+        "tr": {
+          "uz": "Boʻyoq bir kecha qurishi kerak.",
+          "uz-Cyrl": "Бўёқ бир кеча қуриши керак.",
+          "ru": "Лак должен сохнуть одну ночь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-elektromobil-ladestecker",
+      "slug": "ladestecker",
+      "term": "der Ladestecker",
+      "icon": "plug",
+      "article": "der",
+      "plural": "die Ladestecker",
+      "tr": {
+        "uz": "zaryad vilkasi",
+        "uz-Cyrl": "заряд вилкаси",
+        "ru": "зарядный штекер"
+      },
+      "pron": {
+        "uz": "der la-de-shte-ker",
+        "uz-Cyrl": "дер ла-де-ште-кер",
+        "ru": "дер ла-де-ште-кер"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "elektromobil",
+      "example": {
+        "term": "Ziehen Sie den Ladestecker vorsichtig ab.",
+        "tr": {
+          "uz": "Zaryad vilkasini ehtiyotlik bilan sugʻuring.",
+          "uz-Cyrl": "Заряд вилкасини эҳтиётлик билан суғуринг.",
+          "ru": "Осторожно выньте зарядный штекер."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-elektromobil-warnschild",
+      "slug": "warnschild",
+      "term": "das Warnschild",
+      "icon": "alert-triangle",
+      "article": "das",
+      "plural": "die Warnschilder",
+      "tr": {
+        "uz": "ogohlantirish belgisi",
+        "uz-Cyrl": "огоҳлантириш белгиси",
+        "ru": "предупреждающая табличка"
+      },
+      "pron": {
+        "uz": "das varn-shilt",
+        "uz-Cyrl": "дас варн-шильт",
+        "ru": "дас варн-шильт"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "elektromobil",
+      "example": {
+        "term": "Hängen Sie das Warnschild an das Auto.",
+        "tr": {
+          "uz": "Ogohlantirish belgisini mashinaga osib qoʻying.",
+          "uz-Cyrl": "Огоҳлантириш белгисини машинага осиб қўйинг.",
+          "ru": "Повесьте на машину предупреждающую табличку."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-elektromobil-spannung",
+      "slug": "spannung",
+      "term": "die Spannung",
+      "icon": "bolt",
+      "article": "die",
+      "plural": "die Spannungen",
+      "tr": {
+        "uz": "kuchlanish",
+        "uz-Cyrl": "кучланиш",
+        "ru": "напряжение"
+      },
+      "pron": {
+        "uz": "die shpa-nung",
+        "uz-Cyrl": "ди шпа-нунг",
+        "ru": "ди шпа-нунг"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "elektromobil",
+      "example": {
+        "term": "Messen Sie zuerst die Spannung.",
+        "tr": {
+          "uz": "Avval kuchlanishni oʻlchang.",
+          "uz-Cyrl": "Аввал кучланишни ўлчанг.",
+          "ru": "Сначала измерьте напряжение."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-elektromobil-ladezustand",
+      "slug": "ladezustand",
+      "term": "der Ladezustand",
+      "icon": "power",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "zaryad darajasi",
+        "uz-Cyrl": "заряд даражаси",
+        "ru": "уровень заряда"
+      },
+      "pron": {
+        "uz": "der la-de-tsu-shtant",
+        "uz-Cyrl": "дер ла-де-цу-штант",
+        "ru": "дер ла-де-цу-штант"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "elektromobil",
+      "example": {
+        "term": "Der Ladezustand ist bei zwanzig Prozent.",
+        "tr": {
+          "uz": "Zaryad darajasi yigirma foiz.",
+          "uz-Cyrl": "Заряд даражаси йигирма фоиз.",
+          "ru": "Уровень заряда двадцать процентов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-elektromobil-gegen-wiedereinschalten-sichern",
+      "slug": "gegen-wiedereinschalten-sichern",
+      "term": "gegen Wiedereinschalten sichern",
+      "icon": "key",
+      "tr": {
+        "uz": "qayta yoqilishdan himoyalamoq",
+        "uz-Cyrl": "қайта ёқилишдан ҳимояламоқ",
+        "ru": "защитить от повторного включения"
+      },
+      "pron": {
+        "uz": "ge-gen vi-der-ayn-shal-ten zi-xern",
+        "uz-Cyrl": "ге-ген ви-дер-айн-шаль-тен зи-херн",
+        "ru": "ге-ген ви-дер-айн-шаль-тен зи-херн"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "elektromobil",
+      "example": {
+        "term": "Nach dem Freischalten das Fahrzeug gegen Wiedereinschalten sichern.",
+        "tr": {
+          "uz": "Oʻchirgandan keyin mashinani qayta yoqilishdan himoyalang.",
+          "uz-Cyrl": "Ўчиргандан кейин машинани қайта ёқилишдан ҳимояланг.",
+          "ru": "После отключения защитите автомобиль от повторного включения."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-sifat-grat",
+      "slug": "grat",
+      "term": "der Grat",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Grate",
+      "tr": {
+        "uz": "oʻtkir qirra qoldigʻi (zausenets)",
+        "uz-Cyrl": "ўткир қирра қолдиғи (заусенец)",
+        "ru": "заусенец"
+      },
+      "pron": {
+        "uz": "der grat",
+        "uz-Cyrl": "дер грат",
+        "ru": "дер грат"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "metallbauer"
+      ],
+      "situation": "sifat",
+      "example": {
+        "term": "Vorsicht, am Teil ist noch ein Grat.",
+        "tr": {
+          "uz": "Ehtiyot boʻling, detalda hali oʻtkir qirra bor.",
+          "uz-Cyrl": "Эҳтиёт бўлинг, деталда ҳали ўткир қирра бор.",
+          "ru": "Осторожно, на детали ещё есть заусенец."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-sifat-sichtpruefung",
+      "slug": "sichtpruefung",
+      "term": "die Sichtprüfung",
+      "icon": "eye",
+      "article": "die",
+      "plural": "die Sichtprüfungen",
+      "tr": {
+        "uz": "koʻz bilan tekshirish",
+        "uz-Cyrl": "кўз билан текшириш",
+        "ru": "визуальный контроль"
+      },
+      "pron": {
+        "uz": "die zixt-pryu-fung",
+        "uz-Cyrl": "ди зихт-прю-фунг",
+        "ru": "ди зихт-прю-фунг"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "metallbauer"
+      ],
+      "situation": "sifat",
+      "example": {
+        "term": "Machen Sie zuerst eine Sichtprüfung.",
+        "tr": {
+          "uz": "Avval koʻz bilan tekshiring.",
+          "uz-Cyrl": "Аввал кўз билан текширинг.",
+          "ru": "Сначала проведите визуальный контроль."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-sifat-sollwert",
+      "slug": "sollwert",
+      "term": "der Sollwert",
+      "icon": "ruler",
+      "article": "der",
+      "plural": "die Sollwerte",
+      "tr": {
+        "uz": "belgilangan qiymat",
+        "uz-Cyrl": "белгиланган қиймат",
+        "ru": "заданное значение"
+      },
+      "pron": {
+        "uz": "der zol-vert",
+        "uz-Cyrl": "дер золь-верт",
+        "ru": "дер золь-верт"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "metallbauer"
+      ],
+      "situation": "sifat",
+      "example": {
+        "term": "Der Messwert liegt über dem Sollwert.",
+        "tr": {
+          "uz": "Oʻlchangan qiymat belgilangan qiymatdan yuqori.",
+          "uz-Cyrl": "Ўлчанган қиймат белгиланган қийматдан юқори.",
+          "ru": "Измеренное значение выше заданного."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-sifat-fehlerhaft",
+      "slug": "fehlerhaft",
+      "term": "fehlerhaft",
+      "icon": "alert-octagon",
+      "tr": {
+        "uz": "nuqsonli",
+        "uz-Cyrl": "нуқсонли",
+        "ru": "бракованный, с дефектом"
+      },
+      "pron": {
+        "uz": "fe-ler-haft",
+        "uz-Cyrl": "фе-лер-хафт",
+        "ru": "фе-лер-хафт"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "metallbauer"
+      ],
+      "situation": "sifat",
+      "example": {
+        "term": "Legen Sie fehlerhafte Teile in die rote Kiste.",
+        "tr": {
+          "uz": "Nuqsonli detallarni qizil qutiga soling.",
+          "uz-Cyrl": "Нуқсонли деталларни қизил қутига солинг.",
+          "ru": "Кладите бракованные детали в красный ящик."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-sifat-reklamation",
+      "slug": "reklamation",
+      "term": "die Reklamation",
+      "icon": "messages",
+      "article": "die",
+      "plural": "die Reklamationen",
+      "tr": {
+        "uz": "eʼtiroz (shikoyat)",
+        "uz-Cyrl": "эътироз (шикоят)",
+        "ru": "рекламация, претензия"
+      },
+      "pron": {
+        "uz": "die rek-la-ma-tsi-on",
+        "uz-Cyrl": "ди рек-ла-ма-ци-он",
+        "ru": "ди рек-ла-ма-ци-он"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "metallbauer"
+      ],
+      "situation": "sifat",
+      "example": {
+        "term": "Der Kunde hat eine Reklamation geschickt.",
+        "tr": {
+          "uz": "Mijoz eʼtiroz yubordi.",
+          "uz-Cyrl": "Мижоз эътироз юборди.",
+          "ru": "Клиент прислал рекламацию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-chizma-draufsicht",
+      "slug": "draufsicht",
+      "term": "die Draufsicht",
+      "icon": "eye",
+      "article": "die",
+      "plural": "die Draufsichten",
+      "tr": {
+        "uz": "ustdan koʻrinish",
+        "uz-Cyrl": "устдан кўриниш",
+        "ru": "вид сверху"
+      },
+      "pron": {
+        "uz": "die drauf-zixt",
+        "uz-Cyrl": "ди драуф-зихт",
+        "ru": "ди драуф-зихт"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "metallbauer",
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "chizma",
+      "example": {
+        "term": "In der Draufsicht sieht man die Bohrungen.",
+        "tr": {
+          "uz": "Ustdan koʻrinishda teshiklar koʻrinadi.",
+          "uz-Cyrl": "Устдан кўринишда тешиклар кўринади.",
+          "ru": "На виде сверху видны отверстия."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-chizma-mittellinie",
+      "slug": "mittellinie",
+      "term": "die Mittellinie",
+      "icon": "ruler",
+      "article": "die",
+      "plural": "die Mittellinien",
+      "tr": {
+        "uz": "oʻq chizigʻi (markaz chizigʻi)",
+        "uz-Cyrl": "ўқ чизиғи (марказ чизиғи)",
+        "ru": "осевая линия"
+      },
+      "pron": {
+        "uz": "die mi-tel-li-ni-e",
+        "uz-Cyrl": "ди ми-тель-ли-ни-е",
+        "ru": "ди ми-тель-ли-ни-е"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "metallbauer",
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "chizma",
+      "example": {
+        "term": "Zeichnen Sie zuerst die Mittellinie.",
+        "tr": {
+          "uz": "Avval oʻq chizigʻini chizing.",
+          "uz-Cyrl": "Аввал ўқ чизиғини чизинг.",
+          "ru": "Сначала начертите осевую линию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-chizma-senkung",
+      "slug": "senkung",
+      "term": "die Senkung",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Senkungen",
+      "tr": {
+        "uz": "zenkovka (teshik ogʻzini kengaytirish)",
+        "uz-Cyrl": "зенковка (тешик оғзини кенгайтириш)",
+        "ru": "зенковка"
+      },
+      "pron": {
+        "uz": "die zen-kung",
+        "uz-Cyrl": "ди зен-кунг",
+        "ru": "ди зен-кунг"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "metallbauer",
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "chizma",
+      "example": {
+        "term": "Die Bohrung bekommt eine Senkung.",
+        "tr": {
+          "uz": "Teshikka zenkovka qilinadi.",
+          "uz-Cyrl": "Тешикка зенковка қилинади.",
+          "ru": "Отверстие зенкуется."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-chizma-verdeckt",
+      "slug": "verdeckt",
+      "term": "verdeckt",
+      "icon": "square",
+      "tr": {
+        "uz": "koʻrinmaydigan (yashirin)",
+        "uz-Cyrl": "кўринмайдиган (яширин)",
+        "ru": "скрытый, невидимый"
+      },
+      "pron": {
+        "uz": "fer-dekt",
+        "uz-Cyrl": "фер-дект",
+        "ru": "фер-дект"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "metallbauer",
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "chizma",
+      "example": {
+        "term": "Verdeckte Kanten sind gestrichelt.",
+        "tr": {
+          "uz": "Koʻrinmaydigan qirralar uzuq chiziq bilan chiziladi.",
+          "uz-Cyrl": "Кўринмайдиган қирралар узуқ чизиқ билан чизилади.",
+          "ru": "Невидимые кромки изображаются штриховой линией."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-chizma-werkstoff",
+      "slug": "werkstoff",
+      "term": "der Werkstoff",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Werkstoffe",
+      "tr": {
+        "uz": "material (ashyo)",
+        "uz-Cyrl": "материал (ашё)",
+        "ru": "материал"
+      },
+      "pron": {
+        "uz": "der verk-shtof",
+        "uz-Cyrl": "дер верк-штоф",
+        "ru": "дер верк-штоф"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "metallbauer",
+        "industriemechaniker",
+        "zerspanungsmechaniker"
+      ],
+      "situation": "chizma",
+      "example": {
+        "term": "Der Werkstoff steht im Schriftfeld.",
+        "tr": {
+          "uz": "Material shtampda yozilgan.",
+          "uz-Cyrl": "Материал штампда ёзилган.",
+          "ru": "Материал указан в основной надписи."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-cnc-steuerung",
+      "slug": "steuerung",
+      "term": "die Steuerung",
+      "icon": "toggle-left",
+      "article": "die",
+      "plural": "die Steuerungen",
+      "tr": {
+        "uz": "boshqaruv pulti",
+        "uz-Cyrl": "бошқарув пульти",
+        "ru": "система управления (пульт)"
+      },
+      "pron": {
+        "uz": "die shtoy-e-rung",
+        "uz-Cyrl": "ди штой-е-рунг",
+        "ru": "ди штой-е-рунг"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "zerspanungsmechaniker",
+        "industriemechaniker"
+      ],
+      "situation": "cnc",
+      "example": {
+        "term": "Die Steuerung zeigt eine Fehlermeldung.",
+        "tr": {
+          "uz": "Boshqaruv pultida xato xabari chiqdi.",
+          "uz-Cyrl": "Бошқарув пультида хато хабари чиқди.",
+          "ru": "На пульте управления сообщение об ошибке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-cnc-einrichten",
+      "slug": "einrichten",
+      "term": "einrichten",
+      "icon": "tools",
+      "tr": {
+        "uz": "sozlamoq (naladka)",
+        "uz-Cyrl": "созламоқ (наладка)",
+        "ru": "наладить (станок)"
+      },
+      "pron": {
+        "uz": "ayn-rix-ten",
+        "uz-Cyrl": "айн-рих-тен",
+        "ru": "айн-рих-тен"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "zerspanungsmechaniker",
+        "industriemechaniker"
+      ],
+      "situation": "cnc",
+      "example": {
+        "term": "Ich richte die Maschine für den neuen Auftrag ein.",
+        "tr": {
+          "uz": "Dastgohni yangi buyurtma uchun sozlayapman.",
+          "uz-Cyrl": "Дастгоҳни янги буюртма учун созлаяпман.",
+          "ru": "Я налаживаю станок под новый заказ."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-cnc-werkzeugbruch",
+      "slug": "werkzeugbruch",
+      "term": "der Werkzeugbruch",
+      "icon": "alert-octagon",
+      "article": "der",
+      "plural": "die Werkzeugbrüche",
+      "tr": {
+        "uz": "asbob sinishi",
+        "uz-Cyrl": "асбоб синиши",
+        "ru": "поломка инструмента"
+      },
+      "pron": {
+        "uz": "der verk-tsoyk-brux",
+        "uz-Cyrl": "дер верк-цойк-брух",
+        "ru": "дер верк-цойк-брух"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "zerspanungsmechaniker",
+        "industriemechaniker"
+      ],
+      "situation": "cnc",
+      "example": {
+        "term": "Bei Werkzeugbruch stoppen Sie sofort die Maschine.",
+        "tr": {
+          "uz": "Asbob sinsa, dastgohni darhol toʻxtating.",
+          "uz-Cyrl": "Асбоб синса, дастгоҳни дарҳол тўхтатинг.",
+          "ru": "При поломке инструмента сразу остановите станок."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-cnc-achse",
+      "slug": "achse",
+      "term": "die Achse",
+      "icon": "ruler",
+      "article": "die",
+      "plural": "die Achsen",
+      "tr": {
+        "uz": "oʻq (X, Y, Z)",
+        "uz-Cyrl": "ўқ (X, Y, Z)",
+        "ru": "ось (X, Y, Z)"
+      },
+      "pron": {
+        "uz": "die ak-se",
+        "uz-Cyrl": "ди ак-се",
+        "ru": "ди ак-се"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "zerspanungsmechaniker",
+        "industriemechaniker"
+      ],
+      "situation": "cnc",
+      "example": {
+        "term": "Die Maschine hat drei Achsen.",
+        "tr": {
+          "uz": "Dastgohning uchta oʻqi bor.",
+          "uz-Cyrl": "Дастгоҳнинг учта ўқи бор.",
+          "ru": "У станка три оси."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-cnc-probelauf",
+      "slug": "probelauf",
+      "term": "der Probelauf",
+      "icon": "repeat",
+      "article": "der",
+      "plural": "die Probeläufe",
+      "tr": {
+        "uz": "sinov yurgizish",
+        "uz-Cyrl": "синов юргизиш",
+        "ru": "пробный прогон"
+      },
+      "pron": {
+        "uz": "der pro-be-lauf",
+        "uz-Cyrl": "дер про-бе-лауф",
+        "ru": "дер про-бе-лауф"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "zerspanungsmechaniker",
+        "industriemechaniker"
+      ],
+      "situation": "cnc",
+      "example": {
+        "term": "Machen Sie zuerst einen Probelauf ohne Werkstück.",
+        "tr": {
+          "uz": "Avval detalsiz sinov yurgizing.",
+          "uz-Cyrl": "Аввал деталсиз синов юргизинг.",
+          "ru": "Сначала сделайте пробный прогон без заготовки."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-olchov-winkelmesser",
+      "slug": "winkelmesser",
+      "term": "der Winkelmesser",
+      "icon": "ruler",
+      "article": "der",
+      "plural": "die Winkelmesser",
+      "tr": {
+        "uz": "burchak oʻlchagich (transportir)",
+        "uz-Cyrl": "бурчак ўлчагич (транспортир)",
+        "ru": "угломер, транспортир"
+      },
+      "pron": {
+        "uz": "der vin-kel-me-ser",
+        "uz-Cyrl": "дер вин-кель-ме-сер",
+        "ru": "дер вин-кель-ме-сер"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Messen Sie den Winkel mit dem Winkelmesser.",
+        "tr": {
+          "uz": "Burchakni burchak oʻlchagich bilan oʻlchang.",
+          "uz-Cyrl": "Бурчакни бурчак ўлчагич билан ўлчанг.",
+          "ru": "Измерьте угол угломером."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-olchov-hoehe",
+      "slug": "hoehe",
+      "term": "die Höhe",
+      "icon": "ruler",
+      "article": "die",
+      "plural": "die Höhen",
+      "tr": {
+        "uz": "balandlik",
+        "uz-Cyrl": "баландлик",
+        "ru": "высота"
+      },
+      "pron": {
+        "uz": "die hyo-e",
+        "uz-Cyrl": "ди хё-е",
+        "ru": "ди хё-е"
+      },
+      "level": "A1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Die Höhe ist fünfzig Millimeter.",
+        "tr": {
+          "uz": "Balandligi ellik millimetr.",
+          "uz-Cyrl": "Баландлиги эллик миллиметр.",
+          "ru": "Высота пятьдесят миллиметров."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-olchov-fuehlerlehre",
+      "slug": "fuehlerlehre",
+      "term": "die Fühlerlehre",
+      "icon": "ruler",
+      "article": "die",
+      "plural": "die Fühlerlehren",
+      "tr": {
+        "uz": "shchup (tirqish oʻlchagich)",
+        "uz-Cyrl": "щуп (тирқиш ўлчагич)",
+        "ru": "щуп"
+      },
+      "pron": {
+        "uz": "die fyu-ler-le-re",
+        "uz-Cyrl": "ди фю-лер-ле-ре",
+        "ru": "ди фю-лер-ле-ре"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Prüfen Sie den Abstand mit der Fühlerlehre.",
+        "tr": {
+          "uz": "Oraliqni shchup bilan tekshiring.",
+          "uz-Cyrl": "Оралиқни щуп билан текширинг.",
+          "ru": "Проверьте зазор щупом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-olchov-spalt",
+      "slug": "spalt",
+      "term": "der Spalt",
+      "icon": "square",
+      "article": "der",
+      "plural": "die Spalte",
+      "tr": {
+        "uz": "tirqish (zazor)",
+        "uz-Cyrl": "тирқиш (зазор)",
+        "ru": "зазор, щель"
+      },
+      "pron": {
+        "uz": "der shpalt",
+        "uz-Cyrl": "дер шпальт",
+        "ru": "дер шпальт"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Der Spalt ist zu groß.",
+        "tr": {
+          "uz": "Tirqish juda katta.",
+          "uz-Cyrl": "Тирқиш жуда катта.",
+          "ru": "Зазор слишком большой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-olchov-hundertstel",
+      "slug": "hundertstel",
+      "term": "das Hundertstel",
+      "icon": "number-1",
+      "article": "das",
+      "plural": "die Hundertstel",
+      "tr": {
+        "uz": "yuzdan bir (0,01 mm)",
+        "uz-Cyrl": "юздан бир (0,01 мм)",
+        "ru": "сотая (0,01 мм)"
+      },
+      "pron": {
+        "uz": "das hun-dert-shtel",
+        "uz-Cyrl": "дас хун-дерт-штель",
+        "ru": "дас хун-дерт-штель"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Die Messuhr zeigt Hundertstel an.",
+        "tr": {
+          "uz": "Indikator yuzdan birlarni koʻrsatadi.",
+          "uz-Cyrl": "Индикатор юздан бирларни кўрсатади.",
+          "ru": "Индикатор показывает сотые доли."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ehtiyot-lieferant",
+      "slug": "lieferant",
+      "term": "der Lieferant",
+      "icon": "truck",
+      "article": "der",
+      "plural": "die Lieferanten",
+      "tr": {
+        "uz": "yetkazib beruvchi",
+        "uz-Cyrl": "етказиб берувчи",
+        "ru": "поставщик"
+      },
+      "pron": {
+        "uz": "der li-fe-rant",
+        "uz-Cyrl": "дер ли-фе-рант",
+        "ru": "дер ли-фе-рант"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker",
+        "industriemechaniker"
+      ],
+      "situation": "ehtiyot",
+      "example": {
+        "term": "Der Lieferant kommt am Freitag.",
+        "tr": {
+          "uz": "Yetkazib beruvchi juma kuni keladi.",
+          "uz-Cyrl": "Етказиб берувчи жума куни келади.",
+          "ru": "Поставщик приедет в пятницу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ehtiyot-o-ring",
+      "slug": "o-ring",
+      "term": "der O-Ring",
+      "icon": "square",
+      "article": "der",
+      "plural": "die O-Ringe",
+      "tr": {
+        "uz": "O-simon halqa (zichlagich)",
+        "uz-Cyrl": "О-симон ҳалқа (зичлагич)",
+        "ru": "уплотнительное кольцо"
+      },
+      "pron": {
+        "uz": "der o-ring",
+        "uz-Cyrl": "дер о-ринг",
+        "ru": "дер о-ринг"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker",
+        "industriemechaniker"
+      ],
+      "situation": "ehtiyot",
+      "example": {
+        "term": "Der O-Ring ist porös.",
+        "tr": {
+          "uz": "O-simon halqa yorilib ketgan.",
+          "uz-Cyrl": "О-симон ҳалқа ёрилиб кетган.",
+          "ru": "Уплотнительное кольцо потрескалось."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ehtiyot-stossdaempfer",
+      "slug": "stossdaempfer",
+      "term": "der Stoßdämpfer",
+      "icon": "car",
+      "article": "der",
+      "plural": "die Stoßdämpfer",
+      "tr": {
+        "uz": "amortizator",
+        "uz-Cyrl": "амортизатор",
+        "ru": "амортизатор"
+      },
+      "pron": {
+        "uz": "der shtos-demp-fer",
+        "uz-Cyrl": "дер штос-демп-фер",
+        "ru": "дер штос-демп-фер"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker",
+        "industriemechaniker"
+      ],
+      "situation": "ehtiyot",
+      "example": {
+        "term": "Wir haben nur noch einen Stoßdämpfer da.",
+        "tr": {
+          "uz": "Bizda faqat bitta amortizator qoldi.",
+          "uz-Cyrl": "Бизда фақат битта амортизатор қолди.",
+          "ru": "У нас остался только один амортизатор."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ehtiyot-nachbestellen",
+      "slug": "nachbestellen",
+      "term": "nachbestellen",
+      "icon": "repeat",
+      "tr": {
+        "uz": "qoʻshimcha buyurtma qilmoq",
+        "uz-Cyrl": "қўшимча буюртма қилмоқ",
+        "ru": "дозаказать"
+      },
+      "pron": {
+        "uz": "nax-be-shte-len",
+        "uz-Cyrl": "нах-бе-ште-лен",
+        "ru": "нах-бе-ште-лен"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker",
+        "industriemechaniker"
+      ],
+      "situation": "ehtiyot",
+      "example": {
+        "term": "Bitte bestellen Sie die Bremsbeläge nach.",
+        "tr": {
+          "uz": "Iltimos, tormoz kolodkalariga yana buyurtma bering.",
+          "uz-Cyrl": "Илтимос, тормоз колодкаларига яна буюртма беринг.",
+          "ru": "Пожалуйста, дозакажите тормозные колодки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ehtiyot-ausgeben",
+      "slug": "ausgeben",
+      "term": "ausgeben",
+      "icon": "check",
+      "tr": {
+        "uz": "berib turmoq (ombordan)",
+        "uz-Cyrl": "бериб турмоқ (омбордан)",
+        "ru": "выдавать (со склада)"
+      },
+      "pron": {
+        "uz": "aus-ge-ben",
+        "uz-Cyrl": "аус-ге-бен",
+        "ru": "аус-ге-бен"
+      },
+      "level": "A2",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker",
+        "industriemechaniker"
+      ],
+      "situation": "ehtiyot",
+      "example": {
+        "term": "Das Lager gibt Teile nur mit Entnahmeschein aus.",
+        "tr": {
+          "uz": "Ombor qismlarni faqat olish varaqasi bilan beradi.",
+          "uz-Cyrl": "Омбор қисмларни фақат олиш варақаси билан беради.",
+          "ru": "Склад выдаёт детали только по требованию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
