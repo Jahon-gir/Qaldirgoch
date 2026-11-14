@@ -15,6 +15,8 @@ export type PackSituation = {
   level: string
   /** Qisqa ish dialogi (0.17.0): 4–8 replika. Excel'da "Dialoglar" varagʻi. */
   dialog?: PackDialog
+  /** 2-dialog (0.24.0, ixtiyoriy): Excel'da `dialog` ustuni = 2. Faqat 1-dialog bor boʻlsa. */
+  dialog2?: PackDialog
 }
 
 /** Dialog replikasi: kim aytadi (foydalanuvchi tilida, masalan "Usta"), nemischa gap va tarjimasi. */

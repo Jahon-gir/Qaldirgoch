@@ -82,6 +82,18 @@ describe('rowsToPacks — toʻgʻri qator', () => {
   })
 })
 
+describe('rowsToPacks — 2-dialog (0.24.0)', () => {
+  it('"dialog" ustuni yoʻq yoki boʻsh — 1-dialog; 2 — dialog2; replika raqamlari har dialogda alohida', () => {
+    const d2 = dialog4().map((r) => ({ ...r, dialog: '2', de: `Zwei ${r.line}.` }))
+    const { packs, issues } = rowsToPacks(sheets([word()], { dialogs: [...dialog4(), ...d2.reverse()] }), de)
+    expect(issues.filter((i) => i.level === 'error')).toEqual([])
+    const s = packs[0].situations[0]
+    expect(s.dialog?.lines.map((l) => l.de)).toEqual(['Satz 1.', 'Satz 2.', 'Satz 3.', 'Satz 4.'])
+    expect(s.dialog2?.lines.map((l) => l.de)).toEqual(['Zwei 1.', 'Zwei 2.', 'Zwei 3.', 'Zwei 4.'])
+    expect(rowsToPacks(sheets([word()], { dialogs: dialog4().map((r) => ({ ...r, dialog: '1' })) }), de).packs[0].situations[0].dialog2).toBeUndefined()
+  })
+})
+
 describe('rowsToPacks — xatolar', () => {
   const cases: [string, Sheets, RegExp][] = [
     ['artikl term ichida', sheets([word({ article: '', term: 'der Hammer' })]), /artiklni "article" ustuniga/],
@@ -117,6 +129,9 @@ describe('rowsToPacks — xatolar', () => {
     ['dialog: takror raqam', sheets([word()], { dialogs: [...dialog4(), dl('2', 'Usta')] }), /replika 2 takrorlangan/],
     ['dialog: nomaʼlum vaziyat', sheets([word()], { dialogs: [dl('1', 'Usta', { situation: 'yoq' })] }), /vaziyat "yoq"/],
     ['dialog: tekshiruvda rus tarjimasiz', sheets([word()], { dialogs: [...dialog4().slice(0, 3), dl('4', 'Ishchi', { ru: '' })] }), /4-replika: rus yoʻq/],
+    ['dialog: raqam 3', sheets([word()], { dialogs: dialog4().map((r) => ({ ...r, dialog: '3' })) }), /dialog raqami 1 yoki 2/],
+    ['2-dialog: 1-dialogsiz', sheets([word()], { dialogs: dialog4().map((r) => ({ ...r, dialog: '2' })) }), /2-dialog bor, lekin 1-dialog yoʻq/],
+    ['2-dialog: 3 replika', sheets([word()], { dialogs: [...dialog4(), ...dialog4().slice(0, 3).map((r) => ({ ...r, dialog: '2' }))] }), /3 replika — 4 tadan 8 tagacha/],
     ['dialog: nemischa boʻsh', sheets([word()], { dialogs: [...dialog4().slice(0, 3), dl('4', 'Ishchi', { de: '' })] }), /nemischa gap \(de\) boʻsh/],
     ['id juda uzun', sheets([word({ slug: 'a'.repeat(90) })]), /belgi \(≤ 96\)/]
   ]

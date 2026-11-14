@@ -62,6 +62,10 @@ export function validatePacks(packs: readonly ContentPack[], rules: PackRules, o
       if (!isInt(s.order)) err('tartib (order) butun son emas', w)
       if (!rules.levels.includes(s.level)) err(`daraja "${s.level}" notoʻgʻri (mumkin: ${rules.levels.join(', ')})`, w)
       if (s.dialog) checkDialog(s.dialog, (m) => err(m, `${w} → dialog`), (m) => issues.push({ level: 'warning', where: `${w} → dialog`, message: m }))
+      if (s.dialog2) {
+        if (!s.dialog) err('2-dialog bor, lekin 1-dialog yoʻq', `${w} → dialog 2`)
+        checkDialog(s.dialog2, (m) => err(m, `${w} → dialog 2`), (m) => issues.push({ level: 'warning', where: `${w} → dialog 2`, message: m }))
+      }
     }
 
     for (const word of p.words) checkWord(word, p, sit, rules, opts, seenWords, issues, at)
@@ -194,7 +198,7 @@ export function packReport(packs: readonly ContentPack[]): string[] {
     const c = (f: (w: PackWord) => boolean) => p.words.filter(f).length
     const st = STATUSES.map((s) => `${s} ${c((w) => w.status === s)}`).join(', ')
     lines.push(
-      `${p.course}/${p.field}: ${p.situations.length} vaziyat, ${n} soʻz, ${p.situations.filter((s) => s.dialog).length} dialog · rasm ${c((w) => !!w.image)}/${n} · audio ${c((w) => !!w.audio)}/${n} · misol ${c((w) => !!w.example)}/${n} · xavfsizlik ${c((w) => w.safety)} · ${st}`
+      `${p.course}/${p.field}: ${p.situations.length} vaziyat, ${n} soʻz, ${p.situations.reduce((n, s) => n + (s.dialog ? 1 : 0) + (s.dialog2 ? 1 : 0), 0)} dialog · rasm ${c((w) => !!w.image)}/${n} · audio ${c((w) => !!w.audio)}/${n} · misol ${c((w) => !!w.example)}/${n} · xavfsizlik ${c((w) => w.safety)} · ${st}`
     )
   }
   return lines

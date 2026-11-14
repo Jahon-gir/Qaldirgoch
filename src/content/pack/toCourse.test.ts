@@ -121,6 +121,34 @@ describe('dialog (0.17.0)', () => {
     expect(packsToCourse([pack(ws, sit(dialog('review')))]).modules[0].status).toBe('review')
   })
 
+  it('2-dialog (0.24.0): 2-darsning oxirida; 1-dialog joyi va idʼsi oʻzgarmaydi; qoralama 2-dialog chiqmaydi', () => {
+    const d2 = { status: 'review' as const, lines: [line('Usta', 'Hallo!'), line('Ishchi', 'Hallo!'), line('Usta', 'Wo ist die Zange?'), line('Ishchi', 'Hier.'), line('Usta', 'Danke, die Zange brauche ich.'), line('Ishchi', 'Gern.')] }
+    const ws = 'a b c d e f g h i j k l m n o p q r s t'.split(' ').map((s) => w(s))
+    const sitOf = (extra: object) => ({ situations: [{ id: 'asboblar', title: L('Asboblar'), order: 1, level: 'A1', dialog: dialog(), ...extra }] })
+    const one = packsToCourse([pack(ws, sitOf({}))])
+    const two = packsToCourse([pack(ws, sitOf({ dialog2: d2 }))])
+    const dialogsIn = (c: typeof one, l: string) => c.exercises[`technical-asboblar-${l}`].filter((e) => e.type === 'dialog').map((e) => e.id)
+    expect(dialogsIn(two, 'l1')).toEqual([])
+    const l2 = two.exercises['technical-asboblar-l2']
+    expect(l2[l2.length - 1]).toMatchObject({ type: 'dialog', id: `technical-asboblar-l2-e${l2.length}` })
+    expect(dialogsIn(two, 'l3')).toEqual(dialogsIn(one, 'l3'))
+    expect(two.exercises['technical-asboblar-l3']).toEqual(one.exercises['technical-asboblar-l3'])
+    expect(two.exercises['technical-asboblar-l2'].slice(0, -1)).toEqual(one.exercises['technical-asboblar-l2'])
+    expect(packsToCourse([pack(ws, sitOf({ dialog2: { ...d2, status: 'draft' } }))]).exercises).toEqual(one.exercises)
+    // 2 darsli vaziyat: oxirgi darsda 1-dialogdan keyin
+    const short = packsToCourse([pack(words, sitOf({ dialog2: d2 }))])
+    expect(short.exercises['technical-asboblar-l2'].slice(-2).map((e) => e.type)).toEqual(['dialog', 'dialog'])
+    expect(short.exercises['technical-asboblar-l2'].slice(-2)[1]).toMatchObject({ lines: expect.arrayContaining([expect.objectContaining({ text: 'Wo ist die Zange?' })]) })
+  })
+
+  it('2-dialog tasdiqlanmagan boʻlsa modul "review"', () => {
+    const ws = [w('a', { status: 'approved' }), w('b', { status: 'approved' }), w('c', { status: 'approved' })]
+    const appr = { ...dialog('approved'), verifiedBy: 'X', verifiedAt: '2026-11-14' }
+    const sitOf = (extra: object) => ({ situations: [{ id: 'asboblar', title: L('Asboblar'), order: 1, level: 'A1', dialog: appr, ...extra }] })
+    expect(packsToCourse([pack(ws, sitOf({}))]).modules[0].status).toBe('approved')
+    expect(packsToCourse([pack(ws, sitOf({ dialog2: dialog('review') }))]).modules[0].status).toBe('review')
+  })
+
   it('dialog lugʻatga tushmaydi', () => {
     const c = packsToCourse([pack(words.slice(0, 3), { situations: [{ id: 'asboblar', title: L('Asboblar'), order: 1, level: 'A1', dialog: dialog() }] })])
     const src = { lessons: c.lessons, exercisesOf: (id: string) => c.exercises[id] ?? [] }

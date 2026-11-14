@@ -46,6 +46,11 @@ describe('kasbiy kontent paketlari', () => {
         const d = last[last.length - 1]
         expect(d.type, `${p.field}-${s.id}`).toBe('dialog')
         if (d.type === 'dialog') expect(d.check, `${p.field}-${s.id}: savol yoʻq`).toBeDefined()
+        // 2-dialog (0.24.0): modulda 2 ta dialog, ikkalasida savol
+        const all = lessons.flatMap((l) => course.exercises[l.id]).filter((e) => e.type === 'dialog')
+        const want = s.dialog2 && s.dialog2.status !== 'draft' ? 2 : 1
+        expect(all.length, `${p.field}-${s.id}: dialoglar soni`).toBe(want)
+        for (const e of all) if (e.type === 'dialog') expect(e.check, `${p.field}-${s.id} ${e.id}: savol yoʻq`).toBeDefined()
       }
     }
   })

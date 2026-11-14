@@ -16,7 +16,7 @@ function tmpRoot() {
   return root
 }
 
-async function workbook(root, words, dialogs) {
+async function workbook(root, words, dialogs, dialogCols = DIALOG_COLUMNS) {
   const wb = new ExcelJS.Workbook()
   const add = (name, cols, rows) => {
     const ws = wb.addWorksheet(name)
@@ -27,7 +27,7 @@ async function workbook(root, words, dialogs) {
   add('Sohalar', FIELD_COLUMNS, [{ id: 'technical', title_uz: 'Texnik kasblar', title_cyrl: 'Техник касблар', title_ru: 'Технические профессии', order: 1 }, { id: 'care', title_uz: 'Parvarish', order: 2 }])
   add('Vaziyatlar', SITUATION_COLUMNS, [{ field: 'technical', id: 'asboblar', title_uz: 'Asboblar', title_cyrl: 'Асбоблар', title_ru: 'Инструменты', order: 1, level: 'A1' }])
   add('Sozlar', WORD_COLUMNS, words)
-  if (dialogs) add('Dialoglar', DIALOG_COLUMNS, dialogs)
+  if (dialogs) add('Dialoglar', dialogCols, dialogs)
   const f = join(root, 'test.xlsx')
   await wb.xlsx.writeFile(f)
   return f
@@ -75,6 +75,18 @@ describe('content:import (Excel → JSON)', () => {
     const bad = await importWorkbook(await workbook(tmpRoot(), [hammer], [...rows.slice(0, 3), { ...rows[3], status: 'qoralama' }]), { root: tmpRoot(), dry: true })
     expect(bad.ok).toBe(false)
     expect(bad.issues.map((i) => i.message).join('\n')).toMatch(/holat \(status\) hamma replikada bir xil/)
+  })
+
+  it('"dialog" ustuni (0.24.0): 2 — vaziyatning 2-dialogi', async () => {
+    const line = (n, speaker, de, dialog) => ({ field: 'technical', situation: 'asboblar', line: n, speaker_uz: speaker, speaker_cyrl: 'Ким', speaker_ru: 'Кто', de, uz: 'tarjima', uz_cyrl: 'таржима', ru: 'перевод', status: 'tekshiruvda', dialog })
+    const rows = [line(1, 'Usta', 'Gib mir den Hammer.', ''), line(2, 'Ishchi', 'Hier, bitte.', ''), line(3, 'Usta', 'Danke!', ''), line(4, 'Ishchi', 'Gern.', ''),
+      line(1, 'Usta', 'Wo ist die Zange?', 2), line(2, 'Ishchi', 'Im Wagen.', 2), line(3, 'Usta', 'Hol sie, bitte.', 2), line(4, 'Ishchi', 'Mache ich.', 2)]
+    const root = tmpRoot()
+    const res = await importWorkbook(await workbook(root, [hammer], rows, [...DIALOG_COLUMNS, 'dialog']), { root })
+    expect(res.issues.filter((i) => i.level === 'error')).toEqual([])
+    const pack = JSON.parse(readFileSync(join(root, 'src/content/packs/de/technical.json'), 'utf8'))
+    expect(pack.situations[0].dialog.lines[0].de).toBe('Gib mir den Hammer.')
+    expect(pack.situations[0].dialog2.lines.map((l) => l.de)).toEqual(['Wo ist die Zange?', 'Im Wagen.', 'Hol sie, bitte.', 'Mache ich.'])
   })
 
   it('--dry: tekshiradi, lekin yozmaydi', async () => {
