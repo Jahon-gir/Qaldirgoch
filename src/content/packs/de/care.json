@@ -7342,6 +7342,2130 @@
       "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-parvarish-rasieren",
+      "slug": "rasieren",
+      "term": "rasieren",
+      "icon": "user",
+      "tr": {
+        "uz": "soqol olmoq",
+        "uz-Cyrl": "соқол олмоқ",
+        "ru": "брить(ся)"
+      },
+      "pron": {
+        "uz": "ra-zi-ren",
+        "uz-Cyrl": "ра-зи-рен",
+        "ru": "ра-зи-рен"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "parvarish",
+      "example": {
+        "term": "Soll ich Sie heute rasieren?",
+        "tr": {
+          "uz": "Bugun soqolingizni olib qoʻyaymi?",
+          "uz-Cyrl": "Бугун соқолингизни олиб қўяйми?",
+          "ru": "Мне вас сегодня побрить?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-parvarish-zahnprothese",
+      "slug": "zahnprothese",
+      "term": "die Zahnprothese",
+      "icon": "mood-smile",
+      "article": "die",
+      "plural": "die Zahnprothesen",
+      "tr": {
+        "uz": "tish protezi",
+        "uz-Cyrl": "тиш протези",
+        "ru": "зубной протез"
+      },
+      "pron": {
+        "uz": "die tsan-pro-te-ze",
+        "uz-Cyrl": "ди цан-про-те-зе",
+        "ru": "ди цан-про-те-зе"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "parvarish",
+      "example": {
+        "term": "Ich reinige jetzt Ihre Zahnprothese.",
+        "tr": {
+          "uz": "Hozir tish protezingizni tozalayman.",
+          "uz-Cyrl": "Ҳозир тиш протезингизни тозалайман.",
+          "ru": "Сейчас я почищу ваш зубной протез."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-parvarish-waschbecken",
+      "slug": "waschbecken",
+      "term": "das Waschbecken",
+      "icon": "droplet",
+      "article": "das",
+      "plural": "die Waschbecken",
+      "tr": {
+        "uz": "qoʻl yuvgich (rakovina)",
+        "uz-Cyrl": "қўл ювгич (раковина)",
+        "ru": "раковина"
+      },
+      "pron": {
+        "uz": "das vash-be-ken",
+        "uz-Cyrl": "дас ваш-бе-кен",
+        "ru": "дас ваш-бе-кен"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "parvarish",
+      "example": {
+        "term": "Können Sie am Waschbecken stehen?",
+        "tr": {
+          "uz": "Qoʻl yuvgich oldida tura olasizmi?",
+          "uz-Cyrl": "Қўл ювгич олдида тура оласизми?",
+          "ru": "Вы можете стоять у раковины?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-parvarish-koerperpflege",
+      "slug": "koerperpflege",
+      "term": "die Körperpflege",
+      "icon": "bath",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "tana parvarishi",
+        "uz-Cyrl": "тана парвариши",
+        "ru": "уход за телом"
+      },
+      "pron": {
+        "uz": "die kyor-per-pfle-ge",
+        "uz-Cyrl": "ди кёр-пер-пфле-ге",
+        "ru": "ди кёр-пер-пфле-ге"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "parvarish",
+      "example": {
+        "term": "Nach dem Aufstehen kommt die Körperpflege.",
+        "tr": {
+          "uz": "Turgandan keyin tana parvarishi qilinadi.",
+          "uz-Cyrl": "Тургандан кейин тана парвариши қилинади.",
+          "ru": "После подъёма — уход за телом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-parvarish-ist-das-wasser-angenehm",
+      "slug": "ist-das-wasser-angenehm",
+      "term": "Ist das Wasser angenehm?",
+      "icon": "droplet",
+      "tr": {
+        "uz": "Suv yoqimlimi?",
+        "uz-Cyrl": "Сув ёқимлими?",
+        "ru": "Вода приятная?"
+      },
+      "pron": {
+        "uz": "ist das va-ser an-ge-nem",
+        "uz-Cyrl": "ист дас ва-сер ан-ге-нем",
+        "ru": "ист дас ва-сер ан-ге-нем"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "parvarish",
+      "example": {
+        "term": "Ist das Wasser angenehm oder zu warm?",
+        "tr": {
+          "uz": "Suv yoqimlimi yoki juda issiqmi?",
+          "uz-Cyrl": "Сув ёқимлими ёки жуда иссиқми?",
+          "ru": "Вода приятная или слишком тёплая?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-olchash-messen",
+      "slug": "messen",
+      "term": "messen",
+      "icon": "thermometer",
+      "tr": {
+        "uz": "oʻlchamoq",
+        "uz-Cyrl": "ўлчамоқ",
+        "ru": "измерять"
+      },
+      "pron": {
+        "uz": "me-sen",
+        "uz-Cyrl": "ме-сен",
+        "ru": "ме-сен"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "olchash",
+      "example": {
+        "term": "Ich messe jetzt Ihren Blutdruck.",
+        "tr": {
+          "uz": "Hozir qon bosimingizni oʻlchayman.",
+          "uz-Cyrl": "Ҳозир қон босимингизни ўлчайман.",
+          "ru": "Сейчас я измерю ваше давление."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-olchash-gewicht",
+      "slug": "gewicht",
+      "term": "das Gewicht",
+      "icon": "ruler",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "vazn",
+        "uz-Cyrl": "вазн",
+        "ru": "вес"
+      },
+      "pron": {
+        "uz": "das ge-vixt",
+        "uz-Cyrl": "дас ге-вихт",
+        "ru": "дас ге-вихт"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "olchash",
+      "example": {
+        "term": "Heute kontrollieren wir Ihr Gewicht.",
+        "tr": {
+          "uz": "Bugun vazningizni tekshiramiz.",
+          "uz-Cyrl": "Бугун вазнингизни текширамиз.",
+          "ru": "Сегодня мы проверим ваш вес."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-olchash-waage",
+      "slug": "waage",
+      "term": "die Waage",
+      "icon": "ruler",
+      "article": "die",
+      "plural": "die Waagen",
+      "tr": {
+        "uz": "tarozi",
+        "uz-Cyrl": "тарози",
+        "ru": "весы"
+      },
+      "pron": {
+        "uz": "die va-ge",
+        "uz-Cyrl": "ди ва-ге",
+        "ru": "ди ва-ге"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "olchash",
+      "example": {
+        "term": "Stellen Sie sich bitte auf die Waage.",
+        "tr": {
+          "uz": "Iltimos, tarozining ustiga turing.",
+          "uz-Cyrl": "Илтимос, тарозининг устига туринг.",
+          "ru": "Встаньте, пожалуйста, на весы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-olchash-blutdruckmessgeraet",
+      "slug": "blutdruckmessgeraet",
+      "term": "das Blutdruckmessgerät",
+      "icon": "heartbeat",
+      "article": "das",
+      "plural": "die Blutdruckmessgeräte",
+      "tr": {
+        "uz": "qon bosimini oʻlchash asbobi",
+        "uz-Cyrl": "қон босимини ўлчаш асбоби",
+        "ru": "тонометр"
+      },
+      "pron": {
+        "uz": "das blut-druk-mes-ge-ret",
+        "uz-Cyrl": "дас блут-друк-мес-ге-рет",
+        "ru": "дас блут-друк-мес-ге-рет"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "olchash",
+      "example": {
+        "term": "Das Blutdruckmessgerät liegt im Schrank.",
+        "tr": {
+          "uz": "Qon bosimini oʻlchash asbobi shkafda turibdi.",
+          "uz-Cyrl": "Қон босимини ўлчаш асбоби шкафда турибди.",
+          "ru": "Тонометр лежит в шкафу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-olchash-wert",
+      "slug": "wert",
+      "term": "der Wert",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Werte",
+      "tr": {
+        "uz": "koʻrsatkich (qiymat)",
+        "uz-Cyrl": "кўрсаткич (қиймат)",
+        "ru": "показатель, значение"
+      },
+      "pron": {
+        "uz": "der vert",
+        "uz-Cyrl": "дер верт",
+        "ru": "дер верт"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "olchash",
+      "example": {
+        "term": "Der Wert ist zu hoch, ich sage es der Pflegefachkraft.",
+        "tr": {
+          "uz": "Koʻrsatkich juda yuqori, hamshiraga aytaman.",
+          "uz-Cyrl": "Кўрсаткич жуда юқори, ҳамширага айтаман.",
+          "ru": "Показатель слишком высокий, я скажу медсестре."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-ovqat-glas",
+      "slug": "glas",
+      "term": "das Glas",
+      "icon": "glass",
+      "article": "das",
+      "plural": "die Gläser",
+      "tr": {
+        "uz": "stakan",
+        "uz-Cyrl": "стакан",
+        "ru": "стакан"
+      },
+      "pron": {
+        "uz": "das glas",
+        "uz-Cyrl": "дас глас",
+        "ru": "дас глас"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "ovqat",
+      "example": {
+        "term": "Möchten Sie noch ein Glas Wasser?",
+        "tr": {
+          "uz": "Yana bir stakan suv xohlaysizmi?",
+          "uz-Cyrl": "Яна бир стакан сув хоҳлайсизми?",
+          "ru": "Хотите ещё стакан воды?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-ovqat-messer",
+      "slug": "messer",
+      "term": "das Messer",
+      "icon": "tools-kitchen-2",
+      "article": "das",
+      "plural": "die Messer",
+      "tr": {
+        "uz": "pichoq",
+        "uz-Cyrl": "пичоқ",
+        "ru": "нож"
+      },
+      "pron": {
+        "uz": "das me-ser",
+        "uz-Cyrl": "дас ме-сер",
+        "ru": "дас ме-сер"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "ovqat",
+      "example": {
+        "term": "Soll ich das Fleisch mit dem Messer klein schneiden?",
+        "tr": {
+          "uz": "Goʻshtni pichoq bilan mayda qilib kesib beraymi?",
+          "uz-Cyrl": "Гўштни пичоқ билан майда қилиб кесиб берайми?",
+          "ru": "Мне порезать мясо ножом на мелкие кусочки?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-ovqat-pueriert",
+      "slug": "pueriert",
+      "term": "püriert",
+      "icon": "bowl",
+      "tr": {
+        "uz": "ezilgan (pyure qilingan)",
+        "uz-Cyrl": "эзилган (пюре қилинган)",
+        "ru": "протёртый, в виде пюре"
+      },
+      "pron": {
+        "uz": "pyu-rirt",
+        "uz-Cyrl": "пю-рирт",
+        "ru": "пю-рирт"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "ovqat",
+      "example": {
+        "term": "Herr Braun bekommt das Essen püriert.",
+        "tr": {
+          "uz": "Braun janoblariga ovqat ezilgan holda beriladi.",
+          "uz-Cyrl": "Браун жанобларига овқат эзилган ҳолда берилади.",
+          "ru": "Господину Брауну дают еду в протёртом виде."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-ovqat-sich-verschlucken",
+      "slug": "sich-verschlucken",
+      "term": "sich verschlucken",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "tomogʻiga tiqilmoq (ovqat)",
+        "uz-Cyrl": "томоғига тиқилмоқ (овқат)",
+        "ru": "поперхнуться"
+      },
+      "pron": {
+        "uz": "zix fer-shlu-ken",
+        "uz-Cyrl": "зих фер-шлу-кен",
+        "ru": "зих фер-шлу-кен"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "ovqat",
+      "example": {
+        "term": "Essen Sie langsam, sonst verschlucken Sie sich.",
+        "tr": {
+          "uz": "Sekin yeng, boʻlmasa tomogʻingizga tiqilib qoladi.",
+          "uz-Cyrl": "Секин енг, бўлмаса томоғингизга тиқилиб қолади.",
+          "ru": "Ешьте медленно, иначе поперхнётесь."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-ovqat-schmeckt-es-ihnen",
+      "slug": "schmeckt-es-ihnen",
+      "term": "Schmeckt es Ihnen?",
+      "icon": "mood-smile",
+      "tr": {
+        "uz": "Mazali boʻldimi?",
+        "uz-Cyrl": "Мазали бўлдими?",
+        "ru": "Вам вкусно?"
+      },
+      "pron": {
+        "uz": "shmekt es i-nen",
+        "uz-Cyrl": "шмект эс и-нен",
+        "ru": "шмект эс и-нен"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "ovqat",
+      "example": {
+        "term": "Schmeckt es Ihnen? Möchten Sie noch etwas Suppe?",
+        "tr": {
+          "uz": "Mazali boʻldimi? Yana ozgina shoʻrva xohlaysizmi?",
+          "uz-Cyrl": "Мазали бўлдими? Яна озгина шўрва хоҳлайсизми?",
+          "ru": "Вам вкусно? Хотите ещё немного супа?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-harakat-pflegebett",
+      "slug": "pflegebett",
+      "term": "das Pflegebett",
+      "icon": "bed",
+      "article": "das",
+      "plural": "die Pflegebetten",
+      "tr": {
+        "uz": "parvarish karavoti",
+        "uz-Cyrl": "парвариш каравоти",
+        "ru": "функциональная кровать"
+      },
+      "pron": {
+        "uz": "das pfle-ge-bet",
+        "uz-Cyrl": "дас пфле-ге-бет",
+        "ru": "дас пфле-ге-бет"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "harakat",
+      "example": {
+        "term": "Ich stelle das Pflegebett etwas höher.",
+        "tr": {
+          "uz": "Parvarish karavotini biroz balandroq qilaman.",
+          "uz-Cyrl": "Парвариш каравотини бироз баландроқ қиламан.",
+          "ru": "Я подниму функциональную кровать немного выше."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-harakat-umlagern",
+      "slug": "umlagern",
+      "term": "umlagern",
+      "icon": "repeat",
+      "tr": {
+        "uz": "yotish holatini oʻzgartirmoq",
+        "uz-Cyrl": "ётиш ҳолатини ўзгартирмоқ",
+        "ru": "менять положение (лежачего)"
+      },
+      "pron": {
+        "uz": "um-la-gern",
+        "uz-Cyrl": "ум-ла-герн",
+        "ru": "ум-ла-герн"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "harakat",
+      "example": {
+        "term": "Jetzt lagern wir Sie auf die andere Seite um.",
+        "tr": {
+          "uz": "Endi sizni boshqa yonboshingizga yotqizamiz.",
+          "uz-Cyrl": "Энди сизни бошқа ёнбошингизга ётқизамиз.",
+          "ru": "Сейчас мы переложим вас на другой бок."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-harakat-haltegriff",
+      "slug": "haltegriff",
+      "term": "der Haltegriff",
+      "icon": "hand-stop",
+      "article": "der",
+      "plural": "die Haltegriffe",
+      "tr": {
+        "uz": "tutqich",
+        "uz-Cyrl": "тутқич",
+        "ru": "поручень"
+      },
+      "pron": {
+        "uz": "der hal-te-grif",
+        "uz-Cyrl": "дер халь-те-гриф",
+        "ru": "дер халь-те-гриф"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "harakat",
+      "example": {
+        "term": "Halten Sie sich am Haltegriff fest.",
+        "tr": {
+          "uz": "Tutqichdan mahkam ushlang.",
+          "uz-Cyrl": "Тутқичдан маҳкам ушланг.",
+          "ru": "Держитесь за поручень."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-harakat-bremse",
+      "slug": "bremse",
+      "term": "die Bremse",
+      "icon": "hand-stop",
+      "article": "die",
+      "plural": "die Bremsen",
+      "tr": {
+        "uz": "tormoz",
+        "uz-Cyrl": "тормоз",
+        "ru": "тормоз"
+      },
+      "pron": {
+        "uz": "die brem-ze",
+        "uz-Cyrl": "ди брем-зе",
+        "ru": "ди брем-зе"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "harakat",
+      "example": {
+        "term": "Ist die Bremse am Rollstuhl fest?",
+        "tr": {
+          "uz": "Nogironlar aravachasining tormozi bosilganmi?",
+          "uz-Cyrl": "Ногиронлар аравачасининг тормози босилганми?",
+          "ru": "Тормоз на инвалидной коляске зажат?"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-harakat-sich-hinlegen",
+      "slug": "sich-hinlegen",
+      "term": "sich hinlegen",
+      "icon": "bed",
+      "tr": {
+        "uz": "yotmoq",
+        "uz-Cyrl": "ётмоқ",
+        "ru": "лечь"
+      },
+      "pron": {
+        "uz": "zix hin-le-gen",
+        "uz-Cyrl": "зих хин-ле-ген",
+        "ru": "зих хин-ле-ген"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "harakat",
+      "example": {
+        "term": "Möchten Sie sich nach dem Essen hinlegen?",
+        "tr": {
+          "uz": "Ovqatdan keyin yotishni xohlaysizmi?",
+          "uz-Cyrl": "Овқатдан кейин ётишни хоҳлайсизми?",
+          "ru": "Хотите лечь после еды?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-tana-hals",
+      "slug": "hals",
+      "term": "der Hals",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Hälse",
+      "tr": {
+        "uz": "boʻyin; tomoq",
+        "uz-Cyrl": "бўйин; томоқ",
+        "ru": "шея; горло"
+      },
+      "pron": {
+        "uz": "der hals",
+        "uz-Cyrl": "дер хальс",
+        "ru": "дер хальс"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "tana",
+      "example": {
+        "term": "Tut Ihnen der Hals weh?",
+        "tr": {
+          "uz": "Tomogʻingiz ogʻriyaptimi?",
+          "uz-Cyrl": "Томоғингиз оғрияптими?",
+          "ru": "У вас болит горло?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-tana-schulter",
+      "slug": "schulter",
+      "term": "die Schulter",
+      "icon": "user",
+      "article": "die",
+      "plural": "die Schultern",
+      "tr": {
+        "uz": "yelka",
+        "uz-Cyrl": "елка",
+        "ru": "плечо"
+      },
+      "pron": {
+        "uz": "die shul-ter",
+        "uz-Cyrl": "ди шуль-тер",
+        "ru": "ди шуль-тер"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "tana",
+      "example": {
+        "term": "Meine Schulter tut weh.",
+        "tr": {
+          "uz": "Yelkam ogʻriyapti.",
+          "uz-Cyrl": "Елкам оғрияпти.",
+          "ru": "У меня болит плечо."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-tana-finger",
+      "slug": "finger",
+      "term": "der Finger",
+      "icon": "hand-stop",
+      "article": "der",
+      "plural": "die Finger",
+      "tr": {
+        "uz": "barmoq",
+        "uz-Cyrl": "бармоқ",
+        "ru": "палец"
+      },
+      "pron": {
+        "uz": "der fin-ger",
+        "uz-Cyrl": "дер фин-гер",
+        "ru": "дер фин-гер"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "tana",
+      "example": {
+        "term": "Können Sie die Finger bewegen?",
+        "tr": {
+          "uz": "Barmoqlaringizni qimirlata olasizmi?",
+          "uz-Cyrl": "Бармоқларингизни қимирлата оласизми?",
+          "ru": "Вы можете пошевелить пальцами?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-tana-herz",
+      "slug": "herz",
+      "term": "das Herz",
+      "icon": "heartbeat",
+      "article": "das",
+      "plural": "die Herzen",
+      "tr": {
+        "uz": "yurak",
+        "uz-Cyrl": "юрак",
+        "ru": "сердце"
+      },
+      "pron": {
+        "uz": "das herts",
+        "uz-Cyrl": "дас херц",
+        "ru": "дас херц"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "tana",
+      "example": {
+        "term": "Die Ärztin hört das Herz ab.",
+        "tr": {
+          "uz": "Shifokor yurakni eshitib koʻradi.",
+          "uz-Cyrl": "Шифокор юракни эшитиб кўради.",
+          "ru": "Врач прослушивает сердце."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-tana-zeh",
+      "slug": "zeh",
+      "term": "der Zeh",
+      "icon": "shoe",
+      "article": "der",
+      "plural": "die Zehen",
+      "tr": {
+        "uz": "oyoq barmogʻi",
+        "uz-Cyrl": "оёқ бармоғи",
+        "ru": "палец ноги"
+      },
+      "pron": {
+        "uz": "der tse",
+        "uz-Cyrl": "дер це",
+        "ru": "дер це"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "tana",
+      "example": {
+        "term": "Die Zehen sind kalt, ich hole warme Socken.",
+        "tr": {
+          "uz": "Oyoq barmoqlari sovuq, issiq paypoq olib kelaman.",
+          "uz-Cyrl": "Оёқ бармоқлари совуқ, иссиқ пайпоқ олиб келаман.",
+          "ru": "Пальцы ног холодные, я принесу тёплые носки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-kiyinish-kleid",
+      "slug": "kleid",
+      "term": "das Kleid",
+      "icon": "shirt",
+      "article": "das",
+      "plural": "die Kleider",
+      "tr": {
+        "uz": "koʻylak (ayollar)",
+        "uz-Cyrl": "кўйлак (аёллар)",
+        "ru": "платье"
+      },
+      "pron": {
+        "uz": "das klayt",
+        "uz-Cyrl": "дас клайт",
+        "ru": "дас клайт"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "kiyinish",
+      "example": {
+        "term": "Welches Kleid möchten Sie heute anziehen?",
+        "tr": {
+          "uz": "Bugun qaysi koʻylakni kiymoqchisiz?",
+          "uz-Cyrl": "Бугун қайси кўйлакни киймоқчисиз?",
+          "ru": "Какое платье вы хотите надеть сегодня?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-kiyinish-aermel",
+      "slug": "aermel",
+      "term": "der Ärmel",
+      "icon": "shirt",
+      "article": "der",
+      "plural": "die Ärmel",
+      "tr": {
+        "uz": "yeng",
+        "uz-Cyrl": "енг",
+        "ru": "рукав"
+      },
+      "pron": {
+        "uz": "der er-mel",
+        "uz-Cyrl": "дер эр-мель",
+        "ru": "дер эр-мель"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "kiyinish",
+      "example": {
+        "term": "Zuerst kommt der kranke Arm in den Ärmel.",
+        "tr": {
+          "uz": "Avval kasal qoʻlni yengga kiritamiz.",
+          "uz-Cyrl": "Аввал касал қўлни енгга киритамиз.",
+          "ru": "Сначала больную руку — в рукав."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-kiyinish-reissverschluss",
+      "slug": "reissverschluss",
+      "term": "der Reißverschluss",
+      "icon": "shirt",
+      "article": "der",
+      "plural": "die Reißverschlüsse",
+      "tr": {
+        "uz": "molniya (zamok)",
+        "uz-Cyrl": "молния (замок)",
+        "ru": "молния"
+      },
+      "pron": {
+        "uz": "der rays-fer-shlus",
+        "uz-Cyrl": "дер райс-фер-шлус",
+        "ru": "дер райс-фер-шлус"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "kiyinish",
+      "example": {
+        "term": "Ich mache den Reißverschluss zu.",
+        "tr": {
+          "uz": "Molniyani yopib qoʻyaman.",
+          "uz-Cyrl": "Молнияни ёпиб қўяман.",
+          "ru": "Я застегну молнию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-kiyinish-strumpfhose",
+      "slug": "strumpfhose",
+      "term": "die Strumpfhose",
+      "icon": "hanger",
+      "article": "die",
+      "plural": "die Strumpfhosen",
+      "tr": {
+        "uz": "kolgotka",
+        "uz-Cyrl": "колготка",
+        "ru": "колготки"
+      },
+      "pron": {
+        "uz": "die shtrumpf-ho-ze",
+        "uz-Cyrl": "ди штрумпф-хо-зе",
+        "ru": "ди штрумпф-хо-зе"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "kiyinish",
+      "example": {
+        "term": "Die Strumpfhose ist zu eng.",
+        "tr": {
+          "uz": "Kolgotka juda tor.",
+          "uz-Cyrl": "Колготка жуда тор.",
+          "ru": "Колготки слишком тесные."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-kiyinish-hausschuh",
+      "slug": "hausschuh",
+      "term": "der Hausschuh",
+      "icon": "shoe",
+      "article": "der",
+      "plural": "die Hausschuhe",
+      "tr": {
+        "uz": "shippak",
+        "uz-Cyrl": "шиппак",
+        "ru": "тапочка"
+      },
+      "pron": {
+        "uz": "der haus-shu",
+        "uz-Cyrl": "дер хаус-шу",
+        "ru": "дер хаус-шу"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "kiyinish",
+      "example": {
+        "term": "Ziehen Sie bitte die Hausschuhe an, der Boden ist kalt.",
+        "tr": {
+          "uz": "Iltimos, shippakni kiying, pol sovuq.",
+          "uz-Cyrl": "Илтимос, шиппакни кийинг, пол совуқ.",
+          "ru": "Наденьте, пожалуйста, тапочки, пол холодный."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-gigiyena-hygiene",
+      "slug": "hygiene",
+      "term": "die Hygiene",
+      "icon": "droplet",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "gigiyena",
+        "uz-Cyrl": "гигиена",
+        "ru": "гигиена"
+      },
+      "pron": {
+        "uz": "die hyu-gi-e-ne",
+        "uz-Cyrl": "ди хю-ги-е-не",
+        "ru": "ди хю-ги-е-не"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Hygiene ist im Pflegeheim sehr wichtig.",
+        "tr": {
+          "uz": "Qariyalar uyida gigiyena juda muhim.",
+          "uz-Cyrl": "Қариялар уйида гигиена жуда муҳим.",
+          "ru": "В доме престарелых гигиена очень важна."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-gigiyena-schutzbrille",
+      "slug": "schutzbrille",
+      "term": "die Schutzbrille",
+      "icon": "eye",
+      "article": "die",
+      "plural": "die Schutzbrillen",
+      "tr": {
+        "uz": "himoya koʻzoynagi",
+        "uz-Cyrl": "ҳимоя кўзойнаги",
+        "ru": "защитные очки"
+      },
+      "pron": {
+        "uz": "die shuts-bri-le",
+        "uz-Cyrl": "ди шуц-бри-ле",
+        "ru": "ди шуц-бри-ле"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Bei dieser Arbeit tragen Sie eine Schutzbrille.",
+        "tr": {
+          "uz": "Bu ishda himoya koʻzoynagini taqasiz.",
+          "uz-Cyrl": "Бу ишда ҳимоя кўзойнагини тақасиз.",
+          "ru": "При этой работе вы носите защитные очки."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-gigiyena-erreger",
+      "slug": "erreger",
+      "term": "der Erreger",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Erreger",
+      "tr": {
+        "uz": "qoʻzgʻatuvchi (mikrob)",
+        "uz-Cyrl": "қўзғатувчи (микроб)",
+        "ru": "возбудитель"
+      },
+      "pron": {
+        "uz": "der er-re-ger",
+        "uz-Cyrl": "дер эр-ре-гер",
+        "ru": "дер эр-ре-гер"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Desinfektionsmittel tötet viele Erreger.",
+        "tr": {
+          "uz": "Dezinfeksiya vositasi koʻp qoʻzgʻatuvchilarni yoʻq qiladi.",
+          "uz-Cyrl": "Дезинфекция воситаси кўп қўзғатувчиларни йўқ қилади.",
+          "ru": "Дезинфицирующее средство убивает многих возбудителей."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-gigiyena-isolation",
+      "slug": "isolation",
+      "term": "die Isolation",
+      "icon": "door",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "izolyatsiya (alohida saqlash)",
+        "uz-Cyrl": "изоляция (алоҳида сақлаш)",
+        "ru": "изоляция"
+      },
+      "pron": {
+        "uz": "die i-zo-la-tsi-on",
+        "uz-Cyrl": "ди и-зо-ла-ци-он",
+        "ru": "ди и-зо-ла-ци-он"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Frau Klein ist in Isolation, bitte nur mit Schutzkittel ins Zimmer.",
+        "tr": {
+          "uz": "Klayn xonim izolyatsiyada, xonaga faqat himoya xalatida kiring.",
+          "uz-Cyrl": "Клайн хоним изоляцияда, хонага фақат ҳимоя халатида киринг.",
+          "ru": "Госпожа Кляйн на изоляции, входите в палату только в защитном халате."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-gigiyena-waeschesack",
+      "slug": "waeschesack",
+      "term": "der Wäschesack",
+      "icon": "trash",
+      "article": "der",
+      "plural": "die Wäschesäcke",
+      "tr": {
+        "uz": "kir xalta",
+        "uz-Cyrl": "кир халта",
+        "ru": "мешок для белья"
+      },
+      "pron": {
+        "uz": "der ve-she-zak",
+        "uz-Cyrl": "дер ве-ше-зак",
+        "ru": "дер ве-ше-зак"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "gigiyena",
+      "example": {
+        "term": "Die schmutzige Bettwäsche kommt in den Wäschesack.",
+        "tr": {
+          "uz": "Iflos choyshablar kir xaltaga solinadi.",
+          "uz-Cyrl": "Ифлос чойшаблар кир халтага солинади.",
+          "ru": "Грязное постельное бельё кладут в мешок для белья."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-muloqot-tochter",
+      "slug": "tochter",
+      "term": "die Tochter",
+      "icon": "woman",
+      "article": "die",
+      "plural": "die Töchter",
+      "tr": {
+        "uz": "qiz (farzand)",
+        "uz-Cyrl": "қиз (фарзанд)",
+        "ru": "дочь"
+      },
+      "pron": {
+        "uz": "die tox-ter",
+        "uz-Cyrl": "ди тох-тер",
+        "ru": "ди тох-тер"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "muloqot",
+      "example": {
+        "term": "Ihre Tochter kommt heute Nachmittag zu Besuch.",
+        "tr": {
+          "uz": "Qizingiz bugun tushdan keyin yoʻqlab keladi.",
+          "uz-Cyrl": "Қизингиз бугун тушдан кейин йўқлаб келади.",
+          "ru": "Ваша дочь придёт навестить вас сегодня после обеда."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-muloqot-sohn",
+      "slug": "sohn",
+      "term": "der Sohn",
+      "icon": "man",
+      "article": "der",
+      "plural": "die Söhne",
+      "tr": {
+        "uz": "oʻgʻil",
+        "uz-Cyrl": "ўғил",
+        "ru": "сын"
+      },
+      "pron": {
+        "uz": "der zon",
+        "uz-Cyrl": "дер зон",
+        "ru": "дер зон"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "muloqot",
+      "example": {
+        "term": "Ihr Sohn hat angerufen.",
+        "tr": {
+          "uz": "Oʻgʻlingiz qoʻngʻiroq qildi.",
+          "uz-Cyrl": "Ўғлингиз қўнғироқ қилди.",
+          "ru": "Звонил ваш сын."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-muloqot-darf-ich-hereinkommen",
+      "slug": "darf-ich-hereinkommen",
+      "term": "Darf ich hereinkommen?",
+      "icon": "door-enter",
+      "tr": {
+        "uz": "Kirsam maylimi?",
+        "uz-Cyrl": "Кирсам майлими?",
+        "ru": "Можно войти?"
+      },
+      "pron": {
+        "uz": "darf ix he-rayn-ko-men",
+        "uz-Cyrl": "дарф их хе-райн-ко-мен",
+        "ru": "дарф их хе-райн-ко-мен"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "muloqot",
+      "example": {
+        "term": "Guten Morgen, Frau Klein! Darf ich hereinkommen?",
+        "tr": {
+          "uz": "Xayrli tong, Klayn xonim! Kirsam maylimi?",
+          "uz-Cyrl": "Хайрли тонг, Клайн хоним! Кирсам майлими?",
+          "ru": "Доброе утро, госпожа Кляйн! Можно войти?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-muloqot-einsam",
+      "slug": "einsam",
+      "term": "einsam",
+      "icon": "mood-sad",
+      "tr": {
+        "uz": "yolgʻiz (yolgʻizlikdan qiynalgan)",
+        "uz-Cyrl": "ёлғиз (ёлғизликдан қийналган)",
+        "ru": "одинокий"
+      },
+      "pron": {
+        "uz": "ayn-zam",
+        "uz-Cyrl": "айн-зам",
+        "ru": "айн-зам"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "muloqot",
+      "example": {
+        "term": "Herr Braun fühlt sich oft einsam.",
+        "tr": {
+          "uz": "Braun janoblari koʻpincha oʻzini yolgʻiz his qiladi.",
+          "uz-Cyrl": "Браун жаноблари кўпинча ўзини ёлғиз ҳис қилади.",
+          "ru": "Господин Браун часто чувствует себя одиноким."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-muloqot-zuhoeren",
+      "slug": "zuhoeren",
+      "term": "zuhören",
+      "icon": "volume",
+      "tr": {
+        "uz": "tinglamoq",
+        "uz-Cyrl": "тингламоқ",
+        "ru": "слушать, выслушивать"
+      },
+      "pron": {
+        "uz": "tsu-hyo-ren",
+        "uz-Cyrl": "цу-хё-рен",
+        "ru": "цу-хё-рен"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "muloqot",
+      "example": {
+        "term": "Manchmal hilft es, einfach zuzuhören.",
+        "tr": {
+          "uz": "Baʼzan shunchaki tinglash yordam beradi.",
+          "uz-Cyrl": "Баъзан шунчаки тинглаш ёрдам беради.",
+          "ru": "Иногда помогает просто выслушать."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-dori-zerkleinern",
+      "slug": "zerkleinern",
+      "term": "zerkleinern",
+      "icon": "pill",
+      "tr": {
+        "uz": "maydalamoq (dorini)",
+        "uz-Cyrl": "майдаламоқ (дорини)",
+        "ru": "измельчать (таблетку)"
+      },
+      "pron": {
+        "uz": "tser-klay-nern",
+        "uz-Cyrl": "цер-клай-нерн",
+        "ru": "цер-клай-нерн"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "dori",
+      "example": {
+        "term": "Darf ich die Tablette zerkleinern? Ich frage zuerst die Pflegefachkraft.",
+        "tr": {
+          "uz": "Dorini maydalasam boʻladimi? Avval hamshiradan soʻrayman.",
+          "uz-Cyrl": "Дорини майдаласам бўладими? Аввал ҳамширадан сўрайман.",
+          "ru": "Можно измельчить таблетку? Сначала я спрошу медсестру."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-dori-tablettenbox",
+      "slug": "tablettenbox",
+      "term": "die Tablettenbox",
+      "icon": "pill",
+      "article": "die",
+      "plural": "die Tablettenboxen",
+      "tr": {
+        "uz": "dori qutisi (kunlar boʻyicha)",
+        "uz-Cyrl": "дори қутиси (кунлар бўйича)",
+        "ru": "таблетница"
+      },
+      "pron": {
+        "uz": "die ta-ble-ten-boks",
+        "uz-Cyrl": "ди та-бле-тен-бокс",
+        "ru": "ди та-бле-тен-бокс"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "dori",
+      "example": {
+        "term": "Die Tablettenbox für Montag ist leer.",
+        "tr": {
+          "uz": "Dushanba uchun dori qutisi boʻsh.",
+          "uz-Cyrl": "Душанба учун дори қутиси бўш.",
+          "ru": "Таблетница на понедельник пуста."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-dori-zaepfchen",
+      "slug": "zaepfchen",
+      "term": "das Zäpfchen",
+      "icon": "pill",
+      "article": "das",
+      "plural": "die Zäpfchen",
+      "tr": {
+        "uz": "sham (dori)",
+        "uz-Cyrl": "шам (дори)",
+        "ru": "свеча (лекарство)"
+      },
+      "pron": {
+        "uz": "das tsep-xen",
+        "uz-Cyrl": "дас цеп-хен",
+        "ru": "дас цеп-хен"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "dori",
+      "example": {
+        "term": "Die Ärztin hat ein Zäpfchen gegen Fieber verordnet.",
+        "tr": {
+          "uz": "Shifokor isitmaga qarshi sham yozib berdi.",
+          "uz-Cyrl": "Шифокор иситмага қарши шам ёзиб берди.",
+          "ru": "Врач назначила свечу от температуры."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-dori-verabreichen",
+      "slug": "verabreichen",
+      "term": "verabreichen",
+      "icon": "pill",
+      "tr": {
+        "uz": "(dori) bermoq",
+        "uz-Cyrl": "(дори) бермоқ",
+        "ru": "давать (лекарство)"
+      },
+      "pron": {
+        "uz": "fer-ap-ray-xen",
+        "uz-Cyrl": "фер-ап-рай-хен",
+        "ru": "фер-ап-рай-хен"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "dori",
+      "example": {
+        "term": "Ich verabreiche die Medikamente nur nach Plan.",
+        "tr": {
+          "uz": "Dorilarni faqat reja boʻyicha beraman.",
+          "uz-Cyrl": "Дориларни фақат режа бўйича бераман.",
+          "ru": "Я даю лекарства только по плану."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-dori-einnahme",
+      "slug": "einnahme",
+      "term": "die Einnahme",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Einnahmen",
+      "tr": {
+        "uz": "(dori) qabul qilish",
+        "uz-Cyrl": "(дори) қабул қилиш",
+        "ru": "приём (лекарства)"
+      },
+      "pron": {
+        "uz": "die ayn-na-me",
+        "uz-Cyrl": "ди айн-на-ме",
+        "ru": "ди айн-на-ме"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "dori",
+      "example": {
+        "term": "Die Einnahme trage ich sofort in die Dokumentation ein.",
+        "tr": {
+          "uz": "Dori qabul qilinganini darhol hujjatga yozib qoʻyaman.",
+          "uz-Cyrl": "Дори қабул қилинганини дарҳол ҳужжатга ёзиб қўяман.",
+          "ru": "Приём лекарства я сразу вношу в документацию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-topshirish-veraenderung",
+      "slug": "veraenderung",
+      "term": "die Veränderung",
+      "icon": "repeat",
+      "article": "die",
+      "plural": "die Veränderungen",
+      "tr": {
+        "uz": "oʻzgarish",
+        "uz-Cyrl": "ўзгариш",
+        "ru": "изменение"
+      },
+      "pron": {
+        "uz": "die fer-en-de-rung",
+        "uz-Cyrl": "ди фер-эн-де-рунг",
+        "ru": "ди фер-эн-де-рунг"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "topshirish",
+      "example": {
+        "term": "Gibt es eine Veränderung bei Frau Klein?",
+        "tr": {
+          "uz": "Klayn xonimda biror oʻzgarish bormi?",
+          "uz-Cyrl": "Клайн хонимда бирор ўзгариш борми?",
+          "ru": "Есть изменения у госпожи Кляйн?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-topshirish-die-nacht-war-ruhig",
+      "slug": "die-nacht-war-ruhig",
+      "term": "Die Nacht war ruhig.",
+      "icon": "moon-stars",
+      "tr": {
+        "uz": "Tun tinch oʻtdi.",
+        "uz-Cyrl": "Тун тинч ўтди.",
+        "ru": "Ночь прошла спокойно."
+      },
+      "pron": {
+        "uz": "di naxt var ru-ix",
+        "uz-Cyrl": "ди нахт вар ру-их",
+        "ru": "ди нахт вар ру-их"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "topshirish",
+      "example": {
+        "term": "Zimmer 5: Die Nacht war ruhig, keine Besonderheiten.",
+        "tr": {
+          "uz": "5-xona: tun tinch oʻtdi, alohida holat yoʻq.",
+          "uz-Cyrl": "5-хона: тун тинч ўтди, алоҳида ҳолат йўқ.",
+          "ru": "Палата 5: ночь прошла спокойно, без особенностей."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-topshirish-appetit",
+      "slug": "appetit",
+      "term": "der Appetit",
+      "icon": "soup",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "ishtaha",
+        "uz-Cyrl": "иштаҳа",
+        "ru": "аппетит"
+      },
+      "pron": {
+        "uz": "der a-pe-tit",
+        "uz-Cyrl": "дер а-пе-тит",
+        "ru": "дер а-пе-тит"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "topshirish",
+      "example": {
+        "term": "Frau Klein hat heute wenig Appetit.",
+        "tr": {
+          "uz": "Klayn xonimning bugun ishtahasi past.",
+          "uz-Cyrl": "Клайн хонимнинг бугун иштаҳаси паст.",
+          "ru": "У госпожи Кляйн сегодня плохой аппетит."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-topshirish-protokoll",
+      "slug": "protokoll",
+      "term": "das Protokoll",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "die Protokolle",
+      "tr": {
+        "uz": "bayonnoma (qayd)",
+        "uz-Cyrl": "баённома (қайд)",
+        "ru": "протокол"
+      },
+      "pron": {
+        "uz": "das pro-to-kol",
+        "uz-Cyrl": "дас про-то-коль",
+        "ru": "дас про-то-коль"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "topshirish",
+      "example": {
+        "term": "Den Sturz schreiben wir ins Protokoll.",
+        "tr": {
+          "uz": "Yiqilishni bayonnomaga yozamiz.",
+          "uz-Cyrl": "Йиқилишни баённомага ёзамиз.",
+          "ru": "Падение мы записываем в протокол."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-topshirish-weitergeben",
+      "slug": "weitergeben",
+      "term": "weitergeben",
+      "icon": "messages",
+      "tr": {
+        "uz": "(maʼlumotni) yetkazmoq",
+        "uz-Cyrl": "(маълумотни) етказмоқ",
+        "ru": "передавать (информацию)"
+      },
+      "pron": {
+        "uz": "vay-ter-ge-ben",
+        "uz-Cyrl": "вай-тер-ге-бен",
+        "ru": "вай-тер-ге-бен"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "topshirish",
+      "example": {
+        "term": "Das gebe ich an den Spätdienst weiter.",
+        "tr": {
+          "uz": "Buni kechki smenaga yetkazaman.",
+          "uz-Cyrl": "Буни кечки сменага етказаман.",
+          "ru": "Я передам это вечерней смене."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-favqulodda-herzinfarkt",
+      "slug": "herzinfarkt",
+      "term": "der Herzinfarkt",
+      "icon": "heartbeat",
+      "article": "der",
+      "plural": "die Herzinfarkte",
+      "tr": {
+        "uz": "yurak xuruji (infarkt)",
+        "uz-Cyrl": "юрак хуружи (инфаркт)",
+        "ru": "инфаркт"
+      },
+      "pron": {
+        "uz": "der herts-in-farkt",
+        "uz-Cyrl": "дер херц-ин-фаркт",
+        "ru": "дер херц-ин-фаркт"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "favqulodda",
+      "example": {
+        "term": "Bei Verdacht auf Herzinfarkt rufen wir sofort den Notarzt.",
+        "tr": {
+          "uz": "Infarktga shubha boʻlsa, darhol tez yordam shifokorini chaqiramiz.",
+          "uz-Cyrl": "Инфарктга шубҳа бўлса, дарҳол тез ёрдам шифокорини чақирамиз.",
+          "ru": "При подозрении на инфаркт мы сразу вызываем врача скорой помощи."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-favqulodda-er-atmet-nicht",
+      "slug": "er-atmet-nicht",
+      "term": "Er atmet nicht!",
+      "icon": "alert-octagon",
+      "tr": {
+        "uz": "U nafas olmayapti!",
+        "uz-Cyrl": "У нафас олмаяпти!",
+        "ru": "Он не дышит!"
+      },
+      "pron": {
+        "uz": "er at-met nixt",
+        "uz-Cyrl": "эр ат-мет нихт",
+        "ru": "эр ат-мет нихт"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "favqulodda",
+      "example": {
+        "term": "Schnell, kommen Sie! Er atmet nicht!",
+        "tr": {
+          "uz": "Tez keling! U nafas olmayapti!",
+          "uz-Cyrl": "Тез келинг! У нафас олмаяпти!",
+          "ru": "Быстрее, идите сюда! Он не дышит!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-favqulodda-notrufknopf",
+      "slug": "notrufknopf",
+      "term": "der Notrufknopf",
+      "icon": "alert-octagon",
+      "article": "der",
+      "plural": "die Notrufknöpfe",
+      "tr": {
+        "uz": "favqulodda chaqiruv tugmasi",
+        "uz-Cyrl": "фавқулодда чақирув тугмаси",
+        "ru": "кнопка экстренного вызова"
+      },
+      "pron": {
+        "uz": "der not-ruf-knopf",
+        "uz-Cyrl": "дер нот-руф-кнопф",
+        "ru": "дер нот-руф-кнопф"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "favqulodda",
+      "example": {
+        "term": "Drücken Sie den Notrufknopf, ich bleibe hier.",
+        "tr": {
+          "uz": "Favqulodda chaqiruv tugmasini bosing, men shu yerda qolaman.",
+          "uz-Cyrl": "Фавқулодда чақирув тугмасини босинг, мен шу ерда қоламан.",
+          "ru": "Нажмите кнопку экстренного вызова, я останусь здесь."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-favqulodda-herzdruckmassage",
+      "slug": "herzdruckmassage",
+      "term": "die Herzdruckmassage",
+      "icon": "heartbeat",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "yurakni bosib uqalash",
+        "uz-Cyrl": "юракни босиб уқалаш",
+        "ru": "непрямой массаж сердца"
+      },
+      "pron": {
+        "uz": "die herts-druk-ma-sa-zhe",
+        "uz-Cyrl": "ди херц-друк-ма-са-же",
+        "ru": "ди херц-друк-ма-са-же"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "favqulodda",
+      "example": {
+        "term": "Ich mache die Herzdruckmassage, holen Sie den Defibrillator!",
+        "tr": {
+          "uz": "Men yurakni bosib uqalayman, siz defibrillyatorni olib keling!",
+          "uz-Cyrl": "Мен юракни босиб уқалайман, сиз дефибрилляторни олиб келинг!",
+          "ru": "Я делаю непрямой массаж сердца, принесите дефибриллятор!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-favqulodda-krampfanfall",
+      "slug": "krampfanfall",
+      "term": "der Krampfanfall",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Krampfanfälle",
+      "tr": {
+        "uz": "tutqanoq xuruji",
+        "uz-Cyrl": "тутқаноқ хуружи",
+        "ru": "судорожный приступ"
+      },
+      "pron": {
+        "uz": "der krampf-an-fal",
+        "uz-Cyrl": "дер крампф-ан-фаль",
+        "ru": "дер крампф-ан-фаль"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "favqulodda",
+      "example": {
+        "term": "Bei einem Krampfanfall räumen wir Gegenstände in der Nähe weg.",
+        "tr": {
+          "uz": "Tutqanoq xurujida yaqindagi narsalarni olib qoʻyamiz.",
+          "uz-Cyrl": "Тутқаноқ хуружида яқиндаги нарсаларни олиб қўямиз.",
+          "ru": "При судорожном приступе мы убираем предметы поблизости."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-demenz-tagesstruktur",
+      "slug": "tagesstruktur",
+      "term": "die Tagesstruktur",
+      "icon": "clock",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "kun tartibi",
+        "uz-Cyrl": "кун тартиби",
+        "ru": "распорядок дня"
+      },
+      "pron": {
+        "uz": "die ta-ges-shtruk-tur",
+        "uz-Cyrl": "ди та-гес-штрук-тур",
+        "ru": "ди та-гес-штрук-тур"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "demenz",
+      "example": {
+        "term": "Eine feste Tagesstruktur gibt Sicherheit.",
+        "tr": {
+          "uz": "Doimiy kun tartibi xotirjamlik beradi.",
+          "uz-Cyrl": "Доимий кун тартиби хотиржамлик беради.",
+          "ru": "Чёткий распорядок дня даёт чувство безопасности."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-demenz-biografie",
+      "slug": "biografie",
+      "term": "die Biografie",
+      "icon": "book",
+      "article": "die",
+      "plural": "die Biografien",
+      "tr": {
+        "uz": "hayot tarixi",
+        "uz-Cyrl": "ҳаёт тарихи",
+        "ru": "биография"
+      },
+      "pron": {
+        "uz": "die bi-o-gra-fi",
+        "uz-Cyrl": "ди би-о-гра-фи",
+        "ru": "ди би-о-гра-фи"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "demenz",
+      "example": {
+        "term": "In der Biografie steht, dass sie früher Lehrerin war.",
+        "tr": {
+          "uz": "Hayot tarixida u ilgari oʻqituvchi boʻlgani yozilgan.",
+          "uz-Cyrl": "Ҳаёт тарихида у илгари ўқитувчи бўлгани ёзилган.",
+          "ru": "В биографии написано, что раньше она была учительницей."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-demenz-musik",
+      "slug": "musik",
+      "term": "die Musik",
+      "icon": "music",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "musiqa",
+        "uz-Cyrl": "мусиқа",
+        "ru": "музыка"
+      },
+      "pron": {
+        "uz": "die mu-zik",
+        "uz-Cyrl": "ди му-зик",
+        "ru": "ди му-зик"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "demenz",
+      "example": {
+        "term": "Bei alter Musik wird Herr Braun ruhiger.",
+        "tr": {
+          "uz": "Eski musiqani eshitganda Braun janoblari tinchlanadi.",
+          "uz-Cyrl": "Эски мусиқани эшитганда Браун жаноблари тинчланади.",
+          "ru": "Под старую музыку господин Браун успокаивается."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-demenz-suchen",
+      "slug": "suchen",
+      "term": "suchen",
+      "icon": "eye",
+      "tr": {
+        "uz": "qidirmoq",
+        "uz-Cyrl": "қидирмоқ",
+        "ru": "искать"
+      },
+      "pron": {
+        "uz": "zu-xen",
+        "uz-Cyrl": "зу-хен",
+        "ru": "зу-хен"
+      },
+      "level": "A1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "demenz",
+      "example": {
+        "term": "Frau Klein sucht ihre Handtasche. Wir suchen zusammen.",
+        "tr": {
+          "uz": "Klayn xonim sumkasini qidiryapti. Birga qidiramiz.",
+          "uz-Cyrl": "Клайн хоним сумкасини қидиряпти. Бирга қидирамиз.",
+          "ru": "Госпожа Кляйн ищет свою сумку. Мы ищем вместе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-demenz-ablenken",
+      "slug": "ablenken",
+      "term": "ablenken",
+      "icon": "mood-smile",
+      "tr": {
+        "uz": "chalgʻitmoq (boshqa narsaga)",
+        "uz-Cyrl": "чалғитмоқ (бошқа нарсага)",
+        "ru": "отвлекать"
+      },
+      "pron": {
+        "uz": "ap-len-ken",
+        "uz-Cyrl": "ап-лен-кен",
+        "ru": "ап-лен-кен"
+      },
+      "level": "A2",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "demenz",
+      "example": {
+        "term": "Wenn sie traurig ist, lenke ich sie mit einem Foto ab.",
+        "tr": {
+          "uz": "U xafa boʻlsa, uni surat bilan chalgʻitaman.",
+          "uz-Cyrl": "У хафа бўлса, уни сурат билан чалғитаман.",
+          "ru": "Когда она грустит, я отвлекаю её фотографией."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
