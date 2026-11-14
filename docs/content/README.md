@@ -42,14 +42,15 @@ Shablon: [`shablon.xlsx`](shablon.xlsx). Har bir soha yoki jamoa aʼzosi uchun n
 
 | Ustun | Izoh |
 |---|---|
-| field, situation | Soha va vaziyat id ("Vaziyatlar" varagʻidan). Bitta vaziyatda bitta dialog |
+| field, situation | Soha va vaziyat id ("Vaziyatlar" varagʻidan). Vaziyatda 1 yoki 2 dialog |
+| dialog | Ixtiyoriy ustun (0.24.0): dialog raqami `1` yoki `2`, boʻsh = `1`. Eski fayllarda bu ustun boʻlmasa ham ishlaydi. 2-dialog faqat 1-dialog bor vaziyatda |
 | line | Replika tartibi: 1, 2, 3 ... ketma-ket. Dialogda **4–8 replika**, **2–3 kishi** |
 | speaker_uz, speaker_cyrl, speaker_ru | Kim aytadi: `Usta` / `Уста` / `Мастер`. Oʻrganuvchi — `Siz` / `Сиз` / `Вы` |
 | de | Nemischa gap — oʻzimiz yozamiz (darslikdan koʻchirilmaydi). Iloji boricha shu vaziyat soʻzlari bilan |
 | uz, uz_cyrl, ru | Tarjima (kirill qoʻlda) |
 | status, verified_by, verified_at | Hamma replikada bir xil holat |
 
-Ilovada: dialog vaziyatning **oxirgi darsi oxirida** chiqadi. Birinchi soʻzlovchi (usta, xodim) chapda, qolganlar oʻngda; har gapda tinglash tugmasi, tarjimani yashirsa boʻladi. Keyin bitta savol: "Suhbatdagi mos javobni tanlang" — oʻrganuvchi aytgan gap 3 variant ichidan tanlanadi (1 ball). Shuning uchun dialogni birinchi soʻzlovchi (usta, xodim) boshlagani yaxshi. Dialog lugʻatga tushmaydi.
+Ilovada: 1-dialog vaziyatning **oxirgi darsi oxirida**, 2-dialog **2-darsning oxirida** chiqadi (vaziyatda 3 dan kam dars boʻlsa — oxirgi darsda 1-dialogdan keyin). 1-dialog mashqi id'si oʻzgarmaydi. Birinchi soʻzlovchi (usta, xodim) chapda, qolganlar oʻngda; har gapda tinglash tugmasi, tarjimani yashirsa boʻladi. Keyin bitta savol: "Suhbatdagi mos javobni tanlang" — oʻrganuvchi aytgan gap 3 variant ichidan tanlanadi (1 ball). Shuning uchun dialogni birinchi soʻzlovchi (usta, xodim) boshlagani yaxshi. Dialog lugʻatga tushmaydi.
 
 Soʻz id'si avtomatik yasaladi: `soha-vaziyat-slug` (masalan `technical-asboblar-hammer`). U foydalanuvchi progressida saqlanadi, shuning uchun **soʻz ilovaga chiqqandan keyin soha, vaziyat yoki slug'ni oʻzgartirmang**.
 

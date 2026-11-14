@@ -25,10 +25,14 @@ export const WORD_COLUMNS = [
   'source', 'status', 'verified_by', 'verified_at'
 ] as const
 
-/** Dialog: har qator — bitta replika; line — tartib (1, 2, 3 ...). Bitta vaziyatda bitta dialog. */
+/** Dialog: har qator — bitta replika; line — tartib (1, 2, 3 ...). Vaziyatda 1 yoki 2 dialog. */
 export const DIALOG_COLUMNS = [
   'field', 'situation', 'line', 'speaker_uz', 'speaker_cyrl', 'speaker_ru', 'de', 'uz', 'uz_cyrl', 'ru', 'status', 'verified_by', 'verified_at'
 ] as const
+/** Ixtiyoriy ustunlar (eski fayllarda yoʻq): dialog — vaziyatdagi dialog raqami, 1 yoki 2 (boʻsh = 1). 0.24.0 */
+export const DIALOG_OPTIONAL_COLUMNS = ['dialog'] as const
+/** Vaziyatdagi eng koʻp dialog soni. */
+export const DIALOGS_PER_SITUATION = 2
 
 /** Holat: Excel'da oʻzbekcha (ochiladigan roʻyxat), JSON'da kod. */
 export const STATUS_ALIASES: Record<string, ContentStatus> = {
@@ -170,7 +174,12 @@ export function rowsToPacks(sheets: Sheets, rules: PackRules, opts: Omit<Validat
       err(where, 'replika tartibi (line) 1, 2, 3 ... boʻlsin')
       continue
     }
-    const k = `${p.field}/${s.id}`
+    const no = plain(r.dialog) === '' ? 1 : int(r.dialog)
+    if (no === undefined || no < 1 || no > DIALOGS_PER_SITUATION) {
+      err(where, `dialog raqami 1 yoki ${DIALOGS_PER_SITUATION} boʻlsin (boʻsh = 1)`)
+      continue
+    }
+    const k = `${p.field}/${s.id}/${no}`
     const list = dialogRows.get(k) ?? []
     if (list.some((x) => x.line === line)) {
       err(where, `replika ${line} takrorlangan`)
@@ -180,20 +189,23 @@ export function rowsToPacks(sheets: Sheets, rules: PackRules, opts: Omit<Validat
     dialogRows.set(k, list)
   }
   for (const [k, list] of dialogRows) {
-    const [field, sid] = k.split('/')
+    const [field, sid, no] = k.split('/')
     const s = packs.get(field)!.situations.find((x) => x.id === sid)!
     list.sort((a, b) => a.line - b.line)
     const first = at(SHEET.dialogs, list[0].row)
-    if (list.some((x, i) => x.line !== i + 1)) err(first, `"${sid}" dialogi: replikalar 1 dan ketma-ket raqamlansin`)
+    const name = no === '1' ? `"${sid}" dialogi` : `"${sid}" ${no}-dialogi`
+    if (list.some((x, i) => x.line !== i + 1)) err(first, `${name}: replikalar 1 dan ketma-ket raqamlansin`)
     const statuses = new Set(list.map((x) => STATUS_ALIASES[key(x.row.status)]))
     if (statuses.has(undefined as never) || statuses.size !== 1) {
-      err(first, `"${sid}" dialogi: holat (status) hamma replikada bir xil boʻlsin — qoralama, tekshiruvda yoki tasdiqlangan`)
+      err(first, `${name}: holat (status) hamma replikada bir xil boʻlsin — qoralama, tekshiruvda yoki tasdiqlangan`)
       continue
     }
     const lines: PackDialogLine[] = list.map(({ row }) => ({ speaker: l3(row.speaker_uz, row.speaker_cyrl, row.speaker_ru), de: plain(row.de), tr: l3(row.uz, row.uz_cyrl, row.ru) }))
     const by = list.map((x) => opt(x.row.verified_by)).find(Boolean)
     const atDate = list.map((x) => opt(x.row.verified_at)).find(Boolean)
-    s.dialog = { lines, status: [...statuses][0], ...(by && { verifiedBy: by }), ...(atDate && { verifiedAt: atDate }) }
+    const d = { lines, status: [...statuses][0], ...(by && { verifiedBy: by }), ...(atDate && { verifiedAt: atDate }) }
+    if (no === '1') s.dialog = d
+    else s.dialog2 = d
   }
 
   const out = [...packs.values()].sort((a, b) => a.order - b.order)

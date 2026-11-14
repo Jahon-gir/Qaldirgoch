@@ -129,18 +129,21 @@ export function packsToCourse(packs: readonly ContentPack[], opts: { icons?: Rea
       if (words.length === 0) continue
       const moduleId = `${p.field}-${s.id}`
       const dialog = s.dialog && s.dialog.status !== 'draft' ? s.dialog : undefined
+      const dialog2 = dialog && s.dialog2 && s.dialog2.status !== 'draft' ? s.dialog2 : undefined
       out.modules.push({
         id: moduleId,
         level: s.level,
         direction: p.field as Direction,
         order: p.order * PACK_ORDER_BASE + s.order,
-        status: words.every((w) => w.status === 'approved') && (!dialog || dialog.status === 'approved') ? 'approved' : 'review',
+        status: words.every((w) => w.status === 'approved') && (!dialog || dialog.status === 'approved') && (!dialog2 || dialog2.status === 'approved') ? 'approved' : 'review',
         title: s.title
       })
       const chunks: PackWord[][] = []
       for (let i = 0; i < words.length; i += WORDS_PER_LESSON) chunks.push(words.slice(i, i + WORDS_PER_LESSON))
       // Oxirgi dars juda kichik boʻlsa (1–2 soʻz), oldingisiga qoʻshiladi
       if (chunks.length > 1 && chunks[chunks.length - 1].length < 3) chunks[chunks.length - 2].push(...chunks.pop()!)
+      // 2-dialog — 2-darsning oxirida (3+ darsli vaziyatda); kamroq darsda — oxirgi darsda 1-dialogdan keyin
+      const dialog2At = chunks.length >= 3 ? 1 : chunks.length - 1
       chunks.forEach((chunk, i) => {
         const lessonId = `${moduleId}-l${i + 1}`
         out.lessons.push({ id: lessonId, moduleId, title: partTitle(s.title, i + 1, chunks.length), kind: 'words', minutes: Math.max(3, Math.ceil(chunk.length * 0.8)), order: i + 1 })
@@ -157,6 +160,7 @@ export function packsToCourse(packs: readonly ContentPack[], opts: { icons?: Rea
         ex.push(...choicesFrom(chunk, lessonId, ex.length + 1))
         // Dialog — vaziyatning oxirgi darsi oxirida (soʻzlar oʻrganilgach)
         if (dialog && i === chunks.length - 1) ex.push(dialogExercise(dialog, `${lessonId}-e${ex.length + 1}`))
+        if (dialog2 && i === dialog2At) ex.push(dialogExercise(dialog2, `${lessonId}-e${ex.length + 1}`))
         out.exercises[lessonId] = ex
       })
     }
