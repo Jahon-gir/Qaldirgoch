@@ -184,11 +184,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Gut, ich fange mit dem Futter an.",
+            "de": "Neben der Tür, gut. Ich fange mit dem Futter an.",
             "tr": {
-              "uz": "Yaxshi, men yemdan boshlayman.",
-              "uz-Cyrl": "Яхши, мен емдан бошлайман.",
-              "ru": "Хорошо, я начну с корма."
+              "uz": "Eshik yonida, yaxshi. Men yemdan boshlayman.",
+              "uz-Cyrl": "Эшик ёнида, яхши. Мен емдан бошлайман.",
+              "ru": "У двери, хорошо. Я начну с корма."
             }
           }
         ],
@@ -277,11 +277,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Danke, ich arbeite langsam und vorsichtig.",
+            "de": "Danke, wegen der Bienen arbeite ich langsam und vorsichtig.",
             "tr": {
-              "uz": "Rahmat, sekin va ehtiyotkorlik bilan ishlayman.",
-              "uz-Cyrl": "Раҳмат, секин ва эҳтиёткорлик билан ишлайман.",
-              "ru": "Спасибо, буду работать медленно и осторожно."
+              "uz": "Rahmat, asalarilar sababli sekin va ehtiyotkorlik bilan ishlayman.",
+              "uz-Cyrl": "Раҳмат, асаларилар сабабли секин ва эҳтиёткорлик билан ишлайман.",
+              "ru": "Спасибо, из-за пчёл буду работать медленно и осторожно."
             }
           }
         ],
@@ -344,11 +344,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Wo ist der Schatten für die Pause?",
+            "de": "Gut, ich hole sie. Wo machen wir die Pause?",
             "tr": {
-              "uz": "Tanaffus uchun soya qayerda?",
-              "uz-Cyrl": "Танаффус учун соя қаерда?",
-              "ru": "Где тень для перерыва?"
+              "uz": "Yaxshi, olib kelaman. Tanaffusni qayerda qilamiz?",
+              "uz-Cyrl": "Яхши, олиб келаман. Танаффусни қаерда қиламиз?",
+              "ru": "Хорошо, принесу. Где мы делаем перерыв?"
             }
           },
           {
@@ -370,11 +370,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Alles klar, ich ziehe zuerst die Maske an.",
+            "de": "Alles klar, ich nehme genug Wasser mit.",
             "tr": {
-              "uz": "Tushunarli, avval niqobni kiyaman.",
-              "uz-Cyrl": "Тушунарли, аввал ниқобни кияман.",
-              "ru": "Понятно, сначала надену маску."
+              "uz": "Tushunarli, yetarlicha suv olib olaman.",
+              "uz-Cyrl": "Тушунарли, етарлича сув олиб оламан.",
+              "ru": "Понятно, возьму с собой достаточно воды."
             }
           }
         ],
@@ -463,11 +463,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Gut, ich stelle die volle Kiste zur Seite.",
+            "de": "Gut, volle Kisten bringe ich in den Kühlraum.",
             "tr": {
-              "uz": "Yaxshi, toʻla yashikni chetga qoʻyaman.",
-              "uz-Cyrl": "Яхши, тўла яшикни четга қўяман.",
-              "ru": "Хорошо, полный ящик отставлю в сторону."
+              "uz": "Yaxshi, toʻla yashiklarni sovutish xonasiga olib boraman.",
+              "uz-Cyrl": "Яхши, тўла яшикларни совутиш хонасига олиб бораман.",
+              "ru": "Хорошо, полные ящики отнесу в холодильное помещение."
             }
           }
         ],
@@ -530,11 +530,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Soll ich die Regenjacke holen?",
+            "de": "Gut. Brauche ich im Gewächshaus die Regenjacke?",
             "tr": {
-              "uz": "Yomgʻirpoʻshni olib kelaymi?",
-              "uz-Cyrl": "Ёмғирпўшни олиб келайми?",
-              "ru": "Принести дождевик?"
+              "uz": "Yaxshi. Issiqxonada yomgʻirpoʻsh kerakmi?",
+              "uz-Cyrl": "Яхши. Иссиқхонада ёмғирпўш керакми?",
+              "ru": "Хорошо. В теплице нужен дождевик?"
             }
           },
           {
@@ -543,11 +543,11 @@
               "uz-Cyrl": "Бригадир",
               "ru": "Бригадир"
             },
-            "de": "Ja. Am Nachmittag wird es trocken und wärmer.",
+            "de": "Nein, nur für den Weg. Am Nachmittag wird es trocken und wärmer.",
             "tr": {
-              "uz": "Ha. Tushdan keyin quruq va iliqroq boʻladi.",
-              "uz-Cyrl": "Ҳа. Тушдан кейин қуруқ ва илиқроқ бўлади.",
-              "ru": "Да. После обеда станет сухо и теплее."
+              "uz": "Yoʻq, faqat yoʻl uchun. Tushdan keyin quruq va iliqroq boʻladi.",
+              "uz-Cyrl": "Йўқ, фақат йўл учун. Тушдан кейин қуруқ ва илиқроқ бўлади.",
+              "ru": "Нет, только на дорогу. После обеда будет сухо и теплее."
             }
           },
           {
@@ -556,11 +556,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Gut, ich ziehe die Jacke an und komme.",
+            "de": "Gut. Am Nachmittag arbeiten wir dann draußen.",
             "tr": {
-              "uz": "Yaxshi, kurtkani kiyib kelaman.",
-              "uz-Cyrl": "Яхши, куртками кийиб келаман.",
-              "ru": "Хорошо, надену куртку и приду."
+              "uz": "Yaxshi. Unda tushdan keyin tashqarida ishlaymiz.",
+              "uz-Cyrl": "Яхши. Унда тушдан кейин ташқарида ишлаймиз.",
+              "ru": "Хорошо. Тогда после обеда работаем на улице."
             }
           }
         ],
@@ -649,11 +649,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Mache ich. Ich notiere die Nummer.",
+            "de": "Mache ich. Ich notiere die Nummer von der Ohrmarke.",
             "tr": {
-              "uz": "Qilaman. Raqamini yozib qoʻyaman.",
-              "uz-Cyrl": "Қиламан. Рақамини ёзиб қўяман.",
-              "ru": "Сделаю. Запишу номер."
+              "uz": "Qilaman. Quloq birkasidagi raqamni yozib qoʻyaman.",
+              "uz-Cyrl": "Қиламан. Қулоқ биркасидаги рақамни ёзиб қўяман.",
+              "ru": "Сделаю. Запишу номер с ушной бирки."
             }
           }
         ],
@@ -716,11 +716,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Wie ist der Stundenlohn?",
+            "de": "Gut, sechs Uhr. Und wie ist der Stundenlohn?",
             "tr": {
-              "uz": "Soatbay ish haqi qanday?",
-              "uz-Cyrl": "Соатбай иш ҳақи қандай?",
-              "ru": "Какая почасовая оплата?"
+              "uz": "Yaxshi, soat olti. Soatbay ish haqi-chi?",
+              "uz-Cyrl": "Яхши, соат олти. Соатбай иш ҳақи-чи?",
+              "ru": "Хорошо, в шесть. А какая почасовая оплата?"
             }
           },
           {

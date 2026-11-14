@@ -91,11 +91,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Okay, ich gehe sofort.",
+            "de": "Okay. Und danach helfe ich beim Sortieren.",
             "tr": {
-              "uz": "Xoʻp, hozir boraman.",
-              "uz-Cyrl": "Хўп, ҳозир бораман.",
-              "ru": "Хорошо, сейчас иду."
+              "uz": "Xoʻp. Keyin saralashga yordam beraman.",
+              "uz-Cyrl": "Хўп. Кейин саралашга ёрдам бераман.",
+              "ru": "Хорошо. А потом помогу сортировать."
             }
           }
         ],
@@ -158,11 +158,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Machen wir heute auch Wurst?",
+            "de": "Gut, ich wiege das Mehl. Machen wir heute auch Wurst?",
             "tr": {
-              "uz": "Bugun kolbasa ham qilamizmi?",
-              "uz-Cyrl": "Бугун колбаса ҳам қиламизми?",
-              "ru": "Сегодня делаем и колбасу?"
+              "uz": "Yaxshi, unni tortaman. Bugun kolbasa ham qilamizmi?",
+              "uz-Cyrl": "Яхши, унни тортаман. Бугун колбаса ҳам қиламизми?",
+              "ru": "Хорошо, взвешу муку. Сегодня делаем и колбасу?"
             }
           },
           {
@@ -184,11 +184,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Gut, zuerst mache ich den Teig fertig.",
+            "de": "Gut. Nach dem Teig helfe ich an der Theke.",
             "tr": {
-              "uz": "Yaxshi, avval xamirni tayyorlayman.",
-              "uz-Cyrl": "Яхши, аввал хамирни тайёрлайман.",
-              "ru": "Хорошо, сначала закончу тесто."
+              "uz": "Yaxshi. Xamirdan keyin peshtaxtada yordam beraman.",
+              "uz-Cyrl": "Яхши. Хамирдан кейин пештахтада ёрдам бераман.",
+              "ru": "Хорошо. После теста помогу за прилавком."
             }
           }
         ],
@@ -277,11 +277,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Verstanden, ich wiege zuerst.",
+            "de": "Verstanden. Ich lege sie zur Seite und melde es.",
             "tr": {
-              "uz": "Tushundim, avval tortaman.",
-              "uz-Cyrl": "Тушундим, аввал тортаман.",
-              "ru": "Понял, сначала взвешу."
+              "uz": "Tushundim. Uni chetga qoʻyib, xabar beraman.",
+              "uz-Cyrl": "Тушундим. Уни четга қўйиб, хабар бераман.",
+              "ru": "Понял. Отложу её в сторону и сообщу."
             }
           }
         ],
@@ -370,11 +370,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Alles klar. Ich ziehe zuerst den Kittel an.",
+            "de": "Alles klar, rot an der Wand. Dann ziehe ich den Kittel an.",
             "tr": {
-              "uz": "Tushunarli. Avval xalatni kiyaman.",
-              "uz-Cyrl": "Тушунарли. Аввал халатни кияман.",
-              "ru": "Понятно. Сначала надену халат."
+              "uz": "Tushunarli, devordagi qizil. Keyin xalatni kiyaman.",
+              "uz-Cyrl": "Тушунарли, девордаги қизил. Кейин халатни кияман.",
+              "ru": "Понятно, красная на стене. Потом надену халат."
             }
           }
         ],
@@ -649,11 +649,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Verstanden, ich schärfe das Messer.",
+            "de": "Verstanden, ich würfle das Filet für die Marinade.",
             "tr": {
-              "uz": "Tushundim, pichoqni charxlayman.",
-              "uz-Cyrl": "Тушундим, пичоқни чархлайман.",
-              "ru": "Понял, наточу нож."
+              "uz": "Tushundim, fileni marinad uchun kubik qilib toʻgʻrayman.",
+              "uz-Cyrl": "Тушундим, филени маринад учун кубик қилиб тўғрайман.",
+              "ru": "Понял, нарежу филе кубиками для маринада."
             }
           }
         ],
@@ -742,11 +742,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Alles klar, ich starte die Linie jetzt.",
+            "de": "Alles klar, bei einem Stau rufe ich den Instandhalter.",
             "tr": {
-              "uz": "Tushunarli, hozir liniyani ishga tushiraman.",
-              "uz-Cyrl": "Тушунарли, ҳозир линияни ишга тушираман.",
-              "ru": "Понятно, сейчас запущу линию."
+              "uz": "Tushunarli, tiqilib qolsa taʼmirlash ustasini chaqiraman.",
+              "uz-Cyrl": "Тушунарли, тиқилиб қолса таъмирлаш устасини чақираман.",
+              "ru": "Понятно, при заторе вызову ремонтника."
             }
           }
         ],

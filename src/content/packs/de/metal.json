@@ -742,11 +742,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Gut. Geben Sie die anderen dann frei?",
+            "de": "Gut, ab in die Kiste. Geben Sie die anderen neun dann frei?",
             "tr": {
-              "uz": "Yaxshi. Unda qolganlariga ruxsat berasizmi?",
-              "uz-Cyrl": "Яхши. Унда қолганларига рухсат берасизми?",
-              "ru": "Хорошо. Тогда остальные вы допускаете?"
+              "uz": "Yaxshi, qutiga solaman. Unda qolgan toʻqqiztasiga ruxsat berasizmi?",
+              "uz-Cyrl": "Яхши, қутига соламан. Унда қолган тўққизтасига рухсат берасизми?",
+              "ru": "Хорошо, в ящик. Тогда остальные девять вы допускаете?"
             }
           }
         ],

@@ -184,11 +184,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Gut, ich hole ein neues Preisschild.",
+            "de": "Alt nach vorne, verstanden. Ich hole ein neues Preisschild.",
             "tr": {
-              "uz": "Yaxshi, yangi narx yorligʻini olib kelaman.",
-              "uz-Cyrl": "Яхши, янги нарх ёрлиғини олиб келаман.",
-              "ru": "Хорошо, принесу новый ценник."
+              "uz": "Eskisi oldinga, tushundim. Yangi narx yorligʻini olib kelaman.",
+              "uz-Cyrl": "Эскиси олдинга, тушундим. Янги нарх ёрлиғини олиб келаман.",
+              "ru": "Старое вперёд, понял. Принесу новый ценник."
             }
           }
         ],
@@ -370,11 +370,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Verstanden, ich bringe sie zuerst weg.",
+            "de": "Verstanden, die Tiefkühlware bringe ich zuerst weg.",
             "tr": {
-              "uz": "Tushundim, avval oʻshani olib qoʻyaman.",
-              "uz-Cyrl": "Тушундим, аввал ўшани олиб қўяман.",
-              "ru": "Понял, сначала унесу её."
+              "uz": "Tushundim, muzlatilgan mahsulotni birinchi olib qoʻyaman.",
+              "uz-Cyrl": "Тушундим, музлатилган маҳсулотни биринчи олиб қўяман.",
+              "ru": "Понял, сначала уберу заморозку."
             }
           }
         ],
@@ -517,11 +517,11 @@
               "uz-Cyrl": "Харидор",
               "ru": "Покупатель"
             },
-            "de": "Und wo ist das Brot?",
+            "de": "Danke. Und ist das Brot heute frisch?",
             "tr": {
-              "uz": "Non qayerda?",
-              "uz-Cyrl": "Нон қаерда?",
-              "ru": "А где хлеб?"
+              "uz": "Rahmat. Non bugun yangimi?",
+              "uz-Cyrl": "Раҳмат. Нон бугун янгими?",
+              "ru": "Спасибо. А хлеб сегодня свежий?"
             }
           },
           {
@@ -530,11 +530,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Möchten Sie frische Backware oder Brot im Regal?",
+            "de": "Ja, die Backwaren kommen jeden Morgen frisch.",
             "tr": {
-              "uz": "Yangi non mahsulotini xohlaysizmi yoki javondagi nonnimi?",
-              "uz-Cyrl": "Янги нон маҳсулотини хоҳлайсизми ёки жавондаги ноннными?",
-              "ru": "Хотите свежую выпечку или хлеб на полке?"
+              "uz": "Ha, non mahsulotlari har kuni ertalab yangi keladi.",
+              "uz-Cyrl": "Ҳа, нон маҳсулотлари ҳар куни эрталаб янги келади.",
+              "ru": "Да, выпечку привозят свежей каждое утро."
             }
           },
           {
@@ -543,11 +543,11 @@
               "uz-Cyrl": "Харидор",
               "ru": "Покупатель"
             },
-            "de": "Frische Backware, bitte. Haben Sie auch Bio-Mehl?",
+            "de": "Prima. Haben Sie auch Bio-Mehl?",
             "tr": {
-              "uz": "Yangi non mahsuloti, iltimos. Bio un ham bormi?",
-              "uz-Cyrl": "Янги нон маҳсулоти, илтимос. Био ун ҳам борми?",
-              "ru": "Свежую выпечку, пожалуйста. А органическая мука есть?"
+              "uz": "Ajoyib. Bio un ham bormi?",
+              "uz-Cyrl": "Ажойиб. Био ун ҳам борми?",
+              "ru": "Отлично. А био-мука у вас есть?"
             }
           },
           {
@@ -742,11 +742,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Verstanden. Ich bleibe an der Kasse.",
+            "de": "Verstanden, nichts allein. Ich bleibe an der Kasse.",
             "tr": {
-              "uz": "Tushundim. Men kassada qolaman.",
-              "uz-Cyrl": "Тушундим. Мен кассада қоламан.",
-              "ru": "Понял. Я останусь на кассе."
+              "uz": "Tushundim, yolgʻiz hech narsa qilmayman. Kassada qolaman.",
+              "uz-Cyrl": "Тушундим, ёлғиз ҳеч нарса қилмайман. Кассада қоламан.",
+              "ru": "Понял, ничего в одиночку. Я остаюсь на кассе."
             }
           }
         ],
