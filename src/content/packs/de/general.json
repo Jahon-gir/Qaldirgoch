@@ -6760,6 +6760,1948 @@
       "safety": true,
       "status": "review",
       "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xavfsizlik-rauchmelder",
+      "slug": "rauchmelder",
+      "term": "der Rauchmelder",
+      "icon": "flame",
+      "article": "der",
+      "plural": "die Rauchmelder",
+      "tr": {
+        "uz": "tutun datchigi",
+        "uz-Cyrl": "тутун датчиги",
+        "ru": "дымовой извещатель"
+      },
+      "pron": {
+        "uz": "der raux-mel-der",
+        "uz-Cyrl": "дер раух-мель-дер",
+        "ru": "дер раух-мель-дер"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Der Rauchmelder hängt an der Decke.",
+        "tr": {
+          "uz": "Tutun datchigi shiftga oʻrnatilgan.",
+          "uz-Cyrl": "Тутун датчиги шифтга ўрнатилган.",
+          "ru": "Дымовой извещатель висит на потолке."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xavfsizlik-brandschutz",
+      "slug": "brandschutz",
+      "term": "der Brandschutz",
+      "icon": "fire-extinguisher",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "yongʻindan himoya",
+        "uz-Cyrl": "ёнғиндан ҳимоя",
+        "ru": "пожарная безопасность"
+      },
+      "pron": {
+        "uz": "der brant-shuts",
+        "uz-Cyrl": "дер брант-шуц",
+        "ru": "дер брант-шуц"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Heute haben wir eine Schulung zum Brandschutz.",
+        "tr": {
+          "uz": "Bugun yongʻindan himoya boʻyicha mashgʻulotimiz bor.",
+          "uz-Cyrl": "Бугун ёнғиндан ҳимоя бўйича машғулотимиз бор.",
+          "ru": "Сегодня у нас инструктаж по пожарной безопасности."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xavfsizlik-zutritt-verboten",
+      "slug": "zutritt-verboten",
+      "term": "Zutritt verboten!",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Kirish taqiqlangan!",
+        "uz-Cyrl": "Кириш тақиқланган!",
+        "ru": "Вход запрещён!"
+      },
+      "pron": {
+        "uz": "tsu-trit fer-bo-ten",
+        "uz-Cyrl": "цу-трит фер-бо-тен",
+        "ru": "цу-трит фер-бо-тен"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Zutritt verboten! Dieser Raum ist nur für Fachpersonal.",
+        "tr": {
+          "uz": "Kirish taqiqlangan! Bu xona faqat mutaxassislar uchun.",
+          "uz-Cyrl": "Кириш тақиқланган! Бу хона фақат мутахассислар учун.",
+          "ru": "Вход запрещён! Это помещение только для специалистов."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xavfsizlik-rutschgefahr",
+      "slug": "rutschgefahr",
+      "term": "die Rutschgefahr",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "sirpanish xavfi",
+        "uz-Cyrl": "сирпаниш хавфи",
+        "ru": "опасность поскользнуться"
+      },
+      "pron": {
+        "uz": "die ruch-ge-far",
+        "uz-Cyrl": "ди руч-ге-фар",
+        "ru": "ди руч-ге-фар"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Achtung, Rutschgefahr! Der Boden wird gerade gewischt.",
+        "tr": {
+          "uz": "Diqqat, sirpanish xavfi! Pol hozir artilyapti.",
+          "uz-Cyrl": "Диққат, сирпаниш хавфи! Пол ҳозир артиляпти.",
+          "ru": "Внимание, скользко! Пол сейчас моют."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xavfsizlik-verletzung",
+      "slug": "verletzung",
+      "term": "die Verletzung",
+      "icon": "first-aid-kit",
+      "article": "die",
+      "plural": "die Verletzungen",
+      "tr": {
+        "uz": "jarohat",
+        "uz-Cyrl": "жароҳат",
+        "ru": "травма"
+      },
+      "pron": {
+        "uz": "die fer-le-tsung",
+        "uz-Cyrl": "ди фер-ле-цунг",
+        "ru": "ди фер-ле-цунг"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "xavfsizlik",
+      "example": {
+        "term": "Jede Verletzung müssen Sie sofort melden.",
+        "tr": {
+          "uz": "Har qanday jarohat haqida darhol xabar berishingiz kerak.",
+          "uz-Cyrl": "Ҳар қандай жароҳат ҳақида дарҳол хабар беришингиз керак.",
+          "ru": "О любой травме нужно сразу сообщать."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-vaqti-mittagspause",
+      "slug": "mittagspause",
+      "term": "die Mittagspause",
+      "icon": "coffee",
+      "article": "die",
+      "plural": "die Mittagspausen",
+      "tr": {
+        "uz": "tushlik tanaffusi",
+        "uz-Cyrl": "тушлик танаффуси",
+        "ru": "обеденный перерыв"
+      },
+      "pron": {
+        "uz": "die mi-taks-pau-ze",
+        "uz-Cyrl": "ди ми-такс-пау-зе",
+        "ru": "ди ми-такс-пау-зе"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-vaqti",
+      "example": {
+        "term": "Die Mittagspause beginnt um zwölf Uhr.",
+        "tr": {
+          "uz": "Tushlik tanaffusi soat oʻn ikkida boshlanadi.",
+          "uz-Cyrl": "Тушлик танаффуси соат ўн иккида бошланади.",
+          "ru": "Обеденный перерыв начинается в двенадцать часов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-vaqti-gleitzeit",
+      "slug": "gleitzeit",
+      "term": "die Gleitzeit",
+      "icon": "clock",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "moslashuvchan ish vaqti",
+        "uz-Cyrl": "мослашувчан иш вақти",
+        "ru": "гибкий график"
+      },
+      "pron": {
+        "uz": "die glayt-tsayt",
+        "uz-Cyrl": "ди глайт-цайт",
+        "ru": "ди глайт-цайт"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-vaqti",
+      "example": {
+        "term": "Im Büro haben wir Gleitzeit.",
+        "tr": {
+          "uz": "Ofisda moslashuvchan ish vaqtimiz bor.",
+          "uz-Cyrl": "Офисда мослашувчан иш вақтимиз бор.",
+          "ru": "В офисе у нас гибкий график."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-vaqti-stempeln",
+      "slug": "stempeln",
+      "term": "stempeln",
+      "icon": "clock",
+      "tr": {
+        "uz": "ish vaqtini qayd etmoq (kirishda va chiqishda)",
+        "uz-Cyrl": "иш вақтини қайд этмоқ (киришда ва чиқишда)",
+        "ru": "отмечаться (на входе и выходе)"
+      },
+      "pron": {
+        "uz": "shtem-peln",
+        "uz-Cyrl": "штем-пельн",
+        "ru": "штем-пельн"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-vaqti",
+      "example": {
+        "term": "Vergessen Sie nicht zu stempeln!",
+        "tr": {
+          "uz": "Ish vaqtini qayd etishni unutmang!",
+          "uz-Cyrl": "Иш вақтини қайд этишни унутманг!",
+          "ru": "Не забудьте отметиться!"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-vaqti-schichtwechsel",
+      "slug": "schichtwechsel",
+      "term": "der Schichtwechsel",
+      "icon": "repeat",
+      "article": "der",
+      "plural": "die Schichtwechsel",
+      "tr": {
+        "uz": "smena almashinuvi",
+        "uz-Cyrl": "смена алмашинуви",
+        "ru": "пересменка"
+      },
+      "pron": {
+        "uz": "der shixt-vek-sel",
+        "uz-Cyrl": "дер шихт-век-сель",
+        "ru": "дер шихт-век-сель"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-vaqti",
+      "example": {
+        "term": "Beim Schichtwechsel sprechen wir kurz über die Arbeit.",
+        "tr": {
+          "uz": "Smena almashinuvida ish haqida qisqa gaplashamiz.",
+          "uz-Cyrl": "Смена алмашинувида иш ҳақида қисқа гаплашамиз.",
+          "ru": "При пересменке мы коротко обсуждаем работу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-vaqti-koennen-wir-die-schicht-tauschen",
+      "slug": "koennen-wir-die-schicht-tauschen",
+      "term": "Können wir die Schicht tauschen?",
+      "icon": "repeat",
+      "tr": {
+        "uz": "Smenani almashtirsak boʻladimi?",
+        "uz-Cyrl": "Сменани алмаштирсак бўладими?",
+        "ru": "Можем поменяться сменами?"
+      },
+      "pron": {
+        "uz": "kyo-nen vir di shixt tau-shen",
+        "uz-Cyrl": "кё-нен вир ди шихт тау-шен",
+        "ru": "кё-нен вир ди шихт тау-шен"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-vaqti",
+      "example": {
+        "term": "Können wir die Schicht tauschen? Am Freitag habe ich einen Termin.",
+        "tr": {
+          "uz": "Smenani almashtirsak boʻladimi? Juma kuni uchrashuvim bor.",
+          "uz-Cyrl": "Сменани алмаштирсак бўладими? Жума куни учрашувим бор.",
+          "ru": "Можем поменяться сменами? В пятницу у меня встреча."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-korsatma-koennen-sie-mir-das-aufschreiben",
+      "slug": "koennen-sie-mir-das-aufschreiben",
+      "term": "Können Sie mir das aufschreiben?",
+      "icon": "file-text",
+      "tr": {
+        "uz": "Buni menga yozib bera olasizmi?",
+        "uz-Cyrl": "Буни менга ёзиб бера оласизми?",
+        "ru": "Можете мне это записать?"
+      },
+      "pron": {
+        "uz": "kyo-nen zi mir das auf-shray-ben",
+        "uz-Cyrl": "кё-нен зи мир дас ауф-шрай-бен",
+        "ru": "кё-нен зи мир дас ауф-шрай-бен"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "korsatma",
+      "example": {
+        "term": "Können Sie mir das aufschreiben? Dann vergesse ich es nicht.",
+        "tr": {
+          "uz": "Buni menga yozib bera olasizmi? Shunda unutmayman.",
+          "uz-Cyrl": "Буни менга ёзиб бера оласизми? Шунда унутмайман.",
+          "ru": "Можете мне это записать? Тогда я не забуду."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-korsatma-womit-fange-ich-an",
+      "slug": "womit-fange-ich-an",
+      "term": "Womit fange ich an?",
+      "icon": "help",
+      "tr": {
+        "uz": "Nimadan boshlay?",
+        "uz-Cyrl": "Нимадан бошлай?",
+        "ru": "С чего мне начать?"
+      },
+      "pron": {
+        "uz": "vo-mit fan-ge ix an",
+        "uz-Cyrl": "во-мит фан-ге их ан",
+        "ru": "во-мит фан-ге их ан"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "korsatma",
+      "example": {
+        "term": "Womit fange ich an? Mit dieser Aufgabe?",
+        "tr": {
+          "uz": "Nimadan boshlay? Shu vazifadanmi?",
+          "uz-Cyrl": "Нимадан бошлай? Шу вазифаданми?",
+          "ru": "С чего мне начать? С этого задания?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-korsatma-anweisung",
+      "slug": "anweisung",
+      "term": "die Anweisung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Anweisungen",
+      "tr": {
+        "uz": "koʻrsatma",
+        "uz-Cyrl": "кўрсатма",
+        "ru": "указание, инструкция"
+      },
+      "pron": {
+        "uz": "die an-vay-zung",
+        "uz-Cyrl": "ди ан-вай-зунг",
+        "ru": "ди ан-вай-зунг"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "korsatma",
+      "example": {
+        "term": "Bitte lesen Sie die Anweisung genau.",
+        "tr": {
+          "uz": "Iltimos, koʻrsatmani diqqat bilan oʻqing.",
+          "uz-Cyrl": "Илтимос, кўрсатмани диққат билан ўқинг.",
+          "ru": "Пожалуйста, внимательно прочитайте инструкцию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-korsatma-wo-finde-ich-das",
+      "slug": "wo-finde-ich-das",
+      "term": "Wo finde ich das?",
+      "icon": "map-pin",
+      "tr": {
+        "uz": "Buni qayerdan topaman?",
+        "uz-Cyrl": "Буни қаердан топаман?",
+        "ru": "Где мне это найти?"
+      },
+      "pron": {
+        "uz": "vo fin-de ix das",
+        "uz-Cyrl": "во фин-де их дас",
+        "ru": "во фин-де их дас"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "korsatma",
+      "example": {
+        "term": "Wo finde ich das Formular?",
+        "tr": {
+          "uz": "Blankani qayerdan topaman?",
+          "uz-Cyrl": "Бланкани қаердан топаман?",
+          "ru": "Где мне найти бланк?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-korsatma-ich-bin-mir-nicht-sicher",
+      "slug": "ich-bin-mir-nicht-sicher",
+      "term": "Ich bin mir nicht sicher.",
+      "icon": "help",
+      "tr": {
+        "uz": "Ishonchim komil emas.",
+        "uz-Cyrl": "Ишончим комил эмас.",
+        "ru": "Я не уверен(а)."
+      },
+      "pron": {
+        "uz": "ix bin mir nixt zi-xer",
+        "uz-Cyrl": "их бин мир нихт зи-хер",
+        "ru": "их бин мир нихт зи-хер"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "korsatma",
+      "example": {
+        "term": "Ich bin mir nicht sicher. Können Sie bitte noch einmal schauen?",
+        "tr": {
+          "uz": "Ishonchim komil emas. Iltimos, yana bir koʻrib bera olasizmi?",
+          "uz-Cyrl": "Ишончим комил эмас. Илтимос, яна бир кўриб бера оласизми?",
+          "ru": "Я не уверен. Можете, пожалуйста, ещё раз посмотреть?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kasallik-hausarzt",
+      "slug": "hausarzt",
+      "term": "der Hausarzt",
+      "icon": "stethoscope",
+      "article": "der",
+      "plural": "die Hausärzte",
+      "tr": {
+        "uz": "oilaviy shifokor",
+        "uz-Cyrl": "оилавий шифокор",
+        "ru": "семейный врач"
+      },
+      "pron": {
+        "uz": "der haus-artst",
+        "uz-Cyrl": "дер хаус-арцт",
+        "ru": "дер хаус-арцт"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kasallik",
+      "example": {
+        "term": "Ich gehe morgen früh zum Hausarzt.",
+        "tr": {
+          "uz": "Ertaga ertalab oilaviy shifokorga boraman.",
+          "uz-Cyrl": "Эртага эрталаб оилавий шифокорга бораман.",
+          "ru": "Завтра утром я иду к семейному врачу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kasallik-sprechstunde",
+      "slug": "sprechstunde",
+      "term": "die Sprechstunde",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Sprechstunden",
+      "tr": {
+        "uz": "qabul vaqti",
+        "uz-Cyrl": "қабул вақти",
+        "ru": "приёмные часы"
+      },
+      "pron": {
+        "uz": "die shprex-shtun-de",
+        "uz-Cyrl": "ди шпрех-штун-де",
+        "ru": "ди шпрех-штун-де"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "kasallik",
+      "example": {
+        "term": "Die Praxis hat heute nur am Vormittag Sprechstunde.",
+        "tr": {
+          "uz": "Klinikada bugun faqat tushgacha qabul bor.",
+          "uz-Cyrl": "Клиникада бугун фақат тушгача қабул бор.",
+          "ru": "Сегодня в кабинете врача приём только до обеда."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kasallik-wartezimmer",
+      "slug": "wartezimmer",
+      "term": "das Wartezimmer",
+      "icon": "armchair",
+      "article": "das",
+      "plural": "die Wartezimmer",
+      "tr": {
+        "uz": "kutish xonasi",
+        "uz-Cyrl": "кутиш хонаси",
+        "ru": "комната ожидания"
+      },
+      "pron": {
+        "uz": "das var-te-tsi-mer",
+        "uz-Cyrl": "дас вар-те-ци-мер",
+        "ru": "дас вар-те-ци-мер"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kasallik",
+      "example": {
+        "term": "Bitte nehmen Sie im Wartezimmer Platz.",
+        "tr": {
+          "uz": "Iltimos, kutish xonasida oʻtiring.",
+          "uz-Cyrl": "Илтимос, кутиш хонасида ўтиринг.",
+          "ru": "Пожалуйста, присядьте в комнате ожидания."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kasallik-mir-ist-schlecht",
+      "slug": "mir-ist-schlecht",
+      "term": "Mir ist schlecht.",
+      "icon": "mood-sad",
+      "tr": {
+        "uz": "Koʻnglim aynayapti.",
+        "uz-Cyrl": "Кўнглим айнаяпти.",
+        "ru": "Меня тошнит."
+      },
+      "pron": {
+        "uz": "mir ist shlext",
+        "uz-Cyrl": "мир ист шлехт",
+        "ru": "мир ист шлехт"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kasallik",
+      "example": {
+        "term": "Mir ist schlecht, ich muss kurz raus.",
+        "tr": {
+          "uz": "Koʻnglim aynayapti, bir zum tashqariga chiqishim kerak.",
+          "uz-Cyrl": "Кўнглим айнаяпти, бир зум ташқарига чиқишим керак.",
+          "ru": "Меня тошнит, мне нужно ненадолго выйти."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kasallik-notaufnahme",
+      "slug": "notaufnahme",
+      "term": "die Notaufnahme",
+      "icon": "first-aid-kit",
+      "article": "die",
+      "plural": "die Notaufnahmen",
+      "tr": {
+        "uz": "shoshilinch yordam boʻlimi",
+        "uz-Cyrl": "шошилинч ёрдам бўлими",
+        "ru": "приёмное отделение (неотложка)"
+      },
+      "pron": {
+        "uz": "die not-auf-na-me",
+        "uz-Cyrl": "ди нот-ауф-на-ме",
+        "ru": "ди нот-ауф-на-ме"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "kasallik",
+      "example": {
+        "term": "Bei einem schweren Unfall fahren wir in die Notaufnahme.",
+        "tr": {
+          "uz": "Ogʻir baxtsiz hodisada shoshilinch yordam boʻlimiga boramiz.",
+          "uz-Cyrl": "Оғир бахтсиз ҳодисада шошилинч ёрдам бўлимига борамиз.",
+          "ru": "При серьёзном несчастном случае мы едем в приёмное отделение."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shartnoma-gehalt",
+      "slug": "gehalt",
+      "term": "das Gehalt",
+      "icon": "receipt",
+      "article": "das",
+      "plural": "die Gehälter",
+      "tr": {
+        "uz": "oylik maosh",
+        "uz-Cyrl": "ойлик маош",
+        "ru": "зарплата, оклад"
+      },
+      "pron": {
+        "uz": "das ge-halt",
+        "uz-Cyrl": "дас ге-хальт",
+        "ru": "дас ге-хальт"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "shartnoma",
+      "example": {
+        "term": "Das Gehalt kommt am Ende des Monats.",
+        "tr": {
+          "uz": "Oylik maosh oy oxirida keladi.",
+          "uz-Cyrl": "Ойлик маош ой охирида келади.",
+          "ru": "Зарплата приходит в конце месяца."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shartnoma-urlaubsanspruch",
+      "slug": "urlaubsanspruch",
+      "term": "der Urlaubsanspruch",
+      "icon": "beach",
+      "article": "der",
+      "plural": "die Urlaubsansprüche",
+      "tr": {
+        "uz": "taʼtil huquqi",
+        "uz-Cyrl": "таътил ҳуқуқи",
+        "ru": "право на отпуск"
+      },
+      "pron": {
+        "uz": "der ur-laups-an-shprux",
+        "uz-Cyrl": "дер ур-лаупс-ан-шпрух",
+        "ru": "дер ур-лаупс-ан-шпрух"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "shartnoma",
+      "example": {
+        "term": "Wie hoch ist mein Urlaubsanspruch im Jahr?",
+        "tr": {
+          "uz": "Yiliga qancha taʼtil olishga haqqim bor?",
+          "uz-Cyrl": "Йилига қанча таътил олишга ҳаққим бор?",
+          "ru": "Сколько дней отпуска мне положено в год?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shartnoma-kuendigungsfrist",
+      "slug": "kuendigungsfrist",
+      "term": "die Kündigungsfrist",
+      "icon": "calendar-event",
+      "article": "die",
+      "plural": "die Kündigungsfristen",
+      "tr": {
+        "uz": "ogohlantirish muddati (ishdan ketishda)",
+        "uz-Cyrl": "огоҳлантириш муддати (ишдан кетишда)",
+        "ru": "срок уведомления об увольнении"
+      },
+      "pron": {
+        "uz": "die kyun-di-gungs-frist",
+        "uz-Cyrl": "ди кюн-ди-гунгс-фрист",
+        "ru": "ди кюн-ди-гунгс-фрист"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "shartnoma",
+      "example": {
+        "term": "Die Kündigungsfrist steht im Arbeitsvertrag.",
+        "tr": {
+          "uz": "Ogohlantirish muddati mehnat shartnomasida yozilgan.",
+          "uz-Cyrl": "Огоҳлантириш муддати меҳнат шартномасида ёзилган.",
+          "ru": "Срок уведомления указан в трудовом договоре."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shartnoma-sozialversicherung",
+      "slug": "sozialversicherung",
+      "term": "die Sozialversicherung",
+      "icon": "id",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "ijtimoiy sugʻurta",
+        "uz-Cyrl": "ижтимоий суғурта",
+        "ru": "социальное страхование"
+      },
+      "pron": {
+        "uz": "die zo-tsi-al-fer-zi-xe-rung",
+        "uz-Cyrl": "ди зо-ци-аль-фер-зи-хе-рунг",
+        "ru": "ди зо-ци-аль-фер-зи-хе-рунг"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "shartnoma",
+      "example": {
+        "term": "Ein Teil vom Lohn geht an die Sozialversicherung.",
+        "tr": {
+          "uz": "Maoshning bir qismi ijtimoiy sugʻurtaga ketadi.",
+          "uz-Cyrl": "Маошнинг бир қисми ижтимоий суғуртага кетади.",
+          "ru": "Часть зарплаты идёт на социальное страхование."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shartnoma-zuschlag",
+      "slug": "zuschlag",
+      "term": "der Zuschlag",
+      "icon": "receipt",
+      "article": "der",
+      "plural": "die Zuschläge",
+      "tr": {
+        "uz": "ustama (qoʻshimcha toʻlov)",
+        "uz-Cyrl": "устама (қўшимча тўлов)",
+        "ru": "надбавка"
+      },
+      "pron": {
+        "uz": "der tsu-shlak",
+        "uz-Cyrl": "дер цу-шлак",
+        "ru": "дер цу-шлак"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "shartnoma",
+      "example": {
+        "term": "Gibt es einen Zuschlag für die Nachtschicht?",
+        "tr": {
+          "uz": "Tungi smena uchun ustama bormi?",
+          "uz-Cyrl": "Тунги смена учун устама борми?",
+          "ru": "Есть ли надбавка за ночную смену?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-berufsschule-ausbildungsvertrag",
+      "slug": "ausbildungsvertrag",
+      "term": "der Ausbildungsvertrag",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Ausbildungsverträge",
+      "tr": {
+        "uz": "kasbiy taʼlim shartnomasi",
+        "uz-Cyrl": "касбий таълим шартномаси",
+        "ru": "договор о профобучении"
+      },
+      "pron": {
+        "uz": "der aus-bil-dungs-fer-trak",
+        "uz-Cyrl": "дер аус-биль-дунгс-фер-трак",
+        "ru": "дер аус-биль-дунгс-фер-трак"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "berufsschule",
+      "example": {
+        "term": "Ich unterschreibe heute meinen Ausbildungsvertrag.",
+        "tr": {
+          "uz": "Bugun kasbiy taʼlim shartnomamni imzolayman.",
+          "uz-Cyrl": "Бугун касбий таълим шартномамни имзолайман.",
+          "ru": "Сегодня я подписываю свой договор о профобучении."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-berufsschule-zwischenpruefung",
+      "slug": "zwischenpruefung",
+      "term": "die Zwischenprüfung",
+      "icon": "book",
+      "article": "die",
+      "plural": "die Zwischenprüfungen",
+      "tr": {
+        "uz": "oraliq imtihon",
+        "uz-Cyrl": "оралиқ имтиҳон",
+        "ru": "промежуточный экзамен"
+      },
+      "pron": {
+        "uz": "die tsvi-shen-pryu-fung",
+        "uz-Cyrl": "ди цви-шен-прю-фунг",
+        "ru": "ди цви-шен-прю-фунг"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "berufsschule",
+      "example": {
+        "term": "Für die Zwischenprüfung lerne ich jeden Abend.",
+        "tr": {
+          "uz": "Oraliq imtihonga har kuni kechqurun tayyorlanaman.",
+          "uz-Cyrl": "Оралиқ имтиҳонга ҳар куни кечқурун тайёрланаман.",
+          "ru": "К промежуточному экзамену я готовлюсь каждый вечер."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-berufsschule-lehrjahr",
+      "slug": "lehrjahr",
+      "term": "das Lehrjahr",
+      "icon": "calendar-event",
+      "article": "das",
+      "plural": "die Lehrjahre",
+      "tr": {
+        "uz": "oʻqish yili",
+        "uz-Cyrl": "ўқиш йили",
+        "ru": "год обучения"
+      },
+      "pron": {
+        "uz": "das ler-yar",
+        "uz-Cyrl": "дас лер-яр",
+        "ru": "дас лер-яр"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "berufsschule",
+      "example": {
+        "term": "Ich bin jetzt im ersten Lehrjahr.",
+        "tr": {
+          "uz": "Hozir birinchi oʻqish yilidaman.",
+          "uz-Cyrl": "Ҳозир биринчи ўқиш йилидаман.",
+          "ru": "Сейчас я на первом году обучения."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-berufsschule-betrieb",
+      "slug": "betrieb",
+      "term": "der Betrieb",
+      "icon": "building",
+      "article": "der",
+      "plural": "die Betriebe",
+      "tr": {
+        "uz": "korxona (ish joyi)",
+        "uz-Cyrl": "корхона (иш жойи)",
+        "ru": "предприятие"
+      },
+      "pron": {
+        "uz": "der be-trip",
+        "uz-Cyrl": "дер бе-трип",
+        "ru": "дер бе-трип"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "berufsschule",
+      "example": {
+        "term": "Morgen bin ich nicht in der Schule, sondern im Betrieb.",
+        "tr": {
+          "uz": "Ertaga maktabda emas, korxonada boʻlaman.",
+          "uz-Cyrl": "Эртага мактабда эмас, корхонада бўламан.",
+          "ru": "Завтра я не в школе, а на предприятии."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-berufsschule-mitschueler",
+      "slug": "mitschueler",
+      "term": "der Mitschüler",
+      "icon": "users",
+      "article": "der",
+      "plural": "die Mitschüler",
+      "tr": {
+        "uz": "sinfdosh",
+        "uz-Cyrl": "синфдош",
+        "ru": "одноклассник"
+      },
+      "pron": {
+        "uz": "der mit-shyu-ler",
+        "uz-Cyrl": "дер мит-шю-лер",
+        "ru": "дер мит-шю-лер"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "berufsschule",
+      "example": {
+        "term": "Mein Mitschüler erklärt mir die Aufgabe.",
+        "tr": {
+          "uz": "Sinfdoshim menga vazifani tushuntiryapti.",
+          "uz-Cyrl": "Синфдошим менга вазифани тушунтиряпти.",
+          "ru": "Мой одноклассник объясняет мне задание."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-transport-fahrkartenautomat",
+      "slug": "fahrkartenautomat",
+      "term": "der Fahrkartenautomat",
+      "icon": "train",
+      "article": "der",
+      "plural": "die Fahrkartenautomaten",
+      "tr": {
+        "uz": "chipta avtomati",
+        "uz-Cyrl": "чипта автомати",
+        "ru": "билетный автомат"
+      },
+      "pron": {
+        "uz": "der far-kar-ten-au-to-mat",
+        "uz-Cyrl": "дер фар-кар-тен-ау-то-мат",
+        "ru": "дер фар-кар-тен-ау-то-мат"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "transport",
+      "example": {
+        "term": "Der Fahrkartenautomat ist kaputt, ich kaufe die Fahrkarte in der App.",
+        "tr": {
+          "uz": "Chipta avtomati buzuq, chiptani ilovada sotib olaman.",
+          "uz-Cyrl": "Чипта автомати бузуқ, чиптани иловада сотиб оламан.",
+          "ru": "Билетный автомат сломан, я куплю билет в приложении."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-transport-abfahrt",
+      "slug": "abfahrt",
+      "term": "die Abfahrt",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Abfahrten",
+      "tr": {
+        "uz": "joʻnash",
+        "uz-Cyrl": "жўнаш",
+        "ru": "отправление"
+      },
+      "pron": {
+        "uz": "die ap-fart",
+        "uz-Cyrl": "ди ап-фарт",
+        "ru": "ди ап-фарт"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "transport",
+      "example": {
+        "term": "Wann ist die Abfahrt?",
+        "tr": {
+          "uz": "Qachon joʻnaydi?",
+          "uz-Cyrl": "Қачон жўнайди?",
+          "ru": "Когда отправление?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-transport-ankunft",
+      "slug": "ankunft",
+      "term": "die Ankunft",
+      "icon": "map-pin",
+      "article": "die",
+      "plural": "die Ankünfte",
+      "tr": {
+        "uz": "yetib kelish",
+        "uz-Cyrl": "етиб келиш",
+        "ru": "прибытие"
+      },
+      "pron": {
+        "uz": "die an-kunft",
+        "uz-Cyrl": "ди ан-кунфт",
+        "ru": "ди ан-кунфт"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "transport",
+      "example": {
+        "term": "Der Zug hat Verspätung, die Ankunft ist später.",
+        "tr": {
+          "uz": "Poyezd kechikyapti, u kechroq yetib keladi.",
+          "uz-Cyrl": "Поезд кечикяпти, у кечроқ етиб келади.",
+          "ru": "Поезд опаздывает, прибытие позже."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-transport-ausfallen",
+      "slug": "ausfallen",
+      "term": "ausfallen",
+      "icon": "bus",
+      "tr": {
+        "uz": "bekor boʻlmoq (reys)",
+        "uz-Cyrl": "бекор бўлмоқ (рейс)",
+        "ru": "отменяться (о рейсе)"
+      },
+      "pron": {
+        "uz": "aus-fa-len",
+        "uz-Cyrl": "аус-фа-лен",
+        "ru": "аус-фа-лен"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "transport",
+      "example": {
+        "term": "Heute fällt der Bus aus, ich nehme das Fahrrad.",
+        "tr": {
+          "uz": "Bugun avtobus qatnamaydi, men velosipedda boraman.",
+          "uz-Cyrl": "Бугун автобус қатнамайди, мен велосипедда бораман.",
+          "ru": "Сегодня автобус отменён, я поеду на велосипеде."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-transport-fahrgemeinschaft",
+      "slug": "fahrgemeinschaft",
+      "term": "die Fahrgemeinschaft",
+      "icon": "car",
+      "article": "die",
+      "plural": "die Fahrgemeinschaften",
+      "tr": {
+        "uz": "bir mashinada birga yurish",
+        "uz-Cyrl": "бир машинада бирга юриш",
+        "ru": "совместные поездки на одной машине"
+      },
+      "pron": {
+        "uz": "die far-ge-mayn-shaft",
+        "uz-Cyrl": "ди фар-ге-майн-шафт",
+        "ru": "ди фар-ге-майн-шафт"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "transport",
+      "example": {
+        "term": "Wir fahren in einer Fahrgemeinschaft zur Arbeit.",
+        "tr": {
+          "uz": "Ishga bir mashinada birga boramiz.",
+          "uz-Cyrl": "Ишга бир машинада бирга борамиз.",
+          "ru": "Мы ездим на работу вместе на одной машине."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-idoralar-mietvertrag",
+      "slug": "mietvertrag",
+      "term": "der Mietvertrag",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Mietverträge",
+      "tr": {
+        "uz": "ijara shartnomasi",
+        "uz-Cyrl": "ижара шартномаси",
+        "ru": "договор аренды"
+      },
+      "pron": {
+        "uz": "der mit-fer-trak",
+        "uz-Cyrl": "дер мит-фер-трак",
+        "ru": "дер мит-фер-трак"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "idoralar",
+      "example": {
+        "term": "Lesen Sie den Mietvertrag genau, bevor Sie unterschreiben.",
+        "tr": {
+          "uz": "Imzolashdan oldin ijara shartnomasini diqqat bilan oʻqing.",
+          "uz-Cyrl": "Имзолашдан олдин ижара шартномасини диққат билан ўқинг.",
+          "ru": "Внимательно прочитайте договор аренды, прежде чем подписать."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-idoralar-nebenkosten",
+      "slug": "nebenkosten",
+      "term": "die Nebenkosten",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "kommunal toʻlovlar",
+        "uz-Cyrl": "коммунал тўловлар",
+        "ru": "коммунальные платежи"
+      },
+      "pron": {
+        "uz": "die ne-ben-kos-ten",
+        "uz-Cyrl": "ди не-бен-кос-тен",
+        "ru": "ди не-бен-кос-тен"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "idoralar",
+      "example": {
+        "term": "Sind die Nebenkosten in der Miete enthalten?",
+        "tr": {
+          "uz": "Kommunal toʻlovlar ijara haqiga kiradimi?",
+          "uz-Cyrl": "Коммунал тўловлар ижара ҳақига кирадими?",
+          "ru": "Коммунальные платежи входят в аренду?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-idoralar-buergeramt",
+      "slug": "buergeramt",
+      "term": "das Bürgeramt",
+      "icon": "building",
+      "article": "das",
+      "plural": "die Bürgerämter",
+      "tr": {
+        "uz": "fuqarolar idorasi",
+        "uz-Cyrl": "фуқаролар идораси",
+        "ru": "гражданское ведомство (бюргерамт)"
+      },
+      "pron": {
+        "uz": "das byur-ger-amt",
+        "uz-Cyrl": "дас бюр-гер-амт",
+        "ru": "дас бюр-гер-амт"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "idoralar",
+      "example": {
+        "term": "Für die Anmeldung brauche ich einen Termin beim Bürgeramt.",
+        "tr": {
+          "uz": "Roʻyxatdan oʻtish uchun fuqarolar idorasiga yozilishim kerak.",
+          "uz-Cyrl": "Рўйхатдан ўтиш учун фуқаролар идорасига ёзилишим керак.",
+          "ru": "Для регистрации мне нужна запись в бюргерамт."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-idoralar-meldebescheinigung",
+      "slug": "meldebescheinigung",
+      "term": "die Meldebescheinigung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Meldebescheinigungen",
+      "tr": {
+        "uz": "roʻyxatdan oʻtganlik maʼlumotnomasi",
+        "uz-Cyrl": "рўйхатдан ўтганлик маълумотномаси",
+        "ru": "справка о регистрации"
+      },
+      "pron": {
+        "uz": "die mel-de-be-shay-ni-gung",
+        "uz-Cyrl": "ди мель-де-бе-шай-ни-гунг",
+        "ru": "ди мель-де-бе-шай-ни-гунг"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "idoralar",
+      "example": {
+        "term": "Die Bank möchte meine Meldebescheinigung sehen.",
+        "tr": {
+          "uz": "Bank roʻyxatdan oʻtganlik maʼlumotnomamni koʻrmoqchi.",
+          "uz-Cyrl": "Банк рўйхатдан ўтганлик маълумотномамни кўрмоқчи.",
+          "ru": "Банк хочет увидеть мою справку о регистрации."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-idoralar-hausordnung",
+      "slug": "hausordnung",
+      "term": "die Hausordnung",
+      "icon": "home",
+      "article": "die",
+      "plural": "die Hausordnungen",
+      "tr": {
+        "uz": "uy tartib qoidalari",
+        "uz-Cyrl": "уй тартиб қоидалари",
+        "ru": "правила дома"
+      },
+      "pron": {
+        "uz": "die haus-ord-nung",
+        "uz-Cyrl": "ди хаус-орд-нунг",
+        "ru": "ди хаус-орд-нунг"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "idoralar",
+      "example": {
+        "term": "In der Hausordnung steht, wann Ruhezeit ist.",
+        "tr": {
+          "uz": "Uy tartib qoidalarida qachon sokinlik vaqti ekani yozilgan.",
+          "uz-Cyrl": "Уй тартиб қоидаларида қачон сокинлик вақти экани ёзилган.",
+          "ru": "В правилах дома написано, когда время тишины."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-ich-bin-neu-hier",
+      "slug": "ich-bin-neu-hier",
+      "term": "Ich bin neu hier.",
+      "icon": "user",
+      "tr": {
+        "uz": "Men bu yerda yangiman.",
+        "uz-Cyrl": "Мен бу ерда янгиман.",
+        "ru": "Я здесь новенький."
+      },
+      "pron": {
+        "uz": "ix bin noy hir",
+        "uz-Cyrl": "их бин ной хир",
+        "ru": "их бин ной хир"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Hallo, ich bin neu hier und arbeite im Lager.",
+        "tr": {
+          "uz": "Salom, men bu yerda yangiman, omborda ishlayman.",
+          "uz-Cyrl": "Салом, мен бу ерда янгиман, омборда ишлайман.",
+          "ru": "Здравствуйте, я здесь новенький, работаю на складе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-ich-komme-aus-usbekistan",
+      "slug": "ich-komme-aus-usbekistan",
+      "term": "Ich komme aus Usbekistan.",
+      "icon": "flag",
+      "tr": {
+        "uz": "Men Oʻzbekistondanman.",
+        "uz-Cyrl": "Мен Ўзбекистонданман.",
+        "ru": "Я из Узбекистана."
+      },
+      "pron": {
+        "uz": "ix ko-me aus uz-be-kis-tan",
+        "uz-Cyrl": "их ко-ме аус уз-бе-кис-тан",
+        "ru": "их ко-ме аус уз-бе-кис-тан"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Ich komme aus Usbekistan, aus Samarkand.",
+        "tr": {
+          "uz": "Men Oʻzbekistondanman, Samarqanddan.",
+          "uz-Cyrl": "Мен Ўзбекистонданман, Самарқанддан.",
+          "ru": "Я из Узбекистана, из Самарканда."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-pausenraum",
+      "slug": "pausenraum",
+      "term": "der Pausenraum",
+      "icon": "coffee",
+      "article": "der",
+      "plural": "die Pausenräume",
+      "tr": {
+        "uz": "dam olish xonasi",
+        "uz-Cyrl": "дам олиш хонаси",
+        "ru": "комната отдыха"
+      },
+      "pron": {
+        "uz": "der pau-zen-raum",
+        "uz-Cyrl": "дер пау-зен-раум",
+        "ru": "дер пау-зен-раум"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Wir trinken Kaffee im Pausenraum.",
+        "tr": {
+          "uz": "Biz dam olish xonasida qahva ichamiz.",
+          "uz-Cyrl": "Биз дам олиш хонасида қаҳва ичамиз.",
+          "ru": "Мы пьём кофе в комнате отдыха."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-siezen",
+      "slug": "siezen",
+      "term": "siezen",
+      "icon": "messages",
+      "tr": {
+        "uz": "«Sie» deb (siz deb) murojaat qilmoq",
+        "uz-Cyrl": "«Sie» деб (сиз деб) мурожаат қилмоқ",
+        "ru": "обращаться на «вы»"
+      },
+      "pron": {
+        "uz": "zi-tsen",
+        "uz-Cyrl": "зи-цен",
+        "ru": "зи-цен"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "In unserer Firma siezen wir den Chef.",
+        "tr": {
+          "uz": "Bizning firmada boshliqqa «Sie» deb murojaat qilamiz.",
+          "uz-Cyrl": "Бизнинг фирмада бошлиққа «Sie» деб мурожаат қиламиз.",
+          "ru": "В нашей фирме к начальнику обращаются на «вы»."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-tanishuv-schoenes-wochenende",
+      "slug": "schoenes-wochenende",
+      "term": "Schönes Wochenende!",
+      "icon": "mood-smile",
+      "tr": {
+        "uz": "Dam olish kunlaringiz yaxshi oʻtsin!",
+        "uz-Cyrl": "Дам олиш кунларингиз яхши ўтсин!",
+        "ru": "Хороших выходных!"
+      },
+      "pron": {
+        "uz": "shyo-nes vo-xen-en-de",
+        "uz-Cyrl": "шё-нес во-хен-эн-де",
+        "ru": "шё-нес во-хен-эн-де"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "tanishuv",
+      "example": {
+        "term": "Tschüss und schönes Wochenende!",
+        "tr": {
+          "uz": "Xayr, dam olish kunlaringiz yaxshi oʻtsin!",
+          "uz-Cyrl": "Хайр, дам олиш кунларингиз яхши ўтсин!",
+          "ru": "Пока, хороших выходных!"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-durchwahl",
+      "slug": "durchwahl",
+      "term": "die Durchwahl",
+      "icon": "phone",
+      "article": "die",
+      "plural": "die Durchwahlen",
+      "tr": {
+        "uz": "ichki raqam",
+        "uz-Cyrl": "ички рақам",
+        "ru": "добавочный номер"
+      },
+      "pron": {
+        "uz": "die durx-val",
+        "uz-Cyrl": "ди дурх-валь",
+        "ru": "ди дурх-валь"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Können Sie mir bitte die Durchwahl von Frau Weber geben?",
+        "tr": {
+          "uz": "Iltimos, Veber xonimning ichki raqamini bera olasizmi?",
+          "uz-Cyrl": "Илтимос, Вебер хонимнинг ички рақамини бера оласизми?",
+          "ru": "Можете дать мне добавочный номер госпожи Вебер?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-worum-geht-es",
+      "slug": "worum-geht-es",
+      "term": "Worum geht es?",
+      "icon": "help",
+      "tr": {
+        "uz": "Gap nima haqida?",
+        "uz-Cyrl": "Гап нима ҳақида?",
+        "ru": "О чём речь?"
+      },
+      "pron": {
+        "uz": "vo-rum get es",
+        "uz-Cyrl": "во-рум гет эс",
+        "ru": "во-рум гет эс"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Guten Tag, Personalabteilung. Worum geht es?",
+        "tr": {
+          "uz": "Xayrli kun, kadrlar boʻlimi. Gap nima haqida?",
+          "uz-Cyrl": "Хайрли кун, кадрлар бўлими. Гап нима ҳақида?",
+          "ru": "Добрый день, отдел кадров. О чём речь?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-ich-rufe-spaeter-noch-einmal-an",
+      "slug": "ich-rufe-spaeter-noch-einmal-an",
+      "term": "Ich rufe später noch einmal an.",
+      "icon": "phone",
+      "tr": {
+        "uz": "Keyinroq yana qoʻngʻiroq qilaman.",
+        "uz-Cyrl": "Кейинроқ яна қўнғироқ қиламан.",
+        "ru": "Я перезвоню позже."
+      },
+      "pron": {
+        "uz": "ix ru-fe shpe-ter nox ayn-mal an",
+        "uz-Cyrl": "их ру-фе шпе-тер нох айн-маль ан",
+        "ru": "их ру-фе шпе-тер нох айн-маль ан"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Er ist nicht da? Gut, ich rufe später noch einmal an.",
+        "tr": {
+          "uz": "U yoʻqmi? Mayli, keyinroq yana qoʻngʻiroq qilaman.",
+          "uz-Cyrl": "У йўқми? Майли, кейинроқ яна қўнғироқ қиламан.",
+          "ru": "Его нет? Хорошо, я позвоню ещё раз позже."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-verbindung",
+      "slug": "verbindung",
+      "term": "die Verbindung",
+      "icon": "wave-sine",
+      "article": "die",
+      "plural": "die Verbindungen",
+      "tr": {
+        "uz": "aloqa",
+        "uz-Cyrl": "алоқа",
+        "ru": "связь"
+      },
+      "pron": {
+        "uz": "die fer-bin-dung",
+        "uz-Cyrl": "ди фер-бин-дунг",
+        "ru": "ди фер-бин-дунг"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Die Verbindung ist schlecht, ich höre Sie kaum.",
+        "tr": {
+          "uz": "Aloqa yomon, sizni deyarli eshitmayapman.",
+          "uz-Cyrl": "Алоқа ёмон, сизни деярли эшитмаяпман.",
+          "ru": "Связь плохая, я вас почти не слышу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-telefon-eine-nachricht-hinterlassen",
+      "slug": "eine-nachricht-hinterlassen",
+      "term": "eine Nachricht hinterlassen",
+      "icon": "message-circle",
+      "tr": {
+        "uz": "xabar qoldirmoq",
+        "uz-Cyrl": "хабар қолдирмоқ",
+        "ru": "оставить сообщение"
+      },
+      "pron": {
+        "uz": "ay-ne nax-rixt hin-ter-la-sen",
+        "uz-Cyrl": "ай-не нах-рихт хин-тер-ла-сен",
+        "ru": "ай-не нах-рихт хин-тер-ла-сен"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "telefon",
+      "example": {
+        "term": "Möchten Sie eine Nachricht hinterlassen?",
+        "tr": {
+          "uz": "Xabar qoldirmoqchimisiz?",
+          "uz-Cyrl": "Хабар қолдирмоқчимисиз?",
+          "ru": "Хотите оставить сообщение?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-arbeitszeugnis",
+      "slug": "arbeitszeugnis",
+      "term": "das Arbeitszeugnis",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "die Arbeitszeugnisse",
+      "tr": {
+        "uz": "ish joyidan tavsifnoma",
+        "uz-Cyrl": "иш жойидан тавсифнома",
+        "ru": "характеристика с места работы"
+      },
+      "pron": {
+        "uz": "das ar-bayts-tsoyk-nis",
+        "uz-Cyrl": "дас ар-байтс-цойк-нис",
+        "ru": "дас ар-байтс-цойк-нис"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Mein alter Arbeitgeber schreibt mir ein Arbeitszeugnis.",
+        "tr": {
+          "uz": "Eski ish beruvchim menga tavsifnoma yozib beradi.",
+          "uz-Cyrl": "Эски иш берувчим менга тавсифнома ёзиб беради.",
+          "ru": "Мой бывший работодатель пишет мне характеристику."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-anerkennung",
+      "slug": "anerkennung",
+      "term": "die Anerkennung",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Anerkennungen",
+      "tr": {
+        "uz": "(diplomni) tan olish",
+        "uz-Cyrl": "(дипломни) тан олиш",
+        "ru": "признание (диплома)"
+      },
+      "pron": {
+        "uz": "die an-er-ke-nung",
+        "uz-Cyrl": "ди ан-эр-ке-нунг",
+        "ru": "ди ан-эр-ке-нунг"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Für meinen Beruf brauche ich die Anerkennung meines Abschlusses.",
+        "tr": {
+          "uz": "Kasbim uchun diplomimni tan oldirishim kerak.",
+          "uz-Cyrl": "Касбим учун дипломимни тан олдиришим керак.",
+          "ru": "Для моей профессии мне нужно признание моего диплома."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-sprachkurs",
+      "slug": "sprachkurs",
+      "term": "der Sprachkurs",
+      "icon": "book",
+      "article": "der",
+      "plural": "die Sprachkurse",
+      "tr": {
+        "uz": "til kursi",
+        "uz-Cyrl": "тил курси",
+        "ru": "языковой курс"
+      },
+      "pron": {
+        "uz": "der shprax-kurs",
+        "uz-Cyrl": "дер шпрах-курс",
+        "ru": "дер шпрах-курс"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Abends besuche ich einen Sprachkurs.",
+        "tr": {
+          "uz": "Kechqurunlari til kursiga qatnayman.",
+          "uz-Cyrl": "Кечқурунлари тил курсига қатнайман.",
+          "ru": "По вечерам я хожу на языковой курс."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-zertifikat",
+      "slug": "zertifikat",
+      "term": "das Zertifikat",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "die Zertifikate",
+      "tr": {
+        "uz": "sertifikat",
+        "uz-Cyrl": "сертификат",
+        "ru": "сертификат"
+      },
+      "pron": {
+        "uz": "das tser-ti-fi-kat",
+        "uz-Cyrl": "дас цер-ти-фи-кат",
+        "ru": "дас цер-ти-фи-кат"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Ich habe ein Zertifikat für Deutsch A2.",
+        "tr": {
+          "uz": "Menda nemis tili boʻyicha A2 sertifikati bor.",
+          "uz-Cyrl": "Менда немис тили бўйича A2 сертификати бор.",
+          "ru": "У меня есть сертификат по немецкому языку A2."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-qidirish-probearbeiten",
+      "slug": "probearbeiten",
+      "term": "das Probearbeiten",
+      "icon": "briefcase",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "sinov tariqasida ishlash",
+        "uz-Cyrl": "синов тариқасида ишлаш",
+        "ru": "пробный рабочий день"
+      },
+      "pron": {
+        "uz": "das pro-be-ar-bay-ten",
+        "uz-Cyrl": "дас про-бе-ар-бай-тен",
+        "ru": "дас про-бе-ар-бай-тен"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-qidirish",
+      "example": {
+        "term": "Nächste Woche habe ich ein Probearbeiten im Hotel.",
+        "tr": {
+          "uz": "Kelasi hafta mehmonxonada sinov tariqasida ishlayman.",
+          "uz-Cyrl": "Келаси ҳафта меҳмонхонада синов тариқасида ишлайман.",
+          "ru": "На следующей неделе у меня пробный рабочий день в отеле."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-ich-habe-einen-fehler-gemacht",
+      "slug": "ich-habe-einen-fehler-gemacht",
+      "term": "Ich habe einen Fehler gemacht.",
+      "icon": "alert-octagon",
+      "tr": {
+        "uz": "Men xato qildim.",
+        "uz-Cyrl": "Мен хато қилдим.",
+        "ru": "Я ошибся."
+      },
+      "pron": {
+        "uz": "ix ha-be ay-nen fe-ler ge-maxt",
+        "uz-Cyrl": "их ха-бе ай-нен фе-лер ге-махт",
+        "ru": "их ха-бе ай-нен фе-лер ге-махт"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Ich habe einen Fehler gemacht, das tut mir leid.",
+        "tr": {
+          "uz": "Men xato qildim, kechirasiz.",
+          "uz-Cyrl": "Мен хато қилдим, кечирасиз.",
+          "ru": "Я ошибся, извините."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-ursache",
+      "slug": "ursache",
+      "term": "die Ursache",
+      "icon": "help",
+      "article": "die",
+      "plural": "die Ursachen",
+      "tr": {
+        "uz": "sabab",
+        "uz-Cyrl": "сабаб",
+        "ru": "причина"
+      },
+      "pron": {
+        "uz": "die ur-za-xe",
+        "uz-Cyrl": "ди ур-за-хе",
+        "ru": "ди ур-за-хе"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Wir suchen noch die Ursache für den Fehler.",
+        "tr": {
+          "uz": "Biz hali xatoning sababini qidiryapmiz.",
+          "uz-Cyrl": "Биз ҳали хатонинг сабабини қидиряпмиз.",
+          "ru": "Мы ещё ищем причину ошибки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-zustaendig",
+      "slug": "zustaendig",
+      "term": "zuständig",
+      "icon": "user",
+      "tr": {
+        "uz": "masʼul",
+        "uz-Cyrl": "масъул",
+        "ru": "ответственный"
+      },
+      "pron": {
+        "uz": "tsu-shten-dix",
+        "uz-Cyrl": "цу-штен-дих",
+        "ru": "цу-штен-дих"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Wer ist dafür zuständig?",
+        "tr": {
+          "uz": "Bunga kim masʼul?",
+          "uz-Cyrl": "Бунга ким масъул?",
+          "ru": "Кто за это отвечает?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-reparatur",
+      "slug": "reparatur",
+      "term": "die Reparatur",
+      "icon": "hammer",
+      "article": "die",
+      "plural": "die Reparaturen",
+      "tr": {
+        "uz": "taʼmir",
+        "uz-Cyrl": "таъмир",
+        "ru": "ремонт"
+      },
+      "pron": {
+        "uz": "die re-pa-ra-tur",
+        "uz-Cyrl": "ди ре-па-ра-тур",
+        "ru": "ди ре-па-ра-тур"
+      },
+      "level": "A2",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Die Reparatur dauert bis morgen.",
+        "tr": {
+          "uz": "Taʼmir ertagacha davom etadi.",
+          "uz-Cyrl": "Таъмир эртагача давом этади.",
+          "ru": "Ремонт продлится до завтра."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-muammo-das-ist-gefaehrlich",
+      "slug": "das-ist-gefaehrlich",
+      "term": "Das ist gefährlich!",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Bu xavfli!",
+        "uz-Cyrl": "Бу хавфли!",
+        "ru": "Это опасно!"
+      },
+      "pron": {
+        "uz": "das ist ge-fer-lix",
+        "uz-Cyrl": "дас ист ге-фер-лих",
+        "ru": "дас ист ге-фер-лих"
+      },
+      "level": "A1",
+      "field": "general",
+      "jobs": [],
+      "situation": "muammo",
+      "example": {
+        "term": "Das Kabel liegt offen, das ist gefährlich!",
+        "tr": {
+          "uz": "Sim ochiq yotibdi, bu xavfli!",
+          "uz-Cyrl": "Сим очиқ ётибди, бу хавфли!",
+          "ru": "Кабель лежит открыто, это опасно!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
