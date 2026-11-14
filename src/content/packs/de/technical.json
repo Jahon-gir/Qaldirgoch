@@ -7539,6 +7539,2116 @@
       "safety": true,
       "status": "review",
       "source": "Claude yozdi (2026-11-13); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-asboblar-bohrer",
+      "slug": "bohrer",
+      "term": "der Bohrer",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Bohrer",
+      "tr": {
+        "uz": "parma (burgʻi)",
+        "uz-Cyrl": "парма (бурғи)",
+        "ru": "сверло"
+      },
+      "pron": {
+        "uz": "der bo-rer",
+        "uz-Cyrl": "дер бо-рер",
+        "ru": "дер бо-рер"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "asboblar",
+      "example": {
+        "term": "Ich brauche einen dünneren Bohrer.",
+        "tr": {
+          "uz": "Menga ingichkaroq parma kerak.",
+          "uz-Cyrl": "Менга ингичкароқ парма керак.",
+          "ru": "Мне нужно сверло потоньше."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-asboblar-feile",
+      "slug": "feile",
+      "term": "die Feile",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Feilen",
+      "tr": {
+        "uz": "egov",
+        "uz-Cyrl": "эгов",
+        "ru": "напильник"
+      },
+      "pron": {
+        "uz": "die fay-le",
+        "uz-Cyrl": "ди фай-ле",
+        "ru": "ди фай-ле"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "asboblar",
+      "example": {
+        "term": "Mit der Feile mache ich die Kante glatt.",
+        "tr": {
+          "uz": "Egov bilan qirrani silliqlayman.",
+          "uz-Cyrl": "Эгов билан қиррани силлиқлайман.",
+          "ru": "Напильником я делаю край гладким."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-asboblar-cuttermesser",
+      "slug": "cuttermesser",
+      "term": "das Cuttermesser",
+      "icon": "tools",
+      "article": "das",
+      "plural": "die Cuttermesser",
+      "tr": {
+        "uz": "qurilish pichogʻi",
+        "uz-Cyrl": "қурилиш пичоғи",
+        "ru": "строительный нож"
+      },
+      "pron": {
+        "uz": "das ka-ter-me-ser",
+        "uz-Cyrl": "дас ка-тер-ме-сер",
+        "ru": "дас ка-тер-ме-сер"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "asboblar",
+      "example": {
+        "term": "Schneiden Sie die Folie mit dem Cuttermesser.",
+        "tr": {
+          "uz": "Plyonkani qurilish pichogʻi bilan kesing.",
+          "uz-Cyrl": "Плёнкани қурилиш пичоғи билан кесинг.",
+          "ru": "Разрежьте плёнку строительным ножом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-asboblar-akku",
+      "slug": "akku",
+      "term": "der Akku",
+      "icon": "bolt",
+      "article": "der",
+      "plural": "die Akkus",
+      "tr": {
+        "uz": "akkumulyator",
+        "uz-Cyrl": "аккумулятор",
+        "ru": "аккумулятор"
+      },
+      "pron": {
+        "uz": "der a-ku",
+        "uz-Cyrl": "дер а-ку",
+        "ru": "дер а-ку"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "asboblar",
+      "example": {
+        "term": "Der Akku ist leer. Ich lade ihn auf.",
+        "tr": {
+          "uz": "Akkumulyator tugadi. Uni quvvatlayman.",
+          "uz-Cyrl": "Аккумулятор тугади. Уни қувватлайман.",
+          "ru": "Аккумулятор сел. Я его заряжу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-asboblar-stumpf",
+      "slug": "stumpf",
+      "term": "stumpf",
+      "icon": "tools",
+      "tr": {
+        "uz": "oʻtmas",
+        "uz-Cyrl": "ўтмас",
+        "ru": "тупой"
+      },
+      "pron": {
+        "uz": "shtumpf",
+        "uz-Cyrl": "штумпф",
+        "ru": "штумпф"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "asboblar",
+      "example": {
+        "term": "Die Säge ist stumpf, wir brauchen eine neue.",
+        "tr": {
+          "uz": "Arra oʻtmas, bizga yangisi kerak.",
+          "uz-Cyrl": "Арра ўтмас, бизга янгиси керак.",
+          "ru": "Пила тупая, нам нужна новая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-einschalten",
+      "slug": "einschalten",
+      "term": "einschalten",
+      "icon": "power",
+      "tr": {
+        "uz": "yoqmoq",
+        "uz-Cyrl": "ёқмоқ",
+        "ru": "включать"
+      },
+      "pron": {
+        "uz": "ayn-shal-ten",
+        "uz-Cyrl": "айн-шаль-тен",
+        "ru": "айн-шаль-тен"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr",
+      "example": {
+        "term": "Darf ich das Licht wieder einschalten?",
+        "tr": {
+          "uz": "Chiroqni yana yoqsam boʻladimi?",
+          "uz-Cyrl": "Чироқни яна ёқсам бўладими?",
+          "ru": "Можно снова включить свет?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-verlaengerungskabel",
+      "slug": "verlaengerungskabel",
+      "term": "das Verlängerungskabel",
+      "icon": "plug",
+      "article": "das",
+      "plural": "die Verlängerungskabel",
+      "tr": {
+        "uz": "uzaytirgich",
+        "uz-Cyrl": "узайтиргич",
+        "ru": "удлинитель"
+      },
+      "pron": {
+        "uz": "das fer-len-ge-rungs-ka-bel",
+        "uz-Cyrl": "дас фер-лен-ге-рунгс-ка-бель",
+        "ru": "дас фер-лен-ге-рунгс-ка-бель"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr",
+      "example": {
+        "term": "Wir brauchen ein Verlängerungskabel für die Bohrmaschine.",
+        "tr": {
+          "uz": "Drel uchun uzaytirgich kerak.",
+          "uz-Cyrl": "Дрел учун узайтиргич керак.",
+          "ru": "Нам нужен удлинитель для дрели."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-stromschlag",
+      "slug": "stromschlag",
+      "term": "der Stromschlag",
+      "icon": "bolt",
+      "article": "der",
+      "plural": "die Stromschläge",
+      "tr": {
+        "uz": "tok urishi",
+        "uz-Cyrl": "ток уриши",
+        "ru": "удар током"
+      },
+      "pron": {
+        "uz": "der shtrom-shlak",
+        "uz-Cyrl": "дер штром-шлак",
+        "ru": "дер штром-шлак"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr",
+      "example": {
+        "term": "Ein Stromschlag kann tödlich sein.",
+        "tr": {
+          "uz": "Tok urishi oʻlimga olib kelishi mumkin.",
+          "uz-Cyrl": "Ток уриши ўлимга олиб келиши мумкин.",
+          "ru": "Удар током может быть смертельным."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-gluehbirne",
+      "slug": "gluehbirne",
+      "term": "die Glühbirne",
+      "icon": "bulb",
+      "article": "die",
+      "plural": "die Glühbirnen",
+      "tr": {
+        "uz": "lampochka",
+        "uz-Cyrl": "лампочка",
+        "ru": "лампочка"
+      },
+      "pron": {
+        "uz": "die glyu-bir-ne",
+        "uz-Cyrl": "ди глю-бир-не",
+        "ru": "ди глю-бир-не"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr",
+      "example": {
+        "term": "Die Glühbirne im Flur ist kaputt.",
+        "tr": {
+          "uz": "Yoʻlakdagi lampochka kuyib qolgan.",
+          "uz-Cyrl": "Йўлакдаги лампочка куйиб қолган.",
+          "ru": "Лампочка в коридоре перегорела."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-spannungsfrei",
+      "slug": "spannungsfrei",
+      "term": "spannungsfrei",
+      "icon": "power",
+      "tr": {
+        "uz": "kuchlanishsiz (tok oʻchirilgan)",
+        "uz-Cyrl": "кучланишсиз (ток ўчирилган)",
+        "ru": "обесточенный"
+      },
+      "pron": {
+        "uz": "shpa-nungs-fray",
+        "uz-Cyrl": "шпа-нунгс-фрай",
+        "ru": "шпа-нунгс-фрай"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr",
+      "example": {
+        "term": "Arbeiten Sie nur, wenn alles spannungsfrei ist.",
+        "tr": {
+          "uz": "Faqat hamma joyda tok oʻchirilgan boʻlsagina ishlang.",
+          "uz-Cyrl": "Фақат ҳамма жойда ток ўчирилган бўлсагина ишланг.",
+          "ru": "Работайте, только когда всё обесточено."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-qurilish-moertel",
+      "slug": "moertel",
+      "term": "der Mörtel",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Mörtel",
+      "tr": {
+        "uz": "qorishma (rastvor)",
+        "uz-Cyrl": "қоришма (раствор)",
+        "ru": "строительный раствор"
+      },
+      "pron": {
+        "uz": "der myor-tel",
+        "uz-Cyrl": "дер мёр-тель",
+        "ru": "дер мёр-тель"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Mischen Sie bitte frischen Mörtel.",
+        "tr": {
+          "uz": "Iltimos, yangi qorishma qoring.",
+          "uz-Cyrl": "Илтимос, янги қоришма қоринг.",
+          "ru": "Замешайте, пожалуйста, свежий раствор."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-qurilish-eimer",
+      "slug": "eimer",
+      "term": "der Eimer",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Eimer",
+      "tr": {
+        "uz": "chelak",
+        "uz-Cyrl": "челак",
+        "ru": "ведро"
+      },
+      "pron": {
+        "uz": "der ay-mer",
+        "uz-Cyrl": "дер ай-мер",
+        "ru": "дер ай-мер"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Bring mir bitte einen Eimer Wasser.",
+        "tr": {
+          "uz": "Bir chelak suv olib kel, iltimos.",
+          "uz-Cyrl": "Бир челак сув олиб кел, илтимос.",
+          "ru": "Принеси мне, пожалуйста, ведро воды."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-qurilish-absperrung",
+      "slug": "absperrung",
+      "term": "die Absperrung",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Absperrungen",
+      "tr": {
+        "uz": "toʻsiq (ogohlantirish tasmasi)",
+        "uz-Cyrl": "тўсиқ (огоҳлантириш тасмаси)",
+        "ru": "ограждение"
+      },
+      "pron": {
+        "uz": "die ap-shpe-rung",
+        "uz-Cyrl": "ди ап-шпе-рунг",
+        "ru": "ди ап-шпе-рунг"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Gehen Sie nicht hinter die Absperrung.",
+        "tr": {
+          "uz": "Toʻsiqdan nariga oʻtmang.",
+          "uz-Cyrl": "Тўсиқдан нарига ўтманг.",
+          "ru": "Не заходите за ограждение."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-qurilish-abladen",
+      "slug": "abladen",
+      "term": "abladen",
+      "icon": "truck",
+      "tr": {
+        "uz": "tushirmoq (yukni)",
+        "uz-Cyrl": "туширмоқ (юкни)",
+        "ru": "выгружать"
+      },
+      "pron": {
+        "uz": "ap-la-den",
+        "uz-Cyrl": "ап-ла-ден",
+        "ru": "ап-ла-ден"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Wir laden die Steine vom Lkw ab.",
+        "tr": {
+          "uz": "Toshlarni yuk mashinasidan tushiramiz.",
+          "uz-Cyrl": "Тошларни юк машинасидан туширамиз.",
+          "ru": "Мы выгружаем камни из грузовика."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-qurilish-bauleiter",
+      "slug": "bauleiter",
+      "term": "der Bauleiter",
+      "icon": "helmet",
+      "article": "der",
+      "plural": "die Bauleiter",
+      "tr": {
+        "uz": "prorab (qurilish rahbari)",
+        "uz-Cyrl": "прораб (қурилиш раҳбари)",
+        "ru": "прораб"
+      },
+      "pron": {
+        "uz": "der bau-lay-ter",
+        "uz-Cyrl": "дер бау-лай-тер",
+        "ru": "дер бау-лай-тер"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "qurilish",
+      "example": {
+        "term": "Der Bauleiter kommt um acht Uhr.",
+        "tr": {
+          "uz": "Prorab soat sakkizda keladi.",
+          "uz-Cyrl": "Прораб соат саккизда келади.",
+          "ru": "Прораб приходит в восемь часов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-santexnika-toilette",
+      "slug": "toilette",
+      "term": "die Toilette",
+      "icon": "toilet-paper",
+      "article": "die",
+      "plural": "die Toiletten",
+      "tr": {
+        "uz": "unitaz (hojatxona)",
+        "uz-Cyrl": "унитаз (ҳожатхона)",
+        "ru": "унитаз (туалет)"
+      },
+      "pron": {
+        "uz": "die to-a-le-te",
+        "uz-Cyrl": "ди то-а-ле-те",
+        "ru": "ди то-а-ле-те"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "santexnika",
+      "example": {
+        "term": "Die Toilette spült nicht richtig.",
+        "tr": {
+          "uz": "Unitaz suvni yaxshi tushirmayapti.",
+          "uz-Cyrl": "Унитаз сувни яхши туширмаяпти.",
+          "ru": "Унитаз плохо смывает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-santexnika-verstopft",
+      "slug": "verstopft",
+      "term": "verstopft",
+      "icon": "droplet",
+      "tr": {
+        "uz": "tiqilib qolgan",
+        "uz-Cyrl": "тиқилиб қолган",
+        "ru": "засорённый"
+      },
+      "pron": {
+        "uz": "fer-shtopft",
+        "uz-Cyrl": "фер-штопфт",
+        "ru": "фер-штопфт"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "santexnika",
+      "example": {
+        "term": "Das Rohr in der Küche ist verstopft.",
+        "tr": {
+          "uz": "Oshxonadagi quvur tiqilib qolgan.",
+          "uz-Cyrl": "Ошхонадаги қувур тиқилиб қолган.",
+          "ru": "Труба на кухне засорилась."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-santexnika-tropfen",
+      "slug": "tropfen",
+      "term": "tropfen",
+      "icon": "droplet",
+      "tr": {
+        "uz": "tomchilamoq",
+        "uz-Cyrl": "томчиламоқ",
+        "ru": "капать"
+      },
+      "pron": {
+        "uz": "trop-fen",
+        "uz-Cyrl": "троп-фен",
+        "ru": "троп-фен"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "santexnika",
+      "example": {
+        "term": "Der Wasserhahn im Bad tropft seit gestern.",
+        "tr": {
+          "uz": "Vannaxonadagi joʻmrak kechadan beri tomchilayapti.",
+          "uz-Cyrl": "Ваннахонадаги жўмрак кечадан бери томчилаяпти.",
+          "ru": "Кран в ванной капает со вчерашнего дня."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-santexnika-wasserschaden",
+      "slug": "wasserschaden",
+      "term": "der Wasserschaden",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Wasserschäden",
+      "tr": {
+        "uz": "suv oqishidan zarar",
+        "uz-Cyrl": "сув оқишидан зарар",
+        "ru": "ущерб от протечки"
+      },
+      "pron": {
+        "uz": "der va-ser-sha-den",
+        "uz-Cyrl": "дер ва-сер-ша-ден",
+        "ru": "дер ва-сер-ша-ден"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "santexnika",
+      "example": {
+        "term": "Nach dem Wasserschaden ist die Wand noch nass.",
+        "tr": {
+          "uz": "Suv oqqanidan keyin devor hali ham hoʻl.",
+          "uz-Cyrl": "Сув оққанидан кейин девор ҳали ҳам ҳўл.",
+          "ru": "После протечки стена ещё мокрая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-santexnika-rohrzange",
+      "slug": "rohrzange",
+      "term": "die Rohrzange",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Rohrzangen",
+      "tr": {
+        "uz": "quvur kaliti (gaz kalit)",
+        "uz-Cyrl": "қувур калити (газ калит)",
+        "ru": "трубный ключ"
+      },
+      "pron": {
+        "uz": "die ror-tsan-ge",
+        "uz-Cyrl": "ди рор-цан-ге",
+        "ru": "ди рор-цан-ге"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "santexnika",
+      "example": {
+        "term": "Halten Sie das Rohr mit der Rohrzange fest.",
+        "tr": {
+          "uz": "Quvurni quvur kaliti bilan mahkam ushlang.",
+          "uz-Cyrl": "Қувурни қувур калити билан маҳкам ушланг.",
+          "ru": "Держите трубу трубным ключом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-boyoq-plitka-trocknen",
+      "slug": "trocknen",
+      "term": "trocknen",
+      "icon": "sun",
+      "tr": {
+        "uz": "qurimoq",
+        "uz-Cyrl": "қуримоқ",
+        "ru": "сохнуть"
+      },
+      "pron": {
+        "uz": "trok-nen",
+        "uz-Cyrl": "трок-нен",
+        "ru": "трок-нен"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "maler",
+        "fliesenleger"
+      ],
+      "situation": "boyoq-plitka",
+      "example": {
+        "term": "Die Farbe muss zwei Stunden trocknen.",
+        "tr": {
+          "uz": "Boʻyoq ikki soat qurishi kerak.",
+          "uz-Cyrl": "Бўёқ икки соат қуриши керак.",
+          "ru": "Краска должна сохнуть два часа."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-boyoq-plitka-anstrich",
+      "slug": "anstrich",
+      "term": "der Anstrich",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Anstriche",
+      "tr": {
+        "uz": "boʻyoq qatlami",
+        "uz-Cyrl": "бўёқ қатлами",
+        "ru": "слой краски"
+      },
+      "pron": {
+        "uz": "der an-shtrix",
+        "uz-Cyrl": "дер ан-штрих",
+        "ru": "дер ан-штрих"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "maler",
+        "fliesenleger"
+      ],
+      "situation": "boyoq-plitka",
+      "example": {
+        "term": "Die Wand braucht noch einen zweiten Anstrich.",
+        "tr": {
+          "uz": "Devorga yana bir qavat boʻyoq kerak.",
+          "uz-Cyrl": "Деворга яна бир қават бўёқ керак.",
+          "ru": "Стене нужен ещё второй слой краски."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-boyoq-plitka-silikon",
+      "slug": "silikon",
+      "term": "das Silikon",
+      "icon": "droplet",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "silikon (germetik)",
+        "uz-Cyrl": "силикон (герметик)",
+        "ru": "силикон (герметик)"
+      },
+      "pron": {
+        "uz": "das zi-li-kon",
+        "uz-Cyrl": "дас зи-ли-кон",
+        "ru": "дас зи-ли-кон"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "maler",
+        "fliesenleger"
+      ],
+      "situation": "boyoq-plitka",
+      "example": {
+        "term": "Am Waschbecken kommt Silikon in die Fuge.",
+        "tr": {
+          "uz": "Rakovina yonidagi chokka silikon surtiladi.",
+          "uz-Cyrl": "Раковина ёнидаги чокка силикон суртилади.",
+          "ru": "У раковины шов заполняют силиконом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-boyoq-plitka-glatt",
+      "slug": "glatt",
+      "term": "glatt",
+      "icon": "square",
+      "tr": {
+        "uz": "silliq",
+        "uz-Cyrl": "силлиқ",
+        "ru": "гладкий"
+      },
+      "pron": {
+        "uz": "glat",
+        "uz-Cyrl": "глат",
+        "ru": "глат"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "maler",
+        "fliesenleger"
+      ],
+      "situation": "boyoq-plitka",
+      "example": {
+        "term": "Die Wand muss glatt sein, bevor wir streichen.",
+        "tr": {
+          "uz": "Boʻyashdan oldin devor silliq boʻlishi kerak.",
+          "uz-Cyrl": "Бўяшдан олдин девор силлиқ бўлиши керак.",
+          "ru": "Перед покраской стена должна быть гладкой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-boyoq-plitka-fleck",
+      "slug": "fleck",
+      "term": "der Fleck",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Flecken",
+      "tr": {
+        "uz": "dogʻ",
+        "uz-Cyrl": "доғ",
+        "ru": "пятно"
+      },
+      "pron": {
+        "uz": "der flek",
+        "uz-Cyrl": "дер флек",
+        "ru": "дер флек"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "maler",
+        "fliesenleger"
+      ],
+      "situation": "boyoq-plitka",
+      "example": {
+        "term": "Auf dem Boden ist ein Fleck Farbe.",
+        "tr": {
+          "uz": "Polda boʻyoq dogʻi bor.",
+          "uz-Cyrl": "Полда бўёқ доғи бор.",
+          "ru": "На полу пятно краски."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-olchov-millimeter",
+      "slug": "millimeter",
+      "term": "der Millimeter",
+      "icon": "ruler",
+      "article": "der",
+      "plural": "die Millimeter",
+      "tr": {
+        "uz": "millimetr",
+        "uz-Cyrl": "миллиметр",
+        "ru": "миллиметр"
+      },
+      "pron": {
+        "uz": "der mi-li-me-ter",
+        "uz-Cyrl": "дер ми-ли-ме-тер",
+        "ru": "дер ми-ли-ме-тер"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau",
+        "shk",
+        "elektroniker"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Das Brett ist zwei Millimeter zu lang.",
+        "tr": {
+          "uz": "Taxta ikki millimetr uzun.",
+          "uz-Cyrl": "Тахта икки миллиметр узун.",
+          "ru": "Доска на два миллиметра длиннее."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-olchov-hoch",
+      "slug": "hoch",
+      "term": "hoch",
+      "icon": "ruler",
+      "tr": {
+        "uz": "baland",
+        "uz-Cyrl": "баланд",
+        "ru": "высокий"
+      },
+      "pron": {
+        "uz": "hox",
+        "uz-Cyrl": "хох",
+        "ru": "хох"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau",
+        "shk",
+        "elektroniker"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Wie hoch ist das Fenster?",
+        "tr": {
+          "uz": "Deraza qanchalik baland?",
+          "uz-Cyrl": "Дераза қанчалик баланд?",
+          "ru": "Какой высоты окно?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-olchov-waagerecht",
+      "slug": "waagerecht",
+      "term": "waagerecht",
+      "icon": "ruler",
+      "tr": {
+        "uz": "gorizontal (tekis yotiq)",
+        "uz-Cyrl": "горизонтал (текис ётиқ)",
+        "ru": "горизонтальный"
+      },
+      "pron": {
+        "uz": "va-ge-rext",
+        "uz-Cyrl": "ва-ге-рехт",
+        "ru": "ва-ге-рехт"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "bau",
+        "shk",
+        "elektroniker"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Ist das Regal jetzt waagerecht?",
+        "tr": {
+          "uz": "Javon endi gorizontal turibdimi?",
+          "uz-Cyrl": "Жавон энди горизонтал турибдими?",
+          "ru": "Полка теперь стоит горизонтально?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-olchov-senkrecht",
+      "slug": "senkrecht",
+      "term": "senkrecht",
+      "icon": "ruler",
+      "tr": {
+        "uz": "vertikal (tik)",
+        "uz-Cyrl": "вертикал (тик)",
+        "ru": "вертикальный"
+      },
+      "pron": {
+        "uz": "zenk-rext",
+        "uz-Cyrl": "зенк-рехт",
+        "ru": "зенк-рехт"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "bau",
+        "shk",
+        "elektroniker"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Die Latte muss genau senkrecht stehen.",
+        "tr": {
+          "uz": "Reyka aniq tik turishi kerak.",
+          "uz-Cyrl": "Рейка аниқ тик туриши керак.",
+          "ru": "Рейка должна стоять строго вертикально."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-olchov-genau",
+      "slug": "genau",
+      "term": "genau",
+      "icon": "ruler",
+      "tr": {
+        "uz": "aniq",
+        "uz-Cyrl": "аниқ",
+        "ru": "точно"
+      },
+      "pron": {
+        "uz": "ge-nau",
+        "uz-Cyrl": "ге-нау",
+        "ru": "ге-нау"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau",
+        "shk",
+        "elektroniker"
+      ],
+      "situation": "olchov",
+      "example": {
+        "term": "Messen Sie bitte genau.",
+        "tr": {
+          "uz": "Iltimos, aniq oʻlchang.",
+          "uz-Cyrl": "Илтимос, аниқ ўлчанг.",
+          "ru": "Измеряйте, пожалуйста, точно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-yogoch-tuer",
+      "slug": "tuer",
+      "term": "die Tür",
+      "icon": "door",
+      "article": "die",
+      "plural": "die Türen",
+      "tr": {
+        "uz": "eshik",
+        "uz-Cyrl": "эшик",
+        "ru": "дверь"
+      },
+      "pron": {
+        "uz": "die tyur",
+        "uz-Cyrl": "ди тюр",
+        "ru": "ди тюр"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "tischler",
+        "bau"
+      ],
+      "situation": "yogoch",
+      "example": {
+        "term": "Der Tischler baut eine neue Tür ein.",
+        "tr": {
+          "uz": "Duradgor yangi eshik oʻrnatadi.",
+          "uz-Cyrl": "Дурадгор янги эшик ўрнатади.",
+          "ru": "Столяр устанавливает новую дверь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-yogoch-schublade",
+      "slug": "schublade",
+      "term": "die Schublade",
+      "icon": "square",
+      "article": "die",
+      "plural": "die Schubladen",
+      "tr": {
+        "uz": "tortma",
+        "uz-Cyrl": "тортма",
+        "ru": "выдвижной ящик"
+      },
+      "pron": {
+        "uz": "die shup-la-de",
+        "uz-Cyrl": "ди шуп-ла-де",
+        "ru": "ди шуп-ла-де"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "tischler",
+        "bau"
+      ],
+      "situation": "yogoch",
+      "example": {
+        "term": "Die Schublade klemmt.",
+        "tr": {
+          "uz": "Tortma tiqilib qolyapti.",
+          "uz-Cyrl": "Тортма тиқилиб қоляпти.",
+          "ru": "Ящик заедает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-yogoch-saegeblatt",
+      "slug": "saegeblatt",
+      "term": "das Sägeblatt",
+      "icon": "tools",
+      "article": "das",
+      "plural": "die Sägeblätter",
+      "tr": {
+        "uz": "arra tigʻi (disk)",
+        "uz-Cyrl": "арра тиғи (диск)",
+        "ru": "пильный диск (полотно)"
+      },
+      "pron": {
+        "uz": "das ze-ge-blat",
+        "uz-Cyrl": "дас зе-ге-блат",
+        "ru": "дас зе-ге-блат"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "tischler",
+        "bau"
+      ],
+      "situation": "yogoch",
+      "example": {
+        "term": "Wechseln Sie das Sägeblatt nur bei gezogenem Stecker.",
+        "tr": {
+          "uz": "Arra tigʻini faqat vilka sugʻurilganda almashtiring.",
+          "uz-Cyrl": "Арра тиғини фақат вилка суғурилганда алмаштиринг.",
+          "ru": "Меняйте пильный диск только при вынутой вилке."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-yogoch-scharnier",
+      "slug": "scharnier",
+      "term": "das Scharnier",
+      "icon": "door",
+      "article": "das",
+      "plural": "die Scharniere",
+      "tr": {
+        "uz": "oshiq-moshiq (sharnir)",
+        "uz-Cyrl": "ошиқ-мошиқ (шарнир)",
+        "ru": "петля (шарнир)"
+      },
+      "pron": {
+        "uz": "das shar-nir",
+        "uz-Cyrl": "дас шар-нир",
+        "ru": "дас шар-нир"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "tischler",
+        "bau"
+      ],
+      "situation": "yogoch",
+      "example": {
+        "term": "Das Scharnier an der Schranktür ist locker.",
+        "tr": {
+          "uz": "Shkaf eshigidagi oshiq-moshiq boʻshab qolgan.",
+          "uz-Cyrl": "Шкаф эшигидаги ошиқ-мошиқ бўшаб қолган.",
+          "ru": "Петля на дверце шкафа разболталась."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-yogoch-staub",
+      "slug": "staub",
+      "term": "der Staub",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "chang",
+        "uz-Cyrl": "чанг",
+        "ru": "пыль"
+      },
+      "pron": {
+        "uz": "der shtaup",
+        "uz-Cyrl": "дер штауп",
+        "ru": "дер штауп"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "tischler",
+        "bau"
+      ],
+      "situation": "yogoch",
+      "example": {
+        "term": "Beim Schleifen entsteht viel Staub. Tragen Sie eine Maske.",
+        "tr": {
+          "uz": "Silliqlashda koʻp chang chiqadi. Niqob taqing.",
+          "uz-Cyrl": "Силлиқлашда кўп чанг чиқади. Ниқоб тақинг.",
+          "ru": "При шлифовке много пыли. Наденьте маску."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-isitish-temperatur",
+      "slug": "temperatur",
+      "term": "die Temperatur",
+      "icon": "thermometer",
+      "article": "die",
+      "plural": "die Temperaturen",
+      "tr": {
+        "uz": "harorat",
+        "uz-Cyrl": "ҳарорат",
+        "ru": "температура"
+      },
+      "pron": {
+        "uz": "die tem-pe-ra-tur",
+        "uz-Cyrl": "ди тем-пе-ра-тур",
+        "ru": "ди тем-пе-ра-тур"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "isitish",
+      "example": {
+        "term": "Die Temperatur im Wohnzimmer ist zu niedrig.",
+        "tr": {
+          "uz": "Yashash xonasidagi harorat juda past.",
+          "uz-Cyrl": "Яшаш хонасидаги ҳарорат жуда паст.",
+          "ru": "Температура в гостиной слишком низкая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-isitish-heiss",
+      "slug": "heiss",
+      "term": "heiß",
+      "icon": "flame",
+      "tr": {
+        "uz": "qaynoq (juda issiq)",
+        "uz-Cyrl": "қайноқ (жуда иссиқ)",
+        "ru": "горячий"
+      },
+      "pron": {
+        "uz": "hays",
+        "uz-Cyrl": "хайс",
+        "ru": "хайс"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "isitish",
+      "example": {
+        "term": "Vorsicht, das Rohr ist heiß!",
+        "tr": {
+          "uz": "Ehtiyot boʻling, quvur qaynoq!",
+          "uz-Cyrl": "Эҳтиёт бўлинг, қувур қайноқ!",
+          "ru": "Осторожно, труба горячая!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-isitish-entlueften",
+      "slug": "entlueften",
+      "term": "entlüften",
+      "icon": "wave-sine",
+      "tr": {
+        "uz": "havosini chiqarmoq",
+        "uz-Cyrl": "ҳавосини чиқармоқ",
+        "ru": "спускать воздух"
+      },
+      "pron": {
+        "uz": "ent-lyuf-ten",
+        "uz-Cyrl": "энт-люф-тен",
+        "ru": "энт-люф-тен"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "isitish",
+      "example": {
+        "term": "Wir müssen den Heizkörper entlüften.",
+        "tr": {
+          "uz": "Radiatorning havosini chiqarishimiz kerak.",
+          "uz-Cyrl": "Радиаторнинг ҳавосини чиқаришимиз керак.",
+          "ru": "Нам нужно спустить воздух из радиатора."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-isitish-abgas",
+      "slug": "abgas",
+      "term": "das Abgas",
+      "icon": "flame",
+      "article": "das",
+      "plural": "die Abgase",
+      "tr": {
+        "uz": "tutun gazi (chiqindi gaz)",
+        "uz-Cyrl": "тутун гази (чиқинди газ)",
+        "ru": "дымовой газ"
+      },
+      "pron": {
+        "uz": "das ap-gas",
+        "uz-Cyrl": "дас ап-гас",
+        "ru": "дас ап-гас"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "isitish",
+      "example": {
+        "term": "Die Abgase gehen durch den Schornstein nach draußen.",
+        "tr": {
+          "uz": "Tutun gazlari moʻri orqali tashqariga chiqadi.",
+          "uz-Cyrl": "Тутун газлари мўри орқали ташқарига чиқади.",
+          "ru": "Дымовые газы выходят наружу через дымоход."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-isitish-stoerung",
+      "slug": "stoerung",
+      "term": "die Störung",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Störungen",
+      "tr": {
+        "uz": "nosozlik (xato)",
+        "uz-Cyrl": "носозлик (хато)",
+        "ru": "неисправность"
+      },
+      "pron": {
+        "uz": "die shtyo-rung",
+        "uz-Cyrl": "ди штё-рунг",
+        "ru": "ди штё-рунг"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "shk"
+      ],
+      "situation": "isitish",
+      "example": {
+        "term": "Die Heizung zeigt eine Störung an.",
+        "tr": {
+          "uz": "Isitish qozoni nosozlik koʻrsatyapti.",
+          "uz-Cyrl": "Иситиш қозони носозлик кўрсатяпти.",
+          "ru": "Отопление показывает неисправность."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-tom-schnee",
+      "slug": "schnee",
+      "term": "der Schnee",
+      "icon": "mountain",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "qor",
+        "uz-Cyrl": "қор",
+        "ru": "снег"
+      },
+      "pron": {
+        "uz": "der shne",
+        "uz-Cyrl": "дер шне",
+        "ru": "дер шне"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "tom",
+      "example": {
+        "term": "Bei Schnee arbeiten wir nicht auf dem Dach.",
+        "tr": {
+          "uz": "Qor yogʻsa, tomda ishlamaymiz.",
+          "uz-Cyrl": "Қор ёғса, томда ишламаймиз.",
+          "ru": "В снег мы не работаем на крыше."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-tom-regen",
+      "slug": "regen",
+      "term": "der Regen",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "yomgʻir",
+        "uz-Cyrl": "ёмғир",
+        "ru": "дождь"
+      },
+      "pron": {
+        "uz": "der re-gen",
+        "uz-Cyrl": "дер ре-ген",
+        "ru": "дер ре-ген"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "tom",
+      "example": {
+        "term": "Bei Regen sind die Ziegel rutschig.",
+        "tr": {
+          "uz": "Yomgʻirda cherepitsalar sirpanchiq boʻladi.",
+          "uz-Cyrl": "Ёмғирда черепицалар сирпанчиқ бўлади.",
+          "ru": "В дождь черепица скользкая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-tom-blech",
+      "slug": "blech",
+      "term": "das Blech",
+      "icon": "square",
+      "article": "das",
+      "plural": "die Bleche",
+      "tr": {
+        "uz": "tunuka",
+        "uz-Cyrl": "тунука",
+        "ru": "жесть (листовой металл)"
+      },
+      "pron": {
+        "uz": "das blex",
+        "uz-Cyrl": "дас блех",
+        "ru": "дас блех"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "tom",
+      "example": {
+        "term": "Am Schornstein dichten wir mit Blech ab.",
+        "tr": {
+          "uz": "Moʻri atrofini tunuka bilan berkitamiz.",
+          "uz-Cyrl": "Мўри атрофини тунука билан беркитамиз.",
+          "ru": "У дымохода мы делаем примыкание из жести."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-tom-kante",
+      "slug": "kante",
+      "term": "die Kante",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Kanten",
+      "tr": {
+        "uz": "chet (qirra)",
+        "uz-Cyrl": "чет (қирра)",
+        "ru": "край"
+      },
+      "pron": {
+        "uz": "die kan-te",
+        "uz-Cyrl": "ди кан-те",
+        "ru": "ди кан-те"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "tom",
+      "example": {
+        "term": "Bleiben Sie weg von der Kante!",
+        "tr": {
+          "uz": "Chetdan uzoqroq turing!",
+          "uz-Cyrl": "Четдан узоқроқ туринг!",
+          "ru": "Держитесь подальше от края!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-tom-befestigen",
+      "slug": "befestigen",
+      "term": "befestigen",
+      "icon": "tools",
+      "tr": {
+        "uz": "mahkamlamoq",
+        "uz-Cyrl": "маҳкамламоқ",
+        "ru": "закреплять"
+      },
+      "pron": {
+        "uz": "be-fes-ti-gen",
+        "uz-Cyrl": "бе-фес-ти-ген",
+        "ru": "бе-фес-ти-ген"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "bau"
+      ],
+      "situation": "tom",
+      "example": {
+        "term": "Befestigen Sie zuerst das Seil am Haken.",
+        "tr": {
+          "uz": "Avval arqonni ilgakka mahkamlang.",
+          "uz-Cyrl": "Аввал арқонни илгакка маҳкамланг.",
+          "ru": "Сначала закрепите верёвку на крюке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-uyi-wir-kommen-wegen-der-heizung",
+      "slug": "wir-kommen-wegen-der-heizung",
+      "term": "Wir kommen wegen der Heizung.",
+      "icon": "home",
+      "tr": {
+        "uz": "Isitish tizimi sababli keldik.",
+        "uz-Cyrl": "Иситиш тизими сабабли келдик.",
+        "ru": "Мы пришли по поводу отопления."
+      },
+      "pron": {
+        "uz": "vir ko-men ve-gen der hay-tsung",
+        "uz-Cyrl": "вир ко-мен ве-ген дер хай-цунг",
+        "ru": "вир ко-мен ве-ген дер хай-цунг"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-uyi",
+      "example": {
+        "term": "Guten Tag! Wir kommen wegen der Heizung.",
+        "tr": {
+          "uz": "Assalomu alaykum! Isitish tizimi sababli keldik.",
+          "uz-Cyrl": "Ассалому алайкум! Иситиш тизими сабабли келдик.",
+          "ru": "Добрый день! Мы пришли по поводу отопления."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-uyi-schluessel",
+      "slug": "schluessel",
+      "term": "der Schlüssel",
+      "icon": "key",
+      "article": "der",
+      "plural": "die Schlüssel",
+      "tr": {
+        "uz": "kalit",
+        "uz-Cyrl": "калит",
+        "ru": "ключ"
+      },
+      "pron": {
+        "uz": "der shlyu-sel",
+        "uz-Cyrl": "дер шлю-сель",
+        "ru": "дер шлю-сель"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-uyi",
+      "example": {
+        "term": "Haben Sie den Schlüssel für den Keller?",
+        "tr": {
+          "uz": "Yertoʻla kaliti sizdami?",
+          "uz-Cyrl": "Ертўла калити сиздами?",
+          "ru": "У вас есть ключ от подвала?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-uyi-schmutzig",
+      "slug": "schmutzig",
+      "term": "schmutzig",
+      "icon": "trash",
+      "tr": {
+        "uz": "iflos",
+        "uz-Cyrl": "ифлос",
+        "ru": "грязный"
+      },
+      "pron": {
+        "uz": "shmu-tsix",
+        "uz-Cyrl": "шму-цих",
+        "ru": "шму-цих"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-uyi",
+      "example": {
+        "term": "Entschuldigung, der Boden ist schmutzig. Ich mache ihn sauber.",
+        "tr": {
+          "uz": "Kechirasiz, pol iflos boʻldi. Uni tozalayman.",
+          "uz-Cyrl": "Кечирасиз, пол ифлос бўлди. Уни тозалайман.",
+          "ru": "Извините, пол испачкан. Я его уберу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-uyi-kostenvoranschlag",
+      "slug": "kostenvoranschlag",
+      "term": "der Kostenvoranschlag",
+      "icon": "receipt",
+      "article": "der",
+      "plural": "die Kostenvoranschläge",
+      "tr": {
+        "uz": "smeta (narx hisobi)",
+        "uz-Cyrl": "смета (нарх ҳисоби)",
+        "ru": "смета (предварительный расчёт)"
+      },
+      "pron": {
+        "uz": "der kos-ten-for-an-shlak",
+        "uz-Cyrl": "дер кос-тен-фор-ан-шлак",
+        "ru": "дер кос-тен-фор-ан-шлак"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-uyi",
+      "example": {
+        "term": "Der Chef schickt Ihnen morgen den Kostenvoranschlag.",
+        "tr": {
+          "uz": "Boshliq ertaga sizga smetani yuboradi.",
+          "uz-Cyrl": "Бошлиқ эртага сизга сметани юборади.",
+          "ru": "Начальник завтра пришлёт вам смету."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-uyi-darf-ich-hier-parken",
+      "slug": "darf-ich-hier-parken",
+      "term": "Darf ich hier parken?",
+      "icon": "car",
+      "tr": {
+        "uz": "Shu yerda mashina qoʻysam boʻladimi?",
+        "uz-Cyrl": "Шу ерда машина қўйсам бўладими?",
+        "ru": "Можно здесь припарковаться?"
+      },
+      "pron": {
+        "uz": "darf ix hir par-ken",
+        "uz-Cyrl": "дарф их хир пар-кен",
+        "ru": "дарф их хир пар-кен"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-uyi",
+      "example": {
+        "term": "Darf ich hier parken? Wir haben viel Werkzeug im Auto.",
+        "tr": {
+          "uz": "Shu yerda mashina qoʻysam boʻladimi? Mashinada asbob koʻp.",
+          "uz-Cyrl": "Шу ерда машина қўйсам бўладими? Машинада асбоб кўп.",
+          "ru": "Можно здесь припарковаться? У нас в машине много инструментов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-chizma-kubikmeter",
+      "slug": "kubikmeter",
+      "term": "der Kubikmeter",
+      "icon": "ruler",
+      "article": "der",
+      "plural": "die Kubikmeter",
+      "tr": {
+        "uz": "kub metr",
+        "uz-Cyrl": "куб метр",
+        "ru": "кубометр"
+      },
+      "pron": {
+        "uz": "der ku-bik-me-ter",
+        "uz-Cyrl": "дер ку-бик-ме-тер",
+        "ru": "дер ку-бик-ме-тер"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "chizma",
+      "example": {
+        "term": "Wie viele Kubikmeter Beton brauchen wir?",
+        "tr": {
+          "uz": "Bizga necha kub metr beton kerak?",
+          "uz-Cyrl": "Бизга неча куб метр бетон керак?",
+          "ru": "Сколько кубометров бетона нам нужно?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-chizma-obergeschoss",
+      "slug": "obergeschoss",
+      "term": "das Obergeschoss",
+      "icon": "building",
+      "article": "das",
+      "plural": "die Obergeschosse",
+      "tr": {
+        "uz": "yuqori qavat",
+        "uz-Cyrl": "юқори қават",
+        "ru": "верхний этаж"
+      },
+      "pron": {
+        "uz": "das o-ber-ge-shos",
+        "uz-Cyrl": "дас о-бер-ге-шос",
+        "ru": "дас о-бер-ге-шос"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "chizma",
+      "example": {
+        "term": "Die Küche liegt im Obergeschoss.",
+        "tr": {
+          "uz": "Oshxona yuqori qavatda.",
+          "uz-Cyrl": "Ошхона юқори қаватда.",
+          "ru": "Кухня находится на верхнем этаже."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-chizma-zeichnung",
+      "slug": "zeichnung",
+      "term": "die Zeichnung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Zeichnungen",
+      "tr": {
+        "uz": "chizma (rasm)",
+        "uz-Cyrl": "чизма (расм)",
+        "ru": "чертёж (рисунок)"
+      },
+      "pron": {
+        "uz": "die tsayx-nung",
+        "uz-Cyrl": "ди цайх-нунг",
+        "ru": "ди цайх-нунг"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "chizma",
+      "example": {
+        "term": "Schauen Sie bitte auf die Zeichnung.",
+        "tr": {
+          "uz": "Iltimos, chizmaga qarang.",
+          "uz-Cyrl": "Илтимос, чизмага қаранг.",
+          "ru": "Посмотрите, пожалуйста, на чертёж."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-chizma-winkel",
+      "slug": "winkel",
+      "term": "der Winkel",
+      "icon": "ruler",
+      "article": "der",
+      "plural": "die Winkel",
+      "tr": {
+        "uz": "burchak",
+        "uz-Cyrl": "бурчак",
+        "ru": "угол"
+      },
+      "pron": {
+        "uz": "der vin-kel",
+        "uz-Cyrl": "дер вин-кель",
+        "ru": "дер вин-кель"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "chizma",
+      "example": {
+        "term": "Die Wände stehen im rechten Winkel.",
+        "tr": {
+          "uz": "Devorlar toʻgʻri burchak ostida turibdi.",
+          "uz-Cyrl": "Деворлар тўғри бурчак остида турибди.",
+          "ru": "Стены стоят под прямым углом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-chizma-treppe",
+      "slug": "treppe",
+      "term": "die Treppe",
+      "icon": "building",
+      "article": "die",
+      "plural": "die Treppen",
+      "tr": {
+        "uz": "zinapoya",
+        "uz-Cyrl": "зинапоя",
+        "ru": "лестница"
+      },
+      "pron": {
+        "uz": "die tre-pe",
+        "uz-Cyrl": "ди тре-пе",
+        "ru": "ди тре-пе"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "chizma",
+      "example": {
+        "term": "Auf dem Plan ist die Treppe links.",
+        "tr": {
+          "uz": "Rejada zinapoya chap tomonda.",
+          "uz-Cyrl": "Режада зинапоя чап томонда.",
+          "ru": "На плане лестница слева."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-montaj-abisolieren",
+      "slug": "abisolieren",
+      "term": "abisolieren",
+      "icon": "tools",
+      "tr": {
+        "uz": "izolyatsiyasini tozalamoq",
+        "uz-Cyrl": "изоляциясини тозаламоқ",
+        "ru": "снимать изоляцию"
+      },
+      "pron": {
+        "uz": "ap-i-zo-li-ren",
+        "uz-Cyrl": "ап-и-зо-ли-рен",
+        "ru": "ап-и-зо-ли-рен"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr-montaj",
+      "example": {
+        "term": "Isolieren Sie die Ader vorsichtig ab.",
+        "tr": {
+          "uz": "Tomir simning izolyatsiyasini ehtiyotlik bilan tozalang.",
+          "uz-Cyrl": "Томир симнинг изоляциясини эҳтиётлик билан тозаланг.",
+          "ru": "Аккуратно снимите изоляцию с жилы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-montaj-schlitz",
+      "slug": "schlitz",
+      "term": "der Schlitz",
+      "icon": "tools",
+      "article": "der",
+      "plural": "die Schlitze",
+      "tr": {
+        "uz": "shtroba (devordagi ariqcha)",
+        "uz-Cyrl": "штроба (девордаги ариқча)",
+        "ru": "штроба"
+      },
+      "pron": {
+        "uz": "der shlits",
+        "uz-Cyrl": "дер шлиц",
+        "ru": "дер шлиц"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr-montaj",
+      "example": {
+        "term": "Wir fräsen einen Schlitz für das Kabel in die Wand.",
+        "tr": {
+          "uz": "Kabel uchun devorda shtroba ochamiz.",
+          "uz-Cyrl": "Кабель учун деворда штроба очамиз.",
+          "ru": "Мы прорезаем в стене штробу для кабеля."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-montaj-zaehlerschrank",
+      "slug": "zaehlerschrank",
+      "term": "der Zählerschrank",
+      "icon": "bolt",
+      "article": "der",
+      "plural": "die Zählerschränke",
+      "tr": {
+        "uz": "hisoblagich shkafi",
+        "uz-Cyrl": "ҳисоблагич шкафи",
+        "ru": "счётчиковый шкаф"
+      },
+      "pron": {
+        "uz": "der tse-ler-shrank",
+        "uz-Cyrl": "дер це-лер-шранк",
+        "ru": "дер це-лер-шранк"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr-montaj",
+      "example": {
+        "term": "Der Zählerschrank ist im Keller.",
+        "tr": {
+          "uz": "Hisoblagich shkafi yertoʻlada.",
+          "uz-Cyrl": "Ҳисоблагич шкафи ертўлада.",
+          "ru": "Счётчиковый шкаф находится в подвале."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-montaj-pruefen",
+      "slug": "pruefen",
+      "term": "prüfen",
+      "icon": "check",
+      "tr": {
+        "uz": "tekshirmoq",
+        "uz-Cyrl": "текширмоқ",
+        "ru": "проверять"
+      },
+      "pron": {
+        "uz": "pryu-fen",
+        "uz-Cyrl": "прю-фен",
+        "ru": "прю-фен"
+      },
+      "level": "A1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr-montaj",
+      "example": {
+        "term": "Prüfen Sie zuerst, ob die Leitung spannungsfrei ist.",
+        "tr": {
+          "uz": "Avval liniyada tok yoʻqligini tekshiring.",
+          "uz-Cyrl": "Аввал линияда ток йўқлигини текширинг.",
+          "ru": "Сначала проверьте, что линия обесточена."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-elektr-montaj-isolierung",
+      "slug": "isolierung",
+      "term": "die Isolierung",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Isolierungen",
+      "tr": {
+        "uz": "izolyatsiya",
+        "uz-Cyrl": "изоляция",
+        "ru": "изоляция"
+      },
+      "pron": {
+        "uz": "die i-zo-li-rung",
+        "uz-Cyrl": "ди и-зо-ли-рунг",
+        "ru": "ди и-зо-ли-рунг"
+      },
+      "level": "A2",
+      "field": "technical",
+      "jobs": [
+        "elektroniker"
+      ],
+      "situation": "elektr-montaj",
+      "example": {
+        "term": "Die Isolierung am Kabel ist beschädigt.",
+        "tr": {
+          "uz": "Kabelning izolyatsiyasi shikastlangan.",
+          "uz-Cyrl": "Кабелнинг изоляцияси шикастланган.",
+          "ru": "Изоляция кабеля повреждена."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
