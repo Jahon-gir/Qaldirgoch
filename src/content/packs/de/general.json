@@ -251,11 +251,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Alles klar. Welche Kisten?",
+            "de": "Ah, ins Lager. Alles klar! Welche Kisten?",
             "tr": {
-              "uz": "Tushunarli. Qaysi qutilarni?",
-              "uz-Cyrl": "Тушунарли. Қайси қутиларни?",
-              "ru": "Понятно. Какие ящики?"
+              "uz": "Ha, omborga. Tushunarli! Qaysi qutilarni?",
+              "uz-Cyrl": "Ҳа, омборга. Тушунарли! Қайси қутиларни?",
+              "ru": "А, на склад. Понятно! Какие ящики?"
             }
           },
           {
@@ -437,11 +437,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Bekomme ich jeden Monat eine Lohnabrechnung?",
+            "de": "Ah, ich sehe es. Bekomme ich auch jeden Monat eine Lohnabrechnung?",
             "tr": {
-              "uz": "Har oy maosh varaqasini olamanmi?",
-              "uz-Cyrl": "Ҳар ой маош варақасини оламанми?",
-              "ru": "Я буду получать расчётный лист каждый месяц?"
+              "uz": "Ha, koʻrdim. Har oy maosh varaqasini ham olamanmi?",
+              "uz-Cyrl": "Ҳа, кўрдим. Ҳар ой маош варақасини ҳам оламанми?",
+              "ru": "А, вижу. А расчётный лист я буду получать каждый месяц?"
             }
           },
           {
@@ -690,11 +690,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Ja, hier. Ich möchte meine Wohnung anmelden.",
+            "de": "Hier ist meine Nummer. Ich möchte meine Wohnung anmelden.",
             "tr": {
-              "uz": "Ha, mana. Yashash joyimda roʻyxatdan oʻtmoqchiman.",
-              "uz-Cyrl": "Ҳа, мана. Яшаш жойимда рўйхатдан ўтмоқчиман.",
-              "ru": "Да, вот. Я хочу зарегистрироваться по месту жительства."
+              "uz": "Mana raqamim. Yashash joyimda roʻyxatdan oʻtmoqchiman.",
+              "uz-Cyrl": "Мана рақамим. Яшаш жойимда рўйхатдан ўтмоқчиман.",
+              "ru": "Вот мой номер. Я хочу зарегистрироваться по месту жительства."
             }
           },
           {

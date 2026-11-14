@@ -91,11 +91,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Gut. Welche Pfanne nehme ich?",
+            "de": "Klein, alles klar. Welche Pfanne nehme ich?",
             "tr": {
-              "uz": "Yaxshi. Qaysi tovani olay?",
-              "uz-Cyrl": "Яхши. Қайси товани олай?",
-              "ru": "Хорошо. Какую сковороду взять?"
+              "uz": "Mayda, tushunarli. Qaysi tovani olay?",
+              "uz-Cyrl": "Майда, тушунарли. Қайси товани олай?",
+              "ru": "Мелко, понятно. Какую сковороду взять?"
             }
           }
         ],
@@ -716,11 +716,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Wie viele Gäste kommen?",
+            "de": "Gut. Für wie viele Gäste lege ich Besteck?",
             "tr": {
-              "uz": "Nechta mehmon keladi?",
-              "uz-Cyrl": "Нечта меҳмон келади?",
-              "ru": "Сколько придёт гостей?"
+              "uz": "Yaxshi. Nechta mehmonga qoshiq-sanchqi qoʻyay?",
+              "uz-Cyrl": "Яхши. Нечта меҳмонга қошиқ-санчқи қўяй?",
+              "ru": "Хорошо. На сколько гостей раскладывать приборы?"
             }
           },
           {

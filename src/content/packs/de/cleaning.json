@@ -277,11 +277,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Gern. Ich mache auch die Küche sauber.",
+            "de": "Gern, die Papierkörbe leere ich zuerst.",
             "tr": {
-              "uz": "Xoʻp. Oshxonani ham tozalayman.",
-              "uz-Cyrl": "Хўп. Ошхонани ҳам тозалайман.",
-              "ru": "Хорошо. Кухню тоже уберу."
+              "uz": "Xoʻp, qogʻoz savatlarini birinchi boʻshataman.",
+              "uz-Cyrl": "Хўп, қоғоз саватларини биринчи бўшатаман.",
+              "ru": "Хорошо, корзины для бумаг опустошу первыми."
             }
           }
         ],
@@ -716,11 +716,11 @@
               "uz-Cyrl": "Сиз",
               "ru": "Вы"
             },
-            "de": "Muss ich die Checkliste jeden Tag abhaken?",
+            "de": "Danke. Muss ich auf dem Reinigungsplan jeden Tag abhaken?",
             "tr": {
-              "uz": "Tekshiruv roʻyxatiga har kuni belgi qoʻyishim kerakmi?",
-              "uz-Cyrl": "Текширув рўйхатига ҳар куни белги қўйишим керакми?",
-              "ru": "Мне нужно каждый день отмечать чек-лист?"
+              "uz": "Rahmat. Tozalash rejasida har kuni belgi qoʻyishim kerakmi?",
+              "uz-Cyrl": "Раҳмат. Тозалаш режасида ҳар куни белги қўйишим керакми?",
+              "ru": "Спасибо. Мне нужно каждый день отмечать в плане уборки?"
             }
           },
           {
