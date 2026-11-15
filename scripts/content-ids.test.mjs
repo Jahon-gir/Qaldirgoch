@@ -12,15 +12,26 @@ describe.skipIf(!process.env.UPDATE_CONTENT_IDS)('ids.gen.json', () => {
   it('yangilash', async () => {
     const { ALL_RESULT_IDS, COURSES } = await import('../src/lang/registry')
     const { lessonWordIds } = await import('../src/lang/words')
-    const lessons = {}
+    // Ixcham shakl (0.29.1): modul → { dars qoʻshimchasi → "slug slug …" }; natija id'lari = shu darslar + `extra`
+    const modules = {}
+    const withWords = new Set()
     for (const c of COURSES) {
       for (const l of [...c.lessons].sort((a, b) => a.id.localeCompare(b.id))) {
         const words = lessonWordIds(c, l.id)
         if (!words.length) continue
-        for (const w of words) if (!w.startsWith(`${l.moduleId}-`)) throw new Error(`Soʻz id modul bilan boshlanmaydi: ${w}`)
-        lessons[l.id] = [l.moduleId, ...words.map((w) => w.slice(l.moduleId.length + 1))]
+        if (!l.id.startsWith(`${l.moduleId}-`)) throw new Error(`Dars id modul bilan boshlanmaydi: ${l.id}`)
+        if (!ALL_RESULT_IDS.has(l.id)) throw new Error(`Soʻzli dars natija id'lari orasida yoʻq: ${l.id}`)
+        const slugs = words.map((w) => {
+          if (!w.startsWith(`${l.moduleId}-`)) throw new Error(`Soʻz id modul bilan boshlanmaydi: ${w}`)
+          const s = w.slice(l.moduleId.length + 1)
+          if (!s || /\s/.test(s)) throw new Error(`Soʻz slug'i boʻsh yoki boʻshliqli: ${w}`)
+          return s
+        })
+        ;(modules[l.moduleId] ??= {})[l.id.slice(l.moduleId.length + 1)] = slugs.join(' ')
+        withWords.add(l.id)
       }
     }
-    writeFileSync(new URL('../src/lang/ids.gen.json', import.meta.url), JSON.stringify({ results: [...ALL_RESULT_IDS].sort(), lessons }) + '\n')
+    const extra = [...ALL_RESULT_IDS].filter((id) => !withWords.has(id)).sort()
+    writeFileSync(new URL('../src/lang/ids.gen.json', import.meta.url), JSON.stringify({ extra, modules }) + '\n')
   })
 })
