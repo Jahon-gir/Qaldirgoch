@@ -1,5 +1,5 @@
 import { DIRECTIONS, LESSONS, LEVELS, LEVEL_LOCKED, MODULES, exercisesOf } from '../content/german'
-import { GAPS } from '../content/german/gaps'
+import { ALL_GAPS } from '../content/german/gaps'
 import { VOCAB } from '../content/german/words'
 import { normalizeDe } from '../german/answer'
 import { makeCourse } from './course'
@@ -15,7 +15,7 @@ export const DE_COURSE = makeCourse({
   lessons: LESSONS,
   exercisesOf,
   vocab: VOCAB,
-  gaps: GAPS,
+  gaps: ALL_GAPS,
   features: { article: true, write: true, build: 'letters', pron: false },
   normalize: normalizeDe,
   letterLocale: 'de'

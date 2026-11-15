@@ -25,14 +25,14 @@ const careLessons = careModules.flatMap((m) => lessonsOf(m.id, DE_COURSE.lessons
 const done = (ids: string[]) => Object.fromEntries(ids.map((id) => [id, { lessonId: id, score: 1, total: 1, completedAt: NOW }]))
 
 describe('soha yakuniy testi (mantiq)', () => {
-  it('scope "field-care": sohaning barcha vaziyatlari, 20 soʻz savoli', () => {
+  it('scope "field-care": sohaning barcha vaziyatlari, 20 soʻz + 4 gap savoli', () => {
     const info = scopeInfo(fieldScope('care'), 'technical', DE_COURSE)!
     expect(info.type).toBe('field')
     expect(info.field).toBe('care')
     expect(info.moduleIds.sort()).toEqual(careModules.map((m) => m.id).sort())
-    expect(testParts(info)).toEqual({ words: 20, gaps: 0 })
-    expect(testSize(info)).toBe(20)
-    expect(passMark(20)).toBe(19)
+    expect(testParts(info)).toEqual({ words: 20, gaps: 4 })
+    expect(testSize(info)).toBe(24)
+    expect(passMark(24)).toBe(22)
   })
 
   it('umumiy, nomaʼlum soha va koreys kursida soha testi yoʻq', () => {
@@ -44,8 +44,9 @@ describe('soha yakuniy testi (mantiq)', () => {
   it('savollar turli vaziyatlardan, takrorlanmaydi, faqat shu sohadan', () => {
     const info = scopeInfo(fieldScope('care'), 'care', DE_COURSE)!
     const qs = buildTest(info, { canListen: true, seed: 7, course: DE_COURSE })
-    expect(qs).toHaveLength(20)
-    const ids = qs.map((q) => (q.kind === 'word' ? q.wordId : ''))
+    expect(qs).toHaveLength(24)
+    expect(qs.slice(20).every((q) => q.kind === 'gap' && DE_COURSE.gapById(q.gapId)!.moduleId.startsWith('care-'))).toBe(true)
+    const ids = qs.slice(0, 20).map((q) => (q.kind === 'word' ? q.wordId : ''))
     expect(new Set(ids).size).toBe(20)
     const mods = new Set(ids.map((id) => DE_COURSE.wordById(id)!.moduleId))
     for (const m of mods) expect(m.startsWith('care-')).toBe(true)
@@ -118,13 +119,13 @@ describe('soha yakuniy testi (ekran)', () => {
     expect(screen.getByTestId('where').textContent).toBe('/til/de')
   })
 
-  it('hamma vaziyat tugagach: ochiq kartochka → test sahifasi (20 savol, 19 ta toʻgʻri)', () => {
+  it('hamma vaziyat tugagach: ochiq kartochka → test sahifasi (24 savol, 22 ta toʻgʻri)', () => {
     renderApp('/til/kasblar/care', careLessons)
     fireEvent.click(screen.getByRole('link', { name: /Soha yakuniy testi/ }))
     expect(screen.getByTestId('where').textContent).toBe('/til/test/field-care')
     expect(screen.getByText('Parvarish va tibbiyot')).toBeTruthy()
-    expect(screen.getByText('20')).toBeTruthy()
-    expect(screen.getByText('19')).toBeTruthy()
-    expect(screen.getByText(/Har savolga bir marta javob beriladi/).textContent).not.toMatch(/Gap savollari/)
+    expect(screen.getByText('24')).toBeTruthy()
+    expect(screen.getByText('22')).toBeTruthy()
+    expect(screen.getByText(/Har savolga bir marta javob beriladi/).textContent).toMatch(/Gap savollari/)
   })
 })

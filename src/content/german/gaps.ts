@@ -3,9 +3,9 @@
  * QOIDA: yangi nemis gapi yoki soʻz oʻylab topilmaydi — faqat darslardagi mavjud gaplar, aynan shu koʻrinishda.
  * Tarjima darsdan olinadi (ikkinchi nusxa yozilmaydi): gap toʻliq holda darsdagi soʻz, misol, variant yoki juft matnidan qidiriladi.
  */
-import { exercisesOf } from './index'
+import { exercisesOf, LESSONS } from './index'
 import type { ContentStatus, L3 } from './types'
-import { WORD_IDS, wordId } from './words'
+import { VOCAB, WORD_IDS, wordId } from './words'
 
 export type GapItem = {
   id: string
@@ -63,4 +63,24 @@ export const GAPS: GapItem[] = [
   gap({ id: 'g10', lessonId: 'a1-m1-l2', sentence: 'Auf ___, Herr Müller!', answer: 'Wiedersehen', distractors: ['Nacht', 'Tag'] })
 ]
 
-export const gapById = (id: string) => GAPS.find((g) => g.id === id)
+/**
+ * Kasbiy paket vaziyatlari (0.27.0): darslardagi "boʻshliqni toʻldiring" mashqlari (misol gapdan, toCourse.choicesFrom) —
+ * aynan shu gap, javob va chalgʻituvchilar; yangi gap oʻylab topilmaydi. Id "p:<mashq id>" (asosiy g1… bilan toʻqnashmaydi).
+ * Javob — darsdagi ot (artiklsiz); wordId — shu darsdagi "<artikl> <javob>" soʻzi (xato boʻlsa takrorlashga tushadi).
+ */
+export const PACK_GAPS: GapItem[] = LESSONS.filter((l) => !l.id.startsWith('a1-')).flatMap((l) =>
+  exercisesOf(l.id).flatMap((ex): GapItem[] => {
+    if (ex.type !== 'choice') return []
+    const right = ex.options.filter((o) => o.correct)
+    const wrong = ex.options.filter((o) => !o.correct)
+    if (right.length !== 1 || wrong.length !== 2 || ex.sentence.split('___').length !== 2) return []
+    const answer = right[0].text
+    const word = VOCAB.find((v) => v.lessonId === l.id && /^(der|die|das) /.test(v.term) && v.term.slice(4) === answer)
+    return [{ id: `p:${ex.id}`, moduleId: l.moduleId, lessonId: l.id, sentence: ex.sentence, answer, distractors: [wrong[0].text, wrong[1].text], tr: ex.translation, wordId: word?.id }]
+  })
+)
+
+/** Yakuniy testlardagi barcha gaplar: asosiy (qoʻlda) + kasbiy paketlardan. */
+export const ALL_GAPS: GapItem[] = [...GAPS, ...PACK_GAPS]
+
+export const gapById = (id: string) => ALL_GAPS.find((g) => g.id === id)
