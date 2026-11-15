@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { HashRouter, Navigate, Outlet, Route, Routes } from 'react-router-dom'
 import { AppShell } from './components/layout/AppShell'
 import { useAuth } from './auth/AuthProvider'
@@ -10,29 +10,35 @@ import { splashState } from './components/splashState'
 import { useT } from './i18n/I18nProvider'
 import { useProfile } from './profile/ProfileProvider'
 import Home from './pages/Home'
-import Countries from './pages/countries/Countries'
-import { CountryRoute, ProgramGuideRoute, ProgramRoute, StepRoute } from './pages/countries/routes'
-import Language from './pages/Language'
-import LanguagePicker from './pages/LanguagePicker'
 import { CourseScope } from './lang/CourseContext'
-import ModulePage from './pages/german/ModulePage'
-import Professions from './pages/german/Professions'
-import ProfessionModules from './pages/german/ProfessionModules'
-import LessonPage from './pages/german/LessonPage'
-import ReviewPage from './pages/german/ReviewPage'
-import VocabPage from './pages/german/VocabPage'
-import VocabLessonPage from './pages/german/VocabLessonPage'
-import FinalTestPage from './pages/german/FinalTestPage'
-import Safety from './pages/Safety'
-import SafetyLayout from './pages/safety/SafetyLayout'
-import AgencyCheck from './pages/safety/AgencyCheck'
-import Assistant from './pages/Assistant'
-import Settings from './pages/Settings'
-import Appearance from './pages/Appearance'
-import InterfaceLanguage from './pages/InterfaceLanguage'
-import ProfilePage from './pages/Profile'
-import InstallGuide from './pages/InstallGuide'
 import Onboarding from './pages/onboarding/Onboarding'
+import { lazyPage, PageFallback } from './pages/lazyPage'
+
+/* Bosh ekran va onboarding asosiy JS'da; qolgan sahifalar alohida boʻlaklarda (birinchi ochilish tezroq). */
+const Countries = lazyPage(() => import('./pages/countries/Countries'))
+const Language = lazyPage(() => import('./pages/Language'))
+const LanguagePicker = lazyPage(() => import('./pages/LanguagePicker'))
+const ModulePage = lazyPage(() => import('./pages/german/ModulePage'))
+const Professions = lazyPage(() => import('./pages/german/Professions'))
+const ProfessionModules = lazyPage(() => import('./pages/german/ProfessionModules'))
+const LessonPage = lazyPage(() => import('./pages/german/LessonPage'))
+const ReviewPage = lazyPage(() => import('./pages/german/ReviewPage'))
+const VocabPage = lazyPage(() => import('./pages/german/VocabPage'))
+const VocabLessonPage = lazyPage(() => import('./pages/german/VocabLessonPage'))
+const FinalTestPage = lazyPage(() => import('./pages/german/FinalTestPage'))
+const Safety = lazyPage(() => import('./pages/Safety'))
+const SafetyLayout = lazyPage(() => import('./pages/safety/SafetyLayout'))
+const AgencyCheck = lazyPage(() => import('./pages/safety/AgencyCheck'))
+const Assistant = lazyPage(() => import('./pages/Assistant'))
+const Settings = lazyPage(() => import('./pages/Settings'))
+const Appearance = lazyPage(() => import('./pages/Appearance'))
+const InterfaceLanguage = lazyPage(() => import('./pages/InterfaceLanguage'))
+const ProfilePage = lazyPage(() => import('./pages/Profile'))
+const InstallGuide = lazyPage(() => import('./pages/InstallGuide'))
+const CountryRoute = lazyPage(() => import('./pages/countries/routes').then((m) => ({ default: m.CountryRoute })))
+const ProgramGuideRoute = lazyPage(() => import('./pages/countries/routes').then((m) => ({ default: m.ProgramGuideRoute })))
+const ProgramRoute = lazyPage(() => import('./pages/countries/routes').then((m) => ({ default: m.ProgramRoute })))
+const StepRoute = lazyPage(() => import('./pages/countries/routes').then((m) => ({ default: m.StepRoute })))
 
 /** Onboarding tugamagan boʻlsa — avval u. */
 function RequireOnboarding({ bare = false }: { bare?: boolean }) {
@@ -71,6 +77,7 @@ function useBooting() {
 /** Marshrutlar (testda MemoryRouter ichida ham ishlatiladi). */
 export function AppRoutes() {
   return (
+    <Suspense fallback={<PageFallback />}>
     <Routes>
       <Route path="boshlash" element={<Onboarding />} />
       <Route element={<RequireOnboarding />}>
@@ -124,6 +131,7 @@ export function AppRoutes() {
         </Route>
       </Route>
     </Routes>
+    </Suspense>
   )
 }
 

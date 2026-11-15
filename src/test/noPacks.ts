@@ -1,4 +1,5 @@
-import { vi } from 'vitest'
+import { beforeAll, vi } from 'vitest'
+import { preloadAllPages } from '../pages/lazyPage'
 
 /**
  * Testlarda kasbiy paketlar (src/content/packs) standart holatda O'CHIQ: mavjud testlar asosiy kursni
@@ -6,3 +7,6 @@ import { vi } from 'vitest'
  * testlar faylning boshida `vi.unmock('<yoʻl>/content/german/packs')` qiladi (masalan packs.course.test.ts).
  */
 vi.mock('../content/german/packs', () => ({ DE_PACKS: [], DE_PACK_COURSE: { modules: [], lessons: [], exercises: {} } }))
+
+/** Lazy sahifalar (App.tsx) testlarda oldindan yuklanadi — ekranlar avvalgidek sinxron chiqadi. */
+beforeAll(() => preloadAllPages())
