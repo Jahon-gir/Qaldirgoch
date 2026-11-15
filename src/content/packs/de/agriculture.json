@@ -100,6 +100,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Ihr Messer ist stumpf. So schneiden Sie den Salat nicht sauber.",
+            "tr": {
+              "uz": "Pichogʻingiz oʻtmas. Bunday pichoq bilan salatni toza kesolmaysiz.",
+              "uz-Cyrl": "Пичоғингиз ўтмас. Бундай пичоқ билан салатни тоза кесолмайсиз.",
+              "ru": "Ваш нож тупой. Так вы не срежете салат ровно."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Stimmt, es geht schwer. Haben Sie ein neues Messer für mich?",
+            "tr": {
+              "uz": "Toʻgʻri, qiyin kesyapti. Menga yangi pichoq bormi?",
+              "uz-Cyrl": "Тўғри, қийин кесяпти. Менга янги пичоқ борми?",
+              "ru": "Верно, режется тяжело. У вас есть для меня новый нож?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Ja, im Wagen. Wie tragen Sie das Messer zum Feld zurück?",
+            "tr": {
+              "uz": "Ha, mashinada. Pichoqni dalaga qanday olib borasiz?",
+              "uz-Cyrl": "Ҳа, машинада. Пичоқни далага қандай олиб борасиз?",
+              "ru": "Да, в машине. Как вы понесёте нож обратно в поле?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mit der Klinge nach unten, in der Schutzhülle.",
+            "tr": {
+              "uz": "Tigʻini pastga qaratib, gʻilofida.",
+              "uz-Cyrl": "Тиғини пастга қаратиб, ғилофида.",
+              "ru": "Лезвием вниз, в чехле."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Richtig. Und wenn Sie sich schneiden: Der Verbandskasten ist im Traktor.",
+            "tr": {
+              "uz": "Toʻgʻri. Agar qoʻlingizni kesib olsangiz, birinchi yordam qutisi traktorda.",
+              "uz-Cyrl": "Тўғри. Агар қўлингизни кесиб олсангиз, биринчи ёрдам қутиси тракторда.",
+              "ru": "Правильно. Если порежетесь, аптечка в тракторе."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut zu wissen, der Verbandskasten ist im Traktor. Dann sage ich sofort Bescheid.",
+            "tr": {
+              "uz": "Bilganim yaxshi boʻldi, quti traktorda ekan. Unda darhol xabar beraman.",
+              "uz-Cyrl": "Билганим яхши бўлди, қути тракторда экан. Унда дарҳол хабар бераман.",
+              "ru": "Хорошо, что знаю: аптечка в тракторе. Тогда сразу скажу."
+            }
+          }
+        ],
+        "status": "review"
       }
     },
     {
@@ -189,6 +272,89 @@
               "uz": "Eshik yonida, yaxshi. Men yemdan boshlayman.",
               "uz-Cyrl": "Эшик ёнида, яхши. Мен емдан бошлайман.",
               "ru": "У двери, хорошо. Я начну с корма."
+            }
+          }
+        ],
+        "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Fermer",
+              "uz-Cyrl": "Фермер",
+              "ru": "Фермер"
+            },
+            "de": "Am Zaun hinten ist ein Loch. Ein Schaf ist draußen auf der Straße.",
+            "tr": {
+              "uz": "Orqadagi toʻsiqda teshik bor. Bitta qoʻy tashqarida, yoʻlda.",
+              "uz-Cyrl": "Орқадаги тўсиқда тешик бор. Битта қўй ташқарида, йўлда.",
+              "ru": "Сзади в заборе дыра. Одна овца вышла на дорогу."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Oh nein! Soll ich sofort hinlaufen?",
+            "tr": {
+              "uz": "Voy! Darhol yugurib boraymi?",
+              "uz-Cyrl": "Вой! Дарҳол югуриб борайми?",
+              "ru": "Ой! Сразу бежать туда?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Fermer",
+              "uz-Cyrl": "Фермер",
+              "ru": "Фермер"
+            },
+            "de": "Nicht rennen, sonst läuft es weg. Wie holen Sie es zurück?",
+            "tr": {
+              "uz": "Yugurmang, boʻlmasa qochib ketadi. Uni qanday qaytarasiz?",
+              "uz-Cyrl": "Югурманг, бўлмаса қочиб кетади. Уни қандай қайтарасиз?",
+              "ru": "Не бегите, иначе она убежит. Как вы её вернёте?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Langsam, mit etwas Futter im Eimer.",
+            "tr": {
+              "uz": "Sekin, chelakda biroz yem bilan.",
+              "uz-Cyrl": "Секин, челакда бироз ем билан.",
+              "ru": "Медленно, с кормом в ведре."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Fermer",
+              "uz-Cyrl": "Фермер",
+              "ru": "Фермер"
+            },
+            "de": "Gut. Danach repariere ich den Zaun mit Draht.",
+            "tr": {
+              "uz": "Yaxshi. Keyin toʻsiqni sim bilan tuzataman.",
+              "uz-Cyrl": "Яхши. Кейин тўсиқни сим билан тузатаман.",
+              "ru": "Хорошо. Потом я починю забор проволокой."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Okay. Beim Draht helfe ich Ihnen, wenn das Schaf zurück ist.",
+            "tr": {
+              "uz": "Xoʻp. Qoʻy qaytgach, sim bilan sizga yordam beraman.",
+              "uz-Cyrl": "Хўп. Қўй қайтгач, сим билан сизга ёрдам бераман.",
+              "ru": "Хорошо. С проволокой помогу вам, когда овца вернётся."
             }
           }
         ],
@@ -286,6 +452,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Bogʻbon",
+              "uz-Cyrl": "Боғбон",
+              "ru": "Садовник"
+            },
+            "de": "Heute schneiden wir die alten Äste von den Apfelbäumen.",
+            "tr": {
+              "uz": "Bugun olma daraxtlaridan eski shoxlarni kesamiz.",
+              "uz-Cyrl": "Бугун олма дарахтларидан эски шохларни кесамиз.",
+              "ru": "Сегодня обрезаем старые ветки с яблонь."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Nehme ich die große Leiter aus der Scheune?",
+            "tr": {
+              "uz": "Yaxshi. Katta narvonni omborxonadan olaymi?",
+              "uz-Cyrl": "Яхши. Катта нарвонни омборхонадан олайми?",
+              "ru": "Хорошо. Взять большую лестницу из сарая?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Bogʻbon",
+              "uz-Cyrl": "Боғбон",
+              "ru": "Садовник"
+            },
+            "de": "Ja. Der Boden ist hier uneben. Was machen Sie, bevor Sie hochsteigen?",
+            "tr": {
+              "uz": "Ha. Bu yerda yer notekis. Yuqoriga chiqishdan oldin nima qilasiz?",
+              "uz-Cyrl": "Ҳа. Бу ерда ер нотекис. Юқорига чиқишдан олдин нима қиласиз?",
+              "ru": "Да. Здесь земля неровная. Что вы сделаете, прежде чем подняться?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich prüfe, ob die Leiter fest und gerade steht.",
+            "tr": {
+              "uz": "Narvon mahkam va tik turganini tekshiraman.",
+              "uz-Cyrl": "Нарвон маҳкам ва тик турганини текшираман.",
+              "ru": "Проверю, что лестница стоит прочно и ровно."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Bogʻbon",
+              "uz-Cyrl": "Боғбон",
+              "ru": "Садовник"
+            },
+            "de": "Genau. Die abgeschnittenen Äste legen Sie in die Mitte der Reihe.",
+            "tr": {
+              "uz": "Xuddi shunday. Kesilgan shoxlarni qator oʻrtasiga qoʻyasiz.",
+              "uz-Cyrl": "Худди шундай. Кесилган шохларни қатор ўртасига қўясиз.",
+              "ru": "Именно. Срезанные ветки кладите в середину ряда."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut, in die Mitte der Reihe. Dann liegen sie nicht im Weg.",
+            "tr": {
+              "uz": "Yaxshi, qator oʻrtasiga. Shunda ular yoʻlda yotmaydi.",
+              "uz-Cyrl": "Яхши, қатор ўртасига. Шунда улар йўлда ётмайди.",
+              "ru": "Хорошо, в середину ряда. Тогда они не будут мешать на проходе."
+            }
+          }
+        ],
+        "status": "review"
       }
     },
     {
@@ -375,6 +624,89 @@
               "uz": "Tushunarli, yetarlicha suv olib olaman.",
               "uz-Cyrl": "Тушунарли, етарлича сув олиб оламан.",
               "ru": "Понятно, возьму с собой достаточно воды."
+            }
+          }
+        ],
+        "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Der Traktor läuft noch, die Zapfwelle dreht sich. Gehen Sie nicht so nah ran!",
+            "tr": {
+              "uz": "Traktor hali ishlayapti, quvvat olish vali aylanyapti. Bunchalik yaqin kelmang!",
+              "uz-Cyrl": "Трактор ҳали ишлаяпти, қувват олиш вали айланяпти. Бунчалик яқин келманг!",
+              "ru": "Трактор ещё работает, вал отбора мощности крутится. Не подходите так близко!"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Entschuldigung. Ich will nur die Kiste holen.",
+            "tr": {
+              "uz": "Kechirasiz. Faqat qutini olmoqchiman.",
+              "uz-Cyrl": "Кечирасиз. Фақат қутини олмоқчиман.",
+              "ru": "Извините. Мне нужно только забрать ящик."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Kein Problem. Was ist bei der Zapfwelle besonders gefährlich?",
+            "tr": {
+              "uz": "Hechqisi yoʻq. Valda nima ayniqsa xavfli?",
+              "uz-Cyrl": "Ҳечқиси йўқ. Валда нима айниқса хавфли?",
+              "ru": "Ничего. Что особенно опасно у вала?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Lockere Kleidung. Die kann sich in der Welle verfangen.",
+            "tr": {
+              "uz": "Keng kiyim. U valga oʻralib qolishi mumkin.",
+              "uz-Cyrl": "Кенг кийим. У валга ўралиб қолиши мумкин.",
+              "ru": "Свободная одежда. Её может затянуть в вал."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Richtig. Ich stelle jetzt den Motor ab und ziehe den Schlüssel.",
+            "tr": {
+              "uz": "Toʻgʻri. Hozir motorni oʻchirib, kalitni olaman.",
+              "uz-Cyrl": "Тўғри. Ҳозир моторни ўчириб, калитни оламан.",
+              "ru": "Правильно. Сейчас заглушу мотор и выну ключ."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Danke. Wenn der Motor aus ist, hole ich die Kiste.",
+            "tr": {
+              "uz": "Rahmat. Motor oʻchgach, qutini olaman.",
+              "uz-Cyrl": "Раҳмат. Мотор ўчгач, қутини оламан.",
+              "ru": "Спасибо. Когда мотор выключится, заберу ящик."
             }
           }
         ],
@@ -472,6 +804,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Das Förderband stockt. Da hängt ein Stein zwischen den Rollen.",
+            "tr": {
+              "uz": "Konveyer tiqilib qoldi. Roliklar orasida tosh qolib ketibdi.",
+              "uz-Cyrl": "Конвейер тиқилиб қолди. Роликлар орасида тош қолиб кетибди.",
+              "ru": "Лента встала. Между роликами застрял камень."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich sehe ihn. Soll ich den Meister rufen?",
+            "tr": {
+              "uz": "Koʻryapman. Ustani chaqiraymi?",
+              "uz-Cyrl": "Кўряпман. Устани чақирайми?",
+              "ru": "Вижу его. Позвать мастера?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Gleich. Was machen Sie zuerst, bevor Sie den Stein rausholen?",
+            "tr": {
+              "uz": "Hozir. Toshni olishdan oldin avval nima qilasiz?",
+              "uz-Cyrl": "Ҳозир. Тошни олишдан олдин аввал нима қиласиз?",
+              "ru": "Сейчас. Что вы сделаете сначала, прежде чем достать камень?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich schalte das Band aus und warte, bis es steht.",
+            "tr": {
+              "uz": "Lentani oʻchirib, toʻxtashini kutaman.",
+              "uz-Cyrl": "Лентани ўчириб, тўхташини кутаман.",
+              "ru": "Выключу ленту и подожду, пока она остановится."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Richtig. Danach holen wir den Stein mit dem Haken raus, nicht mit der Hand.",
+            "tr": {
+              "uz": "Toʻgʻri. Keyin toshni qoʻl bilan emas, ilgak bilan olamiz.",
+              "uz-Cyrl": "Тўғри. Кейин тошни қўл билан эмас, илгак билан оламиз.",
+              "ru": "Правильно. Потом достанем камень крючком, а не рукой."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut, mit dem Haken. Ich hole ihn aus dem Werkzeugkasten.",
+            "tr": {
+              "uz": "Yaxshi, ilgak bilan. Uni asboblar qutisidan olib kelaman.",
+              "uz-Cyrl": "Яхши, илгак билан. Уни асбоблар қутисидан олиб келаман.",
+              "ru": "Хорошо, крючком. Возьму его из ящика с инструментами."
+            }
+          }
+        ],
+        "status": "review"
       }
     },
     {
@@ -561,6 +976,89 @@
               "uz": "Yaxshi. Unda tushdan keyin tashqarida ishlaymiz.",
               "uz-Cyrl": "Яхши. Унда тушдан кейин ташқарида ишлаймиз.",
               "ru": "Хорошо. Тогда после обеда работаем на улице."
+            }
+          }
+        ],
+        "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Heute wird es sehr heiß. Wir fangen früher an und machen mittags Pause.",
+            "tr": {
+              "uz": "Bugun juda issiq boʻladi. Ertaroq boshlaymiz va tushda tanaffus qilamiz.",
+              "uz-Cyrl": "Бугун жуда иссиқ бўлади. Эртароқ бошлаймиз ва тушда танаффус қиламиз.",
+              "ru": "Сегодня будет очень жарко. Начнём раньше и сделаем перерыв в полдень."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Ist die Pause im Schatten?",
+            "tr": {
+              "uz": "Yaxshi. Tanaffus soyadami?",
+              "uz-Cyrl": "Яхши. Танаффус соядами?",
+              "ru": "Хорошо. Перерыв в тени?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Ja, unter den Bäumen. Was nehmen Sie gegen die Sonne mit?",
+            "tr": {
+              "uz": "Ha, daraxtlar tagida. Quyoshdan himoya uchun nima olasiz?",
+              "uz-Cyrl": "Ҳа, дарахтлар тагида. Қуёшдан ҳимоя учун нима оласиз?",
+              "ru": "Да, под деревьями. Что вы возьмёте от солнца?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Einen Hut und Sonnencreme.",
+            "tr": {
+              "uz": "Shlyapa va quyoshdan himoya kremi.",
+              "uz-Cyrl": "Шляпа ва қуёшдан ҳимоя креми.",
+              "ru": "Шляпу и солнцезащитный крем."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Gut. Und wenn Ihnen schwindelig wird, hören Sie sofort auf und sagen es mir.",
+            "tr": {
+              "uz": "Yaxshi. Boshingiz aylansa, darhol toʻxtab, menga aytasiz.",
+              "uz-Cyrl": "Яхши. Бошингиз айланса, дарҳол тўхтаб, менга айтасиз.",
+              "ru": "Хорошо. Если закружится голова, сразу прекратите работу и скажите мне."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Verstanden. Bei Schwindel höre ich auf und sage Ihnen Bescheid.",
+            "tr": {
+              "uz": "Tushundim. Boshim aylansa, toʻxtab, sizga xabar beraman.",
+              "uz-Cyrl": "Тушундим. Бошим айланса, тўхтаб, сизга хабар бераман.",
+              "ru": "Понятно. Если закружится голова, прекращу и скажу вам."
             }
           }
         ],
@@ -658,6 +1156,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Veterinar",
+              "uz-Cyrl": "Ветеринар",
+              "ru": "Ветеринар"
+            },
+            "de": "Bevor wir in den Kälberstall gehen: Haben Sie saubere Stiefel?",
+            "tr": {
+              "uz": "Buzoqxonaga kirishdan oldin: etigingiz tozami?",
+              "uz-Cyrl": "Бузоқхонага киришдан олдин: этигингиз тозами?",
+              "ru": "Прежде чем войдём в телятник: у вас чистые сапоги?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, sie sind sauber.",
+            "tr": {
+              "uz": "Ha, toza.",
+              "uz-Cyrl": "Ҳа, тоза.",
+              "ru": "Да, чистые."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Veterinar",
+              "uz-Cyrl": "Ветеринар",
+              "ru": "Ветеринар"
+            },
+            "de": "Gut. Was machen Sie trotzdem am Eingang?",
+            "tr": {
+              "uz": "Yaxshi. Shunga qaramay kirishda nima qilasiz?",
+              "uz-Cyrl": "Яхши. Шунга қарамай киришда нима қиласиз?",
+              "ru": "Хорошо. Что вы всё равно сделаете у входа?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich gehe durch die Desinfektionswanne.",
+            "tr": {
+              "uz": "Dezinfeksiya vannasidan oʻtaman.",
+              "uz-Cyrl": "Дезинфекция ваннасидан ўтаман.",
+              "ru": "Пройду через дезинфекционную ванну."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Veterinar",
+              "uz-Cyrl": "Ветеринар",
+              "ru": "Ветеринар"
+            },
+            "de": "Genau. Und dieses kranke Kalb fassen Sie nur mit Handschuhen an.",
+            "tr": {
+              "uz": "Xuddi shunday. Bu kasal buzoqqa esa faqat qoʻlqop bilan tegasiz.",
+              "uz-Cyrl": "Худди шундай. Бу касал бузоққа эса фақат қўлқоп билан тегасиз.",
+              "ru": "Именно. А этого больного телёнка трогайте только в перчатках."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Okay, das kranke Kalb nur mit Handschuhen. Danach wasche ich die Hände.",
+            "tr": {
+              "uz": "Xoʻp, kasal buzoqqa faqat qoʻlqop bilan. Keyin qoʻlimni yuvaman.",
+              "uz-Cyrl": "Хўп, касал бузоққа фақат қўлқоп билан. Кейин қўлимни юваман.",
+              "ru": "Хорошо, больного телёнка только в перчатках. Потом помою руки."
+            }
+          }
+        ],
+        "status": "review"
       }
     },
     {
@@ -747,6 +1328,89 @@
               "uz": "Tushundim. Murojaat qilinadigan shaxsni qayerdan topaman?",
               "uz-Cyrl": "Тушундим. Мурожаат қилинадиган шахсни қаердан топаман?",
               "ru": "Понял. Где найти моего контактного человека?"
+            }
+          }
+        ],
+        "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Hier ist Ihr Stundenzettel für diese Woche. Bitte prüfen Sie ihn.",
+            "tr": {
+              "uz": "Mana bu haftalik ish soatlari varaqangiz. Iltimos, tekshirib chiqing.",
+              "uz-Cyrl": "Мана бу ҳафталик иш соатлари варақангиз. Илтимос, текшириб чиқинг.",
+              "ru": "Вот ваш табель за эту неделю. Пожалуйста, проверьте его."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Danke. Muss ich ihn heute unterschreiben?",
+            "tr": {
+              "uz": "Rahmat. Uni bugun imzolashim kerakmi?",
+              "uz-Cyrl": "Раҳмат. Уни бугун имзолашим керакми?",
+              "ru": "Спасибо. Мне нужно подписать его сегодня?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Bis Freitag. Aber zuerst: Stimmen die Stunden?",
+            "tr": {
+              "uz": "Juma kunigacha. Lekin avval: soatlar toʻgʻrimi?",
+              "uz-Cyrl": "Жума кунигача. Лекин аввал: соатлар тўғрими?",
+              "ru": "До пятницы. Но сначала: часы верные?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, am Dienstag fehlt eine Stunde. Da habe ich länger gearbeitet.",
+            "tr": {
+              "uz": "Yoʻq, seshanba kuni bir soat yetishmaydi. Oʻsha kuni uzoqroq ishladim.",
+              "uz-Cyrl": "Йўқ, сешанба куни бир соат етишмайди. Ўша куни узоқроқ ишладим.",
+              "ru": "Нет, во вторник не хватает одного часа. В тот день рабочий день был дольше."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Ich prüfe das und schreibe die Stunde dazu. Dann unterschreiben Sie.",
+            "tr": {
+              "uz": "Tekshirib, oʻsha soatni qoʻshib yozaman. Keyin imzolaysiz.",
+              "uz-Cyrl": "Текшириб, ўша соатни қўшиб ёзаман. Кейин имзолайсиз.",
+              "ru": "Я проверю и допишу этот час. Потом подпишете."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Danke. Wenn die Stunde dazu steht, unterschreibe ich.",
+            "tr": {
+              "uz": "Rahmat. Soat qoʻshib yozilgach, imzolayman.",
+              "uz-Cyrl": "Раҳмат. Соат қўшиб ёзилгач, имзолайман.",
+              "ru": "Спасибо. Когда час будет дописан, подпишу."
             }
           }
         ],
@@ -844,6 +1508,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Halt! In dieses Gewächshaus dürfen Sie heute nicht rein.",
+            "tr": {
+              "uz": "Toʻxtang! Bugun bu issiqxonaga kirish mumkin emas.",
+              "uz-Cyrl": "Тўхтанг! Бугун бу иссиқхонага кириш мумкин эмас.",
+              "ru": "Стоп! Сегодня в эту теплицу входить нельзя."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Oh, warum? Ich muss doch die Tomaten pflücken.",
+            "tr": {
+              "uz": "Voy, nega? Axir pomidor terishim kerak.",
+              "uz-Cyrl": "Вой, нега? Ахир помидор теришим керак.",
+              "ru": "Ой, почему? Мне ведь нужно собирать помидоры."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Gestern wurde hier gespritzt. Was steht auf dem Schild an der Tür?",
+            "tr": {
+              "uz": "Kecha bu yerga dori sepildi. Eshikdagi yozuvda nima yozilgan?",
+              "uz-Cyrl": "Кеча бу ерга дори сепилди. Эшикдаги ёзувда нима ёзилган?",
+              "ru": "Вчера здесь опрыскивали. Что написано на табличке на двери?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Betreten verboten, mit dem Datum von heute.",
+            "tr": {
+              "uz": "Kirish taqiqlangan, bugungi sana bilan.",
+              "uz-Cyrl": "Кириш тақиқланган, бугунги сана билан.",
+              "ru": "Вход запрещён, с сегодняшней датой."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Usta",
+              "uz-Cyrl": "Уста",
+              "ru": "Мастер"
+            },
+            "de": "Genau. Arbeiten Sie heute im zweiten Gewächshaus bei den Gurken.",
+            "tr": {
+              "uz": "Xuddi shunday. Bugun ikkinchi issiqxonada bodring bilan ishlang.",
+              "uz-Cyrl": "Худди шундай. Бугун иккинчи иссиқхонада бодринг билан ишланг.",
+              "ru": "Именно. Сегодня работайте во второй теплице с огурцами."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut, dann gehe ich zu den Gurken ins zweite Gewächshaus.",
+            "tr": {
+              "uz": "Yaxshi, unda ikkinchi issiqxonaga, bodringga boraman.",
+              "uz-Cyrl": "Яхши, унда иккинчи иссиқхонага, бодрингга бораман.",
+              "ru": "Хорошо, тогда пойду во вторую теплицу к огурцам."
+            }
+          }
+        ],
+        "status": "review"
       }
     },
     {
@@ -933,6 +1680,89 @@
               "uz": "Rahmat. Men rezina etik kiyganman.",
               "uz-Cyrl": "Раҳмат. Мен резина этик кийганман.",
               "ru": "Спасибо. Я в резиновых сапогах."
+            }
+          }
+        ],
+        "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Fermer",
+              "uz-Cyrl": "Фермер",
+              "ru": "Фермер"
+            },
+            "de": "Diese Kuh hat ein rotes Band am Bein. Sie bekommt ein Medikament.",
+            "tr": {
+              "uz": "Bu sigirning oyogʻida qizil lenta bor. Unga dori berilyapti.",
+              "uz-Cyrl": "Бу сигирнинг оёғида қизил лента бор. Унга дори бериляпти.",
+              "ru": "У этой коровы красная лента на ноге. Ей дают лекарство."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich sehe es. Melke ich sie heute auch?",
+            "tr": {
+              "uz": "Koʻryapman. Uni bugun ham sogʻamanmi?",
+              "uz-Cyrl": "Кўряпман. Уни бугун ҳам соғаманми?",
+              "ru": "Вижу. Её сегодня тоже доить?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Fermer",
+              "uz-Cyrl": "Фермер",
+              "ru": "Фермер"
+            },
+            "de": "Ja, aber zum Schluss. Wohin kommt ihre Milch?",
+            "tr": {
+              "uz": "Ha, lekin eng oxirida. Uning suti qayerga ketadi?",
+              "uz-Cyrl": "Ҳа, лекин энг охирида. Унинг сути қаерга кетади?",
+              "ru": "Да, но в самом конце. Куда пойдёт её молоко?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "In einen extra Eimer, nicht in den Milchtank.",
+            "tr": {
+              "uz": "Alohida chelakka, sut idishiga emas.",
+              "uz-Cyrl": "Алоҳида челакка, сут идишига эмас.",
+              "ru": "В отдельное ведро, не в молочный танк."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Fermer",
+              "uz-Cyrl": "Фермер",
+              "ru": "Фермер"
+            },
+            "de": "Richtig. Den Eimer stellen Sie danach hier neben die Tür. Ich kümmere mich darum.",
+            "tr": {
+              "uz": "Toʻgʻri. Keyin chelakni shu yerga, eshik yoniga qoʻyasiz. Uni oʻzim hal qilaman.",
+              "uz-Cyrl": "Тўғри. Кейин челакни шу ерга, эшик ёнига қўясиз. Уни ўзим ҳал қиламан.",
+              "ru": "Правильно. Потом поставьте ведро здесь, у двери. Я сам им займусь."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut, neben die Tür. Die Nummer der Kuh schreibe ich auch ins Heft.",
+            "tr": {
+              "uz": "Yaxshi, eshik yoniga. Sigirning raqamini ham daftarga yozaman.",
+              "uz-Cyrl": "Яхши, эшик ёнига. Сигирнинг рақамини ҳам дафтарга ёзаман.",
+              "ru": "Хорошо, у двери. Номер коровы тоже запишу в тетрадь."
             }
           }
         ],
@@ -1030,6 +1860,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Das Saatgut in diesem Sack ist gebeizt. Deshalb hat es eine Farbe.",
+            "tr": {
+              "uz": "Bu qopdagi urugʻ dorilangan. Shuning uchun u rangli.",
+              "uz-Cyrl": "Бу қопдаги уруғ дориланган. Шунинг учун у рангли.",
+              "ru": "Семена в этом мешке протравлены. Поэтому они цветные."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ah, verstehe. Wo fülle ich es ein?",
+            "tr": {
+              "uz": "Ha, tushundim. Uni qayerga solaman?",
+              "uz-Cyrl": "Ҳа, тушундим. Уни қаерга соламан?",
+              "ru": "А, понятно. Куда их засыпать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "In die Sämaschine. Worauf achten Sie bei gebeiztem Saatgut?",
+            "tr": {
+              "uz": "Ekish mashinasiga. Dorilangan urugʻ bilan ishlaganda nimaga eʼtibor berasiz?",
+              "uz-Cyrl": "Экиш машинасига. Дориланган уруғ билан ишлаганда нимага эътибор берасиз?",
+              "ru": "В сеялку. На что вы обращаете внимание при работе с протравленными семенами?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich trage Handschuhe und esse dabei nichts.",
+            "tr": {
+              "uz": "Qoʻlqop kiyaman va ish paytida hech narsa yemayman.",
+              "uz-Cyrl": "Қўлқоп кияман ва иш пайтида ҳеч нарса емайман.",
+              "ru": "Надеваю перчатки и во время работы ничего не ем."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Gut. Den leeren Sack werfen Sie nicht in den normalen Müll. Bringen Sie ihn zu mir.",
+            "tr": {
+              "uz": "Yaxshi. Boʻsh qopni oddiy axlatga tashlamang. Uni menga olib keling.",
+              "uz-Cyrl": "Яхши. Бўш қопни оддий ахлатга ташламанг. Уни менга олиб келинг.",
+              "ru": "Хорошо. Пустой мешок не выбрасывайте в обычный мусор. Принесите его мне."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Verstanden, den leeren Sack bringe ich zu Ihnen und nicht in den Müll.",
+            "tr": {
+              "uz": "Tushundim, boʻsh qopni axlatga emas, sizga olib kelaman.",
+              "uz-Cyrl": "Тушундим, бўш қопни ахлатга эмас, сизга олиб келаман.",
+              "ru": "Понятно, пустой мешок принесу вам, а не в мусор."
+            }
+          }
+        ],
+        "status": "review"
       }
     },
     {
@@ -1119,6 +2032,89 @@
               "uz": "Rahmat. Oʻzimning suv idishim bor.",
               "uz-Cyrl": "Раҳмат. Ўзимнинг сув идишим бор.",
               "ru": "Спасибо. У меня с собой своя бутылка воды."
+            }
+          }
+        ],
+        "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Fermer",
+              "uz-Cyrl": "Фермер",
+              "ru": "Фермер"
+            },
+            "de": "Die Tropfschläuche in Reihe fünf sind verstopft. Die Pflanzen bekommen kein Wasser.",
+            "tr": {
+              "uz": "Beshinchi qatordagi tomchilatib sugʻorish shlanglari tiqilib qolgan. Oʻsimliklarga suv bormayapti.",
+              "uz-Cyrl": "Бешинчи қатордаги томчилатиб суғориш шланглари тиқилиб қолган. Ўсимликларга сув бормаяпти.",
+              "ru": "Капельные шланги в пятом ряду забились. Растения не получают воду."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, das sieht man. Die Erde dort ist ganz trocken.",
+            "tr": {
+              "uz": "Ha, koʻrinib turibdi. U yerda tuproq butunlay quruq.",
+              "uz-Cyrl": "Ҳа, кўриниб турибди. У ерда тупроқ бутунлай қуруқ.",
+              "ru": "Да, это видно. Земля там совсем сухая."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Fermer",
+              "uz-Cyrl": "Фермер",
+              "ru": "Фермер"
+            },
+            "de": "Ja. Was prüfen Sie zuerst?",
+            "tr": {
+              "uz": "Ha. Avval nimani tekshirasiz?",
+              "uz-Cyrl": "Ҳа. Аввал нимани текширасиз?",
+              "ru": "Да. Что вы проверите сначала?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Den Filter an der Pumpe. Vielleicht ist er voll Sand.",
+            "tr": {
+              "uz": "Nasosdagi filtrni. Balki u qumga toʻlgandir.",
+              "uz-Cyrl": "Насосдаги филтрни. Балки у қумга тўлгандир.",
+              "ru": "Фильтр у насоса. Может, он забит песком."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Fermer",
+              "uz-Cyrl": "Фермер",
+              "ru": "Фермер"
+            },
+            "de": "Gut. Aber schalten Sie die Pumpe vorher aus.",
+            "tr": {
+              "uz": "Yaxshi. Lekin oldin nasosni oʻchiring.",
+              "uz-Cyrl": "Яхши. Лекин олдин насосни ўчиринг.",
+              "ru": "Хорошо. Но сначала выключите насос."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Okay, zuerst die Pumpe aus, dann mache ich den Filter sauber.",
+            "tr": {
+              "uz": "Xoʻp, avval nasosni oʻchiraman, keyin filtrni tozalayman.",
+              "uz-Cyrl": "Хўп, аввал насосни ўчираман, кейин филтрни тозалайман.",
+              "ru": "Хорошо, сначала выключу насос, потом почищу фильтр."
             }
           }
         ],
