@@ -46,12 +46,35 @@ describe('nemis kursi kasbiy paketlar bilan', () => {
     expect(DE_COURSE.vocab.filter((v) => v.id.startsWith('a1-'))).toHaveLength(22)
   })
 
-  it('modul yakuniy testi paket modulida ham quriladi (gap savolsiz)', () => {
+  it('modul yakuniy testi paket modulida: 8 soʻz + 4 gap (darsdagi boʻshliq mashqlaridan), oxirgisi yozish', () => {
     const info = scopeInfo(packModules[0].id, 'general', DE_COURSE)
     expect(info).toBeTruthy()
     const qs = buildTest(info!, { canListen: false, seed: 1, course: DE_COURSE })
-    expect(qs.length).toBeGreaterThan(0)
-    expect(qs.every((q) => q.kind === 'word')).toBe(true)
+    expect(qs.filter((q) => q.kind === 'word')).toHaveLength(8)
+    const gaps = qs.filter((q) => q.kind === 'gap')
+    expect(gaps).toHaveLength(4)
+    expect(qs[qs.length - 1]).toMatchObject({ kind: 'gap', mode: 'write' })
+    for (const q of gaps) expect(q.kind === 'gap' && DE_COURSE.gapById(q.gapId)?.moduleId).toBe(packModules[0].id)
+  })
+
+  it('paket gaplari: darsdagi mashq bilan aynan bir xil, javob soʻzi lugʻatda, id lar takrorlanmaydi', () => {
+    const packGaps = DE_COURSE.gaps.filter((g) => g.id.startsWith('p:'))
+    expect(packGaps.length).toBeGreaterThan(packModules.length * 4)
+    expect(new Set(DE_COURSE.gaps.map((g) => g.id)).size).toBe(DE_COURSE.gaps.length)
+    for (const g of packGaps) {
+      const ex = DE_COURSE.exercisesOf(g.lessonId).find((e) => e.id === g.id.slice(2))
+      expect(ex?.type, g.id).toBe('choice')
+      if (ex?.type !== 'choice') continue
+      expect(g.sentence).toBe(ex.sentence)
+      expect(g.sentence.replace('___', g.answer)).toBe(ex.full)
+      expect(new Set([g.answer, ...g.distractors]).size).toBe(3)
+      const w = DE_COURSE.wordById(g.wordId!)
+      expect(w?.term.endsWith(` ${g.answer}`), g.id).toBe(true)
+      expect(w?.moduleId).toBe(g.moduleId)
+    }
+    // deyarli har vaziyatda kamida 4 gap — modul testi 12 savol (misolda ot shakli oʻzgargan vaziyatlarda kamroq)
+    const full = packModules.filter((m) => packGaps.filter((g) => g.moduleId === m.id).length >= 4)
+    expect(full.length).toBeGreaterThan(packModules.length * 0.9)
   })
 })
 
