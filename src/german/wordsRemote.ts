@@ -1,5 +1,5 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
-import { ALL_WORD_IDS } from '../lang/registry'
+import { ALL_WORD_IDS } from '../lang/ids'
 import { sanitizeActivity, type Activity, type DayActivity } from './daily'
 import { sanitizeWords, type WordState, type Words } from './srs'
 

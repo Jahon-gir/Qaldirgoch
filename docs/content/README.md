@@ -80,7 +80,12 @@ npm run content:import -- docs/content/fayl.xlsx         # tekshirish + src/cont
 npm run content:import -- docs/content/fayl.xlsx --til ko  # koreys tili
 npm run content:check                                     # tayyor JSON'larni Excel'siz tekshirish
 npm run content:template                                  # shablonni qayta yaratish
+npm run content:ids                                       # src/lang/ids.gen.json ni qayta yasash (import buni oʻzi qiladi)
 ```
+
+`src/lang/ids.gen.json` — barcha dars, test va soʻz id'larining yengil nusxasi (0.28.0). Ilova ochilganda
+saqlangan natijalarni shu roʻyxat bilan tozalaydi va paketlarni (~2,3 MB) faqat til sahifasida yuklaydi.
+JSON paketlarini qoʻlda oʻzgartirsangiz, `npm run content:ids` ni ishga tushiring — aks holda `src/lang/ids.test.ts` yiqiladi.
 
 Xato boʻlsa hech narsa yozilmaydi; har bir xato varaq, qator va sabab bilan chiqadi, masalan:
 

@@ -1,39 +1,12 @@
-import { DIRECTIONS, LESSONS, MODULES, type ChoiceExercise, type DialogExercise, type Direction, type Exercise, type Lesson, type MatchExercise, type Module, type SyllableExercise } from '../content/german'
-import { ALL_RESULT_IDS, COURSES } from '../lang/registry'
-import type { Answers } from '../profile/questions'
+import { LESSONS, MODULES, type ChoiceExercise, type DialogExercise, type Direction, type Exercise, type Lesson, type MatchExercise, type Module, type SyllableExercise } from '../content/german'
+import { COURSES } from '../lang/registry'
+import type { Results } from './results'
 
-/* ---------- Yoʻnalish ---------- */
-
-/** Profildagi kasbdan yoʻnalish: elektrik/payvandchi/mexanik/quruvchi → technical; haydovchi → logistics; hamshira → care; oshpaz/mehmonxona → hospitality; qolgani → general. */
-export function directionFromProfession(profession: Answers['profession'] | undefined): Direction {
-  switch (profession) {
-    case 'electrician':
-    case 'welder':
-    case 'mechanic':
-    case 'construction':
-      return 'technical'
-    case 'nurse':
-      return 'care'
-    case 'cook':
-      return 'hospitality'
-    case 'driver':
-      return 'logistics'
-    default:
-      return 'general'
-  }
-}
-
-export const isDirection = (v: unknown): v is Direction => typeof v === 'string' && (DIRECTIONS as readonly string[]).includes(v)
-
-/** Qoʻlda tanlangan yoʻnalish ustun; yoʻq boʻlsa kasbdan avtomatik. */
-export function effectiveDirection(p: { profession: Answers['profession']; germanDirection?: Direction } | null): Direction {
-  return p?.germanDirection ?? directionFromProfession(p?.profession)
-}
+/* Yoʻnalish (direction.ts) va natijalar (results.ts) yengil modullarda — ilova ishga tushganda butun kurs kerak boʻlmasin (0.28.0). */
+export * from './direction'
+export * from './results'
 
 /* ---------- Kontent tanlash ---------- */
-
-export type Result = { lessonId: string; score: number; total: number; completedAt: string }
-export type Results = Record<string, Result>
 
 /** Daraja tartibi (kurs ichidagi oʻrni: A1 < A2 < B1, ko-H < ko-T1 < ko-T2); notanish daraja id'si — oxirida. */
 const LEVEL_ORDER: Record<string, number> = Object.fromEntries(COURSES.flatMap((c) => c.levels.map((lv, i) => [lv.id, i])))
@@ -187,48 +160,3 @@ export function summarize(exercises: Exercise[], outcomes: Outcome[]) {
   }
 }
 
-/* ---------- Natijalarni saqlash va birlashtirish ---------- */
-
-/** Tashqaridan (localStorage/server) kelgan qiymatni tozalaydi: maʼlum dars yoki test (reyestrdagi barcha kurslar), butun ball, yaroqli sana. */
-export function sanitizeResults(raw: unknown, known: ReadonlySet<string> = ALL_RESULT_IDS): Results {
-  const out: Results = {}
-  if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return out
-  for (const [id, v] of Object.entries(raw as Record<string, unknown>)) {
-    if (!known.has(id) || !v || typeof v !== 'object') continue
-    const r = v as Record<string, unknown>
-    const { score, total, completedAt } = r
-    if (Number.isInteger(score) && Number.isInteger(total) && (score as number) >= 0 && (total as number) > 0 && (score as number) <= (total as number) && typeof completedAt === 'string' && !Number.isNaN(Date.parse(completedAt))) {
-      out[id] = { lessonId: id, score: score as number, total: total as number, completedAt }
-    }
-  }
-  return out
-}
-
-/** Ikki natijadan yuqorisi (ulush boʻyicha). Teng boʻlsa — avval tugatilgani. */
-export function pickBetter(a: Result, b: Result): Result {
-  const diff = a.score * b.total - b.score * a.total // a/total_a - b/total_b ishorasi
-  if (diff > 0) return a
-  if (diff < 0) return b
-  return Date.parse(a.completedAt) <= Date.parse(b.completedAt) ? a : b
-}
-
-/** Dars topshirildi: mavjud natija bilan solishtirib eng yuqorisi qoladi. */
-export function recordResult(results: Results, incoming: Result): Results {
-  const cur = results[incoming.lessonId]
-  const best = cur ? pickBetter(cur, incoming) : incoming
-  return best === cur ? results : { ...results, [incoming.lessonId]: best }
-}
-
-/** Mehmon va akkaunt natijalari: har dars boʻyicha yuqori ball, dialogsiz. */
-export function mergeResults(a: Results, b: Results): Results {
-  let out = a
-  for (const r of Object.values(b)) out = recordResult(out, r)
-  return out
-}
-
-const same = (a: Result | undefined, b: Result) => !!a && a.score === b.score && a.total === b.total && a.completedAt === b.completedAt
-
-/** Serverga yuboriladiganlar (oflayn navbat): birlashtirilgan natijalardan serverda yoʻq yoki boshqacha boʻlganlari. */
-export function resultsToPush(merged: Results, server: Results): Result[] {
-  return Object.values(merged).filter((r) => !same(server[r.lessonId], r))
-}

@@ -10,6 +10,7 @@
  * Excel'dagi har bir soha uchun JSON qayta yoziladi; Excel'da yoʻq sohalarning JSON'lari tegilmaydi.
  * Qoʻllanma: docs/content/README.md
  */
+import { execSync } from 'node:child_process'
 import { mkdirSync, statSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -134,6 +135,11 @@ async function main() {
     process.exit(1)
   }
   console.log(dry ? '\nTekshiruv oʻtdi (--dry: fayl yozilmadi).' : `\nYozildi: ${written.map((f) => f.replace(ROOT + '/', '')).join(', ') || '— (boʻsh)'}`)
+  if (!dry && written.length) {
+    // Ilova ishga tushishidagi id nusxasi (src/lang/ids.gen.json) ham yangilanadi
+    execSync('npm run --silent content:ids', { cwd: ROOT, stdio: 'inherit' })
+    console.log('Yangilandi: src/lang/ids.gen.json')
+  }
   console.log('Keyingi qadam: npm run content:check (ilovadagi mavjud soʻzlar bilan toʻqnashuv ham tekshiriladi).')
 }
 

@@ -10,7 +10,6 @@ import { splashState } from './components/splashState'
 import { useT } from './i18n/I18nProvider'
 import { useProfile } from './profile/ProfileProvider'
 import Home from './pages/Home'
-import { CourseScope } from './lang/CourseContext'
 import Onboarding from './pages/onboarding/Onboarding'
 import { lazyPage, PageFallback } from './pages/lazyPage'
 
@@ -39,6 +38,8 @@ const CountryRoute = lazyPage(() => import('./pages/countries/routes').then((m) 
 const ProgramGuideRoute = lazyPage(() => import('./pages/countries/routes').then((m) => ({ default: m.ProgramGuideRoute })))
 const ProgramRoute = lazyPage(() => import('./pages/countries/routes').then((m) => ({ default: m.ProgramRoute })))
 const StepRoute = lazyPage(() => import('./pages/countries/routes').then((m) => ({ default: m.StepRoute })))
+/* Kurs qatlami ham alohida: nemis paketlari (~2,3 MB) faqat til sahifasi ochilganda yuklanadi, bosh ekranni kutdirmaydi (0.28.0). */
+const CourseScope = lazyPage(() => import('./lang/CourseContext').then((m) => ({ default: m.CourseScope })))
 
 /** Onboarding tugamagan boʻlsa — avval u. */
 function RequireOnboarding({ bare = false }: { bare?: boolean }) {
@@ -72,6 +73,25 @@ function useBooting() {
   const { status } = useAuth()
   const { sync, onboarded } = useProfile()
   return status === 'loading' || (status === 'signedIn' && sync === 'checking' && !onboarded)
+}
+
+/**
+ * Ilova chizilgach (splash vaqtidan foydalanib), boʻsh paytda kurs (nemis paketlari) oldindan yuklanadi: "Til" bosilganda kutilmaydi.
+ * Ishga tushishni kutdirmaydi (0.28.0); testlarda kerak emas (sahifalar oldindan yuklanadi).
+ */
+function usePrefetchCourse() {
+  useEffect(() => {
+    if (import.meta.env.MODE === 'test') return
+    const run = () => void CourseScope.preload().catch(() => {})
+    // Eski brauzerlarda (Safari) requestIdleCallback yoʻq — oddiy kechiktirish
+    const w = window as Partial<Window> & Window
+    if (w.requestIdleCallback && w.cancelIdleCallback) {
+      const id = w.requestIdleCallback(run, { timeout: 3000 })
+      return () => w.cancelIdleCallback!(id)
+    }
+    const id = window.setTimeout(run, 1000)
+    return () => window.clearTimeout(id)
+  }, [])
 }
 
 /** Marshrutlar (testda MemoryRouter ichida ham ishlatiladi). */
@@ -139,6 +159,7 @@ export default function App() {
   const t = useT()
   const booting = useBooting()
   const splash = useSplash(booting)
+  usePrefetchCourse()
   /* Splash ilova ustida turadi (bitta nusxa): soʻnganda ilova ostidan koʻrinadi */
   const overlay = splash !== 'gone' && <Splash leaving={splash === 'out'} />
   if (booting) {
