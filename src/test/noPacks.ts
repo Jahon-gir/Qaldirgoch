@@ -1,5 +1,6 @@
 import { beforeAll, vi } from 'vitest'
 import { preloadAllPages } from '../pages/lazyPage'
+import { preloadAllDicts } from '../i18n/dicts'
 
 /**
  * Testlarda kasbiy paketlar (src/content/packs) standart holatda O'CHIQ: mavjud testlar asosiy kursni
@@ -10,3 +11,6 @@ vi.mock('../content/german/packs', () => ({ DE_PACKS: [], DE_PACK_COURSE: { modu
 
 /** Lazy sahifalar (App.tsx) testlarda oldindan yuklanadi — ekranlar avvalgidek sinxron chiqadi. */
 beforeAll(() => preloadAllPages())
+
+/** Rus va kirill lugʻatlari (alohida boʻlak) testlarda oldindan yuklanadi — til almashtirish sinxron. */
+beforeAll(() => preloadAllDicts())

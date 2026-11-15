@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './fonts.css'
 import './index.css'
 import { ThemeProvider } from './theme/ThemeProvider'
-import { I18nProvider } from './i18n/I18nProvider'
+import { I18nProvider, preloadSavedLang } from './i18n/I18nProvider'
 import { AuthProvider } from './auth/AuthProvider'
 import { ProfileProvider } from './profile/ProfileProvider'
 import { ProgressProvider } from './progress/ProgressProvider'
@@ -13,26 +13,29 @@ import { InstallProvider } from './pwa/InstallProvider'
 import App from './App'
 import { PhoneRoot } from './phone/PhoneRoot'
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <ThemeProvider>
-      <I18nProvider>
-        <AuthProvider>
-          <ProfileProvider>
-            <ProgressProvider>
-              <LessonsProvider>
-                <WordsProvider>
-                  <InstallProvider>
-                    <PhoneRoot>
-                      <App />
-                    </PhoneRoot>
-                  </InstallProvider>
-                </WordsProvider>
-              </LessonsProvider>
-            </ProgressProvider>
-          </ProfileProvider>
-        </AuthProvider>
-      </I18nProvider>
-    </ThemeProvider>
-  </StrictMode>
+// Rus/kirill tanlangan boʻlsa — avval oʻsha lugʻat (kichik boʻlak), keyin chizish
+void preloadSavedLang().then(() =>
+  createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+      <ThemeProvider>
+        <I18nProvider>
+          <AuthProvider>
+            <ProfileProvider>
+              <ProgressProvider>
+                <LessonsProvider>
+                  <WordsProvider>
+                    <InstallProvider>
+                      <PhoneRoot>
+                        <App />
+                      </PhoneRoot>
+                    </InstallProvider>
+                  </WordsProvider>
+                </LessonsProvider>
+              </ProgressProvider>
+            </ProfileProvider>
+          </AuthProvider>
+        </I18nProvider>
+      </ThemeProvider>
+    </StrictMode>
+  )
 )
