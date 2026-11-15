@@ -1,10 +1,8 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
-import { uz, type Dict, type Key } from './uz'
-import { ru } from './ru'
-import { toCyrillic } from './translit'
-import { cyrlOverrides } from './cyrl'
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
+import { uz, type Key } from './uz'
+import { getDict, loadDict, type Lang } from './dicts'
 
-export type Lang = 'uz' | 'uz-Cyrl' | 'ru'
+export type { Lang }
 export const LANGS: { id: Lang; name: string }[] = [
   { id: 'uz', name: 'Oʻzbekcha' },
   { id: 'uz-Cyrl', name: 'Ўзбекча' },
@@ -13,7 +11,7 @@ export const LANGS: { id: Lang; name: string }[] = [
 
 const KEY = 'qaldirgoch.lang'
 
-function load(): Lang {
+export function savedLang(): Lang {
   try {
     const v = localStorage.getItem(KEY)
     if (v === 'uz' || v === 'uz-Cyrl' || v === 'ru') return v
@@ -23,14 +21,16 @@ function load(): Lang {
   return 'uz'
 }
 
-let cyrl: Dict | null = null
-function dict(lang: Lang): Dict {
-  if (lang === 'ru') return ru
-  if (lang === 'uz') return uz
-  if (!cyrl) cyrl = Object.fromEntries(Object.entries(uz).map(([k, v]) => [k, toCyrillic(v)])) as Dict
-    Object.assign(cyrl, cyrlOverrides)
-  return cyrl
+function save(lang: Lang) {
+  try {
+    localStorage.setItem(KEY, lang)
+  } catch {
+    /* xususiy rejim */
+  }
 }
+
+/** main.tsx chizishdan oldin chaqiradi: saqlangan til lugʻati tayyor boʻlsin (oʻzbekcha "miltillash" boʻlmasin). */
+export const preloadSavedLang = () => loadDict(savedLang()).catch(() => undefined)
 
 export type TFn = (key: Key, vars?: Record<string, string | number>) => string
 type Ctx = { lang: Lang; setLang: (l: Lang) => void; t: TFn }
@@ -38,20 +38,36 @@ type Ctx = { lang: Lang; setLang: (l: Lang) => void; t: TFn }
 const I18nContext = createContext<Ctx | null>(null)
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Lang>(load)
+  // Lugʻat hali yuklanmagan boʻlsa (tarmoq xatosi) — vaqtincha oʻzbekcha, yuklangach almashadi
+  const [lang, setLangState] = useState<Lang>(() => {
+    const l = savedLang()
+    return getDict(l) ? l : 'uz'
+  })
+  const wanted = useRef<Lang>(savedLang())
+
+  const setLang = useCallback((l: Lang) => {
+    wanted.current = l
+    save(l)
+    if (getDict(l)) setLangState(l)
+    else
+      loadDict(l)
+        .then(() => {
+          if (wanted.current === l) setLangState(l)
+        })
+        .catch(() => undefined)
+  }, [])
+
+  useEffect(() => {
+    if (wanted.current !== lang) setLang(wanted.current)
+  }, [lang, setLang])
 
   useEffect(() => {
     document.documentElement.lang = lang
-    try {
-      localStorage.setItem(KEY, lang)
-    } catch {
-      /* xususiy rejim */
-    }
   }, [lang])
 
   const t = useCallback<TFn>(
     (key, vars) => {
-      const s = dict(lang)[key] ?? key
+      const s = (getDict(lang) ?? uz)[key] ?? key
       // Oʻrinbosarlar translitdan keyin qoʻyiladi: foydalanuvchi matni oʻzgarmaydi
       return vars ? s.replace(/\{(\w+)\}/g, (m, k: string) => (k in vars ? String(vars[k]) : m)) : s
     },
