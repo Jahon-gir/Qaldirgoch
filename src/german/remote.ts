@@ -1,5 +1,5 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
-import { sanitizeResults, type Result, type Results } from './logic'
+import { sanitizeResults, type Result, type Results } from './results'
 
 type Row = { lesson_id: string; score: number; total: number; completed_at: string }
 

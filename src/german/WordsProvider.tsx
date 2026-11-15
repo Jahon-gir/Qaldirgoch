@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { useAuth } from '../auth/AuthProvider'
-import { lessonWordIds } from '../lang/words'
-import { ALL_WORD_IDS, courseIdOfLesson, courseIdOfWord, courseOf } from '../lang/registry'
+import { courseIdOfWord } from '../lang/courseIds'
+import { ALL_WORD_IDS, wordIdsOfAnyLesson } from '../lang/ids'
 import type { CourseId } from '../lang/types'
 import { supabase } from '../lib/supabase'
 import { useProfile } from '../profile/ProfileProvider'
@@ -38,9 +38,6 @@ const WordsContext = createContext<Ctx | null>(null)
 
 const loadWords = () => read(PROGRESS_KEYS.words, (s) => sanitizeWords(JSON.parse(s), ALL_WORD_IDS), {})
 const loadActivity = () => read(PROGRESS_KEYS.activity, (s) => sanitizeActivity(JSON.parse(s)), {})
-
-/** Dars (istalgan kurs) soʻzlari id'lari. */
-const wordIdsOfAnyLesson = (lessonId: string) => lessonWordIds(courseOf(courseIdOfLesson(lessonId)), lessonId)
 
 const onlyCourse = (words: Words, course: CourseId): Words => Object.fromEntries(Object.entries(words).filter(([id]) => courseIdOfWord(id) === course))
 

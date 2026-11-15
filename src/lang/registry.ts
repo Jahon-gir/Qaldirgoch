@@ -1,5 +1,6 @@
 import { DE_COURSE } from './de'
 import { KO_COURSE } from './ko'
+import { testResultId } from './courseIds'
 import type { Course, CourseId } from './types'
 
 /** Reyestrdagi kurslar. */
@@ -8,14 +9,7 @@ export const COURSES: readonly Course[] = [DE_COURSE, KO_COURSE]
 /** Kurs (reyestrda boʻlmasa — standart nemis kursi). */
 export const courseOf = (id: CourseId): Course => COURSES.find((c) => c.id === id) ?? DE_COURSE
 
-/** Id prefiksi boʻyicha kurs: "ko-" — 'ko', aks holda (prefikssiz) — 'de'. */
-const byPrefix = (id: string): CourseId => (id.startsWith('ko-') ? 'ko' : 'de')
-/** Dars id'si ("ko-h-m1-l1") yoki test natijasi id'si ("test:ko-t1-m1", "test:level-ko-T1"; soha testi "test:field-care" — nemischa). */
-export const courseIdOfLesson = (lessonId: string): CourseId => byPrefix(lessonId.replace(/^test:(level-)?/, ''))
-export const courseIdOfWord = (wordId: string): CourseId => byPrefix(wordId)
-
-/** Yakuniy test natijasi id'si: "test:<modul id>" yoki "test:level-<daraja id>". */
-export const testResultId = (scope: string) => `test:${scope}`
+export { courseIdOfLesson, courseIdOfWord, testResultId } from './courseIds'
 
 type ResultSource = Pick<Course, 'lessons' | 'modules' | 'levels'> & Partial<Pick<Course, 'directions'>>
 
@@ -30,6 +24,9 @@ export const wordIdsOf = (c: Pick<Course, 'vocab'>): string[] => c.vocab.map((w)
 export const unionResultIds = (courses: readonly ResultSource[]): ReadonlySet<string> => new Set(courses.flatMap(resultIdsOf))
 export const unionWordIds = (courses: readonly Pick<Course, 'vocab'>[]): ReadonlySet<string> => new Set(courses.flatMap(wordIdsOf))
 
-/** Reyestrdagi BARCHA kurslarning natija va soʻz id'lari: bitta kursga "qulflanmagan". */
+/**
+ * Reyestrdagi BARCHA kurslarning natija va soʻz id'lari: bitta kursga "qulflanmagan".
+ * Ilova ishga tushganda (provayderlar) bularning nusxasi — `ids.ts` (ids.gen.json) ishlatiladi; ids.test.ts ular tengligini tekshiradi.
+ */
 export const ALL_RESULT_IDS: ReadonlySet<string> = unionResultIds(COURSES)
 export const ALL_WORD_IDS: ReadonlySet<string> = unionWordIds(COURSES)

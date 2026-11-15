@@ -1,7 +1,7 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
 import { countryById } from '../content/countries'
 import { normalizeGoal } from '../german/daily'
-import { isDirection } from '../german/logic'
+import { isDirection } from '../german/direction'
 import { isCourseId } from '../lang/types'
 import { isComplete, normalizeVocabFront, PROFILE_SCHEMA_VERSION, QUESTIONS, VOCAB_MODES, type Answers, type Profile } from './questions'
 

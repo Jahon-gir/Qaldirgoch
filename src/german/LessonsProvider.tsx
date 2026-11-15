@@ -1,9 +1,9 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { useAuth } from '../auth/AuthProvider'
-import { ALL_RESULT_IDS } from '../lang/registry'
+import { ALL_RESULT_IDS } from '../lang/ids'
 import { supabase } from '../lib/supabase'
 import { PROGRESS_KEYS, read, write } from '../progress/storage'
-import { mergeResults, recordResult, resultsToPush, sanitizeResults, type Result, type Results } from './logic'
+import { mergeResults, recordResult, resultsToPush, sanitizeResults, type Result, type Results } from './results'
 import { fetchRemoteResults, pushRemoteResults } from './remote'
 
 type Ctx = {
