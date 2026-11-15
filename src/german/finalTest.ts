@@ -10,6 +10,7 @@ import { lessonsOf, visibleModules, type Results } from './logic'
 /**
  * Modul va daraja yakuniy testi (sof funksiyalar).
  * Modul: 8 soʻz savoli + 4 gap (3 tanlash, oxirgisi yozish) = 12. Daraja: 16 + 4 = 20.
+ * Soha (kasb) yakuniy testi: shu sohaning barcha vaziyatlaridan aralash 20 soʻz + 4 gap (gap boʻlsa).
  * Har savolga BIR MARTA javob. Oʻtish: toʻgʻri / jami ≥ 11/12 (qisqa testda ham shu nisbat, yuqoriga yaxlitlab).
  * Natija user_lessons da "test:<scope>" id bilan saqlanadi (yangi jadval yoʻq).
  */
@@ -18,6 +19,9 @@ export type Scope = string // modul id (masalan "a1-m1") yoki "level-A1" (boshqa
 export type Question = { kind: 'word'; method: ExerciseKind; wordId: string } | { kind: 'gap'; mode: 'choice' | 'write'; gapId: string }
 
 export const LEVEL_PREFIX = 'level-'
+/** Soha yakuniy testi: "field-<yoʻnalish>" (masalan "field-care"); natija "test:field-care". */
+export const FIELD_PREFIX = 'field-'
+export const fieldScope = (d: Direction) => `${FIELD_PREFIX}${d}`
 /** lv — daraja id'si (nemischa "A1"; boshqa kurslar "ko-T1"). */
 export const levelScope = (lv: string) => `${LEVEL_PREFIX}${lv}`
 export const testId = (scope: Scope) => testResultId(scope)
@@ -55,10 +59,28 @@ function shuffle<T>(items: readonly T[], rand: () => number): T[] {
 /* ---------- Doira (scope) ---------- */
 
 /** course — qaysi kursning testi (soʻzlar, gaplar va darslar shu kursdan olinadi). */
-export type ScopeInfo = { scope: Scope; type: 'module' | 'level'; level: string; moduleIds: string[]; wordCount: number; gapCount: number; course: CourseId }
+export type ScopeInfo = {
+  scope: Scope
+  type: 'module' | 'level' | 'field'
+  /** Soha testida — sohaning birinchi darajasi (faqat maʼlumot uchun). */
+  level: string
+  moduleIds: string[]
+  wordCount: number
+  gapCount: number
+  course: CourseId
+  /** Faqat soha testida: qaysi soha. */
+  field?: Direction
+}
 
 /** Doiradagi modullar: modul — oʻzi; daraja — shu darajadagi koʻrinadigan modullar (soni kontentdan). */
 export function scopeInfo(scope: Scope, direction: Direction, course: Course = DE_COURSE): ScopeInfo | null {
+  if (scope.startsWith(FIELD_PREFIX)) {
+    const field = scope.slice(FIELD_PREFIX.length) as Direction
+    if (field === 'general' || !course.directions?.includes(field)) return null
+    const mods = visibleModules(field, course.modules).filter((m) => m.direction === field)
+    if (!mods.length) return null
+    return { scope, type: 'field', level: mods[0].level, moduleIds: mods.map((m) => m.id), wordCount: 20, gapCount: 4, course: course.id, field }
+  }
   if (scope.startsWith(LEVEL_PREFIX)) {
     const level = scope.slice(LEVEL_PREFIX.length)
     const mods = visibleModules(direction, course.modules).filter((m) => m.level === level)
@@ -73,9 +95,15 @@ export function scopeInfo(scope: Scope, direction: Direction, course: Course = D
 const wordsOf = (moduleIds: string[], vocab: readonly VocabWord[]) => vocab.filter((w) => moduleIds.includes(w.moduleId))
 const gapsOf = (moduleIds: string[], gaps: readonly GapItem[]) => gaps.filter((g) => moduleIds.includes(g.moduleId))
 
+/** Soʻz va gap savollari soni: yetmasa — qisqaroq. */
+export function testParts(info: ScopeInfo, vocab: readonly VocabWord[] = courseOf(info.course).vocab, gaps: readonly GapItem[] = courseOf(info.course).gaps) {
+  return { words: Math.min(info.wordCount, wordsOf(info.moduleIds, vocab).length), gaps: Math.min(info.gapCount, gapsOf(info.moduleIds, gaps).length) }
+}
+
 /** Savollar soni (kartochka uchun): soʻz va gap yetmasa — qisqaroq. */
 export function testSize(info: ScopeInfo, vocab: readonly VocabWord[] = courseOf(info.course).vocab, gaps: readonly GapItem[] = courseOf(info.course).gaps) {
-  return Math.min(info.wordCount, wordsOf(info.moduleIds, vocab).length) + Math.min(info.gapCount, gapsOf(info.moduleIds, gaps).length)
+  const p = testParts(info, vocab, gaps)
+  return p.words + p.gaps
 }
 
 /** Ochilganmi: modul — barcha darslari tugagan; daraja — barcha koʻrinadigan modullarning barcha darslari (darsi yoʻq modul — tugamagan). */

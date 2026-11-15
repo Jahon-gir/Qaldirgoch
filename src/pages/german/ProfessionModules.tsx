@@ -2,19 +2,23 @@ import { Navigate, useParams } from 'react-router-dom'
 import { IconArrowLeft } from '@tabler/icons-react'
 import { Card } from '../../components/ui/Card'
 import { ModuleList } from '../../components/german/ModuleList'
+import { TestCard } from '../../components/german/TestCard'
+import { fieldScope, scopeInfo } from '../../german/finalTest'
+import { useLessons } from '../../german/LessonsProvider'
 import { useI18n } from '../../i18n/I18nProvider'
 import { isDirection, visibleModules } from '../../german/logic'
 import { useCourse, useCoursePaths } from '../../lang/CourseContext'
 import { useBack } from '../../lib/useHistoryAnchor'
 import { levelName } from '../../lang/text'
 
-/** Tanlangan kasb modullari (/til/kasblar/:soha). */
+/** Tanlangan kasb modullari (/til/kasblar/:soha); oxirida — soha yakuniy testi (barcha vaziyatlar tugagach ochiladi). */
 export default function ProfessionModules() {
   const { soha = '' } = useParams()
   const { lang, t } = useI18n()
   const course = useCourse()
   const paths = useCoursePaths()
   const back = useBack(paths.professions)
+  const { results } = useLessons()
   if (!isDirection(soha) || soha === 'general' || !course.directions?.includes(soha)) return <Navigate to={paths.professions} replace />
   const modules = visibleModules(soha, course.modules).filter((m) => m.direction === soha)
   const levels = [...new Set(modules.map((m) => m.level))]
@@ -41,6 +45,17 @@ export default function ProfessionModules() {
           </section>
         ))
       )}
+      {(() => {
+        const info = modules.length ? scopeInfo(fieldScope(soha), soha, course) : null
+        return info && (
+          <section aria-labelledby="field-test-title" className="space-y-2 pt-2">
+            <h2 id="field-test-title" className="px-1 text-lg font-semibold text-trust-text">
+              {t('ft.fieldSection')}
+            </h2>
+            <TestCard info={info} results={results} title={t('ft.fieldTitle')} always />
+          </section>
+        )
+      })()}
     </div>
   )
 }

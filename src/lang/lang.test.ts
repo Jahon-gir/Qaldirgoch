@@ -70,7 +70,10 @@ describe("nemis kursi: id'lar oʻzgarmagan", () => {
     expect(resultIdsOf(DE_COURSE)).toEqual([
       'a1-m1-l1', 'a1-m1-l2', 'a1-m1-l3', 'a1-m1-l4', 'a1-m1-l5', 'a1-m1-l6',
       'test:a1-m1', 'test:a1-m2', 'test:a1-m3',
-      'test:level-A1', 'test:level-A2', 'test:level-B1'
+      'test:level-A1', 'test:level-A2', 'test:level-B1',
+      // Soha yakuniy testlari (0.26.0) — faqat qoʻshildi
+      'test:field-technical', 'test:field-care', 'test:field-hospitality', 'test:field-logistics', 'test:field-metal',
+      'test:field-cleaning', 'test:field-agriculture', 'test:field-retail', 'test:field-food'
     ])
     expect([...ALL_RESULT_IDS].filter((id) => courseIdOfLesson(id) === 'de').sort()).toEqual(resultIdsOf(DE_COURSE).sort())
   })
