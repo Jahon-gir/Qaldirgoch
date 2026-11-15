@@ -12,7 +12,7 @@ import { Footer, VocabHeader } from '../../components/vocab/parts'
 import { useAuth } from '../../auth/AuthProvider'
 import { useI18n } from '../../i18n/I18nProvider'
 import { useBack, useHistoryAnchor } from '../../lib/useHistoryAnchor'
-import { buildTest, resultLine, isPassed, isScopeUnlocked, passMark, scopeInfo, testId, testSize, type Question, type ScopeInfo } from '../../german/finalTest'
+import { buildTest, resultLine, isPassed, isScopeUnlocked, passMark, scopeInfo, testId, testParts, testSize, type Question, type ScopeInfo } from '../../german/finalTest'
 import { useDirection } from '../../german/useDirection'
 import { useLessons } from '../../german/LessonsProvider'
 import { localDay } from '../../german/srs'
@@ -29,7 +29,7 @@ const accentBtn =
 
 type Done = { score: number; total: number; wrongWords: string[] }
 
-/** /til/test/:scope — modul ("a1-m1") yoki daraja ("level-A1") yakuniy testi. Ochilmagan boʻlsa — Til ekraniga. */
+/** /til/test/:scope — modul ("a1-m1"), daraja ("level-A1") yoki soha ("field-care") yakuniy testi. Ochilmagan boʻlsa — Til ekraniga. */
 export default function FinalTestPage() {
   const { scope = '' } = useParams()
   const course = useCourse()
@@ -54,9 +54,12 @@ function FinalTest({ info, direction }: { info: ScopeInfo; direction: Direction 
   const { markMistakes, addDone } = useWords()
   const mod = info.type === 'module' ? moduleById(info.moduleIds[0]) : undefined
   const lv = levelName(course, info.level, lang)
-  const title = mod ? t('ft.moduleTitle', { n: moduleNumber(mod.id, direction, course.modules) }) : t('ft.levelTitle', { level: lv })
-  const sub = mod ? mod.title[lang] : t('german.levelTitle', { level: lv })
+  const field = info.type === 'field' ? info.field : undefined
+  const title = mod ? t('ft.moduleTitle', { n: moduleNumber(mod.id, direction, course.modules) }) : field ? t('ft.fieldTitle') : t('ft.levelTitle', { level: lv })
+  const sub = mod ? mod.title[lang] : field ? t(`dir.${field}`) : t('german.levelTitle', { level: lv })
   const size = testSize(info)
+  // Gap savoli yoʻq testda (kasbiy paket vaziyatlari) "Ichida nima bor" faqat soʻz savollarini aytadi
+  const inside = course.id === 'de' && testParts(info).gaps === 0 ? 'ft.insideWords' : COURSE_TEXT[course.id].ftInside
 
   const [questions, setQuestions] = useState<Question[] | null>(null)
   const [i, setI] = useState(0)
@@ -107,7 +110,7 @@ function FinalTest({ info, direction }: { info: ScopeInfo; direction: Direction 
                 <IconCheck size={56} stroke={3} aria-hidden />
               </span>
             )}
-            <h1 className="text-2xl font-semibold">{passed ? (mod ? t('ft.moduleDone') : t('ft.levelDone', { level: lv })) : t('ft.notPassedTitle')}</h1>
+            <h1 className="text-2xl font-semibold">{passed ? (mod ? t('ft.moduleDone') : field ? t('ft.fieldDone') : t('ft.levelDone', { level: lv })) : t('ft.notPassedTitle')}</h1>
             <p className="text-base text-ink-2">{t('ft.summary', { total: done.total, score: done.score })}</p>
             {!passed && <p className="text-base font-semibold">{t('ft.more', { need: passMark(done.total), got: done.score })}</p>}
           </div>
@@ -194,7 +197,7 @@ function FinalTest({ info, direction }: { info: ScopeInfo; direction: Direction 
         </div>
         <Card>
           <h2 className="text-lg font-semibold">{t('ft.insideTitle')}</h2>
-          <p className="mt-1 text-base">{t(COURSE_TEXT[course.id].ftInside)}</p>
+          <p className="mt-1 text-base">{t(inside)}</p>
         </Card>
         <p className="flex items-center gap-2 px-1 text-base text-ink-2">
           <IconRepeat size={20} aria-hidden />

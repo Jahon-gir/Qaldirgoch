@@ -8,7 +8,7 @@ import { courseOf } from '../../lang/registry'
 import { levelName } from '../../lang/text'
 
 /**
- * Yakuniy test kartochkasi. Modul testi — faqat ochilganda koʻrinadi (always=false); daraja testi — doim, ochilmaguncha qulf.
+ * Yakuniy test kartochkasi. Modul testi — faqat ochilganda koʻrinadi (always=false); daraja va soha testi — doim, ochilmaguncha qulf.
  */
 export function TestCard({ info, results, title, always = false, className = '' }: { info: ScopeInfo; results: Results; title: string; always?: boolean; className?: string }) {
   const { lang, t } = useI18n()
@@ -26,7 +26,7 @@ export function TestCard({ info, results, title, always = false, className = '' 
         </span>
         <span className="min-w-0 flex-1">
           <span className="block text-base font-semibold">{title}</span>
-          <span className="block text-base">{t('ft.levelLocked', { level: levelName(courseOf(info.course), info.level, lang) })}</span>
+          <span className="block text-base">{info.type === 'field' ? t('ft.fieldLocked') : t('ft.levelLocked', { level: levelName(courseOf(info.course), info.level, lang) })}</span>
         </span>
         <IconLock size={22} className="shrink-0" aria-hidden />
       </div>
