@@ -3092,6 +3092,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Yashovchining qizi",
+              "uz-Cyrl": "Яшовчининг қизи",
+              "ru": "Дочь жительницы"
+            },
+            "de": "Man hat mich angerufen. Ist meine Mutter wirklich verstorben?",
+            "tr": {
+              "uz": "Menga qoʻngʻiroq qilishdi. Onam rostdan ham vafot etdimi?",
+              "uz-Cyrl": "Менга қўнғироқ қилишди. Онам ростдан ҳам вафот этдими?",
+              "ru": "Мне позвонили. Моя мама правда скончалась?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, leider. Sie ist heute früh ruhig eingeschlafen. Mein herzliches Beileid.",
+            "tr": {
+              "uz": "Ha, afsuski. U bugun erta tongda osoyishta koʻz yumdi. Chin dildan hamdardlik bildiraman.",
+              "uz-Cyrl": "Ҳа, афсуски. У бугун эрта тонгда осойишта кўз юмди. Чин дилдан ҳамдардлик билдираман.",
+              "ru": "Да, к сожалению. Сегодня рано утром она спокойно ушла. Мои искренние соболезнования."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Yashovchining qizi",
+              "uz-Cyrl": "Яшовчининг қизи",
+              "ru": "Дочь жительницы"
+            },
+            "de": "Ich konnte nicht bei ihr sein. War sie allein?",
+            "tr": {
+              "uz": "Men uning yonida boʻla olmadim. U yolgʻiz edimi?",
+              "uz-Cyrl": "Мен унинг ёнида бўла олмадим. У ёлғиз эдими?",
+              "ru": "Я не смогла быть с ней. Она была одна?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, sie war nicht allein. Eine Kollegin hat ihre Hand gehalten.",
+            "tr": {
+              "uz": "Yoʻq, u yolgʻiz emasdi. Bir hamkasbim uning qoʻlini ushlab turgan edi.",
+              "uz-Cyrl": "Йўқ, у ёлғиз эмасди. Бир ҳамкасбим унинг қўлини ушлаб турган эди.",
+              "ru": "Нет, она была не одна. Коллега держала её за руку."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Yashovchining qizi",
+              "uz-Cyrl": "Яшовчининг қизи",
+              "ru": "Дочь жительницы"
+            },
+            "de": "Danke. Darf ich mich noch von ihr verabschieden? Mein Bruder kommt erst am Abend.",
+            "tr": {
+              "uz": "Rahmat. U bilan xayrlashsam boʻladimi? Akam faqat kechqurun keladi.",
+              "uz-Cyrl": "Раҳмат. У билан хайрлашсам бўладими? Акам фақат кечқурун келади.",
+              "ru": "Спасибо. Можно мне ещё попрощаться с ней? Мой брат приедет только вечером."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Natürlich. Sie können sich jetzt in Ruhe verabschieden, und Ihr Bruder am Abend auch.",
+            "tr": {
+              "uz": "Albatta. Siz hozir xotirjam xayrlashishingiz mumkin, akangiz ham kechqurun.",
+              "uz-Cyrl": "Албатта. Сиз ҳозир хотиржам хайрлашишингиз мумкин, акангиз ҳам кечқурун.",
+              "ru": "Конечно. Вы можете сейчас спокойно попрощаться, и ваш брат вечером тоже."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
