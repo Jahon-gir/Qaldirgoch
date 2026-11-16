@@ -3000,6 +3000,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "palliativ",
+      "title": {
+        "uz": "Palliativ parvarish",
+        "uz-Cyrl": "Паллиатив парвариш",
+        "ru": "Паллиативный уход"
+      },
+      "order": 18,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Frau Roth ist sehr schwach. Die Ärztin sagt, sie ist jetzt in der Sterbephase.",
+            "tr": {
+              "uz": "Rot xonim juda holsiz. Shifokor uning hozir soʻnggi bosqichda ekanini aytdi.",
+              "uz-Cyrl": "Рот хоним жуда ҳолсиз. Шифокор унинг ҳозир сўнгги босқичда эканини айтди.",
+              "ru": "Госпожа Рот очень слаба. Врач говорит, что она сейчас в последней фазе."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Verstanden. Hat sie Schmerzen, oder hilft die Schmerzlinderung?",
+            "tr": {
+              "uz": "Tushundim. Ogʻrigʻi bormi yoki ogʻriqni yengillatish yordam beryaptimi?",
+              "uz-Cyrl": "Тушундим. Оғриғи борми ёки оғриқни енгиллатиш ёрдам беряптими?",
+              "ru": "Понятно. У неё есть боли или обезболивание помогает?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Sie wirkt ruhig. Aber ihre Tochter ist noch unterwegs und braucht eine Stunde.",
+            "tr": {
+              "uz": "U xotirjam koʻrinadi. Lekin qizi hali yoʻlda, yana bir soat kerak.",
+              "uz-Cyrl": "У хотиржам кўринади. Лекин қизи ҳали йўлда, яна бир соат керак.",
+              "ru": "Она выглядит спокойной. Но дочь ещё в пути, ей нужен ещё час."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Dann bleibe ich bei Frau Roth, bis die Tochter kommt.",
+            "tr": {
+              "uz": "Unda qizi kelguncha Rot xonimning yonida qolaman.",
+              "uz-Cyrl": "Унда қизи келгунча Рот хонимнинг ёнида қоламан.",
+              "ru": "Тогда я останусь с госпожой Рот, пока не приедет дочь."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamshira",
+              "uz-Cyrl": "Ҳамшира",
+              "ru": "Медсестра"
+            },
+            "de": "Danke. Frau Roth hat früher oft gesagt, dass sie leise Musik mag.",
+            "tr": {
+              "uz": "Rahmat. Rot xonim ilgari sokin musiqani yoqtirishini koʻp aytardi.",
+              "uz-Cyrl": "Раҳмат. Рот хоним илгари сокин мусиқани ёқтиришини кўп айтарди.",
+              "ru": "Спасибо. Госпожа Рот раньше часто говорила, что любит тихую музыку."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Dann mache ich ihr leise Musik an und halte ihre Hand.",
+            "tr": {
+              "uz": "Unda unga sokin musiqa qoʻyib beraman va qoʻlini ushlab turaman.",
+              "uz-Cyrl": "Унда унга сокин мусиқа қўйиб бераман ва қўлини ушлаб тураман.",
+              "ru": "Тогда включу ей тихую музыку и подержу её за руку."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -14888,6 +14981,712 @@
         }
       },
       "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-palliativpflege",
+      "slug": "palliativpflege",
+      "term": "die Palliativpflege",
+      "icon": "heart-handshake",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "palliativ parvarish (davolab boʻlmaydigan kasallikda azobni yengillatish)",
+        "uz-Cyrl": "паллиатив парвариш (даволаб бўлмайдиган касалликда азобни енгиллатиш)",
+        "ru": "паллиативный уход"
+      },
+      "pron": {
+        "uz": "die pa-li-a-tif-pfle-ge",
+        "uz-Cyrl": "ди па-ли-а-тиф-пфле-ге",
+        "ru": "ди па-ли-а-тиф-пфле-ге"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "In der Palliativpflege steht die Lebensqualität im Mittelpunkt.",
+        "tr": {
+          "uz": "Palliativ parvarishda hayot sifati birinchi oʻrinda turadi.",
+          "uz-Cyrl": "Паллиатив парваришда ҳаёт сифати биринчи ўринда туради.",
+          "ru": "В паллиативном уходе в центре внимания — качество жизни."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-sterbebegleitung",
+      "slug": "sterbebegleitung",
+      "term": "die Sterbebegleitung",
+      "icon": "users",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "hayotining soʻnggi kunlarida hamroh boʻlish",
+        "uz-Cyrl": "ҳаётининг сўнгги кунларида ҳамроҳ бўлиш",
+        "ru": "сопровождение умирающих"
+      },
+      "pron": {
+        "uz": "die shter-be-be-glay-tung",
+        "uz-Cyrl": "ди штер-бе-бе-глай-тунг",
+        "ru": "ди штер-бе-бе-глай-тунг"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Sterbebegleitung bedeutet: Wir lassen niemanden allein.",
+        "tr": {
+          "uz": "Soʻnggi kunlarda hamroh boʻlish shuni anglatadi: hech kimni yolgʻiz qoldirmaymiz.",
+          "uz-Cyrl": "Сўнгги кунларда ҳамроҳ бўлиш шуни англатади: ҳеч кимни ёлғиз қолдирмаймиз.",
+          "ru": "Сопровождение умирающих означает: мы никого не оставляем одного."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-schmerzlinderung",
+      "slug": "schmerzlinderung",
+      "term": "die Schmerzlinderung",
+      "icon": "pill",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "ogʻriqni yengillatish",
+        "uz-Cyrl": "оғриқни енгиллатиш",
+        "ru": "облегчение боли"
+      },
+      "pron": {
+        "uz": "die shmerts-lin-de-rung",
+        "uz-Cyrl": "ди шмерц-лин-де-рунг",
+        "ru": "ди шмерц-лин-де-рунг"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Für die Schmerzlinderung gibt es eine Verordnung vom Arzt.",
+        "tr": {
+          "uz": "Ogʻriqni yengillatish uchun shifokorning koʻrsatmasi bor.",
+          "uz-Cyrl": "Оғриқни енгиллатиш учун шифокорнинг кўрсатмаси бор.",
+          "ru": "Для облегчения боли есть назначение врача."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-mundpflege",
+      "slug": "mundpflege",
+      "term": "die Mundpflege",
+      "icon": "droplet",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "ogʻiz parvarishi",
+        "uz-Cyrl": "оғиз парвариши",
+        "ru": "уход за полостью рта"
+      },
+      "pron": {
+        "uz": "die mund-pfle-ge",
+        "uz-Cyrl": "ди мунд-пфле-ге",
+        "ru": "ди мунд-пфле-ге"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Bei der Mundpflege befeuchte ich die Lippen vorsichtig.",
+        "tr": {
+          "uz": "Ogʻiz parvarishida lablarni ehtiyotkorlik bilan namlayman.",
+          "uz-Cyrl": "Оғиз парваришида лабларни эҳтиёткорлик билан намлайман.",
+          "ru": "При уходе за полостью рта я осторожно увлажняю губы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-wuerde",
+      "slug": "wuerde",
+      "term": "die Würde",
+      "icon": "user",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "qadr-qimmat",
+        "uz-Cyrl": "қадр-қиммат",
+        "ru": "достоинство"
+      },
+      "pron": {
+        "uz": "die vyur-de",
+        "uz-Cyrl": "ди вюр-де",
+        "ru": "ди вюр-де"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Wir achten bis zuletzt auf die Würde des Menschen.",
+        "tr": {
+          "uz": "Insonning qadr-qimmatiga oxirigacha eʼtibor beramiz.",
+          "uz-Cyrl": "Инсоннинг қадр-қимматига охиригача эътибор берамиз.",
+          "ru": "Мы до самого конца бережём достоинство человека."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-bequem",
+      "slug": "bequem",
+      "term": "bequem",
+      "icon": "bed",
+      "tr": {
+        "uz": "qulay",
+        "uz-Cyrl": "қулай",
+        "ru": "удобно, удобный"
+      },
+      "pron": {
+        "uz": "be-kvem",
+        "uz-Cyrl": "бе-квем",
+        "ru": "бе-квем"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Liegen Sie so bequem, Frau Roth?",
+        "tr": {
+          "uz": "Rot xonim, shunday yotish qulaymi?",
+          "uz-Cyrl": "Рот хоним, шундай ётиш қулайми?",
+          "ru": "Вам так удобно лежать, госпожа Рот?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-seelsorger",
+      "slug": "seelsorger",
+      "term": "der Seelsorger",
+      "icon": "message-circle",
+      "article": "der",
+      "plural": "die Seelsorger",
+      "tr": {
+        "uz": "ruhoniy maslahatchi (diniy yoki maʼnaviy yordam beruvchi)",
+        "uz-Cyrl": "руҳоний маслаҳатчи (диний ёки маънавий ёрдам берувчи)",
+        "ru": "духовный наставник, капеллан"
+      },
+      "pron": {
+        "uz": "der zel-zor-ger",
+        "uz-Cyrl": "дер зел-зор-гер",
+        "ru": "дер зел-зор-гер"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Frau Engel wünscht sich ein Gespräch mit dem Seelsorger.",
+        "tr": {
+          "uz": "Engel xonim ruhoniy maslahatchi bilan suhbatlashishni xohlaydi.",
+          "uz-Cyrl": "Энгел хоним руҳоний маслаҳатчи билан суҳбатлашишни хоҳлайди.",
+          "ru": "Госпожа Энгель хочет поговорить с духовным наставником."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-hospiz",
+      "slug": "hospiz",
+      "term": "das Hospiz",
+      "icon": "home",
+      "article": "das",
+      "plural": "die Hospize",
+      "tr": {
+        "uz": "xospis (hayotning soʻnggi kunlari uchun parvarish uyi)",
+        "uz-Cyrl": "хоспис (ҳаётнинг сўнгги кунлари учун парвариш уйи)",
+        "ru": "хоспис"
+      },
+      "pron": {
+        "uz": "das hos-pits",
+        "uz-Cyrl": "дас хос-пиц",
+        "ru": "дас хос-пиц"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Herr Lorenz zieht nächste Woche in ein Hospiz.",
+        "tr": {
+          "uz": "Lorens janoblari keyingi hafta xospisga koʻchadi.",
+          "uz-Cyrl": "Лоренц жаноблари кейинги ҳафта хосписга кўчади.",
+          "ru": "Господин Лоренц на следующей неделе переезжает в хоспис."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-sterben",
+      "slug": "sterben",
+      "term": "sterben",
+      "icon": "moon-stars",
+      "tr": {
+        "uz": "vafot etmoq, olamdan oʻtmoq",
+        "uz-Cyrl": "вафот этмоқ, оламдан ўтмоқ",
+        "ru": "умирать"
+      },
+      "pron": {
+        "uz": "shter-ben",
+        "uz-Cyrl": "штер-бен",
+        "ru": "штер-бен"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Viele Menschen möchten nicht allein sterben.",
+        "tr": {
+          "uz": "Koʻp odamlar yolgʻiz holda vafot etishni istamaydi.",
+          "uz-Cyrl": "Кўп одамлар ёлғиз ҳолда вафот этишни истамайди.",
+          "ru": "Многие люди не хотят умирать в одиночестве."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-naehe",
+      "slug": "naehe",
+      "term": "die Nähe",
+      "icon": "users",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "yaqinlik (yonida boʻlish)",
+        "uz-Cyrl": "яқинлик (ёнида бўлиш)",
+        "ru": "близость"
+      },
+      "pron": {
+        "uz": "die ne-e",
+        "uz-Cyrl": "ди не-е",
+        "ru": "ди не-е"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Manche Menschen wünschen sich Nähe, andere mehr Ruhe.",
+        "tr": {
+          "uz": "Baʼzi odamlar yaqinlikni, boshqalari koʻproq osoyishtalikni xohlaydi.",
+          "uz-Cyrl": "Баъзи одамлар яқинликни, бошқалари кўпроқ осойишталикни хоҳлайди.",
+          "ru": "Одни люди хотят близости, другие — больше покоя."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-trauer",
+      "slug": "trauer",
+      "term": "die Trauer",
+      "icon": "mood-sad",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "qaygʻu, motam",
+        "uz-Cyrl": "қайғу, мотам",
+        "ru": "скорбь, горе"
+      },
+      "pron": {
+        "uz": "die trau-er",
+        "uz-Cyrl": "ди трау-ер",
+        "ru": "ди трау-ер"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Auch im Team darf man über Trauer sprechen.",
+        "tr": {
+          "uz": "Jamoada ham qaygʻu haqida gaplashsa boʻladi.",
+          "uz-Cyrl": "Жамоада ҳам қайғу ҳақида гаплашса бўлади.",
+          "ru": "И в команде можно говорить о горе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-soll-ich-ihre-hand-halten",
+      "slug": "soll-ich-ihre-hand-halten",
+      "term": "Soll ich Ihre Hand halten?",
+      "icon": "heart-handshake",
+      "tr": {
+        "uz": "Qoʻlingizni ushlab turaymi?",
+        "uz-Cyrl": "Қўлингизни ушлаб турайми?",
+        "ru": "Подержать вас за руку?"
+      },
+      "pron": {
+        "uz": "zol ix i-re hant hal-ten",
+        "uz-Cyrl": "зол их и-ре хант хал-тен",
+        "ru": "зол их и-ре хант хал-тен"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Soll ich Ihre Hand halten, Frau Roth?",
+        "tr": {
+          "uz": "Qoʻlingizni ushlab turaymi, Rot xonim?",
+          "uz-Cyrl": "Қўлингизни ушлаб турайми, Рот хоним?",
+          "ru": "Подержать вас за руку, госпожа Рот?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-sterbephase",
+      "slug": "sterbephase",
+      "term": "die Sterbephase",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Sterbephasen",
+      "tr": {
+        "uz": "hayotning soʻnggi bosqichi",
+        "uz-Cyrl": "ҳаётнинг сўнгги босқичи",
+        "ru": "последняя фаза жизни, фаза умирания"
+      },
+      "pron": {
+        "uz": "die shter-be-fa-ze",
+        "uz-Cyrl": "ди штер-бе-фа-зе",
+        "ru": "ди штер-бе-фа-зе"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "In der Sterbephase schauen wir öfter ins Zimmer.",
+        "tr": {
+          "uz": "Soʻnggi bosqichda xonaga tez-tez kirib turamiz.",
+          "uz-Cyrl": "Сўнгги босқичда хонага тез-тез кириб турамиз.",
+          "ru": "В последней фазе мы чаще заглядываем в комнату."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-ruhe",
+      "slug": "ruhe",
+      "term": "die Ruhe",
+      "icon": "moon-stars",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "osoyishtalik, tinchlik",
+        "uz-Cyrl": "осойишталик, тинчлик",
+        "ru": "покой, тишина"
+      },
+      "pron": {
+        "uz": "die ru-e",
+        "uz-Cyrl": "ди ру-е",
+        "ru": "ди ру-е"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Der Bewohner braucht jetzt viel Ruhe.",
+        "tr": {
+          "uz": "Yashovchiga hozir koʻp osoyishtalik kerak.",
+          "uz-Cyrl": "Яшовчига ҳозир кўп осойишталик керак.",
+          "ru": "Жильцу сейчас нужно много покоя."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-ritual",
+      "slug": "ritual",
+      "term": "das Ritual",
+      "icon": "book",
+      "article": "das",
+      "plural": "die Rituale",
+      "tr": {
+        "uz": "marosim, odat",
+        "uz-Cyrl": "маросим, одат",
+        "ru": "ритуал, обряд"
+      },
+      "pron": {
+        "uz": "das ri-tu-al",
+        "uz-Cyrl": "дас ри-ту-ал",
+        "ru": "дас ри-ту-ал"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Gibt es ein Ritual, das Ihrer Familie wichtig ist?",
+        "tr": {
+          "uz": "Oilangiz uchun muhim boʻlgan biror marosim bormi?",
+          "uz-Cyrl": "Оилангиз учун муҳим бўлган бирор маросим борми?",
+          "ru": "Есть ли обряд, который важен для вашей семьи?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-bestatter",
+      "slug": "bestatter",
+      "term": "der Bestatter",
+      "icon": "phone",
+      "article": "der",
+      "plural": "die Bestatter",
+      "tr": {
+        "uz": "dafn xizmati xodimi",
+        "uz-Cyrl": "дафн хизмати ходими",
+        "ru": "сотрудник похоронного бюро"
+      },
+      "pron": {
+        "uz": "der be-shta-ter",
+        "uz-Cyrl": "дер бе-шта-тер",
+        "ru": "дер бе-шта-тер"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Die Familie möchte den Bestatter selbst anrufen.",
+        "tr": {
+          "uz": "Oila dafn xizmatiga oʻzi qoʻngʻiroq qilmoqchi.",
+          "uz-Cyrl": "Оила дафн хизматига ўзи қўнғироқ қилмоқчи.",
+          "ru": "Семья хочет сама позвонить в похоронное бюро."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-verstorben",
+      "slug": "verstorben",
+      "term": "verstorben",
+      "icon": "moon-stars",
+      "tr": {
+        "uz": "vafot etgan, marhum",
+        "uz-Cyrl": "вафот этган, марҳум",
+        "ru": "умерший, скончался"
+      },
+      "pron": {
+        "uz": "fer-shtor-ben",
+        "uz-Cyrl": "фер-штор-бен",
+        "ru": "фер-штор-бен"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Herr Weber ist heute Nacht ruhig verstorben.",
+        "tr": {
+          "uz": "Veber janoblari bugun tunda osoyishta vafot etdi.",
+          "uz-Cyrl": "Вебер жаноблари бугун тунда осойишта вафот этди.",
+          "ru": "Господин Вебер сегодня ночью спокойно скончался."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-sich-verabschieden",
+      "slug": "sich-verabschieden",
+      "term": "sich verabschieden",
+      "icon": "heart-handshake",
+      "tr": {
+        "uz": "xayrlashmoq",
+        "uz-Cyrl": "хайрлашмоқ",
+        "ru": "прощаться"
+      },
+      "pron": {
+        "uz": "zix fer-ap-shi-den",
+        "uz-Cyrl": "зих фер-ап-ши-ден",
+        "ru": "зих фер-ап-ши-ден"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Die Tochter möchte sich in Ruhe von ihrem Vater verabschieden.",
+        "tr": {
+          "uz": "Qizi otasi bilan xotirjam xayrlashmoqchi.",
+          "uz-Cyrl": "Қизи отаси билан хотиржам хайрлашмоқчи.",
+          "ru": "Дочь хочет спокойно попрощаться с отцом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-mein-herzliches-beileid",
+      "slug": "mein-herzliches-beileid",
+      "term": "Mein herzliches Beileid.",
+      "icon": "heart-handshake",
+      "tr": {
+        "uz": "Chin dildan hamdardlik bildiraman.",
+        "uz-Cyrl": "Чин дилдан ҳамдардлик билдираман.",
+        "ru": "Мои искренние соболезнования."
+      },
+      "pron": {
+        "uz": "mayn herts-li-xes bay-layt",
+        "uz-Cyrl": "майн херц-ли-хес бай-лайт",
+        "ru": "майн херц-ли-хес бай-лайт"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Mein herzliches Beileid, Frau Becker.",
+        "tr": {
+          "uz": "Chin dildan hamdardlik bildiraman, Bekker xonim.",
+          "uz-Cyrl": "Чин дилдан ҳамдардлик билдираман, Беккер хоним.",
+          "ru": "Мои искренние соболезнования, госпожа Беккер."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "care-palliativ-ich-bleibe-bei-ihnen",
+      "slug": "ich-bleibe-bei-ihnen",
+      "term": "Ich bleibe bei Ihnen.",
+      "icon": "user",
+      "tr": {
+        "uz": "Yoningizda qolaman.",
+        "uz-Cyrl": "Ёнингизда қоламан.",
+        "ru": "Я останусь с вами."
+      },
+      "pron": {
+        "uz": "ix blay-be bay i-nen",
+        "uz-Cyrl": "их блай-бе бай и-нен",
+        "ru": "их блай-бе бай и-нен"
+      },
+      "level": "B1",
+      "field": "care",
+      "jobs": [
+        "pflegefachkraft",
+        "altenpflege"
+      ],
+      "situation": "palliativ",
+      "example": {
+        "term": "Ich bleibe bei Ihnen, bis Ihre Tochter kommt.",
+        "tr": {
+          "uz": "Qizingiz kelguncha yoningizda qolaman.",
+          "uz-Cyrl": "Қизингиз келгунча ёнингизда қоламан.",
+          "ru": "Я останусь с вами, пока не придёт ваша дочь."
+        }
+      },
+      "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
     }
