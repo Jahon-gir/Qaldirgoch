@@ -2740,6 +2740,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Shuls xonim (yashovchi)",
+              "uz-Cyrl": "Шульц хоним (яшовчи)",
+              "ru": "Госпожа Шульц (жительница)"
+            },
+            "de": "Müssen Sie den Verband schon wieder abnehmen? Das tut immer so weh.",
+            "tr": {
+              "uz": "Bogʻlamni yana olishingiz kerakmi? Bu doim juda ogʻriydi.",
+              "uz-Cyrl": "Боғламни яна олишингиз керакми? Бу доим жуда оғрийди.",
+              "ru": "Вам опять нужно снимать повязку? Это всегда так больно."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, heute ist Verbandwechsel. Sagen Sie bitte sofort, wenn es zu sehr wehtut.",
+            "tr": {
+              "uz": "Ha, bugun bogʻlam almashtiriladi. Juda ogʻrisa, iltimos, darhol ayting.",
+              "uz-Cyrl": "Ҳа, бугун боғлам алмаштирилади. Жуда оғриса, илтимос, дарҳол айтинг.",
+              "ru": "Да, сегодня смена повязки. Пожалуйста, сразу скажите, если будет слишком больно."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Shuls xonim (yashovchi)",
+              "uz-Cyrl": "Шульц хоним (яшовчи)",
+              "ru": "Госпожа Шульц (жительница)"
+            },
+            "de": "Und was machen Sie zuerst?",
+            "tr": {
+              "uz": "Avval nima qilasiz?",
+              "uz-Cyrl": "Аввал нима қиласиз?",
+              "ru": "А что вы сделаете сначала?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Zuerst reinige ich die Wunde mit der Spüllösung. Das kann kurz brennen.",
+            "tr": {
+              "uz": "Avval yarani yuvish eritmasi bilan tozalayman. Bu biroz achishtirishi mumkin.",
+              "uz-Cyrl": "Аввал ярани ювиш эритмаси билан тозалайман. Бу бироз ачиштириши мумкин.",
+              "ru": "Сначала я очищу рану промывочным раствором. Может немного пощипать."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Shuls xonim (yashovchi)",
+              "uz-Cyrl": "Шульц хоним (яшовчи)",
+              "ru": "Госпожа Шульц (жительница)"
+            },
+            "de": "Mir ist aufgefallen, dass der alte Verband komisch riecht.",
+            "tr": {
+              "uz": "Eski bogʻlamdan gʻalati hid kelayotganini sezdim.",
+              "uz-Cyrl": "Эски боғламдан ғалати ҳид келаётганини сездим.",
+              "ru": "Я заметила, что старая повязка странно пахнет."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut, dass Sie das sagen. Den Geruch schreibe ich auf und informiere gleich die Ärztin.",
+            "tr": {
+              "uz": "Aytganingiz yaxshi boʻldi. Hidni yozib qoʻyaman va shifokorga darhol xabar beraman.",
+              "uz-Cyrl": "Айтганингиз яхши бўлди. Ҳидни ёзиб қўяман ва шифокорга дарҳол хабар бераман.",
+              "ru": "Хорошо, что вы сказали. Запах я запишу и сразу сообщу врачу."
+            }
+          }
+        ],
+        "status": "review"
       }
     },
     {
@@ -2829,6 +2912,89 @@
               "uz": "Rahmat, bu muhim. Choyni yozib qoʻyaman, yiqilishlar sababli esa yiqilish xavfini darhol baholaymiz.",
               "uz-Cyrl": "Раҳмат, бу муҳим. Чойни ёзиб қўяман, йиқилишлар сабабли эса йиқилиш хавфини дарҳол баҳолаймиз.",
               "ru": "Спасибо, это важно. Чай я запишу, а из-за падений мы сразу оценим риск падения."
+            }
+          }
+        ],
+        "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Kasalxona hamshirasi",
+              "uz-Cyrl": "Касалхона ҳамшираси",
+              "ru": "Медсестра больницы"
+            },
+            "de": "Hier ist die Station 3 vom Klinikum. Herr Braun wird morgen entlassen.",
+            "tr": {
+              "uz": "Bu klinikaning 3-boʻlimi. Braun janoblari ertaga chiqariladi.",
+              "uz-Cyrl": "Бу клиниканинг 3-бўлими. Браун жаноблари эртага чиқарилади.",
+              "ru": "Это третье отделение клиники. Господина Брауна завтра выписывают."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Danke für den Anruf. Um wie viel Uhr kommt er zu uns zurück?",
+            "tr": {
+              "uz": "Qoʻngʻiroq uchun rahmat. U bizga soat nechada qaytadi?",
+              "uz-Cyrl": "Қўнғироқ учун раҳмат. У бизга соат нечада қайтади?",
+              "ru": "Спасибо за звонок. Во сколько он вернётся к нам?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kasalxona hamshirasi",
+              "uz-Cyrl": "Касалхона ҳамшираси",
+              "ru": "Медсестра больницы"
+            },
+            "de": "Gegen elf Uhr mit dem Krankentransport. Brauchen Sie noch etwas von uns?",
+            "tr": {
+              "uz": "Taxminan soat oʻn birda, bemor tashish mashinasida. Bizdan yana biror narsa kerakmi?",
+              "uz-Cyrl": "Тахминан соат ўн бирда, бемор ташиш машинасида. Биздан яна бирор нарса керакми?",
+              "ru": "Около одиннадцати, санитарным транспортом. Вам от нас ещё что-нибудь нужно?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, bitte geben Sie den Überleitungsbogen und den aktuellen Medikamentenplan mit.",
+            "tr": {
+              "uz": "Ha, iltimos, oʻtkazish varaqasi va hozirgi dori rejasini birga yuboring.",
+              "uz-Cyrl": "Ҳа, илтимос, ўтказиш варақаси ва ҳозирги дори режасини бирга юборинг.",
+              "ru": "Да, пожалуйста, передайте с ним переводной лист и актуальный план приёма лекарств."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kasalxona hamshirasi",
+              "uz-Cyrl": "Касалхона ҳамшираси",
+              "ru": "Медсестра больницы"
+            },
+            "de": "Mache ich. Er hat jetzt übrigens einen Rollator, weil er unsicher läuft.",
+            "tr": {
+              "uz": "Xoʻp. Aytgancha, u endi rollator bilan yuradi, chunki yurishi beqaror.",
+              "uz-Cyrl": "Хўп. Айтганча, у энди роллатор билан юради, чунки юриши беқарор.",
+              "ru": "Хорошо. Кстати, у него теперь ходунки, потому что он неуверенно ходит."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut zu wissen. Dann schätzen wir das Sturzrisiko neu ein und machen im Zimmer Platz für den Rollator.",
+            "tr": {
+              "uz": "Bilganimiz yaxshi boʻldi. Unda yiqilish xavfini qaytadan baholaymiz va xonada rollator uchun joy ochamiz.",
+              "uz-Cyrl": "Билганимиз яхши бўлди. Унда йиқилиш хавфини қайтадан баҳолаймиз ва хонада роллатор учун жой очамиз.",
+              "ru": "Хорошо, что знаем. Тогда заново оценим риск падения и освободим в комнате место для ходунков."
             }
           }
         ],
