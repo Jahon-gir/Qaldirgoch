@@ -2212,6 +2212,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Parvarish rahbari",
+              "uz-Cyrl": "Парвариш раҳбари",
+              "ru": "Руководитель ухода"
+            },
+            "de": "Ich habe deinen Eintrag von gestern gelesen. Da fehlt etwas.",
+            "tr": {
+              "uz": "Kechagi qaydingni oʻqidim. Unda bir narsa yetishmayapti.",
+              "uz-Cyrl": "Кечаги қайдингни ўқидим. Унда бир нарса етишмаяпти.",
+              "ru": "Я прочитала твою вчерашнюю запись. Там чего-то не хватает."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Oh, was fehlt denn? Ich verbessere es sofort.",
+            "tr": {
+              "uz": "Voy, nima yetishmayapti? Darhol tuzataman.",
+              "uz-Cyrl": "Вой, нима етишмаяпти? Дарҳол тузатаман.",
+              "ru": "Ой, а чего не хватает? Я сразу исправлю."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Parvarish rahbari",
+              "uz-Cyrl": "Парвариш раҳбари",
+              "ru": "Руководитель ухода"
+            },
+            "de": "Du schreibst „Er war komisch“. Das ist keine Beobachtung.",
+            "tr": {
+              "uz": "«U gʻalati edi» deb yozibsan. Bu kuzatuv emas.",
+              "uz-Cyrl": "«У ғалати эди» деб ёзибсан. Бу кузатув эмас.",
+              "ru": "Ты пишешь «Он был странный». Это не наблюдение."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Stimmt. Ich schreibe genau, was ich gesehen habe: Er hat nicht gegessen und viel gerufen.",
+            "tr": {
+              "uz": "Toʻgʻri. Koʻrganimni aniq yozaman: u ovqat yemadi va koʻp baqirdi.",
+              "uz-Cyrl": "Тўғри. Кўрганимни аниқ ёзаман: у овқат емади ва кўп бақирди.",
+              "ru": "Верно. Я точно опишу увиденное: он не ел и много кричал."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Parvarish rahbari",
+              "uz-Cyrl": "Парвариш раҳбари",
+              "ru": "Руководитель ухода"
+            },
+            "de": "Genau. Und schreib dazu, welche Maßnahme du gemacht hast.",
+            "tr": {
+              "uz": "Xuddi shunday. Qanday chora koʻrganingni ham yoz.",
+              "uz-Cyrl": "Худди шундай. Қандай чора кўрганингни ҳам ёз.",
+              "ru": "Именно. И допиши, какие меры были приняты."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Die Maßnahme war ein Gespräch mit Musik. Danach war er ruhiger.",
+            "tr": {
+              "uz": "Chora — musiqa bilan suhbat edi. Shundan keyin u tinchlandi.",
+              "uz-Cyrl": "Чора — мусиқа билан суҳбат эди. Шундан кейин у тинчланди.",
+              "ru": "Мерой был разговор под музыку. После этого он успокоился."
+            }
+          }
+        ],
+        "status": "review"
       }
     },
     {
@@ -2305,6 +2388,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Shifokor",
+              "uz-Cyrl": "Шифокор",
+              "ru": "Врач"
+            },
+            "de": "Hier ist Doktor Krause. Sie hatten wegen Herrn Braun angerufen?",
+            "tr": {
+              "uz": "Doktor Krause gapiryapti. Braun janoblari haqida qoʻngʻiroq qilgan edingizmi?",
+              "uz-Cyrl": "Доктор Краузе гапиряпти. Браун жаноблари ҳақида қўнғироқ қилган эдингизми?",
+              "ru": "Это доктор Краузе. Вы звонили по поводу господина Брауна?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, danke für den Rückruf. Die Sauerstoffsättigung ist niedriger als sonst.",
+            "tr": {
+              "uz": "Ha, qayta qoʻngʻiroq uchun rahmat. Kislorodga toʻyinish odatdagidan past.",
+              "uz-Cyrl": "Ҳа, қайта қўнғироқ учун раҳмат. Кислородга тўйиниш одатдагидан паст.",
+              "ru": "Да, спасибо, что перезвонили. Сатурация ниже обычного."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Shifokor",
+              "uz-Cyrl": "Шифокор",
+              "ru": "Врач"
+            },
+            "de": "Hat er Atemnot? Ist er wach?",
+            "tr": {
+              "uz": "Nafasi qisyaptimi? Hushidami?",
+              "uz-Cyrl": "Нафаси қисяптими? Ҳушидами?",
+              "ru": "У него одышка? Он в сознании?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Er ist wach, aber sehr schläfrig. Beim Sprechen hat er leichte Atemnot.",
+            "tr": {
+              "uz": "Hushida, lekin juda uyquchan. Gapirganda nafasi biroz qisadi.",
+              "uz-Cyrl": "Ҳушида, лекин жуда уйқучан. Гапирганда нафаси бироз қисади.",
+              "ru": "Он в сознании, но очень сонливый. При разговоре у него лёгкая одышка."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Shifokor",
+              "uz-Cyrl": "Шифокор",
+              "ru": "Врач"
+            },
+            "de": "Ich komme in einer Stunde vorbei. Geben Sie ihm jetzt die Bedarfsmedikation gegen Fieber.",
+            "tr": {
+              "uz": "Bir soatdan keyin kelaman. Hozir unga isitmaga qarshi kerak boʻlganda beriladigan dorini bering.",
+              "uz-Cyrl": "Бир соатдан кейин келаман. Ҳозир унга иситмага қарши керак бўлганда бериладиган дорини беринг.",
+              "ru": "Я приеду через час. Дайте ему сейчас жаропонижающее по необходимости."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich wiederhole zur Sicherheit: die Bedarfsmedikation gegen Fieber, und Sie kommen in einer Stunde.",
+            "tr": {
+              "uz": "Xatolik boʻlmasin deb takrorlayman: isitmaga qarshi dori, siz esa bir soatdan keyin kelasiz.",
+              "uz-Cyrl": "Хатолик бўлмасин деб такрорлайман: иситмага қарши дори, сиз эса бир соатдан кейин келасиз.",
+              "ru": "Повторю для надёжности: жаропонижающее по необходимости, а вы приедете через час."
+            }
+          }
+        ],
+        "status": "review"
       }
     },
     {
@@ -2394,6 +2560,89 @@
               "uz": "Bugun shifokordan soʻrayman va ertagacha sizga javob beraman.",
               "uz-Cyrl": "Бугун шифокордан сўрайман ва эртагача сизга жавоб бераман.",
               "ru": "Я спрошу врача сегодня и до завтра дам вам ответ."
+            }
+          }
+        ],
+        "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Oʻgʻli",
+              "uz-Cyrl": "Ўғли",
+              "ru": "Сын"
+            },
+            "de": "Mein Vater hatte heute wieder ein schmutziges Hemd an. Das geht so nicht!",
+            "tr": {
+              "uz": "Otam bugun yana kir koʻylakda edi. Bunday boʻlmaydi!",
+              "uz-Cyrl": "Отам бугун яна кир кўйлакда эди. Бундай бўлмайди!",
+              "ru": "Мой отец сегодня снова был в грязной рубашке. Так нельзя!"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich verstehe, dass Sie verärgert sind. Danke, dass Sie es mir sagen.",
+            "tr": {
+              "uz": "Jahlingiz chiqqanini tushunaman. Menga aytganingiz uchun rahmat.",
+              "uz-Cyrl": "Жаҳлингиз чиққанини тушунаман. Менга айтганингиз учун раҳмат.",
+              "ru": "Я понимаю, что вы расстроены. Спасибо, что сказали мне."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Oʻgʻli",
+              "uz-Cyrl": "Ўғли",
+              "ru": "Сын"
+            },
+            "de": "Das ist schon das dritte Mal. Ich will mich beschweren.",
+            "tr": {
+              "uz": "Bu allaqachon uchinchi marta. Shikoyat qilmoqchiman.",
+              "uz-Cyrl": "Бу аллақачон учинчи марта. Шикоят қилмоқчиман.",
+              "ru": "Это уже третий раз. Я хочу пожаловаться."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Das können Sie. Ich gebe Ihre Beschwerde an die Pflegeleitung weiter.",
+            "tr": {
+              "uz": "Mumkin. Shikoyatingizni parvarish rahbariga yetkazaman.",
+              "uz-Cyrl": "Мумкин. Шикоятингизни парвариш раҳбарига етказаман.",
+              "ru": "Можете. Я передам вашу жалобу руководителю ухода."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Oʻgʻli",
+              "uz-Cyrl": "Ўғли",
+              "ru": "Сын"
+            },
+            "de": "Gut. Aber jetzt braucht er ein sauberes Hemd.",
+            "tr": {
+              "uz": "Yaxshi. Lekin hozir unga toza koʻylak kerak.",
+              "uz-Cyrl": "Яхши. Лекин ҳозир унга тоза кўйлак керак.",
+              "ru": "Хорошо. Но сейчас ему нужна чистая рубашка."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich kümmere mich darum und ziehe ihm gleich ein frisches Hemd an.",
+            "tr": {
+              "uz": "Men bu bilan shugʻullanaman va hozir unga yangi koʻylak kiydiraman.",
+              "uz-Cyrl": "Мен бу билан шуғулланаман ва ҳозир унга янги кўйлак кийдираман.",
+              "ru": "Я этим займусь и сейчас надену на него свежую рубашку."
             }
           }
         ],
