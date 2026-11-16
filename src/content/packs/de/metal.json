@@ -2212,6 +2212,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Taʼmirchi",
+              "uz-Cyrl": "Таъмирчи",
+              "ru": "Ремонтник"
+            },
+            "de": "Sie haben die Instandhaltung gerufen. Was ist mit der Presse?",
+            "tr": {
+              "uz": "Taʼmirlash xizmatini chaqirdingiz. Pressga nima boʻldi?",
+              "uz-Cyrl": "Таъмирлаш хизматини чақирдингиз. Прессга нима бўлди?",
+              "ru": "Вы вызвали ремонтную службу. Что с прессом?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Sie macht seit heute Morgen ein lautes Geräusch, deshalb habe ich die Arbeit unterbrochen.",
+            "tr": {
+              "uz": "Bugun ertalabdan beri baland ovoz chiqaryapti, shuning uchun ishni toʻxtatdim.",
+              "uz-Cyrl": "Бугун эрталабдан бери баланд овоз чиқаряпти, шунинг учун ишни тўхтатдим.",
+              "ru": "С утра он сильно шумит, поэтому работа прервана."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Taʼmirchi",
+              "uz-Cyrl": "Таъмирчи",
+              "ru": "Ремонтник"
+            },
+            "de": "Haben Sie die Maschine abgeschaltet und gegen Wiedereinschalten gesichert?",
+            "tr": {
+              "uz": "Dastgohni oʻchirib, qayta yoqilishdan himoyaladingizmi?",
+              "uz-Cyrl": "Дастгоҳни ўчириб, қайта ёқилишдан ҳимояладингизми?",
+              "ru": "Вы выключили станок и защитили его от повторного включения?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, der Hauptschalter ist aus und abgeschlossen, das Warnschild hängt dran.",
+            "tr": {
+              "uz": "Ha, asosiy oʻchirgich oʻchirilgan va qulflangan, ogohlantirish belgisi osilgan.",
+              "uz-Cyrl": "Ҳа, асосий ўчиргич ўчирилган ва қулфланган, огоҳлантириш белгиси осилган.",
+              "ru": "Да, главный выключатель выключен и заперт, предупреждающая табличка висит."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Taʼmirchi",
+              "uz-Cyrl": "Таъмирчи",
+              "ru": "Ремонтник"
+            },
+            "de": "Gut. Ich sehe starken Verschleiß am Kugellager. Haben Sie die Störung schon dokumentiert?",
+            "tr": {
+              "uz": "Yaxshi. Sharikli podshipnikda kuchli yeyilishni koʻryapman. Nosozlikni allaqachon yozib qoʻydingizmi?",
+              "uz-Cyrl": "Яхши. Шарикли подшипникда кучли ейилишни кўряпман. Носозликни аллақачон ёзиб қўйдингизми?",
+              "ru": "Хорошо. Вижу сильный износ шарикоподшипника. Вы уже задокументировали сбой?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, die Störung steht mit Uhrzeit im Arbeitsbericht. Den Verschleiß am Kugellager trage ich jetzt nach.",
+            "tr": {
+              "uz": "Ha, nosozlik ish hisobotida vaqti bilan yozilgan. Podshipnikdagi yeyilishni hozir qoʻshib yozaman.",
+              "uz-Cyrl": "Ҳа, носозлик иш ҳисоботида вақти билан ёзилган. Подшипникдаги ейилишни ҳозир қўшиб ёзаман.",
+              "ru": "Да, сбой указан в рабочем отчёте со временем. Износ подшипника сейчас допишу."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
