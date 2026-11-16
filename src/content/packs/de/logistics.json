@@ -2120,6 +2120,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "hisobot",
+      "title": {
+        "uz": "Shikast va farq haqida hisobot",
+        "uz-Cyrl": "Шикаст ва фарқ ҳақида ҳисобот",
+        "ru": "Отчёт о повреждениях и расхождениях"
+      },
+      "order": 13,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Smena boshligʻi",
+              "uz-Cyrl": "Смена бошлиғи",
+              "ru": "Начальник смены"
+            },
+            "de": "Sie wollten mich sprechen. Gibt es ein Problem mit der Lieferung?",
+            "tr": {
+              "uz": "Men bilan gaplashmoqchi edingiz. Yetkazmada muammo bormi?",
+              "uz-Cyrl": "Мен билан гаплашмоқчи эдингиз. Етказмада муаммо борми?",
+              "ru": "Вы хотели со мной поговорить. Есть проблема с поставкой?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Zwei Kartons sind beschädigt, und ein Karton fehlt ganz.",
+            "tr": {
+              "uz": "Ikki quti shikastlangan, bitta quti esa umuman yoʻq.",
+              "uz-Cyrl": "Икки қути шикастланган, битта қути эса умуман йўқ.",
+              "ru": "Две коробки повреждены, а одной коробки нет совсем."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Smena boshligʻi",
+              "uz-Cyrl": "Смена бошлиғи",
+              "ru": "Начальник смены"
+            },
+            "de": "Haben Sie Fotos gemacht, bevor Sie etwas bewegt haben?",
+            "tr": {
+              "uz": "Biror narsani qoʻzgʻatishdan oldin suratga oldingizmi?",
+              "uz-Cyrl": "Бирор нарсани қўзғатишдан олдин суратга олдингизми?",
+              "ru": "Вы сделали фото, прежде чем что-то двигать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, ich habe alles fotografiert, auch das Etikett.",
+            "tr": {
+              "uz": "Ha, hammasini suratga oldim, yorliqni ham.",
+              "uz-Cyrl": "Ҳа, ҳаммасини суратга олдим, ёрлиқни ҳам.",
+              "ru": "Да, всё сфотографировано, этикетка тоже."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Smena boshligʻi",
+              "uz-Cyrl": "Смена бошлиғи",
+              "ru": "Начальник смены"
+            },
+            "de": "Gut. Hat der Fahrer den Schaden auf dem Lieferschein vermerkt?",
+            "tr": {
+              "uz": "Yaxshi. Haydovchi shikastni yuk xatiga qayd etdimi?",
+              "uz-Cyrl": "Яхши. Ҳайдовчи шикастни юк хатига қайд этдими?",
+              "ru": "Хорошо. Водитель отметил повреждение в накладной?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, der Vermerk steht unten, mit seiner Unterschrift. Jetzt schreibe ich die Schadensmeldung.",
+            "tr": {
+              "uz": "Ha, qayd pastda, uning imzosi bilan. Endi shikast haqida xabarnoma yozaman.",
+              "uz-Cyrl": "Ҳа, қайд пастда, унинг имзоси билан. Энди шикаст ҳақида хабарнома ёзаман.",
+              "ru": "Да, пометка внизу, с его подписью. Сейчас напишу заявление о повреждении."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -10452,6 +10545,710 @@
       "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-schadensmeldung",
+      "slug": "schadensmeldung",
+      "term": "die Schadensmeldung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Schadensmeldungen",
+      "tr": {
+        "uz": "shikast haqida xabarnoma",
+        "uz-Cyrl": "шикаст ҳақида хабарнома",
+        "ru": "заявление о повреждении"
+      },
+      "pron": {
+        "uz": "die sha-dens-mel-dung",
+        "uz-Cyrl": "ди ша-денс-мел-дунг",
+        "ru": "ди ша-денс-мел-дунг"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Ich schreibe die Schadensmeldung noch vor Schichtende.",
+        "tr": {
+          "uz": "Shikast haqida xabarnomani smena tugashidan oldin yozaman.",
+          "uz-Cyrl": "Шикаст ҳақида хабарномани смена тугашидан олдин ёзаман.",
+          "ru": "Я напишу заявление о повреждении ещё до конца смены."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-transportschaden",
+      "slug": "transportschaden",
+      "term": "der Transportschaden",
+      "icon": "truck",
+      "article": "der",
+      "plural": "die Transportschäden",
+      "tr": {
+        "uz": "tashishda shikastlanish",
+        "uz-Cyrl": "ташишда шикастланиш",
+        "ru": "повреждение при перевозке"
+      },
+      "pron": {
+        "uz": "der trans-port-sha-den",
+        "uz-Cyrl": "дер транс-порт-ша-ден",
+        "ru": "дер транс-порт-ша-ден"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Das sieht nach einem Transportschaden aus.",
+        "tr": {
+          "uz": "Bu tashishda shikastlanganga oʻxshaydi.",
+          "uz-Cyrl": "Бу ташишда шикастланганга ўхшайди.",
+          "ru": "Похоже на повреждение при перевозке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-abweichung",
+      "slug": "abweichung",
+      "term": "die Abweichung",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Abweichungen",
+      "tr": {
+        "uz": "farq, tafovut",
+        "uz-Cyrl": "фарқ, тафовут",
+        "ru": "расхождение"
+      },
+      "pron": {
+        "uz": "die ap-vay-xung",
+        "uz-Cyrl": "ди ап-вай-хунг",
+        "ru": "ди ап-вай-хунг"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Zwischen Lieferschein und Ware gibt es eine Abweichung.",
+        "tr": {
+          "uz": "Yuk xati bilan mol oʻrtasida farq bor.",
+          "uz-Cyrl": "Юк хати билан мол ўртасида фарқ бор.",
+          "ru": "Между накладной и товаром есть расхождение."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-vermerk",
+      "slug": "vermerk",
+      "term": "der Vermerk",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Vermerke",
+      "tr": {
+        "uz": "qayd, izoh",
+        "uz-Cyrl": "қайд, изоҳ",
+        "ru": "пометка"
+      },
+      "pron": {
+        "uz": "der fer-merk",
+        "uz-Cyrl": "дер фер-мерк",
+        "ru": "дер фер-мерк"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Der Fahrer hat einen Vermerk auf den Lieferschein geschrieben.",
+        "tr": {
+          "uz": "Haydovchi yuk xatiga qayd yozdi.",
+          "uz-Cyrl": "Ҳайдовчи юк хатига қайд ёзди.",
+          "ru": "Водитель сделал пометку в накладной."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-vermerken",
+      "slug": "vermerken",
+      "term": "vermerken",
+      "icon": "check",
+      "tr": {
+        "uz": "qayd etmoq",
+        "uz-Cyrl": "қайд этмоқ",
+        "ru": "отметить (в документе)"
+      },
+      "pron": {
+        "uz": "fer-mer-ken",
+        "uz-Cyrl": "фер-мер-кен",
+        "ru": "фер-мер-кен"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Bitte vermerken Sie den Schaden mit Uhrzeit.",
+        "tr": {
+          "uz": "Iltimos, shikastni vaqti bilan qayd eting.",
+          "uz-Cyrl": "Илтимос, шикастни вақти билан қайд этинг.",
+          "ru": "Пожалуйста, отметьте повреждение с указанием времени."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-nachweis",
+      "slug": "nachweis",
+      "term": "der Nachweis",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Nachweise",
+      "tr": {
+        "uz": "dalil, isbot",
+        "uz-Cyrl": "далил, исбот",
+        "ru": "доказательство"
+      },
+      "pron": {
+        "uz": "der nax-vays",
+        "uz-Cyrl": "дер нах-вайс",
+        "ru": "дер нах-вайс"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Die Fotos sind unser Nachweis für die Versicherung.",
+        "tr": {
+          "uz": "Suratlar sugʻurta uchun bizning dalilimiz.",
+          "uz-Cyrl": "Суратлар суғурта учун бизнинг далилимиз.",
+          "ru": "Фотографии — наше доказательство для страховой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-beweisfoto",
+      "slug": "beweisfoto",
+      "term": "das Beweisfoto",
+      "icon": "camera",
+      "article": "das",
+      "plural": "die Beweisfotos",
+      "tr": {
+        "uz": "dalil surati",
+        "uz-Cyrl": "далил сурати",
+        "ru": "фото-доказательство"
+      },
+      "pron": {
+        "uz": "das be-vays-fo-to",
+        "uz-Cyrl": "дас бе-вайс-фо-то",
+        "ru": "дас бе-вайс-фо-то"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Machen Sie ein Beweisfoto, bevor Sie die Palette bewegen.",
+        "tr": {
+          "uz": "Poddonni qoʻzgʻatishdan oldin dalil suratini oling.",
+          "uz-Cyrl": "Поддонни қўзғатишдан олдин далил суратини олинг.",
+          "ru": "Сделайте фото-доказательство, прежде чем двигать поддон."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-fotografieren",
+      "slug": "fotografieren",
+      "term": "fotografieren",
+      "icon": "camera",
+      "tr": {
+        "uz": "suratga olmoq",
+        "uz-Cyrl": "суратга олмоқ",
+        "ru": "фотографировать"
+      },
+      "pron": {
+        "uz": "fo-to-gra-fi-ren",
+        "uz-Cyrl": "фо-то-гра-фи-рен",
+        "ru": "фо-то-гра-фи-рен"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Ich fotografiere den Karton von allen Seiten.",
+        "tr": {
+          "uz": "Qutini hamma tomondan suratga olaman.",
+          "uz-Cyrl": "Қутини ҳамма томондан суратга оламан.",
+          "ru": "Я фотографирую коробку со всех сторон."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-beschaedigt",
+      "slug": "beschaedigt",
+      "term": "beschädigt",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "shikastlangan",
+        "uz-Cyrl": "шикастланган",
+        "ru": "повреждённый"
+      },
+      "pron": {
+        "uz": "be-she-dikt",
+        "uz-Cyrl": "бе-ше-дикт",
+        "ru": "бе-ше-дикт"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Zwei Kartons sind beschädigt und nass.",
+        "tr": {
+          "uz": "Ikki quti shikastlangan va hoʻl.",
+          "uz-Cyrl": "Икки қути шикастланган ва ҳўл.",
+          "ru": "Две коробки повреждены и мокрые."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-fehlmenge",
+      "slug": "fehlmenge",
+      "term": "die Fehlmenge",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "die Fehlmengen",
+      "tr": {
+        "uz": "kam chiqqan miqdor",
+        "uz-Cyrl": "кам чиққан миқдор",
+        "ru": "недостача"
+      },
+      "pron": {
+        "uz": "die fel-men-ge",
+        "uz-Cyrl": "ди фел-мен-ге",
+        "ru": "ди фел-мен-ге"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Ich trage die Fehlmenge in die Liste ein.",
+        "tr": {
+          "uz": "Kam chiqqan miqdorni roʻyxatga yozaman.",
+          "uz-Cyrl": "Кам чиққан миқдорни рўйхатга ёзаман.",
+          "ru": "Я вношу недостачу в список."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-hergang",
+      "slug": "hergang",
+      "term": "der Hergang",
+      "icon": "messages",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "voqea qanday boʻlgani",
+        "uz-Cyrl": "воқеа қандай бўлгани",
+        "ru": "ход событий"
+      },
+      "pron": {
+        "uz": "der her-gang",
+        "uz-Cyrl": "дер хер-ганг",
+        "ru": "дер хер-ганг"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Beschreiben Sie den Hergang bitte kurz und genau.",
+        "tr": {
+          "uz": "Iltimos, voqea qanday boʻlganini qisqa va aniq tasvirlab bering.",
+          "uz-Cyrl": "Илтимос, воқеа қандай бўлганини қисқа ва аниқ тасвирлаб беринг.",
+          "ru": "Пожалуйста, опишите ход событий коротко и точно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-protokoll",
+      "slug": "protokoll",
+      "term": "das Protokoll",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "die Protokolle",
+      "tr": {
+        "uz": "bayonnoma",
+        "uz-Cyrl": "баённома",
+        "ru": "протокол"
+      },
+      "pron": {
+        "uz": "das pro-to-kol",
+        "uz-Cyrl": "дас про-то-кол",
+        "ru": "дас про-то-кол"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Der Schichtleiter unterschreibt das Protokoll auch.",
+        "tr": {
+          "uz": "Smena boshligʻi ham bayonnomaga imzo qoʻyadi.",
+          "uz-Cyrl": "Смена бошлиғи ҳам баённомага имзо қўяди.",
+          "ru": "Начальник смены тоже подписывает протокол."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-ausfuellen",
+      "slug": "ausfuellen",
+      "term": "ausfüllen",
+      "icon": "file-text",
+      "tr": {
+        "uz": "toʻldirmoq (hujjatni)",
+        "uz-Cyrl": "тўлдирмоқ (ҳужжатни)",
+        "ru": "заполнять (документ)"
+      },
+      "pron": {
+        "uz": "aus-fyu-len",
+        "uz-Cyrl": "аус-фю-лен",
+        "ru": "аус-фю-лен"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Können Sie mir zeigen, wie man das Formular ausfüllt?",
+        "tr": {
+          "uz": "Formani qanday toʻldirishni koʻrsatib bera olasizmi?",
+          "uz-Cyrl": "Формани қандай тўлдиришни кўрсатиб бера оласизми?",
+          "ru": "Можете показать, как заполнять этот бланк?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-sachlich",
+      "slug": "sachlich",
+      "term": "sachlich",
+      "icon": "check",
+      "tr": {
+        "uz": "xolis, faktga asoslangan",
+        "uz-Cyrl": "холис, фактга асосланган",
+        "ru": "по существу, объективно"
+      },
+      "pron": {
+        "uz": "zax-lix",
+        "uz-Cyrl": "зах-лих",
+        "ru": "зах-лих"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Schreiben Sie sachlich: was, wann, wo.",
+        "tr": {
+          "uz": "Xolis yozing: nima, qachon, qayerda.",
+          "uz-Cyrl": "Холис ёзинг: нима, қачон, қаерда.",
+          "ru": "Пишите по существу: что, когда, где."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-sendung",
+      "slug": "sendung",
+      "term": "die Sendung",
+      "icon": "package",
+      "article": "die",
+      "plural": "die Sendungen",
+      "tr": {
+        "uz": "joʻnatma",
+        "uz-Cyrl": "жўнатма",
+        "ru": "отправление, груз"
+      },
+      "pron": {
+        "uz": "die zen-dung",
+        "uz-Cyrl": "ди зен-дунг",
+        "ru": "ди зен-дунг"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Bei dieser Sendung fehlt ein Paket.",
+        "tr": {
+          "uz": "Bu joʻnatmada bitta posilka yetishmayapti.",
+          "uz-Cyrl": "Бу жўнатмада битта посилка етишмаяпти.",
+          "ru": "В этом отправлении не хватает одной посылки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-verpackung",
+      "slug": "verpackung",
+      "term": "die Verpackung",
+      "icon": "package",
+      "article": "die",
+      "plural": "die Verpackungen",
+      "tr": {
+        "uz": "qadoq",
+        "uz-Cyrl": "қадоқ",
+        "ru": "упаковка"
+      },
+      "pron": {
+        "uz": "die fer-pa-kung",
+        "uz-Cyrl": "ди фер-па-кунг",
+        "ru": "ди фер-па-кунг"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Die Verpackung ist eingedrückt, aber die Ware ist ganz.",
+        "tr": {
+          "uz": "Qadoq ezilgan, lekin mol butun.",
+          "uz-Cyrl": "Қадоқ эзилган, лекин мол бутун.",
+          "ru": "Упаковка помята, но товар цел."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-eingedrueckt",
+      "slug": "eingedrueckt",
+      "term": "eingedrückt",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "ezilgan, botib kirgan",
+        "uz-Cyrl": "эзилган, ботиб кирган",
+        "ru": "вмятый, помятый"
+      },
+      "pron": {
+        "uz": "ayn-ge-dryukt",
+        "uz-Cyrl": "айн-ге-дрюкт",
+        "ru": "айн-ге-дрюкт"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Die Ecke vom Karton ist eingedrückt.",
+        "tr": {
+          "uz": "Qutining burchagi ezilgan.",
+          "uz-Cyrl": "Қутининг бурчаги эзилган.",
+          "ru": "Угол коробки помят."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-schichtleiter",
+      "slug": "schichtleiter",
+      "term": "der Schichtleiter",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Schichtleiter",
+      "tr": {
+        "uz": "smena boshligʻi",
+        "uz-Cyrl": "смена бошлиғи",
+        "ru": "начальник смены"
+      },
+      "pron": {
+        "uz": "der shixt-lay-ter",
+        "uz-Cyrl": "дер шихт-лай-тер",
+        "ru": "дер шихт-лай-тер"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Ich informiere sofort den Schichtleiter.",
+        "tr": {
+          "uz": "Smena boshligʻiga darhol xabar beraman.",
+          "uz-Cyrl": "Смена бошлиғига дарҳол хабар бераман.",
+          "ru": "Я сразу сообщаю начальнику смены."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-wann-genau-ist-das-passiert",
+      "slug": "wann-genau-ist-das-passiert",
+      "term": "Wann genau ist das passiert?",
+      "icon": "clock",
+      "tr": {
+        "uz": "Bu aniq qachon boʻldi?",
+        "uz-Cyrl": "Бу аниқ қачон бўлди?",
+        "ru": "Когда именно это случилось?"
+      },
+      "pron": {
+        "uz": "van ge-nau ist das pa-sirt",
+        "uz-Cyrl": "ван ге-нау ист дас па-сирт",
+        "ru": "ван ге-нау ист дас па-сирт"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Wann genau ist das passiert? Vor oder nach dem Abladen?",
+        "tr": {
+          "uz": "Bu aniq qachon boʻldi? Tushirishdan oldinmi yoki keyinmi?",
+          "uz-Cyrl": "Бу аниқ қачон бўлди? Туширишдан олдинми ёки кейинми?",
+          "ru": "Когда именно это случилось? До или после разгрузки?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-hisobot-ich-habe-alles-fotografiert",
+      "slug": "ich-habe-alles-fotografiert",
+      "term": "Ich habe alles fotografiert.",
+      "icon": "camera",
+      "tr": {
+        "uz": "Hammasini suratga oldim.",
+        "uz-Cyrl": "Ҳаммасини суратга олдим.",
+        "ru": "Всё сфотографировано."
+      },
+      "pron": {
+        "uz": "ix ha-be a-les fo-to-gra-firt",
+        "uz-Cyrl": "их ха-бе а-лес фо-то-гра-фирт",
+        "ru": "их ха-бе а-лес фо-то-гра-фирт"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "hisobot",
+      "example": {
+        "term": "Ich habe alles fotografiert, die Bilder sind auf dem Tablet.",
+        "tr": {
+          "uz": "Hammasini suratga oldim, rasmlar planshetda.",
+          "uz-Cyrl": "Ҳаммасини суратга олдим, расмлар планшетда.",
+          "ru": "Всё сфотографировано, снимки на планшете."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
