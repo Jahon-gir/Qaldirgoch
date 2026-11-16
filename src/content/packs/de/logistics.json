@@ -2296,6 +2296,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "mijoz-muzokara",
+      "title": {
+        "uz": "Mijoz bilan kelishuv: kechikish va reklamatsiya",
+        "uz-Cyrl": "Мижоз билан келишув: кечикиш ва рекламация",
+        "ru": "Переговоры с клиентом: задержка и рекламация"
+      },
+      "order": 14,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиент"
+            },
+            "de": "Sie sind zwei Stunden zu spät! Unser Lager schließt bald.",
+            "tr": {
+              "uz": "Siz ikki soat kechikdingiz! Omborimiz tez orada yopiladi.",
+              "uz-Cyrl": "Сиз икки соат кечикдингиз! Омборимиз тез орада ёпилади.",
+              "ru": "Вы опоздали на два часа! Наш склад скоро закрывается."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Das tut mir leid. Auf der Autobahn war ein Unfall, deshalb die Verspätung.",
+            "tr": {
+              "uz": "Uzr. Avtobanda avariya boʻldi, kechikish shundan.",
+              "uz-Cyrl": "Узр. Автобанда авария бўлди, кечикиш шундан.",
+              "ru": "Извините. На автобане была авария, поэтому задержка."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиент"
+            },
+            "de": "Und jetzt? Ich habe keine Leute mehr zum Abladen.",
+            "tr": {
+              "uz": "Endi nima boʻladi? Yuk tushirishga odamim qolmadi.",
+              "uz-Cyrl": "Энди нима бўлади? Юк туширишга одамим қолмади.",
+              "ru": "И что теперь? У меня больше нет людей для разгрузки."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Zeigen Sie mir die Rampe, dann lade ich selbst mit dem Hubwagen ab.",
+            "tr": {
+              "uz": "Rampani koʻrsating, qoʻl aravasi bilan oʻzim tushiraman.",
+              "uz-Cyrl": "Рампани кўрсатинг, қўл араваси билан ўзим тушираман.",
+              "ru": "Покажите мне рампу, тогда разгружу рохлей самостоятельно."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиент"
+            },
+            "de": "Gut. Aber zwei Kartons sehen nass aus. Die nehme ich nur unter Vorbehalt an.",
+            "tr": {
+              "uz": "Yaxshi. Lekin ikki quti hoʻl koʻrinadi. Ularni faqat eʼtiroz sharti bilan qabul qilaman.",
+              "uz-Cyrl": "Яхши. Лекин икки қути ҳўл кўринади. Уларни фақат эътироз шарти билан қабул қиламан.",
+              "ru": "Хорошо. Но две коробки выглядят мокрыми. Их я принимаю только с оговоркой."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "In Ordnung. Schreiben Sie den Vorbehalt für die zwei nassen Kartons bitte auf den Lieferschein.",
+            "tr": {
+              "uz": "Mayli. Ikki hoʻl quti haqidagi eʼtirozni yuk xatiga yozib qoʻying, iltimos.",
+              "uz-Cyrl": "Майли. Икки ҳўл қути ҳақидаги эътирозни юк хатига ёзиб қўйинг, илтимос.",
+              "ru": "Хорошо. Пожалуйста, запишите оговорку о двух мокрых коробках в накладную."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -11327,6 +11420,712 @@
           "uz": "Hammasini suratga oldim, rasmlar planshetda.",
           "uz-Cyrl": "Ҳаммасини суратга олдим, расмлар планшетда.",
           "ru": "Всё сфотографировано, снимки на планшете."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-vorbehalt",
+      "slug": "vorbehalt",
+      "term": "der Vorbehalt",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Vorbehalte",
+      "tr": {
+        "uz": "eʼtiroz sharti (yukni shart bilan qabul qilish)",
+        "uz-Cyrl": "эътироз шарти (юкни шарт билан қабул қилиш)",
+        "ru": "оговорка (приёмка с оговоркой)"
+      },
+      "pron": {
+        "uz": "der for-be-halt",
+        "uz-Cyrl": "дер фор-бе-халт",
+        "ru": "дер фор-бе-халт"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Ich nehme die Lieferung nur unter Vorbehalt an.",
+        "tr": {
+          "uz": "Yukni faqat eʼtiroz sharti bilan qabul qilaman.",
+          "uz-Cyrl": "Юкни фақат эътироз шарти билан қабул қиламан.",
+          "ru": "Я принимаю поставку только с оговоркой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-reklamation",
+      "slug": "reklamation",
+      "term": "die Reklamation",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Reklamationen",
+      "tr": {
+        "uz": "reklamatsiya (mahsulot boʻyicha shikoyat)",
+        "uz-Cyrl": "рекламация (маҳсулот бўйича шикоят)",
+        "ru": "рекламация"
+      },
+      "pron": {
+        "uz": "die rek-la-ma-tsi-on",
+        "uz-Cyrl": "ди рек-ла-ма-ци-он",
+        "ru": "ди рек-ла-ма-ци-он"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Der Kunde hat eine Reklamation wegen der nassen Kartons.",
+        "tr": {
+          "uz": "Mijozda hoʻl qutilar sababli reklamatsiya bor.",
+          "uz-Cyrl": "Мижозда ҳўл қутилар сабабли рекламация бор.",
+          "ru": "У клиента рекламация из-за мокрых коробок."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-ersatzlieferung",
+      "slug": "ersatzlieferung",
+      "term": "die Ersatzlieferung",
+      "icon": "truck",
+      "article": "die",
+      "plural": "die Ersatzlieferungen",
+      "tr": {
+        "uz": "oʻrniga yuboriladigan yuk",
+        "uz-Cyrl": "ўрнига юбориладиган юк",
+        "ru": "замена (повторная поставка)"
+      },
+      "pron": {
+        "uz": "die er-zats-li-fe-rung",
+        "uz-Cyrl": "ди эр-зац-ли-фе-рунг",
+        "ru": "ди эр-зац-ли-фе-рунг"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Die Ersatzlieferung kommt morgen mit der ersten Tour.",
+        "tr": {
+          "uz": "Oʻrniga yuboriladigan yuk ertaga birinchi reys bilan keladi.",
+          "uz-Cyrl": "Ўрнига юбориладиган юк эртага биринчи рейс билан келади.",
+          "ru": "Замена придёт завтра первым рейсом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-lieferverzoegerung",
+      "slug": "lieferverzoegerung",
+      "term": "die Lieferverzögerung",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Lieferverzögerungen",
+      "tr": {
+        "uz": "yetkazishdagi kechikish",
+        "uz-Cyrl": "етказишдаги кечикиш",
+        "ru": "задержка поставки"
+      },
+      "pron": {
+        "uz": "die li-fer-fer-tsyo-ge-rung",
+        "uz-Cyrl": "ди ли-фер-фер-цё-ге-рунг",
+        "ru": "ди ли-фер-фер-цё-ге-рунг"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Ich informiere den Kunden sofort über die Lieferverzögerung.",
+        "tr": {
+          "uz": "Mijozga yetkazishdagi kechikish haqida darhol xabar beraman.",
+          "uz-Cyrl": "Мижозга етказишдаги кечикиш ҳақида дарҳол хабар бераман.",
+          "ru": "Я сразу сообщаю клиенту о задержке поставки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-liefertermin",
+      "slug": "liefertermin",
+      "term": "der Liefertermin",
+      "icon": "calendar-event",
+      "article": "der",
+      "plural": "die Liefertermine",
+      "tr": {
+        "uz": "yetkazish sanasi",
+        "uz-Cyrl": "етказиш санаси",
+        "ru": "срок поставки"
+      },
+      "pron": {
+        "uz": "der li-fer-ter-min",
+        "uz-Cyrl": "дер ли-фер-тер-мин",
+        "ru": "дер ли-фер-тер-мин"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Der neue Liefertermin ist Donnerstag.",
+        "tr": {
+          "uz": "Yangi yetkazish sanasi — payshanba.",
+          "uz-Cyrl": "Янги етказиш санаси — пайшанба.",
+          "ru": "Новый срок поставки — четверг."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-zeitfenster",
+      "slug": "zeitfenster",
+      "term": "das Zeitfenster",
+      "icon": "clock",
+      "article": "das",
+      "plural": "die Zeitfenster",
+      "tr": {
+        "uz": "vaqt oraligʻi (yukni qabul qilish uchun)",
+        "uz-Cyrl": "вақт оралиғи (юкни қабул қилиш учун)",
+        "ru": "временное окно (для приёмки)"
+      },
+      "pron": {
+        "uz": "das tsayt-fens-ter",
+        "uz-Cyrl": "дас цайт-фенс-тер",
+        "ru": "дас цайт-фенс-тер"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Der Kunde hat nur am Vormittag ein Zeitfenster.",
+        "tr": {
+          "uz": "Mijozda faqat ertalab vaqt oraligʻi bor.",
+          "uz-Cyrl": "Мижозда фақат эрталаб вақт оралиғи бор.",
+          "ru": "У клиента окно для приёмки только до обеда."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-teillieferung",
+      "slug": "teillieferung",
+      "term": "die Teillieferung",
+      "icon": "package",
+      "article": "die",
+      "plural": "die Teillieferungen",
+      "tr": {
+        "uz": "qisman yetkazish",
+        "uz-Cyrl": "қисман етказиш",
+        "ru": "частичная поставка"
+      },
+      "pron": {
+        "uz": "die tayl-li-fe-rung",
+        "uz-Cyrl": "ди тайл-ли-фе-рунг",
+        "ru": "ди тайл-ли-фе-рунг"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Heute bringen wir eine Teillieferung, der Rest kommt später.",
+        "tr": {
+          "uz": "Bugun yukning bir qismini olib kelamiz, qolgani keyinroq keladi.",
+          "uz-Cyrl": "Бугун юкнинг бир қисмини олиб келамиз, қолгани кейинроқ келади.",
+          "ru": "Сегодня привезём частичную поставку, остальное позже."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-ruecksendung",
+      "slug": "ruecksendung",
+      "term": "die Rücksendung",
+      "icon": "repeat",
+      "article": "die",
+      "plural": "die Rücksendungen",
+      "tr": {
+        "uz": "qaytarib yuborish",
+        "uz-Cyrl": "қайтариб юбориш",
+        "ru": "возврат (обратная отправка)"
+      },
+      "pron": {
+        "uz": "die ryuk-zen-dung",
+        "uz-Cyrl": "ди рюк-зен-дунг",
+        "ru": "ди рюк-зен-дунг"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Für die Rücksendung brauchen wir einen neuen Lieferschein.",
+        "tr": {
+          "uz": "Qaytarib yuborish uchun yangi yuk xati kerak.",
+          "uz-Cyrl": "Қайтариб юбориш учун янги юк хати керак.",
+          "ru": "Для возврата нужна новая накладная."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-gutschrift",
+      "slug": "gutschrift",
+      "term": "die Gutschrift",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "die Gutschriften",
+      "tr": {
+        "uz": "qaytarish hujjati (hisobga yoziladigan summa)",
+        "uz-Cyrl": "қайтариш ҳужжати (ҳисобга ёзиладиган сумма)",
+        "ru": "кредит-нота"
+      },
+      "pron": {
+        "uz": "die gut-shrift",
+        "uz-Cyrl": "ди гут-шрифт",
+        "ru": "ди гут-шрифт"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Über eine Gutschrift entscheidet das Büro, nicht der Fahrer.",
+        "tr": {
+          "uz": "Qaytarish hujjati haqida haydovchi emas, ofis qaror qiladi.",
+          "uz-Cyrl": "Қайтариш ҳужжати ҳақида ҳайдовчи эмас, офис қарор қилади.",
+          "ru": "О кредит-ноте решает офис, а не водитель."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-ansprechpartner",
+      "slug": "ansprechpartner",
+      "term": "der Ansprechpartner",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Ansprechpartner",
+      "tr": {
+        "uz": "murojaat qilinadigan shaxs",
+        "uz-Cyrl": "мурожаат қилинадиган шахс",
+        "ru": "контактное лицо"
+      },
+      "pron": {
+        "uz": "der an-shprex-part-ner",
+        "uz-Cyrl": "дер ан-шпрех-парт-нер",
+        "ru": "дер ан-шпрех-парт-нер"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Wer ist Ihr Ansprechpartner im Lager?",
+        "tr": {
+          "uz": "Omborda kimga murojaat qilsa boʻladi?",
+          "uz-Cyrl": "Омборда кимга мурожаат қилса бўлади?",
+          "ru": "Кто ваше контактное лицо на складе?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-rueckmeldung",
+      "slug": "rueckmeldung",
+      "term": "die Rückmeldung",
+      "icon": "phone",
+      "article": "die",
+      "plural": "die Rückmeldungen",
+      "tr": {
+        "uz": "javob xabari",
+        "uz-Cyrl": "жавоб хабари",
+        "ru": "ответ, обратная связь"
+      },
+      "pron": {
+        "uz": "die ryuk-mel-dung",
+        "uz-Cyrl": "ди рюк-мел-дунг",
+        "ru": "ди рюк-мел-дунг"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Ich gebe Ihnen bis Mittag eine Rückmeldung.",
+        "tr": {
+          "uz": "Tushgacha sizga javob beraman.",
+          "uz-Cyrl": "Тушгача сизга жавоб бераман.",
+          "ru": "Я дам вам ответ до обеда."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-kompromiss",
+      "slug": "kompromiss",
+      "term": "der Kompromiss",
+      "icon": "heart-handshake",
+      "article": "der",
+      "plural": "die Kompromisse",
+      "tr": {
+        "uz": "murosa",
+        "uz-Cyrl": "муроса",
+        "ru": "компромисс"
+      },
+      "pron": {
+        "uz": "der kom-pro-mis",
+        "uz-Cyrl": "дер ком-про-мис",
+        "ru": "дер ком-про-мис"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Nach dem Gespräch haben wir einen Kompromiss gefunden.",
+        "tr": {
+          "uz": "Suhbatdan keyin murosaga keldik.",
+          "uz-Cyrl": "Суҳбатдан кейин муросага келдик.",
+          "ru": "После разговора мы нашли компромисс."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-kundenbetreuung",
+      "slug": "kundenbetreuung",
+      "term": "die Kundenbetreuung",
+      "icon": "users",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "mijozlar bilan ishlash boʻlimi",
+        "uz-Cyrl": "мижозлар билан ишлаш бўлими",
+        "ru": "служба поддержки клиентов"
+      },
+      "pron": {
+        "uz": "die kun-den-be-troy-ung",
+        "uz-Cyrl": "ди кун-ден-бе-трой-унг",
+        "ru": "ди кун-ден-бе-трой-унг"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Die Kundenbetreuung ruft Sie heute noch zurück.",
+        "tr": {
+          "uz": "Mijozlar bilan ishlash boʻlimi bugunoq sizga qayta qoʻngʻiroq qiladi.",
+          "uz-Cyrl": "Мижозлар билан ишлаш бўлими бугуноқ сизга қайта қўнғироқ қилади.",
+          "ru": "Служба поддержки клиентов перезвонит вам сегодня же."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-verschieben",
+      "slug": "verschieben",
+      "term": "verschieben",
+      "icon": "calendar-event",
+      "tr": {
+        "uz": "boshqa vaqtga koʻchirmoq",
+        "uz-Cyrl": "бошқа вақтга кўчирмоқ",
+        "ru": "переносить (на другое время)"
+      },
+      "pron": {
+        "uz": "fer-shi-ben",
+        "uz-Cyrl": "фер-ши-бен",
+        "ru": "фер-ши-бен"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Wir müssen die Lieferung auf morgen verschieben.",
+        "tr": {
+          "uz": "Yetkazishni ertaga koʻchirishimiz kerak.",
+          "uz-Cyrl": "Етказишни эртага кўчиришимиз керак.",
+          "ru": "Нам нужно перенести поставку на завтра."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-vereinbaren",
+      "slug": "vereinbaren",
+      "term": "vereinbaren",
+      "icon": "check",
+      "tr": {
+        "uz": "kelishib olmoq",
+        "uz-Cyrl": "келишиб олмоқ",
+        "ru": "договариваться"
+      },
+      "pron": {
+        "uz": "fer-ayn-ba-ren",
+        "uz-Cyrl": "фер-айн-ба-рен",
+        "ru": "фер-айн-ба-рен"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Können wir einen neuen Termin vereinbaren?",
+        "tr": {
+          "uz": "Yangi vaqtni kelishib olsak boʻladimi?",
+          "uz-Cyrl": "Янги вақтни келишиб олсак бўладими?",
+          "ru": "Можем договориться о новом времени?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-sich-entschuldigen",
+      "slug": "sich-entschuldigen",
+      "term": "sich entschuldigen",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "uzr soʻramoq",
+        "uz-Cyrl": "узр сўрамоқ",
+        "ru": "извиняться"
+      },
+      "pron": {
+        "uz": "zix ent-shul-di-gen",
+        "uz-Cyrl": "зих энт-шул-ди-ген",
+        "ru": "зих энт-шул-ди-ген"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Ich möchte mich für die Wartezeit entschuldigen.",
+        "tr": {
+          "uz": "Kutib qolganingiz uchun uzr soʻramoqchiman.",
+          "uz-Cyrl": "Кутиб қолганингиз учун узр сўрамоқчиман.",
+          "ru": "Я хочу извиниться за ожидание."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-erreichbar",
+      "slug": "erreichbar",
+      "term": "erreichbar",
+      "icon": "phone",
+      "tr": {
+        "uz": "telefonda bogʻlanish mumkin",
+        "uz-Cyrl": "телефонда боғланиш мумкин",
+        "ru": "на связи, доступен"
+      },
+      "pron": {
+        "uz": "er-rayx-bar",
+        "uz-Cyrl": "эр-райх-бар",
+        "ru": "эр-райх-бар"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Ich bin bis 18 Uhr telefonisch erreichbar.",
+        "tr": {
+          "uz": "Soat 18 gacha menga telefonda bogʻlanish mumkin.",
+          "uz-Cyrl": "Соат 18 гача менга телефонда боғланиш мумкин.",
+          "ru": "Я на связи по телефону до 18 часов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-veraergert",
+      "slug": "veraergert",
+      "term": "verärgert",
+      "icon": "mood-sad",
+      "tr": {
+        "uz": "jahli chiqqan",
+        "uz-Cyrl": "жаҳли чиққан",
+        "ru": "раздражённый, рассерженный"
+      },
+      "pron": {
+        "uz": "fer-er-gert",
+        "uz-Cyrl": "фер-эр-герт",
+        "ru": "фер-эр-герт"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Der Kunde ist verärgert, aber ich bleibe ruhig.",
+        "tr": {
+          "uz": "Mijozning jahli chiqqan, lekin men xotirjam turaman.",
+          "uz-Cyrl": "Мижознинг жаҳли чиққан, лекин мен хотиржам тураман.",
+          "ru": "Клиент раздражён, но я сохраняю спокойствие."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-ich-klaere-das-sofort",
+      "slug": "ich-klaere-das-sofort",
+      "term": "Ich kläre das sofort.",
+      "icon": "messages",
+      "tr": {
+        "uz": "Buni hozir aniqlab beraman.",
+        "uz-Cyrl": "Буни ҳозир аниқлаб бераман.",
+        "ru": "Сейчас это выясню."
+      },
+      "pron": {
+        "uz": "ix kle-re das zo-fort",
+        "uz-Cyrl": "их кле-ре дас зо-форт",
+        "ru": "их кле-ре дас зо-форт"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Ich kläre das sofort mit dem Disponenten.",
+        "tr": {
+          "uz": "Buni hozir dispetcher bilan aniqlab beraman.",
+          "uz-Cyrl": "Буни ҳозир диспетчер билан аниқлаб бераман.",
+          "ru": "Сейчас выясню это с диспетчером."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "logistics-mijoz-muzokara-wann-passt-es-ihnen",
+      "slug": "wann-passt-es-ihnen",
+      "term": "Wann passt es Ihnen?",
+      "icon": "calendar-event",
+      "tr": {
+        "uz": "Sizga qachon qulay?",
+        "uz-Cyrl": "Сизга қачон қулай?",
+        "ru": "Когда вам удобно?"
+      },
+      "pron": {
+        "uz": "van past es i-nen",
+        "uz-Cyrl": "ван паст эс и-нен",
+        "ru": "ван паст эс и-нен"
+      },
+      "level": "B1",
+      "field": "logistics",
+      "jobs": [
+        "fachlagerist",
+        "berufskraftfahrer"
+      ],
+      "situation": "mijoz-muzokara",
+      "example": {
+        "term": "Wann passt es Ihnen? Morgen früh oder am Nachmittag?",
+        "tr": {
+          "uz": "Sizga qachon qulay? Ertaga ertalabmi yoki tushdan keyinmi?",
+          "uz-Cyrl": "Сизга қачон қулай? Эртага эрталабми ёки тушдан кейинми?",
+          "ru": "Когда вам удобно? Завтра утром или после обеда?"
         }
       },
       "safety": false,
