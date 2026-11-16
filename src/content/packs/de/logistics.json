@@ -2212,6 +2212,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Dispetcher",
+              "uz-Cyrl": "Диспетчер",
+              "ru": "Диспетчер"
+            },
+            "de": "Der Kunde meldet einen Transportschaden. Was ist passiert?",
+            "tr": {
+              "uz": "Mijoz tashishda shikastlanish haqida xabar beryapti. Nima boʻldi?",
+              "uz-Cyrl": "Мижоз ташишда шикастланиш ҳақида хабар беряпти. Нима бўлди?",
+              "ru": "Клиент сообщает о повреждении при перевозке. Что случилось?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Beim Bremsen ist eine Palette verrutscht, die Folie ist kaputt.",
+            "tr": {
+              "uz": "Tormoz berganda bitta poddon surilib ketdi, plyonka yirtildi.",
+              "uz-Cyrl": "Тормоз берганда битта поддон сурилиб кетди, плёнка йиртилди.",
+              "ru": "При торможении сдвинулся поддон, плёнка порвана."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Dispetcher",
+              "uz-Cyrl": "Диспетчер",
+              "ru": "Диспетчер"
+            },
+            "de": "Wann genau war das, und wo waren Sie da?",
+            "tr": {
+              "uz": "Bu aniq qachon boʻldi va oʻshanda qayerda edingiz?",
+              "uz-Cyrl": "Бу аниқ қачон бўлди ва ўшанда қаерда эдингиз?",
+              "ru": "Когда именно это было и где вы тогда находились?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gegen zehn Uhr, kurz vor der Ausfahrt Nord. Das steht auch im Protokoll.",
+            "tr": {
+              "uz": "Taxminan soat oʻnlarda, shimoliy chiqishdan sal oldin. Bu bayonnomada ham yozilgan.",
+              "uz-Cyrl": "Тахминан соат ўнларда, шимолий чиқишдан сал олдин. Бу баённомада ҳам ёзилган.",
+              "ru": "Около десяти часов, незадолго до северного съезда. Это есть и в протоколе."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Dispetcher",
+              "uz-Cyrl": "Диспетчер",
+              "ru": "Диспетчер"
+            },
+            "de": "Hat der Kunde die beschädigte Palette angenommen?",
+            "tr": {
+              "uz": "Mijoz shikastlangan poddonni qabul qildimi?",
+              "uz-Cyrl": "Мижоз шикастланган поддонни қабул қилдими?",
+              "ru": "Клиент принял повреждённый поддон?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, diese eine Palette nimmt er nicht an. Die anderen hat er unterschrieben.",
+            "tr": {
+              "uz": "Yoʻq, aynan shu poddonni qabul qilmayapti. Qolganlariga imzo qoʻydi.",
+              "uz-Cyrl": "Йўқ, айнан шу поддонни қабул қилмаяпти. Қолганларига имзо қўйди.",
+              "ru": "Нет, именно этот поддон он не принимает. За остальные он расписался."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
