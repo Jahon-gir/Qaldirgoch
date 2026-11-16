@@ -2120,6 +2120,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "ish-hisoboti",
+      "title": {
+        "uz": "Ish hisoboti va smena topshirish",
+        "uz-Cyrl": "Иш ҳисоботи ва смена топшириш",
+        "ru": "Рабочий отчёт и передача смены"
+      },
+      "order": 13,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Smena boshligʻi",
+              "uz-Cyrl": "Смена бошлиғи",
+              "ru": "Начальник смены"
+            },
+            "de": "Gleich ist Schichtübergabe. Wie lief die Frühschicht an der Fräse?",
+            "tr": {
+              "uz": "Hozir smena topshirish. Frezada ertalabki smena qanday oʻtdi?",
+              "uz-Cyrl": "Ҳозир смена топшириш. Фрезада эрталабки смена қандай ўтди?",
+              "ru": "Сейчас передача смены. Как прошла утренняя смена на фрезерном станке?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Es gab eine Störung: Der Fräser ist gebrochen, und die Maschine stand still.",
+            "tr": {
+              "uz": "Nosozlik boʻldi: freza sindi va dastgoh toʻxtab qoldi.",
+              "uz-Cyrl": "Носозлик бўлди: фреза синди ва дастгоҳ тўхтаб қолди.",
+              "ru": "Был сбой: фреза сломалась, и станок остановился."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Smena boshligʻi",
+              "uz-Cyrl": "Смена бошлиғи",
+              "ru": "Начальник смены"
+            },
+            "de": "Wie lange stand die Maschine, und wo haben Sie das eingetragen?",
+            "tr": {
+              "uz": "Dastgoh qancha vaqt turdi va buni qayerga yozdingiz?",
+              "uz-Cyrl": "Дастгоҳ қанча вақт турди ва буни қаерга ёздингиз?",
+              "ru": "Сколько стоял станок и куда вы это записали?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Etwa vierzig Minuten. Die Ausfallzeit steht im Arbeitsbericht.",
+            "tr": {
+              "uz": "Taxminan qirq daqiqa. Ishlamay qolgan vaqt ish hisobotida yozilgan.",
+              "uz-Cyrl": "Тахминан қирқ дақиқа. Ишламай қолган вақт иш ҳисоботида ёзилган.",
+              "ru": "Примерно сорок минут. Время простоя указано в рабочем отчёте."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Smena boshligʻi",
+              "uz-Cyrl": "Смена бошлиғи",
+              "ru": "Начальник смены"
+            },
+            "de": "Und die Teile, die beim Bruch in der Maschine waren?",
+            "tr": {
+              "uz": "Sinish paytida dastgohda boʻlgan detallar-chi?",
+              "uz-Cyrl": "Синиш пайтида дастгоҳда бўлган деталлар-чи?",
+              "ru": "А детали, которые были в станке при поломке?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Diese drei Teile sind gesperrt und gekennzeichnet. Der Prüfer sieht sie morgen an.",
+            "tr": {
+              "uz": "Oʻsha uchta detal bloklangan va belgilangan. Nazoratchi ularni ertaga koʻradi.",
+              "uz-Cyrl": "Ўша учта детал блокланган ва белгиланган. Назоратчи уларни эртага кўради.",
+              "ru": "Эти три детали заблокированы и помечены. Контролёр посмотрит их завтра."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -10598,6 +10691,734 @@
       "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-arbeitsbericht",
+      "slug": "arbeitsbericht",
+      "term": "der Arbeitsbericht",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Arbeitsberichte",
+      "tr": {
+        "uz": "ish hisoboti",
+        "uz-Cyrl": "иш ҳисоботи",
+        "ru": "рабочий отчёт"
+      },
+      "pron": {
+        "uz": "der ar-bayts-be-rixt",
+        "uz-Cyrl": "дер ар-байтс-бе-рихт",
+        "ru": "дер ар-байтс-бе-рихт"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Ich schreibe den Arbeitsbericht am Ende der Schicht.",
+        "tr": {
+          "uz": "Ish hisobotini smena oxirida yozaman.",
+          "uz-Cyrl": "Иш ҳисоботини смена охирида ёзаман.",
+          "ru": "Я пишу рабочий отчёт в конце смены."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-schichtuebergabe",
+      "slug": "schichtuebergabe",
+      "term": "die Schichtübergabe",
+      "icon": "repeat",
+      "article": "die",
+      "plural": "die Schichtübergaben",
+      "tr": {
+        "uz": "smena topshirish",
+        "uz-Cyrl": "смена топшириш",
+        "ru": "передача смены"
+      },
+      "pron": {
+        "uz": "die shixt-yu-ber-ga-be",
+        "uz-Cyrl": "ди шихт-ю-бер-га-бе",
+        "ru": "ди шихт-ю-бер-га-бе"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Bei der Schichtübergabe sage ich, was noch offen ist.",
+        "tr": {
+          "uz": "Smena topshirishda nima hali qolganini aytaman.",
+          "uz-Cyrl": "Смена топширишда нима ҳали қолганини айтаман.",
+          "ru": "При передаче смены я говорю, что ещё не сделано."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-arbeitsauftrag",
+      "slug": "arbeitsauftrag",
+      "term": "der Arbeitsauftrag",
+      "icon": "briefcase",
+      "article": "der",
+      "plural": "die Arbeitsaufträge",
+      "tr": {
+        "uz": "ish topshirigʻi",
+        "uz-Cyrl": "иш топшириғи",
+        "ru": "рабочее задание"
+      },
+      "pron": {
+        "uz": "der ar-bayts-auf-trak",
+        "uz-Cyrl": "дер ар-байтс-ауф-трак",
+        "ru": "дер ар-байтс-ауф-трак"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Die Nummer vom Arbeitsauftrag steht oben im Bericht.",
+        "tr": {
+          "uz": "Ish topshirigʻining raqami hisobotning tepasida yozilgan.",
+          "uz-Cyrl": "Иш топшириғининг рақами ҳисоботнинг тепасида ёзилган.",
+          "ru": "Номер рабочего задания указан вверху отчёта."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-stueckzahl",
+      "slug": "stueckzahl",
+      "term": "die Stückzahl",
+      "icon": "package",
+      "article": "die",
+      "plural": "die Stückzahlen",
+      "tr": {
+        "uz": "dona soni",
+        "uz-Cyrl": "дона сони",
+        "ru": "количество штук"
+      },
+      "pron": {
+        "uz": "die shtyuk-tsal",
+        "uz-Cyrl": "ди штюк-цал",
+        "ru": "ди штюк-цал"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Die Stückzahl passt nicht zum Auftrag.",
+        "tr": {
+          "uz": "Dona soni topshiriqqa mos kelmayapti.",
+          "uz-Cyrl": "Дона сони топшириққа мос келмаяпти.",
+          "ru": "Количество штук не совпадает с заданием."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-dokumentieren",
+      "slug": "dokumentieren",
+      "term": "dokumentieren",
+      "icon": "file-text",
+      "tr": {
+        "uz": "hujjatlashtirmoq, yozib qoʻymoq",
+        "uz-Cyrl": "ҳужжатлаштирмоқ, ёзиб қўймоқ",
+        "ru": "документировать"
+      },
+      "pron": {
+        "uz": "do-ku-men-ti-ren",
+        "uz-Cyrl": "до-ку-мен-ти-рен",
+        "ru": "до-ку-мен-ти-рен"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Jede Störung muss ich dokumentieren.",
+        "tr": {
+          "uz": "Har bir nosozlikni yozib qoʻyishim kerak.",
+          "uz-Cyrl": "Ҳар бир носозликни ёзиб қўйишим керак.",
+          "ru": "Каждый сбой нужно документировать."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-schichtfuehrer",
+      "slug": "schichtfuehrer",
+      "term": "der Schichtführer",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Schichtführer",
+      "tr": {
+        "uz": "smena boshligʻi",
+        "uz-Cyrl": "смена бошлиғи",
+        "ru": "начальник смены"
+      },
+      "pron": {
+        "uz": "der shixt-fyu-rer",
+        "uz-Cyrl": "дер шихт-фю-рер",
+        "ru": "дер шихт-фю-рер"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Der Schichtführer unterschreibt den Bericht.",
+        "tr": {
+          "uz": "Smena boshligʻi hisobotga imzo qoʻyadi.",
+          "uz-Cyrl": "Смена бошлиғи ҳисоботга имзо қўяди.",
+          "ru": "Начальник смены подписывает отчёт."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-stoerung",
+      "slug": "stoerung",
+      "term": "die Störung",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Störungen",
+      "tr": {
+        "uz": "nosozlik, uzilish",
+        "uz-Cyrl": "носозлик, узилиш",
+        "ru": "сбой, неисправность"
+      },
+      "pron": {
+        "uz": "die shtyo-rung",
+        "uz-Cyrl": "ди штё-рунг",
+        "ru": "ди штё-рунг"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Am Morgen gab es eine Störung an der Presse.",
+        "tr": {
+          "uz": "Ertalab pressda nosozlik boʻldi.",
+          "uz-Cyrl": "Эрталаб прессда носозлик бўлди.",
+          "ru": "Утром на прессе был сбой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-stillstand",
+      "slug": "stillstand",
+      "term": "der Stillstand",
+      "icon": "hand-stop",
+      "article": "der",
+      "plural": "die Stillstände",
+      "tr": {
+        "uz": "toʻxtab qolish (ishlamay turish)",
+        "uz-Cyrl": "тўхтаб қолиш (ишламай туриш)",
+        "ru": "простой, остановка"
+      },
+      "pron": {
+        "uz": "der shtil-shtant",
+        "uz-Cyrl": "дер штил-штант",
+        "ru": "дер штил-штант"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Nach dem Werkzeugbruch hatten wir einen Stillstand.",
+        "tr": {
+          "uz": "Asbob singanidan keyin dastgoh toʻxtab qoldi.",
+          "uz-Cyrl": "Асбоб синганидан кейин дастгоҳ тўхтаб қолди.",
+          "ru": "После поломки инструмента у нас был простой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-ausfallzeit",
+      "slug": "ausfallzeit",
+      "term": "die Ausfallzeit",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Ausfallzeiten",
+      "tr": {
+        "uz": "ishlamay qolgan vaqt",
+        "uz-Cyrl": "ишламай қолган вақт",
+        "ru": "время простоя"
+      },
+      "pron": {
+        "uz": "die aus-fal-tsayt",
+        "uz-Cyrl": "ди аус-фал-цайт",
+        "ru": "ди аус-фал-цайт"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Ich trage die Ausfallzeit in den Bericht ein.",
+        "tr": {
+          "uz": "Ishlamay qolgan vaqtni hisobotga yozaman.",
+          "uz-Cyrl": "Ишламай қолган вақтни ҳисоботга ёзаман.",
+          "ru": "Я вношу время простоя в отчёт."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-verschleiss",
+      "slug": "verschleiss",
+      "term": "der Verschleiß",
+      "icon": "tools",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "yeyilish, eskirish",
+        "uz-Cyrl": "ейилиш, эскириш",
+        "ru": "износ"
+      },
+      "pron": {
+        "uz": "der fer-shlays",
+        "uz-Cyrl": "дер фер-шлайс",
+        "ru": "дер фер-шлайс"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Der Fräser zeigt starken Verschleiß.",
+        "tr": {
+          "uz": "Frezada kuchli yeyilish bor.",
+          "uz-Cyrl": "Фрезада кучли ейилиш бор.",
+          "ru": "Фреза сильно изношена."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-unterbrechen",
+      "slug": "unterbrechen",
+      "term": "unterbrechen",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "toʻxtatib turmoq (ishni)",
+        "uz-Cyrl": "тўхтатиб турмоқ (ишни)",
+        "ru": "прерывать (работу)"
+      },
+      "pron": {
+        "uz": "un-ter-bre-xen",
+        "uz-Cyrl": "ун-тер-бре-хен",
+        "ru": "ун-тер-бре-хен"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Ich musste die Arbeit kurz unterbrechen.",
+        "tr": {
+          "uz": "Ishni bir oz toʻxtatib turishimga toʻgʻri keldi.",
+          "uz-Cyrl": "Ишни бир оз тўхтатиб туришимга тўғри келди.",
+          "ru": "Пришлось ненадолго прервать работу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-die-maschine-ist-ausser-betrieb",
+      "slug": "die-maschine-ist-ausser-betrieb",
+      "term": "Die Maschine ist außer Betrieb.",
+      "icon": "alert-octagon",
+      "tr": {
+        "uz": "Dastgoh ishlamaydi (foydalanishdan chiqarilgan).",
+        "uz-Cyrl": "Дастгоҳ ишламайди (фойдаланишдан чиқарилган).",
+        "ru": "Станок не работает (выведен из эксплуатации)."
+      },
+      "pron": {
+        "uz": "die ma-shi-ne ist au-ser be-trip",
+        "uz-Cyrl": "ди ма-ши-не ист ау-сер бе-трип",
+        "ru": "ди ма-ши-не ист ау-сер бе-трип"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Die Maschine ist außer Betrieb. Bitte das Schild nicht entfernen!",
+        "tr": {
+          "uz": "Dastgoh ishlamaydi. Iltimos, belgini olib tashlamang!",
+          "uz-Cyrl": "Дастгоҳ ишламайди. Илтимос, белгини олиб ташламанг!",
+          "ru": "Станок не работает. Пожалуйста, не снимайте табличку!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-wartung",
+      "slug": "wartung",
+      "term": "die Wartung",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Wartungen",
+      "tr": {
+        "uz": "texnik xizmat",
+        "uz-Cyrl": "техник хизмат",
+        "ru": "техническое обслуживание"
+      },
+      "pron": {
+        "uz": "die var-tung",
+        "uz-Cyrl": "ди вар-тунг",
+        "ru": "ди вар-тунг"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Die Wartung der Fräsmaschine ist morgen früh.",
+        "tr": {
+          "uz": "Freza dastgohiga texnik xizmat ertaga ertalab boʻladi.",
+          "uz-Cyrl": "Фреза дастгоҳига техник хизмат эртага эрталаб бўлади.",
+          "ru": "Техобслуживание фрезерного станка завтра утром."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-instandhaltung",
+      "slug": "instandhaltung",
+      "term": "die Instandhaltung",
+      "icon": "hammer",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "taʼmirlash xizmati (boʻlimi)",
+        "uz-Cyrl": "таъмирлаш хизмати (бўлими)",
+        "ru": "служба ремонта и обслуживания"
+      },
+      "pron": {
+        "uz": "die in-shtant-hal-tung",
+        "uz-Cyrl": "ди ин-штант-хал-тунг",
+        "ru": "ди ин-штант-хал-тунг"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Ich rufe die Instandhaltung an.",
+        "tr": {
+          "uz": "Taʼmirlash xizmatiga qoʻngʻiroq qilaman.",
+          "uz-Cyrl": "Таъмирлаш хизматига қўнғироқ қиламан.",
+          "ru": "Я позвоню в службу ремонта."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-pruefmittel",
+      "slug": "pruefmittel",
+      "term": "das Prüfmittel",
+      "icon": "ruler",
+      "article": "das",
+      "plural": "die Prüfmittel",
+      "tr": {
+        "uz": "tekshirish (oʻlchash) vositasi",
+        "uz-Cyrl": "текшириш (ўлчаш) воситаси",
+        "ru": "средство контроля"
+      },
+      "pron": {
+        "uz": "das pryuf-mi-tel",
+        "uz-Cyrl": "дас прюф-ми-тел",
+        "ru": "дас прюф-ми-тел"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Ist das Prüfmittel noch kalibriert?",
+        "tr": {
+          "uz": "Tekshirish vositasi hali kalibrlanganmi?",
+          "uz-Cyrl": "Текшириш воситаси ҳали калибрланганми?",
+          "ru": "Средство контроля ещё откалибровано?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-massnahme",
+      "slug": "massnahme",
+      "term": "die Maßnahme",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Maßnahmen",
+      "tr": {
+        "uz": "chora, tadbir",
+        "uz-Cyrl": "чора, тадбир",
+        "ru": "мера"
+      },
+      "pron": {
+        "uz": "die mas-na-me",
+        "uz-Cyrl": "ди мас-на-ме",
+        "ru": "ди мас-на-ме"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Welche Maßnahme schlagen Sie vor?",
+        "tr": {
+          "uz": "Qanday chora taklif qilasiz?",
+          "uz-Cyrl": "Қандай чора таклиф қиласиз?",
+          "ru": "Какую меру вы предлагаете?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-zwischenfall",
+      "slug": "zwischenfall",
+      "term": "der Zwischenfall",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Zwischenfälle",
+      "tr": {
+        "uz": "hodisa, voqea",
+        "uz-Cyrl": "ҳодиса, воқеа",
+        "ru": "происшествие, инцидент"
+      },
+      "pron": {
+        "uz": "der tsvi-shen-fal",
+        "uz-Cyrl": "дер цви-шен-фал",
+        "ru": "дер цви-шен-фал"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Den Zwischenfall melde ich sofort dem Schichtführer.",
+        "tr": {
+          "uz": "Hodisa haqida darhol smena boshligʻiga xabar beraman.",
+          "uz-Cyrl": "Ҳодиса ҳақида дарҳол смена бошлиғига хабар бераман.",
+          "ru": "О происшествии я сразу сообщаю начальнику смены."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-nachvollziehbar",
+      "slug": "nachvollziehbar",
+      "term": "nachvollziehbar",
+      "icon": "eye",
+      "tr": {
+        "uz": "tushunarli, tekshirib boʻladigan",
+        "uz-Cyrl": "тушунарли, текшириб бўладиган",
+        "ru": "понятный, прослеживаемый"
+      },
+      "pron": {
+        "uz": "nax-fol-tsi-bar",
+        "uz-Cyrl": "нах-фол-ци-бар",
+        "ru": "нах-фол-ци-бар"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Der Bericht muss für die nächste Schicht nachvollziehbar sein.",
+        "tr": {
+          "uz": "Hisobot keyingi smena uchun tushunarli boʻlishi kerak.",
+          "uz-Cyrl": "Ҳисобот кейинги смена учун тушунарли бўлиши керак.",
+          "ru": "Отчёт должен быть понятен следующей смене."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-was-ist-noch-offen",
+      "slug": "was-ist-noch-offen",
+      "term": "Was ist noch offen?",
+      "icon": "help",
+      "tr": {
+        "uz": "Nima hali qoldi?",
+        "uz-Cyrl": "Нима ҳали қолди?",
+        "ru": "Что ещё не сделано?"
+      },
+      "pron": {
+        "uz": "vas ist nox o-fen",
+        "uz-Cyrl": "вас ист нох о-фен",
+        "ru": "вас ист нох о-фен"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Was ist noch offen? – Zwei Teile müssen nachgemessen werden.",
+        "tr": {
+          "uz": "Nima hali qoldi? – Ikki detalni qayta oʻlchash kerak.",
+          "uz-Cyrl": "Нима ҳали қолди? – Икки детални қайта ўлчаш керак.",
+          "ru": "Что ещё не сделано? – Две детали нужно перемерить."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-ish-hisoboti-die-teile-sind-gesperrt",
+      "slug": "die-teile-sind-gesperrt",
+      "term": "Die Teile sind gesperrt.",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Detallar bloklangan (ishlatilmaydi).",
+        "uz-Cyrl": "Деталлар блокланган (ишлатилмайди).",
+        "ru": "Детали заблокированы (не использовать)."
+      },
+      "pron": {
+        "uz": "die tay-le zint ge-shpert",
+        "uz-Cyrl": "ди тай-ле зинт ге-шперт",
+        "ru": "ди тай-ле зинт ге-шперт"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Die Teile sind gesperrt, bis der Prüfer sie freigibt.",
+        "tr": {
+          "uz": "Nazoratchi ruxsat bermaguncha detallar bloklangan.",
+          "uz-Cyrl": "Назоратчи рухсат бермагунча деталлар блокланган.",
+          "ru": "Детали заблокированы, пока контролёр их не допустит."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
