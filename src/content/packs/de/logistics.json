@@ -2388,6 +2388,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Mijoz ofisi",
+              "uz-Cyrl": "Мижоз офиси",
+              "ru": "Офис клиента"
+            },
+            "de": "Guten Morgen. Wo bleibt unsere Lieferung? Sie war für heute früh geplant.",
+            "tr": {
+              "uz": "Xayrli tong. Yukimiz qani? U bugun ertalabga rejalangan edi.",
+              "uz-Cyrl": "Хайрли тонг. Юкимиз қани? У бугун эрталабга режалаштирилган эди.",
+              "ru": "Доброе утро. Где наша поставка? Она была запланирована на сегодня утром."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Entschuldigung, es gibt eine Lieferverzögerung. Ein Teil der Ware ist noch nicht im Lager.",
+            "tr": {
+              "uz": "Kechirasiz, yetkazishda kechikish bor. Tovarning bir qismi hali omborga kelmagan.",
+              "uz-Cyrl": "Кечирасиз, етказишда кечикиш бор. Товарнинг бир қисми ҳали омборга келмаган.",
+              "ru": "Извините, поставка задерживается. Часть товара ещё не поступила на склад."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mijoz ofisi",
+              "uz-Cyrl": "Мижоз офиси",
+              "ru": "Офис клиента"
+            },
+            "de": "Wir brauchen die Ware aber dringend. Was schlagen Sie vor?",
+            "tr": {
+              "uz": "Lekin tovar bizga shoshilinch kerak. Nima taklif qilasiz?",
+              "uz-Cyrl": "Лекин товар бизга шошилинч керак. Нима таклиф қиласиз?",
+              "ru": "Но товар нам срочно нужен. Что вы предлагаете?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wir können heute eine Teillieferung bringen und den Rest morgen.",
+            "tr": {
+              "uz": "Bugun yukning bir qismini olib kelishimiz mumkin, qolganini — ertaga.",
+              "uz-Cyrl": "Бугун юкнинг бир қисмини олиб келишимиз мумкин, қолганини — эртага.",
+              "ru": "Сегодня можем привезти частичную поставку, а остальное — завтра."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mijoz ofisi",
+              "uz-Cyrl": "Мижоз офиси",
+              "ru": "Офис клиента"
+            },
+            "de": "Das geht. Aber morgen haben wir nur von acht bis zehn Uhr ein Zeitfenster.",
+            "tr": {
+              "uz": "Boʻladi. Lekin ertaga bizda faqat soat sakkizdan oʻngacha vaqt oraligʻi bor.",
+              "uz-Cyrl": "Бўлади. Лекин эртага бизда фақат соат саккиздан ўнгача вақт оралиғи бор.",
+              "ru": "Подходит. Но завтра у нас окно для приёмки только с восьми до десяти."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut, von acht bis zehn. Ich kläre das mit dem Disponenten und gebe Ihnen eine Rückmeldung.",
+            "tr": {
+              "uz": "Yaxshi, sakkizdan oʻngacha. Buni dispetcher bilan aniqlab, sizga javob beraman.",
+              "uz-Cyrl": "Яхши, саккиздан ўнгача. Буни диспетчер билан аниқлаб, сизга жавоб бераман.",
+              "ru": "Хорошо, с восьми до десяти. Уточню это с диспетчером и дам вам ответ."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
