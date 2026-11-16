@@ -3,7 +3,7 @@ import { IconAlertTriangle, IconArrowLeft, IconArrowUp, IconCheck, IconCopy, Ico
 import { askAi, MAX_QUESTION, safeUrl, type AiError, type AiKind, type AiSource } from '../ai/ask'
 import { useI18n } from '../i18n/I18nProvider'
 import type { Key } from '../i18n/uz'
-import { supabase } from '../lib/supabase'
+import { loadSupabase } from '../lib/supabase'
 import { useBack } from '../lib/useHistoryAnchor'
 import { fmtDate } from '../safety/format'
 
@@ -75,7 +75,7 @@ export default function Assistant() {
       if (replaceId !== undefined) return m.map((x) => (x.id === replaceId ? pend : x))
       return [...m, { id: nextId++, role: 'user', text }, pend]
     })
-    const r = await askAi(supabase, text, lang)
+    const r = await askAi(await loadSupabase(), text, lang)
     if (active.current !== id) return // toʻxtatilgan yoki yangi suhbat
     active.current = null
     setMsgs((m) => m.map((x) => (x.id !== id ? x : r.ok ? { id, role: 'ai', q: text, text: r.data.answer, kind: r.data.kind, sources: r.data.sources } : { id, role: 'ai', q: text, error: r.error })))

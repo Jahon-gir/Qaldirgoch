@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react'
 import { useAuth } from '../auth/AuthProvider'
-import { supabase } from '../lib/supabase'
+import { getSupabase } from '../lib/supabase'
 import { clearProgressStorage } from '../progress/storage'
 import { countryById, effectiveCountry, type CountryId } from '../content/countries'
 import type { Direction } from '../content/german/types'
@@ -126,9 +126,10 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
   /** Serverga yozish; xatoda "yuborilmagan" belgisi qoʻyiladi va keyinroq qayta uriniladi. */
   const push = useCallback(
     async (uid: string, p: Profile) => {
-      if (!supabase) return false
+      const client = getSupabase()
+      if (!client) return false
       try {
-        await pushRemoteProfile(supabase, uid, p)
+        await pushRemoteProfile(client, uid, p)
         setDirty(null)
         return true
       } catch {
@@ -141,11 +142,11 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
 
   // Sessiya paydo boʻlganda (foydalanuvchi uchun bir marta) mahalliy va server profilini solishtirish
   useEffect(() => {
-    if (!userId || !supabase) {
+    const client = getSupabase()
+    if (!userId || !client) {
       setSync('off')
       return
     }
-    const client = supabase
     let cancelled = false
     setSync('checking')
     ;(async () => {

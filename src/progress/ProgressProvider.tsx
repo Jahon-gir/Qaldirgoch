@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { useAuth } from '../auth/AuthProvider'
 import { AUSBILDUNG_STEPS } from '../content/ausbildung'
-import { supabase } from '../lib/supabase'
+import { getSupabase } from '../lib/supabase'
 import { useProfile } from '../profile/ProfileProvider'
 import { applyPending, progressSummary, reconcile, sanitizeItems, stepStatuses, type Items, type PendingOps, type StepStatus } from './logic'
 import { PROGRESS_KEYS, read, write } from './storage'
@@ -45,8 +45,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
 
   // Kirganda va internet qaytganda: server bilan moslash + navbatdagi oʻzgarishlarni yuborish
   useEffect(() => {
-    if (!userId || !supabase) return
-    const client = supabase
+    const client = getSupabase()
+    if (!userId || !client) return
     let cancelled = false
     pendingRef.current = loadPending(userId)
 

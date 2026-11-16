@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
-import { supabase } from '../lib/supabase'
+import { loadSupabase } from '../lib/supabase'
 import { loadAgencies, readCache } from './registry.ts'
 import type { Agency } from './search.ts'
 
@@ -16,10 +16,12 @@ export function useAgencies(): AgenciesState {
   useEffect(() => {
     let off = false
     setState((s) => (s.status === 'ready' ? s : { status: 'loading', agencies: [] }))
-    loadAgencies(supabase, (rows) => !off && setState({ status: 'ready', agencies: rows })).then(
-      ({ rows }) => !off && setState({ status: 'ready', agencies: rows }),
-      () => !off && setState({ status: 'error', agencies: [] })
-    )
+    loadSupabase()
+      .then((client) => loadAgencies(client, (rows) => !off && setState({ status: 'ready', agencies: rows })))
+      .then(
+        ({ rows }) => !off && setState({ status: 'ready', agencies: rows }),
+        () => !off && setState({ status: 'error', agencies: [] })
+      )
     return () => {
       off = true
     }

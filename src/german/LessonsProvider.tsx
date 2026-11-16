@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { useAuth } from '../auth/AuthProvider'
 import { ALL_RESULT_IDS } from '../lang/ids'
-import { supabase } from '../lib/supabase'
+import { getSupabase } from '../lib/supabase'
 import { PROGRESS_KEYS, read, write } from '../progress/storage'
 import { mergeResults, recordResult, resultsToPush, sanitizeResults, type Result, type Results } from './results'
 import { fetchRemoteResults, pushRemoteResults } from './remote'
@@ -33,8 +33,8 @@ export function LessonsProvider({ children }: { children: ReactNode }) {
   }, [])
 
   useEffect(() => {
-    if (!userId || !supabase) return
-    const client = supabase
+    const client = getSupabase()
+    if (!userId || !client) return
     let cancelled = false
     const run = async () => {
       if (busy.current || cancelled) return

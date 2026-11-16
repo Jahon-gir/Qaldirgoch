@@ -9,7 +9,7 @@ const profile = vi.hoisted(() => ({ sync: 'ready', guestDiscarded: false, dailyG
 
 vi.mock('../lib/supabase', () => ({
   isSupabaseConfigured: true,
-  supabase: {
+  getSupabase: () => ({
     from: (table: string) => ({
       select: () => ({
         eq: async () => (db.fail ? { data: null, error: new Error('offline') } : { data: db.tables[table] ?? [], error: null })
@@ -19,7 +19,7 @@ vi.mock('../lib/supabase', () => ({
         return { error: null }
       }
     })
-  }
+  })
 }))
 vi.mock('../auth/AuthProvider', () => ({ useAuth: () => ({ status: 'signedIn', user: { id: 'u1' } }) }))
 vi.mock('../profile/ProfileProvider', () => ({ useProfile: () => profile }))

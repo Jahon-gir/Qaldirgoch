@@ -3,7 +3,7 @@ import { useAuth } from '../auth/AuthProvider'
 import { courseIdOfWord } from '../lang/courseIds'
 import { ALL_WORD_IDS, wordIdsOfAnyLesson } from '../lang/ids'
 import type { CourseId } from '../lang/types'
-import { supabase } from '../lib/supabase'
+import { getSupabase } from '../lib/supabase'
 import { useProfile } from '../profile/ProfileProvider'
 import { PROGRESS_KEYS, read, write } from '../progress/storage'
 import { activityToPush, addDone, applyForgiveness, mergeActivity, migrateTodayRow, sanitizeActivity, setTodayGoal, streakInfo, todayProgress, type Activity } from './daily'
@@ -100,8 +100,8 @@ export function WordsProvider({ children }: { children: ReactNode }) {
 
   // Kirganda (profil savoli hal boʻlgach) va internet qaytganda: server bilan birlashtirish + navbatdagilarni yuborish
   useEffect(() => {
-    if (!userId || !supabase || sync !== 'ready') return
-    const client = supabase
+    const client = getSupabase()
+    if (!userId || !client || sync !== 'ready') return
     let cancelled = false
     const run = async () => {
       if (busy.current || cancelled) return

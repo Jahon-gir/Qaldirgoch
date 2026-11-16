@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 import type { Session, User } from '@supabase/supabase-js'
-import { appBaseUrl, clearStoredSession, isSupabaseConfigured, supabase } from '../lib/supabase'
+import { appBaseUrl, clearStoredSession, getSupabase, isSupabaseConfigured, loadSupabase } from '../lib/supabase'
 
 export type AuthStatus = 'loading' | 'guest' | 'signedIn'
 export type AuthUser = { id: string; email?: string; name?: string; avatarUrl?: string }
@@ -35,19 +35,31 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(isSupabaseConfigured)
 
   useEffect(() => {
-    if (!supabase) return
-    // Callback ichida Supabase chaqirilmaydi (bloklanib qolmasligi uchun) — faqat holat yangilanadi
-    const { data } = supabase.auth.onAuthStateChange((_event, s) => {
-      setSession(s)
-      setLoading(false)
+    if (!isSupabaseConfigured) return
+    let off = false
+    let unsubscribe: (() => void) | undefined
+    // supabase-js ilova chizilgach yuklanadi; shu vaqtgacha holat 'loading'
+    loadSupabase().then((client) => {
+      if (off) return
+      if (!client) return setLoading(false)
+      // Callback ichida Supabase chaqirilmaydi (bloklanib qolmasligi uchun) — faqat holat yangilanadi
+      const { data } = client.auth.onAuthStateChange((_event, s) => {
+        setSession(s)
+        setLoading(false)
+      })
+      unsubscribe = () => data.subscription.unsubscribe()
     })
-    return () => data.subscription.unsubscribe()
+    return () => {
+      off = true
+      unsubscribe?.()
+    }
   }, [])
 
   const signInWithGoogle = useCallback(async () => {
-    if (!supabase) return false
+    const client = await loadSupabase()
+    if (!client) return false
     try {
-      const { error } = await supabase.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: appBaseUrl() } })
+      const { error } = await client.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: appBaseUrl() } })
       return !error
     } catch {
       return false
@@ -56,7 +68,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const signOut = useCallback(async () => {
     try {
-      await supabase?.auth.signOut({ scope: 'local' })
+      await getSupabase()?.auth.signOut({ scope: 'local' })
     } catch {
       /* tarmoq xatosida ham mahalliy sessiya pastda oʻchiriladi */
     }
