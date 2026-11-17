@@ -2212,6 +2212,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиент"
+            },
+            "de": "Guten Morgen. Ich bin mit der Reinigung im Besprechungsraum unzufrieden.",
+            "tr": {
+              "uz": "Xayrli tong. Majlislar xonasidagi tozalashdan noroziman.",
+              "uz-Cyrl": "Хайрли тонг. Мажлислар хонасидаги тозалашдан норозиман.",
+              "ru": "Доброе утро. Я недоволен уборкой в переговорной."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Guten Morgen. Können Sie mir die Stelle zeigen?",
+            "tr": {
+              "uz": "Xayrli tong. Qaysi joyligini koʻrsata olasizmi?",
+              "uz-Cyrl": "Хайрли тонг. Қайси жойлигини кўрсата оласизми?",
+              "ru": "Доброе утро. Можете показать это место?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиент"
+            },
+            "de": "Hier, unter dem Tisch sind Krümel, und die Fenster sind außen schmutzig.",
+            "tr": {
+              "uz": "Mana, stol ostida ushoqlar bor, derazalar esa tashqaridan iflos.",
+              "uz-Cyrl": "Мана, стол остида ушоқлар бор, деразалар эса ташқаридан ифлос.",
+              "ru": "Вот, под столом крошки, а окна снаружи грязные."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Die Krümel habe ich übersehen, die sauge ich sofort. Die Außenseite steht aber nicht im Leistungsverzeichnis.",
+            "tr": {
+              "uz": "Ushoqlarni koʻrmay qolibman, hozir changyutgich bilan tozalayman. Lekin derazaning tashqi tomoni ishlar roʻyxatida yoʻq.",
+              "uz-Cyrl": "Ушоқларни кўрмай қолибман, ҳозир чангютгич билан тозалайман. Лекин деразанинг ташқи томони ишлар рўйхатида йўқ.",
+              "ru": "Крошки пропущены, сейчас пропылесошу. Но наружная сторона окон не входит в перечень работ."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиент"
+            },
+            "de": "Dann möchten wir die Fenster außen zusätzlich. Was kostet das?",
+            "tr": {
+              "uz": "Unda derazalarni tashqaridan ham qoʻshimcha yuvdirmoqchimiz. Bu qancha turadi?",
+              "uz-Cyrl": "Унда деразаларни ташқаридан ҳам қўшимча ювдирмоқчимиз. Бу қанча туради?",
+              "ru": "Тогда мы хотим дополнительно мыть окна снаружи. Сколько это стоит?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Über den Preis für die Außenfenster entscheidet der Objektleiter. Ich gebe ihm heute noch eine Rückmeldung.",
+            "tr": {
+              "uz": "Tashqi derazalar narxini obyekt rahbari hal qiladi. Unga bugunoq xabar beraman.",
+              "uz-Cyrl": "Ташқи деразалар нархини объект раҳбари ҳал қилади. Унга бугуноқ хабар бераман.",
+              "ru": "Цену за мытьё окон снаружи определяет руководитель объекта. Сегодня же передам ему."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
