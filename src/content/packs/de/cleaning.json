@@ -2296,6 +2296,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "ish-hisoboti",
+      "title": {
+        "uz": "Ish hisoboti va obyektni topshirish",
+        "uz-Cyrl": "Иш ҳисоботи ва объектни топшириш",
+        "ru": "Отчёт о работе и передача объекта"
+      },
+      "order": 14,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Obyekt rahbari",
+              "uz-Cyrl": "Объект раҳбари",
+              "ru": "Руководитель объекта"
+            },
+            "de": "Hallo, sind Sie fertig? Was steht heute im Schichtbericht?",
+            "tr": {
+              "uz": "Salom, tugatdingizmi? Bugun smena hisobotida nima bor?",
+              "uz-Cyrl": "Салом, тугатдингизми? Бугун смена ҳисоботида нима бор?",
+              "ru": "Здравствуйте, вы закончили? Что сегодня в отчёте за смену?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, ich bin fertig. Aber das Büro im dritten Stock war verschlossen.",
+            "tr": {
+              "uz": "Ha, tugatdim. Lekin uchinchi qavatdagi ofis qulflangan edi.",
+              "uz-Cyrl": "Ҳа, тугатдим. Лекин учинчи қаватдаги офис қулфланган эди.",
+              "ru": "Да, всё готово. Но кабинет на третьем этаже был заперт."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Obyekt rahbari",
+              "uz-Cyrl": "Объект раҳбари",
+              "ru": "Руководитель объекта"
+            },
+            "de": "Gut, ich frage morgen den Hausmeister nach dem Schlüssel. Ist sonst noch etwas passiert?",
+            "tr": {
+              "uz": "Yaxshi, ertaga bino xizmatchisidan kalitni soʻrayman. Yana biror narsa boʻldimi?",
+              "uz-Cyrl": "Яхши, эртага бино хизматчисидан калитни сўрайман. Яна бирор нарса бўлдими?",
+              "ru": "Хорошо, завтра спрошу ключ у завхоза. Что-нибудь ещё случилось?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, im Keller gibt es einen Wasserschaden. Die Stelle ist schon abgesperrt.",
+            "tr": {
+              "uz": "Ha, yertoʻlada suv oqibdi. U joy allaqachon toʻsib qoʻyilgan.",
+              "uz-Cyrl": "Ҳа, ертўлада сув оқибди. У жой аллақачон тўсиб қўйилган.",
+              "ru": "Да, в подвале протечка. Это место уже огорожено."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Obyekt rahbari",
+              "uz-Cyrl": "Объект раҳбари",
+              "ru": "Руководитель объекта"
+            },
+            "de": "Danke. Bitte schreiben Sie eine Schadensmeldung und machen Sie Fotos.",
+            "tr": {
+              "uz": "Rahmat. Iltimos, shikast haqida xabarnoma yozing va suratga oling.",
+              "uz-Cyrl": "Раҳмат. Илтимос, шикаст ҳақида хабарнома ёзинг ва суратга олинг.",
+              "ru": "Спасибо. Пожалуйста, напишите сообщение о повреждении и сделайте фото."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Die Schadensmeldung schreibe ich sofort, die Fotos vom Keller sind schon gemacht.",
+            "tr": {
+              "uz": "Xabarnomani hozir yozaman, yertoʻla suratlari allaqachon olingan.",
+              "uz-Cyrl": "Хабарномани ҳозир ёзаман, ертўла суратлари аллақачон олинган.",
+              "ru": "Сообщение напишу сразу, фото подвала уже сделаны."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -11246,6 +11339,694 @@
         }
       },
       "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-taetigkeitsnachweis",
+      "slug": "taetigkeitsnachweis",
+      "term": "der Tätigkeitsnachweis",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Tätigkeitsnachweise",
+      "tr": {
+        "uz": "bajarilgan ishlar hisoboti (qaydnoma)",
+        "uz-Cyrl": "бажарилган ишлар ҳисоботи (қайднома)",
+        "ru": "отчёт о выполненных работах"
+      },
+      "pron": {
+        "uz": "der tetixkayts-naxvays",
+        "uz-Cyrl": "дер тетихкайтс-нахвайс",
+        "ru": "дер тетихкайтс-нахвайс"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Den Tätigkeitsnachweis fülle ich nach jeder Schicht aus.",
+        "tr": {
+          "uz": "Har smenadan keyin bajarilgan ishlar hisobotini toʻldiraman.",
+          "uz-Cyrl": "Ҳар сменадан кейин бажарилган ишлар ҳисоботини тўлдираман.",
+          "ru": "После каждой смены заполняю отчёт о выполненных работах."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-uebergabeprotokoll",
+      "slug": "uebergabeprotokoll",
+      "term": "das Übergabeprotokoll",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "die Übergabeprotokolle",
+      "tr": {
+        "uz": "topshirish dalolatnomasi",
+        "uz-Cyrl": "топшириш далолатномаси",
+        "ru": "протокол (акт) передачи"
+      },
+      "pron": {
+        "uz": "das yuber-gabe-protokol",
+        "uz-Cyrl": "дас юбер-габе-протокол",
+        "ru": "дас юбер-габе-протокол"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Im Übergabeprotokoll steht, welche Räume fertig sind.",
+        "tr": {
+          "uz": "Topshirish dalolatnomasida qaysi xonalar tayyorligi yozilgan.",
+          "uz-Cyrl": "Топшириш далолатномасида қайси хоналар тайёрлиги ёзилган.",
+          "ru": "В протоколе передачи указано, какие помещения готовы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-maengelliste",
+      "slug": "maengelliste",
+      "term": "die Mängelliste",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Mängellisten",
+      "tr": {
+        "uz": "kamchiliklar roʻyxati",
+        "uz-Cyrl": "камчиликлар рўйхати",
+        "ru": "список недостатков"
+      },
+      "pron": {
+        "uz": "die mengel-liste",
+        "uz-Cyrl": "ди менгел-листе",
+        "ru": "ди менгел-листе"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Der Objektleiter hat uns eine Mängelliste mit fünf Punkten gegeben.",
+        "tr": {
+          "uz": "Obyekt rahbari bizga besh banddan iborat kamchiliklar roʻyxatini berdi.",
+          "uz-Cyrl": "Объект раҳбари бизга беш банддан иборат камчиликлар рўйхатини берди.",
+          "ru": "Руководитель объекта дал нам список недостатков из пяти пунктов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-verbrauchsmaterial",
+      "slug": "verbrauchsmaterial",
+      "term": "das Verbrauchsmaterial",
+      "icon": "package",
+      "article": "das",
+      "plural": "die Verbrauchsmaterialien",
+      "tr": {
+        "uz": "sarf materiallari (qogʻoz, sovun, xalta)",
+        "uz-Cyrl": "сарф материаллари (қоғоз, совун, халта)",
+        "ru": "расходные материалы"
+      },
+      "pron": {
+        "uz": "das ferbrauxs-material",
+        "uz-Cyrl": "дас фербраухс-материал",
+        "ru": "дас фербраухс-материал"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Das Verbrauchsmaterial liegt im Lager im Keller.",
+        "tr": {
+          "uz": "Sarf materiallari yertoʻladagi omborda turadi.",
+          "uz-Cyrl": "Сарф материаллари ертўладаги омборда туради.",
+          "ru": "Расходные материалы лежат на складе в подвале."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-materialbestellung",
+      "slug": "materialbestellung",
+      "term": "die Materialbestellung",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "die Materialbestellungen",
+      "tr": {
+        "uz": "material buyurtmasi",
+        "uz-Cyrl": "материал буюртмаси",
+        "ru": "заказ материалов"
+      },
+      "pron": {
+        "uz": "die material-beshtelung",
+        "uz-Cyrl": "ди материал-бештелунг",
+        "ru": "ди материал-бештелунг"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Die Materialbestellung schicke ich jeden Freitag an das Büro.",
+        "tr": {
+          "uz": "Material buyurtmasini har juma ofisga yuboraman.",
+          "uz-Cyrl": "Материал буюртмасини ҳар жума офисга юбораман.",
+          "ru": "Заказ материалов отправляю в офис каждую пятницу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-sonderreinigung",
+      "slug": "sonderreinigung",
+      "term": "die Sonderreinigung",
+      "icon": "droplet",
+      "article": "die",
+      "plural": "die Sonderreinigungen",
+      "tr": {
+        "uz": "maxsus (rejadan tashqari) tozalash",
+        "uz-Cyrl": "махсус (режадан ташқари) тозалаш",
+        "ru": "внеплановая (специальная) уборка"
+      },
+      "pron": {
+        "uz": "die zonder-raynigung",
+        "uz-Cyrl": "ди зондер-райнигунг",
+        "ru": "ди зондер-райнигунг"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Nach der Feier im Saal braucht der Kunde eine Sonderreinigung.",
+        "tr": {
+          "uz": "Zaldagi bayramdan keyin mijozga maxsus tozalash kerak.",
+          "uz-Cyrl": "Залдаги байрамдан кейин мижозга махсус тозалаш керак.",
+          "ru": "После праздника в зале клиенту нужна внеплановая уборка."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-zusatzleistung",
+      "slug": "zusatzleistung",
+      "term": "die Zusatzleistung",
+      "icon": "briefcase",
+      "article": "die",
+      "plural": "die Zusatzleistungen",
+      "tr": {
+        "uz": "qoʻshimcha xizmat (shartnomadan tashqari)",
+        "uz-Cyrl": "қўшимча хизмат (шартномадан ташқари)",
+        "ru": "дополнительная услуга"
+      },
+      "pron": {
+        "uz": "die tsuzats-laystung",
+        "uz-Cyrl": "ди цузац-лайстунг",
+        "ru": "ди цузац-лайстунг"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Eine Zusatzleistung muss der Objektleiter vorher freigeben.",
+        "tr": {
+          "uz": "Qoʻshimcha xizmatga obyekt rahbari oldindan ruxsat berishi kerak.",
+          "uz-Cyrl": "Қўшимча хизматга объект раҳбари олдиндан рухсат бериши керак.",
+          "ru": "Дополнительную услугу руководитель объекта должен заранее согласовать."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-schluesseluebergabe",
+      "slug": "schluesseluebergabe",
+      "term": "die Schlüsselübergabe",
+      "icon": "key",
+      "article": "die",
+      "plural": "die Schlüsselübergaben",
+      "tr": {
+        "uz": "kalitlarni topshirish",
+        "uz-Cyrl": "калитларни топшириш",
+        "ru": "передача ключей"
+      },
+      "pron": {
+        "uz": "die shlyusel-yubergabe",
+        "uz-Cyrl": "ди шлюсел-юбергабе",
+        "ru": "ди шлюсел-юбергабе"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Bei der Schlüsselübergabe unterschreiben beide Seiten.",
+        "tr": {
+          "uz": "Kalitlarni topshirishda ikkala tomon imzo qoʻyadi.",
+          "uz-Cyrl": "Калитларни топширишда иккала томон имзо қўяди.",
+          "ru": "При передаче ключей обе стороны расписываются."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-schadensmeldung",
+      "slug": "schadensmeldung",
+      "term": "die Schadensmeldung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Schadensmeldungen",
+      "tr": {
+        "uz": "shikast haqida xabarnoma",
+        "uz-Cyrl": "шикаст ҳақида хабарнома",
+        "ru": "сообщение о повреждении"
+      },
+      "pron": {
+        "uz": "die sha-dens-mel-dung",
+        "uz-Cyrl": "ди ша-денс-мел-дунг",
+        "ru": "ди ша-денс-мел-дунг"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Für die kaputte Vase im Flur schreibe ich eine Schadensmeldung.",
+        "tr": {
+          "uz": "Koridordagi singan vaza uchun shikast haqida xabarnoma yozaman.",
+          "uz-Cyrl": "Коридордаги синган ваза учун шикаст ҳақида хабарнома ёзаман.",
+          "ru": "О разбитой вазе в коридоре пишу сообщение о повреждении."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-dokumentieren",
+      "slug": "dokumentieren",
+      "term": "dokumentieren",
+      "icon": "file-text",
+      "tr": {
+        "uz": "hujjatlashtirmoq, yozib qayd etmoq",
+        "uz-Cyrl": "ҳужжатлаштирмоқ, ёзиб қайд этмоқ",
+        "ru": "документировать, фиксировать"
+      },
+      "pron": {
+        "uz": "dokumentiren",
+        "uz-Cyrl": "документирен",
+        "ru": "документирен"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Jeden Schaden muss ich mit Datum dokumentieren.",
+        "tr": {
+          "uz": "Har bir shikastni sana bilan qayd etishim kerak.",
+          "uz-Cyrl": "Ҳар бир шикастни сана билан қайд этишим керак.",
+          "ru": "Каждое повреждение нужно задокументировать с датой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-was-ist-noch-offen",
+      "slug": "was-ist-noch-offen",
+      "term": "Was ist noch offen?",
+      "icon": "help",
+      "tr": {
+        "uz": "Nima hali qoldi?",
+        "uz-Cyrl": "Нима ҳали қолди?",
+        "ru": "Что ещё осталось (не сделано)?"
+      },
+      "pron": {
+        "uz": "vas ist nox o-fen",
+        "uz-Cyrl": "вас ист нох о-фен",
+        "ru": "вас ист нох о-фен"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Was ist noch offen? – Nur noch die Treppe im Hinterhaus.",
+        "tr": {
+          "uz": "Nima hali qoldi? – Faqat orqa binodagi zinapoya.",
+          "uz-Cyrl": "Нима ҳали қолди? – Фақат орқа бинодаги зинапоя.",
+          "ru": "Что ещё осталось? – Только лестница в заднем корпусе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-vorrat",
+      "slug": "vorrat",
+      "term": "der Vorrat",
+      "icon": "package",
+      "article": "der",
+      "plural": "die Vorräte",
+      "tr": {
+        "uz": "zaxira",
+        "uz-Cyrl": "захира",
+        "ru": "запас"
+      },
+      "pron": {
+        "uz": "der forrat",
+        "uz-Cyrl": "дер форрат",
+        "ru": "дер форрат"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Der Vorrat an Müllsäcken reicht nur noch eine Woche.",
+        "tr": {
+          "uz": "Axlat xaltalari zaxirasi faqat bir haftaga yetadi.",
+          "uz-Cyrl": "Ахлат халталари захираси фақат бир ҳафтага етади.",
+          "ru": "Запаса мешков для мусора хватит только на неделю."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-reinigungsprotokoll",
+      "slug": "reinigungsprotokoll",
+      "term": "das Reinigungsprotokoll",
+      "icon": "check",
+      "article": "das",
+      "plural": "die Reinigungsprotokolle",
+      "tr": {
+        "uz": "tozalash jurnali (eshikdagi varaq)",
+        "uz-Cyrl": "тозалаш журнали (эшикдаги варақ)",
+        "ru": "журнал уборки (лист на двери)"
+      },
+      "pron": {
+        "uz": "das raynigungs-protokol",
+        "uz-Cyrl": "дас райнигунгс-протокол",
+        "ru": "дас райнигунгс-протокол"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Nach dem Putzen trage ich die Uhrzeit ins Reinigungsprotokoll an der Toilettentür ein.",
+        "tr": {
+          "uz": "Tozalagandan keyin vaqtni hojatxona eshigidagi tozalash jurnaliga yozaman.",
+          "uz-Cyrl": "Тозалагандан кейин вақтни ҳожатхона эшигидаги тозалаш журналига ёзаман.",
+          "ru": "После уборки вписываю время в журнал уборки на двери туалета."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-abzeichnen",
+      "slug": "abzeichnen",
+      "term": "abzeichnen",
+      "icon": "file-text",
+      "tr": {
+        "uz": "imzolab tasdiqlamoq",
+        "uz-Cyrl": "имзолаб тасдиқламоқ",
+        "ru": "подписать, завизировать"
+      },
+      "pron": {
+        "uz": "ap-tsayx-nen",
+        "uz-Cyrl": "ап-цайх-нен",
+        "ru": "ап-цайх-нен"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Der Hausmeister muss das Übergabeprotokoll noch abzeichnen.",
+        "tr": {
+          "uz": "Bino xizmatchisi topshirish dalolatnomasini hali imzolab tasdiqlashi kerak.",
+          "uz-Cyrl": "Бино хизматчиси топшириш далолатномасини ҳали имзолаб тасдиқлаши керак.",
+          "ru": "Завхоз ещё должен подписать протокол передачи."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-wasserschaden",
+      "slug": "wasserschaden",
+      "term": "der Wasserschaden",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Wasserschäden",
+      "tr": {
+        "uz": "suv oqishidan shikast",
+        "uz-Cyrl": "сув оқишидан шикаст",
+        "ru": "повреждение от воды, протечка"
+      },
+      "pron": {
+        "uz": "der vaser-shaden",
+        "uz-Cyrl": "дер васер-шаден",
+        "ru": "дер васер-шаден"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Im Keller gibt es einen Wasserschaden, dort liegen Kabel auf dem Boden.",
+        "tr": {
+          "uz": "Yertoʻlada suv oqib shikast bor, u yerda polda kabellar yotibdi.",
+          "uz-Cyrl": "Ертўлада сув оқиб шикаст бор, у ерда полда кабеллар ётибди.",
+          "ru": "В подвале протечка, там на полу лежат кабели."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-schichtbericht",
+      "slug": "schichtbericht",
+      "term": "der Schichtbericht",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Schichtberichte",
+      "tr": {
+        "uz": "smena hisoboti",
+        "uz-Cyrl": "смена ҳисоботи",
+        "ru": "отчёт за смену"
+      },
+      "pron": {
+        "uz": "der shixt-berixt",
+        "uz-Cyrl": "дер шихт-берихт",
+        "ru": "дер шихт-берихт"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Im Schichtbericht schreibe ich, dass der Staubsauger im zweiten Stock defekt ist.",
+        "tr": {
+          "uz": "Smena hisobotiga ikkinchi qavatdagi changyutgich nosozligini yozaman.",
+          "uz-Cyrl": "Смена ҳисоботига иккинчи қаватдаги чангютгич носозлигини ёзаман.",
+          "ru": "В отчёте за смену пишу, что пылесос на втором этаже неисправен."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-fehlen",
+      "slug": "fehlen",
+      "term": "fehlen",
+      "icon": "package",
+      "tr": {
+        "uz": "yetishmamoq, yoʻq boʻlmoq",
+        "uz-Cyrl": "етишмамоқ, йўқ бўлмоқ",
+        "ru": "не хватать, отсутствовать"
+      },
+      "pron": {
+        "uz": "felen",
+        "uz-Cyrl": "фелен",
+        "ru": "фелен"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "In der Damentoilette fehlen Papierhandtücher.",
+        "tr": {
+          "uz": "Ayollar hojatxonasida qogʻoz sochiqlar yoʻq.",
+          "uz-Cyrl": "Аёллар ҳожатхонасида қоғоз сочиқлар йўқ.",
+          "ru": "В женском туалете нет бумажных полотенец."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-vorfall",
+      "slug": "vorfall",
+      "term": "der Vorfall",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Vorfälle",
+      "tr": {
+        "uz": "hodisa, voqea",
+        "uz-Cyrl": "ҳодиса, воқеа",
+        "ru": "происшествие, инцидент"
+      },
+      "pron": {
+        "uz": "der forfal",
+        "uz-Cyrl": "дер форфал",
+        "ru": "дер форфал"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Jeden Vorfall im Objekt schreibe ich in den Schichtbericht.",
+        "tr": {
+          "uz": "Obyektdagi har bir hodisani smena hisobotiga yozaman.",
+          "uz-Cyrl": "Объектдаги ҳар бир ҳодисани смена ҳисоботига ёзаман.",
+          "ru": "Каждое происшествие на объекте записываю в отчёт за смену."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-verschlossen",
+      "slug": "verschlossen",
+      "term": "verschlossen",
+      "icon": "key",
+      "tr": {
+        "uz": "qulflangan, yopiq",
+        "uz-Cyrl": "қулфланган, ёпиқ",
+        "ru": "заперт, закрыт на ключ"
+      },
+      "pron": {
+        "uz": "fershlosen",
+        "uz-Cyrl": "фершлосен",
+        "ru": "фершлосен"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Das Büro von Herrn Weber war verschlossen, deshalb konnte ich dort nicht putzen.",
+        "tr": {
+          "uz": "Veber janoblarining ofisi qulflangan edi, shuning uchun u yerni tozalay olmadim.",
+          "uz-Cyrl": "Вебер жанобларининг офиси қулфланган эди, шунинг учун у ерни тозалай олмадим.",
+          "ru": "Кабинет господина Вебера был заперт, поэтому уборка там не проведена."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-ish-hisoboti-der-fluchtweg-ist-zugestellt",
+      "slug": "der-fluchtweg-ist-zugestellt",
+      "term": "Der Fluchtweg ist zugestellt.",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Evakuatsiya yoʻli toʻsib qoʻyilgan.",
+        "uz-Cyrl": "Эвакуация йўли тўсиб қўйилган.",
+        "ru": "Эвакуационный путь загромождён."
+      },
+      "pron": {
+        "uz": "der fluxt-vek ist tsu-geshtelt",
+        "uz-Cyrl": "дер флухт-век ист цу-гештелт",
+        "ru": "дер флухт-век ист цу-гештелт"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Der Fluchtweg ist zugestellt. Im Treppenhaus stehen Kartons.",
+        "tr": {
+          "uz": "Evakuatsiya yoʻli toʻsib qoʻyilgan. Zinapoyada kartonlar turibdi.",
+          "uz-Cyrl": "Эвакуация йўли тўсиб қўйилган. Зинапояда картонлар турибди.",
+          "ru": "Эвакуационный путь загромождён. На лестнице стоят коробки."
+        }
+      },
+      "safety": true,
       "status": "review",
       "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
     }
