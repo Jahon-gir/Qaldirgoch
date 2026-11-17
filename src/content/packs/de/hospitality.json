@@ -2296,6 +2296,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "jamoa-rejasi",
+      "title": {
+        "uz": "Smena oldidan yigʻilish va jamoa rejasi",
+        "uz-Cyrl": "Смена олдидан йиғилиш ва жамоа режаси",
+        "ru": "Брифинг перед сменой и план команды"
+      },
+      "order": 14,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Bosh oshpaz",
+              "uz-Cyrl": "Бош ошпаз",
+              "ru": "Шеф-повар"
+            },
+            "de": "Kurzes Briefing vor dem Service: Heute Abend haben wir eine Gruppenreservierung, und Lena fällt kurzfristig aus.",
+            "tr": {
+              "uz": "Servisdan oldin qisqa yigʻilish: bugun kechqurun guruh broni bor, Lena esa oxirgi daqiqada kela olmaydi.",
+              "uz-Cyrl": "Сервисдан олдин қисқа йиғилиш: бугун кечқурун гуруҳ брони бор, Лена эса охирги дақиқада кела олмайди.",
+              "ru": "Короткий брифинг перед сервисом: сегодня вечером у нас групповая бронь, а Лена в последний момент не выходит."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Verstanden. Lena macht sonst die Vorspeisen – wer übernimmt das?",
+            "tr": {
+              "uz": "Tushunarli. Odatda gazaklarni Lena qiladi — buni kim oʻz zimmasiga oladi?",
+              "uz-Cyrl": "Тушунарли. Одатда газакларни Лена қилади — буни ким ўз зиммасига олади?",
+              "ru": "Понятно. Обычно закуски делает Лена — кто возьмёт это на себя?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Bosh oshpaz",
+              "uz-Cyrl": "Бош ошпаз",
+              "ru": "Шеф-повар"
+            },
+            "de": "Das übernimmt der Souschef. Du übernimmst bitte den Grill – kannst du dafür heute länger bleiben?",
+            "tr": {
+              "uz": "Buni bosh oshpaz oʻrinbosari oladi. Sen esa grilni ol — buning uchun bugun uzoqroq qola olasanmi?",
+              "uz-Cyrl": "Буни бош ошпаз ўринбосари олади. Сен эса грилни ол — бунинг учун бугун узоқроқ қола оласанми?",
+              "ru": "Это возьмёт су-шеф. А ты, пожалуйста, бери гриль — сможешь сегодня задержаться подольше?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, das geht. Ich kann heute bis zum Schluss bleiben.",
+            "tr": {
+              "uz": "Ha, boʻladi. Bugun oxirigacha qola olaman.",
+              "uz-Cyrl": "Ҳа, бўлади. Бугун охиригача қола оламан.",
+              "ru": "Да, получится. Сегодня могу остаться до конца."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Bosh oshpaz",
+              "uz-Cyrl": "Бош ошпаз",
+              "ru": "Шеф-повар"
+            },
+            "de": "Danke. Die neue Allergenliste für das Gruppenmenü hängt an der Kühlschranktür.",
+            "tr": {
+              "uz": "Rahmat. Guruh menyusi uchun yangi allergenlar roʻyxati muzlatgich eshigida osigʻliq.",
+              "uz-Cyrl": "Раҳмат. Гуруҳ менюси учун янги аллергенлар рўйхати музлатгич эшигида осиғлиқ.",
+              "ru": "Спасибо. Новый список аллергенов для группового меню висит на двери холодильника."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut, dann lese ich die Allergenliste vor dem Service, vor allem bei den Grillsoßen.",
+            "tr": {
+              "uz": "Yaxshi, unda servisdan oldin allergenlar roʻyxatini oʻqib chiqaman, ayniqsa gril souslari boʻyicha.",
+              "uz-Cyrl": "Яхши, унда сервисдан олдин аллергенлар рўйхатини ўқиб чиқаман, айниқса грил соуслари бўйича.",
+              "ru": "Хорошо, тогда перед сервисом прочитаю список аллергенов, особенно по соусам для гриля."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -11273,6 +11366,734 @@
           "uz": "Albatta, taomni almashtirib berishimiz mumkin.",
           "uz-Cyrl": "Албатта, таомни алмаштириб беришимиз мумкин.",
           "ru": "Конечно, мы можем заменить блюдо."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-briefing",
+      "slug": "briefing",
+      "term": "das Briefing",
+      "icon": "messages",
+      "article": "das",
+      "plural": "die Briefings",
+      "tr": {
+        "uz": "smena oldidan qisqa yigʻilish",
+        "uz-Cyrl": "смена олдидан қисқа йиғилиш",
+        "ru": "брифинг (короткое собрание перед сменой)"
+      },
+      "pron": {
+        "uz": "das bri-fing",
+        "uz-Cyrl": "дас бри-финг",
+        "ru": "дас бри-финг"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Das Briefing beginnt eine Viertelstunde vor dem Service.",
+        "tr": {
+          "uz": "Qisqa yigʻilish servisdan chorak soat oldin boshlanadi.",
+          "uz-Cyrl": "Қисқа йиғилиш сервисдан чорак соат олдин бошланади.",
+          "ru": "Брифинг начинается за четверть часа до сервиса."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-uebergabe",
+      "slug": "uebergabe",
+      "term": "die Übergabe",
+      "icon": "heart-handshake",
+      "article": "die",
+      "plural": "die Übergaben",
+      "tr": {
+        "uz": "topshirish (ishni keyingi smenaga)",
+        "uz-Cyrl": "топшириш (ишни кейинги сменага)",
+        "ru": "передача (дел следующей смене)"
+      },
+      "pron": {
+        "uz": "die yu-ber-ga-be",
+        "uz-Cyrl": "ди ю-бер-га-бе",
+        "ru": "ди ю-бер-га-бе"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Bei der Übergabe sage ich, was noch fehlt.",
+        "tr": {
+          "uz": "Topshirishda nima yetishmayotganini aytaman.",
+          "uz-Cyrl": "Топширишда нима етишмаётганини айтаман.",
+          "ru": "При передаче я говорю, чего ещё не хватает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-vorbereitung",
+      "slug": "vorbereitung",
+      "term": "die Vorbereitung",
+      "icon": "tools-kitchen-2",
+      "article": "die",
+      "plural": "die Vorbereitungen",
+      "tr": {
+        "uz": "tayyorgarlik (servisgacha masalliqni tayyorlash)",
+        "uz-Cyrl": "тайёргарлик (сервисгача масаллиқни тайёрлаш)",
+        "ru": "подготовка (заготовки до сервиса)"
+      },
+      "pron": {
+        "uz": "die for-be-ray-tung",
+        "uz-Cyrl": "ди фор-бе-рай-тунг",
+        "ru": "ди фор-бе-рай-тунг"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Die Vorbereitung für das Abendessen muss um fünf fertig sein.",
+        "tr": {
+          "uz": "Kechki ovqat uchun tayyorgarlik soat beshgacha tugashi kerak.",
+          "uz-Cyrl": "Кечки овқат учун тайёргарлик соат бешгача тугаши керак.",
+          "ru": "Подготовка к ужину должна быть готова к пяти."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-vertretung",
+      "slug": "vertretung",
+      "term": "die Vertretung",
+      "icon": "users",
+      "article": "die",
+      "plural": "die Vertretungen",
+      "tr": {
+        "uz": "oʻrinbosarlik (boshqa xodim oʻrniga ishlash)",
+        "uz-Cyrl": "ўринбосарлик (бошқа ходим ўрнига ишлаш)",
+        "ru": "замена (работа вместо коллеги)"
+      },
+      "pron": {
+        "uz": "die fer-tre-tung",
+        "uz-Cyrl": "ди фер-тре-тунг",
+        "ru": "ди фер-тре-тунг"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Diese Woche mache ich die Vertretung für Ali.",
+        "tr": {
+          "uz": "Bu hafta Ali oʻrniga men ishlayman.",
+          "uz-Cyrl": "Бу ҳафта Али ўрнига мен ишлайман.",
+          "ru": "На этой неделе я подменяю Али."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-stosszeit",
+      "slug": "stosszeit",
+      "term": "die Stoßzeit",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Stoßzeiten",
+      "tr": {
+        "uz": "eng gavjum vaqt",
+        "uz-Cyrl": "энг гавжум вақт",
+        "ru": "час пик (самое загруженное время)"
+      },
+      "pron": {
+        "uz": "die shtos-tsayt",
+        "uz-Cyrl": "ди штос-цайт",
+        "ru": "ди штос-цайт"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "In der Stoßzeit hilft der Souschef an der Ausgabe.",
+        "tr": {
+          "uz": "Eng gavjum vaqtda bosh oshpaz oʻrinbosari taom berish joyida yordam beradi.",
+          "uz-Cyrl": "Энг гавжум вақтда бош ошпаз ўринбосари таом бериш жойида ёрдам беради.",
+          "ru": "В час пик су-шеф помогает на раздаче."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-gruppenreservierung",
+      "slug": "gruppenreservierung",
+      "term": "die Gruppenreservierung",
+      "icon": "users",
+      "article": "die",
+      "plural": "die Gruppenreservierungen",
+      "tr": {
+        "uz": "guruh broni",
+        "uz-Cyrl": "гуруҳ брони",
+        "ru": "групповое бронирование"
+      },
+      "pron": {
+        "uz": "die gru-pen-re-zer-vi-rung",
+        "uz-Cyrl": "ди гру-пен-ре-зер-ви-рунг",
+        "ru": "ди гру-пен-ре-зер-ви-рунг"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Für die Gruppenreservierung decken wir den Saal ein.",
+        "tr": {
+          "uz": "Guruh broni uchun zalda stollarni bezatamiz.",
+          "uz-Cyrl": "Гуруҳ брони учун залда столларни безатамиз.",
+          "ru": "Для групповой брони мы сервируем зал."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-absprache",
+      "slug": "absprache",
+      "term": "die Absprache",
+      "icon": "message-circle",
+      "article": "die",
+      "plural": "die Absprachen",
+      "tr": {
+        "uz": "kelishuv",
+        "uz-Cyrl": "келишув",
+        "ru": "договорённость"
+      },
+      "pron": {
+        "uz": "die ap-shpra-xe",
+        "uz-Cyrl": "ди ап-шпра-хе",
+        "ru": "ди ап-шпра-хе"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Nach Absprache mit dem Küchenchef mache ich heute früher Pause.",
+        "tr": {
+          "uz": "Bosh oshpaz bilan kelishuvga koʻra bugun tanaffusga ertaroq chiqaman.",
+          "uz-Cyrl": "Бош ошпаз билан келишувга кўра бугун танаффусга эртароқ чиқаман.",
+          "ru": "По договорённости с шеф-поваром я сегодня ухожу на перерыв раньше."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-unterbesetzt",
+      "slug": "unterbesetzt",
+      "term": "unterbesetzt",
+      "icon": "user",
+      "tr": {
+        "uz": "xodim yetishmaydi (kam odam bilan)",
+        "uz-Cyrl": "ходим етишмайди (кам одам билан)",
+        "ru": "не хватает персонала"
+      },
+      "pron": {
+        "uz": "un-ter-be-zetst",
+        "uz-Cyrl": "ун-тер-бе-зецт",
+        "ru": "ун-тер-бе-зецт"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Heute sind wir unterbesetzt, deshalb hilft jeder mit.",
+        "tr": {
+          "uz": "Bugun xodim kam, shuning uchun hamma yordam beradi.",
+          "uz-Cyrl": "Бугун ходим кам, шунинг учун ҳамма ёрдам беради.",
+          "ru": "Сегодня у нас не хватает людей, поэтому помогают все."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-kuechenchef",
+      "slug": "kuechenchef",
+      "term": "der Küchenchef",
+      "icon": "chef-hat",
+      "article": "der",
+      "plural": "die Küchenchefs",
+      "tr": {
+        "uz": "bosh oshpaz",
+        "uz-Cyrl": "бош ошпаз",
+        "ru": "шеф-повар"
+      },
+      "pron": {
+        "uz": "der kyu-xen-shef",
+        "uz-Cyrl": "дер кю-хен-шеф",
+        "ru": "дер кю-хен-шеф"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Der Küchenchef verteilt vor dem Service die Aufgaben.",
+        "tr": {
+          "uz": "Bosh oshpaz servisdan oldin vazifalarni taqsimlaydi.",
+          "uz-Cyrl": "Бош ошпаз сервисдан олдин вазифаларни тақсимлайди.",
+          "ru": "Шеф-повар распределяет задачи перед сервисом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-souschef",
+      "slug": "souschef",
+      "term": "der Souschef",
+      "icon": "chef-hat",
+      "article": "der",
+      "plural": "die Souschefs",
+      "tr": {
+        "uz": "bosh oshpaz oʻrinbosari",
+        "uz-Cyrl": "бош ошпаз ўринбосари",
+        "ru": "су-шеф (заместитель шеф-повара)"
+      },
+      "pron": {
+        "uz": "der zu-shef",
+        "uz-Cyrl": "дер зу-шеф",
+        "ru": "дер зу-шеф"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Wenn der Küchenchef frei hat, entscheidet der Souschef.",
+        "tr": {
+          "uz": "Bosh oshpaz dam olganda uning oʻrinbosari qaror qiladi.",
+          "uz-Cyrl": "Бош ошпаз дам олганда унинг ўринбосари қарор қилади.",
+          "ru": "Когда у шеф-повара выходной, решает су-шеф."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-aushilfe",
+      "slug": "aushilfe",
+      "term": "die Aushilfe",
+      "icon": "user",
+      "article": "die",
+      "plural": "die Aushilfen",
+      "tr": {
+        "uz": "vaqtincha yordamchi xodim",
+        "uz-Cyrl": "вақтинча ёрдамчи ходим",
+        "ru": "временный помощник (подработка)"
+      },
+      "pron": {
+        "uz": "die aus-hil-fe",
+        "uz-Cyrl": "ди аус-хил-фе",
+        "ru": "ди аус-хил-фе"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Am Wochenende arbeitet eine Aushilfe an der Spüle.",
+        "tr": {
+          "uz": "Dam olish kunlari idish yuvish joyida vaqtincha yordamchi ishlaydi.",
+          "uz-Cyrl": "Дам олиш кунлари идиш ювиш жойида вақтинча ёрдамчи ишлайди.",
+          "ru": "По выходным на мойке работает временный помощник."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-aufgabenverteilung",
+      "slug": "aufgabenverteilung",
+      "term": "die Aufgabenverteilung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "vazifalar taqsimoti",
+        "uz-Cyrl": "вазифалар тақсимоти",
+        "ru": "распределение задач"
+      },
+      "pron": {
+        "uz": "die auf-ga-ben-fer-tay-lung",
+        "uz-Cyrl": "ди ауф-га-бен-фер-тай-лунг",
+        "ru": "ди ауф-га-бен-фер-тай-лунг"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Die Aufgabenverteilung hängt neben der Küchentür.",
+        "tr": {
+          "uz": "Vazifalar taqsimoti oshxona eshigi yonida osigʻliq turadi.",
+          "uz-Cyrl": "Вазифалар тақсимоти ошхона эшиги ёнида осиғлиқ туради.",
+          "ru": "Распределение задач висит у двери кухни."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-einteilen",
+      "slug": "einteilen",
+      "term": "einteilen",
+      "icon": "calendar-event",
+      "tr": {
+        "uz": "(ishga, joyga) taqsimlamoq",
+        "uz-Cyrl": "(ишга, жойга) тақсимламоқ",
+        "ru": "распределять (на участок, смену)"
+      },
+      "pron": {
+        "uz": "ayn-tay-len",
+        "uz-Cyrl": "айн-тай-лен",
+        "ru": "айн-тай-лен"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Wen soll ich heute für die Terrasse einteilen?",
+        "tr": {
+          "uz": "Bugun terrasaga kimni qoʻyishim kerak?",
+          "uz-Cyrl": "Бугун террасага кимни қўйишим керак?",
+          "ru": "Кого мне сегодня поставить на террасу?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-wer-uebernimmt-das",
+      "slug": "wer-uebernimmt-das",
+      "term": "Wer übernimmt das?",
+      "icon": "help",
+      "tr": {
+        "uz": "Buni kim oʻz zimmasiga oladi?",
+        "uz-Cyrl": "Буни ким ўз зиммасига олади?",
+        "ru": "Кто возьмёт это на себя?"
+      },
+      "pron": {
+        "uz": "ver yu-ber-nimt das",
+        "uz-Cyrl": "вер ю-бер-нимт дас",
+        "ru": "вер ю-бер-нимт дас"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Tisch zwölf braucht noch Brot. Wer übernimmt das?",
+        "tr": {
+          "uz": "Oʻn ikkinchi stolga yana non kerak. Buni kim oʻz zimmasiga oladi?",
+          "uz-Cyrl": "Ўн иккинчи столга яна нон керак. Буни ким ўз зиммасига олади?",
+          "ru": "Двенадцатому столу ещё нужен хлеб. Кто возьмёт это на себя?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-kurzfristig",
+      "slug": "kurzfristig",
+      "term": "kurzfristig",
+      "icon": "clock",
+      "tr": {
+        "uz": "oxirgi daqiqada, qisqa muddatda",
+        "uz-Cyrl": "охирги дақиқада, қисқа муддатда",
+        "ru": "в последний момент, на короткий срок"
+      },
+      "pron": {
+        "uz": "kurts-fris-tix",
+        "uz-Cyrl": "курц-фрис-тих",
+        "ru": "курц-фрис-тих"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Anna hat sich kurzfristig krankgemeldet.",
+        "tr": {
+          "uz": "Anna oxirgi daqiqada kasal ekanini maʼlum qildi.",
+          "uz-Cyrl": "Анна охирги дақиқада касал эканини маълум қилди.",
+          "ru": "Анна в последний момент сообщила, что заболела."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-gaestezahl",
+      "slug": "gaestezahl",
+      "term": "die Gästezahl",
+      "icon": "users",
+      "article": "die",
+      "plural": "die Gästezahlen",
+      "tr": {
+        "uz": "mehmonlar soni",
+        "uz-Cyrl": "меҳмонлар сони",
+        "ru": "количество гостей"
+      },
+      "pron": {
+        "uz": "die ges-te-tsal",
+        "uz-Cyrl": "ди гес-те-цал",
+        "ru": "ди гес-те-цал"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Die Gästezahl für die Hochzeit hat sich geändert.",
+        "tr": {
+          "uz": "Toʻy uchun mehmonlar soni oʻzgardi.",
+          "uz-Cyrl": "Тўй учун меҳмонлар сони ўзгарди.",
+          "ru": "Количество гостей на свадьбе изменилось."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-allergenliste",
+      "slug": "allergenliste",
+      "term": "die Allergenliste",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Allergenlisten",
+      "tr": {
+        "uz": "allergenlar roʻyxati",
+        "uz-Cyrl": "аллергенлар рўйхати",
+        "ru": "список аллергенов"
+      },
+      "pron": {
+        "uz": "die a-ler-gen-lis-te",
+        "uz-Cyrl": "ди а-лер-ген-лис-те",
+        "ru": "ди а-лер-ген-лис-те"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Vor dem Service lese ich die neue Allergenliste.",
+        "tr": {
+          "uz": "Servisdan oldin yangi allergenlar roʻyxatini oʻqiyman.",
+          "uz-Cyrl": "Сервисдан олдин янги аллергенлар рўйхатини ўқийман.",
+          "ru": "Перед сервисом я читаю новый список аллергенов."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-nachbestellen",
+      "slug": "nachbestellen",
+      "term": "nachbestellen",
+      "icon": "package",
+      "tr": {
+        "uz": "qoʻshimcha buyurtma bermoq (masalliq)",
+        "uz-Cyrl": "қўшимча буюртма бермоқ (масаллиқ)",
+        "ru": "дозаказать (продукты)"
+      },
+      "pron": {
+        "uz": "nax-be-shte-len",
+        "uz-Cyrl": "нах-бе-ште-лен",
+        "ru": "нах-бе-ште-лен"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Die Sahne ist fast leer, wir müssen nachbestellen.",
+        "tr": {
+          "uz": "Qaymoq deyarli tugadi, qoʻshimcha buyurtma berishimiz kerak.",
+          "uz-Cyrl": "Қаймоқ деярли тугади, қўшимча буюртма беришимиз керак.",
+          "ru": "Сливки почти закончились, нужно дозаказать."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-tischordnung",
+      "slug": "tischordnung",
+      "term": "die Tischordnung",
+      "icon": "armchair",
+      "article": "die",
+      "plural": "die Tischordnungen",
+      "tr": {
+        "uz": "stollar joylashuvi (kim qayerda oʻtiradi)",
+        "uz-Cyrl": "столлар жойлашуви (ким қаерда ўтиради)",
+        "ru": "план рассадки"
+      },
+      "pron": {
+        "uz": "die tish-ord-nung",
+        "uz-Cyrl": "ди тиш-орд-нунг",
+        "ru": "ди тиш-орд-нунг"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Die Tischordnung für die Gruppe bekommen wir vom Restaurantleiter.",
+        "tr": {
+          "uz": "Guruh uchun stollar joylashuvini restoran boshqaruvchisidan olamiz.",
+          "uz-Cyrl": "Гуруҳ учун столлар жойлашувини ресторан бошқарувчисидан оламиз.",
+          "ru": "План рассадки для группы мы получаем от управляющего рестораном."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-jamoa-rejasi-einspringen",
+      "slug": "einspringen",
+      "term": "einspringen",
+      "icon": "repeat",
+      "tr": {
+        "uz": "(birovning oʻrniga) ishga chiqib bermoq",
+        "uz-Cyrl": "(бировнинг ўрнига) ишга чиқиб бермоқ",
+        "ru": "подменить (выйти вместо кого-то)"
+      },
+      "pron": {
+        "uz": "ayn-shprin-gen",
+        "uz-Cyrl": "айн-шприн-ген",
+        "ru": "айн-шприн-ген"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch",
+        "hotelfach"
+      ],
+      "situation": "jamoa-rejasi",
+      "example": {
+        "term": "Kannst du morgen für Lena einspringen?",
+        "tr": {
+          "uz": "Ertaga Lena oʻrniga ishga chiqib bera olasanmi?",
+          "uz-Cyrl": "Эртага Лена ўрнига ишга чиқиб бера оласанми?",
+          "ru": "Сможешь завтра подменить Лену?"
         }
       },
       "safety": false,
