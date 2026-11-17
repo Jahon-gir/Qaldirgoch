@@ -2388,6 +2388,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Uy egasi",
+              "uz-Cyrl": "Уй эгаси",
+              "ru": "Владелец дома"
+            },
+            "de": "Die neue Dusche sieht gut aus. Aber hier an der Ecke ist die Fuge nicht sauber.",
+            "tr": {
+              "uz": "Yangi dush yaxshi koʻrinyapti. Lekin mana bu burchakda chok toza emas.",
+              "uz-Cyrl": "Янги душ яхши кўриняпти. Лекин мана бу бурчакда чок тоза эмас.",
+              "ru": "Новый душ выглядит хорошо. Но вот здесь, в углу, шов неаккуратный."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Sie haben recht, das ist ein Mangel. Ich schreibe ihn ins Abnahmeprotokoll.",
+            "tr": {
+              "uz": "Haqsiz, bu kamchilik. Uni qabul dalolatnomasiga yozib qoʻyaman.",
+              "uz-Cyrl": "Ҳақсиз, бу камчилик. Уни қабул далолатномасига ёзиб қўяман.",
+              "ru": "Вы правы, это дефект. Я запишу его в акт приёмки."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Uy egasi",
+              "uz-Cyrl": "Уй эгаси",
+              "ru": "Владелец дома"
+            },
+            "de": "Und wann wird das repariert?",
+            "tr": {
+              "uz": "Bu qachon tuzatiladi?",
+              "uz-Cyrl": "Бу қачон тузатилади?",
+              "ru": "А когда это исправят?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Die Restarbeiten machen wir am Montag. Dann prüfen wir die Fuge noch einmal zusammen.",
+            "tr": {
+              "uz": "Qolgan ishlarni dushanba kuni qilamiz. Keyin chokni birga yana bir bor tekshiramiz.",
+              "uz-Cyrl": "Қолган ишларни душанба куни қиламиз. Кейин чокни бирга яна бир бор текширамиз.",
+              "ru": "Оставшиеся работы мы сделаем в понедельник. Потом вместе ещё раз проверим шов."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Uy egasi",
+              "uz-Cyrl": "Уй эгаси",
+              "ru": "Владелец дома"
+            },
+            "de": "Gut. Ihr Kollege hat von einem Wartungsvertrag gesprochen. Was kostet der?",
+            "tr": {
+              "uz": "Yaxshi. Hamkasbingiz texnik xizmat shartnomasi haqida gapirgan edi. U qancha turadi?",
+              "uz-Cyrl": "Яхши. Ҳамкасбингиз техник хизмат шартномаси ҳақида гапирган эди. У қанча туради?",
+              "ru": "Хорошо. Ваш коллега говорил о договоре на техобслуживание. Сколько он стоит?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Den Preis für den Wartungsvertrag kenne ich leider nicht. Unser Büro schickt Ihnen gern ein Angebot.",
+            "tr": {
+              "uz": "Texnik xizmat shartnomasi narxini, afsuski, bilmayman. Ofisimiz sizga yozma narx taklifini yuboradi.",
+              "uz-Cyrl": "Техник хизмат шартномаси нархини, афсуски, билмайман. Офисимиз сизга ёзма нарх таклифини юборади.",
+              "ru": "Цену договора на техобслуживание я, к сожалению, не знаю. Наш офис пришлёт вам коммерческое предложение."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
