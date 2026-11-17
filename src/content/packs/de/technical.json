@@ -2296,6 +2296,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "mijoz-maslahat",
+      "title": {
+        "uz": "Ishni mijozga topshirish va tushuntirish",
+        "uz-Cyrl": "Ишни мижозга топшириш ва тушунтириш",
+        "ru": "Сдача работы клиенту и объяснения"
+      },
+      "order": 14,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиентка"
+            },
+            "de": "Sind Sie schon fertig? Funktioniert die neue Heizung?",
+            "tr": {
+              "uz": "Ishingiz tugadimi? Yangi isitish tizimi ishlayaptimi?",
+              "uz-Cyrl": "Ишингиз тугадими? Янги иситиш тизими ишлаяптими?",
+              "ru": "Вы уже закончили? Новое отопление работает?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, die Inbetriebnahme ist abgeschlossen. Darf ich Ihnen kurz erklären, wie man das Thermostat bedient?",
+            "tr": {
+              "uz": "Ha, ishga tushirish tugadi. Termostatni qanday boshqarishni qisqacha tushuntirsam maylimi?",
+              "uz-Cyrl": "Ҳа, ишга тушириш тугади. Термостатни қандай бошқаришни қисқача тушунтирсам майлими?",
+              "ru": "Да, ввод в эксплуатацию завершён. Можно коротко объяснить вам, как управлять термостатом?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиентка"
+            },
+            "de": "Gern. Und was mache ich, wenn das Gerät eine Störung anzeigt?",
+            "tr": {
+              "uz": "Mayli. Qurilma nosozlik koʻrsatsa, nima qilaman?",
+              "uz-Cyrl": "Майли. Қурилма носозлик кўрсатса, нима қиламан?",
+              "ru": "Конечно. А что мне делать, если прибор покажет неисправность?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Dann rufen Sie bitte unser Büro an. Bitte nicht selbst öffnen!",
+            "tr": {
+              "uz": "Unda, iltimos, ofisimizga qoʻngʻiroq qiling. Iltimos, oʻzingiz ochmang!",
+              "uz-Cyrl": "Унда, илтимос, офисимизга қўнғироқ қилинг. Илтимос, ўзингиз очманг!",
+              "ru": "Тогда, пожалуйста, позвоните в наш офис. Пожалуйста, не открывайте сами!"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиентка"
+            },
+            "de": "In Ordnung. Bekomme ich noch die Bedienungsanleitung und die Rechnung?",
+            "tr": {
+              "uz": "Xoʻp. Foydalanish yoʻriqnomasi va hisob-fakturani ham olamanmi?",
+              "uz-Cyrl": "Хўп. Фойдаланиш йўриқномаси ва ҳисоб-фактурани ҳам оламанми?",
+              "ru": "Хорошо. А инструкцию и счёт я получу?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Die Bedienungsanleitung liegt neben dem Heizkessel. Die Rechnung schickt Ihnen unser Büro per Post.",
+            "tr": {
+              "uz": "Foydalanish yoʻriqnomasi isitish qozoni yonida turibdi. Hisob-fakturani ofisimiz sizga pochta orqali yuboradi.",
+              "uz-Cyrl": "Фойдаланиш йўриқномаси иситиш қозони ёнида турибди. Ҳисоб-фактурани офисимиз сизга почта орқали юборади.",
+              "ru": "Инструкция лежит рядом с котлом. Счёт наш офис пришлёт вам по почте."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -11548,6 +11641,734 @@
           "uz": "Bugun nima bajarildi? – Birinchi qavatdagi kabellar yotqizildi.",
           "uz-Cyrl": "Бугун нима бажарилди? – Биринчи қаватдаги кабеллар ётқизилди.",
           "ru": "Что сегодня сделано? – Кабели на первом этаже проложены."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-kundengespraech",
+      "slug": "kundengespraech",
+      "term": "das Kundengespräch",
+      "icon": "messages",
+      "article": "das",
+      "plural": "die Kundengespräche",
+      "tr": {
+        "uz": "mijoz bilan suhbat",
+        "uz-Cyrl": "мижоз билан суҳбат",
+        "ru": "разговор с клиентом"
+      },
+      "pron": {
+        "uz": "das kun-den-ge-shprex",
+        "uz-Cyrl": "дас кун-ден-ге-шпрех",
+        "ru": "дас кун-ден-ге-шпрех"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Nach der Arbeit führt der Monteur ein kurzes Kundengespräch.",
+        "tr": {
+          "uz": "Ishdan keyin montajchi mijoz bilan qisqa suhbat oʻtkazadi.",
+          "uz-Cyrl": "Ишдан кейин монтажчи мижоз билан қисқа суҳбат ўтказади.",
+          "ru": "После работы монтажник проводит короткий разговор с клиентом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-angebot",
+      "slug": "angebot",
+      "term": "das Angebot",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "die Angebote",
+      "tr": {
+        "uz": "yozma narx taklifi",
+        "uz-Cyrl": "ёзма нарх таклифи",
+        "ru": "коммерческое предложение"
+      },
+      "pron": {
+        "uz": "das an-ge-bot",
+        "uz-Cyrl": "дас ан-ге-бот",
+        "ru": "дас ан-ге-бот"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Für die neue Dachrinne schickt Ihnen das Büro ein Angebot.",
+        "tr": {
+          "uz": "Yangi tarnov uchun ofis sizga yozma narx taklifini yuboradi.",
+          "uz-Cyrl": "Янги тарнов учун офис сизга ёзма нарх таклифини юборади.",
+          "ru": "По новому водостоку офис пришлёт вам коммерческое предложение."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-rechnung",
+      "slug": "rechnung",
+      "term": "die Rechnung",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "die Rechnungen",
+      "tr": {
+        "uz": "hisob-faktura",
+        "uz-Cyrl": "ҳисоб-фактура",
+        "ru": "счёт"
+      },
+      "pron": {
+        "uz": "die rex-nung",
+        "uz-Cyrl": "ди рех-нунг",
+        "ru": "ди рех-нунг"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Die Rechnung kommt nächste Woche per Post.",
+        "tr": {
+          "uz": "Hisob-faktura keyingi hafta pochta orqali keladi.",
+          "uz-Cyrl": "Ҳисоб-фактура кейинги ҳафта почта орқали келади.",
+          "ru": "Счёт придёт по почте на следующей неделе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-gewaehrleistung",
+      "slug": "gewaehrleistung",
+      "term": "die Gewährleistung",
+      "icon": "check",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "kafolat (bajarilgan ish uchun qonuniy javobgarlik)",
+        "uz-Cyrl": "кафолат (бажарилган иш учун қонуний жавобгарлик)",
+        "ru": "гарантийные обязательства (по закону, за выполненную работу)"
+      },
+      "pron": {
+        "uz": "die ge-ver-lays-tung",
+        "uz-Cyrl": "ди ге-вер-лайс-тунг",
+        "ru": "ди ге-вер-лайс-тунг"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Für unsere Arbeit gilt die Gewährleistung – bei einem Mangel rufen Sie uns bitte an.",
+        "tr": {
+          "uz": "Bizning ishimizga kafolat amal qiladi — kamchilik boʻlsa, iltimos, bizga qoʻngʻiroq qiling.",
+          "uz-Cyrl": "Бизнинг ишимизга кафолат амал қилади — камчилик бўлса, илтимос, бизга қўнғироқ қилинг.",
+          "ru": "На нашу работу действуют гарантийные обязательства — при недостатке, пожалуйста, позвоните нам."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-mangel",
+      "slug": "mangel",
+      "term": "der Mangel",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Mängel",
+      "tr": {
+        "uz": "kamchilik, nuqson",
+        "uz-Cyrl": "камчилик, нуқсон",
+        "ru": "недостаток, дефект"
+      },
+      "pron": {
+        "uz": "der man-gel",
+        "uz-Cyrl": "дер ман-гел",
+        "ru": "дер ман-гел"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Bei der Abnahme hat die Kundin einen kleinen Mangel an der Fuge gefunden.",
+        "tr": {
+          "uz": "Ishni qabul qilishda mijoz chokda kichik kamchilik topdi.",
+          "uz-Cyrl": "Ишни қабул қилишда мижоз чокда кичик камчилик топди.",
+          "ru": "При приёмке клиентка нашла небольшой дефект в шве."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-abnahmeprotokoll",
+      "slug": "abnahmeprotokoll",
+      "term": "das Abnahmeprotokoll",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "die Abnahmeprotokolle",
+      "tr": {
+        "uz": "qabul dalolatnomasi",
+        "uz-Cyrl": "қабул далолатномаси",
+        "ru": "акт приёмки"
+      },
+      "pron": {
+        "uz": "das ap-na-me-pro-to-kol",
+        "uz-Cyrl": "дас ап-на-ме-про-то-кол",
+        "ru": "дас ап-на-ме-про-то-кол"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Bitte unterschreiben Sie hier das Abnahmeprotokoll.",
+        "tr": {
+          "uz": "Iltimos, mana shu yerda qabul dalolatnomasiga imzo cheking.",
+          "uz-Cyrl": "Илтимос, мана шу ерда қабул далолатномасига имзо чекинг.",
+          "ru": "Пожалуйста, подпишите здесь акт приёмки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-bedienungsanleitung",
+      "slug": "bedienungsanleitung",
+      "term": "die Bedienungsanleitung",
+      "icon": "book",
+      "article": "die",
+      "plural": "die Bedienungsanleitungen",
+      "tr": {
+        "uz": "foydalanish yoʻriqnomasi",
+        "uz-Cyrl": "фойдаланиш йўриқномаси",
+        "ru": "инструкция по эксплуатации"
+      },
+      "pron": {
+        "uz": "die be-di-nungs-an-lay-tung",
+        "uz-Cyrl": "ди бе-ди-нунгс-ан-лай-тунг",
+        "ru": "ди бе-ди-нунгс-ан-лай-тунг"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Die Bedienungsanleitung liegt neben dem Heizkessel.",
+        "tr": {
+          "uz": "Foydalanish yoʻriqnomasi isitish qozoni yonida turibdi.",
+          "uz-Cyrl": "Фойдаланиш йўриқномаси иситиш қозони ёнида турибди.",
+          "ru": "Инструкция по эксплуатации лежит рядом с котлом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-wartungsvertrag",
+      "slug": "wartungsvertrag",
+      "term": "der Wartungsvertrag",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Wartungsverträge",
+      "tr": {
+        "uz": "texnik xizmat shartnomasi",
+        "uz-Cyrl": "техник хизмат шартномаси",
+        "ru": "договор на техобслуживание"
+      },
+      "pron": {
+        "uz": "der var-tungs-fer-trak",
+        "uz-Cyrl": "дер вар-тунгс-фер-трак",
+        "ru": "дер вар-тунгс-фер-трак"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Möchten Sie einen Wartungsvertrag für die Wärmepumpe?",
+        "tr": {
+          "uz": "Issiqlik nasosi uchun texnik xizmat shartnomasini xohlaysizmi?",
+          "uz-Cyrl": "Иссиқлик насоси учун техник хизмат шартномасини хоҳлайсизми?",
+          "ru": "Хотите заключить договор на техобслуживание теплового насоса?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-inbetriebnahme",
+      "slug": "inbetriebnahme",
+      "term": "die Inbetriebnahme",
+      "icon": "power",
+      "article": "die",
+      "plural": "die Inbetriebnahmen",
+      "tr": {
+        "uz": "ishga tushirish",
+        "uz-Cyrl": "ишга тушириш",
+        "ru": "ввод в эксплуатацию"
+      },
+      "pron": {
+        "uz": "die in-be-trips-na-me",
+        "uz-Cyrl": "ди ин-бе-трипс-на-ме",
+        "ru": "ди ин-бе-трипс-на-ме"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Nach der Inbetriebnahme prüfen wir den Druck noch einmal.",
+        "tr": {
+          "uz": "Ishga tushirgandan keyin bosimni yana bir bor tekshiramiz.",
+          "uz-Cyrl": "Ишга туширгандан кейин босимни яна бир бор текширамиз.",
+          "ru": "После ввода в эксплуатацию мы ещё раз проверим давление."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-einweisen",
+      "slug": "einweisen",
+      "term": "einweisen",
+      "icon": "users",
+      "tr": {
+        "uz": "(qurilmadan foydalanishni) oʻrgatib qoʻymoq",
+        "uz-Cyrl": "(қурилмадан фойдаланишни) ўргатиб қўймоқ",
+        "ru": "проинструктировать (как пользоваться)"
+      },
+      "pron": {
+        "uz": "ayn-vay-zen",
+        "uz-Cyrl": "айн-вай-зен",
+        "ru": "айн-вай-зен"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Ich möchte Sie kurz in die neue Heizung einweisen.",
+        "tr": {
+          "uz": "Sizga yangi isitish tizimidan foydalanishni qisqacha oʻrgatib qoʻymoqchiman.",
+          "uz-Cyrl": "Сизга янги иситиш тизимидан фойдаланишни қисқача ўргатиб қўймоқчиман.",
+          "ru": "Я хочу кратко проинструктировать вас по новому отоплению."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-bedienen",
+      "slug": "bedienen",
+      "term": "bedienen",
+      "icon": "toggle-left",
+      "tr": {
+        "uz": "boshqarmoq, ishlatmoq (qurilmani)",
+        "uz-Cyrl": "бошқармоқ, ишлатмоқ (қурилмани)",
+        "ru": "управлять (прибором), пользоваться"
+      },
+      "pron": {
+        "uz": "be-di-nen",
+        "uz-Cyrl": "бе-ди-нен",
+        "ru": "бе-ди-нен"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Das Thermostat können Sie auch mit dem Handy bedienen.",
+        "tr": {
+          "uz": "Termostatni telefon orqali ham boshqarishingiz mumkin.",
+          "uz-Cyrl": "Термостатни телефон орқали ҳам бошқаришингиз мумкин.",
+          "ru": "Термостатом можно управлять и с телефона."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-sicherheitshinweis",
+      "slug": "sicherheitshinweis",
+      "term": "der Sicherheitshinweis",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Sicherheitshinweise",
+      "tr": {
+        "uz": "xavfsizlik boʻyicha koʻrsatma",
+        "uz-Cyrl": "хавфсизлик бўйича кўрсатма",
+        "ru": "указание по безопасности"
+      },
+      "pron": {
+        "uz": "der zi-xer-hayts-hin-vays",
+        "uz-Cyrl": "дер зи-хер-хайтс-хин-вайс",
+        "ru": "дер зи-хер-хайтс-хин-вайс"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Bitte lesen Sie die Sicherheitshinweise, bevor Sie das Gerät benutzen.",
+        "tr": {
+          "uz": "Iltimos, qurilmadan foydalanishdan oldin xavfsizlik boʻyicha koʻrsatmalarni oʻqing.",
+          "uz-Cyrl": "Илтимос, қурилмадан фойдаланишдан олдин хавфсизлик бўйича кўрсатмаларни ўқинг.",
+          "ru": "Пожалуйста, прочитайте указания по безопасности перед использованием прибора."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-garantie",
+      "slug": "garantie",
+      "term": "die Garantie",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Garantien",
+      "tr": {
+        "uz": "kafolat (ishlab chiqaruvchidan)",
+        "uz-Cyrl": "кафолат (ишлаб чиқарувчидан)",
+        "ru": "гарантия (производителя)"
+      },
+      "pron": {
+        "uz": "die ga-ran-ti",
+        "uz-Cyrl": "ди га-ран-ти",
+        "ru": "ди га-ран-ти"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Auf das Gerät gibt der Hersteller eine Garantie.",
+        "tr": {
+          "uz": "Qurilmaga ishlab chiqaruvchi kafolat beradi.",
+          "uz-Cyrl": "Қурилмага ишлаб чиқарувчи кафолат беради.",
+          "ru": "На прибор производитель даёт гарантию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-hersteller",
+      "slug": "hersteller",
+      "term": "der Hersteller",
+      "icon": "building",
+      "article": "der",
+      "plural": "die Hersteller",
+      "tr": {
+        "uz": "ishlab chiqaruvchi",
+        "uz-Cyrl": "ишлаб чиқарувчи",
+        "ru": "производитель"
+      },
+      "pron": {
+        "uz": "der her-shtel-ler",
+        "uz-Cyrl": "дер хер-штел-лер",
+        "ru": "дер хер-штел-лер"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Die Telefonnummer vom Hersteller steht auf dem Gerät.",
+        "tr": {
+          "uz": "Ishlab chiqaruvchining telefon raqami qurilmada yozilgan.",
+          "uz-Cyrl": "Ишлаб чиқарувчининг телефон рақами қурилмада ёзилган.",
+          "ru": "Телефон производителя указан на приборе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-restarbeit",
+      "slug": "restarbeit",
+      "term": "die Restarbeit",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Restarbeiten",
+      "tr": {
+        "uz": "qolgan ish",
+        "uz-Cyrl": "қолган иш",
+        "ru": "оставшаяся работа, доделки"
+      },
+      "pron": {
+        "uz": "die rest-ar-bayt",
+        "uz-Cyrl": "ди рест-ар-байт",
+        "ru": "ди рест-ар-байт"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Die Restarbeiten im Bad machen wir am Montag.",
+        "tr": {
+          "uz": "Hammomdagi qolgan ishlarni dushanba kuni qilamiz.",
+          "uz-Cyrl": "Ҳаммомдаги қолган ишларни душанба куни қиламиз.",
+          "ru": "Оставшиеся работы в ванной мы сделаем в понедельник."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-zufrieden",
+      "slug": "zufrieden",
+      "term": "zufrieden",
+      "icon": "mood-smile",
+      "tr": {
+        "uz": "mamnun",
+        "uz-Cyrl": "мамнун",
+        "ru": "довольный"
+      },
+      "pron": {
+        "uz": "tsu-fri-den",
+        "uz-Cyrl": "цу-фри-ден",
+        "ru": "цу-фри-ден"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Sind Sie mit der neuen Dusche zufrieden?",
+        "tr": {
+          "uz": "Yangi dushdan mamnunmisiz?",
+          "uz-Cyrl": "Янги душдан мамнунмисиз?",
+          "ru": "Вы довольны новым душем?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-erklaeren",
+      "slug": "erklaeren",
+      "term": "erklären",
+      "icon": "message-circle",
+      "tr": {
+        "uz": "tushuntirmoq",
+        "uz-Cyrl": "тушунтирмоқ",
+        "ru": "объяснять"
+      },
+      "pron": {
+        "uz": "er-kle-ren",
+        "uz-Cyrl": "эр-кле-рен",
+        "ru": "эр-кле-рен"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Darf ich Ihnen kurz erklären, wie man den Heizkörper entlüftet?",
+        "tr": {
+          "uz": "Sizga radiatordan havoni qanday chiqarishni qisqacha tushuntirsam maylimi?",
+          "uz-Cyrl": "Сизга радиатордан ҳавони қандай чиқаришни қисқача тушунтирсам майлими?",
+          "ru": "Можно я коротко объясню вам, как стравливать воздух из радиатора?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-rueckfrage",
+      "slug": "rueckfrage",
+      "term": "die Rückfrage",
+      "icon": "help",
+      "article": "die",
+      "plural": "die Rückfragen",
+      "tr": {
+        "uz": "qoʻshimcha savol, aniqlashtirish",
+        "uz-Cyrl": "қўшимча савол, аниқлаштириш",
+        "ru": "уточняющий вопрос"
+      },
+      "pron": {
+        "uz": "die ryuk-fra-ge",
+        "uz-Cyrl": "ди рюк-фра-ге",
+        "ru": "ди рюк-фра-ге"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Bei Rückfragen erreichen Sie unser Büro am Vormittag.",
+        "tr": {
+          "uz": "Qoʻshimcha savollar boʻlsa, ofisimizga kunning birinchi yarmida murojaat qilishingiz mumkin.",
+          "uz-Cyrl": "Қўшимча саволлар бўлса, офисимизга куннинг биринчи ярмида мурожаат қилишингиз мумкин.",
+          "ru": "С уточняющими вопросами можно обращаться в наш офис в первой половине дня."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-bitte-nicht-selbst-oeffnen",
+      "slug": "bitte-nicht-selbst-oeffnen",
+      "term": "Bitte nicht selbst öffnen!",
+      "icon": "alert-octagon",
+      "tr": {
+        "uz": "Iltimos, oʻzingiz ochmang!",
+        "uz-Cyrl": "Илтимос, ўзингиз очманг!",
+        "ru": "Пожалуйста, не открывайте сами!"
+      },
+      "pron": {
+        "uz": "bi-te nixt zelpst yof-nen",
+        "uz-Cyrl": "би-те нихт зелпст ёф-нен",
+        "ru": "би-те нихт зелпст ёф-нен"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Bitte nicht selbst öffnen! Den Sicherungskasten darf nur eine Elektrofachkraft öffnen.",
+        "tr": {
+          "uz": "Iltimos, oʻzingiz ochmang! Saqlagichlar qutisini faqat elektr mutaxassisi ochishi mumkin.",
+          "uz-Cyrl": "Илтимос, ўзингиз очманг! Сақлагичлар қутисини фақат электр мутахассиси очиши мумкин.",
+          "ru": "Пожалуйста, не открывайте сами! Щиток с предохранителями может открывать только электрик."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-mijoz-maslahat-haben-sie-noch-fragen",
+      "slug": "haben-sie-noch-fragen",
+      "term": "Haben Sie noch Fragen?",
+      "icon": "help",
+      "tr": {
+        "uz": "Yana savollaringiz bormi?",
+        "uz-Cyrl": "Яна саволларингиз борми?",
+        "ru": "У вас ещё есть вопросы?"
+      },
+      "pron": {
+        "uz": "ha-ben zi nox fra-gen",
+        "uz-Cyrl": "ха-бен зи нох фра-ген",
+        "ru": "ха-бен зи нох фра-ген"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Haben Sie noch Fragen? – Nein, Sie haben alles gut erklärt.",
+        "tr": {
+          "uz": "Yana savollaringiz bormi? – Yoʻq, hammasini yaxshi tushuntirdingiz.",
+          "uz-Cyrl": "Яна саволларингиз борми? – Йўқ, ҳаммасини яхши тушунтирдингиз.",
+          "ru": "У вас ещё есть вопросы? – Нет, вы всё хорошо объяснили."
         }
       },
       "safety": false,
