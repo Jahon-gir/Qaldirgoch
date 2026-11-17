@@ -2120,6 +2120,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "mijoz-shikoyat",
+      "title": {
+        "uz": "Mijoz shikoyati va sifat nazorati",
+        "uz-Cyrl": "Мижоз шикояти ва сифат назорати",
+        "ru": "Жалоба клиента и контроль качества"
+      },
+      "order": 13,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Obyekt rahbari",
+              "uz-Cyrl": "Объект раҳбари",
+              "ru": "Руководитель объекта"
+            },
+            "de": "Der Kunde hat eine Reklamation geschickt. Die Toiletten im ersten Stock waren nicht sauber.",
+            "tr": {
+              "uz": "Mijoz rasmiy shikoyat yubordi. Birinchi qavatdagi hojatxonalar toza emas ekan.",
+              "uz-Cyrl": "Мижоз расмий шикоят юборди. Биринчи қаватдаги ҳожатхоналар тоза эмас экан.",
+              "ru": "Клиент прислал рекламацию. Туалеты на первом этаже были грязными."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Oh. Was genau hat der Kunde bemängelt?",
+            "tr": {
+              "uz": "Shunday deng. Mijoz aniq nimadan eʼtiroz bildirgan?",
+              "uz-Cyrl": "Шундай денг. Мижоз аниқ нимадан эътироз билдирган?",
+              "ru": "Вот как. На что именно пожаловался клиент?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Obyekt rahbari",
+              "uz-Cyrl": "Объект раҳбари",
+              "ru": "Руководитель объекта"
+            },
+            "de": "Am Waschbecken ist ein weißer Rückstand, und am Spiegel sind Schlieren.",
+            "tr": {
+              "uz": "Rakovinada oq qoldiq bor, oynada esa izlar.",
+              "uz-Cyrl": "Раковинада оқ қолдиқ бор, ойнада эса излар.",
+              "ru": "На раковине белый налёт, а на зеркале разводы."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Der Rückstand ist Kalk. Ich mache das sofort nach.",
+            "tr": {
+              "uz": "Qoldiq — bu ohak. Hozir qayta qilib beraman.",
+              "uz-Cyrl": "Қолдиқ — бу оҳак. Ҳозир қайта қилиб бераман.",
+              "ru": "Налёт — это известь. Сейчас переделаю."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Obyekt rahbari",
+              "uz-Cyrl": "Объект раҳбари",
+              "ru": "Руководитель объекта"
+            },
+            "de": "Gut. Danach machen wir zusammen einen Kontrollgang, und ich mache Fotos für den Auftraggeber.",
+            "tr": {
+              "uz": "Yaxshi. Keyin birga nazorat aylanishini qilamiz, men buyurtmachi uchun suratga olaman.",
+              "uz-Cyrl": "Яхши. Кейин бирга назорат айланишини қиламиз, мен буюртмачи учун суратга оламан.",
+              "ru": "Хорошо. Потом вместе сделаем контрольный обход, и я сфотографирую для заказчика."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "In Ordnung. Für den Kontrollgang hole ich die Checkliste aus dem Wagen.",
+            "tr": {
+              "uz": "Xoʻp. Nazorat aylanishi uchun aravachadan nazorat roʻyxatini olib kelaman.",
+              "uz-Cyrl": "Хўп. Назорат айланиши учун аравачадан назорат рўйхатини олиб келаман.",
+              "ru": "Хорошо. Для обхода возьму чек-лист из тележки."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -10386,6 +10479,692 @@
       "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-reklamation",
+      "slug": "reklamation",
+      "term": "die Reklamation",
+      "icon": "message-circle",
+      "article": "die",
+      "plural": "die Reklamationen",
+      "tr": {
+        "uz": "rasmiy shikoyat (reklamatsiya)",
+        "uz-Cyrl": "расмий шикоят (рекламация)",
+        "ru": "рекламация, официальная жалоба"
+      },
+      "pron": {
+        "uz": "die reklamatsion",
+        "uz-Cyrl": "ди рекламацион",
+        "ru": "ди рекламацион"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Der Kunde hat eine Reklamation wegen der Toiletten geschickt.",
+        "tr": {
+          "uz": "Mijoz hojatxonalar boʻyicha rasmiy shikoyat yubordi.",
+          "uz-Cyrl": "Мижоз ҳожатхоналар бўйича расмий шикоят юборди.",
+          "ru": "Клиент прислал рекламацию по туалетам."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-leistungsverzeichnis",
+      "slug": "leistungsverzeichnis",
+      "term": "das Leistungsverzeichnis",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "die Leistungsverzeichnisse",
+      "tr": {
+        "uz": "bajariladigan ishlar roʻyxati (shartnomadagi)",
+        "uz-Cyrl": "бажариладиган ишлар рўйхати (шартномадаги)",
+        "ru": "перечень работ (по договору)"
+      },
+      "pron": {
+        "uz": "das laystungs-fertsaychnis",
+        "uz-Cyrl": "дас лайстунгс-ферцайхнис",
+        "ru": "дас лайстунгс-ферцайхнис"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Im Leistungsverzeichnis steht, dass wir die Fenster nur innen putzen.",
+        "tr": {
+          "uz": "Ishlar roʻyxatida derazalarni faqat ichkaridan yuvishimiz yozilgan.",
+          "uz-Cyrl": "Ишлар рўйхатида деразаларни фақат ичкаридан ювишимиз ёзилган.",
+          "ru": "В перечне работ указано, что мы моем окна только изнутри."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-nachbesserung",
+      "slug": "nachbesserung",
+      "term": "die Nachbesserung",
+      "icon": "repeat",
+      "article": "die",
+      "plural": "die Nachbesserungen",
+      "tr": {
+        "uz": "kamchilikni qayta tuzatish",
+        "uz-Cyrl": "камчиликни қайта тузатиш",
+        "ru": "доработка, устранение недочётов"
+      },
+      "pron": {
+        "uz": "die naxbeserung",
+        "uz-Cyrl": "ди нахбесерунг",
+        "ru": "ди нахбесерунг"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Die Nachbesserung machen wir noch heute Abend.",
+        "tr": {
+          "uz": "Kamchilikni bugun kechqurunoq tuzatamiz.",
+          "uz-Cyrl": "Камчиликни бугун кечқуруноқ тузатамиз.",
+          "ru": "Доработку сделаем ещё сегодня вечером."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-qualitaetskontrolle",
+      "slug": "qualitaetskontrolle",
+      "term": "die Qualitätskontrolle",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Qualitätskontrollen",
+      "tr": {
+        "uz": "sifat nazorati",
+        "uz-Cyrl": "сифат назорати",
+        "ru": "контроль качества"
+      },
+      "pron": {
+        "uz": "die kvalitets-kontrole",
+        "uz-Cyrl": "ди квалитетс-контроле",
+        "ru": "ди квалитетс-контроле"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Bei der Qualitätskontrolle schaut der Objektleiter in jeden Raum.",
+        "tr": {
+          "uz": "Sifat nazoratida obyekt rahbari har bir xonaga qaraydi.",
+          "uz-Cyrl": "Сифат назоратида объект раҳбари ҳар бир хонага қарайди.",
+          "ru": "При контроле качества руководитель объекта заглядывает в каждое помещение."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-kontrollgang",
+      "slug": "kontrollgang",
+      "term": "der Kontrollgang",
+      "icon": "eye",
+      "article": "der",
+      "plural": "die Kontrollgänge",
+      "tr": {
+        "uz": "nazorat aylanishi (obyektni koʻzdan kechirish)",
+        "uz-Cyrl": "назорат айланиши (объектни кўздан кечириш)",
+        "ru": "контрольный обход"
+      },
+      "pron": {
+        "uz": "der kontrol-gang",
+        "uz-Cyrl": "дер контрол-ганг",
+        "ru": "дер контрол-ганг"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Nach dem Kontrollgang bekommen wir eine Liste mit allen Punkten.",
+        "tr": {
+          "uz": "Nazorat aylanishidan keyin barcha bandlar yozilgan roʻyxatni olamiz.",
+          "uz-Cyrl": "Назорат айланишидан кейин барча бандлар ёзилган рўйхатни оламиз.",
+          "ru": "После контрольного обхода мы получаем список всех пунктов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-uebersehen",
+      "slug": "uebersehen",
+      "term": "übersehen",
+      "icon": "eye",
+      "tr": {
+        "uz": "koʻrmay qolmoq, eʼtibordan chetda qoldirmoq",
+        "uz-Cyrl": "кўрмай қолмоқ, эътибордан четда қолдирмоқ",
+        "ru": "не заметить, пропустить"
+      },
+      "pron": {
+        "uz": "yuber-zeen",
+        "uz-Cyrl": "юбер-зеен",
+        "ru": "юбер-зеен"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Ich habe den Fleck unter dem Tisch übersehen.",
+        "tr": {
+          "uz": "Stol ostidagi dogʻni koʻrmay qolibman.",
+          "uz-Cyrl": "Стол остидаги доғни кўрмай қолибман.",
+          "ru": "Пятно под столом осталось незамеченным."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-rueckstand",
+      "slug": "rueckstand",
+      "term": "der Rückstand",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Rückstände",
+      "tr": {
+        "uz": "qoldiq (dogʻ)",
+        "uz-Cyrl": "қолдиқ (доғ)",
+        "ru": "остаток, налёт"
+      },
+      "pron": {
+        "uz": "der ryukshtant",
+        "uz-Cyrl": "дер рюкштант",
+        "ru": "дер рюкштант"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Auf dem Boden ist noch ein Rückstand vom Reinigungsmittel.",
+        "tr": {
+          "uz": "Polda hali tozalash vositasining qoldigʻi bor.",
+          "uz-Cyrl": "Полда ҳали тозалаш воситасининг қолдиғи бор.",
+          "ru": "На полу ещё остаток чистящего средства."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-beanstandung",
+      "slug": "beanstandung",
+      "term": "die Beanstandung",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Beanstandungen",
+      "tr": {
+        "uz": "eʼtiroz, koʻrsatilgan kamchilik",
+        "uz-Cyrl": "эътироз, кўрсатилган камчилик",
+        "ru": "замечание, претензия"
+      },
+      "pron": {
+        "uz": "die be-anshtandung",
+        "uz-Cyrl": "ди бе-анштандунг",
+        "ru": "ди бе-анштандунг"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Jede Beanstandung schreibe ich in die Checkliste.",
+        "tr": {
+          "uz": "Har bir eʼtirozni nazorat roʻyxatiga yozaman.",
+          "uz-Cyrl": "Ҳар бир эътирозни назорат рўйхатига ёзаман.",
+          "ru": "Каждое замечание записываю в чек-лист."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-ich-mache-das-sofort-nach",
+      "slug": "ich-mache-das-sofort-nach",
+      "term": "Ich mache das sofort nach.",
+      "icon": "check",
+      "tr": {
+        "uz": "Hozir qayta qilib beraman.",
+        "uz-Cyrl": "Ҳозир қайта қилиб бераман.",
+        "ru": "Сейчас переделаю."
+      },
+      "pron": {
+        "uz": "ix maxe das zofort nax",
+        "uz-Cyrl": "их махе дас зофорт нах",
+        "ru": "их махе дас зофорт нах"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Ich mache das sofort nach, bevor die Mitarbeiter kommen.",
+        "tr": {
+          "uz": "Xodimlar kelishidan oldin hozir qayta qilib beraman.",
+          "uz-Cyrl": "Ходимлар келишидан олдин ҳозир қайта қилиб бераман.",
+          "ru": "Сейчас переделаю, пока не пришли сотрудники."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-auftraggeber",
+      "slug": "auftraggeber",
+      "term": "der Auftraggeber",
+      "icon": "briefcase",
+      "article": "der",
+      "plural": "die Auftraggeber",
+      "tr": {
+        "uz": "buyurtmachi",
+        "uz-Cyrl": "буюртмачи",
+        "ru": "заказчик"
+      },
+      "pron": {
+        "uz": "der auftrak-geber",
+        "uz-Cyrl": "дер ауфтрак-гебер",
+        "ru": "дер ауфтрак-гебер"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Der Auftraggeber möchte, dass wir früher anfangen.",
+        "tr": {
+          "uz": "Buyurtmachi ertaroq boshlashimizni xohlaydi.",
+          "uz-Cyrl": "Буюртмачи эртароқ бошлашимизни хоҳлайди.",
+          "ru": "Заказчик хочет, чтобы мы начинали раньше."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-schliere",
+      "slug": "schliere",
+      "term": "die Schliere",
+      "icon": "wave-sine",
+      "article": "die",
+      "plural": "die Schlieren",
+      "tr": {
+        "uz": "iz, dogʻ chiziq (oynada)",
+        "uz-Cyrl": "из, доғ чизиқ (ойнада)",
+        "ru": "разводы (на стекле)"
+      },
+      "pron": {
+        "uz": "die shlire",
+        "uz-Cyrl": "ди шлире",
+        "ru": "ди шлире"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Auf dem Spiegel im Bad sind noch Schlieren.",
+        "tr": {
+          "uz": "Hammomdagi oynada hali izlar bor.",
+          "uz-Cyrl": "Ҳаммомдаги ойнада ҳали излар бор.",
+          "ru": "На зеркале в ванной ещё разводы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-sichtbar",
+      "slug": "sichtbar",
+      "term": "sichtbar",
+      "icon": "eye",
+      "tr": {
+        "uz": "koʻrinadigan",
+        "uz-Cyrl": "кўринадиган",
+        "ru": "видимый, заметный"
+      },
+      "pron": {
+        "uz": "zixtbar",
+        "uz-Cyrl": "зихтбар",
+        "ru": "зихтбар"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Der Staub ist nur im Sonnenlicht sichtbar.",
+        "tr": {
+          "uz": "Chang faqat quyosh nurida koʻrinadi.",
+          "uz-Cyrl": "Чанг фақат қуёш нурида кўринади.",
+          "ru": "Пыль видна только на солнце."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-bemaengeln",
+      "slug": "bemaengeln",
+      "term": "bemängeln",
+      "icon": "message-circle",
+      "tr": {
+        "uz": "kamchilik deb koʻrsatmoq, eʼtiroz bildirmoq",
+        "uz-Cyrl": "камчилик деб кўрсатмоқ, эътироз билдирмоқ",
+        "ru": "указывать на недостатки, предъявлять претензию"
+      },
+      "pron": {
+        "uz": "be-mengeln",
+        "uz-Cyrl": "бе-менгелн",
+        "ru": "бе-менгелн"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Was genau möchte der Kunde bemängeln?",
+        "tr": {
+          "uz": "Mijoz aniq nimadan eʼtiroz bildirmoqchi?",
+          "uz-Cyrl": "Мижоз аниқ нимадан эътироз билдирмоқчи?",
+          "ru": "На что именно клиент хочет пожаловаться?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-koennen-sie-mir-die-stelle-zeigen",
+      "slug": "koennen-sie-mir-die-stelle-zeigen",
+      "term": "Können Sie mir die Stelle zeigen?",
+      "icon": "map-pin",
+      "tr": {
+        "uz": "Qaysi joyligini koʻrsata olasizmi?",
+        "uz-Cyrl": "Қайси жойлигини кўрсата оласизми?",
+        "ru": "Можете показать это место?"
+      },
+      "pron": {
+        "uz": "kyonen zi mir di shtele tsaygen",
+        "uz-Cyrl": "кёнен зи мир ди штеле цайген",
+        "ru": "кёнен зи мир ди штеле цайген"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Können Sie mir die Stelle zeigen? Dann putze ich sie gleich.",
+        "tr": {
+          "uz": "Qaysi joyligini koʻrsata olasizmi? Unda hozir tozalayman.",
+          "uz-Cyrl": "Қайси жойлигини кўрсата оласизми? Унда ҳозир тозалайман.",
+          "ru": "Можете показать это место? Тогда я сразу его почищу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-vorsicht-frisch-gewischt",
+      "slug": "vorsicht-frisch-gewischt",
+      "term": "Vorsicht, frisch gewischt!",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Ehtiyot boʻling, pol hozir artildi!",
+        "uz-Cyrl": "Эҳтиёт бўлинг, пол ҳозир артилди!",
+        "ru": "Осторожно, только что вымыто!"
+      },
+      "pron": {
+        "uz": "forzixt, frish gevisht",
+        "uz-Cyrl": "форзихт, фриш гевишт",
+        "ru": "форзихт, фриш гевишт"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Ich stelle ein Schild auf: Vorsicht, frisch gewischt!",
+        "tr": {
+          "uz": "Belgi qoʻyaman: Ehtiyot boʻling, pol hozir artildi!",
+          "uz-Cyrl": "Белги қўяман: Эҳтиёт бўлинг, пол ҳозир артилди!",
+          "ru": "Ставлю табличку: «Осторожно, только что вымыто!»"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-sauberkeit",
+      "slug": "sauberkeit",
+      "term": "die Sauberkeit",
+      "icon": "home",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "tozalik",
+        "uz-Cyrl": "тозалик",
+        "ru": "чистота"
+      },
+      "pron": {
+        "uz": "die zauberkayt",
+        "uz-Cyrl": "ди зауберкайт",
+        "ru": "ди зауберкайт"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Der Kunde ist mit der Sauberkeit im Eingang zufrieden.",
+        "tr": {
+          "uz": "Mijoz kirish qismidagi tozalikdan mamnun.",
+          "uz-Cyrl": "Мижоз кириш қисмидаги тозаликдан мамнун.",
+          "ru": "Клиент доволен чистотой у входа."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-zeitdruck",
+      "slug": "zeitdruck",
+      "term": "der Zeitdruck",
+      "icon": "clock",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "vaqt tigʻizligi, shoshilish",
+        "uz-Cyrl": "вақт тиғизлиги, шошилиш",
+        "ru": "нехватка времени, спешка"
+      },
+      "pron": {
+        "uz": "der tsayt-druk",
+        "uz-Cyrl": "дер цайт-друк",
+        "ru": "дер цайт-друк"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Wegen Zeitdruck haben wir die Ecken nicht gründlich geputzt.",
+        "tr": {
+          "uz": "Vaqt tigʻizligi sababli burchaklarni puxta tozalamadik.",
+          "uz-Cyrl": "Вақт тиғизлиги сабабли бурчакларни пухта тозаламадик.",
+          "ru": "Из-за спешки мы не вычистили углы тщательно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-unzufrieden",
+      "slug": "unzufrieden",
+      "term": "unzufrieden",
+      "icon": "mood-sad",
+      "tr": {
+        "uz": "norozi",
+        "uz-Cyrl": "норози",
+        "ru": "недовольный"
+      },
+      "pron": {
+        "uz": "un-tsufriden",
+        "uz-Cyrl": "ун-цуфриден",
+        "ru": "ун-цуфриден"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Die Kundin ist mit den Toiletten im zweiten Stock unzufrieden.",
+        "tr": {
+          "uz": "Mijoz ikkinchi qavatdagi hojatxonalardan norozi.",
+          "uz-Cyrl": "Мижоз иккинчи қаватдаги ҳожатхоналардан норози.",
+          "ru": "Клиентка недовольна туалетами на втором этаже."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-fotodokumentation",
+      "slug": "fotodokumentation",
+      "term": "die Fotodokumentation",
+      "icon": "camera",
+      "article": "die",
+      "plural": "die Fotodokumentationen",
+      "tr": {
+        "uz": "suratli hisobot (suratga olib qayd etish)",
+        "uz-Cyrl": "суратли ҳисобот (суратга олиб қайд этиш)",
+        "ru": "фотоотчёт, фотодокументация"
+      },
+      "pron": {
+        "uz": "die foto-dokumentatsion",
+        "uz-Cyrl": "ди фото-документацион",
+        "ru": "ди фото-документацион"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Nach der Nachbesserung machen wir eine Fotodokumentation für den Kunden.",
+        "tr": {
+          "uz": "Kamchilik tuzatilgach, mijoz uchun suratli hisobot qilamiz.",
+          "uz-Cyrl": "Камчилик тузатилгач, мижоз учун суратли ҳисобот қиламиз.",
+          "ru": "После доработки делаем фотоотчёт для клиента."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "cleaning-mijoz-shikoyat-rueckmeldung",
+      "slug": "rueckmeldung",
+      "term": "die Rückmeldung",
+      "icon": "messages",
+      "article": "die",
+      "plural": "die Rückmeldungen",
+      "tr": {
+        "uz": "javob xabari, fikr bildirish",
+        "uz-Cyrl": "жавоб хабари, фикр билдириш",
+        "ru": "обратная связь, ответ"
+      },
+      "pron": {
+        "uz": "die ryuk-meldung",
+        "uz-Cyrl": "ди рюк-мелдунг",
+        "ru": "ди рюк-мелдунг"
+      },
+      "level": "B1",
+      "field": "cleaning",
+      "jobs": [
+        "gebaeudereiniger"
+      ],
+      "situation": "mijoz-shikoyat",
+      "example": {
+        "term": "Ich gebe dem Objektleiter heute noch eine Rückmeldung.",
+        "tr": {
+          "uz": "Obyekt rahbariga bugunoq javob beraman.",
+          "uz-Cyrl": "Объект раҳбарига бугуноқ жавоб бераман.",
+          "ru": "Сегодня же дам обратную связь руководителю объекта."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
