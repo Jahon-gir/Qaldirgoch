@@ -2120,6 +2120,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "ish-hisoboti",
+      "title": {
+        "uz": "Qurilish kundaligi va ish hisoboti",
+        "uz-Cyrl": "Қурилиш кундалиги ва иш ҳисоботи",
+        "ru": "Строительный журнал и отчёт о работах"
+      },
+      "order": 13,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Bevor Sie gehen: Was wurde heute im Erdgeschoss erledigt?",
+            "tr": {
+              "uz": "Ketishingizdan oldin: bugun birinchi qavatda nima bajarildi?",
+              "uz-Cyrl": "Кетишингиздан олдин: бугун биринчи қаватда нима бажарилди?",
+              "ru": "Прежде чем уйдёте: что сегодня сделано на первом этаже?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "In drei Wohnungen sind die Leitungen verlegt. In der vierten fehlt noch das Leerrohr.",
+            "tr": {
+              "uz": "Uchta xonadonda kabellar yotqizildi. Toʻrtinchisida hali kabel quvuri yoʻq.",
+              "uz-Cyrl": "Учта хонадонда кабеллар ётқизилди. Тўртинчисида ҳали кабел қувури йўқ.",
+              "ru": "В трёх квартирах проводка проложена. В четвёртой ещё нет гофры."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Warum? Gab es dort eine Verzögerung?",
+            "tr": {
+              "uz": "Nega? U yerda kechikish boʻldimi?",
+              "uz-Cyrl": "Нега? У ерда кечикиш бўлдими?",
+              "ru": "Почему? Там была задержка?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, der Trockenbau war dort noch nicht fertig. Das steht schon im Bautagebuch.",
+            "tr": {
+              "uz": "Ha, u yerda gipsokarton ishlari hali tugamagan edi. Bu qurilish kundaligida yozilgan.",
+              "uz-Cyrl": "Ҳа, у ерда гипсокартон ишлари ҳали тугамаган эди. Бу қурилиш кундалигида ёзилган.",
+              "ru": "Да, там ещё не закончили гипсокартон. Это уже есть в строительном журнале."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Gut. Und die Zusatzarbeit am Zählerschrank – gibt es dafür einen Regiebericht?",
+            "tr": {
+              "uz": "Yaxshi. Hisoblagich shkafidagi qoʻshimcha ish-chi — buning uchun qoʻshimcha ish hisoboti bormi?",
+              "uz-Cyrl": "Яхши. Ҳисоблагич шкафидаги қўшимча иш-чи — бунинг учун қўшимча иш ҳисоботи борми?",
+              "ru": "Хорошо. А дополнительная работа у счётчикового шкафа — на неё есть отчёт о дополнительных работах?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Der Regiebericht für den Zählerschrank liegt schon im Baucontainer. Sie müssen ihn nur noch abzeichnen.",
+            "tr": {
+              "uz": "Hisoblagich shkafi boʻyicha hisobot qurilish konteynerida turibdi. Siz faqat imzolab tasdiqlashingiz kerak.",
+              "uz-Cyrl": "Ҳисоблагич шкафи бўйича ҳисобот қурилиш контейнерида турибди. Сиз фақат имзолаб тасдиқлашингиз керак.",
+              "ru": "Отчёт по счётчиковому шкафу уже лежит в бытовке. Вам осталось только его подписать."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -10645,6 +10738,738 @@
       "safety": true,
       "status": "review",
       "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-bautagebuch",
+      "slug": "bautagebuch",
+      "term": "das Bautagebuch",
+      "icon": "book",
+      "article": "das",
+      "plural": "die Bautagebücher",
+      "tr": {
+        "uz": "qurilish kundaligi",
+        "uz-Cyrl": "қурилиш кундалиги",
+        "ru": "строительный журнал"
+      },
+      "pron": {
+        "uz": "das bau-ta-ge-bux",
+        "uz-Cyrl": "дас бау-та-ге-бух",
+        "ru": "дас бау-та-ге-бух"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Jeden Abend trägt der Polier das Wetter und die Arbeiten ins Bautagebuch ein.",
+        "tr": {
+          "uz": "Har kechqurun brigadir ob-havo va ishlarni qurilish kundaligiga yozadi.",
+          "uz-Cyrl": "Ҳар кечқурун бригадир об-ҳаво ва ишларни қурилиш кундалигига ёзади.",
+          "ru": "Каждый вечер бригадир записывает погоду и работы в строительный журнал."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-aufmass",
+      "slug": "aufmass",
+      "term": "das Aufmaß",
+      "icon": "ruler",
+      "article": "das",
+      "plural": "die Aufmaße",
+      "tr": {
+        "uz": "bajarilgan ishni oʻlchash (hisob uchun)",
+        "uz-Cyrl": "бажарилган ишни ўлчаш (ҳисоб учун)",
+        "ru": "обмер выполненных работ"
+      },
+      "pron": {
+        "uz": "das auf-mas",
+        "uz-Cyrl": "дас ауф-мас",
+        "ru": "дас ауф-мас"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Nach dem Verputzen machen wir das Aufmaß für alle Räume.",
+        "tr": {
+          "uz": "Suvoqdan keyin barcha xonalarda bajarilgan ishni oʻlchaymiz.",
+          "uz-Cyrl": "Сувоқдан кейин барча хоналарда бажарилган ишни ўлчаймиз.",
+          "ru": "После штукатурки мы делаем обмер всех помещений."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-regiebericht",
+      "slug": "regiebericht",
+      "term": "der Regiebericht",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Regieberichte",
+      "tr": {
+        "uz": "qoʻshimcha (soatbay) ish hisoboti",
+        "uz-Cyrl": "қўшимча (соатбай) иш ҳисоботи",
+        "ru": "отчёт о дополнительных (почасовых) работах"
+      },
+      "pron": {
+        "uz": "der re-ji-be-rixt",
+        "uz-Cyrl": "дер ре-жи-бе-рихт",
+        "ru": "дер ре-жи-бе-рихт"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Für die Arbeit, die nicht im Auftrag steht, schreibe ich einen Regiebericht.",
+        "tr": {
+          "uz": "Buyurtmada yoʻq ish uchun qoʻshimcha ish hisobotini yozaman.",
+          "uz-Cyrl": "Буюртмада йўқ иш учун қўшимча иш ҳисоботини ёзаман.",
+          "ru": "Для работы, которой нет в заказе, я пишу отчёт о дополнительных работах."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-maengelanzeige",
+      "slug": "maengelanzeige",
+      "term": "die Mängelanzeige",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Mängelanzeigen",
+      "tr": {
+        "uz": "kamchilik haqida yozma xabar",
+        "uz-Cyrl": "камчилик ҳақида ёзма хабар",
+        "ru": "письменное уведомление о недостатках"
+      },
+      "pron": {
+        "uz": "die men-gel-an-tsay-ge",
+        "uz-Cyrl": "ди мен-гел-ан-цай-ге",
+        "ru": "ди мен-гел-ан-цай-ге"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Die Risse in der Wand schreiben wir in die Mängelanzeige.",
+        "tr": {
+          "uz": "Devordagi yoriqlarni kamchilik haqidagi yozma xabarga kiritamiz.",
+          "uz-Cyrl": "Девордаги ёриқларни камчилик ҳақидаги ёзма хабарга киритамиз.",
+          "ru": "Трещины в стене мы вносим в уведомление о недостатках."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-abnahme",
+      "slug": "abnahme",
+      "term": "die Abnahme",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Abnahmen",
+      "tr": {
+        "uz": "ishni qabul qilish",
+        "uz-Cyrl": "ишни қабул қилиш",
+        "ru": "приёмка работ"
+      },
+      "pron": {
+        "uz": "die ap-na-me",
+        "uz-Cyrl": "ди ап-на-ме",
+        "ru": "ди ап-на-ме"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Bei der Abnahme prüft der Bauherr jeden Raum.",
+        "tr": {
+          "uz": "Ishni qabul qilishda buyurtmachi har bir xonani tekshiradi.",
+          "uz-Cyrl": "Ишни қабул қилишда буюртмачи ҳар бир хонани текширади.",
+          "ru": "При приёмке работ заказчик проверяет каждое помещение."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-nachtrag",
+      "slug": "nachtrag",
+      "term": "der Nachtrag",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Nachträge",
+      "tr": {
+        "uz": "qoʻshimcha buyurtma (shartnomadan tashqari ish)",
+        "uz-Cyrl": "қўшимча буюртма (шартномадан ташқари иш)",
+        "ru": "дополнительный заказ (работы сверх договора)"
+      },
+      "pron": {
+        "uz": "der nax-trak",
+        "uz-Cyrl": "дер нах-трак",
+        "ru": "дер нах-трак"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Zwei Steckdosen mehr? Das ist ein Nachtrag, das klärt der Chef.",
+        "tr": {
+          "uz": "Yana ikkita rozetkami? Bu qoʻshimcha buyurtma, buni boshliq hal qiladi.",
+          "uz-Cyrl": "Яна иккита розетками? Бу қўшимча буюртма, буни бошлиқ ҳал қилади.",
+          "ru": "Ещё две розетки? Это дополнительный заказ, это решает начальник."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-stundennachweis",
+      "slug": "stundennachweis",
+      "term": "der Stundennachweis",
+      "icon": "clock",
+      "article": "der",
+      "plural": "die Stundennachweise",
+      "tr": {
+        "uz": "ishlangan soatlar hisobi",
+        "uz-Cyrl": "ишланган соатлар ҳисоби",
+        "ru": "учёт отработанных часов"
+      },
+      "pron": {
+        "uz": "der shtun-den-nax-vays",
+        "uz-Cyrl": "дер штун-ден-нах-вайс",
+        "ru": "дер штун-ден-нах-вайс"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Am Freitag gebe ich den Stundennachweis im Büro ab.",
+        "tr": {
+          "uz": "Juma kuni ishlangan soatlar hisobini ofisga topshiraman.",
+          "uz-Cyrl": "Жума куни ишланган соатлар ҳисобини офисга топшираман.",
+          "ru": "В пятницу я сдаю учёт отработанных часов в офис."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-bauabschnitt",
+      "slug": "bauabschnitt",
+      "term": "der Bauabschnitt",
+      "icon": "building",
+      "article": "der",
+      "plural": "die Bauabschnitte",
+      "tr": {
+        "uz": "qurilish qismi (navbati)",
+        "uz-Cyrl": "қурилиш қисми (навбати)",
+        "ru": "участок (очередь) строительства"
+      },
+      "pron": {
+        "uz": "der bau-ap-shnit",
+        "uz-Cyrl": "дер бау-ап-шнит",
+        "ru": "дер бау-ап-шнит"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Im ersten Bauabschnitt sind die Fenster schon drin.",
+        "tr": {
+          "uz": "Qurilishning birinchi qismida derazalar allaqachon oʻrnatilgan.",
+          "uz-Cyrl": "Қурилишнинг биринчи қисмида деразалар аллақачон ўрнатилган.",
+          "ru": "На первом участке строительства окна уже установлены."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-baufortschritt",
+      "slug": "baufortschritt",
+      "term": "der Baufortschritt",
+      "icon": "building",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "qurilish borishi",
+        "uz-Cyrl": "қурилиш бориши",
+        "ru": "ход строительства"
+      },
+      "pron": {
+        "uz": "der bau-fort-shrit",
+        "uz-Cyrl": "дер бау-форт-шрит",
+        "ru": "дер бау-форт-шрит"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Der Polier macht jede Woche Fotos vom Baufortschritt.",
+        "tr": {
+          "uz": "Brigadir har hafta qurilish borishini suratga oladi.",
+          "uz-Cyrl": "Бригадир ҳар ҳафта қурилиш боришини суратга олади.",
+          "ru": "Бригадир каждую неделю фотографирует ход строительства."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-verzoegerung",
+      "slug": "verzoegerung",
+      "term": "die Verzögerung",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Verzögerungen",
+      "tr": {
+        "uz": "kechikish (ishning surilishi)",
+        "uz-Cyrl": "кечикиш (ишнинг сурилиши)",
+        "ru": "задержка"
+      },
+      "pron": {
+        "uz": "die fer-tsyo-ge-rung",
+        "uz-Cyrl": "ди фер-цё-ге-рунг",
+        "ru": "ди фер-цё-ге-рунг"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Wegen des Regens gab es zwei Tage Verzögerung.",
+        "tr": {
+          "uz": "Yomgʻir sababli ikki kun kechikish boʻldi.",
+          "uz-Cyrl": "Ёмғир сабабли икки кун кечикиш бўлди.",
+          "ru": "Из-за дождя была задержка на два дня."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-materialverbrauch",
+      "slug": "materialverbrauch",
+      "term": "der Materialverbrauch",
+      "icon": "package",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "material sarfi",
+        "uz-Cyrl": "материал сарфи",
+        "ru": "расход материала"
+      },
+      "pron": {
+        "uz": "der ma-te-ri-al-fer-braux",
+        "uz-Cyrl": "дер ма-те-ри-ал-фер-браух",
+        "ru": "дер ма-те-ри-ал-фер-браух"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Den Materialverbrauch schreibe ich jeden Tag auf.",
+        "tr": {
+          "uz": "Material sarfini har kuni yozib boraman.",
+          "uz-Cyrl": "Материал сарфини ҳар куни ёзиб бораман.",
+          "ru": "Расход материала я записываю каждый день."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-witterung",
+      "slug": "witterung",
+      "term": "die Witterung",
+      "icon": "sun",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "ob-havo sharoiti",
+        "uz-Cyrl": "об-ҳаво шароити",
+        "ru": "погодные условия"
+      },
+      "pron": {
+        "uz": "die vi-te-rung",
+        "uz-Cyrl": "ди ви-те-рунг",
+        "ru": "ди ви-те-рунг"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Bei dieser Witterung können wir nicht betonieren.",
+        "tr": {
+          "uz": "Bunday ob-havo sharoitida beton quya olmaymiz.",
+          "uz-Cyrl": "Бундай об-ҳаво шароитида бетон қуя олмаймиз.",
+          "ru": "При таких погодных условиях мы не можем бетонировать."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-gewerk",
+      "slug": "gewerk",
+      "term": "das Gewerk",
+      "icon": "tools",
+      "article": "das",
+      "plural": "die Gewerke",
+      "tr": {
+        "uz": "ish turi (alohida brigada ishi)",
+        "uz-Cyrl": "иш тури (алоҳида бригада иши)",
+        "ru": "вид строительных работ"
+      },
+      "pron": {
+        "uz": "das ge-verk",
+        "uz-Cyrl": "дас ге-верк",
+        "ru": "дас ге-верк"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Auf der Baustelle arbeiten viele Gewerke gleichzeitig.",
+        "tr": {
+          "uz": "Qurilishda bir vaqtda koʻp ish turlari (brigadalar) ishlaydi.",
+          "uz-Cyrl": "Қурилишда бир вақтда кўп иш турлари (бригадалар) ишлайди.",
+          "ru": "На стройке одновременно работают бригады разных специальностей."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-polier",
+      "slug": "polier",
+      "term": "der Polier",
+      "icon": "helmet",
+      "article": "der",
+      "plural": "die Poliere",
+      "tr": {
+        "uz": "brigadir (qurilish ustasi)",
+        "uz-Cyrl": "бригадир (қурилиш устаси)",
+        "ru": "бригадир (мастер на стройке)"
+      },
+      "pron": {
+        "uz": "der po-lir",
+        "uz-Cyrl": "дер по-лир",
+        "ru": "дер по-лир"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Fragen zum Ablauf kläre ich mit dem Polier.",
+        "tr": {
+          "uz": "Ish tartibi haqidagi savollarni brigadir bilan hal qilaman.",
+          "uz-Cyrl": "Иш тартиби ҳақидаги саволларни бригадир билан ҳал қиламан.",
+          "ru": "Вопросы о порядке работ я решаю с бригадиром."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-abzeichnen",
+      "slug": "abzeichnen",
+      "term": "abzeichnen",
+      "icon": "file-text",
+      "tr": {
+        "uz": "imzolab tasdiqlamoq",
+        "uz-Cyrl": "имзолаб тасдиқламоқ",
+        "ru": "подписать (заверить подписью)"
+      },
+      "pron": {
+        "uz": "ap-tsayx-nen",
+        "uz-Cyrl": "ап-цайх-нен",
+        "ru": "ап-цайх-нен"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Der Bauleiter muss den Regiebericht noch abzeichnen.",
+        "tr": {
+          "uz": "Prorab qoʻshimcha ish hisobotini hali imzolab tasdiqlashi kerak.",
+          "uz-Cyrl": "Прораб қўшимча иш ҳисоботини ҳали имзолаб тасдиқлаши керак.",
+          "ru": "Прораб ещё должен подписать отчёт о дополнительных работах."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-festhalten",
+      "slug": "festhalten",
+      "term": "festhalten",
+      "icon": "book",
+      "tr": {
+        "uz": "qayd etmoq (yozib qoʻymoq)",
+        "uz-Cyrl": "қайд этмоқ (ёзиб қўймоқ)",
+        "ru": "зафиксировать (записать)"
+      },
+      "pron": {
+        "uz": "fest-hal-ten",
+        "uz-Cyrl": "фест-хал-тен",
+        "ru": "фест-хал-тен"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Das müssen wir schriftlich festhalten.",
+        "tr": {
+          "uz": "Buni yozma ravishda qayd etishimiz kerak.",
+          "uz-Cyrl": "Буни ёзма равишда қайд этишимиз керак.",
+          "ru": "Это нужно зафиксировать письменно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-nacharbeit",
+      "slug": "nacharbeit",
+      "term": "die Nacharbeit",
+      "icon": "hammer",
+      "article": "die",
+      "plural": "die Nacharbeiten",
+      "tr": {
+        "uz": "tuzatish ishi (qayta ishlash)",
+        "uz-Cyrl": "тузатиш иши (қайта ишлаш)",
+        "ru": "доработка (исправление)"
+      },
+      "pron": {
+        "uz": "die nax-ar-bayt",
+        "uz-Cyrl": "ди нах-ар-байт",
+        "ru": "ди нах-ар-байт"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Die schiefe Fliese ist eine Nacharbeit für morgen.",
+        "tr": {
+          "uz": "Qiyshiq plitka — ertangi tuzatish ishi.",
+          "uz-Cyrl": "Қийшиқ плитка — эртанги тузатиш иши.",
+          "ru": "Кривая плитка — доработка на завтра."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-termingerecht",
+      "slug": "termingerecht",
+      "term": "termingerecht",
+      "icon": "calendar-event",
+      "tr": {
+        "uz": "belgilangan muddatda",
+        "uz-Cyrl": "белгиланган муддатда",
+        "ru": "в срок"
+      },
+      "pron": {
+        "uz": "ter-min-ge-rext",
+        "uz-Cyrl": "тер-мин-ге-рехт",
+        "ru": "тер-мин-ге-рехт"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Ohne das Material schaffen wir das nicht termingerecht.",
+        "tr": {
+          "uz": "Materialsiz buni belgilangan muddatda bajara olmaymiz.",
+          "uz-Cyrl": "Материалсиз буни белгиланган муддатда бажара олмаймиз.",
+          "ru": "Без материала мы не успеем сделать это в срок."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-gefahrenstelle",
+      "slug": "gefahrenstelle",
+      "term": "die Gefahrenstelle",
+      "icon": "alert-octagon",
+      "article": "die",
+      "plural": "die Gefahrenstellen",
+      "tr": {
+        "uz": "xavfli joy",
+        "uz-Cyrl": "хавфли жой",
+        "ru": "опасное место"
+      },
+      "pron": {
+        "uz": "die ge-fa-ren-shte-le",
+        "uz-Cyrl": "ди ге-фа-рен-ште-ле",
+        "ru": "ди ге-фа-рен-ште-ле"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Das offene Loch im Boden ist eine Gefahrenstelle – sofort absperren!",
+        "tr": {
+          "uz": "Poldagi ochiq tuynuk — xavfli joy, darhol toʻsib qoʻying!",
+          "uz-Cyrl": "Полдаги очиқ туйнук — хавфли жой, дарҳол тўсиб қўйинг!",
+          "ru": "Открытый проём в полу — опасное место, сразу оградить!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "technical-ish-hisoboti-was-wurde-heute-erledigt",
+      "slug": "was-wurde-heute-erledigt",
+      "term": "Was wurde heute erledigt?",
+      "icon": "help",
+      "tr": {
+        "uz": "Bugun nima bajarildi?",
+        "uz-Cyrl": "Бугун нима бажарилди?",
+        "ru": "Что сегодня сделано?"
+      },
+      "pron": {
+        "uz": "vas vur-de hoy-te er-le-dikt",
+        "uz-Cyrl": "вас вур-де хой-те эр-ле-дикт",
+        "ru": "вас вур-де хой-те эр-ле-дикт"
+      },
+      "level": "B1",
+      "field": "technical",
+      "jobs": [
+        "elektroniker",
+        "shk",
+        "bau"
+      ],
+      "situation": "ish-hisoboti",
+      "example": {
+        "term": "Was wurde heute erledigt? – Die Kabel im Erdgeschoss sind verlegt.",
+        "tr": {
+          "uz": "Bugun nima bajarildi? – Birinchi qavatdagi kabellar yotqizildi.",
+          "uz-Cyrl": "Бугун нима бажарилди? – Биринчи қаватдаги кабеллар ётқизилди.",
+          "ru": "Что сегодня сделано? – Кабели на первом этаже проложены."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
