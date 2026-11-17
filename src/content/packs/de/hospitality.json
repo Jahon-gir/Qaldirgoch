@@ -2212,6 +2212,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Mehmon",
+              "uz-Cyrl": "Меҳмон",
+              "ru": "Гость"
+            },
+            "de": "Schauen Sie mal: In meinem Salat ist ein Haar. Das ist wirklich unangenehm.",
+            "tr": {
+              "uz": "Qarang: salatimda soch bor. Bu juda yoqimsiz.",
+              "uz-Cyrl": "Қаранг: салатимда соч бор. Бу жуда ёқимсиз.",
+              "ru": "Посмотрите: в моём салате волос. Это очень неприятно."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Das tut mir sehr leid. Ich nehme den Teller sofort mit in die Küche.",
+            "tr": {
+              "uz": "Bundan juda afsusdaman. Likopchani hozir oshxonaga olib ketaman.",
+              "uz-Cyrl": "Бундан жуда афсусдаман. Ликопчани ҳозир ошхонага олиб кетаман.",
+              "ru": "Мне очень жаль. Я сейчас же унесу тарелку на кухню."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mehmon",
+              "uz-Cyrl": "Меҳмон",
+              "ru": "Гость"
+            },
+            "de": "Das ist schon das zweite Problem heute. Vorhin war mein Kaffee kalt.",
+            "tr": {
+              "uz": "Bu bugun ikkinchi muammo. Hozirgina qahvam sovuq edi.",
+              "uz-Cyrl": "Бу бугун иккинчи муаммо. Ҳозиргина қаҳвам совуқ эди.",
+              "ru": "Это уже вторая проблема сегодня. Только что мой кофе был холодным."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Danke, dass Sie es sagen. Ich gebe Ihre Kritik an den Restaurantleiter weiter.",
+            "tr": {
+              "uz": "Aytganingiz uchun rahmat. Tanqidingizni restoran boshqaruvchisiga yetkazaman.",
+              "uz-Cyrl": "Айтганингиз учун раҳмат. Танқидингизни ресторан бошқарувчисига етказаман.",
+              "ru": "Спасибо, что сказали. Я передам вашу критику управляющему рестораном."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mehmon",
+              "uz-Cyrl": "Меҳмон",
+              "ru": "Гость"
+            },
+            "de": "Gut. Und bringen Sie mir bitte einen neuen Salat, aber ohne Zwiebeln.",
+            "tr": {
+              "uz": "Yaxshi. Menga yangi salat olib keling, lekin piyozsiz.",
+              "uz-Cyrl": "Яхши. Менга янги салат олиб келинг, лекин пиёзсиз.",
+              "ru": "Хорошо. И принесите мне, пожалуйста, новый салат, но без лука."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gern. Einen neuen Salat ohne Zwiebeln sage ich der Küche sofort.",
+            "tr": {
+              "uz": "Mamnuniyat bilan. Piyozsiz yangi salatni oshxonaga hoziroq aytaman.",
+              "uz-Cyrl": "Мамнуният билан. Пиёзсиз янги салатни ошхонага ҳозироқ айтаман.",
+              "ru": "С удовольствием. Про новый салат без лука сразу скажу на кухне."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
