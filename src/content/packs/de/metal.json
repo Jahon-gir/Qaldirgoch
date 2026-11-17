@@ -2564,6 +2564,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Ich habe mich am Blech geschnitten. Es blutet ziemlich stark.",
+            "tr": {
+              "uz": "Tunukaga qoʻlimni kesib oldim. Qon ancha koʻp ketyapti.",
+              "uz-Cyrl": "Тунукага қўлимни кесиб олдим. Қон анча кўп кетяпти.",
+              "ru": "Я порезался о лист металла. Довольно сильно кровит."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Drücken Sie fest auf die Wunde. Ich hole sofort unseren Ersthelfer.",
+            "tr": {
+              "uz": "Yarani qattiq bosib turing. Hozir birinchi yordam koʻrsatuvchimizni chaqiraman.",
+              "uz-Cyrl": "Ярани қаттиқ босиб туринг. Ҳозир биринчи ёрдам кўрсатувчимизни чақираман.",
+              "ru": "Крепко прижмите рану. Я сейчас позову того, кто у нас обучен первой помощи."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Danke, die Wunde ist jetzt verbunden. Muss ich das irgendwo aufschreiben?",
+            "tr": {
+              "uz": "Rahmat, yara endi bogʻlandi. Buni biror joyga yozishim kerakmi?",
+              "uz-Cyrl": "Раҳмат, яра энди боғланди. Буни бирор жойга ёзишим керакми?",
+              "ru": "Спасибо, рана теперь перевязана. Мне нужно это где-то записать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, ins Verbandbuch. Es liegt im Erste-Hilfe-Schrank.",
+            "tr": {
+              "uz": "Ha, birinchi yordam daftariga. U birinchi yordam shkafida turadi.",
+              "uz-Cyrl": "Ҳа, биринчи ёрдам дафтарига. У биринчи ёрдам шкафида туради.",
+              "ru": "Да, в журнал первой помощи. Он лежит в шкафу первой помощи."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Ich hatte keine Handschuhe an, weil die Kante so klein war.",
+            "tr": {
+              "uz": "Qoʻlqop kiymagan edim, chunki cheti juda kichkina edi.",
+              "uz-Cyrl": "Қўлқоп киймаган эдим, чунки чети жуда кичкина эди.",
+              "ru": "Я был без перчаток, потому что кромка была совсем маленькая."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gerade an kleinen Kanten schneidet man sich schnell. Laut Betriebsanweisung sind Handschuhe beim Blech immer verpflichtend.",
+            "tr": {
+              "uz": "Aynan kichik chetlarda tez kesib olinadi. Ishlatish yoʻriqnomasiga koʻra tunuka bilan ishlaganda qoʻlqop doim majburiy.",
+              "uz-Cyrl": "Айнан кичик четларда тез кесиб олинади. Ишлатиш йўриқномасига кўра тунука билан ишлаганда қўлқоп доим мажбурий.",
+              "ru": "Как раз о маленькие кромки легко порезаться. По инструкции при работе с листовым металлом перчатки обязательны всегда."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
