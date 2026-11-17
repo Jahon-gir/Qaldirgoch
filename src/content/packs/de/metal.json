@@ -2472,6 +2472,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "xavfsizlik-yoriqnoma",
+      "title": {
+        "uz": "Xavfsizlik yoʻriqnomasi va xavf baholash",
+        "uz-Cyrl": "Хавфсизлик йўриқномаси ва хавф баҳолаш",
+        "ru": "Инструктаж по охране труда и оценка рисков"
+      },
+      "order": 15,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Xavfsizlik vakili",
+              "uz-Cyrl": "Хавфсизлик вакили",
+              "ru": "Уполномоченный по охране труда"
+            },
+            "de": "Heute ist Ihre Unterweisung für die neue Presse. Haben Sie die Betriebsanweisung schon gelesen?",
+            "tr": {
+              "uz": "Bugun yangi press boʻyicha yoʻriqnomangiz. Ishlatish yoʻriqnomasini oʻqib chiqdingizmi?",
+              "uz-Cyrl": "Бугун янги пресс бўйича йўриқномангиз. Ишлатиш йўриқномасини ўқиб чиқдингизми?",
+              "ru": "Сегодня ваш инструктаж по новому прессу. Вы уже прочитали инструкцию по эксплуатации?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, gestern. Aber ein Punkt ist mir nicht klar: Wo genau besteht Quetschgefahr?",
+            "tr": {
+              "uz": "Ha, kecha. Lekin bir joyi menga tushunarsiz: qisib olish xavfi aynan qayerda?",
+              "uz-Cyrl": "Ҳа, кеча. Лекин бир жойи менга тушунарсиз: қисиб олиш хавфи айнан қаерда?",
+              "ru": "Да, вчера. Но один пункт мне не ясен: где именно опасность защемления?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xavfsizlik vakili",
+              "uz-Cyrl": "Хавфсизлик вакили",
+              "ru": "Уполномоченный по охране труда"
+            },
+            "de": "Zwischen Werkzeug und Tisch. Welche Schutzmaßnahme hat die Presse dafür?",
+            "tr": {
+              "uz": "Asbob bilan stol orasida. Buning uchun pressda qanday himoya chorasi bor?",
+              "uz-Cyrl": "Асбоб билан стол орасида. Бунинг учун прессда қандай ҳимоя чораси бор?",
+              "ru": "Между инструментом и столом. Какая защитная мера для этого есть у пресса?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Die Lichtschranke. Wenn meine Hand dort ist, stoppt die Presse sofort.",
+            "tr": {
+              "uz": "Yorugʻlik toʻsigʻi. Qoʻlim u yerda boʻlsa, press darhol toʻxtaydi.",
+              "uz-Cyrl": "Ёруғлик тўсиғи. Қўлим у ерда бўлса, пресс дарҳол тўхтайди.",
+              "ru": "Световой барьер. Если моя рука там, пресс сразу останавливается."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xavfsizlik vakili",
+              "uz-Cyrl": "Хавфсизлик вакили",
+              "ru": "Уполномоченный по охране труда"
+            },
+            "de": "Richtig. Und wenn Ihnen ein Teil fast auf den Fuß fällt, aber nichts passiert?",
+            "tr": {
+              "uz": "Toʻgʻri. Agar detal oyogʻingizga tushishiga oz qolsa-yu, hech narsa boʻlmasa-chi?",
+              "uz-Cyrl": "Тўғри. Агар детал оёғингизга тушишига оз қолса-ю, ҳеч нарса бўлмаса-чи?",
+              "ru": "Верно. А если деталь чуть не упадёт вам на ногу, но ничего не случится?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Das ist ein Beinaheunfall. Den melde ich trotzdem dem Schichtführer, damit es nicht wieder passiert.",
+            "tr": {
+              "uz": "Bu baxtsiz hodisaga oz qolgan holat. Takrorlanmasligi uchun baribir smena boshligʻiga xabar beraman.",
+              "uz-Cyrl": "Бу бахтсиз ҳодисага оз қолган ҳолат. Такрорланмаслиги учун барибир смена бошлиғига хабар бераман.",
+              "ru": "Это почти несчастный случай. Я всё равно сообщу начальнику смены, чтобы это не повторилось."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -12366,6 +12459,738 @@
         }
       },
       "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-gefaehrdungsbeurteilung",
+      "slug": "gefaehrdungsbeurteilung",
+      "term": "die Gefährdungsbeurteilung",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Gefährdungsbeurteilungen",
+      "tr": {
+        "uz": "xavf baholash (ish joyidagi xavflar tahlili)",
+        "uz-Cyrl": "хавф баҳолаш (иш жойидаги хавфлар таҳлили)",
+        "ru": "оценка рисков (на рабочем месте)"
+      },
+      "pron": {
+        "uz": "die ge-fer-dungs-be-ur-tay-lung",
+        "uz-Cyrl": "ди ге-фер-дунгс-бе-ур-тай-лунг",
+        "ru": "ди ге-фер-дунгс-бе-ур-тай-лунг"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Für die neue Presse gibt es eine Gefährdungsbeurteilung.",
+        "tr": {
+          "uz": "Yangi press uchun xavf baholash hujjati bor.",
+          "uz-Cyrl": "Янги пресс учун хавф баҳолаш ҳужжати бор.",
+          "ru": "Для нового пресса есть оценка рисков."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-unterweisung",
+      "slug": "unterweisung",
+      "term": "die Unterweisung",
+      "icon": "users",
+      "article": "die",
+      "plural": "die Unterweisungen",
+      "tr": {
+        "uz": "xavfsizlik yoʻriqnomasi (oʻqitish)",
+        "uz-Cyrl": "хавфсизлик йўриқномаси (ўқитиш)",
+        "ru": "инструктаж (по технике безопасности)"
+      },
+      "pron": {
+        "uz": "die un-ter-vay-zung",
+        "uz-Cyrl": "ди ун-тер-вай-зунг",
+        "ru": "ди ун-тер-вай-зунг"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Nach der Unterweisung unterschreibe ich die Liste.",
+        "tr": {
+          "uz": "Yoʻriqnomadan keyin roʻyxatga imzo qoʻyaman.",
+          "uz-Cyrl": "Йўриқномадан кейин рўйхатга имзо қўяман.",
+          "ru": "После инструктажа я расписываюсь в списке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-betriebsanweisung",
+      "slug": "betriebsanweisung",
+      "term": "die Betriebsanweisung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Betriebsanweisungen",
+      "tr": {
+        "uz": "ishlatish yoʻriqnomasi (dastgoh yonida osilgan)",
+        "uz-Cyrl": "ишлатиш йўриқномаси (дастгоҳ ёнида осилган)",
+        "ru": "инструкция по эксплуатации (на рабочем месте)"
+      },
+      "pron": {
+        "uz": "die be-trips-an-vay-zung",
+        "uz-Cyrl": "ди бе-трипс-ан-вай-зунг",
+        "ru": "ди бе-трипс-ан-вай-зунг"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Die Betriebsanweisung hängt direkt neben der Maschine.",
+        "tr": {
+          "uz": "Ishlatish yoʻriqnomasi dastgohning yonginasida osilgan.",
+          "uz-Cyrl": "Ишлатиш йўриқномаси дастгоҳнинг ёнгинасида осилган.",
+          "ru": "Инструкция по эксплуатации висит прямо рядом со станком."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-schutzmassnahme",
+      "slug": "schutzmassnahme",
+      "term": "die Schutzmaßnahme",
+      "icon": "helmet",
+      "article": "die",
+      "plural": "die Schutzmaßnahmen",
+      "tr": {
+        "uz": "himoya chorasi",
+        "uz-Cyrl": "ҳимоя чораси",
+        "ru": "защитная мера"
+      },
+      "pron": {
+        "uz": "die shuts-mas-na-me",
+        "uz-Cyrl": "ди шуц-мас-на-ме",
+        "ru": "ди шуц-мас-на-ме"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Die Absaugung ist beim Schleifen eine wichtige Schutzmaßnahme.",
+        "tr": {
+          "uz": "Jilvirlashda soʻrib oluvchi qurilma muhim himoya chorasi.",
+          "uz-Cyrl": "Жилвирлашда сўриб олувчи қурилма муҳим ҳимоя чораси.",
+          "ru": "При шлифовании вытяжка — важная защитная мера."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-beinaheunfall",
+      "slug": "beinaheunfall",
+      "term": "der Beinaheunfall",
+      "icon": "alert-octagon",
+      "article": "der",
+      "plural": "die Beinaheunfälle",
+      "tr": {
+        "uz": "baxtsiz hodisaga oz qolgan holat",
+        "uz-Cyrl": "бахтсиз ҳодисага оз қолган ҳолат",
+        "ru": "почти несчастный случай (без травмы)"
+      },
+      "pron": {
+        "uz": "der bay-na-e-un-fal",
+        "uz-Cyrl": "дер бай-на-е-ун-фал",
+        "ru": "дер бай-на-е-ун-фал"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Auch einen Beinaheunfall muss man melden.",
+        "tr": {
+          "uz": "Baxtsiz hodisaga oz qolgan holatni ham xabar qilish kerak.",
+          "uz-Cyrl": "Бахтсиз ҳодисага оз қолган ҳолатни ҳам хабар қилиш керак.",
+          "ru": "Даже о почти несчастном случае нужно сообщать."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-sicherheitsbeauftragte",
+      "slug": "sicherheitsbeauftragte",
+      "term": "der Sicherheitsbeauftragte",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Sicherheitsbeauftragten",
+      "tr": {
+        "uz": "xavfsizlik vakili (xodimlar orasidan)",
+        "uz-Cyrl": "хавфсизлик вакили (ходимлар орасидан)",
+        "ru": "уполномоченный по охране труда"
+      },
+      "pron": {
+        "uz": "der zi-xer-hayts-be-auf-trag-te",
+        "uz-Cyrl": "дер зи-хер-хайтс-бе-ауф-траг-те",
+        "ru": "дер зи-хер-хайтс-бе-ауф-траг-те"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Fragen Sie unseren Sicherheitsbeauftragten, er kennt die Regeln.",
+        "tr": {
+          "uz": "Xavfsizlik vakilimizdan soʻrang, u qoidalarni biladi.",
+          "uz-Cyrl": "Хавфсизлик вакилимиздан сўранг, у қоидаларни билади.",
+          "ru": "Спросите нашего уполномоченного по охране труда, он знает правила."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-fluchtweg",
+      "slug": "fluchtweg",
+      "term": "der Fluchtweg",
+      "icon": "door-exit",
+      "article": "der",
+      "plural": "die Fluchtwege",
+      "tr": {
+        "uz": "evakuatsiya yoʻli (qochish yoʻli)",
+        "uz-Cyrl": "эвакуация йўли (қочиш йўли)",
+        "ru": "путь эвакуации"
+      },
+      "pron": {
+        "uz": "der fluxt-vek",
+        "uz-Cyrl": "дер флухт-век",
+        "ru": "дер флухт-век"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Der Fluchtweg muss immer frei bleiben.",
+        "tr": {
+          "uz": "Evakuatsiya yoʻli doim boʻsh turishi kerak.",
+          "uz-Cyrl": "Эвакуация йўли доим бўш туриши керак.",
+          "ru": "Путь эвакуации всегда должен оставаться свободным."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-ersthelfer",
+      "slug": "ersthelfer",
+      "term": "der Ersthelfer",
+      "icon": "first-aid-kit",
+      "article": "der",
+      "plural": "die Ersthelfer",
+      "tr": {
+        "uz": "birinchi yordam koʻrsatuvchi (oʻqitilgan xodim)",
+        "uz-Cyrl": "биринчи ёрдам кўрсатувчи (ўқитилган ходим)",
+        "ru": "работник, обученный первой помощи"
+      },
+      "pron": {
+        "uz": "der erst-hel-fer",
+        "uz-Cyrl": "дер ерст-хел-фер",
+        "ru": "дер ерст-хел-фер"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Wer ist in unserer Halle Ersthelfer?",
+        "tr": {
+          "uz": "Bizning sexda kim birinchi yordam koʻrsatuvchi?",
+          "uz-Cyrl": "Бизнинг цехда ким биринчи ёрдам кўрсатувчи?",
+          "ru": "Кто в нашем цехе обучен первой помощи?"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-verbandbuch",
+      "slug": "verbandbuch",
+      "term": "das Verbandbuch",
+      "icon": "book",
+      "article": "das",
+      "plural": "die Verbandbücher",
+      "tr": {
+        "uz": "birinchi yordam daftari (kichik jarohatlar yoziladi)",
+        "uz-Cyrl": "биринчи ёрдам дафтари (кичик жароҳатлар ёзилади)",
+        "ru": "журнал первой помощи (учёт мелких травм)"
+      },
+      "pron": {
+        "uz": "das fer-bant-bux",
+        "uz-Cyrl": "дас фер-бант-бух",
+        "ru": "дас фер-бант-бух"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Auch einen kleinen Schnitt trage ich ins Verbandbuch ein.",
+        "tr": {
+          "uz": "Kichik kesilgan joyni ham birinchi yordam daftariga yozaman.",
+          "uz-Cyrl": "Кичик кесилган жойни ҳам биринчи ёрдам дафтарига ёзаман.",
+          "ru": "Даже небольшой порез я записываю в журнал первой помощи."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-gefahrstoff",
+      "slug": "gefahrstoff",
+      "term": "der Gefahrstoff",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Gefahrstoffe",
+      "tr": {
+        "uz": "xavfli modda",
+        "uz-Cyrl": "хавфли модда",
+        "ru": "опасное вещество"
+      },
+      "pron": {
+        "uz": "der ge-far-shtof",
+        "uz-Cyrl": "дер ге-фар-штоф",
+        "ru": "дер ге-фар-штоф"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Das Kühlmittel ist ein Gefahrstoff, tragen Sie Handschuhe.",
+        "tr": {
+          "uz": "Sovutish suyuqligi xavfli modda, qoʻlqop kiying.",
+          "uz-Cyrl": "Совутиш суюқлиги хавфли модда, қўлқоп кийинг.",
+          "ru": "Охлаждающая жидкость — опасное вещество, надевайте перчатки."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-sicherheitsdatenblatt",
+      "slug": "sicherheitsdatenblatt",
+      "term": "das Sicherheitsdatenblatt",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "die Sicherheitsdatenblätter",
+      "tr": {
+        "uz": "xavfsizlik maʼlumot varaqasi (modda haqida)",
+        "uz-Cyrl": "хавфсизлик маълумот варақаси (модда ҳақида)",
+        "ru": "паспорт безопасности (вещества)"
+      },
+      "pron": {
+        "uz": "das zi-xer-hayts-da-ten-blat",
+        "uz-Cyrl": "дас зи-хер-хайтс-да-тен-блат",
+        "ru": "дас зи-хер-хайтс-да-тен-блат"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Im Sicherheitsdatenblatt steht, was bei Hautkontakt zu tun ist.",
+        "tr": {
+          "uz": "Xavfsizlik maʼlumot varaqasida teriga tegsa nima qilish kerakligi yozilgan.",
+          "uz-Cyrl": "Хавфсизлик маълумот варақасида терига тегса нима қилиш кераклиги ёзилган.",
+          "ru": "В паспорте безопасности написано, что делать при попадании на кожу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-quetschgefahr",
+      "slug": "quetschgefahr",
+      "term": "die Quetschgefahr",
+      "icon": "hand-stop",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "qisib olish xavfi (qoʻl, barmoq)",
+        "uz-Cyrl": "қисиб олиш хавфи (қўл, бармоқ)",
+        "ru": "опасность защемления"
+      },
+      "pron": {
+        "uz": "die kvetsh-ge-far",
+        "uz-Cyrl": "ди квеч-ге-фар",
+        "ru": "ди квеч-ге-фар"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "An der Presse besteht Quetschgefahr für die Finger.",
+        "tr": {
+          "uz": "Pressda barmoqlarni qisib olish xavfi bor.",
+          "uz-Cyrl": "Прессда бармоқларни қисиб олиш хавфи бор.",
+          "ru": "У пресса есть опасность защемления пальцев."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-nicht-unter-schwebende-lasten-treten",
+      "slug": "nicht-unter-schwebende-lasten-treten",
+      "term": "Nicht unter schwebende Lasten treten!",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Osilib turgan yuk ostida turmang!",
+        "uz-Cyrl": "Осилиб турган юк остида турманг!",
+        "ru": "Не стойте под висящим грузом!"
+      },
+      "pron": {
+        "uz": "nixt un-ter shve-ben-de las-ten tre-ten",
+        "uz-Cyrl": "нихт ун-тер шве-бен-де лас-тен тре-тен",
+        "ru": "нихт ун-тер шве-бен-де лас-тен тре-тен"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Der Kran hebt gerade ein Teil. Nicht unter schwebende Lasten treten!",
+        "tr": {
+          "uz": "Kran hozir detal koʻtaryapti. Osilib turgan yuk ostida turmang!",
+          "uz-Cyrl": "Кран ҳозир детал кўтаряпти. Осилиб турган юк остида турманг!",
+          "ru": "Кран сейчас поднимает деталь. Не стойте под висящим грузом!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-arbeitssicherheit",
+      "slug": "arbeitssicherheit",
+      "term": "die Arbeitssicherheit",
+      "icon": "helmet",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "mehnat xavfsizligi",
+        "uz-Cyrl": "меҳнат хавфсизлиги",
+        "ru": "охрана труда, безопасность труда"
+      },
+      "pron": {
+        "uz": "die ar-bayts-zi-xer-hayt",
+        "uz-Cyrl": "ди ар-байтс-зи-хер-хайт",
+        "ru": "ди ар-байтс-зи-хер-хайт"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Bei uns hat Arbeitssicherheit Vorrang vor Tempo.",
+        "tr": {
+          "uz": "Bizda mehnat xavfsizligi tezlikdan muhimroq.",
+          "uz-Cyrl": "Бизда меҳнат хавфсизлиги тезликдан муҳимроқ.",
+          "ru": "У нас безопасность труда важнее скорости."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-hautschutz",
+      "slug": "hautschutz",
+      "term": "der Hautschutz",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "teri himoyasi (himoya kremi)",
+        "uz-Cyrl": "тери ҳимояси (ҳимоя креми)",
+        "ru": "защита кожи (защитный крем)"
+      },
+      "pron": {
+        "uz": "der haut-shuts",
+        "uz-Cyrl": "дер хаут-шуц",
+        "ru": "дер хаут-шуц"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Vor der Arbeit mit Öl nehme ich Hautschutz.",
+        "tr": {
+          "uz": "Moy bilan ishlashdan oldin teri himoya kremini surtaman.",
+          "uz-Cyrl": "Мой билан ишлашдан олдин тери ҳимоя кремини суртаман.",
+          "ru": "Перед работой с маслом я наношу защитный крем для кожи."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-absaugung",
+      "slug": "absaugung",
+      "term": "die Absaugung",
+      "icon": "power",
+      "article": "die",
+      "plural": "die Absaugungen",
+      "tr": {
+        "uz": "soʻrib oluvchi qurilma (chang, tutun)",
+        "uz-Cyrl": "сўриб олувчи қурилма (чанг, тутун)",
+        "ru": "вытяжка (пыли, дыма)"
+      },
+      "pron": {
+        "uz": "die ap-zau-gung",
+        "uz-Cyrl": "ди ап-зау-гунг",
+        "ru": "ди ап-зау-гунг"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Schalten Sie die Absaugung vor dem Schweißen ein.",
+        "tr": {
+          "uz": "Payvandlashdan oldin soʻrib oluvchi qurilmani yoqing.",
+          "uz-Cyrl": "Пайвандлашдан олдин сўриб олувчи қурилмани ёқинг.",
+          "ru": "Включите вытяжку перед сваркой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-verstoss",
+      "slug": "verstoss",
+      "term": "der Verstoß",
+      "icon": "alert-octagon",
+      "article": "der",
+      "plural": "die Verstöße",
+      "tr": {
+        "uz": "qoidabuzarlik",
+        "uz-Cyrl": "қоидабузарлик",
+        "ru": "нарушение (правил)"
+      },
+      "pron": {
+        "uz": "der fer-shtos",
+        "uz-Cyrl": "дер фер-штос",
+        "ru": "дер фер-штос"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Ohne Schutzbrille an der Schleifmaschine – das ist ein Verstoß.",
+        "tr": {
+          "uz": "Jilvirlash dastgohida himoya koʻzoynagisiz ishlash – bu qoidabuzarlik.",
+          "uz-Cyrl": "Жилвирлаш дастгоҳида ҳимоя кўзойнагисиз ишлаш – бу қоидабузарлик.",
+          "ru": "Без защитных очков у шлифовального станка – это нарушение."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-verpflichtend",
+      "slug": "verpflichtend",
+      "term": "verpflichtend",
+      "icon": "check",
+      "tr": {
+        "uz": "majburiy",
+        "uz-Cyrl": "мажбурий",
+        "ru": "обязательный"
+      },
+      "pron": {
+        "uz": "fer-pflix-tent",
+        "uz-Cyrl": "фер-пфлих-тент",
+        "ru": "фер-пфлих-тент"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Die Teilnahme an der Unterweisung ist verpflichtend.",
+        "tr": {
+          "uz": "Yoʻriqnomada qatnashish majburiy.",
+          "uz-Cyrl": "Йўриқномада қатнашиш мажбурий.",
+          "ru": "Участие в инструктаже обязательно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-vorschriftsmaessig",
+      "slug": "vorschriftsmaessig",
+      "term": "vorschriftsmäßig",
+      "icon": "check",
+      "tr": {
+        "uz": "qoidaga muvofiq",
+        "uz-Cyrl": "қоидага мувофиқ",
+        "ru": "по правилам, согласно предписаниям"
+      },
+      "pron": {
+        "uz": "for-shrifts-me-six",
+        "uz-Cyrl": "фор-шрифтс-ме-сих",
+        "ru": "фор-шрифтс-ме-сих"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Die Leiter ist nicht vorschriftsmäßig gesichert.",
+        "tr": {
+          "uz": "Narvon qoidaga muvofiq mahkamlanmagan.",
+          "uz-Cyrl": "Нарвон қоидага мувофиқ маҳкамланмаган.",
+          "ru": "Лестница закреплена не по правилам."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-xavfsizlik-yoriqnoma-was-mache-ich-im-notfall",
+      "slug": "was-mache-ich-im-notfall",
+      "term": "Was mache ich im Notfall?",
+      "icon": "help",
+      "tr": {
+        "uz": "Favqulodda holatda nima qilaman?",
+        "uz-Cyrl": "Фавқулодда ҳолатда нима қиламан?",
+        "ru": "Что мне делать в экстренной ситуации?"
+      },
+      "pron": {
+        "uz": "vas ma-xe ix im not-fal",
+        "uz-Cyrl": "вас ма-хе их им нот-фал",
+        "ru": "вас ма-хе их им нот-фал"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "industriemechaniker",
+        "zerspanungsmechaniker",
+        "metallbauer"
+      ],
+      "situation": "xavfsizlik-yoriqnoma",
+      "example": {
+        "term": "Was mache ich im Notfall? – Maschine stoppen und den Ersthelfer rufen.",
+        "tr": {
+          "uz": "Favqulodda holatda nima qilaman? – Dastgohni toʻxtatish va birinchi yordam koʻrsatuvchini chaqirish.",
+          "uz-Cyrl": "Фавқулодда ҳолатда нима қиламан? – Дастгоҳни тўхтатиш ва биринчи ёрдам кўрсатувчини чақириш.",
+          "ru": "Что мне делать в экстренной ситуации? – Остановить станок и позвать того, кто обучен первой помощи."
+        }
+      },
+      "safety": true,
       "status": "review",
       "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
     }
