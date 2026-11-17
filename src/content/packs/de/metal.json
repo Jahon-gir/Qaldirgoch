@@ -2296,6 +2296,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "mijoz-maslahat",
+      "title": {
+        "uz": "Avtoservis: mijozga tushuntirish",
+        "uz-Cyrl": "Автосервис: мижозга тушунтириш",
+        "ru": "Автосервис: объяснения клиенту"
+      },
+      "order": 14,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиент"
+            },
+            "de": "Hallo, ich möchte mein Auto zur Inspektion bringen. Bekomme ich einen Ersatzwagen?",
+            "tr": {
+              "uz": "Salom, mashinamni texnik xizmatga olib kelmoqchiman. Vaqtinchalik mashina berasizmi?",
+              "uz-Cyrl": "Салом, машинамни техник хизматга олиб келмоқчиман. Вақтинчалик машина берасизми?",
+              "ru": "Здравствуйте, я хочу сдать машину на техобслуживание. Мне дадут подменный автомобиль?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Guten Tag. Ja, für heute ist ein Ersatzwagen reserviert. Ich notiere noch den Kilometerstand.",
+            "tr": {
+              "uz": "Assalomu alaykum. Ha, bugunga vaqtinchalik mashina band qilingan. Yana probegni yozib qoʻyaman.",
+              "uz-Cyrl": "Ассалому алайкум. Ҳа, бугунга вақтинчалик машина банд қилинган. Яна пробегни ёзиб қўяман.",
+              "ru": "Добрый день. Да, на сегодня забронирован подменный автомобиль. Я ещё запишу пробег."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиент"
+            },
+            "de": "Gut. Und wenn Sie etwas Kaputtes finden, was passiert dann?",
+            "tr": {
+              "uz": "Yaxshi. Agar biror nosozlik topsangiz, unda nima boʻladi?",
+              "uz-Cyrl": "Яхши. Агар бирор носозлик топсангиз, унда нима бўлади?",
+              "ru": "Хорошо. А если вы найдёте неисправность, что тогда?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Dann rufe ich Sie an. Ohne Ihre Freigabe reparieren wir nichts.",
+            "tr": {
+              "uz": "Unda sizga qoʻngʻiroq qilaman. Sizning roziligingizsiz hech narsani taʼmirlamaymiz.",
+              "uz-Cyrl": "Унда сизга қўнғироқ қиламан. Сизнинг розилигингизсиз ҳеч нарсани таъмирламаймиз.",
+              "ru": "Тогда я вам позвоню. Без вашего согласия мы ничего не ремонтируем."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиент"
+            },
+            "de": "Die Bremsen quietschen manchmal. Wird das teuer?",
+            "tr": {
+              "uz": "Tormozlar baʼzan gʻichirlaydi. Bu qimmatga tushadimi?",
+              "uz-Cyrl": "Тормозлар баъзан ғичирлайди. Бу қимматга тушадими?",
+              "ru": "Тормоза иногда скрипят. Это будет дорого?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Die Bremsen prüfen wir genau. Einen Preis kann ich noch nicht nennen – das muss ich mit dem Meister klären.",
+            "tr": {
+              "uz": "Tormozlarni sinchiklab tekshiramiz. Narxini hozir ayta olmayman – buni usta bilan aniqlashtirishim kerak.",
+              "uz-Cyrl": "Тормозларни синчиклаб текширамиз. Нархини ҳозир айта олмайман – буни уста билан аниқлаштиришим керак.",
+              "ru": "Тормоза мы тщательно проверим. Цену пока назвать не могу – это нужно уточнить у мастера."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -11502,6 +11595,696 @@
       "safety": true,
       "status": "review",
       "source": "Claude yozdi (2026-11-16); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-garantie",
+      "slug": "garantie",
+      "term": "die Garantie",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Garantien",
+      "tr": {
+        "uz": "kafolat (ishlab chiqaruvchidan)",
+        "uz-Cyrl": "кафолат (ишлаб чиқарувчидан)",
+        "ru": "гарантия (от производителя)"
+      },
+      "pron": {
+        "uz": "di ga-ran-ti",
+        "uz-Cyrl": "ди га-ран-ти",
+        "ru": "ди га-ран-ти"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Für die neue Batterie gibt es eine Garantie vom Hersteller.",
+        "tr": {
+          "uz": "Yangi akkumulyatorga ishlab chiqaruvchidan kafolat bor.",
+          "uz-Cyrl": "Янги аккумуляторга ишлаб чиқарувчидан кафолат бор.",
+          "ru": "На новый аккумулятор есть гарантия производителя."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-gewaehrleistung",
+      "slug": "gewaehrleistung",
+      "term": "die Gewährleistung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "qonuniy kafolat (sotuvchi yoki ustaxonaning javobgarligi)",
+        "uz-Cyrl": "қонуний кафолат (сотувчи ёки устахонанинг жавобгарлиги)",
+        "ru": "гарантийная ответственность по закону (продавца или мастерской)"
+      },
+      "pron": {
+        "uz": "di ge-ver-lays-tung",
+        "uz-Cyrl": "ди ге-вер-лайс-тунг",
+        "ru": "ди ге-вер-лайс-тунг"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Ob das unter die Gewährleistung fällt, prüft der Meister.",
+        "tr": {
+          "uz": "Bu qonuniy kafolatga kiradimi – buni usta tekshiradi.",
+          "uz-Cyrl": "Бу қонуний кафолатга кирадими – буни уста текширади.",
+          "ru": "Подпадает ли это под гарантийную ответственность, проверит мастер."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-kulanz",
+      "slug": "kulanz",
+      "term": "die Kulanz",
+      "icon": "heart-handshake",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "yon berish (majburiy boʻlmagan, mijozga xayrixohlik)",
+        "uz-Cyrl": "ён бериш (мажбурий бўлмаган, мижозга хайрихоҳлик)",
+        "ru": "уступка клиенту (добровольно, сверх гарантии)"
+      },
+      "pron": {
+        "uz": "di ku-lants",
+        "uz-Cyrl": "ди ку-ланц",
+        "ru": "ди ку-ланц"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Ob es Kulanz gibt, entscheidet der Hersteller.",
+        "tr": {
+          "uz": "Yon berish boʻladimi – buni ishlab chiqaruvchi hal qiladi.",
+          "uz-Cyrl": "Ён бериш бўладими – буни ишлаб чиқарувчи ҳал қилади.",
+          "ru": "Будет ли уступка, решает производитель."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-auftragsbestaetigung",
+      "slug": "auftragsbestaetigung",
+      "term": "die Auftragsbestätigung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Auftragsbestätigungen",
+      "tr": {
+        "uz": "buyurtma tasdigʻi",
+        "uz-Cyrl": "буюртма тасдиғи",
+        "ru": "подтверждение заказа"
+      },
+      "pron": {
+        "uz": "di auf-traks-be-shte-ti-gung",
+        "uz-Cyrl": "ди ауф-тракс-бе-ште-ти-гунг",
+        "ru": "ди ауф-тракс-бе-ште-ти-гунг"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Bitte unterschreiben Sie die Auftragsbestätigung.",
+        "tr": {
+          "uz": "Iltimos, buyurtma tasdigʻiga imzo cheking.",
+          "uz-Cyrl": "Илтимос, буюртма тасдиғига имзо чекинг.",
+          "ru": "Пожалуйста, подпишите подтверждение заказа."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-mehrkosten",
+      "slug": "mehrkosten",
+      "term": "die Mehrkosten",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "qoʻshimcha xarajat",
+        "uz-Cyrl": "қўшимча харажат",
+        "ru": "дополнительные расходы"
+      },
+      "pron": {
+        "uz": "di mer-kos-ten",
+        "uz-Cyrl": "ди мер-кос-тен",
+        "ru": "ди мер-кос-тен"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Bei Mehrkosten rufen wir Sie vorher an.",
+        "tr": {
+          "uz": "Qoʻshimcha xarajat boʻlsa, sizga oldindan qoʻngʻiroq qilamiz.",
+          "uz-Cyrl": "Қўшимча харажат бўлса, сизга олдиндан қўнғироқ қиламиз.",
+          "ru": "При дополнительных расходах мы вам заранее позвоним."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-abholung",
+      "slug": "abholung",
+      "term": "die Abholung",
+      "icon": "key",
+      "article": "die",
+      "plural": "die Abholungen",
+      "tr": {
+        "uz": "(mashinani) olib ketish",
+        "uz-Cyrl": "(машинани) олиб кетиш",
+        "ru": "выдача автомобиля (клиент забирает)"
+      },
+      "pron": {
+        "uz": "di ap-ho-lung",
+        "uz-Cyrl": "ди ап-хо-лунг",
+        "ru": "ди ап-хо-лунг"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Die Abholung ist heute ab vier Uhr möglich.",
+        "tr": {
+          "uz": "Mashinani bugun soat toʻrtdan boshlab olib ketish mumkin.",
+          "uz-Cyrl": "Машинани бугун соат тўртдан бошлаб олиб кетиш мумкин.",
+          "ru": "Забрать машину можно сегодня с четырёх часов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-ersatzwagen",
+      "slug": "ersatzwagen",
+      "term": "der Ersatzwagen",
+      "icon": "car",
+      "article": "der",
+      "plural": "die Ersatzwagen",
+      "tr": {
+        "uz": "vaqtinchalik (oʻrinbosar) mashina",
+        "uz-Cyrl": "вақтинчалик (ўринбосар) машина",
+        "ru": "подменный автомобиль"
+      },
+      "pron": {
+        "uz": "der er-zats-va-gen",
+        "uz-Cyrl": "дер эр-зац-ва-ген",
+        "ru": "дер эр-зац-ва-ген"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Brauchen Sie einen Ersatzwagen für morgen?",
+        "tr": {
+          "uz": "Ertaga uchun vaqtinchalik mashina kerakmi?",
+          "uz-Cyrl": "Эртага учун вақтинчалик машина керакми?",
+          "ru": "Вам нужен подменный автомобиль на завтра?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-hauptuntersuchung",
+      "slug": "hauptuntersuchung",
+      "term": "die Hauptuntersuchung",
+      "icon": "eye",
+      "article": "die",
+      "plural": "die Hauptuntersuchungen",
+      "tr": {
+        "uz": "majburiy texnik koʻrik",
+        "uz-Cyrl": "мажбурий техник кўрик",
+        "ru": "обязательный техосмотр"
+      },
+      "pron": {
+        "uz": "di haupt-un-ter-zu-xung",
+        "uz-Cyrl": "ди хаупт-ун-тер-зу-хунг",
+        "ru": "ди хаупт-ун-тер-зу-хунг"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Ihr Auto muss bald zur Hauptuntersuchung.",
+        "tr": {
+          "uz": "Mashinangiz yaqinda majburiy texnik koʻrikdan oʻtishi kerak.",
+          "uz-Cyrl": "Машинангиз яқинда мажбурий техник кўрикдан ўтиши керак.",
+          "ru": "Вашей машине скоро нужно пройти обязательный техосмотр."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-plakette",
+      "slug": "plakette",
+      "term": "die Plakette",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Plaketten",
+      "tr": {
+        "uz": "koʻrik belgisi (raqamdagi stiker)",
+        "uz-Cyrl": "кўрик белгиси (рақамдаги стикер)",
+        "ru": "наклейка техосмотра (на номерном знаке)"
+      },
+      "pron": {
+        "uz": "di pla-ke-te",
+        "uz-Cyrl": "ди пла-ке-те",
+        "ru": "ди пла-ке-те"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Nach der Prüfung bekommt das Auto eine neue Plakette.",
+        "tr": {
+          "uz": "Tekshiruvdan keyin mashinaga yangi koʻrik belgisi yopishtiriladi.",
+          "uz-Cyrl": "Текширувдан кейин машинага янги кўрик белгиси ёпиштирилади.",
+          "ru": "После проверки на машину клеят новую наклейку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-mangel",
+      "slug": "mangel",
+      "term": "der Mangel",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Mängel",
+      "tr": {
+        "uz": "nuqson, kamchilik",
+        "uz-Cyrl": "нуқсон, камчилик",
+        "ru": "дефект, недостаток"
+      },
+      "pron": {
+        "uz": "der man-gel",
+        "uz-Cyrl": "дер ман-гел",
+        "ru": "дер ман-гел"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Bei der Prüfung wurde ein Mangel an der Beleuchtung gefunden.",
+        "tr": {
+          "uz": "Tekshiruvda chiroqlarda nuqson topildi.",
+          "uz-Cyrl": "Текширувда чироқларда нуқсон топилди.",
+          "ru": "При проверке нашли дефект освещения."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-verkehrssicher",
+      "slug": "verkehrssicher",
+      "term": "verkehrssicher",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "yoʻlda xavfsiz (harakatga yaroqli)",
+        "uz-Cyrl": "йўлда хавфсиз (ҳаракатга яроқли)",
+        "ru": "безопасный для движения"
+      },
+      "pron": {
+        "uz": "fer-kers-zi-xer",
+        "uz-Cyrl": "фер-керс-зи-хер",
+        "ru": "фер-керс-зи-хер"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Mit diesen Bremsen ist das Auto nicht verkehrssicher.",
+        "tr": {
+          "uz": "Bu tormozlar bilan mashina yoʻlda xavfsiz emas.",
+          "uz-Cyrl": "Бу тормозлар билан машина йўлда хавфсиз эмас.",
+          "ru": "С такими тормозами машина небезопасна для движения."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-verschlissen",
+      "slug": "verschlissen",
+      "term": "verschlissen",
+      "icon": "tools",
+      "tr": {
+        "uz": "yeyilgan, eskirgan",
+        "uz-Cyrl": "ейилган, эскирган",
+        "ru": "изношенный"
+      },
+      "pron": {
+        "uz": "fer-shli-sen",
+        "uz-Cyrl": "фер-шли-сен",
+        "ru": "фер-шли-сен"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Die Reifen sind stark verschlissen.",
+        "tr": {
+          "uz": "Shinalar qattiq yeyilgan.",
+          "uz-Cyrl": "Шиналар қаттиқ ейилган.",
+          "ru": "Шины сильно изношены."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-rueckrufaktion",
+      "slug": "rueckrufaktion",
+      "term": "die Rückrufaktion",
+      "icon": "repeat",
+      "article": "die",
+      "plural": "die Rückrufaktionen",
+      "tr": {
+        "uz": "chaqiruv aksiyasi (ishlab chiqaruvchi nosozlikni tuzatish uchun chaqiradi)",
+        "uz-Cyrl": "чақирув акцияси (ишлаб чиқарувчи носозликни тузатиш учун чақиради)",
+        "ru": "отзывная кампания (производитель вызывает для устранения дефекта)"
+      },
+      "pron": {
+        "uz": "di ryuk-ruf-ak-tsion",
+        "uz-Cyrl": "ди рюк-руф-ак-цион",
+        "ru": "ди рюк-руф-ак-цион"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Für Ihr Modell gibt es eine Rückrufaktion.",
+        "tr": {
+          "uz": "Sizning modelingiz uchun chaqiruv aksiyasi bor.",
+          "uz-Cyrl": "Сизнинг моделингиз учун чақирув акцияси бор.",
+          "ru": "Для вашей модели объявлена отзывная кампания."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-serviceheft",
+      "slug": "serviceheft",
+      "term": "das Serviceheft",
+      "icon": "book",
+      "article": "das",
+      "plural": "die Servicehefte",
+      "tr": {
+        "uz": "servis daftarchasi",
+        "uz-Cyrl": "сервис дафтарчаси",
+        "ru": "сервисная книжка"
+      },
+      "pron": {
+        "uz": "das zyor-vis-heft",
+        "uz-Cyrl": "дас зёр-вис-хефт",
+        "ru": "дас зёр-вис-хефт"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Wir tragen die Inspektion ins Serviceheft ein.",
+        "tr": {
+          "uz": "Texnik xizmatni servis daftarchasiga yozib qoʻyamiz.",
+          "uz-Cyrl": "Техник хизматни сервис дафтарчасига ёзиб қўямиз.",
+          "ru": "Мы впишем техобслуживание в сервисную книжку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-freigabe",
+      "slug": "freigabe",
+      "term": "die Freigabe",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Freigaben",
+      "tr": {
+        "uz": "ruxsat, rozilik (ishni boshlashga)",
+        "uz-Cyrl": "рухсат, розилик (ишни бошлашга)",
+        "ru": "разрешение, согласие (на работы)"
+      },
+      "pron": {
+        "uz": "di fray-ga-be",
+        "uz-Cyrl": "ди фрай-га-бе",
+        "ru": "ди фрай-га-бе"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Ohne Ihre Freigabe reparieren wir nichts.",
+        "tr": {
+          "uz": "Sizning roziligingizsiz hech narsani taʼmirlamaymiz.",
+          "uz-Cyrl": "Сизнинг розилигингизсиз ҳеч нарсани таъмирламаймиз.",
+          "ru": "Без вашего согласия мы ничего не ремонтируем."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-kilometerstand",
+      "slug": "kilometerstand",
+      "term": "der Kilometerstand",
+      "icon": "ruler",
+      "article": "der",
+      "plural": "die Kilometerstände",
+      "tr": {
+        "uz": "probeg (spidometrdagi masofa)",
+        "uz-Cyrl": "пробег (спидометрдаги масофа)",
+        "ru": "пробег (показание одометра)"
+      },
+      "pron": {
+        "uz": "der ki-lo-me-ter-shtant",
+        "uz-Cyrl": "дер ки-ло-ме-тер-штант",
+        "ru": "дер ки-ло-ме-тер-штант"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Ich notiere den Kilometerstand bei der Annahme.",
+        "tr": {
+          "uz": "Qabul qilishda probegni yozib qoʻyaman.",
+          "uz-Cyrl": "Қабул қилишда пробегни ёзиб қўяман.",
+          "ru": "При приёмке я записываю пробег."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-fahrzeugannahme",
+      "slug": "fahrzeugannahme",
+      "term": "die Fahrzeugannahme",
+      "icon": "door-enter",
+      "article": "die",
+      "plural": "die Fahrzeugannahmen",
+      "tr": {
+        "uz": "mashinani qabul qilish (servisda)",
+        "uz-Cyrl": "машинани қабул қилиш (сервисда)",
+        "ru": "приёмка автомобиля (в сервисе)"
+      },
+      "pron": {
+        "uz": "di far-tsoyk-an-na-me",
+        "uz-Cyrl": "ди фар-цойк-ан-на-ме",
+        "ru": "ди фар-цойк-ан-на-ме"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Die Fahrzeugannahme ist vorne links.",
+        "tr": {
+          "uz": "Mashina qabul qilinadigan joy oldinda, chap tomonda.",
+          "uz-Cyrl": "Машина қабул қилинадиган жой олдинда, чап томонда.",
+          "ru": "Приёмка автомобилей впереди слева."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-darf-ich-das-reparieren",
+      "slug": "darf-ich-das-reparieren",
+      "term": "Darf ich das reparieren?",
+      "icon": "tools",
+      "tr": {
+        "uz": "Buni taʼmirlashga ruxsat berasizmi?",
+        "uz-Cyrl": "Буни таъмирлашга рухсат берасизми?",
+        "ru": "Можно мне это отремонтировать?"
+      },
+      "pron": {
+        "uz": "darf ix das re-pa-ri-ren",
+        "uz-Cyrl": "дарф их дас ре-па-ри-рен",
+        "ru": "дарф их дас ре-па-ри-рен"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Die Bremsscheibe ist verschlissen. Darf ich das reparieren?",
+        "tr": {
+          "uz": "Tormoz diski yeyilgan. Buni taʼmirlashga ruxsat berasizmi?",
+          "uz-Cyrl": "Тормоз диски ейилган. Буни таъмирлашга рухсат берасизми?",
+          "ru": "Тормозной диск изношен. Можно мне это отремонтировать?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-das-muss-ich-mit-dem-meister-klaeren",
+      "slug": "das-muss-ich-mit-dem-meister-klaeren",
+      "term": "Das muss ich mit dem Meister klären.",
+      "icon": "messages",
+      "tr": {
+        "uz": "Buni usta bilan aniqlashtirishim kerak.",
+        "uz-Cyrl": "Буни уста билан аниқлаштиришим керак.",
+        "ru": "Это мне нужно уточнить у мастера."
+      },
+      "pron": {
+        "uz": "das mus ix mit dem may-ster kle-ren",
+        "uz-Cyrl": "дас мус их мит дем май-стер кле-рен",
+        "ru": "дас мус их мит дем май-стер кле-рен"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Was kostet das? – Das muss ich mit dem Meister klären.",
+        "tr": {
+          "uz": "Bu qancha turadi? – Buni usta bilan aniqlashtirishim kerak.",
+          "uz-Cyrl": "Бу қанча туради? – Буни уста билан аниқлаштиришим керак.",
+          "ru": "Сколько это стоит? – Это мне нужно уточнить у мастера."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "metal-mijoz-maslahat-ihr-auto-ist-fertig",
+      "slug": "ihr-auto-ist-fertig",
+      "term": "Ihr Auto ist fertig.",
+      "icon": "key",
+      "tr": {
+        "uz": "Mashinangiz tayyor.",
+        "uz-Cyrl": "Машинангиз тайёр.",
+        "ru": "Ваша машина готова."
+      },
+      "pron": {
+        "uz": "ir au-to ist fer-tix",
+        "uz-Cyrl": "ир ау-то ист фер-тих",
+        "ru": "ир ау-то ист фер-тих"
+      },
+      "level": "B1",
+      "field": "metal",
+      "jobs": [
+        "kfz-mechatroniker"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Guten Tag, Frau Weber, Ihr Auto ist fertig.",
+        "tr": {
+          "uz": "Assalomu alaykum, Veber xonim, mashinangiz tayyor.",
+          "uz-Cyrl": "Ассалому алайкум, Вебер хоним, машинангиз тайёр.",
+          "ru": "Добрый день, госпожа Вебер, ваша машина готова."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
