@@ -2388,6 +2388,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиент"
+            },
+            "de": "Guten Tag, ich möchte mein Auto abholen. Ist alles fertig?",
+            "tr": {
+              "uz": "Assalomu alaykum, mashinamni olib ketmoqchiman. Hammasi tayyormi?",
+              "uz-Cyrl": "Ассалому алайкум, машинамни олиб кетмоқчиман. Ҳаммаси тайёрми?",
+              "ru": "Добрый день, я хочу забрать машину. Всё готово?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, Ihr Auto ist fertig. Die Bremsen haben wir nach Ihrer Freigabe repariert.",
+            "tr": {
+              "uz": "Ha, mashinangiz tayyor. Tormozlarni sizning roziligingizdan keyin taʼmirladik.",
+              "uz-Cyrl": "Ҳа, машинангиз тайёр. Тормозларни сизнинг розилигингиздан кейин таъмирладик.",
+              "ru": "Да, ваша машина готова. Тормоза мы отремонтировали после вашего согласия."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиент"
+            },
+            "de": "Danke. Muss ich sonst noch etwas wissen?",
+            "tr": {
+              "uz": "Rahmat. Yana biror narsani bilishim kerakmi?",
+              "uz-Cyrl": "Раҳмат. Яна бирор нарсани билишим керакми?",
+              "ru": "Спасибо. Мне ещё что-то нужно знать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, im Sommer ist die Hauptuntersuchung fällig. Das steht auch im Serviceheft.",
+            "tr": {
+              "uz": "Ha, yozda majburiy texnik koʻrik muddati keladi. Bu servis daftarchasida ham yozilgan.",
+              "uz-Cyrl": "Ҳа, ёзда мажбурий техник кўрик муддати келади. Бу сервис дафтарчасида ҳам ёзилган.",
+              "ru": "Да, летом подходит срок обязательного техосмотра. Это указано и в сервисной книжке."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mijoz",
+              "uz-Cyrl": "Мижоз",
+              "ru": "Клиент"
+            },
+            "de": "Gut zu wissen. Und für mein Modell gibt es eine Rückrufaktion – wann kann ich dafür kommen?",
+            "tr": {
+              "uz": "Bilganim yaxshi boʻldi. Mening modelim uchun chaqiruv aksiyasi bor – buning uchun qachon kelsam boʻladi?",
+              "uz-Cyrl": "Билганим яхши бўлди. Менинг моделим учун чақирув акцияси бор – бунинг учун қачон келсам бўлади?",
+              "ru": "Хорошо, что знаю. А для моей модели есть отзывная кампания – когда мне прийти?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Für die Rückrufaktion brauchen wir ein Teil vom Hersteller. Ich kläre den Termin mit dem Meister und rufe Sie an.",
+            "tr": {
+              "uz": "Chaqiruv aksiyasi uchun ishlab chiqaruvchidan detal kerak. Vaqtini usta bilan aniqlashtirib, sizga qoʻngʻiroq qilaman.",
+              "uz-Cyrl": "Чақирув акцияси учун ишлаб чиқарувчидан детал керак. Вақтини уста билан аниқлаштириб, сизга қўнғироқ қиламан.",
+              "ru": "Для отзывной кампании нам нужна деталь от производителя. Я уточню время у мастера и вам позвоню."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
