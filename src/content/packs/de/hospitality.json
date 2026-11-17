@@ -2120,6 +2120,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "shikoyat",
+      "title": {
+        "uz": "Mehmon shikoyati va uni hal qilish",
+        "uz-Cyrl": "Меҳмон шикояти ва уни ҳал қилиш",
+        "ru": "Жалоба гостя и её решение"
+      },
+      "order": 13,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Mehmon",
+              "uz-Cyrl": "Меҳмон",
+              "ru": "Гость"
+            },
+            "de": "Entschuldigung, mein Schnitzel ist nur lauwarm, und das Fleisch ist ziemlich zäh.",
+            "tr": {
+              "uz": "Kechirasiz, shnitselim faqat iliq, goʻshti ham ancha qattiq.",
+              "uz-Cyrl": "Кечирасиз, шницелим фақат илиқ, гўшти ҳам анча қаттиқ.",
+              "ru": "Извините, мой шницель едва тёплый, и мясо довольно жёсткое."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Das tut mir sehr leid. Ich kann das Schnitzel natürlich austauschen.",
+            "tr": {
+              "uz": "Bundan juda afsusdaman. Albatta, shnitselni almashtirib berishim mumkin.",
+              "uz-Cyrl": "Бундан жуда афсусдаман. Албатта, шницелни алмаштириб беришим мумкин.",
+              "ru": "Мне очень жаль. Конечно, я могу заменить шницель."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mehmon",
+              "uz-Cyrl": "Меҳмон",
+              "ru": "Гость"
+            },
+            "de": "Nein, danke. Ich warte schon so lange und habe jetzt keine Zeit mehr.",
+            "tr": {
+              "uz": "Yoʻq, rahmat. Shuncha vaqtdan beri kutyapman, endi vaqtim yoʻq.",
+              "uz-Cyrl": "Йўқ, раҳмат. Шунча вақтдан бери кутяпман, энди вақтим йўқ.",
+              "ru": "Нет, спасибо. Я и так долго жду, и времени больше нет."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Verstehe. Darf ich Ihnen dann etwas Schnelles anbieten, zum Beispiel eine Suppe?",
+            "tr": {
+              "uz": "Tushunaman. Unda sizga tez tayyor boʻladigan narsa, masalan, shoʻrva taklif qilsam boʻladimi?",
+              "uz-Cyrl": "Тушунаман. Унда сизга тез тайёр бўладиган нарса, масалан, шўрва таклиф қилсам бўладими?",
+              "ru": "Понимаю. Тогда могу предложить вам что-нибудь быстрое, например суп?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mehmon",
+              "uz-Cyrl": "Меҳмон",
+              "ru": "Гость"
+            },
+            "de": "Eine Suppe ist gut. Aber das Schnitzel bezahle ich nicht.",
+            "tr": {
+              "uz": "Shoʻrva boʻlaveradi. Lekin shnitsel uchun pul toʻlamayman.",
+              "uz-Cyrl": "Шўрва бўлаверади. Лекин шницель учун пул тўламайман.",
+              "ru": "Суп подойдёт. Но за шницель я платить не буду."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Über das Schnitzel auf der Rechnung entscheidet der Restaurantleiter. Ich hole ihn sofort.",
+            "tr": {
+              "uz": "Hisobdagi shnitsel haqida restoran boshqaruvchisi qaror qiladi. Uni hozir chaqiraman.",
+              "uz-Cyrl": "Ҳисобдаги шницель ҳақида ресторан бошқарувчиси қарор қилади. Уни ҳозир чақираман.",
+              "ru": "О шницеле в счёте решает управляющий рестораном. Я сейчас его позову."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -10408,6 +10501,700 @@
       "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-sich-beschweren",
+      "slug": "sich-beschweren",
+      "term": "sich beschweren",
+      "icon": "mood-sad",
+      "tr": {
+        "uz": "shikoyat qilmoq",
+        "uz-Cyrl": "шикоят қилмоқ",
+        "ru": "жаловаться"
+      },
+      "pron": {
+        "uz": "zix be-shve-ren",
+        "uz-Cyrl": "зих бе-шве-рен",
+        "ru": "зих бе-шве-рен"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Der Gast am Tisch fünf möchte sich beschweren.",
+        "tr": {
+          "uz": "Beshinchi stoldagi mehmon shikoyat qilmoqchi.",
+          "uz-Cyrl": "Бешинчи столдаги меҳмон шикоят қилмоқчи.",
+          "ru": "Гость за пятым столом хочет пожаловаться."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-geschaeftsfuehrung",
+      "slug": "geschaeftsfuehrung",
+      "term": "die Geschäftsführung",
+      "icon": "building",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "rahbariyat (restoran yoki mehmonxona boshqaruvi)",
+        "uz-Cyrl": "раҳбарият (ресторан ёки меҳмонхона бошқаруви)",
+        "ru": "руководство"
+      },
+      "pron": {
+        "uz": "die ge-shefts-fyu-rung",
+        "uz-Cyrl": "ди ге-шефтс-фю-рунг",
+        "ru": "ди ге-шефтс-фю-рунг"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Über einen Preisnachlass entscheidet die Geschäftsführung, nicht ich.",
+        "tr": {
+          "uz": "Narxni tushirish haqida men emas, rahbariyat qaror qiladi.",
+          "uz-Cyrl": "Нархни тушириш ҳақида мен эмас, раҳбарият қарор қилади.",
+          "ru": "О скидке решает руководство, а не я."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-restaurantleiter",
+      "slug": "restaurantleiter",
+      "term": "der Restaurantleiter",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Restaurantleiter",
+      "tr": {
+        "uz": "restoran boshqaruvchisi",
+        "uz-Cyrl": "ресторан бошқарувчиси",
+        "ru": "управляющий рестораном"
+      },
+      "pron": {
+        "uz": "der res-to-rang-lay-ter",
+        "uz-Cyrl": "дер рес-то-ранг-лай-тер",
+        "ru": "дер рес-то-ранг-лай-тер"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Bei einer Beschwerde rufe ich den Restaurantleiter.",
+        "tr": {
+          "uz": "Shikoyat boʻlsa, restoran boshqaruvchisini chaqiraman.",
+          "uz-Cyrl": "Шикоят бўлса, ресторан бошқарувчисини чақираман.",
+          "ru": "При жалобе я зову управляющего рестораном."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-anbieten",
+      "slug": "anbieten",
+      "term": "anbieten",
+      "icon": "heart-handshake",
+      "tr": {
+        "uz": "taklif qilmoq",
+        "uz-Cyrl": "таклиф қилмоқ",
+        "ru": "предлагать"
+      },
+      "pron": {
+        "uz": "an-bi-ten",
+        "uz-Cyrl": "ан-би-тен",
+        "ru": "ан-би-тен"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Ich kann Ihnen gern ein anderes Gericht anbieten.",
+        "tr": {
+          "uz": "Sizga boshqa taom taklif qilishim mumkin.",
+          "uz-Cyrl": "Сизга бошқа таом таклиф қилишим мумкин.",
+          "ru": "Я могу предложить вам другое блюдо."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-das-tut-mir-sehr-leid",
+      "slug": "das-tut-mir-sehr-leid",
+      "term": "Das tut mir sehr leid.",
+      "icon": "mood-sad",
+      "tr": {
+        "uz": "Bundan juda afsusdaman.",
+        "uz-Cyrl": "Бундан жуда афсусдаман.",
+        "ru": "Мне очень жаль."
+      },
+      "pron": {
+        "uz": "das tut mir zer layt",
+        "uz-Cyrl": "дас тут мир зер лайт",
+        "ru": "дас тут мир зер лайт"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Das tut mir sehr leid. Ich bringe Ihnen sofort ein neues Glas.",
+        "tr": {
+          "uz": "Bundan juda afsusdaman. Hozir sizga yangi stakan olib kelaman.",
+          "uz-Cyrl": "Бундан жуда афсусдаман. Ҳозир сизга янги стакан олиб келаман.",
+          "ru": "Мне очень жаль. Сейчас принесу вам новый бокал."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-wartezeit",
+      "slug": "wartezeit",
+      "term": "die Wartezeit",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Wartezeiten",
+      "tr": {
+        "uz": "kutish vaqti",
+        "uz-Cyrl": "кутиш вақти",
+        "ru": "время ожидания"
+      },
+      "pron": {
+        "uz": "die var-te-tsayt",
+        "uz-Cyrl": "ди вар-те-цайт",
+        "ru": "ди вар-те-цайт"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Am Samstag ist die Wartezeit in der Küche länger.",
+        "tr": {
+          "uz": "Shanba kuni oshxonada kutish vaqti uzoqroq.",
+          "uz-Cyrl": "Шанба куни ошхонада кутиш вақти узоқроқ.",
+          "ru": "В субботу время ожидания на кухне дольше."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-lauwarm",
+      "slug": "lauwarm",
+      "term": "lauwarm",
+      "icon": "thermometer",
+      "tr": {
+        "uz": "iliq (yetarlicha issiq emas)",
+        "uz-Cyrl": "илиқ (етарлича иссиқ эмас)",
+        "ru": "чуть тёплый"
+      },
+      "pron": {
+        "uz": "lau-varm",
+        "uz-Cyrl": "лау-варм",
+        "ru": "лау-варм"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Der Gast sagt, die Suppe ist nur lauwarm.",
+        "tr": {
+          "uz": "Mehmon shoʻrva faqat iliq ekanini aytyapti.",
+          "uz-Cyrl": "Меҳмон шўрва фақат илиқ эканини айтяпти.",
+          "ru": "Гость говорит, что суп едва тёплый."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-zaeh",
+      "slug": "zaeh",
+      "term": "zäh",
+      "icon": "meat",
+      "tr": {
+        "uz": "qattiq (chaynash qiyin)",
+        "uz-Cyrl": "қаттиқ (чайнаш қийин)",
+        "ru": "жёсткий (о мясе)"
+      },
+      "pron": {
+        "uz": "tse",
+        "uz-Cyrl": "це",
+        "ru": "це"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Das Steak ist leider zäh.",
+        "tr": {
+          "uz": "Steyk, afsuski, qattiq.",
+          "uz-Cyrl": "Стейк, афсуски, қаттиқ.",
+          "ru": "Стейк, к сожалению, жёсткий."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-versalzen",
+      "slug": "versalzen",
+      "term": "versalzen",
+      "icon": "soup",
+      "tr": {
+        "uz": "juda shoʻr (tuzi koʻp)",
+        "uz-Cyrl": "жуда шўр (тузи кўп)",
+        "ru": "пересоленный"
+      },
+      "pron": {
+        "uz": "fer-zal-tsen",
+        "uz-Cyrl": "фер-зал-цен",
+        "ru": "фер-зал-цен"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Der Gast findet die Soße versalzen.",
+        "tr": {
+          "uz": "Mehmon sousni juda shoʻr deyapti.",
+          "uz-Cyrl": "Меҳмон соусни жуда шўр деяпти.",
+          "ru": "Гость считает соус пересоленным."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-reklamieren",
+      "slug": "reklamieren",
+      "term": "reklamieren",
+      "icon": "receipt",
+      "tr": {
+        "uz": "eʼtiroz bildirib qaytarmoq (taom yoki xizmat boʻyicha)",
+        "uz-Cyrl": "эътироз билдириб қайтармоқ (таом ёки хизмат бўйича)",
+        "ru": "предъявлять претензию (вернуть блюдо)"
+      },
+      "pron": {
+        "uz": "rek-la-mi-ren",
+        "uz-Cyrl": "рек-ла-ми-рен",
+        "ru": "рек-ла-ми-рен"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Der Gast möchte das Steak reklamieren.",
+        "tr": {
+          "uz": "Mehmon steyk boʻyicha eʼtiroz bildirib, uni qaytarmoqchi.",
+          "uz-Cyrl": "Меҳмон стейк бўйича эътироз билдириб, уни қайтармоқчи.",
+          "ru": "Гость хочет вернуть стейк с претензией."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-missverstaendnis",
+      "slug": "missverstaendnis",
+      "term": "das Missverständnis",
+      "icon": "help",
+      "article": "das",
+      "plural": "die Missverständnisse",
+      "tr": {
+        "uz": "tushunmovchilik",
+        "uz-Cyrl": "тушунмовчилик",
+        "ru": "недоразумение"
+      },
+      "pron": {
+        "uz": "das mis-fer-shtend-nis",
+        "uz-Cyrl": "дас мис-фер-штенд-нис",
+        "ru": "дас мис-фер-штенд-нис"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Das war ein Missverständnis bei der Bestellung.",
+        "tr": {
+          "uz": "Bu buyurtmadagi tushunmovchilik edi.",
+          "uz-Cyrl": "Бу буюртмадаги тушунмовчилик эди.",
+          "ru": "Это было недоразумение с заказом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-verwechslung",
+      "slug": "verwechslung",
+      "term": "die Verwechslung",
+      "icon": "repeat",
+      "article": "die",
+      "plural": "die Verwechslungen",
+      "tr": {
+        "uz": "adashtirib yuborish",
+        "uz-Cyrl": "адаштириб юбориш",
+        "ru": "путаница"
+      },
+      "pron": {
+        "uz": "die fer-vek-slung",
+        "uz-Cyrl": "ди фер-век-слунг",
+        "ru": "ди фер-век-слунг"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Es gab eine Verwechslung: Sie haben das Gericht von Tisch vier bekommen.",
+        "tr": {
+          "uz": "Adashtirib yuborilgan: sizga toʻrtinchi stolning taomi kelgan.",
+          "uz-Cyrl": "Адаштириб юборилган: сизга тўртинчи столнинг таоми келган.",
+          "ru": "Произошла путаница: вам принесли блюдо с четвёртого стола."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-sich-entschuldigen",
+      "slug": "sich-entschuldigen",
+      "term": "sich entschuldigen",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "uzr soʻramoq",
+        "uz-Cyrl": "узр сўрамоқ",
+        "ru": "извиняться"
+      },
+      "pron": {
+        "uz": "zix ent-shul-di-gen",
+        "uz-Cyrl": "зих энт-шул-ди-ген",
+        "ru": "зих энт-шул-ди-ген"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Ich möchte mich im Namen des Teams entschuldigen.",
+        "tr": {
+          "uz": "Jamoa nomidan uzr soʻramoqchiman.",
+          "uz-Cyrl": "Жамоа номидан узр сўрамоқчиман.",
+          "ru": "Я хочу извиниться от имени команды."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-kritik",
+      "slug": "kritik",
+      "term": "die Kritik",
+      "icon": "message-circle",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "tanqid",
+        "uz-Cyrl": "танқид",
+        "ru": "критика"
+      },
+      "pron": {
+        "uz": "die kri-tik",
+        "uz-Cyrl": "ди кри-тик",
+        "ru": "ди кри-тик"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Danke für Ihre Kritik, ich gebe sie an die Küche weiter.",
+        "tr": {
+          "uz": "Tanqidingiz uchun rahmat, uni oshxonaga yetkazaman.",
+          "uz-Cyrl": "Танқидингиз учун раҳмат, уни ошхонага етказаман.",
+          "ru": "Спасибо за критику, я передам её на кухню."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-hoeflich",
+      "slug": "hoeflich",
+      "term": "höflich",
+      "icon": "mood-smile",
+      "tr": {
+        "uz": "xushmuomala, odobli",
+        "uz-Cyrl": "хушмуомала, одобли",
+        "ru": "вежливый"
+      },
+      "pron": {
+        "uz": "hyof-lix",
+        "uz-Cyrl": "хёф-лих",
+        "ru": "хёф-лих"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Auch wenn der Gast laut wird, bleiben wir höflich.",
+        "tr": {
+          "uz": "Mehmon ovozini koʻtarsa ham, biz xushmuomala qolamiz.",
+          "uz-Cyrl": "Меҳмон овозини кўтарса ҳам, биз хушмуомала қоламиз.",
+          "ru": "Даже если гость повышает голос, мы остаёмся вежливыми."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-ruhig",
+      "slug": "ruhig",
+      "term": "ruhig",
+      "icon": "wave-sine",
+      "tr": {
+        "uz": "xotirjam, sokin",
+        "uz-Cyrl": "хотиржам, сокин",
+        "ru": "спокойный, спокойно"
+      },
+      "pron": {
+        "uz": "ru-ix",
+        "uz-Cyrl": "ру-их",
+        "ru": "ру-их"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Hören Sie dem Gast ruhig zu.",
+        "tr": {
+          "uz": "Mehmonni xotirjam tinglang.",
+          "uz-Cyrl": "Меҳмонни хотиржам тингланг.",
+          "ru": "Спокойно выслушайте гостя."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-unzufrieden",
+      "slug": "unzufrieden",
+      "term": "unzufrieden",
+      "icon": "mood-sad",
+      "tr": {
+        "uz": "norozi",
+        "uz-Cyrl": "норози",
+        "ru": "недовольный"
+      },
+      "pron": {
+        "uz": "un-tsu-fri-den",
+        "uz-Cyrl": "ун-цу-фри-ден",
+        "ru": "ун-цу-фри-ден"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Der Gast ist mit dem Service unzufrieden.",
+        "tr": {
+          "uz": "Mehmon xizmatdan norozi.",
+          "uz-Cyrl": "Меҳмон хизматдан норози.",
+          "ru": "Гость недоволен обслуживанием."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-fremdkoerper",
+      "slug": "fremdkoerper",
+      "term": "der Fremdkörper",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Fremdkörper",
+      "tr": {
+        "uz": "ovqatdagi begona narsa (soch, shisha boʻlagi va h.k.)",
+        "uz-Cyrl": "овқатдаги бегона нарса (соч, шиша бўлаги ва ҳ.к.)",
+        "ru": "посторонний предмет (в еде)"
+      },
+      "pron": {
+        "uz": "der fremt-kyor-per",
+        "uz-Cyrl": "дер фремт-кёр-пер",
+        "ru": "дер фремт-кёр-пер"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Im Salat war ein Fremdkörper. Der Teller geht sofort zurück in die Küche.",
+        "tr": {
+          "uz": "Salatda begona narsa bor edi. Likopcha darhol oshxonaga qaytariladi.",
+          "uz-Cyrl": "Салатда бегона нарса бор эди. Ликопча дарҳол ошхонага қайтарилади.",
+          "ru": "В салате был посторонний предмет. Тарелка сразу возвращается на кухню."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-ich-klaere-das-mit-der-kueche",
+      "slug": "ich-klaere-das-mit-der-kueche",
+      "term": "Ich kläre das mit der Küche.",
+      "icon": "chef-hat",
+      "tr": {
+        "uz": "Buni oshxona bilan aniqlayman.",
+        "uz-Cyrl": "Буни ошхона билан аниқлайман.",
+        "ru": "Я выясню это с кухней."
+      },
+      "pron": {
+        "uz": "ix kle-re das mit der kyu-xe",
+        "uz-Cyrl": "их кле-ре дас мит дер кю-хе",
+        "ru": "их кле-ре дас мит дер кю-хе"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Ich kläre das mit der Küche und komme gleich zurück.",
+        "tr": {
+          "uz": "Buni oshxona bilan aniqlab, hozir qaytib kelaman.",
+          "uz-Cyrl": "Буни ошхона билан аниқлаб, ҳозир қайтиб келаман.",
+          "ru": "Я выясню это с кухней и сейчас вернусь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "hospitality-shikoyat-austauschen",
+      "slug": "austauschen",
+      "term": "austauschen",
+      "icon": "repeat",
+      "tr": {
+        "uz": "almashtirmoq",
+        "uz-Cyrl": "алмаштирмоқ",
+        "ru": "заменять"
+      },
+      "pron": {
+        "uz": "aus-tau-shen",
+        "uz-Cyrl": "аус-тау-шен",
+        "ru": "аус-тау-шен"
+      },
+      "level": "B1",
+      "field": "hospitality",
+      "jobs": [
+        "gastronomieservice",
+        "koch"
+      ],
+      "situation": "shikoyat",
+      "example": {
+        "term": "Wir können das Gericht natürlich austauschen.",
+        "tr": {
+          "uz": "Albatta, taomni almashtirib berishimiz mumkin.",
+          "uz-Cyrl": "Албатта, таомни алмаштириб беришимиз мумкин.",
+          "ru": "Конечно, мы можем заменить блюдо."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-17); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
