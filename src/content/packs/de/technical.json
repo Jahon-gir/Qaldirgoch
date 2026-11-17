@@ -2212,6 +2212,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Prorab",
+              "uz-Cyrl": "Прораб",
+              "ru": "Прораб"
+            },
+            "de": "Morgen ist die Abnahme im ersten Bauabschnitt. Ist dort alles fertig?",
+            "tr": {
+              "uz": "Ertaga birinchi qismda ishni qabul qilish boʻladi. U yerda hammasi tayyormi?",
+              "uz-Cyrl": "Эртага биринчи қисмда ишни қабул қилиш бўлади. У ерда ҳаммаси тайёрми?",
+              "ru": "Завтра приёмка на первом участке. Там всё готово?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Fast. In zwei Bädern fehlen noch die Abdeckungen der Steckdosen.",
+            "tr": {
+              "uz": "Deyarli. Ikkita hammomda hali rozetka qopqoqlari yoʻq.",
+              "uz-Cyrl": "Деярли. Иккита ҳаммомда ҳали розетка қопқоқлари йўқ.",
+              "ru": "Почти. В двух ванных ещё нет крышек на розетках."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Prorab",
+              "uz-Cyrl": "Прораб",
+              "ru": "Прораб"
+            },
+            "de": "Und die Gefahrenstelle am Treppenhaus – ist die gesichert?",
+            "tr": {
+              "uz": "Zinapoya yonidagi xavfli joy-chi — u himoyalanganmi?",
+              "uz-Cyrl": "Зинапоя ёнидаги хавфли жой-чи — у ҳимояланганми?",
+              "ru": "А опасное место у лестницы — оно огорожено?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, das Loch ist abgesperrt und mit einem Warnschild markiert.",
+            "tr": {
+              "uz": "Ha, tuynuk toʻsib qoʻyilgan va ogohlantirish belgisi bilan belgilangan.",
+              "uz-Cyrl": "Ҳа, туйнук тўсиб қўйилган ва огоҳлантириш белгиси билан белгиланган.",
+              "ru": "Да, проём огорожен и отмечен предупреждающим знаком."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Prorab",
+              "uz-Cyrl": "Прораб",
+              "ru": "Прораб"
+            },
+            "de": "Gut. Der Bauherr hat außerdem Risse im Flur gesehen. Kommen die von unserer Arbeit?",
+            "tr": {
+              "uz": "Yaxshi. Buyurtmachi koridorda yoriqlarni ham koʻribdi. Ular bizning ishimizdanmi?",
+              "uz-Cyrl": "Яхши. Буюртмачи коридорда ёриқларни ҳам кўрибди. Улар бизнинг ишимизданми?",
+              "ru": "Хорошо. Заказчик ещё заметил трещины в коридоре. Это от нашей работы?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, die Risse im Flur waren schon vorher da. Im Bautagebuch gibt es Fotos von letzter Woche.",
+            "tr": {
+              "uz": "Yoʻq, koridordagi yoriqlar oldin ham bor edi. Qurilish kundaligida oʻtgan haftadagi suratlar bor.",
+              "uz-Cyrl": "Йўқ, коридордаги ёриқлар олдин ҳам бор эди. Қурилиш кундалигида ўтган ҳафтадаги суратлар бор.",
+              "ru": "Нет, трещины в коридоре были и раньше. В строительном журнале есть фото с прошлой недели."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
