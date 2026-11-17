@@ -2388,6 +2388,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Bosh oshpaz oʻrinbosari",
+              "uz-Cyrl": "Бош ошпаз ўринбосари",
+              "ru": "Су-шеф"
+            },
+            "de": "Ich übernehme jetzt die Küche. Wie weit ist die Vorbereitung für morgen?",
+            "tr": {
+              "uz": "Endi oshxonani men qabul qilaman. Ertangi tayyorgarlik qay holatda?",
+              "uz-Cyrl": "Энди ошхонани мен қабул қиламан. Эртанги тайёргарлик қай ҳолатда?",
+              "ru": "Теперь кухню принимаю я. Как там подготовка на завтра?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Das Gemüse ist geschnitten. Die Sahne ist fast leer, die Bestellung ist schon raus.",
+            "tr": {
+              "uz": "Sabzavotlar toʻgʻralgan. Qaymoq deyarli tugadi, buyurtma allaqachon yuborilgan.",
+              "uz-Cyrl": "Сабзавотлар тўғралган. Қаймоқ деярли тугади, буюртма аллақачон юборилган.",
+              "ru": "Овощи нарезаны. Сливки почти закончились, заказ уже отправлен."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Bosh oshpaz oʻrinbosari",
+              "uz-Cyrl": "Бош ошпаз ўринбосари",
+              "ru": "Су-шеф"
+            },
+            "de": "Gut. Morgen sind wir unterbesetzt, die Aushilfe kommt nicht. Kannst du früher anfangen?",
+            "tr": {
+              "uz": "Yaxshi. Ertaga xodim kam, vaqtincha yordamchi kelmaydi. Ertaroq boshlay olasanmi?",
+              "uz-Cyrl": "Яхши. Эртага ходим кам, вақтинча ёрдамчи келмайди. Эртароқ бошлай оласанми?",
+              "ru": "Хорошо. Завтра у нас не хватает людей, помощник не придёт. Сможешь начать раньше?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, das geht. Ich kann eine Stunde früher kommen.",
+            "tr": {
+              "uz": "Ha, boʻladi. Bir soat erta kela olaman.",
+              "uz-Cyrl": "Ҳа, бўлади. Бир соат эрта кела оламан.",
+              "ru": "Да, получится. Могу прийти на час раньше."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Bosh oshpaz oʻrinbosari",
+              "uz-Cyrl": "Бош ошпаз ўринбосари",
+              "ru": "Су-шеф"
+            },
+            "de": "Danke. Noch etwas: Die Gästezahl für die Feier am Freitag hat sich geändert, es kommen mehr Leute.",
+            "tr": {
+              "uz": "Rahmat. Yana bir narsa: juma kungi bazmga mehmonlar soni oʻzgardi, koʻproq odam keladi.",
+              "uz-Cyrl": "Раҳмат. Яна бир нарса: жума кунги базмга меҳмонлар сони ўзгарди, кўпроқ одам келади.",
+              "ru": "Спасибо. И ещё: количество гостей на празднике в пятницу изменилось, придёт больше людей."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Dann schreibe ich die neue Gästezahl für den Küchenchef auf den Übergabezettel.",
+            "tr": {
+              "uz": "Unda yangi mehmonlar sonini bosh oshpaz uchun topshirish varagʻiga yozib qoʻyaman.",
+              "uz-Cyrl": "Унда янги меҳмонлар сонини бош ошпаз учун топшириш варағига ёзиб қўяман.",
+              "ru": "Тогда запишу новое количество гостей для шеф-повара в лист передачи смены."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
