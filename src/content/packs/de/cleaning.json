@@ -2388,6 +2388,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Bino xizmatchisi",
+              "uz-Cyrl": "Бино хизматчиси",
+              "ru": "Завхоз"
+            },
+            "de": "Guten Abend. Ist die Sonderreinigung im Saal fertig?",
+            "tr": {
+              "uz": "Xayrli kech. Zaldagi maxsus tozalash tugadimi?",
+              "uz-Cyrl": "Хайрли кеч. Залдаги махсус тозалаш тугадими?",
+              "ru": "Добрый вечер. Внеплановая уборка в зале закончена?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, der Saal ist fertig. Hier ist das Übergabeprotokoll.",
+            "tr": {
+              "uz": "Ha, zal tayyor. Mana topshirish dalolatnomasi.",
+              "uz-Cyrl": "Ҳа, зал тайёр. Мана топшириш далолатномаси.",
+              "ru": "Да, зал готов. Вот протокол передачи."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Bino xizmatchisi",
+              "uz-Cyrl": "Бино хизматчиси",
+              "ru": "Завхоз"
+            },
+            "de": "Danke, ich zeichne es gleich ab. Brauchen Sie noch etwas für morgen?",
+            "tr": {
+              "uz": "Rahmat, hozir imzolab beraman. Ertaga uchun yana biror narsa kerakmi?",
+              "uz-Cyrl": "Раҳмат, ҳозир имзолаб бераман. Эртага учун яна бирор нарса керакми?",
+              "ru": "Спасибо, сейчас подпишу. Вам что-нибудь нужно на завтра?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, es fehlen Müllsäcke. Der Vorrat reicht nur noch für heute.",
+            "tr": {
+              "uz": "Ha, axlat xaltalari yetishmayapti. Zaxira faqat bugunga yetadi.",
+              "uz-Cyrl": "Ҳа, ахлат халталари етишмаяпти. Захира фақат бугунга етади.",
+              "ru": "Да, не хватает мешков для мусора. Запаса хватит только на сегодня."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Bino xizmatchisi",
+              "uz-Cyrl": "Бино хизматчиси",
+              "ru": "Завхоз"
+            },
+            "de": "Gut, die kommen auf die Materialbestellung. Und was ist mit dem Schlüssel für den Saal?",
+            "tr": {
+              "uz": "Yaxshi, ularni material buyurtmasiga yozaman. Zal kaliti-chi?",
+              "uz-Cyrl": "Яхши, уларни материал буюртмасига ёзаман. Зал калити-чи?",
+              "ru": "Хорошо, внесу их в заказ материалов. А что с ключом от зала?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Den Saalschlüssel gebe ich Ihnen jetzt. Die Schlüsselübergabe steht auch im Protokoll.",
+            "tr": {
+              "uz": "Zal kalitini hozir sizga beraman. Kalit topshirilgani dalolatnomada ham yozilgan.",
+              "uz-Cyrl": "Зал калитини ҳозир сизга бераман. Калит топширилгани далолатномада ҳам ёзилган.",
+              "ru": "Ключ от зала отдаю вам сейчас. Передача ключа тоже записана в протоколе."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
