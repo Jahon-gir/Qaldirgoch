@@ -2212,6 +2212,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "In der Besprechung war es so laut. Was ist die Entscheidung zum Pausenplan?",
+            "tr": {
+              "uz": "Yigʻilishda juda shovqin edi. Tanaffus rejasi boʻyicha qanday qaror qabul qilindi?",
+              "uz-Cyrl": "Йиғилишда жуда шовқин эди. Танаффус режаси бўйича қандай қарор қабул қилинди?",
+              "ru": "На совещании было так шумно. Какое решение приняли по графику перерывов?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wir haben abgestimmt: Die Mehrheit ist für die neue Pausenzeit.",
+            "tr": {
+              "uz": "Ovoz berdik: koʻpchilik yangi tanaffus vaqti tarafdori.",
+              "uz-Cyrl": "Овоз бердик: кўпчилик янги танаффус вақти тарафдори.",
+              "ru": "Мы проголосовали: большинство за новое время перерыва."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Und ab wann gilt das?",
+            "tr": {
+              "uz": "Bu qachondan kuchga kiradi?",
+              "uz-Cyrl": "Бу қачондан кучга киради?",
+              "ru": "А с какого дня это действует?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ab nächstem Montag. Die Zusammenfassung hängt im Pausenraum.",
+            "tr": {
+              "uz": "Kelasi dushanbadan. Qisqa xulosa dam olish xonasida osilgan.",
+              "uz-Cyrl": "Келаси душанбадан. Қисқа хулоса дам олиш хонасида осилган.",
+              "ru": "Со следующего понедельника. Краткий итог висит в комнате отдыха."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Ich sehe das anders. Dann hat die Frühschicht vor zehn Uhr keine Pause.",
+            "tr": {
+              "uz": "Men buni boshqacha koʻraman. Unda ertalabki smenada soat oʻngacha tanaffus boʻlmaydi.",
+              "uz-Cyrl": "Мен буни бошқача кўраман. Унда эрталабки сменада соат ўнгача танаффус бўлмайди.",
+              "ru": "Я вижу это иначе. Тогда у утренней смены до десяти часов не будет перерыва."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Sag das am besten der Teamleiterin. Sie sammelt bis Freitag noch Vorschläge.",
+            "tr": {
+              "uz": "Buni jamoa rahbariga aytganing maʼqul. U juma kunigacha yana takliflar yigʻadi.",
+              "uz-Cyrl": "Буни жамоа раҳбарига айтганинг маъқул. У жума кунигача яна таклифлар йиғади.",
+              "ru": "Лучше скажи это руководителю группы. Она до пятницы ещё собирает предложения."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
