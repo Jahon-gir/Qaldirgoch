@@ -2296,6 +2296,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "hayvon-hisoboti",
+      "title": {
+        "uz": "Hayvonlar holati haqida hisobot va veterinar bilan gaplashish",
+        "uz-Cyrl": "Ҳайвонлар ҳолати ҳақида ҳисобот ва ветеринар билан гаплашиш",
+        "ru": "Отчёт о состоянии животных и разговор с ветеринаром"
+      },
+      "order": 14,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Veterinar",
+              "uz-Cyrl": "Ветеринар",
+              "ru": "Ветеринар"
+            },
+            "de": "Tierarztpraxis, guten Tag. Was ist bei Ihnen im Stall los?",
+            "tr": {
+              "uz": "Veterinariya klinikasi, xayrli kun. Ogʻilingizda nima boʻldi?",
+              "uz-Cyrl": "Ветеринария клиникаси, хайрли кун. Оғилингизда нима бўлди?",
+              "ru": "Ветеринарная клиника, добрый день. Что у вас случилось в коровнике?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Guten Tag, ich rufe vom Hof Krause an. Eine Kuh ist seit heute Morgen auffällig ruhig und frisst nicht.",
+            "tr": {
+              "uz": "Xayrli kun, Krauze fermasidan qoʻngʻiroq qilyapman. Bir sigir bugun ertalabdan beri gʻalati darajada jim va yemayapti.",
+              "uz-Cyrl": "Хайрли кун, Краузе фермасидан қўнғироқ қиляпман. Бир сигир бугун эрталабдан бери ғалати даражада жим ва емаяпти.",
+              "ru": "Добрый день, звоню с фермы Краузе. Одна корова с утра необычно спокойная и не ест."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Veterinar",
+              "uz-Cyrl": "Ветеринар",
+              "ru": "Ветеринар"
+            },
+            "de": "Haben Sie schon Fieber gemessen? Wie ist die Körpertemperatur?",
+            "tr": {
+              "uz": "Haroratini oʻlchadingizmi? Tana harorati qanday?",
+              "uz-Cyrl": "Ҳароратини ўлчадингизми? Тана ҳарорати қандай?",
+              "ru": "Вы уже измерили температуру? Какая температура тела?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, das Thermometer zeigt Fieber. Den Wert habe ich im Bestandsbuch notiert.",
+            "tr": {
+              "uz": "Ha, termometr isitma koʻrsatyapti. Qiymatini hayvonlar hisobi daftariga yozib qoʻydim.",
+              "uz-Cyrl": "Ҳа, термометр иситма кўрсатяпти. Қийматини ҳайвонлар ҳисоби дафтарига ёзиб қўйдим.",
+              "ru": "Да, термометр показывает температуру. Значение записано в книгу учёта животных."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Veterinar",
+              "uz-Cyrl": "Ветеринар",
+              "ru": "Ветеринар"
+            },
+            "de": "Gut. Bringen Sie die Kuh bitte in die Isolierbox und geben Sie ihr noch kein Medikament. Ich komme in einer Stunde.",
+            "tr": {
+              "uz": "Yaxshi. Iltimos, sigirni alohida boksga olib boring va hali dori bermang. Bir soatdan keyin yetib boraman.",
+              "uz-Cyrl": "Яхши. Илтимос, сигирни алоҳида боксга олиб боринг ва ҳали дори берманг. Бир соатдан кейин етиб бораман.",
+              "ru": "Хорошо. Переведите, пожалуйста, корову в изолятор и пока не давайте ей лекарств. Я приеду через час."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "In Ordnung, ich bringe sie sofort in die Isolierbox und warte mit dem Medikament auf Sie.",
+            "tr": {
+              "uz": "Xoʻp, uni darhol alohida boksga olib boraman va dori uchun sizni kutaman.",
+              "uz-Cyrl": "Хўп, уни дарҳол алоҳида боксга олиб бораман ва дори учун сизни кутаман.",
+              "ru": "Хорошо, сразу переведу её в изолятор и с лекарством подожду вас."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -11425,6 +11518,714 @@
           "uz": "Faqat shikastlanmagan mevalar birinchi sinfga tushadi.",
           "uz-Cyrl": "Фақат шикастланмаган мевалар биринчи синфга тушади.",
           "ru": "Только неповреждённые плоды идут в первый класс."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-bestandsbuch",
+      "slug": "bestandsbuch",
+      "term": "das Bestandsbuch",
+      "icon": "book",
+      "article": "das",
+      "plural": "die Bestandsbücher",
+      "tr": {
+        "uz": "hayvonlar hisobi daftari",
+        "uz-Cyrl": "ҳайвонлар ҳисоби дафтари",
+        "ru": "книга учёта животных"
+      },
+      "pron": {
+        "uz": "das be-shtants-bux",
+        "uz-Cyrl": "дас бе-штанц-бух",
+        "ru": "дас бе-штанц-бух"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Jede neue Kuh tragen wir ins Bestandsbuch ein.",
+        "tr": {
+          "uz": "Har bir yangi sigirni hayvonlar hisobi daftariga yozamiz.",
+          "uz-Cyrl": "Ҳар бир янги сигирни ҳайвонлар ҳисоби дафтарига ёзамиз.",
+          "ru": "Каждую новую корову мы записываем в книгу учёта животных."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-behandlungsplan",
+      "slug": "behandlungsplan",
+      "term": "der Behandlungsplan",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Behandlungspläne",
+      "tr": {
+        "uz": "davolash rejasi",
+        "uz-Cyrl": "даволаш режаси",
+        "ru": "план лечения"
+      },
+      "pron": {
+        "uz": "der be-hand-lungs-plan",
+        "uz-Cyrl": "дер бе-ханд-лунгс-план",
+        "ru": "дер бе-ханд-лунгс-план"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Der Tierarzt hat einen Behandlungsplan für das Kalb geschrieben.",
+        "tr": {
+          "uz": "Veterinar buzoq uchun davolash rejasini yozdi.",
+          "uz-Cyrl": "Ветеринар бузоқ учун даволаш режасини ёзди.",
+          "ru": "Ветеринар написал план лечения для телёнка."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-absetzfrist",
+      "slug": "absetzfrist",
+      "term": "die Absetzfrist",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Absetzfristen",
+      "tr": {
+        "uz": "dori berilgandan keyingi kutish muddati (sut va goʻsht ishlatilmaydi)",
+        "uz-Cyrl": "дори берилгандан кейинги кутиш муддати (сут ва гўшт ишлатилмайди)",
+        "ru": "срок ожидания после лечения (молоко и мясо не используются)"
+      },
+      "pron": {
+        "uz": "die ap-zets-frist",
+        "uz-Cyrl": "ди ап-зец-фрист",
+        "ru": "ди ап-зец-фрист"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Während der Absetzfrist darf die Milch nicht in den Tank.",
+        "tr": {
+          "uz": "Kutish muddati davomida sut tankga quyilmaydi.",
+          "uz-Cyrl": "Кутиш муддати давомида сут танкга қуйилмайди.",
+          "ru": "Во время срока ожидания молоко нельзя сливать в танк."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-koerpertemperatur",
+      "slug": "koerpertemperatur",
+      "term": "die Körpertemperatur",
+      "icon": "thermometer",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "tana harorati",
+        "uz-Cyrl": "тана ҳарорати",
+        "ru": "температура тела"
+      },
+      "pron": {
+        "uz": "die kyor-per-tem-pe-ra-tur",
+        "uz-Cyrl": "ди кёр-пер-тем-пе-ра-тур",
+        "ru": "ди кёр-пер-тем-пе-ра-тур"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Die Körpertemperatur messen wir mit dem Thermometer.",
+        "tr": {
+          "uz": "Tana haroratini termometr bilan oʻlchaymiz.",
+          "uz-Cyrl": "Тана ҳароратини термометр билан ўлчаймиз.",
+          "ru": "Температуру тела мы измеряем термометром."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-fieber-messen",
+      "slug": "fieber-messen",
+      "term": "Fieber messen",
+      "icon": "thermometer",
+      "tr": {
+        "uz": "haroratni oʻlchamoq",
+        "uz-Cyrl": "ҳароратни ўлчамоқ",
+        "ru": "измерять температуру"
+      },
+      "pron": {
+        "uz": "fi-ber me-sen",
+        "uz-Cyrl": "фи-бер ме-сен",
+        "ru": "фи-бер ме-сен"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Kannst du bei der Kuh in Box drei Fieber messen?",
+        "tr": {
+          "uz": "Uchinchi boksdagi sigirning haroratini oʻlchay olasanmi?",
+          "uz-Cyrl": "Учинчи боксдаги сигирнинг ҳароратини ўлчай оласанми?",
+          "ru": "Можешь измерить температуру у коровы в третьем боксе?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-lahmheit",
+      "slug": "lahmheit",
+      "term": "die Lahmheit",
+      "icon": "paw",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "oqsoqlik",
+        "uz-Cyrl": "оқсоқлик",
+        "ru": "хромота"
+      },
+      "pron": {
+        "uz": "die lam-hayt",
+        "uz-Cyrl": "ди лам-хайт",
+        "ru": "ди лам-хайт"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Bei der Kuh sehe ich eine Lahmheit am linken Hinterbein.",
+        "tr": {
+          "uz": "Sigirning chap orqa oyogʻida oqsoqlik koʻryapman.",
+          "uz-Cyrl": "Сигирнинг чап орқа оёғида оқсоқлик кўряпман.",
+          "ru": "У коровы я вижу хромоту на левую заднюю ногу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-appetitlosigkeit",
+      "slug": "appetitlosigkeit",
+      "term": "die Appetitlosigkeit",
+      "icon": "mood-sad",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "ishtaha yoʻqligi",
+        "uz-Cyrl": "иштаҳа йўқлиги",
+        "ru": "отсутствие аппетита"
+      },
+      "pron": {
+        "uz": "die a-pe-tit-lo-zix-kayt",
+        "uz-Cyrl": "ди а-пе-тит-ло-зих-кайт",
+        "ru": "ди а-пе-тит-ло-зих-кайт"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Appetitlosigkeit kann ein erstes Zeichen für eine Krankheit sein.",
+        "tr": {
+          "uz": "Ishtaha yoʻqligi kasallikning birinchi belgisi boʻlishi mumkin.",
+          "uz-Cyrl": "Иштаҳа йўқлиги касалликнинг биринчи белгиси бўлиши мумкин.",
+          "ru": "Отсутствие аппетита может быть первым признаком болезни."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-brunst",
+      "slug": "brunst",
+      "term": "die Brunst",
+      "icon": "calendar-event",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "kuyga kelish (sigirda)",
+        "uz-Cyrl": "куйга келиш (сигирда)",
+        "ru": "охота (у коровы)"
+      },
+      "pron": {
+        "uz": "die brunst",
+        "uz-Cyrl": "ди брунст",
+        "ru": "ди брунст"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Die Kuh ist unruhig, vielleicht ist sie in der Brunst.",
+        "tr": {
+          "uz": "Sigir bezovta, balki kuyga kelgandir.",
+          "uz-Cyrl": "Сигир безовта, балки куйга келгандир.",
+          "ru": "Корова беспокойная, возможно, у неё охота."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-isolierbox",
+      "slug": "isolierbox",
+      "term": "die Isolierbox",
+      "icon": "square",
+      "article": "die",
+      "plural": "die Isolierboxen",
+      "tr": {
+        "uz": "alohida boks (kasal hayvon uchun)",
+        "uz-Cyrl": "алоҳида бокс (касал ҳайвон учун)",
+        "ru": "изолятор (бокс для больного животного)"
+      },
+      "pron": {
+        "uz": "die i-zo-lir-boks",
+        "uz-Cyrl": "ди и-зо-лир-бокс",
+        "ru": "ди и-зо-лир-бокс"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Das kranke Kalb kommt in die Isolierbox.",
+        "tr": {
+          "uz": "Kasal buzoq alohida boksga olinadi.",
+          "uz-Cyrl": "Касал бузоқ алоҳида боксга олинади.",
+          "ru": "Больного телёнка переводят в изолятор."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-tierseuche",
+      "slug": "tierseuche",
+      "term": "die Tierseuche",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Tierseuchen",
+      "tr": {
+        "uz": "hayvonlarning yuqumli kasalligi",
+        "uz-Cyrl": "ҳайвонларнинг юқумли касаллиги",
+        "ru": "заразная болезнь животных"
+      },
+      "pron": {
+        "uz": "die tir-zoy-xe",
+        "uz-Cyrl": "ди тир-зой-хе",
+        "ru": "ди тир-зой-хе"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Eine Tierseuche kann sich schnell im ganzen Stall verbreiten.",
+        "tr": {
+          "uz": "Hayvonlarning yuqumli kasalligi butun ogʻilga tez tarqalishi mumkin.",
+          "uz-Cyrl": "Ҳайвонларнинг юқумли касаллиги бутун оғилга тез тарқалиши мумкин.",
+          "ru": "Заразная болезнь животных может быстро распространиться по всему коровнику."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-hygieneschleuse",
+      "slug": "hygieneschleuse",
+      "term": "die Hygieneschleuse",
+      "icon": "door-enter",
+      "article": "die",
+      "plural": "die Hygieneschleusen",
+      "tr": {
+        "uz": "gigiyena xonasi (kiyim almashtirish va dezinfeksiya)",
+        "uz-Cyrl": "гигиена хонаси (кийим алмаштириш ва дезинфекция)",
+        "ru": "санпропускник"
+      },
+      "pron": {
+        "uz": "die hyu-gi-e-ne-shloy-ze",
+        "uz-Cyrl": "ди хю-ги-е-не-шлой-зе",
+        "ru": "ди хю-ги-е-не-шлой-зе"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Vor dem Stall ziehen wir uns in der Hygieneschleuse um.",
+        "tr": {
+          "uz": "Ogʻilga kirishdan oldin gigiyena xonasida kiyim almashtiramiz.",
+          "uz-Cyrl": "Оғилга киришдан олдин гигиена хонасида кийим алмаштирамиз.",
+          "ru": "Перед входом в коровник мы переодеваемся в санпропускнике."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-kadaver",
+      "slug": "kadaver",
+      "term": "der Kadaver",
+      "icon": "alert-octagon",
+      "article": "der",
+      "plural": "die Kadaver",
+      "tr": {
+        "uz": "oʻlgan hayvon tanasi",
+        "uz-Cyrl": "ўлган ҳайвон танаси",
+        "ru": "труп животного"
+      },
+      "pron": {
+        "uz": "der ka-da-ver",
+        "uz-Cyrl": "дер ка-да-вер",
+        "ru": "дер ка-да-вер"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Einen Kadaver fassen wir nur mit Handschuhen an.",
+        "tr": {
+          "uz": "Oʻlgan hayvon tanasini faqat qoʻlqop bilan ushlaymiz.",
+          "uz-Cyrl": "Ўлган ҳайвон танасини фақат қўлқоп билан ушлаймиз.",
+          "ru": "Труп животного мы трогаем только в перчатках."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-tierkennzeichnung",
+      "slug": "tierkennzeichnung",
+      "term": "die Tierkennzeichnung",
+      "icon": "id",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "hayvonlarni belgilash (birka bilan)",
+        "uz-Cyrl": "ҳайвонларни белгилаш (бирка билан)",
+        "ru": "маркировка животных"
+      },
+      "pron": {
+        "uz": "die tir-ken-tsayx-nung",
+        "uz-Cyrl": "ди тир-кен-цайх-нунг",
+        "ru": "ди тир-кен-цайх-нунг"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Zur Tierkennzeichnung bekommt das Kalb Ohrmarken.",
+        "tr": {
+          "uz": "Belgilash uchun buzoqqa quloq birkalari taqiladi.",
+          "uz-Cyrl": "Белгилаш учун бузоққа қулоқ биркалари тақилади.",
+          "ru": "Для маркировки телёнку ставят ушные бирки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-auffaellig",
+      "slug": "auffaellig",
+      "term": "auffällig",
+      "icon": "eye",
+      "tr": {
+        "uz": "gʻalati, eʼtiborni tortadigan",
+        "uz-Cyrl": "ғалати, эътиборни тортадиган",
+        "ru": "необычный, подозрительный"
+      },
+      "pron": {
+        "uz": "auf-fe-lix",
+        "uz-Cyrl": "ауф-фе-лих",
+        "ru": "ауф-фе-лих"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Die Kuh in Box fünf ist heute auffällig ruhig.",
+        "tr": {
+          "uz": "Beshinchi boksdagi sigir bugun gʻalati darajada jim.",
+          "uz-Cyrl": "Бешинчи боксдаги сигир бугун ғалати даражада жим.",
+          "ru": "Корова в пятом боксе сегодня необычно спокойная."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-absondern",
+      "slug": "absondern",
+      "term": "absondern",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "ajratib qoʻymoq",
+        "uz-Cyrl": "ажратиб қўймоқ",
+        "ru": "отделять (изолировать)"
+      },
+      "pron": {
+        "uz": "ap-zon-dern",
+        "uz-Cyrl": "ап-зон-дерн",
+        "ru": "ап-зон-дерн"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Wir müssen das kranke Tier von der Herde absondern.",
+        "tr": {
+          "uz": "Kasal hayvonni podadan ajratib qoʻyishimiz kerak.",
+          "uz-Cyrl": "Касал ҳайвонни подадан ажратиб қўйишимиз керак.",
+          "ru": "Нам нужно отделить больное животное от стада."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-meldepflicht",
+      "slug": "meldepflicht",
+      "term": "die Meldepflicht",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Meldepflichten",
+      "tr": {
+        "uz": "xabar berish majburiyati",
+        "uz-Cyrl": "хабар бериш мажбурияти",
+        "ru": "обязанность сообщать"
+      },
+      "pron": {
+        "uz": "die mel-de-pflixt",
+        "uz-Cyrl": "ди мель-де-пфлихт",
+        "ru": "ди мель-де-пфлихт"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Bei manchen Tierseuchen gibt es eine Meldepflicht.",
+        "tr": {
+          "uz": "Baʼzi yuqumli hayvon kasalliklari haqida xabar berish majburiy.",
+          "uz-Cyrl": "Баъзи юқумли ҳайвон касалликлари ҳақида хабар бериш мажбурий.",
+          "ru": "О некоторых заразных болезнях животных обязательно нужно сообщать."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-seit-wann-frisst-die-kuh-nicht",
+      "slug": "seit-wann-frisst-die-kuh-nicht",
+      "term": "Seit wann frisst die Kuh nicht?",
+      "icon": "help",
+      "tr": {
+        "uz": "Sigir qachondan beri yemayapti?",
+        "uz-Cyrl": "Сигир қачондан бери емаяпти?",
+        "ru": "С каких пор корова не ест?"
+      },
+      "pron": {
+        "uz": "zayt van frist di ku nixt",
+        "uz-Cyrl": "зайт ван фрист ди ку нихт",
+        "ru": "зайт ван фрист ди ку нихт"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Seit wann frisst die Kuh nicht? Seit gestern Abend.",
+        "tr": {
+          "uz": "Sigir qachondan beri yemayapti? Kecha kechqurundan beri.",
+          "uz-Cyrl": "Сигир қачондан бери емаяпти? Кеча кечқурундан бери.",
+          "ru": "С каких пор корова не ест? Со вчерашнего вечера."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-soll-ich-den-tierarzt-anrufen",
+      "slug": "soll-ich-den-tierarzt-anrufen",
+      "term": "Soll ich den Tierarzt anrufen?",
+      "icon": "phone",
+      "tr": {
+        "uz": "Veterinarga qoʻngʻiroq qilaymi?",
+        "uz-Cyrl": "Ветеринарга қўнғироқ қилайми?",
+        "ru": "Мне позвонить ветеринару?"
+      },
+      "pron": {
+        "uz": "zol ix den tir-artst an-ru-fen",
+        "uz-Cyrl": "зол их ден тир-арцт ан-ру-фен",
+        "ru": "зол их ден тир-арцт ан-ру-фен"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Das Kalb hat Fieber. Soll ich den Tierarzt anrufen?",
+        "tr": {
+          "uz": "Buzoqning isitmasi bor. Veterinarga qoʻngʻiroq qilaymi?",
+          "uz-Cyrl": "Бузоқнинг иситмаси бор. Ветеринарга қўнғироқ қилайми?",
+          "ru": "У телёнка температура. Мне позвонить ветеринару?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-das-entscheidet-der-tierarzt",
+      "slug": "das-entscheidet-der-tierarzt",
+      "term": "Das entscheidet der Tierarzt.",
+      "icon": "stethoscope",
+      "tr": {
+        "uz": "Buni veterinar hal qiladi.",
+        "uz-Cyrl": "Буни ветеринар ҳал қилади.",
+        "ru": "Это решает ветеринар."
+      },
+      "pron": {
+        "uz": "das ent-shay-det der tir-artst",
+        "uz-Cyrl": "дас ент-шай-дет дер тир-арцт",
+        "ru": "дас ент-шай-дет дер тир-арцт"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Wie viel Medikament die Kuh bekommt, das entscheidet der Tierarzt.",
+        "tr": {
+          "uz": "Sigirga qancha dori berilishini veterinar hal qiladi.",
+          "uz-Cyrl": "Сигирга қанча дори берилишини ветеринар ҳал қилади.",
+          "ru": "Сколько лекарства получит корова, решает ветеринар."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-hayvon-hisoboti-gesundheitszustand",
+      "slug": "gesundheitszustand",
+      "term": "der Gesundheitszustand",
+      "icon": "heartbeat",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "sogʻliq holati",
+        "uz-Cyrl": "соғлиқ ҳолати",
+        "ru": "состояние здоровья"
+      },
+      "pron": {
+        "uz": "der ge-zunt-hayts-tsu-shtant",
+        "uz-Cyrl": "дер ге-зунт-хайтс-цу-штант",
+        "ru": "дер ге-зунт-хайтс-цу-штант"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "tierwirt",
+        "landwirt"
+      ],
+      "situation": "hayvon-hisoboti",
+      "example": {
+        "term": "Den Gesundheitszustand der Kälber schreibe ich jeden Morgen auf.",
+        "tr": {
+          "uz": "Buzoqlarning sogʻliq holatini har tong yozib boraman.",
+          "uz-Cyrl": "Бузоқларнинг соғлиқ ҳолатини ҳар тонг ёзиб бораман.",
+          "ru": "Каждое утро я записываю состояние здоровья телят."
         }
       },
       "safety": false,
