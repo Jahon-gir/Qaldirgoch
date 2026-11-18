@@ -2120,6 +2120,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "mavsum-yoriqnoma",
+      "title": {
+        "uz": "Mavsumiy ish: yoʻriqnoma va ish hisoboti",
+        "uz-Cyrl": "Мавсумий иш: йўриқнома ва иш ҳисоботи",
+        "ru": "Сезонная работа: инструктаж и учёт работы"
+      },
+      "order": 13,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Vor dem ersten Einsatz machen wir die Arbeitsschutzunterweisung. Haben Sie Ihre Schutzausrüstung dabei?",
+            "tr": {
+              "uz": "Birinchi ishdan oldin mehnat xavfsizligi yoʻriqnomasini oʻtkazamiz. Himoya jihozlaringiz yoningizdami?",
+              "uz-Cyrl": "Биринчи ишдан олдин меҳнат хавфсизлиги йўриқномасини ўтказамиз. Ҳимоя жиҳозларингиз ёнингиздами?",
+              "ru": "Перед первой сменой проведём инструктаж по охране труда. Средства защиты у вас с собой?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, Handschuhe und Hut habe ich. Brauche ich noch etwas gegen die Sonne?",
+            "tr": {
+              "uz": "Ha, qoʻlqop va shlyapam bor. Quyoshdan yana biror narsa kerakmi?",
+              "uz-Cyrl": "Ҳа, қўлқоп ва шляпам бор. Қуёшдан яна бирор нарса керакми?",
+              "ru": "Да, перчатки и шляпа есть. Нужно ли ещё что-то от солнца?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Ja, bitte benutzen Sie Sonnenschutz. Bei großer Hitze machen wir mittags eine Hitzepause im Schatten.",
+            "tr": {
+              "uz": "Ha, iltimos, quyoshdan himoya vositasidan foydalaning. Qattiq issiqda tushda soyada tanaffus qilamiz.",
+              "uz-Cyrl": "Ҳа, илтимос, қуёшдан ҳимоя воситасидан фойдаланинг. Қаттиқ иссиқда тушда сояда танаффус қиламиз.",
+              "ru": "Да, пожалуйста, пользуйтесь защитой от солнца. В сильную жару в полдень мы делаем перерыв в тени."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut. Und wenn mir in der Hitze schwindelig wird, sage ich Ihnen sofort Bescheid.",
+            "tr": {
+              "uz": "Yaxshi. Agar issiqda boshim aylansa, sizga darhol aytaman.",
+              "uz-Cyrl": "Яхши. Агар иссиқда бошим айланса, сизга дарҳол айтаман.",
+              "ru": "Хорошо. Если в жару у меня закружится голова, я сразу вам скажу."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Genau. Noch etwas: Das Feld am Wald ist frisch gespritzt. Dort gilt eine Wartezeit.",
+            "tr": {
+              "uz": "Toʻgʻri. Yana bir narsa: oʻrmon yonidagi dalaga hozirgina dori sepilgan. U yerda kutish muddati bor.",
+              "uz-Cyrl": "Тўғри. Яна бир нарса: ўрмон ёнидаги далага ҳозиргина дори сепилган. У ерда кутиш муддати бор.",
+              "ru": "Верно. И ещё: поле у леса только что обработано. Там действует срок ожидания."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Verstanden, dann gehe ich erst nach der Wartezeit auf das Feld am Wald.",
+            "tr": {
+              "uz": "Tushundim, unda oʻrmon yonidagi dalaga faqat kutish muddatidan keyin kiraman.",
+              "uz-Cyrl": "Тушундим, унда ўрмон ёнидаги далага фақат кутиш муддатидан кейин кираман.",
+              "ru": "Понятно, тогда на поле у леса я пойду только после срока ожидания."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -10544,6 +10637,716 @@
       "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-arbeitsschutzunterweisung",
+      "slug": "arbeitsschutzunterweisung",
+      "term": "die Arbeitsschutzunterweisung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Arbeitsschutzunterweisungen",
+      "tr": {
+        "uz": "mehnat xavfsizligi yoʻriqnomasi",
+        "uz-Cyrl": "меҳнат хавфсизлиги йўриқномаси",
+        "ru": "инструктаж по охране труда"
+      },
+      "pron": {
+        "uz": "die ar-bayts-shuts-un-ter-vay-zung",
+        "uz-Cyrl": "ди ар-байц-шуц-ун-тер-вай-зунг",
+        "ru": "ди ар-байц-шуц-ун-тер-вай-зунг"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Vor dem ersten Einsatz gibt es eine Arbeitsschutzunterweisung.",
+        "tr": {
+          "uz": "Birinchi ishdan oldin mehnat xavfsizligi yoʻriqnomasi oʻtkaziladi.",
+          "uz-Cyrl": "Биринчи ишдан олдин меҳнат хавфсизлиги йўриқномаси ўтказилади.",
+          "ru": "Перед первой сменой проводится инструктаж по охране труда."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-schutzausruestung",
+      "slug": "schutzausruestung",
+      "term": "die Schutzausrüstung",
+      "icon": "helmet",
+      "article": "die",
+      "plural": "die Schutzausrüstungen",
+      "tr": {
+        "uz": "himoya jihozlari",
+        "uz-Cyrl": "ҳимоя жиҳозлари",
+        "ru": "средства защиты"
+      },
+      "pron": {
+        "uz": "die shuts-aus-ryus-tung",
+        "uz-Cyrl": "ди шуц-аус-рюс-тунг",
+        "ru": "ди шуц-аус-рюс-тунг"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Beim Spritzen tragen wir die ganze Schutzausrüstung.",
+        "tr": {
+          "uz": "Dori sepishda barcha himoya jihozlarini taqamiz.",
+          "uz-Cyrl": "Дори сепишда барча ҳимоя жиҳозларини тақамиз.",
+          "ru": "При опрыскивании мы надеваем все средства защиты."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-sonnenschutz",
+      "slug": "sonnenschutz",
+      "term": "der Sonnenschutz",
+      "icon": "sun",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "quyoshdan himoya",
+        "uz-Cyrl": "қуёшдан ҳимоя",
+        "ru": "защита от солнца"
+      },
+      "pron": {
+        "uz": "der zo-nen-shuts",
+        "uz-Cyrl": "дер зо-нен-шуц",
+        "ru": "дер зо-нен-шуц"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Auf dem Feld brauchen Sie Sonnenschutz und einen Hut.",
+        "tr": {
+          "uz": "Dalada sizga quyoshdan himoya va shlyapa kerak.",
+          "uz-Cyrl": "Далада сизга қуёшдан ҳимоя ва шляпа керак.",
+          "ru": "В поле вам нужны защита от солнца и шляпа."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-hitzepause",
+      "slug": "hitzepause",
+      "term": "die Hitzepause",
+      "icon": "thermometer",
+      "article": "die",
+      "plural": "die Hitzepausen",
+      "tr": {
+        "uz": "issiqdagi tanaffus",
+        "uz-Cyrl": "иссиқдаги танаффус",
+        "ru": "перерыв из-за жары"
+      },
+      "pron": {
+        "uz": "die hi-tse-pau-ze",
+        "uz-Cyrl": "ди хи-це-пау-зе",
+        "ru": "ди хи-це-пау-зе"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Mittags machen wir eine Hitzepause im Schatten.",
+        "tr": {
+          "uz": "Tushda soyada issiqdan tanaffus qilamiz.",
+          "uz-Cyrl": "Тушда сояда иссиқдан танаффус қиламиз.",
+          "ru": "В полдень мы делаем перерыв от жары в тени."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-sonnenstich",
+      "slug": "sonnenstich",
+      "term": "der Sonnenstich",
+      "icon": "first-aid-kit",
+      "article": "der",
+      "plural": "die Sonnenstiche",
+      "tr": {
+        "uz": "quyosh urishi",
+        "uz-Cyrl": "қуёш уриши",
+        "ru": "солнечный удар"
+      },
+      "pron": {
+        "uz": "der zo-nen-shtix",
+        "uz-Cyrl": "дер зо-нен-штих",
+        "ru": "дер зо-нен-штих"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Bei Kopfschmerzen und Übelkeit kann es ein Sonnenstich sein.",
+        "tr": {
+          "uz": "Bosh ogʻrigʻi va koʻngil aynishida bu quyosh urishi boʻlishi mumkin.",
+          "uz-Cyrl": "Бош оғриғи ва кўнгил айнишида бу қуёш уриши бўлиши мумкин.",
+          "ru": "При головной боли и тошноте это может быть солнечный удар."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-wartezeit",
+      "slug": "wartezeit",
+      "term": "die Wartezeit",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Wartezeiten",
+      "tr": {
+        "uz": "kutish muddati (dori sepilgandan keyin)",
+        "uz-Cyrl": "кутиш муддати (дори сепилгандан кейин)",
+        "ru": "срок ожидания (после обработки)"
+      },
+      "pron": {
+        "uz": "die var-te-tsayt",
+        "uz-Cyrl": "ди вар-те-цайт",
+        "ru": "ди вар-те-цайт"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Nach dem Spritzen gilt eine Wartezeit, erst dann dürfen wir ernten.",
+        "tr": {
+          "uz": "Dori sepilgandan keyin kutish muddati bor, faqat shundan keyin terishimiz mumkin.",
+          "uz-Cyrl": "Дори сепилгандан кейин кутиш муддати бор, фақат шундан кейин теришимиз мумкин.",
+          "ru": "После обработки действует срок ожидания, только потом можно собирать урожай."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-das-feld-ist-frisch-gespritzt",
+      "slug": "das-feld-ist-frisch-gespritzt",
+      "term": "Das Feld ist frisch gespritzt.",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Dalaga hozirgina dori sepilgan.",
+        "uz-Cyrl": "Далага ҳозиргина дори сепилган.",
+        "ru": "Поле только что обработано."
+      },
+      "pron": {
+        "uz": "das felt ist frish ge-shpritst",
+        "uz-Cyrl": "дас фельт ист фриш ге-шприцт",
+        "ru": "дас фельт ист фриш ге-шприцт"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Das Feld ist frisch gespritzt, bitte gehen Sie nicht hinein.",
+        "tr": {
+          "uz": "Dalaga hozirgina dori sepilgan, iltimos, ichkariga kirmang.",
+          "uz-Cyrl": "Далага ҳозиргина дори сепилган, илтимос, ичкарига кирманг.",
+          "ru": "Поле только что обработано, пожалуйста, не заходите туда."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-mir-ist-schwindelig",
+      "slug": "mir-ist-schwindelig",
+      "term": "Mir ist schwindelig.",
+      "icon": "mood-sad",
+      "tr": {
+        "uz": "Boshim aylanyapti.",
+        "uz-Cyrl": "Бошим айланяпти.",
+        "ru": "У меня кружится голова."
+      },
+      "pron": {
+        "uz": "mir ist shvin-de-lix",
+        "uz-Cyrl": "мир ист швин-де-лих",
+        "ru": "мир ист швин-де-лих"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Mir ist schwindelig. Ich setze mich kurz in den Schatten.",
+        "tr": {
+          "uz": "Boshim aylanyapti. Bir oz soyada oʻtiraman.",
+          "uz-Cyrl": "Бошим айланяпти. Бир оз сояда ўтираман.",
+          "ru": "У меня кружится голова. Я ненадолго сяду в тень."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-einarbeitung",
+      "slug": "einarbeitung",
+      "term": "die Einarbeitung",
+      "icon": "users",
+      "article": "die",
+      "plural": "die Einarbeitungen",
+      "tr": {
+        "uz": "ishga oʻrgatish",
+        "uz-Cyrl": "ишга ўргатиш",
+        "ru": "введение в работу"
+      },
+      "pron": {
+        "uz": "die ayn-ar-bay-tung",
+        "uz-Cyrl": "ди айн-ар-бай-тунг",
+        "ru": "ди айн-ар-бай-тунг"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Am ersten Tag haben Sie eine Einarbeitung mit dem Vorarbeiter.",
+        "tr": {
+          "uz": "Birinchi kuni brigadir sizni ishga oʻrgatadi.",
+          "uz-Cyrl": "Биринчи куни бригадир сизни ишга ўргатади.",
+          "ru": "В первый день бригадир вводит вас в работу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-arbeitsablauf",
+      "slug": "arbeitsablauf",
+      "term": "der Arbeitsablauf",
+      "icon": "repeat",
+      "article": "der",
+      "plural": "die Arbeitsabläufe",
+      "tr": {
+        "uz": "ish tartibi (ketma-ketligi)",
+        "uz-Cyrl": "иш тартиби (кетма-кетлиги)",
+        "ru": "порядок работы"
+      },
+      "pron": {
+        "uz": "der ar-bayts-ap-lauf",
+        "uz-Cyrl": "дер ар-байц-ап-лауф",
+        "ru": "дер ар-байц-ап-лауф"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Der Arbeitsablauf ist einfach: pflücken, sortieren, in die Kiste legen.",
+        "tr": {
+          "uz": "Ish tartibi oddiy: terish, saralash, yashikka solish.",
+          "uz-Cyrl": "Иш тартиби оддий: териш, саралаш, яшикка солиш.",
+          "ru": "Порядок работы простой: собрать, рассортировать, положить в ящик."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-erntesaison",
+      "slug": "erntesaison",
+      "term": "die Erntesaison",
+      "icon": "calendar-event",
+      "article": "die",
+      "plural": "die Erntesaisons",
+      "tr": {
+        "uz": "terim mavsumi",
+        "uz-Cyrl": "терим мавсуми",
+        "ru": "сезон урожая"
+      },
+      "pron": {
+        "uz": "die ern-te-ze-zon",
+        "uz-Cyrl": "ди эрн-те-зе-зон",
+        "ru": "ди эрн-те-зе-зон"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "In der Erntesaison gibt es auf dem Hof viel Arbeit.",
+        "tr": {
+          "uz": "Terim mavsumida fermada ish koʻp.",
+          "uz-Cyrl": "Терим мавсумида фермада иш кўп.",
+          "ru": "В сезон урожая на ферме много работы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-erntemenge",
+      "slug": "erntemenge",
+      "term": "die Erntemenge",
+      "icon": "package",
+      "article": "die",
+      "plural": "die Erntemengen",
+      "tr": {
+        "uz": "terim miqdori",
+        "uz-Cyrl": "терим миқдори",
+        "ru": "объём урожая"
+      },
+      "pron": {
+        "uz": "die ern-te-men-ge",
+        "uz-Cyrl": "ди эрн-те-мен-ге",
+        "ru": "ди эрн-те-мен-ге"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Der Vorarbeiter schreibt die Erntemenge jeder Gruppe auf.",
+        "tr": {
+          "uz": "Brigadir har bir guruhning terim miqdorini yozib boradi.",
+          "uz-Cyrl": "Бригадир ҳар бир гуруҳнинг терим миқдорини ёзиб боради.",
+          "ru": "Бригадир записывает объём урожая каждой группы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-tagesleistung",
+      "slug": "tagesleistung",
+      "term": "die Tagesleistung",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Tagesleistungen",
+      "tr": {
+        "uz": "kunlik ish natijasi",
+        "uz-Cyrl": "кунлик иш натижаси",
+        "ru": "дневная выработка"
+      },
+      "pron": {
+        "uz": "die ta-ges-lays-tung",
+        "uz-Cyrl": "ди та-гес-лайс-тунг",
+        "ru": "ди та-гес-лайс-тунг"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Ihre Tagesleistung steht am Abend auf der Liste.",
+        "tr": {
+          "uz": "Kunlik ish natijangiz kechqurun roʻyxatda boʻladi.",
+          "uz-Cyrl": "Кунлик иш натижангиз кечқурун рўйхатда бўлади.",
+          "ru": "Ваша дневная выработка вечером будет в списке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-erntekiste",
+      "slug": "erntekiste",
+      "term": "die Erntekiste",
+      "icon": "package",
+      "article": "die",
+      "plural": "die Erntekisten",
+      "tr": {
+        "uz": "terim yashigi",
+        "uz-Cyrl": "терим яшиги",
+        "ru": "ящик для урожая"
+      },
+      "pron": {
+        "uz": "die ern-te-kis-te",
+        "uz-Cyrl": "ди эрн-те-кис-те",
+        "ru": "ди эрн-те-кис-те"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Stellen Sie die volle Erntekiste an den Rand der Reihe.",
+        "tr": {
+          "uz": "Toʻla terim yashigini qator chetiga qoʻying.",
+          "uz-Cyrl": "Тўла терим яшигини қатор четига қўйинг.",
+          "ru": "Поставьте полный ящик для урожая на край ряда."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-qualitaetsklasse",
+      "slug": "qualitaetsklasse",
+      "term": "die Qualitätsklasse",
+      "icon": "apple",
+      "article": "die",
+      "plural": "die Qualitätsklassen",
+      "tr": {
+        "uz": "sifat sinfi",
+        "uz-Cyrl": "сифат синфи",
+        "ru": "класс качества"
+      },
+      "pron": {
+        "uz": "die kva-li-tets-kla-se",
+        "uz-Cyrl": "ди ква-ли-тэтс-кла-се",
+        "ru": "ди ква-ли-тэтс-кла-се"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Kleine Äpfel kommen in eine andere Qualitätsklasse.",
+        "tr": {
+          "uz": "Kichik olmalar boshqa sifat sinfiga tushadi.",
+          "uz-Cyrl": "Кичик олмалар бошқа сифат синфига тушади.",
+          "ru": "Маленькие яблоки идут в другой класс качества."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-nachkontrolle",
+      "slug": "nachkontrolle",
+      "term": "die Nachkontrolle",
+      "icon": "eye",
+      "article": "die",
+      "plural": "die Nachkontrollen",
+      "tr": {
+        "uz": "qayta tekshiruv",
+        "uz-Cyrl": "қайта текширув",
+        "ru": "повторная проверка"
+      },
+      "pron": {
+        "uz": "die nax-kon-tro-le",
+        "uz-Cyrl": "ди нах-кон-тро-ле",
+        "ru": "ди нах-кон-тро-ле"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Nach der Nachkontrolle dürfen die Kisten in den Kühlraum.",
+        "tr": {
+          "uz": "Qayta tekshiruvdan keyin yashiklarni sovutish xonasiga qoʻyish mumkin.",
+          "uz-Cyrl": "Қайта текширувдан кейин яшикларни совутиш хонасига қўйиш мумкин.",
+          "ru": "После повторной проверки ящики можно ставить в холодильную камеру."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-stundennachweis",
+      "slug": "stundennachweis",
+      "term": "der Stundennachweis",
+      "icon": "receipt",
+      "article": "der",
+      "plural": "die Stundennachweise",
+      "tr": {
+        "uz": "ishlangan soatlar hisoboti",
+        "uz-Cyrl": "ишланган соатлар ҳисоботи",
+        "ru": "учёт отработанных часов"
+      },
+      "pron": {
+        "uz": "der shtun-den-nax-vays",
+        "uz-Cyrl": "дер штун-ден-нах-вайс",
+        "ru": "дер штун-ден-нах-вайс"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Prüfen Sie jeden Abend Ihren Stundennachweis.",
+        "tr": {
+          "uz": "Har kecha ishlangan soatlar hisobotingizni tekshiring.",
+          "uz-Cyrl": "Ҳар кеча ишланган соатлар ҳисоботингизни текширинг.",
+          "ru": "Каждый вечер проверяйте свой учёт отработанных часов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-sich-eintragen",
+      "slug": "sich-eintragen",
+      "term": "sich eintragen",
+      "icon": "file-text",
+      "tr": {
+        "uz": "(roʻyxatga) yozilmoq",
+        "uz-Cyrl": "(рўйхатга) ёзилмоқ",
+        "ru": "записаться (в список)"
+      },
+      "pron": {
+        "uz": "zix ayn-tra-gen",
+        "uz-Cyrl": "зих айн-тра-ген",
+        "ru": "зих айн-тра-ген"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Nach der Arbeit müssen Sie sich in die Liste eintragen.",
+        "tr": {
+          "uz": "Ishdan keyin roʻyxatga yozilishingiz kerak.",
+          "uz-Cyrl": "Ишдан кейин рўйхатга ёзилишингиз керак.",
+          "ru": "После работы вам нужно записаться в список."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-zuegig",
+      "slug": "zuegig",
+      "term": "zügig",
+      "icon": "run",
+      "tr": {
+        "uz": "tez, chaqqon",
+        "uz-Cyrl": "тез, чаққон",
+        "ru": "быстро, без задержек"
+      },
+      "pron": {
+        "uz": "tsyu-gix",
+        "uz-Cyrl": "цю-гих",
+        "ru": "цю-гих"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Heute kommt Regen, wir müssen zügig arbeiten.",
+        "tr": {
+          "uz": "Bugun yomgʻir yogʻadi, tez ishlashimiz kerak.",
+          "uz-Cyrl": "Бугун ёмғир ёғади, тез ишлашимиз керак.",
+          "ru": "Сегодня будет дождь, нам нужно работать быстро."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "agriculture-mavsum-yoriqnoma-unbeschaedigt",
+      "slug": "unbeschaedigt",
+      "term": "unbeschädigt",
+      "icon": "check",
+      "tr": {
+        "uz": "shikastlanmagan, butun",
+        "uz-Cyrl": "шикастланмаган, бутун",
+        "ru": "неповреждённый"
+      },
+      "pron": {
+        "uz": "un-be-she-dixt",
+        "uz-Cyrl": "ун-бе-ше-дихт",
+        "ru": "ун-бе-ше-дихт"
+      },
+      "level": "B1",
+      "field": "agriculture",
+      "jobs": [
+        "saisonarbeit",
+        "erntehelfer"
+      ],
+      "situation": "mavsum-yoriqnoma",
+      "example": {
+        "term": "Nur unbeschädigte Früchte kommen in die erste Klasse.",
+        "tr": {
+          "uz": "Faqat shikastlanmagan mevalar birinchi sinfga tushadi.",
+          "uz-Cyrl": "Фақат шикастланмаган мевалар биринчи синфга тушади.",
+          "ru": "Только неповреждённые плоды идут в первый класс."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
