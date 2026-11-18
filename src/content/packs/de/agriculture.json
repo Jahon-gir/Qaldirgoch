@@ -2212,6 +2212,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Feierabend für heute. Bitte tragen Sie sich noch in den Stundennachweis ein.",
+            "tr": {
+              "uz": "Bugunga ish tugadi. Iltimos, ishlangan soatlar hisobotiga yozilib qoʻying.",
+              "uz-Cyrl": "Бугунга иш тугади. Илтимос, ишланган соатлар ҳисоботига ёзилиб қўйинг.",
+              "ru": "На сегодня всё. Пожалуйста, запишитесь ещё в учёт отработанных часов."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mache ich. Wo liegt die Liste heute?",
+            "tr": {
+              "uz": "Xoʻp. Roʻyxat bugun qayerda turibdi?",
+              "uz-Cyrl": "Хўп. Рўйхат бугун қаерда турибди?",
+              "ru": "Хорошо. Где сегодня лежит список?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "In der Packhalle am Eingang. Aber bei Ihren Erntekisten gibt es ein Problem: Viele Erdbeeren haben Druckstellen.",
+            "tr": {
+              "uz": "Qadoqlash zalida, kirish yonida. Lekin terim yashiklaringizda muammo bor: koʻp qulupnaylar ezilgan.",
+              "uz-Cyrl": "Қадоқлаш залида, кириш ёнида. Лекин терим яшикларингизда муаммо бор: кўп қулупнайлар эзилган.",
+              "ru": "В упаковочном цехе у входа. Но с вашими ящиками для урожая есть проблема: у многих ягод клубники вмятины."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Das tut mir leid, ich habe heute zu schnell gepflückt. Was soll ich morgen anders machen?",
+            "tr": {
+              "uz": "Kechirasiz, bugun juda tez terdim. Ertaga nimani boshqacha qilishim kerak?",
+              "uz-Cyrl": "Кечирасиз, бугун жуда тез тердим. Эртага нимани бошқача қилишим керак?",
+              "ru": "Извините, сегодня сбор шёл слишком быстро. Что мне завтра делать по-другому?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Brigadir",
+              "uz-Cyrl": "Бригадир",
+              "ru": "Бригадир"
+            },
+            "de": "Pflücken Sie vorsichtig und legen Sie die Früchte flach in die Kiste. Die Kisten von heute gehen zur Nachkontrolle.",
+            "tr": {
+              "uz": "Ehtiyotkorlik bilan tering va mevalarni yashikka tekis qoʻying. Bugungi yashiklar qayta tekshiruvga boradi.",
+              "uz-Cyrl": "Эҳтиёткорлик билан теринг ва меваларни яшикка текис қўйинг. Бугунги яшиклар қайта текширувга боради.",
+              "ru": "Собирайте аккуратно и кладите ягоды в ящик ровным слоем. Сегодняшние ящики пойдут на повторную проверку."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut, dann bringe ich die Kisten von heute zur Nachkontrolle und lege morgen alles flach hinein.",
+            "tr": {
+              "uz": "Yaxshi, unda bugungi yashiklarni qayta tekshiruvga olib boraman, ertaga esa hammasini tekis joylayman.",
+              "uz-Cyrl": "Яхши, унда бугунги яшикларни қайта текширувга олиб бораман, эртага эса ҳаммасини текис жойлайман.",
+              "ru": "Хорошо, тогда я отнесу сегодняшние ящики на повторную проверку, а завтра буду класть всё ровно."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
