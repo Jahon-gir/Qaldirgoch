@@ -2120,6 +2120,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "sifat-nazorat",
+      "title": {
+        "uz": "Sifat nazorati va ogʻish haqida xabar",
+        "uz-Cyrl": "Сифат назорати ва оғиш ҳақида хабар",
+        "ru": "Контроль качества и сообщение об отклонении"
+      },
+      "order": 13,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Sifat boʻlimi xodimi",
+              "uz-Cyrl": "Сифат бўлими ходими",
+              "ru": "Сотрудник отдела качества"
+            },
+            "de": "Guten Morgen. Sie haben eine Abweichung an Linie 2 gemeldet. Was ist los?",
+            "tr": {
+              "uz": "Xayrli tong. Siz 2-liniyada ogʻish haqida xabar berdingiz. Nima boʻldi?",
+              "uz-Cyrl": "Хайрли тонг. Сиз 2-линияда оғиш ҳақида хабар бердингиз. Нима бўлди?",
+              "ru": "Доброе утро. Вы сообщили об отклонении на линии 2. Что случилось?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Auf einigen Bechern fehlt die Allergenkennzeichnung. Ich habe die Linie gestoppt.",
+            "tr": {
+              "uz": "Baʼzi stakanchalarda allergen belgisi yoʻq. Liniyani toʻxtatdim.",
+              "uz-Cyrl": "Баъзи стаканчаларда аллерген белгиси йўқ. Линияни тўхтатдим.",
+              "ru": "На некоторых стаканчиках нет маркировки аллергенов. Линия остановлена."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Sifat boʻlimi xodimi",
+              "uz-Cyrl": "Сифат бўлими ходими",
+              "ru": "Сотрудник отдела качества"
+            },
+            "de": "Gut gemacht. Welche Chargennummer steht auf den Bechern?",
+            "tr": {
+              "uz": "Yaxshi qildingiz. Stakanchalarda qaysi partiya raqami yozilgan?",
+              "uz-Cyrl": "Яхши қилдингиз. Стаканчаларда қайси партия рақами ёзилган?",
+              "ru": "Правильно сделали. Какой номер партии на стаканчиках?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Es ist die Charge von heute früh. Die Nummer steht schon im Protokoll.",
+            "tr": {
+              "uz": "Bu bugun ertalabki partiya. Raqami bayonnomaga allaqachon yozilgan.",
+              "uz-Cyrl": "Бу бугун эрталабки партия. Рақами баённомага аллақачон ёзилган.",
+              "ru": "Это партия с сегодняшнего утра. Номер уже записан в протоколе."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Sifat boʻlimi xodimi",
+              "uz-Cyrl": "Сифат бўлими ходими",
+              "ru": "Сотрудник отдела качества"
+            },
+            "de": "Danke. Die Charge ist gesperrt, bis die Etikettierung korrigiert ist. Was machen wir mit den fertigen Kartons?",
+            "tr": {
+              "uz": "Rahmat. Yorliqlash tuzatilguncha partiya bloklanadi. Tayyor kartonlarni nima qilamiz?",
+              "uz-Cyrl": "Раҳмат. Ёрлиқлаш тузатилгунча партия блокланади. Тайёр картонларни нима қиламиз?",
+              "ru": "Спасибо. Партия заблокирована, пока этикетирование не исправят. Что делаем с готовыми коробками?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Die fertigen Kartons stelle ich in den Sperrbereich und markiere sie mit einem roten Zettel.",
+            "tr": {
+              "uz": "Tayyor kartonlarni bloklangan mahsulot joyiga qoʻyaman va qizil varaqcha bilan belgilayman.",
+              "uz-Cyrl": "Тайёр картонларни блокланган маҳсулот жойига қўяман ва қизил варақча билан белгилайман.",
+              "ru": "Готовые коробки поставлю в зону блокировки и помечу красным листком."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -10522,6 +10615,698 @@
       "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-qualitaetssicherung",
+      "slug": "qualitaetssicherung",
+      "term": "die Qualitätssicherung",
+      "icon": "check",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "sifatni taʼminlash (boʻlimi)",
+        "uz-Cyrl": "сифатни таъминлаш (бўлими)",
+        "ru": "обеспечение качества (отдел)"
+      },
+      "pron": {
+        "uz": "die kva-li-tets-zi-xe-rung",
+        "uz-Cyrl": "ди ква-ли-тетс-зи-хе-рунг",
+        "ru": "ди ква-ли-тетс-зи-хе-рунг"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Die Qualitätssicherung prüft jede neue Charge.",
+        "tr": {
+          "uz": "Sifatni taʼminlash boʻlimi har bir yangi partiyani tekshiradi.",
+          "uz-Cyrl": "Сифатни таъминлаш бўлими ҳар бир янги партияни текширади.",
+          "ru": "Отдел обеспечения качества проверяет каждую новую партию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-rueckverfolgbarkeit",
+      "slug": "rueckverfolgbarkeit",
+      "term": "die Rückverfolgbarkeit",
+      "icon": "repeat",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "kuzatib borish imkoniyati (mahsulot qayerdan kelgani)",
+        "uz-Cyrl": "кузатиб бориш имконияти (маҳсулот қаердан келгани)",
+        "ru": "прослеживаемость (откуда продукт)"
+      },
+      "pron": {
+        "uz": "die ryuk-fer-folk-bar-kayt",
+        "uz-Cyrl": "ди рюк-фер-фолк-бар-кайт",
+        "ru": "ди рюк-фер-фолк-бар-кайт"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Die Chargennummer ist wichtig für die Rückverfolgbarkeit.",
+        "tr": {
+          "uz": "Partiya raqami mahsulotni kuzatib borish uchun muhim.",
+          "uz-Cyrl": "Партия рақами маҳсулотни кузатиб бориш учун муҳим.",
+          "ru": "Номер партии важен для прослеживаемости."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-chargennummer",
+      "slug": "chargennummer",
+      "term": "die Chargennummer",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "die Chargennummern",
+      "tr": {
+        "uz": "partiya raqami",
+        "uz-Cyrl": "партия рақами",
+        "ru": "номер партии"
+      },
+      "pron": {
+        "uz": "die shar-zhen-nu-mer",
+        "uz-Cyrl": "ди шар-жен-ну-мер",
+        "ru": "ди шар-жен-ну-мер"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Schreiben Sie die Chargennummer ins Protokoll.",
+        "tr": {
+          "uz": "Partiya raqamini bayonnomaga yozing.",
+          "uz-Cyrl": "Партия рақамини баённомага ёзинг.",
+          "ru": "Запишите номер партии в протокол."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-korrekturmassnahme",
+      "slug": "korrekturmassnahme",
+      "term": "die Korrekturmaßnahme",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Korrekturmaßnahmen",
+      "tr": {
+        "uz": "tuzatish chorasi",
+        "uz-Cyrl": "тузатиш чораси",
+        "ru": "корректирующая мера"
+      },
+      "pron": {
+        "uz": "die ko-rek-tur-mas-na-me",
+        "uz-Cyrl": "ди ко-рек-тур-мас-на-ме",
+        "ru": "ди ко-рек-тур-мас-на-ме"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Nach jeder Abweichung brauchen wir eine Korrekturmaßnahme.",
+        "tr": {
+          "uz": "Har bir ogʻishdan keyin bizga tuzatish chorasi kerak.",
+          "uz-Cyrl": "Ҳар бир оғишдан кейин бизга тузатиш чораси керак.",
+          "ru": "После каждого отклонения нам нужна корректирующая мера."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-temperaturprotokoll",
+      "slug": "temperaturprotokoll",
+      "term": "das Temperaturprotokoll",
+      "icon": "thermometer",
+      "article": "das",
+      "plural": "die Temperaturprotokolle",
+      "tr": {
+        "uz": "harorat jurnali",
+        "uz-Cyrl": "ҳарорат журнали",
+        "ru": "журнал температуры"
+      },
+      "pron": {
+        "uz": "das tem-pe-ra-tur-pro-to-kol",
+        "uz-Cyrl": "дас тем-пе-ра-тур-про-то-коль",
+        "ru": "дас тем-пе-ра-тур-про-то-коль"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Das Temperaturprotokoll im Kühlhaus ist heute nicht ausgefüllt.",
+        "tr": {
+          "uz": "Sovutgichxonadagi harorat jurnali bugun toʻldirilmagan.",
+          "uz-Cyrl": "Совутгичхонадаги ҳарорат журнали бугун тўлдирилмаган.",
+          "ru": "Журнал температуры в холодильной камере сегодня не заполнен."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-reklamation",
+      "slug": "reklamation",
+      "term": "die Reklamation",
+      "icon": "mood-sad",
+      "article": "die",
+      "plural": "die Reklamationen",
+      "tr": {
+        "uz": "reklamatsiya (mijozning rasmiy eʼtirozi)",
+        "uz-Cyrl": "рекламация (мижознинг расмий эътирози)",
+        "ru": "рекламация (официальная претензия клиента)"
+      },
+      "pron": {
+        "uz": "die rek-la-ma-tsi-on",
+        "uz-Cyrl": "ди рек-ла-ма-ци-он",
+        "ru": "ди рек-ла-ма-ци-он"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Ein Kunde hat eine Reklamation wegen eines Fremdkörpers geschickt.",
+        "tr": {
+          "uz": "Bir mijoz begona jism sababli reklamatsiya yubordi.",
+          "uz-Cyrl": "Бир мижоз бегона жисм сабабли рекламация юборди.",
+          "ru": "Клиент прислал рекламацию из-за постороннего предмета."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-allergenkennzeichnung",
+      "slug": "allergenkennzeichnung",
+      "term": "die Allergenkennzeichnung",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Allergenkennzeichnungen",
+      "tr": {
+        "uz": "allergenlarni belgilash (yorliqda)",
+        "uz-Cyrl": "аллергенларни белгилаш (ёрлиқда)",
+        "ru": "маркировка аллергенов (на этикетке)"
+      },
+      "pron": {
+        "uz": "die a-ler-gen-ken-tsay-xnung",
+        "uz-Cyrl": "ди а-лер-ген-кен-цай-хнунг",
+        "ru": "ди а-лер-ген-кен-цай-хнунг"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Bitte prüfen Sie die Allergenkennzeichnung auf jedem Etikett.",
+        "tr": {
+          "uz": "Iltimos, har bir yorliqdagi allergen belgisini tekshiring.",
+          "uz-Cyrl": "Илтимос, ҳар бир ёрлиқдаги аллерген белгисини текширинг.",
+          "ru": "Пожалуйста, проверьте маркировку аллергенов на каждой этикетке."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-freigabe",
+      "slug": "freigabe",
+      "term": "die Freigabe",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Freigaben",
+      "tr": {
+        "uz": "ruxsat (mahsulotni chiqarishga)",
+        "uz-Cyrl": "рухсат (маҳсулотни чиқаришга)",
+        "ru": "допуск (к выпуску продукции)"
+      },
+      "pron": {
+        "uz": "die fray-ga-be",
+        "uz-Cyrl": "ди фрай-га-бе",
+        "ru": "ди фрай-га-бе"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Ohne Freigabe darf die Ware das Lager nicht verlassen.",
+        "tr": {
+          "uz": "Ruxsatsiz mahsulot ombordan chiqmasligi kerak.",
+          "uz-Cyrl": "Рухсатсиз маҳсулот омбордан чиқмаслиги керак.",
+          "ru": "Без допуска товар не может покинуть склад."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-etikettierung",
+      "slug": "etikettierung",
+      "term": "die Etikettierung",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "yorliq yopishtirish",
+        "uz-Cyrl": "ёрлиқ ёпиштириш",
+        "ru": "этикетирование"
+      },
+      "pron": {
+        "uz": "die e-ti-ke-ti-rung",
+        "uz-Cyrl": "ди э-ти-ке-ти-рунг",
+        "ru": "ди э-ти-ке-ти-рунг"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Bei der Etikettierung gab es heute einen Fehler: Das Datum fehlt.",
+        "tr": {
+          "uz": "Bugun yorliq yopishtirishda xato boʻldi: sana yoʻq.",
+          "uz-Cyrl": "Бугун ёрлиқ ёпиштиришда хато бўлди: сана йўқ.",
+          "ru": "Сегодня при этикетировании была ошибка: нет даты."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-die-charge-ist-gesperrt",
+      "slug": "die-charge-ist-gesperrt",
+      "term": "Die Charge ist gesperrt.",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Partiya bloklangan.",
+        "uz-Cyrl": "Партия блокланган.",
+        "ru": "Партия заблокирована."
+      },
+      "pron": {
+        "uz": "die shar-zhe ist ge-shpert",
+        "uz-Cyrl": "ди шар-же ист ге-шперт",
+        "ru": "ди шар-же ист ге-шперт"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Die Charge ist gesperrt. Bitte nichts davon verpacken!",
+        "tr": {
+          "uz": "Partiya bloklangan. Iltimos, undan hech narsani qadoqlamang!",
+          "uz-Cyrl": "Партия блокланган. Илтимос, ундан ҳеч нарсани қадоқламанг!",
+          "ru": "Партия заблокирована. Пожалуйста, ничего из неё не упаковывайте!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-pruefplan",
+      "slug": "pruefplan",
+      "term": "der Prüfplan",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Prüfpläne",
+      "tr": {
+        "uz": "tekshiruv rejasi",
+        "uz-Cyrl": "текширув режаси",
+        "ru": "план контроля"
+      },
+      "pron": {
+        "uz": "der pryuf-plan",
+        "uz-Cyrl": "дер прюф-план",
+        "ru": "дер прюф-план"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Der Grenzwert steht im Prüfplan.",
+        "tr": {
+          "uz": "Chegaraviy qiymat tekshiruv rejasida yozilgan.",
+          "uz-Cyrl": "Чегаравий қиймат текширув режасида ёзилган.",
+          "ru": "Предельное значение указано в плане контроля."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-audit",
+      "slug": "audit",
+      "term": "das Audit",
+      "icon": "eye",
+      "article": "das",
+      "plural": "die Audits",
+      "tr": {
+        "uz": "audit (tashqi tekshiruv)",
+        "uz-Cyrl": "аудит (ташқи текширув)",
+        "ru": "аудит (внешняя проверка)"
+      },
+      "pron": {
+        "uz": "das au-dit",
+        "uz-Cyrl": "дас ау-дит",
+        "ru": "дас ау-дит"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Nächste Woche kommt ein Audit, alles muss dokumentiert sein.",
+        "tr": {
+          "uz": "Kelasi hafta audit boʻladi, hammasi hujjatlashtirilgan boʻlishi kerak.",
+          "uz-Cyrl": "Келаси ҳафта аудит бўлади, ҳаммаси ҳужжатлаштирилган бўлиши керак.",
+          "ru": "На следующей неделе будет аудит, всё должно быть задокументировано."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-kontrollpunkt",
+      "slug": "kontrollpunkt",
+      "term": "der Kontrollpunkt",
+      "icon": "map-pin",
+      "article": "der",
+      "plural": "die Kontrollpunkte",
+      "tr": {
+        "uz": "nazorat nuqtasi (ishlab chiqarishda)",
+        "uz-Cyrl": "назорат нуқтаси (ишлаб чиқаришда)",
+        "ru": "контрольная точка (на производстве)"
+      },
+      "pron": {
+        "uz": "der kon-trol-punkt",
+        "uz-Cyrl": "дер кон-троль-пункт",
+        "ru": "дер кон-троль-пункт"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Der Metalldetektor ist ein wichtiger Kontrollpunkt.",
+        "tr": {
+          "uz": "Metall detektori muhim nazorat nuqtasi.",
+          "uz-Cyrl": "Металл детектори муҳим назорат нуқтаси.",
+          "ru": "Металлодетектор — важная контрольная точка."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-rueckstellprobe",
+      "slug": "rueckstellprobe",
+      "term": "die Rückstellprobe",
+      "icon": "package",
+      "article": "die",
+      "plural": "die Rückstellproben",
+      "tr": {
+        "uz": "saqlab qoʻyiladigan namuna",
+        "uz-Cyrl": "сақлаб қўйиладиган намуна",
+        "ru": "контрольный (архивный) образец"
+      },
+      "pron": {
+        "uz": "die ryuk-shtel-pro-be",
+        "uz-Cyrl": "ди рюк-штель-про-бе",
+        "ru": "ди рюк-штель-про-бе"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Von jeder Charge nehmen wir eine Rückstellprobe.",
+        "tr": {
+          "uz": "Har bir partiyadan saqlab qoʻyiladigan namuna olamiz.",
+          "uz-Cyrl": "Ҳар бир партиядан сақлаб қўйиладиган намуна оламиз.",
+          "ru": "От каждой партии мы берём архивный образец."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-verunreinigung",
+      "slug": "verunreinigung",
+      "term": "die Verunreinigung",
+      "icon": "alert-octagon",
+      "article": "die",
+      "plural": "die Verunreinigungen",
+      "tr": {
+        "uz": "ifloslanish (mahsulotga begona narsa tushishi)",
+        "uz-Cyrl": "ифлосланиш (маҳсулотга бегона нарса тушиши)",
+        "ru": "загрязнение (продукта)"
+      },
+      "pron": {
+        "uz": "die fer-un-ray-ni-gung",
+        "uz-Cyrl": "ди фер-ун-рай-ни-гунг",
+        "ru": "ди фер-ун-рай-ни-гунг"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Bei einer Verunreinigung stoppen wir sofort die Linie.",
+        "tr": {
+          "uz": "Ifloslanish boʻlsa, liniyani darhol toʻxtatamiz.",
+          "uz-Cyrl": "Ифлосланиш бўлса, линияни дарҳол тўхтатамиз.",
+          "ru": "При загрязнении мы сразу останавливаем линию."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-rueckruf",
+      "slug": "rueckruf",
+      "term": "der Rückruf",
+      "icon": "repeat",
+      "article": "der",
+      "plural": "die Rückrufe",
+      "tr": {
+        "uz": "mahsulotni qaytarib chaqirish (savdodan)",
+        "uz-Cyrl": "маҳсулотни қайтариб чақириш (савдодан)",
+        "ru": "отзыв продукции (из продажи)"
+      },
+      "pron": {
+        "uz": "der ryuk-ruf",
+        "uz-Cyrl": "дер рюк-руф",
+        "ru": "дер рюк-руф"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Mit der Chargennummer ist ein schneller Rückruf möglich.",
+        "tr": {
+          "uz": "Partiya raqami bilan mahsulotni tez qaytarib chaqirish mumkin.",
+          "uz-Cyrl": "Партия рақами билан маҳсулотни тез қайтариб чақириш мумкин.",
+          "ru": "С номером партии возможен быстрый отзыв продукции."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-beanstanden",
+      "slug": "beanstanden",
+      "term": "beanstanden",
+      "icon": "message-circle",
+      "tr": {
+        "uz": "eʼtiroz bildirmoq (kamchilikka)",
+        "uz-Cyrl": "эътироз билдирмоқ (камчиликка)",
+        "ru": "предъявлять претензию, браковать"
+      },
+      "pron": {
+        "uz": "be-an-shtan-den",
+        "uz-Cyrl": "бе-ан-штан-ден",
+        "ru": "бе-ан-штан-ден"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Das Labor kann die Probe beanstanden.",
+        "tr": {
+          "uz": "Laboratoriya namunaga eʼtiroz bildirishi mumkin.",
+          "uz-Cyrl": "Лаборатория намунага эътироз билдириши мумкин.",
+          "ru": "Лаборатория может забраковать образец."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-ich-habe-eine-abweichung-festgestellt",
+      "slug": "ich-habe-eine-abweichung-festgestellt",
+      "term": "Ich habe eine Abweichung festgestellt.",
+      "icon": "eye",
+      "tr": {
+        "uz": "Men ogʻish aniqladim.",
+        "uz-Cyrl": "Мен оғиш аниқладим.",
+        "ru": "Обнаружено отклонение."
+      },
+      "pron": {
+        "uz": "ix ha-be ay-ne ap-vay-xung fest-ge-shtelt",
+        "uz-Cyrl": "их ха-бе ай-не ап-вай-хунг фест-ге-штельт",
+        "ru": "их ха-бе ай-не ап-вай-хунг фест-ге-штельт"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Ich habe eine Abweichung festgestellt. Die Folie ist nicht dicht.",
+        "tr": {
+          "uz": "Men ogʻish aniqladim. Plyonka germetik emas.",
+          "uz-Cyrl": "Мен оғиш аниқладим. Плёнка герметик эмас.",
+          "ru": "Обнаружено отклонение. Плёнка негерметична."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-lebensmittelkontrolleur",
+      "slug": "lebensmittelkontrolleur",
+      "term": "der Lebensmittelkontrolleur",
+      "icon": "id",
+      "article": "der",
+      "plural": "die Lebensmittelkontrolleure",
+      "tr": {
+        "uz": "oziq-ovqat nazoratchisi (davlat idorasidan)",
+        "uz-Cyrl": "озиқ-овқат назоратчиси (давлат идорасидан)",
+        "ru": "инспектор по контролю продуктов (от ведомства)"
+      },
+      "pron": {
+        "uz": "der le-bens-mi-tel-kon-tro-lyor",
+        "uz-Cyrl": "дер ле-бенс-ми-тель-кон-тро-лёр",
+        "ru": "дер ле-бенс-ми-тель-кон-тро-лёр"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Der Lebensmittelkontrolleur möchte die Reinigungspläne sehen.",
+        "tr": {
+          "uz": "Oziq-ovqat nazoratchisi tozalash rejalarini koʻrmoqchi.",
+          "uz-Cyrl": "Озиқ-овқат назоратчиси тозалаш режаларини кўрмоқчи.",
+          "ru": "Инспектор хочет посмотреть планы уборки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-sifat-nazorat-aussortieren",
+      "slug": "aussortieren",
+      "term": "aussortieren",
+      "icon": "trash",
+      "tr": {
+        "uz": "saralab chiqarib tashlamoq",
+        "uz-Cyrl": "саралаб чиқариб ташламоқ",
+        "ru": "отбраковывать"
+      },
+      "pron": {
+        "uz": "aus-zor-ti-ren",
+        "uz-Cyrl": "аус-зор-ти-рен",
+        "ru": "аус-зор-ти-рен"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik"
+      ],
+      "situation": "sifat-nazorat",
+      "example": {
+        "term": "Beschädigte Becher müssen wir aussortieren.",
+        "tr": {
+          "uz": "Shikastlangan stakanchalarni saralab chiqarishimiz kerak.",
+          "uz-Cyrl": "Шикастланган стаканчаларни саралаб чиқаришимиз керак.",
+          "ru": "Повреждённые стаканчики нужно отбраковать."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
