@@ -2388,6 +2388,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Ferma rahbari",
+              "uz-Cyrl": "Ферма раҳбари",
+              "ru": "Руководитель фермы"
+            },
+            "de": "Der Tierarzt war gestern bei der Kuh in der Isolierbox. Was hat er gesagt?",
+            "tr": {
+              "uz": "Veterinar kecha alohida boksdagi sigirni koʻrdi. U nima dedi?",
+              "uz-Cyrl": "Ветеринар кеча алоҳида боксдаги сигирни кўрди. У нима деди?",
+              "ru": "Ветеринар вчера осматривал корову в изоляторе. Что он сказал?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Sie bekommt jetzt ein Medikament. Den Behandlungsplan hat er uns dagelassen.",
+            "tr": {
+              "uz": "Endi unga dori beriladi. Davolash rejasini bizga qoldirib ketdi.",
+              "uz-Cyrl": "Энди унга дори берилади. Даволаш режасини бизга қолдириб кетди.",
+              "ru": "Теперь ей дают лекарство. План лечения он нам оставил."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Ferma rahbari",
+              "uz-Cyrl": "Ферма раҳбари",
+              "ru": "Руководитель фермы"
+            },
+            "de": "Gibt es eine Absetzfrist für die Milch?",
+            "tr": {
+              "uz": "Sut uchun kutish muddati bormi?",
+              "uz-Cyrl": "Сут учун кутиш муддати борми?",
+              "ru": "Есть ли срок ожидания для молока?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, die Absetzfrist steht im Behandlungsplan. Bis dahin melke ich sie getrennt, und die Milch kommt nicht in den Tank.",
+            "tr": {
+              "uz": "Ha, kutish muddati davolash rejasida yozilgan. Ungacha uni alohida sogʻaman, suti tankga quyilmaydi.",
+              "uz-Cyrl": "Ҳа, кутиш муддати даволаш режасида ёзилган. Унгача уни алоҳида соғаман, сути танкга қуйилмайди.",
+              "ru": "Да, срок ожидания указан в плане лечения. До тех пор я дою её отдельно, и молоко не идёт в танк."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Ferma rahbari",
+              "uz-Cyrl": "Ферма раҳбари",
+              "ru": "Руководитель фермы"
+            },
+            "de": "Gut. Und die Kuh in Box fünf hinkt seit heute Morgen. Haben Sie das gesehen?",
+            "tr": {
+              "uz": "Yaxshi. Beshinchi boksdagi sigir esa bugun ertalabdan beri oqsoqlanyapti. Koʻrdingizmi?",
+              "uz-Cyrl": "Яхши. Бешинчи боксдаги сигир эса бугун эрталабдан бери оқсоқланяпти. Кўрдингизми?",
+              "ru": "Хорошо. А корова в пятом боксе с утра хромает. Вы видели?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, die Lahmheit ist am Hinterbein. Ich trage sie ins Bestandsbuch ein und frage den Tierarzt, ob er sich die Klaue ansieht.",
+            "tr": {
+              "uz": "Ha, oqsoqlik orqa oyogʻida. Buni hisob daftariga yozaman va veterinardan tuyogʻini koʻrib berishini soʻrayman.",
+              "uz-Cyrl": "Ҳа, оқсоқлик орқа оёғида. Буни ҳисоб дафтарига ёзаман ва ветеринардан туёғини кўриб беришини сўрайман.",
+              "ru": "Да, хромота на задней ноге. Я запишу это в книгу учёта и попрошу ветеринара осмотреть копыто."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
