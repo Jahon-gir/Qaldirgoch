@@ -2388,6 +2388,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Smena boshligʻi",
+              "uz-Cyrl": "Смена бошлиғи",
+              "ru": "Начальник смены"
+            },
+            "de": "Morgen! Sie übernehmen heute Linie 2. Haben Sie schon ins Schichtbuch geschaut?",
+            "tr": {
+              "uz": "Xayrli tong! Bugun 2-liniyani siz olasiz. Smena jurnaliga qaradingizmi?",
+              "uz-Cyrl": "Хайрли тонг! Бугун 2-линияни сиз оласиз. Смена журналига қарадингизми?",
+              "ru": "Доброе утро! Сегодня линию 2 принимаете вы. В журнал смены уже заглянули?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja. Die Nachtschicht hatte eine Verzögerung, weil der Sensor nachjustiert werden musste.",
+            "tr": {
+              "uz": "Ha. Tungi smenada kechikish boʻlgan, chunki sensorni qayta sozlash kerak boʻlgan.",
+              "uz-Cyrl": "Ҳа. Тунги сменада кечикиш бўлган, чунки сенсорни қайта созлаш керак бўлган.",
+              "ru": "Да. У ночной смены была задержка, потому что нужно было подрегулировать датчик."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Smena boshligʻi",
+              "uz-Cyrl": "Смена бошлиғи",
+              "ru": "Начальник смены"
+            },
+            "de": "Stimmt. Reicht das Verpackungsmaterial für heute?",
+            "tr": {
+              "uz": "Toʻgʻri. Qadoqlash materiali bugunga yetadimi?",
+              "uz-Cyrl": "Тўғри. Қадоқлаш материали бугунга етадими?",
+              "ru": "Верно. Упаковочного материала на сегодня хватит?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Die Folie reicht, aber die Deckel nicht. Ich habe sie schon nachbestellt.",
+            "tr": {
+              "uz": "Plyonka yetadi, lekin qopqoqlar yetmaydi. Qoʻshimcha buyurtma allaqachon berilgan.",
+              "uz-Cyrl": "Плёнка етади, лекин қопқоқлар етмайди. Қўшимча буюртма аллақачон берилган.",
+              "ru": "Плёнки хватит, а крышек нет. Дозаказ уже отправлен."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Smena boshligʻi",
+              "uz-Cyrl": "Смена бошлиғи",
+              "ru": "Начальник смены"
+            },
+            "de": "Gut. Und der Zucker? Gestern hieß es, wir haben zu wenig.",
+            "tr": {
+              "uz": "Yaxshi. Shakar-chi? Kecha kam deyishgan edi.",
+              "uz-Cyrl": "Яхши. Шакар-чи? Кеча кам дейишган эди.",
+              "ru": "Хорошо. А сахар? Вчера говорили, что его мало."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Beim Zucker gibt es Rohstoffmangel. Die Lieferung kommt erst morgen, deshalb reicht die Restmenge nur bis Mittag.",
+            "tr": {
+              "uz": "Shakar boʻyicha xomashyo yetishmayapti. Yetkazib berish faqat ertaga, shuning uchun qolgan shakar faqat tushgacha yetadi.",
+              "uz-Cyrl": "Шакар бўйича хомашё етишмаяпти. Етказиб бериш фақат эртага, шунинг учун қолган шакар фақат тушгача етади.",
+              "ru": "С сахаром нехватка сырья. Поставка только завтра, поэтому остатка хватит только до обеда."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
