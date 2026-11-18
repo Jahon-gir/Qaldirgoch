@@ -2120,6 +2120,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "mijoz-maslahat",
+      "title": {
+        "uz": "Mijozga maslahat va mahsulotni tushuntirish",
+        "uz-Cyrl": "Мижозга маслаҳат ва маҳсулотни тушунтириш",
+        "ru": "Консультация клиента и объяснение товара"
+      },
+      "order": 13,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Guten Tag. Ich suche einen Staubsauger, aber ich weiß nicht, welcher gut ist.",
+            "tr": {
+              "uz": "Xayrli kun. Changyutgich qidiryapman, lekin qaysi biri yaxshi ekanini bilmayman.",
+              "uz-Cyrl": "Хайрли кун. Чангютгич қидиряпман, лекин қайси бири яхши эканини билмайман.",
+              "ru": "Добрый день. Я ищу пылесос, но не знаю, какой из них хороший."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich berate Sie gern. Haben Sie zu Hause viele Teppiche?",
+            "tr": {
+              "uz": "Sizga mamnuniyat bilan maslahat beraman. Uyingizda gilam koʻpmi?",
+              "uz-Cyrl": "Сизга мамнуният билан маслаҳат бераман. Уйингизда гилам кўпми?",
+              "ru": "С удовольствием вас проконсультирую. У вас дома много ковров?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Ja, und wir haben eine Katze. Was ist der Unterschied zwischen diesen zwei Modellen?",
+            "tr": {
+              "uz": "Ha, mushugimiz ham bor. Bu ikki model oʻrtasida qanday farq bor?",
+              "uz-Cyrl": "Ҳа, мушугимиз ҳам бор. Бу икки модел ўртасида қандай фарқ бор?",
+              "ru": "Да, и у нас есть кошка. Какая разница между этими двумя моделями?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Das linke Modell hat eine Bürste für Tierhaare, das rechte ist leiser.",
+            "tr": {
+              "uz": "Chapdagi modelda hayvon juni uchun choʻtka bor, oʻngdagisi esa shovqini kamroq.",
+              "uz-Cyrl": "Чапдаги моделда ҳайвон жуни учун чўтка бор, ўнгдагиси эса шовқини камроқ.",
+              "ru": "У левой модели есть щётка для шерсти животных, а правая работает тише."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Dann nehme ich das linke. Haben Sie es auch in Weiß?",
+            "tr": {
+              "uz": "Unda chapdagisini olaman. Uning oq rangdagisi ham bormi?",
+              "uz-Cyrl": "Унда чапдагисини оламан. Унинг оқ рангдагиси ҳам борми?",
+              "ru": "Тогда я возьму левую. А в белом цвете она есть?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "In Weiß ist es hier im Laden nicht vorrätig. Ich frage kurz im Lager nach.",
+            "tr": {
+              "uz": "Oq rangdagisi bu yerda, doʻkonda mavjud emas. Hozir omborxonadan soʻrab kelaman.",
+              "uz-Cyrl": "Оқ рангдагиси бу ерда, дўконда мавжуд эмас. Ҳозир омборхонадан сўраб келаман.",
+              "ru": "В белом цвете её здесь, в магазине, нет в наличии. Сейчас уточню на складе."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -10344,6 +10437,712 @@
       "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-beratung",
+      "slug": "beratung",
+      "term": "die Beratung",
+      "icon": "message-circle",
+      "article": "die",
+      "plural": "die Beratungen",
+      "tr": {
+        "uz": "maslahat (mijozga)",
+        "uz-Cyrl": "маслаҳат (мижозга)",
+        "ru": "консультация"
+      },
+      "pron": {
+        "uz": "die be-ra-tung",
+        "uz-Cyrl": "ди бе-ра-тунг",
+        "ru": "ди бе-ра-тунг"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Die Kundin wünscht eine Beratung zu Kaffeemaschinen.",
+        "tr": {
+          "uz": "Xaridor ayol qahva mashinalari boʻyicha maslahat soʻrayapti.",
+          "uz-Cyrl": "Харидор аёл қаҳва машиналари бўйича маслаҳат сўраяпти.",
+          "ru": "Покупательница хочет получить консультацию по кофемашинам."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-beratungsgespraech",
+      "slug": "beratungsgespraech",
+      "term": "das Beratungsgespräch",
+      "icon": "messages",
+      "article": "das",
+      "plural": "die Beratungsgespräche",
+      "tr": {
+        "uz": "maslahat suhbati",
+        "uz-Cyrl": "маслаҳат суҳбати",
+        "ru": "консультационная беседа"
+      },
+      "pron": {
+        "uz": "das be-ra-tungs-ge-shprex",
+        "uz-Cyrl": "дас бе-ра-тунгс-ге-шпрех",
+        "ru": "дас бе-ра-тунгс-ге-шпрех"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Nach dem Beratungsgespräch hat der Kunde den leiseren Staubsauger gekauft.",
+        "tr": {
+          "uz": "Maslahat suhbatidan keyin xaridor shovqini kamroq changyutgichni sotib oldi.",
+          "uz-Cyrl": "Маслаҳат суҳбатидан кейин харидор шовқини камроқ чангютгични сотиб олди.",
+          "ru": "После консультации покупатель купил более тихий пылесос."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-sortiment",
+      "slug": "sortiment",
+      "term": "das Sortiment",
+      "icon": "package",
+      "article": "das",
+      "plural": "die Sortimente",
+      "tr": {
+        "uz": "assortiment (doʻkondagi tovarlar)",
+        "uz-Cyrl": "ассортимент (дўкондаги товарлар)",
+        "ru": "ассортимент"
+      },
+      "pron": {
+        "uz": "das zor-ti-ment",
+        "uz-Cyrl": "дас зор-ти-мент",
+        "ru": "дас зор-ти-мент"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Dieses Modell haben wir nicht mehr im Sortiment.",
+        "tr": {
+          "uz": "Bu model endi assortimentimizda yoʻq.",
+          "uz-Cyrl": "Бу модел энди ассортиментимизда йўқ.",
+          "ru": "Этой модели больше нет в нашем ассортименте."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-alternative",
+      "slug": "alternative",
+      "term": "die Alternative",
+      "icon": "repeat",
+      "article": "die",
+      "plural": "die Alternativen",
+      "tr": {
+        "uz": "muqobil variant",
+        "uz-Cyrl": "муқобил вариант",
+        "ru": "альтернатива"
+      },
+      "pron": {
+        "uz": "die al-ter-na-ti-ve",
+        "uz-Cyrl": "ди ал-тер-на-ти-ве",
+        "ru": "ди ал-тер-на-ти-ве"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Die rote Jacke ist ausverkauft, aber ich kann Ihnen eine Alternative zeigen.",
+        "tr": {
+          "uz": "Qizil kurtka sotilib ketgan, lekin sizga muqobil variantni koʻrsatishim mumkin.",
+          "uz-Cyrl": "Қизил куртка сотилиб кетган, лекин сизга муқобил вариантни кўрсатишим мумкин.",
+          "ru": "Красная куртка распродана, но я могу показать вам альтернативу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-vergleichen",
+      "slug": "vergleichen",
+      "term": "vergleichen",
+      "icon": "eye",
+      "tr": {
+        "uz": "taqqoslamoq",
+        "uz-Cyrl": "таққосламоқ",
+        "ru": "сравнивать"
+      },
+      "pron": {
+        "uz": "fer-glay-xen",
+        "uz-Cyrl": "фер-глай-хен",
+        "ru": "фер-глай-хен"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Sie können die beiden Geräte hier direkt vergleichen.",
+        "tr": {
+          "uz": "Ikki qurilmani shu yerning oʻzida taqqoslashingiz mumkin.",
+          "uz-Cyrl": "Икки қурилмани шу ернинг ўзида таққослашингиз мумкин.",
+          "ru": "Вы можете сравнить оба прибора прямо здесь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-qualitaet",
+      "slug": "qualitaet",
+      "term": "die Qualität",
+      "icon": "check",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "sifat",
+        "uz-Cyrl": "сифат",
+        "ru": "качество"
+      },
+      "pron": {
+        "uz": "die kva-li-tet",
+        "uz-Cyrl": "ди ква-ли-тет",
+        "ru": "ди ква-ли-тет"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Die Qualität dieses Stoffes ist besser, er ist dicker.",
+        "tr": {
+          "uz": "Bu matoning sifati yaxshiroq, u qalinroq.",
+          "uz-Cyrl": "Бу матонинг сифати яхшироқ, у қалинроқ.",
+          "ru": "Качество этой ткани лучше, она плотнее."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-lieferzeit",
+      "slug": "lieferzeit",
+      "term": "die Lieferzeit",
+      "icon": "truck",
+      "article": "die",
+      "plural": "die Lieferzeiten",
+      "tr": {
+        "uz": "yetkazib berish muddati",
+        "uz-Cyrl": "етказиб бериш муддати",
+        "ru": "срок доставки"
+      },
+      "pron": {
+        "uz": "die li-fer-tsayt",
+        "uz-Cyrl": "ди ли-фер-цайт",
+        "ru": "ди ли-фер-цайт"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Die Lieferzeit kann ich erst nach der Bestellung sagen.",
+        "tr": {
+          "uz": "Yetkazib berish muddatini faqat buyurtmadan keyin ayta olaman.",
+          "uz-Cyrl": "Етказиб бериш муддатини фақат буюртмадан кейин айта оламан.",
+          "ru": "Срок доставки я смогу назвать только после оформления заказа."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-vorraetig",
+      "slug": "vorraetig",
+      "term": "vorrätig",
+      "icon": "package",
+      "tr": {
+        "uz": "mavjud (doʻkonda yoki omborda bor)",
+        "uz-Cyrl": "мавжуд (дўконда ёки омборда бор)",
+        "ru": "в наличии"
+      },
+      "pron": {
+        "uz": "for-re-tix",
+        "uz-Cyrl": "фор-ре-тих",
+        "ru": "фор-ре-тих"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Diese Größe ist leider nur in der anderen Filiale vorrätig.",
+        "tr": {
+          "uz": "Afsuski, bu oʻlcham faqat boshqa filialda mavjud.",
+          "uz-Cyrl": "Афсуски, бу ўлчам фақат бошқа филиалда мавжуд.",
+          "ru": "К сожалению, этот размер есть в наличии только в другом филиале."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-bestellung",
+      "slug": "bestellung",
+      "term": "die Bestellung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Bestellungen",
+      "tr": {
+        "uz": "buyurtma",
+        "uz-Cyrl": "буюртма",
+        "ru": "заказ"
+      },
+      "pron": {
+        "uz": "die be-shtel-lung",
+        "uz-Cyrl": "ди бе-штел-лунг",
+        "ru": "ди бе-штел-лунг"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Ich nehme Ihre Bestellung auf, dann bekommen Sie eine Nachricht.",
+        "tr": {
+          "uz": "Buyurtmangizni qabul qilaman, keyin sizga xabar keladi.",
+          "uz-Cyrl": "Буюртмангизни қабул қиламан, кейин сизга хабар келади.",
+          "ru": "Я оформлю ваш заказ, потом вам придёт сообщение."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-abholung",
+      "slug": "abholung",
+      "term": "die Abholung",
+      "icon": "map-pin",
+      "article": "die",
+      "plural": "die Abholungen",
+      "tr": {
+        "uz": "olib ketish (doʻkondan)",
+        "uz-Cyrl": "олиб кетиш (дўкондан)",
+        "ru": "получение в магазине (самовывоз)"
+      },
+      "pron": {
+        "uz": "die ap-ho-lung",
+        "uz-Cyrl": "ди ап-хо-лунг",
+        "ru": "ди ап-хо-лунг"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Für die Abholung bringen Sie bitte den Abholschein mit.",
+        "tr": {
+          "uz": "Olib ketish uchun iltimos, olib ketish varaqchasini olib keling.",
+          "uz-Cyrl": "Олиб кетиш учун илтимос, олиб кетиш варақчасини олиб келинг.",
+          "ru": "Для получения заказа, пожалуйста, возьмите с собой квитанцию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-kundenwunsch",
+      "slug": "kundenwunsch",
+      "term": "der Kundenwunsch",
+      "icon": "heart-handshake",
+      "article": "der",
+      "plural": "die Kundenwünsche",
+      "tr": {
+        "uz": "mijoz xohishi",
+        "uz-Cyrl": "мижоз хоҳиши",
+        "ru": "пожелание клиента"
+      },
+      "pron": {
+        "uz": "der kun-den-vunsh",
+        "uz-Cyrl": "дер кун-ден-вунш",
+        "ru": "дер кун-ден-вунш"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Wir notieren jeden Kundenwunsch im Bestellbuch.",
+        "tr": {
+          "uz": "Har bir mijoz xohishini buyurtmalar daftariga yozib qoʻyamiz.",
+          "uz-Cyrl": "Ҳар бир мижоз хоҳишини буюртмалар дафтарига ёзиб қўямиз.",
+          "ru": "Мы записываем каждое пожелание клиента в книгу заказов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-filialleiter",
+      "slug": "filialleiter",
+      "term": "der Filialleiter",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Filialleiter",
+      "tr": {
+        "uz": "filial (doʻkon) rahbari",
+        "uz-Cyrl": "филиал (дўкон) раҳбари",
+        "ru": "директор филиала"
+      },
+      "pron": {
+        "uz": "der fi-li-al-lay-ter",
+        "uz-Cyrl": "дер фи-ли-ал-лай-тер",
+        "ru": "дер фи-ли-ал-лай-тер"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Über einen Sonderpreis entscheidet nur der Filialleiter.",
+        "tr": {
+          "uz": "Maxsus narx haqida faqat filial rahbari qaror qiladi.",
+          "uz-Cyrl": "Махсус нарх ҳақида фақат филиал раҳбари қарор қилади.",
+          "ru": "О специальной цене решает только директор филиала."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-darf-ich-ihnen-etwas-zeigen",
+      "slug": "darf-ich-ihnen-etwas-zeigen",
+      "term": "Darf ich Ihnen etwas zeigen?",
+      "icon": "eye",
+      "tr": {
+        "uz": "Sizga biror narsani koʻrsatsam maylimi?",
+        "uz-Cyrl": "Сизга бирор нарсани кўрсатсам майлими?",
+        "ru": "Можно вам что-нибудь показать?"
+      },
+      "pron": {
+        "uz": "darf ix i-nen et-vas tsay-gen",
+        "uz-Cyrl": "дарф их и-нен эт-вас цай-ген",
+        "ru": "дарф их и-нен эт-вас цай-ген"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Guten Tag! Darf ich Ihnen etwas zeigen?",
+        "tr": {
+          "uz": "Xayrli kun! Sizga biror narsani koʻrsatsam maylimi?",
+          "uz-Cyrl": "Хайрли кун! Сизга бирор нарсани кўрсатсам майлими?",
+          "ru": "Добрый день! Можно вам что-нибудь показать?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-ich-frage-kurz-im-lager-nach",
+      "slug": "ich-frage-kurz-im-lager-nach",
+      "term": "Ich frage kurz im Lager nach.",
+      "icon": "building",
+      "tr": {
+        "uz": "Hozir omborxonadan soʻrab kelaman.",
+        "uz-Cyrl": "Ҳозир омборхонадан сўраб келаман.",
+        "ru": "Сейчас уточню на складе."
+      },
+      "pron": {
+        "uz": "ix fra-ge kurts im la-ger nax",
+        "uz-Cyrl": "их фра-ге курц им ла-гер нах",
+        "ru": "их фра-ге курц им ла-гер нах"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Einen Augenblick, ich frage kurz im Lager nach.",
+        "tr": {
+          "uz": "Bir lahza, hozir omborxonadan soʻrab kelaman.",
+          "uz-Cyrl": "Бир лаҳза, ҳозир омборхонадан сўраб келаман.",
+          "ru": "Одну минуту, сейчас уточню на складе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-das-kann-ich-ihnen-leider-nicht-versprechen",
+      "slug": "das-kann-ich-ihnen-leider-nicht-versprechen",
+      "term": "Das kann ich Ihnen leider nicht versprechen.",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Afsuski, buni sizga vaʼda qila olmayman.",
+        "uz-Cyrl": "Афсуски, буни сизга ваъда қила олмайман.",
+        "ru": "К сожалению, этого я вам обещать не могу."
+      },
+      "pron": {
+        "uz": "das kan ix i-nen lay-der nixt fer-shpre-xen",
+        "uz-Cyrl": "дас кан их и-нен лай-дер нихт фер-шпре-хен",
+        "ru": "дас кан их и-нен лай-дер нихт фер-шпре-хен"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Die Ware kommt vielleicht morgen, aber das kann ich Ihnen leider nicht versprechen.",
+        "tr": {
+          "uz": "Mahsulot balki ertaga keladi, lekin afsuski, buni sizga vaʼda qila olmayman.",
+          "uz-Cyrl": "Маҳсулот балки эртага келади, лекин афсуски, буни сизга ваъда қила олмайман.",
+          "ru": "Товар, может быть, придёт завтра, но, к сожалению, этого я вам обещать не могу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-gebrauchsanweisung",
+      "slug": "gebrauchsanweisung",
+      "term": "die Gebrauchsanweisung",
+      "icon": "book",
+      "article": "die",
+      "plural": "die Gebrauchsanweisungen",
+      "tr": {
+        "uz": "foydalanish yoʻriqnomasi",
+        "uz-Cyrl": "фойдаланиш йўриқномаси",
+        "ru": "инструкция по применению"
+      },
+      "pron": {
+        "uz": "die ge-braux-san-vay-zung",
+        "uz-Cyrl": "ди ге-браух-сан-вай-зунг",
+        "ru": "ди ге-браух-сан-вай-зунг"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Lesen Sie bitte vor dem ersten Benutzen die Gebrauchsanweisung.",
+        "tr": {
+          "uz": "Iltimos, birinchi marta ishlatishdan oldin foydalanish yoʻriqnomasini oʻqing.",
+          "uz-Cyrl": "Илтимос, биринчи марта ишлатишдан олдин фойдаланиш йўриқномасини ўқинг.",
+          "ru": "Пожалуйста, перед первым использованием прочитайте инструкцию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-unterschied",
+      "slug": "unterschied",
+      "term": "der Unterschied",
+      "icon": "ruler",
+      "article": "der",
+      "plural": "die Unterschiede",
+      "tr": {
+        "uz": "farq",
+        "uz-Cyrl": "фарқ",
+        "ru": "разница"
+      },
+      "pron": {
+        "uz": "der un-ter-shit",
+        "uz-Cyrl": "дер ун-тер-шит",
+        "ru": "дер ун-тер-шит"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Der Unterschied ist: Dieses Modell hat einen Timer.",
+        "tr": {
+          "uz": "Farqi shundaki: bu modelda taymer bor.",
+          "uz-Cyrl": "Фарқи шундаки: бу моделда таймер бор.",
+          "ru": "Разница в том, что у этой модели есть таймер."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-preiswert",
+      "slug": "preiswert",
+      "term": "preiswert",
+      "icon": "receipt",
+      "tr": {
+        "uz": "hamyonbop (narxiga arziydi)",
+        "uz-Cyrl": "ҳамёнбоп (нархига арзийди)",
+        "ru": "недорогой, выгодный"
+      },
+      "pron": {
+        "uz": "prays-vert",
+        "uz-Cyrl": "прайс-верт",
+        "ru": "прайс-верт"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Dieser Wasserkocher ist preiswert und funktioniert gut.",
+        "tr": {
+          "uz": "Bu elektr choynak hamyonbop va yaxshi ishlaydi.",
+          "uz-Cyrl": "Бу электр чойнак ҳамёнбоп ва яхши ишлайди.",
+          "ru": "Этот электрочайник недорогой и хорошо работает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-beraten",
+      "slug": "beraten",
+      "term": "beraten",
+      "icon": "message-circle",
+      "tr": {
+        "uz": "maslahat bermoq",
+        "uz-Cyrl": "маслаҳат бермоқ",
+        "ru": "консультировать"
+      },
+      "pron": {
+        "uz": "be-ra-ten",
+        "uz-Cyrl": "бе-ра-тен",
+        "ru": "бе-ра-тен"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Meine Kollegin kann Sie bei Handys besser beraten.",
+        "tr": {
+          "uz": "Telefonlar boʻyicha hamkasbim sizga yaxshiroq maslahat bera oladi.",
+          "uz-Cyrl": "Телефонлар бўйича ҳамкасбим сизга яхшироқ маслаҳат бера олади.",
+          "ru": "По телефонам моя коллега проконсультирует вас лучше."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-mijoz-maslahat-jugendschutz",
+      "slug": "jugendschutz",
+      "term": "der Jugendschutz",
+      "icon": "id",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "voyaga yetmaganlarni himoya qilish (alkogol va tamaki sotish qoidalari)",
+        "uz-Cyrl": "вояга етмаганларни ҳимоя қилиш (алкогол ва тамаки сотиш қоидалари)",
+        "ru": "защита несовершеннолетних (правила продажи алкоголя и табака)"
+      },
+      "pron": {
+        "uz": "der yu-gent-shuts",
+        "uz-Cyrl": "дер ю-гент-шуц",
+        "ru": "дер ю-гент-шуц"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "mijoz-maslahat",
+      "example": {
+        "term": "Wegen des Jugendschutzes muss ich Ihren Ausweis sehen.",
+        "tr": {
+          "uz": "Voyaga yetmaganlarni himoya qilish qoidasi tufayli hujjatingizni koʻrishim kerak.",
+          "uz-Cyrl": "Вояга етмаганларни ҳимоя қилиш қоидаси туфайли ҳужжатингизни кўришим керак.",
+          "ru": "По правилам защиты несовершеннолетних мне нужно посмотреть ваш документ."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
