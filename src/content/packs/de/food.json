@@ -2296,6 +2296,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "smena-topshirish",
+      "title": {
+        "uz": "Smena topshirish va ishlab chiqarish hisoboti",
+        "uz-Cyrl": "Смена топшириш ва ишлаб чиқариш ҳисоботи",
+        "ru": "Передача смены и отчёт о производстве"
+      },
+      "order": 14,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Kechki smena hamkasbi",
+              "uz-Cyrl": "Кечки смена ҳамкасби",
+              "ru": "Коллега из вечерней смены"
+            },
+            "de": "Hallo! Ich übernehme jetzt Linie 1. Wie war die Frühschicht?",
+            "tr": {
+              "uz": "Salom! Endi 1-liniyani men olaman. Erta smena qanday oʻtdi?",
+              "uz-Cyrl": "Салом! Энди 1-линияни мен оламан. Эрта смена қандай ўтди?",
+              "ru": "Привет! Теперь линию 1 принимаю я. Как прошла утренняя смена?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Leider nicht ruhig. Am Vormittag hatten wir Stillstand, die Folie war gerissen. Das steht im Schichtbuch.",
+            "tr": {
+              "uz": "Afsuski, tinch emas. Ertalab liniya toʻxtab qoldi, plyonka yirtilgan edi. Bu smena jurnalida yozilgan.",
+              "uz-Cyrl": "Афсуски, тинч эмас. Эрталаб линия тўхтаб қолди, плёнка йиртилган эди. Бу смена журналида ёзилган.",
+              "ru": "К сожалению, неспокойно. Утром был простой, порвалась плёнка. Это записано в журнале смены."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kechki smena hamkasbi",
+              "uz-Cyrl": "Кечки смена ҳамкасби",
+              "ru": "Коллега из вечерней смены"
+            },
+            "de": "Okay. Und haben wir die Sollmenge geschafft?",
+            "tr": {
+              "uz": "Xoʻp. Rejadagi miqdorga yetdikmi?",
+              "uz-Cyrl": "Хўп. Режадаги миқдорга етдикми?",
+              "ru": "Ладно. А план по количеству выполнили?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, leider nicht ganz. Die genaue Istmenge steht auch im Schichtbuch.",
+            "tr": {
+              "uz": "Yoʻq, afsuski toʻliq emas. Aniq haqiqiy miqdor ham smena jurnalida yozilgan.",
+              "uz-Cyrl": "Йўқ, афсуски тўлиқ эмас. Аниқ ҳақиқий миқдор ҳам смена журналида ёзилган.",
+              "ru": "Нет, к сожалению, не полностью. Точное фактическое количество тоже в журнале смены."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kechki smena hamkasbi",
+              "uz-Cyrl": "Кечки смена ҳамкасби",
+              "ru": "Коллега из вечерней смены"
+            },
+            "de": "Gut. Gleich kommt der Produktwechsel von Nuss auf Natur, oder?",
+            "tr": {
+              "uz": "Yaxshi. Hozir yongʻoqli yogurtdan oddiy yogurtga oʻtamiz, toʻgʻrimi?",
+              "uz-Cyrl": "Яхши. Ҳозир ёнғоқли йогуртдан оддий йогуртга ўтамиз, тўғрими?",
+              "ru": "Хорошо. Сейчас переход с орехового йогурта на натуральный, да?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, wegen der Nüsse ist das ein Allergenwechsel. Bitte erst nach der Reinigung und der Linienfreigabe starten.",
+            "tr": {
+              "uz": "Ha, yongʻoq sababli bu allergen almashinuvi. Iltimos, faqat tozalash va ishga tushirish ruxsatidan keyin boshlang.",
+              "uz-Cyrl": "Ҳа, ёнғоқ сабабли бу аллерген алмашинуви. Илтимос, фақат тозалаш ва ишга тушириш рухсатидан кейин бошланг.",
+              "ru": "Да, из-за орехов это смена аллергена. Пожалуйста, запускайте только после уборки и допуска линии."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -11388,6 +11481,716 @@
         }
       },
       "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-schichtbuch",
+      "slug": "schichtbuch",
+      "term": "das Schichtbuch",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "die Schichtbücher",
+      "tr": {
+        "uz": "smena jurnali",
+        "uz-Cyrl": "смена журнали",
+        "ru": "журнал смены"
+      },
+      "pron": {
+        "uz": "das shixt-bux",
+        "uz-Cyrl": "дас шихт-бух",
+        "ru": "дас шихт-бух"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Ich schreibe die Störung ins Schichtbuch.",
+        "tr": {
+          "uz": "Nosozlikni smena jurnaliga yozaman.",
+          "uz-Cyrl": "Носозликни смена журналига ёзаман.",
+          "ru": "Я записываю неисправность в журнал смены."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-sollmenge",
+      "slug": "sollmenge",
+      "term": "die Sollmenge",
+      "icon": "number-1",
+      "article": "die",
+      "plural": "die Sollmengen",
+      "tr": {
+        "uz": "rejadagi miqdor",
+        "uz-Cyrl": "режадаги миқдор",
+        "ru": "плановое количество"
+      },
+      "pron": {
+        "uz": "die zol-men-ge",
+        "uz-Cyrl": "ди зол-мен-ге",
+        "ru": "ди зол-мен-ге"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Die Sollmenge steht im Produktionsplan.",
+        "tr": {
+          "uz": "Rejadagi miqdor ishlab chiqarish rejasida yozilgan.",
+          "uz-Cyrl": "Режадаги миқдор ишлаб чиқариш режасида ёзилган.",
+          "ru": "Плановое количество указано в производственном плане."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-istmenge",
+      "slug": "istmenge",
+      "term": "die Istmenge",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Istmengen",
+      "tr": {
+        "uz": "haqiqiy miqdor (ishlab chiqarilgani)",
+        "uz-Cyrl": "ҳақиқий миқдор (ишлаб чиқарилгани)",
+        "ru": "фактическое количество"
+      },
+      "pron": {
+        "uz": "die ist-men-ge",
+        "uz-Cyrl": "ди ист-мен-ге",
+        "ru": "ди ист-мен-ге"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Die Istmenge ist heute niedriger als geplant.",
+        "tr": {
+          "uz": "Bugun haqiqiy miqdor rejadagidan kamroq.",
+          "uz-Cyrl": "Бугун ҳақиқий миқдор режадагидан камроқ.",
+          "ru": "Сегодня фактическое количество ниже запланированного."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-ausschuss",
+      "slug": "ausschuss",
+      "term": "der Ausschuss",
+      "icon": "trash",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "brak, yaroqsiz mahsulot",
+        "uz-Cyrl": "брак, яроқсиз маҳсулот",
+        "ru": "брак"
+      },
+      "pron": {
+        "uz": "der aus-shus",
+        "uz-Cyrl": "дер аус-шус",
+        "ru": "дер аус-шус"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Nach dem Produktwechsel hatten wir viel Ausschuss.",
+        "tr": {
+          "uz": "Mahsulot almashgandan keyin brak koʻp boʻldi.",
+          "uz-Cyrl": "Маҳсулот алмашгандан кейин брак кўп бўлди.",
+          "ru": "После смены продукта было много брака."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-ruestzeit",
+      "slug": "ruestzeit",
+      "term": "die Rüstzeit",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Rüstzeiten",
+      "tr": {
+        "uz": "liniyani qayta sozlash vaqti",
+        "uz-Cyrl": "линияни қайта созлаш вақти",
+        "ru": "время переналадки"
+      },
+      "pron": {
+        "uz": "die ryust-tsayt",
+        "uz-Cyrl": "ди рюст-цайт",
+        "ru": "ди рюст-цайт"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Die Rüstzeit war heute länger, weil ein Teil gefehlt hat.",
+        "tr": {
+          "uz": "Bugun sozlash vaqti uzoqroq boʻldi, chunki bitta detal yetishmadi.",
+          "uz-Cyrl": "Бугун созлаш вақти узоқроқ бўлди, чунки битта детал етишмади.",
+          "ru": "Сегодня переналадка заняла больше времени, потому что не хватало одной детали."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-stillstand",
+      "slug": "stillstand",
+      "term": "der Stillstand",
+      "icon": "hand-stop",
+      "article": "der",
+      "plural": "die Stillstände",
+      "tr": {
+        "uz": "toʻxtab qolish (liniya ishlamagan vaqt)",
+        "uz-Cyrl": "тўхтаб қолиш (линия ишламаган вақт)",
+        "ru": "простой"
+      },
+      "pron": {
+        "uz": "der shtil-shtand",
+        "uz-Cyrl": "дер штил-штанд",
+        "ru": "дер штил-штанд"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Jeder Stillstand kommt mit Uhrzeit ins Schichtbuch.",
+        "tr": {
+          "uz": "Har bir toʻxtab qolish vaqti bilan smena jurnaliga yoziladi.",
+          "uz-Cyrl": "Ҳар бир тўхтаб қолиш вақти билан смена журналига ёзилади.",
+          "ru": "Каждый простой записывается в журнал смены с указанием времени."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-produktwechsel",
+      "slug": "produktwechsel",
+      "term": "der Produktwechsel",
+      "icon": "repeat",
+      "article": "der",
+      "plural": "die Produktwechsel",
+      "tr": {
+        "uz": "mahsulot almashinuvi (liniyada)",
+        "uz-Cyrl": "маҳсулот алмашинуви (линияда)",
+        "ru": "смена продукта (на линии)"
+      },
+      "pron": {
+        "uz": "der pro-dukt-vek-sel",
+        "uz-Cyrl": "дер про-дукт-век-сел",
+        "ru": "дер про-дукт-век-сел"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Um zehn Uhr ist Produktwechsel auf Linie 1.",
+        "tr": {
+          "uz": "Soat oʻnda 1-liniyada mahsulot almashadi.",
+          "uz-Cyrl": "Соат ўнда 1-линияда маҳсулот алмашади.",
+          "ru": "В десять часов на линии 1 смена продукта."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-allergenwechsel",
+      "slug": "allergenwechsel",
+      "term": "der Allergenwechsel",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Allergenwechsel",
+      "tr": {
+        "uz": "allergen almashinuvi (boshqa allergenli mahsulotga oʻtish)",
+        "uz-Cyrl": "аллерген алмашинуви (бошқа аллергенли маҳсулотга ўтиш)",
+        "ru": "смена аллергена (переход на продукт с другими аллергенами)"
+      },
+      "pron": {
+        "uz": "der a-ler-gen-vek-sel",
+        "uz-Cyrl": "дер а-лер-ген-век-сел",
+        "ru": "дер а-лер-ген-век-сел"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Vor dem Allergenwechsel muss die Linie gründlich gereinigt werden.",
+        "tr": {
+          "uz": "Allergen almashinuvidan oldin liniya yaxshilab tozalanishi kerak.",
+          "uz-Cyrl": "Аллерген алмашинувидан олдин линия яхшилаб тозаланиши керак.",
+          "ru": "Перед сменой аллергена линию нужно тщательно очистить."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-zwischenreinigung",
+      "slug": "zwischenreinigung",
+      "term": "die Zwischenreinigung",
+      "icon": "droplet",
+      "article": "die",
+      "plural": "die Zwischenreinigungen",
+      "tr": {
+        "uz": "oraliq tozalash (smena ichida)",
+        "uz-Cyrl": "оралиқ тозалаш (смена ичида)",
+        "ru": "промежуточная уборка"
+      },
+      "pron": {
+        "uz": "die tsvi-shen-ray-ni-gung",
+        "uz-Cyrl": "ди цви-шен-рай-ни-гунг",
+        "ru": "ди цви-шен-рай-ни-гунг"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Nach der Zwischenreinigung läuft die Linie wieder.",
+        "tr": {
+          "uz": "Oraliq tozalashdan keyin liniya yana ishlayapti.",
+          "uz-Cyrl": "Оралиқ тозалашдан кейин линия яна ишлаяпти.",
+          "ru": "После промежуточной уборки линия снова работает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-linienfreigabe",
+      "slug": "linienfreigabe",
+      "term": "die Linienfreigabe",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Linienfreigaben",
+      "tr": {
+        "uz": "liniyani ishga tushirishga ruxsat",
+        "uz-Cyrl": "линияни ишга туширишга рухсат",
+        "ru": "допуск линии к запуску"
+      },
+      "pron": {
+        "uz": "die li-ni-en-fray-ga-be",
+        "uz-Cyrl": "ди ли-ни-ен-фрай-га-бе",
+        "ru": "ди ли-ни-ен-фрай-га-бе"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Wer gibt heute die Linienfreigabe?",
+        "tr": {
+          "uz": "Bugun liniyani ishga tushirishga kim ruxsat beradi?",
+          "uz-Cyrl": "Бугун линияни ишга туширишга ким рухсат беради?",
+          "ru": "Кто сегодня даёт допуск линии к запуску?"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-restmenge",
+      "slug": "restmenge",
+      "term": "die Restmenge",
+      "icon": "package",
+      "article": "die",
+      "plural": "die Restmengen",
+      "tr": {
+        "uz": "qoldiq miqdor",
+        "uz-Cyrl": "қолдиқ миқдор",
+        "ru": "остаток"
+      },
+      "pron": {
+        "uz": "die rest-men-ge",
+        "uz-Cyrl": "ди рест-мен-ге",
+        "ru": "ди рест-мен-ге"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Die Restmenge Joghurt kommt zurück ins Kühlhaus.",
+        "tr": {
+          "uz": "Qolgan yogurt sovuq omborga qaytariladi.",
+          "uz-Cyrl": "Қолган йогурт совуқ омборга қайтарилади.",
+          "ru": "Остаток йогурта возвращается в холодильную камеру."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-verpackungsmaterial",
+      "slug": "verpackungsmaterial",
+      "term": "das Verpackungsmaterial",
+      "icon": "package",
+      "article": "das",
+      "plural": "die Verpackungsmaterialien",
+      "tr": {
+        "uz": "qadoqlash materiali",
+        "uz-Cyrl": "қадоқлаш материали",
+        "ru": "упаковочный материал"
+      },
+      "pron": {
+        "uz": "das fer-pa-kungs-ma-te-ri-al",
+        "uz-Cyrl": "дас фер-па-кунгс-ма-те-ри-ал",
+        "ru": "дас фер-па-кунгс-ма-те-ри-ал"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Das Verpackungsmaterial reicht nur noch bis Mittag.",
+        "tr": {
+          "uz": "Qadoqlash materiali faqat tushgacha yetadi.",
+          "uz-Cyrl": "Қадоқлаш материали фақат тушгача етади.",
+          "ru": "Упаковочного материала хватит только до обеда."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-rohstoffmangel",
+      "slug": "rohstoffmangel",
+      "term": "der Rohstoffmangel",
+      "icon": "alert-octagon",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "xomashyo yetishmasligi",
+        "uz-Cyrl": "хомашё етишмаслиги",
+        "ru": "нехватка сырья"
+      },
+      "pron": {
+        "uz": "der ro-shtof-man-gel",
+        "uz-Cyrl": "дер ро-штоф-ман-гел",
+        "ru": "дер ро-штоф-ман-гел"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Wegen Rohstoffmangel haben wir die Linie früher gestoppt.",
+        "tr": {
+          "uz": "Xomashyo yetishmagani sababli liniyani ertaroq toʻxtatdik.",
+          "uz-Cyrl": "Хомашё етишмагани сабабли линияни эртароқ тўхтатдик.",
+          "ru": "Из-за нехватки сырья мы остановили линию раньше."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-nachbestellen",
+      "slug": "nachbestellen",
+      "term": "nachbestellen",
+      "icon": "receipt",
+      "tr": {
+        "uz": "qoʻshimcha buyurtma bermoq",
+        "uz-Cyrl": "қўшимча буюртма бермоқ",
+        "ru": "дозаказать"
+      },
+      "pron": {
+        "uz": "nax-be-shte-len",
+        "uz-Cyrl": "нах-бе-ште-лен",
+        "ru": "нах-бе-ште-лен"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Wir müssen Deckel nachbestellen.",
+        "tr": {
+          "uz": "Qopqoqlarni qoʻshimcha buyurtma qilishimiz kerak.",
+          "uz-Cyrl": "Қопқоқларни қўшимча буюртма қилишимиз керак.",
+          "ru": "Нам нужно дозаказать крышки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-uebergeben",
+      "slug": "uebergeben",
+      "term": "übergeben",
+      "icon": "users",
+      "tr": {
+        "uz": "topshirmoq (smenani, liniyani)",
+        "uz-Cyrl": "топширмоқ (сменани, линияни)",
+        "ru": "передавать (смену, линию)"
+      },
+      "pron": {
+        "uz": "yu-ber-ge-ben",
+        "uz-Cyrl": "ю-бер-ге-бен",
+        "ru": "ю-бер-ге-бен"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Ich möchte die Linie sauber übergeben.",
+        "tr": {
+          "uz": "Liniyani toza holda topshirmoqchiman.",
+          "uz-Cyrl": "Линияни тоза ҳолда топширмоқчиман.",
+          "ru": "Я хочу передать линию в чистом виде."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-was-ist-noch-offen",
+      "slug": "was-ist-noch-offen",
+      "term": "Was ist noch offen?",
+      "icon": "help",
+      "tr": {
+        "uz": "Yana nima qolgan (bajarilmagan)?",
+        "uz-Cyrl": "Яна нима қолган (бажарилмаган)?",
+        "ru": "Что ещё не сделано?"
+      },
+      "pron": {
+        "uz": "vas ist nox o-fen",
+        "uz-Cyrl": "вас ист нох о-фен",
+        "ru": "вас ист нох о-фен"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Was ist noch offen? – Nur die Etiketten für morgen.",
+        "tr": {
+          "uz": "Yana nima qolgan? – Faqat ertangi yorliqlar.",
+          "uz-Cyrl": "Яна нима қолган? – Фақат эртанги ёрлиқлар.",
+          "ru": "Что ещё не сделано? – Только этикетки на завтра."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-produktionsplan",
+      "slug": "produktionsplan",
+      "term": "der Produktionsplan",
+      "icon": "calendar-event",
+      "article": "der",
+      "plural": "die Produktionspläne",
+      "tr": {
+        "uz": "ishlab chiqarish rejasi",
+        "uz-Cyrl": "ишлаб чиқариш режаси",
+        "ru": "производственный план"
+      },
+      "pron": {
+        "uz": "der pro-duk-tsi-ons-plan",
+        "uz-Cyrl": "дер про-дук-ци-онс-план",
+        "ru": "дер про-дук-ци-онс-план"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Der Produktionsplan für morgen hängt an der Tafel.",
+        "tr": {
+          "uz": "Ertangi ishlab chiqarish rejasi doskada osilgan.",
+          "uz-Cyrl": "Эртанги ишлаб чиқариш режаси доскада осилган.",
+          "ru": "План производства на завтра висит на доске."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-verzoegerung",
+      "slug": "verzoegerung",
+      "term": "die Verzögerung",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Verzögerungen",
+      "tr": {
+        "uz": "kechikish, ortga surilish",
+        "uz-Cyrl": "кечикиш, ортга сурилиш",
+        "ru": "задержка"
+      },
+      "pron": {
+        "uz": "die fer-tsyo-ge-rung",
+        "uz-Cyrl": "ди фер-цё-ге-рунг",
+        "ru": "ди фер-цё-ге-рунг"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Durch die Verzögerung schaffen wir die Sollmenge nicht.",
+        "tr": {
+          "uz": "Kechikish tufayli rejadagi miqdorga yetolmaymiz.",
+          "uz-Cyrl": "Кечикиш туфайли режадаги миқдорга етолмаймиз.",
+          "ru": "Из-за задержки мы не выполним план по количеству."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-nachjustieren",
+      "slug": "nachjustieren",
+      "term": "nachjustieren",
+      "icon": "tools",
+      "tr": {
+        "uz": "qayta (aniq) sozlamoq",
+        "uz-Cyrl": "қайта (аниқ) созламоқ",
+        "ru": "подрегулировать"
+      },
+      "pron": {
+        "uz": "nax-yus-ti-ren",
+        "uz-Cyrl": "нах-юс-ти-рен",
+        "ru": "нах-юс-ти-рен"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Ich muss den Sensor nachjustieren.",
+        "tr": {
+          "uz": "Sensorni qayta sozlashim kerak.",
+          "uz-Cyrl": "Сенсорни қайта созлашим керак.",
+          "ru": "Мне нужно подрегулировать датчик."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "food-smena-topshirish-bitte-erst-nach-der-reinigung-starten",
+      "slug": "bitte-erst-nach-der-reinigung-starten",
+      "term": "Bitte erst nach der Reinigung starten!",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Iltimos, faqat tozalashdan keyin ishga tushiring!",
+        "uz-Cyrl": "Илтимос, фақат тозалашдан кейин ишга туширинг!",
+        "ru": "Пожалуйста, запускайте только после уборки!"
+      },
+      "pron": {
+        "uz": "bi-te erst nax der ray-ni-gung shtar-ten",
+        "uz-Cyrl": "би-те эрст нах дер рай-ни-гунг штар-тен",
+        "ru": "би-те эрст нах дер рай-ни-гунг штар-тен"
+      },
+      "level": "B1",
+      "field": "food",
+      "jobs": [
+        "fachkraft-lebensmitteltechnik",
+        "maschinen-anlagenfuehrer"
+      ],
+      "situation": "smena-topshirish",
+      "example": {
+        "term": "Am Schalter hängt ein Schild: „Bitte erst nach der Reinigung starten!“",
+        "tr": {
+          "uz": "Oʻchirgichda belgi osilgan: „Iltimos, faqat tozalashdan keyin ishga tushiring!“",
+          "uz-Cyrl": "Ўчиргичда белги осилган: „Илтимос, фақат тозалашдан кейин ишга туширинг!“",
+          "ru": "На выключателе висит табличка: «Пожалуйста, запускайте только после уборки!»"
+        }
+      },
+      "safety": true,
       "status": "review",
       "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
     }
