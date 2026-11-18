@@ -2212,6 +2212,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Smena boshligʻi",
+              "uz-Cyrl": "Смена бошлиғи",
+              "ru": "Начальник смены"
+            },
+            "de": "Wir haben eine Reklamation bekommen: Ein Kunde hat ein Stück Plastik im Joghurt gefunden.",
+            "tr": {
+              "uz": "Bizga reklamatsiya keldi: mijoz yogurtda plastik boʻlagini topibdi.",
+              "uz-Cyrl": "Бизга рекламация келди: мижоз йогуртда пластик бўлагини топибди.",
+              "ru": "Нам пришла рекламация: клиент нашёл кусочек пластика в йогурте."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Oh nein. Haben wir noch eine Rückstellprobe von dieser Charge?",
+            "tr": {
+              "uz": "Voy. Bu partiyadan saqlab qoʻyilgan namunamiz bormi?",
+              "uz-Cyrl": "Вой. Бу партиядан сақлаб қўйилган намунамиз борми?",
+              "ru": "Ой. У нас остался архивный образец этой партии?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Smena boshligʻi",
+              "uz-Cyrl": "Смена бошлиғи",
+              "ru": "Начальник смены"
+            },
+            "de": "Ja, im Labor. Wissen Sie, an welcher Linie die Charge produziert wurde?",
+            "tr": {
+              "uz": "Ha, laboratoriyada. Bu partiya qaysi liniyada ishlab chiqarilganini bilasizmi?",
+              "uz-Cyrl": "Ҳа, лабораторияда. Бу партия қайси линияда ишлаб чиқарилганини биласизми?",
+              "ru": "Да, в лаборатории. Вы знаете, на какой линии произвели эту партию?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "An Linie 1. Das steht mit der Chargennummer im Schichtprotokoll.",
+            "tr": {
+              "uz": "1-liniyada. Bu smena bayonnomasida partiya raqami bilan yozilgan.",
+              "uz-Cyrl": "1-линияда. Бу смена баённомасида партия рақами билан ёзилган.",
+              "ru": "На линии 1. Это записано в протоколе смены вместе с номером партии."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Smena boshligʻi",
+              "uz-Cyrl": "Смена бошлиғи",
+              "ru": "Начальник смены"
+            },
+            "de": "Gut, dann ist die Rückverfolgbarkeit klar. Ist an Linie 1 etwas beschädigt, zum Beispiel ein Deckel oder eine Abdeckung?",
+            "tr": {
+              "uz": "Yaxshi, demak kuzatib borish aniq. 1-liniyada biror narsa shikastlanganmi, masalan qopqoq yoki himoya qoplamasi?",
+              "uz-Cyrl": "Яхши, демак кузатиб бориш аниқ. 1-линияда бирор нарса шикастланганми, масалан қопқоқ ёки ҳимоя қопламаси?",
+              "ru": "Хорошо, значит, прослеживаемость ясна. На линии 1 что-нибудь повреждено, например крышка или защитный кожух?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, an der Schutzabdeckung fehlt eine kleine Ecke. Ich zeige Ihnen die Stelle, dann können wir eine Korrekturmaßnahme festlegen.",
+            "tr": {
+              "uz": "Ha, himoya qoplamasining kichik bir burchagi yoʻq. Sizga oʻsha joyni koʻrsataman, keyin tuzatish chorasini belgilaymiz.",
+              "uz-Cyrl": "Ҳа, ҳимоя қопламасининг кичик бир бурчаги йўқ. Сизга ўша жойни кўрсатаман, кейин тузатиш чорасини белгилаймиз.",
+              "ru": "Да, у защитного кожуха отколот маленький угол. Покажу вам это место, потом определим корректирующую меру."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
