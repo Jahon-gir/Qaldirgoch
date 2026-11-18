@@ -2296,6 +2296,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "shikoyat-hal",
+      "title": {
+        "uz": "Reklamatsiya va shikoyatni hal qilish",
+        "uz-Cyrl": "Рекламация ва шикоятни ҳал қилиш",
+        "ru": "Решение рекламаций и жалоб"
+      },
+      "order": 14,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Dieser Föhn ist schon wieder kaputt! Ich bin wirklich verärgert.",
+            "tr": {
+              "uz": "Bu fen yana buzildi! Jahlim chiqib ketdi.",
+              "uz-Cyrl": "Бу фен яна бузилди! Жаҳлим чиқиб кетди.",
+              "ru": "Этот фен опять сломался! Меня это очень злит."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Das verstehe ich. Darf ich mir das Gerät kurz ansehen?",
+            "tr": {
+              "uz": "Tushunaman. Qurilmani bir koʻrib chiqsam maylimi?",
+              "uz-Cyrl": "Тушунаман. Қурилмани бир кўриб чиқсам майлими?",
+              "ru": "Понимаю. Можно мне быстро посмотреть устройство?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Ja, bitte. Er geht nach kurzer Zeit einfach aus. Ich möchte sofort ein neues Gerät, keine Reparatur!",
+            "tr": {
+              "uz": "Ha, marhamat. Biroz ishlab, oʻchib qoladi. Menga taʼmir emas, darhol yangi qurilma kerak!",
+              "uz-Cyrl": "Ҳа, марҳамат. Бироз ишлаб, ўчиб қолади. Менга таъмир эмас, дарҳол янги қурилма керак!",
+              "ru": "Да, пожалуйста. Он через короткое время просто выключается. Мне нужен сразу новый прибор, а не ремонт!"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ob Sie aus Kulanz ein neues Gerät bekommen, darf ich nicht entscheiden. Ich hole jemanden, der das entscheiden darf.",
+            "tr": {
+              "uz": "Kulans tariqasida yangi qurilma berilishini men hal qila olmayman. Buni hal qilishga haqli odamni chaqirib kelaman.",
+              "uz-Cyrl": "Куланс тариқасида янги қурилма берилишини мен ҳал қила олмайман. Буни ҳал қилишга ҳақли одамни чақириб келаман.",
+              "ru": "Получите ли вы новый прибор в порядке уступки, решаю не я. Я позову того, кто может это решить."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Gut, ich warte. Aber wenn der Föhn doch zum Hersteller muss – wie lange dauert das?",
+            "tr": {
+              "uz": "Mayli, kutaman. Lekin agar fen baribir ishlab chiqaruvchiga yuborilsa, bu qancha vaqt oladi?",
+              "uz-Cyrl": "Майли, кутаман. Лекин агар фен барибир ишлаб чиқарувчига юборилса, бу қанча вақт олади?",
+              "ru": "Хорошо, я подожду. Но если фен всё-таки придётся отправить производителю — сколько это займёт?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Das hängt vom Hersteller ab. Eine genaue Bearbeitungszeit kann ich Ihnen leider nicht nennen.",
+            "tr": {
+              "uz": "Bu ishlab chiqaruvchiga bogʻliq. Afsuski, aniq koʻrib chiqish muddatini ayta olmayman.",
+              "uz-Cyrl": "Бу ишлаб чиқарувчига боғлиқ. Афсуски, аниқ кўриб чиқиш муддатини айта олмайман.",
+              "ru": "Это зависит от производителя. К сожалению, точный срок обработки я назвать не могу."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -11221,6 +11314,708 @@
           "uz": "Voyaga yetmaganlarni himoya qilish qoidasi tufayli hujjatingizni koʻrishim kerak.",
           "uz-Cyrl": "Вояга етмаганларни ҳимоя қилиш қоидаси туфайли ҳужжатингизни кўришим керак.",
           "ru": "По правилам защиты несовершеннолетних мне нужно посмотреть ваш документ."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-kulanz",
+      "slug": "kulanz",
+      "term": "die Kulanz",
+      "icon": "heart-handshake",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "kulans (doʻkonning majburiyatsiz yon berishi)",
+        "uz-Cyrl": "куланс (дўконнинг мажбуриятсиз ён бериши)",
+        "ru": "уступка клиенту без обязательства (куланц)"
+      },
+      "pron": {
+        "uz": "die ku-lants",
+        "uz-Cyrl": "ди ку-ланц",
+        "ru": "ди ку-ланц"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Ob wir das aus Kulanz machen, entscheidet der Filialleiter.",
+        "tr": {
+          "uz": "Buni kulans tariqasida qilamizmi-yoʻqmi, filial rahbari hal qiladi.",
+          "uz-Cyrl": "Буни куланс тариқасида қиламизми-йўқми, филиал раҳбари ҳал қилади.",
+          "ru": "Сделаем ли мы это в порядке уступки, решает директор филиала."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-reparaturauftrag",
+      "slug": "reparaturauftrag",
+      "term": "der Reparaturauftrag",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Reparaturaufträge",
+      "tr": {
+        "uz": "taʼmirlash buyurtmasi",
+        "uz-Cyrl": "таъмирлаш буюртмаси",
+        "ru": "заказ на ремонт"
+      },
+      "pron": {
+        "uz": "der re-pa-ra-tur-auf-trak",
+        "uz-Cyrl": "дер ре-па-ра-тур-ауф-трак",
+        "ru": "дер ре-па-ра-тур-ауф-трак"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Ich schreibe jetzt einen Reparaturauftrag für Ihr Gerät.",
+        "tr": {
+          "uz": "Hozir qurilmangiz uchun taʼmirlash buyurtmasini yozaman.",
+          "uz-Cyrl": "Ҳозир қурилмангиз учун таъмирлаш буюртмасини ёзаман.",
+          "ru": "Сейчас я оформлю заказ на ремонт вашего устройства."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-seriennummer",
+      "slug": "seriennummer",
+      "term": "die Seriennummer",
+      "icon": "number-1",
+      "article": "die",
+      "plural": "die Seriennummern",
+      "tr": {
+        "uz": "seriya raqami",
+        "uz-Cyrl": "серия рақами",
+        "ru": "серийный номер"
+      },
+      "pron": {
+        "uz": "die ze-ri-en-nu-mer",
+        "uz-Cyrl": "ди зе-ри-ен-ну-мер",
+        "ru": "ди зе-ри-ен-ну-мер"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Die Seriennummer steht unten auf dem Gerät.",
+        "tr": {
+          "uz": "Seriya raqami qurilmaning pastki tomonida yozilgan.",
+          "uz-Cyrl": "Серия рақами қурилманинг пастки томонида ёзилган.",
+          "ru": "Серийный номер указан на нижней стороне устройства."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-veraergert",
+      "slug": "veraergert",
+      "term": "verärgert",
+      "icon": "mood-sad",
+      "tr": {
+        "uz": "jahli chiqqan",
+        "uz-Cyrl": "жаҳли чиққан",
+        "ru": "рассерженный"
+      },
+      "pron": {
+        "uz": "fer-er-gert",
+        "uz-Cyrl": "фер-эр-герт",
+        "ru": "фер-эр-герт"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Die Kundin ist verärgert, weil der Wasserkocher wieder nicht funktioniert.",
+        "tr": {
+          "uz": "Xaridor ayolning jahli chiqqan, chunki elektr choynak yana ishlamayapti.",
+          "uz-Cyrl": "Харидор аёлнинг жаҳли чиққан, чунки электр чойнак яна ишламаяпти.",
+          "ru": "Покупательница рассержена, потому что чайник снова не работает."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-darf-ich-mir-das-geraet-kurz-ansehen",
+      "slug": "darf-ich-mir-das-geraet-kurz-ansehen",
+      "term": "Darf ich mir das Gerät kurz ansehen?",
+      "icon": "eye",
+      "tr": {
+        "uz": "Qurilmani bir koʻrib chiqsam maylimi?",
+        "uz-Cyrl": "Қурилмани бир кўриб чиқсам майлими?",
+        "ru": "Можно мне быстро посмотреть устройство?"
+      },
+      "pron": {
+        "uz": "darf ix mir das ge-ret kurts an-ze-en",
+        "uz-Cyrl": "дарф их мир дас ге-рет курц ан-зе-ен",
+        "ru": "дарф их мир дас ге-рет курц ан-зе-ен"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Einen Moment bitte. Darf ich mir das Gerät kurz ansehen?",
+        "tr": {
+          "uz": "Bir daqiqa. Qurilmani bir koʻrib chiqsam maylimi?",
+          "uz-Cyrl": "Бир дақиқа. Қурилмани бир кўриб чиқсам майлими?",
+          "ru": "Минуточку. Можно мне быстро посмотреть устройство?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-fehlerbeschreibung",
+      "slug": "fehlerbeschreibung",
+      "term": "die Fehlerbeschreibung",
+      "icon": "abc",
+      "article": "die",
+      "plural": "die Fehlerbeschreibungen",
+      "tr": {
+        "uz": "nosozlik tavsifi",
+        "uz-Cyrl": "носозлик тавсифи",
+        "ru": "описание неисправности"
+      },
+      "pron": {
+        "uz": "die fe-ler-be-shray-bung",
+        "uz-Cyrl": "ди фе-лер-бе-шрай-бунг",
+        "ru": "ди фе-лер-бе-шрай-бунг"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Bitte helfen Sie mir bei der Fehlerbeschreibung: Was passiert genau?",
+        "tr": {
+          "uz": "Iltimos, nosozlik tavsifini yozishda yordam bering: aniq nima boʻlyapti?",
+          "uz-Cyrl": "Илтимос, носозлик тавсифини ёзишда ёрдам беринг: аниқ нима бўляпти?",
+          "ru": "Помогите мне, пожалуйста, с описанием неисправности: что именно происходит?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-einsendung",
+      "slug": "einsendung",
+      "term": "die Einsendung",
+      "icon": "package",
+      "article": "die",
+      "plural": "die Einsendungen",
+      "tr": {
+        "uz": "joʻnatish (ishlab chiqaruvchiga)",
+        "uz-Cyrl": "жўнатиш (ишлаб чиқарувчига)",
+        "ru": "отправка (производителю)"
+      },
+      "pron": {
+        "uz": "die ayn-zen-dung",
+        "uz-Cyrl": "ди айн-зен-дунг",
+        "ru": "ди айн-зен-дунг"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Für die Einsendung packen wir das Gerät gut ein.",
+        "tr": {
+          "uz": "Joʻnatish uchun qurilmani yaxshilab qadoqlaymiz.",
+          "uz-Cyrl": "Жўнатиш учун қурилмани яхшилаб қадоқлаймиз.",
+          "ru": "Для отправки мы хорошо упакуем устройство."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-hersteller",
+      "slug": "hersteller",
+      "term": "der Hersteller",
+      "icon": "building",
+      "article": "der",
+      "plural": "die Hersteller",
+      "tr": {
+        "uz": "ishlab chiqaruvchi (firma)",
+        "uz-Cyrl": "ишлаб чиқарувчи (фирма)",
+        "ru": "производитель"
+      },
+      "pron": {
+        "uz": "der her-shte-ler",
+        "uz-Cyrl": "дер хер-ште-лер",
+        "ru": "дер хер-ште-лер"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Das Gerät geht zur Prüfung an den Hersteller.",
+        "tr": {
+          "uz": "Qurilma tekshiruvga ishlab chiqaruvchiga yuboriladi.",
+          "uz-Cyrl": "Қурилма текширувга ишлаб чиқарувчига юборилади.",
+          "ru": "Устройство отправляется производителю на проверку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-bearbeitungszeit",
+      "slug": "bearbeitungszeit",
+      "term": "die Bearbeitungszeit",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Bearbeitungszeiten",
+      "tr": {
+        "uz": "koʻrib chiqish muddati",
+        "uz-Cyrl": "кўриб чиқиш муддати",
+        "ru": "срок обработки"
+      },
+      "pron": {
+        "uz": "die be-ar-bay-tungs-tsayt",
+        "uz-Cyrl": "ди бе-ар-бай-тунгс-цайт",
+        "ru": "ди бе-ар-бай-тунгс-цайт"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Die Bearbeitungszeit hängt vom Hersteller ab.",
+        "tr": {
+          "uz": "Koʻrib chiqish muddati ishlab chiqaruvchiga bogʻliq.",
+          "uz-Cyrl": "Кўриб чиқиш муддати ишлаб чиқарувчига боғлиқ.",
+          "ru": "Срок обработки зависит от производителя."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-laut-werden",
+      "slug": "laut-werden",
+      "term": "laut werden",
+      "icon": "volume",
+      "tr": {
+        "uz": "ovozini koʻtarmoq",
+        "uz-Cyrl": "овозини кўтармоқ",
+        "ru": "повышать голос"
+      },
+      "pron": {
+        "uz": "laut ver-den",
+        "uz-Cyrl": "лаут вер-ден",
+        "ru": "лаут вер-ден"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Auch wenn Kunden laut werden, bleibe ich ruhig.",
+        "tr": {
+          "uz": "Xaridorlar ovozini koʻtarsa ham, men xotirjam qolaman.",
+          "uz-Cyrl": "Харидорлар овозини кўтарса ҳам, мен хотиржам қоламан.",
+          "ru": "Даже если покупатели повышают голос, я сохраняю спокойствие."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-bitte-sprechen-sie-etwas-leiser",
+      "slug": "bitte-sprechen-sie-etwas-leiser",
+      "term": "Bitte sprechen Sie etwas leiser.",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Iltimos, sal pastroq ovozda gapiring.",
+        "uz-Cyrl": "Илтимос, сал пастроқ овозда гапиринг.",
+        "ru": "Пожалуйста, говорите немного тише."
+      },
+      "pron": {
+        "uz": "bi-te shpre-xen zi et-vas lay-zer",
+        "uz-Cyrl": "би-те шпре-хен зи эт-вас лай-зер",
+        "ru": "би-те шпре-хен зи эт-вас лай-зер"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Ich möchte Ihnen helfen. Bitte sprechen Sie etwas leiser.",
+        "tr": {
+          "uz": "Sizga yordam bermoqchiman. Iltimos, sal pastroq ovozda gapiring.",
+          "uz-Cyrl": "Сизга ёрдам бермоқчиман. Илтимос, сал пастроқ овозда гапиринг.",
+          "ru": "Я хочу вам помочь. Пожалуйста, говорите немного тише."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-ich-hole-jemanden-der-das-entscheiden-darf",
+      "slug": "ich-hole-jemanden-der-das-entscheiden-darf",
+      "term": "Ich hole jemanden, der das entscheiden darf.",
+      "icon": "users",
+      "tr": {
+        "uz": "Buni hal qilishga haqli odamni chaqirib kelaman.",
+        "uz-Cyrl": "Буни ҳал қилишга ҳақли одамни чақириб келаман.",
+        "ru": "Я позову того, кто может это решить."
+      },
+      "pron": {
+        "uz": "ix ho-le ye-man-den, der das ent-shay-den darf",
+        "uz-Cyrl": "их хо-ле е-ман-ден, дер дас энт-шай-ден дарф",
+        "ru": "их хо-ле е-ман-ден, дер дас энт-шай-ден дарф"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Das darf ich nicht allein entscheiden. Ich hole jemanden, der das entscheiden darf.",
+        "tr": {
+          "uz": "Buni yolgʻiz oʻzim hal qila olmayman. Buni hal qilishga haqli odamni chaqirib kelaman.",
+          "uz-Cyrl": "Буни ёлғиз ўзим ҳал қила олмайман. Буни ҳал қилишга ҳақли одамни чақириб келаман.",
+          "ru": "Это решаю не я. Я позову того, кто может это решить."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-gewaehrleistungsanspruch",
+      "slug": "gewaehrleistungsanspruch",
+      "term": "der Gewährleistungsanspruch",
+      "icon": "briefcase",
+      "article": "der",
+      "plural": "die Gewährleistungsansprüche",
+      "tr": {
+        "uz": "qonuniy kafolat boʻyicha talab huquqi",
+        "uz-Cyrl": "қонуний кафолат бўйича талаб ҳуқуқи",
+        "ru": "право на гарантийное требование (по закону)"
+      },
+      "pron": {
+        "uz": "der ge-ver-lays-tungs-an-shprux",
+        "uz-Cyrl": "дер ге-вер-лайс-тунгс-ан-шпрух",
+        "ru": "дер ге-вер-лайс-тунгс-ан-шпрух"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Ob ein Gewährleistungsanspruch besteht, prüft unser Kundenservice.",
+        "tr": {
+          "uz": "Qonuniy kafolat boʻyicha talab huquqi bor-yoʻqligini mijozlarga xizmat boʻlimimiz tekshiradi.",
+          "uz-Cyrl": "Қонуний кафолат бўйича талаб ҳуқуқи бор-йўқлигини мижозларга хизмат бўлимимиз текширади.",
+          "ru": "Есть ли право на гарантийное требование, проверяет наша служба поддержки клиентов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-kostenvoranschlag",
+      "slug": "kostenvoranschlag",
+      "term": "der Kostenvoranschlag",
+      "icon": "receipt",
+      "article": "der",
+      "plural": "die Kostenvoranschläge",
+      "tr": {
+        "uz": "taxminiy xarajat hisobi (smeta)",
+        "uz-Cyrl": "тахминий харажат ҳисоби (смета)",
+        "ru": "предварительная смета"
+      },
+      "pron": {
+        "uz": "der kos-ten-for-an-shlak",
+        "uz-Cyrl": "дер кос-тен-фор-ан-шлак",
+        "ru": "дер кос-тен-фор-ан-шлак"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Bei Bedarf bekommen Sie vor der Reparatur einen Kostenvoranschlag.",
+        "tr": {
+          "uz": "Kerak boʻlsa, taʼmirdan oldin sizga taxminiy xarajat hisobi beriladi.",
+          "uz-Cyrl": "Керак бўлса, таъмирдан олдин сизга тахминий харажат ҳисоби берилади.",
+          "ru": "При необходимости до ремонта вы получите предварительную смету."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-gebrauchsspur",
+      "slug": "gebrauchsspur",
+      "term": "die Gebrauchsspur",
+      "icon": "shirt",
+      "article": "die",
+      "plural": "die Gebrauchsspuren",
+      "tr": {
+        "uz": "foydalanish izi",
+        "uz-Cyrl": "фойдаланиш изи",
+        "ru": "след использования"
+      },
+      "pron": {
+        "uz": "die ge-braux-shpur",
+        "uz-Cyrl": "ди ге-браух-шпур",
+        "ru": "ди ге-браух-шпур"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Die Jacke hat deutliche Gebrauchsspuren.",
+        "tr": {
+          "uz": "Kurtkada aniq foydalanish izlari bor.",
+          "uz-Cyrl": "Курткада аниқ фойдаланиш излари бор.",
+          "ru": "На куртке видны явные следы использования."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-kundenzufriedenheit",
+      "slug": "kundenzufriedenheit",
+      "term": "die Kundenzufriedenheit",
+      "icon": "mood-smile",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "mijoz mamnunligi",
+        "uz-Cyrl": "мижоз мамнунлиги",
+        "ru": "удовлетворённость клиентов"
+      },
+      "pron": {
+        "uz": "die kun-den-tsu-fri-den-hayt",
+        "uz-Cyrl": "ди кун-ден-цу-фри-ден-хайт",
+        "ru": "ди кун-ден-цу-фри-ден-хайт"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Für die Kundenzufriedenheit hören wir zuerst genau zu.",
+        "tr": {
+          "uz": "Mijoz mamnun boʻlishi uchun avval diqqat bilan tinglaymiz.",
+          "uz-Cyrl": "Мижоз мамнун бўлиши учун аввал диққат билан тинглаймиз.",
+          "ru": "Чтобы клиент остался доволен, мы сначала внимательно слушаем."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-sachlich",
+      "slug": "sachlich",
+      "term": "sachlich",
+      "icon": "messages",
+      "tr": {
+        "uz": "xolis, hissiyotga berilmay",
+        "uz-Cyrl": "холис, ҳиссиётга берилмай",
+        "ru": "по делу, объективно"
+      },
+      "pron": {
+        "uz": "zax-lix",
+        "uz-Cyrl": "зах-лих",
+        "ru": "зах-лих"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Ich bleibe freundlich und sachlich.",
+        "tr": {
+          "uz": "Men xushmuomala va xolis qolaman.",
+          "uz-Cyrl": "Мен хушмуомала ва холис қоламан.",
+          "ru": "Я сохраняю вежливость и говорю по делу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-wir-finden-eine-loesung",
+      "slug": "wir-finden-eine-loesung",
+      "term": "Wir finden eine Lösung.",
+      "icon": "check",
+      "tr": {
+        "uz": "Biz yechim topamiz.",
+        "uz-Cyrl": "Биз ечим топамиз.",
+        "ru": "Мы найдём решение."
+      },
+      "pron": {
+        "uz": "vir fin-den ay-ne lyo-zung",
+        "uz-Cyrl": "вир фин-ден ай-не лё-зунг",
+        "ru": "вир фин-ден ай-не лё-зунг"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Bitte bleiben Sie ruhig, wir finden eine Lösung.",
+        "tr": {
+          "uz": "Iltimos, xotirjam boʻling, biz yechim topamiz.",
+          "uz-Cyrl": "Илтимос, хотиржам бўлинг, биз ечим топамиз.",
+          "ru": "Пожалуйста, не волнуйтесь, мы найдём решение."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-bei-bedrohung-rufe-ich-den-sicherheitsdienst",
+      "slug": "bei-bedrohung-rufe-ich-den-sicherheitsdienst",
+      "term": "Bei Bedrohung rufe ich den Sicherheitsdienst.",
+      "icon": "alert-octagon",
+      "tr": {
+        "uz": "Tahdid boʻlsa, qoʻriqlash xizmatini chaqiraman.",
+        "uz-Cyrl": "Таҳдид бўлса, қўриқлаш хизматини чақираман.",
+        "ru": "При угрозе я вызываю службу охраны."
+      },
+      "pron": {
+        "uz": "bay be-dro-ung ru-fe ix den zi-xer-hayts-dinst",
+        "uz-Cyrl": "бай бе-дро-унг ру-фе их ден зи-хер-хайтс-динст",
+        "ru": "бай бе-дро-унг ру-фе их ден зи-хер-хайтс-динст"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Ich bringe mich nicht in Gefahr. Bei Bedrohung rufe ich den Sicherheitsdienst.",
+        "tr": {
+          "uz": "Oʻzimni xavfga qoʻymayman. Tahdid boʻlsa, qoʻriqlash xizmatini chaqiraman.",
+          "uz-Cyrl": "Ўзимни хавфга қўймайман. Таҳдид бўлса, қўриқлаш хизматини чақираман.",
+          "ru": "Я не подвергаю себя опасности. При угрозе я вызываю службу охраны."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "retail-shikoyat-hal-das-akkugeraet-ist-beschaedigt-nicht-laden",
+      "slug": "das-akkugeraet-ist-beschaedigt-nicht-laden",
+      "term": "Das Akkugerät ist beschädigt – nicht laden!",
+      "icon": "bolt",
+      "tr": {
+        "uz": "Akkumulyatorli qurilma shikastlangan — quvvatlamang!",
+        "uz-Cyrl": "Аккумуляторли қурилма шикастланган — қувватламанг!",
+        "ru": "Аккумуляторное устройство повреждено — не заряжать!"
+      },
+      "pron": {
+        "uz": "das a-ku-ge-ret ist be-she-dikt – nixt la-den",
+        "uz-Cyrl": "дас а-ку-ге-рет ист бе-ше-дикт – нихт ла-ден",
+        "ru": "дас а-ку-ге-рет ист бе-ше-дикт – нихт ла-ден"
+      },
+      "level": "B1",
+      "field": "retail",
+      "jobs": [
+        "verkaeufer",
+        "kaufmann-einzelhandel"
+      ],
+      "situation": "shikoyat-hal",
+      "example": {
+        "term": "Der Akku ist aufgebläht. Das Akkugerät ist beschädigt – nicht laden!",
+        "tr": {
+          "uz": "Akkumulyator shishib ketgan. Akkumulyatorli qurilma shikastlangan — quvvatlamang!",
+          "uz-Cyrl": "Аккумулятор шишиб кетган. Аккумуляторли қурилма шикастланган — қувватламанг!",
+          "ru": "Аккумулятор вздулся. Аккумуляторное устройство повреждено — не заряжать!"
         }
       },
       "safety": true,
