@@ -2212,6 +2212,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Guten Tag, ich habe letzte Woche eine Kaffeemaschine bestellt. Ist sie schon da?",
+            "tr": {
+              "uz": "Xayrli kun, oʻtgan hafta qahva mashinasiga buyurtma bergan edim. U keldimi?",
+              "uz-Cyrl": "Хайрли кун, ўтган ҳафта қаҳва машинасига буюртма берган эдим. У келдими?",
+              "ru": "Добрый день, на прошлой неделе я заказал кофемашину. Она уже пришла?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich sehe gern nach. Haben Sie den Abholschein mit der Bestellnummer dabei?",
+            "tr": {
+              "uz": "Hozir qarab beraman. Buyurtma raqami yozilgan olib ketish varaqchasi yoningizdami?",
+              "uz-Cyrl": "Ҳозир қараб бераман. Буюртма рақами ёзилган олиб кетиш варақчаси ёнингиздами?",
+              "ru": "Сейчас посмотрю. Квитанция с номером заказа у вас с собой?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Ja, hier ist er. Wissen Sie schon, an welchem Tag die Maschine kommt?",
+            "tr": {
+              "uz": "Ha, mana. Qahva mashinasi qaysi kuni kelishini bilasizmi?",
+              "uz-Cyrl": "Ҳа, мана. Қаҳва машинаси қайси куни келишини биласизми?",
+              "ru": "Да, вот она. Вы уже знаете, в какой день придёт кофемашина?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Sie ist noch unterwegs. Vielleicht kommt sie am Freitag, aber das kann ich Ihnen leider nicht versprechen.",
+            "tr": {
+              "uz": "U hali yoʻlda. Balki juma kuni keladi, lekin afsuski, buni sizga vaʼda qila olmayman.",
+              "uz-Cyrl": "У ҳали йўлда. Балки жума куни келади, лекин афсуски, буни сизга ваъда қила олмайман.",
+              "ru": "Она ещё в пути. Возможно, придёт в пятницу, но, к сожалению, обещать вам этого не могу."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Xaridor",
+              "uz-Cyrl": "Харидор",
+              "ru": "Покупатель"
+            },
+            "de": "Schade. Bekomme ich wegen der langen Wartezeit einen Rabatt?",
+            "tr": {
+              "uz": "Afsus. Uzoq kutganim uchun chegirma olamanmi?",
+              "uz-Cyrl": "Афсус. Узоқ кутганим учун чегирма оламанми?",
+              "ru": "Жаль. Мне положена скидка за долгое ожидание?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Über einen Rabatt entscheidet der Filialleiter. Ich gebe ihm Ihre Frage heute noch weiter.",
+            "tr": {
+              "uz": "Chegirma haqida filial rahbari qaror qiladi. Savolingizni bugunoq unga yetkazaman.",
+              "uz-Cyrl": "Чегирма ҳақида филиал раҳбари қарор қилади. Саволингизни бугуноқ унга етказаман.",
+              "ru": "О скидке решает директор филиала. Я сегодня же передам ему ваш вопрос."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
