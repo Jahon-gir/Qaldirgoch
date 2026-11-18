@@ -2120,6 +2120,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "majlis",
+      "title": {
+        "uz": "Jamoa yigʻilishi va fikr bildirish",
+        "uz-Cyrl": "Жамоа йиғилиши ва фикр билдириш",
+        "ru": "Собрание команды и выражение мнения"
+      },
+      "order": 13,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководитель группы"
+            },
+            "de": "Guten Morgen! Erster Punkt auf der Tagesordnung: der Urlaubsplan für August.",
+            "tr": {
+              "uz": "Xayrli tong! Kun tartibidagi birinchi band: avgust uchun taʼtil rejasi.",
+              "uz-Cyrl": "Хайрли тонг! Кун тартибидаги биринчи банд: август учун таътил режаси.",
+              "ru": "Доброе утро! Первый пункт повестки дня: график отпусков на август."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Darf ich kurz etwas sagen? Im August fehlen schon drei Kollegen.",
+            "tr": {
+              "uz": "Qisqa bir narsa aytsam maylimi? Avgustda allaqachon uchta hamkasb boʻlmaydi.",
+              "uz-Cyrl": "Қисқа бир нарса айтсам майлими? Августда аллақачон учта ҳамкасб бўлмайди.",
+              "ru": "Можно мне коротко кое-что сказать? В августе и так не будет трёх коллег."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководитель группы"
+            },
+            "de": "Gut, danke für den Hinweis. Was ist Ihr Vorschlag?",
+            "tr": {
+              "uz": "Yaxshi, eslatganingiz uchun rahmat. Sizning taklifingiz qanday?",
+              "uz-Cyrl": "Яхши, эслатганингиз учун раҳмат. Сизнинг таклифингиз қандай?",
+              "ru": "Хорошо, спасибо, что обратили внимание. Какое у вас предложение?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mein Vorschlag: Jeder nimmt im August höchstens zwei Wochen am Stück.",
+            "tr": {
+              "uz": "Taklifim: avgustda har kim koʻpi bilan ketma-ket ikki hafta oladi.",
+              "uz-Cyrl": "Таклифим: августда ҳар ким кўпи билан кетма-кет икки ҳафта олади.",
+              "ru": "Моё предложение: в августе каждый берёт не больше двух недель подряд."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководитель группы"
+            },
+            "de": "Das klingt fair. Sind alle einverstanden, oder sieht das jemand anders?",
+            "tr": {
+              "uz": "Bu adolatli tuyuladi. Hamma rozimi yoki kimdir buni boshqacha koʻradimi?",
+              "uz-Cyrl": "Бу адолатли туюлади. Ҳамма розими ёки кимдир буни бошқача кўрадими?",
+              "ru": "Звучит справедливо. Все согласны, или кто-то видит это иначе?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wenn alle einverstanden sind, schreibe ich die Zusammenfassung für die Kollegen.",
+            "tr": {
+              "uz": "Hamma rozi boʻlsa, hamkasblar uchun qisqa xulosani men yozaman.",
+              "uz-Cyrl": "Ҳамма рози бўлса, ҳамкасблар учун қисқа хулосани мен ёзаман.",
+              "ru": "Если все согласны, я напишу краткий итог для коллег."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -9698,6 +9791,650 @@
       "safety": true,
       "status": "review",
       "source": "Claude yozdi (2026-11-14); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-besprechung",
+      "slug": "besprechung",
+      "term": "die Besprechung",
+      "icon": "users",
+      "article": "die",
+      "plural": "die Besprechungen",
+      "tr": {
+        "uz": "yigʻilish (ish boʻyicha)",
+        "uz-Cyrl": "йиғилиш (иш бўйича)",
+        "ru": "совещание"
+      },
+      "pron": {
+        "uz": "die be-shpre-xung",
+        "uz-Cyrl": "ди бе-шпре-хунг",
+        "ru": "ди бе-шпре-хунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Die Besprechung beginnt um neun Uhr im Pausenraum.",
+        "tr": {
+          "uz": "Yigʻilish soat toʻqqizda dam olish xonasida boshlanadi.",
+          "uz-Cyrl": "Йиғилиш соат тўққизда дам олиш хонасида бошланади.",
+          "ru": "Совещание начинается в девять часов в комнате отдыха."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-tagesordnung",
+      "slug": "tagesordnung",
+      "term": "die Tagesordnung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Tagesordnungen",
+      "tr": {
+        "uz": "kun tartibi",
+        "uz-Cyrl": "кун тартиби",
+        "ru": "повестка дня"
+      },
+      "pron": {
+        "uz": "die ta-ges-ord-nung",
+        "uz-Cyrl": "ди та-гес-орд-нунг",
+        "ru": "ди та-гес-орд-нунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Was steht heute auf der Tagesordnung?",
+        "tr": {
+          "uz": "Bugun kun tartibida nima bor?",
+          "uz-Cyrl": "Бугун кун тартибида нима бор?",
+          "ru": "Что сегодня в повестке дня?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-punkt",
+      "slug": "punkt",
+      "term": "der Punkt",
+      "icon": "number-1",
+      "article": "der",
+      "plural": "die Punkte",
+      "tr": {
+        "uz": "band, masala (kun tartibida)",
+        "uz-Cyrl": "банд, масала (кун тартибида)",
+        "ru": "пункт (повестки)"
+      },
+      "pron": {
+        "uz": "der punkt",
+        "uz-Cyrl": "дер пункт",
+        "ru": "дер пункт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Zum nächsten Punkt: der Urlaubsplan.",
+        "tr": {
+          "uz": "Keyingi bandga oʻtamiz: taʼtil rejasi.",
+          "uz-Cyrl": "Кейинги бандга ўтамиз: таътил режаси.",
+          "ru": "Переходим к следующему пункту: график отпусков."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-vorschlag",
+      "slug": "vorschlag",
+      "term": "der Vorschlag",
+      "icon": "bulb",
+      "article": "der",
+      "plural": "die Vorschläge",
+      "tr": {
+        "uz": "taklif",
+        "uz-Cyrl": "таклиф",
+        "ru": "предложение"
+      },
+      "pron": {
+        "uz": "der for-shlak",
+        "uz-Cyrl": "дер фор-шлак",
+        "ru": "дер фор-шлак"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Ich habe einen Vorschlag für den Urlaubsplan.",
+        "tr": {
+          "uz": "Taʼtil rejasi boʻyicha bitta taklifim bor.",
+          "uz-Cyrl": "Таътил режаси бўйича битта таклифим бор.",
+          "ru": "У меня есть предложение по графику отпусков."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-verbesserungsvorschlag",
+      "slug": "verbesserungsvorschlag",
+      "term": "der Verbesserungsvorschlag",
+      "icon": "bulb",
+      "article": "der",
+      "plural": "die Verbesserungsvorschläge",
+      "tr": {
+        "uz": "yaxshilash boʻyicha taklif",
+        "uz-Cyrl": "яхшилаш бўйича таклиф",
+        "ru": "предложение по улучшению"
+      },
+      "pron": {
+        "uz": "der fer-be-se-rungs-for-shlak",
+        "uz-Cyrl": "дер фер-бе-се-рунгс-фор-шлак",
+        "ru": "дер фер-бе-се-рунгс-фор-шлак"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Unser Team hat einen Verbesserungsvorschlag für das Lager.",
+        "tr": {
+          "uz": "Jamoamizda ombor boʻyicha yaxshilash taklifi bor.",
+          "uz-Cyrl": "Жамоамизда омбор бўйича яхшилаш таклифи бор.",
+          "ru": "У нашей команды есть предложение по улучшению работы склада."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-meinung",
+      "slug": "meinung",
+      "term": "die Meinung",
+      "icon": "message-circle",
+      "article": "die",
+      "plural": "die Meinungen",
+      "tr": {
+        "uz": "fikr",
+        "uz-Cyrl": "фикр",
+        "ru": "мнение"
+      },
+      "pron": {
+        "uz": "die may-nung",
+        "uz-Cyrl": "ди май-нунг",
+        "ru": "ди май-нунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Meiner Meinung nach brauchen wir mehr Zeit.",
+        "tr": {
+          "uz": "Mening fikrimcha, bizga koʻproq vaqt kerak.",
+          "uz-Cyrl": "Менинг фикримча, бизга кўпроқ вақт керак.",
+          "ru": "По моему мнению, нам нужно больше времени."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-standpunkt",
+      "slug": "standpunkt",
+      "term": "der Standpunkt",
+      "icon": "eye",
+      "article": "der",
+      "plural": "die Standpunkte",
+      "tr": {
+        "uz": "nuqtai nazar",
+        "uz-Cyrl": "нуқтаи назар",
+        "ru": "точка зрения"
+      },
+      "pron": {
+        "uz": "der shtant-punkt",
+        "uz-Cyrl": "дер штант-пункт",
+        "ru": "дер штант-пункт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Ich verstehe Ihren Standpunkt, aber die Zeit ist zu knapp.",
+        "tr": {
+          "uz": "Nuqtai nazaringizni tushunaman, lekin vaqt juda oz.",
+          "uz-Cyrl": "Нуқтаи назарингизни тушунаман, лекин вақт жуда оз.",
+          "ru": "Я понимаю вашу точку зрения, но времени слишком мало."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-zustimmen",
+      "slug": "zustimmen",
+      "term": "zustimmen",
+      "icon": "check",
+      "tr": {
+        "uz": "rozi boʻlmoq, qoʻllab-quvvatlamoq",
+        "uz-Cyrl": "рози бўлмоқ, қўллаб-қувватламоқ",
+        "ru": "соглашаться, поддерживать"
+      },
+      "pron": {
+        "uz": "tsu-shti-men",
+        "uz-Cyrl": "цу-шти-мен",
+        "ru": "цу-шти-мен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Ich kann dem Vorschlag zustimmen.",
+        "tr": {
+          "uz": "Men bu taklifga rozi boʻla olaman.",
+          "uz-Cyrl": "Мен бу таклифга рози бўла оламан.",
+          "ru": "Я могу поддержать это предложение."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-widersprechen",
+      "slug": "widersprechen",
+      "term": "widersprechen",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "eʼtiroz bildirmoq",
+        "uz-Cyrl": "эътироз билдирмоқ",
+        "ru": "возражать"
+      },
+      "pron": {
+        "uz": "vi-der-shpre-xen",
+        "uz-Cyrl": "ви-дер-шпре-хен",
+        "ru": "ви-дер-шпре-хен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Darf ich hier kurz widersprechen?",
+        "tr": {
+          "uz": "Shu yerda qisqa eʼtiroz bildirsam maylimi?",
+          "uz-Cyrl": "Шу ерда қисқа эътироз билдирсам майлими?",
+          "ru": "Можно мне здесь коротко возразить?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-einverstanden",
+      "slug": "einverstanden",
+      "term": "einverstanden",
+      "icon": "check",
+      "tr": {
+        "uz": "rozi",
+        "uz-Cyrl": "рози",
+        "ru": "согласны (согласие)"
+      },
+      "pron": {
+        "uz": "ayn-fer-shtan-den",
+        "uz-Cyrl": "айн-фер-штан-ден",
+        "ru": "айн-фер-штан-ден"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Sind alle einverstanden?",
+        "tr": {
+          "uz": "Hamma rozimi?",
+          "uz-Cyrl": "Ҳамма розими?",
+          "ru": "Все согласны?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-abstimmen",
+      "slug": "abstimmen",
+      "term": "abstimmen",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "ovoz bermoq (qaror uchun)",
+        "uz-Cyrl": "овоз бермоқ (қарор учун)",
+        "ru": "голосовать"
+      },
+      "pron": {
+        "uz": "ap-shti-men",
+        "uz-Cyrl": "ап-шти-мен",
+        "ru": "ап-шти-мен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Wir müssen noch über die neue Pausenzeit abstimmen.",
+        "tr": {
+          "uz": "Yangi tanaffus vaqti boʻyicha hali ovoz berishimiz kerak.",
+          "uz-Cyrl": "Янги танаффус вақти бўйича ҳали овоз беришимиз керак.",
+          "ru": "Нам ещё нужно проголосовать за новое время перерыва."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-mehrheit",
+      "slug": "mehrheit",
+      "term": "die Mehrheit",
+      "icon": "users",
+      "article": "die",
+      "plural": "die Mehrheiten",
+      "tr": {
+        "uz": "koʻpchilik",
+        "uz-Cyrl": "кўпчилик",
+        "ru": "большинство"
+      },
+      "pron": {
+        "uz": "die mer-hayt",
+        "uz-Cyrl": "ди мер-хайт",
+        "ru": "ди мер-хайт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Die Mehrheit ist für den neuen Plan.",
+        "tr": {
+          "uz": "Koʻpchilik yangi reja tarafdori.",
+          "uz-Cyrl": "Кўпчилик янги режа тарафдори.",
+          "ru": "Большинство за новый план."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-entscheidung",
+      "slug": "entscheidung",
+      "term": "die Entscheidung",
+      "icon": "flag",
+      "article": "die",
+      "plural": "die Entscheidungen",
+      "tr": {
+        "uz": "qaror",
+        "uz-Cyrl": "қарор",
+        "ru": "решение"
+      },
+      "pron": {
+        "uz": "die ent-shay-dung",
+        "uz-Cyrl": "ди энт-шай-дунг",
+        "ru": "ди энт-шай-дунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Die Entscheidung trifft am Ende die Teamleiterin.",
+        "tr": {
+          "uz": "Oxirida qarorni jamoa rahbari qabul qiladi.",
+          "uz-Cyrl": "Охирида қарорни жамоа раҳбари қабул қилади.",
+          "ru": "Окончательное решение принимает руководитель группы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-aufgabe",
+      "slug": "aufgabe",
+      "term": "die Aufgabe",
+      "icon": "briefcase",
+      "article": "die",
+      "plural": "die Aufgaben",
+      "tr": {
+        "uz": "vazifa",
+        "uz-Cyrl": "вазифа",
+        "ru": "задача"
+      },
+      "pron": {
+        "uz": "die auf-ga-be",
+        "uz-Cyrl": "ди ауф-га-бе",
+        "ru": "ди ауф-га-бе"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Wer übernimmt diese Aufgabe bis Freitag?",
+        "tr": {
+          "uz": "Juma kunigacha bu vazifani kim oladi?",
+          "uz-Cyrl": "Жума кунигача бу вазифани ким олади?",
+          "ru": "Кто возьмёт эту задачу до пятницы?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-ziel",
+      "slug": "ziel",
+      "term": "das Ziel",
+      "icon": "flag",
+      "article": "das",
+      "plural": "die Ziele",
+      "tr": {
+        "uz": "maqsad",
+        "uz-Cyrl": "мақсад",
+        "ru": "цель"
+      },
+      "pron": {
+        "uz": "das tsil",
+        "uz-Cyrl": "дас цил",
+        "ru": "дас цил"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Unser Ziel für diesen Monat: keine Unfälle im Lager.",
+        "tr": {
+          "uz": "Bu oydagi maqsadimiz: omborda birorta ham baxtsiz hodisa boʻlmasin.",
+          "uz-Cyrl": "Бу ойдаги мақсадимиз: омборда бирорта ҳам бахтсиз ҳодиса бўлмасин.",
+          "ru": "Наша цель на этот месяц: ни одного несчастного случая на складе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-zusammenfassung",
+      "slug": "zusammenfassung",
+      "term": "die Zusammenfassung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Zusammenfassungen",
+      "tr": {
+        "uz": "qisqa xulosa",
+        "uz-Cyrl": "қисқа хулоса",
+        "ru": "краткое изложение, итог"
+      },
+      "pron": {
+        "uz": "die tsu-za-men-fa-sung",
+        "uz-Cyrl": "ди цу-за-мен-фа-сунг",
+        "ru": "ди цу-за-мен-фа-сунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Am Ende gibt es eine kurze Zusammenfassung für alle.",
+        "tr": {
+          "uz": "Oxirida hamma uchun qisqa xulosa boʻladi.",
+          "uz-Cyrl": "Охирида ҳамма учун қисқа хулоса бўлади.",
+          "ru": "В конце будет краткий итог для всех."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-ausreden-lassen",
+      "slug": "ausreden-lassen",
+      "term": "ausreden lassen",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "gapini oxirigacha eshitmoq",
+        "uz-Cyrl": "гапини охиригача эшитмоқ",
+        "ru": "дать договорить"
+      },
+      "pron": {
+        "uz": "aus-re-den la-sen",
+        "uz-Cyrl": "аус-ре-ден ла-сен",
+        "ru": "аус-ре-ден ла-сен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Wir sollten die Kollegin bitte ausreden lassen.",
+        "tr": {
+          "uz": "Iltimos, hamkasbimizning gapini oxirigacha eshitaylik.",
+          "uz-Cyrl": "Илтимос, ҳамкасбимизнинг гапини охиригача эшитайлик.",
+          "ru": "Давайте, пожалуйста, дадим коллеге договорить."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-darf-ich-kurz-etwas-sagen",
+      "slug": "darf-ich-kurz-etwas-sagen",
+      "term": "Darf ich kurz etwas sagen?",
+      "icon": "message-circle",
+      "tr": {
+        "uz": "Qisqa bir narsa aytsam maylimi?",
+        "uz-Cyrl": "Қисқа бир нарса айтсам майлими?",
+        "ru": "Можно мне коротко кое-что сказать?"
+      },
+      "pron": {
+        "uz": "darf ix kurts et-vas za-gen",
+        "uz-Cyrl": "дарф их курц эт-вас за-ген",
+        "ru": "дарф их курц эт-вас за-ген"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Darf ich kurz etwas sagen? Die Liste ist nicht aktuell.",
+        "tr": {
+          "uz": "Qisqa bir narsa aytsam maylimi? Roʻyxat eskirgan.",
+          "uz-Cyrl": "Қисқа бир нарса айтсам майлими? Рўйхат эскирган.",
+          "ru": "Можно мне коротко кое-что сказать? Список устарел."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-ich-sehe-das-anders",
+      "slug": "ich-sehe-das-anders",
+      "term": "Ich sehe das anders.",
+      "icon": "eye",
+      "tr": {
+        "uz": "Men buni boshqacha koʻraman.",
+        "uz-Cyrl": "Мен буни бошқача кўраман.",
+        "ru": "Я вижу это иначе."
+      },
+      "pron": {
+        "uz": "ix ze-e das an-ders",
+        "uz-Cyrl": "их зе-е дас ан-дерс",
+        "ru": "их зе-е дас ан-дерс"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Ich sehe das anders, weil die Frühschicht schon voll ist.",
+        "tr": {
+          "uz": "Men buni boshqacha koʻraman, chunki ertalabki smena allaqachon toʻla.",
+          "uz-Cyrl": "Мен буни бошқача кўраман, чунки эрталабки смена аллақачон тўла.",
+          "ru": "Я вижу это иначе, потому что утренняя смена уже заполнена."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-majlis-habe-ich-das-richtig-verstanden",
+      "slug": "habe-ich-das-richtig-verstanden",
+      "term": "Habe ich das richtig verstanden?",
+      "icon": "help",
+      "tr": {
+        "uz": "Toʻgʻri tushundimmi?",
+        "uz-Cyrl": "Тўғри тушундимми?",
+        "ru": "Правильно ли я понимаю?"
+      },
+      "pron": {
+        "uz": "ha-be ix das rix-tix fer-shtan-den",
+        "uz-Cyrl": "ха-бе их дас рих-тих фер-штан-ден",
+        "ru": "ха-бе их дас рих-тих фер-штан-ден"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "majlis",
+      "example": {
+        "term": "Habe ich das richtig verstanden: Wir fangen morgen früher an?",
+        "tr": {
+          "uz": "Toʻgʻri tushundimmi: ertaga ertaroq boshlaymizmi?",
+          "uz-Cyrl": "Тўғри тушундимми: эртага эртароқ бошлаймизми?",
+          "ru": "Правильно ли я понимаю: завтра мы начинаем раньше?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
