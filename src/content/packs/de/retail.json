@@ -2388,6 +2388,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Ein Kunde hat diesen Akkuschrauber zurückgebracht. Der Akku sieht komisch aus.",
+            "tr": {
+              "uz": "Bir xaridor shu akkumulyatorli shurupovertni qaytarib olib keldi. Akkumulyatori gʻalati koʻrinyapti.",
+              "uz-Cyrl": "Бир харидор шу аккумуляторли шуруповёртни қайтариб олиб келди. Аккумулятори ғалати кўриняпти.",
+              "ru": "Покупатель вернул этот аккумуляторный шуруповёрт. Аккумулятор выглядит странно."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Der Akku ist aufgebläht. Das Akkugerät ist beschädigt – bitte nicht laden!",
+            "tr": {
+              "uz": "Akkumulyator shishib ketgan. Qurilma shikastlangan — iltimos, quvvatlamang!",
+              "uz-Cyrl": "Аккумулятор шишиб кетган. Қурилма шикастланган — илтимос, қувватламанг!",
+              "ru": "Аккумулятор вздулся. Устройство повреждено — пожалуйста, не заряжайте!"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Okay. Und was sagen wir dem Kunden? Er möchte sein Geld zurück.",
+            "tr": {
+              "uz": "Xoʻp. Xaridorga nima deymiz? U pulini qaytarib olmoqchi.",
+              "uz-Cyrl": "Хўп. Харидорга нима деймиз? У пулини қайтариб олмоқчи.",
+              "ru": "Хорошо. А что мы скажем покупателю? Он хочет вернуть деньги."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich schreibe zuerst die Seriennummer und eine Fehlerbeschreibung auf. Über das Geld entscheidet der Filialleiter.",
+            "tr": {
+              "uz": "Avval seriya raqami va nosozlik tavsifini yozib olaman. Pul haqida filial rahbari qaror qiladi.",
+              "uz-Cyrl": "Аввал серия рақами ва носозлик тавсифини ёзиб оламан. Пул ҳақида филиал раҳбари қарор қилади.",
+              "ru": "Сначала я запишу серийный номер и описание неисправности. О деньгах решает директор филиала."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Gut. Und wohin legen wir das Gerät bis zur Einsendung?",
+            "tr": {
+              "uz": "Yaxshi. Joʻnatilguncha qurilmani qayerga qoʻyamiz?",
+              "uz-Cyrl": "Яхши. Жўнатилгунча қурилмани қаерга қўямиз?",
+              "ru": "Хорошо. А куда мы положим устройство до отправки?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Auf keinen Fall ins Regal. Ich frage den Filialleiter, wo beschädigte Akkus bis zur Einsendung bleiben.",
+            "tr": {
+              "uz": "Javonga aslo qoʻymaymiz. Shikastlangan akkumulyatorlar joʻnatilguncha qayerda turishini filial rahbaridan soʻrayman.",
+              "uz-Cyrl": "Жавонга асло қўймаймиз. Шикастланган аккумуляторлар жўнатилгунча қаерда туришини филиал раҳбаридан сўрайман.",
+              "ru": "Ни в коем случае не на полку. Я спрошу директора филиала, где хранить повреждённые аккумуляторы до отправки."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
