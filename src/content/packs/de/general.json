@@ -2648,6 +2648,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "ish-suhbati",
+      "title": {
+        "uz": "Ish suhbati: oʻzingizni tanishtirish",
+        "uz-Cyrl": "Иш суҳбати: ўзингизни таништириш",
+        "ru": "Собеседование: как представить себя"
+      },
+      "order": 16,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Kadrlar boʻlimi xodimi",
+              "uz-Cyrl": "Кадрлар бўлими ходими",
+              "ru": "Сотрудник отдела кадров"
+            },
+            "de": "Guten Tag, schön, dass Sie da sind. Können Sie sich bitte kurz vorstellen?",
+            "tr": {
+              "uz": "Xayrli kun, kelganingiz yaxshi. Iltimos, oʻzingizni qisqacha tanishtiring.",
+              "uz-Cyrl": "Хайрли кун, келганингиз яхши. Илтимос, ўзингизни қисқача таништиринг.",
+              "ru": "Добрый день, хорошо, что вы пришли. Пожалуйста, коротко представьтесь."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gern. Ich komme aus Usbekistan und habe vier Jahre Berufserfahrung im Lager.",
+            "tr": {
+              "uz": "Mamnuniyat bilan. Men Oʻzbekistondanman, omborda toʻrt yillik ish tajribam bor.",
+              "uz-Cyrl": "Мамнуният билан. Мен Ўзбекистонданман, омборда тўрт йиллик иш тажрибам бор.",
+              "ru": "С удовольствием. Я из Узбекистана, у меня четыре года опыта работы на складе."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kadrlar boʻlimi xodimi",
+              "uz-Cyrl": "Кадрлар бўлими ходими",
+              "ru": "Сотрудник отдела кадров"
+            },
+            "de": "Danke. Was ist Ihre größte Schwäche?",
+            "tr": {
+              "uz": "Rahmat. Eng zaif tomoningiz nima?",
+              "uz-Cyrl": "Раҳмат. Энг заиф томонингиз нима?",
+              "ru": "Спасибо. Какая ваша самая слабая сторона?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mein Deutsch ist noch nicht perfekt, aber ich lerne jeden Tag.",
+            "tr": {
+              "uz": "Nemis tilim hali mukammal emas, lekin har kuni oʻrganyapman.",
+              "uz-Cyrl": "Немис тилим ҳали мукаммал эмас, лекин ҳар куни ўрганяпман.",
+              "ru": "Мой немецкий пока не идеален, но я учу его каждый день."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kadrlar boʻlimi xodimi",
+              "uz-Cyrl": "Кадрлар бўлими ходими",
+              "ru": "Сотрудник отдела кадров"
+            },
+            "de": "Das ist ehrlich. Haben Sie noch Fragen an uns?",
+            "tr": {
+              "uz": "Bu samimiy javob. Bizga yana savollaringiz bormi?",
+              "uz-Cyrl": "Бу самимий жавоб. Бизга яна саволларингиз борми?",
+              "ru": "Это честный ответ. У вас есть к нам вопросы?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, wie lange dauert die Einarbeitungszeit?",
+            "tr": {
+              "uz": "Ha, ishga oʻrgatish davri qancha davom etadi?",
+              "uz-Cyrl": "Ҳа, ишга ўргатиш даври қанча давом этади?",
+              "ru": "Да, сколько длится период ввода в работу?"
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -12156,6 +12249,652 @@
         }
       },
       "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-bewerber",
+      "slug": "bewerber",
+      "term": "der Bewerber",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Bewerber",
+      "tr": {
+        "uz": "ishga nomzod (ariza beruvchi)",
+        "uz-Cyrl": "ишга номзод (ариза берувчи)",
+        "ru": "кандидат (соискатель)"
+      },
+      "pron": {
+        "uz": "der be-ver-ber",
+        "uz-Cyrl": "дер бе-вер-бер",
+        "ru": "дер бе-вер-бер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Heute kommen drei Bewerber zum Gespräch.",
+        "tr": {
+          "uz": "Bugun suhbatga uchta nomzod keladi.",
+          "uz-Cyrl": "Бугун суҳбатга учта номзод келади.",
+          "ru": "Сегодня на собеседование придут три кандидата."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-sich-vorstellen",
+      "slug": "sich-vorstellen",
+      "term": "sich vorstellen",
+      "icon": "user",
+      "tr": {
+        "uz": "oʻzini tanishtirmoq",
+        "uz-Cyrl": "ўзини таништирмоқ",
+        "ru": "представиться"
+      },
+      "pron": {
+        "uz": "zix for-shtel-len",
+        "uz-Cyrl": "зих фор-штел-лен",
+        "ru": "зих фор-штел-лен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Können Sie sich bitte kurz vorstellen?",
+        "tr": {
+          "uz": "Iltimos, oʻzingizni qisqacha tanishtira olasizmi?",
+          "uz-Cyrl": "Илтимос, ўзингизни қисқача таништира оласизми?",
+          "ru": "Не могли бы вы коротко представиться?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-berufserfahrung",
+      "slug": "berufserfahrung",
+      "term": "die Berufserfahrung",
+      "icon": "briefcase",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "ish tajribasi (kasbda)",
+        "uz-Cyrl": "иш тажрибаси (касбда)",
+        "ru": "опыт работы (по профессии)"
+      },
+      "pron": {
+        "uz": "die be-rufs-er-fa-rung",
+        "uz-Cyrl": "ди бе-руфс-эр-фа-рунг",
+        "ru": "ди бе-руфс-эр-фа-рунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Ich habe drei Jahre Berufserfahrung als Schweißer.",
+        "tr": {
+          "uz": "Payvandchi sifatida uch yillik ish tajribam bor.",
+          "uz-Cyrl": "Пайвандчи сифатида уч йиллик иш тажрибам бор.",
+          "ru": "У меня три года опыта работы сварщиком."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-qualifikation",
+      "slug": "qualifikation",
+      "term": "die Qualifikation",
+      "icon": "id",
+      "article": "die",
+      "plural": "die Qualifikationen",
+      "tr": {
+        "uz": "malaka",
+        "uz-Cyrl": "малака",
+        "ru": "квалификация"
+      },
+      "pron": {
+        "uz": "die kva-li-fi-ka-tsi-on",
+        "uz-Cyrl": "ди ква-ли-фи-ка-ци-он",
+        "ru": "ди ква-ли-фи-ка-ци-он"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Welche Qualifikation braucht man für diese Stelle?",
+        "tr": {
+          "uz": "Bu lavozim uchun qanday malaka kerak?",
+          "uz-Cyrl": "Бу лавозим учун қандай малака керак?",
+          "ru": "Какая квалификация нужна для этой должности?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-berufsabschluss",
+      "slug": "berufsabschluss",
+      "term": "der Berufsabschluss",
+      "icon": "book",
+      "article": "der",
+      "plural": "die Berufsabschlüsse",
+      "tr": {
+        "uz": "kasbiy maʼlumot (diplom)",
+        "uz-Cyrl": "касбий маълумот (диплом)",
+        "ru": "профессиональное образование (диплом)"
+      },
+      "pron": {
+        "uz": "der be-rufs-ap-shlus",
+        "uz-Cyrl": "дер бе-руфс-ап-шлус",
+        "ru": "дер бе-руфс-ап-шлус"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Ich habe meinen Berufsabschluss in Usbekistan gemacht.",
+        "tr": {
+          "uz": "Kasbiy taʼlimni Oʻzbekistonda tugatganman.",
+          "uz-Cyrl": "Касбий таълимни Ўзбекистонда тугатганман.",
+          "ru": "Мой профессиональный диплом получен в Узбекистане."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-warum-moechten-sie-bei-uns-arbeiten",
+      "slug": "warum-moechten-sie-bei-uns-arbeiten",
+      "term": "Warum möchten Sie bei uns arbeiten?",
+      "icon": "help",
+      "tr": {
+        "uz": "Nega bizda ishlamoqchisiz?",
+        "uz-Cyrl": "Нега бизда ишламоқчисиз?",
+        "ru": "Почему вы хотите работать у нас?"
+      },
+      "pron": {
+        "uz": "va-rum myox-ten zi bay uns ar-bay-ten",
+        "uz-Cyrl": "ва-рум мёх-тен зи бай унс ар-бай-тен",
+        "ru": "ва-рум мёх-тен зи бай унс ар-бай-тен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Im Gespräch fragt die Chefin: „Warum möchten Sie bei uns arbeiten?“",
+        "tr": {
+          "uz": "Suhbatda boshliq soʻraydi: «Nega bizda ishlamoqchisiz?»",
+          "uz-Cyrl": "Суҳбатда бошлиқ сўрайди: «Нега бизда ишламоқчисиз?»",
+          "ru": "На собеседовании начальница спрашивает: «Почему вы хотите работать у нас?»"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-schwaeche",
+      "slug": "schwaeche",
+      "term": "die Schwäche",
+      "icon": "mood-sad",
+      "article": "die",
+      "plural": "die Schwächen",
+      "tr": {
+        "uz": "zaif tomon",
+        "uz-Cyrl": "заиф томон",
+        "ru": "слабая сторона"
+      },
+      "pron": {
+        "uz": "die shve-xe",
+        "uz-Cyrl": "ди шве-хе",
+        "ru": "ди шве-хе"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Meine Schwäche ist, dass ich manchmal zu schnell arbeite.",
+        "tr": {
+          "uz": "Zaif tomonim — baʼzan juda shoshib ishlayman.",
+          "uz-Cyrl": "Заиф томоним — баъзан жуда шошиб ишлайман.",
+          "ru": "Моя слабая сторона — иногда я работаю слишком быстро."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-teamfaehigkeit",
+      "slug": "teamfaehigkeit",
+      "term": "die Teamfähigkeit",
+      "icon": "users",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "jamoada ishlay olish",
+        "uz-Cyrl": "жамоада ишлай олиш",
+        "ru": "умение работать в команде"
+      },
+      "pron": {
+        "uz": "die tim-fe-ix-kayt",
+        "uz-Cyrl": "ди тим-фе-их-кайт",
+        "ru": "ди тим-фе-их-кайт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Teamfähigkeit ist in unserem Betrieb sehr wichtig.",
+        "tr": {
+          "uz": "Korxonamizda jamoada ishlay olish juda muhim.",
+          "uz-Cyrl": "Корхонамизда жамоада ишлай олиш жуда муҳим.",
+          "ru": "На нашем предприятии очень важно умение работать в команде."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-zuverlaessig",
+      "slug": "zuverlaessig",
+      "term": "zuverlässig",
+      "icon": "check",
+      "tr": {
+        "uz": "ishonchli (aytganini vaqtida qiladigan)",
+        "uz-Cyrl": "ишончли (айтганини вақтида қиладиган)",
+        "ru": "надёжный"
+      },
+      "pron": {
+        "uz": "tsu-fer-les-six",
+        "uz-Cyrl": "цу-фер-лес-сих",
+        "ru": "цу-фер-лес-сих"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Ich bin zuverlässig und komme immer pünktlich.",
+        "tr": {
+          "uz": "Men ishonchliman va doim vaqtida kelaman.",
+          "uz-Cyrl": "Мен ишончлиман ва доим вақтида келаман.",
+          "ru": "На меня можно положиться, я всегда прихожу вовремя."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-belastbar",
+      "slug": "belastbar",
+      "term": "belastbar",
+      "icon": "bolt",
+      "tr": {
+        "uz": "ogʻir ish va bosimga chidamli",
+        "uz-Cyrl": "оғир иш ва босимга чидамли",
+        "ru": "стрессоустойчивый (выносливый)"
+      },
+      "pron": {
+        "uz": "be-last-bar",
+        "uz-Cyrl": "бе-ласт-бар",
+        "ru": "бе-ласт-бар"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Sind Sie auch in stressigen Zeiten belastbar?",
+        "tr": {
+          "uz": "Shoshilinch, ogʻir paytlarda ham bosimga chidaysizmi?",
+          "uz-Cyrl": "Шошилинч, оғир пайтларда ҳам босимга чидайсизми?",
+          "ru": "Вы справляетесь с нагрузкой и в напряжённые периоды?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-herausforderung",
+      "slug": "herausforderung",
+      "term": "die Herausforderung",
+      "icon": "mountain",
+      "article": "die",
+      "plural": "die Herausforderungen",
+      "tr": {
+        "uz": "qiyin vazifa (sinov)",
+        "uz-Cyrl": "қийин вазифа (синов)",
+        "ru": "трудная задача (вызов)"
+      },
+      "pron": {
+        "uz": "die he-raus-for-de-rung",
+        "uz-Cyrl": "ди хе-раус-фор-де-рунг",
+        "ru": "ди хе-раус-фор-де-рунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Die neue Sprache war für mich eine große Herausforderung.",
+        "tr": {
+          "uz": "Yangi til men uchun katta sinov boʻldi.",
+          "uz-Cyrl": "Янги тил мен учун катта синов бўлди.",
+          "ru": "Новый язык стал для меня большим испытанием."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-weiterbildung",
+      "slug": "weiterbildung",
+      "term": "die Weiterbildung",
+      "icon": "book",
+      "article": "die",
+      "plural": "die Weiterbildungen",
+      "tr": {
+        "uz": "malaka oshirish (qoʻshimcha oʻqish)",
+        "uz-Cyrl": "малака ошириш (қўшимча ўқиш)",
+        "ru": "повышение квалификации"
+      },
+      "pron": {
+        "uz": "die vay-ter-bil-dung",
+        "uz-Cyrl": "ди вай-тер-бил-дунг",
+        "ru": "ди вай-тер-бил-дунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Gibt es in Ihrer Firma eine Weiterbildung für neue Mitarbeiter?",
+        "tr": {
+          "uz": "Firmangizda yangi xodimlar uchun malaka oshirish bormi?",
+          "uz-Cyrl": "Фирмангизда янги ходимлар учун малака ошириш борми?",
+          "ru": "В вашей фирме есть повышение квалификации для новых сотрудников?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-gehaltsvorstellung",
+      "slug": "gehaltsvorstellung",
+      "term": "die Gehaltsvorstellung",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "die Gehaltsvorstellungen",
+      "tr": {
+        "uz": "kutilayotgan maosh (oʻzingiz aytadigan)",
+        "uz-Cyrl": "кутилаётган маош (ўзингиз айтадиган)",
+        "ru": "ожидаемая зарплата"
+      },
+      "pron": {
+        "uz": "die ge-halts-for-shtel-lung",
+        "uz-Cyrl": "ди ге-хальтс-фор-штел-лунг",
+        "ru": "ди ге-хальтс-фор-штел-лунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Was ist Ihre Gehaltsvorstellung?",
+        "tr": {
+          "uz": "Qancha maosh kutyapsiz?",
+          "uz-Cyrl": "Қанча маош кутяпсиз?",
+          "ru": "Какую зарплату вы ожидаете?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-arbeitsbeginn",
+      "slug": "arbeitsbeginn",
+      "term": "der Arbeitsbeginn",
+      "icon": "calendar-event",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "ish boshlanish sanasi",
+        "uz-Cyrl": "иш бошланиш санаси",
+        "ru": "начало работы (дата)"
+      },
+      "pron": {
+        "uz": "der ar-bayts-be-gin",
+        "uz-Cyrl": "дер ар-байтс-бе-гин",
+        "ru": "дер ар-байтс-бе-гин"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Der Arbeitsbeginn ist am ersten Montag im Monat.",
+        "tr": {
+          "uz": "Ish oyning birinchi dushanbasida boshlanadi.",
+          "uz-Cyrl": "Иш ойнинг биринчи душанбасида бошланади.",
+          "ru": "Работа начинается в первый понедельник месяца."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-einarbeitungszeit",
+      "slug": "einarbeitungszeit",
+      "term": "die Einarbeitungszeit",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Einarbeitungszeiten",
+      "tr": {
+        "uz": "ishga oʻrgatish davri",
+        "uz-Cyrl": "ишга ўргатиш даври",
+        "ru": "период ввода в работу"
+      },
+      "pron": {
+        "uz": "die ayn-ar-bay-tungs-tsayt",
+        "uz-Cyrl": "ди айн-ар-бай-тунгс-цайт",
+        "ru": "ди айн-ар-бай-тунгс-цайт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "In der Einarbeitungszeit hilft Ihnen ein erfahrener Kollege.",
+        "tr": {
+          "uz": "Oʻrgatish davrida sizga tajribali hamkasb yordam beradi.",
+          "uz-Cyrl": "Ўргатиш даврида сизга тажрибали ҳамкасб ёрдам беради.",
+          "ru": "В период ввода в работу вам поможет опытный коллега."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-personalabteilung",
+      "slug": "personalabteilung",
+      "term": "die Personalabteilung",
+      "icon": "id",
+      "article": "die",
+      "plural": "die Personalabteilungen",
+      "tr": {
+        "uz": "kadrlar boʻlimi",
+        "uz-Cyrl": "кадрлар бўлими",
+        "ru": "отдел кадров"
+      },
+      "pron": {
+        "uz": "die per-zo-nal-ap-tay-lung",
+        "uz-Cyrl": "ди пер-зо-нал-ап-тай-лунг",
+        "ru": "ди пер-зо-нал-ап-тай-лунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Den Vertrag bekommen Sie von der Personalabteilung.",
+        "tr": {
+          "uz": "Shartnomani kadrlar boʻlimidan olasiz.",
+          "uz-Cyrl": "Шартномани кадрлар бўлимидан оласиз.",
+          "ru": "Договор вы получите в отделе кадров."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-befristet",
+      "slug": "befristet",
+      "term": "befristet",
+      "icon": "file-text",
+      "tr": {
+        "uz": "muddatli (maʼlum muddatga)",
+        "uz-Cyrl": "муддатли (маълум муддатга)",
+        "ru": "срочный (на определённый срок)"
+      },
+      "pron": {
+        "uz": "be-fris-tet",
+        "uz-Cyrl": "бе-фрис-тет",
+        "ru": "бе-фрис-тет"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Ist der Vertrag befristet oder unbefristet?",
+        "tr": {
+          "uz": "Shartnoma muddatlimi yoki muddatsizmi?",
+          "uz-Cyrl": "Шартнома муддатлими ёки муддатсизми?",
+          "ru": "Договор срочный или бессрочный?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-haben-sie-noch-fragen-an-uns",
+      "slug": "haben-sie-noch-fragen-an-uns",
+      "term": "Haben Sie noch Fragen an uns?",
+      "icon": "message-circle",
+      "tr": {
+        "uz": "Bizga yana savollaringiz bormi?",
+        "uz-Cyrl": "Бизга яна саволларингиз борми?",
+        "ru": "У вас есть к нам вопросы?"
+      },
+      "pron": {
+        "uz": "ha-ben zi nox fra-gen an uns",
+        "uz-Cyrl": "ха-бен зи нох фра-ген ан унс",
+        "ru": "ха-бен зи нох фра-ген ан унс"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Am Ende fragt die Chefin: „Haben Sie noch Fragen an uns?“",
+        "tr": {
+          "uz": "Oxirida boshliq soʻraydi: «Bizga yana savollaringiz bormi?»",
+          "uz-Cyrl": "Охирида бошлиқ сўрайди: «Бизга яна саволларингиз борми?»",
+          "ru": "В конце начальница спрашивает: «У вас есть к нам вопросы?»"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-ich-moechte-den-vertrag-erst-in-ruhe-lesen",
+      "slug": "ich-moechte-den-vertrag-erst-in-ruhe-lesen",
+      "term": "Ich möchte den Vertrag erst in Ruhe lesen.",
+      "icon": "file-text",
+      "tr": {
+        "uz": "Shartnomani avval xotirjam oʻqib chiqmoqchiman.",
+        "uz-Cyrl": "Шартномани аввал хотиржам ўқиб чиқмоқчиман.",
+        "ru": "Я хочу сначала спокойно прочитать договор."
+      },
+      "pron": {
+        "uz": "ix myox-te den fer-trak erst in ru-e le-zen",
+        "uz-Cyrl": "их мёх-те ден фер-трак эрст ин ру-е ле-зен",
+        "ru": "их мёх-те ден фер-трак эрст ин ру-е ле-зен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Unterschreiben Sie nicht sofort. Sagen Sie: „Ich möchte den Vertrag erst in Ruhe lesen.“",
+        "tr": {
+          "uz": "Darhol imzolamang. Ayting: «Shartnomani avval xotirjam oʻqib chiqmoqchiman.»",
+          "uz-Cyrl": "Дарҳол имзоламанг. Айтинг: «Шартномани аввал хотиржам ўқиб чиқмоқчиман.»",
+          "ru": "Не подписывайте сразу. Скажите: «Я хочу сначала спокойно прочитать договор.»"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-suhbati-warnsignal",
+      "slug": "warnsignal",
+      "term": "das Warnsignal",
+      "icon": "alert-octagon",
+      "article": "das",
+      "plural": "die Warnsignale",
+      "tr": {
+        "uz": "xavf belgisi (firibgarlik alomati)",
+        "uz-Cyrl": "хавф белгиси (фирибгарлик аломати)",
+        "ru": "тревожный сигнал (признак мошенничества)"
+      },
+      "pron": {
+        "uz": "das varn-zig-nal",
+        "uz-Cyrl": "дас варн-зиг-нал",
+        "ru": "дас варн-зиг-нал"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-suhbati",
+      "example": {
+        "term": "Verlangt jemand Geld für ein Vorstellungsgespräch, ist das ein Warnsignal.",
+        "tr": {
+          "uz": "Ish suhbati uchun pul soʻrashsa — bu xavf belgisi.",
+          "uz-Cyrl": "Иш суҳбати учун пул сўрашса — бу хавф белгиси.",
+          "ru": "Если за собеседование просят деньги — это тревожный сигнал."
+        }
+      },
+      "safety": true,
       "status": "review",
       "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
     }
