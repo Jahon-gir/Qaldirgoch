@@ -5,8 +5,8 @@ export type L3 = Record<Lang, string>
 
 export type Level = 'A1' | 'A2' | 'B1'
 export const LEVELS: readonly Level[] = ['A1', 'A2', 'B1']
-/** Darajalar holati: B1 hozircha "keyin" (qulf). */
-export const LEVEL_LOCKED: Record<Level, boolean> = { A1: false, A2: false, B1: true }
+/** Darajalar holati: hammasi ochiq (B1 — 0.31.0 dan, general B1 vaziyatlari tayyor). */
+export const LEVEL_LOCKED: Record<Level, boolean> = { A1: false, A2: false, B1: false }
 
 /** Yoʻnalish (kasbiy soha). logistics, metal — 2-toʻlqin (0.14.0); cleaning, agriculture, retail, food — 3-toʻlqin (0.15.x). */
 export type Direction = 'general' | 'technical' | 'care' | 'hospitality' | 'logistics' | 'metal' | 'cleaning' | 'agriculture' | 'retail' | 'food'
