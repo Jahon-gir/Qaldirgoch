@@ -2824,6 +2824,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "ish-joyi-qoidalari",
+      "title": {
+        "uz": "Ish joyidagi qoidalar va ichki tartib",
+        "uz-Cyrl": "Иш жойидаги қоидалар ва ички тартиб",
+        "ru": "Правила на рабочем месте и внутренний распорядок"
+      },
+      "order": 17,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководительница группы"
+            },
+            "de": "Willkommen! Heute erkläre ich Ihnen kurz die Betriebsordnung.",
+            "tr": {
+              "uz": "Xush kelibsiz! Bugun sizga ichki tartib qoidalarini qisqacha tushuntiraman.",
+              "uz-Cyrl": "Хуш келибсиз! Бугун сизга ички тартиб қоидаларини қисқача тушунтираман.",
+              "ru": "Добро пожаловать! Сегодня я коротко объясню вам правила внутреннего распорядка."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Danke. Gibt es hier eine Kleiderordnung?",
+            "tr": {
+              "uz": "Rahmat. Bu yerda kiyinish qoidasi bormi?",
+              "uz-Cyrl": "Раҳмат. Бу ерда кийиниш қоидаси борми?",
+              "ru": "Спасибо. Здесь есть дресс-код?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководительница группы"
+            },
+            "de": "Ja, aber die Arbeitskleidung bekommen Sie von uns. Haben Sie schon Ihren Mitarbeiterausweis?",
+            "tr": {
+              "uz": "Ha, lekin ish kiyimini biz beramiz. Xodim guvohnomangizni oldingizmi?",
+              "uz-Cyrl": "Ҳа, лекин иш кийимини биз берамиз. Ходим гувоҳномангизни олдингизми?",
+              "ru": "Да, но рабочую одежду вы получите от нас. У вас уже есть пропуск сотрудника?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, noch nicht. Wo bekomme ich ihn?",
+            "tr": {
+              "uz": "Yoʻq, hali emas. Uni qayerdan olaman?",
+              "uz-Cyrl": "Йўқ, ҳали эмас. Уни қаердан оламан?",
+              "ru": "Нет, ещё нет. Где его можно получить?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководительница группы"
+            },
+            "de": "Am Empfang, gleich neben dem Eingang. Und noch etwas: Im Lager gilt Rauchverbot.",
+            "tr": {
+              "uz": "Qabulxonada, kirish eshigi yonida. Yana bir narsa: omborda chekish taqiqlangan.",
+              "uz-Cyrl": "Қабулхонада, кириш эшиги ёнида. Яна бир нарса: омборда чекиш тақиқланган.",
+              "ru": "На ресепшене, сразу у входа. И ещё: на складе запрещено курить."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gut zu wissen. Und wo ist der Raucherbereich?",
+            "tr": {
+              "uz": "Bilganim yaxshi boʻldi. Chekish joyi qayerda?",
+              "uz-Cyrl": "Билганим яхши бўлди. Чекиш жойи қаерда?",
+              "ru": "Хорошо, что знаю. А где место для курения?"
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -12975,6 +13068,656 @@
           "uz": "Ish suhbati uchun pul soʻrashsa — bu xavf belgisi.",
           "uz-Cyrl": "Иш суҳбати учун пул сўрашса — бу хавф белгиси.",
           "ru": "Если за собеседование просят деньги — это тревожный сигнал."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-betriebsordnung",
+      "slug": "betriebsordnung",
+      "term": "die Betriebsordnung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Betriebsordnungen",
+      "tr": {
+        "uz": "ichki tartib qoidalari (korxonada)",
+        "uz-Cyrl": "ички тартиб қоидалари (корхонада)",
+        "ru": "правила внутреннего распорядка (на предприятии)"
+      },
+      "pron": {
+        "uz": "die be-trips-ord-nung",
+        "uz-Cyrl": "ди бе-трипс-орд-нунг",
+        "ru": "ди бе-трипс-орд-нунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "Die Betriebsordnung hängt im Pausenraum.",
+        "tr": {
+          "uz": "Ichki tartib qoidalari dam olish xonasida osilgan.",
+          "uz-Cyrl": "Ички тартиб қоидалари дам олиш хонасида осилган.",
+          "ru": "Правила внутреннего распорядка висят в комнате отдыха."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-regel",
+      "slug": "regel",
+      "term": "die Regel",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Regeln",
+      "tr": {
+        "uz": "qoida",
+        "uz-Cyrl": "қоида",
+        "ru": "правило"
+      },
+      "pron": {
+        "uz": "die re-gel",
+        "uz-Cyrl": "ди ре-гел",
+        "ru": "ди ре-гел"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "Diese Regel gilt für alle Mitarbeiter.",
+        "tr": {
+          "uz": "Bu qoida barcha xodimlar uchun amal qiladi.",
+          "uz-Cyrl": "Бу қоида барча ходимлар учун амал қилади.",
+          "ru": "Это правило действует для всех сотрудников."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-einhalten",
+      "slug": "einhalten",
+      "term": "einhalten",
+      "icon": "check",
+      "tr": {
+        "uz": "rioya qilmoq (qoidaga)",
+        "uz-Cyrl": "риоя қилмоқ (қоидага)",
+        "ru": "соблюдать (правила)"
+      },
+      "pron": {
+        "uz": "ayn-hal-ten",
+        "uz-Cyrl": "айн-хал-тен",
+        "ru": "айн-хал-тен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "Wir müssen die Pausenzeiten einhalten.",
+        "tr": {
+          "uz": "Biz tanaffus vaqtlariga rioya qilishimiz kerak.",
+          "uz-Cyrl": "Биз танаффус вақтларига риоя қилишимиз керак.",
+          "ru": "Мы должны соблюдать время перерывов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-kleiderordnung",
+      "slug": "kleiderordnung",
+      "term": "die Kleiderordnung",
+      "icon": "shirt",
+      "article": "die",
+      "plural": "die Kleiderordnungen",
+      "tr": {
+        "uz": "kiyinish qoidasi",
+        "uz-Cyrl": "кийиниш қоидаси",
+        "ru": "дресс-код (правила одежды)"
+      },
+      "pron": {
+        "uz": "die klay-der-ord-nung",
+        "uz-Cyrl": "ди клай-дер-орд-нунг",
+        "ru": "ди клай-дер-орд-нунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "Gibt es hier eine Kleiderordnung?",
+        "tr": {
+          "uz": "Bu yerda kiyinish qoidasi bormi?",
+          "uz-Cyrl": "Бу ерда кийиниш қоидаси борми?",
+          "ru": "Здесь есть дресс-код?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-mitarbeiterausweis",
+      "slug": "mitarbeiterausweis",
+      "term": "der Mitarbeiterausweis",
+      "icon": "id",
+      "article": "der",
+      "plural": "die Mitarbeiterausweise",
+      "tr": {
+        "uz": "xodim guvohnomasi (beyjik)",
+        "uz-Cyrl": "ходим гувоҳномаси (бейжик)",
+        "ru": "пропуск сотрудника"
+      },
+      "pron": {
+        "uz": "der mit-ar-bay-ter-aus-vays",
+        "uz-Cyrl": "дер мит-ар-бай-тер-аус-вайс",
+        "ru": "дер мит-ар-бай-тер-аус-вайс"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "Bitte tragen Sie den Mitarbeiterausweis immer sichtbar.",
+        "tr": {
+          "uz": "Iltimos, xodim guvohnomasini doim koʻrinadigan qilib taqing.",
+          "uz-Cyrl": "Илтимос, ходим гувоҳномасини доим кўринадиган қилиб тақинг.",
+          "ru": "Пожалуйста, всегда носите пропуск на виду."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-spind",
+      "slug": "spind",
+      "term": "der Spind",
+      "icon": "lock",
+      "article": "der",
+      "plural": "die Spinde",
+      "tr": {
+        "uz": "shkafcha (kiyim uchun)",
+        "uz-Cyrl": "шкафча (кийим учун)",
+        "ru": "шкафчик (для одежды)"
+      },
+      "pron": {
+        "uz": "der shpint",
+        "uz-Cyrl": "дер шпинт",
+        "ru": "дер шпинт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "Private Sachen kommen in den Spind.",
+        "tr": {
+          "uz": "Shaxsiy narsalar shkafchaga qoʻyiladi.",
+          "uz-Cyrl": "Шахсий нарсалар шкафчага қўйилади.",
+          "ru": "Личные вещи кладут в шкафчик."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-datenschutz",
+      "slug": "datenschutz",
+      "term": "der Datenschutz",
+      "icon": "lock",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "shaxsiy maʼlumotlar himoyasi",
+        "uz-Cyrl": "шахсий маълумотлар ҳимояси",
+        "ru": "защита персональных данных"
+      },
+      "pron": {
+        "uz": "der da-ten-shuts",
+        "uz-Cyrl": "дер да-тен-шуц",
+        "ru": "дер да-тен-шуц"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "Wegen Datenschutz geben wir keine Kundendaten weiter.",
+        "tr": {
+          "uz": "Maʼlumotlar himoyasi sababli mijozlar maʼlumotini boshqalarga bermaymiz.",
+          "uz-Cyrl": "Маълумотлар ҳимояси сабабли мижозлар маълумотини бошқаларга бермаймиз.",
+          "ru": "Из-за защиты данных мы не передаём данные клиентов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-betriebsgeheimnis",
+      "slug": "betriebsgeheimnis",
+      "term": "das Betriebsgeheimnis",
+      "icon": "key",
+      "article": "das",
+      "plural": "die Betriebsgeheimnisse",
+      "tr": {
+        "uz": "korxona siri",
+        "uz-Cyrl": "корхона сири",
+        "ru": "тайна предприятия (коммерческая тайна)"
+      },
+      "pron": {
+        "uz": "das be-trips-ge-haym-nis",
+        "uz-Cyrl": "дас бе-трипс-ге-хайм-нис",
+        "ru": "дас бе-трипс-ге-хайм-нис"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "Das neue Rezept ist ein Betriebsgeheimnis.",
+        "tr": {
+          "uz": "Yangi retsept — korxona siri.",
+          "uz-Cyrl": "Янги рецепт — корхона сири.",
+          "ru": "Новый рецепт — тайна предприятия."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-verschwiegenheit",
+      "slug": "verschwiegenheit",
+      "term": "die Verschwiegenheit",
+      "icon": "hand-stop",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "sir saqlash (majburiyati)",
+        "uz-Cyrl": "сир сақлаш (мажбурияти)",
+        "ru": "конфиденциальность (обязанность хранить тайну)"
+      },
+      "pron": {
+        "uz": "die fer-shvi-gen-hayt",
+        "uz-Cyrl": "ди фер-шви-ген-хайт",
+        "ru": "ди фер-шви-ген-хайт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "Verschwiegenheit heißt: Ich erzähle nichts über Kunden.",
+        "tr": {
+          "uz": "Sir saqlash degani: mijozlar haqida hech narsa aytmayman.",
+          "uz-Cyrl": "Сир сақлаш дегани: мижозлар ҳақида ҳеч нарса айтмайман.",
+          "ru": "Конфиденциальность означает: я ничего не рассказываю о клиентах."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-diensthandy",
+      "slug": "diensthandy",
+      "term": "das Diensthandy",
+      "icon": "phone",
+      "article": "das",
+      "plural": "die Diensthandys",
+      "tr": {
+        "uz": "ish telefoni (firmaniki)",
+        "uz-Cyrl": "иш телефони (фирманики)",
+        "ru": "служебный телефон"
+      },
+      "pron": {
+        "uz": "das dinst-hen-di",
+        "uz-Cyrl": "дас динст-хен-ди",
+        "ru": "дас динст-хен-ди"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "Das Diensthandy ist nur für die Arbeit.",
+        "tr": {
+          "uz": "Ish telefoni faqat ish uchun.",
+          "uz-Cyrl": "Иш телефони фақат иш учун.",
+          "ru": "Служебный телефон — только для работы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-darf-ich-hier-fotos-machen",
+      "slug": "darf-ich-hier-fotos-machen",
+      "term": "Darf ich hier Fotos machen?",
+      "icon": "camera",
+      "tr": {
+        "uz": "Bu yerda suratga olsam boʻladimi?",
+        "uz-Cyrl": "Бу ерда суратга олсам бўладими?",
+        "ru": "Здесь можно фотографировать?"
+      },
+      "pron": {
+        "uz": "darf ix hir fo-tos ma-xen",
+        "uz-Cyrl": "дарф их хир фо-тос ма-хен",
+        "ru": "дарф их хир фо-тос ма-хен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "In der Halle frage ich zuerst: „Darf ich hier Fotos machen?“",
+        "tr": {
+          "uz": "Sexda avval soʻrayman: «Bu yerda suratga olsam boʻladimi?»",
+          "uz-Cyrl": "Сехда аввал сўрайман: «Бу ерда суратга олсам бўладими?»",
+          "ru": "В цехе я сначала спрашиваю: «Здесь можно фотографировать?»"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-fotografierverbot",
+      "slug": "fotografierverbot",
+      "term": "das Fotografierverbot",
+      "icon": "camera",
+      "article": "das",
+      "plural": "die Fotografierverbote",
+      "tr": {
+        "uz": "suratga olish taqiqi",
+        "uz-Cyrl": "суратга олиш тақиқи",
+        "ru": "запрет на фотосъёмку"
+      },
+      "pron": {
+        "uz": "das fo-to-gra-fir-fer-bot",
+        "uz-Cyrl": "дас фо-то-гра-фир-фер-бот",
+        "ru": "дас фо-то-гра-фир-фер-бот"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "In unserer Halle gilt ein Fotografierverbot.",
+        "tr": {
+          "uz": "Bizning sexda suratga olish taqiqlangan.",
+          "uz-Cyrl": "Бизнинг сехда суратга олиш тақиқланган.",
+          "ru": "В нашем цехе действует запрет на фотосъёмку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-rauchverbot",
+      "slug": "rauchverbot",
+      "term": "das Rauchverbot",
+      "icon": "smoking-no",
+      "article": "das",
+      "plural": "die Rauchverbote",
+      "tr": {
+        "uz": "chekish taqiqi",
+        "uz-Cyrl": "чекиш тақиқи",
+        "ru": "запрет на курение"
+      },
+      "pron": {
+        "uz": "das raux-fer-bot",
+        "uz-Cyrl": "дас раух-фер-бот",
+        "ru": "дас раух-фер-бот"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "Im ganzen Lager gilt Rauchverbot.",
+        "tr": {
+          "uz": "Butun omborda chekish taqiqlangan.",
+          "uz-Cyrl": "Бутун омборда чекиш тақиқланган.",
+          "ru": "На всём складе запрещено курить."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-raucherbereich",
+      "slug": "raucherbereich",
+      "term": "der Raucherbereich",
+      "icon": "map-pin",
+      "article": "der",
+      "plural": "die Raucherbereiche",
+      "tr": {
+        "uz": "chekish joyi",
+        "uz-Cyrl": "чекиш жойи",
+        "ru": "место для курения"
+      },
+      "pron": {
+        "uz": "der rau-xer-be-rayx",
+        "uz-Cyrl": "дер рау-хер-бе-райх",
+        "ru": "дер рау-хер-бе-райх"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "Der Raucherbereich ist hinter dem Parkplatz.",
+        "tr": {
+          "uz": "Chekish joyi avtoturargoh orqasida.",
+          "uz-Cyrl": "Чекиш жойи автотураргоҳ орқасида.",
+          "ru": "Место для курения — за парковкой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-alkoholverbot",
+      "slug": "alkoholverbot",
+      "term": "das Alkoholverbot",
+      "icon": "glass",
+      "article": "das",
+      "plural": "die Alkoholverbote",
+      "tr": {
+        "uz": "spirtli ichimlik taqiqi",
+        "uz-Cyrl": "спиртли ичимлик тақиқи",
+        "ru": "запрет на алкоголь"
+      },
+      "pron": {
+        "uz": "das al-ko-hol-fer-bot",
+        "uz-Cyrl": "дас ал-ко-хол-фер-бот",
+        "ru": "дас ал-ко-хол-фер-бот"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "In unserer Firma gilt ein Alkoholverbot.",
+        "tr": {
+          "uz": "Bizning firmada spirtli ichimlik ichish taqiqlangan.",
+          "uz-Cyrl": "Бизнинг фирмада спиртли ичимлик ичиш тақиқланган.",
+          "ru": "В нашей фирме действует запрет на алкоголь."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-abmahnung",
+      "slug": "abmahnung",
+      "term": "die Abmahnung",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Abmahnungen",
+      "tr": {
+        "uz": "yozma ogohlantirish (ish beruvchidan)",
+        "uz-Cyrl": "ёзма огоҳлантириш (иш берувчидан)",
+        "ru": "письменное предупреждение (от работодателя)"
+      },
+      "pron": {
+        "uz": "die ap-ma-nung",
+        "uz-Cyrl": "ди ап-ма-нунг",
+        "ru": "ди ап-ма-нунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "Eine Abmahnung ist eine schriftliche Warnung vom Arbeitgeber.",
+        "tr": {
+          "uz": "Bu — ish beruvchining yozma ogohlantirishi.",
+          "uz-Cyrl": "Бу — иш берувчининг ёзма огоҳлантириши.",
+          "ru": "Это письменное предупреждение от работодателя."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-genehmigung",
+      "slug": "genehmigung",
+      "term": "die Genehmigung",
+      "icon": "check",
+      "article": "die",
+      "plural": "die Genehmigungen",
+      "tr": {
+        "uz": "ruxsat (rasmiy)",
+        "uz-Cyrl": "рухсат (расмий)",
+        "ru": "разрешение"
+      },
+      "pron": {
+        "uz": "die ge-ne-mi-gung",
+        "uz-Cyrl": "ди ге-не-ми-гунг",
+        "ru": "ди ге-не-ми-гунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "Für Besucher in der Halle brauchen Sie eine Genehmigung.",
+        "tr": {
+          "uz": "Sexga mehmon kiritish uchun sizga ruxsat kerak.",
+          "uz-Cyrl": "Сехга меҳмон киритиш учун сизга рухсат керак.",
+          "ru": "Чтобы привести посетителя в цех, вам нужно разрешение."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-erlaubt",
+      "slug": "erlaubt",
+      "term": "erlaubt",
+      "icon": "check",
+      "tr": {
+        "uz": "ruxsat etilgan",
+        "uz-Cyrl": "рухсат этилган",
+        "ru": "разрешено"
+      },
+      "pron": {
+        "uz": "er-laupt",
+        "uz-Cyrl": "ер-лаупт",
+        "ru": "ер-лаупт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "Musik über Kopfhörer ist hier nicht erlaubt.",
+        "tr": {
+          "uz": "Bu yerda quloqchinda musiqa tinglash mumkin emas.",
+          "uz-Cyrl": "Бу ерда қулоқчинда мусиқа тинглаш мумкин эмас.",
+          "ru": "Здесь нельзя слушать музыку в наушниках."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-wo-darf-man-hier-rauchen",
+      "slug": "wo-darf-man-hier-rauchen",
+      "term": "Wo darf man hier rauchen?",
+      "icon": "help",
+      "tr": {
+        "uz": "Bu yerda qayerda chekish mumkin?",
+        "uz-Cyrl": "Бу ерда қаерда чекиш мумкин?",
+        "ru": "Где здесь можно курить?"
+      },
+      "pron": {
+        "uz": "vo darf man hir rau-xen",
+        "uz-Cyrl": "во дарф ман хир рау-хен",
+        "ru": "во дарф ман хир рау-хен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "Am ersten Tag frage ich: „Wo darf man hier rauchen?“",
+        "tr": {
+          "uz": "Birinchi kuni soʻrayman: «Bu yerda qayerda chekish mumkin?»",
+          "uz-Cyrl": "Биринчи куни сўрайман: «Бу ерда қаерда чекиш мумкин?»",
+          "ru": "В первый день я спрашиваю: «Где здесь можно курить?»"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-joyi-qoidalari-wo-steht-das-genau",
+      "slug": "wo-steht-das-genau",
+      "term": "Wo steht das genau?",
+      "icon": "file-text",
+      "tr": {
+        "uz": "Bu aniq qayerda yozilgan?",
+        "uz-Cyrl": "Бу аниқ қаерда ёзилган?",
+        "ru": "Где именно это написано?"
+      },
+      "pron": {
+        "uz": "vo shtet das ge-nau",
+        "uz-Cyrl": "во штет дас ге-нау",
+        "ru": "во штет дас ге-нау"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-joyi-qoidalari",
+      "example": {
+        "term": "Wo steht das genau? Ich möchte die Regel selbst lesen.",
+        "tr": {
+          "uz": "Bu aniq qayerda yozilgan? Qoidani oʻzim oʻqimoqchiman.",
+          "uz-Cyrl": "Бу аниқ қаерда ёзилган? Қоидани ўзим ўқимоқчиман.",
+          "ru": "Где именно это написано? Хочу прочитать правило лично."
         }
       },
       "safety": true,
