@@ -2296,6 +2296,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "yozma-xabar",
+      "title": {
+        "uz": "Ish boʻyicha qisqa xat va xabar",
+        "uz-Cyrl": "Иш бўйича қисқа хат ва хабар",
+        "ru": "Короткие письма и сообщения по работе"
+      },
+      "order": 14,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководитель группы"
+            },
+            "de": "Guten Morgen! Haben Sie meine E-Mail von gestern gelesen?",
+            "tr": {
+              "uz": "Xayrli tong! Kechagi elektron xatimni oʻqidingizmi?",
+              "uz-Cyrl": "Хайрли тонг! Кечаги электрон хатимни ўқидингизми?",
+              "ru": "Доброе утро! Вы прочитали моё вчерашнее письмо?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, welche E-Mail meinen Sie?",
+            "tr": {
+              "uz": "Yoʻq, qaysi xatni nazarda tutyapsiz?",
+              "uz-Cyrl": "Йўқ, қайси хатни назарда тутяпсиз?",
+              "ru": "Нет, какое письмо вы имеете в виду?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководитель группы"
+            },
+            "de": "Die mit dem neuen Dienstplan. Sie ging an alle. Haben Sie schon im Spam-Ordner nachgesehen?",
+            "tr": {
+              "uz": "Yangi ish jadvali bor xatni. U hammaga yuborilgan. Spam papkasiga qaradingizmi?",
+              "uz-Cyrl": "Янги иш жадвали бор хатни. У ҳаммага юборилган. Спам папкасига қарадингизми?",
+              "ru": "То, где новый график смен. Оно ушло всем. Вы уже смотрели в папке «Спам»?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ah, da ist sie! Der Dienstplan ist im Anhang, oder?",
+            "tr": {
+              "uz": "A, mana u! Ish jadvali ilovada, shundaymi?",
+              "uz-Cyrl": "А, мана у! Иш жадвали иловада, шундайми?",
+              "ru": "А, вот оно! График смен во вложении, да?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководитель группы"
+            },
+            "de": "Genau. Bitte bestätigen Sie mir kurz, dass Sie ihn bekommen haben.",
+            "tr": {
+              "uz": "Ha, aynan. Iltimos, uni olganingizni qisqa tasdiqlab qoʻying.",
+              "uz-Cyrl": "Ҳа, айнан. Илтимос, уни олганингизни қисқа тасдиқлаб қўйинг.",
+              "ru": "Да, именно. Пожалуйста, коротко подтвердите, что вы его получили."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gern, ich schreibe Ihnen gleich eine kurze Bestätigung.",
+            "tr": {
+              "uz": "Albatta, hozir sizga qisqa tasdiq yozaman.",
+              "uz-Cyrl": "Албатта, ҳозир сизга қисқа тасдиқ ёзаман.",
+              "ru": "Конечно, сейчас напишу вам короткое подтверждение."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -10518,6 +10611,648 @@
       "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-18); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-e-mail",
+      "slug": "e-mail",
+      "term": "die E-Mail",
+      "icon": "mail",
+      "article": "die",
+      "plural": "die E-Mails",
+      "tr": {
+        "uz": "elektron xat",
+        "uz-Cyrl": "электрон хат",
+        "ru": "электронное письмо"
+      },
+      "pron": {
+        "uz": "die i-meyl",
+        "uz-Cyrl": "ди и-мейл",
+        "ru": "ди и-мейл"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Ich schreibe der Chefin heute noch eine E-Mail.",
+        "tr": {
+          "uz": "Bugunoq boshliqqa elektron xat yozaman.",
+          "uz-Cyrl": "Бугуноқ бошлиққа электрон хат ёзаман.",
+          "ru": "Я ещё сегодня напишу начальнице письмо."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-betreff",
+      "slug": "betreff",
+      "term": "der Betreff",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Betreffe",
+      "tr": {
+        "uz": "mavzu (xat sarlavhasi)",
+        "uz-Cyrl": "мавзу (хат сарлавҳаси)",
+        "ru": "тема (письма)"
+      },
+      "pron": {
+        "uz": "der be-tref",
+        "uz-Cyrl": "дер бе-треф",
+        "ru": "дер бе-треф"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Schreiben Sie im Betreff kurz, worum es geht.",
+        "tr": {
+          "uz": "Mavzu qatorida nima haqida ekanini qisqa yozing.",
+          "uz-Cyrl": "Мавзу қаторида нима ҳақида эканини қисқа ёзинг.",
+          "ru": "В теме коротко напишите, о чём речь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-anhang",
+      "slug": "anhang",
+      "term": "der Anhang",
+      "icon": "paperclip",
+      "article": "der",
+      "plural": "die Anhänge",
+      "tr": {
+        "uz": "ilova (xatga biriktirilgan fayl)",
+        "uz-Cyrl": "илова (хатга бириктирилган файл)",
+        "ru": "вложение (в письме)"
+      },
+      "pron": {
+        "uz": "der an-hang",
+        "uz-Cyrl": "дер ан-ханг",
+        "ru": "дер ан-ханг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Den neuen Dienstplan finden Sie im Anhang.",
+        "tr": {
+          "uz": "Yangi ish jadvalini ilovada topasiz.",
+          "uz-Cyrl": "Янги иш жадвалини иловада топасиз.",
+          "ru": "Новый график смен вы найдёте во вложении."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-anrede",
+      "slug": "anrede",
+      "term": "die Anrede",
+      "icon": "user",
+      "article": "die",
+      "plural": "die Anreden",
+      "tr": {
+        "uz": "murojaat (xat boshida)",
+        "uz-Cyrl": "мурожаат (хат бошида)",
+        "ru": "обращение (в начале письма)"
+      },
+      "pron": {
+        "uz": "die an-re-de",
+        "uz-Cyrl": "ди ан-ре-де",
+        "ru": "ди ан-ре-де"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Die Anrede steht immer am Anfang der E-Mail.",
+        "tr": {
+          "uz": "Murojaat doim xat boshida turadi.",
+          "uz-Cyrl": "Мурожаат доим хат бошида туради.",
+          "ru": "Обращение всегда стоит в начале письма."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-sehr-geehrte-damen-und-herren",
+      "slug": "sehr-geehrte-damen-und-herren",
+      "term": "Sehr geehrte Damen und Herren",
+      "icon": "users",
+      "tr": {
+        "uz": "Hurmatli xonimlar va janoblar",
+        "uz-Cyrl": "Ҳурматли хонимлар ва жаноблар",
+        "ru": "Уважаемые дамы и господа"
+      },
+      "pron": {
+        "uz": "zer ge-er-te da-men unt he-ren",
+        "uz-Cyrl": "зер ге-ер-те да-мен унт хе-рен",
+        "ru": "зер ге-ер-те да-мен унт хе-рен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Sehr geehrte Damen und Herren, ich habe eine Frage zu meinem Vertrag.",
+        "tr": {
+          "uz": "Hurmatli xonimlar va janoblar, shartnomam boʻyicha savolim bor.",
+          "uz-Cyrl": "Ҳурматли хонимлар ва жаноблар, шартномам бўйича саволим бор.",
+          "ru": "Уважаемые дамы и господа, у меня вопрос по моему договору."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-mit-freundlichen-gruessen",
+      "slug": "mit-freundlichen-gruessen",
+      "term": "Mit freundlichen Grüßen",
+      "icon": "heart-handshake",
+      "tr": {
+        "uz": "Hurmat bilan (xat oxirida)",
+        "uz-Cyrl": "Ҳурмат билан (хат охирида)",
+        "ru": "С уважением (в конце письма)"
+      },
+      "pron": {
+        "uz": "mit froynd-li-xen gryu-sen",
+        "uz-Cyrl": "мит фройнд-ли-хен грю-сен",
+        "ru": "мит фройнд-ли-хен грю-сен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Am Ende schreibe ich „Mit freundlichen Grüßen“ und meinen Namen.",
+        "tr": {
+          "uz": "Oxirida «Hurmat bilan» va ismimni yozaman.",
+          "uz-Cyrl": "Охирида «Ҳурмат билан» ва исмимни ёзаман.",
+          "ru": "В конце я пишу «С уважением» и своё имя."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-postfach",
+      "slug": "postfach",
+      "term": "das Postfach",
+      "icon": "inbox",
+      "article": "das",
+      "plural": "die Postfächer",
+      "tr": {
+        "uz": "pochta qutisi (elektron)",
+        "uz-Cyrl": "почта қутиси (электрон)",
+        "ru": "почтовый ящик (электронный)"
+      },
+      "pron": {
+        "uz": "das post-fax",
+        "uz-Cyrl": "дас пост-фах",
+        "ru": "дас пост-фах"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Bitte schauen Sie jeden Morgen in Ihr Postfach.",
+        "tr": {
+          "uz": "Iltimos, har kuni ertalab pochta qutingizga qarang.",
+          "uz-Cyrl": "Илтимос, ҳар куни эрталаб почта қутингизга қаранг.",
+          "ru": "Пожалуйста, каждое утро проверяйте свой почтовый ящик."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-antwort",
+      "slug": "antwort",
+      "term": "die Antwort",
+      "icon": "message-circle",
+      "article": "die",
+      "plural": "die Antworten",
+      "tr": {
+        "uz": "javob",
+        "uz-Cyrl": "жавоб",
+        "ru": "ответ"
+      },
+      "pron": {
+        "uz": "die ant-vort",
+        "uz-Cyrl": "ди ант-ворт",
+        "ru": "ди ант-ворт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Ich warte noch auf eine Antwort vom Personalbüro.",
+        "tr": {
+          "uz": "Hali kadrlar boʻlimidan javob kutyapman.",
+          "uz-Cyrl": "Ҳали кадрлар бўлимидан жавоб кутяпман.",
+          "ru": "Я ещё жду ответа из отдела кадров."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-kopie",
+      "slug": "kopie",
+      "term": "die Kopie",
+      "icon": "users",
+      "article": "die",
+      "plural": "die Kopien",
+      "tr": {
+        "uz": "nusxa (xatni boshqaga ham yuborish)",
+        "uz-Cyrl": "нусха (хатни бошқага ҳам юбориш)",
+        "ru": "копия (в письме)"
+      },
+      "pron": {
+        "uz": "die ko-pi",
+        "uz-Cyrl": "ди ко-пи",
+        "ru": "ди ко-пи"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Ich setze die Teamleiterin in Kopie.",
+        "tr": {
+          "uz": "Jamoa rahbarini ham nusxaga qoʻshaman.",
+          "uz-Cyrl": "Жамоа раҳбарини ҳам нусхага қўшаман.",
+          "ru": "Я ставлю руководителя группы в копию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-weiterleiten",
+      "slug": "weiterleiten",
+      "term": "weiterleiten",
+      "icon": "repeat",
+      "tr": {
+        "uz": "boshqaga yoʻnaltirmoq (xatni)",
+        "uz-Cyrl": "бошқага йўналтирмоқ (хатни)",
+        "ru": "переслать (письмо)"
+      },
+      "pron": {
+        "uz": "vay-ter-lay-ten",
+        "uz-Cyrl": "вай-тер-лай-тен",
+        "ru": "вай-тер-лай-тен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Können Sie mir die E-Mail bitte weiterleiten?",
+        "tr": {
+          "uz": "Xatni menga yoʻnaltirib yubora olasizmi?",
+          "uz-Cyrl": "Хатни менга йўналтириб юбора оласизми?",
+          "ru": "Не могли бы вы переслать мне это письмо?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-beantworten",
+      "slug": "beantworten",
+      "term": "beantworten",
+      "icon": "messages",
+      "tr": {
+        "uz": "javob bermoq (xatga)",
+        "uz-Cyrl": "жавоб бермоқ (хатга)",
+        "ru": "ответить (на письмо)"
+      },
+      "pron": {
+        "uz": "be-ant-vor-ten",
+        "uz-Cyrl": "бе-ант-вор-тен",
+        "ru": "бе-ант-вор-тен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Ich muss die E-Mail bis heute Abend beantworten.",
+        "tr": {
+          "uz": "Xatga bugun kechgacha javob berishim kerak.",
+          "uz-Cyrl": "Хатга бугун кечгача жавоб беришим керак.",
+          "ru": "Мне нужно ответить на письмо до вечера."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-ich-melde-mich-morgen-bei-ihnen",
+      "slug": "ich-melde-mich-morgen-bei-ihnen",
+      "term": "Ich melde mich morgen bei Ihnen.",
+      "icon": "clock",
+      "tr": {
+        "uz": "Ertaga sizga oʻzim bogʻlanaman.",
+        "uz-Cyrl": "Эртага сизга ўзим боғланаман.",
+        "ru": "Я свяжусь с вами завтра."
+      },
+      "pron": {
+        "uz": "ix mel-de mix mor-gen bay i-nen",
+        "uz-Cyrl": "их мель-де мих мор-ген бай и-нен",
+        "ru": "их мель-де мих мор-ген бай и-нен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Ich kläre das mit der Chefin. Ich melde mich morgen bei Ihnen.",
+        "tr": {
+          "uz": "Buni boshliq bilan aniqlayman. Ertaga sizga oʻzim bogʻlanaman.",
+          "uz-Cyrl": "Буни бошлиқ билан аниқлайман. Эртага сизга ўзим боғланаман.",
+          "ru": "Я уточню это у начальницы. Я свяжусь с вами завтра."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-einladung",
+      "slug": "einladung",
+      "term": "die Einladung",
+      "icon": "calendar-event",
+      "article": "die",
+      "plural": "die Einladungen",
+      "tr": {
+        "uz": "taklifnoma",
+        "uz-Cyrl": "таклифнома",
+        "ru": "приглашение"
+      },
+      "pron": {
+        "uz": "die ayn-la-dung",
+        "uz-Cyrl": "ди айн-ла-дунг",
+        "ru": "ди айн-ла-дунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Die Einladung zur Teamsitzung kommt per E-Mail.",
+        "tr": {
+          "uz": "Jamoa yigʻilishiga taklifnoma elektron xat orqali keladi.",
+          "uz-Cyrl": "Жамоа йиғилишига таклифнома электрон хат орқали келади.",
+          "ru": "Приглашение на собрание команды приходит по электронной почте."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-abwesenheitsnotiz",
+      "slug": "abwesenheitsnotiz",
+      "term": "die Abwesenheitsnotiz",
+      "icon": "beach",
+      "article": "die",
+      "plural": "die Abwesenheitsnotizen",
+      "tr": {
+        "uz": "avtomatik javob (ishda yoʻqligim haqida)",
+        "uz-Cyrl": "автоматик жавоб (ишда йўқлигим ҳақида)",
+        "ru": "автоответ (об отсутствии)"
+      },
+      "pron": {
+        "uz": "die ap-ve-zen-hayts-no-tits",
+        "uz-Cyrl": "ди ап-ве-зен-хайтс-но-тиц",
+        "ru": "ди ап-ве-зен-хайтс-но-тиц"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Vor dem Urlaub stelle ich eine Abwesenheitsnotiz ein.",
+        "tr": {
+          "uz": "Taʼtildan oldin avtomatik javobni yoqib qoʻyaman.",
+          "uz-Cyrl": "Таътилдан олдин автоматик жавобни ёқиб қўяман.",
+          "ru": "Перед отпуском я включаю автоответ."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-notiz",
+      "slug": "notiz",
+      "term": "die Notiz",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Notizen",
+      "tr": {
+        "uz": "qisqa yozuv, qayd",
+        "uz-Cyrl": "қисқа ёзув, қайд",
+        "ru": "записка, заметка"
+      },
+      "pron": {
+        "uz": "die no-tits",
+        "uz-Cyrl": "ди но-тиц",
+        "ru": "ди но-тиц"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Ich lege dem Kollegen eine Notiz auf den Tisch.",
+        "tr": {
+          "uz": "Hamkasbning stoliga qisqa yozuv qoʻyib ketaman.",
+          "uz-Cyrl": "Ҳамкасбнинг столига қисқа ёзув қўйиб кетаман.",
+          "ru": "Я оставляю коллеге записку на столе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-phishing-mail",
+      "slug": "phishing-mail",
+      "term": "die Phishing-Mail",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Phishing-Mails",
+      "tr": {
+        "uz": "firibgar xat (parol yoki pul soʻraydi)",
+        "uz-Cyrl": "фирибгар хат (парол ёки пул сўрайди)",
+        "ru": "фишинговое письмо"
+      },
+      "pron": {
+        "uz": "die fi-shing-meyl",
+        "uz-Cyrl": "ди фи-шинг-мейл",
+        "ru": "ди фи-шинг-мейл"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Diese Phishing-Mail will Ihr Passwort – bitte sofort löschen.",
+        "tr": {
+          "uz": "Bu firibgar xat parolingizni soʻrayapti – darhol oʻchiring.",
+          "uz-Cyrl": "Бу фирибгар хат паролингизни сўраяпти – дарҳол ўчиринг.",
+          "ru": "Это фишинговое письмо выманивает ваш пароль – сразу удалите его."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-bestaetigen",
+      "slug": "bestaetigen",
+      "term": "bestätigen",
+      "icon": "check",
+      "tr": {
+        "uz": "tasdiqlamoq",
+        "uz-Cyrl": "тасдиқламоқ",
+        "ru": "подтвердить"
+      },
+      "pron": {
+        "uz": "be-shte-ti-gen",
+        "uz-Cyrl": "бе-ште-ти-ген",
+        "ru": "бе-ште-ти-ген"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Bitte bestätigen Sie den Termin kurz per E-Mail.",
+        "tr": {
+          "uz": "Iltimos, uchrashuv vaqtini elektron xat bilan qisqa tasdiqlang.",
+          "uz-Cyrl": "Илтимос, учрашув вақтини электрон хат билан қисқа тасдиқланг.",
+          "ru": "Пожалуйста, коротко подтвердите встречу по электронной почте."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-koennten-sie-mir-das-bitte-schriftlich-schicken",
+      "slug": "koennten-sie-mir-das-bitte-schriftlich-schicken",
+      "term": "Könnten Sie mir das bitte schriftlich schicken?",
+      "icon": "mail",
+      "tr": {
+        "uz": "Buni menga yozma ravishda yubora olasizmi?",
+        "uz-Cyrl": "Буни менга ёзма равишда юбора оласизми?",
+        "ru": "Не могли бы вы прислать мне это в письменном виде?"
+      },
+      "pron": {
+        "uz": "kyon-ten zi mir das bi-te shrift-lix shi-ken",
+        "uz-Cyrl": "кён-тен зи мир дас би-те шрифт-лих ши-кен",
+        "ru": "кён-тен зи мир дас би-те шрифт-лих ши-кен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Die neue Arbeitszeit ist mir nicht ganz klar. Könnten Sie mir das bitte schriftlich schicken?",
+        "tr": {
+          "uz": "Yangi ish vaqti menga toʻliq tushunarli emas. Buni menga yozma ravishda yubora olasizmi?",
+          "uz-Cyrl": "Янги иш вақти менга тўлиқ тушунарли эмас. Буни менга ёзма равишда юбора оласизми?",
+          "ru": "Новое рабочее время мне не совсем понятно. Не могли бы вы прислать мне это в письменном виде?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-vertraulich",
+      "slug": "vertraulich",
+      "term": "vertraulich",
+      "icon": "lock",
+      "tr": {
+        "uz": "maxfiy",
+        "uz-Cyrl": "махфий",
+        "ru": "конфиденциальный"
+      },
+      "pron": {
+        "uz": "fer-trau-lix",
+        "uz-Cyrl": "фер-трау-лих",
+        "ru": "фер-трау-лих"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Die Lohnabrechnung ist vertraulich – leiten Sie sie nicht weiter.",
+        "tr": {
+          "uz": "Ish haqi varagʻi maxfiy – uni boshqalarga yubormang.",
+          "uz-Cyrl": "Иш ҳақи варағи махфий – уни бошқаларга юборманг.",
+          "ru": "Расчётный листок конфиденциален – не пересылайте его."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-yozma-xabar-oeffnen-sie-keine-unbekannten-anhaenge",
+      "slug": "oeffnen-sie-keine-unbekannten-anhaenge",
+      "term": "Öffnen Sie keine unbekannten Anhänge!",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Notanish ilovalarni ochmang!",
+        "uz-Cyrl": "Нотаниш иловаларни очманг!",
+        "ru": "Не открывайте незнакомые вложения!"
+      },
+      "pron": {
+        "uz": "yof-nen zi kay-ne un-be-kan-ten an-hen-ge",
+        "uz-Cyrl": "ёф-нен зи кай-не ун-бе-кан-тен ан-хен-ге",
+        "ru": "ёф-нен зи кай-не ун-бе-кан-тен ан-хен-ге"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "yozma-xabar",
+      "example": {
+        "term": "Öffnen Sie keine unbekannten Anhänge! Fragen Sie im Zweifel den Administrator.",
+        "tr": {
+          "uz": "Notanish ilovalarni ochmang! Shubha boʻlsa, administratordan soʻrang.",
+          "uz-Cyrl": "Нотаниш иловаларни очманг! Шубҳа бўлса, администратордан сўранг.",
+          "ru": "Не открывайте незнакомые вложения! Если сомневаетесь, спросите администратора."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
