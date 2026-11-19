@@ -3444,6 +3444,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Ich habe im Internet eine sehr billige Wohnung gefunden. Der Vermieter wohnt im Ausland.",
+            "tr": {
+              "uz": "Internetda juda arzon kvartira topdim. Uy egasi chet elda yashar ekan.",
+              "uz-Cyrl": "Интернетда жуда арзон квартира топдим. Уй эгаси чет элда яшар экан.",
+              "ru": "В интернете нашлась очень дешёвая квартира. Хозяин живёт за границей."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Im Ausland? Wie kannst du die Wohnung dann besichtigen?",
+            "tr": {
+              "uz": "Chet eldami? Unda kvartirani qanday borib koʻrasan?",
+              "uz-Cyrl": "Чет элдами? Унда квартирани қандай бориб кўрасан?",
+              "ru": "За границей? Как же ты тогда посмотришь квартиру?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Er schickt mir den Schlüssel per Post. Aber vorher soll ich die Kaution überweisen. Was meinst du?",
+            "tr": {
+              "uz": "U kalitni pochta orqali yuborar ekan. Lekin undan oldin garov pulini oʻtkazishim kerak ekan. Nima deysan?",
+              "uz-Cyrl": "У калитни почта орқали юборар экан. Лекин ундан олдин гаров пулини ўтказишим керак экан. Нима дейсан?",
+              "ru": "Ключ он пришлёт по почте. Но сначала нужно перевести залог. Что скажешь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Bezahl nichts vor der Besichtigung – das klingt nach Betrug.",
+            "tr": {
+              "uz": "Koʻrmasdan oldin hech narsa toʻlama — bu firibgarlikka oʻxshaydi.",
+              "uz-Cyrl": "Кўрмасдан олдин ҳеч нарса тўлама — бу фирибгарликка ўхшайди.",
+              "ru": "Ничего не плати до осмотра — это похоже на мошенничество."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Du hast recht. Er will das Geld außerdem noch heute haben.",
+            "tr": {
+              "uz": "Toʻgʻri aytasan. Bundan tashqari, u pulni bugunoq olmoqchi.",
+              "uz-Cyrl": "Тўғри айтасан. Бундан ташқари, у пулни бугуноқ олмоқчи.",
+              "ru": "Верно говоришь. К тому же он хочет получить деньги ещё сегодня."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Noch heute? Genau so arbeiten Betrüger. Such lieber eine Wohnung mit echter Besichtigung.",
+            "tr": {
+              "uz": "Bugunoqmi? Firibgarlar aynan shunday ishlaydi. Yaxshisi, borib koʻrsa boʻladigan kvartira qidir.",
+              "uz-Cyrl": "Бугуноқми? Фирибгарлар айнан шундай ишлайди. Яхшиси, бориб кўрса бўладиган квартира қидир.",
+              "ru": "Ещё сегодня? Именно так действуют мошенники. Лучше ищи квартиру, которую можно посмотреть вживую."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
