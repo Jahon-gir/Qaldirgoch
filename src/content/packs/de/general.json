@@ -2564,6 +2564,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководительница группы"
+            },
+            "de": "Sie wollten mit mir sprechen. Worum geht es?",
+            "tr": {
+              "uz": "Men bilan gaplashmoqchi edingiz. Gap nima haqida?",
+              "uz-Cyrl": "Мен билан гаплашмоқчи эдингиз. Гап нима ҳақида?",
+              "ru": "Вы хотели со мной поговорить. О чём речь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Es gibt einen Konflikt mit Herrn Kaya wegen der Bestellliste.",
+            "tr": {
+              "uz": "Buyurtma roʻyxati sababli Kaya janoblari bilan kelishmovchilik bor.",
+              "uz-Cyrl": "Буюртма рўйхати сабабли Кая жаноблари билан келишмовчилик бор.",
+              "ru": "Есть конфликт с господином Кая из-за списка заказов."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководительница группы"
+            },
+            "de": "Verstehe. Haben Sie schon mit ihm darüber gesprochen?",
+            "tr": {
+              "uz": "Tushunarli. U bilan bu haqda gaplashdingizmi?",
+              "uz-Cyrl": "Тушунарли. У билан бу ҳақда гаплашдингизми?",
+              "ru": "Понятно. Вы уже говорили с ним об этом?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, wir haben in Ruhe gesprochen. Aber wir wissen nicht, wer für die Liste zuständig ist.",
+            "tr": {
+              "uz": "Ha, xotirjam gaplashdik. Lekin roʻyxatga kim masʼulligini bilmaymiz.",
+              "uz-Cyrl": "Ҳа, хотиржам гаплашдик. Лекин рўйхатга ким масъуллигини билмаймиз.",
+              "ru": "Да, мы спокойно поговорили. Но мы не знаем, кто отвечает за список."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководительница группы"
+            },
+            "de": "Gut, dass Sie das sagen. Ab jetzt macht Herr Kaya die Liste, und Sie helfen ihm donnerstags. Ist das für Sie fair?",
+            "tr": {
+              "uz": "Aytganingiz yaxshi boʻldi. Bundan buyon roʻyxatni Kaya janoblari tuzadi, siz esa payshanba kunlari unga yordam berasiz. Bu siz uchun adolatlimi?",
+              "uz-Cyrl": "Айтганингиз яхши бўлди. Бундан буён рўйхатни Кая жаноблари тузади, сиз эса пайшанба кунлари унга ёрдам берасиз. Бу сиз учун адолатлими?",
+              "ru": "Хорошо, что вы об этом сказали. Теперь список ведёт господин Кая, а вы помогаете ему по четвергам. Для вас это справедливо?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Das finde ich fair. Donnerstags helfe ich ihm gern bei der Liste.",
+            "tr": {
+              "uz": "Menimcha, bu adolatli. Payshanba kunlari roʻyxatda unga bajonidil yordam beraman.",
+              "uz-Cyrl": "Менимча, бу адолатли. Пайшанба кунлари рўйхатда унга бажонидил ёрдам бераман.",
+              "ru": "По-моему, это справедливо. По четвергам охотно помогу ему со списком."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
