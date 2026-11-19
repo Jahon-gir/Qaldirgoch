@@ -83,7 +83,7 @@ describe("nemis kursi: id'lar oʻzgarmagan", () => {
   it('kurs xususiyatlari va ovoz tili', () => {
     expect(DE_COURSE.features).toEqual({ article: true, write: true, build: 'letters', pron: false })
     expect(DE_COURSE.speechLang).toBe('de-DE')
-    expect(DE_COURSE.levels).toEqual([{ id: 'A1', locked: false }, { id: 'A2', locked: false }, { id: 'B1', locked: true }])
+    expect(DE_COURSE.levels).toEqual([{ id: 'A1', locked: false }, { id: 'A2', locked: false }, { id: 'B1', locked: false }])
   })
 })
 
