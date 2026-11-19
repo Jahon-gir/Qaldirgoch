@@ -2388,6 +2388,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Du, kannst du mir kurz helfen? Ich muss der Chefin schreiben, dass ich am Freitag einen Arzttermin habe.",
+            "tr": {
+              "uz": "Qara, menga bir yordam berib yuborasanmi? Boshliqqa juma kuni shifokor qabulim borligini yozishim kerak.",
+              "uz-Cyrl": "Қара, менга бир ёрдам бериб юборасанми? Бошлиққа жума куни шифокор қабулим борлигини ёзишим керак.",
+              "ru": "Слушай, можешь мне быстро помочь? Мне нужно написать начальнице, что в пятницу у меня приём у врача."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Klar. Schreib zuerst einen klaren Betreff, zum Beispiel „Arzttermin am Freitag“.",
+            "tr": {
+              "uz": "Albatta. Avval aniq mavzu yoz, masalan, «Juma kuni shifokor qabuli».",
+              "uz-Cyrl": "Албатта. Аввал аниқ мавзу ёз, масалан, «Жума куни шифокор қабули».",
+              "ru": "Конечно. Сначала напиши понятную тему, например «Приём у врача в пятницу»."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Gut. Und die Anrede? „Hallo Chefin“ geht wohl nicht, oder?",
+            "tr": {
+              "uz": "Yaxshi. Murojaat-chi? «Salom, boshliq» deb boʻlmasa kerak, a?",
+              "uz-Cyrl": "Яхши. Мурожаат-чи? «Салом, бошлиқ» деб бўлмаса керак, а?",
+              "ru": "Хорошо. А обращение? «Привет, начальница», наверное, не подойдёт, да?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, schreib lieber „Guten Tag, Frau Weber“. Das ist höflich und passt immer.",
+            "tr": {
+              "uz": "Yoʻq, yaxshisi «Xayrli kun, Veber xonim» deb yoz. Bu hurmatli va har doim mos keladi.",
+              "uz-Cyrl": "Йўқ, яхшиси «Хайрли кун, Вебер хоним» деб ёз. Бу ҳурматли ва ҳар доим мос келади.",
+              "ru": "Нет, лучше напиши «Добрый день, госпожа Вебер». Это вежливо и подходит всегда."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Danke! Soll ich den Teamleiter auch in Kopie setzen?",
+            "tr": {
+              "uz": "Rahmat! Jamoa rahbarini ham nusxaga qoʻshaymi?",
+              "uz-Cyrl": "Раҳмат! Жамоа раҳбарини ҳам нусхага қўшайми?",
+              "ru": "Спасибо! А руководителя группы тоже поставить в копию?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, setz ihn in Kopie. Dann weiß er auch, dass du am Freitag fehlst.",
+            "tr": {
+              "uz": "Ha, uni nusxaga qoʻsh. Shunda u ham juma kuni yoʻqligingni biladi.",
+              "uz-Cyrl": "Ҳа, уни нусхага қўш. Шунда у ҳам жума куни йўқлигингни билади.",
+              "ru": "Да, поставь его в копию. Тогда он тоже будет знать, что в пятницу тебя не будет."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
