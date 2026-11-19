@@ -3000,6 +3000,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "malaka-oshirish",
+      "title": {
+        "uz": "Malaka oshirish va kurslar",
+        "uz-Cyrl": "Малака ошириш ва курслар",
+        "ru": "Повышение квалификации и курсы"
+      },
+      "order": 18,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Boʻlim boshligʻi",
+              "uz-Cyrl": "Бўлим бошлиғи",
+              "ru": "Начальница отдела"
+            },
+            "de": "Heute sprechen wir auch über Ihre Weiterbildung. Haben Sie schon ein Ziel?",
+            "tr": {
+              "uz": "Bugun malaka oshirishingiz haqida ham gaplashamiz. Biror maqsadingiz bormi?",
+              "uz-Cyrl": "Бугун малака оширишингиз ҳақида ҳам гаплашамиз. Бирор мақсадингиз борми?",
+              "ru": "Сегодня поговорим и о вашем повышении квалификации. У вас уже есть цель?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, ich möchte gern einen Lehrgang für die neue Maschine machen.",
+            "tr": {
+              "uz": "Ha, yangi dastgoh boʻyicha oʻquv kursidan oʻtmoqchiman.",
+              "uz-Cyrl": "Ҳа, янги дастгоҳ бўйича ўқув курсидан ўтмоқчиман.",
+              "ru": "Да, хочу пройти учебный курс по новому станку."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Boʻlim boshligʻi",
+              "uz-Cyrl": "Бўлим бошлиғи",
+              "ru": "Начальница отдела"
+            },
+            "de": "Gute Idee. Der Lehrgang ist aber ganz auf Deutsch. Wie gut ist Ihr Sprachniveau?",
+            "tr": {
+              "uz": "Yaxshi fikr. Lekin oʻquv kursi toʻliq nemis tilida. Til darajangiz qanday?",
+              "uz-Cyrl": "Яхши фикр. Лекин ўқув курси тўлиқ немис тилида. Тил даражангиз қандай?",
+              "ru": "Хорошая идея. Но курс полностью на немецком. Какой у вас уровень языка?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mein Deutsch ist schon recht gut, und Fachwörter lerne ich jeden Tag.",
+            "tr": {
+              "uz": "Nemis tilim ancha yaxshi, kasbiy soʻzlarni esa har kuni oʻrganaman.",
+              "uz-Cyrl": "Немис тилим анча яхши, касбий сўзларни эса ҳар куни ўрганаман.",
+              "ru": "Мой немецкий уже довольно хороший, а профессиональные слова я учу каждый день."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Boʻlim boshligʻi",
+              "uz-Cyrl": "Бўлим бошлиғи",
+              "ru": "Начальница отдела"
+            },
+            "de": "Prima. Die Firma übernimmt die Kosten, und für die Kurstage bekommen Sie eine Freistellung.",
+            "tr": {
+              "uz": "Ajoyib. Xarajatni firma toʻlaydi, kurs kunlarida esa sizni ishdan ozod qilamiz.",
+              "uz-Cyrl": "Ажойиб. Харажатни фирма тўлайди, курс кунларида эса сизни ишдан озод қиламиз.",
+              "ru": "Отлично. Расходы оплачивает фирма, а на дни курса вас освободят от работы."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Vielen Dank! Gibt es für die Kosten eine Rückzahlungsklausel? Das möchte ich vorher wissen.",
+            "tr": {
+              "uz": "Katta rahmat! Kurs xarajati uchun qaytarib toʻlash sharti bormi? Buni oldindan bilmoqchiman.",
+              "uz-Cyrl": "Катта раҳмат! Курс харажати учун қайтариб тўлаш шарти борми? Буни олдиндан билмоқчиман.",
+              "ru": "Большое спасибо! Есть ли условие о возврате расходов? Хочу знать это заранее."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -13801,6 +13894,656 @@
           "uz": "Bu aniq qayerda yozilgan? Qoidani oʻzim oʻqimoqchiman.",
           "uz-Cyrl": "Бу аниқ қаерда ёзилган? Қоидани ўзим ўқимоқчиман.",
           "ru": "Где именно это написано? Хочу прочитать правило лично."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-fortbildung",
+      "slug": "fortbildung",
+      "term": "die Fortbildung",
+      "icon": "book",
+      "article": "die",
+      "plural": "die Fortbildungen",
+      "tr": {
+        "uz": "malaka oshirish kursi",
+        "uz-Cyrl": "малака ошириш курси",
+        "ru": "повышение квалификации (курс)"
+      },
+      "pron": {
+        "uz": "die fort-bil-dung",
+        "uz-Cyrl": "ди форт-бил-дунг",
+        "ru": "ди форт-бил-дунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Nächsten Monat mache ich eine Fortbildung zum Thema Arbeitssicherheit.",
+        "tr": {
+          "uz": "Kelasi oy mehnat xavfsizligi boʻyicha malaka oshirish kursidan oʻtaman.",
+          "uz-Cyrl": "Келаси ой меҳнат хавфсизлиги бўйича малака ошириш курсидан ўтаман.",
+          "ru": "В следующем месяце я прохожу курс повышения квалификации по охране труда."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-lehrgang",
+      "slug": "lehrgang",
+      "term": "der Lehrgang",
+      "icon": "calendar-event",
+      "article": "der",
+      "plural": "die Lehrgänge",
+      "tr": {
+        "uz": "oʻquv kursi (bir necha kunlik)",
+        "uz-Cyrl": "ўқув курси (бир неча кунлик)",
+        "ru": "учебный курс (на несколько дней)"
+      },
+      "pron": {
+        "uz": "der ler-gang",
+        "uz-Cyrl": "дер лер-ганг",
+        "ru": "дер лер-ганг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Der Lehrgang endet mit einem kurzen Test.",
+        "tr": {
+          "uz": "Oʻquv kursi qisqa test bilan tugaydi.",
+          "uz-Cyrl": "Ўқув курси қисқа тест билан тугайди.",
+          "ru": "Курс заканчивается коротким тестом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-teilnahmebescheinigung",
+      "slug": "teilnahmebescheinigung",
+      "term": "die Teilnahmebescheinigung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Teilnahmebescheinigungen",
+      "tr": {
+        "uz": "qatnashganlik haqida maʼlumotnoma",
+        "uz-Cyrl": "қатнашганлик ҳақида маълумотнома",
+        "ru": "справка об участии"
+      },
+      "pron": {
+        "uz": "die tayl-na-me-be-shay-ni-gung",
+        "uz-Cyrl": "ди тайл-на-ме-бе-шай-ни-гунг",
+        "ru": "ди тайл-на-ме-бе-шай-ни-гунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Nach dem Kurs bekommen alle eine Teilnahmebescheinigung.",
+        "tr": {
+          "uz": "Kursdan keyin hamma qatnashganlik haqida maʼlumotnoma oladi.",
+          "uz-Cyrl": "Курсдан кейин ҳамма қатнашганлик ҳақида маълумотнома олади.",
+          "ru": "После курса все получают справку об участии."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-kursleiter",
+      "slug": "kursleiter",
+      "term": "der Kursleiter",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Kursleiter",
+      "tr": {
+        "uz": "kurs rahbari (oʻqituvchi)",
+        "uz-Cyrl": "курс раҳбари (ўқитувчи)",
+        "ru": "руководитель курса (преподаватель)"
+      },
+      "pron": {
+        "uz": "der kurs-lay-ter",
+        "uz-Cyrl": "дер курс-лай-тер",
+        "ru": "дер курс-лай-тер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Der Kursleiter erklärt alles langsam und deutlich.",
+        "tr": {
+          "uz": "Kurs rahbari hammasini sekin va aniq tushuntiradi.",
+          "uz-Cyrl": "Курс раҳбари ҳаммасини секин ва аниқ тушунтиради.",
+          "ru": "Руководитель курса объясняет всё медленно и чётко."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-sprachniveau",
+      "slug": "sprachniveau",
+      "term": "das Sprachniveau",
+      "icon": "language",
+      "article": "das",
+      "plural": "die Sprachniveaus",
+      "tr": {
+        "uz": "til darajasi",
+        "uz-Cyrl": "тил даражаси",
+        "ru": "уровень языка"
+      },
+      "pron": {
+        "uz": "das shprax-ni-vo",
+        "uz-Cyrl": "дас шпрах-ни-во",
+        "ru": "дас шпрах-ни-во"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Für diesen Kurs ist ein gutes Sprachniveau wichtig.",
+        "tr": {
+          "uz": "Bu kurs uchun yaxshi til darajasi muhim.",
+          "uz-Cyrl": "Бу курс учун яхши тил даражаси муҳим.",
+          "ru": "Для этого курса важен хороший уровень языка."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-sich-anmelden",
+      "slug": "sich-anmelden",
+      "term": "sich anmelden",
+      "icon": "check",
+      "tr": {
+        "uz": "roʻyxatdan oʻtmoq (kursga yozilmoq)",
+        "uz-Cyrl": "рўйхатдан ўтмоқ (курсга ёзилмоқ)",
+        "ru": "записаться, зарегистрироваться"
+      },
+      "pron": {
+        "uz": "zix an-mel-den",
+        "uz-Cyrl": "зих ан-мел-ден",
+        "ru": "зих ан-мел-ден"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Bis wann muss ich mich für den Kurs anmelden?",
+        "tr": {
+          "uz": "Kursga qachongacha yozilishim kerak?",
+          "uz-Cyrl": "Курсга қачонгача ёзилишим керак?",
+          "ru": "До какого числа нужно записаться на курс?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-kostenuebernahme",
+      "slug": "kostenuebernahme",
+      "term": "die Kostenübernahme",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "die Kostenübernahmen",
+      "tr": {
+        "uz": "xarajatni oʻz zimmasiga olish (toʻlab berish)",
+        "uz-Cyrl": "харажатни ўз зиммасига олиш (тўлаб бериш)",
+        "ru": "оплата расходов (другой стороной)"
+      },
+      "pron": {
+        "uz": "die kos-ten-yu-ber-na-me",
+        "uz-Cyrl": "ди кос-тен-ю-бер-на-ме",
+        "ru": "ди кос-тен-ю-бер-на-ме"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Fragen Sie vorher nach der Kostenübernahme durch die Firma.",
+        "tr": {
+          "uz": "Xarajatni firma toʻlaydimi — oldindan soʻrang.",
+          "uz-Cyrl": "Харажатни фирма тўлайдими — олдиндан сўранг.",
+          "ru": "Заранее спросите, оплатит ли фирма расходы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-freistellung",
+      "slug": "freistellung",
+      "term": "die Freistellung",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Freistellungen",
+      "tr": {
+        "uz": "ishdan ozod qilish (kurs vaqtiga)",
+        "uz-Cyrl": "ишдан озод қилиш (курс вақтига)",
+        "ru": "освобождение от работы (на время курса)"
+      },
+      "pron": {
+        "uz": "die fray-shtel-lung",
+        "uz-Cyrl": "ди фрай-штел-лунг",
+        "ru": "ди фрай-штел-лунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Für die Tage des Lehrgangs bekomme ich eine Freistellung.",
+        "tr": {
+          "uz": "Oʻquv kursi kunlarida meni ishdan ozod qilishadi.",
+          "uz-Cyrl": "Ўқув курси кунларида мени ишдан озод қилишади.",
+          "ru": "На дни курса меня освобождают от работы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-einstufungstest",
+      "slug": "einstufungstest",
+      "term": "der Einstufungstest",
+      "icon": "abc",
+      "article": "der",
+      "plural": "die Einstufungstests",
+      "tr": {
+        "uz": "darajani aniqlash testi",
+        "uz-Cyrl": "даражани аниқлаш тести",
+        "ru": "тест на определение уровня"
+      },
+      "pron": {
+        "uz": "der ayn-shtu-fungs-test",
+        "uz-Cyrl": "дер айн-шту-фунгс-тест",
+        "ru": "дер айн-шту-фунгс-тест"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Vor dem Deutschkurs machen alle einen Einstufungstest.",
+        "tr": {
+          "uz": "Nemis tili kursidan oldin hamma darajani aniqlash testini topshiradi.",
+          "uz-Cyrl": "Немис тили курсидан олдин ҳамма даражани аниқлаш тестини топширади.",
+          "ru": "Перед курсом немецкого все проходят тест на определение уровня."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-abschlusspruefung",
+      "slug": "abschlusspruefung",
+      "term": "die Abschlussprüfung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Abschlussprüfungen",
+      "tr": {
+        "uz": "yakuniy imtihon",
+        "uz-Cyrl": "якуний имтиҳон",
+        "ru": "итоговый экзамен"
+      },
+      "pron": {
+        "uz": "die ap-shlus-pryu-fung",
+        "uz-Cyrl": "ди ап-шлус-прю-фунг",
+        "ru": "ди ап-шлус-прю-фунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Ich lerne jeden Abend für die Abschlussprüfung.",
+        "tr": {
+          "uz": "Har kuni kechqurun yakuniy imtihonga tayyorlanaman.",
+          "uz-Cyrl": "Ҳар куни кечқурун якуний имтиҳонга тайёрланаман.",
+          "ru": "Каждый вечер я готовлюсь к итоговому экзамену."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-umschulung",
+      "slug": "umschulung",
+      "term": "die Umschulung",
+      "icon": "repeat",
+      "article": "die",
+      "plural": "die Umschulungen",
+      "tr": {
+        "uz": "qayta tayyorlash (yangi kasbga)",
+        "uz-Cyrl": "қайта тайёрлаш (янги касбга)",
+        "ru": "переобучение (на новую профессию)"
+      },
+      "pron": {
+        "uz": "die um-shu-lung",
+        "uz-Cyrl": "ди ум-шу-лунг",
+        "ru": "ди ум-шу-лунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Nach der Umschulung arbeitet mein Kollege als Elektriker.",
+        "tr": {
+          "uz": "Qayta tayyorlashdan keyin hamkasbim elektrik boʻlib ishlaydi.",
+          "uz-Cyrl": "Қайта тайёрлашдан кейин ҳамкасбим электрик бўлиб ишлайди.",
+          "ru": "После переобучения мой коллега работает электриком."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-wer-uebernimmt-die-kosten-fuer-den-kurs",
+      "slug": "wer-uebernimmt-die-kosten-fuer-den-kurs",
+      "term": "Wer übernimmt die Kosten für den Kurs?",
+      "icon": "help",
+      "tr": {
+        "uz": "Kurs pulini kim toʻlaydi?",
+        "uz-Cyrl": "Курс пулини ким тўлайди?",
+        "ru": "Кто оплачивает курс?"
+      },
+      "pron": {
+        "uz": "ver yu-ber-nimt die kos-ten fyur den kurs",
+        "uz-Cyrl": "вер ю-бер-нимт ди кос-тен фюр ден курс",
+        "ru": "вер ю-бер-нимт ди кос-тен фюр ден курс"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Bevor ich unterschreibe, frage ich: „Wer übernimmt die Kosten für den Kurs?“",
+        "tr": {
+          "uz": "Imzolashdan oldin soʻrayman: «Kurs pulini kim toʻlaydi?»",
+          "uz-Cyrl": "Имзолашдан олдин сўрайман: «Курс пулини ким тўлайди?»",
+          "ru": "Перед тем как подписать, я спрашиваю: «Кто оплачивает курс?»"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-aufstiegsmoeglichkeit",
+      "slug": "aufstiegsmoeglichkeit",
+      "term": "die Aufstiegsmöglichkeit",
+      "icon": "ladder",
+      "article": "die",
+      "plural": "die Aufstiegsmöglichkeiten",
+      "tr": {
+        "uz": "lavozimda oʻsish imkoniyati",
+        "uz-Cyrl": "лавозимда ўсиш имконияти",
+        "ru": "возможность карьерного роста"
+      },
+      "pron": {
+        "uz": "die auf-shtiks-myog-lix-kayt",
+        "uz-Cyrl": "ди ауф-штикс-мёг-лих-кайт",
+        "ru": "ди ауф-штикс-мёг-лих-кайт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Gibt es in dieser Firma eine Aufstiegsmöglichkeit für mich?",
+        "tr": {
+          "uz": "Bu firmada men uchun lavozimda oʻsish imkoniyati bormi?",
+          "uz-Cyrl": "Бу фирмада мен учун лавозимда ўсиш имконияти борми?",
+          "ru": "Есть ли в этой фирме для меня возможность карьерного роста?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-mitarbeitergespraech",
+      "slug": "mitarbeitergespraech",
+      "term": "das Mitarbeitergespräch",
+      "icon": "messages",
+      "article": "das",
+      "plural": "die Mitarbeitergespräche",
+      "tr": {
+        "uz": "rahbar bilan rejali suhbat (xodim bilan)",
+        "uz-Cyrl": "раҳбар билан режали суҳбат (ходим билан)",
+        "ru": "плановая беседа руководителя с сотрудником"
+      },
+      "pron": {
+        "uz": "das mit-ar-bay-ter-ge-shprex",
+        "uz-Cyrl": "дас мит-ар-бай-тер-ге-шпрех",
+        "ru": "дас мит-ар-бай-тер-ге-шпрех"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Im Mitarbeitergespräch spreche ich über eine Weiterbildung.",
+        "tr": {
+          "uz": "Rahbar bilan rejali suhbatda malaka oshirish haqida gapiraman.",
+          "uz-Cyrl": "Раҳбар билан режали суҳбатда малака ошириш ҳақида гапираман.",
+          "ru": "На плановой беседе с руководителем я говорю о повышении квалификации."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-qualifizierung",
+      "slug": "qualifizierung",
+      "term": "die Qualifizierung",
+      "icon": "briefcase",
+      "article": "die",
+      "plural": "die Qualifizierungen",
+      "tr": {
+        "uz": "malaka olish (oʻqish orqali)",
+        "uz-Cyrl": "малака олиш (ўқиш орқали)",
+        "ru": "получение квалификации"
+      },
+      "pron": {
+        "uz": "die kva-li-fi-tsi-rung",
+        "uz-Cyrl": "ди ква-ли-фи-ци-рунг",
+        "ru": "ди ква-ли-фи-ци-рунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Nach der Qualifizierung darf ich an der neuen Maschine arbeiten.",
+        "tr": {
+          "uz": "Malaka olgandan keyin yangi dastgohda ishlashim mumkin.",
+          "uz-Cyrl": "Малака олгандан кейин янги дастгоҳда ишлашим мумкин.",
+          "ru": "После получения квалификации мне можно работать на новом станке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-lernziel",
+      "slug": "lernziel",
+      "term": "das Lernziel",
+      "icon": "flag",
+      "article": "das",
+      "plural": "die Lernziele",
+      "tr": {
+        "uz": "oʻquv maqsadi",
+        "uz-Cyrl": "ўқув мақсади",
+        "ru": "учебная цель"
+      },
+      "pron": {
+        "uz": "das lern-tsil",
+        "uz-Cyrl": "дас лерн-цил",
+        "ru": "дас лерн-цил"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Mein Lernziel ist, Arbeitsanweisungen ohne Hilfe zu verstehen.",
+        "tr": {
+          "uz": "Mening oʻquv maqsadim — ish koʻrsatmalarini yordamsiz tushunish.",
+          "uz-Cyrl": "Менинг ўқув мақсадим — иш кўрсатмаларини ёрдамсиз тушуниш.",
+          "ru": "Моя учебная цель — понимать рабочие инструкции без помощи."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-bestehen",
+      "slug": "bestehen",
+      "term": "bestehen",
+      "icon": "check",
+      "tr": {
+        "uz": "(imtihondan) oʻtmoq",
+        "uz-Cyrl": "(имтиҳондан) ўтмоқ",
+        "ru": "сдать (экзамен)"
+      },
+      "pron": {
+        "uz": "be-shte-en",
+        "uz-Cyrl": "бе-ште-ен",
+        "ru": "бе-ште-ен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Ich möchte die Prüfung beim ersten Mal bestehen.",
+        "tr": {
+          "uz": "Imtihondan birinchi urinishda oʻtmoqchiman.",
+          "uz-Cyrl": "Имтиҳондан биринчи уринишда ўтмоқчиман.",
+          "ru": "Хочу сдать экзамен с первого раза."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-kann-ich-den-kurs-waehrend-der-arbeitszeit-machen",
+      "slug": "kann-ich-den-kurs-waehrend-der-arbeitszeit-machen",
+      "term": "Kann ich den Kurs während der Arbeitszeit machen?",
+      "icon": "clock",
+      "tr": {
+        "uz": "Kursga ish vaqtida borsam boʻladimi?",
+        "uz-Cyrl": "Курсга иш вақтида борсам бўладими?",
+        "ru": "Можно проходить курс в рабочее время?"
+      },
+      "pron": {
+        "uz": "kan ix den kurs ve-rend der ar-bayts-tsayt ma-xen",
+        "uz-Cyrl": "кан их ден курс ве-ренд дер ар-байтс-цайт ма-хен",
+        "ru": "кан их ден курс ве-ренд дер ар-байтс-цайт ма-хен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Ich frage meine Chefin: „Kann ich den Kurs während der Arbeitszeit machen?“",
+        "tr": {
+          "uz": "Boshligʻimdan soʻrayman: «Kursga ish vaqtida borsam boʻladimi?»",
+          "uz-Cyrl": "Бошлиғимдан сўрайман: «Курсга иш вақтида борсам бўладими?»",
+          "ru": "Я спрашиваю начальницу: «Можно проходить курс в рабочее время?»"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-rueckzahlungsklausel",
+      "slug": "rueckzahlungsklausel",
+      "term": "die Rückzahlungsklausel",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Rückzahlungsklauseln",
+      "tr": {
+        "uz": "qaytarib toʻlash sharti (maʼlum muddatda ishdan ketsangiz, kurs pulini qaytarasiz)",
+        "uz-Cyrl": "қайтариб тўлаш шарти (маълум муддатда ишдан кетсангиз, курс пулини қайтарасиз)",
+        "ru": "условие о возврате (если уволитесь в течение срока, вернёте деньги за курс)"
+      },
+      "pron": {
+        "uz": "die ryuk-tsa-lungs-klau-zel",
+        "uz-Cyrl": "ди рюк-ца-лунгс-клау-зел",
+        "ru": "ди рюк-ца-лунгс-клау-зел"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Lesen Sie die Rückzahlungsklausel genau, bevor Sie unterschreiben.",
+        "tr": {
+          "uz": "Imzolashdan oldin qaytarib toʻlash shartini diqqat bilan oʻqing.",
+          "uz-Cyrl": "Имзолашдан олдин қайтариб тўлаш шартини диққат билан ўқинг.",
+          "ru": "Перед подписанием внимательно прочитайте условие о возврате."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-malaka-oshirish-kaufen-sie-nie-ein-zertifikat-ohne-pruefung",
+      "slug": "kaufen-sie-nie-ein-zertifikat-ohne-pruefung",
+      "term": "Kaufen Sie nie ein Zertifikat ohne Prüfung!",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Hech qachon imtihonsiz sertifikat sotib olmang!",
+        "uz-Cyrl": "Ҳеч қачон имтиҳонсиз сертификат сотиб олманг!",
+        "ru": "Никогда не покупайте сертификат без экзамена!"
+      },
+      "pron": {
+        "uz": "kau-fen zi ni ayn tser-ti-fi-kat o-ne pryu-fung",
+        "uz-Cyrl": "кау-фен зи ни айн цер-ти-фи-кат о-не прю-фунг",
+        "ru": "кау-фен зи ни айн цер-ти-фи-кат о-не прю-фунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "malaka-oshirish",
+      "example": {
+        "term": "Kaufen Sie nie ein Zertifikat ohne Prüfung! Das ist Betrug.",
+        "tr": {
+          "uz": "Hech qachon imtihonsiz sertifikat sotib olmang! Bu — firibgarlik.",
+          "uz-Cyrl": "Ҳеч қачон имтиҳонсиз сертификат сотиб олманг! Бу — фирибгарлик.",
+          "ru": "Никогда не покупайте сертификат без экзамена! Это мошенничество."
         }
       },
       "safety": true,
