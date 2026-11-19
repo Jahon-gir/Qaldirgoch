@@ -3176,6 +3176,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "ish-huquqlari",
+      "title": {
+        "uz": "Ishchi huquqlari va yordam olish",
+        "uz-Cyrl": "Ишчи ҳуқуқлари ва ёрдам олиш",
+        "ru": "Права работника и где получить помощь"
+      },
+      "order": 19,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Maslahatchi",
+              "uz-Cyrl": "Маслаҳатчи",
+              "ru": "Консультант"
+            },
+            "de": "Guten Tag! Hier ist die Beratungsstelle. Wie kann ich Ihnen helfen?",
+            "tr": {
+              "uz": "Xayrli kun! Bu maslahat markazi. Sizga qanday yordam bera olaman?",
+              "uz-Cyrl": "Хайрли кун! Бу маслаҳат маркази. Сизга қандай ёрдам бера оламан?",
+              "ru": "Добрый день! Это консультационный центр. Чем могу помочь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Guten Tag. Ich verstehe meine Lohnabrechnung nicht. Darf ich sie Ihnen zeigen?",
+            "tr": {
+              "uz": "Xayrli kun. Maosh varaqamni tushunmayapman. Sizga koʻrsatsam boʻladimi?",
+              "uz-Cyrl": "Хайрли кун. Маош варақамни тушунмаяпман. Сизга кўрсатсам бўладими?",
+              "ru": "Добрый день. Мне непонятен мой расчётный лист. Можно вам его показать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Maslahatchi",
+              "uz-Cyrl": "Маслаҳатчи",
+              "ru": "Консультант"
+            },
+            "de": "Natürlich. Hier steht der Bruttolohn, und hier sind die Abzüge. Haben Sie Ihre Arbeitszeiten aufgeschrieben?",
+            "tr": {
+              "uz": "Albatta. Mana bu yerda yalpi maosh, bu yerda esa ushlanmalar. Ish vaqtlaringizni yozib borganmisiz?",
+              "uz-Cyrl": "Албатта. Мана бу ерда ялпи маош, бу ерда эса ушланмалар. Иш вақтларингизни ёзиб борганмисиз?",
+              "ru": "Конечно. Вот здесь зарплата брутто, а здесь вычеты. Вы записывали своё рабочее время?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, alle Stunden stehen in meinem Kalender.",
+            "tr": {
+              "uz": "Ha, barcha soatlar kalendarimda yozilgan.",
+              "uz-Cyrl": "Ҳа, барча соатлар календаримда ёзилган.",
+              "ru": "Да, все часы записаны в моём календаре."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Maslahatchi",
+              "uz-Cyrl": "Маслаҳатчи",
+              "ru": "Консультант"
+            },
+            "de": "Sehr gut. Dann vergleichen wir Ihre Stunden mit der Abrechnung. Die Beratung ist übrigens kostenlos.",
+            "tr": {
+              "uz": "Juda yaxshi. Unda soatlaringizni hisob varaqasi bilan solishtiramiz. Aytgancha, maslahat bepul.",
+              "uz-Cyrl": "Жуда яхши. Унда соатларингизни ҳисоб варақаси билан солиштирамиз. Айтганча, маслаҳат бепул.",
+              "ru": "Очень хорошо. Тогда сравним ваши часы с расчётом. Кстати, консультация бесплатная."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Kostenlos? Das wusste ich nicht. Vielen Dank für Ihre Hilfe!",
+            "tr": {
+              "uz": "Bepulmi? Buni bilmas edim. Yordamingiz uchun katta rahmat!",
+              "uz-Cyrl": "Бепулми? Буни билмас эдим. Ёрдамингиз учун катта раҳмат!",
+              "ru": "Бесплатная? Мне это было неизвестно. Большое спасибо за помощь!"
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -14627,6 +14720,658 @@
           "uz": "Hech qachon imtihonsiz sertifikat sotib olmang! Bu — firibgarlik.",
           "uz-Cyrl": "Ҳеч қачон имтиҳонсиз сертификат сотиб олманг! Бу — фирибгарлик.",
           "ru": "Никогда не покупайте сертификат без экзамена! Это мошенничество."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-arbeitsrecht",
+      "slug": "arbeitsrecht",
+      "term": "das Arbeitsrecht",
+      "icon": "book",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "mehnat huquqi (ish boʻyicha qonunlar)",
+        "uz-Cyrl": "меҳнат ҳуқуқи (иш бўйича қонунлар)",
+        "ru": "трудовое право"
+      },
+      "pron": {
+        "uz": "das ar-bayts-rext",
+        "uz-Cyrl": "дас ар-байтс-рехт",
+        "ru": "дас ар-байтс-рехт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Ich habe eine Frage zum Arbeitsrecht.",
+        "tr": {
+          "uz": "Mehnat huquqi boʻyicha savolim bor.",
+          "uz-Cyrl": "Меҳнат ҳуқуқи бўйича саволим бор.",
+          "ru": "У меня вопрос по трудовому праву."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-nettolohn",
+      "slug": "nettolohn",
+      "term": "der Nettolohn",
+      "icon": "receipt",
+      "article": "der",
+      "plural": "die Nettolöhne",
+      "tr": {
+        "uz": "sof maosh (qoʻlga tegadigan)",
+        "uz-Cyrl": "соф маош (қўлга тегадиган)",
+        "ru": "чистая зарплата (на руки)"
+      },
+      "pron": {
+        "uz": "der net-to-lon",
+        "uz-Cyrl": "дер нет-то-лон",
+        "ru": "дер нет-то-лон"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Der Nettolohn ist das Geld, das auf Ihr Konto kommt.",
+        "tr": {
+          "uz": "Sof maosh — hisobingizga tushadigan pul.",
+          "uz-Cyrl": "Соф маош — ҳисобингизга тушадиган пул.",
+          "ru": "Чистая зарплата — это деньги, которые приходят на ваш счёт."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-bruttolohn",
+      "slug": "bruttolohn",
+      "term": "der Bruttolohn",
+      "icon": "receipt",
+      "article": "der",
+      "plural": "die Bruttolöhne",
+      "tr": {
+        "uz": "yalpi maosh (ushlanmalardan oldin)",
+        "uz-Cyrl": "ялпи маош (ушланмалардан олдин)",
+        "ru": "зарплата брутто (до вычетов)"
+      },
+      "pron": {
+        "uz": "der brut-to-lon",
+        "uz-Cyrl": "дер брут-то-лон",
+        "ru": "дер брут-то-лон"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Vom Bruttolohn gehen noch Steuern und Beiträge ab.",
+        "tr": {
+          "uz": "Yalpi maoshdan hali soliq va badallar ushlanadi.",
+          "uz-Cyrl": "Ялпи маошдан ҳали солиқ ва бадаллар ушланади.",
+          "ru": "Из зарплаты брутто ещё вычитаются налоги и взносы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-abzug",
+      "slug": "abzug",
+      "term": "der Abzug",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Abzüge",
+      "tr": {
+        "uz": "ushlanma (maoshdan ushlab qolinadigan summa)",
+        "uz-Cyrl": "ушланма (маошдан ушлаб қолинадиган сумма)",
+        "ru": "вычет (удержание из зарплаты)"
+      },
+      "pron": {
+        "uz": "der ap-tsuk",
+        "uz-Cyrl": "дер ап-цук",
+        "ru": "дер ап-цук"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Ich verstehe diesen Abzug auf meiner Lohnabrechnung nicht.",
+        "tr": {
+          "uz": "Maosh varaqamdagi bu ushlanmani tushunmayapman.",
+          "uz-Cyrl": "Маош варақамдаги бу ушланмани тушунмаяпман.",
+          "ru": "Я не понимаю этот вычет в моём расчётном листе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-krankenversicherung",
+      "slug": "krankenversicherung",
+      "term": "die Krankenversicherung",
+      "icon": "first-aid-kit",
+      "article": "die",
+      "plural": "die Krankenversicherungen",
+      "tr": {
+        "uz": "tibbiy sugʻurta",
+        "uz-Cyrl": "тиббий суғурта",
+        "ru": "медицинская страховка"
+      },
+      "pron": {
+        "uz": "die kran-ken-fer-zi-xe-rung",
+        "uz-Cyrl": "ди кран-кен-фер-зи-хе-рунг",
+        "ru": "ди кран-кен-фер-зи-хе-рунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Die Krankenversicherung steht auch auf der Lohnabrechnung.",
+        "tr": {
+          "uz": "Tibbiy sugʻurta ham maosh varaqasida koʻrsatiladi.",
+          "uz-Cyrl": "Тиббий суғурта ҳам маош варақасида кўрсатилади.",
+          "ru": "Медицинская страховка тоже указана в расчётном листе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-koennen-sie-mir-die-lohnabrechnung-erklaeren",
+      "slug": "koennen-sie-mir-die-lohnabrechnung-erklaeren",
+      "term": "Können Sie mir die Lohnabrechnung erklären?",
+      "icon": "help",
+      "tr": {
+        "uz": "Maosh varaqasini tushuntirib bera olasizmi?",
+        "uz-Cyrl": "Маош варақасини тушунтириб бера оласизми?",
+        "ru": "Вы можете объяснить мне расчётный лист?"
+      },
+      "pron": {
+        "uz": "kyo-nen zi mir die lon-ap-rex-nung er-kle-ren",
+        "uz-Cyrl": "кё-нен зи мир ди лон-ап-рех-нунг эр-кле-рен",
+        "ru": "кё-нен зи мир ди лон-ап-рех-нунг эр-кле-рен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Entschuldigung, können Sie mir die Lohnabrechnung erklären? Ich verstehe sie nicht ganz.",
+        "tr": {
+          "uz": "Kechirasiz, maosh varaqasini tushuntirib bera olasizmi? Uni toʻliq tushunmayapman.",
+          "uz-Cyrl": "Кечирасиз, маош варақасини тушунтириб бера оласизми? Уни тўлиқ тушунмаяпман.",
+          "ru": "Извините, вы можете объяснить мне расчётный лист? Я его не совсем понимаю."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-recht",
+      "slug": "recht",
+      "term": "das Recht",
+      "icon": "check",
+      "article": "das",
+      "plural": "die Rechte",
+      "tr": {
+        "uz": "huquq",
+        "uz-Cyrl": "ҳуқуқ",
+        "ru": "право"
+      },
+      "pron": {
+        "uz": "das rext",
+        "uz-Cyrl": "дас рехт",
+        "ru": "дас рехт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Sie haben das Recht, Fragen zu stellen.",
+        "tr": {
+          "uz": "Savol berishga haqqingiz bor.",
+          "uz-Cyrl": "Савол беришга ҳаққингиз бор.",
+          "ru": "У вас есть право задавать вопросы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-pflicht",
+      "slug": "pflicht",
+      "term": "die Pflicht",
+      "icon": "flag",
+      "article": "die",
+      "plural": "die Pflichten",
+      "tr": {
+        "uz": "majburiyat",
+        "uz-Cyrl": "мажбурият",
+        "ru": "обязанность"
+      },
+      "pron": {
+        "uz": "die pflixt",
+        "uz-Cyrl": "ди пфлихт",
+        "ru": "ди пфлихт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Pünktlichkeit gehört zu meinen Pflichten.",
+        "tr": {
+          "uz": "Oʻz vaqtida kelish — mening majburiyatlarimdan biri.",
+          "uz-Cyrl": "Ўз вақтида келиш — менинг мажбуриятларимдан бири.",
+          "ru": "Пунктуальность — одна из моих обязанностей."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-gewerkschaft",
+      "slug": "gewerkschaft",
+      "term": "die Gewerkschaft",
+      "icon": "users",
+      "article": "die",
+      "plural": "die Gewerkschaften",
+      "tr": {
+        "uz": "kasaba uyushmasi",
+        "uz-Cyrl": "касаба уюшмаси",
+        "ru": "профсоюз"
+      },
+      "pron": {
+        "uz": "die ge-verk-shaft",
+        "uz-Cyrl": "ди ге-верк-шафт",
+        "ru": "ди ге-верк-шафт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Die Gewerkschaft berät ihre Mitglieder bei Problemen im Job.",
+        "tr": {
+          "uz": "Kasaba uyushmasi oʻz aʼzolariga ishdagi muammolarda maslahat beradi.",
+          "uz-Cyrl": "Касаба уюшмаси ўз аъзоларига ишдаги муаммоларда маслаҳат беради.",
+          "ru": "Профсоюз консультирует своих членов при проблемах на работе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-beratungsstelle",
+      "slug": "beratungsstelle",
+      "term": "die Beratungsstelle",
+      "icon": "building",
+      "article": "die",
+      "plural": "die Beratungsstellen",
+      "tr": {
+        "uz": "maslahat markazi",
+        "uz-Cyrl": "маслаҳат маркази",
+        "ru": "консультационный центр"
+      },
+      "pron": {
+        "uz": "die be-ra-tungs-shtel-le",
+        "uz-Cyrl": "ди бе-ра-тунгс-штел-ле",
+        "ru": "ди бе-ра-тунгс-штел-ле"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Es gibt Beratungsstellen für Menschen, die neu in Deutschland arbeiten.",
+        "tr": {
+          "uz": "Germaniyada yangi ishlay boshlagan odamlar uchun maslahat markazlari bor.",
+          "uz-Cyrl": "Германияда янги ишлай бошлаган одамлар учун маслаҳат марказлари бор.",
+          "ru": "Есть консультационные центры для людей, которые недавно работают в Германии."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-ansprechperson",
+      "slug": "ansprechperson",
+      "term": "die Ansprechperson",
+      "icon": "user",
+      "article": "die",
+      "plural": "die Ansprechpersonen",
+      "tr": {
+        "uz": "murojaat qilinadigan odam (masʼul shaxs)",
+        "uz-Cyrl": "мурожаат қилинадиган одам (масъул шахс)",
+        "ru": "контактное лицо"
+      },
+      "pron": {
+        "uz": "die an-shprex-per-zon",
+        "uz-Cyrl": "ди ан-шпрех-пер-зон",
+        "ru": "ди ан-шпрех-пер-зон"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Wer ist meine Ansprechperson bei Fragen zum Lohn?",
+        "tr": {
+          "uz": "Maosh boʻyicha savollarda kimga murojaat qilaman?",
+          "uz-Cyrl": "Маош бўйича саволларда кимга мурожаат қиламан?",
+          "ru": "Кто моё контактное лицо по вопросам зарплаты?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-kostenlos",
+      "slug": "kostenlos",
+      "term": "kostenlos",
+      "icon": "heart-handshake",
+      "tr": {
+        "uz": "bepul",
+        "uz-Cyrl": "бепул",
+        "ru": "бесплатно"
+      },
+      "pron": {
+        "uz": "kos-ten-los",
+        "uz-Cyrl": "кос-тен-лос",
+        "ru": "кос-тен-лос"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Die Beratung dort ist kostenlos.",
+        "tr": {
+          "uz": "U yerdagi maslahat bepul.",
+          "uz-Cyrl": "У ердаги маслаҳат бепул.",
+          "ru": "Консультация там бесплатная."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-arbeitsgericht",
+      "slug": "arbeitsgericht",
+      "term": "das Arbeitsgericht",
+      "icon": "briefcase",
+      "article": "das",
+      "plural": "die Arbeitsgerichte",
+      "tr": {
+        "uz": "mehnat sudi",
+        "uz-Cyrl": "меҳнат суди",
+        "ru": "суд по трудовым спорам"
+      },
+      "pron": {
+        "uz": "das ar-bayts-ge-rixt",
+        "uz-Cyrl": "дас ар-байтс-ге-рихт",
+        "ru": "дас ар-байтс-ге-рихт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Bei einem Streit mit dem Arbeitgeber kann man zum Arbeitsgericht gehen.",
+        "tr": {
+          "uz": "Ish beruvchi bilan nizo boʻlsa, mehnat sudiga murojaat qilish mumkin.",
+          "uz-Cyrl": "Иш берувчи билан низо бўлса, меҳнат судига мурожаат қилиш мумкин.",
+          "ru": "При споре с работодателем можно обратиться в суд по трудовым спорам."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-arbeitsunfall",
+      "slug": "arbeitsunfall",
+      "term": "der Arbeitsunfall",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Arbeitsunfälle",
+      "tr": {
+        "uz": "ishdagi baxtsiz hodisa",
+        "uz-Cyrl": "ишдаги бахтсиз ҳодиса",
+        "ru": "несчастный случай на работе"
+      },
+      "pron": {
+        "uz": "der ar-bayts-un-fal",
+        "uz-Cyrl": "дер ар-байтс-ун-фал",
+        "ru": "дер ар-байтс-ун-фал"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Melden Sie einen Arbeitsunfall sofort Ihrem Vorgesetzten.",
+        "tr": {
+          "uz": "Ishdagi baxtsiz hodisa haqida darhol rahbaringizga xabar bering.",
+          "uz-Cyrl": "Ишдаги бахтсиз ҳодиса ҳақида дарҳол раҳбарингизга хабар беринг.",
+          "ru": "Сразу сообщите руководителю о несчастном случае на работе."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-beleg",
+      "slug": "beleg",
+      "term": "der Beleg",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Belege",
+      "tr": {
+        "uz": "tasdiqlovchi hujjat (chek, varaq)",
+        "uz-Cyrl": "тасдиқловчи ҳужжат (чек, варақ)",
+        "ru": "подтверждающий документ (чек, бумага)"
+      },
+      "pron": {
+        "uz": "der be-lek",
+        "uz-Cyrl": "дер бе-лек",
+        "ru": "дер бе-лек"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Schreiben Sie Ihre Arbeitszeiten auf und heben Sie alle Belege auf.",
+        "tr": {
+          "uz": "Ish vaqtlaringizni yozib boring va barcha tasdiqlovchi hujjatlarni saqlab qoʻying.",
+          "uz-Cyrl": "Иш вақтларингизни ёзиб боринг ва барча тасдиқловчи ҳужжатларни сақлаб қўйинг.",
+          "ru": "Записывайте своё рабочее время и сохраняйте все подтверждающие документы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-dolmetscher",
+      "slug": "dolmetscher",
+      "term": "der Dolmetscher",
+      "icon": "language",
+      "article": "der",
+      "plural": "die Dolmetscher",
+      "tr": {
+        "uz": "tarjimon (ogʻzaki)",
+        "uz-Cyrl": "таржимон (оғзаки)",
+        "ru": "переводчик (устный)"
+      },
+      "pron": {
+        "uz": "der dol-met-sher",
+        "uz-Cyrl": "дер дол-мет-шер",
+        "ru": "дер дол-мет-шер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Kann bei dem Gespräch ein Dolmetscher dabei sein?",
+        "tr": {
+          "uz": "Suhbatda tarjimon ishtirok eta oladimi?",
+          "uz-Cyrl": "Суҳбатда таржимон иштирок эта оладими?",
+          "ru": "Может ли на разговоре присутствовать переводчик?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-wo-bekomme-ich-kostenlose-beratung",
+      "slug": "wo-bekomme-ich-kostenlose-beratung",
+      "term": "Wo bekomme ich kostenlose Beratung?",
+      "icon": "message-circle",
+      "tr": {
+        "uz": "Bepul maslahatni qayerdan olsam boʻladi?",
+        "uz-Cyrl": "Бепул маслаҳатни қаердан олсам бўлади?",
+        "ru": "Где можно получить бесплатную консультацию?"
+      },
+      "pron": {
+        "uz": "vo be-kom-me ix kos-ten-lo-ze be-ra-tung",
+        "uz-Cyrl": "во бе-ком-ме их кос-тен-ло-зе бе-ра-тунг",
+        "ru": "во бе-ком-ме их кос-тен-ло-зе бе-ра-тунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Ich habe ein Problem mit meinem Lohn. Wo bekomme ich kostenlose Beratung?",
+        "tr": {
+          "uz": "Maoshim bilan muammo bor. Bepul maslahatni qayerdan olsam boʻladi?",
+          "uz-Cyrl": "Маошим билан муаммо бор. Бепул маслаҳатни қаердан олсам бўлади?",
+          "ru": "У меня проблема с зарплатой. Где можно получить бесплатную консультацию?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-schwarzarbeit",
+      "slug": "schwarzarbeit",
+      "term": "die Schwarzarbeit",
+      "icon": "hand-stop",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "noqonuniy ish (rasmiylashtirilmagan)",
+        "uz-Cyrl": "ноқонуний иш (расмийлаштирилмаган)",
+        "ru": "нелегальная работа (без оформления)"
+      },
+      "pron": {
+        "uz": "die shvarts-ar-bayt",
+        "uz-Cyrl": "ди шварц-ар-байт",
+        "ru": "ди шварц-ар-байт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Schwarzarbeit ist verboten. Arbeiten Sie nur offiziell angemeldet.",
+        "tr": {
+          "uz": "Noqonuniy ish taqiqlangan. Faqat rasman roʻyxatdan oʻtgan holda ishlang.",
+          "uz-Cyrl": "Ноқонуний иш тақиқланган. Фақат расман рўйхатдан ўтган ҳолда ишланг.",
+          "ru": "Нелегальная работа запрещена. Работайте только официально."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-ausbeutung",
+      "slug": "ausbeutung",
+      "term": "die Ausbeutung",
+      "icon": "alert-octagon",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "ekspluatatsiya (mehnatdan nohaq foydalanish)",
+        "uz-Cyrl": "эксплуатация (меҳнатдан ноҳақ фойдаланиш)",
+        "ru": "эксплуатация (трудовая)"
+      },
+      "pron": {
+        "uz": "die aus-boy-tung",
+        "uz-Cyrl": "ди аус-бой-тунг",
+        "ru": "ди аус-бой-тунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Kein Lohn und keine Pausen – das kann Ausbeutung sein. Holen Sie sich Hilfe.",
+        "tr": {
+          "uz": "Maosh yoʻq, tanaffus yoʻq — bu ekspluatatsiya boʻlishi mumkin. Yordam soʻrang.",
+          "uz-Cyrl": "Маош йўқ, танаффус йўқ — бу эксплуатация бўлиши мумкин. Ёрдам сўранг.",
+          "ru": "Нет зарплаты и нет перерывов — это может быть эксплуатацией. Обратитесь за помощью."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ish-huquqlari-mein-reisepass-bleibt-bei-mir",
+      "slug": "mein-reisepass-bleibt-bei-mir",
+      "term": "Mein Reisepass bleibt bei mir.",
+      "icon": "id",
+      "tr": {
+        "uz": "Pasportim oʻzimda qoladi.",
+        "uz-Cyrl": "Паспортим ўзимда қолади.",
+        "ru": "Мой паспорт остаётся у меня."
+      },
+      "pron": {
+        "uz": "mayn ray-ze-pas blaypt bay mir",
+        "uz-Cyrl": "майн рай-зе-пас блайпт бай мир",
+        "ru": "майн рай-зе-пас блайпт бай мир"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ish-huquqlari",
+      "example": {
+        "term": "Den Pass gebe ich nicht ab – mein Reisepass bleibt bei mir.",
+        "tr": {
+          "uz": "Pasportni hech kimga bermayman — pasportim oʻzimda qoladi.",
+          "uz-Cyrl": "Паспортни ҳеч кимга бермайман — паспортим ўзимда қолади.",
+          "ru": "Паспорт я никому не отдаю — мой паспорт остаётся у меня."
         }
       },
       "safety": true,
