@@ -2916,6 +2916,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Hey, was machst du da mit deinem Handy?",
+            "tr": {
+              "uz": "Hey, telefoning bilan nima qilyapsan?",
+              "uz-Cyrl": "Ҳей, телефонинг билан нима қиляпсан?",
+              "ru": "Эй, что ты делаешь с телефоном?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich möchte die neue Maschine fotografieren. Darf ich hier Fotos machen?",
+            "tr": {
+              "uz": "Yangi dastgohni suratga olmoqchiman. Bu yerda surat olsam boʻladimi?",
+              "uz-Cyrl": "Янги дастгоҳни суратга олмоқчиман. Бу ерда сурат олсам бўладими?",
+              "ru": "Хочу сфотографировать новый станок. Здесь можно фотографировать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Nein, in der Halle gilt Fotografierverbot. Das steht in der Betriebsordnung. Wusstest du das nicht?",
+            "tr": {
+              "uz": "Yoʻq, sexda suratga olish taqiqlangan. Bu ichki tartib qoidalarida yozilgan. Bilmasmiding?",
+              "uz-Cyrl": "Йўқ, цехда суратга олиш тақиқланган. Бу ички тартиб қоидаларида ёзилган. Билмасмидинг?",
+              "ru": "Нет, в цехе действует запрет на фотосъёмку. Это написано в правилах внутреннего распорядка. Тебе это не было известно?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, das wusste ich nicht. Danke für den Hinweis.",
+            "tr": {
+              "uz": "Yoʻq, bilmasdim. Aytganing uchun rahmat.",
+              "uz-Cyrl": "Йўқ, билмасдим. Айтганинг учун раҳмат.",
+              "ru": "Нет, мне это было неизвестно. Спасибо за подсказку."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Kein Problem. Die neue Maschine ist Betriebsgeheimnis. Für Fotos brauchst du eine Genehmigung vom Chef.",
+            "tr": {
+              "uz": "Hechqisi yoʻq. Yangi dastgoh — korxona siri. Surat uchun boshliqning ruxsati kerak.",
+              "uz-Cyrl": "Ҳечқиси йўқ. Янги дастгоҳ — корхона сири. Сурат учун бошлиқнинг рухсати керак.",
+              "ru": "Ничего страшного. Новый станок — коммерческая тайна. Для фото нужно разрешение начальника."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Verstanden. Dann frage ich zuerst den Chef nach einer Genehmigung.",
+            "tr": {
+              "uz": "Tushundim. Unda avval boshliqdan ruxsat soʻrayman.",
+              "uz-Cyrl": "Тушундим. Унда аввал бошлиқдан рухсат сўрайман.",
+              "ru": "Понятно. Тогда сначала попрошу у начальника разрешение."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
