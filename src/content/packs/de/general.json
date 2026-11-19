@@ -2472,6 +2472,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "kelishmovchilik",
+      "title": {
+        "uz": "Hamkasb bilan kelishmovchilikni hal qilish",
+        "uz-Cyrl": "Ҳамкасб билан келишмовчиликни ҳал қилиш",
+        "ru": "Решение разногласий с коллегой"
+      },
+      "order": 15,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Du hast schon wieder die Bestellliste geändert! So geht das nicht.",
+            "tr": {
+              "uz": "Sen yana buyurtma roʻyxatini oʻzgartiribsan! Bunday boʻlmaydi.",
+              "uz-Cyrl": "Сен яна буюртма рўйхатини ўзгартирибсан! Бундай бўлмайди.",
+              "ru": "Список заказов опять изменён! Так не пойдёт."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich merke, dass dich das ärgert. Wir sollten das in Ruhe besprechen.",
+            "tr": {
+              "uz": "Bu jahlingni chiqarganini sezyapman. Buni xotirjam gaplashib olishimiz kerak.",
+              "uz-Cyrl": "Бу жаҳлингни чиқарганини сезяпман. Буни хотиржам гаплашиб олишимиз керак.",
+              "ru": "Я вижу, что тебя это злит. Нам стоит спокойно это обсудить."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Na gut. Aber warum hast du die Liste überhaupt geändert?",
+            "tr": {
+              "uz": "Mayli. Lekin umuman roʻyxatni nega oʻzgartirding?",
+              "uz-Cyrl": "Майли. Лекин умуман рўйхатни нега ўзгартирдинг?",
+              "ru": "Ну ладно. Но зачем вообще было менять список?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Die Teamleiterin hat mich darum gebeten. Ich wusste nicht, dass du die Liste machst.",
+            "tr": {
+              "uz": "Jamoa rahbari mendan shuni soʻragan edi. Roʻyxatni sen tuzishingni bilmasdim.",
+              "uz-Cyrl": "Жамоа раҳбари мендан шуни сўраган эди. Рўйхатни сен тузишингни билмасдим.",
+              "ru": "Меня об этом попросила руководительница группы. Мне не было известно, что список ведёшь ты."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Ach so, das wusste ich nicht. Dann ist die Zuständigkeit einfach nicht klar. Was schlägst du vor?",
+            "tr": {
+              "uz": "Shunaqami, buni bilmagan ekanman. Demak, kim masʼulligi shunchaki aniq emas. Nima taklif qilasan?",
+              "uz-Cyrl": "Шунақами, буни билмаган эканман. Демак, ким масъуллиги шунчаки аниқ эмас. Нима таклиф қиласан?",
+              "ru": "Вот как, я этого не знал. Значит, просто непонятно, кто за это отвечает. Что предлагаешь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mein Lösungsvorschlag: Wir fragen sie morgen zusammen, wer die Liste machen soll.",
+            "tr": {
+              "uz": "Mening yechim taklifim: ertaga birga undan roʻyxatni kim tuzishi kerakligini soʻraymiz.",
+              "uz-Cyrl": "Менинг ечим таклифим: эртага бирга ундан рўйхатни ким тузиши кераклигини сўраймиз.",
+              "ru": "Моё предложение: завтра вместе спросим её, кто должен вести список."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -11334,6 +11427,652 @@
         }
       },
       "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-konflikt",
+      "slug": "konflikt",
+      "term": "der Konflikt",
+      "icon": "bolt",
+      "article": "der",
+      "plural": "die Konflikte",
+      "tr": {
+        "uz": "nizo, kelishmovchilik",
+        "uz-Cyrl": "низо, келишмовчилик",
+        "ru": "конфликт"
+      },
+      "pron": {
+        "uz": "der kon-flikt",
+        "uz-Cyrl": "дер кон-фликт",
+        "ru": "дер кон-фликт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Wir haben einen Konflikt wegen der Pausenzeiten.",
+        "tr": {
+          "uz": "Tanaffus vaqtlari sababli oramizda nizo bor.",
+          "uz-Cyrl": "Танаффус вақтлари сабабли орамизда низо бор.",
+          "ru": "У нас конфликт из-за времени перерывов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-einwand",
+      "slug": "einwand",
+      "term": "der Einwand",
+      "icon": "hand-stop",
+      "article": "der",
+      "plural": "die Einwände",
+      "tr": {
+        "uz": "eʼtiroz",
+        "uz-Cyrl": "эътироз",
+        "ru": "возражение"
+      },
+      "pron": {
+        "uz": "der ayn-vand",
+        "uz-Cyrl": "дер айн-ванд",
+        "ru": "дер айн-ванд"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Hat jemand einen Einwand gegen den neuen Plan?",
+        "tr": {
+          "uz": "Kimdadir yangi rejaga eʼtiroz bormi?",
+          "uz-Cyrl": "Кимдадир янги режага эътироз борми?",
+          "ru": "У кого-нибудь есть возражения против нового плана?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-argument",
+      "slug": "argument",
+      "term": "das Argument",
+      "icon": "messages",
+      "article": "das",
+      "plural": "die Argumente",
+      "tr": {
+        "uz": "dalil",
+        "uz-Cyrl": "далил",
+        "ru": "аргумент, довод"
+      },
+      "pron": {
+        "uz": "das ar-gu-ment",
+        "uz-Cyrl": "дас ар-гу-мент",
+        "ru": "дас ар-гу-мент"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Das ist ein gutes Argument, darüber denke ich nach.",
+        "tr": {
+          "uz": "Bu yaxshi dalil, bu haqda oʻylab koʻraman.",
+          "uz-Cyrl": "Бу яхши далил, бу ҳақда ўйлаб кўраман.",
+          "ru": "Это хороший довод, я об этом подумаю."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-einigung",
+      "slug": "einigung",
+      "term": "die Einigung",
+      "icon": "heart-handshake",
+      "article": "die",
+      "plural": "die Einigungen",
+      "tr": {
+        "uz": "kelishuv (ikki tomon rozi boʻlishi)",
+        "uz-Cyrl": "келишув (икки томон рози бўлиши)",
+        "ru": "договорённость, согласие"
+      },
+      "pron": {
+        "uz": "die ay-ni-gung",
+        "uz-Cyrl": "ди ай-ни-гунг",
+        "ru": "ди ай-ни-гунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Nach dem Gespräch gab es endlich eine Einigung.",
+        "tr": {
+          "uz": "Suhbatdan keyin nihoyat kelishuvga erishildi.",
+          "uz-Cyrl": "Суҳбатдан кейин ниҳоят келишувга эришилди.",
+          "ru": "После разговора наконец была достигнута договорённость."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-ueberzeugen",
+      "slug": "ueberzeugen",
+      "term": "überzeugen",
+      "icon": "bulb",
+      "tr": {
+        "uz": "ishontirmoq, fikriga koʻndirmoq",
+        "uz-Cyrl": "ишонтирмоқ, фикрига кўндирмоқ",
+        "ru": "убеждать, убедить"
+      },
+      "pron": {
+        "uz": "yu-ber-tsoy-gen",
+        "uz-Cyrl": "ю-бер-цой-ген",
+        "ru": "ю-бер-цой-ген"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Ich möchte dich mit Argumenten überzeugen, nicht mit Druck.",
+        "tr": {
+          "uz": "Seni bosim bilan emas, dalillar bilan ishontirmoqchiman.",
+          "uz-Cyrl": "Сени босим билан эмас, далиллар билан ишонтирмоқчиман.",
+          "ru": "Я хочу убедить тебя доводами, а не давлением."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-wir-sollten-das-in-ruhe-besprechen",
+      "slug": "wir-sollten-das-in-ruhe-besprechen",
+      "term": "Wir sollten das in Ruhe besprechen.",
+      "icon": "message-circle",
+      "tr": {
+        "uz": "Buni xotirjam gaplashib olishimiz kerak.",
+        "uz-Cyrl": "Буни хотиржам гаплашиб олишимиз керак.",
+        "ru": "Нам стоит спокойно это обсудить."
+      },
+      "pron": {
+        "uz": "vir zol-ten das in ru-e be-shpre-xen",
+        "uz-Cyrl": "вир зол-тен дас ин ру-е бе-шпре-хен",
+        "ru": "вир зол-тен дас ин ру-е бе-шпре-хен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Wir sollten das in Ruhe besprechen, nicht hier vor den Kunden.",
+        "tr": {
+          "uz": "Buni xotirjam gaplashib olishimiz kerak, bu yerda mijozlar oldida emas.",
+          "uz-Cyrl": "Буни хотиржам гаплашиб олишимиз керак, бу ерда мижозлар олдида эмас.",
+          "ru": "Нам стоит спокойно это обсудить, но не здесь, при клиентах."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-loesungsvorschlag",
+      "slug": "loesungsvorschlag",
+      "term": "der Lösungsvorschlag",
+      "icon": "bulb",
+      "article": "der",
+      "plural": "die Lösungsvorschläge",
+      "tr": {
+        "uz": "yechim taklifi",
+        "uz-Cyrl": "ечим таклифи",
+        "ru": "предложение по решению"
+      },
+      "pron": {
+        "uz": "der lyo-zungs-for-shlak",
+        "uz-Cyrl": "дер лё-зунгс-фор-шлак",
+        "ru": "дер лё-зунгс-фор-шлак"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Hast du einen Lösungsvorschlag für das Problem?",
+        "tr": {
+          "uz": "Bu muammoga yechim taklifing bormi?",
+          "uz-Cyrl": "Бу муаммога ечим таклифинг борми?",
+          "ru": "У тебя есть предложение, как решить эту проблему?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-zustaendigkeit",
+      "slug": "zustaendigkeit",
+      "term": "die Zuständigkeit",
+      "icon": "briefcase",
+      "article": "die",
+      "plural": "die Zuständigkeiten",
+      "tr": {
+        "uz": "masʼuliyat doirasi (kim nimaga javob beradi)",
+        "uz-Cyrl": "масъулият доираси (ким нимага жавоб беради)",
+        "ru": "сфера ответственности"
+      },
+      "pron": {
+        "uz": "die tsu-shten-dix-kayt",
+        "uz-Cyrl": "ди цу-штен-дих-кайт",
+        "ru": "ди цу-штен-дих-кайт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Die Zuständigkeit für die Bestellliste ist nicht geklärt.",
+        "tr": {
+          "uz": "Buyurtma roʻyxatiga kim masʼulligi aniqlanmagan.",
+          "uz-Cyrl": "Буюртма рўйхатига ким масъуллиги аниқланмаган.",
+          "ru": "Не решено, кто отвечает за список заказов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-ablauf",
+      "slug": "ablauf",
+      "term": "der Ablauf",
+      "icon": "repeat",
+      "article": "der",
+      "plural": "die Abläufe",
+      "tr": {
+        "uz": "ish tartibi, jarayon",
+        "uz-Cyrl": "иш тартиби, жараён",
+        "ru": "порядок работы, процесс"
+      },
+      "pron": {
+        "uz": "der ap-lauf",
+        "uz-Cyrl": "дер ап-лауф",
+        "ru": "дер ап-лауф"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Wenn der Ablauf klar ist, gibt es weniger Streit.",
+        "tr": {
+          "uz": "Ish tartibi aniq boʻlsa, janjal kamroq boʻladi.",
+          "uz-Cyrl": "Иш тартиби аниқ бўлса, жанжал камроқ бўлади.",
+          "ru": "Когда порядок работы ясен, споров меньше."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-feedback",
+      "slug": "feedback",
+      "term": "das Feedback",
+      "icon": "messages",
+      "article": "das",
+      "plural": "die Feedbacks",
+      "tr": {
+        "uz": "fikr-mulohaza (ish haqida)",
+        "uz-Cyrl": "фикр-мулоҳаза (иш ҳақида)",
+        "ru": "обратная связь"
+      },
+      "pron": {
+        "uz": "das fid-bek",
+        "uz-Cyrl": "дас фид-бек",
+        "ru": "дас фид-бек"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Danke für dein Feedback, ich ändere das gleich.",
+        "tr": {
+          "uz": "Fikr-mulohazang uchun rahmat, buni hozir oʻzgartiraman.",
+          "uz-Cyrl": "Фикр-мулоҳазанг учун раҳмат, буни ҳозир ўзгартираман.",
+          "ru": "Спасибо за обратную связь, я сейчас это исправлю."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-sich-einigen",
+      "slug": "sich-einigen",
+      "term": "sich einigen",
+      "icon": "heart-handshake",
+      "tr": {
+        "uz": "kelishib olmoq",
+        "uz-Cyrl": "келишиб олмоқ",
+        "ru": "договориться"
+      },
+      "pron": {
+        "uz": "zix ay-ni-gen",
+        "uz-Cyrl": "зих ай-ни-ген",
+        "ru": "зих ай-ни-ген"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Wir müssen uns bis Freitag einigen.",
+        "tr": {
+          "uz": "Juma kunigacha kelishib olishimiz kerak.",
+          "uz-Cyrl": "Жума кунигача келишиб олишимиз керак.",
+          "ru": "Нам нужно договориться до пятницы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-was-genau-stoert-dich",
+      "slug": "was-genau-stoert-dich",
+      "term": "Was genau stört dich?",
+      "icon": "help",
+      "tr": {
+        "uz": "Seni aynan nima bezovta qilyapti?",
+        "uz-Cyrl": "Сени айнан нима безовта қиляпти?",
+        "ru": "Что именно тебе мешает?"
+      },
+      "pron": {
+        "uz": "vas ge-nau shtyort dix",
+        "uz-Cyrl": "вас ге-нау штёрт дих",
+        "ru": "вас ге-нау штёрт дих"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Was genau stört dich? Sag es mir offen.",
+        "tr": {
+          "uz": "Seni aynan nima bezovta qilyapti? Menga ochiq ayt.",
+          "uz-Cyrl": "Сени айнан нима безовта қиляпти? Менга очиқ айт.",
+          "ru": "Что именно тебе мешает? Скажи мне прямо."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-vorteil",
+      "slug": "vorteil",
+      "term": "der Vorteil",
+      "icon": "check",
+      "article": "der",
+      "plural": "die Vorteile",
+      "tr": {
+        "uz": "afzallik, foyda",
+        "uz-Cyrl": "афзаллик, фойда",
+        "ru": "преимущество"
+      },
+      "pron": {
+        "uz": "der for-tayl",
+        "uz-Cyrl": "дер фор-тайл",
+        "ru": "дер фор-тайл"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Der Vorteil ist: Jeder weiß, was er machen muss.",
+        "tr": {
+          "uz": "Afzalligi shundaki: har kim nima qilishi kerakligini biladi.",
+          "uz-Cyrl": "Афзаллиги шундаки: ҳар ким нима қилиши кераклигини билади.",
+          "ru": "Преимущество в том, что каждый знает, что ему делать."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-nachteil",
+      "slug": "nachteil",
+      "term": "der Nachteil",
+      "icon": "mood-sad",
+      "article": "der",
+      "plural": "die Nachteile",
+      "tr": {
+        "uz": "kamchilik, noqulaylik",
+        "uz-Cyrl": "камчилик, ноқулайлик",
+        "ru": "недостаток"
+      },
+      "pron": {
+        "uz": "der nax-tayl",
+        "uz-Cyrl": "дер нах-тайл",
+        "ru": "дер нах-тайл"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Der Nachteil ist, dass wir früher anfangen müssen.",
+        "tr": {
+          "uz": "Kamchiligi shundaki, ertaroq boshlashimiz kerak.",
+          "uz-Cyrl": "Камчилиги шундаки, эртароқ бошлашимиз керак.",
+          "ru": "Недостаток в том, что нам придётся начинать раньше."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-betriebsrat",
+      "slug": "betriebsrat",
+      "term": "der Betriebsrat",
+      "icon": "users",
+      "article": "der",
+      "plural": "die Betriebsräte",
+      "tr": {
+        "uz": "ishchilar kengashi (korxonadagi xodimlar vakillari)",
+        "uz-Cyrl": "ишчилар кенгаши (корхонадаги ходимлар вакиллари)",
+        "ru": "производственный совет (представители работников)"
+      },
+      "pron": {
+        "uz": "der be-tribs-rat",
+        "uz-Cyrl": "дер бе-трибс-рат",
+        "ru": "дер бе-трибс-рат"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Gibt es in unserer Firma einen Betriebsrat?",
+        "tr": {
+          "uz": "Firmamizda ishchilar kengashi bormi?",
+          "uz-Cyrl": "Фирмамизда ишчилар кенгаши борми?",
+          "ru": "Есть ли в нашей фирме производственный совет?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-mobbing",
+      "slug": "mobbing",
+      "term": "das Mobbing",
+      "icon": "alert-octagon",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "ishda muntazam kamsitish va tazyiq (mobbing)",
+        "uz-Cyrl": "ишда мунтазам камситиш ва тазйиқ (моббинг)",
+        "ru": "травля на работе (моббинг)"
+      },
+      "pron": {
+        "uz": "das mo-bing",
+        "uz-Cyrl": "дас мо-бинг",
+        "ru": "дас мо-бинг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Bei Mobbing sollten Sie nicht schweigen, sondern Hilfe holen.",
+        "tr": {
+          "uz": "Mobbingga duch kelsangiz, jim turmang, yordam soʻrang.",
+          "uz-Cyrl": "Моббингга дуч келсангиз, жим турманг, ёрдам сўранг.",
+          "ru": "При травле не молчите, а обращайтесь за помощью."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-respekt",
+      "slug": "respekt",
+      "term": "der Respekt",
+      "icon": "mood-smile",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "hurmat",
+        "uz-Cyrl": "ҳурмат",
+        "ru": "уважение"
+      },
+      "pron": {
+        "uz": "der re-shpekt",
+        "uz-Cyrl": "дер ре-шпект",
+        "ru": "дер ре-шпект"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Auch im Streit sprechen wir mit Respekt.",
+        "tr": {
+          "uz": "Janjallashganda ham bir-birimiz bilan hurmat bilan gaplashamiz.",
+          "uz-Cyrl": "Жанжаллашганда ҳам бир-биримиз билан ҳурмат билан гаплашамиз.",
+          "ru": "Даже в споре мы говорим друг с другом с уважением."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-beleidigen",
+      "slug": "beleidigen",
+      "term": "beleidigen",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "haqorat qilmoq",
+        "uz-Cyrl": "ҳақорат қилмоқ",
+        "ru": "оскорблять"
+      },
+      "pron": {
+        "uz": "be-lay-di-gen",
+        "uz-Cyrl": "бе-лай-ди-ген",
+        "ru": "бе-лай-ди-ген"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Niemand darf Kollegen beleidigen.",
+        "tr": {
+          "uz": "Hech kim hamkasblarni haqorat qilishi mumkin emas.",
+          "uz-Cyrl": "Ҳеч ким ҳамкасбларни ҳақорат қилиши мумкин эмас.",
+          "ru": "Никто не имеет права оскорблять коллег."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-fair",
+      "slug": "fair",
+      "term": "fair",
+      "icon": "check",
+      "tr": {
+        "uz": "adolatli, insofli",
+        "uz-Cyrl": "адолатли, инсофли",
+        "ru": "справедливый, честный"
+      },
+      "pron": {
+        "uz": "fer",
+        "uz-Cyrl": "фер",
+        "ru": "фер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Ich finde den neuen Schichtplan fair.",
+        "tr": {
+          "uz": "Menimcha, yangi smena jadvali adolatli.",
+          "uz-Cyrl": "Менимча, янги смена жадвали адолатли.",
+          "ru": "По-моему, новый график смен справедливый."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kelishmovchilik-bitte-nicht-in-diesem-ton",
+      "slug": "bitte-nicht-in-diesem-ton",
+      "term": "Bitte nicht in diesem Ton!",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Iltimos, bunday ohangda gapirmang!",
+        "uz-Cyrl": "Илтимос, бундай оҳангда гапирманг!",
+        "ru": "Пожалуйста, не таким тоном!"
+      },
+      "pron": {
+        "uz": "bit-te nixt in di-zem ton",
+        "uz-Cyrl": "бит-те нихт ин ди-зем тон",
+        "ru": "бит-те нихт ин ди-зем тон"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kelishmovchilik",
+      "example": {
+        "term": "Bitte nicht in diesem Ton! Ich möchte normal mit Ihnen reden.",
+        "tr": {
+          "uz": "Iltimos, bunday ohangda gapirmang! Siz bilan oddiy gaplashmoqchiman.",
+          "uz-Cyrl": "Илтимос, бундай оҳангда гапирманг! Сиз билан оддий гаплашмоқчиман.",
+          "ru": "Пожалуйста, не таким тоном! Я хочу нормально с вами поговорить."
+        }
+      },
+      "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
     }
