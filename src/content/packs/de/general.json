@@ -3352,6 +3352,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "uy-ijara",
+      "title": {
+        "uz": "Turar joy topish va ijara",
+        "uz-Cyrl": "Турар жой топиш ва ижара",
+        "ru": "Поиск жилья и аренда"
+      },
+      "order": 20,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Uy egasi",
+              "uz-Cyrl": "Уй эгаси",
+              "ru": "Арендодатель"
+            },
+            "de": "Guten Tag! Sie rufen wegen der Wohnung an?",
+            "tr": {
+              "uz": "Xayrli kun! Kvartira boʻyicha qoʻngʻiroq qilyapsizmi?",
+              "uz-Cyrl": "Хайрли кун! Квартира бўйича қўнғироқ қиляпсизми?",
+              "ru": "Добрый день! Вы звоните насчёт квартиры?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Guten Tag. Ich habe Ihre Anzeige gelesen. Ist die Wohnung noch frei?",
+            "tr": {
+              "uz": "Xayrli kun. Eʼloningizni oʻqidim. Kvartira hali boʻshmi?",
+              "uz-Cyrl": "Хайрли кун. Эълонингизни ўқидим. Квартира ҳали бўшми?",
+              "ru": "Добрый день. Я по вашему объявлению. Квартира ещё свободна?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Uy egasi",
+              "uz-Cyrl": "Уй эгаси",
+              "ru": "Арендодатель"
+            },
+            "de": "Ja, sie ist noch frei. Möchten Sie sie zuerst besichtigen?",
+            "tr": {
+              "uz": "Ha, hali boʻsh. Avval borib koʻrishni xohlaysizmi?",
+              "uz-Cyrl": "Ҳа, ҳали бўш. Аввал бориб кўришни хоҳлайсизми?",
+              "ru": "Да, ещё свободна. Хотите сначала её посмотреть?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Sehr gern. Wann kann ich die Wohnung besichtigen?",
+            "tr": {
+              "uz": "Jon deb. Kvartirani qachon borib koʻrsam boʻladi?",
+              "uz-Cyrl": "Жон деб. Квартирани қачон бориб кўрсам бўлади?",
+              "ru": "С удовольствием. Когда можно посмотреть квартиру?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Uy egasi",
+              "uz-Cyrl": "Уй эгаси",
+              "ru": "Арендодатель"
+            },
+            "de": "Morgen um 17 Uhr. Bringen Sie bitte Ihre letzte Lohnabrechnung mit.",
+            "tr": {
+              "uz": "Ertaga soat 17 da. Iltimos, oxirgi maosh varaqangizni olib keling.",
+              "uz-Cyrl": "Эртага соат 17 да. Илтимос, охирги маош варақангизни олиб келинг.",
+              "ru": "Завтра в 17 часов. Пожалуйста, принесите свой последний расчётный лист."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Die Lohnabrechnung bringe ich gern mit. Bis morgen um 17 Uhr!",
+            "tr": {
+              "uz": "Maosh varaqasini albatta olib boraman. Ertaga soat 17 da koʻrishguncha!",
+              "uz-Cyrl": "Маош варақасини албатта олиб бораман. Эртага соат 17 да кўришгунча!",
+              "ru": "Расчётный лист обязательно принесу. До встречи завтра в 17 часов!"
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -15455,6 +15548,656 @@
           "uz": "Pasportni hech kimga bermayman — pasportim oʻzimda qoladi.",
           "uz-Cyrl": "Паспортни ҳеч кимга бермайман — паспортим ўзимда қолади.",
           "ru": "Паспорт я никому не отдаю — мой паспорт остаётся у меня."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-mieter",
+      "slug": "mieter",
+      "term": "der Mieter",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Mieter",
+      "tr": {
+        "uz": "ijarachi",
+        "uz-Cyrl": "ижарачи",
+        "ru": "арендатор (квартиросъёмщик)"
+      },
+      "pron": {
+        "uz": "der mi-ter",
+        "uz-Cyrl": "дер ми-тер",
+        "ru": "дер ми-тер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Der Mieter zahlt die Miete jeden Monat pünktlich.",
+        "tr": {
+          "uz": "Ijarachi ijara haqini har oy oʻz vaqtida toʻlaydi.",
+          "uz-Cyrl": "Ижарачи ижара ҳақини ҳар ой ўз вақтида тўлайди.",
+          "ru": "Арендатор каждый месяц вовремя платит за квартиру."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-wohnungssuche",
+      "slug": "wohnungssuche",
+      "term": "die Wohnungssuche",
+      "icon": "home",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "uy-joy qidirish",
+        "uz-Cyrl": "уй-жой қидириш",
+        "ru": "поиск жилья"
+      },
+      "pron": {
+        "uz": "die vo-nungs-zu-xe",
+        "uz-Cyrl": "ди во-нунгс-зу-хе",
+        "ru": "ди во-нунгс-зу-хе"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Bei der Wohnungssuche hilft mir eine Kollegin.",
+        "tr": {
+          "uz": "Uy-joy qidirishda menga bir hamkasbim yordam beryapti.",
+          "uz-Cyrl": "Уй-жой қидиришда менга бир ҳамкасбим ёрдам беряпти.",
+          "ru": "С поиском жилья мне помогает коллега."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-wohnungsanzeige",
+      "slug": "wohnungsanzeige",
+      "term": "die Wohnungsanzeige",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Wohnungsanzeigen",
+      "tr": {
+        "uz": "kvartira eʼloni",
+        "uz-Cyrl": "квартира эълони",
+        "ru": "объявление о квартире"
+      },
+      "pron": {
+        "uz": "die vo-nungs-an-tsay-ge",
+        "uz-Cyrl": "ди во-нунгс-ан-цай-ге",
+        "ru": "ди во-нунгс-ан-цай-ге"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "In der Wohnungsanzeige stehen der Preis und die Größe.",
+        "tr": {
+          "uz": "Kvartira eʼlonida narxi va oʻlchami yozilgan.",
+          "uz-Cyrl": "Квартира эълонида нархи ва ўлчами ёзилган.",
+          "ru": "В объявлении о квартире указаны цена и площадь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-besichtigung",
+      "slug": "besichtigung",
+      "term": "die Besichtigung",
+      "icon": "eye",
+      "article": "die",
+      "plural": "die Besichtigungen",
+      "tr": {
+        "uz": "(uyni) borib koʻrish",
+        "uz-Cyrl": "(уйни) бориб кўриш",
+        "ru": "осмотр (квартиры)"
+      },
+      "pron": {
+        "uz": "die be-zix-ti-gung",
+        "uz-Cyrl": "ди бе-зих-ти-гунг",
+        "ru": "ди бе-зих-ти-гунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Die Besichtigung ist am Samstag um zehn Uhr.",
+        "tr": {
+          "uz": "Uyni borib koʻrish shanba kuni soat oʻnda.",
+          "uz-Cyrl": "Уйни бориб кўриш шанба куни соат ўнда.",
+          "ru": "Осмотр квартиры — в субботу в десять часов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-ist-die-wohnung-noch-frei",
+      "slug": "ist-die-wohnung-noch-frei",
+      "term": "Ist die Wohnung noch frei?",
+      "icon": "help",
+      "tr": {
+        "uz": "Kvartira hali boʻshmi?",
+        "uz-Cyrl": "Квартира ҳали бўшми?",
+        "ru": "Квартира ещё свободна?"
+      },
+      "pron": {
+        "uz": "ist die vo-nung nox fray",
+        "uz-Cyrl": "ист ди во-нунг нох фрай",
+        "ru": "ист ди во-нунг нох фрай"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Guten Tag, ich rufe wegen Ihrer Anzeige an. Ist die Wohnung noch frei?",
+        "tr": {
+          "uz": "Xayrli kun, eʼloningiz boʻyicha qoʻngʻiroq qilyapman. Kvartira hali boʻshmi?",
+          "uz-Cyrl": "Хайрли кун, эълонингиз бўйича қўнғироқ қиляпман. Квартира ҳали бўшми?",
+          "ru": "Добрый день, я звоню по вашему объявлению. Квартира ещё свободна?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-kaltmiete",
+      "slug": "kaltmiete",
+      "term": "die Kaltmiete",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "die Kaltmieten",
+      "tr": {
+        "uz": "ijara haqi (kommunal toʻlovlarsiz)",
+        "uz-Cyrl": "ижара ҳақи (коммунал тўловларсиз)",
+        "ru": "арендная плата без коммунальных платежей"
+      },
+      "pron": {
+        "uz": "die kalt-mi-te",
+        "uz-Cyrl": "ди калт-ми-те",
+        "ru": "ди калт-ми-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Die Kaltmiete ist die Miete ohne Nebenkosten.",
+        "tr": {
+          "uz": "Bu — kommunal toʻlovlarsiz ijara haqi.",
+          "uz-Cyrl": "Бу — коммунал тўловларсиз ижара ҳақи.",
+          "ru": "Это арендная плата без коммунальных платежей."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-warmmiete",
+      "slug": "warmmiete",
+      "term": "die Warmmiete",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "die Warmmieten",
+      "tr": {
+        "uz": "ijara haqi (kommunal toʻlovlar bilan)",
+        "uz-Cyrl": "ижара ҳақи (коммунал тўловлар билан)",
+        "ru": "арендная плата с коммунальными платежами"
+      },
+      "pron": {
+        "uz": "die varm-mi-te",
+        "uz-Cyrl": "ди варм-ми-те",
+        "ru": "ди варм-ми-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Die Warmmiete ist die Miete mit Nebenkosten.",
+        "tr": {
+          "uz": "Bu — kommunal toʻlovlar bilan birga ijara haqi.",
+          "uz-Cyrl": "Бу — коммунал тўловлар билан бирга ижара ҳақи.",
+          "ru": "Это арендная плата вместе с коммунальными платежами."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-heizkosten",
+      "slug": "heizkosten",
+      "term": "die Heizkosten",
+      "icon": "flame",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "isitish xarajatlari",
+        "uz-Cyrl": "иситиш харажатлари",
+        "ru": "расходы на отопление"
+      },
+      "pron": {
+        "uz": "die hayts-kos-ten",
+        "uz-Cyrl": "ди хайц-кос-тен",
+        "ru": "ди хайц-кос-тен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Im Winter sind die Heizkosten höher.",
+        "tr": {
+          "uz": "Qishda isitish xarajatlari koʻproq boʻladi.",
+          "uz-Cyrl": "Қишда иситиш харажатлари кўпроқ бўлади.",
+          "ru": "Зимой расходы на отопление выше."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-moebliert",
+      "slug": "moebliert",
+      "term": "möbliert",
+      "icon": "armchair",
+      "tr": {
+        "uz": "mebelli (jihozlangan)",
+        "uz-Cyrl": "мебелли (жиҳозланган)",
+        "ru": "меблированный (с мебелью)"
+      },
+      "pron": {
+        "uz": "myo-blirt",
+        "uz-Cyrl": "мё-блирт",
+        "ru": "мё-блирт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Das Zimmer ist möbliert: Bett, Tisch und Schrank sind schon da.",
+        "tr": {
+          "uz": "Xona mebelli: karavot, stol va shkaf bor.",
+          "uz-Cyrl": "Хона мебелли: каравот, стол ва шкаф бор.",
+          "ru": "Комната с мебелью: кровать, стол и шкаф уже есть."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-wohngemeinschaft",
+      "slug": "wohngemeinschaft",
+      "term": "die Wohngemeinschaft",
+      "icon": "users",
+      "article": "die",
+      "plural": "die Wohngemeinschaften",
+      "tr": {
+        "uz": "umumiy kvartira (bir necha kishi birga yashaydi)",
+        "uz-Cyrl": "умумий квартира (бир неча киши бирга яшайди)",
+        "ru": "квартира на несколько жильцов"
+      },
+      "pron": {
+        "uz": "die von-ge-mayn-shaft",
+        "uz-Cyrl": "ди вон-ге-майн-шафт",
+        "ru": "ди вон-ге-майн-шафт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "In der Wohngemeinschaft teilen wir die Küche und das Bad.",
+        "tr": {
+          "uz": "Umumiy kvartirada oshxona va hammomdan birga foydalanamiz.",
+          "uz-Cyrl": "Умумий квартирада ошхона ва ҳаммомдан бирга фойдаланамиз.",
+          "ru": "В общей квартире мы вместе пользуемся кухней и ванной."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-hausverwaltung",
+      "slug": "hausverwaltung",
+      "term": "die Hausverwaltung",
+      "icon": "building",
+      "article": "die",
+      "plural": "die Hausverwaltungen",
+      "tr": {
+        "uz": "uy boshqaruvi (boshqaruv kompaniyasi)",
+        "uz-Cyrl": "уй бошқаруви (бошқарув компанияси)",
+        "ru": "управляющая компания (дома)"
+      },
+      "pron": {
+        "uz": "die haus-fer-val-tung",
+        "uz-Cyrl": "ди хаус-фер-вал-тунг",
+        "ru": "ди хаус-фер-вал-тунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Die Heizung ist kaputt. Ich rufe die Hausverwaltung an.",
+        "tr": {
+          "uz": "Isitish buzildi. Uy boshqaruviga qoʻngʻiroq qilaman.",
+          "uz-Cyrl": "Иситиш бузилди. Уй бошқарувига қўнғироқ қиламан.",
+          "ru": "Отопление сломалось. Позвоню в управляющую компанию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-wann-kann-ich-die-wohnung-besichtigen",
+      "slug": "wann-kann-ich-die-wohnung-besichtigen",
+      "term": "Wann kann ich die Wohnung besichtigen?",
+      "icon": "calendar-event",
+      "tr": {
+        "uz": "Kvartirani qachon borib koʻrsam boʻladi?",
+        "uz-Cyrl": "Квартирани қачон бориб кўрсам бўлади?",
+        "ru": "Когда можно посмотреть квартиру?"
+      },
+      "pron": {
+        "uz": "van kan ix die vo-nung be-zix-ti-gen",
+        "uz-Cyrl": "ван кан их ди во-нунг бе-зих-ти-ген",
+        "ru": "ван кан их ди во-нунг бе-зих-ти-ген"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Das Angebot klingt gut. Wann kann ich die Wohnung besichtigen?",
+        "tr": {
+          "uz": "Taklif yaxshi ekan. Kvartirani qachon borib koʻrsam boʻladi?",
+          "uz-Cyrl": "Таклиф яхши экан. Квартирани қачон бориб кўрсам бўлади?",
+          "ru": "Предложение звучит хорошо. Когда можно посмотреть квартиру?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-wohnungsgeberbestaetigung",
+      "slug": "wohnungsgeberbestaetigung",
+      "term": "die Wohnungsgeberbestätigung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Wohnungsgeberbestätigungen",
+      "tr": {
+        "uz": "uy egasining tasdiqnomasi (roʻyxatdan oʻtish uchun)",
+        "uz-Cyrl": "уй эгасининг тасдиқномаси (рўйхатдан ўтиш учун)",
+        "ru": "подтверждение от арендодателя (для регистрации)"
+      },
+      "pron": {
+        "uz": "die vo-nungs-ge-ber-be-shte-ti-gung",
+        "uz-Cyrl": "ди во-нунгс-ге-бер-бе-ште-ти-гунг",
+        "ru": "ди во-нунгс-ге-бер-бе-ште-ти-гунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Für die Anmeldung brauche ich die Wohnungsgeberbestätigung vom Vermieter.",
+        "tr": {
+          "uz": "Roʻyxatdan oʻtish uchun menga uy egasidan tasdiqnoma kerak.",
+          "uz-Cyrl": "Рўйхатдан ўтиш учун менга уй эгасидан тасдиқнома керак.",
+          "ru": "Для регистрации по месту жительства мне нужно подтверждение от арендодателя."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-wohnungsuebergabe",
+      "slug": "wohnungsuebergabe",
+      "term": "die Wohnungsübergabe",
+      "icon": "key",
+      "article": "die",
+      "plural": "die Wohnungsübergaben",
+      "tr": {
+        "uz": "kvartirani topshirish (qabul qilish)",
+        "uz-Cyrl": "квартирани топшириш (қабул қилиш)",
+        "ru": "передача квартиры (приём-передача)"
+      },
+      "pron": {
+        "uz": "die vo-nungs-yu-ber-ga-be",
+        "uz-Cyrl": "ди во-нунгс-ю-бер-га-бе",
+        "ru": "ди во-нунгс-ю-бер-га-бе"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Bei der Wohnungsübergabe prüfen wir zusammen alle Räume.",
+        "tr": {
+          "uz": "Kvartirani topshirishda barcha xonalarni birga tekshiramiz.",
+          "uz-Cyrl": "Квартирани топширишда барча хоналарни бирга текширамиз.",
+          "ru": "При передаче квартиры мы вместе проверяем все комнаты."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-nachmieter",
+      "slug": "nachmieter",
+      "term": "der Nachmieter",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Nachmieter",
+      "tr": {
+        "uz": "keyingi ijarachi",
+        "uz-Cyrl": "кейинги ижарачи",
+        "ru": "следующий арендатор"
+      },
+      "pron": {
+        "uz": "der nax-mi-ter",
+        "uz-Cyrl": "дер нах-ми-тер",
+        "ru": "дер нах-ми-тер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Der Vermieter sucht schon einen Nachmieter für die Wohnung.",
+        "tr": {
+          "uz": "Uy egasi kvartiraga keyingi ijarachini qidiryapti.",
+          "uz-Cyrl": "Уй эгаси квартирага кейинги ижарачини қидиряпти.",
+          "ru": "Арендодатель уже ищет следующего арендатора для квартиры."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-schimmel",
+      "slug": "schimmel",
+      "term": "der Schimmel",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "mogʻor",
+        "uz-Cyrl": "моғор",
+        "ru": "плесень"
+      },
+      "pron": {
+        "uz": "der shi-mel",
+        "uz-Cyrl": "дер ши-мел",
+        "ru": "дер ши-мел"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Im Bad ist Schimmel an der Wand. Das melde ich sofort dem Vermieter.",
+        "tr": {
+          "uz": "Hammomda devorda mogʻor bor. Bu haqda darhol uy egasiga xabar beraman.",
+          "uz-Cyrl": "Ҳаммомда деворда моғор бор. Бу ҳақда дарҳол уй эгасига хабар бераман.",
+          "ru": "В ванной на стене плесень. Сразу сообщу об этом арендодателю."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-makler",
+      "slug": "makler",
+      "term": "der Makler",
+      "icon": "briefcase",
+      "article": "der",
+      "plural": "die Makler",
+      "tr": {
+        "uz": "rieltor (vositachi)",
+        "uz-Cyrl": "риелтор (воситачи)",
+        "ru": "риелтор (маклер)"
+      },
+      "pron": {
+        "uz": "der mak-ler",
+        "uz-Cyrl": "дер мак-лер",
+        "ru": "дер мак-лер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Der Makler zeigt uns heute zwei Wohnungen.",
+        "tr": {
+          "uz": "Rieltor bugun bizga ikkita kvartira koʻrsatadi.",
+          "uz-Cyrl": "Риелтор бугун бизга иккита квартира кўрсатади.",
+          "ru": "Риелтор сегодня покажет нам две квартиры."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-umzug",
+      "slug": "umzug",
+      "term": "der Umzug",
+      "icon": "truck",
+      "article": "der",
+      "plural": "die Umzüge",
+      "tr": {
+        "uz": "koʻchish (yangi uyga)",
+        "uz-Cyrl": "кўчиш (янги уйга)",
+        "ru": "переезд"
+      },
+      "pron": {
+        "uz": "der um-tsuk",
+        "uz-Cyrl": "дер ум-цук",
+        "ru": "дер ум-цук"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Nach dem Umzug muss ich mich an der neuen Adresse anmelden.",
+        "tr": {
+          "uz": "Koʻchgandan keyin yangi manzil boʻyicha roʻyxatdan oʻtishim kerak.",
+          "uz-Cyrl": "Кўчгандан кейин янги манзил бўйича рўйхатдан ўтишим керак.",
+          "ru": "После переезда мне нужно зарегистрироваться по новому адресу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-zahlen-sie-nie-geld-vor-der-besichtigung",
+      "slug": "zahlen-sie-nie-geld-vor-der-besichtigung",
+      "term": "Zahlen Sie nie Geld vor der Besichtigung!",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Uyni koʻrmasdan oldin hech qachon pul toʻlamang!",
+        "uz-Cyrl": "Уйни кўрмасдан олдин ҳеч қачон пул тўламанг!",
+        "ru": "Никогда не платите до осмотра квартиры!"
+      },
+      "pron": {
+        "uz": "tsa-len zi ni gelt for der be-zix-ti-gung",
+        "uz-Cyrl": "ца-лен зи ни гелт фор дер бе-зих-ти-гунг",
+        "ru": "ца-лен зи ни гелт фор дер бе-зих-ти-гунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Jemand will die Kaution schon vorher? Zahlen Sie nie Geld vor der Besichtigung!",
+        "tr": {
+          "uz": "Kimdir garov pulini oldindan soʻrayaptimi? Uyni koʻrmasdan oldin hech qachon pul toʻlamang!",
+          "uz-Cyrl": "Кимдир гаров пулини олдиндан сўраяптими? Уйни кўрмасдан олдин ҳеч қачон пул тўламанг!",
+          "ru": "Кто-то просит залог заранее? Никогда не платите до осмотра квартиры!"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-ijara-kann-ich-bitte-eine-quittung-fuer-die-kaution-bekommen",
+      "slug": "kann-ich-bitte-eine-quittung-fuer-die-kaution-bekommen",
+      "term": "Kann ich bitte eine Quittung für die Kaution bekommen?",
+      "icon": "receipt",
+      "tr": {
+        "uz": "Garov puli uchun kvitansiya bera olasizmi?",
+        "uz-Cyrl": "Гаров пули учун квитанция бера оласизми?",
+        "ru": "Можно, пожалуйста, квитанцию за залог?"
+      },
+      "pron": {
+        "uz": "kan ix bi-te ay-ne kvi-tung fyur die kau-tsyon be-kom-men",
+        "uz-Cyrl": "кан их би-те ай-не кви-тунг фюр ди кау-цён бе-ком-мен",
+        "ru": "кан их би-те ай-не кви-тунг фюр ди кау-цён бе-ком-мен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-ijara",
+      "example": {
+        "term": "Die Kaution ist bezahlt. Kann ich bitte eine Quittung für die Kaution bekommen?",
+        "tr": {
+          "uz": "Garov puli toʻlandi. Garov puli uchun kvitansiya bera olasizmi?",
+          "uz-Cyrl": "Гаров пули тўланди. Гаров пули учун квитанция бера оласизми?",
+          "ru": "Залог оплачен. Можно, пожалуйста, квитанцию за залог?"
         }
       },
       "safety": true,
