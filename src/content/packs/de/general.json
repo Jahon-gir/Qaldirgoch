@@ -3092,6 +3092,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Na, wie war deine Abschlussprüfung beim Lehrgang?",
+            "tr": {
+              "uz": "Xoʻsh, oʻquv kursidagi yakuniy imtihoning qanday oʻtdi?",
+              "uz-Cyrl": "Хўш, ўқув курсидаги якуний имтиҳонинг қандай ўтди?",
+              "ru": "Ну, как прошёл твой итоговый экзамен на курсе?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich habe bestanden! Heute habe ich die Teilnahmebescheinigung bekommen.",
+            "tr": {
+              "uz": "Imtihondan oʻtdim! Bugun qatnashganlik haqidagi maʼlumotnomani oldim.",
+              "uz-Cyrl": "Имтиҳондан ўтдим! Бугун қатнашганлик ҳақидаги маълумотномани олдим.",
+              "ru": "Экзамен сдан! Сегодня мне выдали справку об участии."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Glückwunsch! Musst du die Bescheinigung jetzt irgendwo abgeben?",
+            "tr": {
+              "uz": "Tabriklayman! Endi maʼlumotnomani biror joyga topshirishing kerakmi?",
+              "uz-Cyrl": "Табриклайман! Энди маълумотномани бирор жойга топширишинг керакми?",
+              "ru": "Поздравляю! Тебе теперь нужно куда-то сдать справку?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, eine Kopie bekommt die Personalabteilung.",
+            "tr": {
+              "uz": "Ha, uning nusxasi kadrlar boʻlimiga beriladi.",
+              "uz-Cyrl": "Ҳа, унинг нусхаси кадрлар бўлимига берилади.",
+              "ru": "Да, копию получает отдел кадров."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Gut. Übrigens gibt es im Internet Werbung für ein Sprachzertifikat ohne Prüfung, nur gegen Geld.",
+            "tr": {
+              "uz": "Yaxshi. Aytgancha, internetda imtihonsiz til sertifikati reklamasi bor — faqat pulga.",
+              "uz-Cyrl": "Яхши. Айтганча, интернетда имтиҳонсиз тил сертификати рекламаси бор — фақат пулга.",
+              "ru": "Хорошо. Кстати, в интернете есть реклама языкового сертификата без экзамена — только за деньги."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ein Zertifikat ohne Prüfung? Kauf so etwas nie – das ist Betrug!",
+            "tr": {
+              "uz": "Imtihonsiz sertifikatmi? Bunaqasini hech qachon sotib olma — bu firibgarlik!",
+              "uz-Cyrl": "Имтиҳонсиз сертификатми? Бунақасини ҳеч қачон сотиб олма — бу фирибгарлик!",
+              "ru": "Сертификат без экзамена? Никогда такое не покупай — это мошенничество!"
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
