@@ -3268,6 +3268,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Du siehst besorgt aus. Ist etwas passiert?",
+            "tr": {
+              "uz": "Xavotirli koʻrinasan. Biror narsa boʻldimi?",
+              "uz-Cyrl": "Хавотирли кўринасан. Бирор нарса бўлдими?",
+              "ru": "У тебя встревоженный вид. Что-то случилось?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Der neue Chef möchte meinen Reisepass im Büro behalten.",
+            "tr": {
+              "uz": "Yangi boshliq pasportimni ofisda olib qolmoqchi.",
+              "uz-Cyrl": "Янги бошлиқ паспортимни офисда олиб қолмоқчи.",
+              "ru": "Новый начальник хочет оставить мой паспорт у себя в офисе."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Und? Hast du ihm den Pass schon gegeben?",
+            "tr": {
+              "uz": "Xoʻsh? Pasportni unga berib qoʻydingmi?",
+              "uz-Cyrl": "Хўш? Паспортни унга бериб қўйдингми?",
+              "ru": "И что? Паспорт уже у него?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein. Ich habe ihm gesagt: Mein Reisepass bleibt bei mir.",
+            "tr": {
+              "uz": "Yoʻq. Unga aytdim: pasportim oʻzimda qoladi.",
+              "uz-Cyrl": "Йўқ. Унга айтдим: паспортим ўзимда қолади.",
+              "ru": "Нет. Мой ответ был такой: мой паспорт остаётся у меня."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Richtig so. Wenn er dich deswegen unter Druck setzt, geh zu einer Beratungsstelle.",
+            "tr": {
+              "uz": "Toʻgʻri qilibsan. Agar shu sababli senga bosim oʻtkazsa, maslahat markaziga bor.",
+              "uz-Cyrl": "Тўғри қилибсан. Агар шу сабабли сенга босим ўтказса, маслаҳат марказига бор.",
+              "ru": "Правильно. Если он будет из-за этого на тебя давить, иди в консультационный центр."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Zu einer Beratungsstelle? Gute Idee. Ich gehe gleich morgen hin.",
+            "tr": {
+              "uz": "Maslahat markazigami? Yaxshi fikr. Ertagayoq boraman.",
+              "uz-Cyrl": "Маслаҳат марказигами? Яхши фикр. Эртагаёқ бораман.",
+              "ru": "В консультационный центр? Хорошая идея. Схожу туда завтра же."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
