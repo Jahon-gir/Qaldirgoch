@@ -2740,6 +2740,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Kadrlar boʻlimi xodimi",
+              "uz-Cyrl": "Кадрлар бўлими ходими",
+              "ru": "Сотрудник отдела кадров"
+            },
+            "de": "Guten Tag, hier ist die Personalabteilung. Wir haben gute Nachrichten: Sie bekommen die Stelle.",
+            "tr": {
+              "uz": "Xayrli kun, kadrlar boʻlimidan qoʻngʻiroq qilyapmiz. Yaxshi xabarimiz bor: ish oʻrni sizga berildi.",
+              "uz-Cyrl": "Хайрли кун, кадрлар бўлимидан қўнғироқ қиляпмиз. Яхши хабаримиз бор: иш ўрни сизга берилди.",
+              "ru": "Добрый день, это отдел кадров. У нас хорошие новости: вы получаете это место."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Vielen Dank! Das freut mich sehr.",
+            "tr": {
+              "uz": "Katta rahmat! Bundan juda xursandman.",
+              "uz-Cyrl": "Катта раҳмат! Бундан жуда хурсандман.",
+              "ru": "Большое спасибо! Это меня очень радует."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kadrlar boʻlimi xodimi",
+              "uz-Cyrl": "Кадрлар бўлими ходими",
+              "ru": "Сотрудник отдела кадров"
+            },
+            "de": "Wann können Sie mit der Arbeit beginnen?",
+            "tr": {
+              "uz": "Ishni qachon boshlay olasiz?",
+              "uz-Cyrl": "Ишни қачон бошлай оласиз?",
+              "ru": "Когда вы можете приступить к работе?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich kann schon nächsten Montag anfangen.",
+            "tr": {
+              "uz": "Keyingi dushanbadan boshlay olaman.",
+              "uz-Cyrl": "Кейинги душанбадан бошлай оламан.",
+              "ru": "Я могу начать уже в следующий понедельник."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kadrlar boʻlimi xodimi",
+              "uz-Cyrl": "Кадрлар бўлими ходими",
+              "ru": "Сотрудник отдела кадров"
+            },
+            "de": "Sehr gut. Ich schicke Ihnen heute den Vertrag. Können Sie ihn morgen unterschreiben?",
+            "tr": {
+              "uz": "Juda yaxshi. Bugun sizga shartnomani yuboraman. Ertaga imzolay olasizmi?",
+              "uz-Cyrl": "Жуда яхши. Бугун сизга шартномани юбораман. Эртага имзолай оласизми?",
+              "ru": "Очень хорошо. Сегодня я отправлю вам договор. Вы можете подписать его завтра?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich möchte den Vertrag erst in Ruhe lesen. Danach unterschreibe ich ihn gern.",
+            "tr": {
+              "uz": "Avval shartnomani xotirjam oʻqib chiqmoqchiman. Keyin uni bajonidil imzolayman.",
+              "uz-Cyrl": "Аввал шартномани хотиржам ўқиб чиқмоқчиман. Кейин уни бажонидил имзолайман.",
+              "ru": "Сначала я хочу спокойно прочитать договор. После этого охотно его подпишу."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
