@@ -3528,6 +3528,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "bank-hujjat",
+      "title": {
+        "uz": "Bank hisobi va toʻlovlar",
+        "uz-Cyrl": "Банк ҳисоби ва тўловлар",
+        "ru": "Банковский счёт и платежи"
+      },
+      "order": 21,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Bank xodimi",
+              "uz-Cyrl": "Банк ходими",
+              "ru": "Сотрудник банка"
+            },
+            "de": "Guten Tag! Was kann ich für Sie tun?",
+            "tr": {
+              "uz": "Xayrli kun! Sizga nima yordam bera olaman?",
+              "uz-Cyrl": "Хайрли кун! Сизга нима ёрдам бера оламан?",
+              "ru": "Добрый день! Чем могу помочь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Guten Tag. Ich möchte ein Konto eröffnen. Mein Lohn soll darauf kommen.",
+            "tr": {
+              "uz": "Xayrli kun. Hisob ochmoqchiman. Maoshim shu hisobga tushishi kerak.",
+              "uz-Cyrl": "Хайрли кун. Ҳисоб очмоқчиман. Маошим шу ҳисобга тушиши керак.",
+              "ru": "Добрый день. Я хочу открыть счёт. На него должна приходить зарплата."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Bank xodimi",
+              "uz-Cyrl": "Банк ходими",
+              "ru": "Сотрудник банка"
+            },
+            "de": "Gern. Dann empfehle ich Ihnen ein Girokonto. Haben Sie Ihren Ausweis und Ihre Meldebescheinigung dabei?",
+            "tr": {
+              "uz": "Bajonidil. Unda sizga joriy hisob tavsiya qilaman. Shaxsingizni tasdiqlovchi hujjat va roʻyxatdan oʻtganlik maʼlumotnomasi yoningizdami?",
+              "uz-Cyrl": "Бажонидил. Унда сизга жорий ҳисоб тавсия қиламан. Шахсингизни тасдиқловчи ҳужжат ва рўйхатдан ўтганлик маълумотномаси ёнингиздами?",
+              "ru": "С удовольствием. Тогда рекомендую вам текущий счёт. У вас с собой удостоверение личности и справка о регистрации?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, hier sind mein Pass und die Meldebescheinigung.",
+            "tr": {
+              "uz": "Ha, mana pasportim va maʼlumotnoma.",
+              "uz-Cyrl": "Ҳа, мана паспортим ва маълумотнома.",
+              "ru": "Да, вот мой паспорт и справка о регистрации."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Bank xodimi",
+              "uz-Cyrl": "Банк ходими",
+              "ru": "Сотрудник банка"
+            },
+            "de": "Danke. Die Bankkarte bekommen Sie per Post, die PIN kommt in einem extra Brief.",
+            "tr": {
+              "uz": "Rahmat. Bank kartasini pochta orqali olasiz, PIN-kod esa alohida xatda keladi.",
+              "uz-Cyrl": "Раҳмат. Банк картасини почта орқали оласиз, пин-код эса алоҳида хатда келади.",
+              "ru": "Спасибо. Банковскую карту вы получите по почте, а пин-код придёт отдельным письмом."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ein extra Brief für die PIN? Gut, den Brief zeige ich niemandem.",
+            "tr": {
+              "uz": "PIN-kod uchun alohida xatmi? Yaxshi, bu xatni hech kimga koʻrsatmayman.",
+              "uz-Cyrl": "Пин-код учун алоҳида хатми? Яхши, бу хатни ҳеч кимга кўрсатмайман.",
+              "ru": "Отдельное письмо для пин-кода? Хорошо, это письмо никому не покажу."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -16281,6 +16374,658 @@
           "uz": "Garov puli toʻlandi. Garov puli uchun kvitansiya bera olasizmi?",
           "uz-Cyrl": "Гаров пули тўланди. Гаров пули учун квитанция бера оласизми?",
           "ru": "Залог оплачен. Можно, пожалуйста, квитанцию за залог?"
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-kontoeroeffnung",
+      "slug": "kontoeroeffnung",
+      "term": "die Kontoeröffnung",
+      "icon": "building-bank",
+      "article": "die",
+      "plural": "die Kontoeröffnungen",
+      "tr": {
+        "uz": "hisob ochish",
+        "uz-Cyrl": "ҳисоб очиш",
+        "ru": "открытие счёта"
+      },
+      "pron": {
+        "uz": "die kon-to-er-yof-nung",
+        "uz-Cyrl": "ди кон-то-эр-ёф-нунг",
+        "ru": "ди кон-то-эр-ёф-нунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Für die Kontoeröffnung mache ich einen Termin bei der Bank.",
+        "tr": {
+          "uz": "Hisob ochish uchun bankda uchrashuv vaqtini belgilayman.",
+          "uz-Cyrl": "Ҳисоб очиш учун банкда учрашув вақтини белгилайман.",
+          "ru": "Для открытия счёта я записываюсь на приём в банк."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-girokonto",
+      "slug": "girokonto",
+      "term": "das Girokonto",
+      "icon": "building-bank",
+      "article": "das",
+      "plural": "die Girokonten",
+      "tr": {
+        "uz": "joriy hisob (kundalik toʻlovlar uchun)",
+        "uz-Cyrl": "жорий ҳисоб (кундалик тўловлар учун)",
+        "ru": "текущий счёт"
+      },
+      "pron": {
+        "uz": "das ji-ro-kon-to",
+        "uz-Cyrl": "дас жи-ро-кон-то",
+        "ru": "дас жи-ро-кон-то"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Mein Lohn kommt jeden Monat auf mein Girokonto.",
+        "tr": {
+          "uz": "Maoshim har oy joriy hisobimga tushadi.",
+          "uz-Cyrl": "Маошим ҳар ой жорий ҳисобимга тушади.",
+          "ru": "Зарплата каждый месяц приходит на мой текущий счёт."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-bankberater",
+      "slug": "bankberater",
+      "term": "der Bankberater",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Bankberater",
+      "tr": {
+        "uz": "bank maslahatchisi",
+        "uz-Cyrl": "банк маслаҳатчиси",
+        "ru": "консультант банка"
+      },
+      "pron": {
+        "uz": "der bank-be-ra-ter",
+        "uz-Cyrl": "дер банк-бе-ра-тер",
+        "ru": "дер банк-бе-ра-тер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Der Bankberater erklärt mir die Kosten für das Konto.",
+        "tr": {
+          "uz": "Bank maslahatchisi menga hisob xarajatlarini tushuntiradi.",
+          "uz-Cyrl": "Банк маслаҳатчиси менга ҳисоб харажатларини тушунтиради.",
+          "ru": "Консультант банка объясняет мне расходы по счёту."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-kontofuehrungsgebuehr",
+      "slug": "kontofuehrungsgebuehr",
+      "term": "die Kontoführungsgebühr",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "die Kontoführungsgebühren",
+      "tr": {
+        "uz": "hisobni yuritish haqi",
+        "uz-Cyrl": "ҳисобни юритиш ҳақи",
+        "ru": "плата за обслуживание счёта"
+      },
+      "pron": {
+        "uz": "die kon-to-fyu-rungs-ge-byur",
+        "uz-Cyrl": "ди кон-то-фю-рунгс-ге-бюр",
+        "ru": "ди кон-то-фю-рунгс-ге-бюр"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Wie hoch ist die Kontoführungsgebühr?",
+        "tr": {
+          "uz": "Hisobni yuritish haqi qancha?",
+          "uz-Cyrl": "Ҳисобни юритиш ҳақи қанча?",
+          "ru": "Какова плата за обслуживание счёта?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-ich-moechte-ein-konto-eroeffnen",
+      "slug": "ich-moechte-ein-konto-eroeffnen",
+      "term": "Ich möchte ein Konto eröffnen.",
+      "icon": "building-bank",
+      "tr": {
+        "uz": "Hisob ochmoqchiman.",
+        "uz-Cyrl": "Ҳисоб очмоқчиман.",
+        "ru": "Я хочу открыть счёт."
+      },
+      "pron": {
+        "uz": "ix myox-te ayn kon-to er-yof-nen",
+        "uz-Cyrl": "их мёх-те айн кон-то эр-ёф-нен",
+        "ru": "их мёх-те айн кон-то эр-ёф-нен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Guten Tag, ich möchte ein Konto eröffnen.",
+        "tr": {
+          "uz": "Xayrli kun, hisob ochmoqchiman.",
+          "uz-Cyrl": "Хайрли кун, ҳисоб очмоқчиман.",
+          "ru": "Добрый день, я хочу открыть счёт."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-kontoinhaber",
+      "slug": "kontoinhaber",
+      "term": "der Kontoinhaber",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Kontoinhaber",
+      "tr": {
+        "uz": "hisob egasi",
+        "uz-Cyrl": "ҳисоб эгаси",
+        "ru": "владелец счёта"
+      },
+      "pron": {
+        "uz": "der kon-to-in-ha-ber",
+        "uz-Cyrl": "дер кон-то-ин-ха-бер",
+        "ru": "дер кон-то-ин-ха-бер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Nur der Kontoinhaber darf die Bankkarte benutzen.",
+        "tr": {
+          "uz": "Bank kartasidan faqat hisob egasi foydalanishi mumkin.",
+          "uz-Cyrl": "Банк картасидан фақат ҳисоб эгаси фойдаланиши мумкин.",
+          "ru": "Пользоваться банковской картой может только владелец счёта."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-ueberweisung",
+      "slug": "ueberweisung",
+      "term": "die Überweisung",
+      "icon": "arrows-exchange",
+      "article": "die",
+      "plural": "die Überweisungen",
+      "tr": {
+        "uz": "pul oʻtkazmasi",
+        "uz-Cyrl": "пул ўтказмаси",
+        "ru": "денежный перевод"
+      },
+      "pron": {
+        "uz": "die yu-ber-vay-zung",
+        "uz-Cyrl": "ди ю-бер-вай-зунг",
+        "ru": "ди ю-бер-вай-зунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Die Überweisung für die Miete mache ich online.",
+        "tr": {
+          "uz": "Ijara haqi uchun oʻtkazmani onlayn qilaman.",
+          "uz-Cyrl": "Ижара ҳақи учун ўтказмани онлайн қиламан.",
+          "ru": "Перевод за аренду я делаю онлайн."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-lastschrift",
+      "slug": "lastschrift",
+      "term": "die Lastschrift",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "die Lastschriften",
+      "tr": {
+        "uz": "avtomatik yechib olish (ruxsatingiz bilan)",
+        "uz-Cyrl": "автоматик ечиб олиш (рухсатингиз билан)",
+        "ru": "прямое списание (автосписание)"
+      },
+      "pron": {
+        "uz": "die last-shrift",
+        "uz-Cyrl": "ди ласт-шрифт",
+        "ru": "ди ласт-шрифт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Die Handyrechnung wird per Lastschrift bezahlt.",
+        "tr": {
+          "uz": "Telefon hisobi avtomatik yechib olish orqali toʻlanadi.",
+          "uz-Cyrl": "Телефон ҳисоби автоматик ечиб олиш орқали тўланади.",
+          "ru": "Счёт за телефон оплачивается прямым списанием."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-dauerauftrag",
+      "slug": "dauerauftrag",
+      "term": "der Dauerauftrag",
+      "icon": "repeat",
+      "article": "der",
+      "plural": "die Daueraufträge",
+      "tr": {
+        "uz": "doimiy toʻlov topshirigʻi (har oy)",
+        "uz-Cyrl": "доимий тўлов топшириғи (ҳар ой)",
+        "ru": "постоянное поручение (регулярный платёж)"
+      },
+      "pron": {
+        "uz": "der dau-er-auf-trak",
+        "uz-Cyrl": "дер дау-эр-ауф-трак",
+        "ru": "дер дау-эр-ауф-трак"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Für die Miete richte ich einen Dauerauftrag ein.",
+        "tr": {
+          "uz": "Ijara haqi uchun doimiy toʻlov topshirigʻini sozlayman.",
+          "uz-Cyrl": "Ижара ҳақи учун доимий тўлов топшириғини созлайман.",
+          "ru": "Для аренды я настраиваю постоянное поручение."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-verwendungszweck",
+      "slug": "verwendungszweck",
+      "term": "der Verwendungszweck",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Verwendungszwecke",
+      "tr": {
+        "uz": "toʻlov maqsadi (izoh)",
+        "uz-Cyrl": "тўлов мақсади (изоҳ)",
+        "ru": "назначение платежа"
+      },
+      "pron": {
+        "uz": "der fer-ven-dungs-tsvek",
+        "uz-Cyrl": "дер фер-вен-дунгс-цвек",
+        "ru": "дер фер-вен-дунгс-цвек"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Im Verwendungszweck steht die Rechnungsnummer.",
+        "tr": {
+          "uz": "Toʻlov maqsadida hisob-faktura raqami yozilgan.",
+          "uz-Cyrl": "Тўлов мақсадида ҳисоб-фактура рақами ёзилган.",
+          "ru": "В назначении платежа указан номер счёта."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-kontoauszug",
+      "slug": "kontoauszug",
+      "term": "der Kontoauszug",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Kontoauszüge",
+      "tr": {
+        "uz": "hisob koʻchirmasi",
+        "uz-Cyrl": "ҳисоб кўчирмаси",
+        "ru": "выписка по счёту"
+      },
+      "pron": {
+        "uz": "der kon-to-aus-tsuk",
+        "uz-Cyrl": "дер кон-то-аус-цук",
+        "ru": "дер кон-то-аус-цук"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Auf dem Kontoauszug sehe ich alle Zahlungen.",
+        "tr": {
+          "uz": "Hisob koʻchirmasida barcha toʻlovlarni koʻraman.",
+          "uz-Cyrl": "Ҳисоб кўчирмасида барча тўловларни кўраман.",
+          "ru": "В выписке по счёту я вижу все платежи."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-iban",
+      "slug": "iban",
+      "term": "die IBAN",
+      "icon": "credit-card",
+      "article": "die",
+      "plural": "die IBANs",
+      "tr": {
+        "uz": "xalqaro hisob raqami (IBAN)",
+        "uz-Cyrl": "халқаро ҳисоб рақами",
+        "ru": "международный номер счёта"
+      },
+      "pron": {
+        "uz": "die i-ban",
+        "uz-Cyrl": "ди и-бан",
+        "ru": "ди и-бан"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Für die Überweisung brauche ich die IBAN des Vermieters.",
+        "tr": {
+          "uz": "Oʻtkazma uchun uy egasining hisob raqami kerak.",
+          "uz-Cyrl": "Ўтказма учун уй эгасининг ҳисоб рақами керак.",
+          "ru": "Для перевода мне нужен номер счёта арендодателя."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-bankkarte",
+      "slug": "bankkarte",
+      "term": "die Bankkarte",
+      "icon": "credit-card",
+      "article": "die",
+      "plural": "die Bankkarten",
+      "tr": {
+        "uz": "bank kartasi",
+        "uz-Cyrl": "банк картаси",
+        "ru": "банковская карта"
+      },
+      "pron": {
+        "uz": "die bank-kar-te",
+        "uz-Cyrl": "ди банк-кар-те",
+        "ru": "ди банк-кар-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Die Bankkarte kommt in ein paar Tagen per Post.",
+        "tr": {
+          "uz": "Bank kartasi bir necha kundan keyin pochta orqali keladi.",
+          "uz-Cyrl": "Банк картаси бир неча кундан кейин почта орқали келади.",
+          "ru": "Банковская карта придёт по почте через несколько дней."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-geldautomat",
+      "slug": "geldautomat",
+      "term": "der Geldautomat",
+      "icon": "cash",
+      "article": "der",
+      "plural": "die Geldautomaten",
+      "tr": {
+        "uz": "bankomat",
+        "uz-Cyrl": "банкомат",
+        "ru": "банкомат"
+      },
+      "pron": {
+        "uz": "der gelt-au-to-mat",
+        "uz-Cyrl": "дер гельт-ау-то-мат",
+        "ru": "дер гельт-ау-то-мат"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Am Geldautomaten hebe ich Bargeld ab.",
+        "tr": {
+          "uz": "Bankomatdan naqd pul yechib olaman.",
+          "uz-Cyrl": "Банкоматдан нақд пул ечиб оламан.",
+          "ru": "В банкомате я снимаю наличные."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-abheben",
+      "slug": "abheben",
+      "term": "abheben",
+      "icon": "cash",
+      "tr": {
+        "uz": "pul yechib olmoq",
+        "uz-Cyrl": "пул ечиб олмоқ",
+        "ru": "снимать (деньги)"
+      },
+      "pron": {
+        "uz": "ap-he-ben",
+        "uz-Cyrl": "ап-хе-бен",
+        "ru": "ап-хе-бен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Kann ich hier auch am Wochenende Geld abheben?",
+        "tr": {
+          "uz": "Bu yerda dam olish kunlari ham pul yechib olsam boʻladimi?",
+          "uz-Cyrl": "Бу ерда дам олиш кунлари ҳам пул ечиб олсам бўладими?",
+          "ru": "Здесь можно снять деньги и в выходные?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-online-banking",
+      "slug": "online-banking",
+      "term": "das Online-Banking",
+      "icon": "phone",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "onlayn bank (internet orqali)",
+        "uz-Cyrl": "онлайн банк (интернет орқали)",
+        "ru": "онлайн-банкинг"
+      },
+      "pron": {
+        "uz": "das on-layn-ben-king",
+        "uz-Cyrl": "дас он-лайн-бен-кинг",
+        "ru": "дас он-лайн-бен-кинг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Mit dem Online-Banking sehe ich meinen Kontostand.",
+        "tr": {
+          "uz": "Onlayn bank orqali hisobimdagi qoldiqni koʻraman.",
+          "uz-Cyrl": "Онлайн банк орқали ҳисобимдаги қолдиқни кўраман.",
+          "ru": "Через онлайн-банкинг я вижу остаток на счёте."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-pin",
+      "slug": "pin",
+      "term": "die PIN",
+      "icon": "lock",
+      "article": "die",
+      "plural": "die PINs",
+      "tr": {
+        "uz": "PIN-kod (maxfiy raqam)",
+        "uz-Cyrl": "пин-код (махфий рақам)",
+        "ru": "пин-код"
+      },
+      "pron": {
+        "uz": "die pin",
+        "uz-Cyrl": "ди пин",
+        "ru": "ди пин"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Die PIN darf niemand außer mir kennen.",
+        "tr": {
+          "uz": "PIN-kodni mendan boshqa hech kim bilmasligi kerak.",
+          "uz-Cyrl": "Пин-кодни мендан бошқа ҳеч ким билмаслиги керак.",
+          "ru": "Пин-код не должен знать никто, кроме меня."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-sperren",
+      "slug": "sperren",
+      "term": "sperren",
+      "icon": "lock",
+      "tr": {
+        "uz": "(kartani) bloklamoq",
+        "uz-Cyrl": "(картани) блокламоқ",
+        "ru": "заблокировать (карту)"
+      },
+      "pron": {
+        "uz": "shpe-ren",
+        "uz-Cyrl": "шпе-рен",
+        "ru": "шпе-рен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Wenn die Karte weg ist, muss ich sie sofort sperren lassen.",
+        "tr": {
+          "uz": "Karta yoʻqolsa, uni darhol bloklatishim kerak.",
+          "uz-Cyrl": "Карта йўқолса, уни дарҳол блоклатишим керак.",
+          "ru": "Если карта потерялась, её нужно сразу заблокировать."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-geben-sie-ihre-pin-nie-weiter",
+      "slug": "geben-sie-ihre-pin-nie-weiter",
+      "term": "Geben Sie Ihre PIN nie weiter!",
+      "icon": "lock",
+      "tr": {
+        "uz": "PIN-kodingizni hech qachon hech kimga bermang!",
+        "uz-Cyrl": "Пин-кодингизни ҳеч қачон ҳеч кимга берманг!",
+        "ru": "Никогда никому не сообщайте свой пин-код!"
+      },
+      "pron": {
+        "uz": "ge-ben zi i-re pin ni vay-ter",
+        "uz-Cyrl": "ге-бен зи и-ре пин ни вай-тер",
+        "ru": "ге-бен зи и-ре пин ни вай-тер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Geben Sie Ihre PIN nie weiter! Auch nicht am Telefon.",
+        "tr": {
+          "uz": "PIN-kodingizni hech qachon hech kimga bermang! Telefonda ham.",
+          "uz-Cyrl": "Пин-кодингизни ҳеч қачон ҳеч кимга берманг! Телефонда ҳам.",
+          "ru": "Никогда никому не сообщайте свой пин-код! И по телефону тоже."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bank-hujjat-telefonbetrug",
+      "slug": "telefonbetrug",
+      "term": "der Telefonbetrug",
+      "icon": "phone",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "telefon orqali firibgarlik",
+        "uz-Cyrl": "телефон орқали фирибгарлик",
+        "ru": "телефонное мошенничество"
+      },
+      "pron": {
+        "uz": "der te-le-fon-be-truk",
+        "uz-Cyrl": "дер те-ле-фон-бе-трук",
+        "ru": "дер те-ле-фон-бе-трук"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bank-hujjat",
+      "example": {
+        "term": "Fragt ein Anrufer nach Ihrer PIN, ist das Telefonbetrug.",
+        "tr": {
+          "uz": "Qoʻngʻiroq qilgan odam PIN-kodingizni soʻrasa, bu telefon orqali firibgarlik.",
+          "uz-Cyrl": "Қўнғироқ қилган одам пин-кодингизни сўраса, бу телефон орқали фирибгарлик.",
+          "ru": "Если звонящий спрашивает ваш пин-код, это телефонное мошенничество."
         }
       },
       "safety": true,
