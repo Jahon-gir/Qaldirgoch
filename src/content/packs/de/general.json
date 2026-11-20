@@ -4408,6 +4408,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "aloqa-shartnoma",
+      "title": {
+        "uz": "Telefon va internet shartnomasi",
+        "uz-Cyrl": "Телефон ва интернет шартномаси",
+        "ru": "Договор на телефон и интернет"
+      },
+      "order": 26,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Doʻkon xodimi",
+              "uz-Cyrl": "Дўкон ходими",
+              "ru": "Сотрудник салона связи"
+            },
+            "de": "Guten Tag! Suchen Sie einen neuen Handyvertrag?",
+            "tr": {
+              "uz": "Assalomu alaykum! Yangi mobil aloqa shartnomasini qidiryapsizmi?",
+              "uz-Cyrl": "Ассалому алайкум! Янги мобил алоқа шартномасини қидиряпсизми?",
+              "ru": "Добрый день! Ищете новый договор на мобильную связь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Guten Tag! Ich bin neu in Deutschland und habe noch keine deutsche Rufnummer.",
+            "tr": {
+              "uz": "Assalomu alaykum! Men Germaniyaga yangi kelganman, hali nemis telefon raqamim yoʻq.",
+              "uz-Cyrl": "Ассалому алайкум! Мен Германияга янги келганман, ҳали немис телефон рақамим йўқ.",
+              "ru": "Добрый день! Я недавно в Германии, и у меня ещё нет немецкого номера."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Doʻkon xodimi",
+              "uz-Cyrl": "Дўкон ходими",
+              "ru": "Сотрудник салона связи"
+            },
+            "de": "Dann helfe ich Ihnen gern. Möchten Sie lieber einen Vertrag oder eine Prepaidkarte?",
+            "tr": {
+              "uz": "Unda bajonidil yordam beraman. Shartnoma maʼqulmi yoki oldindan toʻlanadigan karta?",
+              "uz-Cyrl": "Унда бажонидил ёрдам бераман. Шартнома маъқулми ёки олдиндан тўланадиган карта?",
+              "ru": "Тогда с удовольствием помогу. Вам больше подходит договор или предоплаченная карта?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Lieber eine Prepaidkarte. Dann habe ich keine lange Vertragslaufzeit.",
+            "tr": {
+              "uz": "Oldindan toʻlanadigan karta maʼqul. Shunda uzoq shartnoma muddati boʻlmaydi.",
+              "uz-Cyrl": "Олдиндан тўланадиган карта маъқул. Шунда узоқ шартнома муддати бўлмайди.",
+              "ru": "Лучше предоплаченную карту. Тогда не будет долгого срока договора."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Doʻkon xodimi",
+              "uz-Cyrl": "Дўкон ходими",
+              "ru": "Сотрудник салона связи"
+            },
+            "de": "Gut. Für die Freischaltung der SIM-Karte brauche ich noch Ihren Ausweis.",
+            "tr": {
+              "uz": "Yaxshi. SIM-kartani faollashtirish uchun menga yana shaxsingizni tasdiqlovchi hujjat kerak.",
+              "uz-Cyrl": "Яхши. Сим-картани фаоллаштириш учун менга яна шахсингизни тасдиқловчи ҳужжат керак.",
+              "ru": "Хорошо. Для активации сим-карты мне ещё нужен ваш документ, удостоверяющий личность."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Für die Freischaltung? Kein Problem, hier ist mein Reisepass.",
+            "tr": {
+              "uz": "Faollashtirish uchunmi? Muammo yoʻq, mana pasportim.",
+              "uz-Cyrl": "Фаоллаштириш учунми? Муаммо йўқ, мана паспортим.",
+              "ru": "Для активации? Без проблем, вот мой паспорт."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -20421,6 +20514,660 @@
           "uz": "Posilka haqidagi havolali SMS firibgarlik boʻlishi mumkin.",
           "uz-Cyrl": "Посилка ҳақидаги ҳаволали СМС фирибгарлик бўлиши мумкин.",
           "ru": "СМС о посылке со ссылкой может оказаться мошенничеством."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-handyvertrag",
+      "slug": "handyvertrag",
+      "term": "der Handyvertrag",
+      "icon": "device-mobile",
+      "article": "der",
+      "plural": "die Handyverträge",
+      "tr": {
+        "uz": "mobil aloqa shartnomasi",
+        "uz-Cyrl": "мобил алоқа шартномаси",
+        "ru": "договор на мобильную связь"
+      },
+      "pron": {
+        "uz": "der hen-di-fer-trak",
+        "uz-Cyrl": "дер хен-ди-фер-трак",
+        "ru": "дер хен-ди-фер-трак"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Vor dem Handyvertrag vergleiche ich mehrere Angebote.",
+        "tr": {
+          "uz": "Mobil aloqa shartnomasidan oldin bir nechta taklifni solishtiraman.",
+          "uz-Cyrl": "Мобил алоқа шартномасидан олдин бир нечта таклифни солиштираман.",
+          "ru": "Перед договором на мобильную связь я сравниваю несколько предложений."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-prepaidkarte",
+      "slug": "prepaidkarte",
+      "term": "die Prepaidkarte",
+      "icon": "device-sim",
+      "article": "die",
+      "plural": "die Prepaidkarten",
+      "tr": {
+        "uz": "oldindan toʻlanadigan SIM-karta",
+        "uz-Cyrl": "олдиндан тўланадиган сим-карта",
+        "ru": "предоплаченная сим-карта"
+      },
+      "pron": {
+        "uz": "die pri-peyd-kar-te",
+        "uz-Cyrl": "ди при-пейд-кар-те",
+        "ru": "ди при-пейд-кар-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Mit einer Prepaidkarte zahle ich nur das Geld, das ich vorher auflade.",
+        "tr": {
+          "uz": "Oldindan toʻlanadigan karta bilan faqat oldindan solgan pulimni sarflayman.",
+          "uz-Cyrl": "Олдиндан тўланадиган карта билан фақат олдиндан солган пулимни сарфлайман.",
+          "ru": "С предоплаченной картой тратятся только заранее внесённые деньги."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-sim-karte",
+      "slug": "sim-karte",
+      "term": "die SIM-Karte",
+      "icon": "device-sim",
+      "article": "die",
+      "plural": "die SIM-Karten",
+      "tr": {
+        "uz": "SIM-karta",
+        "uz-Cyrl": "сим-карта",
+        "ru": "сим-карта"
+      },
+      "pron": {
+        "uz": "die zim-kar-te",
+        "uz-Cyrl": "ди зим-кар-те",
+        "ru": "ди зим-кар-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Die neue SIM-Karte kommt per Post.",
+        "tr": {
+          "uz": "Yangi SIM-karta pochta orqali keladi.",
+          "uz-Cyrl": "Янги сим-карта почта орқали келади.",
+          "ru": "Новая сим-карта придёт по почте."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-tarif",
+      "slug": "tarif",
+      "term": "der Tarif",
+      "icon": "receipt",
+      "article": "der",
+      "plural": "die Tarife",
+      "tr": {
+        "uz": "tarif",
+        "uz-Cyrl": "тариф",
+        "ru": "тариф"
+      },
+      "pron": {
+        "uz": "der ta-rif",
+        "uz-Cyrl": "дер та-риф",
+        "ru": "дер та-риф"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Dieser Tarif hat genug Datenvolumen für mich.",
+        "tr": {
+          "uz": "Bu tarifda men uchun yetarli internet hajmi bor.",
+          "uz-Cyrl": "Бу тарифда мен учун етарли интернет ҳажми бор.",
+          "ru": "В этом тарифе мне хватает мобильного интернета."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-datenvolumen",
+      "slug": "datenvolumen",
+      "term": "das Datenvolumen",
+      "icon": "wifi",
+      "article": "das",
+      "plural": "die Datenvolumen",
+      "tr": {
+        "uz": "internet trafigi (hajmi)",
+        "uz-Cyrl": "интернет трафиги (ҳажми)",
+        "ru": "объём мобильного интернета (трафик)"
+      },
+      "pron": {
+        "uz": "das da-ten-vo-lu-men",
+        "uz-Cyrl": "дас да-тен-во-лу-мен",
+        "ru": "дас да-тен-во-лу-мен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Mein Datenvolumen ist schon vor dem Monatsende aufgebraucht.",
+        "tr": {
+          "uz": "Internet trafigim oy oxirigacha tugab qoldi.",
+          "uz-Cyrl": "Интернет трафигим ой охиригача тугаб қолди.",
+          "ru": "Мой трафик закончился ещё до конца месяца."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-welcher-tarif-passt-zu-mir",
+      "slug": "welcher-tarif-passt-zu-mir",
+      "term": "Welcher Tarif passt zu mir?",
+      "icon": "help",
+      "tr": {
+        "uz": "Menga qaysi tarif mos keladi?",
+        "uz-Cyrl": "Менга қайси тариф мос келади?",
+        "ru": "Какой тариф мне подходит?"
+      },
+      "pron": {
+        "uz": "vel-xer ta-rif past tsu mir?",
+        "uz-Cyrl": "вель-хер та-риф паст цу мир?",
+        "ru": "вель-хер та-риф паст цу мир?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Ich telefoniere viel nach Hause, aber brauche wenig Internet.",
+        "tr": {
+          "uz": "Uyga koʻp qoʻngʻiroq qilaman, lekin internet kam kerak.",
+          "uz-Cyrl": "Уйга кўп қўнғироқ қиламан, лекин интернет кам керак.",
+          "ru": "Я много звоню домой, но интернет мне нужен мало."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-mobilfunkanbieter",
+      "slug": "mobilfunkanbieter",
+      "term": "der Mobilfunkanbieter",
+      "icon": "building",
+      "article": "der",
+      "plural": "die Mobilfunkanbieter",
+      "tr": {
+        "uz": "mobil aloqa operatori",
+        "uz-Cyrl": "мобил алоқа оператори",
+        "ru": "оператор мобильной связи"
+      },
+      "pron": {
+        "uz": "der mo-bil-funk-an-bi-ter",
+        "uz-Cyrl": "дер мо-биль-функ-ан-би-тер",
+        "ru": "дер мо-биль-функ-ан-би-тер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Ich möchte den Mobilfunkanbieter wechseln.",
+        "tr": {
+          "uz": "Mobil aloqa operatorini almashtirmoqchiman.",
+          "uz-Cyrl": "Мобил алоқа операторини алмаштирмоқчиман.",
+          "ru": "Я хочу сменить оператора мобильной связи."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-rufnummer",
+      "slug": "rufnummer",
+      "term": "die Rufnummer",
+      "icon": "phone",
+      "article": "die",
+      "plural": "die Rufnummern",
+      "tr": {
+        "uz": "telefon raqami (rasmiy)",
+        "uz-Cyrl": "телефон рақами (расмий)",
+        "ru": "номер телефона (официально)"
+      },
+      "pron": {
+        "uz": "die ruf-num-mer",
+        "uz-Cyrl": "ди руф-нум-мер",
+        "ru": "ди руф-нум-мер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Bitte geben Sie hier Ihre neue Rufnummer an.",
+        "tr": {
+          "uz": "Iltimos, bu yerga yangi telefon raqamingizni yozing.",
+          "uz-Cyrl": "Илтимос, бу ерга янги телефон рақамингизни ёзинг.",
+          "ru": "Пожалуйста, укажите здесь ваш новый номер телефона."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-rufnummernmitnahme",
+      "slug": "rufnummernmitnahme",
+      "term": "die Rufnummernmitnahme",
+      "icon": "arrows-exchange",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "raqamni yangi operatorga olib oʻtish",
+        "uz-Cyrl": "рақамни янги операторга олиб ўтиш",
+        "ru": "перенос номера к новому оператору"
+      },
+      "pron": {
+        "uz": "die ruf-num-mern-mit-na-me",
+        "uz-Cyrl": "ди руф-нум-мерн-мит-на-ме",
+        "ru": "ди руф-нум-мерн-мит-на-ме"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Mit der Rufnummernmitnahme behalte ich meine alte Nummer.",
+        "tr": {
+          "uz": "Raqamni olib oʻtsam, eski raqamim oʻzimda qoladi.",
+          "uz-Cyrl": "Рақамни олиб ўтсам, эски рақамим ўзимда қолади.",
+          "ru": "При переносе номера мой старый номер сохраняется."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-vertragslaufzeit",
+      "slug": "vertragslaufzeit",
+      "term": "die Vertragslaufzeit",
+      "icon": "calendar-event",
+      "article": "die",
+      "plural": "die Vertragslaufzeiten",
+      "tr": {
+        "uz": "shartnoma muddati",
+        "uz-Cyrl": "шартнома муддати",
+        "ru": "срок действия договора"
+      },
+      "pron": {
+        "uz": "die fer-traks-lauf-tsayt",
+        "uz-Cyrl": "ди фер-тракс-лауф-цайт",
+        "ru": "ди фер-тракс-лауф-цайт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Fragen Sie vor der Unterschrift nach der Vertragslaufzeit.",
+        "tr": {
+          "uz": "Imzolashdan oldin shartnoma muddatini soʻrang.",
+          "uz-Cyrl": "Имзолашдан олдин шартнома муддатини сўранг.",
+          "ru": "Перед подписанием спросите о сроке действия договора."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-kundennummer",
+      "slug": "kundennummer",
+      "term": "die Kundennummer",
+      "icon": "id",
+      "article": "die",
+      "plural": "die Kundennummern",
+      "tr": {
+        "uz": "mijoz raqami",
+        "uz-Cyrl": "мижоз рақами",
+        "ru": "номер клиента"
+      },
+      "pron": {
+        "uz": "die kun-den-num-mer",
+        "uz-Cyrl": "ди кун-ден-нум-мер",
+        "ru": "ди кун-ден-нум-мер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Für die Hotline brauche ich meine Kundennummer.",
+        "tr": {
+          "uz": "Qoʻngʻiroq markazi uchun menga mijoz raqamim kerak.",
+          "uz-Cyrl": "Қўнғироқ маркази учун менга мижоз рақамим керак.",
+          "ru": "Для звонка на горячую линию мне нужен мой номер клиента."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-wie-lange-laeuft-der-vertrag",
+      "slug": "wie-lange-laeuft-der-vertrag",
+      "term": "Wie lange läuft der Vertrag?",
+      "icon": "clock",
+      "tr": {
+        "uz": "Shartnoma qancha muddatga tuziladi?",
+        "uz-Cyrl": "Шартнома қанча муддатга тузилади?",
+        "ru": "На какой срок заключается договор?"
+      },
+      "pron": {
+        "uz": "vi lan-ge loyft der fer-trak?",
+        "uz-Cyrl": "ви лан-ге лойфт дер фер-трак?",
+        "ru": "ви лан-ге лойфт дер фер-трак?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Diese Frage stelle ich immer vor der Unterschrift.",
+        "tr": {
+          "uz": "Bu savolni imzolashdan oldin doim beraman.",
+          "uz-Cyrl": "Бу саволни имзолашдан олдин доим бераман.",
+          "ru": "Этот вопрос я всегда задаю перед подписанием."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-router",
+      "slug": "router",
+      "term": "der Router",
+      "icon": "router",
+      "article": "der",
+      "plural": "die Router",
+      "tr": {
+        "uz": "router (internet qurilmasi)",
+        "uz-Cyrl": "роутер (интернет қурилмаси)",
+        "ru": "роутер"
+      },
+      "pron": {
+        "uz": "der ru-ter",
+        "uz-Cyrl": "дер ру-тер",
+        "ru": "дер ру-тер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Wenn das Internet nicht geht, starte ich zuerst den Router neu.",
+        "tr": {
+          "uz": "Internet ishlamasa, avval routerni qayta yoqaman.",
+          "uz-Cyrl": "Интернет ишламаса, аввал роутерни қайта ёқаман.",
+          "ru": "Если интернет не работает, я сначала перезагружаю роутер."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-internetanschluss",
+      "slug": "internetanschluss",
+      "term": "der Internetanschluss",
+      "icon": "wifi",
+      "article": "der",
+      "plural": "die Internetanschlüsse",
+      "tr": {
+        "uz": "uy interneti ulanishi",
+        "uz-Cyrl": "уй интернети уланиши",
+        "ru": "подключение к интернету (домашний интернет)"
+      },
+      "pron": {
+        "uz": "der in-ter-net-an-shlus",
+        "uz-Cyrl": "дер ин-тер-нет-ан-шлус",
+        "ru": "дер ин-тер-нет-ан-шлус"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "In der neuen Wohnung brauchen wir noch einen Internetanschluss.",
+        "tr": {
+          "uz": "Yangi kvartirada bizga hali uy interneti ulanishi kerak.",
+          "uz-Cyrl": "Янги квартирада бизга ҳали уй интернети уланиши керак.",
+          "ru": "В новой квартире нам ещё нужно подключить интернет."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-hotline",
+      "slug": "hotline",
+      "term": "die Hotline",
+      "icon": "phone",
+      "article": "die",
+      "plural": "die Hotlines",
+      "tr": {
+        "uz": "qoʻngʻiroq markazi (yordam liniyasi)",
+        "uz-Cyrl": "қўнғироқ маркази (ёрдам линияси)",
+        "ru": "горячая линия"
+      },
+      "pron": {
+        "uz": "die hot-layn",
+        "uz-Cyrl": "ди хот-лайн",
+        "ru": "ди хот-лайн"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Bei einer Störung rufe ich die Hotline des Anbieters an.",
+        "tr": {
+          "uz": "Nosozlik boʻlsa, operatorning qoʻngʻiroq markaziga qoʻngʻiroq qilaman.",
+          "uz-Cyrl": "Носозлик бўлса, операторнинг қўнғироқ марказига қўнғироқ қиламан.",
+          "ru": "При неполадке я звоню на горячую линию оператора."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-guthaben",
+      "slug": "guthaben",
+      "term": "das Guthaben",
+      "icon": "cash",
+      "article": "das",
+      "plural": "die Guthaben",
+      "tr": {
+        "uz": "hisobdagi pul (balans)",
+        "uz-Cyrl": "ҳисобдаги пул (баланс)",
+        "ru": "баланс (остаток на счёте)"
+      },
+      "pron": {
+        "uz": "das gut-ha-ben",
+        "uz-Cyrl": "дас гут-ха-бен",
+        "ru": "дас гут-ха-бен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Mein Guthaben ist fast leer, ich muss die Karte aufladen.",
+        "tr": {
+          "uz": "Balansimda pul deyarli qolmadi, kartani toʻldirishim kerak.",
+          "uz-Cyrl": "Балансимда пул деярли қолмади, картани тўлдиришим керак.",
+          "ru": "На балансе почти ничего не осталось, нужно пополнить карту."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-roaming",
+      "slug": "roaming",
+      "term": "das Roaming",
+      "icon": "world",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "rouming (chet elda aloqa)",
+        "uz-Cyrl": "роуминг (чет элда алоқа)",
+        "ru": "роуминг"
+      },
+      "pron": {
+        "uz": "das rou-ming",
+        "uz-Cyrl": "дас роу-минг",
+        "ru": "дас роу-минг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Fragen Sie vor der Reise nach den Kosten für Roaming.",
+        "tr": {
+          "uz": "Safardan oldin rouming narxini soʻrang.",
+          "uz-Cyrl": "Сафардан олдин роуминг нархини сўранг.",
+          "ru": "Перед поездкой спросите о стоимости роуминга."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-abofalle",
+      "slug": "abofalle",
+      "term": "die Abofalle",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Abofallen",
+      "tr": {
+        "uz": "obuna tuzogʻi (yashirin pullik obuna)",
+        "uz-Cyrl": "обуна тузоғи (яширин пуллик обуна)",
+        "ru": "ловушка с подпиской (скрытая платная подписка)"
+      },
+      "pron": {
+        "uz": "die a-bo-fal-le",
+        "uz-Cyrl": "ди а-бо-фаль-ле",
+        "ru": "ди а-бо-фаль-ле"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Ein kostenloser Test im Internet kann eine Abofalle sein.",
+        "tr": {
+          "uz": "Internetdagi bepul sinov obuna tuzogʻi boʻlishi mumkin.",
+          "uz-Cyrl": "Интернетдаги бепул синов обуна тузоғи бўлиши мумкин.",
+          "ru": "Бесплатный пробный период в интернете может оказаться ловушкой с подпиской."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-unterschreiben-sie-keinen-vertrag-an-der-haustuer",
+      "slug": "unterschreiben-sie-keinen-vertrag-an-der-haustuer",
+      "term": "Unterschreiben Sie keinen Vertrag an der Haustür!",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Eshik oldida hech qanday shartnomaga imzo chekmang!",
+        "uz-Cyrl": "Эшик олдида ҳеч қандай шартномага имзо чекманг!",
+        "ru": "Не подписывайте договор на пороге дома!"
+      },
+      "pron": {
+        "uz": "un-ter-shray-ben zi kay-nen fer-trak an der haus-tyur!",
+        "uz-Cyrl": "ун-тер-шрай-бен зи кай-нен фер-трак ан дер хаус-тюр!",
+        "ru": "ун-тер-шрай-бен зи кай-нен фер-трак ан дер хаус-тюр!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Nehmen Sie das Angebot mit und lesen Sie es zu Hause in Ruhe.",
+        "tr": {
+          "uz": "Taklifni olib, uyda xotirjam oʻqing.",
+          "uz-Cyrl": "Таклифни олиб, уйда хотиржам ўқинг.",
+          "ru": "Возьмите предложение с собой и спокойно прочитайте его дома."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aloqa-shartnoma-kleingedruckte",
+      "slug": "kleingedruckte",
+      "term": "das Kleingedruckte",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "mayda harfli shartlar",
+        "uz-Cyrl": "майда ҳарфли шартлар",
+        "ru": "мелкий шрифт (условия договора)"
+      },
+      "pron": {
+        "uz": "das klayn-ge-druk-te",
+        "uz-Cyrl": "дас клайн-ге-друк-те",
+        "ru": "дас клайн-ге-друк-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aloqa-shartnoma",
+      "example": {
+        "term": "Lesen Sie vor der Unterschrift immer das Kleingedruckte.",
+        "tr": {
+          "uz": "Imzolashdan oldin doim mayda harfli shartlarni oʻqing.",
+          "uz-Cyrl": "Имзолашдан олдин доим майда ҳарфли шартларни ўқинг.",
+          "ru": "Перед подписанием всегда читайте мелкий шрифт."
         }
       },
       "safety": true,
