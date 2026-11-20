@@ -3,7 +3,7 @@ import {
   IconMoodSmile, IconMoonStars, IconStethoscope, IconSun, IconSunrise, IconSunset2, IconTools, IconToolsKitchen2, IconUser, IconUsers, IconWorld,
   IconCheck, IconChefHat, IconCoffee, IconDog, IconFlag, IconGenderFemale, IconGrape, IconHanger, IconLeaf, IconMan, IconMap, IconMeat, IconMilk, IconMoodKid, IconMusic, IconNumber1, IconPaw, IconRadio, IconRipple, IconSalad, IconSquare, IconToiletPaper, IconTrain, IconWoman,
   IconAbc, IconAlertTriangle, IconApple, IconArmchair, IconBackpack, IconBook, IconBowlChopsticks, IconBriefcase, IconBuildingSkyscraper, IconClock, IconCookie, IconDoor, IconDoorEnter, IconDroplet, IconHome, IconLanguage, IconMountain, IconPig, IconPlant, IconRun, IconShirt, IconSmokingNo, IconSoup, IconVolume, IconWaveSine,
-  IconFireExtinguisher, IconFirstAidKit, IconHelmet, IconShoe, IconAlertOctagon, IconBeach, IconRepeat, IconHelp, IconEye, IconThermometer, IconMoodSad, IconFileText, IconPill, IconHammer, IconLadder, IconRuler, IconPlug, IconToggleLeft, IconBulb, IconPower, IconBath, IconBed, IconWheelchair, IconHeartbeat, IconReceipt, IconGlass, IconTrash, IconKey, IconBus, IconBike, IconEgg, IconTruck, IconCar, IconPhone, IconCamera, IconPackage, IconMail, IconPaperclip, IconInbox, IconLock, IconBuildingBank, IconCreditCard, IconCash, IconArrowsExchange, IconShoppingCart, IconMailbox, IconRouter, IconWifi, IconDeviceSim, IconDeviceMobile,
+  IconFireExtinguisher, IconFirstAidKit, IconHelmet, IconShoe, IconAlertOctagon, IconBeach, IconRepeat, IconHelp, IconEye, IconThermometer, IconMoodSad, IconFileText, IconPill, IconHammer, IconLadder, IconRuler, IconPlug, IconToggleLeft, IconBulb, IconPower, IconBath, IconBed, IconWheelchair, IconHeartbeat, IconReceipt, IconGlass, IconTrash, IconKey, IconBus, IconBike, IconEgg, IconTruck, IconCar, IconPhone, IconCamera, IconPackage, IconMail, IconPaperclip, IconInbox, IconLock, IconBuildingBank, IconCreditCard, IconCash, IconArrowsExchange, IconShoppingCart, IconMailbox, IconRouter, IconWifi, IconDeviceSim, IconDeviceMobile, IconSwimming, IconTicket, IconBooks, IconLifebuoy, IconBarbell, IconBallFootball,
   type Icon
 } from '@tabler/icons-react'
 
@@ -131,5 +131,11 @@ export const LESSON_ICONS: Record<string, Icon> = {
   router: IconRouter,
   wifi: IconWifi,
   'device-sim': IconDeviceSim,
-  'device-mobile': IconDeviceMobile
+  'device-mobile': IconDeviceMobile,
+  swimming: IconSwimming,
+  ticket: IconTicket,
+  books: IconBooks,
+  lifebuoy: IconLifebuoy,
+  barbell: IconBarbell,
+  'ball-football': IconBallFootball
 }
