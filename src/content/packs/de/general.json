@@ -3880,6 +3880,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "oila-maktab",
+      "title": {
+        "uz": "Bolalar bogʻchasi va maktab",
+        "uz-Cyrl": "Болалар боғчаси ва мактаб",
+        "ru": "Детский сад и школа"
+      },
+      "order": 23,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Tarbiyachi",
+              "uz-Cyrl": "Тарбиячи",
+              "ru": "Воспитательница"
+            },
+            "de": "Guten Morgen! Schön, dass Sie da sind. Wie geht es Ihrer Tochter heute?",
+            "tr": {
+              "uz": "Xayrli tong! Kelganingizdan xursandmiz. Qizingiz bugun qalay?",
+              "uz-Cyrl": "Хайрли тонг! Келганингиздан хурсандмиз. Қизингиз бугун қалай?",
+              "ru": "Доброе утро! Хорошо, что вы пришли. Как сегодня ваша дочь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Guten Morgen. Sie ist etwas aufgeregt, aber sie freut sich auf die Kita.",
+            "tr": {
+              "uz": "Xayrli tong. U biroz hayajonda, lekin bogʻchaga kelganidan xursand.",
+              "uz-Cyrl": "Хайрли тонг. У бироз ҳаяжонда, лекин боғчага келганидан хурсанд.",
+              "ru": "Доброе утро. Она немного волнуется, но рада идти в детский сад."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Tarbiyachi",
+              "uz-Cyrl": "Тарбиячи",
+              "ru": "Воспитательница"
+            },
+            "de": "Das ist am Anfang ganz normal. Wer holt sie heute Nachmittag ab?",
+            "tr": {
+              "uz": "Boshida bu odatiy hol. Bugun tushdan keyin uni kim olib ketadi?",
+              "uz-Cyrl": "Бошида бу одатий ҳол. Бугун тушдан кейин уни ким олиб кетади?",
+              "ru": "Вначале это совершенно нормально. Кто сегодня после обеда её заберёт?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Heute holt mein Bruder sie ab. Er ist auch unser Notfallkontakt.",
+            "tr": {
+              "uz": "Bugun uni akam olib ketadi. U bizning favqulodda aloqa uchun odamimiz ham.",
+              "uz-Cyrl": "Бугун уни акам олиб кетади. У бизнинг фавқулодда алоқа учун одамимиз ҳам.",
+              "ru": "Сегодня её заберёт мой брат. Он же наш контакт на экстренный случай."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Tarbiyachi",
+              "uz-Cyrl": "Тарбиячи",
+              "ru": "Воспитательница"
+            },
+            "de": "Gut, dass Sie das sagen. Bitte schreiben Sie seinen Namen hier in die Liste.",
+            "tr": {
+              "uz": "Aytganingiz yaxshi boʻldi. Iltimos, uning ismini mana shu roʻyxatga yozing.",
+              "uz-Cyrl": "Айтганингиз яхши бўлди. Илтимос, унинг исмини мана шу рўйхатга ёзинг.",
+              "ru": "Хорошо, что вы сказали. Пожалуйста, впишите его имя вот в этот список."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "In die Liste? Kein Problem, ich schreibe seinen Namen gleich auf.",
+            "tr": {
+              "uz": "Roʻyxatgami? Muammo yoʻq, uning ismini hozir yozib qoʻyaman.",
+              "uz-Cyrl": "Рўйхатгами? Муаммо йўқ, унинг исмини ҳозир ёзиб қўяман.",
+              "ru": "В список? Без проблем, сейчас запишу его имя."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -17936,6 +18029,660 @@
         }
       },
       "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-kita",
+      "slug": "kita",
+      "term": "die Kita",
+      "icon": "mood-kid",
+      "article": "die",
+      "plural": "die Kitas",
+      "tr": {
+        "uz": "bolalar bogʻchasi",
+        "uz-Cyrl": "болалар боғчаси",
+        "ru": "детский сад"
+      },
+      "pron": {
+        "uz": "die ki-ta",
+        "uz-Cyrl": "ди ки-та",
+        "ru": "ди ки-та"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Unsere Tochter geht seit Montag in die Kita.",
+        "tr": {
+          "uz": "Qizimiz dushanbadan beri bogʻchaga boryapti.",
+          "uz-Cyrl": "Қизимиз душанбадан бери боғчага боряпти.",
+          "ru": "Наша дочь с понедельника ходит в детский сад."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-kitaplatz",
+      "slug": "kitaplatz",
+      "term": "der Kitaplatz",
+      "icon": "home",
+      "article": "der",
+      "plural": "die Kitaplätze",
+      "tr": {
+        "uz": "bogʻchadan joy",
+        "uz-Cyrl": "боғчадан жой",
+        "ru": "место в детском саду"
+      },
+      "pron": {
+        "uz": "der ki-ta-plats",
+        "uz-Cyrl": "дер ки-та-плац",
+        "ru": "дер ки-та-плац"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Wir suchen noch einen Kitaplatz in unserer Nähe.",
+        "tr": {
+          "uz": "Biz hali uyimizga yaqin bogʻchadan joy qidiryapmiz.",
+          "uz-Cyrl": "Биз ҳали уйимизга яқин боғчадан жой қидиряпмиз.",
+          "ru": "Мы ещё ищем место в детском саду рядом с домом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-erzieherin",
+      "slug": "erzieherin",
+      "term": "die Erzieherin",
+      "icon": "woman",
+      "article": "die",
+      "plural": "die Erzieherinnen",
+      "tr": {
+        "uz": "tarbiyachi (ayol)",
+        "uz-Cyrl": "тарбиячи (аёл)",
+        "ru": "воспитательница"
+      },
+      "pron": {
+        "uz": "die er-tsi-e-rin",
+        "uz-Cyrl": "ди эр-ци-э-рин",
+        "ru": "ди эр-ци-э-рин"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Die Erzieherin erzählt mir, wie der Tag war.",
+        "tr": {
+          "uz": "Tarbiyachi menga kun qanday oʻtganini aytib beradi.",
+          "uz-Cyrl": "Тарбиячи менга кун қандай ўтганини айтиб беради.",
+          "ru": "Воспитательница рассказывает мне, как прошёл день."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-betreuung",
+      "slug": "betreuung",
+      "term": "die Betreuung",
+      "icon": "heart-handshake",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "bolaga qarash (parvarish)",
+        "uz-Cyrl": "болага қараш (парвариш)",
+        "ru": "присмотр за ребёнком"
+      },
+      "pron": {
+        "uz": "die be-troy-ung",
+        "uz-Cyrl": "ди бе-трой-унг",
+        "ru": "ди бе-трой-унг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Bis wann dauert die Betreuung am Nachmittag?",
+        "tr": {
+          "uz": "Tushdan keyin bolaga qarash soat nechagacha davom etadi?",
+          "uz-Cyrl": "Тушдан кейин болага қараш соат нечагача давом этади?",
+          "ru": "До скольких длится присмотр после обеда?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-notfallkontakt",
+      "slug": "notfallkontakt",
+      "term": "der Notfallkontakt",
+      "icon": "phone",
+      "article": "der",
+      "plural": "die Notfallkontakte",
+      "tr": {
+        "uz": "favqulodda aloqa (shoshilinch holatda qoʻngʻiroq qilinadigan odam)",
+        "uz-Cyrl": "фавқулодда алоқа (шошилинч ҳолатда қўнғироқ қилинадиган одам)",
+        "ru": "контакт на экстренный случай"
+      },
+      "pron": {
+        "uz": "der not-fal-kon-takt",
+        "uz-Cyrl": "дер нот-фаль-кон-такт",
+        "ru": "дер нот-фаль-кон-такт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Die Kita braucht von uns noch einen zweiten Notfallkontakt.",
+        "tr": {
+          "uz": "Bogʻcha bizdan yana bitta favqulodda aloqa uchun odamni soʻrayapti.",
+          "uz-Cyrl": "Боғча биздан яна битта фавқулодда алоқа учун одамни сўраяпти.",
+          "ru": "Детскому саду нужен от нас ещё один контакт на экстренный случай."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-ich-hole-mein-kind-heute-etwas-spaeter-ab",
+      "slug": "ich-hole-mein-kind-heute-etwas-spaeter-ab",
+      "term": "Ich hole mein Kind heute etwas später ab.",
+      "icon": "clock",
+      "tr": {
+        "uz": "Bugun bolamni biroz kechroq olib ketaman.",
+        "uz-Cyrl": "Бугун боламни бироз кечроқ олиб кетаман.",
+        "ru": "Сегодня я заберу ребёнка немного позже."
+      },
+      "pron": {
+        "uz": "ix ho-le mayn kint hoy-te et-vas shpe-ter ap.",
+        "uz-Cyrl": "их хо-ле майн кинт хой-те эт-вас шпе-тер ап.",
+        "ru": "их хо-ле майн кинт хой-те эт-вас шпе-тер ап."
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Ich rufe die Kita vorher an.",
+        "tr": {
+          "uz": "Bogʻchaga oldindan qoʻngʻiroq qilaman.",
+          "uz-Cyrl": "Боғчага олдиндан қўнғироқ қиламан.",
+          "ru": "Я заранее позвоню в детский сад."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-grundschule",
+      "slug": "grundschule",
+      "term": "die Grundschule",
+      "icon": "building",
+      "article": "die",
+      "plural": "die Grundschulen",
+      "tr": {
+        "uz": "boshlangʻich maktab",
+        "uz-Cyrl": "бошланғич мактаб",
+        "ru": "начальная школа"
+      },
+      "pron": {
+        "uz": "die grunt-shu-le",
+        "uz-Cyrl": "ди грунт-шу-ле",
+        "ru": "ди грунт-шу-ле"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Nach dem Sommer kommt unser Sohn in die Grundschule.",
+        "tr": {
+          "uz": "Yozdan keyin oʻgʻlimiz boshlangʻich maktabga boradi.",
+          "uz-Cyrl": "Ёздан кейин ўғлимиз бошланғич мактабга боради.",
+          "ru": "После лета наш сын пойдёт в начальную школу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-schulanmeldung",
+      "slug": "schulanmeldung",
+      "term": "die Schulanmeldung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Schulanmeldungen",
+      "tr": {
+        "uz": "maktabga roʻyxatdan oʻtkazish",
+        "uz-Cyrl": "мактабга рўйхатдан ўтказиш",
+        "ru": "запись в школу"
+      },
+      "pron": {
+        "uz": "die shul-an-mel-dung",
+        "uz-Cyrl": "ди шуль-ан-мель-дунг",
+        "ru": "ди шуль-ан-мель-дунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Für die Schulanmeldung brauche ich einen Termin.",
+        "tr": {
+          "uz": "Maktabga roʻyxatdan oʻtkazish uchun menga uchrashuv vaqti kerak.",
+          "uz-Cyrl": "Мактабга рўйхатдан ўтказиш учун менга учрашув вақти керак.",
+          "ru": "Чтобы записать ребёнка в школу, мне нужно назначить встречу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-klassenlehrerin",
+      "slug": "klassenlehrerin",
+      "term": "die Klassenlehrerin",
+      "icon": "woman",
+      "article": "die",
+      "plural": "die Klassenlehrerinnen",
+      "tr": {
+        "uz": "sinf rahbari (ayol)",
+        "uz-Cyrl": "синф раҳбари (аёл)",
+        "ru": "классная руководительница"
+      },
+      "pron": {
+        "uz": "die kla-sen-le-re-rin",
+        "uz-Cyrl": "ди кла-сен-ле-ре-рин",
+        "ru": "ди кла-сен-ле-ре-рин"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Die Klassenlehrerin hat uns eine Nachricht geschrieben.",
+        "tr": {
+          "uz": "Sinf rahbari bizga xabar yozdi.",
+          "uz-Cyrl": "Синф раҳбари бизга хабар ёзди.",
+          "ru": "Классная руководительница написала нам сообщение."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-schulranzen",
+      "slug": "schulranzen",
+      "term": "der Schulranzen",
+      "icon": "backpack",
+      "article": "der",
+      "plural": "die Schulranzen",
+      "tr": {
+        "uz": "maktab sumkasi (ryukzak)",
+        "uz-Cyrl": "мактаб сумкаси (рюкзак)",
+        "ru": "школьный ранец"
+      },
+      "pron": {
+        "uz": "der shul-ran-tsen",
+        "uz-Cyrl": "дер шуль-ран-цен",
+        "ru": "дер шуль-ран-цен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Wir packen den Schulranzen schon am Abend.",
+        "tr": {
+          "uz": "Maktab sumkasini kechqurunoq yigʻib qoʻyamiz.",
+          "uz-Cyrl": "Мактаб сумкасини кечқуруноқ йиғиб қўямиз.",
+          "ru": "Мы собираем ранец ещё вечером."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-ferien",
+      "slug": "ferien",
+      "term": "die Ferien",
+      "icon": "beach",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "taʼtil (maktab taʼtili)",
+        "uz-Cyrl": "таътил (мактаб таътили)",
+        "ru": "каникулы"
+      },
+      "pron": {
+        "uz": "die fe-ri-en",
+        "uz-Cyrl": "ди фе-ри-ен",
+        "ru": "ди фе-ри-ен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "In den Ferien ist die Schule geschlossen.",
+        "tr": {
+          "uz": "Taʼtilda maktab yopiq boʻladi.",
+          "uz-Cyrl": "Таътилда мактаб ёпиқ бўлади.",
+          "ru": "На каникулах школа закрыта."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-darf-ich-kurz-mit-der-lehrerin-sprechen",
+      "slug": "darf-ich-kurz-mit-der-lehrerin-sprechen",
+      "term": "Darf ich kurz mit der Lehrerin sprechen?",
+      "icon": "messages",
+      "tr": {
+        "uz": "Oʻqituvchi bilan qisqa gaplashsam boʻladimi?",
+        "uz-Cyrl": "Ўқитувчи билан қисқа гаплашсам бўладими?",
+        "ru": "Можно мне коротко поговорить с учительницей?"
+      },
+      "pron": {
+        "uz": "darf ix kurts mit der le-re-rin shpre-xen?",
+        "uz-Cyrl": "дарф их курц мит дер ле-ре-рин шпре-хен?",
+        "ru": "дарф их курц мит дер ле-ре-рин шпре-хен?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Es geht um die Hausaufgaben meines Sohnes.",
+        "tr": {
+          "uz": "Gap oʻgʻlimning uy vazifalari haqida.",
+          "uz-Cyrl": "Гап ўғлимнинг уй вазифалари ҳақида.",
+          "ru": "Речь идёт о домашних заданиях моего сына."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-elternabend",
+      "slug": "elternabend",
+      "term": "der Elternabend",
+      "icon": "users",
+      "article": "der",
+      "plural": "die Elternabende",
+      "tr": {
+        "uz": "ota-onalar majlisi",
+        "uz-Cyrl": "ота-оналар мажлиси",
+        "ru": "родительское собрание"
+      },
+      "pron": {
+        "uz": "der el-tern-a-bent",
+        "uz-Cyrl": "дер эль-терн-а-бент",
+        "ru": "дер эль-терн-а-бент"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Am Donnerstag ist Elternabend in der Schule.",
+        "tr": {
+          "uz": "Payshanba kuni maktabda ota-onalar majlisi boʻladi.",
+          "uz-Cyrl": "Пайшанба куни мактабда ота-оналар мажлиси бўлади.",
+          "ru": "В четверг в школе родительское собрание."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-elterngespraech",
+      "slug": "elterngespraech",
+      "term": "das Elterngespräch",
+      "icon": "message-circle",
+      "article": "das",
+      "plural": "die Elterngespräche",
+      "tr": {
+        "uz": "oʻqituvchi va ota-ona suhbati (yakkama-yakka)",
+        "uz-Cyrl": "ўқитувчи ва ота-она суҳбати (яккама-якка)",
+        "ru": "беседа учителя с родителями (индивидуальная)"
+      },
+      "pron": {
+        "uz": "das el-tern-ge-shprex",
+        "uz-Cyrl": "дас эль-терн-ге-шпрех",
+        "ru": "дас эль-терн-ге-шпрех"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Die Lehrerin möchte ein Elterngespräch mit uns führen.",
+        "tr": {
+          "uz": "Oʻqituvchi biz bilan suhbat oʻtkazmoqchi.",
+          "uz-Cyrl": "Ўқитувчи биз билан суҳбат ўтказмоқчи.",
+          "ru": "Учительница хочет провести с нами беседу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-elternbrief",
+      "slug": "elternbrief",
+      "term": "der Elternbrief",
+      "icon": "mail",
+      "article": "der",
+      "plural": "die Elternbriefe",
+      "tr": {
+        "uz": "ota-onalarga xat (maktab yoki bogʻchadan)",
+        "uz-Cyrl": "ота-оналарга хат (мактаб ёки боғчадан)",
+        "ru": "письмо для родителей (из школы или детского сада)"
+      },
+      "pron": {
+        "uz": "der el-tern-brif",
+        "uz-Cyrl": "дер эль-терн-бриф",
+        "ru": "дер эль-терн-бриф"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Bitte lesen Sie den Elternbrief und unterschreiben Sie ihn.",
+        "tr": {
+          "uz": "Iltimos, ota-onalarga yozilgan xatni oʻqing va imzolang.",
+          "uz-Cyrl": "Илтимос, ота-оналарга ёзилган хатни ўқинг ва имзоланг.",
+          "ru": "Пожалуйста, прочитайте письмо для родителей и подпишите его."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-hort",
+      "slug": "hort",
+      "term": "der Hort",
+      "icon": "mood-smile",
+      "article": "der",
+      "plural": "die Horte",
+      "tr": {
+        "uz": "darsdan keyingi bolalar guruhi",
+        "uz-Cyrl": "дарсдан кейинги болалар гуруҳи",
+        "ru": "группа продлённого дня"
+      },
+      "pron": {
+        "uz": "der hort",
+        "uz-Cyrl": "дер хорт",
+        "ru": "дер хорт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Nach dem Unterricht geht meine Tochter in den Hort.",
+        "tr": {
+          "uz": "Darsdan keyin qizim bolalar guruhiga boradi.",
+          "uz-Cyrl": "Дарсдан кейин қизим болалар гуруҳига боради.",
+          "ru": "После уроков моя дочь идёт в группу продлённого дня."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-kinderarzt",
+      "slug": "kinderarzt",
+      "term": "der Kinderarzt",
+      "icon": "stethoscope",
+      "article": "der",
+      "plural": "die Kinderärzte",
+      "tr": {
+        "uz": "bolalar shifokori (pediatr)",
+        "uz-Cyrl": "болалар шифокори (педиатр)",
+        "ru": "детский врач (педиатр)"
+      },
+      "pron": {
+        "uz": "der kin-der-artst",
+        "uz-Cyrl": "дер кин-дер-арцт",
+        "ru": "дер кин-дер-арцт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Mit Fieber bringe ich mein Kind zum Kinderarzt.",
+        "tr": {
+          "uz": "Isitmasi boʻlsa, bolamni bolalar shifokoriga olib boraman.",
+          "uz-Cyrl": "Иситмаси бўлса, боламни болалар шифокорига олиб бораман.",
+          "ru": "При температуре я веду ребёнка к детскому врачу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-schulweg",
+      "slug": "schulweg",
+      "term": "der Schulweg",
+      "icon": "map",
+      "article": "der",
+      "plural": "die Schulwege",
+      "tr": {
+        "uz": "maktabga boradigan yoʻl",
+        "uz-Cyrl": "мактабга борадиган йўл",
+        "ru": "дорога в школу"
+      },
+      "pron": {
+        "uz": "der shul-vek",
+        "uz-Cyrl": "дер шуль-век",
+        "ru": "дер шуль-век"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Wir üben den Schulweg zusammen, bevor die Schule beginnt.",
+        "tr": {
+          "uz": "Maktab boshlanishidan oldin maktab yoʻlini birga mashq qilamiz.",
+          "uz-Cyrl": "Мактаб бошланишидан олдин мактаб йўлини бирга машқ қиламиз.",
+          "ru": "До начала учёбы мы вместе отрабатываем дорогу в школу."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-zebrastreifen",
+      "slug": "zebrastreifen",
+      "term": "der Zebrastreifen",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Zebrastreifen",
+      "tr": {
+        "uz": "piyodalar oʻtish joyi (zebra)",
+        "uz-Cyrl": "пиёдалар ўтиш жойи (зебра)",
+        "ru": "пешеходный переход (зебра)"
+      },
+      "pron": {
+        "uz": "der tse-bra-shtray-fen",
+        "uz-Cyrl": "дер це-бра-штрай-фен",
+        "ru": "дер це-бра-штрай-фен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Am Zebrastreifen schauen wir immer nach links und rechts.",
+        "tr": {
+          "uz": "Piyodalar oʻtish joyida doim chapga va oʻngga qaraymiz.",
+          "uz-Cyrl": "Пиёдалар ўтиш жойида доим чапга ва ўнгга қараймиз.",
+          "ru": "На пешеходном переходе мы всегда смотрим налево и направо."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-oila-maktab-mein-kind-ist-heute-krank",
+      "slug": "mein-kind-ist-heute-krank",
+      "term": "Mein Kind ist heute krank.",
+      "icon": "thermometer",
+      "tr": {
+        "uz": "Bolam bugun kasal.",
+        "uz-Cyrl": "Болам бугун касал.",
+        "ru": "Мой ребёнок сегодня болеет."
+      },
+      "pron": {
+        "uz": "mayn kint ist hoy-te krank.",
+        "uz-Cyrl": "майн кинт ист хой-те кранк.",
+        "ru": "майн кинт ист хой-те кранк."
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "oila-maktab",
+      "example": {
+        "term": "Deshalb bleibt es heute zu Hause.",
+        "tr": {
+          "uz": "Shuning uchun u bugun uyda qoladi.",
+          "uz-Cyrl": "Шунинг учун у бугун уйда қолади.",
+          "ru": "Поэтому сегодня ребёнок останется дома."
+        }
+      },
+      "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
     }
