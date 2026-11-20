@@ -4852,6 +4852,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Du siehst müde aus. Was ist los?",
+            "tr": {
+              "uz": "Charchagan koʻrinasan. Nima boʻldi?",
+              "uz-Cyrl": "Чарчаган кўринасан. Нима бўлди?",
+              "ru": "У тебя усталый вид. Что случилось?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Meine Nachbarn haben bis zwei Uhr nachts laut Musik gehört.",
+            "tr": {
+              "uz": "Qoʻshnilarim tungi soat ikkigacha baland ovozda musiqa tinglashdi.",
+              "uz-Cyrl": "Қўшниларим тунги соат иккигача баланд овозда мусиқа тинглашди.",
+              "ru": "Мои соседи до двух часов ночи громко слушали музыку."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Schon wieder? Hast du schon einmal mit ihnen darüber gesprochen?",
+            "tr": {
+              "uz": "Yana-ya? Ular bilan bu haqda hech gaplashganmisan?",
+              "uz-Cyrl": "Яна-я? Улар билан бу ҳақда ҳеч гаплашганмисан?",
+              "ru": "Опять? С ними уже был разговор об этом?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, noch nie. Ehrlich gesagt weiß ich nicht, was ich sagen soll.",
+            "tr": {
+              "uz": "Yoʻq, hech qachon. Rostini aytsam, nima deyishni bilmayman.",
+              "uz-Cyrl": "Йўқ, ҳеч қачон. Ростини айтсам, нима дейишни билмайман.",
+              "ru": "Нет, ни разу. Честно говоря, не знаю, что сказать."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Sag einfach freundlich: Könnten Sie bitte etwas leiser sein? Und wenn das nicht hilft, sprich mit der Hausverwaltung.",
+            "tr": {
+              "uz": "Shunchaki xushmuomalalik bilan ayt: Iltimos, biroz jimroq boʻlolmaysizmi? Bu yordam bermasa, uy boshqaruvi bilan gaplash.",
+              "uz-Cyrl": "Шунчаки хушмуомалалик билан айт: Илтимос, бироз жимроқ бўлолмайсизми? Бу ёрдам бермаса, уй бошқаруви билан гаплаш.",
+              "ru": "Просто вежливо скажи: «Не могли бы вы быть немного потише?» А если не поможет, поговори с управляющей компанией."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mit der Hausverwaltung? Gut, aber zuerst klingle ich heute Abend freundlich bei den Nachbarn.",
+            "tr": {
+              "uz": "Uy boshqaruvi bilanmi? Yaxshi, lekin avval bugun kechqurun qoʻshnilarning eshigini xushmuomalalik bilan chalaman.",
+              "uz-Cyrl": "Уй бошқаруви биланми? Яхши, лекин аввал бугун кечқурун қўшниларнинг эшигини хушмуомалалик билан чаламан.",
+              "ru": "С управляющей компанией? Хорошо, но сначала сегодня вечером вежливо позвоню в дверь соседям."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
