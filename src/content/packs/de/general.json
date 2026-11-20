@@ -3704,6 +3704,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "shifokor",
+      "title": {
+        "uz": "Shifokor qabulida",
+        "uz-Cyrl": "Шифокор қабулида",
+        "ru": "На приёме у врача"
+      },
+      "order": 22,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Shifokor ayol",
+              "uz-Cyrl": "Шифокор аёл",
+              "ru": "Врач"
+            },
+            "de": "Guten Tag. Was führt Sie zu mir?",
+            "tr": {
+              "uz": "Xayrli kun. Sizni nima bezovta qilyapti?",
+              "uz-Cyrl": "Хайрли кун. Сизни нима безовта қиляпти?",
+              "ru": "Добрый день. Что вас ко мне привело?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Guten Tag. Mein Rücken tut seit einer Woche weh, vor allem bei der Arbeit.",
+            "tr": {
+              "uz": "Xayrli kun. Bir haftadan beri belim ogʻriyapti, ayniqsa ishda.",
+              "uz-Cyrl": "Хайрли кун. Бир ҳафтадан бери белим оғрияпти, айниқса ишда.",
+              "ru": "Добрый день. Уже неделю болит спина, особенно на работе."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Shifokor ayol",
+              "uz-Cyrl": "Шифокор аёл",
+              "ru": "Врач"
+            },
+            "de": "Ich möchte Sie kurz untersuchen. Nehmen Sie schon Medikamente?",
+            "tr": {
+              "uz": "Sizni qisqa koʻrikdan oʻtkazmoqchiman. Hozir biror dori ichyapsizmi?",
+              "uz-Cyrl": "Сизни қисқа кўрикдан ўтказмоқчиман. Ҳозир бирор дори ичяпсизми?",
+              "ru": "Я хочу вас коротко осмотреть. Вы уже принимаете какие-нибудь лекарства?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nur ein Schmerzmittel aus der Apotheke, aber es hilft kaum.",
+            "tr": {
+              "uz": "Faqat dorixonadan olingan ogʻriq qoldiruvchi dori, lekin u deyarli yordam bermayapti.",
+              "uz-Cyrl": "Фақат дорихонадан олинган оғриқ қолдирувчи дори, лекин у деярли ёрдам бермаяпти.",
+              "ru": "Только обезболивающее из аптеки, но оно почти не помогает."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Shifokor ayol",
+              "uz-Cyrl": "Шифокор аёл",
+              "ru": "Врач"
+            },
+            "de": "Gut. Ich verschreibe Ihnen Physiotherapie. Außerdem schreibe ich Sie die ganze Woche krank.",
+            "tr": {
+              "uz": "Yaxshi. Sizga fizioterapiya yozib beraman. Bundan tashqari, butun hafta uchun kasallik varaqasi beraman.",
+              "uz-Cyrl": "Яхши. Сизга физиотерапия ёзиб бераман. Бундан ташқари, бутун ҳафта учун касаллик варақаси бераман.",
+              "ru": "Хорошо. Я выпишу вам физиотерапию. Кроме того, выдам больничный на всю неделю."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Die ganze Woche? Danke, dann sage ich heute noch meinem Chef Bescheid.",
+            "tr": {
+              "uz": "Butun haftagami? Rahmat, unda bugunoq boshligʻimga xabar beraman.",
+              "uz-Cyrl": "Бутун ҳафтагами? Раҳмат, унда бугуноқ бошлиғимга хабар бераман.",
+              "ru": "На всю неделю? Спасибо, тогда сегодня же сообщу начальнику."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -17114,6 +17207,654 @@
       "safety": true,
       "status": "review",
       "source": "Claude yozdi (2026-11-19); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-facharzt",
+      "slug": "facharzt",
+      "term": "der Facharzt",
+      "icon": "stethoscope",
+      "article": "der",
+      "plural": "die Fachärzte",
+      "tr": {
+        "uz": "mutaxassis shifokor",
+        "uz-Cyrl": "мутахассис шифокор",
+        "ru": "врач-специалист"
+      },
+      "pron": {
+        "uz": "der fax-arts",
+        "uz-Cyrl": "дер фах-арц",
+        "ru": "дер фах-арц"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Mein Hausarzt schickt mich zu einem Facharzt.",
+        "tr": {
+          "uz": "Oilaviy shifokorim meni mutaxassis shifokorga yuboradi.",
+          "uz-Cyrl": "Оилавий шифокорим мени мутахассис шифокорга юборади.",
+          "ru": "Мой семейный врач направляет меня к врачу-специалисту."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-untersuchung",
+      "slug": "untersuchung",
+      "term": "die Untersuchung",
+      "icon": "stethoscope",
+      "article": "die",
+      "plural": "die Untersuchungen",
+      "tr": {
+        "uz": "tibbiy koʻrik (tekshiruv)",
+        "uz-Cyrl": "тиббий кўрик (текширув)",
+        "ru": "обследование, осмотр"
+      },
+      "pron": {
+        "uz": "die un-ter-zu-xung",
+        "uz-Cyrl": "ди ун-тер-зу-хунг",
+        "ru": "ди ун-тер-зу-хунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Die Untersuchung dauert nicht lange.",
+        "tr": {
+          "uz": "Koʻrik uzoq davom etmaydi.",
+          "uz-Cyrl": "Кўрик узоқ давом этмайди.",
+          "ru": "Осмотр длится недолго."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-symptom",
+      "slug": "symptom",
+      "term": "das Symptom",
+      "icon": "thermometer",
+      "article": "das",
+      "plural": "die Symptome",
+      "tr": {
+        "uz": "kasallik belgisi (simptom)",
+        "uz-Cyrl": "касаллик белгиси (симптом)",
+        "ru": "симптом"
+      },
+      "pron": {
+        "uz": "das zyump-tom",
+        "uz-Cyrl": "дас зюмп-том",
+        "ru": "дас зюмп-том"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Beschreiben Sie bitte Ihre Symptome genau.",
+        "tr": {
+          "uz": "Iltimos, kasallik belgilaringizni aniq tasvirlab bering.",
+          "uz-Cyrl": "Илтимос, касаллик белгиларингизни аниқ тасвирлаб беринг.",
+          "ru": "Пожалуйста, точно опишите ваши симптомы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-krankengeschichte",
+      "slug": "krankengeschichte",
+      "term": "die Krankengeschichte",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Krankengeschichten",
+      "tr": {
+        "uz": "kasallik tarixi",
+        "uz-Cyrl": "касаллик тарихи",
+        "ru": "история болезни"
+      },
+      "pron": {
+        "uz": "die kran-ken-ge-shix-te",
+        "uz-Cyrl": "ди кран-кен-ге-ших-те",
+        "ru": "ди кран-кен-ге-ших-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Die Ärztin fragt nach meiner Krankengeschichte.",
+        "tr": {
+          "uz": "Shifokor ayol kasallik tarixim haqida soʻraydi.",
+          "uz-Cyrl": "Шифокор аёл касаллик тарихим ҳақида сўрайди.",
+          "ru": "Врач спрашивает о моей истории болезни."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-untersuchen",
+      "slug": "untersuchen",
+      "term": "untersuchen",
+      "icon": "stethoscope",
+      "tr": {
+        "uz": "tekshirmoq, koʻrikdan oʻtkazmoq",
+        "uz-Cyrl": "текширмоқ, кўрикдан ўтказмоқ",
+        "ru": "обследовать, осматривать"
+      },
+      "pron": {
+        "uz": "un-ter-zu-xen",
+        "uz-Cyrl": "ун-тер-зу-хен",
+        "ru": "ун-тер-зу-хен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Der Arzt muss Ihr Knie genauer untersuchen.",
+        "tr": {
+          "uz": "Shifokor tizzangizni sinchiklab tekshirishi kerak.",
+          "uz-Cyrl": "Шифокор тиззангизни синчиклаб текшириши керак.",
+          "ru": "Врачу нужно тщательнее осмотреть ваше колено."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-seit-wann-haben-sie-die-beschwerden",
+      "slug": "seit-wann-haben-sie-die-beschwerden",
+      "term": "Seit wann haben Sie die Beschwerden?",
+      "icon": "calendar-event",
+      "tr": {
+        "uz": "Bu shikoyatlar sizda qachondan beri bor?",
+        "uz-Cyrl": "Бу шикоятлар сизда қачондан бери бор?",
+        "ru": "С какого времени у вас эти жалобы?"
+      },
+      "pron": {
+        "uz": "zayt van ha-ben zi di be-shver-den?",
+        "uz-Cyrl": "зайт ван ха-бен зи ди бе-швер-ден?",
+        "ru": "зайт ван ха-бен зи ди бе-швер-ден?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Seit drei Tagen habe ich Kopfschmerzen.",
+        "tr": {
+          "uz": "Uch kundan beri boshim ogʻriyapti.",
+          "uz-Cyrl": "Уч кундан бери бошим оғрияпти.",
+          "ru": "Уже три дня у меня болит голова."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-blutabnahme",
+      "slug": "blutabnahme",
+      "term": "die Blutabnahme",
+      "icon": "droplet",
+      "article": "die",
+      "plural": "die Blutabnahmen",
+      "tr": {
+        "uz": "qon olish (tahlil uchun)",
+        "uz-Cyrl": "қон олиш (таҳлил учун)",
+        "ru": "забор крови"
+      },
+      "pron": {
+        "uz": "die blut-ap-na-me",
+        "uz-Cyrl": "ди блут-ап-на-ме",
+        "ru": "ди блут-ап-на-ме"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Die Blutabnahme ist morgen früh in der Praxis.",
+        "tr": {
+          "uz": "Qon olish ertaga ertalab shifokor qabulxonasida boʻladi.",
+          "uz-Cyrl": "Қон олиш эртага эрталаб шифокор қабулхонасида бўлади.",
+          "ru": "Забор крови — завтра утром в кабинете врача."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-impfung",
+      "slug": "impfung",
+      "term": "die Impfung",
+      "icon": "first-aid-kit",
+      "article": "die",
+      "plural": "die Impfungen",
+      "tr": {
+        "uz": "emlash",
+        "uz-Cyrl": "эмлаш",
+        "ru": "прививка"
+      },
+      "pron": {
+        "uz": "die im-fung",
+        "uz-Cyrl": "ди им-фунг",
+        "ru": "ди им-фунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Für die Impfung brauche ich einen Termin.",
+        "tr": {
+          "uz": "Emlash uchun menga qabul vaqti kerak.",
+          "uz-Cyrl": "Эмлаш учун менга қабул вақти керак.",
+          "ru": "Для прививки мне нужно записаться на приём."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-vorsorgeuntersuchung",
+      "slug": "vorsorgeuntersuchung",
+      "term": "die Vorsorgeuntersuchung",
+      "icon": "heartbeat",
+      "article": "die",
+      "plural": "die Vorsorgeuntersuchungen",
+      "tr": {
+        "uz": "profilaktik koʻrik",
+        "uz-Cyrl": "профилактик кўрик",
+        "ru": "профилактический осмотр"
+      },
+      "pron": {
+        "uz": "die for-zor-ge-un-ter-zu-xung",
+        "uz-Cyrl": "ди фор-зор-ге-ун-тер-зу-хунг",
+        "ru": "ди фор-зор-ге-ун-тер-зу-хунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Eine Vorsorgeuntersuchung hilft, Krankheiten früh zu erkennen.",
+        "tr": {
+          "uz": "Profilaktik koʻrik kasalliklarni erta aniqlashga yordam beradi.",
+          "uz-Cyrl": "Профилактик кўрик касалликларни эрта аниқлашга ёрдам беради.",
+          "ru": "Профилактический осмотр помогает рано выявить болезни."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-roentgenbild",
+      "slug": "roentgenbild",
+      "term": "das Röntgenbild",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "die Röntgenbilder",
+      "tr": {
+        "uz": "rentgen surati",
+        "uz-Cyrl": "рентген сурати",
+        "ru": "рентгеновский снимок"
+      },
+      "pron": {
+        "uz": "das ryont-gen-bilt",
+        "uz-Cyrl": "дас рёнт-ген-бильт",
+        "ru": "дас рёнт-ген-бильт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Auf dem Röntgenbild sieht man den Knochen.",
+        "tr": {
+          "uz": "Rentgen suratida suyak koʻrinadi.",
+          "uz-Cyrl": "Рентген суратида суяк кўринади.",
+          "ru": "На рентгеновском снимке видна кость."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-verschreiben",
+      "slug": "verschreiben",
+      "term": "verschreiben",
+      "icon": "pill",
+      "tr": {
+        "uz": "(dori) yozib bermoq",
+        "uz-Cyrl": "(дори) ёзиб бермоқ",
+        "ru": "выписывать (лекарство)"
+      },
+      "pron": {
+        "uz": "fer-shray-ben",
+        "uz-Cyrl": "фер-шрай-бен",
+        "ru": "фер-шрай-бен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Die Ärztin kann Ihnen ein Medikament verschreiben.",
+        "tr": {
+          "uz": "Shifokor ayol sizga dori yozib berishi mumkin.",
+          "uz-Cyrl": "Шифокор аёл сизга дори ёзиб бериши мумкин.",
+          "ru": "Врач может выписать вам лекарство."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-koennen-sie-das-bitte-einfacher-erklaeren",
+      "slug": "koennen-sie-das-bitte-einfacher-erklaeren",
+      "term": "Können Sie das bitte einfacher erklären?",
+      "icon": "help",
+      "tr": {
+        "uz": "Buni soddaroq tushuntirib bera olasizmi?",
+        "uz-Cyrl": "Буни соддароқ тушунтириб бера оласизми?",
+        "ru": "Не могли бы вы объяснить это проще?"
+      },
+      "pron": {
+        "uz": "kyo-nen zi das bi-te ayn-fa-xer er-kle-ren?",
+        "uz-Cyrl": "кё-нен зи дас би-те айн-фа-хер эр-кле-рен?",
+        "ru": "кё-нен зи дас би-те айн-фа-хер эр-кле-рен?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Ich verstehe das Fachwort leider nicht.",
+        "tr": {
+          "uz": "Afsuski, bu atamani tushunmayapman.",
+          "uz-Cyrl": "Афсуски, бу атамани тушунмаяпман.",
+          "ru": "К сожалению, этот термин мне непонятен."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-schmerzmittel",
+      "slug": "schmerzmittel",
+      "term": "das Schmerzmittel",
+      "icon": "pill",
+      "article": "das",
+      "plural": "die Schmerzmittel",
+      "tr": {
+        "uz": "ogʻriq qoldiruvchi dori",
+        "uz-Cyrl": "оғриқ қолдирувчи дори",
+        "ru": "обезболивающее"
+      },
+      "pron": {
+        "uz": "das shmerts-mi-tel",
+        "uz-Cyrl": "дас шмерц-ми-тель",
+        "ru": "дас шмерц-ми-тель"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Fragen Sie in der Apotheke, welches Schmerzmittel passt.",
+        "tr": {
+          "uz": "Qaysi ogʻriq qoldiruvchi dori mos kelishini dorixonada soʻrang.",
+          "uz-Cyrl": "Қайси оғриқ қолдирувчи дори мос келишини дорихонада сўранг.",
+          "ru": "Спросите в аптеке, какое обезболивающее подходит."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-behandlung",
+      "slug": "behandlung",
+      "term": "die Behandlung",
+      "icon": "first-aid-kit",
+      "article": "die",
+      "plural": "die Behandlungen",
+      "tr": {
+        "uz": "davolash",
+        "uz-Cyrl": "даволаш",
+        "ru": "лечение"
+      },
+      "pron": {
+        "uz": "die be-hand-lung",
+        "uz-Cyrl": "ди бе-ханд-лунг",
+        "ru": "ди бе-ханд-лунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Nach der Behandlung geht es mir besser.",
+        "tr": {
+          "uz": "Davolanishdan keyin ahvolim yaxshiroq.",
+          "uz-Cyrl": "Даволанишдан кейин аҳволим яхшироқ.",
+          "ru": "После лечения мне лучше."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-physiotherapie",
+      "slug": "physiotherapie",
+      "term": "die Physiotherapie",
+      "icon": "run",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "fizioterapiya (davolash mashqlari)",
+        "uz-Cyrl": "физиотерапия (даволаш машқлари)",
+        "ru": "физиотерапия"
+      },
+      "pron": {
+        "uz": "die fyu-zi-o-te-ra-pi",
+        "uz-Cyrl": "ди фю-зи-о-те-ра-пи",
+        "ru": "ди фю-зи-о-те-ра-пи"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Nach der Physiotherapie kann ich mich wieder besser bewegen.",
+        "tr": {
+          "uz": "Fizioterapiyadan keyin yana yaxshiroq harakat qila olaman.",
+          "uz-Cyrl": "Физиотерапиядан кейин яна яхшироқ ҳаракат қила оламан.",
+          "ru": "После физиотерапии я снова могу лучше двигаться."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-notdienst",
+      "slug": "notdienst",
+      "term": "der Notdienst",
+      "icon": "moon-stars",
+      "article": "der",
+      "plural": "die Notdienste",
+      "tr": {
+        "uz": "navbatchi shifokor xizmati",
+        "uz-Cyrl": "навбатчи шифокор хизмати",
+        "ru": "дежурная врачебная служба"
+      },
+      "pron": {
+        "uz": "der not-dinst",
+        "uz-Cyrl": "дер нот-динст",
+        "ru": "дер нот-динст"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Nachts und am Wochenende hilft der ärztliche Notdienst.",
+        "tr": {
+          "uz": "Kechasi va dam olish kunlari navbatchi shifokor xizmati yordam beradi.",
+          "uz-Cyrl": "Кечаси ва дам олиш кунлари навбатчи шифокор хизмати ёрдам беради.",
+          "ru": "Ночью и в выходные помогает дежурная врачебная служба."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-videosprechstunde",
+      "slug": "videosprechstunde",
+      "term": "die Videosprechstunde",
+      "icon": "camera",
+      "article": "die",
+      "plural": "die Videosprechstunden",
+      "tr": {
+        "uz": "video orqali qabul",
+        "uz-Cyrl": "видео орқали қабул",
+        "ru": "видеоконсультация"
+      },
+      "pron": {
+        "uz": "die vi-de-o-shprex-shtun-de",
+        "uz-Cyrl": "ди ви-де-о-шпрех-штун-де",
+        "ru": "ди ви-де-о-шпрех-штун-де"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Manche Praxen bieten eine Videosprechstunde an.",
+        "tr": {
+          "uz": "Baʼzi shifokorlar video orqali qabul oʻtkazadi.",
+          "uz-Cyrl": "Баъзи шифокорлар видео орқали қабул ўтказади.",
+          "ru": "Некоторые врачи проводят приём по видеосвязи."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-wechselwirkung",
+      "slug": "wechselwirkung",
+      "term": "die Wechselwirkung",
+      "icon": "pill",
+      "article": "die",
+      "plural": "die Wechselwirkungen",
+      "tr": {
+        "uz": "(dorilarning) oʻzaro taʼsiri",
+        "uz-Cyrl": "(дориларнинг) ўзаро таъсири",
+        "ru": "взаимодействие (лекарств)"
+      },
+      "pron": {
+        "uz": "die vek-sel-vir-kung",
+        "uz-Cyrl": "ди век-сель-вир-кунг",
+        "ru": "ди век-сель-вир-кунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Wegen Wechselwirkungen sage ich dem Arzt alle meine Medikamente.",
+        "tr": {
+          "uz": "Dorilarning oʻzaro taʼsiri sababli shifokorga barcha dorilarimni aytaman.",
+          "uz-Cyrl": "Дориларнинг ўзаро таъсири сабабли шифокорга барча дориларимни айтаман.",
+          "ru": "Из-за взаимодействия лекарств я называю врачу все свои лекарства."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-bei-starken-brustschmerzen-sofort-den-notruf-waehlen",
+      "slug": "bei-starken-brustschmerzen-sofort-den-notruf-waehlen",
+      "term": "Bei starken Brustschmerzen sofort den Notruf wählen!",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Koʻkrakda kuchli ogʻriq boʻlsa, darhol tez yordam chaqiring!",
+        "uz-Cyrl": "Кўкракда кучли оғриқ бўлса, дарҳол тез ёрдам чақиринг!",
+        "ru": "При сильной боли в груди сразу звоните в экстренную службу!"
+      },
+      "pron": {
+        "uz": "bay shtar-ken brust-shmer-tsen zo-fort den not-ruf vey-len!",
+        "uz-Cyrl": "бай штар-кен бруст-шмер-цен зо-форт ден нот-руф вэй-лен!",
+        "ru": "бай штар-кен бруст-шмер-цен зо-форт ден нот-руф вэй-лен!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Warten Sie dann nicht auf einen Termin in der Praxis.",
+        "tr": {
+          "uz": "Bunday holda shifokor qabulini kutib oʻtirmang.",
+          "uz-Cyrl": "Бундай ҳолда шифокор қабулини кутиб ўтирманг.",
+          "ru": "В таком случае не ждите приёма у врача."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-shifokor-nehmen-sie-keine-medikamente-von-anderen-leuten",
+      "slug": "nehmen-sie-keine-medikamente-von-anderen-leuten",
+      "term": "Nehmen Sie keine Medikamente von anderen Leuten!",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Boshqa odamlarning dorilarini ichmang!",
+        "uz-Cyrl": "Бошқа одамларнинг дориларини ичманг!",
+        "ru": "Не принимайте чужие лекарства!"
+      },
+      "pron": {
+        "uz": "ne-men zi kay-ne me-di-ka-men-te fon an-de-ren loy-ten!",
+        "uz-Cyrl": "не-мен зи кай-не ме-ди-ка-мен-те фон ан-де-рен лой-тен!",
+        "ru": "не-мен зи кай-не ме-ди-ка-мен-те фон ан-де-рен лой-тен!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "shifokor",
+      "example": {
+        "term": "Das richtige Mittel verschreibt Ihnen der Arzt.",
+        "tr": {
+          "uz": "Toʻgʻri dorini sizga shifokor yozib beradi.",
+          "uz-Cyrl": "Тўғри дорини сизга шифокор ёзиб беради.",
+          "ru": "Подходящее средство вам выпишет врач."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
