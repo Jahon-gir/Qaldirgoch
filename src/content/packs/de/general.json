@@ -3796,6 +3796,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Mir geht es seit gestern nicht gut. Mein Nachbar hat mir seine Tabletten gegeben.",
+            "tr": {
+              "uz": "Kechadan beri oʻzimni yaxshi his qilmayapman. Qoʻshnim menga oʻz tabletkalarini berdi.",
+              "uz-Cyrl": "Кечадан бери ўзимни яхши ҳис қилмаяпман. Қўшним менга ўз таблеткаларини берди.",
+              "ru": "Со вчерашнего дня мне нехорошо. Сосед дал мне свои таблетки."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Seine Tabletten? Wofür sind die denn?",
+            "tr": {
+              "uz": "Uning tabletkalarimi? Ular nima uchun oʻzi?",
+              "uz-Cyrl": "Унинг таблеткаларими? Улар нима учун ўзи?",
+              "ru": "Его таблетки? А от чего они вообще?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Das weiß ich nicht genau. Soll ich sie trotzdem nehmen?",
+            "tr": {
+              "uz": "Aniq bilmayman. Baribir ichaveraymi?",
+              "uz-Cyrl": "Аниқ билмайман. Барибир ичаверайми?",
+              "ru": "Точно не знаю. Мне всё равно их принять?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, nimm keine Medikamente von anderen Leuten. Geh lieber zum Arzt.",
+            "tr": {
+              "uz": "Yoʻq, boshqa odamlarning dorilarini ichma. Yaxshisi, shifokorga bor.",
+              "uz-Cyrl": "Йўқ, бошқа одамларнинг дориларини ичма. Яхшиси, шифокорга бор.",
+              "ru": "Нет, не принимай лекарства других людей. Лучше сходи к врачу."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Aber beim Hausarzt habe ich erst nächste Woche einen Termin.",
+            "tr": {
+              "uz": "Lekin oilaviy shifokorga faqat keyingi haftaga yozilganman.",
+              "uz-Cyrl": "Лекин оилавий шифокорга фақат кейинги ҳафтага ёзилганман.",
+              "ru": "Но к семейному врачу я записан только на следующую неделю."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Erst nächste Woche? Dann ruf morgen früh in der Praxis an und sag, dass es dringend ist.",
+            "tr": {
+              "uz": "Faqat keyingi haftagami? Unda ertaga ertalab shifokor qabulxonasiga qoʻngʻiroq qil va bu shoshilinch ekanini ayt.",
+              "uz-Cyrl": "Фақат кейинги ҳафтагами? Унда эртага эрталаб шифокор қабулхонасига қўнғироқ қил ва бу шошилинч эканини айт.",
+              "ru": "Только на следующую неделю? Тогда завтра утром позвони в приёмную врача и скажи, что это срочно."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
