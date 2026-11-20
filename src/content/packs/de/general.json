@@ -4056,6 +4056,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "jamoat-transporti",
+      "title": {
+        "uz": "Jamoat transporti: kechikish va chipta",
+        "uz-Cyrl": "Жамоат транспорти: кечикиш ва чипта",
+        "ru": "Общественный транспорт: задержки и билеты"
+      },
+      "order": 24,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководитель группы"
+            },
+            "de": "Guten Morgen! Die Schicht hat schon angefangen. Wo sind Sie gerade?",
+            "tr": {
+              "uz": "Xayrli tong! Smena allaqachon boshlandi. Hozir qayerdasiz?",
+              "uz-Cyrl": "Хайрли тонг! Смена аллақачон бошланди. Ҳозир қаердасиз?",
+              "ru": "Доброе утро! Смена уже началась. Где вы сейчас?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Guten Morgen. Ich stehe noch am Bahnhof – mein Zug ist ausgefallen.",
+            "tr": {
+              "uz": "Xayrli tong. Hali vokzaldaman — poyezdim bekor qilindi.",
+              "uz-Cyrl": "Хайрли тонг. Ҳали вокзалдаман — поездим бекор қилинди.",
+              "ru": "Доброе утро. Я ещё на вокзале – мой поезд отменили."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководитель группы"
+            },
+            "de": "Oh je. Gibt es einen Ersatzverkehr?",
+            "tr": {
+              "uz": "Voy. Almashtiruvchi transport bormi?",
+              "uz-Cyrl": "Вой. Алмаштирувчи транспорт борми?",
+              "ru": "Ой. А замещающий транспорт есть?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, gleich fährt ein Ersatzbus. Ich komme etwa eine halbe Stunde später.",
+            "tr": {
+              "uz": "Ha, hozir oʻrniga avtobus joʻnaydi. Taxminan yarim soat kechroq kelaman.",
+              "uz-Cyrl": "Ҳа, ҳозир ўрнига автобус жўнайди. Тахминан ярим соат кечроқ келаман.",
+              "ru": "Да, сейчас отправляется автобус взамен поезда. Буду примерно на полчаса позже."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководитель группы"
+            },
+            "de": "Gut, dass Sie Bescheid sagen. Schicken Sie mir bitte eine Nachricht, wenn Sie im Bus sitzen.",
+            "tr": {
+              "uz": "Xabar berganingiz yaxshi boʻldi. Avtobusga oʻtirganingizda menga xabar yuboring.",
+              "uz-Cyrl": "Хабар берганингиз яхши бўлди. Автобусга ўтирганингизда менга хабар юборинг.",
+              "ru": "Хорошо, что вы сообщили. Пришлите мне, пожалуйста, сообщение, когда сядете в автобус."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Eine Nachricht aus dem Bus? Klar, ich schreibe Ihnen gleich nach dem Einsteigen.",
+            "tr": {
+              "uz": "Avtobusdan xabarmi? Albatta, avtobusga oʻtirishim bilan darhol yozaman.",
+              "uz-Cyrl": "Автобусдан хабарми? Албатта, автобусга ўтиришим билан дарҳол ёзаман.",
+              "ru": "Сообщение из автобуса? Конечно, напишу вам сразу после посадки."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -18766,6 +18859,658 @@
         }
       },
       "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-zugausfall",
+      "slug": "zugausfall",
+      "term": "der Zugausfall",
+      "icon": "train",
+      "article": "der",
+      "plural": "die Zugausfälle",
+      "tr": {
+        "uz": "poyezd qatnovi bekor qilinishi",
+        "uz-Cyrl": "поезд қатнови бекор қилиниши",
+        "ru": "отмена поезда"
+      },
+      "pron": {
+        "uz": "der tsuk-aus-fal",
+        "uz-Cyrl": "дер цук-аус-фал",
+        "ru": "дер цук-аус-фал"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Wegen eines Zugausfalls komme ich heute später zur Arbeit.",
+        "tr": {
+          "uz": "Poyezd bekor qilingani uchun bugun ishga kechroq kelaman.",
+          "uz-Cyrl": "Поезд бекор қилингани учун бугун ишга кечроқ келаман.",
+          "ru": "Из-за отмены поезда я сегодня приду на работу позже."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-ersatzverkehr",
+      "slug": "ersatzverkehr",
+      "term": "der Ersatzverkehr",
+      "icon": "bus",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "almashtiruvchi transport (poyezd oʻrniga avtobus)",
+        "uz-Cyrl": "алмаштирувчи транспорт (поезд ўрнига автобус)",
+        "ru": "замещающий транспорт (автобус вместо поезда)"
+      },
+      "pron": {
+        "uz": "der er-zats-fer-ker",
+        "uz-Cyrl": "дер эр-зац-фер-кер",
+        "ru": "дер эр-зац-фер-кер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Diese Woche fahren statt der Züge Busse im Ersatzverkehr.",
+        "tr": {
+          "uz": "Bu hafta poyezdlar oʻrniga almashtiruvchi avtobuslar qatnaydi.",
+          "uz-Cyrl": "Бу ҳафта поездлар ўрнига алмаштирувчи автобуслар қатнайди.",
+          "ru": "На этой неделе вместо поездов ходят автобусы замещающего транспорта."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-anschluss",
+      "slug": "anschluss",
+      "term": "der Anschluss",
+      "icon": "arrows-exchange",
+      "article": "der",
+      "plural": "die Anschlüsse",
+      "tr": {
+        "uz": "ulanadigan reys (keyingi poyezd yoki avtobus)",
+        "uz-Cyrl": "уланадиган рейс (кейинги поезд ёки автобус)",
+        "ru": "пересадка (стыковочный рейс)"
+      },
+      "pron": {
+        "uz": "der an-shlus",
+        "uz-Cyrl": "дер ан-шлус",
+        "ru": "дер ан-шлус"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Wenn der Zug Verspätung hat, erreiche ich meinen Anschluss nicht.",
+        "tr": {
+          "uz": "Poyezd kechiksa, keyingi reysimga ulgurmayman.",
+          "uz-Cyrl": "Поезд кечикса, кейинги рейсимга улгурмайман.",
+          "ru": "Если поезд опоздает, я не успею на пересадку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-anzeigetafel",
+      "slug": "anzeigetafel",
+      "term": "die Anzeigetafel",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Anzeigetafeln",
+      "tr": {
+        "uz": "tablo (joʻnash vaqtlari koʻrsatkichi)",
+        "uz-Cyrl": "табло (жўнаш вақтлари кўрсаткичи)",
+        "ru": "табло (расписание отправлений)"
+      },
+      "pron": {
+        "uz": "die an-tsay-ge-ta-fel",
+        "uz-Cyrl": "ди ан-цай-ге-та-фел",
+        "ru": "ди ан-цай-ге-та-фел"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Auf der Anzeigetafel steht die neue Abfahrtszeit.",
+        "tr": {
+          "uz": "Tabloda yangi joʻnash vaqti yozilgan.",
+          "uz-Cyrl": "Таблода янги жўнаш вақти ёзилган.",
+          "ru": "На табло написано новое время отправления."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-bahnsteig",
+      "slug": "bahnsteig",
+      "term": "der Bahnsteig",
+      "icon": "map-pin",
+      "article": "der",
+      "plural": "die Bahnsteige",
+      "tr": {
+        "uz": "perron (platforma)",
+        "uz-Cyrl": "перрон (платформа)",
+        "ru": "перрон, платформа"
+      },
+      "pron": {
+        "uz": "der ban-shtayk",
+        "uz-Cyrl": "дер бан-штайк",
+        "ru": "дер бан-штайк"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Auf dem Bahnsteig warten heute sehr viele Leute.",
+        "tr": {
+          "uz": "Bugun perronda juda koʻp odam kutyapti.",
+          "uz-Cyrl": "Бугун перронда жуда кўп одам кутяпти.",
+          "ru": "Сегодня на перроне ждёт очень много людей."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-faellt-der-zug-heute-aus",
+      "slug": "faellt-der-zug-heute-aus",
+      "term": "Fällt der Zug heute aus?",
+      "icon": "help",
+      "tr": {
+        "uz": "Poyezd bugun bekor qilinadimi?",
+        "uz-Cyrl": "Поезд бугун бекор қилинадими?",
+        "ru": "Поезд сегодня отменяется?"
+      },
+      "pron": {
+        "uz": "felt der tsuk hoy-te aus?",
+        "uz-Cyrl": "фелт дер цук хой-те аус?",
+        "ru": "фелт дер цук хой-те аус?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Auf der Anzeige steht nichts. Ich frage lieber am Schalter.",
+        "tr": {
+          "uz": "Tabloda hech narsa yozilmagan. Yaxshisi kassada soʻrayman.",
+          "uz-Cyrl": "Таблода ҳеч нарса ёзилмаган. Яхшиси кассада сўрайман.",
+          "ru": "На табло ничего не написано. Лучше спрошу в кассе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-fahrkartenschalter",
+      "slug": "fahrkartenschalter",
+      "term": "der Fahrkartenschalter",
+      "icon": "receipt",
+      "article": "der",
+      "plural": "die Fahrkartenschalter",
+      "tr": {
+        "uz": "chipta kassasi",
+        "uz-Cyrl": "чипта кассаси",
+        "ru": "билетная касса"
+      },
+      "pron": {
+        "uz": "der far-kar-ten-shal-ter",
+        "uz-Cyrl": "дер фар-кар-тен-шал-тер",
+        "ru": "дер фар-кар-тен-шал-тер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Am Fahrkartenschalter frage ich, welche Fahrkarte ich brauche.",
+        "tr": {
+          "uz": "Chipta kassasida qaysi chipta kerakligini soʻrayman.",
+          "uz-Cyrl": "Чипта кассасида қайси чипта кераклигини сўрайман.",
+          "ru": "В билетной кассе я спрашиваю, какой билет мне нужен."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-fahrkartenkontrolle",
+      "slug": "fahrkartenkontrolle",
+      "term": "die Fahrkartenkontrolle",
+      "icon": "eye",
+      "article": "die",
+      "plural": "die Fahrkartenkontrollen",
+      "tr": {
+        "uz": "chipta tekshiruvi",
+        "uz-Cyrl": "чипта текшируви",
+        "ru": "проверка билетов"
+      },
+      "pron": {
+        "uz": "die far-kar-ten-kon-trol-le",
+        "uz-Cyrl": "ди фар-кар-тен-кон-трол-ле",
+        "ru": "ди фар-кар-тен-кон-трол-ле"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Bei der Fahrkartenkontrolle zeige ich mein Ticket auf dem Handy.",
+        "tr": {
+          "uz": "Chipta tekshiruvida chiptamni telefonda koʻrsataman.",
+          "uz-Cyrl": "Чипта текширувида чиптамни телефонда кўрсатаман.",
+          "ru": "При проверке билетов я показываю билет в телефоне."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-schwarzfahren",
+      "slug": "schwarzfahren",
+      "term": "das Schwarzfahren",
+      "icon": "alert-triangle",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "chiptasiz yurish",
+        "uz-Cyrl": "чиптасиз юриш",
+        "ru": "безбилетный проезд"
+      },
+      "pron": {
+        "uz": "das shvarts-fa-ren",
+        "uz-Cyrl": "дас шварц-фа-рен",
+        "ru": "дас шварц-фа-рен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Schwarzfahren kann teuer werden. Kauf immer vorher eine Fahrkarte.",
+        "tr": {
+          "uz": "Chiptasiz yurish qimmatga tushishi mumkin. Har doim oldindan chipta ol.",
+          "uz-Cyrl": "Чиптасиз юриш қимматга тушиши мумкин. Ҳар доим олдиндан чипта ол.",
+          "ru": "Безбилетный проезд может дорого обойтись. Всегда заранее покупай билет."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-tarifzone",
+      "slug": "tarifzone",
+      "term": "die Tarifzone",
+      "icon": "map",
+      "article": "die",
+      "plural": "die Tarifzonen",
+      "tr": {
+        "uz": "tarif hududi (zona)",
+        "uz-Cyrl": "тариф ҳудуди (зона)",
+        "ru": "тарифная зона"
+      },
+      "pron": {
+        "uz": "die ta-rif-tso-ne",
+        "uz-Cyrl": "ди та-риф-цо-не",
+        "ru": "ди та-риф-цо-не"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Mein Betrieb liegt in einer anderen Tarifzone als meine Wohnung.",
+        "tr": {
+          "uz": "Ishxonam uyimdan boshqa tarif hududida joylashgan.",
+          "uz-Cyrl": "Ишхонам уйимдан бошқа тариф ҳудудида жойлашган.",
+          "ru": "Моё предприятие находится в другой тарифной зоне, чем квартира."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-entwerten",
+      "slug": "entwerten",
+      "term": "entwerten",
+      "icon": "receipt",
+      "tr": {
+        "uz": "(chiptani) kompostirlamoq",
+        "uz-Cyrl": "(чиптани) компостирламоқ",
+        "ru": "компостировать (билет)"
+      },
+      "pron": {
+        "uz": "ent-ver-ten",
+        "uz-Cyrl": "энт-вер-тен",
+        "ru": "энт-вер-тен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Diese Fahrkarte muss man vor der Fahrt entwerten.",
+        "tr": {
+          "uz": "Bu chiptani yoʻlga chiqishdan oldin kompostirlash kerak.",
+          "uz-Cyrl": "Бу чиптани йўлга чиқишдан олдин компостирлаш керак.",
+          "ru": "Этот билет нужно прокомпостировать перед поездкой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-pendler",
+      "slug": "pendler",
+      "term": "der Pendler",
+      "icon": "briefcase",
+      "article": "der",
+      "plural": "die Pendler",
+      "tr": {
+        "uz": "har kuni boshqa joyga qatnab ishlovchi",
+        "uz-Cyrl": "ҳар куни бошқа жойга қатнаб ишловчи",
+        "ru": "человек, ежедневно ездящий на работу издалека"
+      },
+      "pron": {
+        "uz": "der pend-ler",
+        "uz-Cyrl": "дер пенд-лер",
+        "ru": "дер пенд-лер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Viele Pendler fahren jeden Morgen mit dem ersten Zug.",
+        "tr": {
+          "uz": "Ishga qatnaydiganlarning koʻpi har tong birinchi poyezdda ketadi.",
+          "uz-Cyrl": "Ишга қатнайдиганларнинг кўпи ҳар тонг биринчи поездда кетади.",
+          "ru": "Многие, кто ездит на работу издалека, каждое утро едут первым поездом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-streckensperrung",
+      "slug": "streckensperrung",
+      "term": "die Streckensperrung",
+      "icon": "alert-octagon",
+      "article": "die",
+      "plural": "die Streckensperrungen",
+      "tr": {
+        "uz": "yoʻnalish yopilishi (yoʻl berk)",
+        "uz-Cyrl": "йўналиш ёпилиши (йўл берк)",
+        "ru": "закрытие участка пути"
+      },
+      "pron": {
+        "uz": "die shtre-ken-shpe-rung",
+        "uz-Cyrl": "ди штре-кен-шпе-рунг",
+        "ru": "ди штре-кен-шпе-рунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Wegen einer Streckensperrung fahren heute auf dieser Linie keine Züge.",
+        "tr": {
+          "uz": "Yoʻnalish yopilgani sababli bugun bu liniyada poyezdlar qatnamaydi.",
+          "uz-Cyrl": "Йўналиш ёпилгани сабабли бугун бу линияда поездлар қатнамайди.",
+          "ru": "Из-за закрытия участка пути сегодня на этой линии поезда не ходят."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-radweg",
+      "slug": "radweg",
+      "term": "der Radweg",
+      "icon": "bike",
+      "article": "der",
+      "plural": "die Radwege",
+      "tr": {
+        "uz": "velosiped yoʻlkasi",
+        "uz-Cyrl": "велосипед йўлкаси",
+        "ru": "велодорожка"
+      },
+      "pron": {
+        "uz": "der rat-vek",
+        "uz-Cyrl": "дер рат-век",
+        "ru": "дер рат-век"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Mit dem Fahrrad fahre ich immer auf dem Radweg.",
+        "tr": {
+          "uz": "Velosipedda doim velosiped yoʻlkasidan yuraman.",
+          "uz-Cyrl": "Велосипедда доим велосипед йўлкасидан юраман.",
+          "ru": "На велосипеде я всегда езжу по велодорожке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-fahrradhelm",
+      "slug": "fahrradhelm",
+      "term": "der Fahrradhelm",
+      "icon": "helmet",
+      "article": "der",
+      "plural": "die Fahrradhelme",
+      "tr": {
+        "uz": "velosiped dubulgʻasi",
+        "uz-Cyrl": "велосипед дубулғаси",
+        "ru": "велошлем"
+      },
+      "pron": {
+        "uz": "der far-rat-helm",
+        "uz-Cyrl": "дер фар-рат-хелм",
+        "ru": "дер фар-рат-хелм"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Mit dem Fahrradhelm ist der Weg zur Arbeit sicherer.",
+        "tr": {
+          "uz": "Velosiped dubulgʻasi bilan ishga yoʻl xavfsizroq.",
+          "uz-Cyrl": "Велосипед дубулғаси билан ишга йўл хавфсизроқ.",
+          "ru": "С велошлемом дорога на работу безопаснее."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-fundbuero",
+      "slug": "fundbuero",
+      "term": "das Fundbüro",
+      "icon": "key",
+      "article": "das",
+      "plural": "die Fundbüros",
+      "tr": {
+        "uz": "topilmalar byurosi",
+        "uz-Cyrl": "топилмалар бюроси",
+        "ru": "бюро находок"
+      },
+      "pron": {
+        "uz": "das funt-byu-ro",
+        "uz-Cyrl": "дас фунт-бю-ро",
+        "ru": "дас фунт-бю-ро"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Mein Schal ist weg. Ich frage morgen im Fundbüro nach.",
+        "tr": {
+          "uz": "Sharfim yoʻqoldi. Ertaga topilmalar byurosidan soʻrayman.",
+          "uz-Cyrl": "Шарфим йўқолди. Эртага топилмалар бюросидан сўрайман.",
+          "ru": "Мой шарф пропал. Завтра спрошу в бюро находок."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-gleisaenderung",
+      "slug": "gleisaenderung",
+      "term": "die Gleisänderung",
+      "icon": "repeat",
+      "article": "die",
+      "plural": "die Gleisänderungen",
+      "tr": {
+        "uz": "yoʻl (platforma) oʻzgarishi",
+        "uz-Cyrl": "йўл (платформа) ўзгариши",
+        "ru": "изменение пути (платформы)"
+      },
+      "pron": {
+        "uz": "die glays-en-de-rung",
+        "uz-Cyrl": "ди глайс-эн-де-рунг",
+        "ru": "ди глайс-эн-де-рунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Achtung, Gleisänderung! Der Zug fährt heute von einem anderen Gleis ab.",
+        "tr": {
+          "uz": "Diqqat, platforma oʻzgardi! Poyezd bugun boshqa yoʻldan joʻnaydi.",
+          "uz-Cyrl": "Диққат, платформа ўзгарди! Поезд бугун бошқа йўлдан жўнайди.",
+          "ru": "Внимание, изменение пути! Поезд сегодня отправляется с другого пути."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-notbremse",
+      "slug": "notbremse",
+      "term": "die Notbremse",
+      "icon": "hand-stop",
+      "article": "die",
+      "plural": "die Notbremsen",
+      "tr": {
+        "uz": "favqulodda tormoz (stop-kran)",
+        "uz-Cyrl": "фавқулодда тормоз (стоп-кран)",
+        "ru": "стоп-кран (экстренный тормоз)"
+      },
+      "pron": {
+        "uz": "die not-brem-ze",
+        "uz-Cyrl": "ди нот-брем-зе",
+        "ru": "ди нот-брем-зе"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Ziehen Sie die Notbremse nur bei echter Gefahr.",
+        "tr": {
+          "uz": "Favqulodda tormozni faqat haqiqiy xavf boʻlganda torting.",
+          "uz-Cyrl": "Фавқулодда тормозни фақат ҳақиқий хавф бўлганда тортинг.",
+          "ru": "Дёргайте стоп-кран только при настоящей опасности."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-ich-habe-meinen-anschluss-verpasst",
+      "slug": "ich-habe-meinen-anschluss-verpasst",
+      "term": "Ich habe meinen Anschluss verpasst.",
+      "icon": "clock",
+      "tr": {
+        "uz": "Keyingi reysimga ulgurmadim.",
+        "uz-Cyrl": "Кейинги рейсимга улгурмадим.",
+        "ru": "Мой поезд на пересадку уже ушёл."
+      },
+      "pron": {
+        "uz": "ix ha-be may-nen an-shlus fer-past.",
+        "uz-Cyrl": "их ха-бе май-нен ан-шлус фер-паст.",
+        "ru": "их ха-бе май-нен ан-шлус фер-паст."
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Jetzt warte ich auf den nächsten Zug und sage dem Chef Bescheid.",
+        "tr": {
+          "uz": "Endi keyingi poyezdni kutaman va boshliqqa xabar beraman.",
+          "uz-Cyrl": "Энди кейинги поездни кутаман ва бошлиққа хабар бераман.",
+          "ru": "Теперь жду следующий поезд и сообщаю начальнику."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-jamoat-transporti-vorsicht-an-der-bahnsteigkante",
+      "slug": "vorsicht-an-der-bahnsteigkante",
+      "term": "Vorsicht an der Bahnsteigkante!",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Perron chetidan ehtiyot boʻling!",
+        "uz-Cyrl": "Перрон четидан эҳтиёт бўлинг!",
+        "ru": "Осторожно, край платформы!"
+      },
+      "pron": {
+        "uz": "for-zixt an der ban-shtayk-kan-te!",
+        "uz-Cyrl": "фор-зихт ан дер бан-штайк-кан-те!",
+        "ru": "фор-зихт ан дер бан-штайк-кан-те!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "jamoat-transporti",
+      "example": {
+        "term": "Bleiben Sie hinter der weißen Linie, wenn der Zug einfährt.",
+        "tr": {
+          "uz": "Poyezd kirib kelayotganda oq chiziq orqasida turing.",
+          "uz-Cyrl": "Поезд кириб келаётганда оқ чизиқ орқасида туринг.",
+          "ru": "Стойте за белой линией, когда прибывает поезд."
+        }
+      },
+      "safety": true,
       "status": "review",
       "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
     }
