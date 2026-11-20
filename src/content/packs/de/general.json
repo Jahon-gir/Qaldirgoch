@@ -3620,6 +3620,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Gestern hat mich jemand von der Bank angerufen. Angeblich wird meine Karte gesperrt.",
+            "tr": {
+              "uz": "Kecha menga bankdan deb kimdir qoʻngʻiroq qildi. Kartam bloklanar emish.",
+              "uz-Cyrl": "Кеча менга банкдан деб кимдир қўнғироқ қилди. Картам блокланар эмиш.",
+              "ru": "Вчера мне позвонили якобы из банка. Сказали, что карту заблокируют."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Von der Bank? Was wollte der Anrufer denn von dir?",
+            "tr": {
+              "uz": "Bankdanmi? Qoʻngʻiroq qilgan odam sendan nima xohladi?",
+              "uz-Cyrl": "Банкданми? Қўнғироқ қилган одам сендан нима хоҳлади?",
+              "ru": "Из банка? А что звонивший от тебя хотел?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Er wollte meine PIN wissen, dann bleibt die Karte aktiv. Soll ich sie ihm heute sagen?",
+            "tr": {
+              "uz": "U PIN-kodimni soʻradi, shunda karta ishlab turarmish. Bugun unga aytsammikan?",
+              "uz-Cyrl": "У пин-кодимни сўради, шунда карта ишлаб турармиш. Бугун унга айтсаммикан?",
+              "ru": "Он спросил мой пин-код — тогда карта останется активной. Сказать ему сегодня?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein! Gib deine PIN nie weiter – das ist Telefonbetrug.",
+            "tr": {
+              "uz": "Yoʻq! PIN-kodingni hech kimga aytma — bu telefon firibgarligi.",
+              "uz-Cyrl": "Йўқ! Пин-кодингни ҳеч кимга айтма — бу телефон фирибгарлиги.",
+              "ru": "Нет! Никому не сообщай свой пин-код — это телефонное мошенничество."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Er hat gesagt, er ruft heute Abend noch einmal an.",
+            "tr": {
+              "uz": "U bugun kechqurun yana qoʻngʻiroq qilaman dedi.",
+              "uz-Cyrl": "У бугун кечқурун яна қўнғироқ қиламан деди.",
+              "ru": "Он сказал, что сегодня вечером позвонит ещё раз."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Heute Abend? Dann leg einfach auf und ruf selbst bei deiner Bank an.",
+            "tr": {
+              "uz": "Bugun kechqurunmi? Unda shunchaki goʻshakni qoʻy va bankingga oʻzing qoʻngʻiroq qil.",
+              "uz-Cyrl": "Бугун кечқурунми? Унда шунчаки гўшакни қўй ва банкингга ўзинг қўнғироқ қил.",
+              "ru": "Сегодня вечером? Тогда просто положи трубку и позвони в свой банк напрямую."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
