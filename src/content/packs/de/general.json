@@ -4500,6 +4500,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Gestern stand ein Mann von einem Mobilfunkanbieter vor meiner Tür. Er hatte einen super Tarif.",
+            "tr": {
+              "uz": "Kecha eshigim oldiga mobil aloqa operatoridan bir kishi keldi. Uning tarifi juda zoʻr edi.",
+              "uz-Cyrl": "Кеча эшигим олдига мобил алоқа операторидан бир киши келди. Унинг тарифи жуда зўр эди.",
+              "ru": "Вчера у моей двери стоял мужчина от оператора мобильной связи. У него был отличный тариф."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "An der Haustür? Was hat er dir denn angeboten?",
+            "tr": {
+              "uz": "Eshik oldidami? U senga nima taklif qildi?",
+              "uz-Cyrl": "Эшик олдидами? У сенга нима таклиф қилди?",
+              "ru": "У входной двери? И что он тебе предложил?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Viel Datenvolumen für wenig Geld. Ich soll heute noch unterschreiben – soll ich das machen?",
+            "tr": {
+              "uz": "Arzon narxga koʻp internet. Bugunoq imzolashim kerak ekan — imzolaymi?",
+              "uz-Cyrl": "Арзон нархга кўп интернет. Бугуноқ имзолашим керак экан — имзолайми?",
+              "ru": "Много интернета за небольшие деньги. Подписать нужно сегодня же – подписывать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, unterschreib keinen Vertrag an der Haustür. Lies erst das Kleingedruckte in Ruhe.",
+            "tr": {
+              "uz": "Yoʻq, eshik oldida shartnomaga imzo chekma. Avval mayda harfli shartlarni xotirjam oʻqib chiq.",
+              "uz-Cyrl": "Йўқ, эшик олдида шартномага имзо чекма. Аввал майда ҳарфли шартларни хотиржам ўқиб чиқ.",
+              "ru": "Нет, не подписывай договор у двери. Сначала спокойно прочитай мелкий шрифт."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Er hat gesagt, das Angebot gilt nur heute.",
+            "tr": {
+              "uz": "U taklif faqat bugun amal qiladi, dedi.",
+              "uz-Cyrl": "У таклиф фақат бугун амал қилади, деди.",
+              "ru": "Он сказал, что предложение действует только сегодня."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nur heute? Das ist ein typischer Trick. Vergleich die Tarife lieber zu Hause in Ruhe.",
+            "tr": {
+              "uz": "Faqat bugunmi? Bu odatiy hiyla. Tariflarni uyda xotirjam solishtirib koʻr.",
+              "uz-Cyrl": "Фақат бугунми? Бу одатий ҳийла. Тарифларни уйда хотиржам солиштириб кўр.",
+              "ru": "Только сегодня? Это типичный трюк. Лучше спокойно сравни тарифы дома."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
