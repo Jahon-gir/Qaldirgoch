@@ -3,7 +3,7 @@ import {
   IconMoodSmile, IconMoonStars, IconStethoscope, IconSun, IconSunrise, IconSunset2, IconTools, IconToolsKitchen2, IconUser, IconUsers, IconWorld,
   IconCheck, IconChefHat, IconCoffee, IconDog, IconFlag, IconGenderFemale, IconGrape, IconHanger, IconLeaf, IconMan, IconMap, IconMeat, IconMilk, IconMoodKid, IconMusic, IconNumber1, IconPaw, IconRadio, IconRipple, IconSalad, IconSquare, IconToiletPaper, IconTrain, IconWoman,
   IconAbc, IconAlertTriangle, IconApple, IconArmchair, IconBackpack, IconBook, IconBowlChopsticks, IconBriefcase, IconBuildingSkyscraper, IconClock, IconCookie, IconDoor, IconDoorEnter, IconDroplet, IconHome, IconLanguage, IconMountain, IconPig, IconPlant, IconRun, IconShirt, IconSmokingNo, IconSoup, IconVolume, IconWaveSine,
-  IconFireExtinguisher, IconFirstAidKit, IconHelmet, IconShoe, IconAlertOctagon, IconBeach, IconRepeat, IconHelp, IconEye, IconThermometer, IconMoodSad, IconFileText, IconPill, IconHammer, IconLadder, IconRuler, IconPlug, IconToggleLeft, IconBulb, IconPower, IconBath, IconBed, IconWheelchair, IconHeartbeat, IconReceipt, IconGlass, IconTrash, IconKey, IconBus, IconBike, IconEgg, IconTruck, IconCar, IconPhone, IconCamera, IconPackage, IconMail, IconPaperclip, IconInbox, IconLock, IconBuildingBank, IconCreditCard, IconCash, IconArrowsExchange,
+  IconFireExtinguisher, IconFirstAidKit, IconHelmet, IconShoe, IconAlertOctagon, IconBeach, IconRepeat, IconHelp, IconEye, IconThermometer, IconMoodSad, IconFileText, IconPill, IconHammer, IconLadder, IconRuler, IconPlug, IconToggleLeft, IconBulb, IconPower, IconBath, IconBed, IconWheelchair, IconHeartbeat, IconReceipt, IconGlass, IconTrash, IconKey, IconBus, IconBike, IconEgg, IconTruck, IconCar, IconPhone, IconCamera, IconPackage, IconMail, IconPaperclip, IconInbox, IconLock, IconBuildingBank, IconCreditCard, IconCash, IconArrowsExchange, IconShoppingCart, IconMailbox,
   type Icon
 } from '@tabler/icons-react'
 
@@ -125,5 +125,7 @@ export const LESSON_ICONS: Record<string, Icon> = {
   'building-bank': IconBuildingBank,
   'credit-card': IconCreditCard,
   cash: IconCash,
-  'arrows-exchange': IconArrowsExchange
+  'arrows-exchange': IconArrowsExchange,
+  'shopping-cart': IconShoppingCart,
+  mailbox: IconMailbox
 }
