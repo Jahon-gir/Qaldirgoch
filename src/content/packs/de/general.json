@@ -4148,6 +4148,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Gestern hatte ich keine Fahrkarte dabei, und genau da kam die Fahrkartenkontrolle.",
+            "tr": {
+              "uz": "Kecha yonimda chipta yoʻq edi, xuddi oʻshanda chipta tekshiruvi keldi.",
+              "uz-Cyrl": "Кеча ёнимда чипта йўқ эди, худди ўшанда чипта текшируви келди.",
+              "ru": "Вчера у меня не было с собой билета, и как раз тогда пришла проверка билетов."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Oh nein! Und was ist dann passiert?",
+            "tr": {
+              "uz": "Voy! Keyin nima boʻldi?",
+              "uz-Cyrl": "Вой! Кейин нима бўлди?",
+              "ru": "Ой нет! И что было дальше?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Jetzt muss ich etwas bezahlen. Fährst du eigentlich auch manchmal ohne Fahrkarte?",
+            "tr": {
+              "uz": "Endi pul toʻlashim kerak. Sen ham baʼzan chiptasiz yurasanmi?",
+              "uz-Cyrl": "Энди пул тўлашим керак. Сен ҳам баъзан чиптасиз юрасанми?",
+              "ru": "Теперь мне нужно заплатить. А ты тоже иногда ездишь без билета?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, nie. Ich habe eine Monatskarte für meine Tarifzone.",
+            "tr": {
+              "uz": "Yoʻq, hech qachon. Menda oʻz tarif hududim uchun oylik chipta bor.",
+              "uz-Cyrl": "Йўқ, ҳеч қачон. Менда ўз тариф ҳудудим учун ойлик чипта бор.",
+              "ru": "Нет, никогда. У меня проездной на месяц для моей тарифной зоны."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Ein Bekannter sagt, man kann die Fahrkarte auch noch im Zug kaufen.",
+            "tr": {
+              "uz": "Bir tanishim chiptani poyezdning ichida ham sotib olsa boʻladi deydi.",
+              "uz-Cyrl": "Бир танишим чиптани поезднинг ичида ҳам сотиб олса бўлади дейди.",
+              "ru": "Один знакомый говорит, что билет можно купить и в поезде."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Im Zug? Das geht nicht überall – frag lieber vorher am Fahrkartenschalter.",
+            "tr": {
+              "uz": "Poyezdda? Bu hamma joyda ham mumkin emas — yaxshisi oldindan chipta kassasida soʻra.",
+              "uz-Cyrl": "Поездда? Бу ҳамма жойда ҳам мумкин эмас — яхшиси олдиндан чипта кассасида сўра.",
+              "ru": "В поезде? Так можно не везде – лучше заранее спроси в билетной кассе."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
