@@ -4676,6 +4676,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Am Sonntag fahren ein paar Kollegen an den See. Kommst du mit?",
+            "tr": {
+              "uz": "Yakshanba kuni bir necha hamkasb koʻlga boryapmiz. Biz bilan borasanmi?",
+              "uz-Cyrl": "Якшанба куни бир неча ҳамкасб кўлга боряпмиз. Биз билан борасанми?",
+              "ru": "В воскресенье несколько коллег едут на озеро. Поедешь с нами?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "An welchen See denn? Kann man dort gut schwimmen?",
+            "tr": {
+              "uz": "Qaysi koʻlga? U yerda bemalol suzsa boʻladimi?",
+              "uz-Cyrl": "Қайси кўлга? У ерда бемалол сузса бўладими?",
+              "ru": "На какое озеро? Там можно нормально плавать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Wir gehen an eine ruhige Stelle ohne Badeaufsicht, da ist fast nie jemand. Ist das okay für dich?",
+            "tr": {
+              "uz": "Biz qutqaruvchilar yoʻq tinch joyga boramiz, u yerda deyarli hech kim boʻlmaydi. Senga maʼqulmi?",
+              "uz-Cyrl": "Биз қутқарувчилар йўқ тинч жойга борамиз, у ерда деярли ҳеч ким бўлмайди. Сенга маъқулми?",
+              "ru": "Мы пойдём в тихое место без спасателей, там почти никого не бывает. Тебе так нормально?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Lieber nicht. Ich schwimme nur an bewachten Stellen – ohne Aufsicht ist mir das zu gefährlich.",
+            "tr": {
+              "uz": "Yaxshisi yoʻq. Men faqat qutqaruvchilar kuzatadigan joyda suzaman – nazoratsiz joy men uchun juda xavfli.",
+              "uz-Cyrl": "Яхшиси йўқ. Мен фақат қутқарувчилар кузатадиган жойда сузаман – назоратсиз жой мен учун жуда хавфли.",
+              "ru": "Лучше не надо. Плаваю только в охраняемых местах – без присмотра для меня это слишком опасно."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Hm. Am anderen Ufer gibt es auch einen Badestrand mit Rettungsschwimmern.",
+            "tr": {
+              "uz": "Hm. Narigi qirgʻoqda qutqaruvchilari bor plyaj ham bor.",
+              "uz-Cyrl": "Ҳм. Нариги қирғоқда қутқарувчилари бор пляж ҳам бор.",
+              "ru": "Хм. На другом берегу есть ещё пляж со спасателями."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mit Rettungsschwimmern? Dann gehen wir lieber dorthin – dann komme ich gern mit.",
+            "tr": {
+              "uz": "Qutqaruvchilari bormi? Unda oʻsha yoqqa boraylik – shunda bajonidil boraman.",
+              "uz-Cyrl": "Қутқарувчилари борми? Унда ўша ёққа борайлик – шунда бажонидил бораман.",
+              "ru": "Со спасателями? Тогда лучше пойдём туда – тогда с удовольствием поеду с вами."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
