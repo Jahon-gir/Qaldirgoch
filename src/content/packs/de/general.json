@@ -3972,6 +3972,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Mein Sohn hat seit heute Morgen Fieber, und ich muss gleich zur Arbeit.",
+            "tr": {
+              "uz": "Oʻgʻlimning bugun ertalabdan beri isitmasi bor, men esa hozir ishga borishim kerak.",
+              "uz-Cyrl": "Ўғлимнинг бугун эрталабдан бери иситмаси бор, мен эса ҳозир ишга боришим керак.",
+              "ru": "У моего сына с утра температура, а мне сейчас нужно на работу."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Oh nein, der Arme! Geht er noch in die Kita oder schon in die Schule?",
+            "tr": {
+              "uz": "Voy, bechora! U hali bogʻchagami yoki maktabgami?",
+              "uz-Cyrl": "Вой, бечора! У ҳали боғчагами ёки мактабгами?",
+              "ru": "Ой, бедняжка! Он ещё ходит в детский сад или уже в школу?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Schon in die Grundschule. Muss ich der Schule heute Bescheid sagen?",
+            "tr": {
+              "uz": "Allaqachon boshlangʻich maktabga. Bugun maktabga xabar berishim kerakmi?",
+              "uz-Cyrl": "Аллақачон бошланғич мактабга. Бугун мактабга хабар беришим керакми?",
+              "ru": "Уже в начальную школу. Мне нужно сегодня сообщить в школу?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Auf jeden Fall. Ruf vor dem Unterricht in der Schule an und sag: Mein Kind ist heute krank.",
+            "tr": {
+              "uz": "Albatta. Darsdan oldin maktabga qoʻngʻiroq qil va ayt: Bolam bugun kasal.",
+              "uz-Cyrl": "Албатта. Дарсдан олдин мактабга қўнғироқ қил ва айт: Болам бугун касал.",
+              "ru": "Обязательно. Позвони в школу до начала уроков и скажи: мой ребёнок сегодня болен."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Gut, das mache ich. Aber wer passt heute auf ihn auf? Meine Frau arbeitet auch.",
+            "tr": {
+              "uz": "Yaxshi, shunday qilaman. Lekin bugun unga kim qaraydi? Xotinim ham ishlaydi.",
+              "uz-Cyrl": "Яхши, шундай қиламан. Лекин бугун унга ким қарайди? Хотиним ҳам ишлайди.",
+              "ru": "Хорошо, так и сделаю. Но кто сегодня за ним присмотрит? Жена тоже работает."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Deine Frau arbeitet auch? Dann sprich gleich mit dem Chef – vielleicht kannst du heute zu Hause bleiben.",
+            "tr": {
+              "uz": "Xotining ham ishlaydimi? Unda hoziroq boshliq bilan gaplash — balki bugun uyda qola olarsan.",
+              "uz-Cyrl": "Хотининг ҳам ишлайдими? Унда ҳозироқ бошлиқ билан гаплаш — балки бугун уйда қола оларсан.",
+              "ru": "Жена тоже работает? Тогда сразу поговори с начальником – может, сегодня сможешь остаться дома."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
