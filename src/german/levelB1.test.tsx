@@ -19,20 +19,20 @@ import { WordsProvider } from './WordsProvider'
 vi.unmock('../content/german/packs')
 
 const NOW = '2026-11-01T00:00:00.000Z'
-const B1_TITLES = ['Jamoa yigʻilishi va fikr bildirish', 'Ish boʻyicha qisqa xat va xabar', 'Hamkasb bilan kelishmovchilikni hal qilish', 'Ish suhbati: oʻzingizni tanishtirish', 'Ish joyidagi qoidalar va ichki tartib', 'Malaka oshirish va kurslar', 'Ishchi huquqlari va yordam olish', 'Turar joy topish va ijara', 'Bank hisobi va toʻlovlar', 'Shifokor qabulida', 'Bolalar bogʻchasi va maktab', 'Jamoat transporti: kechikish va chipta']
+const B1_TITLES = ['Jamoa yigʻilishi va fikr bildirish', 'Ish boʻyicha qisqa xat va xabar', 'Hamkasb bilan kelishmovchilikni hal qilish', 'Ish suhbati: oʻzingizni tanishtirish', 'Ish joyidagi qoidalar va ichki tartib', 'Malaka oshirish va kurslar', 'Ishchi huquqlari va yordam olish', 'Turar joy topish va ijara', 'Bank hisobi va toʻlovlar', 'Shifokor qabulida', 'Bolalar bogʻchasi va maktab', 'Jamoat transporti: kechikish va chipta', 'Pochta, posilka va onlayn xarid']
 
 describe('B1 darajasi (umumiy kurs)', () => {
   it('B1 ochiq; umumiy B1 modullari va daraja testi id si bor', () => {
     expect(DE_COURSE.levels.find((l) => l.id === 'B1')).toEqual({ id: 'B1', locked: false })
     const gen = visibleModules('general', DE_COURSE.modules).filter((m) => m.level === 'B1')
-    expect(gen.map((m) => m.id)).toEqual(['general-majlis', 'general-yozma-xabar', 'general-kelishmovchilik', 'general-ish-suhbati', 'general-ish-joyi-qoidalari', 'general-malaka-oshirish', 'general-ish-huquqlari', 'general-uy-ijara', 'general-bank-hujjat', 'general-shifokor', 'general-oila-maktab', 'general-jamoat-transporti'])
+    expect(gen.map((m) => m.id)).toEqual(['general-majlis', 'general-yozma-xabar', 'general-kelishmovchilik', 'general-ish-suhbati', 'general-ish-joyi-qoidalari', 'general-malaka-oshirish', 'general-ish-huquqlari', 'general-uy-ijara', 'general-bank-hujjat', 'general-shifokor', 'general-oila-maktab', 'general-jamoat-transporti', 'general-pochta-xarid'])
     expect(ALL_RESULT_IDS.has(testId(levelScope('B1')))).toBe(true)
   })
 
   it('B1 daraja testi: 16 soʻz + 4 gap, faqat B1 modullaridan', () => {
     const info = scopeInfo(levelScope('B1'), 'general', DE_COURSE)!
     expect(info.type).toBe('level')
-    expect(info.moduleIds).toEqual(['general-majlis', 'general-yozma-xabar', 'general-kelishmovchilik', 'general-ish-suhbati', 'general-ish-joyi-qoidalari', 'general-malaka-oshirish', 'general-ish-huquqlari', 'general-uy-ijara', 'general-bank-hujjat', 'general-shifokor', 'general-oila-maktab', 'general-jamoat-transporti'])
+    expect(info.moduleIds).toEqual(['general-majlis', 'general-yozma-xabar', 'general-kelishmovchilik', 'general-ish-suhbati', 'general-ish-joyi-qoidalari', 'general-malaka-oshirish', 'general-ish-huquqlari', 'general-uy-ijara', 'general-bank-hujjat', 'general-shifokor', 'general-oila-maktab', 'general-jamoat-transporti', 'general-pochta-xarid'])
     expect(testParts(info)).toEqual({ words: 16, gaps: 4 })
     const qs = buildTest(info, { canListen: true, seed: 3, course: DE_COURSE })
     expect(qs).toHaveLength(20)

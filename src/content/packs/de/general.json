@@ -4232,6 +4232,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "pochta-xarid",
+      "title": {
+        "uz": "Pochta, posilka va onlayn xarid",
+        "uz-Cyrl": "Почта, посилка ва онлайн харид",
+        "ru": "Почта, посылки и онлайн-покупки"
+      },
+      "order": 25,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Pochta xodimi",
+              "uz-Cyrl": "Почта ходими",
+              "ru": "Сотрудник почты"
+            },
+            "de": "Guten Tag! Was kann ich für Sie tun?",
+            "tr": {
+              "uz": "Assalomu alaykum! Sizga qanday yordam bera olaman?",
+              "uz-Cyrl": "Ассалому алайкум! Сизга қандай ёрдам бера оламан?",
+              "ru": "Добрый день! Чем могу помочь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich möchte dieses Päckchen ins Ausland schicken – nach Usbekistan.",
+            "tr": {
+              "uz": "Bu kichik posilkani chet elga — Oʻzbekistonga joʻnatmoqchiman.",
+              "uz-Cyrl": "Бу кичик посилкани чет элга — Ўзбекистонга жўнатмоқчиман.",
+              "ru": "Я хочу отправить эту посылку за границу – в Узбекистан."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Pochta xodimi",
+              "uz-Cyrl": "Почта ходими",
+              "ru": "Сотрудник почты"
+            },
+            "de": "Gern. Haben Sie die Adresse schon auf das Päckchen geschrieben?",
+            "tr": {
+              "uz": "Albatta. Manzilni posilkaga yozib boʻldingizmi?",
+              "uz-Cyrl": "Албатта. Манзилни посилкага ёзиб бўлдингизми?",
+              "ru": "Конечно. Адрес на посылке уже написан?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, die Adresse steht oben, und mein Absender steht unten links.",
+            "tr": {
+              "uz": "Ha, manzil tepada, joʻnatuvchi sifatida mening manzilim esa pastda chapda.",
+              "uz-Cyrl": "Ҳа, манзил тепада, жўнатувчи сифатида менинг манзилим эса пастда чапда.",
+              "ru": "Да, адрес сверху, а мой обратный адрес – внизу слева."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Pochta xodimi",
+              "uz-Cyrl": "Почта ходими",
+              "ru": "Сотрудник почты"
+            },
+            "de": "Gut. Bitte füllen Sie noch dieses Formular für den Inhalt aus.",
+            "tr": {
+              "uz": "Yaxshi. Iltimos, ichidagi narsalar uchun mana shu blankani ham toʻldiring.",
+              "uz-Cyrl": "Яхши. Илтимос, ичидаги нарсалар учун мана шу бланкани ҳам тўлдиринг.",
+              "ru": "Хорошо. Пожалуйста, заполните ещё этот бланк о содержимом."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ein Formular für den Inhalt? Kein Problem, ich schreibe gleich auf, was drin ist.",
+            "tr": {
+              "uz": "Ichidagi narsalar uchun blankami? Muammo yoʻq, hozir nima borligini yozib beraman.",
+              "uz-Cyrl": "Ичидаги нарсалар учун бланками? Муаммо йўқ, ҳозир нима борлигини ёзиб бераман.",
+              "ru": "Бланк о содержимом? Без проблем, сейчас напишу, что внутри."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -19591,6 +19684,660 @@
           "uz": "Poyezd kirib kelayotganda oq chiziq orqasida turing.",
           "uz-Cyrl": "Поезд кириб келаётганда оқ чизиқ орқасида туринг.",
           "ru": "Стойте за белой линией, когда прибывает поезд."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-postfiliale",
+      "slug": "postfiliale",
+      "term": "die Postfiliale",
+      "icon": "building",
+      "article": "die",
+      "plural": "die Postfilialen",
+      "tr": {
+        "uz": "pochta boʻlimi",
+        "uz-Cyrl": "почта бўлими",
+        "ru": "почтовое отделение"
+      },
+      "pron": {
+        "uz": "die post-fi-li-a-le",
+        "uz-Cyrl": "ди пост-фи-ли-а-ле",
+        "ru": "ди пост-фи-ли-а-ле"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Die Postfiliale ist im Supermarkt an der Ecke.",
+        "tr": {
+          "uz": "Pochta boʻlimi burchakdagi supermarket ichida.",
+          "uz-Cyrl": "Почта бўлими бурчакдаги супермаркет ичида.",
+          "ru": "Почтовое отделение находится в супермаркете на углу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-briefmarke",
+      "slug": "briefmarke",
+      "term": "die Briefmarke",
+      "icon": "mail",
+      "article": "die",
+      "plural": "die Briefmarken",
+      "tr": {
+        "uz": "pochta markasi",
+        "uz-Cyrl": "почта маркаси",
+        "ru": "почтовая марка"
+      },
+      "pron": {
+        "uz": "die brif-mar-ke",
+        "uz-Cyrl": "ди бриф-мар-ке",
+        "ru": "ди бриф-мар-ке"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Ich brauche eine Briefmarke für diesen Brief.",
+        "tr": {
+          "uz": "Bu xat uchun menga pochta markasi kerak.",
+          "uz-Cyrl": "Бу хат учун менга почта маркаси керак.",
+          "ru": "Мне нужна марка для этого письма."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-umschlag",
+      "slug": "umschlag",
+      "term": "der Umschlag",
+      "icon": "mail",
+      "article": "der",
+      "plural": "die Umschläge",
+      "tr": {
+        "uz": "konvert",
+        "uz-Cyrl": "конверт",
+        "ru": "конверт"
+      },
+      "pron": {
+        "uz": "der um-shlak",
+        "uz-Cyrl": "дер ум-шлак",
+        "ru": "дер ум-шлак"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Der Umschlag ist zu klein für diese Unterlagen.",
+        "tr": {
+          "uz": "Konvert bu hujjatlar uchun juda kichik.",
+          "uz-Cyrl": "Конверт бу ҳужжатлар учун жуда кичик.",
+          "ru": "Конверт слишком маленький для этих документов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-einschreiben",
+      "slug": "einschreiben",
+      "term": "das Einschreiben",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "die Einschreiben",
+      "tr": {
+        "uz": "buyurtma xat (yetkazilgani qayd etiladi)",
+        "uz-Cyrl": "буюртма хат (етказилгани қайд этилади)",
+        "ru": "заказное письмо"
+      },
+      "pron": {
+        "uz": "das ayn-shray-ben",
+        "uz-Cyrl": "дас айн-шрай-бен",
+        "ru": "дас айн-шрай-бен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Wichtige Briefe schicke ich lieber per Einschreiben.",
+        "tr": {
+          "uz": "Muhim xatlarni buyurtma xat qilib joʻnatganim yaxshi.",
+          "uz-Cyrl": "Муҳим хатларни буюртма хат қилиб жўнатганим яхши.",
+          "ru": "Важные письма лучше отправлять заказным."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-paeckchen",
+      "slug": "paeckchen",
+      "term": "das Päckchen",
+      "icon": "package",
+      "article": "das",
+      "plural": "die Päckchen",
+      "tr": {
+        "uz": "kichik posilka",
+        "uz-Cyrl": "кичик посилка",
+        "ru": "небольшая посылка (бандероль)"
+      },
+      "pron": {
+        "uz": "das pek-xen",
+        "uz-Cyrl": "дас пек-хен",
+        "ru": "дас пек-хен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Das Päckchen ist leicht, es sind nur Bücher drin.",
+        "tr": {
+          "uz": "Kichik posilka yengil, ichida faqat kitoblar bor.",
+          "uz-Cyrl": "Кичик посилка енгил, ичида фақат китоблар бор.",
+          "ru": "Посылка лёгкая, в ней только книги."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-ich-moechte-dieses-paeckchen-ins-ausland-schicken",
+      "slug": "ich-moechte-dieses-paeckchen-ins-ausland-schicken",
+      "term": "Ich möchte dieses Päckchen ins Ausland schicken.",
+      "icon": "world",
+      "tr": {
+        "uz": "Bu kichik posilkani chet elga joʻnatmoqchiman.",
+        "uz-Cyrl": "Бу кичик посилкани чет элга жўнатмоқчиман.",
+        "ru": "Я хочу отправить эту посылку за границу."
+      },
+      "pron": {
+        "uz": "ix myox-te di-zes pek-xen ins aus-lant shi-ken.",
+        "uz-Cyrl": "их мёх-те ди-зес пек-хен инс аус-лант ши-кен.",
+        "ru": "их мёх-те ди-зес пек-хен инс аус-лант ши-кен."
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Am Schalter frage ich auch, wie lange es ungefähr dauert.",
+        "tr": {
+          "uz": "Darchada taxminan qancha vaqt ketishini ham soʻrayman.",
+          "uz-Cyrl": "Дарчада тахминан қанча вақт кетишини ҳам сўрайман.",
+          "ru": "У окошка я ещё спрашиваю, сколько это примерно займёт."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-paketbote",
+      "slug": "paketbote",
+      "term": "der Paketbote",
+      "icon": "truck",
+      "article": "der",
+      "plural": "die Paketboten",
+      "tr": {
+        "uz": "kuryer (posilka tashuvchi)",
+        "uz-Cyrl": "курьер (посилка ташувчи)",
+        "ru": "курьер (доставщик посылок)"
+      },
+      "pron": {
+        "uz": "der pa-ket-bo-te",
+        "uz-Cyrl": "дер па-кет-бо-те",
+        "ru": "дер па-кет-бо-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Der Paketbote hat heute zweimal geklingelt.",
+        "tr": {
+          "uz": "Kuryer bugun ikki marta qoʻngʻiroq tugmasini bosdi.",
+          "uz-Cyrl": "Курьер бугун икки марта қўнғироқ тугмасини босди.",
+          "ru": "Курьер сегодня звонил в дверь два раза."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-benachrichtigungskarte",
+      "slug": "benachrichtigungskarte",
+      "term": "die Benachrichtigungskarte",
+      "icon": "mailbox",
+      "article": "die",
+      "plural": "die Benachrichtigungskarten",
+      "tr": {
+        "uz": "xabarnoma kartochkasi (posilka haqida)",
+        "uz-Cyrl": "хабарнома карточкаси (посилка ҳақида)",
+        "ru": "извещение (о посылке)"
+      },
+      "pron": {
+        "uz": "die be-nax-rix-ti-gungs-kar-te",
+        "uz-Cyrl": "ди бе-нах-рих-ти-гунгс-кар-те",
+        "ru": "ди бе-нах-рих-ти-гунгс-кар-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "In meinem Briefkasten lag eine Benachrichtigungskarte.",
+        "tr": {
+          "uz": "Pochta qutimda xabarnoma kartochkasi yotgan ekan.",
+          "uz-Cyrl": "Почта қутимда хабарнома карточкаси ётган экан.",
+          "ru": "В моём почтовом ящике лежало извещение."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-paketshop",
+      "slug": "paketshop",
+      "term": "der Paketshop",
+      "icon": "building",
+      "article": "der",
+      "plural": "die Paketshops",
+      "tr": {
+        "uz": "posilka punkti (doʻkonda)",
+        "uz-Cyrl": "посилка пункти (дўконда)",
+        "ru": "пункт выдачи посылок"
+      },
+      "pron": {
+        "uz": "der pa-ket-shop",
+        "uz-Cyrl": "дер па-кет-шоп",
+        "ru": "дер па-кет-шоп"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Mein Paket liegt jetzt im Paketshop beim Kiosk.",
+        "tr": {
+          "uz": "Posilkam hozir kiosk yonidagi posilka punktida.",
+          "uz-Cyrl": "Посилкам ҳозир киоск ёнидаги посилка пунктида.",
+          "ru": "Моя посылка сейчас в пункте выдачи у киоска."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-sendungsverfolgung",
+      "slug": "sendungsverfolgung",
+      "term": "die Sendungsverfolgung",
+      "icon": "map-pin",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "posilkani kuzatish (internetda)",
+        "uz-Cyrl": "посилкани кузатиш (интернетда)",
+        "ru": "отслеживание отправления"
+      },
+      "pron": {
+        "uz": "die zen-dungs-fer-fol-gung",
+        "uz-Cyrl": "ди зен-дунгс-фер-фол-гунг",
+        "ru": "ди зен-дунгс-фер-фол-гунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Mit der Sendungsverfolgung sehe ich, wo mein Paket gerade ist.",
+        "tr": {
+          "uz": "Kuzatish orqali posilkam hozir qayerdaligini koʻraman.",
+          "uz-Cyrl": "Кузатиш орқали посилкам ҳозир қаердалигини кўраман.",
+          "ru": "Через отслеживание я вижу, где сейчас моя посылка."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-ablageort",
+      "slug": "ablageort",
+      "term": "der Ablageort",
+      "icon": "home",
+      "article": "der",
+      "plural": "die Ablageorte",
+      "tr": {
+        "uz": "posilka qoldiriladigan joy",
+        "uz-Cyrl": "посилка қолдириладиган жой",
+        "ru": "место, где оставить посылку"
+      },
+      "pron": {
+        "uz": "der ap-la-ge-ort",
+        "uz-Cyrl": "дер ап-ла-ге-орт",
+        "ru": "дер ап-ла-ге-орт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Als Ablageort habe ich die Garage angegeben.",
+        "tr": {
+          "uz": "Posilka qoldiriladigan joy qilib garajni koʻrsatdim.",
+          "uz-Cyrl": "Посилка қолдириладиган жой қилиб гаражни кўрсатдим.",
+          "ru": "Местом для посылки указан гараж."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-kann-ich-das-paket-fuer-meinen-nachbarn-annehmen",
+      "slug": "kann-ich-das-paket-fuer-meinen-nachbarn-annehmen",
+      "term": "Kann ich das Paket für meinen Nachbarn annehmen?",
+      "icon": "users",
+      "tr": {
+        "uz": "Qoʻshnimning posilkasini men qabul qilsam boʻladimi?",
+        "uz-Cyrl": "Қўшнимнинг посилкасини мен қабул қилсам бўладими?",
+        "ru": "Можно мне принять посылку для соседа?"
+      },
+      "pron": {
+        "uz": "kan ix das pa-ket fyur may-nen nax-barn an-ne-men?",
+        "uz-Cyrl": "кан их дас па-кет фюр май-нен нах-барн ан-не-мен?",
+        "ru": "кан их дас па-кет фюр май-нен нах-барн ан-не-мен?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Der Nachbar ist nicht zu Hause. Ich unterschreibe für ihn.",
+        "tr": {
+          "uz": "Qoʻshni uyda yoʻq. Uning oʻrniga men imzo qoʻyaman.",
+          "uz-Cyrl": "Қўшни уйда йўқ. Унинг ўрнига мен имзо қўяман.",
+          "ru": "Соседа нет дома. Я распишусь за него."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-onlineshop",
+      "slug": "onlineshop",
+      "term": "der Onlineshop",
+      "icon": "shopping-cart",
+      "article": "der",
+      "plural": "die Onlineshops",
+      "tr": {
+        "uz": "internet-doʻkon",
+        "uz-Cyrl": "интернет-дўкон",
+        "ru": "интернет-магазин"
+      },
+      "pron": {
+        "uz": "der on-layn-shop",
+        "uz-Cyrl": "дер он-лайн-шоп",
+        "ru": "дер он-лайн-шоп"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Diese Arbeitsschuhe habe ich in einem Onlineshop bestellt.",
+        "tr": {
+          "uz": "Bu ish poyabzalini internet-doʻkondan buyurtma qildim.",
+          "uz-Cyrl": "Бу иш пойабзалини интернет-дўкондан буюртма қилдим.",
+          "ru": "Эта рабочая обувь заказана в интернет-магазине."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-warenkorb",
+      "slug": "warenkorb",
+      "term": "der Warenkorb",
+      "icon": "shopping-cart",
+      "article": "der",
+      "plural": "die Warenkörbe",
+      "tr": {
+        "uz": "savat (internet-doʻkonda)",
+        "uz-Cyrl": "сават (интернет-дўконда)",
+        "ru": "корзина (в интернет-магазине)"
+      },
+      "pron": {
+        "uz": "der va-ren-korp",
+        "uz-Cyrl": "дер ва-рен-корп",
+        "ru": "дер ва-рен-корп"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Prüfen Sie den Warenkorb, bevor Sie bezahlen.",
+        "tr": {
+          "uz": "Toʻlashdan oldin savatni tekshiring.",
+          "uz-Cyrl": "Тўлашдан олдин саватни текширинг.",
+          "ru": "Проверьте корзину перед оплатой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-bestellbestaetigung",
+      "slug": "bestellbestaetigung",
+      "term": "die Bestellbestätigung",
+      "icon": "mail",
+      "article": "die",
+      "plural": "die Bestellbestätigungen",
+      "tr": {
+        "uz": "buyurtma tasdiqnomasi",
+        "uz-Cyrl": "буюртма тасдиқномаси",
+        "ru": "подтверждение заказа"
+      },
+      "pron": {
+        "uz": "die be-shtel-be-shte-ti-gung",
+        "uz-Cyrl": "ди бе-штель-бе-ште-ти-гунг",
+        "ru": "ди бе-штель-бе-ште-ти-гунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Die Bestellbestätigung kommt per E-Mail.",
+        "tr": {
+          "uz": "Buyurtma tasdiqnomasi elektron pochta orqali keladi.",
+          "uz-Cyrl": "Буюртма тасдиқномаси электрон почта орқали келади.",
+          "ru": "Подтверждение заказа приходит по электронной почте."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-lieferadresse",
+      "slug": "lieferadresse",
+      "term": "die Lieferadresse",
+      "icon": "map-pin",
+      "article": "die",
+      "plural": "die Lieferadressen",
+      "tr": {
+        "uz": "yetkazib berish manzili",
+        "uz-Cyrl": "етказиб бериш манзили",
+        "ru": "адрес доставки"
+      },
+      "pron": {
+        "uz": "die li-fer-a-dre-se",
+        "uz-Cyrl": "ди ли-фер-а-дре-се",
+        "ru": "ди ли-фер-а-дре-се"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Bitte prüfen Sie die Lieferadresse noch einmal.",
+        "tr": {
+          "uz": "Iltimos, yetkazib berish manzilini yana bir bor tekshiring.",
+          "uz-Cyrl": "Илтимос, етказиб бериш манзилини яна бир бор текширинг.",
+          "ru": "Пожалуйста, ещё раз проверьте адрес доставки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-retoure",
+      "slug": "retoure",
+      "term": "die Retoure",
+      "icon": "arrows-exchange",
+      "article": "die",
+      "plural": "die Retouren",
+      "tr": {
+        "uz": "tovarni qaytarish (posilka bilan)",
+        "uz-Cyrl": "товарни қайтариш (посилка билан)",
+        "ru": "возврат товара"
+      },
+      "pron": {
+        "uz": "die re-tu-re",
+        "uz-Cyrl": "ди ре-ту-ре",
+        "ru": "ди ре-ту-ре"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Für die Retoure klebe ich den Rücksendeschein auf das Paket.",
+        "tr": {
+          "uz": "Qaytarish uchun posilkaga qaytarish yorligʻini yopishtiraman.",
+          "uz-Cyrl": "Қайтариш учун посилкага қайтариш ёрлиғини ёпиштираман.",
+          "ru": "Для возврата я наклеиваю на посылку возвратную этикетку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-widerruf",
+      "slug": "widerruf",
+      "term": "der Widerruf",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Widerrufe",
+      "tr": {
+        "uz": "xariddan voz kechish (rasmiy)",
+        "uz-Cyrl": "хариддан воз кечиш (расмий)",
+        "ru": "отказ от покупки (отзыв договора)"
+      },
+      "pron": {
+        "uz": "der vi-der-ruf",
+        "uz-Cyrl": "дер ви-дер-руф",
+        "ru": "дер ви-дер-руф"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Den Widerruf schicke ich schriftlich an den Onlineshop.",
+        "tr": {
+          "uz": "Xariddan voz kechishni internet-doʻkonga yozma ravishda yuboraman.",
+          "uz-Cyrl": "Хариддан воз кечишни интернет-дўконга ёзма равишда юбораман.",
+          "ru": "Отказ от покупки я отправляю в интернет-магазин письменно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-fake-shop",
+      "slug": "fake-shop",
+      "term": "der Fake-Shop",
+      "icon": "alert-triangle",
+      "article": "der",
+      "plural": "die Fake-Shops",
+      "tr": {
+        "uz": "soxta internet-doʻkon",
+        "uz-Cyrl": "сохта интернет-дўкон",
+        "ru": "фальшивый интернет-магазин"
+      },
+      "pron": {
+        "uz": "der feyk-shop",
+        "uz-Cyrl": "дер фейк-шоп",
+        "ru": "дер фейк-шоп"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Ein Fake-Shop sieht echt aus, aber die Ware kommt nie an.",
+        "tr": {
+          "uz": "Soxta internet-doʻkon haqiqiydek koʻrinadi, lekin tovar hech qachon kelmaydi.",
+          "uz-Cyrl": "Сохта интернет-дўкон ҳақиқийдек кўринади, лекин товар ҳеч қачон келмайди.",
+          "ru": "Фальшивый интернет-магазин выглядит настоящим, но товар так и не приходит."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-pochta-xarid-klicken-sie-nicht-auf-links-in-fremden-sms",
+      "slug": "klicken-sie-nicht-auf-links-in-fremden-sms",
+      "term": "Klicken Sie nicht auf Links in fremden SMS!",
+      "icon": "phone",
+      "tr": {
+        "uz": "Notanish SMS ichidagi havolalarni bosmang!",
+        "uz-Cyrl": "Нотаниш СМС ичидаги ҳаволаларни босманг!",
+        "ru": "Не нажимайте на ссылки в СМС от незнакомых отправителей!"
+      },
+      "pron": {
+        "uz": "kli-ken zi nixt auf links in frem-den es-em-es!",
+        "uz-Cyrl": "кли-кен зи нихт ауф линкс ин фрем-ден эс-эм-эс!",
+        "ru": "кли-кен зи нихт ауф линкс ин фрем-ден эс-эм-эс!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "pochta-xarid",
+      "example": {
+        "term": "Eine Paket-SMS mit Link kann Betrug sein.",
+        "tr": {
+          "uz": "Posilka haqidagi havolali SMS firibgarlik boʻlishi mumkin.",
+          "uz-Cyrl": "Посилка ҳақидаги ҳаволали СМС фирибгарлик бўлиши мумкин.",
+          "ru": "СМС о посылке со ссылкой может оказаться мошенничеством."
         }
       },
       "safety": true,
