@@ -4324,6 +4324,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Schau mal, ich habe eine SMS bekommen: Mein Paket wartet, ich soll auf den Link klicken.",
+            "tr": {
+              "uz": "Qara, menga SMS keldi: posilkam kutib turganmish, havolani bosishim kerak ekan.",
+              "uz-Cyrl": "Қара, менга СМС келди: посилкам кутиб турганмиш, ҳаволани босишим керак экан.",
+              "ru": "Смотри, мне пришла СМС: моя посылка ждёт, нужно нажать на ссылку."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ein Paket? Hast du in letzter Zeit etwas bestellt?",
+            "tr": {
+              "uz": "Posilka? Yaqinda biror narsa buyurtma qilganmiding?",
+              "uz-Cyrl": "Посилка? Яқинда бирор нарса буюртма қилганмидинг?",
+              "ru": "Посылка? Ты в последнее время что-нибудь заказывал?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Nein, eigentlich nicht. Soll ich trotzdem draufklicken? Ich muss nur ein bisschen Porto bezahlen.",
+            "tr": {
+              "uz": "Yoʻq, aslida yoʻq. Baribir bosaveraymi? Faqat ozgina pochta haqi toʻlashim kerak ekan.",
+              "uz-Cyrl": "Йўқ, аслида йўқ. Барибир босаверайми? Фақат озгина почта ҳақи тўлашим керак экан.",
+              "ru": "Нет, вообще-то нет. Всё равно нажать? Нужно только немного доплатить за пересылку."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, klick nicht auf Links in fremden SMS – das ist oft Betrug.",
+            "tr": {
+              "uz": "Yoʻq, notanish SMS ichidagi havolani bosma — bu koʻpincha firibgarlik.",
+              "uz-Cyrl": "Йўқ, нотаниш СМС ичидаги ҳаволани босма — бу кўпинча фирибгарлик.",
+              "ru": "Нет, не нажимай на ссылки в СМС от незнакомых – это часто мошенничество."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Aber vielleicht ist es wirklich ein Paket für mich. Wie kann ich das prüfen?",
+            "tr": {
+              "uz": "Lekin balki bu rostdan ham menga posilkadir. Buni qanday tekshirsam boʻladi?",
+              "uz-Cyrl": "Лекин балки бу ростдан ҳам менга посилкадир. Буни қандай текширсам бўлади?",
+              "ru": "Но, может быть, это правда посылка для меня. Как это проверить?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Prüfen? Ganz einfach: Schau, ob eine Benachrichtigungskarte im Briefkasten liegt, oder frag im Paketshop nach.",
+            "tr": {
+              "uz": "Tekshirishmi? Oson: pochta qutingda xabarnoma kartochkasi bormi, qara yoki posilka punktidan soʻra.",
+              "uz-Cyrl": "Текширишми? Осон: почта қутингда хабарнома карточкаси борми, қара ёки посилка пунктидан сўра.",
+              "ru": "Проверить? Просто: посмотри, нет ли извещения в почтовом ящике, или спроси в пункте выдачи."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
