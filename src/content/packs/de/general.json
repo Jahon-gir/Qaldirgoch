@@ -4584,6 +4584,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "bosh-vaqt",
+      "title": {
+        "uz": "Boʻsh vaqt: sport, klub va tadbirlar",
+        "uz-Cyrl": "Бўш вақт: спорт, клуб ва тадбирлар",
+        "ru": "Свободное время: спорт, клубы и мероприятия"
+      },
+      "order": 27,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Murabbiy",
+              "uz-Cyrl": "Мураббий",
+              "ru": "Тренер"
+            },
+            "de": "Hallo! Du schaust schon eine Weile zu. Interessierst du dich für Volleyball?",
+            "tr": {
+              "uz": "Salom! Ancha vaqtdan beri tomosha qilyapsan. Voleybolga qiziqasanmi?",
+              "uz-Cyrl": "Салом! Анча вақтдан бери томоша қиляпсан. Волейболга қизиқасанми?",
+              "ru": "Привет! Ты уже давно смотришь. Тебе интересен волейбол?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Sehr! Volleyball war in Usbekistan mein Lieblingssport. Darf ich mal mitmachen?",
+            "tr": {
+              "uz": "Juda! Oʻzbekistonda voleybol eng sevimli sportim edi. Men ham qatnashsam boʻladimi?",
+              "uz-Cyrl": "Жуда! Ўзбекистонда волейбол энг севимли спортим эди. Мен ҳам қатнашсам бўладими?",
+              "ru": "Очень! В Узбекистане волейбол был моим любимым видом спорта. Можно мне тоже поучаствовать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Murabbiy",
+              "uz-Cyrl": "Мураббий",
+              "ru": "Тренер"
+            },
+            "de": "Gern! Mach zuerst einfach ein Probetraining mit. Wann hast du nach der Arbeit Zeit?",
+            "tr": {
+              "uz": "Bajonidil! Avval shunchaki sinov mashgʻulotiga qatnash. Ishdan keyin qachon vaqting bor?",
+              "uz-Cyrl": "Бажонидил! Аввал шунчаки синов машғулотига қатнаш. Ишдан кейин қачон вақтинг бор?",
+              "ru": "С удовольствием! Сначала просто приходи на пробную тренировку. Когда у тебя есть время после работы?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Meine Schicht endet um 17 Uhr, danach habe ich Zeit.",
+            "tr": {
+              "uz": "Smenam soat 17 da tugaydi, keyin vaqtim bor.",
+              "uz-Cyrl": "Сменам соат 17 да тугайди, кейин вақтим бор.",
+              "ru": "Моя смена заканчивается в 17 часов, после этого у меня есть время."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Murabbiy",
+              "uz-Cyrl": "Мураббий",
+              "ru": "Тренер"
+            },
+            "de": "Super, wir trainieren dienstags und donnerstags ab 18 Uhr. Bring bitte Hallenschuhe mit.",
+            "tr": {
+              "uz": "Zoʻr, biz seshanba va payshanba kunlari soat 18 dan mashgʻulot qilamiz. Iltimos, zal poyabzalini olib kel.",
+              "uz-Cyrl": "Зўр, биз сешанба ва пайшанба кунлари соат 18 дан машғулот қиламиз. Илтимос, зал пойабзалини олиб кел.",
+              "ru": "Отлично, мы тренируемся по вторникам и четвергам с 18 часов. Возьми, пожалуйста, обувь для зала."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Hallenschuhe? Gut, dass du das sagst – die muss ich mir noch kaufen.",
+            "tr": {
+              "uz": "Zal poyabzalimi? Aytganing yaxshi boʻldi – uni hali sotib olishim kerak.",
+              "uz-Cyrl": "Зал пойабзалими? Айтганинг яхши бўлди – уни ҳали сотиб олишим керак.",
+              "ru": "Обувь для зала? Хорошо, что предупреждаешь – её ещё нужно купить."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -21251,6 +21344,658 @@
           "uz": "Imzolashdan oldin doim mayda harfli shartlarni oʻqing.",
           "uz-Cyrl": "Имзолашдан олдин доим майда ҳарфли шартларни ўқинг.",
           "ru": "Перед подписанием всегда читайте мелкий шрифт."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-freizeit",
+      "slug": "freizeit",
+      "term": "die Freizeit",
+      "icon": "mood-smile",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "boʻsh vaqt",
+        "uz-Cyrl": "бўш вақт",
+        "ru": "свободное время"
+      },
+      "pron": {
+        "uz": "die fray-tsayt",
+        "uz-Cyrl": "ди фрай-цайт",
+        "ru": "ди фрай-цайт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "In meiner Freizeit spiele ich gern Fußball.",
+        "tr": {
+          "uz": "Boʻsh vaqtimda futbol oʻynashni yaxshi koʻraman.",
+          "uz-Cyrl": "Бўш вақтимда футбол ўйнашни яхши кўраман.",
+          "ru": "В свободное время я люблю играть в футбол."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-verein",
+      "slug": "verein",
+      "term": "der Verein",
+      "icon": "users",
+      "article": "der",
+      "plural": "die Vereine",
+      "tr": {
+        "uz": "klub (jamiyat, toʻgarak)",
+        "uz-Cyrl": "клуб (жамият, тўгарак)",
+        "ru": "клуб (общество, секция)"
+      },
+      "pron": {
+        "uz": "der fer-ayn",
+        "uz-Cyrl": "дер фер-айн",
+        "ru": "дер фер-айн"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "Mein Kollege spielt in einem Verein Fußball.",
+        "tr": {
+          "uz": "Hamkasbim klubda futbol oʻynaydi.",
+          "uz-Cyrl": "Ҳамкасбим клубда футбол ўйнайди.",
+          "ru": "Мой коллега играет в футбол в клубе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-mitglied",
+      "slug": "mitglied",
+      "term": "das Mitglied",
+      "icon": "user",
+      "article": "das",
+      "plural": "die Mitglieder",
+      "tr": {
+        "uz": "aʼzo",
+        "uz-Cyrl": "аъзо",
+        "ru": "член (участник)"
+      },
+      "pron": {
+        "uz": "das mit-glit",
+        "uz-Cyrl": "дас мит-глит",
+        "ru": "дас мит-глит"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "Jedes Mitglied bekommt einen Ausweis vom Verein.",
+        "tr": {
+          "uz": "Har bir aʼzo klubdan guvohnoma oladi.",
+          "uz-Cyrl": "Ҳар бир аъзо клубдан гувоҳнома олади.",
+          "ru": "Каждый участник получает от клуба членский билет."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-mitgliedsbeitrag",
+      "slug": "mitgliedsbeitrag",
+      "term": "der Mitgliedsbeitrag",
+      "icon": "cash",
+      "article": "der",
+      "plural": "die Mitgliedsbeiträge",
+      "tr": {
+        "uz": "aʼzolik badali",
+        "uz-Cyrl": "аъзолик бадали",
+        "ru": "членский взнос"
+      },
+      "pron": {
+        "uz": "der mit-glits-bay-trak",
+        "uz-Cyrl": "дер мит-глитс-бай-трак",
+        "ru": "дер мит-глитс-бай-трак"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "Wie hoch ist der Mitgliedsbeitrag im Monat?",
+        "tr": {
+          "uz": "Oylik aʼzolik badali qancha?",
+          "uz-Cyrl": "Ойлик аъзолик бадали қанча?",
+          "ru": "Какой членский взнос в месяц?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-training",
+      "slug": "training",
+      "term": "das Training",
+      "icon": "ball-football",
+      "article": "das",
+      "plural": "die Trainings",
+      "tr": {
+        "uz": "mashgʻulot (trenirovka)",
+        "uz-Cyrl": "машғулот (тренировка)",
+        "ru": "тренировка"
+      },
+      "pron": {
+        "uz": "das tre-ning",
+        "uz-Cyrl": "дас тре-нинг",
+        "ru": "дас тре-нинг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "Das Training beginnt heute um 18 Uhr.",
+        "tr": {
+          "uz": "Mashgʻulot bugun soat 18 da boshlanadi.",
+          "uz-Cyrl": "Машғулот бугун соат 18 да бошланади.",
+          "ru": "Тренировка начинается сегодня в 18 часов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-darf-ich-mal-mitmachen",
+      "slug": "darf-ich-mal-mitmachen",
+      "term": "Darf ich mal mitmachen?",
+      "icon": "message-circle",
+      "tr": {
+        "uz": "Men ham qatnashsam boʻladimi?",
+        "uz-Cyrl": "Мен ҳам қатнашсам бўладими?",
+        "ru": "Можно мне тоже поучаствовать?"
+      },
+      "pron": {
+        "uz": "darf ix mal mit-ma-xen?",
+        "uz-Cyrl": "дарф их маль мит-ма-хен?",
+        "ru": "дарф их маль мит-ма-хен?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "Ich bin neu hier und spiele auch gern Volleyball.",
+        "tr": {
+          "uz": "Men bu yerda yangiman va voleybolni ham yaxshi koʻraman.",
+          "uz-Cyrl": "Мен бу ерда янгиман ва волейболни ҳам яхши кўраман.",
+          "ru": "Я здесь впервые и тоже люблю играть в волейбол."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-fitnessstudio",
+      "slug": "fitnessstudio",
+      "term": "das Fitnessstudio",
+      "icon": "barbell",
+      "article": "das",
+      "plural": "die Fitnessstudios",
+      "tr": {
+        "uz": "sport zali (fitnes markazi)",
+        "uz-Cyrl": "спорт зали (фитнес маркази)",
+        "ru": "фитнес-клуб (спортзал)"
+      },
+      "pron": {
+        "uz": "das fit-nes-shtu-di-o",
+        "uz-Cyrl": "дас фит-нес-шту-ди-о",
+        "ru": "дас фит-нес-шту-ди-о"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "Nach der Arbeit gehe ich oft ins Fitnessstudio.",
+        "tr": {
+          "uz": "Ishdan keyin tez-tez sport zaliga boraman.",
+          "uz-Cyrl": "Ишдан кейин тез-тез спорт залига бораман.",
+          "ru": "После работы я часто хожу в спортзал."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-probetraining",
+      "slug": "probetraining",
+      "term": "das Probetraining",
+      "icon": "check",
+      "article": "das",
+      "plural": "die Probetrainings",
+      "tr": {
+        "uz": "sinov mashgʻuloti",
+        "uz-Cyrl": "синов машғулоти",
+        "ru": "пробная тренировка"
+      },
+      "pron": {
+        "uz": "das pro-be-tre-ning",
+        "uz-Cyrl": "дас про-бе-тре-нинг",
+        "ru": "дас про-бе-тре-нинг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "Vor dem Vertrag mache ich erst ein Probetraining.",
+        "tr": {
+          "uz": "Shartnomadan oldin avval sinov mashgʻulotiga boraman.",
+          "uz-Cyrl": "Шартномадан олдин аввал синов машғулотига бораман.",
+          "ru": "Перед заключением договора я сначала схожу на пробную тренировку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-volkshochschule",
+      "slug": "volkshochschule",
+      "term": "die Volkshochschule",
+      "icon": "building",
+      "article": "die",
+      "plural": "die Volkshochschulen",
+      "tr": {
+        "uz": "xalq oliy maktabi (kattalar uchun kurslar markazi)",
+        "uz-Cyrl": "халқ олий мактаби (катталар учун курслар маркази)",
+        "ru": "народный университет (курсы для взрослых)"
+      },
+      "pron": {
+        "uz": "die folks-hox-shu-le",
+        "uz-Cyrl": "ди фолькс-хох-шу-ле",
+        "ru": "ди фолькс-хох-шу-ле"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "An der Volkshochschule gibt es Kochkurse und Sprachkurse.",
+        "tr": {
+          "uz": "Xalq oliy maktabida pazandachilik va til kurslari bor.",
+          "uz-Cyrl": "Халқ олий мактабида пазандачилик ва тил курслари бор.",
+          "ru": "В народном университете есть кулинарные и языковые курсы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-bibliothek",
+      "slug": "bibliothek",
+      "term": "die Bibliothek",
+      "icon": "books",
+      "article": "die",
+      "plural": "die Bibliotheken",
+      "tr": {
+        "uz": "kutubxona",
+        "uz-Cyrl": "кутубхона",
+        "ru": "библиотека"
+      },
+      "pron": {
+        "uz": "die bib-li-o-tek",
+        "uz-Cyrl": "ди биб-ли-о-тек",
+        "ru": "ди биб-ли-о-тек"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "In der Bibliothek kann ich Bücher auf Deutsch ausleihen.",
+        "tr": {
+          "uz": "Kutubxonada nemischa kitoblarni olib oʻqishim mumkin.",
+          "uz-Cyrl": "Кутубхонада немисча китобларни олиб ўқишим мумкин.",
+          "ru": "В библиотеке можно брать книги на немецком."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-bibliotheksausweis",
+      "slug": "bibliotheksausweis",
+      "term": "der Bibliotheksausweis",
+      "icon": "id",
+      "article": "der",
+      "plural": "die Bibliotheksausweise",
+      "tr": {
+        "uz": "kutubxona guvohnomasi",
+        "uz-Cyrl": "кутубхона гувоҳномаси",
+        "ru": "читательский билет"
+      },
+      "pron": {
+        "uz": "der bib-li-o-teks-aus-vays",
+        "uz-Cyrl": "дер биб-ли-о-текс-аус-вайс",
+        "ru": "дер биб-ли-о-текс-аус-вайс"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "Für den Bibliotheksausweis brauche ich meinen Ausweis.",
+        "tr": {
+          "uz": "Kutubxona guvohnomasi uchun shaxsimni tasdiqlovchi hujjat kerak.",
+          "uz-Cyrl": "Кутубхона гувоҳномаси учун шахсимни тасдиқловчи ҳужжат керак.",
+          "ru": "Для читательского билета нужно удостоверение личности."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-wann-ist-das-naechste-training",
+      "slug": "wann-ist-das-naechste-training",
+      "term": "Wann ist das nächste Training?",
+      "icon": "clock",
+      "tr": {
+        "uz": "Keyingi mashgʻulot qachon?",
+        "uz-Cyrl": "Кейинги машғулот қачон?",
+        "ru": "Когда следующая тренировка?"
+      },
+      "pron": {
+        "uz": "van ist das nex-ste tre-ning?",
+        "uz-Cyrl": "ван ист дас нэкс-сте тре-нинг?",
+        "ru": "ван ист дас нэкс-сте тре-нинг?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "Ich möchte gern noch einmal kommen.",
+        "tr": {
+          "uz": "Yana bir marta kelmoqchiman.",
+          "uz-Cyrl": "Яна бир марта келмоқчиман.",
+          "ru": "Хочу прийти ещё раз."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-ausflug",
+      "slug": "ausflug",
+      "term": "der Ausflug",
+      "icon": "map",
+      "article": "der",
+      "plural": "die Ausflüge",
+      "tr": {
+        "uz": "sayohat (bir kunlik sayr)",
+        "uz-Cyrl": "саёҳат (бир кунлик сайр)",
+        "ru": "поездка (прогулка на день)"
+      },
+      "pron": {
+        "uz": "der aus-fluk",
+        "uz-Cyrl": "дер аус-флук",
+        "ru": "дер аус-флук"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "Am Sonntag machen wir einen Ausflug an den See.",
+        "tr": {
+          "uz": "Yakshanba kuni koʻlga sayohatga boramiz.",
+          "uz-Cyrl": "Якшанба куни кўлга саёҳатга борамиз.",
+          "ru": "В воскресенье мы едем на прогулку к озеру."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-eintrittskarte",
+      "slug": "eintrittskarte",
+      "term": "die Eintrittskarte",
+      "icon": "ticket",
+      "article": "die",
+      "plural": "die Eintrittskarten",
+      "tr": {
+        "uz": "kirish chiptasi",
+        "uz-Cyrl": "кириш чиптаси",
+        "ru": "входной билет"
+      },
+      "pron": {
+        "uz": "die ayn-trits-kar-te",
+        "uz-Cyrl": "ди айн-тритс-кар-те",
+        "ru": "ди айн-тритс-кар-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "Die Eintrittskarte für das Museum kaufe ich online.",
+        "tr": {
+          "uz": "Muzey uchun kirish chiptasini internetda sotib olaman.",
+          "uz-Cyrl": "Музей учун кириш чиптасини интернетда сотиб оламан.",
+          "ru": "Входной билет в музей я покупаю онлайн."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-ermaessigt",
+      "slug": "ermaessigt",
+      "term": "ermäßigt",
+      "icon": "cash",
+      "tr": {
+        "uz": "chegirmali (arzonlashtirilgan)",
+        "uz-Cyrl": "чегирмали (арзонлаштирилган)",
+        "ru": "со скидкой (льготный)"
+      },
+      "pron": {
+        "uz": "er-me-sixt",
+        "uz-Cyrl": "эр-ме-сихт",
+        "ru": "эр-ме-сихт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "Für Kinder und Schüler ist der Eintritt oft ermäßigt.",
+        "tr": {
+          "uz": "Bolalar va oʻquvchilar uchun kirish koʻpincha chegirmali.",
+          "uz-Cyrl": "Болалар ва ўқувчилар учун кириш кўпинча чегирмали.",
+          "ru": "Для детей и школьников вход часто льготный."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-schwimmbad",
+      "slug": "schwimmbad",
+      "term": "das Schwimmbad",
+      "icon": "swimming",
+      "article": "das",
+      "plural": "die Schwimmbäder",
+      "tr": {
+        "uz": "basseyn (suzish havzasi)",
+        "uz-Cyrl": "бассейн (сузиш ҳавзаси)",
+        "ru": "бассейн"
+      },
+      "pron": {
+        "uz": "das shvim-bat",
+        "uz-Cyrl": "дас швим-бат",
+        "ru": "дас швим-бат"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "Im Sommer gehen wir mit den Kindern ins Schwimmbad.",
+        "tr": {
+          "uz": "Yozda bolalar bilan basseynga boramiz.",
+          "uz-Cyrl": "Ёзда болалар билан бассейнга борамиз.",
+          "ru": "Летом мы ходим с детьми в бассейн."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-spielplatz",
+      "slug": "spielplatz",
+      "term": "der Spielplatz",
+      "icon": "mood-kid",
+      "article": "der",
+      "plural": "die Spielplätze",
+      "tr": {
+        "uz": "bolalar maydonchasi",
+        "uz-Cyrl": "болалар майдончаси",
+        "ru": "детская площадка"
+      },
+      "pron": {
+        "uz": "der shpil-plats",
+        "uz-Cyrl": "дер шпиль-плац",
+        "ru": "дер шпиль-плац"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "Nach der Kita gehen wir oft auf den Spielplatz.",
+        "tr": {
+          "uz": "Bogʻchadan keyin tez-tez bolalar maydonchasiga boramiz.",
+          "uz-Cyrl": "Боғчадан кейин тез-тез болалар майдончасига борамиз.",
+          "ru": "После детского сада мы часто ходим на детскую площадку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-ehrenamt",
+      "slug": "ehrenamt",
+      "term": "das Ehrenamt",
+      "icon": "heart-handshake",
+      "article": "das",
+      "plural": "die Ehrenämter",
+      "tr": {
+        "uz": "koʻngilli ish (bepul jamoat ishi)",
+        "uz-Cyrl": "кўнгилли иш (бепул жамоат иши)",
+        "ru": "волонтёрская работа (бесплатная, общественная)"
+      },
+      "pron": {
+        "uz": "das e-ren-amt",
+        "uz-Cyrl": "дас э-рен-амт",
+        "ru": "дас э-рен-амт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "Im Ehrenamt hilft sie Kindern bei den Hausaufgaben.",
+        "tr": {
+          "uz": "U koʻngilli sifatida bolalarga uy vazifasida yordam beradi.",
+          "uz-Cyrl": "У кўнгилли сифатида болаларга уй вазифасида ёрдам беради.",
+          "ru": "Как волонтёр она помогает детям с домашними заданиями."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-schwimmen-sie-nur-an-bewachten-stellen",
+      "slug": "schwimmen-sie-nur-an-bewachten-stellen",
+      "term": "Schwimmen Sie nur an bewachten Stellen!",
+      "icon": "lifebuoy",
+      "tr": {
+        "uz": "Faqat qutqaruvchilar kuzatadigan joyda suzing!",
+        "uz-Cyrl": "Фақат қутқарувчилар кузатадиган жойда сузинг!",
+        "ru": "Плавайте только в охраняемых местах!"
+      },
+      "pron": {
+        "uz": "shvi-men zi nur an be-vax-ten shte-len!",
+        "uz-Cyrl": "шви-мен зи нур ан бе-вах-тен ште-лен!",
+        "ru": "шви-мен зи нур ан бе-вах-тен ште-лен!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "In Seen und Flüssen kann das Wasser gefährlich sein.",
+        "tr": {
+          "uz": "Koʻl va daryolarda suv xavfli boʻlishi mumkin.",
+          "uz-Cyrl": "Кўл ва дарёларда сув хавфли бўлиши мумкин.",
+          "ru": "В озёрах и реках вода может быть опасной."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bosh-vaqt-badeverbot",
+      "slug": "badeverbot",
+      "term": "das Badeverbot",
+      "icon": "alert-triangle",
+      "article": "das",
+      "plural": "die Badeverbote",
+      "tr": {
+        "uz": "suzish taqiqi",
+        "uz-Cyrl": "сузиш тақиқи",
+        "ru": "запрет на купание"
+      },
+      "pron": {
+        "uz": "das ba-de-fer-bot",
+        "uz-Cyrl": "дас ба-де-фер-бот",
+        "ru": "дас ба-де-фер-бот"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bosh-vaqt",
+      "example": {
+        "term": "Hier gilt Badeverbot – die Strömung ist zu stark.",
+        "tr": {
+          "uz": "Bu yerda suzish taqiqlangan – oqim juda kuchli.",
+          "uz-Cyrl": "Бу ерда сузиш тақиқланган – оқим жуда кучли.",
+          "ru": "Здесь купание запрещено – слишком сильное течение."
         }
       },
       "safety": true,
