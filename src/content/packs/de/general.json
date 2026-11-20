@@ -4760,6 +4760,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "qoshnilar",
+      "title": {
+        "uz": "Qoʻshnilar va uydagi tartib",
+        "uz-Cyrl": "Қўшнилар ва уйдаги тартиб",
+        "ru": "Соседи и порядок в доме"
+      },
+      "order": 28,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Qoʻshni ayol",
+              "uz-Cyrl": "Қўшни аёл",
+              "ru": "Соседка"
+            },
+            "de": "Hallo! Ich habe Sie hier im Haus noch nie gesehen.",
+            "tr": {
+              "uz": "Salom! Sizni bu uyda hali hech koʻrmagan edim.",
+              "uz-Cyrl": "Салом! Сизни бу уйда ҳали ҳеч кўрмаган эдим.",
+              "ru": "Здравствуйте! Я вас ещё ни разу не видела в этом доме."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Darf ich mich kurz vorstellen? Ich bin neu im Haus und wohne direkt über Ihnen.",
+            "tr": {
+              "uz": "Oʻzimni qisqacha tanishtirsam maylimi? Men bu uyga yangi koʻchib keldim va aynan tepangizda yashayman.",
+              "uz-Cyrl": "Ўзимни қисқача таништирсам майлими? Мен бу уйга янги кўчиб келдим ва айнан тепангизда яшайман.",
+              "ru": "Можно коротко представиться? Я недавно живу в этом доме, прямо над вами."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Qoʻshni ayol",
+              "uz-Cyrl": "Қўшни аёл",
+              "ru": "Соседка"
+            },
+            "de": "Herzlich willkommen! Hat Ihnen schon jemand den Fahrradkeller und die Waschküche gezeigt?",
+            "tr": {
+              "uz": "Xush kelibsiz! Sizga velosiped yertoʻlasi va kir yuvish xonasini kimdir koʻrsatdimi?",
+              "uz-Cyrl": "Хуш келибсиз! Сизга велосипед ертўласи ва кир ювиш хонасини кимдир кўрсатдими?",
+              "ru": "Добро пожаловать! Вам уже кто-нибудь показал подвал для велосипедов и прачечную?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, noch nicht. Wo sind die beiden denn?",
+            "tr": {
+              "uz": "Yoʻq, hali koʻrsatishmadi. Ular qayerda?",
+              "uz-Cyrl": "Йўқ, ҳали кўрсатишмади. Улар қаерда?",
+              "ru": "Нет, ещё нет. А где они?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Qoʻshni ayol",
+              "uz-Cyrl": "Қўшни аёл",
+              "ru": "Соседка"
+            },
+            "de": "Beides ist unten im Keller. In der Waschküche hängt ein Plan – tragen Sie sich dort einfach ein.",
+            "tr": {
+              "uz": "Ikkalasi ham pastda, yertoʻlada. Kir yuvish xonasida jadval osilgan — oʻzingizni oʻsha yerga yozib qoʻying.",
+              "uz-Cyrl": "Иккаласи ҳам пастда, ертўлада. Кир ювиш хонасида жадвал осилган — ўзингизни ўша ерга ёзиб қўйинг.",
+              "ru": "Оба внизу, в подвале. В прачечной висит график – просто запишитесь туда."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "In den Plan? Gut, dann trage ich mich heute Abend gleich für Samstag ein.",
+            "tr": {
+              "uz": "Jadvalgami? Yaxshi, unda bugun kechqurun shanba kuniga yozilib qoʻyaman.",
+              "uz-Cyrl": "Жадвалгами? Яхши, унда бугун кечқурун шанба кунига ёзилиб қўяман.",
+              "ru": "В график? Хорошо, тогда сегодня вечером сразу запишусь на субботу."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -22079,6 +22172,660 @@
           "uz": "Bu yerda suzish taqiqlangan – oqim juda kuchli.",
           "uz-Cyrl": "Бу ерда сузиш тақиқланган – оқим жуда кучли.",
           "ru": "Здесь купание запрещено – слишком сильное течение."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-nachbarschaft",
+      "slug": "nachbarschaft",
+      "term": "die Nachbarschaft",
+      "icon": "building-community",
+      "article": "die",
+      "plural": "die Nachbarschaften",
+      "tr": {
+        "uz": "qoʻshnichilik (atrofdagi qoʻshnilar)",
+        "uz-Cyrl": "қўшничилик (атрофдаги қўшнилар)",
+        "ru": "соседство (соседи вокруг)"
+      },
+      "pron": {
+        "uz": "die nax-bar-shaft",
+        "uz-Cyrl": "ди нах-бар-шафт",
+        "ru": "ди нах-бар-шафт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "In unserer Nachbarschaft wohnen viele Familien mit Kindern.",
+        "tr": {
+          "uz": "Bizning mahallamizda bolali oilalar koʻp yashaydi.",
+          "uz-Cyrl": "Бизнинг маҳалламизда болали оилалар кўп яшайди.",
+          "ru": "По соседству с нами живёт много семей с детьми."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-hausgemeinschaft",
+      "slug": "hausgemeinschaft",
+      "term": "die Hausgemeinschaft",
+      "icon": "users",
+      "article": "die",
+      "plural": "die Hausgemeinschaften",
+      "tr": {
+        "uz": "bir uyda yashovchilar (uy jamoasi)",
+        "uz-Cyrl": "бир уйда яшовчилар (уй жамоаси)",
+        "ru": "жильцы дома (все соседи по дому)"
+      },
+      "pron": {
+        "uz": "die haus-ge-mayn-shaft",
+        "uz-Cyrl": "ди хаус-ге-майн-шафт",
+        "ru": "ди хаус-ге-майн-шафт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Im Sommer feiert die Hausgemeinschaft ein kleines Fest im Hof.",
+        "tr": {
+          "uz": "Yozda uyda yashovchilar hovlida kichik bayram qilishadi.",
+          "uz-Cyrl": "Ёзда уйда яшовчилар ҳовлида кичик байрам қилишади.",
+          "ru": "Летом жильцы дома устраивают во дворе небольшой праздник."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-darf-ich-mich-kurz-vorstellen-ich-bin-neu-im-haus",
+      "slug": "darf-ich-mich-kurz-vorstellen-ich-bin-neu-im-haus",
+      "term": "Darf ich mich kurz vorstellen? Ich bin neu im Haus.",
+      "icon": "mood-smile",
+      "tr": {
+        "uz": "Oʻzimni qisqacha tanishtirsam maylimi? Men bu uyga yangi koʻchib keldim.",
+        "uz-Cyrl": "Ўзимни қисқача таништирсам майлими? Мен бу уйга янги кўчиб келдим.",
+        "ru": "Можно коротко представиться? Я недавно живу в этом доме."
+      },
+      "pron": {
+        "uz": "darf ix mix kurts for-shte-len? ix bin noy im haus",
+        "uz-Cyrl": "дарф их мих курц фор-ште-лен? их бин ной им хаус",
+        "ru": "дарф их мих курц фор-ште-лен? их бин ной им хаус"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Ich wohne jetzt in der Wohnung direkt neben Ihnen.",
+        "tr": {
+          "uz": "Endi aynan yoningizdagi kvartirada yashayman.",
+          "uz-Cyrl": "Энди айнан ёнингиздаги квартирада яшайман.",
+          "ru": "Теперь я живу в квартире прямо рядом с вами."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-klingelschild",
+      "slug": "klingelschild",
+      "term": "das Klingelschild",
+      "icon": "bell",
+      "article": "das",
+      "plural": "die Klingelschilder",
+      "tr": {
+        "uz": "qoʻngʻiroq yonidagi ism yozuvi",
+        "uz-Cyrl": "қўнғироқ ёнидаги исм ёзуви",
+        "ru": "табличка с фамилией у звонка"
+      },
+      "pron": {
+        "uz": "das klin-gel-shilt",
+        "uz-Cyrl": "дас клин-гель-шилт",
+        "ru": "дас клин-гель-шилт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Ohne meinen Namen auf dem Klingelschild findet mich der Paketbote nicht.",
+        "tr": {
+          "uz": "Qoʻngʻiroq yonida ismim boʻlmasa, posilka tashuvchi meni topa olmaydi.",
+          "uz-Cyrl": "Қўнғироқ ёнида исмим бўлмаса, посилка ташувчи мени топа олмайди.",
+          "ru": "Без моей фамилии на табличке у звонка курьер меня не найдёт."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-hausflur",
+      "slug": "hausflur",
+      "term": "der Hausflur",
+      "icon": "building",
+      "article": "der",
+      "plural": "die Hausflure",
+      "tr": {
+        "uz": "uy yoʻlagi (zinapoya oldi)",
+        "uz-Cyrl": "уй йўлаги (зинапоя олди)",
+        "ru": "коридор в подъезде"
+      },
+      "pron": {
+        "uz": "der haus-flur",
+        "uz-Cyrl": "дер хаус-флур",
+        "ru": "дер хаус-флур"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Bitte stellen Sie keine Schuhe in den Hausflur.",
+        "tr": {
+          "uz": "Iltimos, uy yoʻlagiga poyabzal qoʻymang.",
+          "uz-Cyrl": "Илтимос, уй йўлагига пойабзал қўйманг.",
+          "ru": "Пожалуйста, не ставьте обувь в коридоре подъезда."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-haustuer",
+      "slug": "haustuer",
+      "term": "die Haustür",
+      "icon": "door",
+      "article": "die",
+      "plural": "die Haustüren",
+      "tr": {
+        "uz": "podyezd eshigi (uyning kirish eshigi)",
+        "uz-Cyrl": "подъезд эшиги (уйнинг кириш эшиги)",
+        "ru": "входная дверь дома (подъезда)"
+      },
+      "pron": {
+        "uz": "die haus-tyur",
+        "uz-Cyrl": "ди хаус-тюр",
+        "ru": "ди хаус-тюр"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Abends mache ich die Haustür immer hinter mir zu.",
+        "tr": {
+          "uz": "Kechqurun podyezd eshigini doim ortimdan yopaman.",
+          "uz-Cyrl": "Кечқурун подъезд эшигини доим ортимдан ёпаман.",
+          "ru": "Вечером я всегда закрываю за собой входную дверь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-gegensprechanlage",
+      "slug": "gegensprechanlage",
+      "term": "die Gegensprechanlage",
+      "icon": "phone",
+      "article": "die",
+      "plural": "die Gegensprechanlagen",
+      "tr": {
+        "uz": "domofon",
+        "uz-Cyrl": "домофон",
+        "ru": "домофон"
+      },
+      "pron": {
+        "uz": "die ge-gen-shprex-an-la-ge",
+        "uz-Cyrl": "ди ге-ген-шпрех-ан-ла-ге",
+        "ru": "ди ге-ген-шпрех-ан-ла-ге"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Wenn es klingelt, frage ich zuerst über die Gegensprechanlage, wer da ist.",
+        "tr": {
+          "uz": "Qoʻngʻiroq chalinsa, avval domofon orqali kimligini soʻrayman.",
+          "uz-Cyrl": "Қўнғироқ чалинса, аввал домофон орқали кимлигини сўрайман.",
+          "ru": "Когда звонят, я сначала спрашиваю по домофону, кто там."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-nachtruhe",
+      "slug": "nachtruhe",
+      "term": "die Nachtruhe",
+      "icon": "moon-stars",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "tungi osoyishtalik (tunda shovqin qilmaslik)",
+        "uz-Cyrl": "тунги осойишталик (тунда шовқин қилмаслик)",
+        "ru": "ночной покой (тишина ночью)"
+      },
+      "pron": {
+        "uz": "die naxt-ru-e",
+        "uz-Cyrl": "ди нахт-ру-е",
+        "ru": "ди нахт-ру-е"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Während der Nachtruhe hört man keine laute Musik.",
+        "tr": {
+          "uz": "Tungi osoyishtalik vaqtida baland ovozda musiqa tinglanmaydi.",
+          "uz-Cyrl": "Тунги осойишталик вақтида баланд овозда мусиқа тингланмайди.",
+          "ru": "Во время ночного покоя громкую музыку не слушают."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-ruhestoerung",
+      "slug": "ruhestoerung",
+      "term": "die Ruhestörung",
+      "icon": "volume",
+      "article": "die",
+      "plural": "die Ruhestörungen",
+      "tr": {
+        "uz": "tinchlikni buzish (shovqin bilan)",
+        "uz-Cyrl": "тинчликни бузиш (шовқин билан)",
+        "ru": "нарушение тишины (шумом)"
+      },
+      "pron": {
+        "uz": "die ru-e-shtyo-rung",
+        "uz-Cyrl": "ди ру-е-штё-рунг",
+        "ru": "ди ру-е-штё-рунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Eine laute Party mitten in der Nacht ist eine Ruhestörung.",
+        "tr": {
+          "uz": "Yarim tunda shovqinli bazm — bu tinchlikni buzish.",
+          "uz-Cyrl": "Ярим тунда шовқинли базм — бу тинчликни бузиш.",
+          "ru": "Шумная вечеринка посреди ночи — это нарушение тишины."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-ruecksicht",
+      "slug": "ruecksicht",
+      "term": "die Rücksicht",
+      "icon": "heart-handshake",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "boshqalarni oʻylash (eʼtiborli boʻlish)",
+        "uz-Cyrl": "бошқаларни ўйлаш (эътиборли бўлиш)",
+        "ru": "уважение к другим (такт)"
+      },
+      "pron": {
+        "uz": "die ryuk-zixt",
+        "uz-Cyrl": "ди рюк-зихт",
+        "ru": "ди рюк-зихт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Im Haus nehmen wir Rücksicht aufeinander.",
+        "tr": {
+          "uz": "Uyda bir-birimizni oʻylaymiz.",
+          "uz-Cyrl": "Уйда бир-биримизни ўйлаймиз.",
+          "ru": "В доме мы считаемся друг с другом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-koennten-sie-bitte-etwas-leiser-sein",
+      "slug": "koennten-sie-bitte-etwas-leiser-sein",
+      "term": "Könnten Sie bitte etwas leiser sein?",
+      "icon": "volume-off",
+      "tr": {
+        "uz": "Iltimos, biroz jimroq boʻlolmaysizmi?",
+        "uz-Cyrl": "Илтимос, бироз жимроқ бўлолмайсизми?",
+        "ru": "Не могли бы вы быть немного потише?"
+      },
+      "pron": {
+        "uz": "kyon-ten zi bi-te et-vas lay-zer zayn?",
+        "uz-Cyrl": "кён-тен зи би-те ет-вас лай-зер зайн?",
+        "ru": "кён-тен зи би-те ет-вас лай-зер зайн?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Es ist schon spät, und meine Kinder schlafen.",
+        "tr": {
+          "uz": "Allaqachon kech boʻldi, bolalarim uxlayapti.",
+          "uz-Cyrl": "Аллақачон кеч бўлди, болаларим ухлаяпти.",
+          "ru": "Уже поздно, и мои дети спят."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-muelltonne",
+      "slug": "muelltonne",
+      "term": "die Mülltonne",
+      "icon": "trash",
+      "article": "die",
+      "plural": "die Mülltonnen",
+      "tr": {
+        "uz": "chiqindi qutisi (katta, hovlidagi)",
+        "uz-Cyrl": "чиқинди қутиси (катта, ҳовлидаги)",
+        "ru": "мусорный бак"
+      },
+      "pron": {
+        "uz": "die myul-to-ne",
+        "uz-Cyrl": "ди мюль-то-не",
+        "ru": "ди мюль-то-не"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Der Müll kommt in die Mülltonne im Hof, nicht daneben.",
+        "tr": {
+          "uz": "Chiqindi hovlidagi chiqindi qutisiga tashlanadi, yoniga emas.",
+          "uz-Cyrl": "Чиқинди ҳовлидаги чиқинди қутисига ташланади, ёнига эмас.",
+          "ru": "Мусор кладут в бак во дворе, а не рядом с ним."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-muellabfuhr",
+      "slug": "muellabfuhr",
+      "term": "die Müllabfuhr",
+      "icon": "truck",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "chiqindi olib ketish xizmati",
+        "uz-Cyrl": "чиқинди олиб кетиш хизмати",
+        "ru": "вывоз мусора (мусоровоз)"
+      },
+      "pron": {
+        "uz": "die myul-ap-fur",
+        "uz-Cyrl": "ди мюль-ап-фур",
+        "ru": "ди мюль-ап-фур"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Wann kommt bei uns die Müllabfuhr? Das steht im Abfallkalender.",
+        "tr": {
+          "uz": "Bizga chiqindi mashinasi qachon keladi? Bu chiqindi taqvimida yozilgan.",
+          "uz-Cyrl": "Бизга чиқинди машинаси қачон келади? Бу чиқинди тақвимида ёзилган.",
+          "ru": "Когда к нам приезжает мусоровоз? Это написано в графике вывоза мусора."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-sperrmuell",
+      "slug": "sperrmuell",
+      "term": "der Sperrmüll",
+      "icon": "armchair",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "katta chiqindi (eski mebel va h.k.)",
+        "uz-Cyrl": "катта чиқинди (эски мебель ва ҳ.к.)",
+        "ru": "крупногабаритный мусор (старая мебель и т. п.)"
+      },
+      "pron": {
+        "uz": "der shper-myul",
+        "uz-Cyrl": "дер шпер-мюль",
+        "ru": "дер шпер-мюль"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Das alte Sofa ist Sperrmüll und kommt nicht in die normale Tonne.",
+        "tr": {
+          "uz": "Eski divan — katta chiqindi, u oddiy chiqindi qutisiga tashlanmaydi.",
+          "uz-Cyrl": "Эски диван — катта чиқинди, у оддий чиқинди қутисига ташланмайди.",
+          "ru": "Старый диван — это крупногабаритный мусор, его не выбрасывают в обычный бак."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-waschkueche",
+      "slug": "waschkueche",
+      "term": "die Waschküche",
+      "icon": "wash-machine",
+      "article": "die",
+      "plural": "die Waschküchen",
+      "tr": {
+        "uz": "umumiy kir yuvish xonasi (yertoʻlada)",
+        "uz-Cyrl": "умумий кир ювиш хонаси (ертўлада)",
+        "ru": "общая прачечная (в подвале)"
+      },
+      "pron": {
+        "uz": "die vash-kyu-xe",
+        "uz-Cyrl": "ди ваш-кю-хе",
+        "ru": "ди ваш-кю-хе"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "In der Waschküche hängt ein Plan, wer wann waschen darf.",
+        "tr": {
+          "uz": "Kir yuvish xonasida kim qachon kir yuvishi mumkinligi yozilgan jadval osilgan.",
+          "uz-Cyrl": "Кир ювиш хонасида ким қачон кир ювиши мумкинлиги ёзилган жадвал осилган.",
+          "ru": "В прачечной висит график, кто когда может стирать."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-fahrradkeller",
+      "slug": "fahrradkeller",
+      "term": "der Fahrradkeller",
+      "icon": "bike",
+      "article": "der",
+      "plural": "die Fahrradkeller",
+      "tr": {
+        "uz": "velosiped yertoʻlasi (velosiped saqlanadigan joy)",
+        "uz-Cyrl": "велосипед ертўласи (велосипед сақланадиган жой)",
+        "ru": "подвал для велосипедов"
+      },
+      "pron": {
+        "uz": "der far-rat-ke-ler",
+        "uz-Cyrl": "дер фар-рат-ке-лер",
+        "ru": "дер фар-рат-ке-лер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Nachts steht mein Fahrrad im Fahrradkeller, nicht im Hausflur.",
+        "tr": {
+          "uz": "Tunda velosipedim yoʻlakda emas, velosiped yertoʻlasida turadi.",
+          "uz-Cyrl": "Тунда велосипедим йўлакда эмас, велосипед ертўласида туради.",
+          "ru": "Ночью мой велосипед стоит в подвале для велосипедов, а не в коридоре."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-aushang",
+      "slug": "aushang",
+      "term": "der Aushang",
+      "icon": "file-text",
+      "article": "der",
+      "plural": "die Aushänge",
+      "tr": {
+        "uz": "eʼlon (devorga osilgan)",
+        "uz-Cyrl": "эълон (деворга осилган)",
+        "ru": "объявление (на стене)"
+      },
+      "pron": {
+        "uz": "der aus-hang",
+        "uz-Cyrl": "дер аус-ханг",
+        "ru": "дер аус-ханг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Am Aushang im Hausflur steht, dass morgen das Wasser abgestellt wird.",
+        "tr": {
+          "uz": "Yoʻlakdagi eʼlonda ertaga suv oʻchirilishi yozilgan.",
+          "uz-Cyrl": "Йўлакдаги эълонда эртага сув ўчирилиши ёзилган.",
+          "ru": "В объявлении в коридоре написано, что завтра отключат воду."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-schluesseldienst",
+      "slug": "schluesseldienst",
+      "term": "der Schlüsseldienst",
+      "icon": "key",
+      "article": "der",
+      "plural": "die Schlüsseldienste",
+      "tr": {
+        "uz": "qulf ochish xizmati (usta)",
+        "uz-Cyrl": "қулф очиш хизмати (уста)",
+        "ru": "служба вскрытия замков"
+      },
+      "pron": {
+        "uz": "der shlyu-sel-dinst",
+        "uz-Cyrl": "дер шлю-сель-динст",
+        "ru": "дер шлю-сель-динст"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Fragen Sie beim Schlüsseldienst immer zuerst nach dem Preis.",
+        "tr": {
+          "uz": "Qulf ochish xizmatidan doim avval narxini soʻrang.",
+          "uz-Cyrl": "Қулф очиш хизматидан доим аввал нархини сўранг.",
+          "ru": "В службе вскрытия замков всегда сначала спрашивайте цену."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-gasgeruch",
+      "slug": "gasgeruch",
+      "term": "der Gasgeruch",
+      "icon": "flame",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "gaz hidi",
+        "uz-Cyrl": "газ ҳиди",
+        "ru": "запах газа"
+      },
+      "pron": {
+        "uz": "der gas-ge-rux",
+        "uz-Cyrl": "дер гас-ге-рух",
+        "ru": "дер гас-ге-рух"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Bei Gasgeruch kein Licht einschalten, sondern Fenster öffnen und das Haus verlassen.",
+        "tr": {
+          "uz": "Gaz hidi kelsa, chiroqni yoqmang: derazalarni oching va uydan chiqing.",
+          "uz-Cyrl": "Газ ҳиди келса, чироқни ёқманг: деразаларни очинг ва уйдан чиқинг.",
+          "ru": "При запахе газа не включайте свет: откройте окна и выйдите из дома."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-qoshnilar-lassen-sie-keine-fremden-ins-haus",
+      "slug": "lassen-sie-keine-fremden-ins-haus",
+      "term": "Lassen Sie keine Fremden ins Haus!",
+      "icon": "lock",
+      "tr": {
+        "uz": "Begona odamlarni uyga (podyezdga) kiritmang!",
+        "uz-Cyrl": "Бегона одамларни уйга (подъездга) киритманг!",
+        "ru": "Не впускайте посторонних в дом!"
+      },
+      "pron": {
+        "uz": "la-sen zi kay-ne frem-den ins haus!",
+        "uz-Cyrl": "ла-сен зи кай-не фрем-ден инс хаус!",
+        "ru": "ла-сен зи кай-не фрем-ден инс хаус!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "qoshnilar",
+      "example": {
+        "term": "Drücken Sie nicht einfach auf den Türöffner, wenn Sie niemanden erwarten.",
+        "tr": {
+          "uz": "Hech kimni kutmayotgan boʻlsangiz, eshik ochish tugmasini shunchaki bosmang.",
+          "uz-Cyrl": "Ҳеч кимни кутмаётган бўлсангиз, эшик очиш тугмасини шунчаки босманг.",
+          "ru": "Не нажимайте просто так на кнопку открытия двери, если никого не ждёте."
         }
       },
       "safety": true,
