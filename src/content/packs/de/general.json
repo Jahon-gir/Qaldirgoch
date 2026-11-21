@@ -5732,6 +5732,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Schau mal, ein Mann im Internet bietet mir schnell Geld an – ganz ohne Bank.",
+            "tr": {
+              "uz": "Qara, internetda bir odam menga bankdan oʻtmasdan tez pul taklif qilyapti.",
+              "uz-Cyrl": "Қара, интернетда бир одам менга банкдан ўтмасдан тез пул таклиф қиляпти.",
+              "ru": "Смотри, один человек в интернете предлагает мне быстро деньги – совсем без банка."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ohne Bank? Wofür brauchst du denn das Geld?",
+            "tr": {
+              "uz": "Banksizmi? Senga pul nima uchun kerak?",
+              "uz-Cyrl": "Банксизми? Сенга пул нима учун керак?",
+              "ru": "Без банка? А зачем тебе деньги?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Meine Stromrechnung ist zu hoch. Er will nur vorher eine kleine Gebühr. Soll ich sie bezahlen?",
+            "tr": {
+              "uz": "Elektr hisobim juda katta. U faqat oldindan ozgina toʻlov soʻrayapti. Toʻlayinmi?",
+              "uz-Cyrl": "Электр ҳисобим жуда катта. У фақат олдиндан озгина тўлов сўраяпти. Тўлайинми?",
+              "ru": "Счёт за электричество слишком большой. Он просит только заранее небольшую плату. Мне заплатить?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, leih dir kein Geld bei Fremden. Das ist oft Betrug.",
+            "tr": {
+              "uz": "Yoʻq, notanish odamlardan qarz olma. Bu koʻpincha firibgarlik.",
+              "uz-Cyrl": "Йўқ, нотаниш одамлардан қарз олма. Бу кўпинча фирибгарлик.",
+              "ru": "Нет, не бери в долг у незнакомых. Это часто мошенничество."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Aber wie bezahle ich dann die Rechnung?",
+            "tr": {
+              "uz": "Unda hisobni qanday toʻlayman?",
+              "uz-Cyrl": "Унда ҳисобни қандай тўлайман?",
+              "ru": "Но как тогда оплатить счёт?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Die Rechnung? Frag beim Stromanbieter nach einer Ratenzahlung – oder geh zu einer Schuldnerberatung.",
+            "tr": {
+              "uz": "Hisobnimi? Elektr kompaniyasidan boʻlib toʻlashni soʻra — yoki qarzdorlarga maslahat markaziga bor.",
+              "uz-Cyrl": "Ҳисобними? Электр компаниясидан бўлиб тўлашни сўра — ёки қарздорларга маслаҳат марказига бор.",
+              "ru": "Счёт? Спроси у поставщика электричества про рассрочку – или сходи в консультацию для должников."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
