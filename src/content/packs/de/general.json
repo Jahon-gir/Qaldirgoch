@@ -6084,6 +6084,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Hör mal, ein Mann am Telefon sagt, er ist von der Polizei. Mein Bruder soll einen Unfall gehabt haben.",
+            "tr": {
+              "uz": "Qara, telefonda bir odam oʻzini politsiyachi deyapti. Goʻyo akam avariyaga tushgan emish.",
+              "uz-Cyrl": "Қара, телефонда бир одам ўзини полициячи деяпти. Гўё акам аварияга тушган эмиш.",
+              "ru": "Слушай, мужчина по телефону говорит, что он из полиции. Якобы мой брат попал в аварию."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Von der Polizei? Und was will er jetzt von dir?",
+            "tr": {
+              "uz": "Politsiyadanmi? Endi u sendan nima istayapti?",
+              "uz-Cyrl": "Полицияданми? Энди у сендан нима истаяпти?",
+              "ru": "Из полиции? И что он теперь от тебя хочет?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Ich soll sofort Geld für einen Anwalt überweisen und den Code aus meiner Bank-App nennen. Soll ich das machen?",
+            "tr": {
+              "uz": "Advokat uchun darhol pul oʻtkazishim va bank ilovamdagi kodni aytishim kerak emish. Shunday qilaymi?",
+              "uz-Cyrl": "Адвокат учун дарҳол пул ўтказишим ва банк иловамдаги кодни айтишим керак эмиш. Шундай қилайми?",
+              "ru": "Мне нужно срочно перевести деньги на адвоката и назвать код из банковского приложения. Так и сделать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, auf keinen Fall! Das ist ein typischer Schockanruf. Gib Codes nie am Telefon weiter.",
+            "tr": {
+              "uz": "Yoʻq, aslo! Bu — tipik qoʻrqituvchi qoʻngʻiroq. Kodlarni hech qachon telefonda aytma.",
+              "uz-Cyrl": "Йўқ, асло! Бу — типик қўрқитувчи қўнғироқ. Кодларни ҳеч қачон телефонда айтма.",
+              "ru": "Нет, ни в коем случае! Это типичный «шоковый» звонок. Никогда не сообщай коды по телефону."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Aber wie erfahre ich, ob es meinem Bruder gut geht?",
+            "tr": {
+              "uz": "Lekin akamning ahvoli yaxshimi-yoʻqmi, qanday bilaman?",
+              "uz-Cyrl": "Лекин акамнинг аҳволи яхшими-йўқми, қандай биламан?",
+              "ru": "Но как мне узнать, всё ли в порядке с братом?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Deinem Bruder? Leg auf und ruf ihn selbst unter seiner bekannten Nummer an.",
+            "tr": {
+              "uz": "Akangmi? Goʻshakni qoʻy va unga oʻzing bilgan raqamiga qoʻngʻiroq qil.",
+              "uz-Cyrl": "Акангми? Гўшакни қўй ва унга ўзинг билган рақамига қўнғироқ қил.",
+              "ru": "С братом? Положи трубку и позвони ему по номеру, который ты знаешь."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
