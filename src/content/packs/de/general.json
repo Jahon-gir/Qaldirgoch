@@ -5204,6 +5204,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Hast du die Unwetterwarnung gesehen? Heute Nachmittag soll ein starkes Gewitter kommen.",
+            "tr": {
+              "uz": "Xavfli ob-havo haqidagi ogohlantirishni koʻrdingmi? Bugun tushdan keyin kuchli momaqaldiroq boʻlar ekan.",
+              "uz-Cyrl": "Хавфли об-ҳаво ҳақидаги огоҳлантиришни кўрдингми? Бугун тушдан кейин кучли момақалдироқ бўлар экан.",
+              "ru": "Ты в курсе штормового предупреждения? Сегодня после обеда обещают сильную грозу."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ein Gewitter? Und wann genau soll es losgehen?",
+            "tr": {
+              "uz": "Momaqaldiroq? Aniq qachon boshlanar ekan?",
+              "uz-Cyrl": "Момақалдироқ? Аниқ қачон бошланар экан?",
+              "ru": "Гроза? А когда именно она начнётся?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Gegen 16 Uhr, genau zum Feierabend. Fährst du heute wieder mit dem Fahrrad nach Hause?",
+            "tr": {
+              "uz": "Soat 16 larda, aynan ish tugaganda. Bugun ham uyga velosipedda ketasanmi?",
+              "uz-Cyrl": "Соат 16 ларда, айнан иш тугаганда. Бугун ҳам уйга велосипедда кетасанми?",
+              "ru": "Около 16 часов, как раз к концу работы. Ты сегодня опять едешь домой на велосипеде?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Eigentlich schon, aber bei Gewitter fahre ich lieber nicht mit dem Fahrrad.",
+            "tr": {
+              "uz": "Aslida ha, lekin momaqaldiroqda velosipedda yurmaganim maʼqul.",
+              "uz-Cyrl": "Аслида ҳа, лекин момақалдироқда велосипедда юрмаганим маъқул.",
+              "ru": "Вообще-то да, но в грозу лучше не ездить на велосипеде."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Ich kann dich mit dem Auto mitnehmen. Dein Fahrrad bleibt einfach bis morgen hier bei der Firma.",
+            "tr": {
+              "uz": "Seni mashinada olib ketishim mumkin. Velosiped ertagacha shu yerda, firmada qolaversin.",
+              "uz-Cyrl": "Сени машинада олиб кетишим мумкин. Велосипед эртагача шу ерда, фирмада қолаверсин.",
+              "ru": "Могу подвезти тебя на машине. А велосипед пусть до завтра постоит здесь, у фирмы."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Bis morgen hier bei der Firma? Gute Idee, dann hole ich es morgen früh wieder ab.",
+            "tr": {
+              "uz": "Ertagacha shu yerda, firmadami? Yaxshi fikr, unda ertaga ertalab olib ketaman.",
+              "uz-Cyrl": "Эртагача шу ерда, фирмадами? Яхши фикр, унда эртага эрталаб олиб кетаман.",
+              "ru": "До завтра здесь, у фирмы? Хорошая идея, тогда заберу его завтра утром."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
