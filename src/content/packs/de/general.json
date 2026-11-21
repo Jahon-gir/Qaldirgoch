@@ -4936,6 +4936,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "bayramlar",
+      "title": {
+        "uz": "Bayramlar, tabriklar va ish joyidagi anʼanalar",
+        "uz-Cyrl": "Байрамлар, табриклар ва иш жойидаги анъаналар",
+        "ru": "Праздники, поздравления и традиции на работе"
+      },
+      "order": 29,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb ayol",
+              "uz-Cyrl": "Ҳамкасб аёл",
+              "ru": "Коллега"
+            },
+            "de": "Hast du es schon gehört? Am Freitag ist unsere Weihnachtsfeier im Restaurant.",
+            "tr": {
+              "uz": "Eshitdingmi? Juma kuni restoranda Rojdestvo kechamiz boʻladi.",
+              "uz-Cyrl": "Эшитдингми? Жума куни ресторанда Рождество кечамиз бўлади.",
+              "ru": "Ты уже в курсе? В пятницу у нас рождественский корпоратив в ресторане."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Am Freitag? Wer kommt denn alles?",
+            "tr": {
+              "uz": "Juma kunimi? Kimlar keladi?",
+              "uz-Cyrl": "Жума куними? Кимлар келади?",
+              "ru": "В пятницу? А кто придёт?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb ayol",
+              "uz-Cyrl": "Ҳамкасб аёл",
+              "ru": "Коллега"
+            },
+            "de": "Fast das ganze Team. Es gibt Essen, Musik und natürlich auch Wein und Bier. Kommst du auch mit?",
+            "tr": {
+              "uz": "Deyarli butun jamoa. Ovqat, musiqa va, albatta, vino va pivo ham boʻladi. Sen ham borasanmi?",
+              "uz-Cyrl": "Деярли бутун жамоа. Овқат, мусиқа ва, албатта, вино ва пиво ҳам бўлади. Сен ҳам борасанми?",
+              "ru": "Почти вся команда. Будут еда, музыка и, конечно, вино и пиво. Ты тоже пойдёшь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich trinke keinen Alkohol, aber ich komme gern mit.",
+            "tr": {
+              "uz": "Men spirtli ichimlik ichmayman, lekin bajonidil boraman.",
+              "uz-Cyrl": "Мен спиртли ичимлик ичмайман, лекин бажонидил бораман.",
+              "ru": "Я не пью алкоголь, но с удовольствием пойду."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb ayol",
+              "uz-Cyrl": "Ҳамкасб аёл",
+              "ru": "Коллега"
+            },
+            "de": "Kein Problem, es gibt auch Saft und Tee. Und vorher wichteln wir – bring bitte ein kleines Geschenk mit.",
+            "tr": {
+              "uz": "Muammo yoʻq, sharbat va choy ham bor. Undan oldin qurʼa bilan sovgʻa almashamiz – kichkina sovgʻa olib kel.",
+              "uz-Cyrl": "Муаммо йўқ, шарбат ва чой ҳам бор. Ундан олдин қуръа билан совға алмашамиз – кичкина совға олиб кел.",
+              "ru": "Не проблема, будут и сок, и чай. А до этого обмен подарками по жребию – принеси, пожалуйста, небольшой подарок."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ein kleines Geschenk zum Wichteln? Gut, dann kaufe ich morgen etwas Schönes.",
+            "tr": {
+              "uz": "Almashish uchun kichkina sovgʻami? Yaxshi, unda ertaga chiroyli narsa sotib olaman.",
+              "uz-Cyrl": "Алмашиш учун кичкина совғами? Яхши, унда эртага чиройли нарса сотиб оламан.",
+              "ru": "Небольшой подарок для обмена? Хорошо, тогда завтра куплю что-нибудь красивое."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -22914,6 +23007,652 @@
       "safety": true,
       "status": "review",
       "source": "Claude yozdi (2026-11-20); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-geburtstag",
+      "slug": "geburtstag",
+      "term": "der Geburtstag",
+      "icon": "cake",
+      "article": "der",
+      "plural": "die Geburtstage",
+      "tr": {
+        "uz": "tugʻilgan kun",
+        "uz-Cyrl": "туғилган кун",
+        "ru": "день рождения"
+      },
+      "pron": {
+        "uz": "der ge-burts-tak",
+        "uz-Cyrl": "дер ге-бурц-так",
+        "ru": "дер ге-бурц-так"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Mein Geburtstag ist nächste Woche am Mittwoch.",
+        "tr": {
+          "uz": "Mening tugʻilgan kunim keyingi hafta chorshanba kuni.",
+          "uz-Cyrl": "Менинг туғилган куним кейинги ҳафта чоршанба куни.",
+          "ru": "Мой день рождения на следующей неделе в среду."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-feiern",
+      "slug": "feiern",
+      "term": "feiern",
+      "icon": "confetti",
+      "tr": {
+        "uz": "nishonlamoq, bayram qilmoq",
+        "uz-Cyrl": "нишонламоқ, байрам қилмоқ",
+        "ru": "праздновать"
+      },
+      "pron": {
+        "uz": "fay-ern",
+        "uz-Cyrl": "фай-ерн",
+        "ru": "фай-ерн"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Am Samstag möchte ich meinen Geburtstag mit Freunden feiern.",
+        "tr": {
+          "uz": "Shanba kuni tugʻilgan kunimni doʻstlarim bilan nishonlamoqchiman.",
+          "uz-Cyrl": "Шанба куни туғилган кунимни дўстларим билан нишонламоқчиман.",
+          "ru": "В субботу хочу отпраздновать день рождения с друзьями."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-herzlichen-glueckwunsch-zum-geburtstag",
+      "slug": "herzlichen-glueckwunsch-zum-geburtstag",
+      "term": "Herzlichen Glückwunsch zum Geburtstag!",
+      "icon": "sparkles",
+      "tr": {
+        "uz": "Tugʻilgan kuningiz bilan chin qalbdan tabriklayman!",
+        "uz-Cyrl": "Туғилган кунингиз билан чин қалбдан табриклайман!",
+        "ru": "Сердечно поздравляю с днём рождения!"
+      },
+      "pron": {
+        "uz": "her-tsli-xen glyuk-vunsh tsum ge-burts-tak!",
+        "uz-Cyrl": "хер-цли-хен глюк-вунш цум ге-бурц-так!",
+        "ru": "хер-цли-хен глюк-вунш цум ге-бурц-так!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Alles Gute und viel Gesundheit!",
+        "tr": {
+          "uz": "Hamma yaxshiliklar va mustahkam sogʻliq tilayman!",
+          "uz-Cyrl": "Ҳамма яхшиликлар ва мустаҳкам соғлиқ тилайман!",
+          "ru": "Всего наилучшего и крепкого здоровья!"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-glueckwunsch",
+      "slug": "glueckwunsch",
+      "term": "der Glückwunsch",
+      "icon": "mood-smile",
+      "article": "der",
+      "plural": "die Glückwünsche",
+      "tr": {
+        "uz": "tabrik",
+        "uz-Cyrl": "табрик",
+        "ru": "поздравление"
+      },
+      "pron": {
+        "uz": "der glyuk-vunsh",
+        "uz-Cyrl": "дер глюк-вунш",
+        "ru": "дер глюк-вунш"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Vielen Dank für deinen Glückwunsch!",
+        "tr": {
+          "uz": "Tabriging uchun katta rahmat!",
+          "uz-Cyrl": "Табригинг учун катта раҳмат!",
+          "ru": "Большое спасибо за поздравление!"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-geschenk",
+      "slug": "geschenk",
+      "term": "das Geschenk",
+      "icon": "gift",
+      "article": "das",
+      "plural": "die Geschenke",
+      "tr": {
+        "uz": "sovgʻa",
+        "uz-Cyrl": "совға",
+        "ru": "подарок"
+      },
+      "pron": {
+        "uz": "das ge-shenk",
+        "uz-Cyrl": "дас ге-шенк",
+        "ru": "дас ге-шенк"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Wir sammeln Geld für ein Geschenk für unsere Kollegin.",
+        "tr": {
+          "uz": "Hamkasbimiz uchun sovgʻaga pul yigʻyapmiz.",
+          "uz-Cyrl": "Ҳамкасбимиз учун совғага пул йиғяпмиз.",
+          "ru": "Мы собираем деньги на подарок для нашей коллеги."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-einstand",
+      "slug": "einstand",
+      "term": "der Einstand",
+      "icon": "cookie",
+      "article": "der",
+      "plural": "die Einstände",
+      "tr": {
+        "uz": "yangi ishdagi kichik ziyofat (hamkasblar uchun)",
+        "uz-Cyrl": "янги ишдаги кичик зиёфат (ҳамкасблар учун)",
+        "ru": "угощение для коллег на новой работе"
+      },
+      "pron": {
+        "uz": "der ayn-shtant",
+        "uz-Cyrl": "дер айн-штант",
+        "ru": "дер айн-штант"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Zum Einstand bringe ich am Freitag Kuchen für das Team mit.",
+        "tr": {
+          "uz": "Yangi ishga kirganim munosabati bilan juma kuni jamoaga pirog olib kelaman.",
+          "uz-Cyrl": "Янги ишга кирганим муносабати билан жума куни жамоага пирог олиб келаман.",
+          "ru": "В пятницу принесу команде пирог в честь начала работы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-weihnachtsfeier",
+      "slug": "weihnachtsfeier",
+      "term": "die Weihnachtsfeier",
+      "icon": "christmas-tree",
+      "article": "die",
+      "plural": "die Weihnachtsfeiern",
+      "tr": {
+        "uz": "Rojdestvo kechasi (ishxonada)",
+        "uz-Cyrl": "Рождество кечаси (ишхонада)",
+        "ru": "рождественский корпоратив"
+      },
+      "pron": {
+        "uz": "die vay-naxts-fay-er",
+        "uz-Cyrl": "ди вай-нахц-фай-ер",
+        "ru": "ди вай-нахц-фай-ер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Die Weihnachtsfeier der Firma ist dieses Jahr in einem Restaurant.",
+        "tr": {
+          "uz": "Firmaning Rojdestvo kechasi bu yil restoranda boʻladi.",
+          "uz-Cyrl": "Фирманинг Рождество кечаси бу йил ресторанда бўлади.",
+          "ru": "Рождественский корпоратив фирмы в этом году пройдёт в ресторане."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-frohe-weihnachten",
+      "slug": "frohe-weihnachten",
+      "term": "Frohe Weihnachten!",
+      "icon": "christmas-tree",
+      "tr": {
+        "uz": "Rojdestvo bayrami muborak!",
+        "uz-Cyrl": "Рождество байрами муборак!",
+        "ru": "Счастливого Рождества!"
+      },
+      "pron": {
+        "uz": "fro-e vay-nax-ten!",
+        "uz-Cyrl": "фро-е вай-нах-тен!",
+        "ru": "фро-е вай-нах-тен!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Das wünschen sich viele Kollegen vor dem Urlaub im Dezember.",
+        "tr": {
+          "uz": "Koʻp hamkasblar dekabrdagi taʼtildan oldin bir-biriga shunday tilaydi.",
+          "uz-Cyrl": "Кўп ҳамкасблар декабрдаги таътилдан олдин бир-бирига шундай тилайди.",
+          "ru": "Многие коллеги желают это друг другу перед отпуском в декабре."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-weihnachtsmarkt",
+      "slug": "weihnachtsmarkt",
+      "term": "der Weihnachtsmarkt",
+      "icon": "map-pin",
+      "article": "der",
+      "plural": "die Weihnachtsmärkte",
+      "tr": {
+        "uz": "Rojdestvo yarmarkasi",
+        "uz-Cyrl": "Рождество ярмаркаси",
+        "ru": "рождественская ярмарка"
+      },
+      "pron": {
+        "uz": "der vay-naxts-markt",
+        "uz-Cyrl": "дер вай-нахц-маркт",
+        "ru": "дер вай-нахц-маркт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Nach der Arbeit gehen wir zusammen auf den Weihnachtsmarkt.",
+        "tr": {
+          "uz": "Ishdan keyin birga Rojdestvo yarmarkasiga boramiz.",
+          "uz-Cyrl": "Ишдан кейин бирга Рождество ярмаркасига борамиз.",
+          "ru": "После работы мы вместе идём на рождественскую ярмарку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-betriebsfeier",
+      "slug": "betriebsfeier",
+      "term": "die Betriebsfeier",
+      "icon": "users",
+      "article": "die",
+      "plural": "die Betriebsfeiern",
+      "tr": {
+        "uz": "korxona bayrami (barcha xodimlar uchun)",
+        "uz-Cyrl": "корхона байрами (барча ходимлар учун)",
+        "ru": "корпоративный праздник"
+      },
+      "pron": {
+        "uz": "die be-trips-fay-er",
+        "uz-Cyrl": "ди бе-трипс-фай-ер",
+        "ru": "ди бе-трипс-фай-ер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Zur Betriebsfeier im Sommer sind alle Mitarbeiter eingeladen.",
+        "tr": {
+          "uz": "Yozgi korxona bayramiga barcha xodimlar taklif qilingan.",
+          "uz-Cyrl": "Ёзги корхона байрамига барча ходимлар таклиф қилинган.",
+          "ru": "На летний корпоративный праздник приглашены все сотрудники."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-brauch",
+      "slug": "brauch",
+      "term": "der Brauch",
+      "icon": "flag",
+      "article": "der",
+      "plural": "die Bräuche",
+      "tr": {
+        "uz": "odat, urf-odat",
+        "uz-Cyrl": "одат, урф-одат",
+        "ru": "обычай"
+      },
+      "pron": {
+        "uz": "der braux",
+        "uz-Cyrl": "дер браух",
+        "ru": "дер браух"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Bei uns im Büro ist es Brauch, dass das Geburtstagskind Kuchen mitbringt.",
+        "tr": {
+          "uz": "Bizning ofisda tugʻilgan kun egasi pirog olib kelishi odat.",
+          "uz-Cyrl": "Бизнинг офисда туғилган кун эгаси пирог олиб келиши одат.",
+          "ru": "У нас в офисе такой обычай: у кого день рождения, тот приносит пирог."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-wichteln",
+      "slug": "wichteln",
+      "term": "wichteln",
+      "icon": "gift",
+      "tr": {
+        "uz": "qurʼa bilan sovgʻa almashmoq",
+        "uz-Cyrl": "қуръа билан совға алмашмоқ",
+        "ru": "обмениваться подарками по жребию («тайный Санта»)"
+      },
+      "pron": {
+        "uz": "vix-teln",
+        "uz-Cyrl": "вих-тельн",
+        "ru": "вих-тельн"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Dieses Jahr wollen wir vor Weihnachten im Team wichteln.",
+        "tr": {
+          "uz": "Bu yil Rojdestvodan oldin jamoada qurʼa bilan sovgʻa almashmoqchimiz.",
+          "uz-Cyrl": "Бу йил Рождестводан олдин жамоада қуръа билан совға алмашмоқчимиз.",
+          "ru": "В этом году перед Рождеством мы хотим в команде обменяться подарками по жребию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-guten-rutsch",
+      "slug": "guten-rutsch",
+      "term": "Guten Rutsch!",
+      "icon": "sparkles",
+      "tr": {
+        "uz": "Yangi yilingiz muborak boʻlsin! (Yangi yil arafasida)",
+        "uz-Cyrl": "Янги йилингиз муборак бўлсин! (Янги йил арафасида)",
+        "ru": "С наступающим Новым годом!"
+      },
+      "pron": {
+        "uz": "gu-ten rutsh!",
+        "uz-Cyrl": "гу-тен рутш!",
+        "ru": "гу-тен рутш!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Das wünscht man sich in den letzten Tagen vor Silvester.",
+        "tr": {
+          "uz": "Buni Yangi yil arafasidagi oxirgi kunlarda bir-biriga tilashadi.",
+          "uz-Cyrl": "Буни Янги йил арафасидаги охирги кунларда бир-бирига тилашади.",
+          "ru": "Так желают друг другу в последние дни перед Новым годом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-opferfest",
+      "slug": "opferfest",
+      "term": "das Opferfest",
+      "icon": "moon",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "Qurbon hayiti",
+        "uz-Cyrl": "Қурбон ҳайити",
+        "ru": "Курбан-байрам"
+      },
+      "pron": {
+        "uz": "das op-fer-fest",
+        "uz-Cyrl": "дас оп-фер-фест",
+        "ru": "дас оп-фер-фест"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Zum Opferfest besucht unsere Familie die Verwandten.",
+        "tr": {
+          "uz": "Qurbon hayitida oilamiz qarindoshlarnikiga boradi.",
+          "uz-Cyrl": "Қурбон ҳайитида оиламиз қариндошларникига боради.",
+          "ru": "На Курбан-байрам наша семья навещает родственников."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-ramadan",
+      "slug": "ramadan",
+      "term": "der Ramadan",
+      "icon": "moon-stars",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "Ramazon oyi",
+        "uz-Cyrl": "Рамазон ойи",
+        "ru": "Рамадан"
+      },
+      "pron": {
+        "uz": "der ra-ma-dan",
+        "uz-Cyrl": "дер ра-ма-дан",
+        "ru": "дер ра-ма-дан"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Im Ramadan fastet mein Kollege tagsüber.",
+        "tr": {
+          "uz": "Ramazon oyida hamkasbim kunduzi roʻza tutadi.",
+          "uz-Cyrl": "Рамазон ойида ҳамкасбим кундузи рўза тутади.",
+          "ru": "В Рамадан мой коллега постится днём."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-tradition",
+      "slug": "tradition",
+      "term": "die Tradition",
+      "icon": "heart-handshake",
+      "article": "die",
+      "plural": "die Traditionen",
+      "tr": {
+        "uz": "anʼana",
+        "uz-Cyrl": "анъана",
+        "ru": "традиция"
+      },
+      "pron": {
+        "uz": "die tra-di-tsyon",
+        "uz-Cyrl": "ди тра-ди-цён",
+        "ru": "ди тра-ди-цён"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Jede Familie hat ihre eigenen Traditionen.",
+        "tr": {
+          "uz": "Har bir oilaning oʻz anʼanalari bor.",
+          "uz-Cyrl": "Ҳар бир оиланинг ўз анъаналари бор.",
+          "ru": "У каждой семьи свои традиции."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-ich-trinke-keinen-alkohol-aber-ich-komme-gern-mit",
+      "slug": "ich-trinke-keinen-alkohol-aber-ich-komme-gern-mit",
+      "term": "Ich trinke keinen Alkohol, aber ich komme gern mit.",
+      "icon": "glass",
+      "tr": {
+        "uz": "Men spirtli ichimlik ichmayman, lekin bajonidil boraman.",
+        "uz-Cyrl": "Мен спиртли ичимлик ичмайман, лекин бажонидил бораман.",
+        "ru": "Я не пью алкоголь, но с удовольствием пойду."
+      },
+      "pron": {
+        "uz": "ix trin-ke kay-nen al-ko-hol, a-ber ix ko-me gern mit.",
+        "uz-Cyrl": "их трин-ке кай-нен ал-ко-хол, а-бер их ко-ме герн мит.",
+        "ru": "их трин-ке кай-нен ал-ко-хол, а-бер их ко-ме герн мит."
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "So kann man eine Einladung freundlich annehmen.",
+        "tr": {
+          "uz": "Taklifni shunday xushmuomalalik bilan qabul qilish mumkin.",
+          "uz-Cyrl": "Таклифни шундай хушмуомалалик билан қабул қилиш мумкин.",
+          "ru": "Так можно вежливо принять приглашение."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-feuerwerk",
+      "slug": "feuerwerk",
+      "term": "das Feuerwerk",
+      "icon": "sparkles",
+      "article": "das",
+      "plural": "die Feuerwerke",
+      "tr": {
+        "uz": "mushakbozlik (salyut)",
+        "uz-Cyrl": "мушакбозлик (салют)",
+        "ru": "фейерверк"
+      },
+      "pron": {
+        "uz": "das foy-er-verk",
+        "uz-Cyrl": "дас фой-ер-верк",
+        "ru": "дас фой-ер-верк"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Beim Feuerwerk halten wir immer genug Abstand.",
+        "tr": {
+          "uz": "Mushakbozlikda doim yetarli masofada turamiz.",
+          "uz-Cyrl": "Мушакбозликда доим етарли масофада турамиз.",
+          "ru": "Во время фейерверка мы всегда держимся на безопасном расстоянии."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-boeller",
+      "slug": "boeller",
+      "term": "der Böller",
+      "icon": "flame",
+      "article": "der",
+      "plural": "die Böller",
+      "tr": {
+        "uz": "petarda",
+        "uz-Cyrl": "петарда",
+        "ru": "петарда"
+      },
+      "pron": {
+        "uz": "der byo-ler",
+        "uz-Cyrl": "дер бё-лер",
+        "ru": "дер бё-лер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Einen Böller zündet man nie in der Hand an.",
+        "tr": {
+          "uz": "Petardani hech qachon qoʻlda ushlab yoqmaslik kerak.",
+          "uz-Cyrl": "Петардани ҳеч қачон қўлда ушлаб ёқмаслик керак.",
+          "ru": "Петарду никогда не поджигают в руке."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-bayramlar-nach-der-feier-nicht-betrunken-auto-fahren",
+      "slug": "nach-der-feier-nicht-betrunken-auto-fahren",
+      "term": "Nach der Feier nicht betrunken Auto fahren!",
+      "icon": "car",
+      "tr": {
+        "uz": "Bayramdan keyin mast holda mashina haydamang!",
+        "uz-Cyrl": "Байрамдан кейин маст ҳолда машина ҳайдаманг!",
+        "ru": "После праздника не садитесь за руль в нетрезвом виде!"
+      },
+      "pron": {
+        "uz": "nax der fay-er nixt be-trun-ken au-to fa-ren!",
+        "uz-Cyrl": "нах дер фай-ер нихт бе-трун-кен ау-то фа-рен!",
+        "ru": "нах дер фай-ер нихт бе-трун-кен ау-то фа-рен!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "bayramlar",
+      "example": {
+        "term": "Nehmen Sie lieber ein Taxi oder den Bus.",
+        "tr": {
+          "uz": "Yaxshisi taksi yoki avtobusda boring.",
+          "uz-Cyrl": "Яхшиси такси ёки автобусда боринг.",
+          "ru": "Лучше возьмите такси или поезжайте на автобусе."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
