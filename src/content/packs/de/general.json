@@ -5112,6 +5112,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "ob-havo",
+      "title": {
+        "uz": "Ob-havo, fasllar va mavsumga mos kiyinish",
+        "uz-Cyrl": "Об-ҳаво, фасллар ва мавсумга мос кийиниш",
+        "ru": "Погода, времена года и одежда по сезону"
+      },
+      "order": 30,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководитель группы"
+            },
+            "de": "Morgen arbeiten wir den ganzen Tag draußen auf dem Hof. Wie wird das Wetter?",
+            "tr": {
+              "uz": "Ertaga kun boʻyi tashqarida, hovlida ishlaymiz. Ob-havo qanday boʻladi?",
+              "uz-Cyrl": "Эртага кун бўйи ташқарида, ҳовлида ишлаймиз. Об-ҳаво қандай бўлади?",
+              "ru": "Завтра мы весь день работаем на улице, во дворе. Какая будет погода?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Laut Wettervorhersage wird es sehr kalt, und am Nachmittag soll es schneien.",
+            "tr": {
+              "uz": "Ob-havo maʼlumotiga koʻra, juda sovuq boʻladi, tushdan keyin esa qor yogʻar ekan.",
+              "uz-Cyrl": "Об-ҳаво маълумотига кўра, жуда совуқ бўлади, тушдан кейин эса қор ёғар экан.",
+              "ru": "По прогнозу будет очень холодно, а после обеда обещают снег."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководитель группы"
+            },
+            "de": "Haben Sie warme Arbeitskleidung für draußen?",
+            "tr": {
+              "uz": "Tashqari uchun issiq ish kiyimingiz bormi?",
+              "uz-Cyrl": "Ташқари учун иссиқ иш кийимингиз борми?",
+              "ru": "У вас есть тёплая рабочая одежда для улицы?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Leider nur eine dünne Jacke. Eine Winterjacke habe ich noch nicht.",
+            "tr": {
+              "uz": "Afsuski, faqat yupqa kurtka bor. Qishki kurtkam hali yoʻq.",
+              "uz-Cyrl": "Афсуски, фақат юпқа куртка бор. Қишки курткам ҳали йўқ.",
+              "ru": "К сожалению, только тонкая куртка. Зимней куртки у меня пока нет."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Jamoa rahbari",
+              "uz-Cyrl": "Жамоа раҳбари",
+              "ru": "Руководитель группы"
+            },
+            "de": "Dann holen Sie sich vor der Schicht im Lager eine Winterjacke und Handschuhe von der Firma.",
+            "tr": {
+              "uz": "Unda smenadan oldin ombordan firmaning qishki kurtkasi va qoʻlqopini olib oling.",
+              "uz-Cyrl": "Унда сменадан олдин омбордан фирманинг қишки курткаси ва қўлқопини олиб олинг.",
+              "ru": "Тогда перед сменой возьмите на складе зимнюю куртку и перчатки от фирмы."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Eine Winterjacke aus dem Lager? Super, dann muss ich morgen nicht frieren.",
+            "tr": {
+              "uz": "Ombordan qishki kurtka? Zoʻr, unda ertaga sovqotmayman.",
+              "uz-Cyrl": "Омбордан қишки куртка? Зўр, унда эртага совқотмайман.",
+              "ru": "Зимнюю куртку со склада? Отлично, тогда завтра не придётся мёрзнуть."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -23734,6 +23827,656 @@
         }
       },
       "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-wettervorhersage",
+      "slug": "wettervorhersage",
+      "term": "die Wettervorhersage",
+      "icon": "cloud",
+      "article": "die",
+      "plural": "die Wettervorhersagen",
+      "tr": {
+        "uz": "ob-havo maʼlumoti (prognoz)",
+        "uz-Cyrl": "об-ҳаво маълумоти (прогноз)",
+        "ru": "прогноз погоды"
+      },
+      "pron": {
+        "uz": "die ve-ter-for-her-za-ge",
+        "uz-Cyrl": "ди ве-тер-фор-хер-за-ге",
+        "ru": "ди ве-тер-фор-хер-за-ге"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Laut Wettervorhersage regnet es morgen den ganzen Tag.",
+        "tr": {
+          "uz": "Ob-havo maʼlumotiga koʻra, ertaga kun boʻyi yomgʻir yogʻadi.",
+          "uz-Cyrl": "Об-ҳаво маълумотига кўра, эртага кун бўйи ёмғир ёғади.",
+          "ru": "По прогнозу погоды завтра весь день будет дождь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-jahreszeit",
+      "slug": "jahreszeit",
+      "term": "die Jahreszeit",
+      "icon": "leaf",
+      "article": "die",
+      "plural": "die Jahreszeiten",
+      "tr": {
+        "uz": "fasl (yil fasli)",
+        "uz-Cyrl": "фасл (йил фасли)",
+        "ru": "время года"
+      },
+      "pron": {
+        "uz": "die ya-res-tsayt",
+        "uz-Cyrl": "ди я-рес-цайт",
+        "ru": "ди я-рес-цайт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Der Herbst ist meine liebste Jahreszeit.",
+        "tr": {
+          "uz": "Kuz — mening eng sevimli faslim.",
+          "uz-Cyrl": "Куз — менинг энг севимли фаслим.",
+          "ru": "Осень — моё любимое время года."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-wie-wird-das-wetter-morgen",
+      "slug": "wie-wird-das-wetter-morgen",
+      "term": "Wie wird das Wetter morgen?",
+      "icon": "help",
+      "tr": {
+        "uz": "Ertaga ob-havo qanday boʻladi?",
+        "uz-Cyrl": "Эртага об-ҳаво қандай бўлади?",
+        "ru": "Какая завтра будет погода?"
+      },
+      "pron": {
+        "uz": "vi virt das ve-ter mor-gen?",
+        "uz-Cyrl": "ви вирт дас ве-тер мор-ген?",
+        "ru": "ви вирт дас ве-тер мор-ген?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Das fragen viele vor einem Arbeitstag im Freien.",
+        "tr": {
+          "uz": "Ochiq havoda ishlashdan oldin koʻpchilik buni soʻraydi.",
+          "uz-Cyrl": "Очиқ ҳавода ишлашдан олдин кўпчилик буни сўрайди.",
+          "ru": "Многие спрашивают об этом перед рабочим днём на улице."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-regenschirm",
+      "slug": "regenschirm",
+      "term": "der Regenschirm",
+      "icon": "umbrella",
+      "article": "der",
+      "plural": "die Regenschirme",
+      "tr": {
+        "uz": "soyabon (zontik)",
+        "uz-Cyrl": "соябон (зонтик)",
+        "ru": "зонт"
+      },
+      "pron": {
+        "uz": "der re-gen-shirm",
+        "uz-Cyrl": "дер ре-ген-ширм",
+        "ru": "дер ре-ген-ширм"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Nimm lieber einen Regenschirm mit, es soll regnen.",
+        "tr": {
+          "uz": "Yaxshisi soyabon olib ol, yomgʻir yogʻar ekan.",
+          "uz-Cyrl": "Яхшиси соябон олиб ол, ёмғир ёғар экан.",
+          "ru": "Лучше возьми зонт, обещают дождь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-bewoelkt",
+      "slug": "bewoelkt",
+      "term": "bewölkt",
+      "icon": "cloud",
+      "tr": {
+        "uz": "bulutli",
+        "uz-Cyrl": "булутли",
+        "ru": "облачно, пасмурный"
+      },
+      "pron": {
+        "uz": "be-vyolkt",
+        "uz-Cyrl": "бе-вёлькт",
+        "ru": "бе-вёлькт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Heute ist es bewölkt, aber trocken.",
+        "tr": {
+          "uz": "Bugun havo bulutli, lekin yomgʻir yoʻq.",
+          "uz-Cyrl": "Бугун ҳаво булутли, лекин ёмғир йўқ.",
+          "ru": "Сегодня облачно, но сухо."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-nebel",
+      "slug": "nebel",
+      "term": "der Nebel",
+      "icon": "cloud-fog",
+      "article": "der",
+      "plural": "die Nebel",
+      "tr": {
+        "uz": "tuman",
+        "uz-Cyrl": "туман",
+        "ru": "туман"
+      },
+      "pron": {
+        "uz": "der ne-bel",
+        "uz-Cyrl": "дер не-бель",
+        "ru": "дер не-бель"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Bei Nebel fahre ich mit dem Fahrrad besonders langsam.",
+        "tr": {
+          "uz": "Tumanda velosipedni ayniqsa sekin haydayman.",
+          "uz-Cyrl": "Туманда велосипедни айниқса секин ҳайдайман.",
+          "ru": "В туман я еду на велосипеде особенно медленно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-winterjacke",
+      "slug": "winterjacke",
+      "term": "die Winterjacke",
+      "icon": "jacket",
+      "article": "die",
+      "plural": "die Winterjacken",
+      "tr": {
+        "uz": "qishki kurtka",
+        "uz-Cyrl": "қишки куртка",
+        "ru": "зимняя куртка"
+      },
+      "pron": {
+        "uz": "die vin-ter-ya-ke",
+        "uz-Cyrl": "ди вин-тер-я-ке",
+        "ru": "ди вин-тер-я-ке"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Im November brauche ich schon meine Winterjacke.",
+        "tr": {
+          "uz": "Noyabrdayoq qishki kurtkam kerak boʻladi.",
+          "uz-Cyrl": "Ноябрдаёқ қишки курткам керак бўлади.",
+          "ru": "Уже в ноябре мне нужна зимняя куртка."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-schal",
+      "slug": "schal",
+      "term": "der Schal",
+      "icon": "hanger",
+      "article": "der",
+      "plural": "die Schals",
+      "tr": {
+        "uz": "sharf",
+        "uz-Cyrl": "шарф",
+        "ru": "шарф"
+      },
+      "pron": {
+        "uz": "der shal",
+        "uz-Cyrl": "дер шаль",
+        "ru": "дер шаль"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Mit Mütze und Schal ist mir auf dem Weg zur Arbeit warm.",
+        "tr": {
+          "uz": "Shapka va sharf bilan ishga ketayotganda sovqotmayman.",
+          "uz-Cyrl": "Шапка ва шарф билан ишга кетаётганда совқотмайман.",
+          "ru": "В шапке и шарфе мне тепло по дороге на работу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-stiefel",
+      "slug": "stiefel",
+      "term": "der Stiefel",
+      "icon": "shoe",
+      "article": "der",
+      "plural": "die Stiefel",
+      "tr": {
+        "uz": "etik",
+        "uz-Cyrl": "этик",
+        "ru": "сапог, зимний ботинок"
+      },
+      "pron": {
+        "uz": "der shti-fel",
+        "uz-Cyrl": "дер шти-фель",
+        "ru": "дер шти-фель"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Bei Schnee ziehe ich warme Stiefel an.",
+        "tr": {
+          "uz": "Qor yogʻganda issiq etik kiyaman.",
+          "uz-Cyrl": "Қор ёққанда иссиқ этик кияман.",
+          "ru": "Когда идёт снег, я надеваю тёплые сапоги."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-zieh-dich-warm-an",
+      "slug": "zieh-dich-warm-an",
+      "term": "Zieh dich warm an!",
+      "icon": "snowflake",
+      "tr": {
+        "uz": "Issiqroq kiyin!",
+        "uz-Cyrl": "Иссиқроқ кийин!",
+        "ru": "Одевайся теплее!"
+      },
+      "pron": {
+        "uz": "tsi dix varm an!",
+        "uz-Cyrl": "ци дих варм ан!",
+        "ru": "ци дих варм ан!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Draußen sind heute Minusgrade.",
+        "tr": {
+          "uz": "Bugun tashqarida harorat noldan past.",
+          "uz-Cyrl": "Бугун ташқарида ҳарорат нолдан паст.",
+          "ru": "Сегодня на улице минусовая температура."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-zwiebelprinzip",
+      "slug": "zwiebelprinzip",
+      "term": "das Zwiebelprinzip",
+      "icon": "shirt",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "qatlam-qatlam kiyinish (bir necha yupqa kiyim)",
+        "uz-Cyrl": "қатлам-қатлам кийиниш (бир неча юпқа кийим)",
+        "ru": "многослойная одежда («принцип луковицы»)"
+      },
+      "pron": {
+        "uz": "das tsvi-bel-prin-tsip",
+        "uz-Cyrl": "дас цви-бель-прин-цип",
+        "ru": "дас цви-бель-прин-цип"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Nach dem Zwiebelprinzip ziehe ich mehrere dünne Sachen übereinander an.",
+        "tr": {
+          "uz": "Qatlam-qatlam kiyinish usulida bir necha yupqa kiyimni ustma-ust kiyaman.",
+          "uz-Cyrl": "Қатлам-қатлам кийиниш усулида бир неча юпқа кийимни устма-уст кияман.",
+          "ru": "По принципу луковицы я надеваю несколько тонких вещей одну на другую."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-frieren",
+      "slug": "frieren",
+      "term": "frieren",
+      "icon": "thermometer",
+      "tr": {
+        "uz": "sovqotmoq, muzlamoq",
+        "uz-Cyrl": "совқотмоқ, музламоқ",
+        "ru": "мёрзнуть"
+      },
+      "pron": {
+        "uz": "fri-ren",
+        "uz-Cyrl": "фри-рен",
+        "ru": "фри-рен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Ich will an der Haltestelle nicht frieren, deshalb nehme ich Handschuhe mit.",
+        "tr": {
+          "uz": "Bekatda sovqotishni istamayman, shuning uchun qoʻlqop olib olaman.",
+          "uz-Cyrl": "Бекатда совқотишни истамайман, шунинг учун қўлқоп олиб оламан.",
+          "ru": "Не хочу мёрзнуть на остановке, поэтому беру с собой перчатки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-hitzewelle",
+      "slug": "hitzewelle",
+      "term": "die Hitzewelle",
+      "icon": "sun",
+      "article": "die",
+      "plural": "die Hitzewellen",
+      "tr": {
+        "uz": "jazirama (uzoq davom etadigan issiq kunlar)",
+        "uz-Cyrl": "жазирама (узоқ давом этадиган иссиқ кунлар)",
+        "ru": "сильная жара (волна жары)"
+      },
+      "pron": {
+        "uz": "die hi-tse-ve-le",
+        "uz-Cyrl": "ди хи-це-ве-ле",
+        "ru": "ди хи-це-ве-ле"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Bei einer Hitzewelle trinke ich bei der Arbeit viel Wasser.",
+        "tr": {
+          "uz": "Jazirama kunlarda ishda koʻp suv ichaman.",
+          "uz-Cyrl": "Жазирама кунларда ишда кўп сув ичаман.",
+          "ru": "Во время сильной жары я пью на работе много воды."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-sonnenbrille",
+      "slug": "sonnenbrille",
+      "term": "die Sonnenbrille",
+      "icon": "sunglasses",
+      "article": "die",
+      "plural": "die Sonnenbrillen",
+      "tr": {
+        "uz": "quyosh koʻzoynagi",
+        "uz-Cyrl": "қуёш кўзойнаги",
+        "ru": "солнцезащитные очки"
+      },
+      "pron": {
+        "uz": "die zo-nen-bri-le",
+        "uz-Cyrl": "ди зо-нен-бри-ле",
+        "ru": "ди зо-нен-бри-ле"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Im Schnee schützt eine Sonnenbrille die Augen.",
+        "tr": {
+          "uz": "Qorda quyosh koʻzoynagi koʻzni himoya qiladi.",
+          "uz-Cyrl": "Қорда қуёш кўзойнаги кўзни ҳимоя қилади.",
+          "ru": "На снегу солнцезащитные очки защищают глаза."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-glaette",
+      "slug": "glaette",
+      "term": "die Glätte",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "sirgʻanchiq (muz bosgan yoʻl)",
+        "uz-Cyrl": "сирғанчиқ (муз босган йўл)",
+        "ru": "гололедица, скользкая дорога"
+      },
+      "pron": {
+        "uz": "die gle-te",
+        "uz-Cyrl": "ди гле-те",
+        "ru": "ди гле-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Bei Glätte gehe ich langsam und halte mich am Geländer fest.",
+        "tr": {
+          "uz": "Yoʻl sirgʻanchiq boʻlsa, sekin yuraman va panjaradan ushlab olaman.",
+          "uz-Cyrl": "Йўл сирғанчиқ бўлса, секин юраман ва панжарадан ушлаб оламан.",
+          "ru": "В гололёд я иду медленно и держусь за перила."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-streusalz",
+      "slug": "streusalz",
+      "term": "das Streusalz",
+      "icon": "snowflake",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "yoʻlga sepiladigan tuz (muzga qarshi)",
+        "uz-Cyrl": "йўлга сепиладиган туз (музга қарши)",
+        "ru": "противогололёдная соль"
+      },
+      "pron": {
+        "uz": "das shtroy-zalts",
+        "uz-Cyrl": "дас штрой-зальц",
+        "ru": "дас штрой-зальц"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Vor der Haustür liegt schon Streusalz.",
+        "tr": {
+          "uz": "Podyezd eshigi oldiga allaqachon tuz sepilgan.",
+          "uz-Cyrl": "Подъезд эшиги олдига аллақачон туз сепилган.",
+          "ru": "Перед входной дверью уже посыпана соль."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-unwetterwarnung",
+      "slug": "unwetterwarnung",
+      "term": "die Unwetterwarnung",
+      "icon": "cloud-storm",
+      "article": "die",
+      "plural": "die Unwetterwarnungen",
+      "tr": {
+        "uz": "xavfli ob-havo haqida ogohlantirish",
+        "uz-Cyrl": "хавфли об-ҳаво ҳақида огоҳлантириш",
+        "ru": "штормовое предупреждение"
+      },
+      "pron": {
+        "uz": "die un-ve-ter-var-nung",
+        "uz-Cyrl": "ди ун-ве-тер-вар-нунг",
+        "ru": "ди ун-ве-тер-вар-нунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Bei einer Unwetterwarnung bleibe ich möglichst im Haus.",
+        "tr": {
+          "uz": "Xavfli ob-havo haqida ogohlantirish boʻlsa, iloji boricha uydan chiqmayman.",
+          "uz-Cyrl": "Хавфли об-ҳаво ҳақида огоҳлантириш бўлса, иложи борича уйдан чиқмайман.",
+          "ru": "При штормовом предупреждении я по возможности остаюсь дома."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-bei-gewitter-nicht-unter-baeume-stellen",
+      "slug": "bei-gewitter-nicht-unter-baeume-stellen",
+      "term": "Bei Gewitter nicht unter Bäume stellen!",
+      "icon": "cloud-storm",
+      "tr": {
+        "uz": "Momaqaldiroqda daraxt tagida turmang!",
+        "uz-Cyrl": "Момақалдироқда дарахт тагида турманг!",
+        "ru": "Во время грозы не стойте под деревьями!"
+      },
+      "pron": {
+        "uz": "bay ge-vi-ter nixt un-ter boy-me shte-len!",
+        "uz-Cyrl": "бай ге-ви-тер нихт ун-тер бой-ме ште-лен!",
+        "ru": "бай ге-ви-тер нихт ун-тер бой-ме ште-лен!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Suchen Sie lieber Schutz in einem Gebäude oder im Auto.",
+        "tr": {
+          "uz": "Yaxshisi binoda yoki mashinada panoh toping.",
+          "uz-Cyrl": "Яхшиси бинода ёки машинада паноҳ топинг.",
+          "ru": "Лучше укройтесь в здании или в машине."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-wetter-app",
+      "slug": "wetter-app",
+      "term": "die Wetter-App",
+      "icon": "device-mobile",
+      "article": "die",
+      "plural": "die Wetter-Apps",
+      "tr": {
+        "uz": "ob-havo ilovasi",
+        "uz-Cyrl": "об-ҳаво иловаси",
+        "ru": "приложение погоды"
+      },
+      "pron": {
+        "uz": "die ve-ter-ep",
+        "uz-Cyrl": "ди ве-тер-эп",
+        "ru": "ди ве-тер-эп"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Meine Wetter-App zeigt für heute Nachmittag Gewitter an.",
+        "tr": {
+          "uz": "Ob-havo ilovam bugun tushdan keyin momaqaldiroq boʻlishini koʻrsatyapti.",
+          "uz-Cyrl": "Об-ҳаво иловам бугун тушдан кейин момақалдироқ бўлишини кўрсатяпти.",
+          "ru": "Моё приложение погоды показывает грозу сегодня после обеда."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-ob-havo-schneefall",
+      "slug": "schneefall",
+      "term": "der Schneefall",
+      "icon": "snowflake",
+      "article": "der",
+      "plural": "die Schneefälle",
+      "tr": {
+        "uz": "qor yogʻishi",
+        "uz-Cyrl": "қор ёғиши",
+        "ru": "снегопад"
+      },
+      "pron": {
+        "uz": "der shne-fal",
+        "uz-Cyrl": "дер шне-фаль",
+        "ru": "дер шне-фаль"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "ob-havo",
+      "example": {
+        "term": "Wegen Schneefall kommen die Busse heute später.",
+        "tr": {
+          "uz": "Qor yogʻgani uchun bugun avtobuslar kechroq keladi.",
+          "uz-Cyrl": "Қор ёққани учун бугун автобуслар кечроқ келади.",
+          "ru": "Из-за снегопада автобусы сегодня опаздывают."
+        }
+      },
+      "safety": false,
       "status": "review",
       "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
     }
