@@ -5556,6 +5556,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Heute war ein fremder Handwerker bei mir. Er will meine Heizung prüfen und gleich reparieren.",
+            "tr": {
+              "uz": "Bugun uyimga notanish usta keldi. U isitish tizimimni tekshirib, darrov tuzatmoqchi.",
+              "uz-Cyrl": "Бугун уйимга нотаниш уста келди. У иситиш тизимимни текшириб, дарров тузатмоқчи.",
+              "ru": "Сегодня ко мне приходил незнакомый мастер. Он хочет проверить моё отопление и сразу его починить."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ein fremder Handwerker? Wer hat ihn denn geschickt?",
+            "tr": {
+              "uz": "Notanish usta? Uni kim yuboribdi?",
+              "uz-Cyrl": "Нотаниш уста? Уни ким юборибди?",
+              "ru": "Незнакомый мастер? А кто его прислал?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Das hat er nicht gesagt. Er hat mir einen Auftrag zum Unterschreiben gegeben. Soll ich unterschreiben?",
+            "tr": {
+              "uz": "Buni aytmadi. Menga imzo chekish uchun buyurtma varaqasini berdi. Imzo chekaymi?",
+              "uz-Cyrl": "Буни айтмади. Менга имзо чекиш учун буюртма варақасини берди. Имзо чекайми?",
+              "ru": "Этого он не сказал. Он дал мне заказ на подпись. Мне подписать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, unterschreib nichts, bevor du den Preis kennst. Frag zuerst deinen Vermieter.",
+            "tr": {
+              "uz": "Yoʻq, narxni bilmaguningcha hech narsaga imzo chekma. Avval uy egangdan soʻra.",
+              "uz-Cyrl": "Йўқ, нархни билмагунингча ҳеч нарсага имзо чекма. Аввал уй эгангдан сўра.",
+              "ru": "Нет, ничего не подписывай, пока не знаешь цену. Сначала спроси арендодателя."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Er hat gesagt, er braucht heute noch eine Anzahlung in bar.",
+            "tr": {
+              "uz": "U bugunoq naqd pulda oldindan toʻlov kerakligini aytdi.",
+              "uz-Cyrl": "У бугуноқ нақд пулда олдиндан тўлов кераклигини айтди.",
+              "ru": "Он сказал, что ему ещё сегодня нужна предоплата наличными."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Eine Anzahlung in bar? Gib ihm nichts – ruf lieber gleich die Hausverwaltung an.",
+            "tr": {
+              "uz": "Naqd pulda oldindan toʻlovmi? Unga hech narsa berma — yaxshisi, hoziroq uy boshqaruviga qoʻngʻiroq qil.",
+              "uz-Cyrl": "Нақд пулда олдиндан тўловми? Унга ҳеч нарса берма — яхшиси, ҳозироқ уй бошқарувига қўнғироқ қил.",
+              "ru": "Предоплату наличными? Ничего ему не давай — лучше сразу позвони в управляющую компанию."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
