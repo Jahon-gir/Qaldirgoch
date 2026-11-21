@@ -5028,6 +5028,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Schau mal, was mir mein Nachbar für Silvester gegeben hat!",
+            "tr": {
+              "uz": "Qara, qoʻshnim Yangi yil uchun menga nima berdi!",
+              "uz-Cyrl": "Қара, қўшним Янги йил учун менга нима берди!",
+              "ru": "Смотри, что мне сосед дал на Новый год!"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Was ist das denn? Das sieht ja aus wie ein großer Böller.",
+            "tr": {
+              "uz": "Bu nima oʻzi? Katta petardaga oʻxshaydi-ku.",
+              "uz-Cyrl": "Бу нима ўзи? Катта петардага ўхшайди-ку.",
+              "ru": "Что это такое? Похоже на большую петарду."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Genau, ein Böller aus dem Ausland, ganz ohne Aufschrift. Zündest du ihn an Silvester mit mir an?",
+            "tr": {
+              "uz": "Xuddi shunday, chet eldan kelgan petarda, ustida hech qanday yozuv yoʻq. Yangi yil kechasi uni men bilan birga yoqasanmi?",
+              "uz-Cyrl": "Худди шундай, чет элдан келган петарда, устида ҳеч қандай ёзув йўқ. Янги йил кечаси уни мен билан бирга ёқасанми?",
+              "ru": "Точно, петарда из-за границы, совсем без надписей. Подожжёшь её со мной в новогоднюю ночь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Lieber nicht. So ein Böller ohne Aufschrift ist mir zu gefährlich.",
+            "tr": {
+              "uz": "Yaxshisi yoʻq. Bunday yozuvsiz petarda men uchun juda xavfli.",
+              "uz-Cyrl": "Яхшиси йўқ. Бундай ёзувсиз петарда мен учун жуда хавфли.",
+              "ru": "Лучше не надо. Такая петарда без надписей для меня слишком опасна."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Ach was! Ich zünde ihn einfach in der Hand an und werfe ihn schnell weg.",
+            "tr": {
+              "uz": "Qoʻysang-chi! Uni shunchaki qoʻlimda yoqaman-u, tezda uloqtirib yuboraman.",
+              "uz-Cyrl": "Қўйсанг-чи! Уни шунчаки қўлимда ёқаман-у, тезда улоқтириб юбораман.",
+              "ru": "Да ладно! Я просто подожгу её в руке и быстро брошу."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "In der Hand? Bloß nicht – damit kann man sich schwer verletzen!",
+            "tr": {
+              "uz": "Qoʻlingdami? Aslo – bu bilan qattiq jarohat olish mumkin!",
+              "uz-Cyrl": "Қўлингдами? Асло – бу билан қаттиқ жароҳат олиш мумкин!",
+              "ru": "В руке? Ни в коем случае – так можно сильно пораниться!"
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
