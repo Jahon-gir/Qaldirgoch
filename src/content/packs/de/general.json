@@ -5464,6 +5464,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "xizmatlar",
+      "title": {
+        "uz": "Maishiy xizmatlar: sartarosh, taʼmir va kimyoviy tozalash",
+        "uz-Cyrl": "Маиший хизматлар: сартарош, таъмир ва кимёвий тозалаш",
+        "ru": "Бытовые услуги: парикмахерская, ремонт и химчистка"
+      },
+      "order": 32,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Sartarosh ayol",
+              "uz-Cyrl": "Сартарош аёл",
+              "ru": "Парикмахер"
+            },
+            "de": "Guten Tag! Was darf es sein?",
+            "tr": {
+              "uz": "Assalomu alaykum! Sizga qanday xizmat?",
+              "uz-Cyrl": "Ассалому алайкум! Сизга қандай хизмат?",
+              "ru": "Добрый день! Что для вас сделать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich habe keinen Termin. Haben Sie heute noch einen Termin frei?",
+            "tr": {
+              "uz": "Oldindan yozilmaganman. Bugun boʻsh vaqtingiz bormi?",
+              "uz-Cyrl": "Олдиндан ёзилмаганман. Бугун бўш вақтингиз борми?",
+              "ru": "У меня нет записи. У вас сегодня ещё есть свободное время?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Sartarosh ayol",
+              "uz-Cyrl": "Сартарош аёл",
+              "ru": "Парикмахер"
+            },
+            "de": "In zwanzig Minuten wird ein Platz frei. Wie möchten Sie die Haare haben?",
+            "tr": {
+              "uz": "Yigirma daqiqadan keyin joy boʻshaydi. Sochingizni qanday qilaylik?",
+              "uz-Cyrl": "Йигирма дақиқадан кейин жой бўшайди. Сочингизни қандай қилайлик?",
+              "ru": "Через двадцать минут освободится место. Как вас подстричь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Einmal schneiden, bitte – hinten kurz und oben etwas länger.",
+            "tr": {
+              "uz": "Sochimni olib qoʻying, iltimos — orqasi kalta, tepasi biroz uzunroq.",
+              "uz-Cyrl": "Сочимни олиб қўйинг, илтимос — орқаси калта, тепаси бироз узунроқ.",
+              "ru": "Подстригите, пожалуйста: сзади коротко, а сверху чуть длиннее."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Sartarosh ayol",
+              "uz-Cyrl": "Сартарош аёл",
+              "ru": "Парикмахер"
+            },
+            "de": "Gern. Bezahlen Sie bitte nachher vorne an der Kasse.",
+            "tr": {
+              "uz": "Mayli. Keyin oldindagi kassada toʻlaysiz.",
+              "uz-Cyrl": "Майли. Кейин олдиндаги кассада тўлайсиз.",
+              "ru": "Хорошо. Оплатите потом на кассе у входа."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "An der Kasse? Gut. Kann man dort auch mit Karte zahlen?",
+            "tr": {
+              "uz": "Kassadami? Yaxshi. U yerda karta bilan ham toʻlasa boʻladimi?",
+              "uz-Cyrl": "Кассадами? Яхши. У ерда карта билан ҳам тўласа бўладими?",
+              "ru": "На кассе? Хорошо. А там можно оплатить картой?"
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -25371,6 +25464,656 @@
           "uz": "Mangaldan chiqadigan zaharli gaz uyda oʻlimga olib kelishi mumkin.",
           "uz-Cyrl": "Мангалдан чиқадиган заҳарли газ уйда ўлимга олиб келиши мумкин.",
           "ru": "Ядовитый газ от гриля в квартире может быть смертельным."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-friseur",
+      "slug": "friseur",
+      "term": "der Friseur",
+      "icon": "scissors",
+      "article": "der",
+      "plural": "die Friseure",
+      "tr": {
+        "uz": "sartarosh",
+        "uz-Cyrl": "сартарош",
+        "ru": "парикмахер"
+      },
+      "pron": {
+        "uz": "der fri-zyor",
+        "uz-Cyrl": "дер фри-зёр",
+        "ru": "дер фри-зёр"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Mein Friseur ist gleich neben dem Bahnhof.",
+        "tr": {
+          "uz": "Mening sartaroshim vokzalning yonginasida.",
+          "uz-Cyrl": "Менинг сартарошим вокзалнинг ёнгинасида.",
+          "ru": "Мой парикмахер прямо рядом с вокзалом."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-haarschnitt",
+      "slug": "haarschnitt",
+      "term": "der Haarschnitt",
+      "icon": "scissors",
+      "article": "der",
+      "plural": "die Haarschnitte",
+      "tr": {
+        "uz": "soch turmagi (soch oldirish)",
+        "uz-Cyrl": "соч турмаги (соч олдириш)",
+        "ru": "стрижка"
+      },
+      "pron": {
+        "uz": "der har-shnit",
+        "uz-Cyrl": "дер хар-шнит",
+        "ru": "дер хар-шнит"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Der neue Haarschnitt steht dir gut.",
+        "tr": {
+          "uz": "Yangi soch turmaging senga yarashibdi.",
+          "uz-Cyrl": "Янги соч турмагинг сенга ярашибди.",
+          "ru": "Новая стрижка тебе идёт."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-einmal-schneiden-bitte",
+      "slug": "einmal-schneiden-bitte",
+      "term": "Einmal schneiden, bitte.",
+      "icon": "scissors",
+      "tr": {
+        "uz": "Sochimni olib qoʻying, iltimos.",
+        "uz-Cyrl": "Сочимни олиб қўйинг, илтимос.",
+        "ru": "Подстригите, пожалуйста."
+      },
+      "pron": {
+        "uz": "ayn-mal shnay-den, bit-te",
+        "uz-Cyrl": "айн-мал шнай-ден, бит-те",
+        "ru": "айн-мал шнай-ден, бит-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Nur die Spitzen, nicht zu kurz.",
+        "tr": {
+          "uz": "Faqat uchlarini, juda kalta emas.",
+          "uz-Cyrl": "Фақат учларини, жуда калта эмас.",
+          "ru": "Только кончики, не слишком коротко."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-haben-sie-heute-noch-einen-termin-frei",
+      "slug": "haben-sie-heute-noch-einen-termin-frei",
+      "term": "Haben Sie heute noch einen Termin frei?",
+      "icon": "calendar-event",
+      "tr": {
+        "uz": "Bugun boʻsh vaqtingiz (navbat) bormi?",
+        "uz-Cyrl": "Бугун бўш вақтингиз (навбат) борми?",
+        "ru": "У вас сегодня ещё есть свободное время для записи?"
+      },
+      "pron": {
+        "uz": "ha-ben zi hoy-te nox ay-nen ter-min fray?",
+        "uz-Cyrl": "ха-бен зи хой-те нох ай-нен тер-мин фрай?",
+        "ru": "ха-бен зи хой-те нох ай-нен тер-мин фрай?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Sonst komme ich gern morgen wieder.",
+        "tr": {
+          "uz": "Boʻlmasa, ertaga yana kelaman.",
+          "uz-Cyrl": "Бўлмаса, эртага яна келаман.",
+          "ru": "Иначе я с удовольствием приду завтра."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-preisliste",
+      "slug": "preisliste",
+      "term": "die Preisliste",
+      "icon": "list-details",
+      "article": "die",
+      "plural": "die Preislisten",
+      "tr": {
+        "uz": "narxlar roʻyxati",
+        "uz-Cyrl": "нархлар рўйхати",
+        "ru": "прейскурант (список цен)"
+      },
+      "pron": {
+        "uz": "die prays-lis-te",
+        "uz-Cyrl": "ди прайс-лис-те",
+        "ru": "ди прайс-лис-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Die Preisliste hängt neben der Kasse.",
+        "tr": {
+          "uz": "Narxlar roʻyxati kassa yonida osilgan.",
+          "uz-Cyrl": "Нархлар рўйхати касса ёнида осилган.",
+          "ru": "Прейскурант висит рядом с кассой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-dienstleistung",
+      "slug": "dienstleistung",
+      "term": "die Dienstleistung",
+      "icon": "tools",
+      "article": "die",
+      "plural": "die Dienstleistungen",
+      "tr": {
+        "uz": "xizmat (maishiy xizmat)",
+        "uz-Cyrl": "хизмат (маиший хизмат)",
+        "ru": "услуга"
+      },
+      "pron": {
+        "uz": "die dinst-lays-tung",
+        "uz-Cyrl": "ди динст-лайс-тунг",
+        "ru": "ди динст-лайс-тунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "In unserer Straße gibt es viele Dienstleistungen: Friseur, Reinigung und Schuhmacher.",
+        "tr": {
+          "uz": "Bizning koʻchada xizmatlar koʻp: sartarosh, kimyoviy tozalash va etikdoʻz.",
+          "uz-Cyrl": "Бизнинг кўчада хизматлар кўп: сартарош, кимёвий тозалаш ва этикдўз.",
+          "ru": "На нашей улице много услуг: парикмахерская, химчистка и ремонт обуви."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-textilreinigung",
+      "slug": "textilreinigung",
+      "term": "die Textilreinigung",
+      "icon": "hanger",
+      "article": "die",
+      "plural": "die Textilreinigungen",
+      "tr": {
+        "uz": "kimyoviy tozalash (kiyim tozalash xizmati)",
+        "uz-Cyrl": "кимёвий тозалаш (кийим тозалаш хизмати)",
+        "ru": "химчистка"
+      },
+      "pron": {
+        "uz": "die teks-til-ray-ni-gung",
+        "uz-Cyrl": "ди текс-тил-рай-ни-гунг",
+        "ru": "ди текс-тил-рай-ни-гунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Meinen Mantel bringe ich in die Textilreinigung.",
+        "tr": {
+          "uz": "Paltomni kimyoviy tozalashga olib boraman.",
+          "uz-Cyrl": "Палтомни кимёвий тозалашга олиб бораман.",
+          "ru": "Своё пальто я отнесу в химчистку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-aenderungsschneiderei",
+      "slug": "aenderungsschneiderei",
+      "term": "die Änderungsschneiderei",
+      "icon": "needle-thread",
+      "article": "die",
+      "plural": "die Änderungsschneidereien",
+      "tr": {
+        "uz": "kiyim taʼmirlash ustaxonasi (tikuvchi)",
+        "uz-Cyrl": "кийим таъмирлаш устахонаси (тикувчи)",
+        "ru": "ателье по ремонту одежды"
+      },
+      "pron": {
+        "uz": "die en-de-rungs-shnay-de-ray",
+        "uz-Cyrl": "ди эн-де-рунгс-шнай-де-рай",
+        "ru": "ди эн-де-рунгс-шнай-де-рай"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "In der Änderungsschneiderei kann man Hosen kürzen lassen.",
+        "tr": {
+          "uz": "Kiyim taʼmirlash ustaxonasida shimni kaltalatish mumkin.",
+          "uz-Cyrl": "Кийим таъмирлаш устахонасида шимни калталатиш мумкин.",
+          "ru": "В ателье по ремонту одежды можно укоротить брюки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-kuerzen",
+      "slug": "kuerzen",
+      "term": "kürzen",
+      "icon": "ruler",
+      "tr": {
+        "uz": "kaltalatmoq (qisqartirmoq)",
+        "uz-Cyrl": "калталатмоқ (қисқартирмоқ)",
+        "ru": "укорачивать"
+      },
+      "pron": {
+        "uz": "kyur-tsen",
+        "uz-Cyrl": "кюр-цен",
+        "ru": "кюр-цен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Die Schneiderin muss die Ärmel noch etwas kürzen.",
+        "tr": {
+          "uz": "Tikuvchi ayol yenglarini yana biroz kaltalatishi kerak.",
+          "uz-Cyrl": "Тикувчи аёл енгларини яна бироз калталатиши керак.",
+          "ru": "Портнихе нужно ещё немного укоротить рукава."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-schuhmacher",
+      "slug": "schuhmacher",
+      "term": "der Schuhmacher",
+      "icon": "shoe",
+      "article": "der",
+      "plural": "die Schuhmacher",
+      "tr": {
+        "uz": "poyabzal ustasi (etikdoʻz)",
+        "uz-Cyrl": "пойабзал устаси (этикдўз)",
+        "ru": "сапожник (мастер по ремонту обуви)"
+      },
+      "pron": {
+        "uz": "der shu-ma-xer",
+        "uz-Cyrl": "дер шу-ма-хер",
+        "ru": "дер шу-ма-хер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Der Schuhmacher repariert meine Stiefel bis Freitag.",
+        "tr": {
+          "uz": "Etikdoʻz etiklarimni jumagacha tuzatadi.",
+          "uz-Cyrl": "Этикдўз этикларимни жумагача тузатади.",
+          "ru": "Сапожник починит мои сапоги до пятницы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-sohle",
+      "slug": "sohle",
+      "term": "die Sohle",
+      "icon": "shoe",
+      "article": "die",
+      "plural": "die Sohlen",
+      "tr": {
+        "uz": "poyabzal tagi",
+        "uz-Cyrl": "пойабзал таги",
+        "ru": "подошва"
+      },
+      "pron": {
+        "uz": "die zo-le",
+        "uz-Cyrl": "ди зо-ле",
+        "ru": "ди зо-ле"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Die Sohle an meinem Schuh löst sich ab.",
+        "tr": {
+          "uz": "Poyabzalimning tagi koʻchib ketyapti.",
+          "uz-Cyrl": "Пойабзалимнинг таги кўчиб кетяпти.",
+          "ru": "У моего ботинка отклеивается подошва."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-abholschein",
+      "slug": "abholschein",
+      "term": "der Abholschein",
+      "icon": "receipt",
+      "article": "der",
+      "plural": "die Abholscheine",
+      "tr": {
+        "uz": "olib ketish cheki (talon)",
+        "uz-Cyrl": "олиб кетиш чеки (талон)",
+        "ru": "квитанция для получения"
+      },
+      "pron": {
+        "uz": "der ap-hol-shayn",
+        "uz-Cyrl": "дер ап-хол-шайн",
+        "ru": "дер ап-хол-шайн"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Bitte bringen Sie den Abholschein mit, wenn Sie die Jacke holen.",
+        "tr": {
+          "uz": "Kurtkani olib ketishga kelganingizda chekni olib keling.",
+          "uz-Cyrl": "Курткани олиб кетишга келганингизда чекни олиб келинг.",
+          "ru": "Пожалуйста, возьмите квитанцию, когда придёте за курткой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-wann-ist-es-fertig",
+      "slug": "wann-ist-es-fertig",
+      "term": "Wann ist es fertig?",
+      "icon": "clock",
+      "tr": {
+        "uz": "Qachon tayyor boʻladi?",
+        "uz-Cyrl": "Қачон тайёр бўлади?",
+        "ru": "Когда будет готово?"
+      },
+      "pron": {
+        "uz": "van ist es fer-tix?",
+        "uz-Cyrl": "ван ист эс фер-тих?",
+        "ru": "ван ист эс фер-тих?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Ich brauche die Hose am Samstag für eine Hochzeit.",
+        "tr": {
+          "uz": "Shim menga shanba kuni toʻy uchun kerak.",
+          "uz-Cyrl": "Шим менга шанба куни тўй учун керак.",
+          "ru": "Брюки нужны мне в субботу на свадьбу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-handyreparatur",
+      "slug": "handyreparatur",
+      "term": "die Handyreparatur",
+      "icon": "device-mobile",
+      "article": "die",
+      "plural": "die Handyreparaturen",
+      "tr": {
+        "uz": "telefon taʼmiri",
+        "uz-Cyrl": "телефон таъмири",
+        "ru": "ремонт телефона"
+      },
+      "pron": {
+        "uz": "die hen-di-re-pa-ra-tur",
+        "uz-Cyrl": "ди хен-ди-ре-па-ра-тур",
+        "ru": "ди хен-ди-ре-па-ра-тур"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Wie lange dauert die Handyreparatur?",
+        "tr": {
+          "uz": "Telefon taʼmiri qancha vaqt oladi?",
+          "uz-Cyrl": "Телефон таъмири қанча вақт олади?",
+          "ru": "Сколько времени займёт ремонт телефона?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-display",
+      "slug": "display",
+      "term": "das Display",
+      "icon": "device-mobile",
+      "article": "das",
+      "plural": "die Displays",
+      "tr": {
+        "uz": "ekran (displey)",
+        "uz-Cyrl": "экран (дисплей)",
+        "ru": "экран (дисплей)"
+      },
+      "pron": {
+        "uz": "das dis-pley",
+        "uz-Cyrl": "дас дис-плей",
+        "ru": "дас дис-плей"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Das Handy ist runtergefallen, jetzt ist das Display kaputt.",
+        "tr": {
+          "uz": "Telefon tushib ketdi, endi ekrani singan.",
+          "uz-Cyrl": "Телефон тушиб кетди, энди экрани синган.",
+          "ru": "Телефон упал, теперь экран разбит."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-datensicherung",
+      "slug": "datensicherung",
+      "term": "die Datensicherung",
+      "icon": "database",
+      "article": "die",
+      "plural": "die Datensicherungen",
+      "tr": {
+        "uz": "maʼlumotlarning zaxira nusxasi",
+        "uz-Cyrl": "маълумотларнинг захира нусхаси",
+        "ru": "резервная копия данных"
+      },
+      "pron": {
+        "uz": "die da-ten-zi-xe-rung",
+        "uz-Cyrl": "ди да-тен-зи-хе-рунг",
+        "ru": "ди да-тен-зи-хе-рунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Vor der Reparatur mache ich eine Datensicherung von meinen Fotos.",
+        "tr": {
+          "uz": "Taʼmirdan oldin rasmlarimning zaxira nusxasini olaman.",
+          "uz-Cyrl": "Таъмирдан олдин расмларимнинг захира нусхасини оламан.",
+          "ru": "Перед ремонтом я делаю резервную копию своих фото."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-handwerker",
+      "slug": "handwerker",
+      "term": "der Handwerker",
+      "icon": "hammer",
+      "article": "der",
+      "plural": "die Handwerker",
+      "tr": {
+        "uz": "usta (hunarmand)",
+        "uz-Cyrl": "уста (ҳунарманд)",
+        "ru": "мастер (ремесленник)"
+      },
+      "pron": {
+        "uz": "der hant-ver-ker",
+        "uz-Cyrl": "дер хант-вер-кер",
+        "ru": "дер хант-вер-кер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Morgen kommt ein Handwerker und repariert die Tür.",
+        "tr": {
+          "uz": "Ertaga usta keladi va eshikni tuzatadi.",
+          "uz-Cyrl": "Эртага уста келади ва эшикни тузатади.",
+          "ru": "Завтра придёт мастер и починит дверь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-festpreis",
+      "slug": "festpreis",
+      "term": "der Festpreis",
+      "icon": "cash",
+      "article": "der",
+      "plural": "die Festpreise",
+      "tr": {
+        "uz": "qatʼiy narx (oldindan kelishilgan)",
+        "uz-Cyrl": "қатъий нарх (олдиндан келишилган)",
+        "ru": "фиксированная цена"
+      },
+      "pron": {
+        "uz": "der fest-prays",
+        "uz-Cyrl": "дер фест-прайс",
+        "ru": "дер фест-прайс"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Wir haben für die Reparatur einen Festpreis vereinbart.",
+        "tr": {
+          "uz": "Taʼmir uchun qatʼiy narxni kelishib oldik.",
+          "uz-Cyrl": "Таъмир учун қатъий нархни келишиб олдик.",
+          "ru": "Мы договорились о фиксированной цене за ремонт."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-anzahlung",
+      "slug": "anzahlung",
+      "term": "die Anzahlung",
+      "icon": "cash",
+      "article": "die",
+      "plural": "die Anzahlungen",
+      "tr": {
+        "uz": "oldindan toʻlov (avans)",
+        "uz-Cyrl": "олдиндан тўлов (аванс)",
+        "ru": "предоплата (аванс)"
+      },
+      "pron": {
+        "uz": "die an-tsa-lung",
+        "uz-Cyrl": "ди ан-ца-лунг",
+        "ru": "ди ан-ца-лунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Für die Anzahlung bekomme ich eine Quittung.",
+        "tr": {
+          "uz": "Oldindan toʻlov uchun menga kvitansiya beriladi.",
+          "uz-Cyrl": "Олдиндан тўлов учун менга квитанция берилади.",
+          "ru": "За предоплату мне дают квитанцию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-xizmatlar-unterschreiben-sie-nichts-bevor-sie-den-preis-kennen",
+      "slug": "unterschreiben-sie-nichts-bevor-sie-den-preis-kennen",
+      "term": "Unterschreiben Sie nichts, bevor Sie den Preis kennen!",
+      "icon": "signature",
+      "tr": {
+        "uz": "Narxni bilmaguningizcha hech narsaga imzo chekmang!",
+        "uz-Cyrl": "Нархни билмагунингизча ҳеч нарсага имзо чекманг!",
+        "ru": "Ничего не подписывайте, пока не узнаете цену!"
+      },
+      "pron": {
+        "uz": "un-ter-shray-ben zi nixts, be-for zi den prays ken-nen!",
+        "uz-Cyrl": "ун-тер-шрай-бен зи нихтс, бе-фор зи ден прайс кен-нен!",
+        "ru": "ун-тер-шрай-бен зи нихтс, бе-фор зи ден прайс кен-нен!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "xizmatlar",
+      "example": {
+        "term": "Das gilt besonders bei Handwerkern an der Haustür.",
+        "tr": {
+          "uz": "Bu, ayniqsa, eshik oldiga kelgan ustalarga tegishli.",
+          "uz-Cyrl": "Бу, айниқса, эшик олдига келган усталарга тегишли.",
+          "ru": "Особенно это касается мастеров, которые приходят к двери."
         }
       },
       "safety": true,
