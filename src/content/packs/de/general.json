@@ -5288,6 +5288,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "mehmondorchilik",
+      "title": {
+        "uz": "Mehmonga borish va mehmon kutish",
+        "uz-Cyrl": "Меҳмонга бориш ва меҳмон кутиш",
+        "ru": "В гостях и приём гостей"
+      },
+      "order": 31,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Mezbon hamkasb",
+              "uz-Cyrl": "Мезбон ҳамкасб",
+              "ru": "Коллега-хозяин"
+            },
+            "de": "Hallo, schön, dass du da bist! Komm rein.",
+            "tr": {
+              "uz": "Salom, kelganingdan xursandman! Kiraver.",
+              "uz-Cyrl": "Салом, келганингдан хурсандман! Киравер.",
+              "ru": "Привет, как хорошо, что ты здесь! Заходи."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Vielen Dank für die Einladung! Hier, ein paar Blumen als kleines Mitbringsel.",
+            "tr": {
+              "uz": "Taklifing uchun katta rahmat! Mana, kichik sovgʻa sifatida bir dasta gul.",
+              "uz-Cyrl": "Таклифинг учун катта раҳмат! Мана, кичик совға сифатида бир даста гул.",
+              "ru": "Большое спасибо за приглашение! Вот, немного цветов в качестве гостинца."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mezbon hamkasb",
+              "uz-Cyrl": "Мезбон ҳамкасб",
+              "ru": "Коллега-хозяин"
+            },
+            "de": "Danke, die sind wunderschön! Sag mal, isst du eigentlich Fleisch?",
+            "tr": {
+              "uz": "Rahmat, juda chiroyli ekan! Aytgancha, sen goʻsht yeysanmi?",
+              "uz-Cyrl": "Раҳмат, жуда чиройли экан! Айтганча, сен гўшт ейсанми?",
+              "ru": "Спасибо, они прекрасны! Скажи, а ты ешь мясо?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich esse kein Schweinefleisch, aber Hähnchen und Rindfleisch esse ich gern.",
+            "tr": {
+              "uz": "Choʻchqa goʻshtini yemayman, lekin tovuq va mol goʻshtini bajonidil yeyman.",
+              "uz-Cyrl": "Чўчқа гўштини емайман, лекин товуқ ва мол гўштини бажонидил ейман.",
+              "ru": "Свинину я не ем, но курицу и говядину ем с удовольствием."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Mezbon hamkasb",
+              "uz-Cyrl": "Мезбон ҳамкасб",
+              "ru": "Коллега-хозяин"
+            },
+            "de": "Kein Problem, die Suppe ist mit Hähnchen. Und zum Nachtisch gibt es Apfelkuchen nach dem Rezept meiner Oma.",
+            "tr": {
+              "uz": "Muammo yoʻq, shoʻrva tovuq goʻshtidan. Shirinlikka esa buvimning retsepti boʻyicha olmali pirog bor.",
+              "uz-Cyrl": "Муаммо йўқ, шўрва товуқ гўштидан. Ширинликка эса бувимнинг рецепти бўйича олмали пирог бор.",
+              "ru": "Не проблема, суп с курицей. А на десерт – яблочный пирог по рецепту моей бабушки."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Apfelkuchen nach Omas Rezept? Den muss ich unbedingt probieren!",
+            "tr": {
+              "uz": "Buvingning retsepti boʻyicha olmali pirogmi? Albatta tatib koʻrishim kerak!",
+              "uz-Cyrl": "Бувингнинг рецепти бўйича олмали пирогми? Албатта татиб кўришим керак!",
+              "ru": "Яблочный пирог по бабушкиному рецепту? Обязательно надо попробовать!"
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -24560,6 +24653,644 @@
         }
       },
       "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-einladen",
+      "slug": "einladen",
+      "term": "einladen",
+      "icon": "mail",
+      "tr": {
+        "uz": "taklif qilmoq (mehmonga chaqirmoq)",
+        "uz-Cyrl": "таклиф қилмоқ (меҳмонга чақирмоқ)",
+        "ru": "приглашать (в гости)"
+      },
+      "pron": {
+        "uz": "ayn-la-den",
+        "uz-Cyrl": "айн-ла-ден",
+        "ru": "айн-ла-ден"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "Meine Nachbarn möchten mich am Sonntag zum Essen einladen.",
+        "tr": {
+          "uz": "Qoʻshnilarim meni yakshanba kuni ovqatga taklif qilmoqchi.",
+          "uz-Cyrl": "Қўшниларим мени якшанба куни овқатга таклиф қилмоқчи.",
+          "ru": "Мои соседи хотят пригласить меня в воскресенье на обед."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-gastgeber",
+      "slug": "gastgeber",
+      "term": "der Gastgeber",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Gastgeber",
+      "tr": {
+        "uz": "mezbon (mehmonni kutib oluvchi)",
+        "uz-Cyrl": "мезбон (меҳмонни кутиб олувчи)",
+        "ru": "хозяин (принимающий гостей)"
+      },
+      "pron": {
+        "uz": "der gast-ge-ber",
+        "uz-Cyrl": "дер гаст-ге-бер",
+        "ru": "дер гаст-ге-бер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "Der Gastgeber begrüßt jeden Gast an der Tür.",
+        "tr": {
+          "uz": "Mezbon har bir mehmonni eshik oldida kutib oladi.",
+          "uz-Cyrl": "Мезбон ҳар бир меҳмонни эшик олдида кутиб олади.",
+          "ru": "Хозяин встречает каждого гостя у двери."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-party",
+      "slug": "party",
+      "term": "die Party",
+      "icon": "confetti",
+      "article": "die",
+      "plural": "die Partys",
+      "tr": {
+        "uz": "ziyofat (doʻstlar bilan kecha)",
+        "uz-Cyrl": "зиёфат (дўстлар билан кеча)",
+        "ru": "вечеринка"
+      },
+      "pron": {
+        "uz": "die par-ti",
+        "uz-Cyrl": "ди пар-ти",
+        "ru": "ди пар-ти"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "Zu meiner Party am Samstag kommen auch zwei Kollegen.",
+        "tr": {
+          "uz": "Shanba kungi ziyofatimga ikki hamkasbim ham keladi.",
+          "uz-Cyrl": "Шанба кунги зиёфатимга икки ҳамкасбим ҳам келади.",
+          "ru": "На мою вечеринку в субботу придут и двое коллег."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-mitbringsel",
+      "slug": "mitbringsel",
+      "term": "das Mitbringsel",
+      "icon": "gift",
+      "article": "das",
+      "plural": "die Mitbringsel",
+      "tr": {
+        "uz": "kichik sovgʻa (mehmonga olib boriladigan)",
+        "uz-Cyrl": "кичик совға (меҳмонга олиб бориладиган)",
+        "ru": "небольшой подарок (гостинец)"
+      },
+      "pron": {
+        "uz": "das mit-bring-zel",
+        "uz-Cyrl": "дас мит-бринг-зель",
+        "ru": "дас мит-бринг-зель"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "Als Mitbringsel kaufe ich Blumen oder Süßigkeiten.",
+        "tr": {
+          "uz": "Mehmonga sovgʻa sifatida gul yoki shirinlik sotib olaman.",
+          "uz-Cyrl": "Меҳмонга совға сифатида гул ёки ширинлик сотиб оламан.",
+          "ru": "В качестве гостинца я покупаю цветы или сладости."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-darf-ich-etwas-mitbringen",
+      "slug": "darf-ich-etwas-mitbringen",
+      "term": "Darf ich etwas mitbringen?",
+      "icon": "help",
+      "tr": {
+        "uz": "Biror narsa olib kelsam boʻladimi?",
+        "uz-Cyrl": "Бирор нарса олиб келсам бўладими?",
+        "ru": "Можно мне что-нибудь принести?"
+      },
+      "pron": {
+        "uz": "darf ix et-vas mit-brin-gen?",
+        "uz-Cyrl": "дарф их эт-вас мит-брин-ген?",
+        "ru": "дарф их эт-вас мит-брин-ген?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "So fragt man höflich, wenn man eingeladen ist.",
+        "tr": {
+          "uz": "Taklif qilinganda shunday xushmuomalalik bilan soʻraladi.",
+          "uz-Cyrl": "Таклиф қилинганда шундай хушмуомалалик билан сўралади.",
+          "ru": "Так вежливо спрашивают, когда приглашают в гости."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-absagen",
+      "slug": "absagen",
+      "term": "absagen",
+      "icon": "calendar-event",
+      "tr": {
+        "uz": "kelolmasligini aytmoq (bekor qilmoq)",
+        "uz-Cyrl": "келолмаслигини айтмоқ (бекор қилмоқ)",
+        "ru": "отказаться, отменить (визит)"
+      },
+      "pron": {
+        "uz": "ap-za-gen",
+        "uz-Cyrl": "ап-за-ген",
+        "ru": "ап-за-ген"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "Wenn ich krank bin, muss ich den Besuch rechtzeitig absagen.",
+        "tr": {
+          "uz": "Kasal boʻlsam, mehmonga borishni oʻz vaqtida bekor qilishim kerak.",
+          "uz-Cyrl": "Касал бўлсам, меҳмонга боришни ўз вақтида бекор қилишим керак.",
+          "ru": "Если я заболею, нужно вовремя отменить визит."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-soll-ich-die-schuhe-ausziehen",
+      "slug": "soll-ich-die-schuhe-ausziehen",
+      "term": "Soll ich die Schuhe ausziehen?",
+      "icon": "shoe",
+      "tr": {
+        "uz": "Poyabzalni yechaymi?",
+        "uz-Cyrl": "Пойабзални ечайми?",
+        "ru": "Мне снять обувь?"
+      },
+      "pron": {
+        "uz": "zol ix di shu-e aus-tsi-en?",
+        "uz-Cyrl": "зол их ди шу-е аус-ци-ен?",
+        "ru": "зол их ди шу-е аус-ци-ен?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "In vielen Wohnungen ist das normal, in anderen nicht.",
+        "tr": {
+          "uz": "Koʻp uylarda bu odatiy, boshqalarida esa yoʻq.",
+          "uz-Cyrl": "Кўп уйларда бу одатий, бошқаларида эса йўқ.",
+          "ru": "Во многих квартирах это нормально, в других – нет."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-fuehl-dich-wie-zu-hause",
+      "slug": "fuehl-dich-wie-zu-hause",
+      "term": "Fühl dich wie zu Hause!",
+      "icon": "home",
+      "tr": {
+        "uz": "Oʻz uyingdagidek boʻl!",
+        "uz-Cyrl": "Ўз уйингдагидек бўл!",
+        "ru": "Чувствуй себя как дома!"
+      },
+      "pron": {
+        "uz": "fyul dix vi tsu hau-ze!",
+        "uz-Cyrl": "фюль дих ви цу хау-зе!",
+        "ru": "фюль дих ви цу хау-зе!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "Das sagt der Gastgeber, wenn ein Gast hereinkommt.",
+        "tr": {
+          "uz": "Mehmon kirib kelganda mezbon shunday deydi.",
+          "uz-Cyrl": "Меҳмон кириб келганда мезбон шундай дейди.",
+          "ru": "Так говорит хозяин, когда входит гость."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-spezialitaet",
+      "slug": "spezialitaet",
+      "term": "die Spezialität",
+      "icon": "soup",
+      "article": "die",
+      "plural": "die Spezialitäten",
+      "tr": {
+        "uz": "oʻziga xos taom (milliy taom)",
+        "uz-Cyrl": "ўзига хос таом (миллий таом)",
+        "ru": "фирменное (национальное) блюдо"
+      },
+      "pron": {
+        "uz": "die shpe-tsi-a-li-tet",
+        "uz-Cyrl": "ди шпе-ци-а-ли-тет",
+        "ru": "ди шпе-ци-а-ли-тет"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "Plov ist eine Spezialität aus Usbekistan.",
+        "tr": {
+          "uz": "Palov — Oʻzbekistonning oʻziga xos milliy taomi.",
+          "uz-Cyrl": "Палов — Ўзбекистоннинг ўзига хос миллий таоми.",
+          "ru": "Плов – национальное блюдо Узбекистана."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-probieren",
+      "slug": "probieren",
+      "term": "probieren",
+      "icon": "tools-kitchen-2",
+      "tr": {
+        "uz": "tatib koʻrmoq",
+        "uz-Cyrl": "татиб кўрмоқ",
+        "ru": "пробовать (на вкус)"
+      },
+      "pron": {
+        "uz": "pro-bi-ren",
+        "uz-Cyrl": "про-би-рен",
+        "ru": "про-би-рен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "Möchtest du die Suppe probieren? Sie ist hausgemacht.",
+        "tr": {
+          "uz": "Shoʻrvani tatib koʻrasanmi? Uyda pishirilgan.",
+          "uz-Cyrl": "Шўрвани татиб кўрасанми? Уйда пиширилган.",
+          "ru": "Хочешь попробовать суп? Он домашний."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-nachtisch",
+      "slug": "nachtisch",
+      "term": "der Nachtisch",
+      "icon": "cake",
+      "article": "der",
+      "plural": "die Nachtische",
+      "tr": {
+        "uz": "shirinlik (ovqatdan keyin)",
+        "uz-Cyrl": "ширинлик (овқатдан кейин)",
+        "ru": "десерт"
+      },
+      "pron": {
+        "uz": "der nax-tish",
+        "uz-Cyrl": "дер нах-тиш",
+        "ru": "дер нах-тиш"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "Zum Nachtisch gibt es Obst und Kuchen.",
+        "tr": {
+          "uz": "Shirinlikka meva va pirog bor.",
+          "uz-Cyrl": "Ширинликка мева ва пирог бор.",
+          "ru": "На десерт – фрукты и пирог."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-nachschlag",
+      "slug": "nachschlag",
+      "term": "der Nachschlag",
+      "icon": "bowl",
+      "article": "der",
+      "plural": "die Nachschläge",
+      "tr": {
+        "uz": "qoʻshimcha porsiya (yana bir likopcha)",
+        "uz-Cyrl": "қўшимча порция (яна бир ликопча)",
+        "ru": "добавка"
+      },
+      "pron": {
+        "uz": "der nax-shlak",
+        "uz-Cyrl": "дер нах-шлак",
+        "ru": "дер нах-шлак"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "Das Essen ist sehr lecker – darf ich noch einen Nachschlag haben?",
+        "tr": {
+          "uz": "Ovqat juda mazali — yana bir likopcha olsam boʻladimi?",
+          "uz-Cyrl": "Овқат жуда мазали — яна бир ликопча олсам бўладими?",
+          "ru": "Еда очень вкусная – можно мне добавки?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-ich-bin-satt",
+      "slug": "ich-bin-satt",
+      "term": "Ich bin satt.",
+      "icon": "mood-smile",
+      "tr": {
+        "uz": "Toʻydim.",
+        "uz-Cyrl": "Тўйдим.",
+        "ru": "Мне уже хватит (я наелся)."
+      },
+      "pron": {
+        "uz": "ix bin zat.",
+        "uz-Cyrl": "их бин зат.",
+        "ru": "их бин зат."
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "Danke, es war sehr lecker, aber ich bin wirklich satt.",
+        "tr": {
+          "uz": "Rahmat, juda mazali boʻldi, lekin rostdan toʻydim.",
+          "uz-Cyrl": "Раҳмат, жуда мазали бўлди, лекин ростдан тўйдим.",
+          "ru": "Спасибо, было очень вкусно, но мне правда уже хватит."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-gastfreundschaft",
+      "slug": "gastfreundschaft",
+      "term": "die Gastfreundschaft",
+      "icon": "heart-handshake",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "mehmondoʻstlik",
+        "uz-Cyrl": "меҳмондўстлик",
+        "ru": "гостеприимство"
+      },
+      "pron": {
+        "uz": "die gast-froynt-shaft",
+        "uz-Cyrl": "ди гаст-фройнт-шафт",
+        "ru": "ди гаст-фройнт-шафт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "In Usbekistan ist Gastfreundschaft sehr wichtig.",
+        "tr": {
+          "uz": "Oʻzbekistonda mehmondoʻstlik juda muhim.",
+          "uz-Cyrl": "Ўзбекистонда меҳмондўстлик жуда муҳим.",
+          "ru": "В Узбекистане гостеприимство очень важно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-sich-bedanken",
+      "slug": "sich-bedanken",
+      "term": "sich bedanken",
+      "icon": "message-circle",
+      "tr": {
+        "uz": "minnatdorchilik bildirmoq (rahmat aytmoq)",
+        "uz-Cyrl": "миннатдорчилик билдирмоқ (раҳмат айтмоқ)",
+        "ru": "благодарить"
+      },
+      "pron": {
+        "uz": "zix be-dan-ken",
+        "uz-Cyrl": "зих бе-дан-кен",
+        "ru": "зих бе-дан-кен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "Am nächsten Tag möchte ich mich noch einmal per Nachricht bedanken.",
+        "tr": {
+          "uz": "Ertasi kuni xabar yozib, yana bir bor rahmat aytmoqchiman.",
+          "uz-Cyrl": "Эртаси куни хабар ёзиб, яна бир бор раҳмат айтмоқчиман.",
+          "ru": "На следующий день хочу ещё раз поблагодарить в сообщении."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-vielen-dank-fuer-die-einladung",
+      "slug": "vielen-dank-fuer-die-einladung",
+      "term": "Vielen Dank für die Einladung!",
+      "icon": "heart-handshake",
+      "tr": {
+        "uz": "Taklifingiz uchun katta rahmat!",
+        "uz-Cyrl": "Таклифингиз учун катта раҳмат!",
+        "ru": "Большое спасибо за приглашение!"
+      },
+      "pron": {
+        "uz": "fi-len dank fyur di ayn-la-dung!",
+        "uz-Cyrl": "фи-лен данк фюр ди айн-ла-дунг!",
+        "ru": "фи-лен данк фюр ди айн-ла-дунг!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "Das sagt man beim Abschied zum Gastgeber.",
+        "tr": {
+          "uz": "Xayrlashayotganda mezbonga shunday deyiladi.",
+          "uz-Cyrl": "Хайрлашаётганда мезбонга шундай дейилади.",
+          "ru": "Так говорят хозяину при прощании."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-abschied",
+      "slug": "abschied",
+      "term": "der Abschied",
+      "icon": "door-exit",
+      "article": "der",
+      "plural": "die Abschiede",
+      "tr": {
+        "uz": "xayrlashuv",
+        "uz-Cyrl": "хайрлашув",
+        "ru": "прощание"
+      },
+      "pron": {
+        "uz": "der ap-shit",
+        "uz-Cyrl": "дер ап-шит",
+        "ru": "дер ап-шит"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "Beim Abschied bedanke ich mich beim Gastgeber.",
+        "tr": {
+          "uz": "Xayrlashuvda mezbonga rahmat aytaman.",
+          "uz-Cyrl": "Хайрлашувда мезбонга раҳмат айтаман.",
+          "ru": "При прощании я благодарю хозяина."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-leider-kann-ich-nicht-kommen",
+      "slug": "leider-kann-ich-nicht-kommen",
+      "term": "Leider kann ich nicht kommen.",
+      "icon": "phone",
+      "tr": {
+        "uz": "Afsuski, kela olmayman.",
+        "uz-Cyrl": "Афсуски, кела олмайман.",
+        "ru": "К сожалению, я не смогу прийти."
+      },
+      "pron": {
+        "uz": "lay-der kan ix nixt ko-men.",
+        "uz-Cyrl": "лай-дер кан их нихт ко-мен.",
+        "ru": "лай-дер кан их нихт ко-мен."
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "Trotzdem vielen Dank, dass du an mich gedacht hast.",
+        "tr": {
+          "uz": "Baribir meni eslaganing uchun katta rahmat.",
+          "uz-Cyrl": "Барибир мени эслаганинг учун катта раҳмат.",
+          "ru": "Всё равно большое спасибо, что не забываешь обо мне."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-kerze",
+      "slug": "kerze",
+      "term": "die Kerze",
+      "icon": "candle",
+      "article": "die",
+      "plural": "die Kerzen",
+      "tr": {
+        "uz": "sham",
+        "uz-Cyrl": "шам",
+        "ru": "свеча"
+      },
+      "pron": {
+        "uz": "die ker-tse",
+        "uz-Cyrl": "ди кер-це",
+        "ru": "ди кер-це"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "Brennende Kerzen lasse ich nie allein im Zimmer.",
+        "tr": {
+          "uz": "Yonib turgan shamni hech qachon xonada qarovsiz qoldirmayman.",
+          "uz-Cyrl": "Ёниб турган шамни ҳеч қачон хонада қаровсиз қолдирмайман.",
+          "ru": "Я никогда не оставляю горящие свечи в комнате без присмотра."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-mehmondorchilik-grillen-sie-nie-in-geschlossenen-raeumen",
+      "slug": "grillen-sie-nie-in-geschlossenen-raeumen",
+      "term": "Grillen Sie nie in geschlossenen Räumen!",
+      "icon": "grill-off",
+      "tr": {
+        "uz": "Yopiq xonada hech qachon mangal (gril) yoqmang!",
+        "uz-Cyrl": "Ёпиқ хонада ҳеч қачон мангал (гриль) ёқманг!",
+        "ru": "Никогда не жарьте на гриле в закрытых помещениях!"
+      },
+      "pron": {
+        "uz": "gri-len zi ni in ge-shlo-se-nen roy-men!",
+        "uz-Cyrl": "гри-лен зи ни ин ге-шло-се-нен рой-мен!",
+        "ru": "гри-лен зи ни ин ге-шло-се-нен рой-мен!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "mehmondorchilik",
+      "example": {
+        "term": "Das giftige Gas vom Grill kann in der Wohnung tödlich sein.",
+        "tr": {
+          "uz": "Mangaldan chiqadigan zaharli gaz uyda oʻlimga olib kelishi mumkin.",
+          "uz-Cyrl": "Мангалдан чиқадиган заҳарли газ уйда ўлимга олиб келиши мумкин.",
+          "ru": "Ядовитый газ от гриля в квартире может быть смертельным."
+        }
+      },
+      "safety": true,
       "status": "review",
       "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
     }
