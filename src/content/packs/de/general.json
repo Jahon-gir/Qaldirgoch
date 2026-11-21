@@ -5992,6 +5992,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "internet-xavfsizlik",
+      "title": {
+        "uz": "Internet va telefon xavfsizligi: parol, soxta xabar va shaxsiy maʼlumot",
+        "uz-Cyrl": "Интернет ва телефон хавфсизлиги: пароль, сохта хабар ва шахсий маълумот",
+        "ru": "Безопасность в интернете и телефоне: пароль, фальшивые сообщения и личные данные"
+      },
+      "order": 35,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Was ist los? Du schaust so besorgt auf dein Handy.",
+            "tr": {
+              "uz": "Nima boʻldi? Telefoningga juda xavotir bilan qarayapsan.",
+              "uz-Cyrl": "Нима бўлди? Телефонингга жуда хавотир билан қараяпсан.",
+              "ru": "Что случилось? Ты так встревоженно смотришь в телефон."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich habe einen seltsamen Link bekommen. Angeblich habe ich bei einem Gewinnspiel gewonnen.",
+            "tr": {
+              "uz": "Menga gʻalati havola keldi. Goʻyoki men sovrinli tanlovda yutibman.",
+              "uz-Cyrl": "Менга ғалати ҳавола келди. Гўёки мен совринли танловда ютибман.",
+              "ru": "Мне пришла странная ссылка. Якобы мне достался выигрыш в розыгрыше."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Ein Gewinnspiel? Und was sollst du jetzt machen?",
+            "tr": {
+              "uz": "Sovrinli tanlovmi? Endi nima qilishing kerak ekan?",
+              "uz-Cyrl": "Совринли танловми? Энди нима қилишинг керак экан?",
+              "ru": "Розыгрыш? И что теперь нужно сделать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich soll meinen Benutzernamen und einen Bestätigungscode eingeben.",
+            "tr": {
+              "uz": "Foydalanuvchi nomim va tasdiqlash kodini kiritishim kerak ekan.",
+              "uz-Cyrl": "Фойдаланувчи номим ва тасдиқлаш кодини киритишим керак экан.",
+              "ru": "Нужно ввести моё имя пользователя и код подтверждения."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Gib dort bloß nichts ein! Das ist eine bekannte Betrugsmasche. Mach am besten einen Screenshot und lösch die Nachricht.",
+            "tr": {
+              "uz": "Zinhor hech narsa kiritma! Bu — mashhur firibgarlik usuli. Yaxshisi, skrinshot olib, xabarni oʻchirib tashla.",
+              "uz-Cyrl": "Зинҳор ҳеч нарса киритма! Бу — машҳур фирибгарлик усули. Яхшиси, скриншот олиб, хабарни ўчириб ташла.",
+              "ru": "Ни в коем случае ничего не вводи! Это известная схема мошенничества. Лучше сделай скриншот и удали сообщение."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Einen Screenshot? Gut, dann zeige ich ihn morgen auch den anderen im Gruppenchat, damit sie gewarnt sind.",
+            "tr": {
+              "uz": "Skrinshotmi? Yaxshi, ertaga uni guruh chatida boshqalarga ham koʻrsataman, ular ham ehtiyot boʻlsin.",
+              "uz-Cyrl": "Скриншотми? Яхши, эртага уни гуруҳ чатида бошқаларга ҳам кўрсатаман, улар ҳам эҳтиёт бўлсин.",
+              "ru": "Скриншот? Хорошо, завтра покажу его остальным в групповом чате, чтобы их предупредить."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -27853,6 +27946,660 @@
           "uz": "Allergenlar qadoqda koʻpincha qalin harf bilan yozilgan.",
           "uz-Cyrl": "Аллергенлар қадоқда кўпинча қалин ҳарф билан ёзилган.",
           "ru": "Аллергены на упаковке часто выделены жирным шрифтом."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-benutzername",
+      "slug": "benutzername",
+      "term": "der Benutzername",
+      "icon": "user-circle",
+      "article": "der",
+      "plural": "die Benutzernamen",
+      "tr": {
+        "uz": "foydalanuvchi nomi (login)",
+        "uz-Cyrl": "фойдаланувчи номи (логин)",
+        "ru": "имя пользователя (логин)"
+      },
+      "pron": {
+        "uz": "der be-nu-tser-na-me",
+        "uz-Cyrl": "дер бе-ну-цер-на-ме",
+        "ru": "дер бе-ну-цер-на-ме"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Mein Benutzername ist nicht mein richtiger Name.",
+        "tr": {
+          "uz": "Foydalanuvchi nomim haqiqiy ismim emas.",
+          "uz-Cyrl": "Фойдаланувчи номим ҳақиқий исмим эмас.",
+          "ru": "Моё имя пользователя – не моё настоящее имя."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-bestaetigungscode",
+      "slug": "bestaetigungscode",
+      "term": "der Bestätigungscode",
+      "icon": "password",
+      "article": "der",
+      "plural": "die Bestätigungscodes",
+      "tr": {
+        "uz": "tasdiqlash kodi",
+        "uz-Cyrl": "тасдиқлаш коди",
+        "ru": "код подтверждения"
+      },
+      "pron": {
+        "uz": "der be-shte-ti-gungs-kod",
+        "uz-Cyrl": "дер бе-ште-ти-гунгс-код",
+        "ru": "дер бе-ште-ти-гунгс-код"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Den Bestätigungscode bekomme ich per SMS.",
+        "tr": {
+          "uz": "Tasdiqlash kodini SMS orqali olaman.",
+          "uz-Cyrl": "Тасдиқлаш кодини СМС орқали оламан.",
+          "ru": "Код подтверждения приходит мне по СМС."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-zwei-faktor-authentifizierung",
+      "slug": "zwei-faktor-authentifizierung",
+      "term": "die Zwei-Faktor-Authentifizierung",
+      "icon": "shield-lock",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "ikki bosqichli tasdiqlash (parol + kod)",
+        "uz-Cyrl": "икки босқичли тасдиқлаш (пароль + код)",
+        "ru": "двухфакторная аутентификация (пароль + код)"
+      },
+      "pron": {
+        "uz": "die tsvay-fak-tor-au-ten-ti-fi-tsi-rung",
+        "uz-Cyrl": "ди цвай-фак-тор-ау-тен-ти-фи-ци-рунг",
+        "ru": "ди цвай-фак-тор-ау-тен-ти-фи-ци-рунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Schalten Sie für Ihr E-Mail-Konto die Zwei-Faktor-Authentifizierung ein.",
+        "tr": {
+          "uz": "Elektron pochtangiz uchun ikki bosqichli tasdiqlashni yoqing.",
+          "uz-Cyrl": "Электрон почтангиз учун икки босқичли тасдиқлашни ёқинг.",
+          "ru": "Включите двухфакторную аутентификацию для своей почты."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-bildschirmsperre",
+      "slug": "bildschirmsperre",
+      "term": "die Bildschirmsperre",
+      "icon": "fingerprint",
+      "article": "die",
+      "plural": "die Bildschirmsperren",
+      "tr": {
+        "uz": "ekran qulfi",
+        "uz-Cyrl": "экран қулфи",
+        "ru": "блокировка экрана"
+      },
+      "pron": {
+        "uz": "die bilt-shirm-shpe-re",
+        "uz-Cyrl": "ди билт-ширм-шпе-ре",
+        "ru": "ди билт-ширм-шпе-ре"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Ohne Bildschirmsperre kann jeder mein Handy öffnen.",
+        "tr": {
+          "uz": "Ekran qulfisiz telefonimni har kim ocha oladi.",
+          "uz-Cyrl": "Экран қулфисиз телефонимни ҳар ким оча олади.",
+          "ru": "Без блокировки экрана мой телефон может открыть любой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-update",
+      "slug": "update",
+      "term": "das Update",
+      "icon": "refresh",
+      "article": "das",
+      "plural": "die Updates",
+      "tr": {
+        "uz": "yangilanish (dastur uchun)",
+        "uz-Cyrl": "янгиланиш (дастур учун)",
+        "ru": "обновление (программы)"
+      },
+      "pron": {
+        "uz": "das ap-deyt",
+        "uz-Cyrl": "дас ап-дейт",
+        "ru": "дас ап-дейт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Ich installiere das Update gleich heute Abend.",
+        "tr": {
+          "uz": "Yangilanishni bugun kechqurunoq oʻrnataman.",
+          "uz-Cyrl": "Янгиланишни бугун кечқуруноқ ўрнатаман.",
+          "ru": "Установлю обновление сегодня же вечером."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-geben-sie-codes-nie-am-telefon-weiter",
+      "slug": "geben-sie-codes-nie-am-telefon-weiter",
+      "term": "Geben Sie Codes nie am Telefon weiter!",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Kodlarni hech qachon telefonda aytmang!",
+        "uz-Cyrl": "Кодларни ҳеч қачон телефонда айтманг!",
+        "ru": "Никогда не сообщайте коды по телефону!"
+      },
+      "pron": {
+        "uz": "ge-ben zi kods ni am te-le-fon vay-ter!",
+        "uz-Cyrl": "ге-бен зи кодс ни ам те-ле-фон вай-тер!",
+        "ru": "ге-бен зи кодс ни ам те-ле-фон вай-тер!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Eine echte Bank fragt am Telefon nie nach solchen Codes.",
+        "tr": {
+          "uz": "Haqiqiy bank telefonda hech qachon bunday kodlarni soʻramaydi.",
+          "uz-Cyrl": "Ҳақиқий банк телефонда ҳеч қачон бундай кодларни сўрамайди.",
+          "ru": "Настоящий банк никогда не спрашивает такие коды по телефону."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-virenschutz",
+      "slug": "virenschutz",
+      "term": "der Virenschutz",
+      "icon": "shield-check",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "antivirus (viruslardan himoya)",
+        "uz-Cyrl": "антивирус (вируслардан ҳимоя)",
+        "ru": "антивирусная защита"
+      },
+      "pron": {
+        "uz": "der vi-ren-shuts",
+        "uz-Cyrl": "дер ви-рен-шуц",
+        "ru": "дер ви-рен-шуц"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Auf meinem Laptop läuft ein Virenschutz.",
+        "tr": {
+          "uz": "Noutbukimda antivirus ishlab turibdi.",
+          "uz-Cyrl": "Ноутбукимда антивирус ишлаб турибди.",
+          "ru": "На моём ноутбуке работает антивирус."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-sicherheitsluecke",
+      "slug": "sicherheitsluecke",
+      "term": "die Sicherheitslücke",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "die Sicherheitslücken",
+      "tr": {
+        "uz": "xavfsizlik zaifligi (dasturdagi teshik)",
+        "uz-Cyrl": "хавфсизлик заифлиги (дастурдаги тешик)",
+        "ru": "уязвимость (брешь в защите)"
+      },
+      "pron": {
+        "uz": "die zi-xer-hayts-lyu-ke",
+        "uz-Cyrl": "ди зи-хер-хайтс-лю-ке",
+        "ru": "ди зи-хер-хайтс-лю-ке"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Das neue Update schließt eine Sicherheitslücke.",
+        "tr": {
+          "uz": "Yangi yangilanish xavfsizlik zaifligini yopadi.",
+          "uz-Cyrl": "Янги янгиланиш хавфсизлик заифлигини ёпади.",
+          "ru": "Новое обновление закрывает уязвимость."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-schadsoftware",
+      "slug": "schadsoftware",
+      "term": "die Schadsoftware",
+      "icon": "bug",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "zararli dastur (virus)",
+        "uz-Cyrl": "зарарли дастур (вирус)",
+        "ru": "вредоносная программа"
+      },
+      "pron": {
+        "uz": "die shat-soft-ver",
+        "uz-Cyrl": "ди шат-софт-вер",
+        "ru": "ди шат-софт-вер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Ein unbekannter Anhang kann Schadsoftware enthalten.",
+        "tr": {
+          "uz": "Notanish ilova faylda zararli dastur boʻlishi mumkin.",
+          "uz-Cyrl": "Нотаниш илова файлда зарарли дастур бўлиши мумкин.",
+          "ru": "Неизвестное вложение может содержать вредоносную программу."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-messenger",
+      "slug": "messenger",
+      "term": "der Messenger",
+      "icon": "message-circle",
+      "article": "der",
+      "plural": "die Messenger",
+      "tr": {
+        "uz": "messenjer (yozishma ilovasi)",
+        "uz-Cyrl": "мессенжер (ёзишма иловаси)",
+        "ru": "мессенджер"
+      },
+      "pron": {
+        "uz": "der me-sen-jer",
+        "uz-Cyrl": "дер ме-сен-жер",
+        "ru": "дер ме-сен-жер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Mit dem Messenger schreibe ich jeden Tag meiner Familie.",
+        "tr": {
+          "uz": "Messenjer orqali har kuni oilamga yozaman.",
+          "uz-Cyrl": "Мессенжер орқали ҳар куни оиламга ёзаман.",
+          "ru": "Через мессенджер я каждый день пишу семье."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-gruppenchat",
+      "slug": "gruppenchat",
+      "term": "der Gruppenchat",
+      "icon": "messages",
+      "article": "der",
+      "plural": "die Gruppenchats",
+      "tr": {
+        "uz": "guruh chati",
+        "uz-Cyrl": "гуруҳ чати",
+        "ru": "групповой чат"
+      },
+      "pron": {
+        "uz": "der gru-pen-chet",
+        "uz-Cyrl": "дер гру-пен-чет",
+        "ru": "дер гру-пен-чет"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Im Gruppenchat steht der neue Dienstplan.",
+        "tr": {
+          "uz": "Yangi ish jadvali guruh chatida.",
+          "uz-Cyrl": "Янги иш жадвали гуруҳ чатида.",
+          "ru": "Новый график смен есть в групповом чате."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-ich-habe-einen-seltsamen-link-bekommen",
+      "slug": "ich-habe-einen-seltsamen-link-bekommen",
+      "term": "Ich habe einen seltsamen Link bekommen.",
+      "icon": "link",
+      "tr": {
+        "uz": "Menga gʻalati havola keldi.",
+        "uz-Cyrl": "Менга ғалати ҳавола келди.",
+        "ru": "Мне пришла странная ссылка."
+      },
+      "pron": {
+        "uz": "ix ha-be ay-nen zelt-za-men link be-kom-men.",
+        "uz-Cyrl": "их ха-бе ай-нен зелт-за-мен линк бе-ком-мен.",
+        "ru": "их ха-бе ай-нен зелт-за-мен линк бе-ком-мен."
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Was soll ich jetzt machen?",
+        "tr": {
+          "uz": "Endi nima qilishim kerak?",
+          "uz-Cyrl": "Энди нима қилишим керак?",
+          "ru": "Что мне теперь делать?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-sprachnachricht",
+      "slug": "sprachnachricht",
+      "term": "die Sprachnachricht",
+      "icon": "microphone",
+      "article": "die",
+      "plural": "die Sprachnachrichten",
+      "tr": {
+        "uz": "ovozli xabar",
+        "uz-Cyrl": "овозли хабар",
+        "ru": "голосовое сообщение"
+      },
+      "pron": {
+        "uz": "die shprax-nax-rixt",
+        "uz-Cyrl": "ди шпрах-нах-рихт",
+        "ru": "ди шпрах-нах-рихт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Meine Mutter schickt mir lieber eine Sprachnachricht.",
+        "tr": {
+          "uz": "Onam menga koʻproq ovozli xabar yuboradi.",
+          "uz-Cyrl": "Онам менга кўпроқ овозли хабар юборади.",
+          "ru": "Мама предпочитает присылать мне голосовые сообщения."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-profilbild",
+      "slug": "profilbild",
+      "term": "das Profilbild",
+      "icon": "photo",
+      "article": "das",
+      "plural": "die Profilbilder",
+      "tr": {
+        "uz": "profil rasmi",
+        "uz-Cyrl": "профил расми",
+        "ru": "фото профиля"
+      },
+      "pron": {
+        "uz": "das pro-fil-bilt",
+        "uz-Cyrl": "дас про-фил-билт",
+        "ru": "дас про-фил-билт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Mein Profilbild sehen nur meine Kontakte.",
+        "tr": {
+          "uz": "Profil rasmimni faqat kontaktlarim koʻradi.",
+          "uz-Cyrl": "Профил расмимни фақат контактларим кўради.",
+          "ru": "Фото моего профиля видят только мои контакты."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-privatsphaere",
+      "slug": "privatsphaere",
+      "term": "die Privatsphäre",
+      "icon": "eye",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "shaxsiy hayot daxlsizligi (maxfiylik)",
+        "uz-Cyrl": "шахсий ҳаёт дахлсизлиги (махфийлик)",
+        "ru": "частная жизнь (конфиденциальность)"
+      },
+      "pron": {
+        "uz": "die pri-vat-sfe-re",
+        "uz-Cyrl": "ди при-ват-сфе-ре",
+        "ru": "ди при-ват-сфе-ре"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "In den Einstellungen schütze ich meine Privatsphäre.",
+        "tr": {
+          "uz": "Sozlamalarda shaxsiy maʼlumotlarimni himoya qilaman.",
+          "uz-Cyrl": "Созламаларда шахсий маълумотларимни ҳимоя қиламан.",
+          "ru": "В настройках я защищаю свою конфиденциальность."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-betrugsmasche",
+      "slug": "betrugsmasche",
+      "term": "die Betrugsmasche",
+      "icon": "spy",
+      "article": "die",
+      "plural": "die Betrugsmaschen",
+      "tr": {
+        "uz": "firibgarlik usuli (nayrangi)",
+        "uz-Cyrl": "фирибгарлик усули (найранги)",
+        "ru": "мошенническая схема"
+      },
+      "pron": {
+        "uz": "die be-truks-ma-she",
+        "uz-Cyrl": "ди бе-трукс-ма-ше",
+        "ru": "ди бе-трукс-ма-ше"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Die Polizei warnt vor einer neuen Betrugsmasche.",
+        "tr": {
+          "uz": "Politsiya yangi firibgarlik usulidan ogohlantirmoqda.",
+          "uz-Cyrl": "Полиция янги фирибгарлик усулидан огоҳлантирмоқда.",
+          "ru": "Полиция предупреждает о новой мошеннической схеме."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-schockanruf",
+      "slug": "schockanruf",
+      "term": "der Schockanruf",
+      "icon": "phone-call",
+      "article": "der",
+      "plural": "die Schockanrufe",
+      "tr": {
+        "uz": "qoʻrqituvchi qoʻngʻiroq (firibgarlar: «qarindoshingiz baloga qoldi»)",
+        "uz-Cyrl": "қўрқитувчи қўнғироқ (фирибгарлар: «қариндошингиз балога қолди»)",
+        "ru": "«шоковый» звонок (мошенники: «ваш родственник попал в беду»)"
+      },
+      "pron": {
+        "uz": "der shok-an-ruf",
+        "uz-Cyrl": "дер шок-ан-руф",
+        "ru": "дер шок-ан-руф"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Bei einem Schockanruf lege ich auf und rufe meine Familie selbst an.",
+        "tr": {
+          "uz": "Qoʻrqituvchi qoʻngʻiroqda goʻshakni qoʻyib, oilamga oʻzim qoʻngʻiroq qilaman.",
+          "uz-Cyrl": "Қўрқитувчи қўнғироқда гўшакни қўйиб, оиламга ўзим қўнғироқ қиламан.",
+          "ru": "При «шоковом» звонке кладу трубку и перезваниваю родным напрямую."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-gewinnspiel",
+      "slug": "gewinnspiel",
+      "term": "das Gewinnspiel",
+      "icon": "trophy",
+      "article": "das",
+      "plural": "die Gewinnspiele",
+      "tr": {
+        "uz": "sovrinli tanlov (oʻyin)",
+        "uz-Cyrl": "совринли танлов (ўйин)",
+        "ru": "розыгрыш призов"
+      },
+      "pron": {
+        "uz": "das ge-vin-shpil",
+        "uz-Cyrl": "дас ге-вин-шпил",
+        "ru": "дас ге-вин-шпил"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Für ein echtes Gewinnspiel muss man nichts bezahlen.",
+        "tr": {
+          "uz": "Haqiqiy sovrinli tanlov uchun hech narsa toʻlash shart emas.",
+          "uz-Cyrl": "Ҳақиқий совринли танлов учун ҳеч нарса тўлаш шарт эмас.",
+          "ru": "За участие в настоящем розыгрыше платить ничего не нужно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-screenshot",
+      "slug": "screenshot",
+      "term": "der Screenshot",
+      "icon": "screenshot",
+      "article": "der",
+      "plural": "die Screenshots",
+      "tr": {
+        "uz": "skrinshot (ekran surati)",
+        "uz-Cyrl": "скриншот (экран сурати)",
+        "ru": "скриншот"
+      },
+      "pron": {
+        "uz": "der skrin-shot",
+        "uz-Cyrl": "дер скрин-шот",
+        "ru": "дер скрин-шот"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Von der falschen Nachricht mache ich einen Screenshot.",
+        "tr": {
+          "uz": "Soxta xabardan skrinshot olaman.",
+          "uz-Cyrl": "Сохта хабардан скриншот оламан.",
+          "ru": "Делаю скриншот фальшивого сообщения."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-internet-xavfsizlik-anzeige-erstatten",
+      "slug": "anzeige-erstatten",
+      "term": "Anzeige erstatten",
+      "icon": "file-text",
+      "tr": {
+        "uz": "(politsiyaga) ariza bermoq",
+        "uz-Cyrl": "(полицияга) ариза бермоқ",
+        "ru": "подать заявление (в полицию)"
+      },
+      "pron": {
+        "uz": "an-tsay-ge er-shta-ten",
+        "uz-Cyrl": "ан-цай-ге эр-шта-тен",
+        "ru": "ан-цай-ге эр-шта-тен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "internet-xavfsizlik",
+      "example": {
+        "term": "Nach dem Betrug möchte ich bei der Polizei Anzeige erstatten.",
+        "tr": {
+          "uz": "Firibgarlikdan keyin politsiyaga ariza bermoqchiman.",
+          "uz-Cyrl": "Фирибгарликдан кейин полицияга ариза бермоқчиман.",
+          "ru": "После мошенничества хочу подать заявление в полицию."
         }
       },
       "safety": true,
