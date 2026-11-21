@@ -5640,6 +5640,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "byudjet",
+      "title": {
+        "uz": "Oylik xarajatlar va pulni tejash",
+        "uz-Cyrl": "Ойлик харажатлар ва пулни тежаш",
+        "ru": "Ежемесячные расходы и экономия денег"
+      },
+      "order": 33,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Sag mal, am Monatsende ist mein Geld immer schon weg. Wie machst du das?",
+            "tr": {
+              "uz": "Ayt-chi, oy oxirida pulim doim tugab qoladi. Sen buni qanday uddalaysan?",
+              "uz-Cyrl": "Айт-чи, ой охирида пулим доим тугаб қолади. Сен буни қандай уддалайсан?",
+              "ru": "Слушай, к концу месяца у меня всегда уже нет денег. Как ты справляешься?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich schreibe alle Ausgaben in ein Haushaltsbuch. So sehe ich, wofür mein Geld weggeht.",
+            "tr": {
+              "uz": "Barcha xarajatlarimni daftarga yozib boraman. Shunda pulim nimaga ketayotganini koʻraman.",
+              "uz-Cyrl": "Барча харажатларимни дафтарга ёзиб бораман. Шунда пулим нимага кетаётганини кўраман.",
+              "ru": "Я записываю все расходы в книгу учёта. Так видно, на что уходят деньги."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Klingt gut. Und wie sparst du beim Einkaufen?",
+            "tr": {
+              "uz": "Yaxshi fikr. Xarid qilganda qanday tejaysan?",
+              "uz-Cyrl": "Яхши фикр. Харид қилганда қандай тежайсан?",
+              "ru": "Звучит неплохо. А как ты экономишь на покупках?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich kaufe nur mit Einkaufsliste ein und achte auf Sonderangebote.",
+            "tr": {
+              "uz": "Faqat xarid roʻyxati bilan bozorlik qilaman va aksiyalarga eʼtibor beraman.",
+              "uz-Cyrl": "Фақат харид рўйхати билан бозорлик қиламан ва акцияларга эътибор бераман.",
+              "ru": "Покупаю только по списку и обращаю внимание на акции."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Das mache ich ab jetzt auch. Ich zahle übrigens für drei Abos, die ich kaum nutze.",
+            "tr": {
+              "uz": "Endi men ham shunday qilaman. Aytgancha, deyarli foydalanmaydigan uchta obuna uchun pul toʻlayapman.",
+              "uz-Cyrl": "Энди мен ҳам шундай қиламан. Айтганча, деярли фойдаланмайдиган учта обуна учун пул тўлаяпман.",
+              "ru": "Теперь и я так буду делать. Кстати, я плачу за три подписки, которыми почти не пользуюсь."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Drei Abos? Dann kündige die, die du nicht brauchst – das spart jeden Monat Geld.",
+            "tr": {
+              "uz": "Uchta obuna? Unda keragi yoʻqlarini bekor qil — bu har oy pul tejaydi.",
+              "uz-Cyrl": "Учта обуна? Унда кераги йўқларини бекор қил — бу ҳар ой пул тежайди.",
+              "ru": "Три подписки? Тогда отмени ненужные – это каждый месяц экономит деньги."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -26197,6 +26290,658 @@
           "uz": "Bu, ayniqsa, eshik oldiga kelgan ustalarga tegishli.",
           "uz-Cyrl": "Бу, айниқса, эшик олдига келган усталарга тегишли.",
           "ru": "Особенно это касается мастеров, которые приходят к двери."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-ausgabe",
+      "slug": "ausgabe",
+      "term": "die Ausgabe",
+      "icon": "cash",
+      "article": "die",
+      "plural": "die Ausgaben",
+      "tr": {
+        "uz": "xarajat",
+        "uz-Cyrl": "харажат",
+        "ru": "расход (трата)"
+      },
+      "pron": {
+        "uz": "die aus-ga-be",
+        "uz-Cyrl": "ди аус-га-бе",
+        "ru": "ди аус-га-бе"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Meine größte Ausgabe im Monat ist die Miete.",
+        "tr": {
+          "uz": "Oyda eng katta xarajatim — ijara haqi.",
+          "uz-Cyrl": "Ойда энг катта харажатим — ижара ҳақи.",
+          "ru": "Мой самый большой расход в месяц — аренда."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-einkommen",
+      "slug": "einkommen",
+      "term": "das Einkommen",
+      "icon": "wallet",
+      "article": "das",
+      "plural": "die Einkommen",
+      "tr": {
+        "uz": "daromad",
+        "uz-Cyrl": "даромад",
+        "ru": "доход"
+      },
+      "pron": {
+        "uz": "das ayn-kom-men",
+        "uz-Cyrl": "дас айн-ком-мен",
+        "ru": "дас айн-ком-мен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Ich plane meine Ausgaben nach meinem Einkommen.",
+        "tr": {
+          "uz": "Xarajatlarimni daromadimga qarab rejalashtiraman.",
+          "uz-Cyrl": "Харажатларимни даромадимга қараб режалаштираман.",
+          "ru": "Я планирую расходы по своему доходу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-haushaltsbuch",
+      "slug": "haushaltsbuch",
+      "term": "das Haushaltsbuch",
+      "icon": "book",
+      "article": "das",
+      "plural": "die Haushaltsbücher",
+      "tr": {
+        "uz": "xarajatlar daftari (uy byudjeti)",
+        "uz-Cyrl": "харажатлар дафтари (уй бюджети)",
+        "ru": "книга учёта домашних расходов"
+      },
+      "pron": {
+        "uz": "das haus-halts-bux",
+        "uz-Cyrl": "дас хаус-халтс-бух",
+        "ru": "дас хаус-халтс-бух"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "In mein Haushaltsbuch schreibe ich jeden Einkauf.",
+        "tr": {
+          "uz": "Har bir xaridimni xarajatlar daftarimga yozaman.",
+          "uz-Cyrl": "Ҳар бир харидимни харажатлар дафтаримга ёзаман.",
+          "ru": "Каждую покупку я записываю в книгу расходов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-sparziel",
+      "slug": "sparziel",
+      "term": "das Sparziel",
+      "icon": "pig-money",
+      "article": "das",
+      "plural": "die Sparziele",
+      "tr": {
+        "uz": "pul yigʻish maqsadi",
+        "uz-Cyrl": "пул йиғиш мақсади",
+        "ru": "цель накоплений"
+      },
+      "pron": {
+        "uz": "das shpar-tsil",
+        "uz-Cyrl": "дас шпар-цил",
+        "ru": "дас шпар-цил"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Mein Sparziel für dieses Jahr ist ein eigenes Fahrrad.",
+        "tr": {
+          "uz": "Bu yilgi pul yigʻish maqsadim — oʻz velosipedim.",
+          "uz-Cyrl": "Бу йилги пул йиғиш мақсадим — ўз велосипедим.",
+          "ru": "Моя цель накоплений на этот год — собственный велосипед."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-fixkosten",
+      "slug": "fixkosten",
+      "term": "die Fixkosten",
+      "icon": "receipt",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "doimiy xarajatlar (har oy)",
+        "uz-Cyrl": "доимий харажатлар (ҳар ой)",
+        "ru": "постоянные расходы"
+      },
+      "pron": {
+        "uz": "die fiks-kos-ten",
+        "uz-Cyrl": "ди фикс-кос-тен",
+        "ru": "ди фикс-кос-тен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Miete, Strom und Handy gehören zu meinen Fixkosten.",
+        "tr": {
+          "uz": "Ijara, elektr va telefon — doimiy xarajatlarim.",
+          "uz-Cyrl": "Ижара, электр ва телефон — доимий харажатларим.",
+          "ru": "Аренда, электричество и телефон — мои постоянные расходы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-wie-viel-gebe-ich-im-monat-aus",
+      "slug": "wie-viel-gebe-ich-im-monat-aus",
+      "term": "Wie viel gebe ich im Monat aus?",
+      "icon": "calculator",
+      "tr": {
+        "uz": "Oyiga qancha pul sarflayman?",
+        "uz-Cyrl": "Ойига қанча пул сарфлайман?",
+        "ru": "Сколько я трачу в месяц?"
+      },
+      "pron": {
+        "uz": "vi fil ge-be ix im mo-nat aus?",
+        "uz-Cyrl": "ви фил ге-бе их им мо-нат аус?",
+        "ru": "ви фил ге-бе их им мо-нат аус?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Das sehe ich am Monatsende in meinem Haushaltsbuch.",
+        "tr": {
+          "uz": "Buni oy oxirida xarajatlar daftarimda koʻraman.",
+          "uz-Cyrl": "Буни ой охирида харажатлар дафтаримда кўраман.",
+          "ru": "Это видно в конце месяца в моей книге расходов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-stromrechnung",
+      "slug": "stromrechnung",
+      "term": "die Stromrechnung",
+      "icon": "bolt",
+      "article": "die",
+      "plural": "die Stromrechnungen",
+      "tr": {
+        "uz": "elektr uchun hisob (schyot)",
+        "uz-Cyrl": "электр учун ҳисоб (счёт)",
+        "ru": "счёт за электричество"
+      },
+      "pron": {
+        "uz": "die shtrom-rex-nung",
+        "uz-Cyrl": "ди штром-рех-нунг",
+        "ru": "ди штром-рех-нунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Die Stromrechnung ist diesen Monat höher als sonst.",
+        "tr": {
+          "uz": "Bu oy elektr hisobi odatdagidan yuqori.",
+          "uz-Cyrl": "Бу ой электр ҳисоби одатдагидан юқори.",
+          "ru": "Счёт за электричество в этом месяце выше обычного."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-abschlag",
+      "slug": "abschlag",
+      "term": "der Abschlag",
+      "icon": "calendar-event",
+      "article": "der",
+      "plural": "die Abschläge",
+      "tr": {
+        "uz": "oylik oldindan toʻlov (kommunal xizmat uchun)",
+        "uz-Cyrl": "ойлик олдиндан тўлов (коммунал хизмат учун)",
+        "ru": "ежемесячный авансовый платёж (за коммунальные услуги)"
+      },
+      "pron": {
+        "uz": "der ap-shlak",
+        "uz-Cyrl": "дер ап-шлак",
+        "ru": "дер ап-шлак"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Für Strom zahle ich jeden Monat einen Abschlag.",
+        "tr": {
+          "uz": "Elektr uchun har oy oldindan toʻlov qilaman.",
+          "uz-Cyrl": "Электр учун ҳар ой олдиндан тўлов қиламан.",
+          "ru": "За электричество я каждый месяц вношу авансовый платёж."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-sonderangebot",
+      "slug": "sonderangebot",
+      "term": "das Sonderangebot",
+      "icon": "discount",
+      "article": "das",
+      "plural": "die Sonderangebote",
+      "tr": {
+        "uz": "aksiya (vaqtincha arzonlashgan mol)",
+        "uz-Cyrl": "акция (вақтинча арзонлашган мол)",
+        "ru": "специальное предложение (акция)"
+      },
+      "pron": {
+        "uz": "das zon-der-an-ge-bot",
+        "uz-Cyrl": "дас зон-дер-ан-ге-бот",
+        "ru": "дас зон-дер-ан-ге-бот"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Reis ist diese Woche im Sonderangebot.",
+        "tr": {
+          "uz": "Bu hafta guruch aksiyada.",
+          "uz-Cyrl": "Бу ҳафта гуруч акцияда.",
+          "ru": "На этой неделе рис по акции."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-preisvergleich",
+      "slug": "preisvergleich",
+      "term": "der Preisvergleich",
+      "icon": "arrows-exchange",
+      "article": "der",
+      "plural": "die Preisvergleiche",
+      "tr": {
+        "uz": "narxlarni solishtirish",
+        "uz-Cyrl": "нархларни солиштириш",
+        "ru": "сравнение цен"
+      },
+      "pron": {
+        "uz": "der prays-fer-glayx",
+        "uz-Cyrl": "дер прайс-фер-глайх",
+        "ru": "дер прайс-фер-глайх"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Vor einem großen Einkauf mache ich einen Preisvergleich im Internet.",
+        "tr": {
+          "uz": "Katta xariddan oldin internetda narxlarni solishtiraman.",
+          "uz-Cyrl": "Катта хариддан олдин интернетда нархларни солиштираман.",
+          "ru": "Перед крупной покупкой я сравниваю цены в интернете."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-pfandflasche",
+      "slug": "pfandflasche",
+      "term": "die Pfandflasche",
+      "icon": "bottle",
+      "article": "die",
+      "plural": "die Pfandflaschen",
+      "tr": {
+        "uz": "garovli shisha (qaytarsangiz, pul qaytadi)",
+        "uz-Cyrl": "гаровли шиша (қайтарсангиз, пул қайтади)",
+        "ru": "бутылка с залогом (сдаётся за деньги)"
+      },
+      "pron": {
+        "uz": "die pfant-fla-she",
+        "uz-Cyrl": "ди пфант-фла-ше",
+        "ru": "ди пфант-фла-ше"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Die leeren Pfandflaschen bringe ich zurück in den Supermarkt.",
+        "tr": {
+          "uz": "Boʻsh garovli shishalarni supermarketga qaytarib olib boraman.",
+          "uz-Cyrl": "Бўш гаровли шишаларни супермаркетга қайтариб олиб бораман.",
+          "ru": "Пустые бутылки с залогом я сдаю обратно в супермаркет."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-das-kann-ich-mir-gerade-nicht-leisten",
+      "slug": "das-kann-ich-mir-gerade-nicht-leisten",
+      "term": "Das kann ich mir gerade nicht leisten.",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Hozir bunga pulim yetmaydi.",
+        "uz-Cyrl": "Ҳозир бунга пулим етмайди.",
+        "ru": "Сейчас я не могу себе это позволить."
+      },
+      "pron": {
+        "uz": "das kan ix mir ge-ra-de nixt lays-ten.",
+        "uz-Cyrl": "дас кан их мир ге-ра-де нихт лайс-тен.",
+        "ru": "дас кан их мир ге-ра-де нихт лайс-тен."
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Das neue Handy ist schön, aber zu teuer.",
+        "tr": {
+          "uz": "Yangi telefon chiroyli, lekin juda qimmat.",
+          "uz-Cyrl": "Янги телефон чиройли, лекин жуда қиммат.",
+          "ru": "Новый телефон красивый, но слишком дорогой."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-einkaufsliste",
+      "slug": "einkaufsliste",
+      "term": "die Einkaufsliste",
+      "icon": "list-details",
+      "article": "die",
+      "plural": "die Einkaufslisten",
+      "tr": {
+        "uz": "xarid roʻyxati",
+        "uz-Cyrl": "харид рўйхати",
+        "ru": "список покупок"
+      },
+      "pron": {
+        "uz": "die ayn-kaufs-lis-te",
+        "uz-Cyrl": "ди айн-кауфс-лис-те",
+        "ru": "ди айн-кауфс-лис-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Mit einer Einkaufsliste kaufe ich weniger unnötige Dinge.",
+        "tr": {
+          "uz": "Xarid roʻyxati bilan keraksiz narsalarni kamroq sotib olaman.",
+          "uz-Cyrl": "Харид рўйхати билан кераксиз нарсаларни камроқ сотиб оламан.",
+          "ru": "Со списком покупок я покупаю меньше ненужных вещей."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-ruecklage",
+      "slug": "ruecklage",
+      "term": "die Rücklage",
+      "icon": "building-bank",
+      "article": "die",
+      "plural": "die Rücklagen",
+      "tr": {
+        "uz": "zaxira pul (kutilmagan xarajat uchun)",
+        "uz-Cyrl": "захира пул (кутилмаган харажат учун)",
+        "ru": "денежный резерв (на непредвиденные расходы)"
+      },
+      "pron": {
+        "uz": "die ryuk-la-ge",
+        "uz-Cyrl": "ди рюк-ла-ге",
+        "ru": "ди рюк-ла-ге"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Eine kleine Rücklage hilft, wenn plötzlich etwas kaputtgeht.",
+        "tr": {
+          "uz": "Toʻsatdan biror narsa buzilsa, ozgina zaxira pul yordam beradi.",
+          "uz-Cyrl": "Тўсатдан бирор нарса бузилса, озгина захира пул ёрдам беради.",
+          "ru": "Небольшой резерв помогает, когда что-то вдруг ломается."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-abo",
+      "slug": "abo",
+      "term": "das Abo",
+      "icon": "repeat",
+      "article": "das",
+      "plural": "die Abos",
+      "tr": {
+        "uz": "obuna (pullik)",
+        "uz-Cyrl": "обуна (пуллик)",
+        "ru": "подписка (платная)"
+      },
+      "pron": {
+        "uz": "das a-bo",
+        "uz-Cyrl": "дас а-бо",
+        "ru": "дас а-бо"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Dieses Abo nutze ich fast nie.",
+        "tr": {
+          "uz": "Bu obunadan deyarli foydalanmayman.",
+          "uz-Cyrl": "Бу обунадан деярли фойдаланмайман.",
+          "ru": "Этой подпиской я почти не пользуюсь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-kuendigen",
+      "slug": "kuendigen",
+      "term": "kündigen",
+      "icon": "file-text",
+      "tr": {
+        "uz": "bekor qilmoq (shartnoma, obunani)",
+        "uz-Cyrl": "бекор қилмоқ (шартнома, обунани)",
+        "ru": "расторгать (договор, подписку)"
+      },
+      "pron": {
+        "uz": "kyun-di-gen",
+        "uz-Cyrl": "кюн-ди-ген",
+        "ru": "кюн-ди-ген"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Ich möchte mein Abo für das Fitnessstudio kündigen.",
+        "tr": {
+          "uz": "Fitnes zal obunamni bekor qilmoqchiman.",
+          "uz-Cyrl": "Фитнес зал обунамни бекор қилмоқчиман.",
+          "ru": "Я хочу расторгнуть абонемент в фитнес-зал."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-ratenzahlung",
+      "slug": "ratenzahlung",
+      "term": "die Ratenzahlung",
+      "icon": "credit-card",
+      "article": "die",
+      "plural": "die Ratenzahlungen",
+      "tr": {
+        "uz": "boʻlib toʻlash (nasiya)",
+        "uz-Cyrl": "бўлиб тўлаш (насия)",
+        "ru": "оплата в рассрочку"
+      },
+      "pron": {
+        "uz": "die ra-ten-tsa-lung",
+        "uz-Cyrl": "ди ра-тен-ца-лунг",
+        "ru": "ди ра-тен-ца-лунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Vor einer Ratenzahlung lese ich alle Kosten genau.",
+        "tr": {
+          "uz": "Boʻlib toʻlashdan oldin barcha xarajatlarni diqqat bilan oʻqiyman.",
+          "uz-Cyrl": "Бўлиб тўлашдан олдин барча харажатларни диққат билан ўқийман.",
+          "ru": "Перед оплатой в рассрочку я внимательно изучаю все расходы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-schulden",
+      "slug": "schulden",
+      "term": "die Schulden",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "qarz(lar)",
+        "uz-Cyrl": "қарз(лар)",
+        "ru": "долги"
+      },
+      "pron": {
+        "uz": "die shul-den",
+        "uz-Cyrl": "ди шул-ден",
+        "ru": "ди шул-ден"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Ich möchte keine Schulden machen.",
+        "tr": {
+          "uz": "Qarzga botishni xohlamayman.",
+          "uz-Cyrl": "Қарзга ботишни хоҳламайман.",
+          "ru": "Я не хочу влезать в долги."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-schuldnerberatung",
+      "slug": "schuldnerberatung",
+      "term": "die Schuldnerberatung",
+      "icon": "heart-handshake",
+      "article": "die",
+      "plural": "die Schuldnerberatungen",
+      "tr": {
+        "uz": "qarzdorlarga maslahat markazi",
+        "uz-Cyrl": "қарздорларга маслаҳат маркази",
+        "ru": "консультация для должников"
+      },
+      "pron": {
+        "uz": "die shuld-ner-be-ra-tung",
+        "uz-Cyrl": "ди шулд-нер-бе-ра-тунг",
+        "ru": "ди шулд-нер-бе-ра-тунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Bei vielen Schulden hilft eine Schuldnerberatung weiter.",
+        "tr": {
+          "uz": "Qarz koʻp boʻlsa, qarzdorlarga maslahat markazi yordam beradi.",
+          "uz-Cyrl": "Қарз кўп бўлса, қарздорларга маслаҳат маркази ёрдам беради.",
+          "ru": "При больших долгах поможет консультация для должников."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-byudjet-leihen-sie-sich-kein-geld-bei-fremden",
+      "slug": "leihen-sie-sich-kein-geld-bei-fremden",
+      "term": "Leihen Sie sich kein Geld bei Fremden!",
+      "icon": "alert-octagon",
+      "tr": {
+        "uz": "Notanish odamlardan qarz olmang!",
+        "uz-Cyrl": "Нотаниш одамлардан қарз олманг!",
+        "ru": "Не берите деньги в долг у незнакомых!"
+      },
+      "pron": {
+        "uz": "lay-en zi zix kayn gelt bay frem-den!",
+        "uz-Cyrl": "лай-ен зи зих кайн гелт бай фрем-ден!",
+        "ru": "лай-ен зи зих кайн гелт бай фрем-ден!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "byudjet",
+      "example": {
+        "term": "Solche Kredite können sehr teuer und gefährlich werden.",
+        "tr": {
+          "uz": "Bunday qarzlar juda qimmat va xavfli boʻlishi mumkin.",
+          "uz-Cyrl": "Бундай қарзлар жуда қиммат ва хавфли бўлиши мумкин.",
+          "ru": "Такие кредиты могут стать очень дорогими и опасными."
         }
       },
       "safety": true,
