@@ -5816,6 +5816,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "supermarket",
+      "title": {
+        "uz": "Doʻkon va bozorda xarid: yorliq, muddat va tarkib",
+        "uz-Cyrl": "Дўкон ва бозорда харид: ёрлиқ, муддат ва таркиб",
+        "ru": "Покупки в магазине и на рынке: этикетка, срок и состав"
+      },
+      "order": 34,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Sotuvchi",
+              "uz-Cyrl": "Сотувчи",
+              "ru": "Продавец"
+            },
+            "de": "Hallo, wer ist als Nächstes dran?",
+            "tr": {
+              "uz": "Salom, navbat kimda?",
+              "uz-Cyrl": "Салом, навбат кимда?",
+              "ru": "Здравствуйте, кто следующий?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich, bitte. Haben Sie heute frische Hähnchenbrust?",
+            "tr": {
+              "uz": "Menda. Bugun yangi tovuq koʻkragi bormi?",
+              "uz-Cyrl": "Менда. Бугун янги товуқ кўкраги борми?",
+              "ru": "Я. У вас сегодня есть свежая куриная грудка?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Sotuvchi",
+              "uz-Cyrl": "Сотувчи",
+              "ru": "Продавец"
+            },
+            "de": "Ja, ganz frisch von heute Morgen. Wie viel darf es sein?",
+            "tr": {
+              "uz": "Ha, bugun ertalab keldi, juda yangi. Qancha tortib beray?",
+              "uz-Cyrl": "Ҳа, бугун эрталаб келди, жуда янги. Қанча тортиб берай?",
+              "ru": "Да, совсем свежая, с сегодняшнего утра. Сколько вам взвесить?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ungefähr ein halbes Kilo, bitte.",
+            "tr": {
+              "uz": "Taxminan yarim kilo, iltimos.",
+              "uz-Cyrl": "Тахминан ярим кило, илтимос.",
+              "ru": "Примерно полкило, пожалуйста."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Sotuvchi",
+              "uz-Cyrl": "Сотувчи",
+              "ru": "Продавец"
+            },
+            "de": "Gern. Darf es sonst noch etwas sein? Unsere Frikadellen sind heute im Angebot.",
+            "tr": {
+              "uz": "Marhamat. Yana biror narsa kerakmi? Bugun kotletlarimiz aksiyada.",
+              "uz-Cyrl": "Марҳамат. Яна бирор нарса керакми? Бугун котлетларимиз акцияда.",
+              "ru": "Пожалуйста. Что-нибудь ещё? Сегодня наши котлеты по акции."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Frikadellen? Ist da Schweinefleisch drin? Dann nehme ich lieber keine.",
+            "tr": {
+              "uz": "Kotletlarmi? Ichida choʻchqa goʻshti bormi? Unda olmayman.",
+              "uz-Cyrl": "Котлетларми? Ичида чўчқа гўшти борми? Унда олмайман.",
+              "ru": "Котлеты? В них есть свинина? Тогда лучше не буду брать."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -27025,6 +27118,658 @@
           "uz": "Bunday qarzlar juda qimmat va xavfli boʻlishi mumkin.",
           "uz-Cyrl": "Бундай қарзлар жуда қиммат ва хавфли бўлиши мумкин.",
           "ru": "Такие кредиты могут стать очень дорогими и опасными."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-wochenmarkt",
+      "slug": "wochenmarkt",
+      "term": "der Wochenmarkt",
+      "icon": "carrot",
+      "article": "der",
+      "plural": "die Wochenmärkte",
+      "tr": {
+        "uz": "haftalik bozor (ochiq havoda)",
+        "uz-Cyrl": "ҳафталик бозор (очиқ ҳавода)",
+        "ru": "еженедельный рынок"
+      },
+      "pron": {
+        "uz": "der vo-xen-markt",
+        "uz-Cyrl": "дер во-хен-маркт",
+        "ru": "дер во-хен-маркт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "Auf dem Wochenmarkt kaufe ich frisches Obst und Gemüse.",
+        "tr": {
+          "uz": "Haftalik bozordan yangi meva va sabzavot olaman.",
+          "uz-Cyrl": "Ҳафталик бозордан янги мева ва сабзавот оламан.",
+          "ru": "На еженедельном рынке я покупаю свежие фрукты и овощи."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-baeckerei",
+      "slug": "baeckerei",
+      "term": "die Bäckerei",
+      "icon": "bread",
+      "article": "die",
+      "plural": "die Bäckereien",
+      "tr": {
+        "uz": "novvoyxona (non doʻkoni)",
+        "uz-Cyrl": "новвойхона (нон дўкони)",
+        "ru": "пекарня"
+      },
+      "pron": {
+        "uz": "die be-ke-ray",
+        "uz-Cyrl": "ди бе-ке-рай",
+        "ru": "ди бе-ке-рай"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "Die Bäckerei an der Ecke öffnet schon früh am Morgen.",
+        "tr": {
+          "uz": "Burchakdagi novvoyxona ertalab erta ochiladi.",
+          "uz-Cyrl": "Бурчакдаги новвойхона эрталаб эрта очилади.",
+          "ru": "Пекарня на углу открывается рано утром."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-metzgerei",
+      "slug": "metzgerei",
+      "term": "die Metzgerei",
+      "icon": "meat",
+      "article": "die",
+      "plural": "die Metzgereien",
+      "tr": {
+        "uz": "goʻsht doʻkoni (qassob)",
+        "uz-Cyrl": "гўшт дўкони (қассоб)",
+        "ru": "мясная лавка"
+      },
+      "pron": {
+        "uz": "die mets-ge-ray",
+        "uz-Cyrl": "ди мец-ге-рай",
+        "ru": "ди мец-ге-рай"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "In der Metzgerei frage ich, woher das Fleisch kommt.",
+        "tr": {
+          "uz": "Goʻsht doʻkonida goʻsht qayerdan kelganini soʻrayman.",
+          "uz-Cyrl": "Гўшт дўконида гўшт қаердан келганини сўрайман.",
+          "ru": "В мясной лавке я спрашиваю, откуда мясо."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-frischetheke",
+      "slug": "frischetheke",
+      "term": "die Frischetheke",
+      "icon": "scale",
+      "article": "die",
+      "plural": "die Frischetheken",
+      "tr": {
+        "uz": "yangi mahsulotlar peshtaxtasi (sotuvchi tortib beradi)",
+        "uz-Cyrl": "янги маҳсулотлар пештахтаси (сотувчи тортиб беради)",
+        "ru": "прилавок со свежими продуктами (на развес)"
+      },
+      "pron": {
+        "uz": "die fri-she-te-ke",
+        "uz-Cyrl": "ди фри-ше-те-ке",
+        "ru": "ди фри-ше-те-ке"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "An der Frischetheke kann man Käse in Scheiben kaufen.",
+        "tr": {
+          "uz": "Peshtaxtadan pishloqni toʻgʻralgan holda olsa boʻladi.",
+          "uz-Cyrl": "Пештахтадан пишлоқни тўғралган ҳолда олса бўлади.",
+          "ru": "У прилавка со свежими продуктами можно купить сыр в нарезке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-wo-finde-ich-den-reis",
+      "slug": "wo-finde-ich-den-reis",
+      "term": "Wo finde ich den Reis?",
+      "icon": "list-search",
+      "tr": {
+        "uz": "Guruchni qayerdan topsam boʻladi?",
+        "uz-Cyrl": "Гуручни қаердан топсам бўлади?",
+        "ru": "Где я найду рис?"
+      },
+      "pron": {
+        "uz": "vo fin-de ix den rays?",
+        "uz-Cyrl": "во фин-де их ден райс?",
+        "ru": "во фин-де их ден райс?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "Der Reis steht im Gang neben den Nudeln.",
+        "tr": {
+          "uz": "Guruch makaron yonidagi qatorda turibdi.",
+          "uz-Cyrl": "Гуруч макарон ёнидаги қаторда турибди.",
+          "ru": "Рис стоит в ряду рядом с макаронами."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-sorte",
+      "slug": "sorte",
+      "term": "die Sorte",
+      "icon": "apple",
+      "article": "die",
+      "plural": "die Sorten",
+      "tr": {
+        "uz": "nav, tur",
+        "uz-Cyrl": "нав, тур",
+        "ru": "сорт, вид"
+      },
+      "pron": {
+        "uz": "die zor-te",
+        "uz-Cyrl": "ди зор-те",
+        "ru": "ди зор-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "Welche Sorte Äpfel ist besonders süß?",
+        "tr": {
+          "uz": "Olmaning qaysi navi ayniqsa shirin?",
+          "uz-Cyrl": "Олманинг қайси нави айниқса ширин?",
+          "ru": "Какой сорт яблок особенно сладкий?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-eigenmarke",
+      "slug": "eigenmarke",
+      "term": "die Eigenmarke",
+      "icon": "tag",
+      "article": "die",
+      "plural": "die Eigenmarken",
+      "tr": {
+        "uz": "doʻkonning oʻz markasi",
+        "uz-Cyrl": "дўконнинг ўз маркаси",
+        "ru": "собственная марка магазина"
+      },
+      "pron": {
+        "uz": "die ay-gen-mar-ke",
+        "uz-Cyrl": "ди ай-ген-мар-ке",
+        "ru": "ди ай-ген-мар-ке"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "Die Eigenmarke ist oft günstiger als bekannte Marken.",
+        "tr": {
+          "uz": "Doʻkonning oʻz markasi koʻpincha mashhur markalardan arzonroq.",
+          "uz-Cyrl": "Дўконнинг ўз маркаси кўпинча машҳур маркалардан арзонроқ.",
+          "ru": "Собственная марка магазина часто дешевле известных брендов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-grundpreis",
+      "slug": "grundpreis",
+      "term": "der Grundpreis",
+      "icon": "calculator",
+      "article": "der",
+      "plural": "die Grundpreise",
+      "tr": {
+        "uz": "birlik narxi (bir kilo yoki bir litr uchun)",
+        "uz-Cyrl": "бирлик нархи (бир кило ёки бир литр учун)",
+        "ru": "цена за единицу (за килограмм или литр)"
+      },
+      "pron": {
+        "uz": "der grunt-prays",
+        "uz-Cyrl": "дер грунт-прайс",
+        "ru": "дер грунт-прайс"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "Mit dem Grundpreis kann ich zwei Packungen gut vergleichen.",
+        "tr": {
+          "uz": "Birlik narxi bilan ikki qadoqni yaxshi solishtira olaman.",
+          "uz-Cyrl": "Бирлик нархи билан икки қадоқни яхши солиштира оламан.",
+          "ru": "По цене за единицу удобно сравнивать две упаковки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-selbstbedienungskasse",
+      "slug": "selbstbedienungskasse",
+      "term": "die Selbstbedienungskasse",
+      "icon": "barcode",
+      "article": "die",
+      "plural": "die Selbstbedienungskassen",
+      "tr": {
+        "uz": "oʻz-oʻziga xizmat kassasi",
+        "uz-Cyrl": "ўз-ўзига хизмат кассаси",
+        "ru": "касса самообслуживания"
+      },
+      "pron": {
+        "uz": "die zelpst-be-di-nungs-ka-se",
+        "uz-Cyrl": "ди зелпст-бе-ди-нунгс-ка-се",
+        "ru": "ди зелпст-бе-ди-нунгс-ка-се"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "An der Selbstbedienungskasse scanne ich alles selbst.",
+        "tr": {
+          "uz": "Oʻz-oʻziga xizmat kassasida hammasini oʻzim skanerlayman.",
+          "uz-Cyrl": "Ўз-ўзига хизмат кассасида ҳаммасини ўзим сканерлайман.",
+          "ru": "На кассе самообслуживания я всё сканирую самостоятельно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-kundenkarte",
+      "slug": "kundenkarte",
+      "term": "die Kundenkarte",
+      "icon": "credit-card",
+      "article": "die",
+      "plural": "die Kundenkarten",
+      "tr": {
+        "uz": "mijoz kartasi (bonus karta)",
+        "uz-Cyrl": "мижоз картаси (бонус карта)",
+        "ru": "карта покупателя (бонусная)"
+      },
+      "pron": {
+        "uz": "die kun-den-kar-te",
+        "uz-Cyrl": "ди кун-ден-кар-те",
+        "ru": "ди кун-ден-кар-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "Haben Sie eine Kundenkarte? Dann bekommen Sie Punkte.",
+        "tr": {
+          "uz": "Mijoz kartangiz bormi? Unda ball olasiz.",
+          "uz-Cyrl": "Мижоз картангиз борми? Унда балл оласиз.",
+          "ru": "У вас есть карта покупателя? Тогда вы получите баллы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-haben-sie-das-auch-in-klein",
+      "slug": "haben-sie-das-auch-in-klein",
+      "term": "Haben Sie das auch in klein?",
+      "icon": "package",
+      "tr": {
+        "uz": "Buning kichigi ham bormi?",
+        "uz-Cyrl": "Бунинг кичиги ҳам борми?",
+        "ru": "У вас есть это в маленькой упаковке?"
+      },
+      "pron": {
+        "uz": "ha-ben zi das aux in klayn?",
+        "uz-Cyrl": "ха-бен зи дас аух ин клайн?",
+        "ru": "ха-бен зи дас аух ин клайн?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "Die große Packung ist mir zu viel.",
+        "tr": {
+          "uz": "Katta qadoq menga koʻplik qiladi.",
+          "uz-Cyrl": "Катта қадоқ менга кўплик қилади.",
+          "ru": "Большая упаковка для меня слишком большая."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-stofftasche",
+      "slug": "stofftasche",
+      "term": "die Stofftasche",
+      "icon": "shopping-bag",
+      "article": "die",
+      "plural": "die Stofftaschen",
+      "tr": {
+        "uz": "mato sumka",
+        "uz-Cyrl": "мато сумка",
+        "ru": "тканевая сумка (шоппер)"
+      },
+      "pron": {
+        "uz": "die shtof-ta-she",
+        "uz-Cyrl": "ди штоф-та-ше",
+        "ru": "ди штоф-та-ше"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "Ich nehme immer meine Stofftasche zum Einkaufen mit.",
+        "tr": {
+          "uz": "Xaridga doim mato sumkamni olib boraman.",
+          "uz-Cyrl": "Харидга доим мато сумкамни олиб бораман.",
+          "ru": "Я всегда беру с собой тканевую сумку за покупками."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-leergut",
+      "slug": "leergut",
+      "term": "das Leergut",
+      "icon": "bottle",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "boʻsh garovli idishlar (shisha, banka)",
+        "uz-Cyrl": "бўш гаровли идишлар (шиша, банка)",
+        "ru": "пустая тара (бутылки и банки с залогом)"
+      },
+      "pron": {
+        "uz": "das ler-gut",
+        "uz-Cyrl": "дас лер-гут",
+        "ru": "дас лер-гут"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "Das Leergut bringe ich einmal pro Woche in den Supermarkt.",
+        "tr": {
+          "uz": "Boʻsh idishlarni haftada bir marta supermarketga olib boraman.",
+          "uz-Cyrl": "Бўш идишларни ҳафтада бир марта супермаркетга олиб бораман.",
+          "ru": "Пустую тару я раз в неделю сдаю в супермаркет."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-pfandautomat",
+      "slug": "pfandautomat",
+      "term": "der Pfandautomat",
+      "icon": "recycle",
+      "article": "der",
+      "plural": "die Pfandautomaten",
+      "tr": {
+        "uz": "idish qabul qiluvchi avtomat",
+        "uz-Cyrl": "идиш қабул қилувчи автомат",
+        "ru": "автомат для приёма тары"
+      },
+      "pron": {
+        "uz": "der pfant-au-to-mat",
+        "uz-Cyrl": "дер пфант-ау-то-мат",
+        "ru": "дер пфант-ау-то-мат"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "Der Pfandautomat gibt mir einen Bon für die Kasse.",
+        "tr": {
+          "uz": "Idish qabul qiluvchi avtomat menga kassa uchun chek beradi.",
+          "uz-Cyrl": "Идиш қабул қилувчи автомат менга касса учун чек беради.",
+          "ru": "Автомат для приёма тары выдаёт мне чек для кассы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-zutatenliste",
+      "slug": "zutatenliste",
+      "term": "die Zutatenliste",
+      "icon": "list-details",
+      "article": "die",
+      "plural": "die Zutatenlisten",
+      "tr": {
+        "uz": "tarkib roʻyxati (yorliqda)",
+        "uz-Cyrl": "таркиб рўйхати (ёрлиқда)",
+        "ru": "список ингредиентов (состав)"
+      },
+      "pron": {
+        "uz": "die tsu-ta-ten-lis-te",
+        "uz-Cyrl": "ди цу-та-тен-лис-те",
+        "ru": "ди цу-та-тен-лис-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "Auf der Zutatenliste steht, was im Produkt ist.",
+        "tr": {
+          "uz": "Tarkib roʻyxatida mahsulot ichida nima borligi yozilgan.",
+          "uz-Cyrl": "Таркиб рўйхатида маҳсулот ичида нима борлиги ёзилган.",
+          "ru": "В списке ингредиентов написано, что входит в продукт."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-herkunft",
+      "slug": "herkunft",
+      "term": "die Herkunft",
+      "icon": "world",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "kelib chiqishi (qayerdan)",
+        "uz-Cyrl": "келиб чиқиши (қаердан)",
+        "ru": "происхождение"
+      },
+      "pron": {
+        "uz": "die her-kunft",
+        "uz-Cyrl": "ди хер-кунфт",
+        "ru": "ди хер-кунфт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "Die Herkunft des Gemüses steht auf dem Schild.",
+        "tr": {
+          "uz": "Sabzavot qayerdan kelgani yorliqda yozilgan.",
+          "uz-Cyrl": "Сабзавот қаердан келгани ёрлиқда ёзилган.",
+          "ru": "Происхождение овощей указано на табличке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-vegan",
+      "slug": "vegan",
+      "term": "vegan",
+      "icon": "leaf",
+      "tr": {
+        "uz": "vegan (hayvon mahsulotisiz)",
+        "uz-Cyrl": "веган (ҳайвон маҳсулотисиз)",
+        "ru": "веганский (без продуктов животного происхождения)"
+      },
+      "pron": {
+        "uz": "ve-gan",
+        "uz-Cyrl": "ве-ган",
+        "ru": "ве-ган"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "Dieser Aufstrich ist vegan, also ohne Milch und Ei.",
+        "tr": {
+          "uz": "Bu surtma vegan, yaʼni sut va tuxumsiz.",
+          "uz-Cyrl": "Бу суртма веган, яъни сут ва тухумсиз.",
+          "ru": "Эта паста веганская, то есть без молока и яиц."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-verbrauchsdatum",
+      "slug": "verbrauchsdatum",
+      "term": "das Verbrauchsdatum",
+      "icon": "calendar-x",
+      "article": "das",
+      "plural": "die Verbrauchsdaten",
+      "tr": {
+        "uz": "isteʼmol qilishning oxirgi sanasi",
+        "uz-Cyrl": "истеъмол қилишнинг охирги санаси",
+        "ru": "дата «употребить до»"
+      },
+      "pron": {
+        "uz": "das fer-brauxs-da-tum",
+        "uz-Cyrl": "дас фер-браухс-да-тум",
+        "ru": "дас фер-браухс-да-тум"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "Nach dem Verbrauchsdatum esse ich kein Hackfleisch mehr.",
+        "tr": {
+          "uz": "Isteʼmol sanasi oʻtgan qiymani yemayman.",
+          "uz-Cyrl": "Истеъмол санаси ўтган қиймани емайман.",
+          "ru": "После даты «употребить до» я не ем фарш."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-gelatine",
+      "slug": "gelatine",
+      "term": "die Gelatine",
+      "icon": "cookie",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "jelatin",
+        "uz-Cyrl": "желатин",
+        "ru": "желатин"
+      },
+      "pron": {
+        "uz": "die je-la-ti-ne",
+        "uz-Cyrl": "ди же-ла-ти-не",
+        "ru": "ди же-ла-ти-не"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "In manchen Gummibärchen ist Gelatine vom Schwein.",
+        "tr": {
+          "uz": "Baʼzi marmelad ayiqchalarda choʻchqadan olingan jelatin bor.",
+          "uz-Cyrl": "Баъзи мармелад айиқчаларда чўчқадан олинган желатин бор.",
+          "ru": "В некоторых мармеладных мишках есть свиной желатин."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-supermarket-pruefen-sie-bei-einer-allergie-immer-die-zutaten",
+      "slug": "pruefen-sie-bei-einer-allergie-immer-die-zutaten",
+      "term": "Prüfen Sie bei einer Allergie immer die Zutaten!",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Allergiyangiz boʻlsa, doim tarkibini tekshiring!",
+        "uz-Cyrl": "Аллергиянгиз бўлса, доим таркибини текширинг!",
+        "ru": "При аллергии всегда проверяйте состав!"
+      },
+      "pron": {
+        "uz": "pryu-fen zi bay ay-ner a-ler-gi im-mer die tsu-ta-ten!",
+        "uz-Cyrl": "прю-фен зи бай ай-нер а-лер-ги им-мер ди цу-та-тен!",
+        "ru": "прю-фен зи бай ай-нер а-лер-ги им-мер ди цу-та-тен!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "supermarket",
+      "example": {
+        "term": "Allergene sind auf der Packung oft fett gedruckt.",
+        "tr": {
+          "uz": "Allergenlar qadoqda koʻpincha qalin harf bilan yozilgan.",
+          "uz-Cyrl": "Аллергенлар қадоқда кўпинча қалин ҳарф билан ёзилган.",
+          "ru": "Аллергены на упаковке часто выделены жирным шрифтом."
         }
       },
       "safety": true,
