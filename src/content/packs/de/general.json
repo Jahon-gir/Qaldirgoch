@@ -6260,6 +6260,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Mist! Ich habe beim Ausparken das Auto hinter mir angefahren.",
+            "tr": {
+              "uz": "Ey, xudo! Mashinani chiqarayotganda orqamdagi mashinaga urib oldim.",
+              "uz-Cyrl": "Эй, худо! Машинани чиқараётганда орқамдаги машинага уриб олдим.",
+              "ru": "Чёрт! Выезжая с парковки, задел машину сзади."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Oh nein! Wie schlimm ist es denn?",
+            "tr": {
+              "uz": "Voy! Qanchalik jiddiy?",
+              "uz-Cyrl": "Вой! Қанчалик жиддий?",
+              "ru": "Ох! И насколько всё серьёзно?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Nur eine kleine Beule, ein Blechschaden. Der Besitzer ist nicht da. Kann ich einfach wegfahren?",
+            "tr": {
+              "uz": "Faqat kichkina pachoq, kuzov shikastlangan. Egasi yoʻq. Shunchaki ketib qolsam boʻladimi?",
+              "uz-Cyrl": "Фақат кичкина пачоқ, кузов шикастланган. Эгаси йўқ. Шунчаки кетиб қолсам бўладими?",
+              "ru": "Только небольшая вмятина, повреждён кузов. Хозяина нет. Можно просто уехать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, nach einem Unfall nie einfach wegfahren. Warte lieber, bis der Besitzer kommt.",
+            "tr": {
+              "uz": "Yoʻq, avariyadan keyin hech qachon shunchaki ketib qolma. Yaxshisi, egasi kelguncha kut.",
+              "uz-Cyrl": "Йўқ, авариядан кейин ҳеч қачон шунчаки кетиб қолма. Яхшиси, эгаси келгунча кут.",
+              "ru": "Нет, после аварии никогда не уезжай просто так. Лучше подожди, пока придёт хозяин."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Und wenn er nicht kommt? Ich muss doch gleich zur Arbeit.",
+            "tr": {
+              "uz": "Kelmasa-chi? Axir hozir ishga borishim kerak.",
+              "uz-Cyrl": "Келмаса-чи? Ахир ҳозир ишга боришим керак.",
+              "ru": "А если он не придёт? Мне ведь сейчас на работу."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Zur Arbeit? Dann ruf die Polizei an und sag deinem Chef kurz Bescheid.",
+            "tr": {
+              "uz": "Ishgami? Unda politsiyaga qoʻngʻiroq qil va boshligʻingga qisqacha xabar ber.",
+              "uz-Cyrl": "Ишгами? Унда полицияга қўнғироқ қил ва бошлиғингга қисқача хабар бер.",
+              "ru": "На работу? Тогда позвони в полицию и коротко предупреди начальника."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
