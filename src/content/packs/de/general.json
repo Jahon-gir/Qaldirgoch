@@ -6168,6 +6168,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "avtomobil",
+      "title": {
+        "uz": "Shaxsiy avtomobil: yoqilgʻi, parkovka, servis va yoʻl hodisasi",
+        "uz-Cyrl": "Шахсий автомобиль: ёқилғи, парковка, сервис ва йўл ҳодисаси",
+        "ru": "Личный автомобиль: топливо, парковка, сервис и ДТП"
+      },
+      "order": 36,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Kassir ayol",
+              "uz-Cyrl": "Кассир аёл",
+              "ru": "Кассирша"
+            },
+            "de": "Guten Tag! Welche Säule war es denn?",
+            "tr": {
+              "uz": "Xayrli kun! Qaysi kolonka edi?",
+              "uz-Cyrl": "Хайрли кун! Қайси колонка эди?",
+              "ru": "Добрый день! Какая колонка?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Säule drei, bitte. Und dieses Wasser hier nehme ich auch.",
+            "tr": {
+              "uz": "Uchinchi kolonka, iltimos. Mana bu suvni ham olaman.",
+              "uz-Cyrl": "Учинчи колонка, илтимос. Мана бу сувни ҳам оламан.",
+              "ru": "Колонка номер три, пожалуйста. И эту воду тоже возьму."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kassir ayol",
+              "uz-Cyrl": "Кассир аёл",
+              "ru": "Кассирша"
+            },
+            "de": "Gern. Zahlen Sie mit Karte oder bar?",
+            "tr": {
+              "uz": "Mayli. Karta bilan toʻlaysizmi yoki naqd?",
+              "uz-Cyrl": "Майли. Карта билан тўлайсизми ёки нақд?",
+              "ru": "Хорошо. Будете платить картой или наличными?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mit Karte, bitte. Und wo kann ich hier die Luft in den Reifen prüfen?",
+            "tr": {
+              "uz": "Karta bilan, iltimos. Aytgancha, bu yerda shinalarning havosini qayerda tekshirsa boʻladi?",
+              "uz-Cyrl": "Карта билан, илтимос. Айтганча, бу ерда шиналарнинг ҳавосини қаерда текширса бўлади?",
+              "ru": "Картой, пожалуйста. А где здесь можно проверить давление в шинах?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kassir ayol",
+              "uz-Cyrl": "Кассир аёл",
+              "ru": "Кассирша"
+            },
+            "de": "Die Luftstation ist hinten rechts, direkt neben der Waschanlage.",
+            "tr": {
+              "uz": "Havo nasosi orqada oʻng tomonda, avtoyuvish yonida.",
+              "uz-Cyrl": "Ҳаво насоси орқада ўнг томонда, автоювиш ёнида.",
+              "ru": "Подкачка сзади справа, прямо возле автомойки."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Neben der Waschanlage? Gut, dann fahre ich nach dem Bezahlen gleich dorthin.",
+            "tr": {
+              "uz": "Avtoyuvish yonidami? Yaxshi, toʻlagandan keyin darhol oʻsha yerga boraman.",
+              "uz-Cyrl": "Автоювиш ёнидами? Яхши, тўлагандан кейин дарҳол ўша ерга бораман.",
+              "ru": "Возле мойки? Хорошо, после оплаты сразу туда подъеду."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -28683,6 +28776,660 @@
           "uz": "Firibgarlikdan keyin politsiyaga ariza bermoqchiman.",
           "uz-Cyrl": "Фирибгарликдан кейин полицияга ариза бермоқчиман.",
           "ru": "После мошенничества хочу подать заявление в полицию."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-zapfsaeule",
+      "slug": "zapfsaeule",
+      "term": "die Zapfsäule",
+      "icon": "gas-station",
+      "article": "die",
+      "plural": "die Zapfsäulen",
+      "tr": {
+        "uz": "yoqilgʻi quyish kolonkasi",
+        "uz-Cyrl": "ёқилғи қуйиш колонкаси",
+        "ru": "топливная колонка"
+      },
+      "pron": {
+        "uz": "die tsapf-zoy-le",
+        "uz-Cyrl": "ди цапф-зой-ле",
+        "ru": "ди цапф-зой-ле"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "An der Zapfsäule tanke ich selbst und bezahle danach drinnen an der Kasse.",
+        "tr": {
+          "uz": "Kolonkada yoqilgʻini oʻzim quyaman, keyin ichkarida kassada toʻlayman.",
+          "uz-Cyrl": "Колонкада ёқилғини ўзим қуяман, кейин ичкарида кассада тўлайман.",
+          "ru": "На колонке заправляюсь самостоятельно, а потом плачу внутри на кассе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-benzin",
+      "slug": "benzin",
+      "term": "das Benzin",
+      "icon": "gas-station",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "benzin",
+        "uz-Cyrl": "бензин",
+        "ru": "бензин"
+      },
+      "pron": {
+        "uz": "das ben-tsin",
+        "uz-Cyrl": "дас бен-цин",
+        "ru": "дас бен-цин"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "Mein Auto fährt mit Benzin, nicht mit Diesel.",
+        "tr": {
+          "uz": "Mening mashinam dizelda emas, benzinda yuradi.",
+          "uz-Cyrl": "Менинг машинам дизелда эмас, бензинда юради.",
+          "ru": "Моя машина ездит на бензине, а не на дизеле."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-saeule-drei-bitte",
+      "slug": "saeule-drei-bitte",
+      "term": "Säule drei, bitte.",
+      "icon": "cash",
+      "tr": {
+        "uz": "Uchinchi kolonka, iltimos. (kassada toʻlaganda)",
+        "uz-Cyrl": "Учинчи колонка, илтимос. (кассада тўлаганда)",
+        "ru": "Колонка номер три, пожалуйста. (при оплате на кассе)"
+      },
+      "pron": {
+        "uz": "zoy-le dray, bit-te",
+        "uz-Cyrl": "зой-ле драй, бит-те",
+        "ru": "зой-ле драй, бит-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "An der Kasse sage ich die Nummer meiner Säule.",
+        "tr": {
+          "uz": "Kassada kolonkam raqamini aytaman.",
+          "uz-Cyrl": "Кассада колонкам рақамини айтаман.",
+          "ru": "На кассе называю номер своей колонки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-parkhaus",
+      "slug": "parkhaus",
+      "term": "das Parkhaus",
+      "icon": "parking",
+      "article": "das",
+      "plural": "die Parkhäuser",
+      "tr": {
+        "uz": "koʻp qavatli avtoturargoh",
+        "uz-Cyrl": "кўп қаватли автотураргоҳ",
+        "ru": "многоэтажная парковка"
+      },
+      "pron": {
+        "uz": "das park-haus",
+        "uz-Cyrl": "дас парк-хаус",
+        "ru": "дас парк-хаус"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "Im Parkhaus am Bahnhof gibt es oft noch freie Plätze.",
+        "tr": {
+          "uz": "Vokzal yonidagi koʻp qavatli turargohda koʻpincha boʻsh joy boʻladi.",
+          "uz-Cyrl": "Вокзал ёнидаги кўп қаватли тураргоҳда кўпинча бўш жой бўлади.",
+          "ru": "На многоэтажной парковке у вокзала часто есть свободные места."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-parkschein",
+      "slug": "parkschein",
+      "term": "der Parkschein",
+      "icon": "ticket",
+      "article": "der",
+      "plural": "die Parkscheine",
+      "tr": {
+        "uz": "toʻxtash chiptasi (avtomatdan)",
+        "uz-Cyrl": "тўхташ чиптаси (автоматдан)",
+        "ru": "парковочный талон"
+      },
+      "pron": {
+        "uz": "der park-shayn",
+        "uz-Cyrl": "дер парк-шайн",
+        "ru": "дер парк-шайн"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "Den Parkschein lege ich gut sichtbar hinter die Windschutzscheibe.",
+        "tr": {
+          "uz": "Toʻxtash chiptasini old oyna ortiga yaxshi koʻrinadigan qilib qoʻyaman.",
+          "uz-Cyrl": "Тўхташ чиптасини олд ойна ортига яхши кўринадиган қилиб қўяман.",
+          "ru": "Парковочный талон кладу под лобовое стекло так, чтобы его было хорошо видно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-parkluecke",
+      "slug": "parkluecke",
+      "term": "die Parklücke",
+      "icon": "parking",
+      "article": "die",
+      "plural": "die Parklücken",
+      "tr": {
+        "uz": "boʻsh toʻxtash joyi (ikki mashina orasida)",
+        "uz-Cyrl": "бўш тўхташ жойи (икки машина орасида)",
+        "ru": "свободное место для парковки (между машинами)"
+      },
+      "pron": {
+        "uz": "die park-lyu-ke",
+        "uz-Cyrl": "ди парк-лю-ке",
+        "ru": "ди парк-лю-ке"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "Die Parklücke ist leider zu klein für unser Auto.",
+        "tr": {
+          "uz": "Afsuski, bu boʻsh joy mashinamiz uchun juda kichik.",
+          "uz-Cyrl": "Афсуски, бу бўш жой машинамиз учун жуда кичик.",
+          "ru": "К сожалению, это место слишком маленькое для нашей машины."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-parkscheibe",
+      "slug": "parkscheibe",
+      "term": "die Parkscheibe",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Parkscheiben",
+      "tr": {
+        "uz": "toʻxtash vaqti diski (kelgan vaqtni koʻrsatadi)",
+        "uz-Cyrl": "тўхташ вақти диски (келган вақтни кўрсатади)",
+        "ru": "парковочный диск (показывает время прибытия)"
+      },
+      "pron": {
+        "uz": "die park-shay-be",
+        "uz-Cyrl": "ди парк-шай-бе",
+        "ru": "ди парк-шай-бе"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "Auf diesem Parkplatz brauche ich eine Parkscheibe.",
+        "tr": {
+          "uz": "Bu turargohda menga toʻxtash vaqti diski kerak.",
+          "uz-Cyrl": "Бу тураргоҳда менга тўхташ вақти диски керак.",
+          "ru": "На этой стоянке мне нужен парковочный диск."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-strafzettel",
+      "slug": "strafzettel",
+      "term": "der Strafzettel",
+      "icon": "receipt",
+      "article": "der",
+      "plural": "die Strafzettel",
+      "tr": {
+        "uz": "jarima qogʻozi (notoʻgʻri toʻxtaganda)",
+        "uz-Cyrl": "жарима қоғози (нотўғри тўхтаганда)",
+        "ru": "штрафная квитанция (за парковку)"
+      },
+      "pron": {
+        "uz": "der shtraf-tse-tel",
+        "uz-Cyrl": "дер штраф-це-тел",
+        "ru": "дер штраф-це-тел"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "Ohne Parkschein bekommt man schnell einen Strafzettel.",
+        "tr": {
+          "uz": "Toʻxtash chiptasisiz tezda jarima qogʻozi olish mumkin.",
+          "uz-Cyrl": "Тўхташ чиптасисиз тезда жарима қоғози олиш мумкин.",
+          "ru": "Без парковочного талона легко получить штраф."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-parkverbot",
+      "slug": "parkverbot",
+      "term": "das Parkverbot",
+      "icon": "parking-off",
+      "article": "das",
+      "plural": "die Parkverbote",
+      "tr": {
+        "uz": "toʻxtash taqiqi",
+        "uz-Cyrl": "тўхташ тақиқи",
+        "ru": "запрет парковки"
+      },
+      "pron": {
+        "uz": "das park-fer-bot",
+        "uz-Cyrl": "дас парк-фер-бот",
+        "ru": "дас парк-фер-бот"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "Hier ist Parkverbot – das Schild steht da vorne.",
+        "tr": {
+          "uz": "Bu yerda toʻxtash taqiqlangan — belgi ana u yerda turibdi.",
+          "uz-Cyrl": "Бу ерда тўхташ тақиқланган — белги ана у ерда турибди.",
+          "ru": "Здесь запрещена парковка — знак стоит вон там."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-sich-anschnallen",
+      "slug": "sich-anschnallen",
+      "term": "sich anschnallen",
+      "icon": "steering-wheel",
+      "tr": {
+        "uz": "xavfsizlik kamarini taqmoq",
+        "uz-Cyrl": "хавфсизлик камарини тақмоқ",
+        "ru": "пристёгиваться (ремнём безопасности)"
+      },
+      "pron": {
+        "uz": "zix an-shna-len",
+        "uz-Cyrl": "зих ан-шна-лен",
+        "ru": "зих ан-шна-лен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "Vor der Fahrt muss ich mich anschnallen – auch hinten.",
+        "tr": {
+          "uz": "Yoʻlga chiqishdan oldin kamar taqishim kerak — orqa oʻrindiqda ham.",
+          "uz-Cyrl": "Йўлга чиқишдан олдин камар тақишим керак — орқа ўриндиқда ҳам.",
+          "ru": "Перед поездкой нужно пристегнуться — и на заднем сиденье тоже."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-kindersitz",
+      "slug": "kindersitz",
+      "term": "der Kindersitz",
+      "icon": "mood-kid",
+      "article": "der",
+      "plural": "die Kindersitze",
+      "tr": {
+        "uz": "bolalar oʻrindigʻi (avtomobilda)",
+        "uz-Cyrl": "болалар ўриндиғи (автомобилда)",
+        "ru": "детское автокресло"
+      },
+      "pron": {
+        "uz": "der kin-der-zits",
+        "uz-Cyrl": "дер кин-дер-зиц",
+        "ru": "дер кин-дер-зиц"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "Kleine Kinder fahren bei uns nur im Kindersitz.",
+        "tr": {
+          "uz": "Bizda kichik bolalar faqat bolalar oʻrindigʻida yuradi.",
+          "uz-Cyrl": "Бизда кичик болалар фақат болалар ўриндиғида юради.",
+          "ru": "У нас маленькие дети ездят только в автокресле."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-ampel",
+      "slug": "ampel",
+      "term": "die Ampel",
+      "icon": "traffic-lights",
+      "article": "die",
+      "plural": "die Ampeln",
+      "tr": {
+        "uz": "svetofor",
+        "uz-Cyrl": "светофор",
+        "ru": "светофор"
+      },
+      "pron": {
+        "uz": "die am-pel",
+        "uz-Cyrl": "ди ам-пел",
+        "ru": "ди ам-пел"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "An der nächsten Ampel biegen wir links ab.",
+        "tr": {
+          "uz": "Keyingi svetoforda chapga burilamiz.",
+          "uz-Cyrl": "Кейинги светофорда чапга буриламиз.",
+          "ru": "На следующем светофоре повернём налево."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-vorfahrt",
+      "slug": "vorfahrt",
+      "term": "die Vorfahrt",
+      "icon": "road-sign",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "birinchi oʻtish huquqi",
+        "uz-Cyrl": "биринчи ўтиш ҳуқуқи",
+        "ru": "право преимущественного проезда"
+      },
+      "pron": {
+        "uz": "die for-fart",
+        "uz-Cyrl": "ди фор-фарт",
+        "ru": "ди фор-фарт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "An dieser Kreuzung musst du auf die Vorfahrt achten.",
+        "tr": {
+          "uz": "Bu chorrahada birinchi oʻtish huquqiga eʼtibor berishing kerak.",
+          "uz-Cyrl": "Бу чорраҳада биринчи ўтиш ҳуқуқига эътибор беришинг керак.",
+          "ru": "На этом перекрёстке нужно следить, у кого преимущество."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-kreisverkehr",
+      "slug": "kreisverkehr",
+      "term": "der Kreisverkehr",
+      "icon": "road",
+      "article": "der",
+      "plural": "die Kreisverkehre",
+      "tr": {
+        "uz": "aylanma harakat (halqa)",
+        "uz-Cyrl": "айланма ҳаракат (ҳалқа)",
+        "ru": "круговое движение (кольцо)"
+      },
+      "pron": {
+        "uz": "der krays-fer-ker",
+        "uz-Cyrl": "дер крайс-фер-кер",
+        "ru": "дер крайс-фер-кер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "Im Kreisverkehr nehmen wir die zweite Ausfahrt.",
+        "tr": {
+          "uz": "Halqada ikkinchi chiqishga buramiz.",
+          "uz-Cyrl": "Ҳалқада иккинчи чиқишга бурамиз.",
+          "ru": "На кольце берём второй съезд."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-winterreifen",
+      "slug": "winterreifen",
+      "term": "der Winterreifen",
+      "icon": "snowflake",
+      "article": "der",
+      "plural": "die Winterreifen",
+      "tr": {
+        "uz": "qishki shina",
+        "uz-Cyrl": "қишки шина",
+        "ru": "зимняя шина"
+      },
+      "pron": {
+        "uz": "der vin-ter-ray-fen",
+        "uz-Cyrl": "дер вин-тер-рай-фен",
+        "ru": "дер вин-тер-рай-фен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "Bei Schnee und Glätte fahre ich nur mit Winterreifen.",
+        "tr": {
+          "uz": "Qor va muzlagan yoʻlda faqat qishki shinada yuraman.",
+          "uz-Cyrl": "Қор ва музлаган йўлда фақат қишки шинада юраман.",
+          "ru": "В снег и гололёд езжу только на зимней резине."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-werkstatttermin",
+      "slug": "werkstatttermin",
+      "term": "der Werkstatttermin",
+      "icon": "calendar-event",
+      "article": "der",
+      "plural": "die Werkstatttermine",
+      "tr": {
+        "uz": "servisga yozilish (ustaxona vaqti)",
+        "uz-Cyrl": "сервисга ёзилиш (устахона вақти)",
+        "ru": "запись в автосервис"
+      },
+      "pron": {
+        "uz": "der verk-shtat-ter-min",
+        "uz-Cyrl": "дер верк-штат-тер-мин",
+        "ru": "дер верк-штат-тер-мин"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "Vor dem Winter mache ich einen Werkstatttermin für den Reifenwechsel.",
+        "tr": {
+          "uz": "Qishdan oldin shina almashtirish uchun servisga yozilaman.",
+          "uz-Cyrl": "Қишдан олдин шина алмаштириш учун сервисга ёзиламан.",
+          "ru": "Перед зимой записываюсь в автосервис на смену шин."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-starthilfe",
+      "slug": "starthilfe",
+      "term": "die Starthilfe",
+      "icon": "battery-automotive",
+      "article": "die",
+      "plural": "die Starthilfen",
+      "tr": {
+        "uz": "boshqa mashinadan quvvat olib oʻt oldirish",
+        "uz-Cyrl": "бошқа машинадан қувват олиб ўт олдириш",
+        "ru": "помощь при запуске («прикурить» от другой машины)"
+      },
+      "pron": {
+        "uz": "die shtart-hil-fe",
+        "uz-Cyrl": "ди штарт-хил-фе",
+        "ru": "ди штарт-хил-фе"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "Meine Batterie ist leer – kannst du mir Starthilfe geben?",
+        "tr": {
+          "uz": "Akkumulyatorim oʻtirib qoldi — mashinangdan quvvat berib oʻt oldirib bera olasanmi?",
+          "uz-Cyrl": "Аккумуляторим ўтириб қолди — машинангдан қувват бериб ўт олдириб бера оласанми?",
+          "ru": "У меня сел аккумулятор — можешь дать прикурить?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-abschleppdienst",
+      "slug": "abschleppdienst",
+      "term": "der Abschleppdienst",
+      "icon": "truck",
+      "article": "der",
+      "plural": "die Abschleppdienste",
+      "tr": {
+        "uz": "evakuator xizmati",
+        "uz-Cyrl": "эвакуатор хизмати",
+        "ru": "служба эвакуации (эвакуатор)"
+      },
+      "pron": {
+        "uz": "der ap-shlep-dinst",
+        "uz-Cyrl": "дер ап-шлеп-динст",
+        "ru": "дер ап-шлеп-динст"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "Nach der Panne hat der Abschleppdienst mein Auto in die Werkstatt gebracht.",
+        "tr": {
+          "uz": "Buzilishdan keyin evakuator mashinamni ustaxonaga olib bordi.",
+          "uz-Cyrl": "Бузилишдан кейин эвакуатор машинамни устахонага олиб борди.",
+          "ru": "После поломки эвакуатор отвёз мою машину в мастерскую."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-blechschaden",
+      "slug": "blechschaden",
+      "term": "der Blechschaden",
+      "icon": "car-crash",
+      "article": "der",
+      "plural": "die Blechschäden",
+      "tr": {
+        "uz": "kichik avariya (faqat kuzov shikastlangan)",
+        "uz-Cyrl": "кичик авария (фақат кузов шикастланган)",
+        "ru": "мелкое ДТП (повреждён только кузов)"
+      },
+      "pron": {
+        "uz": "der blex-sha-den",
+        "uz-Cyrl": "дер блех-ша-ден",
+        "ru": "дер блех-ша-ден"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "Zum Glück war es nur ein Blechschaden, niemand ist verletzt.",
+        "tr": {
+          "uz": "Xayriyatki, faqat kuzov shikastlandi, hech kim jarohatlanmadi.",
+          "uz-Cyrl": "Хайриятки, фақат кузов шикастланди, ҳеч ким жароҳатланмади.",
+          "ru": "К счастью, повреждён только кузов, никто не пострадал."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-avtomobil-nach-einem-unfall-nie-einfach-wegfahren",
+      "slug": "nach-einem-unfall-nie-einfach-wegfahren",
+      "term": "Nach einem Unfall nie einfach wegfahren!",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Avariyadan keyin hech qachon shunchaki ketib qolmang!",
+        "uz-Cyrl": "Авариядан кейин ҳеч қачон шунчаки кетиб қолманг!",
+        "ru": "После аварии никогда не уезжайте просто так!"
+      },
+      "pron": {
+        "uz": "nax ay-nem un-fal ni ayn-fax vek-fa-ren!",
+        "uz-Cyrl": "нах ай-нем ун-фал ни айн-фах век-фа-рен!",
+        "ru": "нах ай-нем ун-фал ни айн-фах век-фа-рен!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "avtomobil",
+      "example": {
+        "term": "Warten Sie, tauschen Sie die Daten aus oder rufen Sie die Polizei.",
+        "tr": {
+          "uz": "Kuting, maʼlumotlarni almashing yoki politsiyani chaqiring.",
+          "uz-Cyrl": "Кутинг, маълумотларни алмашинг ёки полицияни чақиринг.",
+          "ru": "Подождите, обменяйтесь данными или вызовите полицию."
         }
       },
       "safety": true,
