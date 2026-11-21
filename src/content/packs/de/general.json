@@ -5380,6 +5380,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Am Samstag mache ich eine kleine Party. Meine Freunde wollen Schaschlik machen.",
+            "tr": {
+              "uz": "Shanba kuni kichik ziyofat qilaman. Doʻstlarim shashlik qilmoqchi.",
+              "uz-Cyrl": "Шанба куни кичик зиёфат қиламан. Дўстларим шашлик қилмоқчи.",
+              "ru": "В субботу у меня небольшая вечеринка. Друзья хотят сделать шашлык."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Schaschlik? Und wo wollt ihr grillen?",
+            "tr": {
+              "uz": "Shashlikmi? Qayerda pishirmoqchisizlar?",
+              "uz-Cyrl": "Шашликми? Қаерда пиширмоқчисизлар?",
+              "ru": "Шашлык? А где вы собираетесь жарить?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Eigentlich im Garten, aber es soll regnen. Dann stellen wir den Grill einfach ins Wohnzimmer. Ist das eine gute Idee?",
+            "tr": {
+              "uz": "Aslida bogʻda, lekin yomgʻir yogʻar ekan. Unda mangalni shunchaki mehmonxonaga qoʻyamiz. Bu yaxshi fikrmi?",
+              "uz-Cyrl": "Аслида боғда, лекин ёмғир ёғар экан. Унда мангални шунчаки меҳмонхонага қўямиз. Бу яхши фикрми?",
+              "ru": "Вообще-то в саду, но обещают дождь. Тогда просто поставим гриль в гостиной. Это хорошая идея?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, auf keinen Fall! Grillt nie in geschlossenen Räumen – das giftige Gas kann tödlich sein.",
+            "tr": {
+              "uz": "Yoʻq, aslo! Yopiq xonada hech qachon mangal yoqmanglar — zaharli gaz oʻlimga olib kelishi mumkin.",
+              "uz-Cyrl": "Йўқ, асло! Ёпиқ хонада ҳеч қачон мангал ёқманглар — заҳарли газ ўлимга олиб келиши мумкин.",
+              "ru": "Нет, ни в коем случае! Никогда не жарьте на гриле в закрытом помещении – ядовитый газ может убить."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Oh, das wusste ich nicht. Aber was machen wir, wenn es regnet?",
+            "tr": {
+              "uz": "Voy, buni bilmagan ekanman. Lekin yomgʻir yogʻsa nima qilamiz?",
+              "uz-Cyrl": "Вой, буни билмаган эканман. Лекин ёмғир ёғса нима қиламиз?",
+              "ru": "Ой, мне это было неизвестно. А что делать, если пойдёт дождь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wenn es regnet? Dann braten wir das Fleisch einfach in der Pfanne auf dem Herd.",
+            "tr": {
+              "uz": "Yomgʻir yogʻsami? Unda goʻshtni shunchaki plitada, tovada qovuramiz.",
+              "uz-Cyrl": "Ёмғир ёғсами? Унда гўштни шунчаки плитада, товада қовурамиз.",
+              "ru": "Если пойдёт дождь? Тогда просто пожарим мясо на сковороде на плите."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
