@@ -3,7 +3,7 @@ import {
   IconMoodSmile, IconMoonStars, IconStethoscope, IconSun, IconSunrise, IconSunset2, IconTools, IconToolsKitchen2, IconUser, IconUsers, IconWorld,
   IconCheck, IconChefHat, IconCoffee, IconDog, IconFlag, IconGenderFemale, IconGrape, IconHanger, IconLeaf, IconMan, IconMap, IconMeat, IconMilk, IconMoodKid, IconMusic, IconNumber1, IconPaw, IconRadio, IconRipple, IconSalad, IconSquare, IconToiletPaper, IconTrain, IconWoman,
   IconAbc, IconAlertTriangle, IconApple, IconArmchair, IconBackpack, IconBook, IconBowlChopsticks, IconBriefcase, IconBuildingSkyscraper, IconClock, IconCookie, IconDoor, IconDoorEnter, IconDroplet, IconHome, IconLanguage, IconMountain, IconPig, IconPlant, IconRun, IconShirt, IconSmokingNo, IconSoup, IconVolume, IconWaveSine,
-  IconFireExtinguisher, IconFirstAidKit, IconHelmet, IconShoe, IconAlertOctagon, IconBeach, IconRepeat, IconHelp, IconEye, IconThermometer, IconMoodSad, IconFileText, IconPill, IconHammer, IconLadder, IconRuler, IconPlug, IconToggleLeft, IconBulb, IconPower, IconBath, IconBed, IconWheelchair, IconHeartbeat, IconReceipt, IconGlass, IconTrash, IconKey, IconBus, IconBike, IconEgg, IconTruck, IconCar, IconPhone, IconCamera, IconPackage, IconMail, IconPaperclip, IconInbox, IconLock, IconBuildingBank, IconCreditCard, IconCash, IconArrowsExchange, IconShoppingCart, IconMailbox, IconRouter, IconWifi, IconDeviceSim, IconDeviceMobile, IconSwimming, IconTicket, IconBooks, IconLifebuoy, IconBarbell, IconBallFootball, IconBell, IconBuildingCommunity, IconWashMachine, IconVolumeOff, IconGift, IconCake, IconConfetti, IconChristmasTree, IconSparkles, IconMoon, IconCloud, IconCloudFog, IconCloudStorm, IconUmbrella, IconSnowflake, IconJacket, IconSunglasses, IconCandle, IconGrillOff, IconScissors, IconNeedleThread, IconDatabase, IconSignature, IconListDetails, IconPigMoney, IconWallet, IconCalculator, IconBottle, IconDiscount, IconCarrot, IconBread, IconScale, IconListSearch, IconTag, IconBarcode, IconShoppingBag, IconRecycle, IconCalendarX,
+  IconFireExtinguisher, IconFirstAidKit, IconHelmet, IconShoe, IconAlertOctagon, IconBeach, IconRepeat, IconHelp, IconEye, IconThermometer, IconMoodSad, IconFileText, IconPill, IconHammer, IconLadder, IconRuler, IconPlug, IconToggleLeft, IconBulb, IconPower, IconBath, IconBed, IconWheelchair, IconHeartbeat, IconReceipt, IconGlass, IconTrash, IconKey, IconBus, IconBike, IconEgg, IconTruck, IconCar, IconPhone, IconCamera, IconPackage, IconMail, IconPaperclip, IconInbox, IconLock, IconBuildingBank, IconCreditCard, IconCash, IconArrowsExchange, IconShoppingCart, IconMailbox, IconRouter, IconWifi, IconDeviceSim, IconDeviceMobile, IconSwimming, IconTicket, IconBooks, IconLifebuoy, IconBarbell, IconBallFootball, IconBell, IconBuildingCommunity, IconWashMachine, IconVolumeOff, IconGift, IconCake, IconConfetti, IconChristmasTree, IconSparkles, IconMoon, IconCloud, IconCloudFog, IconCloudStorm, IconUmbrella, IconSnowflake, IconJacket, IconSunglasses, IconCandle, IconGrillOff, IconScissors, IconNeedleThread, IconDatabase, IconSignature, IconListDetails, IconPigMoney, IconWallet, IconCalculator, IconBottle, IconDiscount, IconCarrot, IconBread, IconScale, IconListSearch, IconTag, IconBarcode, IconShoppingBag, IconRecycle, IconCalendarX, IconUserCircle, IconPassword, IconShieldLock, IconFingerprint, IconRefresh, IconShieldCheck, IconBug, IconLink, IconMicrophone, IconPhoto, IconSpy, IconPhoneCall, IconTrophy, IconScreenshot,
   type Icon
 } from '@tabler/icons-react'
 
@@ -175,5 +175,19 @@ export const LESSON_ICONS: Record<string, Icon> = {
   barcode: IconBarcode,
   'shopping-bag': IconShoppingBag,
   recycle: IconRecycle,
-  'calendar-x': IconCalendarX
+  'calendar-x': IconCalendarX,
+  'user-circle': IconUserCircle,
+  password: IconPassword,
+  'shield-lock': IconShieldLock,
+  fingerprint: IconFingerprint,
+  refresh: IconRefresh,
+  'shield-check': IconShieldCheck,
+  bug: IconBug,
+  link: IconLink,
+  microphone: IconMicrophone,
+  photo: IconPhoto,
+  spy: IconSpy,
+  'phone-call': IconPhoneCall,
+  trophy: IconTrophy,
+  screenshot: IconScreenshot
 }
