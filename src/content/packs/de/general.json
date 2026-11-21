@@ -5908,6 +5908,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Schau mal, im Kühlschrank liegt noch Hackfleisch.",
+            "tr": {
+              "uz": "Qara, sovutgichda hali qiyma turibdi.",
+              "uz-Cyrl": "Қара, совутгичда ҳали қийма турибди.",
+              "ru": "Смотри, в холодильнике ещё лежит фарш."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Hackfleisch? Wie lange liegt das denn schon da?",
+            "tr": {
+              "uz": "Qiymami? U yerda qachondan beri turibdi?",
+              "uz-Cyrl": "Қиймами? У ерда қачондан бери турибди?",
+              "ru": "Фарш? И давно он там лежит?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Ein paar Tage. Das Verbrauchsdatum war vorgestern, aber es riecht noch gut. Kann ich es noch essen?",
+            "tr": {
+              "uz": "Bir necha kun. Isteʼmol sanasi ikki kun oldin tugagan, lekin hidi hali yaxshi. Hali yesa boʻladimi?",
+              "uz-Cyrl": "Бир неча кун. Истеъмол санаси икки кун олдин тугаган, лекин ҳиди ҳали яхши. Ҳали еса бўладими?",
+              "ru": "Несколько дней. Срок «употребить до» истёк позавчера, но пахнет ещё нормально. Его ещё можно есть?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, iss kein Hackfleisch nach dem Verbrauchsdatum. Davon kann man krank werden.",
+            "tr": {
+              "uz": "Yoʻq, isteʼmol sanasi oʻtgan qiymani yema. Undan kasal boʻlish mumkin.",
+              "uz-Cyrl": "Йўқ, истеъмол санаси ўтган қиймани ема. Ундан касал бўлиш мумкин.",
+              "ru": "Нет, не ешь фарш после даты «употребить до». От него можно заболеть."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Schade. Und was koche ich jetzt heute Abend?",
+            "tr": {
+              "uz": "Attang. Unda bugun kechqurun nima pishiraman?",
+              "uz-Cyrl": "Аттанг. Унда бугун кечқурун нима пишираман?",
+              "ru": "Жаль. И что же мне теперь приготовить вечером?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Heute Abend? Im Supermarkt gibt es frisches Gemüse – lass uns nach der Arbeit zusammen eine Suppe kochen.",
+            "tr": {
+              "uz": "Bugun kechqurunmi? Supermarketda yangi sabzavot bor — kel, ishdan keyin birga shoʻrva pishiraylik.",
+              "uz-Cyrl": "Бугун кечқурунми? Супермаркетда янги сабзавот бор — кел, ишдан кейин бирга шўрва пиширайлик.",
+              "ru": "Вечером? В супермаркете есть свежие овощи – давай после работы вместе сварим суп."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
