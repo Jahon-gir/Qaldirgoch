@@ -6872,6 +6872,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "uy-jihozlash",
+      "title": {
+        "uz": "Uy jihozlari: mebel, maishiy texnika va yigʻish",
+        "uz-Cyrl": "Уй жиҳозлари: мебель, маиший техника ва йиғиш",
+        "ru": "Обустройство жилья: мебель, бытовая техника и сборка"
+      },
+      "order": 40,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Sotuvchi ayol",
+              "uz-Cyrl": "Сотувчи аёл",
+              "ru": "Продавщица"
+            },
+            "de": "Hallo, hier ist Weber. Worum geht es?",
+            "tr": {
+              "uz": "Salom, Weber eshitadi. Nima masalada?",
+              "uz-Cyrl": "Салом, Вебер эшитади. Нима масалада?",
+              "ru": "Алло, Вебер слушает. По какому вопросу?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich rufe wegen Ihrer Kleinanzeige an. Ist das Sofa noch zu haben?",
+            "tr": {
+              "uz": "Eʼloningiz boʻyicha qoʻngʻiroq qilyapman. Divan hali sotilmadimi?",
+              "uz-Cyrl": "Эълонингиз бўйича қўнғироқ қиляпман. Диван ҳали сотилмадими?",
+              "ru": "Звоню по вашему объявлению. Диван ещё продаётся?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Sotuvchi ayol",
+              "uz-Cyrl": "Сотувчи аёл",
+              "ru": "Продавщица"
+            },
+            "de": "Es ist noch da. Wann möchten Sie es abholen?",
+            "tr": {
+              "uz": "Hali bor. Qachon olib ketmoqchisiz?",
+              "uz-Cyrl": "Ҳали бор. Қачон олиб кетмоқчисиз?",
+              "ru": "Ещё есть. Когда хотите забрать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Am liebsten morgen nach der Arbeit, so gegen 18 Uhr.",
+            "tr": {
+              "uz": "Imkoni boʻlsa, ertaga ishdan keyin, soat 18 larda.",
+              "uz-Cyrl": "Имкони бўлса, эртага ишдан кейин, соат 18 ларда.",
+              "ru": "Лучше всего завтра после работы, около 18 часов."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Sotuvchi ayol",
+              "uz-Cyrl": "Сотувчи аёл",
+              "ru": "Продавщица"
+            },
+            "de": "Das passt. Aber bringen Sie bitte jemanden zum Tragen mit – das Sofa ist schwer, und es gibt keinen Aufzug.",
+            "tr": {
+              "uz": "Boʻladi. Lekin koʻtarishga yordamchi olib keling – divan ogʻir, lift esa yoʻq.",
+              "uz-Cyrl": "Бўлади. Лекин кўтаришга ёрдамчи олиб келинг – диван оғир, лифт эса йўқ.",
+              "ru": "Подходит. Но возьмите, пожалуйста, кого-нибудь в помощь – диван тяжёлый, а лифта нет."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Keinen Aufzug? Kein Problem, dann komme ich mit einem Freund.",
+            "tr": {
+              "uz": "Lift yoʻqmi? Mayli, unda doʻstim bilan kelaman.",
+              "uz-Cyrl": "Лифт йўқми? Майли, унда дўстим билан келаман.",
+              "ru": "Лифта нет? Не проблема, тогда приеду с другом."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -31989,6 +32082,658 @@
           "uz": "Hatto notanish odam xushmuomalalik bilan iltimos qilsa ham.",
           "uz-Cyrl": "Ҳатто нотаниш одам хушмуомалалик билан илтимос қилса ҳам.",
           "ru": "Даже если незнакомец вежливо об этом просит."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-moebelhaus",
+      "slug": "moebelhaus",
+      "term": "das Möbelhaus",
+      "icon": "building-store",
+      "article": "das",
+      "plural": "die Möbelhäuser",
+      "tr": {
+        "uz": "mebel doʻkoni",
+        "uz-Cyrl": "мебель дўкони",
+        "ru": "мебельный магазин"
+      },
+      "pron": {
+        "uz": "das myo-bel-haus",
+        "uz-Cyrl": "дас мё-бель-хаус",
+        "ru": "дас мё-бель-хаус"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "Am Samstag fahren wir zusammen ins Möbelhaus.",
+        "tr": {
+          "uz": "Shanba kuni birga mebel doʻkoniga boramiz.",
+          "uz-Cyrl": "Шанба куни бирга мебель дўконига борамиз.",
+          "ru": "В субботу мы вместе едем в мебельный магазин."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-moebelstueck",
+      "slug": "moebelstueck",
+      "term": "das Möbelstück",
+      "icon": "armchair",
+      "article": "das",
+      "plural": "die Möbelstücke",
+      "tr": {
+        "uz": "mebel (bitta buyum)",
+        "uz-Cyrl": "мебель (битта буюм)",
+        "ru": "предмет мебели"
+      },
+      "pron": {
+        "uz": "das myo-bel-shtyuk",
+        "uz-Cyrl": "дас мё-бель-штюк",
+        "ru": "дас мё-бель-штюк"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "Jedes Möbelstück bekommt in der neuen Wohnung seinen Platz.",
+        "tr": {
+          "uz": "Yangi kvartirada har bir mebelning oʻz joyi boʻladi.",
+          "uz-Cyrl": "Янги квартирада ҳар бир мебелнинг ўз жойи бўлади.",
+          "ru": "В новой квартире у каждого предмета мебели будет своё место."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-sofa",
+      "slug": "sofa",
+      "term": "das Sofa",
+      "icon": "sofa",
+      "article": "das",
+      "plural": "die Sofas",
+      "tr": {
+        "uz": "divan",
+        "uz-Cyrl": "диван",
+        "ru": "диван"
+      },
+      "pron": {
+        "uz": "das zo-fa",
+        "uz-Cyrl": "дас зо-фа",
+        "ru": "дас зо-фа"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "Das Sofa passt gut in unser kleines Wohnzimmer.",
+        "tr": {
+          "uz": "Divan kichkina xonamizga yaxshi sigʻadi.",
+          "uz-Cyrl": "Диван кичкина хонамизга яхши сиғади.",
+          "ru": "Диван хорошо помещается в нашей маленькой гостиной."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-matratze",
+      "slug": "matratze",
+      "term": "die Matratze",
+      "icon": "bed",
+      "article": "die",
+      "plural": "die Matratzen",
+      "tr": {
+        "uz": "matras (toʻshak)",
+        "uz-Cyrl": "матрас (тўшак)",
+        "ru": "матрас"
+      },
+      "pron": {
+        "uz": "die ma-trat-se",
+        "uz-Cyrl": "ди ма-трат-це",
+        "ru": "ди ма-трат-це"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "Eine neue Matratze probiere ich im Geschäft zuerst aus.",
+        "tr": {
+          "uz": "Yangi matrasni avval doʻkonda sinab koʻraman.",
+          "uz-Cyrl": "Янги матрасни аввал дўконда синаб кўраман.",
+          "ru": "Новый матрас сначала пробую в магазине."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-kleiderschrank",
+      "slug": "kleiderschrank",
+      "term": "der Kleiderschrank",
+      "icon": "hanger",
+      "article": "der",
+      "plural": "die Kleiderschränke",
+      "tr": {
+        "uz": "kiyim shkafi",
+        "uz-Cyrl": "кийим шкафи",
+        "ru": "платяной шкаф"
+      },
+      "pron": {
+        "uz": "der klay-der-shrank",
+        "uz-Cyrl": "дер клай-дер-шранк",
+        "ru": "дер клай-дер-шранк"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "Der Kleiderschrank ist zu hoch für das Schlafzimmer.",
+        "tr": {
+          "uz": "Kiyim shkafi yotoqxona uchun juda baland.",
+          "uz-Cyrl": "Кийим шкафи ётоқхона учун жуда баланд.",
+          "ru": "Платяной шкаф слишком высокий для спальни."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-koennen-sie-die-moebel-auch-aufbauen",
+      "slug": "koennen-sie-die-moebel-auch-aufbauen",
+      "term": "Können Sie die Möbel auch aufbauen?",
+      "icon": "help",
+      "tr": {
+        "uz": "Mebelni yigʻib ham bera olasizmi?",
+        "uz-Cyrl": "Мебелни йиғиб ҳам бера оласизми?",
+        "ru": "Вы можете ещё и собрать мебель?"
+      },
+      "pron": {
+        "uz": "kyo-nen zi di myo-bel aux auf-bau-en?",
+        "uz-Cyrl": "кё-нен зи ди мё-бель аух ауф-бау-ен?",
+        "ru": "кё-нен зи ди мё-бель аух ауф-бау-ен?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "Das frage ich vor dem Kauf im Möbelhaus.",
+        "tr": {
+          "uz": "Buni xariddan oldin mebel doʻkonida soʻrayman.",
+          "uz-Cyrl": "Буни хариддан олдин мебель дўконида сўрайман.",
+          "ru": "Об этом спрашиваю в магазине до покупки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-kleinanzeige",
+      "slug": "kleinanzeige",
+      "term": "die Kleinanzeige",
+      "icon": "list-details",
+      "article": "die",
+      "plural": "die Kleinanzeigen",
+      "tr": {
+        "uz": "kichik eʼlon (sotish uchun)",
+        "uz-Cyrl": "кичик эълон (сотиш учун)",
+        "ru": "частное объявление (о продаже)"
+      },
+      "pron": {
+        "uz": "die klayn-an-tsay-ge",
+        "uz-Cyrl": "ди клайн-ан-цай-ге",
+        "ru": "ди клайн-ан-цай-ге"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "Den Tisch habe ich über eine Kleinanzeige gefunden.",
+        "tr": {
+          "uz": "Stolni kichik eʼlon orqali topdim.",
+          "uz-Cyrl": "Столни кичик эълон орқали топдим.",
+          "ru": "Стол нашёлся по частному объявлению."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-ist-das-sofa-noch-zu-haben",
+      "slug": "ist-das-sofa-noch-zu-haben",
+      "term": "Ist das Sofa noch zu haben?",
+      "icon": "message-circle",
+      "tr": {
+        "uz": "Divan hali sotilmadimi? (hali olsa boʻladimi?)",
+        "uz-Cyrl": "Диван ҳали сотилмадими? (ҳали олса бўладими?)",
+        "ru": "Диван ещё продаётся?"
+      },
+      "pron": {
+        "uz": "ist das zo-fa nox tsu ha-ben?",
+        "uz-Cyrl": "ист дас зо-фа нох цу ха-бен?",
+        "ru": "ист дас зо-фа нох цу ха-бен?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "So beginne ich meine Nachricht an den Verkäufer.",
+        "tr": {
+          "uz": "Sotuvchiga xabarimni shunday boshlayman.",
+          "uz-Cyrl": "Сотувчига хабаримни шундай бошлайман.",
+          "ru": "Так начинаю сообщение продавцу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-abholtermin",
+      "slug": "abholtermin",
+      "term": "der Abholtermin",
+      "icon": "calendar-event",
+      "article": "der",
+      "plural": "die Abholtermine",
+      "tr": {
+        "uz": "olib ketish vaqti (kelishilgan)",
+        "uz-Cyrl": "олиб кетиш вақти (келишилган)",
+        "ru": "время самовывоза (договорённое)"
+      },
+      "pron": {
+        "uz": "der ap-hol-ter-min",
+        "uz-Cyrl": "дер ап-хол-тер-мин",
+        "ru": "дер ап-хол-тер-мин"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "Mit dem Verkäufer vereinbare ich einen Abholtermin am Abend.",
+        "tr": {
+          "uz": "Sotuvchi bilan kechqurunga olib ketish vaqtini kelishaman.",
+          "uz-Cyrl": "Сотувчи билан кечқурунга олиб кетиш вақтини келишаман.",
+          "ru": "С продавцом договариваюсь о времени самовывоза на вечер."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-aufbau",
+      "slug": "aufbau",
+      "term": "der Aufbau",
+      "icon": "tools",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "yigʻish (mebelni)",
+        "uz-Cyrl": "йиғиш (мебелни)",
+        "ru": "сборка (мебели)"
+      },
+      "pron": {
+        "uz": "der auf-bau",
+        "uz-Cyrl": "дер ауф-бау",
+        "ru": "дер ауф-бау"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "Beim Aufbau hilft mir ein Freund.",
+        "tr": {
+          "uz": "Yigʻishda menga doʻstim yordam beradi.",
+          "uz-Cyrl": "Йиғишда менга дўстим ёрдам беради.",
+          "ru": "Со сборкой мне помогает друг."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-aufbauanleitung",
+      "slug": "aufbauanleitung",
+      "term": "die Aufbauanleitung",
+      "icon": "book",
+      "article": "die",
+      "plural": "die Aufbauanleitungen",
+      "tr": {
+        "uz": "yigʻish yoʻriqnomasi",
+        "uz-Cyrl": "йиғиш йўриқномаси",
+        "ru": "инструкция по сборке"
+      },
+      "pron": {
+        "uz": "die auf-bau-an-lay-tung",
+        "uz-Cyrl": "ди ауф-бау-ан-лай-тунг",
+        "ru": "ди ауф-бау-ан-лай-тунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "Lies zuerst die Aufbauanleitung bis zum Ende.",
+        "tr": {
+          "uz": "Avval yigʻish yoʻriqnomasini oxirigacha oʻqi.",
+          "uz-Cyrl": "Аввал йиғиш йўриқномасини охиригача ўқи.",
+          "ru": "Сначала прочитай инструкцию по сборке до конца."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-inbusschluessel",
+      "slug": "inbusschluessel",
+      "term": "der Inbusschlüssel",
+      "icon": "key",
+      "article": "der",
+      "plural": "die Inbusschlüssel",
+      "tr": {
+        "uz": "olti qirrali kalit (imbus)",
+        "uz-Cyrl": "олти қиррали калит (имбус)",
+        "ru": "шестигранный ключ (имбус)"
+      },
+      "pron": {
+        "uz": "der in-bus-shlyu-sel",
+        "uz-Cyrl": "дер ин-бус-шлю-сель",
+        "ru": "дер ин-бус-шлю-сель"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "Ein kleiner Inbusschlüssel liegt meistens im Karton.",
+        "tr": {
+          "uz": "Kichkina olti qirrali kalit odatda qutida boʻladi.",
+          "uz-Cyrl": "Кичкина олти қиррали калит одатда қутида бўлади.",
+          "ru": "Маленький шестигранный ключ обычно лежит в коробке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-kuechenzeile",
+      "slug": "kuechenzeile",
+      "term": "die Küchenzeile",
+      "icon": "tools-kitchen-2",
+      "article": "die",
+      "plural": "die Küchenzeilen",
+      "tr": {
+        "uz": "oshxona garnituri",
+        "uz-Cyrl": "ошхона гарнитури",
+        "ru": "кухонный гарнитур"
+      },
+      "pron": {
+        "uz": "die kyu-xen-tsay-le",
+        "uz-Cyrl": "ди кю-хен-цай-ле",
+        "ru": "ди кю-хен-цай-ле"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "In der Wohnung ist schon eine Küchenzeile eingebaut.",
+        "tr": {
+          "uz": "Kvartirada oshxona garnituri allaqachon oʻrnatilgan.",
+          "uz-Cyrl": "Квартирада ошхона гарнитури аллақачон ўрнатилган.",
+          "ru": "В квартире уже встроен кухонный гарнитур."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-wasserkocher",
+      "slug": "wasserkocher",
+      "term": "der Wasserkocher",
+      "icon": "coffee",
+      "article": "der",
+      "plural": "die Wasserkocher",
+      "tr": {
+        "uz": "elektr choynak",
+        "uz-Cyrl": "электр чойнак",
+        "ru": "электрический чайник"
+      },
+      "pron": {
+        "uz": "der va-ser-ko-xer",
+        "uz-Cyrl": "дер ва-сер-ко-хер",
+        "ru": "дер ва-сер-ко-хер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "Mit dem Wasserkocher mache ich morgens schnell Tee.",
+        "tr": {
+          "uz": "Ertalab elektr choynakda tezda choy qilaman.",
+          "uz-Cyrl": "Эрталаб электр чойнакда тезда чой қиламан.",
+          "ru": "Утром быстро завариваю чай с помощью электрочайника."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-mikrowelle",
+      "slug": "mikrowelle",
+      "term": "die Mikrowelle",
+      "icon": "microwave",
+      "article": "die",
+      "plural": "die Mikrowellen",
+      "tr": {
+        "uz": "mikrotoʻlqinli pech",
+        "uz-Cyrl": "микротўлқинли печь",
+        "ru": "микроволновка"
+      },
+      "pron": {
+        "uz": "die mi-kro-ve-le",
+        "uz-Cyrl": "ди ми-кро-ве-ле",
+        "ru": "ди ми-кро-ве-ле"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "Das Essen von gestern wärme ich in der Mikrowelle auf.",
+        "tr": {
+          "uz": "Kechagi ovqatni mikrotoʻlqinli pechda isitaman.",
+          "uz-Cyrl": "Кечаги овқатни микротўлқинли печда иситаман.",
+          "ru": "Вчерашнюю еду разогреваю в микроволновке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-elektrogeraet",
+      "slug": "elektrogeraet",
+      "term": "das Elektrogerät",
+      "icon": "bolt",
+      "article": "das",
+      "plural": "die Elektrogeräte",
+      "tr": {
+        "uz": "elektr jihoz (maishiy texnika)",
+        "uz-Cyrl": "электр жиҳоз (маиший техника)",
+        "ru": "электроприбор"
+      },
+      "pron": {
+        "uz": "das e-lek-tro-ge-ret",
+        "uz-Cyrl": "дас э-лек-тро-ге-рет",
+        "ru": "дас э-лек-тро-ге-рет"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "Ein gebrauchtes Elektrogerät teste ich vor dem Kauf.",
+        "tr": {
+          "uz": "Ishlatilgan elektr jihozni sotib olishdan oldin sinab koʻraman.",
+          "uz-Cyrl": "Ишлатилган электр жиҳозни сотиб олишдан олдин синаб кўраман.",
+          "ru": "Подержанный электроприбор проверяю до покупки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-mehrfachsteckdose",
+      "slug": "mehrfachsteckdose",
+      "term": "die Mehrfachsteckdose",
+      "icon": "plug",
+      "article": "die",
+      "plural": "die Mehrfachsteckdosen",
+      "tr": {
+        "uz": "koʻp uyali rozetka (uzaytirgich)",
+        "uz-Cyrl": "кўп уяли розетка (узайтиргич)",
+        "ru": "многоместная розетка (удлинитель)"
+      },
+      "pron": {
+        "uz": "die mer-fax-shtek-do-ze",
+        "uz-Cyrl": "ди мер-фах-штек-до-зе",
+        "ru": "ди мер-фах-штек-до-зе"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "Eine Mehrfachsteckdose lege ich nie unter einen Teppich.",
+        "tr": {
+          "uz": "Koʻp uyali rozetkani hech qachon gilam ostiga qoʻymayman.",
+          "uz-Cyrl": "Кўп уяли розеткани ҳеч қачон гилам остига қўймайман.",
+          "ru": "Многоместную розетку никогда не кладу под ковёр."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-wandhalterung",
+      "slug": "wandhalterung",
+      "term": "die Wandhalterung",
+      "icon": "wall",
+      "article": "die",
+      "plural": "die Wandhalterungen",
+      "tr": {
+        "uz": "devorga mahkamlagich (kronshteyn)",
+        "uz-Cyrl": "деворга маҳкамлагич (кронштейн)",
+        "ru": "настенное крепление (кронштейн)"
+      },
+      "pron": {
+        "uz": "die vant-hal-te-rung",
+        "uz-Cyrl": "ди вант-хал-те-рунг",
+        "ru": "ди вант-хал-те-рунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "Den Fernseher hängen wir mit einer Wandhalterung auf.",
+        "tr": {
+          "uz": "Televizorni devorga mahkamlagich bilan osamiz.",
+          "uz-Cyrl": "Телевизорни деворга маҳкамлагич билан осамиз.",
+          "ru": "Телевизор вешаем на настенное крепление."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-mehrfachsteckdosen-nie-hintereinander-stecken",
+      "slug": "mehrfachsteckdosen-nie-hintereinander-stecken",
+      "term": "Mehrfachsteckdosen nie hintereinander stecken!",
+      "icon": "alert-octagon",
+      "tr": {
+        "uz": "Koʻp uyali rozetkalarni hech qachon bir-biriga ulamang!",
+        "uz-Cyrl": "Кўп уяли розеткаларни ҳеч қачон бир-бирига уламанг!",
+        "ru": "Никогда не включайте удлинители один в другой!"
+      },
+      "pron": {
+        "uz": "mer-fax-shtek-do-zen ni hin-ter-ay-nan-der shte-ken!",
+        "uz-Cyrl": "мер-фах-штек-до-зен ни хин-тер-ай-нан-дер ште-кен!",
+        "ru": "мер-фах-штек-до-зен ни хин-тер-ай-нан-дер ште-кен!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "Sonst kann das Kabel zu heiß werden.",
+        "tr": {
+          "uz": "Aks holda sim juda qizib ketishi mumkin.",
+          "uz-Cyrl": "Акс ҳолда сим жуда қизиб кетиши мумкин.",
+          "ru": "Иначе кабель может перегреться."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-uy-jihozlash-schwere-schraenke-an-der-wand-befestigen",
+      "slug": "schwere-schraenke-an-der-wand-befestigen",
+      "term": "Schwere Schränke an der Wand befestigen!",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Ogʻir shkaflarni devorga mahkamlang!",
+        "uz-Cyrl": "Оғир шкафларни деворга маҳкамланг!",
+        "ru": "Тяжёлые шкафы крепите к стене!"
+      },
+      "pron": {
+        "uz": "shve-re shren-ke an der vant be-fes-ti-gen!",
+        "uz-Cyrl": "шве-ре шрен-ке ан дер вант бе-фес-ти-ген!",
+        "ru": "шве-ре шрен-ке ан дер вант бе-фес-ти-ген!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "uy-jihozlash",
+      "example": {
+        "term": "So kann der Schrank nicht auf ein Kind kippen.",
+        "tr": {
+          "uz": "Shunda shkaf bolaning ustiga agʻdarilmaydi.",
+          "uz-Cyrl": "Шунда шкаф боланинг устига ағдарилмайди.",
+          "ru": "Тогда шкаф не опрокинется на ребёнка."
         }
       },
       "safety": true,
