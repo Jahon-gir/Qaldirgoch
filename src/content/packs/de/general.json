@@ -7316,6 +7316,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Schau mal, diesen USB-Stick habe ich heute Morgen auf dem Parkplatz gefunden.",
+            "tr": {
+              "uz": "Qara, bu fleshkani bugun ertalab avtoturargohda topib oldim.",
+              "uz-Cyrl": "Қара, бу флешкани бугун эрталаб автотураргоҳда топиб олдим.",
+              "ru": "Смотри, эту флешку я сегодня утром нашёл на парковке."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Auf dem Parkplatz? Und was ist da drauf?",
+            "tr": {
+              "uz": "Avtoturargohdami? Ichida nima bor ekan?",
+              "uz-Cyrl": "Автотураргоҳдами? Ичида нима бор экан?",
+              "ru": "На парковке? А что на ней?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Keine Ahnung. Soll ich ihn mal in meinen Computer stecken?",
+            "tr": {
+              "uz": "Bilmadim. Kompyuterimga ulab koʻraymi?",
+              "uz-Cyrl": "Билмадим. Компьютеримга улаб кўрайми?",
+              "ru": "Понятия не имею. Может, вставить её в мой компьютер?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, steck keinen fremden USB-Stick ein. Darauf kann Schadsoftware sein.",
+            "tr": {
+              "uz": "Yoʻq, begona fleshkani ulama. Unda zararli dastur boʻlishi mumkin.",
+              "uz-Cyrl": "Йўқ, бегона флешкани улама. Унда зарарли дастур бўлиши мумкин.",
+              "ru": "Нет, не вставляй чужую флешку. На ней может быть вредоносная программа."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Oh, das wusste ich nicht. Aber wem soll ich ihn dann geben?",
+            "tr": {
+              "uz": "Voy, buni bilmagan ekanman. Unda uni kimga beray?",
+              "uz-Cyrl": "Вой, буни билмаган эканман. Унда уни кимга берай?",
+              "ru": "Ой, а я и не знал. Тогда кому её отдать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wem? Am besten dem Administrator – so, wie er ist, ohne ihn anzuschließen.",
+            "tr": {
+              "uz": "Kimgami? Eng yaxshisi, administratorga – qanday boʻlsa shunday, ulamasdan.",
+              "uz-Cyrl": "Кимгами? Энг яхшиси, администраторга – қандай бўлса шундай, уламасдан.",
+              "ru": "Кому? Лучше всего администратору – как есть, не подключая."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
