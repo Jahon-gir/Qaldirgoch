@@ -6344,6 +6344,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "sport-salomatlik",
+      "title": {
+        "uz": "Sogʻlom turmush: sport, uyqu va ish joyida dam olish",
+        "uz-Cyrl": "Соғлом турмуш: спорт, уйқу ва иш жойида дам олиш",
+        "ru": "Здоровый образ жизни: спорт, сон и отдых на работе"
+      },
+      "order": 37,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Guten Morgen! Du siehst müde aus. Was ist los?",
+            "tr": {
+              "uz": "Xayrli tong! Charchagan koʻrinasan. Nima boʻldi?",
+              "uz-Cyrl": "Хайрли тонг! Чарчаган кўринасан. Нима бўлди?",
+              "ru": "Доброе утро! У тебя усталый вид. Что случилось?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich schlafe seit Tagen schlecht, und mein Nacken ist ganz steif.",
+            "tr": {
+              "uz": "Bir necha kundan beri yomon uxlayapman, boʻynim ham qotib qolgan.",
+              "uz-Cyrl": "Бир неча кундан бери ёмон ухлаяпман, бўйним ҳам қотиб қолган.",
+              "ru": "Уже несколько дней плохо сплю, и шея совсем затекла."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Das kenne ich. Und was machst du nach Feierabend zum Ausgleich?",
+            "tr": {
+              "uz": "Tanish holat. Ishdan keyin dam olish uchun nima qilasan?",
+              "uz-Cyrl": "Таниш ҳолат. Ишдан кейин дам олиш учун нима қиласан?",
+              "ru": "Знакомо. А что ты делаешь после работы, чтобы отвлечься?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Meistens sitze ich nur auf dem Sofa und schaue aufs Handy.",
+            "tr": {
+              "uz": "Koʻpincha divanda oʻtirib, telefonga qarayman, xolos.",
+              "uz-Cyrl": "Кўпинча диванда ўтириб, телефонга қарайман, холос.",
+              "ru": "Чаще всего просто сижу на диване и смотрю в телефон."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Komm doch donnerstags mit zum Betriebssport. Und frag wegen deines Nackens mal den Betriebsarzt.",
+            "tr": {
+              "uz": "Payshanba kunlari korxona sportiga birga yur. Boʻyning haqida korxona shifokoridan ham soʻrab koʻr.",
+              "uz-Cyrl": "Пайшанба кунлари корхона спортига бирга юр. Бўйнинг ҳақида корхона шифокоридан ҳам сўраб кўр.",
+              "ru": "Приходи по четвергам на корпоративный спорт. И спроси врача предприятия насчёт шеи."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Zum Betriebsarzt? Gute Idee, dann frage ich morgen gleich nach einem Termin.",
+            "tr": {
+              "uz": "Korxona shifokorigami? Yaxshi fikr, unda ertaga darhol qabul vaqtini soʻrayman.",
+              "uz-Cyrl": "Корхона шифокоригами? Яхши фикр, унда эртага дарҳол қабул вақтини сўрайман.",
+              "ru": "К врачу предприятия? Хорошая идея, тогда завтра же спрошу про запись."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -29518,6 +29611,658 @@
       "safety": true,
       "status": "review",
       "source": "Claude yozdi (2026-11-21); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-gesundheit",
+      "slug": "gesundheit",
+      "term": "die Gesundheit",
+      "icon": "heartbeat",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "salomatlik, sogʻliq",
+        "uz-Cyrl": "саломатлик, соғлиқ",
+        "ru": "здоровье"
+      },
+      "pron": {
+        "uz": "die ge-zunt-hayt",
+        "uz-Cyrl": "ди ге-зунт-хайт",
+        "ru": "ди ге-зунт-хайт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Für meine Gesundheit gehe ich jeden Tag zu Fuß zur Arbeit.",
+        "tr": {
+          "uz": "Salomatligim uchun har kuni ishga piyoda boraman.",
+          "uz-Cyrl": "Саломатлигим учун ҳар куни ишга пиёда бораман.",
+          "ru": "Ради здоровья я каждый день хожу на работу пешком."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-bewegung",
+      "slug": "bewegung",
+      "term": "die Bewegung",
+      "icon": "walk",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "harakat (jismoniy faollik)",
+        "uz-Cyrl": "ҳаракат (жисмоний фаоллик)",
+        "ru": "движение (физическая активность)"
+      },
+      "pron": {
+        "uz": "die be-ve-gung",
+        "uz-Cyrl": "ди бе-ве-гунг",
+        "ru": "ди бе-ве-гунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Nach einem langen Tag im Büro fehlt mir die Bewegung.",
+        "tr": {
+          "uz": "Ofisdagi uzun kundan keyin menga harakat yetishmaydi.",
+          "uz-Cyrl": "Офисдаги узун кундан кейин менга ҳаракат етишмайди.",
+          "ru": "После долгого дня в офисе мне не хватает движения."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-sport",
+      "slug": "sport",
+      "term": "der Sport",
+      "icon": "barbell",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "sport",
+        "uz-Cyrl": "спорт",
+        "ru": "спорт"
+      },
+      "pron": {
+        "uz": "der shport",
+        "uz-Cyrl": "дер шпорт",
+        "ru": "дер шпорт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Am Wochenende mache ich gern Sport mit Freunden.",
+        "tr": {
+          "uz": "Dam olish kunlari doʻstlar bilan sport bilan shugʻullanishni yaxshi koʻraman.",
+          "uz-Cyrl": "Дам олиш кунлари дўстлар билан спорт билан шуғулланишни яхши кўраман.",
+          "ru": "По выходным люблю заниматься спортом с друзьями."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-erholung",
+      "slug": "erholung",
+      "term": "die Erholung",
+      "icon": "armchair",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "dam olish (kuch toʻplash)",
+        "uz-Cyrl": "дам олиш (куч тўплаш)",
+        "ru": "отдых (восстановление сил)"
+      },
+      "pron": {
+        "uz": "die er-ho-lung",
+        "uz-Cyrl": "ди эр-хо-лунг",
+        "ru": "ди эр-хо-лунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Nach der Nachtschicht brauche ich genug Erholung.",
+        "tr": {
+          "uz": "Tungi smenadan keyin menga yetarlicha dam olish kerak.",
+          "uz-Cyrl": "Тунги сменадан кейин менга етарлича дам олиш керак.",
+          "ru": "После ночной смены мне нужно достаточно отдыха."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-stress",
+      "slug": "stress",
+      "term": "der Stress",
+      "icon": "bolt",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "stress, ruhiy zoʻriqish",
+        "uz-Cyrl": "стресс, руҳий зўриқиш",
+        "ru": "стресс"
+      },
+      "pron": {
+        "uz": "der shtres",
+        "uz-Cyrl": "дер штрес",
+        "ru": "дер штрес"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Bei viel Stress hilft mir ein Spaziergang am Abend.",
+        "tr": {
+          "uz": "Stress koʻp boʻlganda kechqurun sayr qilish menga yordam beradi.",
+          "uz-Cyrl": "Стресс кўп бўлганда кечқурун сайр қилиш менга ёрдам беради.",
+          "ru": "При сильном стрессе мне помогает вечерняя прогулка."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-ausschlafen",
+      "slug": "ausschlafen",
+      "term": "ausschlafen",
+      "icon": "zzz",
+      "tr": {
+        "uz": "toʻyib uxlamoq",
+        "uz-Cyrl": "тўйиб ухламоқ",
+        "ru": "выспаться"
+      },
+      "pron": {
+        "uz": "aus-shla-fen",
+        "uz-Cyrl": "аус-шла-фен",
+        "ru": "аус-шла-фен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Am freien Tag will ich endlich mal ausschlafen.",
+        "tr": {
+          "uz": "Dam olish kunida nihoyat toʻyib uxlamoqchiman.",
+          "uz-Cyrl": "Дам олиш кунида ниҳоят тўйиб ухламоқчиман.",
+          "ru": "В выходной хочу наконец выспаться."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-haltung",
+      "slug": "haltung",
+      "term": "die Haltung",
+      "icon": "user",
+      "article": "die",
+      "plural": "die Haltungen",
+      "tr": {
+        "uz": "qaddi-qomat (oʻtirish yoki turish holati)",
+        "uz-Cyrl": "қадди-қомат (ўтириш ёки туриш ҳолати)",
+        "ru": "осанка (положение тела)"
+      },
+      "pron": {
+        "uz": "die hal-tung",
+        "uz-Cyrl": "ди хал-тунг",
+        "ru": "ди хал-тунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Achte beim Sitzen am Computer auf eine gerade Haltung.",
+        "tr": {
+          "uz": "Kompyuterda oʻtirganda qaddingni tik tutishga eʼtibor ber.",
+          "uz-Cyrl": "Компьютерда ўтирганда қаддингни тик тутишга эътибор бер.",
+          "ru": "Следи за прямой осанкой, когда сидишь за компьютером."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-dehnuebung",
+      "slug": "dehnuebung",
+      "term": "die Dehnübung",
+      "icon": "stretching",
+      "article": "die",
+      "plural": "die Dehnübungen",
+      "tr": {
+        "uz": "choʻzilish mashqi",
+        "uz-Cyrl": "чўзилиш машқи",
+        "ru": "упражнение на растяжку"
+      },
+      "pron": {
+        "uz": "die den-yu-bung",
+        "uz-Cyrl": "ди ден-ю-бунг",
+        "ru": "ди ден-ю-бунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Vor der Schicht mache ich ein paar Dehnübungen.",
+        "tr": {
+          "uz": "Smenadan oldin bir nechta choʻzilish mashqlarini bajaraman.",
+          "uz-Cyrl": "Сменадан олдин бир нечта чўзилиш машқларини бажараман.",
+          "ru": "Перед сменой делаю несколько упражнений на растяжку."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-bewegungspause",
+      "slug": "bewegungspause",
+      "term": "die Bewegungspause",
+      "icon": "clock",
+      "article": "die",
+      "plural": "die Bewegungspausen",
+      "tr": {
+        "uz": "harakat tanaffusi (qisqa yurib kelish)",
+        "uz-Cyrl": "ҳаракат танаффуси (қисқа юриб келиш)",
+        "ru": "перерыв на движение (короткая разминка)"
+      },
+      "pron": {
+        "uz": "die be-ve-gungs-pau-ze",
+        "uz-Cyrl": "ди бе-ве-гунгс-пау-зе",
+        "ru": "ди бе-ве-гунгс-пау-зе"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Zwischendurch mache ich eine kurze Bewegungspause und gehe ein paar Schritte.",
+        "tr": {
+          "uz": "Ish orasida qisqa harakat tanaffusi qilib, biroz yurib kelaman.",
+          "uz-Cyrl": "Иш орасида қисқа ҳаракат танаффуси қилиб, бироз юриб келаман.",
+          "ru": "Время от времени делаю короткий перерыв на движение и немного хожу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-nacken",
+      "slug": "nacken",
+      "term": "der Nacken",
+      "icon": "user",
+      "article": "der",
+      "plural": "die Nacken",
+      "tr": {
+        "uz": "boʻyin (orqa tomoni), ensa",
+        "uz-Cyrl": "бўйин (орқа томони), энса",
+        "ru": "шея (затылок)"
+      },
+      "pron": {
+        "uz": "der na-ken",
+        "uz-Cyrl": "дер на-кен",
+        "ru": "дер на-кен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Nach dem langen Tag am Computer ist mein Nacken ganz steif.",
+        "tr": {
+          "uz": "Kompyuter oldidagi uzun kundan keyin boʻynim qotib qoldi.",
+          "uz-Cyrl": "Компьютер олдидаги узун кундан кейин бўйним қотиб қолди.",
+          "ru": "После долгого дня за компьютером у меня совсем затекла шея."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-joggen",
+      "slug": "joggen",
+      "term": "joggen",
+      "icon": "run",
+      "tr": {
+        "uz": "yugurmoq (sekin, sport uchun)",
+        "uz-Cyrl": "югурмоқ (секин, спорт учун)",
+        "ru": "бегать трусцой"
+      },
+      "pron": {
+        "uz": "djo-gen",
+        "uz-Cyrl": "джо-ген",
+        "ru": "джо-ген"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Morgens gehe ich vor der Arbeit im Park joggen.",
+        "tr": {
+          "uz": "Ertalab ishdan oldin bogʻda yugurgani boraman.",
+          "uz-Cyrl": "Эрталаб ишдан олдин боғда югургани бораман.",
+          "ru": "По утрам перед работой бегаю в парке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-ich-brauche-eine-kurze-pause",
+      "slug": "ich-brauche-eine-kurze-pause",
+      "term": "Ich brauche eine kurze Pause.",
+      "icon": "clock",
+      "tr": {
+        "uz": "Menga qisqa tanaffus kerak.",
+        "uz-Cyrl": "Менга қисқа танаффус керак.",
+        "ru": "Мне нужен короткий перерыв."
+      },
+      "pron": {
+        "uz": "ix brau-xe ay-ne kur-tse pau-ze",
+        "uz-Cyrl": "их брау-хе ай-не кур-це пау-зе",
+        "ru": "их брау-хе ай-не кур-це пау-зе"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Ich bin ganz müde – können wir kurz aufhören?",
+        "tr": {
+          "uz": "Juda charchadim – biroz toʻxtab tursak boʻladimi?",
+          "uz-Cyrl": "Жуда чарчадим – бироз тўхтаб турсак бўладими?",
+          "ru": "Я совсем без сил – можно ненадолго остановиться?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-betriebssport",
+      "slug": "betriebssport",
+      "term": "der Betriebssport",
+      "icon": "ball-football",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "korxona sporti (hamkasblar bilan sport)",
+        "uz-Cyrl": "корхона спорти (ҳамкасблар билан спорт)",
+        "ru": "корпоративный спорт"
+      },
+      "pron": {
+        "uz": "der be-trips-shport",
+        "uz-Cyrl": "дер бе-трипс-шпорт",
+        "ru": "дер бе-трипс-шпорт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Beim Betriebssport spielen wir donnerstags Fußball.",
+        "tr": {
+          "uz": "Korxona sportida payshanba kunlari futbol oʻynaymiz.",
+          "uz-Cyrl": "Корхона спортида пайшанба кунлари футбол ўйнаймиз.",
+          "ru": "На корпоративном спорте мы по четвергам играем в футбол."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-rueckenschule",
+      "slug": "rueckenschule",
+      "term": "die Rückenschule",
+      "icon": "yoga",
+      "article": "die",
+      "plural": "die Rückenschulen",
+      "tr": {
+        "uz": "bel va orqa uchun mashq kursi",
+        "uz-Cyrl": "бел ва орқа учун машқ курси",
+        "ru": "курс упражнений для спины"
+      },
+      "pron": {
+        "uz": "die ryu-ken-shu-le",
+        "uz-Cyrl": "ди рю-кен-шу-ле",
+        "ru": "ди рю-кен-шу-ле"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "In der Rückenschule lerne ich, wie ich richtig hebe und sitze.",
+        "tr": {
+          "uz": "Bel uchun mashq kursida qanday toʻgʻri koʻtarish va oʻtirishni oʻrganaman.",
+          "uz-Cyrl": "Бел учун машқ курсида қандай тўғри кўтариш ва ўтиришни ўрганаман.",
+          "ru": "На курсе для спины я учусь правильно поднимать тяжести и сидеть."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-ernaehrung",
+      "slug": "ernaehrung",
+      "term": "die Ernährung",
+      "icon": "salad",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "ovqatlanish",
+        "uz-Cyrl": "овқатланиш",
+        "ru": "питание"
+      },
+      "pron": {
+        "uz": "die er-ne-rung",
+        "uz-Cyrl": "ди эр-не-рунг",
+        "ru": "ди эр-не-рунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Bei Schichtarbeit ist eine regelmäßige Ernährung nicht immer leicht.",
+        "tr": {
+          "uz": "Smenali ishda muntazam ovqatlanish har doim ham oson emas.",
+          "uz-Cyrl": "Сменали ишда мунтазам овқатланиш ҳар доим ҳам осон эмас.",
+          "ru": "При сменной работе регулярно питаться не всегда легко."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-pausenbrot",
+      "slug": "pausenbrot",
+      "term": "das Pausenbrot",
+      "icon": "bread",
+      "article": "das",
+      "plural": "die Pausenbrote",
+      "tr": {
+        "uz": "tanaffus uchun olib kelingan buterbrod",
+        "uz-Cyrl": "танаффус учун олиб келинган бутерброд",
+        "ru": "бутерброд на перерыв"
+      },
+      "pron": {
+        "uz": "das pau-zen-brot",
+        "uz-Cyrl": "дас пау-зен-брот",
+        "ru": "дас пау-зен-брот"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Mein Pausenbrot mache ich mir schon am Abend.",
+        "tr": {
+          "uz": "Tanaffus uchun buterbrodimni kechqurunoq tayyorlab qoʻyaman.",
+          "uz-Cyrl": "Танаффус учун бутербродимни кечқуруноқ тайёрлаб қўяман.",
+          "ru": "Бутерброд на перерыв готовлю себе ещё с вечера."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-wasserflasche",
+      "slug": "wasserflasche",
+      "term": "die Wasserflasche",
+      "icon": "bottle",
+      "article": "die",
+      "plural": "die Wasserflaschen",
+      "tr": {
+        "uz": "suv idishi (shisha)",
+        "uz-Cyrl": "сув идиши (шиша)",
+        "ru": "бутылка для воды"
+      },
+      "pron": {
+        "uz": "die va-ser-fla-she",
+        "uz-Cyrl": "ди ва-сер-фла-ше",
+        "ru": "ди ва-сер-фла-ше"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Meine Wasserflasche steht immer neben mir am Arbeitsplatz.",
+        "tr": {
+          "uz": "Suv idishim har doim ish joyimda yonimda turadi.",
+          "uz-Cyrl": "Сув идишим ҳар доим иш жойимда ёнимда туради.",
+          "ru": "Моя бутылка с водой всегда стоит рядом на рабочем месте."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-betriebsarzt",
+      "slug": "betriebsarzt",
+      "term": "der Betriebsarzt",
+      "icon": "stethoscope",
+      "article": "der",
+      "plural": "die Betriebsärzte",
+      "tr": {
+        "uz": "korxona shifokori",
+        "uz-Cyrl": "корхона шифокори",
+        "ru": "врач предприятия"
+      },
+      "pron": {
+        "uz": "der be-trips-artst",
+        "uz-Cyrl": "дер бе-трипс-арцт",
+        "ru": "дер бе-трипс-арцт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "In unserer Firma kann ich mit Fragen zu Arbeit und Gesundheit zum Betriebsarzt gehen.",
+        "tr": {
+          "uz": "Firmamizda ish va salomatlik boʻyicha savollar bilan korxona shifokoriga borishim mumkin.",
+          "uz-Cyrl": "Фирмамизда иш ва саломатлик бўйича саволлар билан корхона шифокорига боришим мумкин.",
+          "ru": "В нашей фирме с вопросами о работе и здоровье можно обратиться к врачу предприятия."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-ueberlastung",
+      "slug": "ueberlastung",
+      "term": "die Überlastung",
+      "icon": "alert-triangle",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "haddan tashqari charchash (ish yuki koʻpligi)",
+        "uz-Cyrl": "ҳаддан ташқари чарчаш (иш юки кўплиги)",
+        "ru": "перегрузка"
+      },
+      "pron": {
+        "uz": "die yu-ber-las-tung",
+        "uz-Cyrl": "ди ю-бер-лас-тунг",
+        "ru": "ди ю-бер-лас-тунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Bei Überlastung sollten Sie früh mit Ihrer Führungskraft sprechen.",
+        "tr": {
+          "uz": "Ish yuki haddan oshsa, rahbaringiz bilan erta gaplashing.",
+          "uz-Cyrl": "Иш юки ҳаддан ошса, раҳбарингиз билан эрта гаплашинг.",
+          "ru": "При перегрузке стоит заранее поговорить с руководителем."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-sport-salomatlik-heben-sie-schwere-lasten-aus-den-knien",
+      "slug": "heben-sie-schwere-lasten-aus-den-knien",
+      "term": "Heben Sie schwere Lasten aus den Knien!",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Ogʻir yukni tizzalarni bukib koʻtaring!",
+        "uz-Cyrl": "Оғир юкни тиззаларни букиб кўтаринг!",
+        "ru": "Поднимайте тяжести, сгибая колени!"
+      },
+      "pron": {
+        "uz": "he-ben zi shve-re las-ten aus den kni-en!",
+        "uz-Cyrl": "хе-бен зи шве-ре лас-тен аус ден кни-ен!",
+        "ru": "хе-бен зи шве-ре лас-тен аус ден кни-ен!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "sport-salomatlik",
+      "example": {
+        "term": "Halten Sie den Rücken dabei gerade und die Last nah am Körper.",
+        "tr": {
+          "uz": "Bunda belingizni tik, yukni esa tanangizga yaqin tuting.",
+          "uz-Cyrl": "Бунда белингизни тик, юкни эса танангизга яқин тутинг.",
+          "ru": "Держите при этом спину прямо, а груз — близко к телу."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
     }
   ]
 }
