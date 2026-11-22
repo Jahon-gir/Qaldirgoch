@@ -6520,6 +6520,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "dorixona",
+      "title": {
+        "uz": "Dorixonada: retseptsiz dori, maslahat va navbatchi dorixona",
+        "uz-Cyrl": "Дорихонада: рецептсиз дори, маслаҳат ва навбатчи дорихона",
+        "ru": "В аптеке: лекарства без рецепта, консультация и дежурная аптека"
+      },
+      "order": 38,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Farmatsevt",
+              "uz-Cyrl": "Фармацевт",
+              "ru": "Фармацевт"
+            },
+            "de": "Guten Tag! Was kann ich für Sie tun?",
+            "tr": {
+              "uz": "Assalomu alaykum! Sizga qanday yordam bera olaman?",
+              "uz-Cyrl": "Ассалому алайкум! Сизга қандай ёрдам бера оламан?",
+              "ru": "Здравствуйте! Чем могу помочь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich brauche etwas gegen Halsschmerzen. Mein Hals tut seit gestern weh.",
+            "tr": {
+              "uz": "Menga tomoq ogʻrigʻiga qarshi biror narsa kerak. Kechadan beri tomogʻim ogʻriyapti.",
+              "uz-Cyrl": "Менга томоқ оғриғига қарши бирор нарса керак. Кечадан бери томоғим оғрияпти.",
+              "ru": "Мне нужно что-нибудь от боли в горле. Со вчерашнего дня болит горло."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Farmatsevt",
+              "uz-Cyrl": "Фармацевт",
+              "ru": "Фармацевт"
+            },
+            "de": "Haben Sie auch Fieber, oder nehmen Sie schon andere Medikamente?",
+            "tr": {
+              "uz": "Isitmangiz ham bormi yoki boshqa dorilar ichyapsizmi?",
+              "uz-Cyrl": "Иситмангиз ҳам борми ёки бошқа дорилар ичяпсизми?",
+              "ru": "У вас есть температура, или вы уже принимаете другие лекарства?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Kein Fieber, aber ich nehme jeden Tag Tabletten vom Hausarzt. Hier ist mein Medikationsplan.",
+            "tr": {
+              "uz": "Isitma yoʻq, lekin har kuni oilaviy shifokor bergan tabletkalarni ichaman. Mana, dori ichish rejam.",
+              "uz-Cyrl": "Иситма йўқ, лекин ҳар куни оилавий шифокор берган таблеткаларни ичаман. Мана, дори ичиш режам.",
+              "ru": "Температуры нет, но каждый день принимаю таблетки от семейного врача. Вот мой план приёма лекарств."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Farmatsevt",
+              "uz-Cyrl": "Фармацевт",
+              "ru": "Фармацевт"
+            },
+            "de": "Danke. Diese Lutschtabletten passen zu Ihren Medikamenten und sind rezeptfrei. Wenn es nicht bald besser wird, gehen Sie bitte zum Arzt.",
+            "tr": {
+              "uz": "Rahmat. Bu soʻriladigan tabletkalar dorilaringizga mos keladi va retseptsiz beriladi. Agar tez orada yaxshilanmasa, iltimos, shifokorga boring.",
+              "uz-Cyrl": "Раҳмат. Бу сўриладиган таблеткалар дориларингизга мос келади ва рецептсиз берилади. Агар тез орада яхшиланмаса, илтимос, шифокорга боринг.",
+              "ru": "Спасибо. Эти таблетки для рассасывания подходят к вашим лекарствам и отпускаются без рецепта. Если скоро не станет лучше, пожалуйста, сходите к врачу."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ohne Rezept? Prima, dann nehme ich eine Packung – und wenn es nicht besser wird, gehe ich zum Arzt.",
+            "tr": {
+              "uz": "Retseptsizmi? Zoʻr, unda bir quti olaman – yaxshilanmasa, shifokorga boraman.",
+              "uz-Cyrl": "Рецептсизми? Зўр, унда бир қути оламан – яхшиланмаса, шифокорга бораман.",
+              "ru": "Без рецепта? Отлично, тогда возьму одну упаковку – а если не станет лучше, схожу к врачу."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -30341,6 +30434,652 @@
           "uz": "Bunda belingizni tik, yukni esa tanangizga yaqin tuting.",
           "uz-Cyrl": "Бунда белингизни тик, юкни эса танангизга яқин тутинг.",
           "ru": "Держите при этом спину прямо, а груз — близко к телу."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-apothekerin",
+      "slug": "apothekerin",
+      "term": "die Apothekerin",
+      "icon": "medical-cross",
+      "article": "die",
+      "plural": "die Apothekerinnen",
+      "tr": {
+        "uz": "farmatsevt (ayol), dorixonachi",
+        "uz-Cyrl": "фармацевт (аёл), дорихоначи",
+        "ru": "фармацевт (женщина), аптекарь"
+      },
+      "pron": {
+        "uz": "die a-po-te-ke-rin",
+        "uz-Cyrl": "ди а-по-те-ке-рин",
+        "ru": "ди а-по-те-ке-рин"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Die Apothekerin erklärt mir genau, wie ich das Mittel nehme.",
+        "tr": {
+          "uz": "Farmatsevt menga dorini qanday ichishni aniq tushuntiradi.",
+          "uz-Cyrl": "Фармацевт менга дорини қандай ичишни аниқ тушунтиради.",
+          "ru": "Фармацевт подробно объясняет мне, как принимать средство."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-rezeptfrei",
+      "slug": "rezeptfrei",
+      "term": "rezeptfrei",
+      "icon": "shopping-bag",
+      "tr": {
+        "uz": "retseptsiz (sotiladigan)",
+        "uz-Cyrl": "рецептсиз (сотиладиган)",
+        "ru": "без рецепта (отпускаемый)"
+      },
+      "pron": {
+        "uz": "re-tsept-fray",
+        "uz-Cyrl": "ре-цепт-фрай",
+        "ru": "ре-цепт-фрай"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Dieses Mittel ist rezeptfrei, ich bekomme es sofort.",
+        "tr": {
+          "uz": "Bu dori retseptsiz, uni darhol olaman.",
+          "uz-Cyrl": "Бу дори рецептсиз, уни дарҳол оламан.",
+          "ru": "Это средство без рецепта, мне его дают сразу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-verschreibungspflichtig",
+      "slug": "verschreibungspflichtig",
+      "term": "verschreibungspflichtig",
+      "icon": "lock",
+      "tr": {
+        "uz": "faqat retsept bilan beriladigan",
+        "uz-Cyrl": "фақат рецепт билан бериладиган",
+        "ru": "отпускаемый только по рецепту"
+      },
+      "pron": {
+        "uz": "fer-shray-bungs-pflix-tix",
+        "uz-Cyrl": "фер-шрай-бунгс-пфлих-тих",
+        "ru": "фер-шрай-бунгс-пфлих-тих"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Dieses Medikament ist verschreibungspflichtig – ich brauche ein Rezept.",
+        "tr": {
+          "uz": "Bu dori faqat retsept bilan beriladi – menga retsept kerak.",
+          "uz-Cyrl": "Бу дори фақат рецепт билан берилади – менга рецепт керак.",
+          "ru": "Это лекарство отпускается только по рецепту – мне нужен рецепт."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-e-rezept",
+      "slug": "e-rezept",
+      "term": "das E-Rezept",
+      "icon": "prescription",
+      "article": "das",
+      "plural": "die E-Rezepte",
+      "tr": {
+        "uz": "elektron retsept",
+        "uz-Cyrl": "электрон рецепт",
+        "ru": "электронный рецепт"
+      },
+      "pron": {
+        "uz": "das e-re-tsept",
+        "uz-Cyrl": "дас е-ре-цепт",
+        "ru": "дас е-ре-цепт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Die Ärztin hat mir heute ein E-Rezept ausgestellt.",
+        "tr": {
+          "uz": "Shifokor bugun menga elektron retsept yozib berdi.",
+          "uz-Cyrl": "Шифокор бугун менга электрон рецепт ёзиб берди.",
+          "ru": "Врач сегодня выписала мне электронный рецепт."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-zuzahlung",
+      "slug": "zuzahlung",
+      "term": "die Zuzahlung",
+      "icon": "cash",
+      "article": "die",
+      "plural": "die Zuzahlungen",
+      "tr": {
+        "uz": "qoʻshimcha toʻlov (dori uchun oʻzingiz toʻlaydigan qism)",
+        "uz-Cyrl": "қўшимча тўлов (дори учун ўзингиз тўлайдиган қисм)",
+        "ru": "доплата (часть стоимости лекарства, которую платите сами)"
+      },
+      "pron": {
+        "uz": "die tsu-tsa-lung",
+        "uz-Cyrl": "ди цу-ца-лунг",
+        "ru": "ди цу-ца-лунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "An der Kasse fragt die Apothekerin nach der Zuzahlung.",
+        "tr": {
+          "uz": "Kassada farmatsevt qoʻshimcha toʻlovni soʻraydi.",
+          "uz-Cyrl": "Кассада фармацевт қўшимча тўловни сўрайди.",
+          "ru": "На кассе фармацевт просит доплату."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-lutschtablette",
+      "slug": "lutschtablette",
+      "term": "die Lutschtablette",
+      "icon": "pill",
+      "article": "die",
+      "plural": "die Lutschtabletten",
+      "tr": {
+        "uz": "soʻriladigan tabletka",
+        "uz-Cyrl": "сўриладиган таблетка",
+        "ru": "таблетка для рассасывания"
+      },
+      "pron": {
+        "uz": "die luch-tab-le-te",
+        "uz-Cyrl": "ди луч-таб-ле-те",
+        "ru": "ди луч-таб-ле-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Mein Hals kratzt, deshalb nehme ich eine Lutschtablette.",
+        "tr": {
+          "uz": "Tomogʻim qichiyapti, shuning uchun soʻriladigan tabletka olaman.",
+          "uz-Cyrl": "Томоғим қичияпти, шунинг учун сўриладиган таблетка оламан.",
+          "ru": "У меня першит в горле, поэтому беру таблетку для рассасывания."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-packungsbeilage",
+      "slug": "packungsbeilage",
+      "term": "die Packungsbeilage",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Packungsbeilagen",
+      "tr": {
+        "uz": "dori qutisidagi yoʻriqnoma",
+        "uz-Cyrl": "дори қутисидаги йўриқнома",
+        "ru": "листок-вкладыш (инструкция в упаковке)"
+      },
+      "pron": {
+        "uz": "die pa-kungs-bay-la-ge",
+        "uz-Cyrl": "ди па-кунгс-бай-ла-ге",
+        "ru": "ди па-кунгс-бай-ла-ге"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Vor der Einnahme lese ich die Packungsbeilage genau.",
+        "tr": {
+          "uz": "Ichishdan oldin yoʻriqnomani diqqat bilan oʻqiyman.",
+          "uz-Cyrl": "Ичишдан олдин йўриқномани диққат билан ўқийман.",
+          "ru": "Перед приёмом внимательно читаю инструкцию."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-wirkstoff",
+      "slug": "wirkstoff",
+      "term": "der Wirkstoff",
+      "icon": "droplet",
+      "article": "der",
+      "plural": "die Wirkstoffe",
+      "tr": {
+        "uz": "taʼsir qiluvchi modda",
+        "uz-Cyrl": "таъсир қилувчи модда",
+        "ru": "действующее вещество"
+      },
+      "pron": {
+        "uz": "der virk-shtof",
+        "uz-Cyrl": "дер вирк-штоф",
+        "ru": "дер вирк-штоф"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Diese zwei Mittel haben denselben Wirkstoff.",
+        "tr": {
+          "uz": "Bu ikki dorida taʼsir qiluvchi modda bir xil.",
+          "uz-Cyrl": "Бу икки дорида таъсир қилувчи модда бир хил.",
+          "ru": "У этих двух средств одно и то же действующее вещество."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-hustensaft",
+      "slug": "hustensaft",
+      "term": "der Hustensaft",
+      "icon": "medicine-syrup",
+      "article": "der",
+      "plural": "die Hustensäfte",
+      "tr": {
+        "uz": "yoʻtal siropi",
+        "uz-Cyrl": "йўтал сиропи",
+        "ru": "сироп от кашля"
+      },
+      "pron": {
+        "uz": "der hus-ten-zaft",
+        "uz-Cyrl": "дер хус-тен-зафт",
+        "ru": "дер хус-тен-зафт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Haben Sie einen Hustensaft ohne Alkohol?",
+        "tr": {
+          "uz": "Sizda alkogolsiz yoʻtal siropi bormi?",
+          "uz-Cyrl": "Сизда алкоголсиз йўтал сиропи борми?",
+          "ru": "У вас есть сироп от кашля без спирта?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-nasenspray",
+      "slug": "nasenspray",
+      "term": "das Nasenspray",
+      "icon": "spray",
+      "article": "das",
+      "plural": "die Nasensprays",
+      "tr": {
+        "uz": "burun uchun sprey",
+        "uz-Cyrl": "бурун учун спрей",
+        "ru": "спрей для носа"
+      },
+      "pron": {
+        "uz": "das na-zen-shprey",
+        "uz-Cyrl": "дас на-зен-шпрей",
+        "ru": "дас на-зен-шпрей"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Bei Schnupfen kaufe ich ein Nasenspray in der Apotheke.",
+        "tr": {
+          "uz": "Tumov boʻlganda dorixonadan burun spreyi olaman.",
+          "uz-Cyrl": "Тумов бўлганда дорихонадан бурун спрейи оламан.",
+          "ru": "При насморке покупаю в аптеке спрей для носа."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-ich-brauche-etwas-gegen-halsschmerzen",
+      "slug": "ich-brauche-etwas-gegen-halsschmerzen",
+      "term": "Ich brauche etwas gegen Halsschmerzen.",
+      "icon": "message-circle",
+      "tr": {
+        "uz": "Menga tomoq ogʻrigʻiga qarshi biror narsa kerak.",
+        "uz-Cyrl": "Менга томоқ оғриғига қарши бирор нарса керак.",
+        "ru": "Мне нужно что-нибудь от боли в горле."
+      },
+      "pron": {
+        "uz": "ix brau-xe et-vas ge-gen hals-shmer-tsen.",
+        "uz-Cyrl": "их брау-хе эт-вас ге-ген хальс-шмер-цен.",
+        "ru": "их брау-хе эт-вас ге-ген хальс-шмер-цен."
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Mein Hals tut seit gestern weh.",
+        "tr": {
+          "uz": "Kechadan beri tomogʻim ogʻriyapti.",
+          "uz-Cyrl": "Кечадан бери томоғим оғрияпти.",
+          "ru": "Со вчерашнего дня болит горло."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-wie-oft-soll-ich-das-nehmen",
+      "slug": "wie-oft-soll-ich-das-nehmen",
+      "term": "Wie oft soll ich das nehmen?",
+      "icon": "help",
+      "tr": {
+        "uz": "Buni necha marta ichishim kerak?",
+        "uz-Cyrl": "Буни неча марта ичишим керак?",
+        "ru": "Как часто это нужно принимать?"
+      },
+      "pron": {
+        "uz": "vi oft zol ix das ne-men?",
+        "uz-Cyrl": "ви офт зол их дас не-мен?",
+        "ru": "ви офт зол их дас не-мен?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Die Apothekerin schreibt es mir auf die Packung.",
+        "tr": {
+          "uz": "Farmatsevt buni menga qutiga yozib beradi.",
+          "uz-Cyrl": "Фармацевт буни менга қутига ёзиб беради.",
+          "ru": "Фармацевт пишет мне это на упаковке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-notdienstapotheke",
+      "slug": "notdienstapotheke",
+      "term": "die Notdienstapotheke",
+      "icon": "moon-stars",
+      "article": "die",
+      "plural": "die Notdienstapotheken",
+      "tr": {
+        "uz": "navbatchi dorixona (kechasi va dam olish kunlari)",
+        "uz-Cyrl": "навбатчи дорихона (кечаси ва дам олиш кунлари)",
+        "ru": "дежурная аптека (ночью и в выходные)"
+      },
+      "pron": {
+        "uz": "die not-dinst-a-po-te-ke",
+        "uz-Cyrl": "ди нот-динст-а-по-те-ке",
+        "ru": "ди нот-динст-а-по-те-ке"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Nachts und am Sonntag hilft die Notdienstapotheke.",
+        "tr": {
+          "uz": "Kechasi va yakshanba kuni navbatchi dorixona yordam beradi.",
+          "uz-Cyrl": "Кечаси ва якшанба куни навбатчи дорихона ёрдам беради.",
+          "ru": "Ночью и в воскресенье помогает дежурная аптека."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-hausapotheke",
+      "slug": "hausapotheke",
+      "term": "die Hausapotheke",
+      "icon": "first-aid-kit",
+      "article": "die",
+      "plural": "die Hausapotheken",
+      "tr": {
+        "uz": "uydagi dori qutisi",
+        "uz-Cyrl": "уйдаги дори қутиси",
+        "ru": "домашняя аптечка"
+      },
+      "pron": {
+        "uz": "die haus-a-po-te-ke",
+        "uz-Cyrl": "ди хаус-а-по-те-ке",
+        "ru": "ди хаус-а-по-те-ке"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "In unserer Hausapotheke fehlen Pflaster.",
+        "tr": {
+          "uz": "Uydagi dori qutimizda plastir yoʻq.",
+          "uz-Cyrl": "Уйдаги дори қутимизда пластир йўқ.",
+          "ru": "В нашей домашней аптечке нет пластыря."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-verfallsdatum",
+      "slug": "verfallsdatum",
+      "term": "das Verfallsdatum",
+      "icon": "calendar-x",
+      "article": "das",
+      "plural": "die Verfallsdaten",
+      "tr": {
+        "uz": "yaroqlilik muddati (dori uchun)",
+        "uz-Cyrl": "яроқлилик муддати (дори учун)",
+        "ru": "срок годности (лекарства)"
+      },
+      "pron": {
+        "uz": "das fer-fals-da-tum",
+        "uz-Cyrl": "дас фер-фальс-да-тум",
+        "ru": "дас фер-фальс-да-тум"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Vor der Einnahme schaue ich immer auf das Verfallsdatum.",
+        "tr": {
+          "uz": "Ichishdan oldin doim yaroqlilik muddatiga qarayman.",
+          "uz-Cyrl": "Ичишдан олдин доим яроқлилик муддатига қарайман.",
+          "ru": "Перед приёмом всегда смотрю на срок годности."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-medikationsplan",
+      "slug": "medikationsplan",
+      "term": "der Medikationsplan",
+      "icon": "report-medical",
+      "article": "der",
+      "plural": "die Medikationspläne",
+      "tr": {
+        "uz": "dori ichish rejasi (barcha dorilar roʻyxati)",
+        "uz-Cyrl": "дори ичиш режаси (барча дорилар рўйхати)",
+        "ru": "план приёма лекарств (список всех лекарств)"
+      },
+      "pron": {
+        "uz": "der me-di-ka-tsi-ons-plan",
+        "uz-Cyrl": "дер ме-ди-ка-ци-онс-план",
+        "ru": "дер ме-ди-ка-ци-онс-план"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Auf meinem Medikationsplan stehen alle meine Medikamente.",
+        "tr": {
+          "uz": "Dori ichish rejamda barcha dorilarim yozilgan.",
+          "uz-Cyrl": "Дори ичиш режамда барча дориларим ёзилган.",
+          "ru": "В моём плане приёма записаны все мои лекарства."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-mueckenstich",
+      "slug": "mueckenstich",
+      "term": "der Mückenstich",
+      "icon": "bug",
+      "article": "der",
+      "plural": "die Mückenstiche",
+      "tr": {
+        "uz": "chivin chaqishi",
+        "uz-Cyrl": "чивин чақиши",
+        "ru": "укус комара"
+      },
+      "pron": {
+        "uz": "der myu-ken-shtix",
+        "uz-Cyrl": "дер мю-кен-штих",
+        "ru": "дер мю-кен-штих"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Gegen den Mückenstich empfiehlt die Apothekerin ein Gel.",
+        "tr": {
+          "uz": "Chivin chaqishiga qarshi farmatsevt gel tavsiya qiladi.",
+          "uz-Cyrl": "Чивин чақишига қарши фармацевт гел тавсия қилади.",
+          "ru": "От укуса комара фармацевт советует гель."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-aufbewahren",
+      "slug": "aufbewahren",
+      "term": "aufbewahren",
+      "icon": "mood-kid",
+      "tr": {
+        "uz": "saqlamoq (bir joyda asrab qoʻymoq)",
+        "uz-Cyrl": "сақламоқ (бир жойда асраб қўймоқ)",
+        "ru": "хранить"
+      },
+      "pron": {
+        "uz": "auf-be-va-ren",
+        "uz-Cyrl": "ауф-бе-ва-рен",
+        "ru": "ауф-бе-ва-рен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Medikamente muss man für Kinder unerreichbar aufbewahren.",
+        "tr": {
+          "uz": "Dorilarni bolalar yetolmaydigan joyda saqlash kerak.",
+          "uz-Cyrl": "Дориларни болалар етолмайдиган жойда сақлаш керак.",
+          "ru": "Лекарства нужно хранить в недоступном для детей месте."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-kann-ich-das-zusammen-mit-meinen-anderen-tabletten-nehmen",
+      "slug": "kann-ich-das-zusammen-mit-meinen-anderen-tabletten-nehmen",
+      "term": "Kann ich das zusammen mit meinen anderen Tabletten nehmen?",
+      "icon": "arrows-exchange",
+      "tr": {
+        "uz": "Buni boshqa tabletkalarim bilan birga ichsam boʻladimi?",
+        "uz-Cyrl": "Буни бошқа таблеткаларим билан бирга ичсам бўладими?",
+        "ru": "Можно принимать это вместе с моими другими таблетками?"
+      },
+      "pron": {
+        "uz": "kan ix das tsu-za-men mit may-nen an-de-ren tab-le-ten ne-men?",
+        "uz-Cyrl": "кан их дас цу-за-мен мит май-нен ан-де-рен таб-ле-тен не-мен?",
+        "ru": "кан их дас цу-за-мен мит май-нен ан-де-рен таб-ле-тен не-мен?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Fragen Sie das immer, bevor Sie ein neues Mittel nehmen.",
+        "tr": {
+          "uz": "Yangi dori ichishdan oldin buni doim soʻrang.",
+          "uz-Cyrl": "Янги дори ичишдан олдин буни доим сўранг.",
+          "ru": "Всегда спрашивайте об этом, прежде чем принимать новое средство."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-dorixona-abgelaufene-medikamente-nicht-mehr-einnehmen",
+      "slug": "abgelaufene-medikamente-nicht-mehr-einnehmen",
+      "term": "Abgelaufene Medikamente nicht mehr einnehmen!",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Muddati oʻtgan dorilarni boshqa ichmang!",
+        "uz-Cyrl": "Муддати ўтган дориларни бошқа ичманг!",
+        "ru": "Не принимайте просроченные лекарства!"
+      },
+      "pron": {
+        "uz": "ap-ge-lau-fe-ne me-di-ka-men-te nixt mer ayn-ne-men!",
+        "uz-Cyrl": "ап-ге-лау-фе-не ме-ди-ка-мен-те нихт мер айн-не-мен!",
+        "ru": "ап-ге-лау-фе-не ме-ди-ка-мен-те нихт мер айн-не-мен!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "dorixona",
+      "example": {
+        "term": "Das Datum steht auf der Packung.",
+        "tr": {
+          "uz": "Sana qutida yozilgan.",
+          "uz-Cyrl": "Сана қутида ёзилган.",
+          "ru": "Дата указана на упаковке."
         }
       },
       "safety": true,
