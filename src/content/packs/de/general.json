@@ -7224,6 +7224,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "kompyuter",
+      "title": {
+        "uz": "Kompyuter va ofis texnikasi: fayl, printer va onlayn uchrashuv",
+        "uz-Cyrl": "Компьютер ва офис техникаси: файл, принтер ва онлайн учрашув",
+        "ru": "Компьютер и офисная техника: файлы, принтер и онлайн-встречи"
+      },
+      "order": 42,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Hallo! Was ist los? Du schaust schon so lange auf den Bildschirm.",
+            "tr": {
+              "uz": "Salom! Nima boʻldi? Ekranga juda uzoq qarab qolding.",
+              "uz-Cyrl": "Салом! Нима бўлди? Экранга жуда узоқ қараб қолдинг.",
+              "ru": "Привет! Что случилось? Ты так долго смотришь в экран."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich muss den Dienstplan ausdrucken, aber der Drucker funktioniert nicht.",
+            "tr": {
+              "uz": "Ish jadvalini chop etishim kerak, lekin printer ishlamayapti.",
+              "uz-Cyrl": "Иш жадвалини чоп этишим керак, лекин принтер ишламаяпти.",
+              "ru": "Нужно распечатать график смен, но принтер не работает."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Oje. Hast du die Datei schon gespeichert?",
+            "tr": {
+              "uz": "Voy. Faylni saqlab qoʻydingmi?",
+              "uz-Cyrl": "Вой. Файлни сақлаб қўйдингми?",
+              "ru": "Ой. Файл уже сохранён?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, noch nicht. Wo soll ich sie denn speichern?",
+            "tr": {
+              "uz": "Yoʻq, hali yoʻq. Uni qayerga saqlashim kerak?",
+              "uz-Cyrl": "Йўқ, ҳали йўқ. Уни қаерга сақлашим керак?",
+              "ru": "Нет, ещё нет. А куда его сохранить?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "In den Ordner für unser Team. Dann druck den Plan einfach am Kopierer im Flur aus – dort musst du dich nur mit deinem Benutzerkonto einloggen.",
+            "tr": {
+              "uz": "Jamoamiz papkasiga. Keyin rejani yoʻlakdagi nusxa koʻchirish apparatida chop et – u yerda faqat oʻz akkaunting bilan tizimga kirishing kerak.",
+              "uz-Cyrl": "Жамоамиз папкасига. Кейин режани йўлакдаги нусха кўчириш аппаратида чоп эт – у ерда фақат ўз аккаунтинг билан тизимга киришинг керак.",
+              "ru": "В папку нашей команды. Потом просто распечатай план на ксероксе в коридоре – там нужно только войти под своей учётной записью."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Am Kopierer im Flur? Prima, dann drucke ich den Plan gleich dort aus.",
+            "tr": {
+              "uz": "Yoʻlakdagi apparatdami? Zoʻr, unda rejani hozir oʻsha yerda chop etaman.",
+              "uz-Cyrl": "Йўлакдаги аппаратдами? Зўр, унда режани ҳозир ўша ерда чоп этаман.",
+              "ru": "На ксероксе в коридоре? Отлично, тогда сейчас распечатаю план там."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -33643,6 +33736,650 @@
           "uz": "Imtihonni oʻzingiz topshirishingiz kerak – buni hech kim sota olmaydi.",
           "uz-Cyrl": "Имтиҳонни ўзингиз топширишингиз керак – буни ҳеч ким сота олмайди.",
           "ru": "Экзамен нужно сдать самостоятельно – это никто не может продать."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-computer",
+      "slug": "computer",
+      "term": "der Computer",
+      "icon": "device-desktop",
+      "article": "der",
+      "plural": "die Computer",
+      "tr": {
+        "uz": "kompyuter",
+        "uz-Cyrl": "компьютер",
+        "ru": "компьютер"
+      },
+      "pron": {
+        "uz": "der kom-pyu-ter",
+        "uz-Cyrl": "дер ком-пью-тер",
+        "ru": "дер ком-пью-тер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Am Ende der Schicht fahre ich den Computer herunter.",
+        "tr": {
+          "uz": "Smena oxirida kompyuterni oʻchiraman.",
+          "uz-Cyrl": "Смена охирида компьютерни ўчираман.",
+          "ru": "В конце смены выключаю компьютер."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-maus",
+      "slug": "maus",
+      "term": "die Maus",
+      "icon": "mouse",
+      "article": "die",
+      "plural": "die Mäuse",
+      "tr": {
+        "uz": "sichqoncha (kompyuter uchun)",
+        "uz-Cyrl": "сичқонча (компьютер учун)",
+        "ru": "мышь (компьютерная)"
+      },
+      "pron": {
+        "uz": "die maus",
+        "uz-Cyrl": "ди маус",
+        "ru": "ди маус"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Die Maus funktioniert nicht, vielleicht ist die Batterie leer.",
+        "tr": {
+          "uz": "Sichqoncha ishlamayapti, balki batareyasi tugagandir.",
+          "uz-Cyrl": "Сичқонча ишламаяпти, балки батареяси тугагандир.",
+          "ru": "Мышь не работает, может быть, села батарейка."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-datei",
+      "slug": "datei",
+      "term": "die Datei",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Dateien",
+      "tr": {
+        "uz": "fayl",
+        "uz-Cyrl": "файл",
+        "ru": "файл"
+      },
+      "pron": {
+        "uz": "die da-tay",
+        "uz-Cyrl": "ди да-тай",
+        "ru": "ди да-тай"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Die Datei mit dem Dienstplan finde ich nicht.",
+        "tr": {
+          "uz": "Ish jadvali yozilgan faylni topa olmayapman.",
+          "uz-Cyrl": "Иш жадвали ёзилган файлни топа олмаяпман.",
+          "ru": "Не могу найти файл с графиком смен."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-ordner",
+      "slug": "ordner",
+      "term": "der Ordner",
+      "icon": "folder",
+      "article": "der",
+      "plural": "die Ordner",
+      "tr": {
+        "uz": "papka (kompyuterda yoki qogʻoz)",
+        "uz-Cyrl": "папка (компьютерда ёки қоғоз)",
+        "ru": "папка"
+      },
+      "pron": {
+        "uz": "der ord-ner",
+        "uz-Cyrl": "дер орд-нер",
+        "ru": "дер орд-нер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Speichern Sie alle Fotos in diesem Ordner.",
+        "tr": {
+          "uz": "Hamma suratlarni shu papkaga saqlang.",
+          "uz-Cyrl": "Ҳамма суратларни шу папкага сақланг.",
+          "ru": "Сохраняйте все фотографии в этой папке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-speichern",
+      "slug": "speichern",
+      "term": "speichern",
+      "icon": "device-floppy",
+      "tr": {
+        "uz": "saqlamoq (faylni)",
+        "uz-Cyrl": "сақламоқ (файлни)",
+        "ru": "сохранять (файл)"
+      },
+      "pron": {
+        "uz": "shpay-xern",
+        "uz-Cyrl": "шпай-херн",
+        "ru": "шпай-херн"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Vergessen Sie nicht, die Tabelle zu speichern.",
+        "tr": {
+          "uz": "Jadvalni saqlashni unutmang.",
+          "uz-Cyrl": "Жадвални сақлашни унутманг.",
+          "ru": "Не забудьте сохранить таблицу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-loeschen",
+      "slug": "loeschen",
+      "term": "löschen",
+      "icon": "trash",
+      "tr": {
+        "uz": "oʻchirmoq (faylni)",
+        "uz-Cyrl": "ўчирмоқ (файлни)",
+        "ru": "удалять (файл)"
+      },
+      "pron": {
+        "uz": "lyo-shen",
+        "uz-Cyrl": "лё-шен",
+        "ru": "лё-шен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Bitte keine Dateien vom gemeinsamen Laufwerk löschen.",
+        "tr": {
+          "uz": "Iltimos, umumiy diskdan fayllarni oʻchirmang.",
+          "uz-Cyrl": "Илтимос, умумий дискдан файлларни ўчирманг.",
+          "ru": "Пожалуйста, не удаляйте файлы с общего диска."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-kopierer",
+      "slug": "kopierer",
+      "term": "der Kopierer",
+      "icon": "printer",
+      "article": "der",
+      "plural": "die Kopierer",
+      "tr": {
+        "uz": "nusxa koʻchirish apparati (kseroks)",
+        "uz-Cyrl": "нусха кўчириш аппарати (ксерокс)",
+        "ru": "копировальный аппарат (ксерокс)"
+      },
+      "pron": {
+        "uz": "der ko-pi-rer",
+        "uz-Cyrl": "дер ко-пи-рер",
+        "ru": "дер ко-пи-рер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Der Kopierer steht im Flur neben der Küche.",
+        "tr": {
+          "uz": "Nusxa koʻchirish apparati yoʻlakda, oshxona yonida turibdi.",
+          "uz-Cyrl": "Нусха кўчириш аппарати йўлакда, ошхона ёнида турибди.",
+          "ru": "Копировальный аппарат стоит в коридоре рядом с кухней."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-tabelle",
+      "slug": "tabelle",
+      "term": "die Tabelle",
+      "icon": "table",
+      "article": "die",
+      "plural": "die Tabellen",
+      "tr": {
+        "uz": "jadval (kompyuterda)",
+        "uz-Cyrl": "жадвал (компьютерда)",
+        "ru": "таблица"
+      },
+      "pron": {
+        "uz": "die ta-be-le",
+        "uz-Cyrl": "ди та-бе-ле",
+        "ru": "ди та-бе-ле"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "In der Tabelle trage ich meine Arbeitsstunden ein.",
+        "tr": {
+          "uz": "Ish soatlarimni jadvalga yozib boraman.",
+          "uz-Cyrl": "Иш соатларимни жадвалга ёзиб бораман.",
+          "ru": "Записываю свои рабочие часы в таблицу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-benutzerkonto",
+      "slug": "benutzerkonto",
+      "term": "das Benutzerkonto",
+      "icon": "user-circle",
+      "article": "das",
+      "plural": "die Benutzerkonten",
+      "tr": {
+        "uz": "foydalanuvchi akkaunti (hisobi)",
+        "uz-Cyrl": "фойдаланувчи аккаунти (ҳисоби)",
+        "ru": "учётная запись"
+      },
+      "pron": {
+        "uz": "das be-nu-tser-kon-to",
+        "uz-Cyrl": "дас бе-ну-цер-кон-то",
+        "ru": "дас бе-ну-цер-кон-то"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Für den neuen Computer bekomme ich ein eigenes Benutzerkonto.",
+        "tr": {
+          "uz": "Yangi kompyuter uchun menga alohida foydalanuvchi akkaunti beriladi.",
+          "uz-Cyrl": "Янги компьютер учун менга алоҳида фойдаланувчи аккаунти берилади.",
+          "ru": "Для нового компьютера мне выдают отдельную учётную запись."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-zugangsdaten",
+      "slug": "zugangsdaten",
+      "term": "die Zugangsdaten",
+      "icon": "key",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "kirish maʼlumotlari (login va parol)",
+        "uz-Cyrl": "кириш маълумотлари (логин ва парол)",
+        "ru": "данные для входа (логин и пароль)"
+      },
+      "pron": {
+        "uz": "die tsu-gangs-da-ten",
+        "uz-Cyrl": "ди цу-гангс-да-тен",
+        "ru": "ди цу-гангс-да-тен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Meine Zugangsdaten klebe ich nie als Zettel an den Bildschirm.",
+        "tr": {
+          "uz": "Kirish maʼlumotlarimni hech qachon qogʻozga yozib ekranga yopishtirmayman.",
+          "uz-Cyrl": "Кириш маълумотларимни ҳеч қачон қоғозга ёзиб экранга ёпиштирмайман.",
+          "ru": "Записку с данными для входа никогда не клею на монитор."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-ausdrucken",
+      "slug": "ausdrucken",
+      "term": "ausdrucken",
+      "icon": "printer",
+      "tr": {
+        "uz": "chop etmoq (printerda)",
+        "uz-Cyrl": "чоп этмоқ (принтерда)",
+        "ru": "распечатывать"
+      },
+      "pron": {
+        "uz": "aus-dru-ken",
+        "uz-Cyrl": "аус-дру-кен",
+        "ru": "аус-дру-кен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Können Sie mir den Plan für nächste Woche ausdrucken?",
+        "tr": {
+          "uz": "Keyingi haftaning rejasini menga chop etib bera olasizmi?",
+          "uz-Cyrl": "Кейинги ҳафтанинг режасини менга чоп этиб бера оласизми?",
+          "ru": "Можете распечатать мне план на следующую неделю?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-einloggen",
+      "slug": "einloggen",
+      "term": "einloggen",
+      "icon": "login",
+      "tr": {
+        "uz": "tizimga kirmoq",
+        "uz-Cyrl": "тизимга кирмоқ",
+        "ru": "входить в систему"
+      },
+      "pron": {
+        "uz": "ayn-lo-gen",
+        "uz-Cyrl": "айн-ло-ген",
+        "ru": "айн-ло-ген"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Morgens muss ich mich zuerst am Computer einloggen.",
+        "tr": {
+          "uz": "Ertalab avval kompyuterda tizimga kirishim kerak.",
+          "uz-Cyrl": "Эрталаб аввал компьютерда тизимга киришим керак.",
+          "ru": "Утром сначала нужно войти в систему на компьютере."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-laptop",
+      "slug": "laptop",
+      "term": "der Laptop",
+      "icon": "device-laptop",
+      "article": "der",
+      "plural": "die Laptops",
+      "tr": {
+        "uz": "noutbuk",
+        "uz-Cyrl": "ноутбук",
+        "ru": "ноутбук"
+      },
+      "pron": {
+        "uz": "der lep-top",
+        "uz-Cyrl": "дер леп-топ",
+        "ru": "дер леп-топ"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Den Laptop der Firma nutze ich nur für die Arbeit.",
+        "tr": {
+          "uz": "Firma noutbukidan faqat ish uchun foydalanaman.",
+          "uz-Cyrl": "Фирма ноутбукидан фақат иш учун фойдаланаман.",
+          "ru": "Рабочий ноутбук использую только для работы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-usb-stick",
+      "slug": "usb-stick",
+      "term": "der USB-Stick",
+      "icon": "usb",
+      "article": "der",
+      "plural": "die USB-Sticks",
+      "tr": {
+        "uz": "fleshka",
+        "uz-Cyrl": "флешка",
+        "ru": "флешка"
+      },
+      "pron": {
+        "uz": "der u-es-be-shtik",
+        "uz-Cyrl": "дер у-эс-бе-штик",
+        "ru": "дер у-эс-бе-штик"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Die Präsentation ist auf meinem USB-Stick.",
+        "tr": {
+          "uz": "Taqdimot mening fleshkamda.",
+          "uz-Cyrl": "Тақдимот менинг флешкамда.",
+          "ru": "Презентация на моей флешке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-videokonferenz",
+      "slug": "videokonferenz",
+      "term": "die Videokonferenz",
+      "icon": "video",
+      "article": "die",
+      "plural": "die Videokonferenzen",
+      "tr": {
+        "uz": "video uchrashuv (onlayn majlis)",
+        "uz-Cyrl": "видео учрашув (онлайн мажлис)",
+        "ru": "видеоконференция"
+      },
+      "pron": {
+        "uz": "die vi-de-o-kon-fe-rents",
+        "uz-Cyrl": "ди ви-де-о-кон-фе-ренц",
+        "ru": "ди ви-де-о-кон-фе-ренц"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Die Videokonferenz mit dem anderen Standort beginnt um zehn.",
+        "tr": {
+          "uz": "Boshqa filial bilan video uchrashuv soat oʻnda boshlanadi.",
+          "uz-Cyrl": "Бошқа филиал билан видео учрашув соат ўнда бошланади.",
+          "ru": "Видеоконференция с другим филиалом начинается в десять."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-headset",
+      "slug": "headset",
+      "term": "das Headset",
+      "icon": "headphones",
+      "article": "das",
+      "plural": "die Headsets",
+      "tr": {
+        "uz": "mikrofonli quloqchin",
+        "uz-Cyrl": "микрофонли қулоқчин",
+        "ru": "гарнитура (наушники с микрофоном)"
+      },
+      "pron": {
+        "uz": "das hed-set",
+        "uz-Cyrl": "дас хед-сет",
+        "ru": "дас хед-сет"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Mit dem Headset hört man mich in der Besprechung besser.",
+        "tr": {
+          "uz": "Mikrofonli quloqchin bilan majlisda ovozim yaxshiroq eshitiladi.",
+          "uz-Cyrl": "Микрофонли қулоқчин билан мажлисда овозим яхшироқ эшитилади.",
+          "ru": "С гарнитурой меня на совещании слышно лучше."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-hochladen",
+      "slug": "hochladen",
+      "term": "hochladen",
+      "icon": "upload",
+      "tr": {
+        "uz": "yuklamoq (internetga, serverga)",
+        "uz-Cyrl": "юкламоқ (интернетга, серверга)",
+        "ru": "загружать (в интернет, на сервер)"
+      },
+      "pron": {
+        "uz": "hox-la-den",
+        "uz-Cyrl": "хох-ла-ден",
+        "ru": "хох-ла-ден"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Die Fotos vom Schaden soll ich bis heute Abend hochladen.",
+        "tr": {
+          "uz": "Shikastlanish suratlarini bugun kechgacha yuklashim kerak.",
+          "uz-Cyrl": "Шикастланиш суратларини бугун кечгача юклашим керак.",
+          "ru": "Фотографии повреждения нужно загрузить до вечера."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-herunterladen",
+      "slug": "herunterladen",
+      "term": "herunterladen",
+      "icon": "download",
+      "tr": {
+        "uz": "yuklab olmoq (internetdan)",
+        "uz-Cyrl": "юклаб олмоқ (интернетдан)",
+        "ru": "скачивать"
+      },
+      "pron": {
+        "uz": "he-run-ter-la-den",
+        "uz-Cyrl": "хе-рун-тер-ла-ден",
+        "ru": "хе-рун-тер-ла-ден"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Programme sollte man nur von sicheren Seiten herunterladen.",
+        "tr": {
+          "uz": "Dasturlarni faqat ishonchli saytlardan yuklab olish kerak.",
+          "uz-Cyrl": "Дастурларни фақат ишончли сайтлардан юклаб олиш керак.",
+          "ru": "Программы стоит скачивать только с надёжных сайтов."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-der-drucker-funktioniert-nicht",
+      "slug": "der-drucker-funktioniert-nicht",
+      "term": "Der Drucker funktioniert nicht.",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Printer ishlamayapti.",
+        "uz-Cyrl": "Принтер ишламаяпти.",
+        "ru": "Принтер не работает."
+      },
+      "pron": {
+        "uz": "der dru-ker funk-tsi-o-nirt nixt",
+        "uz-Cyrl": "дер дру-кер функ-ци-о-нирт нихт",
+        "ru": "дер дру-кер функ-ци-о-нирт нихт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Papier ist drin – können Sie mir bitte helfen?",
+        "tr": {
+          "uz": "Qogʻoz bor – iltimos, yordam bera olasizmi?",
+          "uz-Cyrl": "Қоғоз бор – илтимос, ёрдам бера оласизми?",
+          "ru": "Бумага есть – помогите, пожалуйста."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-kompyuter-stecken-sie-keinen-fremden-usb-stick-ein",
+      "slug": "stecken-sie-keinen-fremden-usb-stick-ein",
+      "term": "Stecken Sie keinen fremden USB-Stick ein!",
+      "icon": "usb",
+      "tr": {
+        "uz": "Begona fleshkani kompyuterga ulamang!",
+        "uz-Cyrl": "Бегона флешкани компьютерга уламанг!",
+        "ru": "Не вставляйте чужую флешку!"
+      },
+      "pron": {
+        "uz": "shte-ken zi kay-nen frem-den u-es-be-shtik ayn!",
+        "uz-Cyrl": "ште-кен зи кай-нен фрем-ден у-эс-бе-штик айн!",
+        "ru": "ште-кен зи кай-нен фрем-ден у-эс-бе-штик айн!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "kompyuter",
+      "example": {
+        "term": "Auf einem gefundenen Stick kann Schadsoftware sein.",
+        "tr": {
+          "uz": "Topib olingan fleshkada zararli dastur boʻlishi mumkin.",
+          "uz-Cyrl": "Топиб олинган флешкада зарарли дастур бўлиши мумкин.",
+          "ru": "На найденной флешке может быть вредоносная программа."
         }
       },
       "safety": true,
