@@ -7048,6 +7048,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "til-kursi",
+      "title": {
+        "uz": "Til kursi: dars, uy vazifasi va imtihon",
+        "uz-Cyrl": "Тил курси: дарс, уй вазифаси ва имтиҳон",
+        "ru": "Языковой курс: урок, домашнее задание и экзамен"
+      },
+      "order": 41,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Oʻqituvchi ayol",
+              "uz-Cyrl": "Ўқитувчи аёл",
+              "ru": "Преподавательница"
+            },
+            "de": "Guten Morgen! Sie waren gestern nicht im Kurs. Was war denn los?",
+            "tr": {
+              "uz": "Xayrli tong! Kecha kursda boʻlmadingiz. Nima boʻldi?",
+              "uz-Cyrl": "Хайрли тонг! Кеча курсда бўлмадингиз. Нима бўлди?",
+              "ru": "Доброе утро! Вчера вас не было на курсе. Что случилось?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Entschuldigung, ich musste kurzfristig länger arbeiten. Das kommt nicht oft vor.",
+            "tr": {
+              "uz": "Kechirasiz, kutilmaganda ishda uzoqroq qolishimga toʻgʻri keldi. Bu kamdan-kam boʻladi.",
+              "uz-Cyrl": "Кечирасиз, кутилмаганда ишда узоқроқ қолишимга тўғри келди. Бу камдан-кам бўлади.",
+              "ru": "Извините, пришлось неожиданно задержаться на работе. Такое бывает редко."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Oʻqituvchi ayol",
+              "uz-Cyrl": "Ўқитувчи аёл",
+              "ru": "Преподавательница"
+            },
+            "de": "Kein Problem. Wir haben das Hörverstehen für die Prüfung geübt. Haben Sie die Hausaufgabe schon gesehen?",
+            "tr": {
+              "uz": "Hechqisi yoʻq. Imtihon uchun eshitib tushunishni mashq qildik. Uy vazifasini koʻrdingizmi?",
+              "uz-Cyrl": "Ҳечқиси йўқ. Имтиҳон учун эшитиб тушунишни машқ қилдик. Уй вазифасини кўрдингизми?",
+              "ru": "Ничего страшного. Мы тренировали аудирование к экзамену. Домашнее задание вы уже видели?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, noch nicht. Können Sie mir die Seite im Kursbuch zeigen?",
+            "tr": {
+              "uz": "Yoʻq, hali koʻrmadim. Kurs kitobidagi betni koʻrsatib bera olasizmi?",
+              "uz-Cyrl": "Йўқ, ҳали кўрмадим. Курс китобидаги бетни кўрсатиб бера оласизми?",
+              "ru": "Нет, ещё нет. Можете показать страницу в учебнике?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Oʻqituvchi ayol",
+              "uz-Cyrl": "Ўқитувчи аёл",
+              "ru": "Преподавательница"
+            },
+            "de": "Natürlich, hier: Seite vierzig, Übung drei. Hören Sie den Text am besten zweimal.",
+            "tr": {
+              "uz": "Albatta, mana: qirqinchi bet, uchinchi mashq. Matnni ikki marta tinglaganingiz yaxshi.",
+              "uz-Cyrl": "Албатта, мана: қирқинчи бет, учинчи машқ. Матнни икки марта тинглаганингиз яхши.",
+              "ru": "Конечно, вот: страница сорок, упражнение три. Текст лучше прослушать два раза."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Zweimal hören? Gut, dann mache ich die Übung heute Abend nach der Arbeit.",
+            "tr": {
+              "uz": "Ikki marta tinglashmi? Yaxshi, unda mashqni bugun kechqurun ishdan keyin bajaraman.",
+              "uz-Cyrl": "Икки марта тинглашми? Яхши, унда машқни бугун кечқурун ишдан кейин бажараман.",
+              "ru": "Прослушать два раза? Хорошо, тогда сделаю упражнение сегодня вечером после работы."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -32817,6 +32910,656 @@
           "uz": "Shunda shkaf bolaning ustiga agʻdarilmaydi.",
           "uz-Cyrl": "Шунда шкаф боланинг устига ағдарилмайди.",
           "ru": "Тогда шкаф не опрокинется на ребёнка."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-integrationskurs",
+      "slug": "integrationskurs",
+      "term": "der Integrationskurs",
+      "icon": "users",
+      "article": "der",
+      "plural": "die Integrationskurse",
+      "tr": {
+        "uz": "integratsiya kursi (til va hayot kursi)",
+        "uz-Cyrl": "интеграция курси (тил ва ҳаёт курси)",
+        "ru": "интеграционный курс (язык и жизнь в стране)"
+      },
+      "pron": {
+        "uz": "der in-teg-ra-tsi-ons-kurs",
+        "uz-Cyrl": "дер ин-тег-ра-ци-онс-курс",
+        "ru": "дер ин-тег-ра-ци-онс-курс"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Im Integrationskurs lerne ich Deutsch und vieles über das Leben hier.",
+        "tr": {
+          "uz": "Integratsiya kursida nemis tilini va bu yerdagi hayot haqida koʻp narsani oʻrganaman.",
+          "uz-Cyrl": "Интеграция курсида немис тилини ва бу ердаги ҳаёт ҳақида кўп нарсани ўрганаман.",
+          "ru": "На интеграционном курсе я учу немецкий и многое узнаю о жизни здесь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-kursraum",
+      "slug": "kursraum",
+      "term": "der Kursraum",
+      "icon": "door",
+      "article": "der",
+      "plural": "die Kursräume",
+      "tr": {
+        "uz": "kurs xonasi (dars xonasi)",
+        "uz-Cyrl": "курс хонаси (дарс хонаси)",
+        "ru": "учебная аудитория"
+      },
+      "pron": {
+        "uz": "der kurs-raum",
+        "uz-Cyrl": "дер курс-раум",
+        "ru": "дер курс-раум"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Heute ist unser Kurs in einem anderen Kursraum.",
+        "tr": {
+          "uz": "Bugun kursimiz boshqa kurs xonasida.",
+          "uz-Cyrl": "Бугун курсимиз бошқа курс хонасида.",
+          "ru": "Сегодня наш курс в другой аудитории."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-anwesenheit",
+      "slug": "anwesenheit",
+      "term": "die Anwesenheit",
+      "icon": "check",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "darsda qatnashish (yoʻqlama)",
+        "uz-Cyrl": "дарсда қатнашиш (йўқлама)",
+        "ru": "присутствие (посещаемость)"
+      },
+      "pron": {
+        "uz": "die an-ve-zen-hayt",
+        "uz-Cyrl": "ди ан-ве-зен-хайт",
+        "ru": "ди ан-ве-зен-хайт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Die Lehrerin prüft jeden Morgen die Anwesenheit.",
+        "tr": {
+          "uz": "Oʻqituvchi har kuni ertalab yoʻqlama qiladi.",
+          "uz-Cyrl": "Ўқитувчи ҳар куни эрталаб йўқлама қилади.",
+          "ru": "Преподавательница каждое утро проверяет присутствие."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-fehlzeit",
+      "slug": "fehlzeit",
+      "term": "die Fehlzeit",
+      "icon": "calendar-x",
+      "article": "die",
+      "plural": "die Fehlzeiten",
+      "tr": {
+        "uz": "darsga kelmagan vaqt (qoldirilgan dars)",
+        "uz-Cyrl": "дарсга келмаган вақт (қолдирилган дарс)",
+        "ru": "пропущенное время (пропуск занятий)"
+      },
+      "pron": {
+        "uz": "die fel-tsayt",
+        "uz-Cyrl": "ди фель-цайт",
+        "ru": "ди фель-цайт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Bei einer Fehlzeit sage ich der Lehrerin vorher Bescheid.",
+        "tr": {
+          "uz": "Darsga kela olmasam, oʻqituvchiga oldindan xabar beraman.",
+          "uz-Cyrl": "Дарсга кела олмасам, ўқитувчига олдиндан хабар бераман.",
+          "ru": "Если пропускаю занятие, заранее предупреждаю преподавательницу."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-kursbuch",
+      "slug": "kursbuch",
+      "term": "das Kursbuch",
+      "icon": "book",
+      "article": "das",
+      "plural": "die Kursbücher",
+      "tr": {
+        "uz": "kurs kitobi (darslik)",
+        "uz-Cyrl": "курс китоби (дарслик)",
+        "ru": "учебник курса"
+      },
+      "pron": {
+        "uz": "das kurs-bux",
+        "uz-Cyrl": "дас курс-бух",
+        "ru": "дас курс-бух"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Bitte öffnen Sie das Kursbuch auf Seite zwanzig.",
+        "tr": {
+          "uz": "Iltimos, kurs kitobini yigirmanchi betdan oching.",
+          "uz-Cyrl": "Илтимос, курс китобини йигирманчи бетдан очинг.",
+          "ru": "Пожалуйста, откройте учебник на двадцатой странице."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-wie-sagt-man-das-auf-deutsch",
+      "slug": "wie-sagt-man-das-auf-deutsch",
+      "term": "Wie sagt man das auf Deutsch?",
+      "icon": "language",
+      "tr": {
+        "uz": "Buni nemischa qanday aytiladi?",
+        "uz-Cyrl": "Буни немисча қандай айтилади?",
+        "ru": "Как это сказать по-немецки?"
+      },
+      "pron": {
+        "uz": "vi zakt man das auf doych?",
+        "uz-Cyrl": "ви закт ман дас ауф дойч?",
+        "ru": "ви закт ман дас ауф дойч?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Ich kenne das Wort nur auf Russisch.",
+        "tr": {
+          "uz": "Bu soʻzni faqat ruschada bilaman.",
+          "uz-Cyrl": "Бу сўзни фақат русчада биламан.",
+          "ru": "Я знаю это слово только по-русски."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-wortschatz",
+      "slug": "wortschatz",
+      "term": "der Wortschatz",
+      "icon": "abc",
+      "article": "der",
+      "plural": "—",
+      "tr": {
+        "uz": "soʻz boyligi (lugʻat zaxirasi)",
+        "uz-Cyrl": "сўз бойлиги (луғат захираси)",
+        "ru": "словарный запас"
+      },
+      "pron": {
+        "uz": "der vort-shats",
+        "uz-Cyrl": "дер ворт-шац",
+        "ru": "дер ворт-шац"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Jeden Abend lerne ich neue Wörter für meinen Wortschatz.",
+        "tr": {
+          "uz": "Har kuni kechqurun soʻz boyligim uchun yangi soʻzlar yodlayman.",
+          "uz-Cyrl": "Ҳар куни кечқурун сўз бойлигим учун янги сўзлар ёдлайман.",
+          "ru": "Каждый вечер учу новые слова для своего словарного запаса."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-grammatik",
+      "slug": "grammatik",
+      "term": "die Grammatik",
+      "icon": "pencil",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "grammatika",
+        "uz-Cyrl": "грамматика",
+        "ru": "грамматика"
+      },
+      "pron": {
+        "uz": "die gra-ma-tik",
+        "uz-Cyrl": "ди гра-ма-тик",
+        "ru": "ди гра-ма-тик"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Die Grammatik ist schwer, aber mit Übungen wird es leichter.",
+        "tr": {
+          "uz": "Grammatika qiyin, lekin mashqlar bilan osonlashadi.",
+          "uz-Cyrl": "Грамматика қийин, лекин машқлар билан осонлашади.",
+          "ru": "Грамматика трудная, но с упражнениями становится легче."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-aussprache",
+      "slug": "aussprache",
+      "term": "die Aussprache",
+      "icon": "microphone",
+      "article": "die",
+      "plural": "—",
+      "tr": {
+        "uz": "talaffuz",
+        "uz-Cyrl": "талаффуз",
+        "ru": "произношение"
+      },
+      "pron": {
+        "uz": "die aus-shpra-xe",
+        "uz-Cyrl": "ди аус-шпра-хе",
+        "ru": "ди аус-шпра-хе"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Meine Aussprache übe ich mit Sprachnachrichten.",
+        "tr": {
+          "uz": "Talaffuzimni ovozli xabarlar bilan mashq qilaman.",
+          "uz-Cyrl": "Талаффузимни овозли хабарлар билан машқ қиламан.",
+          "ru": "Произношение тренирую с помощью голосовых сообщений."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-woerterbuch",
+      "slug": "woerterbuch",
+      "term": "das Wörterbuch",
+      "icon": "books",
+      "article": "das",
+      "plural": "die Wörterbücher",
+      "tr": {
+        "uz": "lugʻat (kitob yoki ilova)",
+        "uz-Cyrl": "луғат (китоб ёки илова)",
+        "ru": "словарь"
+      },
+      "pron": {
+        "uz": "das vyor-ter-bux",
+        "uz-Cyrl": "дас вёр-тер-бух",
+        "ru": "дас вёр-тер-бух"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Unbekannte Wörter suche ich im Wörterbuch auf dem Handy.",
+        "tr": {
+          "uz": "Notanish soʻzlarni telefondagi lugʻatdan qidiraman.",
+          "uz-Cyrl": "Нотаниш сўзларни телефондаги луғатдан қидираман.",
+          "ru": "Незнакомые слова ищу в словаре в телефоне."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-uebersetzung",
+      "slug": "uebersetzung",
+      "term": "die Übersetzung",
+      "icon": "arrows-exchange",
+      "article": "die",
+      "plural": "die Übersetzungen",
+      "tr": {
+        "uz": "tarjima",
+        "uz-Cyrl": "таржима",
+        "ru": "перевод"
+      },
+      "pron": {
+        "uz": "die yu-ber-zet-tsung",
+        "uz-Cyrl": "ди ю-бер-зет-цунг",
+        "ru": "ди ю-бер-зет-цунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Eine Übersetzung hilft, aber zuerst versuche ich, den Text selbst zu verstehen.",
+        "tr": {
+          "uz": "Tarjima yordam beradi, lekin avval matnni oʻzim tushunishga harakat qilaman.",
+          "uz-Cyrl": "Таржима ёрдам беради, лекин аввал матнни ўзим тушунишга ҳаракат қиламан.",
+          "ru": "Перевод помогает, но сначала стараюсь понять текст самостоятельно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-buchstabieren",
+      "slug": "buchstabieren",
+      "term": "buchstabieren",
+      "icon": "abc",
+      "tr": {
+        "uz": "harflab aytmoq",
+        "uz-Cyrl": "ҳарфлаб айтмоқ",
+        "ru": "произносить по буквам"
+      },
+      "pron": {
+        "uz": "bux-shta-bi-ren",
+        "uz-Cyrl": "бух-шта-би-рен",
+        "ru": "бух-шта-би-рен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Können Sie Ihren Namen bitte buchstabieren?",
+        "tr": {
+          "uz": "Ismingizni harflab ayta olasizmi?",
+          "uz-Cyrl": "Исмингизни ҳарфлаб айта оласизми?",
+          "ru": "Можете произнести своё имя по буквам?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-hoerverstehen",
+      "slug": "hoerverstehen",
+      "term": "das Hörverstehen",
+      "icon": "headphones",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "eshitib tushunish",
+        "uz-Cyrl": "эшитиб тушуниш",
+        "ru": "понимание на слух (аудирование)"
+      },
+      "pron": {
+        "uz": "das hyor-fer-shte-en",
+        "uz-Cyrl": "дас хёр-фер-ште-ен",
+        "ru": "дас хёр-фер-ште-ен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Für das Hörverstehen höre ich deutsche Nachrichten im Radio.",
+        "tr": {
+          "uz": "Eshitib tushunish uchun radioda nemischa yangiliklarni tinglayman.",
+          "uz-Cyrl": "Эшитиб тушуниш учун радиода немисча янгиликларни тинглайман.",
+          "ru": "Для аудирования слушаю немецкие новости по радио."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-leseverstehen",
+      "slug": "leseverstehen",
+      "term": "das Leseverstehen",
+      "icon": "file-text",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "oʻqib tushunish",
+        "uz-Cyrl": "ўқиб тушуниш",
+        "ru": "понимание прочитанного"
+      },
+      "pron": {
+        "uz": "das le-ze-fer-shte-en",
+        "uz-Cyrl": "дас ле-зе-фер-ште-ен",
+        "ru": "дас ле-зе-фер-ште-ен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Beim Leseverstehen lese ich zuerst die Fragen und dann den Text.",
+        "tr": {
+          "uz": "Oʻqib tushunishda avval savollarni, keyin matnni oʻqiyman.",
+          "uz-Cyrl": "Ўқиб тушунишда аввал саволларни, кейин матнни ўқийман.",
+          "ru": "При чтении сначала читаю вопросы, а потом текст."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-sprechpruefung",
+      "slug": "sprechpruefung",
+      "term": "die Sprechprüfung",
+      "icon": "messages",
+      "article": "die",
+      "plural": "die Sprechprüfungen",
+      "tr": {
+        "uz": "ogʻzaki imtihon (gapirish qismi)",
+        "uz-Cyrl": "оғзаки имтиҳон (гапириш қисми)",
+        "ru": "устный экзамен"
+      },
+      "pron": {
+        "uz": "die shprex-pryu-fung",
+        "uz-Cyrl": "ди шпрех-прю-фунг",
+        "ru": "ди шпрех-прю-фунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Vor der Sprechprüfung übe ich mit meinem Lernpartner.",
+        "tr": {
+          "uz": "Ogʻzaki imtihondan oldin til hamkorim bilan mashq qilaman.",
+          "uz-Cyrl": "Оғзаки имтиҳондан олдин тил ҳамкорим билан машқ қиламан.",
+          "ru": "Перед устным экзаменом тренируюсь с партнёром по учёбе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-muendlich",
+      "slug": "muendlich",
+      "term": "mündlich",
+      "icon": "message-circle",
+      "tr": {
+        "uz": "ogʻzaki",
+        "uz-Cyrl": "оғзаки",
+        "ru": "устный, устно"
+      },
+      "pron": {
+        "uz": "myund-lix",
+        "uz-Cyrl": "мюнд-лих",
+        "ru": "мюнд-лих"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Der mündliche Teil der Prüfung ist am Nachmittag.",
+        "tr": {
+          "uz": "Imtihonning ogʻzaki qismi tushdan keyin.",
+          "uz-Cyrl": "Имтиҳоннинг оғзаки қисми тушдан кейин.",
+          "ru": "Устная часть экзамена – после обеда."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-schriftlich",
+      "slug": "schriftlich",
+      "term": "schriftlich",
+      "icon": "pencil",
+      "tr": {
+        "uz": "yozma",
+        "uz-Cyrl": "ёзма",
+        "ru": "письменный, письменно"
+      },
+      "pron": {
+        "uz": "shrift-lix",
+        "uz-Cyrl": "шрифт-лих",
+        "ru": "шрифт-лих"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Die Hausaufgabe machen wir heute schriftlich.",
+        "tr": {
+          "uz": "Uy vazifasini bugun yozma bajaramiz.",
+          "uz-Cyrl": "Уй вазифасини бугун ёзма бажарамиз.",
+          "ru": "Домашнее задание сегодня делаем письменно."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-pruefungsangst",
+      "slug": "pruefungsangst",
+      "term": "die Prüfungsangst",
+      "icon": "mood-nervous",
+      "article": "die",
+      "plural": "die Prüfungsängste",
+      "tr": {
+        "uz": "imtihon qoʻrquvi (hayajon)",
+        "uz-Cyrl": "имтиҳон қўрқуви (ҳаяжон)",
+        "ru": "страх перед экзаменом"
+      },
+      "pron": {
+        "uz": "die pryu-fungs-angst",
+        "uz-Cyrl": "ди прю-фунгс-ангст",
+        "ru": "ди прю-фунгс-ангст"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Gegen meine Prüfungsangst hilft ein guter Lernplan.",
+        "tr": {
+          "uz": "Imtihon qoʻrquvimga yaxshi oʻquv reja yordam beradi.",
+          "uz-Cyrl": "Имтиҳон қўрқувимга яхши ўқув режа ёрдам беради.",
+          "ru": "От страха перед экзаменом помогает хороший план учёбы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-lernpartner",
+      "slug": "lernpartner",
+      "term": "der Lernpartner",
+      "icon": "users",
+      "article": "der",
+      "plural": "die Lernpartner",
+      "tr": {
+        "uz": "til hamkori (birga oʻqiydigan odam)",
+        "uz-Cyrl": "тил ҳамкори (бирга ўқийдиган одам)",
+        "ru": "партнёр по учёбе"
+      },
+      "pron": {
+        "uz": "der lern-part-ner",
+        "uz-Cyrl": "дер лерн-парт-нер",
+        "ru": "дер лерн-парт-нер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Mit meinem Lernpartner spreche ich jeden Tag zehn Minuten Deutsch.",
+        "tr": {
+          "uz": "Til hamkorim bilan har kuni oʻn daqiqa nemischa gaplashaman.",
+          "uz-Cyrl": "Тил ҳамкорим билан ҳар куни ўн дақиқа немисча гаплашаман.",
+          "ru": "С партнёром по учёбе каждый день десять минут говорю по-немецки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-til-kursi-zahlen-sie-nie-geld-fuer-ein-garantiertes-bestehen",
+      "slug": "zahlen-sie-nie-geld-fuer-ein-garantiertes-bestehen",
+      "term": "Zahlen Sie nie Geld für ein garantiertes Bestehen!",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Imtihondan oʻtishni «kafolatlaydigan»larga hech qachon pul toʻlamang!",
+        "uz-Cyrl": "Имтиҳондан ўтишни «кафолатлайдиган»ларга ҳеч қачон пул тўламанг!",
+        "ru": "Никогда не платите за «гарантированную» сдачу экзамена!"
+      },
+      "pron": {
+        "uz": "tsa-len zi ni gelt fyur ayn ga-ran-tir-tes be-shte-en!",
+        "uz-Cyrl": "ца-лен зи ни гельт фюр айн га-ран-тир-тес бе-ште-ен!",
+        "ru": "ца-лен зи ни гельт фюр айн га-ран-тир-тес бе-ште-ен!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "til-kursi",
+      "example": {
+        "term": "Eine Prüfung muss man selbst bestehen – das kann niemand verkaufen.",
+        "tr": {
+          "uz": "Imtihonni oʻzingiz topshirishingiz kerak – buni hech kim sota olmaydi.",
+          "uz-Cyrl": "Имтиҳонни ўзингиз топширишингиз керак – буни ҳеч ким сота олмайди.",
+          "ru": "Экзамен нужно сдать самостоятельно – это никто не может продать."
         }
       },
       "safety": true,
