@@ -6696,6 +6696,99 @@
         ],
         "status": "review"
       }
+    },
+    {
+      "id": "aeroport",
+      "title": {
+        "uz": "Sayohat: aeroport, bagaj va reys",
+        "uz-Cyrl": "Саёҳат: аэропорт, багаж ва рейс",
+        "ru": "Поездка: аэропорт, багаж и рейс"
+      },
+      "order": 39,
+      "level": "B1",
+      "dialog": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Aeroport xodimi",
+              "uz-Cyrl": "Аэропорт ходими",
+              "ru": "Сотрудница аэропорта"
+            },
+            "de": "Guten Morgen! Wohin fliegen Sie heute?",
+            "tr": {
+              "uz": "Xayrli tong! Bugun qayerga uchyapsiz?",
+              "uz-Cyrl": "Хайрли тонг! Бугун қаерга учяпсиз?",
+              "ru": "Доброе утро! Куда вы сегодня летите?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nach Taschkent. Hier sind mein Reisepass und meine Buchung.",
+            "tr": {
+              "uz": "Toshkentga. Mana pasportim va bronim.",
+              "uz-Cyrl": "Тошкентга. Мана паспортим ва броним.",
+              "ru": "В Ташкент. Вот мой паспорт и бронь."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Aeroport xodimi",
+              "uz-Cyrl": "Аэропорт ходими",
+              "ru": "Сотрудница аэропорта"
+            },
+            "de": "Danke. Haben Sie Gepäck aufzugeben?",
+            "tr": {
+              "uz": "Rahmat. Topshiradigan bagajingiz bormi?",
+              "uz-Cyrl": "Раҳмат. Топширадиган багажингиз борми?",
+              "ru": "Спасибо. Будете сдавать багаж?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, diesen Koffer hier. Die kleine Tasche nehme ich als Handgepäck mit.",
+            "tr": {
+              "uz": "Ha, mana shu chamadonni. Kichik sumkani qoʻl yuki sifatida olaman.",
+              "uz-Cyrl": "Ҳа, мана шу чамадонни. Кичик сумкани қўл юки сифатида оламан.",
+              "ru": "Да, вот этот чемодан. Маленькую сумку возьму как ручную кладь."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Aeroport xodimi",
+              "uz-Cyrl": "Аэропорт ходими",
+              "ru": "Сотрудница аэропорта"
+            },
+            "de": "Gut. Hier ist Ihre Bordkarte. Ihr Gate ist die Nummer zwölf, die Boardingzeit steht oben rechts.",
+            "tr": {
+              "uz": "Yaxshi. Mana bort chiptangiz. Chiqish yoʻlagingiz — oʻn ikkinchi, samolyotga chiqish vaqti oʻng tomonda tepada yozilgan.",
+              "uz-Cyrl": "Яхши. Мана борт чиптангиз. Чиқиш йўлагингиз — ўн иккинчи, самолётга чиқиш вақти ўнг томонда тепада ёзилган.",
+              "ru": "Хорошо. Вот ваш посадочный талон. Ваш выход — номер двенадцать, время посадки указано справа вверху."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gate zwölf, oben rechts? Gut, dann gehe ich jetzt gleich zur Sicherheitskontrolle.",
+            "tr": {
+              "uz": "Oʻn ikkinchi yoʻlak, oʻngda tepada? Yaxshi, unda hozir darhol xavfsizlik nazoratiga boraman.",
+              "uz-Cyrl": "Ўн иккинчи йўлак, ўнгда тепада? Яхши, унда ҳозир дарҳол хавфсизлик назоратига бораман.",
+              "ru": "Выход двенадцать, справа вверху? Хорошо, тогда сразу пойду на досмотр."
+            }
+          }
+        ],
+        "status": "review"
+      }
     }
   ],
   "words": [
@@ -31163,6 +31256,656 @@
           "uz": "Sana qutida yozilgan.",
           "uz-Cyrl": "Сана қутида ёзилган.",
           "ru": "Дата указана на упаковке."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-flughafen",
+      "slug": "flughafen",
+      "term": "der Flughafen",
+      "icon": "plane",
+      "article": "der",
+      "plural": "die Flughäfen",
+      "tr": {
+        "uz": "aeroport",
+        "uz-Cyrl": "аэропорт",
+        "ru": "аэропорт"
+      },
+      "pron": {
+        "uz": "der fluk-ha-fen",
+        "uz-Cyrl": "дер флук-ха-фен",
+        "ru": "дер флук-ха-фен"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Zum Flughafen fahre ich mit der S-Bahn.",
+        "tr": {
+          "uz": "Aeroportga shahar elektr poyezdida boraman.",
+          "uz-Cyrl": "Аэропортга шаҳар электр поездида бораман.",
+          "ru": "В аэропорт я еду на городской электричке."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-abflug",
+      "slug": "abflug",
+      "term": "der Abflug",
+      "icon": "plane-departure",
+      "article": "der",
+      "plural": "die Abflüge",
+      "tr": {
+        "uz": "uchib ketish (reys joʻnashi)",
+        "uz-Cyrl": "учиб кетиш (рейс жўнаши)",
+        "ru": "вылет"
+      },
+      "pron": {
+        "uz": "der ap-fluk",
+        "uz-Cyrl": "дер ап-флук",
+        "ru": "дер ап-флук"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Der Abflug ist erst am Abend.",
+        "tr": {
+          "uz": "Uchish faqat kechqurun.",
+          "uz-Cyrl": "Учиш фақат кечқурун.",
+          "ru": "Вылет только вечером."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-check-in",
+      "slug": "check-in",
+      "term": "der Check-in",
+      "icon": "check",
+      "article": "der",
+      "plural": "die Check-ins",
+      "tr": {
+        "uz": "roʻyxatdan oʻtish (reysga)",
+        "uz-Cyrl": "рўйхатдан ўтиш (рейсга)",
+        "ru": "регистрация (на рейс)"
+      },
+      "pron": {
+        "uz": "der chek-in",
+        "uz-Cyrl": "дер чек-ин",
+        "ru": "дер чек-ин"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Den Check-in kann man oft auch online machen.",
+        "tr": {
+          "uz": "Roʻyxatdan oʻtishni koʻpincha internetda ham qilish mumkin.",
+          "uz-Cyrl": "Рўйхатдан ўтишни кўпинча интернетда ҳам қилиш мумкин.",
+          "ru": "Регистрацию часто можно пройти и онлайн."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-bordkarte",
+      "slug": "bordkarte",
+      "term": "die Bordkarte",
+      "icon": "ticket",
+      "article": "die",
+      "plural": "die Bordkarten",
+      "tr": {
+        "uz": "bort chiptasi (samolyotga kirish taloni)",
+        "uz-Cyrl": "борт чиптаси (самолётга кириш талони)",
+        "ru": "посадочный талон"
+      },
+      "pron": {
+        "uz": "die bort-kar-te",
+        "uz-Cyrl": "ди борт-кар-те",
+        "ru": "ди борт-кар-те"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Die Bordkarte habe ich auf dem Handy.",
+        "tr": {
+          "uz": "Bort chiptasi telefonimda.",
+          "uz-Cyrl": "Борт чиптаси телефонимда.",
+          "ru": "Посадочный талон у меня в телефоне."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-gate",
+      "slug": "gate",
+      "term": "das Gate",
+      "icon": "door-exit",
+      "article": "das",
+      "plural": "die Gates",
+      "tr": {
+        "uz": "chiqish yoʻlagi (samolyotga)",
+        "uz-Cyrl": "чиқиш йўлаги (самолётга)",
+        "ru": "выход на посадку (гейт)"
+      },
+      "pron": {
+        "uz": "das geyt",
+        "uz-Cyrl": "дас гейт",
+        "ru": "дас гейт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Kurz vor dem Abflug hat sich das Gate geändert.",
+        "tr": {
+          "uz": "Uchishdan sal oldin chiqish yoʻlagi oʻzgardi.",
+          "uz-Cyrl": "Учишдан сал олдин чиқиш йўлаги ўзгарди.",
+          "ru": "Незадолго до вылета выход на посадку изменился."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-wo-ist-der-schalter-fuer-den-check-in",
+      "slug": "wo-ist-der-schalter-fuer-den-check-in",
+      "term": "Wo ist der Schalter für den Check-in?",
+      "icon": "help",
+      "tr": {
+        "uz": "Roʻyxatdan oʻtish peshtaxtasi qayerda?",
+        "uz-Cyrl": "Рўйхатдан ўтиш пештахтаси қаерда?",
+        "ru": "Где стойка регистрации?"
+      },
+      "pron": {
+        "uz": "vo ist der shal-ter fyur den chek-in?",
+        "uz-Cyrl": "во ист дер шал-тер фюр ден чек-ин?",
+        "ru": "во ист дер шал-тер фюр ден чек-ин?"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Fragen Sie am Infoschalter, wenn Sie ihn nicht finden.",
+        "tr": {
+          "uz": "Topolmasangiz, maʼlumot peshtaxtasidan soʻrang.",
+          "uz-Cyrl": "Тополмасангиз, маълумот пештахтасидан сўранг.",
+          "ru": "Если не можете найти, спросите у справочной стойки."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-handgepaeck",
+      "slug": "handgepaeck",
+      "term": "das Handgepäck",
+      "icon": "backpack",
+      "article": "das",
+      "plural": "—",
+      "tr": {
+        "uz": "qoʻl yuki",
+        "uz-Cyrl": "қўл юки",
+        "ru": "ручная кладь"
+      },
+      "pron": {
+        "uz": "das hant-ge-pek",
+        "uz-Cyrl": "дас хант-ге-пек",
+        "ru": "дас хант-ге-пек"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Mein Handgepäck ist nur ein kleiner Rucksack.",
+        "tr": {
+          "uz": "Qoʻl yukim — faqat kichik ryukzak.",
+          "uz-Cyrl": "Қўл юким — фақат кичик рюкзак.",
+          "ru": "Моя ручная кладь — только маленький рюкзак."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-koffer",
+      "slug": "koffer",
+      "term": "der Koffer",
+      "icon": "luggage",
+      "article": "der",
+      "plural": "die Koffer",
+      "tr": {
+        "uz": "chamadon",
+        "uz-Cyrl": "чамадон",
+        "ru": "чемодан"
+      },
+      "pron": {
+        "uz": "der ko-fer",
+        "uz-Cyrl": "дер ко-фер",
+        "ru": "дер ко-фер"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Mein Koffer ist blau und hat einen roten Anhänger.",
+        "tr": {
+          "uz": "Chamadonim koʻk, unda qizil yorliq bor.",
+          "uz-Cyrl": "Чамадоним кўк, унда қизил ёрлиқ бор.",
+          "ru": "Мой чемодан синий, на нём красная бирка."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-sicherheitskontrolle",
+      "slug": "sicherheitskontrolle",
+      "term": "die Sicherheitskontrolle",
+      "icon": "shield-check",
+      "article": "die",
+      "plural": "die Sicherheitskontrollen",
+      "tr": {
+        "uz": "xavfsizlik nazorati (tekshiruv)",
+        "uz-Cyrl": "хавфсизлик назорати (текширув)",
+        "ru": "досмотр (контроль безопасности)"
+      },
+      "pron": {
+        "uz": "die zi-xer-hayts-kon-trol-le",
+        "uz-Cyrl": "ди зи-хер-хайтс-кон-трол-ле",
+        "ru": "ди зи-хер-хайтс-кон-трол-ле"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Bei der Sicherheitskontrolle lege ich Jacke und Gürtel in die Kiste.",
+        "tr": {
+          "uz": "Xavfsizlik nazoratida kurtka va kamarni qutiga qoʻyaman.",
+          "uz-Cyrl": "Хавфсизлик назоратида куртка ва камарни қутига қўяман.",
+          "ru": "На досмотре я кладу куртку и ремень в лоток."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-fluessigkeit",
+      "slug": "fluessigkeit",
+      "term": "die Flüssigkeit",
+      "icon": "droplet",
+      "article": "die",
+      "plural": "die Flüssigkeiten",
+      "tr": {
+        "uz": "suyuqlik",
+        "uz-Cyrl": "суюқлик",
+        "ru": "жидкость"
+      },
+      "pron": {
+        "uz": "die flyu-sig-kayt",
+        "uz-Cyrl": "ди флю-сиг-кайт",
+        "ru": "ди флю-сиг-кайт"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Fragen Sie vorher, welche Flüssigkeiten ins Handgepäck dürfen.",
+        "tr": {
+          "uz": "Qaysi suyuqliklarni qoʻl yukiga olish mumkinligini oldindan soʻrang.",
+          "uz-Cyrl": "Қайси суюқликларни қўл юкига олиш мумкинлигини олдиндан сўранг.",
+          "ru": "Заранее уточните, какие жидкости можно брать в ручную кладь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-passkontrolle",
+      "slug": "passkontrolle",
+      "term": "die Passkontrolle",
+      "icon": "id",
+      "article": "die",
+      "plural": "die Passkontrollen",
+      "tr": {
+        "uz": "pasport nazorati",
+        "uz-Cyrl": "паспорт назорати",
+        "ru": "паспортный контроль"
+      },
+      "pron": {
+        "uz": "die pas-kon-trol-le",
+        "uz-Cyrl": "ди пас-кон-трол-ле",
+        "ru": "ди пас-кон-трол-ле"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "An der Passkontrolle ist heute eine lange Schlange.",
+        "tr": {
+          "uz": "Pasport nazoratida bugun uzun navbat.",
+          "uz-Cyrl": "Паспорт назоратида бугун узун навбат.",
+          "ru": "На паспортном контроле сегодня длинная очередь."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-lassen-sie-ihr-gepaeck-nie-unbeaufsichtigt",
+      "slug": "lassen-sie-ihr-gepaeck-nie-unbeaufsichtigt",
+      "term": "Lassen Sie Ihr Gepäck nie unbeaufsichtigt!",
+      "icon": "alert-triangle",
+      "tr": {
+        "uz": "Yukingizni hech qachon qarovsiz qoldirmang!",
+        "uz-Cyrl": "Юкингизни ҳеч қачон қаровсиз қолдирманг!",
+        "ru": "Никогда не оставляйте багаж без присмотра!"
+      },
+      "pron": {
+        "uz": "la-sen zi ir ge-pek ni un-be-auf-zix-tigt!",
+        "uz-Cyrl": "ла-сен зи ир ге-пек ни ун-бе-ауф-зих-тигт!",
+        "ru": "ла-сен зи ир ге-пек ни ун-бе-ауф-зих-тигт!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Auch auf die Toilette nehme ich meine Tasche mit.",
+        "tr": {
+          "uz": "Hojatxonaga ham sumkamni olib kiraman.",
+          "uz-Cyrl": "Ҳожатхонага ҳам сумкамни олиб кираман.",
+          "ru": "Даже в туалет беру сумку с собой."
+        }
+      },
+      "safety": true,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-anschlussflug",
+      "slug": "anschlussflug",
+      "term": "der Anschlussflug",
+      "icon": "plane",
+      "article": "der",
+      "plural": "die Anschlussflüge",
+      "tr": {
+        "uz": "ulanadigan reys (keyingi samolyot)",
+        "uz-Cyrl": "уланадиган рейс (кейинги самолёт)",
+        "ru": "стыковочный рейс"
+      },
+      "pron": {
+        "uz": "der an-shlus-fluk",
+        "uz-Cyrl": "дер ан-шлус-флук",
+        "ru": "дер ан-шлус-флук"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Wegen der Verspätung schaffe ich meinen Anschlussflug nicht.",
+        "tr": {
+          "uz": "Kechikish tufayli keyingi reysimga ulgurmayman.",
+          "uz-Cyrl": "Кечикиш туфайли кейинги рейсимга улгурмайман.",
+          "ru": "Из-за задержки не успеваю на стыковочный рейс."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-flugausfall",
+      "slug": "flugausfall",
+      "term": "der Flugausfall",
+      "icon": "plane-off",
+      "article": "der",
+      "plural": "die Flugausfälle",
+      "tr": {
+        "uz": "reysning bekor qilinishi",
+        "uz-Cyrl": "рейснинг бекор қилиниши",
+        "ru": "отмена рейса"
+      },
+      "pron": {
+        "uz": "der fluk-aus-fal",
+        "uz-Cyrl": "дер флук-аус-фал",
+        "ru": "дер флук-аус-фал"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Bei einem Flugausfall fragen Sie am Schalter nach einem neuen Flug.",
+        "tr": {
+          "uz": "Reys bekor qilinsa, peshtaxtada yangi reys haqida soʻrang.",
+          "uz-Cyrl": "Рейс бекор қилинса, пештахтада янги рейс ҳақида сўранг.",
+          "ru": "При отмене рейса спросите у стойки о новом рейсе."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-gepaeckband",
+      "slug": "gepaeckband",
+      "term": "das Gepäckband",
+      "icon": "luggage",
+      "article": "das",
+      "plural": "die Gepäckbänder",
+      "tr": {
+        "uz": "bagaj lentasi",
+        "uz-Cyrl": "багаж лентаси",
+        "ru": "багажная лента"
+      },
+      "pron": {
+        "uz": "das ge-pek-bant",
+        "uz-Cyrl": "дас ге-пек-бант",
+        "ru": "дас ге-пек-бант"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Auf der Anzeige steht, an welchem Gepäckband die Koffer kommen.",
+        "tr": {
+          "uz": "Tabloda chamadonlar qaysi bagaj lentasiga kelishi yozilgan.",
+          "uz-Cyrl": "Таблода чамадонлар қайси багаж лентасига келиши ёзилган.",
+          "ru": "На табло написано, на какую багажную ленту придут чемоданы."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-verlustmeldung",
+      "slug": "verlustmeldung",
+      "term": "die Verlustmeldung",
+      "icon": "file-text",
+      "article": "die",
+      "plural": "die Verlustmeldungen",
+      "tr": {
+        "uz": "yoʻqolganlik haqida ariza",
+        "uz-Cyrl": "йўқолганлик ҳақида ариза",
+        "ru": "заявление о пропаже"
+      },
+      "pron": {
+        "uz": "die fer-lust-mel-dung",
+        "uz-Cyrl": "ди фер-луст-мел-дунг",
+        "ru": "ди фер-луст-мел-дунг"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Für den verlorenen Koffer mache ich sofort eine Verlustmeldung am Flughafen.",
+        "tr": {
+          "uz": "Yoʻqolgan chamadon uchun darhol aeroportda ariza beraman.",
+          "uz-Cyrl": "Йўқолган чамадон учун дарҳол аэропортда ариза бераман.",
+          "ru": "О пропавшем чемодане сразу подаю заявление в аэропорту."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-landen",
+      "slug": "landen",
+      "term": "landen",
+      "icon": "plane-arrival",
+      "tr": {
+        "uz": "qoʻnmoq (samolyot)",
+        "uz-Cyrl": "қўнмоқ (самолёт)",
+        "ru": "приземляться"
+      },
+      "pron": {
+        "uz": "lan-den",
+        "uz-Cyrl": "лан-ден",
+        "ru": "лан-ден"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Das Flugzeug soll am Abend in Taschkent landen.",
+        "tr": {
+          "uz": "Samolyot kechqurun Toshkentga qoʻnishi kerak.",
+          "uz-Cyrl": "Самолёт кечқурун Тошкентга қўниши керак.",
+          "ru": "Самолёт должен приземлиться вечером в Ташкенте."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-fensterplatz",
+      "slug": "fensterplatz",
+      "term": "der Fensterplatz",
+      "icon": "armchair",
+      "article": "der",
+      "plural": "die Fensterplätze",
+      "tr": {
+        "uz": "deraza yonidagi oʻrin",
+        "uz-Cyrl": "дераза ёнидаги ўрин",
+        "ru": "место у окна"
+      },
+      "pron": {
+        "uz": "der fens-ter-plats",
+        "uz-Cyrl": "дер фенс-тер-плац",
+        "ru": "дер фенс-тер-плац"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Haben Sie noch einen Fensterplatz frei?",
+        "tr": {
+          "uz": "Deraza yonida boʻsh oʻrin bormi?",
+          "uz-Cyrl": "Дераза ёнида бўш ўрин борми?",
+          "ru": "Есть ли ещё свободное место у окна?"
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-mein-koffer-ist-nicht-angekommen",
+      "slug": "mein-koffer-ist-nicht-angekommen",
+      "term": "Mein Koffer ist nicht angekommen.",
+      "icon": "mood-sad",
+      "tr": {
+        "uz": "Chamadonim kelmadi.",
+        "uz-Cyrl": "Чамадоним келмади.",
+        "ru": "Мой чемодан не прибыл."
+      },
+      "pron": {
+        "uz": "mayn ko-fer ist nixt an-ge-ko-men.",
+        "uz-Cyrl": "майн ко-фер ист нихт ан-ге-ко-мен.",
+        "ru": "майн ко-фер ист нихт ан-ге-ко-мен."
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Das sage ich am Schalter für Gepäckermittlung.",
+        "tr": {
+          "uz": "Buni yoʻqolgan bagaj peshtaxtasida aytaman.",
+          "uz-Cyrl": "Буни йўқолган багаж пештахтасида айтаман.",
+          "ru": "Это я говорю на стойке розыска багажа."
+        }
+      },
+      "safety": false,
+      "status": "review",
+      "source": "Claude yozdi (2026-11-22); nemis tili tekshiruvchisi koʻrishi kerak"
+    },
+    {
+      "id": "general-aeroport-nehmen-sie-keine-fremden-koffer-mit",
+      "slug": "nehmen-sie-keine-fremden-koffer-mit",
+      "term": "Nehmen Sie keine fremden Koffer mit!",
+      "icon": "hand-stop",
+      "tr": {
+        "uz": "Notanish odamlarning chamadonini olib ketmang!",
+        "uz-Cyrl": "Нотаниш одамларнинг чамадонини олиб кетманг!",
+        "ru": "Не берите с собой чужие чемоданы!"
+      },
+      "pron": {
+        "uz": "ne-men zi kay-ne frem-den ko-fer mit!",
+        "uz-Cyrl": "не-мен зи кай-не фрем-ден ко-фер мит!",
+        "ru": "не-мен зи кай-не фрем-ден ко-фер мит!"
+      },
+      "level": "B1",
+      "field": "general",
+      "jobs": [],
+      "situation": "aeroport",
+      "example": {
+        "term": "Auch wenn ein Fremder Sie freundlich darum bittet.",
+        "tr": {
+          "uz": "Hatto notanish odam xushmuomalalik bilan iltimos qilsa ham.",
+          "uz-Cyrl": "Ҳатто нотаниш одам хушмуомалалик билан илтимос қилса ҳам.",
+          "ru": "Даже если незнакомец вежливо об этом просит."
         }
       },
       "safety": true,
