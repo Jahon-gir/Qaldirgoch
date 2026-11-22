@@ -6612,6 +6612,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Du hustest ja immer noch. Was nimmst du denn dagegen?",
+            "tr": {
+              "uz": "Hali ham yoʻtalyapsan-ku. Bunga qarshi nima ichyapsan?",
+              "uz-Cyrl": "Ҳали ҳам йўталяпсан-ку. Бунга қарши нима ичяпсан?",
+              "ru": "Ты всё ещё кашляешь. Что ты от этого принимаешь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ich habe in meiner Hausapotheke einen alten Hustensaft gefunden.",
+            "tr": {
+              "uz": "Uydagi dori qutimdan eski yoʻtal siropini topdim.",
+              "uz-Cyrl": "Уйдаги дори қутимдан эски йўтал сиропини топдим.",
+              "ru": "В домашней аптечке нашёлся старый сироп от кашля."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Einen alten? Hast du mal auf das Verfallsdatum geschaut?",
+            "tr": {
+              "uz": "Eskisinimi? Yaroqlilik muddatiga qaradingmi?",
+              "uz-Cyrl": "Эскисиними? Яроқлилик муддатига қарадингми?",
+              "ru": "Старый? Срок годности уже проверен?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, noch nicht. Moment … oh, der ist schon seit einem Jahr abgelaufen.",
+            "tr": {
+              "uz": "Yoʻq, hali qaramadim. Bir daqiqa… voy, muddati bir yil oldin oʻtib ketgan ekan.",
+              "uz-Cyrl": "Йўқ, ҳали қарамадим. Бир дақиқа… вой, муддати бир йил олдин ўтиб кетган экан.",
+              "ru": "Нет, ещё нет. Минутку… ой, срок истёк уже год назад."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Dann nimm ihn bloß nicht mehr. Abgelaufene Medikamente soll man nicht einnehmen. Und heute ist Sonntag, die Apotheke an der Ecke ist zu.",
+            "tr": {
+              "uz": "Unda uni boshqa ichma. Muddati oʻtgan dorilarni ichish kerak emas. Bugun esa yakshanba, burchakdagi dorixona yopiq.",
+              "uz-Cyrl": "Унда уни бошқа ичма. Муддати ўтган дориларни ичиш керак эмас. Бугун эса якшанба, бурчакдаги дорихона ёпиқ.",
+              "ru": "Тогда больше его не принимай. Просроченные лекарства принимать нельзя. А сегодня воскресенье, аптека на углу закрыта."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Die Apotheke an der Ecke ist zu? Dann suche ich im Internet die Notdienstapotheke für heute.",
+            "tr": {
+              "uz": "Burchakdagi dorixona yopiqmi? Unda internetdan bugungi navbatchi dorixonani qidiraman.",
+              "uz-Cyrl": "Бурчакдаги дорихона ёпиқми? Унда интернетдан бугунги навбатчи дорихонани қидираман.",
+              "ru": "Аптека на углу закрыта? Тогда поищу в интернете дежурную аптеку на сегодня."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
