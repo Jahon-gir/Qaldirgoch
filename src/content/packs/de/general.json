@@ -6964,6 +6964,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Na, wie läuft es in der neuen Wohnung?",
+            "tr": {
+              "uz": "Xoʻsh, yangi kvartirada ishlar qalay?",
+              "uz-Cyrl": "Хўш, янги квартирада ишлар қалай?",
+              "ru": "Ну, как дела в новой квартире?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Fast fertig. Nur der Kleiderschrank steht noch nicht – die Aufbauanleitung ist so kompliziert.",
+            "tr": {
+              "uz": "Deyarli tayyor. Faqat kiyim shkafi hali yigʻilmagan – yigʻish yoʻriqnomasi juda murakkab.",
+              "uz-Cyrl": "Деярли тайёр. Фақат кийим шкафи ҳали йиғилмаган – йиғиш йўриқномаси жуда мураккаб.",
+              "ru": "Почти готово. Только платяной шкаф ещё не собран – инструкция по сборке очень сложная."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Soll ich am Samstag mit meinem Werkzeug vorbeikommen?",
+            "tr": {
+              "uz": "Shanba kuni asboblarim bilan borib yordam beraymi?",
+              "uz-Cyrl": "Шанба куни асбобларим билан бориб ёрдам берайми?",
+              "ru": "Может, мне зайти в субботу с инструментами?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Gern, das wäre super! Ich habe nur einen kleinen Inbusschlüssel.",
+            "tr": {
+              "uz": "Bajonidil, zoʻr boʻlardi! Menda faqat kichkina olti qirrali kalit bor.",
+              "uz-Cyrl": "Бажонидил, зўр бўларди! Менда фақат кичкина олти қиррали калит бор.",
+              "ru": "С удовольствием, было бы здорово! У меня есть только маленький шестигранный ключ."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Und denk daran: Der Schrank ist hoch. Den musst du an der Wand befestigen, sonst kann er kippen.",
+            "tr": {
+              "uz": "Yana esingda boʻlsin: shkaf baland. Uni devorga mahkamlash kerak, aks holda agʻdarilib ketishi mumkin.",
+              "uz-Cyrl": "Яна эсингда бўлсин: шкаф баланд. Уни деворга маҳкамлаш керак, акс ҳолда ағдарилиб кетиши мумкин.",
+              "ru": "И помни: шкаф высокий. Его нужно закрепить на стене, иначе он может опрокинуться."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "An der Wand befestigen? Gut, dann frage ich vorher meinen Vermieter, ob ich bohren darf.",
+            "tr": {
+              "uz": "Devorga mahkamlashmi? Yaxshi, unda avval uy egasidan teshik ochsam boʻladimi, deb soʻrayman.",
+              "uz-Cyrl": "Деворга маҳкамлашми? Яхши, унда аввал уй эгасидан тешик очсам бўладими, деб сўрайман.",
+              "ru": "Закрепить на стене? Хорошо, тогда сначала спрошу арендодателя, можно ли сверлить."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
