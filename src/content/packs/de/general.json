@@ -7140,6 +7140,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Kursdosh",
+              "uz-Cyrl": "Курсдош",
+              "ru": "Однокурсница"
+            },
+            "de": "Hallo! Du siehst so nervös aus. Was ist los?",
+            "tr": {
+              "uz": "Salom! Juda hayajonli koʻrinasan. Nima boʻldi?",
+              "uz-Cyrl": "Салом! Жуда ҳаяжонли кўринасан. Нима бўлди?",
+              "ru": "Привет! У тебя такой нервный вид. Что случилось?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nächste Woche ist meine Sprechprüfung, und ich habe große Prüfungsangst.",
+            "tr": {
+              "uz": "Keyingi hafta ogʻzaki imtihonim bor, imtihondan juda qoʻrqyapman.",
+              "uz-Cyrl": "Кейинги ҳафта оғзаки имтиҳоним бор, имтиҳондан жуда қўрқяпман.",
+              "ru": "На следующей неделе у меня устный экзамен, и мне очень страшно."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kursdosh",
+              "uz-Cyrl": "Курсдош",
+              "ru": "Однокурсница"
+            },
+            "de": "Das verstehe ich gut. Übst du denn schon mit jemandem zusammen?",
+            "tr": {
+              "uz": "Buni yaxshi tushunaman. Biror kishi bilan birga mashq qilyapsanmi?",
+              "uz-Cyrl": "Буни яхши тушунаман. Бирор киши билан бирга машқ қиляпсанми?",
+              "ru": "Понимаю. А ты уже с кем-нибудь тренируешься?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Leider nicht. Allein zu Hause zu sprechen ist schwer.",
+            "tr": {
+              "uz": "Afsuski, yoʻq. Uyda yolgʻiz gapirish qiyin.",
+              "uz-Cyrl": "Афсуски, йўқ. Уйда ёлғиз гапириш қийин.",
+              "ru": "К сожалению, нет. Говорить дома в одиночку трудно."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Kursdosh",
+              "uz-Cyrl": "Курсдош",
+              "ru": "Однокурсница"
+            },
+            "de": "Dann lass uns Lernpartner werden! Übrigens verkauft jemand im Internet Antworten mit garantiertem Bestehen.",
+            "tr": {
+              "uz": "Unda kel, til hamkori boʻlaylik! Aytgancha, internetda kimdir imtihondan oʻtishni «kafolatlab» javoblar sotyapti.",
+              "uz-Cyrl": "Унда кел, тил ҳамкори бўлайлик! Айтганча, интернетда кимдир имтиҳондан ўтишни «кафолатлаб» жавоблар сотяпти.",
+              "ru": "Тогда давай заниматься вместе! Кстати, в интернете кто-то продаёт ответы с «гарантированной» сдачей."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Garantiertes Bestehen? Das ist bestimmt Betrug – dafür zahle ich kein Geld.",
+            "tr": {
+              "uz": "«Kafolatlangan» oʻtishmi? Bu aniq firibgarlik – bunga pul toʻlamayman.",
+              "uz-Cyrl": "«Кафолатланган» ўтишми? Бу аниқ фирибгарлик – бунга пул тўламайман.",
+              "ru": "«Гарантированная» сдача? Это точно мошенничество – за такое платить не буду."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
