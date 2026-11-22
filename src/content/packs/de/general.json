@@ -6788,6 +6788,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Bagaj xizmati xodimi",
+              "uz-Cyrl": "Багаж хизмати ходими",
+              "ru": "Сотрудник службы розыска багажа"
+            },
+            "de": "Guten Tag! Was kann ich für Sie tun?",
+            "tr": {
+              "uz": "Xayrli kun! Sizga qanday yordam bera olaman?",
+              "uz-Cyrl": "Хайрли кун! Сизга қандай ёрдам бера оламан?",
+              "ru": "Добрый день! Чем могу помочь?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Mein Koffer ist nicht angekommen. Am Gepäckband war er nicht.",
+            "tr": {
+              "uz": "Chamadonim kelmadi. Bagaj lentasida u yoʻq edi.",
+              "uz-Cyrl": "Чамадоним келмади. Багаж лентасида у йўқ эди.",
+              "ru": "Мой чемодан не прибыл. На багажной ленте его не было."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Bagaj xizmati xodimi",
+              "uz-Cyrl": "Багаж хизмати ходими",
+              "ru": "Сотрудник службы розыска багажа"
+            },
+            "de": "Das tut mir leid. Haben Sie Ihre Bordkarte und den Gepäckschein dabei?",
+            "tr": {
+              "uz": "Afsus. Bort chiptangiz va bagaj taloningiz yoningizdami?",
+              "uz-Cyrl": "Афсус. Борт чиптангиз ва багаж талонингиз ёнингиздами?",
+              "ru": "Сожалею. Посадочный талон и багажная квитанция у вас с собой?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Ja, hier sind beide. Der Gepäckschein klebt hinten auf der Bordkarte.",
+            "tr": {
+              "uz": "Ha, mana ikkalasi. Bagaj taloni bort chiptasining orqasiga yopishtirilgan.",
+              "uz-Cyrl": "Ҳа, мана иккаласи. Багаж талони борт чиптасининг орқасига ёпиштирилган.",
+              "ru": "Да, вот оба. Багажная квитанция наклеена на обороте посадочного талона."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Bagaj xizmati xodimi",
+              "uz-Cyrl": "Багаж хизмати ходими",
+              "ru": "Сотрудник службы розыска багажа"
+            },
+            "de": "Danke. Ich mache jetzt eine Verlustmeldung. Wie sieht Ihr Koffer denn aus?",
+            "tr": {
+              "uz": "Rahmat. Hozir yoʻqolganlik haqida ariza toʻldiraman. Chamadoningiz qanaqa?",
+              "uz-Cyrl": "Раҳмат. Ҳозир йўқолганлик ҳақида ариза тўлдираман. Чамадонингиз қанақа?",
+              "ru": "Спасибо. Сейчас оформлю заявление о пропаже. Как выглядит ваш чемодан?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Wie er aussieht? Er ist blau und hat einen roten Anhänger am Griff.",
+            "tr": {
+              "uz": "Qanaqaligimi? U koʻk, dastasida qizil yorliq bor.",
+              "uz-Cyrl": "Қанақалигими? У кўк, дастасида қизил ёрлиқ бор.",
+              "ru": "Как выглядит? Он синий, на ручке красная бирка."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
