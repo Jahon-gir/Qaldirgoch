@@ -6436,6 +6436,89 @@
           }
         ],
         "status": "review"
+      },
+      "dialog2": {
+        "lines": [
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Warte mal! Was machst du da mit der schweren Kiste?",
+            "tr": {
+              "uz": "Toʻxta! Bu ogʻir quti bilan nima qilyapsan?",
+              "uz-Cyrl": "Тўхта! Бу оғир қути билан нима қиляпсан?",
+              "ru": "Подожди! Что ты делаешь с этим тяжёлым ящиком?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Die muss ins obere Regal. Danach mache ich Pause.",
+            "tr": {
+              "uz": "Uni yuqori javonga qoʻyish kerak. Keyin tanaffus qilaman.",
+              "uz-Cyrl": "Уни юқори жавонга қўйиш керак. Кейин танаффус қиламан.",
+              "ru": "Его нужно поставить на верхнюю полку. Потом сделаю перерыв."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Du hebst sie aber mit krummem Rücken. Hat dir niemand gezeigt, wie man richtig hebt?",
+            "tr": {
+              "uz": "Lekin sen uni belingni bukib koʻtaryapsan. Hech kim senga qanday toʻgʻri koʻtarishni koʻrsatmaganmi?",
+              "uz-Cyrl": "Лекин сен уни белингни букиб кўтаряпсан. Ҳеч ким сенга қандай тўғри кўтаришни кўрсатмаганми?",
+              "ru": "Но ты поднимаешь его с согнутой спиной. Тебе никто не показывал, как правильно поднимать?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Nein, noch nicht. Wie macht man das denn richtig?",
+            "tr": {
+              "uz": "Yoʻq, hali koʻrsatishmagan. Qanday qilib toʻgʻri qilinadi?",
+              "uz-Cyrl": "Йўқ, ҳали кўрсатишмаган. Қандай қилиб тўғри қилинади?",
+              "ru": "Нет, ещё не показывали. А как это делать правильно?"
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Hamkasb",
+              "uz-Cyrl": "Ҳамкасб",
+              "ru": "Коллега"
+            },
+            "de": "Geh in die Knie, halte den Rücken gerade und die Kiste nah am Körper. Für schwere Sachen gibt es außerdem einen Hubwagen.",
+            "tr": {
+              "uz": "Tizzalaringni buk, belingni tik, qutini esa tanangga yaqin tut. Ogʻir narsalar uchun yana qoʻl aravacha ham bor.",
+              "uz-Cyrl": "Тиззаларингни бук, белингни тик, қутини эса танангга яқин тут. Оғир нарсалар учун яна қўл аравача ҳам бор.",
+              "ru": "Согни колени, держи спину прямо, а ящик — близко к телу. А для тяжёлых вещей есть ещё ручная тележка."
+            }
+          },
+          {
+            "speaker": {
+              "uz": "Siz",
+              "uz-Cyrl": "Сиз",
+              "ru": "Вы"
+            },
+            "de": "Einen Hubwagen? Den nehme ich ab jetzt lieber – das ist besser für meinen Rücken.",
+            "tr": {
+              "uz": "Qoʻl aravachami? Bundan buyon shuni olaman – belim uchun yaxshiroq.",
+              "uz-Cyrl": "Қўл аравачами? Бундан буён шуни оламан – белим учун яхшироқ.",
+              "ru": "Ручная тележка? Тогда теперь лучше буду брать её – так лучше для спины."
+            }
+          }
+        ],
+        "status": "review"
       }
     }
   ],
