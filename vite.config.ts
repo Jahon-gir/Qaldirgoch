@@ -10,7 +10,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'prompt',
-      includeAssets: ['logo.webp', 'apple-touch-icon.png'],
+      includeAssets: ['logo.webp', 'migra-apple-touch-icon.png'],
       manifest: {
         name: 'Migra',
         short_name: 'Migra',
@@ -23,9 +23,9 @@ export default defineConfig({
         background_color: '#F1EFE8',
         theme_color: '#F1EFE8',
         icons: [
-          { src: 'icon-192.png', sizes: '192x192', type: 'image/png' },
-          { src: 'icon-512.png', sizes: '512x512', type: 'image/png' },
-          { src: 'icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
+          { src: 'migra-icon-192.png', sizes: '192x192', type: 'image/png' },
+          { src: 'migra-icon-512.png', sizes: '512x512', type: 'image/png' },
+          { src: 'migra-icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
         ]
       },
       workbox: {

@@ -18,13 +18,13 @@ def rounded(box, size, radius_ratio=0.19):
 TILE = (58, 58, 1196, 1196)     # qora burchaksiz kvadrat
 INNER = (90, 90, 1164, 1164)    # to'liq kvadrat (iOS/maskable uchun)
 
-rounded(TILE, 192).save('public/icon-192.png', optimize=True)
-rounded(TILE, 512).save('public/icon-512.png', optimize=True)
+rounded(TILE, 192).save('public/migra-icon-192.png', optimize=True)
+rounded(TILE, 512).save('public/migra-icon-512.png', optimize=True)
 rounded(TILE, 256).save('public/logo.webp', quality=88, method=6)
 
 # maskable: to'liq kvadrat (matn xavfsiz zonaga sig'adi), shaffoflik yo'q
-src.crop(INNER).resize((512, 512), Image.LANCZOS).save('public/icon-maskable-512.png', optimize=True)
+src.crop(INNER).resize((512, 512), Image.LANCZOS).save('public/migra-icon-maskable-512.png', optimize=True)
 
 # apple-touch-icon: to'liq kvadrat, shaffoflik yo'q (iOS o'zi yumaloqlaydi)
-src.crop(INNER).resize((180, 180), Image.LANCZOS).save('public/apple-touch-icon.png', optimize=True)
+src.crop(INNER).resize((180, 180), Image.LANCZOS).save('public/migra-apple-touch-icon.png', optimize=True)
 print('tayyor')

@@ -1,7 +1,7 @@
 {
   "name": "qaldirgoch",
   "private": true,
-  "version": "0.31.54",
+  "version": "0.31.55",
   "type": "module",
   "scripts": {
     "dev": "vite",
